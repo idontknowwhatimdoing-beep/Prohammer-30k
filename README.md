@@ -17,8 +17,14 @@ After an update is pushed, refresh New Recruit (or fully close and reopen on mob
 ### Legiones Astartes status
 
 Complete army list: HQ (with retinues and all Consuls), Troops, Elites, Fast Attack, Heavy Support,
-Dedicated Transports, Space Marine Armoury and all 11 Rites of War. Legion-specific rules (Forces of the
-Legions) are not in yet.
+Dedicated Transports, Space Marine Armoury and all 11 Rites of War, plus the universal Primarch rules and the
+Primarch's Chosen Rite.
+
+Forces of the Legions (chosen with the Legion option in each list):
+- [x] XV Thousand Sons: Legion rules, Prosperine Cults, Psychic Brotherhoods, Price of Knowledge force org, armoury,
+  3 Rites of War, Sekhmet, Khenetai, Ammitara, Castellax-Achea, Contemptor-Osiron, Numerologist Cabal, Ahriman,
+  Phosis T'Kar, Amon, Hathor Maat, Sanakht, Magnus the Red and Magnus, Shard of the Crimson King
+- [ ] the other 17 Legions
 
 ### Rules enforced by the builder
 
