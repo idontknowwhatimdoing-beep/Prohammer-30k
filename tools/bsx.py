@@ -118,9 +118,9 @@ def category_link(target, name, primary=False, key=""):
 
 def entry(eid, name, typ="upgrade", cost=0, hidden=False, collective=False, mods=None,
           constraints=None, profiles=None, rules=None, infolinks=None, cats=None,
-          entries=None, groups=None, links=None):
+          entries=None, groups=None, links=None, sort=None):
     return el("selectionEntry", {
-        "id": eid, "name": name, "hidden": str(hidden).lower(),
+        "id": eid, "name": name, "hidden": str(hidden).lower(), "sortIndex": sort,
         "collective": str(collective).lower(), "import": "true", "type": typ}, [
         wrap("modifiers", mods or []),
         wrap("constraints", constraints or []),
@@ -136,9 +136,9 @@ def entry(eid, name, typ="upgrade", cost=0, hidden=False, collective=False, mods
 
 
 def link(lid, target, name, cost=None, hidden=False, mods=None, constraints=None,
-         typ="selectionEntry", collective=False):
+         typ="selectionEntry", collective=False, sort=None):
     return el("entryLink", {
-        "id": lid, "name": name, "hidden": str(hidden).lower(),
+        "id": lid, "name": name, "hidden": str(hidden).lower(), "sortIndex": sort,
         "collective": str(collective).lower(), "import": "true",
         "targetId": target, "type": typ}, [
         wrap("modifiers", mods or []),
@@ -149,6 +149,12 @@ def link(lid, target, name, cost=None, hidden=False, mods=None, constraints=None
 
 def group(gid, name, hidden=False, default=None, mods=None, constraints=None,
           entries=None, groups=None, links=None, collective=False):
+    if default:
+        # New Recruit fills a required choice with the first option in group order when it cannot use the
+        # default (e.g. inside a squad added to another unit), so the default is always sorted first.
+        for i, e in enumerate(list(entries or []) + list(links or [])):
+            if e is not None:
+                e.set("sortIndex", "1" if e.get("id") == default else str(i + 2))
     return el("selectionEntryGroup", {
         "id": gid, "name": name, "hidden": str(hidden).lower(),
         "collective": str(collective).lower(), "import": "true",
