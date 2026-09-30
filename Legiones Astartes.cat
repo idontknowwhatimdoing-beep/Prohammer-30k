@@ -13326,6 +13326,15 @@ LIMITATIONS - Strength of the Legion: the army must include at least three Legio
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="remove" field="category" value="6b19-97ac-7c40-0bdf">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="16af-3c6d-4886-1450" type="atLeast" />
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
         <modifier type="add" field="category" value="071f-8316-97af-8fd6">
           <conditionGroups>
             <conditionGroup type="or">
@@ -13611,22 +13620,10 @@ LIMITATIONS - Strength of the Legion: the army must include at least three Legio
                 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="89cd-668f-4828-cd33" type="max" />
               </constraints>
             </entryLink>
-            <entryLink id="a34c-ec6e-5dca-5e56" name="Bolter" hidden="false" collective="false" import="true" targetId="8b6f-ff45-9e8a-0d7e" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4594-5d49-ff4d-2173" type="min" />
-                <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="136d-f35f-6f70-7e1e" type="max" />
-              </constraints>
-            </entryLink>
             <entryLink id="b00d-72ba-703a-0bbd" name="Bolt Pistol" hidden="false" collective="false" import="true" targetId="10e2-6917-e765-7495" type="selectionEntry">
               <constraints>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f295-baaf-1127-1792" type="min" />
                 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7736-e127-8431-cb1b" type="max" />
-              </constraints>
-            </entryLink>
-            <entryLink id="a264-c25d-34e4-d702" name="Chainsword" hidden="false" collective="false" import="true" targetId="3f81-4517-73f5-ceb7" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a7af-8170-4db1-1251" type="min" />
-                <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9616-a0fe-1bcc-9fcd" type="max" />
               </constraints>
             </entryLink>
             <entryLink id="135d-81a2-bfdd-5354" name="Frag Grenades" hidden="false" collective="false" import="true" targetId="f696-7971-36b0-27b5" type="selectionEntry">
@@ -13810,22 +13807,10 @@ LIMITATIONS - Strength of the Legion: the army must include at least three Legio
                 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d2c6-219c-40e3-c6e4" type="max" />
               </constraints>
             </entryLink>
-            <entryLink id="baaa-2058-5281-e1d8" name="Bolter" hidden="false" collective="false" import="true" targetId="8b6f-ff45-9e8a-0d7e" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="309f-0d9d-adf5-c610" type="min" />
-                <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2a38-9190-f3cb-181a" type="max" />
-              </constraints>
-            </entryLink>
             <entryLink id="5b72-136b-b9ee-501d" name="Bolt Pistol" hidden="false" collective="false" import="true" targetId="10e2-6917-e765-7495" type="selectionEntry">
               <constraints>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3076-7481-f6b7-2d59" type="min" />
                 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ea1e-3b21-bc67-a0c1" type="max" />
-              </constraints>
-            </entryLink>
-            <entryLink id="eac0-aa75-2081-08fe" name="Chainsword" hidden="false" collective="false" import="true" targetId="3f81-4517-73f5-ceb7" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="57b7-44e1-ef1e-7a03" type="min" />
-                <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="476e-53fc-87bd-31c9" type="max" />
               </constraints>
             </entryLink>
             <entryLink id="1716-e122-3dd7-cf60" name="Frag Grenades" hidden="false" collective="false" import="true" targetId="f696-7971-36b0-27b5" type="selectionEntry">
@@ -14114,6 +14099,15 @@ LIMITATIONS - Strength of the Legion: the army must include at least three Legio
     <selectionEntry id="63d4-b2d6-4d21-18dc" name="Legion Terminator Squad" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
         <modifier type="set-primary" field="category" value="adf0-dc10-89d4-f51e">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="16af-3c6d-4886-1450" type="atLeast" />
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="remove" field="category" value="6b19-97ac-7c40-0bdf">
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
@@ -14831,6 +14825,15 @@ LIMITATIONS - Strength of the Legion: the army must include at least three Legio
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="remove" field="category" value="6b19-97ac-7c40-0bdf">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="16f3-4196-2250-3a21" type="atLeast" />
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
         <modifier type="add" field="category" value="071f-8316-97af-8fd6">
           <conditionGroups>
             <conditionGroup type="or">
@@ -15083,12 +15086,6 @@ LIMITATIONS - Strength of the Legion: the army must include at least three Legio
               <constraints>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f459-c5bc-4f56-3f76" type="min" />
                 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b5db-0fd3-6075-8ca6" type="max" />
-              </constraints>
-            </entryLink>
-            <entryLink id="a22c-1832-656e-6ed9" name="Chainsword" hidden="false" collective="false" import="true" targetId="3f81-4517-73f5-ceb7" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0565-67c7-20ae-fecd" type="min" />
-                <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="903b-1d48-0066-a974" type="max" />
               </constraints>
             </entryLink>
             <entryLink id="1237-d04a-c5ae-b966" name="Frag Grenades" hidden="false" collective="false" import="true" targetId="f696-7971-36b0-27b5" type="selectionEntry">
@@ -15750,6 +15747,15 @@ LIMITATIONS - Strength of the Legion: the army must include at least three Legio
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="remove" field="category" value="6b19-97ac-7c40-0bdf">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7be5-b0e5-9507-5292" type="atLeast" />
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
         <modifier type="add" field="category" value="071f-8316-97af-8fd6">
           <conditionGroups>
             <conditionGroup type="or">
@@ -16249,6 +16255,15 @@ LIMITATIONS - Strength of the Legion: the army must include at least three Legio
     <selectionEntry id="43f4-b43d-9334-40d6" name="Legion Contemptor Dreadnought" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
         <modifier type="set-primary" field="category" value="adf0-dc10-89d4-f51e">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7be5-b0e5-9507-5292" type="atLeast" />
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="remove" field="category" value="6b19-97ac-7c40-0bdf">
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
@@ -17256,12 +17271,6 @@ LIMITATIONS - Strength of the Legion: the army must include at least three Legio
                 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c102-6ab6-7249-f657" type="max" />
               </constraints>
             </entryLink>
-            <entryLink id="e1bc-d3d4-44fb-9729" name="Bolt Pistol" hidden="false" collective="false" import="true" targetId="10e2-6917-e765-7495" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f52e-e212-cd7b-9dfd" type="min" />
-                <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="28c0-1ca9-4134-8021" type="max" />
-              </constraints>
-            </entryLink>
             <entryLink id="8c1b-d21f-5382-4b7d" name="Frag Grenades" hidden="false" collective="false" import="true" targetId="f696-7971-36b0-27b5" type="selectionEntry">
               <constraints>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="836b-ca97-6bbc-0dc9" type="min" />
@@ -17360,12 +17369,6 @@ LIMITATIONS - Strength of the Legion: the army must include at least three Legio
               <constraints>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="29c6-f2ec-28fb-5112" type="min" />
                 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6423-90fe-73df-8ed2" type="max" />
-              </constraints>
-            </entryLink>
-            <entryLink id="b31d-f269-bb55-da16" name="Bolter" hidden="false" collective="false" import="true" targetId="8b6f-ff45-9e8a-0d7e" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1771-1f0f-0331-ef81" type="min" />
-                <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5dca-cbd2-b64f-05a7" type="max" />
               </constraints>
             </entryLink>
             <entryLink id="d1a0-33df-35ae-1043" name="Bolt Pistol" hidden="false" collective="false" import="true" targetId="10e2-6917-e765-7495" type="selectionEntry">
@@ -17835,18 +17838,6 @@ LIMITATIONS - Strength of the Legion: the army must include at least three Legio
                 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6827-4901-af5f-270d" type="max" />
               </constraints>
             </entryLink>
-            <entryLink id="f1e9-5504-29e5-1e9c" name="Bolt Pistol" hidden="false" collective="false" import="true" targetId="10e2-6917-e765-7495" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7df3-869d-ee28-e9d2" type="min" />
-                <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f14d-b1bd-fdab-19a3" type="max" />
-              </constraints>
-            </entryLink>
-            <entryLink id="c6c0-2f97-7d4c-497a" name="Chainsword" hidden="false" collective="false" import="true" targetId="3f81-4517-73f5-ceb7" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3797-f1fc-973b-d7a8" type="min" />
-                <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f8db-18b9-6d52-df0f" type="max" />
-              </constraints>
-            </entryLink>
             <entryLink id="6598-0243-e063-2bcc" name="Frag Grenades" hidden="false" collective="false" import="true" targetId="f696-7971-36b0-27b5" type="selectionEntry">
               <constraints>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fc65-4e19-0b2d-b9d5" type="min" />
@@ -18092,6 +18083,15 @@ LIMITATIONS - Strength of the Legion: the army must include at least three Legio
     <selectionEntry id="7eaa-3fe3-c9e0-60c9" name="Legion Sky Hunter Jetbike Squadron" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
         <modifier type="set-primary" field="category" value="adf0-dc10-89d4-f51e">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8cf8-1ffd-f610-ea86" type="atLeast" />
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="remove" field="category" value="5e5f-f512-de8c-9505">
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
@@ -18423,18 +18423,6 @@ LIMITATIONS - Strength of the Legion: the army must include at least three Legio
               <constraints>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="34b8-96f8-0f7e-0f0f" type="min" />
                 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="daf5-8990-5737-9c35" type="max" />
-              </constraints>
-            </entryLink>
-            <entryLink id="ef3f-7049-acdb-cb18" name="Bolt Pistol" hidden="false" collective="false" import="true" targetId="10e2-6917-e765-7495" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6d56-4609-8f50-b512" type="min" />
-                <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6d54-b7a3-5478-6ef0" type="max" />
-              </constraints>
-            </entryLink>
-            <entryLink id="7902-296a-15be-a032" name="Chainsword" hidden="false" collective="false" import="true" targetId="3f81-4517-73f5-ceb7" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7789-77f1-abec-9261" type="min" />
-                <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5453-c9a9-6e30-c440" type="max" />
               </constraints>
             </entryLink>
             <entryLink id="068b-ca5d-6071-020f" name="Frag Grenades" hidden="false" collective="false" import="true" targetId="f696-7971-36b0-27b5" type="selectionEntry">
@@ -19285,18 +19273,6 @@ LIMITATIONS - Strength of the Legion: the army must include at least three Legio
               <constraints>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1d5b-6bf5-e1af-bc8a" type="min" />
                 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4bec-6b35-2751-bce2" type="max" />
-              </constraints>
-            </entryLink>
-            <entryLink id="fcb6-7578-1849-4455" name="Bolter" hidden="false" collective="false" import="true" targetId="8b6f-ff45-9e8a-0d7e" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="46b0-98d1-4eaf-6841" type="min" />
-                <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ce70-3521-94b6-6c2c" type="max" />
-              </constraints>
-            </entryLink>
-            <entryLink id="5e0f-9922-b5e9-d2cc" name="Bolt Pistol" hidden="false" collective="false" import="true" targetId="10e2-6917-e765-7495" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a940-8081-ac14-21b1" type="min" />
-                <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1c74-bfca-d124-f705" type="max" />
               </constraints>
             </entryLink>
             <entryLink id="dad7-fc78-0826-3d4c" name="Frag Grenades" hidden="false" collective="false" import="true" targetId="f696-7971-36b0-27b5" type="selectionEntry">

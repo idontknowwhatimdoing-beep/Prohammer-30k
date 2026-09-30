@@ -56,12 +56,18 @@ NOT_LINE_UNDER = {
 }
 
 
+NORMAL_ROLE = {"Legion Veteran Squad": ELITES, "Legion Terminator Squad": ELITES, "Legion Destroyer Squad": ELITES,
+               "Legion Dreadnought": ELITES, "Legion Contemptor Dreadnought": ELITES,
+               "Legion Sky Hunter Jetbike Squadron": FA}
+
+
 def troop_role_mods(name):
     mods = []
     if name in TROOP_RITES:
-        g = [any_rite(*TROOP_RITES[name])]
-        mods += [modifier("set-primary", "category", TROOPS, groups=[any_rite(*TROOP_RITES[name])]),
-                 modifier("add", "category", gs.CAT_LINE, groups=g)]
+        rs = TROOP_RITES[name]
+        mods += [modifier("set-primary", "category", TROOPS, groups=[any_rite(*rs)]),
+                 modifier("remove", "category", NORMAL_ROLE[name], groups=[any_rite(*rs)]),
+                 modifier("add", "category", gs.CAT_LINE, groups=[any_rite(*rs)])]
     if name in NOT_LINE_UNDER:
         mods.append(modifier("remove", "category", gs.CAT_LINE, groups=[any_rite(*NOT_LINE_UNDER[name])]))
     if name == "Legion Reconnaissance Squad":
@@ -1257,6 +1263,25 @@ def rites_entry():
                                                                                   auto=True)])])
 
 
+def dedupe_kit(root):
+    """A model's standard wargear that also appears as the default of a 'Replace X' choice is only kept
+    in the choice (otherwise it would be counted twice)."""
+    for e in root.iter("selectionEntry"):
+        groups = e.find("selectionEntryGroups")
+        links = e.find("entryLinks")
+        if groups is None or links is None:
+            continue
+        defaults = set()
+        for g in groups:
+            d = g.get("defaultSelectionEntryId")
+            gl = g.find("entryLinks")
+            if d and gl is not None:
+                defaults |= {lk.get("targetId") for lk in gl if lk.get("id") == d}
+        for lk in list(links):
+            if lk.get("targetId") in defaults:
+                links.remove(lk)
+
+
 # ---------------------------------------------------------------- assemble
 def extend(units_by_name, shared):
     """Attach retinues / new options to slice-1 entries and return (root units, shared entries)."""
@@ -1317,6 +1342,10 @@ def extend(units_by_name, shared):
         heavy_support_squad(), predators(), vindicators(), land_raider_squadron(), artillery_squadron(),
         *heavy_vehicles(),
     ]
+    for r in roots:
+        dedupe_kit(r)
+    for e in (praetor, centurion):
+        dedupe_kit(e)
     new_shared = [land_raider("Land Raider Phobos"), land_raider("Land Raider Proteus"), dread_drop_pod(),
                   spartan("unit"), damocles("transport")]
     return roots, new_shared
