@@ -340,7 +340,7 @@ def register():
 
 
 # ------------------------------------------------------------ building blocks
-def cult_choice(key, required=True, fixed=None):
+def cult_choice(key, required=True, fixed=None, only_ts=False):
     gid = uid("grp", key, "cult")
     ents = []
     for n, (full, _t, disc) in CULTS.items():
@@ -351,7 +351,8 @@ def cult_choice(key, required=True, fixed=None):
     mods = []
     if required:
         none = all_of(*[cond(e.get("id"), "parent", "lessThan", 1) for e in ents])
-        mods.append(modifier("add", "error", "Choose a Prosperine Cult.", groups=[none]))
+        mods.append(modifier("add", "error", "Choose a Prosperine Cult.", groups=[none],
+                             conds=[ts()] if only_ts else None))
     return group(gid, "Prosperine Cult", entries=ents, constraints=cons, mods=mods)
 
 
@@ -783,7 +784,7 @@ def ic_additions(key, e, praetor):
     add_mods(dg, [modifier("set", dmin, 1, groups=[all_of(*need)]),
                   modifier("set", "hidden", "true", groups=[any_of(not_ts(), *exclude)] if exclude else None,
                            conds=None if exclude else [not_ts()])])
-    cg = cult_choice(key, required=False)
+    cg = cult_choice(key, required=True, only_ts=True)
     ts_only(cg)
     add_to(e, "selectionEntryGroups", [g, dg, cg])
     ml = "Psyker (Mastery Level 2) - Sorcerers of Prospero" if praetor else "Psyker (Mastery Level 1) - Sorcerers of Prospero"
@@ -843,10 +844,6 @@ def extend(units_by_name, units, shared):
     # Praetor / Centurion
     ic_additions("praetor-ts", units_by_name["Legion Praetor"], True)
     ic_additions("centurion-ts", units_by_name["Legion Centurion"], False)
-    tech = units_by_name["Techmarine Covenant"]
-    add_to(tech, "infoLinks", [info_link(L.rule_ref("Sorcerers of Prospero")[0],
-                                         "Psyker (Mastery Level 1) - Sorcerers of Prospero", key="tech-sop",
-                                         mods=[modifier("set", "hidden", "true", conds=[not_ts()])])])
 
     # Veteran / Terminator squads: Psychic Brotherhood, Asphyx Shells, Transponders
     for n in ["Legion Veteran Squad", "Legion Terminator Squad"]:

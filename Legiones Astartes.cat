@@ -1470,6 +1470,22 @@
         </selectionEntryGroup>
         <selectionEntryGroup id="9308-1f04-42f2-ecba" name="Prosperine Cult" hidden="false" collective="false" import="true">
           <modifiers>
+            <modifier type="add" field="error" value="Choose a Prosperine Cult.">
+              <conditions>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f8ac-1a86-9422-097c" type="atLeast" />
+              </conditions>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9849-635f-d7f9-aad9" type="lessThan" />
+                    <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="781c-7d59-935e-baad" type="lessThan" />
+                    <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9001-2972-1a68-1810" type="lessThan" />
+                    <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="601a-2344-fc69-4085" type="lessThan" />
+                    <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="94c6-e453-be09-dc7b" type="lessThan" />
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
             <modifier type="set" field="hidden" value="true">
               <conditions>
                 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f8ac-1a86-9422-097c" type="lessThan" />
@@ -4130,6 +4146,22 @@
         </selectionEntryGroup>
         <selectionEntryGroup id="3b96-edce-2866-af87" name="Prosperine Cult" hidden="false" collective="false" import="true">
           <modifiers>
+            <modifier type="add" field="error" value="Choose a Prosperine Cult.">
+              <conditions>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f8ac-1a86-9422-097c" type="atLeast" />
+              </conditions>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4f0a-4e00-e8d1-39da" type="lessThan" />
+                    <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="378f-d2ab-e371-acb0" type="lessThan" />
+                    <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="35dd-f9f1-1de3-12be" type="lessThan" />
+                    <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a76c-aa5e-652e-dca3" type="lessThan" />
+                    <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="42f9-220a-26e4-36b8" type="lessThan" />
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
             <modifier type="set" field="hidden" value="true">
               <conditions>
                 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f8ac-1a86-9422-097c" type="lessThan" />
@@ -9753,17 +9785,6 @@ LIMITATIONS - The Warlord must be a Thousand Sons Psyker. At least two Psychic B
           </costs>
         </selectionEntry>
       </selectionEntries>
-      <infoLinks>
-        <infoLink id="2d5c-2bd9-cea5-ac66" name="Psyker (Mastery Level 1) - Sorcerers of Prospero" hidden="false" targetId="a0da-22d1-376b-519c" type="rule">
-          <modifiers>
-            <modifier type="set" field="hidden" value="true">
-              <conditions>
-                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f8ac-1a86-9422-097c" type="lessThan" />
-              </conditions>
-            </modifier>
-          </modifiers>
-        </infoLink>
-      </infoLinks>
       <costs>
         <cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
       </costs>
