@@ -77,8 +77,10 @@ def show_if(*conds):
 
 
 # --------------------------------------------------------------- constraints
-def constraint(cid, typ, value, scope="parent", field="selections", deep=False, shared=True):
-    return el("constraint", {
+def constraint(cid, typ, value, scope="parent", field="selections", deep=False, shared=True, auto=False):
+    """auto=True marks the constraint 'automatic': New Recruit fixes the selection itself
+    (e.g. removes an option that just became forbidden) instead of only showing an error."""
+    return el("constraint", {"automatic": "true" if auto else None,
         "field": field, "scope": scope, "value": value, "percentValue": "false",
         "shared": "true" if shared else "false",
         "includeChildSelections": "true" if deep else "false",

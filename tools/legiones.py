@@ -90,7 +90,7 @@ def gear(key, name, fixed=True, cost=None, mods=None, constraints=None, hidden=F
     lid = uid("link", key, name)
     cons = list(constraints or [])
     if fixed:
-        cons += [constraint(uid(lid, "min"), "min", 1), constraint(uid(lid, "max"), "max", 1)]
+        cons += [constraint(uid(lid, "min"), "min", 1), constraint(uid(lid, "max"), "max", 1, auto=True)]
     return link(lid, W(name), name, cost=cost, mods=mods, constraints=cons, hidden=hidden)
 
 
@@ -314,7 +314,7 @@ def ic_armoury(key, unit_id, praetor):
             lid = uid("link", gid, name)
             f = item_forbids(name, unit_id, note, is_cent)
             links.append(link(lid, W(name), name, cost=pts, mods=forbid_mods(lid, f),
-                              constraints=[constraint(uid(lid, "max"), "max", 1)]))
+                              constraints=[constraint(uid(lid, "max"), "max", 1, auto=True)]))
         mn, mx = uid(gid, "min"), uid(gid, "max")
         mods = []
         if not allow_pair:
@@ -325,7 +325,7 @@ def ic_armoury(key, unit_id, praetor):
                     modifier("set", mx, 0, groups=[any_of(*zero_when)]),
                     modifier("set", "hidden", "true", groups=[any_of(*zero_when)])]
         return group(gid, f"Replace {default}", default=dl, mods=mods, links=links,
-                     constraints=[constraint(mn, "min", 1), constraint(mx, "max", 1)])
+                     constraints=[constraint(mn, "min", 1, auto=True), constraint(mx, "max", 1, auto=True)])
 
     extra_links = []
     gid = uid("grp", key, "wargear")
@@ -334,7 +334,7 @@ def ic_armoury(key, unit_id, praetor):
         lid = uid("link", gid, name)
         f = item_forbids(name, unit_id, note, is_cent)
         extra_links.append(link(lid, W(name), name, cost=pts, mods=forbid_mods(lid, f),
-                                constraints=[constraint(uid(lid, "max"), "max", 1)]))
+                                constraints=[constraint(uid(lid, "max"), "max", 1, auto=True)]))
     extra = group(gid, "Additional Wargear", links=extra_links)
 
     cap = uid("grp", key, "armoury")
@@ -351,7 +351,7 @@ def ic_armour_mobility(key, unit_id, is_cent):
                       ("Cataphractii Terminator Armour", 25)]:
         lid = uid("link", gid, name)
         f = [has(consul_id(c), unit_id) for c in CONSUL_FORBIDS.get(name, [])] if is_cent else []
-        cons = [constraint(uid(lid, "max"), "max", 1)]
+        cons = [constraint(uid(lid, "max"), "max", 1, auto=True)]
         mods = forbid_mods(lid, f)
         if is_cent and name == "Cataphractii Terminator Armour":
             min_id = uid(lid, "min")
@@ -360,7 +360,7 @@ def ic_armour_mobility(key, unit_id, is_cent):
         links.append(link(lid, W(name), name, cost=pts, mods=mods, constraints=cons))
     mn, mx = uid(gid, "min"), uid(gid, "max")
     armour = group(gid, "Armour", default=dl, links=links,
-                   constraints=[constraint(mn, "min", 1), constraint(mx, "max", 1)])
+                   constraints=[constraint(mn, "min", 1, auto=True), constraint(mx, "max", 1, auto=True)])
 
     mid = uid("grp", key, "mobility")
     mob_links = []
@@ -369,7 +369,7 @@ def ic_armour_mobility(key, unit_id, is_cent):
         f = [has(consul_id(c), unit_id) for c in CONSUL_FORBIDS.get(name, [])] if is_cent else []
         f += has_tda(unit_id)  # "If not equipped with Terminator Armour"
         mob_links.append(link(lid, W(name), name, cost=pts, mods=forbid_mods(lid, f),
-                              constraints=[constraint(uid(lid, "max"), "max", 1)]))
+                              constraints=[constraint(uid(lid, "max"), "max", 1, auto=True)]))
     mobility = group(mid, "Mobility", links=mob_links, constraints=[constraint(uid(mid, "max"), "max", 1)])
     return [armour, mobility]
 
@@ -494,7 +494,7 @@ def sgt_extra_wargear(key, unit_id, max_size, skip=()):
         if note == "inv6":
             f.append(has(W("Refractor Field"), "parent"))
         links.append(link(lid, W(name), name, cost=pts, mods=forbid_mods(lid, f),
-                          constraints=[constraint(uid(lid, "max"), "max", 1)]))
+                          constraints=[constraint(uid(lid, "max"), "max", 1, auto=True)]))
     return group(gid, "Additional Wargear", links=links)
 
 
@@ -509,7 +509,7 @@ def sgt_armoury_capped(key, unit_id, max_size, slots, skip=()):
             if name == default or (_r[-1] == "pair" and i > 0):
                 continue
             lid = uid("link", gid, name)
-            links.append(link(lid, W(name), name, cost=pts, constraints=[constraint(uid(lid, "max"), "max", 1)]))
+            links.append(link(lid, W(name), name, cost=pts, constraints=[constraint(uid(lid, "max"), "max", 1, auto=True)]))
         mn, mx = uid(gid, "min"), uid(gid, "max")
         mods = []
         if i > 0:
@@ -517,7 +517,7 @@ def sgt_armoury_capped(key, unit_id, max_size, slots, skip=()):
             mods = [modifier("set", mn, 0, conds=z), modifier("set", mx, 0, conds=z),
                     modifier("set", "hidden", "true", conds=z)]
         groups.append(group(gid, f"Replace {default}", default=dl, links=links, mods=mods,
-                            constraints=[constraint(mn, "min", 1), constraint(mx, "max", 1)]))
+                            constraints=[constraint(mn, "min", 1, auto=True), constraint(mx, "max", 1, auto=True)]))
     groups.append(sgt_extra_wargear(key, unit_id, max_size, skip))
     cap = uid("grp", key, "sgt-armoury")
     return group(cap, "Space Marine Armoury (max 50 pts)", groups=groups,
@@ -532,14 +532,14 @@ def sgt_slot(key, title, default, options, zero_if=None):
     for name, pts in options:
         lid = uid("link", gid, name)
         links.append(link(lid, W(name), name, cost=pts or None,
-                          constraints=[constraint(uid(lid, "max"), "max", 1)]))
+                          constraints=[constraint(uid(lid, "max"), "max", 1, auto=True)]))
     mn, mx = uid(gid, "min"), uid(gid, "max")
     mods = []
     if zero_if:
         mods = [modifier("set", mn, 0, conds=zero_if), modifier("set", mx, 0, conds=zero_if),
                 modifier("set", "hidden", "true", conds=zero_if)]
     return group(gid, title, default=dl, links=links, mods=mods,
-                 constraints=[constraint(mn, "min", 1), constraint(mx, "max", 1)])
+                 constraints=[constraint(mn, "min", 1, auto=True), constraint(mx, "max", 1, auto=True)])
 
 
 def sgt_takes(key, options):
@@ -547,7 +547,7 @@ def sgt_takes(key, options):
     links = []
     for name, pts in options:
         lid = uid("link", gid, name)
-        links.append(link(lid, W(name), name, cost=pts, constraints=[constraint(uid(lid, "max"), "max", 1)]))
+        links.append(link(lid, W(name), name, cost=pts, constraints=[constraint(uid(lid, "max"), "max", 1, auto=True)]))
     return group(gid, "Sergeant Wargear", links=links)
 
 
@@ -588,7 +588,7 @@ def one_each(key, title, items):
     links = []
     for name, pts in items:
         lid = uid("link", gid, name)
-        links.append(link(lid, W(name), name, cost=pts, constraints=[constraint(uid(lid, "max"), "max", 1)]))
+        links.append(link(lid, W(name), name, cost=pts, constraints=[constraint(uid(lid, "max"), "max", 1, auto=True)]))
     return group(gid, title, links=links)
 
 
@@ -597,7 +597,7 @@ def transport_group(key, unit_id, options, max_models=10):
     mx = uid(gid, "max")
     too_big = [cond("model", unit_id, "greaterThan", max_models)]
     links = [link(uid("link", gid, n), TRANSPORTS[n], n) for n in options]
-    return group(gid, "Dedicated Transport", links=links, constraints=[constraint(mx, "max", 1)],
+    return group(gid, "Dedicated Transport", links=links, constraints=[constraint(mx, "max", 1, auto=True)],
                  mods=[modifier("set", mx, 0, conds=too_big), modifier("set", "hidden", "true", conds=too_big)])
 
 
