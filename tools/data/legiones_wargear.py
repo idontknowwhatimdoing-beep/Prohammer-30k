@@ -767,8 +767,12 @@ WARGEAR.update({
 TDA_SGT = {"Chainfist": 30, "Force Weapon": 40, "Lightning Claw": 25, "Pair of Lightning Claws": 30,
            "Power Fist": 25, "Power Weapon": 15, "Thunder Hammer": 30, "Combi-Bolter": 5, "Combi-Flamer": 10,
            "Combi-Grenade Launcher": 10, "Combi-Meltagun": 15, "Combi-Plasma Gun": 15, "Combi-Volkite Charger": 10,
-           "Foeblaster Boltgun": 5, "Storm Bolter": 5, "Auspex": 2, "Bionics": 10, "Master-crafted Weapon": 15,
-           "Purity Seals": 5, "Suspensor Web": 10, "Teleport Homer": 5}
+           "Foeblaster Boltgun": 5, "Storm Bolter": 5, "Bionics": 10, "Master-crafted Weapon": 15,
+           "Purity Seals": 5}
+# Space Marine Armoury items marked "Not with Terminator Armour"
+NOT_WITH_TDA = {"Bolt Pistol", "Chainaxe", "Close Combat Weapon", "Hand Flamer", "Plasma Pistol", "Rending Weapon",
+                "Volkite Serpenta", "Bolter", "Frag Grenades", "Krak Grenades", "Melta Bombs", "Auspex", "Nuncio Vox",
+                "Signum", "Suspensor Web", "Teleport Homer", "Terminator Honours"}
 
 RITES = {
     "Pride of the Legion": (

@@ -12,7 +12,7 @@ sys.path.insert(0, os.path.join(os.path.dirname(__file__), "data"))
 from bsx import (PTS, uid, el, wrap, cond, any_of, all_of, modifier, repeat, hide_if,
                  constraint, rule, profile, info_link, category_link, entry, link, group)
 import gamesystem as gs
-from legiones_wargear import (WEAPON_PROFILES, WEAPONS, WEAPON_RULES, ARMY_RULES, WARGEAR,
+from legiones_wargear import (NOT_WITH_TDA, WEAPON_PROFILES, WEAPONS, WEAPON_RULES, ARMY_RULES, WARGEAR,
                               ARMOURY, LEGIONS)
 
 CAT_ID = "p30k-0000-0000-0101"
@@ -261,6 +261,8 @@ def item_forbids(item, scope, note, is_centurion):
     if note == "tda":
         # needs Terminator Armour: forbidden when no pattern is selected
         f.append(("group", no_tda(scope)))
+    if item in NOT_WITH_TDA:
+        f += has_tda(scope)
     if note == "psyker":
         f.append(("group", all_of(*[lacks(consul_id(c), scope) for c in PSYKER_CONSULS])))
     if note == "apothecary":
@@ -441,9 +443,17 @@ def consul_group(unit_id):
                  constraints=[constraint(uid(gid, "max"), "max", 1)])
 
 
+def tda_pistol_error(unit_id):
+    """Bolt Pistols are 'Not with Terminator Armour' - the default pistol has to be replaced."""
+    grp = el("conditionGroup", {"type": "and"}, [wrap("conditions", [has(W("Bolt Pistol"), unit_id)]),
+                                                 wrap("conditionGroups", [any_of(*has_tda(unit_id))])])
+    return modifier("add", "error", "A model in Terminator Armour can't keep a Bolt Pistol - replace it.",
+                    groups=[grp])
+
+
 def praetor():
     uid_ = PRAETOR
-    return entry(uid_, "Legion Praetor", typ="unit", cost=125,
+    return entry(uid_, "Legion Praetor", typ="unit", cost=125, mods=[tda_pistol_error(uid_)],
                  cats=[category_link(gs.cat("HQ"), "HQ", primary=True, key=uid_),
                        category_link(gs.CAT_COMMANDER, "Compulsory HQ Eligible", key=uid_),
                        category_link(gs.CAT_MASTER, "Master of the Legion", key=uid_)],
@@ -460,7 +470,7 @@ def centurion():
     remove_cmd = modifier("remove", "category", gs.CAT_COMMANDER,
                           groups=[any_of(*[has(consul_id(c), uid_) for c in SUPPORT_OFFICERS + ["Moritat"]])])
     rename = [modifier("set", "name", f"Legion {c} Consul", conds=[has(consul_id(c), uid_)]) for c in CONSULS]
-    return entry(uid_, "Legion Centurion", typ="unit", cost=50, mods=[remove_cmd, *rename],
+    return entry(uid_, "Legion Centurion", typ="unit", cost=50, mods=[remove_cmd, *rename, tda_pistol_error(uid_)],
                  cats=[category_link(gs.cat("HQ"), "HQ", primary=True, key=uid_),
                        category_link(gs.CAT_COMMANDER, "Compulsory HQ Eligible", key=uid_)],
                  profiles=[unit_profile("centurion", "Legion Centurion", "Infantry (Character)",

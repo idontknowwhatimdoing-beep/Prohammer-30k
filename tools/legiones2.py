@@ -181,6 +181,74 @@ def pool(key, title, unit_id, options, base_max, every=None, per_child=None, ext
     return group(gid, title, mods=mods, links=links, constraints=[constraint(mx, "max", base_max, auto=True)]), mx
 
 
+def _model_count_mods(max_id, unit_id, model_ids, minus=()):
+    mods = [modifier("increment", max_id, 1, repeats=[repeat(m, unit_id, 1)]) for m in model_ids]
+    mods += [modifier("decrement", max_id, 1, repeats=[repeat(m, unit_id, 1)]) for m in minus]
+    return mods
+
+
+def model_swaps(key, title, unit_id, model_ids, options, minus=(), entries=()):
+    """'Any model may replace its X with ...' as one squad-level block.
+    Every option can be taken several times; together they are limited to one per model in model_ids,
+    minus the models whose X is already used up by the selections in `minus` (entry ids)."""
+    gid = uid("grp", key, title)
+    mx = uid(gid, "max")
+    links = []
+    for opt in options:
+        n, p = opt[0], opt[1]
+        lid = uid("link", gid, n)
+        links.append(link(lid, W(n), n, cost=p or None, mods=list(opt[2]) if len(opt) > 2 else None))
+    return group(gid, title, mods=_model_count_mods(mx, unit_id, model_ids, minus), links=links,
+                 entries=list(entries), constraints=[constraint(mx, "max", 0)])
+
+
+def model_takes(key, title, unit_id, model_ids, items):
+    """'Any model may take ...': each item at most once per model."""
+    gid = uid("grp", key, title)
+    links = []
+    for n, p in items:
+        lid = uid("link", gid, n)
+        mx = uid(lid, "max")
+        links.append(link(lid, W(n), n, cost=p, mods=_model_count_mods(mx, unit_id, model_ids),
+                          constraints=[constraint(mx, "max", 0)]))
+    return group(gid, title, links=links)
+
+
+def model_pair_claws(key, title, unit_id, model_ids, cost):
+    """'Any model may replace both ... with a Pair of Lightning Claws' - an inline entry so it can be counted."""
+    eid = uid(key, "pair-claws")
+    mx = uid(eid, "max")
+    return eid, entry(eid, title, cost=cost, mods=_model_count_mods(mx, unit_id, model_ids),
+                      constraints=[constraint(mx, "max", 0)], links=[gear(eid, "Pair of Lightning Claws")])
+
+
+def numbered(model, count, required=1):
+    """Split a model entry that allows up to `count` models into `count` separate entries (max 1 each), so
+    every model gets its own options. The first copy keeps the original ids."""
+    import copy
+    base = model.get("id")
+    for c in model.findall("constraints/constraint"):
+        if c.get("type") == "max" and c.get("scope") == "parent":
+            c.set("value", "1")
+        if c.get("type") == "min" and c.get("scope") == "parent":
+            c.set("value", "1" if required >= 1 else "0")
+    out = [model]
+    for i in range(2, count + 1):
+        m = copy.deepcopy(model)
+        ids = {e.get("id") for e in m.iter() if e.get("id")}
+        remap = {old: uid(old, "copy", i) for old in ids}
+        for e in m.iter():
+            for attr in ("id", "childId", "scope", "field"):
+                v = e.get(attr)
+                if v in remap:
+                    e.set(attr, remap[v])
+        for c in m.findall("constraints/constraint"):
+            if c.get("type") == "min" and c.get("scope") == "parent":
+                c.set("value", "1" if i <= required else "0")
+        out.append(m)
+    return out
+
+
 def choice(key, title, options, unit_id=None, required=False, default=None, hide=None):
     """Squad-wide exclusive choice built from inline entries.
     options: [(name, pts, per_model, links_to, rules)] - per_model multiplies pts by models in unit_id."""
@@ -416,9 +484,10 @@ def command_squad(char_key, char_id):
     prof = lambda n, ws=4: unit_profile(u, n, "Infantry" + (" (Character)" if n != "Legion Veteran" else ""),
                                         ws, 4, 4, 4, 1, 4, 2, 9, "3+")
     kit = ["Power Armour", "Frag Grenades"]
-    vet_groups = [slot(vid, "Replace Bolt Pistol", "Bolt Pistol", CS_WEAPONS),
-                  slot(vid, "Replace Chainsword", "Chainsword", CS_WEAPONS),
-                  take(vid, "Wargear", [("Combat Shield", 5), ("Melta Bombs", 5), ("Krak Grenades", 2)])]
+    vet_groups = [model_swaps(key, "Legion Veterans: replace Bolt Pistol (any number)", u, [vid], CS_WEAPONS),
+                  model_swaps(key, "Legion Veterans: replace Chainsword (any number)", u, [vid], CS_WEAPONS),
+                  model_takes(key, "Legion Veterans: wargear (any number)", u, [vid],
+                              [("Combat Shield", 5), ("Melta Bombs", 5), ("Krak Grenades", 2)])]
     champ = uid("model", u, "Legion Champion")
     apo = uid("model", u, "Legion Apothecary")
     sb = uid("model", u, "Legion Standard Bearer")
@@ -442,7 +511,7 @@ def command_squad(char_key, char_id):
     vet = entry(vid, "Legion Veteran", typ="model", cost=18,
                 mods=specials_decrement(vid, vmin, vmax, [champ, apo, sb], u),
                 constraints=[constraint(vmin, "min", 5, auto=True), constraint(vmax, "max", 5, auto=True)],
-                profiles=[prof("Legion Veteran")], links=[gear(vid, k) for k in kit], groups=vet_groups)
+                profiles=[prof("Legion Veteran")], links=[gear(vid, k) for k in kit])
     mobility = choice(key, "Mobility (entire squad)", [
         ("Jump Packs", 15, True, ["Jump Pack"], []), ("Space Marine Bikes", 20, True, ["Space Marine Bike"], [])],
         unit_id=u)
@@ -456,7 +525,7 @@ def command_squad(char_key, char_id):
                     block_if=[has(uid("choice", key, "Mobility (entire squad)", "Jump Packs"), u),
                               has(uid("choice", key, "Mobility (entire squad)", "Space Marine Bikes"), u)])
     return entry(u, "Legion Command Squad", typ="unit", infolinks=rules_links(["Legiones Astartes", "Retinue"], key=u),
-                 entries=[vet, *specials], groups=[mobility, tr])
+                 entries=[vet, *specials], groups=[*vet_groups, mobility, tr])
 
 
 HG_PW = [("Lightning Claw", 10), ("Power Fist", 10), ("Relic Blade", 15), ("Thunder Hammer", 15)]
@@ -487,7 +556,7 @@ def honour_guard(char_key):
         entry(hg, "Legion Honour Guard", typ="model", cost=40,
               mods=specials_decrement(hg, hmin, hmax, [sb], u),
               constraints=[constraint(hmin, "min", 2), constraint(hmax, "max", 9)],
-              profiles=[hp("Legion Honour Guard")], links=[gear(hg, k) for k in kit], groups=weap(hg)),
+              profiles=[hp("Legion Honour Guard")], links=[gear(hg, k) for k in kit]),
         entry(sb, "Legion Honour Guard Standard Bearer (Legion Standard)", typ="model", cost=100,
               constraints=[constraint(uid(sb, "max"), "max", 1)],
               mods=[modifier("set", uid(sb, "max"), 0,
@@ -497,9 +566,11 @@ def honour_guard(char_key):
         per_model(u, "Krak Grenades (entire squad)", 2, u, ["Krak Grenades"]),
     ]
     tr = transports(key, u, ["Legion Rhino Armoured Carrier", "Legion Drop Pod", "Land Raider Phobos"])
+    swaps = [model_swaps(key, "Legion Honour Guard: replace Power Weapon (any number)", u, [hg], HG_PW),
+             model_swaps(key, "Legion Honour Guard: replace Bolt Pistol (any number)", u, [hg], HG_BP)]
     return entry(u, "Legion Honour Guard Squad", typ="unit",
                  infolinks=rules_links(["Legiones Astartes", "Honour or Death", "Retinue"], key=u),
-                 entries=models, groups=[tr])
+                 entries=models, groups=[*swaps, tr])
 
 
 TDA_RANGED = [("Combi-Flamer", 10), ("Combi-Meltagun", 15), ("Combi-Plasma Gun", 15), ("Combi-Volkite Charger", 10),
@@ -514,6 +585,16 @@ def tda_weapon_slots(mid, ranged, cc, pair_cost):
                  links=[gear(uid(mid, "pair"), "Pair of Lightning Claws")])
     return [slot(mid, "Replace Combi-bolter", "Combi-Bolter", ranged + [(pair, None)]),
             slot(mid, "Replace Power Weapon", "Power Weapon", cc, zero_if=[has(uid(mid, "pair"), "parent")])]
+
+
+def tda_model_swaps(key, unit_id, model_ids, label, ranged, cc, pair_cost, heavy):
+    """Squad-level weapon blocks for the ordinary models of a Terminator unit ('any model may ...')."""
+    pid, pair = model_pair_claws(key, "Pair of Lightning Claws (replaces Combi-bolter and Power Weapon)", unit_id,
+                                 model_ids, pair_cost)
+    replaces_combi = [W(n) for n, _ in heavy if n != "Cyclone Missile Launcher"]
+    return [model_swaps(key, f"{label}: replace Combi-bolter (any number)", unit_id, model_ids, ranged,
+                        minus=replaces_combi, entries=[pair]),
+            model_swaps(key, f"{label}: replace Power Weapon (any number)", unit_id, model_ids, cc, minus=[pid])]
 
 
 def terminator_command_squad(char_key):
@@ -543,14 +624,15 @@ def terminator_command_squad(char_key):
     vet = entry(vid, "Terminator Veteran", typ="model", cost=43,
                 mods=specials_decrement(vid, vmin, vmax, [champ, apo, sb], u),
                 constraints=[constraint(vmin, "min", 5, auto=True), constraint(vmax, "max", 5, auto=True)],
-                profiles=[prof("Terminator Veteran")], groups=tda_weapon_slots(vid, TDA_RANGED, TDA_CC, 15))
+                profiles=[prof("Terminator Veteran")])
     heavy, _ = pool(key, "Heavy Weapon (one model)", u, TDA_HEAVY, 1)
+    swaps = tda_model_swaps(key, u, [vid], "Terminator Veterans", TDA_RANGED, TDA_CC, 15, TDA_HEAVY)
     harness, _ = pool(key, "Grenade Harness (one model)", u, [("Grenade Harness", 10)], 1)
     tr = transports(key, u, ["Land Raider Phobos", "Land Raider Proteus", "Anvillus Pattern Dreadclaw Drop Pod"],
                     orbital=False)
     return entry(u, "Legion Terminator Command Squad", typ="unit",
                  infolinks=rules_links(["Legiones Astartes", "Retinue"], key=u),
-                 entries=[vet, *specials], groups=[armour_pattern(key), heavy, harness, tr])
+                 entries=[vet, *specials], groups=[armour_pattern(key), *swaps, heavy, harness, tr])
 
 
 RETINUE_SHARED = []
@@ -607,12 +689,23 @@ def veteran_squad():
     vets = entry(vid, "Legion Veteran", typ="model", cost=20,
                  constraints=[constraint(uid(vid, "min"), "min", 4), constraint(uid(vid, "max"), "max", 9)],
                  profiles=[unit_profile(u, "Legion Veteran", "Infantry", 5, 4, 4, 4, 1, 4, 2, 9, "3+")],
-                 links=[gear(vid, k) for k in kit], groups=model_opts(vid))
+                 links=[gear(vid, k) for k in kit])
     heavy = ["Heavy Flamer with Suspensor Web", "Heavy Bolter with Suspensor Web", "Missile Launcher with Suspensor Web"]
-    spec, _ = pool(u, "Specialist Weapons (1 per 5 models)", u, [
-        ("Rotor Cannon", 4), ("Flamer", 5), ("Meltagun", 10), ("Plasma Gun", 15), ("Volkite Charger", 10),
-        ("Volkite Caliver", 15), ("Heavy Flamer with Suspensor Web", 10), ("Heavy Bolter with Suspensor Web", 15),
-        ("Missile Launcher with Suspensor Web", 20)], 0, every=5)
+    spec_opts = [("Rotor Cannon", 4), ("Flamer", 5), ("Meltagun", 10), ("Plasma Gun", 15), ("Volkite Charger", 10),
+                 ("Volkite Caliver", 15), ("Heavy Flamer with Suspensor Web", 10),
+                 ("Heavy Bolter with Suspensor Web", 15), ("Missile Launcher with Suspensor Web", 20)]
+    spec, _ = pool(u, "Specialist Weapons (1 per 5 models)", u, spec_opts, 0, every=5)
+    no_recon = [cond(rite_id("Legion Recon Company"), "force", "lessThan", 1)]
+    vet_swaps = [
+        model_swaps(u, "Legion Veterans: replace Chainsword (any number)", u, [vid],
+                    [("Chainaxe", 4), ("Rending Weapon", 5), ("Power Weapon", 10)]),
+        model_swaps(u, "Legion Veterans: replace Bolter (any number)", u, [vid],
+                    [("Foeblaster Boltgun", 2), ("Combi-Flamer", 5), ("Combi-Grenade Launcher", 5),
+                     ("Combi-Volkite Charger", 5), ("Combi-Meltagun", 10), ("Combi-Plasma Gun", 10),
+                     ("Sniper Rifle", 5, [modifier("set", "hidden", "true", conds=no_recon)])],
+                    minus=[W(n) for n, _ in spec_opts]),
+        model_takes(u, "Legion Veterans: wargear (any number)", u, [vid], [("Combat Shield", 5), ("Melta Bombs", 5)]),
+    ]
     has_heavy = [has(W(h), u) for h in heavy]
     jp_id = uid("squadwide", u, "Jump Packs (entire squad)")
     jp = per_model(u, "Jump Packs (entire squad)", 15, u, ["Jump Pack"])
@@ -631,7 +724,7 @@ def veteran_squad():
                  cats=[foc(ELITES, "Elites", u)],
                  infolinks=rules_links(["Legiones Astartes", "Veteran Tactics"], key=u),
                  entries=[sgt, vets, jp, per_model(u, "Krak Grenades (entire squad)", 2, u, ["Krak Grenades"])],
-                 groups=[tactics, spec, L.one_each(u, "Squad Equipment", [("Legion Vexilla", 10), ("Nuncio Vox", 10)]),
+                 groups=[tactics, *vet_swaps, spec, L.one_each(u, "Squad Equipment", [("Legion Vexilla", 10), ("Nuncio Vox", 10)]),
                          transports(u, u, ["Legion Rhino Armoured Carrier", "Legion Drop Pod",
                                            "Anvillus Pattern Dreadclaw Drop Pod", "Land Raider Phobos"],
                                     block_if=[has(jp_id, u)])])
@@ -653,14 +746,14 @@ def terminator_squad():
                 [take(sid, "Sergeant Wargear", [("Grenade Harness", 10)]), tda_armoury(sid)])
     terms = entry(tid, "Legion Terminator", typ="model", cost=30,
                   constraints=[constraint(uid(tid, "min"), "min", 4), constraint(uid(tid, "max"), "max", 9)],
-                  profiles=[unit_profile(u, "Legion Terminator", "Infantry", 4, 4, 4, 4, 1, 4, 2, 9, "2+")],
-                  groups=tda_weapon_slots(tid, ranged, cc, 15))
+                  profiles=[unit_profile(u, "Legion Terminator", "Infantry", 4, 4, 4, 4, 1, 4, 2, 9, "2+")])
     heavy, _ = pool(u, "Heavy Weapons (1 per 5 models)", u, TDA_HEAVY, 0, every=5)
+    swaps = tda_model_swaps(u, u, [tid], "Legion Terminators", ranged, cc, 15, TDA_HEAVY)
     return entry(u, name, typ="unit", cost=175 - 4 * 30, mods=troop_role_mods(name),
                  cats=[foc(ELITES, "Elites", u)],
                  infolinks=rules_links(["Legiones Astartes", "Implacable Advance"], key=u),
                  entries=[sgt, terms],
-                 groups=[armour_pattern(u), heavy,
+                 groups=[armour_pattern(u), *swaps, heavy,
                          transports(u, u, ["Land Raider Phobos", "Land Raider Proteus",
                                            "Anvillus Pattern Dreadclaw Drop Pod", "Legion Spartan Assault Tank"],
                                     orbital=False)])
@@ -745,7 +838,7 @@ def techmarine_covenant():
                      sb, sc, rad,
                      transports(tm, tm, ["Legion Rhino Armoured Carrier"], block_if=[has(W("Space Marine Bike"), tm)],
                                 orbital=False, spearhead=False)])
-    return entry(u, "Techmarine Covenant", typ="unit", cats=[foc(ELITES, "Elites", u)], entries=[tech])
+    return entry(u, "Techmarine Covenant", typ="unit", cats=[foc(ELITES, "Elites", u)], entries=numbered(tech, 3, 1))
 
 
 DREAD_ARM1 = [("Multi-Melta", 0), ("Twin-linked Autocannon", 5), ("Twin-linked Missile Launcher", 10),
@@ -900,16 +993,18 @@ def seeker_squad():
     seekers = entry(mid, "Legion Seeker", typ="model", cost=20,
                     constraints=[constraint(uid(mid, "min"), "min", 4), constraint(uid(mid, "max"), "max", 9)],
                     profiles=[unit_profile(u, "Legion Seeker", "Infantry", 4, 5, 4, 4, 1, 4, 1, 8, "3+")],
-                    links=[gear(mid, k) for k in kit], groups=[slot(mid, "Replace Bolter", "Bolter", combis)])
-    specials, _ = pool(u, "Special Weapons (up to two Seekers)", u, [
-        ("Flamer", 5), ("Meltagun", 10), ("Plasma Gun", 12), ("M.40 Targeter and Stalker Bolter", 10),
-        ("Heavy Bolter with Suspensor and Hellfire Rounds", 15), ("Volkite Charger", 5), ("Volkite Caliver", 10)], 2)
+                    links=[gear(mid, k) for k in kit])
+    spec_opts = [("Flamer", 5), ("Meltagun", 10), ("Plasma Gun", 12), ("M.40 Targeter and Stalker Bolter", 10),
+                 ("Heavy Bolter with Suspensor and Hellfire Rounds", 15), ("Volkite Charger", 5), ("Volkite Caliver", 10)]
+    specials, _ = pool(u, "Special Weapons (up to two Seekers)", u, spec_opts, 2)
+    combi_swaps = model_swaps(u, "Legion Seekers: replace Bolter (any number)", u, [mid], combis,
+                              minus=[W(n) for n, _ in spec_opts])
     return entry(u, name, typ="unit", cost=155 - 4 * 20, cats=[foc(FA, "Fast Attack", u)],
                  infolinks=rules_links(["Legiones Astartes", "Infiltrate", "Move Through Cover", "Marked for Death",
                                         "Special Issue Ammunition"], key=u),
                  entries=[sgt, seekers, per_model(u, "Krak Grenades (entire squad)", 2, u, ["Krak Grenades"]),
                           per_model(u, "Melta Bombs (entire squad)", 5, u, ["Melta Bombs"])],
-                 groups=[specials, L.one_each(u, "Squad Equipment", [("Nuncio Vox", 10)]),
+                 groups=[combi_swaps, specials, L.one_each(u, "Squad Equipment", [("Nuncio Vox", 10)]),
                          transports(u, u, ["Legion Rhino Armoured Carrier", "Legion Drop Pod",
                                            "Anvillus Pattern Dreadclaw Drop Pod"])])
 
@@ -976,7 +1071,8 @@ def squadron(name, per, model_name, prof_fn, cat_id, cat_name, rules_, kit, grou
               constraints=[constraint(uid(mid, "min"), "min", mn), constraint(uid(mid, "max"), "max", mx)],
               profiles=[prof_fn(u, model_name)], links=[gear(mid, k) for k in kit], groups=groups_fn(mid))
     return entry(u, name, typ="unit", cats=[foc(cat_id, cat_name, u)], mods=list(extra_mods),
-                 infolinks=rules_links(rules_, key=u), entries=[m, *unit_entries], groups=list(unit_groups))
+                 infolinks=rules_links(rules_, key=u), entries=[*numbered(m, mx, mn), *unit_entries],
+                 groups=list(unit_groups))
 
 
 def attack_bikes():
@@ -1105,7 +1201,7 @@ def land_raider_squadron():
     for v in ["Land Raider Phobos", "Land Raider Proteus", "Land Raider Achilles"]:
         m = land_raider(v, typ="model", key=u + v)
         add_to(m, "constraints", [constraint(uid(m.get("id"), "max"), "max", 1 if "Achilles" in v else 3)])
-        models.append(m)
+        models += [m] if "Achilles" in v else numbered(m, 3, 0)
     return entry(u, name, typ="unit", cats=[foc(HS, "Heavy Support", u)],
                  mods=count_error(u, "A Land Raider Battle Squadron contains 1-3 Land Raiders."), entries=models)
 
@@ -1119,7 +1215,8 @@ def artillery_squadron():
     ids = [uid("model", u, n) for n, *_ in data]
     models = []
     for (n, cost, (f, s, r), kit), mid in zip(data, ids):
-        others = [cond(o, u, "atLeast", 1) for o in ids if o != mid]
+        others = [cond(c, u, "atLeast", 1) for o in ids if o != mid
+                  for c in [o] + [uid(o, "copy", i) for i in (2, 3)]]
         groups = [take(mid, "Vehicle Upgrades", STD_UPGRADES[:4]),
                   take(mid, "Pintle-mounted Weapon", PINTLE, max_total=1)]
         if n == "Legion Whirlwind":
@@ -1130,6 +1227,7 @@ def artillery_squadron():
                                   modifier("set", uid(mid, "max"), 0, groups=[any_of(*others)])],
                             profiles=[L.vehicle_profile(u, n, "Vehicle (Tank)", 4, f, s, r)],
                             links=[gear(mid, k) for k in kit + ["Searchlight", "Smoke Launchers"]], groups=groups))
+        models[-1:] = numbered(models[-1], 3, 0)
     return entry(u, "0-1 " + name, typ="unit", cats=[foc(HS, "Heavy Support", u)],
                  constraints=[constraint(uid(u, "force-max"), "max", 1, scope="force", deep=True)],
                  mods=count_error(u, "An Artillery Tank Squadron contains 1-3 vehicles, all of the same type."),
