@@ -155,6 +155,8 @@ def group(gid, name, hidden=False, default=None, mods=None, constraints=None,
         for i, e in enumerate(list(entries or []) + list(links or [])):
             if e is not None:
                 e.set("sortIndex", "1" if e.get("id") == default else str(i + 2))
+                if e.get("id") == default:
+                    e.set("defaultAmount", "1")
     return el("selectionEntryGroup", {
         "id": gid, "name": name, "hidden": str(hidden).lower(),
         "collective": str(collective).lower(), "import": "true",
