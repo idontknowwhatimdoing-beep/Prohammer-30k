@@ -18,6 +18,8 @@ from legiones_wargear import (NOT_WITH_TDA, WEAPON_PROFILES, WEAPONS, WEAPON_RUL
 CAT_ID = "p30k-0000-0000-0101"
 CAT_NAME = "Legiones Astartes"
 REVISION = 1
+# set by build(): the one Legion this catalogue is for
+CURRENT_LEGION = None
 
 # ------------------------------------------------------------------ lookups
 CORE_NAMES = {}
@@ -192,7 +194,8 @@ TRAITOR = uid("cfg", "Traitor")
 def config_entries():
     def cats(k):
         return [category_link(gs.CAT_CONFIG, "Configuration", primary=True, key=k)]
-    legion_opts = [entry(uid("legion", n), n) for n in LEGIONS]
+    legion_opts = [entry(uid("legion", n), n, constraints=[constraint(uid("legion", n, "max"), "max", 1)])
+                   for n in LEGIONS if CURRENT_LEGION in (None, n)]
     legion = entry(LEGION_ENTRY, "Legion", cats=cats("legion"), constraints=[
         constraint(uid(LEGION_ENTRY, "min"), "min", 1, scope="force", deep=True),
         constraint(uid(LEGION_ENTRY, "max"), "max", 1, scope="force", deep=True)],
@@ -201,7 +204,7 @@ def config_entries():
                     "the Legiones Astartes special rule gain the named version of that rule for this Legion.")],
         groups=[group(uid("grp", "legion"), "Legion", constraints=[
             constraint(uid("grp", "legion", "min"), "min", 1), constraint(uid("grp", "legion", "max"), "max", 1)],
-            entries=legion_opts)])
+            entries=legion_opts, default=legion_opts[0].get("id") if len(legion_opts) == 1 else None)])
     alleg = entry(ALLEGIANCE_ENTRY, "Allegiance", cats=cats("alleg"), constraints=[
         constraint(uid(ALLEGIANCE_ENTRY, "min"), "min", 1, scope="force", deep=True),
         constraint(uid(ALLEGIANCE_ENTRY, "max"), "max", 1, scope="force", deep=True)],
@@ -802,16 +805,35 @@ def dreadclaw():
 
 
 # ------------------------------------------------------------------ build
-def build():
+def legion_number(name):
+    return LEGIONS.index(name)
+
+
+def catalogue_id(legion):
+    return "p30k-0000-0001-%04d" % (LEGIONS.index(legion) + 1)
+
+
+def build(legion=None, module=None):
+    """Build the Legiones Astartes catalogue for one Legion. `module` is that Legion's module in tools/legions/
+    (register() is called before anything is built, extend(ctx) after the standard army list is complete)."""
+    global CURRENT_LEGION
+    CURRENT_LEGION = legion
+    if module is not None and hasattr(module, "register"):
+        module.register()
+    cid, cname = (catalogue_id(legion), "Legiones Astartes - " + legion.split(" - ", 1)[1]) if legion else (CAT_ID,
+                                                                                                          CAT_NAME)
     root = el("catalogue", {
-        "id": CAT_ID, "name": CAT_NAME, "revision": REVISION, "battleScribeVersion": "2.03",
+        "id": cid, "name": cname, "revision": REVISION, "battleScribeVersion": "2.03",
         "authorName": "idontknowwhatimdoing-beep",
         "authorUrl": "https://github.com/idontknowwhatimdoing-beep/Prohammer-30k",
         "library": "false", "gameSystemId": gs.GST_ID, "gameSystemRevision": gs.REVISION,
         "type": "catalogue", "xmlns": "http://www.battlescribe.net/schema/catalogueSchema"})
-    root.append(wrap("publications", [
-        el("publication", {"id": uid("pub", "legiones"), "name": "Legiones Astartes Army List",
-                           "shortName": "Legiones Astartes"})]))
+    pubs = [el("publication", {"id": uid("pub", "legiones"), "name": "Legiones Astartes Army List",
+                               "shortName": "Legiones Astartes"})]
+    if legion:
+        pubs.append(el("publication", {"id": uid("pub", "forces"), "name": "Forces of the Legions",
+                                       "shortName": "Forces of the Legions"}))
+    root.append(wrap("publications", pubs))
 
     units = [*config_entries(), praetor(), centurion(), tactical(), assault(), breacher(), recon()]
     transports = [rhino(), drop_pod(), dreadclaw()]
@@ -819,6 +841,12 @@ def build():
     more_units, more_shared = legiones2.extend({u.get("name"): u for u in units}, transports)
     units += more_units
     transports += more_shared
+    if module is not None:
+        from legions.common import Context
+        ctx = Context(legion, units, transports)
+        module.extend(ctx)
+        ctx.finish()
+        units, transports = ctx.units, ctx.shared
     root.append(wrap("entryLinks", [
         link(uid("root", u.get("id")), u.get("id"), u.get("name")) for u in units]))
     root.append(wrap("sharedSelectionEntries", units + transports + shared_items()))

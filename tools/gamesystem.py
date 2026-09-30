@@ -54,11 +54,24 @@ CAT_TRANSPORT = cat("Dedicated Transport")
 # a selection carrying one of these categories lowers the matching Force Organisation maximum to 1.
 CAT_LIMIT_FA = cat("Limit: 0-1 Fast Attack")
 CAT_LIMIT_HS = cat("Limit: 0-1 Heavy Support")
+# Army-book changes to the Force Organisation Chart: any selection carrying one of these categories changes the
+# Detachment's maximum for that slot (e.g. Thousand Sons "Price of Knowledge": +1 HQ, +1 Elites, -1 Fast Attack).
+FOC_SLOTS = ["HQ", "Troops", "Elites", "Fast Attack", "Heavy Support", "Lords of War", "Fortification"]
+FOC_PLUS = {n: cat(f"Force Org: +1 {n}") for n in FOC_SLOTS}
+FOC_MINUS = {n: cat(f"Force Org: -1 {n}") for n in FOC_SLOTS}
+CAT_HQ_PLUS1 = FOC_PLUS["HQ"]
+CAT_EL_PLUS1 = FOC_PLUS["Elites"]
+CAT_FA_MINUS1 = FOC_MINUS["Fast Attack"]
+CAT_PRIMARCH = cat("Primarch")
+CAT_BROTHERHOOD = cat("Psychic Brotherhood")
 EXTRA_CATS = [("Configuration", CAT_CONFIG), ("Dedicated Transport", CAT_TRANSPORT),
               ("Compulsory HQ Eligible", CAT_COMMANDER),
               ("Compulsory Troops Eligible", CAT_LINE),
               ("Master of the Legion", CAT_MASTER),
-              ("Limit: 0-1 Fast Attack", CAT_LIMIT_FA), ("Limit: 0-1 Heavy Support", CAT_LIMIT_HS)]
+              ("Limit: 0-1 Fast Attack", CAT_LIMIT_FA), ("Limit: 0-1 Heavy Support", CAT_LIMIT_HS),
+              ("Primarch", CAT_PRIMARCH), ("Psychic Brotherhood", CAT_BROTHERHOOD)]
+EXTRA_CATS += [(f"Force Org: +1 {n}", FOC_PLUS[n]) for n in FOC_SLOTS]
+EXTRA_CATS += [(f"Force Org: -1 {n}", FOC_MINUS[n]) for n in FOC_SLOTS]
 
 
 # ------------------------------------------------------------------- rules
@@ -115,9 +128,17 @@ def build():
     limits = {"Fast Attack": CAT_LIMIT_FA, "Heavy Support": CAT_LIMIT_HS}
     for name, mn, mx in FOC:
         cl = category_link(cat(name), name, key="foc")
+        mods = []
         if name in limits:
-            cl.append(wrap("modifiers", [modifier("set", uid("foc-max", name), 1, conds=[
-                cond(limits[name], "force", "atLeast", 1)])]))
+            mods.append(modifier("set", uid("foc-max", name), 1, conds=[cond(limits[name], "force", "atLeast", 1)]))
+        # +1 / -1 per selection carrying the category (a Rite's 0-1 limit already caps FA/HS, so -1 only without it)
+        mods.append(modifier("increment", uid("foc-max", name), 1,
+                             repeats=[repeat(FOC_PLUS[name], "force", 1, deep=True)]))
+        minus_conds = [cond(limits[name], "force", "lessThan", 1)] if name in limits else None
+        mods.append(modifier("decrement", uid("foc-max", name), 1, conds=minus_conds,
+                             repeats=[repeat(FOC_MINUS[name], "force", 1, deep=True)]))
+        if mods:
+            cl.append(wrap("modifiers", mods))
         cl.append(wrap("constraints", [
             constraint(uid("foc-min", name), "min", mn),
             constraint(uid("foc-max", name), "max", mx)]))

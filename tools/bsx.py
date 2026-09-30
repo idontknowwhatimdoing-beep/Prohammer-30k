@@ -3,6 +3,7 @@
 IDs are derived from stable keys (md5), so re-running the build keeps every id
 the same and players' saved rosters keep working after data updates.
 """
+import os
 import hashlib
 import xml.etree.ElementTree as ET
 
@@ -170,9 +171,11 @@ def group(gid, name, hidden=False, default=None, mods=None, constraints=None,
 
 
 def write(root, path):
-    ET.indent(root, space="  ")
+    ET.indent(root, space="")
     data = ET.tostring(root, encoding="unicode")
-    with open(path, "w", encoding="utf8") as f:
+    tmp = f"{path}.{os.getpid()}.tmp"
+    with open(tmp, "w", encoding="utf8") as f:
         f.write('<?xml version="1.0" encoding="UTF-8" standalone="yes"?>\n')
         f.write(data)
         f.write("\n")
+    os.replace(tmp, path)

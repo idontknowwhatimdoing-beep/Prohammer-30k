@@ -836,3 +836,13 @@ RITES = {
         "Legion Tactical Squad which remained stationary may fire one additional shot with every bolter and may not charge "
         "that turn.\nLIMITATIONS - Strength of the Legion: the army must include at least three Legion Tactical Squads."),
 }
+
+RITES["Primarch's Chosen"] = (
+    "REQUIREMENTS - The army must include the Primarch of its Legion, who must be the Warlord; the army must contain at "
+    "least 1,500 points.\nEFFECTS - Lord and Master: the Primarch fulfils the compulsory HQ requirement despite being a "
+    "Lord of War, and may be included in an army of 1,500 points or more. The Chosen Sons: Legion Veteran Squads and "
+    "Legion Terminator Squads may be Troops; the two compulsory Troops must be selected from them. The Primarch's Guard: "
+    "the Primarch may select one Legion Honour Guard Squad or Legion-specific bodyguard as his retinue.\nLIMITATIONS - "
+    "No other Lord of War; no Allied Detachment; no more than one other model with Master of the Legion; at least half "
+    "of the army's non-vehicle units must have the Legiones Astartes special rule; if the Primarch is destroyed, all "
+    "other units in the Detachment cease to count as Scoring units.")
