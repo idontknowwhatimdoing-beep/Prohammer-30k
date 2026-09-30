@@ -809,6 +809,11 @@ def build():
     more_units, more_shared = legiones2.extend({u.get("name"): u for u in units}, transports)
     units += more_units
     transports += more_shared
+    import legion_ts
+    by_name = {u.get("name"): u for u in units + transports}
+    more_units, more_shared = legion_ts.extend(by_name, units, transports)
+    units += more_units
+    transports += more_shared
     root.append(wrap("entryLinks", [
         link(uid("root", u.get("id")), u.get("id"), u.get("name")) for u in units]))
     root.append(wrap("sharedSelectionEntries", units + transports + shared_items()))

@@ -54,11 +54,20 @@ CAT_TRANSPORT = cat("Dedicated Transport")
 # a selection carrying one of these categories lowers the matching Force Organisation maximum to 1.
 CAT_LIMIT_FA = cat("Limit: 0-1 Fast Attack")
 CAT_LIMIT_HS = cat("Limit: 0-1 Heavy Support")
+# Legion-specific changes to the Force Organisation Chart (e.g. Thousand Sons "Price of Knowledge")
+CAT_HQ_PLUS1 = cat("Force Org: +1 HQ")
+CAT_EL_PLUS1 = cat("Force Org: +1 Elites")
+CAT_FA_MINUS1 = cat("Force Org: -1 Fast Attack")
+CAT_PRIMARCH = cat("Primarch")
+CAT_BROTHERHOOD = cat("Psychic Brotherhood")
 EXTRA_CATS = [("Configuration", CAT_CONFIG), ("Dedicated Transport", CAT_TRANSPORT),
               ("Compulsory HQ Eligible", CAT_COMMANDER),
               ("Compulsory Troops Eligible", CAT_LINE),
               ("Master of the Legion", CAT_MASTER),
-              ("Limit: 0-1 Fast Attack", CAT_LIMIT_FA), ("Limit: 0-1 Heavy Support", CAT_LIMIT_HS)]
+              ("Limit: 0-1 Fast Attack", CAT_LIMIT_FA), ("Limit: 0-1 Heavy Support", CAT_LIMIT_HS),
+              ("Force Org: +1 HQ", CAT_HQ_PLUS1), ("Force Org: +1 Elites", CAT_EL_PLUS1),
+              ("Force Org: -1 Fast Attack", CAT_FA_MINUS1), ("Primarch", CAT_PRIMARCH),
+              ("Psychic Brotherhood", CAT_BROTHERHOOD)]
 
 
 # ------------------------------------------------------------------- rules
@@ -115,9 +124,19 @@ def build():
     limits = {"Fast Attack": CAT_LIMIT_FA, "Heavy Support": CAT_LIMIT_HS}
     for name, mn, mx in FOC:
         cl = category_link(cat(name), name, key="foc")
+        mods = []
         if name in limits:
-            cl.append(wrap("modifiers", [modifier("set", uid("foc-max", name), 1, conds=[
-                cond(limits[name], "force", "atLeast", 1)])]))
+            mods.append(modifier("set", uid("foc-max", name), 1, conds=[cond(limits[name], "force", "atLeast", 1)]))
+        if name == "HQ":
+            mods.append(modifier("increment", uid("foc-max", name), 1, conds=[cond(CAT_HQ_PLUS1, "force", "atLeast", 1)]))
+        if name == "Elites":
+            mods.append(modifier("increment", uid("foc-max", name), 1, conds=[cond(CAT_EL_PLUS1, "force", "atLeast", 1)]))
+        if name == "Fast Attack":
+            # a Rite's 0-1 limit already caps it, so only apply the -1 without such a limit
+            mods.append(modifier("decrement", uid("foc-max", name), 1, conds=[
+                cond(CAT_FA_MINUS1, "force", "atLeast", 1), cond(CAT_LIMIT_FA, "force", "lessThan", 1)]))
+        if mods:
+            cl.append(wrap("modifiers", mods))
         cl.append(wrap("constraints", [
             constraint(uid("foc-min", name), "min", mn),
             constraint(uid("foc-max", name), "max", mx)]))

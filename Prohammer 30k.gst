@@ -75,12 +75,24 @@
     <categoryEntry id="cf42-da2a-93a6-6913" name="Master of the Legion" hidden="false" />
     <categoryEntry id="8ed0-3d67-f51e-f8e3" name="Limit: 0-1 Fast Attack" hidden="false" />
     <categoryEntry id="006c-5d7a-c1ea-e594" name="Limit: 0-1 Heavy Support" hidden="false" />
+    <categoryEntry id="2142-52ae-4dcb-bfb1" name="Force Org: +1 HQ" hidden="false" />
+    <categoryEntry id="0538-e2e9-8195-37a5" name="Force Org: +1 Elites" hidden="false" />
+    <categoryEntry id="e489-2c4a-d6ff-4b13" name="Force Org: -1 Fast Attack" hidden="false" />
+    <categoryEntry id="ef4e-f5b8-029c-6e3f" name="Primarch" hidden="false" />
+    <categoryEntry id="7c52-2dbc-9a97-85a9" name="Psychic Brotherhood" hidden="false" />
   </categoryEntries>
   <forceEntries>
     <forceEntry id="ecf1-4754-7376-85d6" name="Standard Force Organisation Chart" hidden="false">
       <categoryLinks>
         <categoryLink id="ed7d-8849-1ace-6b66" name="Configuration" hidden="false" targetId="ba14-d0f1-f942-df54" primary="false" />
         <categoryLink id="3df7-98fa-df96-2a7b" name="HQ" hidden="false" targetId="cd54-54be-0cb1-3474" primary="false">
+          <modifiers>
+            <modifier type="increment" field="8ab0-1945-d222-f5cb" value="1">
+              <conditions>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2142-52ae-4dcb-bfb1" type="atLeast" />
+              </conditions>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f514-2987-0646-782d" type="min" />
             <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8ab0-1945-d222-f5cb" type="max" />
@@ -93,6 +105,13 @@
           </constraints>
         </categoryLink>
         <categoryLink id="b0e3-6557-99cf-2efd" name="Elites" hidden="false" targetId="6b19-97ac-7c40-0bdf" primary="false">
+          <modifiers>
+            <modifier type="increment" field="2cb1-489e-1d3f-79b9" value="1">
+              <conditions>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0538-e2e9-8195-37a5" type="atLeast" />
+              </conditions>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d890-baf7-cb42-8e67" type="min" />
             <constraint field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2cb1-489e-1d3f-79b9" type="max" />
@@ -103,6 +122,12 @@
             <modifier type="set" field="346d-f4b7-0cd0-3167" value="1">
               <conditions>
                 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8ed0-3d67-f51e-f8e3" type="atLeast" />
+              </conditions>
+            </modifier>
+            <modifier type="decrement" field="346d-f4b7-0cd0-3167" value="1">
+              <conditions>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e489-2c4a-d6ff-4b13" type="atLeast" />
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8ed0-3d67-f51e-f8e3" type="lessThan" />
               </conditions>
             </modifier>
           </modifiers>
