@@ -1154,7 +1154,7 @@ def heavy_vehicles():
     out.append(single_vehicle(
         "Legion Sicaran Battle Tank", 185,
         lambda u: L.vehicle_profile(u, "Legion Sicaran", "Vehicle (Fast, Tank)", 4, 13, 12, 12),
-        ["Accelerator Autocannon", "Extra Armour", "Searchlight", "Smoke Launchers"],
+        ["Twin-linked Accelerator Autocannon", "Extra Armour", "Searchlight", "Smoke Launchers"],
         ["Rapid Tracking"],
         lambda u: [slot(u, "Replace Heavy Bolter", "Heavy Bolter", [("Heavy Flamer", 0)]),
                    take(u, "Sponsons (one pair)", [("Heavy Bolter Sponsons", 10), ("Lascannon Sponsons", 25)],

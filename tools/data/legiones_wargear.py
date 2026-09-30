@@ -451,7 +451,7 @@ WEAPON_PROFILES.update({
     "Assault Cannon": ('24"', "6", "4", "Heavy 3, Rending, Jam"),
     "Kheres Assault Cannon": ('24"', "6", "4", "Heavy 6, Rending"),
     "Reaper Autocannon": ('36"', "7", "4", "Heavy 2, Twin-linked"),
-    "Accelerator Autocannon": ('48"', "7", "4", "Heavy 6, Twin-linked, Accelerator Rounds, Rapid Tracking"),
+    "Twin-linked Accelerator Autocannon": ('48"', "7", "4", "Heavy 6, Twin-linked, Accelerator Rounds, Rapid Tracking"),
     "Flamestorm Cannon": ("Template", "6", "3", "Heavy 1"),
     "Plasma Blaster": ('18"', "7", "2", "Assault 2, Gets Hot"),
     "Conversion Beamer (0-18\")": ('0-18"', "6", "-", "Heavy 1, Blast"),
@@ -523,7 +523,7 @@ for part in ["Frag", "Krak"]:
 
 _NEW_WEAPONS = {
     "Volkite Culverin": None, "Assault Cannon": None, "Kheres Assault Cannon": None, "Reaper Autocannon": None,
-    "Accelerator Autocannon": None, "Flamestorm Cannon": None, "Plasma Blaster": None,
+    "Twin-linked Accelerator Autocannon": None, "Flamestorm Cannon": None, "Plasma Blaster": None,
     "Conversion Beamer": ["Conversion Beamer (0-18\")", "Conversion Beamer (18-42\")", "Conversion Beamer (42-72\")"],
     "Heavy Conversion Beamer": ["Heavy Conversion Beamer (0-18\")", "Heavy Conversion Beamer (18-42\")",
                                 "Heavy Conversion Beamer (42-72\")"],
@@ -575,7 +575,7 @@ for n, profs in _NEW_WEAPONS.items():
 
 WEAPON_RULES.update({
     "Assault Cannon": ["Rending", "Jam"], "Kheres Assault Cannon": ["Rending", "Jam"],
-    "Accelerator Autocannon": ["Twin-Linked", "Accelerator Rounds", "Rapid Tracking"],
+    "Twin-linked Accelerator Autocannon": ["Twin-Linked", "Accelerator Rounds", "Rapid Tracking"],
     "Heavy Conversion Beamer": ["Firing Calibration"], "Plasma Blaster": ["Gets Hot"],
     "Quad Launcher": ["Shell Shock"], "Quad Launcher with Frag and Shatter Shells": ["Shell Shock", "Sunder"],
     "Shatter Shells": ["Sunder"], "Phosphex Canister Shot": ["Lingering Death"],

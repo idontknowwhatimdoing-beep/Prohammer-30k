@@ -13589,10 +13589,10 @@ LIMITATIONS - Strength of the Legion: the army must include at least three Legio
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="4cea-c195-3cf8-09b9" name="Accelerator Autocannon" hidden="false" collective="false" import="true" targetId="ce89-3e79-4fd3-a0cf" type="selectionEntry">
+        <entryLink id="1932-2515-3153-4729" name="Twin-linked Accelerator Autocannon" hidden="false" collective="false" import="true" targetId="9a22-7005-63d8-80ca" type="selectionEntry">
           <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c894-e1e4-d9e3-5d79" type="min" />
-            <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b1cb-17c7-66f1-3d3b" type="max" />
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9f51-5a64-e386-077d" type="min" />
+            <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eb1f-ab55-5004-5b7b" type="max" />
           </constraints>
         </entryLink>
         <entryLink id="6dbb-3dec-1891-3d7c" name="Extra Armour" hidden="false" collective="false" import="true" targetId="aef2-b713-c9fe-42d8" type="selectionEntry">
@@ -22165,12 +22165,12 @@ LIMITATIONS - Strength of the Legion: the army must include at least three Legio
         <cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
       </costs>
     </selectionEntry>
-    <selectionEntry id="ce89-3e79-4fd3-a0cf" name="Accelerator Autocannon" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="9a22-7005-63d8-80ca" name="Twin-linked Accelerator Autocannon" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
-        <infoLink id="7147-4b4e-39de-b6d6" name="Accelerator Autocannon" hidden="false" targetId="6d27-f359-7d86-6e5c" type="profile" />
-        <infoLink id="3107-e15a-e0b7-32d6" name="Twin-Linked" hidden="false" targetId="7bab-62d5-9d5b-5bba" type="rule" />
-        <infoLink id="acec-8f6e-b2f0-34b7" name="Accelerator Rounds" hidden="false" targetId="b869-c1d8-f301-0607" type="rule" />
-        <infoLink id="093a-551b-55e6-e1f5" name="Rapid Tracking" hidden="false" targetId="4d78-544d-a30f-d6c2" type="rule" />
+        <infoLink id="06f0-056b-2a7f-8796" name="Twin-linked Accelerator Autocannon" hidden="false" targetId="f85f-e117-b88c-30a2" type="profile" />
+        <infoLink id="63d9-e2bb-0a16-98a4" name="Twin-Linked" hidden="false" targetId="7bab-62d5-9d5b-5bba" type="rule" />
+        <infoLink id="f78b-c8d7-c2ce-6dec" name="Accelerator Rounds" hidden="false" targetId="b869-c1d8-f301-0607" type="rule" />
+        <infoLink id="f5cf-23f8-48f7-66aa" name="Rapid Tracking" hidden="false" targetId="4d78-544d-a30f-d6c2" type="rule" />
       </infoLinks>
       <costs>
         <cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
@@ -24138,7 +24138,7 @@ Afterwards the squad may not enter Overwatch, may not make Return Fire or Stand 
         <characteristic name="Type" typeId="54df-9f85-8d55-7440">Heavy 2, Twin-linked</characteristic>
       </characteristics>
     </profile>
-    <profile id="6d27-f359-7d86-6e5c" name="Accelerator Autocannon" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+    <profile id="f85f-e117-b88c-30a2" name="Twin-linked Accelerator Autocannon" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">48"</characteristic>
         <characteristic name="S" typeId="6204-806b-a18a-c0be">7</characteristic>
