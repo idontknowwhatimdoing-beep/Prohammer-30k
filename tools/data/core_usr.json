@@ -1,0 +1,397 @@
+[
+ {
+  "name": "Acute Senses",
+  "section": "Movement/Deployment",
+  "text": "Unit can re-roll which random table edge it arrives on from reserves."
+ },
+ {
+  "name": "Assault Vehicle",
+  "section": "Movement/Deployment",
+  "text": "Passengers disembarking from an assault vehicle do not lose their extra attack charge bonuses when disembarking and charging from an assault vehicle. All open-topped vehicles count as Assault Vehicles."
+ },
+ {
+  "name": "Crusader",
+  "section": "Movement/Deployment",
+  "text": "Roll extra dice when advancing and use the highest. Adds D3” to pursuit rolls."
+ },
+ {
+  "name": "Fleet",
+  "section": "Movement/Deployment",
+  "text": "Unit may still charge into melee combat even if it advanced this turn."
+ },
+ {
+  "name": "Hit & Run",
+  "section": "Movement/Deployment",
+  "text": "Unit may choose to leave combat at the end of the assault phase after taking break tests. Take an initiative test. If passed, the unit moves 3D6” in a chosen direction. The unit does not count as having broken (or fallen back), and any now unengaged enemy units they moved away from may only consolidate 3”."
+ },
+ {
+  "name": "Infiltrate",
+  "section": "Movement/Deployment",
+  "text": "During deployment, may be set up after normal deployment. The unit must be set up 12\" or more away from any enemy units that do NOT have line of sight and 18” or more away from enemy units WITH line of sight. The unit also gains Outflank."
+ },
+ {
+  "name": "Jink",
+  "section": "Movement/Deployment",
+  "text": "Units that moved in the prior turn can activate their jink ability as a reaction to being shot and gain a 5+ cover save until the start of its next turn. If a model with this rule used turbo-boosters or moved at flat out speeds, it gains a 4+ cover save instead. Models that utilize a jink only shoot with snap fire on their next turn."
+ },
+ {
+  "name": "Move Through Cover",
+  "section": "Movement/Deployment",
+  "text": "Roll a 3D6 for difficult terrain tests (instead of 2D6) and choose the highest."
+ },
+ {
+  "name": "Outflank",
+  "section": "Movement/Deployment",
+  "text": "When units with this ability enter from reserve, they have a chance to enter from the side table edge. On a 1-2, enters from player’s left, 3-4 on players right, 5-6 players choice of side edge. May alternatively choose to enter from reserve normally from the player’s normal table edge(s)."
+ },
+ {
+  "name": "Power of the Machine Spirit",
+  "section": "Movement/Deployment",
+  "text": "A vehicle moving less than flat out speed and not using smoke launchers can fire one additional main weapon at full Ballistic Skill."
+ },
+ {
+  "name": "Rage (3rd-5th Edition Codexes)",
+  "section": "Movement/Deployment",
+  "text": "Unit must move towards the closest enemy."
+ },
+ {
+  "name": "Rage (6th-7th Edition Codexes)",
+  "section": "Movement/Deployment",
+  "text": "Unit gains +2 attacks instead of +1 when it charges into close combat (aka Berserk Charge)"
+ },
+ {
+  "name": "Relentless",
+  "section": "Movement/Deployment",
+  "text": "Model may move and fire heavy, ordanance, salvo, or rapid fire weapons as if they remained stationary. May still charge even after firing such weapons."
+ },
+ {
+  "name": "Scouts",
+  "section": "Movement/Deployment",
+  "text": "May always be deployed. Before rolling to see who goes first, may take a bonus normal move. Confers scout ability to a dedicated transport it is mounted in. If both players have scouts, roll-off and alternate moving scouts starting with the winner of the roll-off. The unit also gains Outflank."
+ },
+ {
+  "name": "Skilled Rider",
+  "section": "Movement/Deployment",
+  "text": "Re-roll failed dangerous terrain tests. Gains +1 to any Jink saves"
+ },
+ {
+  "name": "Slow and purposeful",
+  "section": "Movement/Deployment",
+  "text": "Relentless and always moves as if in difficult terrain"
+ },
+ {
+  "name": "Swift",
+  "section": "Movement/Deployment",
+  "text": "Units composed entirely of swift models, fall back 3D6” instead of 2D6”. During pursuit and retreat moves, they move their Initiative Value + 2D6”."
+ },
+ {
+  "name": "Turbo-Boosters",
+  "section": "Movement/Deployment",
+  "text": "Instead of a normal move, unit may turbo-boost up to 24\". Turbo-boosting units may not shoot in the shooting phase or charge in the assault phase. Units that also have the Jink rule gain a 4+ cover save if they used a Turbo-Boost move in their last movement phase."
+ },
+ {
+  "name": "Adamantium Will",
+  "section": "Unit Properties",
+  "text": "+1 bonus to deny the witch and the unit may attempt to deny the witch even if they are not a psyker themselves."
+ },
+ {
+  "name": "And They Shall Know no Fear",
+  "section": "Unit Properties",
+  "text": "Automatically passes regroup tests at the start of the turn and may be used normally for the rest of the turn. If caught by a pursuit, they automatically regroup and are re-engaged in close combat, and do not suffer extra wounds from being caught in a pursuit. Immune to Fear."
+ },
+ {
+  "name": "Brotherhood of Psychers",
+  "section": "Unit Properties",
+  "text": "Unit counts as Mastery Level 1 Psyker. Uses the unit’s highest leadership value for psychic power test."
+ },
+ {
+  "name": "Bulky",
+  "section": "Unit Properties",
+  "text": "Counts as two models for transport capacity. Very bulky counts as three models. Extremely bulky counts as five."
+ },
+ {
+  "name": "Counter-Attack",
+  "section": "Unit Properties",
+  "text": "If this unit is not engaged with any enemy models and an enemy unit successfully completes a charge move against it, the unit may take a Leadership test. If passed, this unit gains +1 attack during the Assault phase."
+ },
+ {
+  "name": "Daemon",
+  "section": "Unit Properties",
+  "text": "Model Gains a 5+ invulnerable save and causes Fear."
+ },
+ {
+  "name": "Eternal Warrior",
+  "section": "Unit Properties",
+  "text": "Immune to instant death / massive wounds. Model suffers 1 wound instead of D3 wounds."
+ },
+ {
+  "name": "Fear",
+  "section": "Unit Properties",
+  "text": "Enemy units in base contact must pass a Leadership test before resolving their close combat attacks. If the test fails, those units attack with WS1 in the melee engagement."
+ },
+ {
+  "name": "Fearless",
+  "section": "Unit Properties",
+  "text": "Automatically pass all Morale and Pinning tests. May not Take Cover! or choose to voluntarily fail a break test."
+ },
+ {
+  "name": "Feel No Pain",
+  "section": "Unit Properties",
+  "text": "A model with Feel No Pain that fails their normal saving throw, may attempt to ignore the wound a second time with Feel No Pain. Roll a D6 and if the value is equal to or above the Feel No Pain value the wound is ignored.\n(5th Edition): After suffering an unsaved wound, on 4+ the wound is ignored (unless the wound applies instant death or against AP 1 or AP2 weapons). The specific Feel No Pain ability may specify a different saving throw level.\nFeel No Pain (for 6th/7th edition codexes): As above, except the wound is ignored on a 5+ unless otherwise specified."
+ },
+ {
+  "name": "Furious Charge",
+  "section": "Unit Properties",
+  "text": "Models gain +1 strength and +1 initiative in assault on the turn they charged."
+ },
+ {
+  "name": "Hammer of Wrath",
+  "section": "Unit Properties",
+  "text": "On the turn this unit charges, models may perform ONE of their normally allowed attacks at initiative 10 instead of during their normal initiative step."
+ },
+ {
+  "name": "Hatred",
+  "section": "Unit Properties",
+  "text": "If a unit with hatred is engaged in melee combat against a hated enemy type, and was NOT engaged in melee combat with that enemy type during the prior turn, the unit may re-roll all failed close combat to-hit rolls against the hated target."
+ },
+ {
+  "name": "It Will Not Die",
+  "section": "Unit Properties",
+  "text": "Roll a D6 at the start of its turn for each model with less than its starting wounds but is not destroyed. On a 5+ it regains one lost wound. A vehicle with It Will Not Die may, on a 5+, repair an Engine Damaged, Weapon Destroyed, or Immobilized damage result."
+ },
+ {
+  "name": "Night Vision",
+  "section": "Unit Properties",
+  "text": "Units containing at least one model with this effect ignore night fighting restrictions."
+ },
+ {
+  "name": "Preferred Enemy",
+  "section": "Unit Properties",
+  "text": "The unit can re-roll failed hits in close combat against the indicated preferred enemy."
+ },
+ {
+  "name": "Shrouded",
+  "section": "Unit Properties",
+  "text": "Adds +2 to the value of cover saves conferred by terrain (Max of 2+ cover save). If in the open, receives a 5+ cover save. Does NOT stack with stealth."
+ },
+ {
+  "name": "Stealth",
+  "section": "Unit Properties",
+  "text": "Adds +1 to the value of cover saves conferred by terrain (Max of 2+ cover save). If in the open, receives a 6+ cover save. Does NOT stack with shrouded."
+ },
+ {
+  "name": "Stubborn",
+  "section": "Unit Properties",
+  "text": "Ignore negative leadership modifiers on Morale and Pinning tests."
+ },
+ {
+  "name": "Swarms",
+  "section": "Unit Properties",
+  "text": "Have stealth and vulnerable to blasts/templates"
+ },
+ {
+  "name": "Tank Hunters",
+  "section": "Unit Properties",
+  "text": "+1 to armor penetration rolls. Automatically passes tank shock morale tests."
+ },
+ {
+  "name": "Vulnerable to Blasts/Templates",
+  "section": "Unit Properties",
+  "text": "Each hit counts as two hits from blast/template weapons"
+ },
+ {
+  "name": "Zealot",
+  "section": "Unit Properties",
+  "text": "A unit with at least one model with this effect gains Fearless and Hatred."
+ },
+ {
+  "name": "Armourbane",
+  "section": "Attack/Weapon Properties",
+  "text": "Attack rolls a 2D6 for armor penetration."
+ },
+ {
+  "name": "Blind",
+  "section": "Attack/Weapon Properties",
+  "text": "Unit HIT by a weapon with blind must take an initiative test. If failed, all models are reduced to BS1 and WS1 until the end of their next turn."
+ },
+ {
+  "name": "Concussive",
+  "section": "Attack/Weapon Properties",
+  "text": "A model suffering an unsaved wound is reduced to Initiative 1 until the end of the following assault phase. Against units with no Initiative (i.e. vehicles) inflicts crew shaken if hit."
+ },
+ {
+  "name": "Fleshbane",
+  "section": "Attack/Weapon Properties",
+  "text": "Always wounds on a 2+. No effect versus vehicles."
+ },
+ {
+  "name": "Gets Hot",
+  "section": "Attack/Weapon Properties",
+  "text": "If a model shooting this weapon rolls 1 to hit, it causes an automatic wound on that model and must take an armor or invulnerable save. If the save fails, the shooting model suffers a wound. Vehicles are not affected by Gets Hot."
+ },
+ {
+  "name": "Graviton",
+  "section": "Attack/Weapon Properties",
+  "text": "The to-wound roll is instead equal to the model’s armor save roll. Against vehicles, instead of rolling for armor penetration, roll a d6. On a 1-5 nothing happens. On a 6, the vehicle becomes immobilized."
+ },
+ {
+  "name": "Ignores Cover",
+  "section": "Attack/Weapon Properties",
+  "text": "weapon negates any cover saves."
+ },
+ {
+  "name": "Interceptor",
+  "section": "Attack/Weapon Properties",
+  "text": "A weapon with this rule may be fired at an enemy unit immediately after that enemy unit enters from reserves and ends the movement phase within line of sight and range of the weapon. If used in this way, the firing model may not shoot in the shooting phase of its following turn."
+ },
+ {
+  "name": "Haywire",
+  "section": "Attack/Weapon Properties",
+  "text": "Instead of normal armor penetration, roll dice. 1 = no effect, 2-5 = Glancing hit; 6 = penetrating hit"
+ },
+ {
+  "name": "Lance",
+  "section": "Attack/Weapon Properties",
+  "text": "Treat vehicle armor greater than 12 as a 12."
+ },
+ {
+  "name": "Master-Crafted",
+  "section": "Attack/Weapon Properties",
+  "text": "Re-roll one failed to-hit roll per turn."
+ },
+ {
+  "name": "Melta",
+  "section": "Attack/Weapon Properties",
+  "text": "When making armor penetration rolls, roll a 2D6 instead of a D6 if the target is at half range or less."
+ },
+ {
+  "name": "Monster Hunter",
+  "section": "Attack/Weapon Properties",
+  "text": "Units containing at least one model with this effect rerolls failed to wound rolls against monstrous creatures."
+ },
+ {
+  "name": "Pinning",
+  "section": "Attack/Weapon Properties",
+  "text": "Unsaved wounds caused by this weapon force the unit to take a Pinning Test (see PINNING)."
+ },
+ {
+  "name": "Poison",
+  "section": "Attack/Weapon Properties",
+  "text": "Wounds on a fixed number regardless of strength (i.e. 4+). If the attacker's strength is higher than the defender's toughness, re-roll failed wounds. Poison weapons have no effect against vehicles. Default value is 4+."
+ },
+ {
+  "name": "Rampage",
+  "section": "Attack/Weapon Properties",
+  "text": "Models gain +D3 attacks if the enemy units contain more models than friendly models that are locked in close combat."
+ },
+ {
+  "name": "Rending",
+  "section": "Attack/Weapon Properties",
+  "text": "On a wound roll of a 6, causes automatic wound and the weapon is treated as AP2 for ranged attacks and a power weapon attack for melee attacks. Against vehicles, a penetration roll of a 6 adds an additional D3 to the result of the penetration roll."
+ },
+ {
+  "name": "Smash",
+  "section": "Attack/Weapon Properties",
+  "text": "Melee attacks are treated as power weapons (i.e. ignore armor saves). Additionally, this unit may choose to exchange all of its normal attacks to conduct a single smash attack instead. This is resolved at double strength (up to max of 10)."
+ },
+ {
+  "name": "Shred",
+  "section": "Attack/Weapon Properties",
+  "text": "Re-rolls failed to wound rolls."
+ },
+ {
+  "name": "Soul Blaze",
+  "section": "Attack/Weapon Properties",
+  "text": "Units wounded by this attack are set ablaze. Roll D6 at the end of each turn. On a 4+, the unit takes D3 S4 AP5 hits with no cover saves. If less than 4, the blaze goes out and the effect is removed."
+ },
+ {
+  "name": "Split Fire",
+  "section": "Attack/Weapon Properties",
+  "text": "If a unit has this listed as a special rule rule, it automatically passes any of its split fire test and may also split its fire between up to three (instead of two) different targets."
+ },
+ {
+  "name": "Sniper",
+  "section": "Attack/Weapon Properties",
+  "text": "Hits on a 2+, wounds on 4+. Gains Rending and Pinning."
+ },
+ {
+  "name": "Strikedown",
+  "section": "Attack/Weapon Properties",
+  "text": "Models suffering one or more wounds from this weapon (even if saved) move as if in difficult terrain on its next turn."
+ },
+ {
+  "name": "Torrent",
+  "section": "Attack/Weapon Properties",
+  "text": "Place the flame template in any orientation so long as the template is entirely within 12” range and the tip of the narrower end is closer to the firing model than the tip of the wider end."
+ },
+ {
+  "name": "Twin-Linked",
+  "section": "Attack/Weapon Properties",
+  "text": "Re-roll failed to-hit rolls with this weapon. Does not count as two weapons. Twin-linked Template weapons automatically hit all models fully or partially under the template."
+ },
+ {
+  "name": "Two-Handed",
+  "section": "Attack/Weapon Properties",
+  "text": "Model attacking with this weapon does not receive a bonus attack for having additional close combat weapons."
+ },
+ {
+  "name": "Unwieldy",
+  "section": "Attack/Weapon Properties",
+  "text": "Model attacking with this weapon is at Initiative 1 unless it’s a monstrous creature or vehicle walker."
+ },
+ {
+  "name": "Missile Lock",
+  "section": "Flyer Related",
+  "text": "Missiles fired by this unit scatter D6” rather than 2D6”."
+ },
+ {
+  "name": "Skyfire",
+  "section": "Flyer Related",
+  "text": "Models shooting with this effect use their normal Ballistic Skill when shooting at flyers, flying creatures, and skimmers, and can only snap fire at other targets."
+ },
+ {
+  "name": "Strafing Run",
+  "section": "Flyer Related",
+  "text": "When shooting Assault/Heavy/Rapid Fire/Salvo weapons at ground units (without flyer or skimmer type) this vehicle has +1 BS and all shots count as pinning."
+ },
+ {
+  "name": "Supersonic",
+  "section": "Flyer Related",
+  "text": "Moving at Flat Out speed must move at least 18” and up to a max of 36”. Cannot enter hover mode."
+ },
+ {
+  "name": "Vector Dancer",
+  "section": "Flyer Related",
+  "text": "Can make an additional pivot on the spot up to 90-degrees at the end of its move. Cannot move at flat out speed in the following turn."
+ },
+ {
+  "name": "Vector Strike",
+  "section": "Flyer Related",
+  "text": "Nominate an unengaged model this unit has moved over. That unit takes D3+1 hits resolved at the model’s unmodified strength and AP3. Against vehicles hits are resolved on the side armor. A model making a vector strike counts as having moved for shooting."
+ },
+ {
+  "name": "Dozer Blade",
+  "section": "Vehicle Upgrades",
+  "text": "Vehicles with a dozer blade may reroll failed dangerous terrain tests."
+ },
+ {
+  "name": "Extra Armor",
+  "section": "Vehicle Upgrades",
+  "text": "Vehicles with extra armor count Crew Stunned results as Crew Shaken instead."
+ },
+ {
+  "name": "Hunter-Killer Missile",
+  "section": "Vehicle Upgrades",
+  "text": "One-time use using the vehicle’s BS. Infinite range, S8, AP3, Heavy 1."
+ },
+ {
+  "name": "Searchlight",
+  "section": "Vehicle Upgrades",
+  "text": "Can be used if NIGHT FIGHTING rules are in effect. Can illuminate itself and a chosen target, negating the effect of night fighting."
+ },
+ {
+  "name": "Smoke Launchers",
+  "section": "Vehicle Upgrades",
+  "text": "Once per game, instead of shooting the smoke launchers may be used. The vehicle and any models within 6” (friend or foe) count as being obscured behind soft cover (5+ save) against shooting attacks until the start of the vehicle’s next turn. Can be used even if the vehicle is shaken or stunned."
+ }
+]
