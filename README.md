@@ -28,6 +28,10 @@ Legions) are not in yet.
 - Retinues (Honour Guard, Command Squad, Terminator Command Squad) inside their character, no extra slot; Terminator Command Squad only for a character in Terminator Armour
 - Terminator Armour removes Jump Pack / Bike options; Chainfist and Foeblaster need Terminator Armour; Pair of Lightning Claws takes both hands
 - Consul restrictions, psyker-only and Apothecary-only wargear, invulnerable saves that would not stack
+- "Any model may..." options are squad-level blocks: each weapon can be taken several times, up to one per model
+  (special/heavy weapons and Pairs of Lightning Claws use up the weapon they replace); squadrons and Techmarine
+  Covenants list every model/vehicle separately so each one is equipped on its own
+- Armoury items marked "Not with Terminator Armour" are blocked for models in Terminator Armour
 - Weapon counts scale with squad size; Dedicated Transports only where allowed (squad size, no Jump Packs/Bikes)
 - Dreadnoughts: paired close-combat arms +1 Attack, Veteran Pilot WS/BS, Armoured Sarcophagus front armour applied to the profile
 - Rites of War: needs a Master of the Legion; changes which units are Troops and which count as compulsory Troops; 0-1 Fast Attack / Heavy Support limits; extra transport and wargear options; checks for Tactical Company, Recon Company, Sky Hunter Phalanx and Fury of the Ancients limitations
