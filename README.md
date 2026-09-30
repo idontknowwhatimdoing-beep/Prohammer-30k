@@ -16,26 +16,22 @@ After an update is pushed, refresh New Recruit (or fully close and reopen on mob
 
 ### Legiones Astartes status
 
-- [x] Army configuration: Legion, Allegiance
-- [x] HQ: Legion Praetor, Legion Centurion with all 12 Consul upgrades
-- [x] Troops: Tactical, Assault, Breacher Siege, Reconnaissance
-- [x] Dedicated Transports: Rhino, Drop Pod, Dreadclaw
-- [x] Space Marine Armoury (Praetor / Centurion / Power Armour Sergeant)
-- [ ] HQ: Damocles Command Rhino, Honour Guard, Command Squads
-- [ ] Elites, Fast Attack, Heavy Support
-- [ ] Rites of War, Legion-specific rules (Forces of the Legions)
+Complete army list: HQ (with retinues and all Consuls), Troops, Elites, Fast Attack, Heavy Support,
+Dedicated Transports, Space Marine Armoury and all 11 Rites of War. Legion-specific rules (Forces of the
+Legions) are not in yet.
 
 ### Rules enforced by the builder
 
 - Force org: 1-2 HQ, 2-6 Troops, 0-3 Elites / Fast Attack / Heavy Support, 0-1 Lord of War / Fortification
-- At least one compulsory HQ that is not a Legion Support Officer or Moritat; at least two Troops that are not Support Squads
-- One Master of the Legion per full 1,000 points; only one Iron Halo per army
-- Terminator Armour removes Jump Pack / Bike options; Chainfist and Foeblaster need Terminator Armour
-- Pair of Lightning Claws takes both weapon hands
-- Consul restrictions (Moritat, Herald, Vigilator, Praevian, Master of Signals, Forge Lord, Primus Nullificator)
-- Psyker-only and Apothecary-only wargear, invulnerable saves that would not stack
-- Special / heavy weapon counts scale with squad size; Dedicated Transports only for squads of 10 or fewer
-- Armoury points caps (100 pts for Praetor / Centurion, 50 pts for Sergeants)
+- At least one compulsory HQ that is not a Legion Support Officer or Moritat; two compulsory Troops that are not Support Squads
+- One Master of the Legion per full 1,000 points; one Iron Halo per army; 0-1 Damocles (1,000+ pts); Legion Standard only at 2,000+ pts
+- Retinues (Honour Guard, Command Squad, Terminator Command Squad) inside their character, no extra slot; Terminator Command Squad only for a character in Terminator Armour
+- Terminator Armour removes Jump Pack / Bike options; Chainfist and Foeblaster need Terminator Armour; Pair of Lightning Claws takes both hands
+- Consul restrictions, psyker-only and Apothecary-only wargear, invulnerable saves that would not stack
+- Weapon counts scale with squad size; Dedicated Transports only where allowed (squad size, no Jump Packs/Bikes)
+- Dreadnoughts: paired close-combat arms +1 Attack, Veteran Pilot WS/BS, Armoured Sarcophagus front armour applied to the profile
+- Rites of War: needs a Master of the Legion; changes which units are Troops and which count as compulsory Troops; 0-1 Fast Attack / Heavy Support limits; extra transport and wargear options; checks for Tactical Company, Recon Company, Sky Hunter Phalanx and Fury of the Ancients limitations
+- Armoury points caps (100 pts for Praetor / Centurion, 50 pts for Sergeants and squad characters)
 
 ## Editing the data
 
