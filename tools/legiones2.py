@@ -553,15 +553,27 @@ def terminator_command_squad(char_key):
                  entries=[vet, *specials], groups=[armour_pattern(key), heavy, harness, tr])
 
 
+RETINUE_SHARED = []
+
+
 def retinue_group(char_key, char_id, praetor):
     gid = uid("grp", char_key, "retinue")
     tcs = terminator_command_squad(char_key)
-    add_mods(tcs, [modifier("set", "hidden", "true", groups=[no_tda(char_id)])])
     ents = []
     if praetor:
         ents.append(honour_guard(char_key))
     ents += [command_squad(char_key, char_id), tcs]
-    return group(gid, "Retinue (no Force Organisation slot)", entries=ents,
+    # retinues are shared entries linked from the character (like normal units), so New Recruit sets up
+    # their default wargear the same way it does for any other unit
+    RETINUE_SHARED.extend(ents)
+    links = []
+    for e in ents:
+        lid = uid("link", gid, e.get("id"))
+        mods = []
+        if e is tcs:
+            mods = [modifier("set", "hidden", "true", groups=[no_tda(char_id)])]
+        links.append(link(lid, e.get("id"), e.get("name"), mods=mods))
+    return group(gid, "Retinue (no Force Organisation slot)", links=links,
                  constraints=[constraint(uid(gid, "max"), "max", 1, auto=True)],
                  mods=[modifier("set", "hidden", "true", conds=[cond(L.consul_id("Moritat"), char_id, "atLeast", 1)])])
 
@@ -1348,6 +1360,8 @@ def extend(units_by_name, shared):
         dedupe_kit(r)
     for e in (praetor, centurion):
         dedupe_kit(e)
-    new_shared = [land_raider("Land Raider Phobos"), land_raider("Land Raider Proteus"), dread_drop_pod(),
+    for e in RETINUE_SHARED:
+        dedupe_kit(e)
+    new_shared = RETINUE_SHARED + [land_raider("Land Raider Phobos"), land_raider("Land Raider Proteus"), dread_drop_pod(),
                   spartan("unit"), damocles("transport")]
     return roots, new_shared
