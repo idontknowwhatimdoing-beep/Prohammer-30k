@@ -22168,7 +22168,8 @@ LIMITATIONS - Strength of the Legion: the army must include at least three Legio
     <selectionEntry id="ce89-3e79-4fd3-a0cf" name="Accelerator Autocannon" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="7147-4b4e-39de-b6d6" name="Accelerator Autocannon" hidden="false" targetId="6d27-f359-7d86-6e5c" type="profile" />
-        <infoLink id="7efa-266a-8b51-406a" name="Rending" hidden="false" targetId="59e9-d133-77f2-ca5a" type="rule" />
+        <infoLink id="3107-e15a-e0b7-32d6" name="Twin-Linked" hidden="false" targetId="7bab-62d5-9d5b-5bba" type="rule" />
+        <infoLink id="acec-8f6e-b2f0-34b7" name="Accelerator Rounds" hidden="false" targetId="b869-c1d8-f301-0607" type="rule" />
         <infoLink id="093a-551b-55e6-e1f5" name="Rapid Tracking" hidden="false" targetId="4d78-544d-a30f-d6c2" type="rule" />
       </infoLinks>
       <costs>
@@ -24142,7 +24143,7 @@ Afterwards the squad may not enter Overwatch, may not make Return Fire or Stand 
         <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">48"</characteristic>
         <characteristic name="S" typeId="6204-806b-a18a-c0be">7</characteristic>
         <characteristic name="AP" typeId="964e-6f66-dcaa-247a">4</characteristic>
-        <characteristic name="Type" typeId="54df-9f85-8d55-7440">Heavy 6, Rending, Rapid Tracking</characteristic>
+        <characteristic name="Type" typeId="54df-9f85-8d55-7440">Heavy 6, Twin-linked, Accelerator Rounds, Rapid Tracking</characteristic>
       </characteristics>
     </profile>
     <profile id="7ecd-bf47-55c6-697f" name="Flamestorm Cannon" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
