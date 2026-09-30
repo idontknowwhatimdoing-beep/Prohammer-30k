@@ -31,6 +31,19 @@
         <characteristicType id="7074-ea68-65bb-46bb" name="Rear" />
       </characteristicTypes>
     </profileType>
+    <profileType id="678c-90d8-478c-5dc2" name="Walker">
+      <characteristicTypes>
+        <characteristicType id="e713-4808-c44b-30a5" name="Unit Type" />
+        <characteristicType id="1529-e08d-b87b-4ebb" name="WS" />
+        <characteristicType id="2cd9-22fa-7539-2234" name="BS" />
+        <characteristicType id="1bae-b45f-905f-bb73" name="S" />
+        <characteristicType id="acaa-4dc4-7fd3-7b92" name="Front" />
+        <characteristicType id="eadd-ded7-20b6-d92b" name="Side" />
+        <characteristicType id="f194-5ced-5e7d-9f84" name="Rear" />
+        <characteristicType id="e237-c6eb-c6ae-43a5" name="I" />
+        <characteristicType id="a1ed-793b-e3f2-dbdc" name="A" />
+      </characteristicTypes>
+    </profileType>
     <profileType id="34e7-5c9b-31e6-d0ce" name="Weapon">
       <characteristicTypes>
         <characteristicType id="4b89-f4f0-2a22-1135" name="Range" />
@@ -60,6 +73,8 @@
     <categoryEntry id="e89b-053d-1bdc-4e2e" name="Compulsory HQ Eligible" hidden="false" />
     <categoryEntry id="071f-8316-97af-8fd6" name="Compulsory Troops Eligible" hidden="false" />
     <categoryEntry id="cf42-da2a-93a6-6913" name="Master of the Legion" hidden="false" />
+    <categoryEntry id="8ed0-3d67-f51e-f8e3" name="Limit: 0-1 Fast Attack" hidden="false" />
+    <categoryEntry id="006c-5d7a-c1ea-e594" name="Limit: 0-1 Heavy Support" hidden="false" />
   </categoryEntries>
   <forceEntries>
     <forceEntry id="ecf1-4754-7376-85d6" name="Standard Force Organisation Chart" hidden="false">
@@ -84,12 +99,26 @@
           </constraints>
         </categoryLink>
         <categoryLink id="5add-51bf-6929-e019" name="Fast Attack" hidden="false" targetId="5e5f-f512-de8c-9505" primary="false">
+          <modifiers>
+            <modifier type="set" field="346d-f4b7-0cd0-3167" value="1">
+              <conditions>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8ed0-3d67-f51e-f8e3" type="atLeast" />
+              </conditions>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a9fe-0c92-409c-e3e7" type="min" />
             <constraint field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="346d-f4b7-0cd0-3167" type="max" />
           </constraints>
         </categoryLink>
         <categoryLink id="b0d4-1622-00f1-3c16" name="Heavy Support" hidden="false" targetId="a78f-9734-db0c-b938" primary="false">
+          <modifiers>
+            <modifier type="set" field="0f34-3a58-6a8f-5af9" value="1">
+              <conditions>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="006c-5d7a-c1ea-e594" type="atLeast" />
+              </conditions>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5784-283a-81d9-d7af" type="min" />
             <constraint field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0f34-3a58-6a8f-5af9" type="max" />

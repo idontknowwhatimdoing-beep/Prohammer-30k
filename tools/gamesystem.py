@@ -22,11 +22,14 @@ VEHICLE = uid("pt", "Vehicle")
 VEHICLE_CHARS = ["Unit Type", "BS", "Front", "Side", "Rear"]
 WEAPON = uid("pt", "Weapon")
 WEAPON_CHARS = ["Range", "S", "AP", "Type"]
+WALKER = uid("pt", "Walker")
+WALKER_CHARS = ["Unit Type", "WS", "BS", "S", "Front", "Side", "Rear", "I", "A"]
 TRANSPORT = uid("pt", "Transport")
 TRANSPORT_CHARS = ["Capacity", "Access Points", "Fire Points"]
 
 PROFILE_TYPES = {"Unit": (UNIT, UNIT_CHARS), "Vehicle": (VEHICLE, VEHICLE_CHARS),
-                 "Weapon": (WEAPON, WEAPON_CHARS), "Transport": (TRANSPORT, TRANSPORT_CHARS)}
+                 "Walker": (WALKER, WALKER_CHARS), "Weapon": (WEAPON, WEAPON_CHARS),
+                 "Transport": (TRANSPORT, TRANSPORT_CHARS)}
 
 
 def char_id(ptype, cname):
@@ -47,10 +50,15 @@ CAT_COMMANDER = cat("Compulsory HQ Eligible")
 CAT_LINE = cat("Compulsory Troops Eligible")
 CAT_MASTER = cat("Master of the Legion")
 CAT_TRANSPORT = cat("Dedicated Transport")
+# Army-construction limits switched on by Rites of War (or similar rules) in any army book:
+# a selection carrying one of these categories lowers the matching Force Organisation maximum to 1.
+CAT_LIMIT_FA = cat("Limit: 0-1 Fast Attack")
+CAT_LIMIT_HS = cat("Limit: 0-1 Heavy Support")
 EXTRA_CATS = [("Configuration", CAT_CONFIG), ("Dedicated Transport", CAT_TRANSPORT),
               ("Compulsory HQ Eligible", CAT_COMMANDER),
               ("Compulsory Troops Eligible", CAT_LINE),
-              ("Master of the Legion", CAT_MASTER)]
+              ("Master of the Legion", CAT_MASTER),
+              ("Limit: 0-1 Fast Attack", CAT_LIMIT_FA), ("Limit: 0-1 Heavy Support", CAT_LIMIT_HS)]
 
 
 # ------------------------------------------------------------------- rules
@@ -104,8 +112,12 @@ def build():
 
     # Standard Force Organisation Chart (Legiones Astartes army list / ProHammer Classic)
     links = [category_link(CAT_CONFIG, "Configuration", key="foc")]
+    limits = {"Fast Attack": CAT_LIMIT_FA, "Heavy Support": CAT_LIMIT_HS}
     for name, mn, mx in FOC:
         cl = category_link(cat(name), name, key="foc")
+        if name in limits:
+            cl.append(wrap("modifiers", [modifier("set", uid("foc-max", name), 1, conds=[
+                cond(limits[name], "force", "atLeast", 1)])]))
         cl.append(wrap("constraints", [
             constraint(uid("foc-min", name), "min", mn),
             constraint(uid("foc-max", name), "max", mx)]))

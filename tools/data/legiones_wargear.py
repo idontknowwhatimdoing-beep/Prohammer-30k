@@ -441,3 +441,390 @@ LEGIONS = [
     "XV - Thousand Sons", "XVI - Sons of Horus", "XVII - Word Bearers", "XVIII - Salamanders",
     "XIX - Raven Guard", "XX - Alpha Legion",
 ]
+
+
+# ============================================================================
+# Slice 2: remaining HQ, Elites, Fast Attack, Heavy Support, Rites of War
+# ============================================================================
+WEAPON_PROFILES.update({
+    "Volkite Culverin": ('45"', "6", "5", "Heavy 4, Rending"),
+    "Assault Cannon": ('24"', "6", "4", "Heavy 3, Rending, Jam"),
+    "Kheres Assault Cannon": ('24"', "6", "4", "Heavy 6, Rending"),
+    "Reaper Autocannon": ('36"', "7", "4", "Heavy 2, Twin-linked"),
+    "Twin-linked Accelerator Autocannon": ('48"', "7", "4", "Heavy 6, Twin-linked, Rending, Rapid Tracking"),
+    "Flamestorm Cannon": ("Template", "6", "3", "Heavy 1"),
+    "Plasma Blaster": ('18"', "7", "2", "Assault 2, Gets Hot"),
+    "Conversion Beamer (0-18\")": ('0-18"', "6", "-", "Heavy 1, Blast"),
+    "Conversion Beamer (18-42\")": ('18-42"', "8", "4", "Heavy 1, Blast"),
+    "Conversion Beamer (42-72\")": ('42-72"', "10", "1", "Heavy 1, Blast"),
+    "Heavy Conversion Beamer (0-18\")": ('0-18"', "6", "-", "Heavy 1, Large Blast, Firing Calibration"),
+    "Heavy Conversion Beamer (18-42\")": ('18-42"', "8", "4", "Heavy 1, Large Blast, Firing Calibration"),
+    "Heavy Conversion Beamer (42-72\")": ('42-72"', "10", "1", "Heavy 1, Large Blast, Firing Calibration"),
+    "Dreadnought Close Combat Weapon": ("-", "x2", "-", "Power Weapon, normal Initiative"),
+    "Cyclone Missile Launcher - Frag": ('48"', "4", "6", "Heavy 2, Blast"),
+    "Cyclone Missile Launcher - Krak": ('48"', "8", "3", "Heavy 2"),
+    "Quad Heavy Bolter": ('36"', "5", "4", "Heavy 6, Twin-linked"),
+    "Laser Destroyer": ('48"', "10", "1", "Heavy 1, Twin-linked"),
+    "Graviton Cannon": ('36"', "Special", "4", "Heavy 1, Large Blast, Concussive, Graviton"),
+    "Quad Launcher - Frag": ('12"-60"', "5", "5", "Heavy 4, Barrage, Blast, Shell Shock"),
+    "Quad Launcher - Shatter": ('36"', "8", "4", "Heavy 4, Sunder"),
+    "Quad Launcher - Incendiary": ('12"-60"', "4", "5", "Heavy 4, Barrage, Blast, Ignores Cover"),
+    "Quad Launcher - Splinter": ('12"-36"', "2", "4", "Heavy 4, Barrage, Blast, Rending"),
+    "Quad Launcher - Phosphex": ('12"-36"', "4", "3", "Heavy 4, Barrage, Blast, Poisoned (3+), Crawling Fire, Lingering Death"),
+    "Rad Missile": ('48"', "4", "3", "Heavy 1, Blast, Fleshbane, Rad-phage"),
+    "Phosphex Bomb": ('6"', "5", "2", "Assault 1, Blast, One Use, Poison (3+), Lingering Death"),
+    "M.40 Stalker Bolter": ('24"', "4", "5", "Heavy 2, Pinning"),
+    "Dragonfire Bolts": ('24"', "4", "5", "Rapid Fire, Ignores Cover"),
+    "Hellfire Bolts": ('24"', "X", "5", "Rapid Fire, Poison (2+)"),
+    "Kraken Bolts": ('30"', "4", "4", "Rapid Fire"),
+    "Vengeance Rounds": ('18"', "4", "3", "Rapid Fire, Gets Hot"),
+    "Heavy Bolter - Suspensor Fire": ('18"', "5", "4", "Assault 3"),
+    "Predator Cannon": ('48"', "7", "4", "Heavy 4"),
+    "Executioner Plasma Destroyer": ('36"', "7", "2", "Heavy 3, Blast"),
+    "Magna-Melta": ('18"', "8", "1", "Heavy 1, Large Blast, Melta"),
+    "Demolisher Cannon": ('24"', "10", "2", "Ordnance 1, Large Blast"),
+    "Laser Destroyer Array": ('36"', "9", "1", "Ordnance 1, Twin-linked, Power Capacitor"),
+    "Whirlwind - Vengeance Warhead": ('12-48"', "5", "4", "Ordnance 1, Barrage, Large Blast"),
+    "Whirlwind - Castellan Warhead": ('12-48"', "4", "5", "Ordnance 1, Barrage, Large Blast, Ignores Cover"),
+    "Whirlwind - Hyperios Warhead": ('48"', "8", "3", "Heavy 1, Skyfire, Interceptor"),
+    "Earthshaker Cannon": ('36-240"', "9", "3", "Ordnance 1, Barrage, Large Blast"),
+    "Medusa Siege Gun": ('36"', "10", "2", "Ordnance 1, Barrage, Large Blast"),
+    "Scorpius Multi-launcher": ('48"', "8", "3", "Heavy 1, Barrage, Blast, Rocket Barrage"),
+    "Quad Lascannon": ('48"', "9", "2", "Heavy 2, Twin-linked"),
+    "Anvilus Autocannon Battery": ('48"', "8", "4", "Heavy 4"),
+    "Hellfire Plasma Cannonade - Sustained": ('36"', "7", "2", "Heavy 4"),
+    "Hellfire Plasma Cannonade - Maximal": ('36"', "7", "2", "Heavy 1, Large Blast, Plasma Overload"),
+    "Arachnus Heavy Lascannon Battery": ('48"', "10", "2", "Heavy 2"),
+    "Aiolos Missile Launcher": ('60"', "6", "3", "Heavy 3, Pinning"),
+    "Neutron Beam Laser": ('36"', "10", "1", "Ordnance 2, Concussive"),
+    "Leviathan Siege Claw": ("-", "x2", "-", "Dreadnought Close Combat Weapon"),
+    "Leviathan Siege Drill": ("-", "x2", "-", "Dreadnought Close Combat Weapon, Armourbane"),
+    "Leviathan Storm Cannon": ('24"', "7", "3", "Heavy 6"),
+    "Cyclonic Melta Lance": ('18"', "9", "1", "Heavy 3, Melta"),
+    "Grav-flux Bombard": ('18"', "Special", "2", "Heavy 1, Large Blast, Concussive, Ignores Cover, Graviton Collapse"),
+    "Phosphex Discharger": ('6-18"', "5", "2", "Heavy 3, Barrage, Blast, Poison (3+), One Use"),
+    "Focused Bombardment": ("Unlimited", "8", "3", "Ordnance 1, Large Blast, Barrage, Lance, Twin-linked"),
+})
+
+# twin-linked versions: same profile + Twin-linked
+for base in ["Heavy Bolter", "Autocannon", "Lascannon", "Volkite Culverin", "Heavy Flamer", "Multi-Melta",
+             "Flamer", "Meltagun", "Plasma Gun", "Volkite Caliver"]:
+    r, s, ap, t = WEAPON_PROFILES[base]
+    WEAPON_PROFILES["Twin-linked " + base] = (r, s, ap, t + ", Twin-linked")
+for part in ["Frag", "Krak"]:
+    r, s, ap, t = WEAPON_PROFILES["Missile Launcher - " + part]
+    WEAPON_PROFILES["Twin-linked Missile Launcher - " + part] = (r, s, ap, t + ", Twin-linked")
+    r, s, ap, t = WEAPON_PROFILES["Cyclone Missile Launcher - " + part]
+    WEAPON_PROFILES["Twin-linked Cyclone Missile Launcher - " + part] = (r, s, ap, t + ", Twin-linked")
+
+_NEW_WEAPONS = {
+    "Volkite Culverin": None, "Assault Cannon": None, "Kheres Assault Cannon": None, "Reaper Autocannon": None,
+    "Twin-linked Accelerator Autocannon": None, "Flamestorm Cannon": None, "Plasma Blaster": None,
+    "Conversion Beamer": ["Conversion Beamer (0-18\")", "Conversion Beamer (18-42\")", "Conversion Beamer (42-72\")"],
+    "Heavy Conversion Beamer": ["Heavy Conversion Beamer (0-18\")", "Heavy Conversion Beamer (18-42\")",
+                                "Heavy Conversion Beamer (42-72\")"],
+    "Dreadnought Close Combat Weapon": ["Dreadnought Close Combat Weapon", "Twin-linked Bolter"],
+    "Chainfist with built-in Twin-linked Bolter": ["Chainfist", "Twin-linked Bolter"],
+    "Cyclone Missile Launcher": ["Cyclone Missile Launcher - Frag", "Cyclone Missile Launcher - Krak"],
+    "Twin-linked Cyclone Missile Launcher": ["Twin-linked Cyclone Missile Launcher - Frag",
+                                             "Twin-linked Cyclone Missile Launcher - Krak"],
+    "Twin-linked Missile Launcher": ["Twin-linked Missile Launcher - Frag", "Twin-linked Missile Launcher - Krak"],
+    "Quad Heavy Bolter": None, "Laser Destroyer": None, "Graviton Cannon": None,
+    "Quad Launcher": ["Quad Launcher - Frag"],
+    "Quad Launcher with Frag and Shatter Shells": ["Quad Launcher - Frag", "Quad Launcher - Shatter"],
+    "Missile Launcher with Suspensor Web and Rad Missiles": ["Rad Missile"],
+    "Phosphex Bomb": None, "Rad Missiles": ["Rad Missile"],
+    "M.40 Targeter and Stalker Bolter": ["M.40 Stalker Bolter"],
+    "Special Issue Ammunition": ["Dragonfire Bolts", "Hellfire Bolts", "Kraken Bolts", "Vengeance Rounds"],
+    "Heavy Bolter with Suspensor Web": ["Heavy Bolter - Suspensor Fire", "Heavy Bolter"],
+    "Heavy Bolter with Suspensor and Hellfire Rounds": ["Heavy Bolter - Suspensor Fire",
+                                                        "Heavy Bolter - Hellfire Round"],
+    "Heavy Flamer with Suspensor Web": ["Heavy Flamer"],
+    "Missile Launcher with Suspensor Web": ["Missile Launcher - Frag", "Missile Launcher - Krak"],
+    "Predator Cannon": None, "Executioner Plasma Destroyer": None, "Magna-Melta": None,
+    "Demolisher Cannon": None, "Laser Destroyer Array": None,
+    "Whirlwind Launcher": ["Whirlwind - Vengeance Warhead", "Whirlwind - Castellan Warhead"],
+    "Hyperios Warheads": ["Whirlwind - Hyperios Warhead"],
+    "Earthshaker Cannon": None, "Medusa Siege Gun": None, "Scorpius Multi-launcher": None,
+    "Quad Lascannon": None, "Anvilus Autocannon Battery": None,
+    "Hellfire Plasma Cannonade": ["Hellfire Plasma Cannonade - Sustained", "Hellfire Plasma Cannonade - Maximal"],
+    "Arachnus Heavy Lascannon Battery": None, "Aiolos Missile Launcher": None, "Neutron Beam Laser": None,
+    "Leviathan Siege Claw with Meltagun": ["Leviathan Siege Claw", "Meltagun"],
+    "Leviathan Siege Drill with Meltagun": ["Leviathan Siege Drill", "Meltagun"],
+    "Leviathan Storm Cannon": None, "Cyclonic Melta Lance": None, "Grav-flux Bombard": None,
+    "Phosphex Discharger": None, "Focused Bombardment": None,
+    "Typhoon Missile Launcher": [],
+    "Heavy Bolter Sponsons": ["Heavy Bolter"], "Heavy Flamer Sponsons": ["Heavy Flamer"],
+    "Lascannon Sponsons": ["Lascannon"],
+    "Incendiary Shells": ["Quad Launcher - Incendiary"], "Shatter Shells": ["Quad Launcher - Shatter"],
+    "Splinter Shells": ["Quad Launcher - Splinter"], "Phosphex Canister Shot": ["Quad Launcher - Phosphex"],
+    "Scimitar Jetbike with Heavy Bolter": ["Heavy Bolter"],
+    "Space Marine Bike with Twin-linked Bolters": ["Twin-linked Bolter"],
+    "Attack Bike with Twin-linked Bolters": ["Twin-linked Bolter"],
+    "Two Bolt Pistols": ["Bolt Pistol"],
+}
+for base in ["Heavy Bolter", "Autocannon", "Lascannon", "Volkite Culverin", "Heavy Flamer", "Multi-Melta",
+             "Flamer", "Meltagun", "Plasma Gun", "Volkite Caliver"]:
+    _NEW_WEAPONS["Twin-linked " + base] = None
+for n, profs in _NEW_WEAPONS.items():
+    WEAPONS[n] = profs if profs is not None else [n]
+
+WEAPON_RULES.update({
+    "Assault Cannon": ["Rending", "Jam"], "Kheres Assault Cannon": ["Rending", "Jam"],
+    "Twin-linked Accelerator Autocannon": ["Rending", "Rapid Tracking", "Twin-Linked"],
+    "Heavy Conversion Beamer": ["Firing Calibration"], "Plasma Blaster": ["Gets Hot"],
+    "Quad Launcher": ["Shell Shock"], "Quad Launcher with Frag and Shatter Shells": ["Shell Shock", "Sunder"],
+    "Shatter Shells": ["Sunder"], "Phosphex Canister Shot": ["Lingering Death"],
+    "Rad Missiles": ["Rad-phage", "Fleshbane"],
+    "Missile Launcher with Suspensor Web and Rad Missiles": ["Rad-phage", "Fleshbane", "Suspensor Web"],
+    "Phosphex Bomb": ["Lingering Death"], "Phosphex Discharger": ["Lingering Death"],
+    "Special Issue Ammunition": ["Special Issue Ammunition"],
+    "Heavy Bolter with Suspensor and Hellfire Rounds": ["Hellfire"],
+    "Laser Destroyer Array": ["Power Capacitor"], "Scorpius Multi-launcher": ["Rocket Barrage"],
+    "Hellfire Plasma Cannonade": ["Plasma Overload"], "Grav-flux Bombard": ["Graviton Collapse"],
+    "Leviathan Siege Drill with Meltagun": ["Armourbane", "Melta"],
+    "Leviathan Siege Claw with Meltagun": ["Melta"],
+    "Cyclonic Melta Lance": ["Melta"], "Magna-Melta": ["Melta"],
+    "Neutron Beam Laser": ["Concussive"], "Graviton Cannon": ["Graviton", "Concussive"],
+    "Focused Bombardment": ["Lance"], "Conversion Beamer": [],
+})
+
+ARMY_RULES.update({
+    "Burning Retros": (
+        "From the moment the Dreadnought Drop Pod arrives by Deep Strike until the start of its controlling player's next "
+        "turn, it has the Shrouded special rule, as does a Dreadnought which disembarks from it during this period. Any "
+        "unit targeted by a shooting attack whose line of sight passes through or over the Drop Pod also gains Shrouded."),
+    "Jam": ("If all three To Hit rolls made by an Assault Cannon when it fires are natural 1s, the weapon is destroyed and "
+            "may not be fired again. If mounted on a vehicle, this counts as a Weapon Destroyed result."),
+    "Accelerator Rounds": ("A natural To Wound roll of 6 ignores Armour Saves. Against vehicles, if the Armour "
+                           "Penetration die scores a natural 6, roll an additional D6 and add it to the total."),
+    "Firing Calibration": ("A weapon with Firing Calibration may not be fired if its bearer moved during the same turn, "
+                           "even if the bearer has Relentless or is a vehicle."),
+    "Suspensor Web": ("A Heavy weapon fitted with a Suspensor Web may instead be fired as an Assault weapon with its "
+                      "maximum range halved. Shots, Strength, AP and other special rules are unchanged."),
+    "Honour or Death": (
+        "If the Legion Champion is in base contact with one or more enemy Independent Characters, he must direct all of "
+        "his close-combat attacks against one of them. When attacking an enemy Independent Character in close combat, he "
+        "may re-roll failed To Hit and To Wound rolls."),
+    "Retinue": (
+        "This unit is selected for a character (Honour Guard: one per Legion Praetor; Command Squads: for an eligible HQ "
+        "character; Terminator Command Squad: only for a character in any form of Terminator Armour). It does not occupy "
+        "a separate Force Organisation slot; the character and the retinue count as a single HQ selection, but deploy "
+        "and operate as separate units."),
+    "Veteran Tactics": ("When constructing the army, select one Veteran Tactic for each Legion Veteran Squad. It applies "
+                        "to every model in the squad for the battle."),
+    "Resolve": "The squad gains the Stubborn special rule.",
+    "Assault Veterans": "The squad gains the Furious Charge special rule.",
+    "Counter-Assault": "The squad gains the Counter-Attack special rule.",
+    "Machine Killers": "The squad gains the Tank Hunters special rule.",
+    "Recon Veterans": "The squad gains the Infiltrate special rule.",
+    "Marksmen": ("Bolters fired by models in the squad have the Twin-linked special rule (normal Bolters only, not "
+                 "Combi-weapons, Foeblaster Boltguns or other bolt weapon variants)."),
+    "Implacable Advance": ("In any mission which distinguishes between Scoring and non-Scoring units, a Legion Terminator "
+                           "Squad counts as a Scoring Unit whenever Troops choices normally count as Scoring Units."),
+    "Dual Pistols (Destroyers)": ("A model with this special rule may fire both of its Pistol weapons during the Shooting "
+                                  "phase at the same target. If it does, it may not fire another weapon that phase."),
+    "Destroyer Cadre": ("A Legion Destroyer Squad may only be joined by an Independent Character with the Legion Moritat "
+                        "Consul upgrade. No other Independent Character may join the squad."),
+    "Rad Grenades": (
+        "Rad Grenades are neither Assault nor Defensive Grenades. During any player turn in which a unit equipped with Rad "
+        "Grenades charges or is charged, enemy non-vehicle models engaged with that unit suffer -1 Toughness until the end "
+        "of the Assault phase (for all purposes, including Instant Death). Multiple units' effects are not cumulative."),
+    "Rad-phage": ("If a model suffers one or more unsaved Wounds from a weapon with Rad-phage and survives, reduce its "
+                  "Toughness by 1 for the remainder of the battle (minimum 1). Multiple applications are cumulative."),
+    "Lingering Death": ("After resolving the attack, leave the Blast marker in place. For the remainder of the battle, the "
+                        "area beneath it counts as Dangerous Terrain for non-vehicle models and Open-topped vehicles."),
+    "Battlesmith (Techmarine)": (
+        "Instead of shooting, the Battlesmith may attempt a repair on one eligible friendly model in base contact "
+        "(Vehicles, models with Cybernetica Cortex, models with Iron and Machine). Roll a D6; on a 5+ it succeeds. "
+        "Vehicle: remove one Engine Damaged, Weapon Destroyed or Immobilised result. Other: regain one lost Wound. One "
+        "attempt per turn; a model benefits from one successful repair per turn; never returns destroyed models; Daemons "
+        "may not be repaired unless a rule allows it. Equipment modifying the roll applies to both uses."),
+    "Bolster Defences": (
+        "Before either army deploys, each Legion Techmarine may nominate one ruin or similar defensive terrain feature "
+        "wholly or partially within his deployment zone. Its Cover Save is improved by 1 (maximum 3+). A feature may only "
+        "be Bolstered once."),
+    "Field Team": (
+        "A Legion Techmarine accompanied by Servo-automata forms a single Field Team. He may not voluntarily leave them "
+        "while any remain alive. The Field Team may join and leave friendly units as though the Techmarine were an "
+        "Independent Character. If the Techmarine is slain, surviving Servo-automata form their own unit and become "
+        "subject to Cybernetica."),
+    "Cybernetica": ("At the beginning of each friendly Movement phase, a unit of Servo-automata not accompanied by a Legion "
+                    "Techmarine must take a Pinning test, unless it is already engaged in close combat."),
+    "Armoured Sarcophagus": "The Dreadnought's Front Armour increases from 12 to 13.",
+    "Veteran Pilot": "The Dreadnought's Weapon Skill and Ballistic Skill increase by +1 (WS5, BS5).",
+    "Frag Assault Launchers": (
+        "A Walker with Frag Assault Launchers counts as having Frag Grenades when charging an enemy in or behind cover. If "
+        "a Transport has them, any unit charging in the turn it disembarks counts as having Frag Grenades that Assault "
+        "phase."),
+    "Paired Close-Combat Arms": ("If the Dreadnought has two Dreadnought Close Combat Weapons it gains +1 Attack (already "
+                                 "applied to the profile in this builder)."),
+    "Atomantic Shielding": (
+        "Each time the vehicle suffers a Glancing or Penetrating Hit from a shooting attack, roll a D6: on a 5+ the hit is "
+        "ignored. In close combat, the hit is ignored on a 6. Roll before the Vehicle Damage table. If the vehicle "
+        "suffers an Explodes! result, add +1\" to the radius of the explosion."),
+    "Rapier Battery": (
+        "Follows the ProHammer rules for Artillery. Each Rapier Carrier has two designated crew and needs at least one "
+        "within 2\" to move or fire. One crew model operates the Rapier and may not fire another weapon that phase. "
+        "Carriers may move with their crew but may not fire in a turn in which they moved, and cannot be transported "
+        "unless a rule says otherwise. All carriers must have the same weapon and ammunition."),
+    "Shell Shock": "Any Pinning test caused by a weapon with this rule suffers a -1 Leadership modifier.",
+    "Sunder": "A weapon with this rule may re-roll failed Armour Penetration rolls against vehicles.",
+    "Marked for Death": (
+        "After both armies have deployed, nominate one enemy unit for each Legion Seeker Squad. When the squad shoots at "
+        "that unit it re-rolls To Hit rolls of 1 and To Wound rolls of 1 (Armour Penetration rolls of 1 against vehicles). "
+        "If the target is destroyed, no new target may be selected."),
+    "Special Issue Ammunition": (
+        "Each time the squad fires Bolters, Foeblaster Boltguns or the bolter component of Combi-weapons, select one "
+        "ammunition type (Dragonfire Bolts, Hellfire Bolts, Kraken Bolts, Vengeance Rounds). All eligible models must use "
+        "the same type."),
+    "Armoured Crew": "The vehicle does not count as Open-topped.",
+    "Power Capacitor": (
+        "If the Vindicator remained stationary during its Movement phase, it may fire the Laser Destroyer Array as "
+        "Ordnance 2, Twin-linked, or an Overcharged Volley as Ordnance 3, Twin-linked. After an Overcharged Volley, roll a "
+        "D6: on a 1 the Vindicator suffers an automatic Glancing Hit."),
+    "Ferromantic Invulnerability": ("Melta weapons do not roll an additional Armour Penetration die against the Achilles. "
+                                    "Lance weapons do not reduce its Armour Value."),
+    "Explorator Augury Web": (
+        "The Proteus gains Scout. At the start of the controlling player's turn, before Reserve rolls, choose a mode until "
+        "the start of the next turn: Disruption (opponent suffers -1 to Reserve rolls) or Relay (re-roll failed Reserve "
+        "rolls). Multiple webs give no extra benefit; one mode per army. Transport Capacity is reduced to 8 models."),
+    "Rocket Barrage": ("If the Whirlwind Scorpius remained stationary during its Movement phase, the Scorpius "
+                       "Multi-launcher becomes Heavy 1+D3 for that Shooting phase."),
+    "Flare Shield": ("Against shooting attacks which strike the Spartan's Front Armour, reduce the Strength of Blast and "
+                     "Template weapons by 2 and all other ranged attacks by 1. No effect in close combat."),
+    "Rapid Tracking": "Jink saves may not be taken against attacks made with the Accelerator Autocannon.",
+    "Plasma Overload": ("After firing the Hellfire Plasma Cannonade in Maximal mode, roll a D6. On a 1 the Deredeo suffers "
+                        "an automatic Glancing Hit that may not be prevented by cover saves or Atomantic Shielding."),
+    "Helical Targeting Array": (
+        "At the beginning of the controlling player's turn, the Deredeo may activate its Helical Targeting Array. If it "
+        "does, it must remain stationary that turn and its ranged weapons gain Skyfire and Interceptor until the beginning "
+        "of its next turn."),
+    "Atomantic Pavaise": (
+        "Improves the Deredeo's Atomantic Shielding save against shooting from 5+ to 4+. Friendly Infantry within 3\" gain "
+        "a 6+ Invulnerable Save against shooting, or improve an existing Invulnerable Save by 1 (maximum 3+)."),
+    "Enhanced Ferromantic Rites": (
+        "Melta weapons do not roll an additional Armour Penetration die against the Achilles-Alpha; Lance weapons do not "
+        "reduce its Armour Value. Apply -1 to all Vehicle Damage table rolls caused by Penetrating Hits against it."),
+    "Galvanic Traction Drive": "The Achilles-Alpha may re-roll failed Dangerous Terrain tests.",
+    "Graviton Collapse": (
+        "Against non-vehicle models, for each model hit roll 2D6; if the result is greater than the model's Strength it "
+        "suffers a wound. Against vehicles, do not use the Graviton rule; roll 3D6 for Armour Penetration instead."),
+    "Reinforced Atomantic Shielding": (
+        "Each time the Leviathan suffers a Glancing or Penetrating Hit, roll a D6: on a 4+ the hit is ignored. Roll before "
+        "the Vehicle Damage table. On an Explodes! result, increase the explosion's Strength by D3 and its radius by D3\"."),
+    "Crushing Charge": (
+        "On a turn in which the Leviathan charges, it may resolve two of its attacks at Initiative 10 instead of one "
+        "(Hammer of Wrath), and gains +1 Initiative for the remainder of that Assault phase."),
+    "Geo-Locator Beacon": ("Friendly units arriving by Deep Strike do not scatter if their first model is placed within 24\" "
+                           "of the Damocles and otherwise has a legal deployment position."),
+    "Command Vox Relay": ("While the Damocles is on the battlefield, its controlling player may apply +1 or -1 to any of "
+                          "their Reserve rolls."),
+    "Focused Bombardment (Damocles)": ("Once per battle, provided the Damocles did not move that turn, it may fire the "
+                                       "Focused Bombardment."),
+    "Command Vehicle": ("0-1 Damocles Command Rhino may be selected as a non-compulsory HQ choice in an army of at least "
+                        "1,000 points. Alternatively, a Master of Signals may select one as a Dedicated Transport."),
+    "Fire Control": ("When a Heavy Support Squad led by an Armistos enters Overwatch, its models may declare Overwatch "
+                     "targets out to the normal maximum range of their weapons rather than 24\"."),
+    "Art of Destruction": ("Heavy weapons fired by the Siege Breaker's unit receive +1 to Armour Penetration rolls against "
+                           "vehicles and fortifications (not pistols, grenades or close-combat attacks)."),
+    "Hardened Armour (Heavy Support)": ("The squad has the Hardened Armour special rule described in the Legion Breacher "
+                                        "Siege Squad entry."),
+    "Sacred Standard": ("Friendly Legiones Astartes units add +1 to their combat-resolution score in any close combat "
+                        "within 6\" of a Sacred Standard. Not cumulative with another Sacred Standard or Legion Standard."),
+    "Crusade Relic": ("May be revealed once per battle in either player's turn provided the bearer does not move that turn. "
+                      "Roll 2D6: until the end of that player turn, all friendly Legiones Astartes models within that "
+                      "distance gain +1 Attack. An army may normally include no more than one Crusade Relic."),
+    "Legion Standard": ("Combines the effects of a Sacred Standard and a Crusade Relic. Only an army of 2,000 points or "
+                        "more may include one; it counts as the army's Crusade Relic. In battles of 3,000 points or more, "
+                        "one additional Crusade Relic may also be included."),
+    "Heavy Support Specialists": ("One Legion Heavy Support Squad Sergeant may be upgraded to an Armistos (+20) or a Siege "
+                                  "Breaker (+35)."),
+})
+
+WARGEAR.update({
+    "Rad Grenades": (ARMY_RULES["Rad Grenades"], []),
+    "Armoured Ceramite": ("The vehicle does not suffer the additional Armour Penetration die normally granted by the Melta "
+                          "special rule.", []),
+    "Armoured Sarcophagus": (ARMY_RULES["Armoured Sarcophagus"], []),
+    "Veteran Pilot": (ARMY_RULES["Veteran Pilot"], []),
+    "Frag Assault Launchers": (ARMY_RULES["Frag Assault Launchers"], []),
+    "Power of the Machine Spirit": ("", ["Power of the Machine Spirit"]),
+    "Explorator Augury Web": (ARMY_RULES["Explorator Augury Web"], ["Scouts"]),
+    "Flare Shield": (ARMY_RULES["Flare Shield"], []),
+    "Atomantic Pavaise": (ARMY_RULES["Atomantic Pavaise"], []),
+    "Sacred Standard": (ARMY_RULES["Sacred Standard"], []),
+    "Crusade Relic": (ARMY_RULES["Crusade Relic"], []),
+    "Legion Standard": (ARMY_RULES["Legion Standard"], []),
+    "Hardened Armour": (ARMY_RULES["Hardened Armour"], []),
+})
+
+# Power Armour Sergeants that are in Terminator Armour ('TDA Sgt' column of the Armoury)
+TDA_SGT = {"Chainfist": 30, "Force Weapon": 40, "Lightning Claw": 25, "Pair of Lightning Claws": 30,
+           "Power Fist": 25, "Power Weapon": 15, "Thunder Hammer": 30, "Combi-Bolter": 5, "Combi-Flamer": 10,
+           "Combi-Grenade Launcher": 10, "Combi-Meltagun": 15, "Combi-Plasma Gun": 15, "Combi-Volkite Charger": 10,
+           "Foeblaster Boltgun": 5, "Storm Bolter": 5, "Auspex": 2, "Bionics": 10, "Master-crafted Weapon": 15,
+           "Purity Seals": 5, "Suspensor Web": 10, "Teleport Homer": 5}
+
+RITES = {
+    "Pride of the Legion": (
+        "EFFECTS - The Legion's Finest: Legion Veteran Squads and Legion Terminator Squads (and Legion-specific Terminator "
+        "units) may be selected as Troops choices; the army's compulsory Troops choices must be selected from these units.\n"
+        "LIMITATIONS - Price of Failure: if every such unit selected as Troops has been destroyed by the end of the battle, "
+        "the enemy receives an additional 150 Victory Points (Victory Point missions only)."),
+    "Orbital Assault": (
+        "EFFECTS - Orbital Transports: any Legiones Astartes Infantry unit which can be carried by a Drop Pod or Dreadclaw "
+        "may purchase one at its normal cost. Dreadnought Assault: a Castraferrum (Legion Dreadnought) or Contemptor may "
+        "purchase a Drop Pod for +50 or a Dreadclaw for +65. Teleport Assault: units entirely in Terminator or Cataphractii "
+        "Armour may Deep Strike even if the mission would not permit it. Orbital Deployment: any unit with Deep Strike may "
+        "use it even if the mission would not permit it; the army may begin with no models deployed.\n"
+        "LIMITATIONS - Every unit must have Deep Strike or begin embarked aboard a Drop Pod or Dreadclaw (Independent "
+        "Characters may join an eligible unit)."),
+    "Armoured Spearhead": (
+        "EFFECTS - Armoured Transports: any Legiones Astartes Infantry unit which fits in a Land Raider may purchase one for "
+        "+250 points. Crushing Advance: enemy units suffer -1 Leadership on Morale tests caused by Tank Shock from this "
+        "army's vehicles.\nLIMITATIONS - Mechanised Force: every Infantry unit must begin embarked aboard a vehicle with the "
+        "Tank and Transport types. Broken Spearhead: if every Tank has been destroyed by the end of the battle, the enemy "
+        "receives an additional 150 Victory Points."),
+    "Armoured Breakthrough": (
+        "EFFECTS - Predator Squadrons: up to two Troops choices may be Legion Predator Strike Squadrons; they may satisfy "
+        "compulsory Troops. Predators may still be taken as Heavy Support.\nLIMITATIONS - The army may include no more than "
+        "one Fast Attack choice."),
+    "Legion Assault Company": (
+        "EFFECTS - Assault Formation: compulsory Troops must be Legion Assault Squads, which may not remove their Jump Packs. "
+        "Veteran Assault Squads: a Legion Veteran Squad may take Jump Packs for +10 points per model (no Transport). Death "
+        "from Above: units entirely equipped with Jump Packs may Deep Strike even if the mission would not permit it.\n"
+        "LIMITATIONS - At least one Independent Character must have a Jump Pack. No more than one Heavy Support choice."),
+    "Legion Breacher Company": (
+        "EFFECTS - Breacher Formation: compulsory Troops must be Legion Breacher Siege Squads. Shield Wall: models with "
+        "Boarding Shields may re-roll results of 1 on Invulnerable Saves granted by them.\nLIMITATIONS - At least one "
+        "Independent Character must have a Boarding Shield. No more than one Fast Attack choice."),
+    "Legion Recon Company": (
+        "EFFECTS - Recon Formation: compulsory Troops must be Legion Reconnaissance Squads. Covert Deployment: units with "
+        "Infiltrate may use it even if the mission would not permit it. Recon Veterans: any Legion Veteran may replace its "
+        "bolter, or both bolt pistol and close-combat weapon, with a Sniper Rifle for +5. Forward Positions: a unit which "
+        "Infiltrated or made a pre-game Scout move improves its Cover Save by +1 in the first game turn (max 3+).\n"
+        "LIMITATIONS - No model may have Terminator Armour or Cataphractii Terminator Armour. All Heavy Support choices "
+        "must begin in Reserve."),
+    "Legion Destroyer Company": (
+        "EFFECTS - Destroyer Formation: Legion Destroyer Squads may be Troops, and compulsory Troops must be Destroyer "
+        "Squads. Forbidden Arsenal: any Legiones Astartes Character without access to Phosphex Bombs may take one for +10; "
+        "for every five models in a Destroyer Squad, up to two Destroyers may take a Missile Launcher with Suspensor Web "
+        "and Rad Missiles (+25).\nLIMITATIONS - At least one Legion Destroyer Squad must be joined by / led by a Moritat. No "
+        "more than one Heavy Support choice."),
+    "Fury of the Ancients": (
+        "EFFECTS - Ancient Warhost: Castraferrum (Legion) Dreadnoughts and Contemptor Dreadnoughts may be Troops; the "
+        "compulsory Troops must be selected from these units.\nLIMITATIONS - Keeper of the Ancients: the army must include "
+        "at least one Techmarine. Irreplaceable Ancients: +50 Victory Points to the enemy per Dreadnought destroyed. No "
+        "more than one Fast Attack choice."),
+    "Sky Hunter Phalanx": (
+        "EFFECTS - Sky Hunter Formation: Legion Sky Hunter Jetbike Squadrons may be Troops, and compulsory Troops must be "
+        "Sky Hunter Squadrons. Jetbike Command: an Independent Character with a Space Marine Bike may upgrade it to a "
+        "Jetbike for +5. Rapid Encirclement: once per battle each Sky Hunter Squadron may leave the battlefield into "
+        "Ongoing Reserves and return using Outflank.\nLIMITATIONS - At least one Independent Character must be mounted on a "
+        "Jetbike. No Castraferrum or Contemptor Dreadnoughts. No more than one Heavy Support choice."),
+    "Legion Tactical Company": (
+        "EFFECTS - Line Company: compulsory Troops must be Legion Tactical Squads. Fury of the Legion: once per battle each "
+        "Legion Tactical Squad which remained stationary may fire one additional shot with every bolter and may not charge "
+        "that turn.\nLIMITATIONS - Strength of the Legion: the army must include at least three Legion Tactical Squads."),
+}
