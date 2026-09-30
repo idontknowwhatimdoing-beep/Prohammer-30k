@@ -486,7 +486,7 @@ def honour_guard(char_key):
                                                                      "Combat Shield"))]),
         entry(hg, "Legion Honour Guard", typ="model", cost=40,
               mods=specials_decrement(hg, hmin, hmax, [sb], u),
-              constraints=[constraint(hmin, "min", 2, auto=True), constraint(hmax, "max", 9, auto=True)],
+              constraints=[constraint(hmin, "min", 2), constraint(hmax, "max", 9)],
               profiles=[hp("Legion Honour Guard")], links=[gear(hg, k) for k in kit], groups=weap(hg)),
         entry(sb, "Legion Honour Guard Standard Bearer (Legion Standard)", typ="model", cost=100,
               constraints=[constraint(uid(sb, "max"), "max", 1)],

@@ -14698,8 +14698,8 @@ LIMITATIONS - Strength of the Legion: the army must include at least three Legio
             </modifier>
           </modifiers>
           <constraints>
-            <constraint automatic="true" field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ddfa-8fa5-b175-a1ce" type="min" />
-            <constraint automatic="true" field="selections" scope="parent" value="9" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5133-6c5c-9504-bbb6" type="max" />
+            <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ddfa-8fa5-b175-a1ce" type="min" />
+            <constraint field="selections" scope="parent" value="9" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5133-6c5c-9504-bbb6" type="max" />
           </constraints>
           <profiles>
             <profile id="e3dc-94a6-9b0f-60ed" name="Legion Honour Guard" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
