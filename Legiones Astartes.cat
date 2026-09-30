@@ -4892,9 +4892,23 @@
           </infoLinks>
           <selectionEntryGroups>
             <selectionEntryGroup id="6103-4750-d415-bec0" name="Prosperine Cult" hidden="false" collective="false" import="true">
+              <modifiers>
+                <modifier type="add" field="error" value="Choose a Prosperine Cult.">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="42cc-3841-699b-5c97" type="lessThan" />
+                        <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a07a-3af2-4dd9-2b12" type="lessThan" />
+                        <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="34c0-73b2-c922-3779" type="lessThan" />
+                        <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1a2a-ddf0-9b3b-4534" type="lessThan" />
+                        <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3220-34d0-1875-c051" type="lessThan" />
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
               <constraints>
                 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a114-5a2d-1043-fd08" type="max" />
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eb42-5edc-335c-6078" type="min" />
               </constraints>
               <selectionEntries>
                 <selectionEntry id="42cc-3841-699b-5c97" name="Pavoni" hidden="false" collective="false" import="true" type="upgrade">
@@ -7683,9 +7697,23 @@ LIMITATIONS - The Warlord must be a Thousand Sons Psyker. At least two Psychic B
           </infoLinks>
           <selectionEntryGroups>
             <selectionEntryGroup id="13ce-dd9c-07ee-e551" name="Prosperine Cult" hidden="false" collective="false" import="true">
+              <modifiers>
+                <modifier type="add" field="error" value="Choose a Prosperine Cult.">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8dbf-a8d9-361b-1efb" type="lessThan" />
+                        <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="49b1-b6a0-d1d5-0232" type="lessThan" />
+                        <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="99a3-c89f-05f4-0645" type="lessThan" />
+                        <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d451-b6aa-a493-1a75" type="lessThan" />
+                        <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7a5d-761a-3422-c6be" type="lessThan" />
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
               <constraints>
                 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="091c-302b-6a6c-1082" type="max" />
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a099-d658-1bcb-b85d" type="min" />
               </constraints>
               <selectionEntries>
                 <selectionEntry id="8dbf-a8d9-361b-1efb" name="Pavoni" hidden="false" collective="false" import="true" type="upgrade">
@@ -8566,9 +8594,23 @@ LIMITATIONS - The Warlord must be a Thousand Sons Psyker. At least two Psychic B
           </infoLinks>
           <selectionEntryGroups>
             <selectionEntryGroup id="b063-0085-dfc6-56aa" name="Prosperine Cult" hidden="false" collective="false" import="true">
+              <modifiers>
+                <modifier type="add" field="error" value="Choose a Prosperine Cult.">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bafc-9fe1-7dc0-7f1e" type="lessThan" />
+                        <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="148e-cccb-c7b6-d2ae" type="lessThan" />
+                        <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6cb9-c97d-af14-9248" type="lessThan" />
+                        <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4bec-9094-5373-be41" type="lessThan" />
+                        <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5e92-d024-ce7a-4e77" type="lessThan" />
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
               <constraints>
                 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c2e4-5045-3112-d182" type="max" />
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e0bf-c213-fba2-1a9f" type="min" />
               </constraints>
               <selectionEntries>
                 <selectionEntry id="bafc-9fe1-7dc0-7f1e" name="Pavoni" hidden="false" collective="false" import="true" type="upgrade">
@@ -15781,6 +15823,11 @@ LIMITATIONS - The Warlord must be a Thousand Sons Psyker. At least two Psychic B
             <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1060-0ef5-0483-9b95" type="atLeast" />
           </conditions>
         </modifier>
+        <modifier type="increment" field="8ea1-6624-ef88-087c" value="5">
+          <conditions>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1060-0ef5-0483-9b95" type="atLeast" />
+          </conditions>
+        </modifier>
       </modifiers>
       <constraints>
         <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8ea1-6624-ef88-087c" type="max" />
@@ -16024,9 +16071,23 @@ LIMITATIONS - The Warlord must be a Thousand Sons Psyker. At least two Psychic B
       </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup id="c2d4-3404-a7af-27e8" name="Prosperine Cult" hidden="false" collective="false" import="true">
+          <modifiers>
+            <modifier type="add" field="error" value="Choose a Prosperine Cult.">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c944-accd-33fc-7ddd" type="lessThan" />
+                    <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="62e7-570e-2f05-c2ee" type="lessThan" />
+                    <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d32d-abe2-7f9a-ec7f" type="lessThan" />
+                    <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8da4-1088-92f8-9b09" type="lessThan" />
+                    <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e8c9-fd77-ec98-254e" type="lessThan" />
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4e5b-62f4-0c5b-c779" type="max" />
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1d8b-88ab-851f-be96" type="min" />
           </constraints>
           <selectionEntries>
             <selectionEntry id="c944-accd-33fc-7ddd" name="Pavoni" hidden="false" collective="false" import="true" type="upgrade">
@@ -16092,9 +16153,23 @@ LIMITATIONS - The Warlord must be a Thousand Sons Psyker. At least two Psychic B
           </selectionEntries>
         </selectionEntryGroup>
         <selectionEntryGroup id="2628-c257-e5ff-4d71" name="Psychic Discipline" hidden="false" collective="false" import="true">
+          <modifiers>
+            <modifier type="add" field="error" value="Choose a Psychic Discipline.">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7584-6c8f-b54f-9e24" type="lessThan" />
+                    <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8120-120d-bb50-fd7e" type="lessThan" />
+                    <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3b3a-be79-1618-10ac" type="lessThan" />
+                    <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ac35-fde4-b114-d05e" type="lessThan" />
+                    <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8300-dd85-a881-ef83" type="lessThan" />
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ffd5-01fc-3cc6-5728" type="max" />
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="98ed-134f-9a2b-e620" type="min" />
           </constraints>
           <selectionEntries>
             <selectionEntry id="7584-6c8f-b54f-9e24" name="Biomancy" hidden="false" collective="false" import="true" type="upgrade">
@@ -16511,9 +16586,23 @@ LIMITATIONS - The Warlord must be a Thousand Sons Psyker. At least two Psychic B
       </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup id="091d-144f-9802-4461" name="Prosperine Cult" hidden="false" collective="false" import="true">
+          <modifiers>
+            <modifier type="add" field="error" value="Choose a Prosperine Cult.">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="82fe-ddc1-91f4-3adc" type="lessThan" />
+                    <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5c23-9cf8-d175-bfa6" type="lessThan" />
+                    <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1230-7c98-71ee-90f6" type="lessThan" />
+                    <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a3a9-1ed3-8016-a494" type="lessThan" />
+                    <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="233f-54a0-a7da-b3d6" type="lessThan" />
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="47b8-7a35-a36e-e04f" type="max" />
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e113-5e4a-3432-d699" type="min" />
           </constraints>
           <selectionEntries>
             <selectionEntry id="82fe-ddc1-91f4-3adc" name="Pavoni" hidden="false" collective="false" import="true" type="upgrade">
@@ -16977,9 +17066,23 @@ LIMITATIONS - The Warlord must be a Thousand Sons Psyker. At least two Psychic B
       </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup id="a739-6059-fe56-7f98" name="Prosperine Cult" hidden="false" collective="false" import="true">
+          <modifiers>
+            <modifier type="add" field="error" value="Choose a Prosperine Cult.">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="07d8-b747-2cc9-41d9" type="lessThan" />
+                    <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="304a-ebe3-3193-3656" type="lessThan" />
+                    <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1174-dd0a-5c22-377d" type="lessThan" />
+                    <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4662-8f29-9b64-f4a6" type="lessThan" />
+                    <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7555-86f1-5c12-7c3c" type="lessThan" />
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7a2a-dcd3-4d34-b3f2" type="max" />
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5690-7ae8-1002-f945" type="min" />
           </constraints>
           <selectionEntries>
             <selectionEntry id="07d8-b747-2cc9-41d9" name="Pavoni" hidden="false" collective="false" import="true" type="upgrade">
@@ -17045,9 +17148,20 @@ LIMITATIONS - The Warlord must be a Thousand Sons Psyker. At least two Psychic B
           </selectionEntries>
         </selectionEntryGroup>
         <selectionEntryGroup id="f0b8-26b5-4b37-b384" name="Psychic Discipline" hidden="false" collective="false" import="true">
+          <modifiers>
+            <modifier type="add" field="error" value="Choose a Psychic Discipline.">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0aac-158b-e443-db10" type="lessThan" />
+                    <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0ebf-68b4-d353-55bd" type="lessThan" />
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8b57-24d8-4b58-25d6" type="max" />
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a2a1-94a3-c790-1a88" type="min" />
           </constraints>
           <selectionEntries>
             <selectionEntry id="0aac-158b-e443-db10" name="Divination" hidden="false" collective="false" import="true" type="upgrade">
@@ -17323,9 +17437,23 @@ LIMITATIONS - The Warlord must be a Thousand Sons Psyker. At least two Psychic B
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup id="16c6-6ff2-a096-ff4d" name="Psychic Discipline" hidden="false" collective="false" import="true">
+          <modifiers>
+            <modifier type="add" field="error" value="Choose a Psychic Discipline.">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ea0a-90af-cb99-fd6c" type="lessThan" />
+                    <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6e9d-b361-81ff-75e7" type="lessThan" />
+                    <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d76b-7ed8-679c-5465" type="lessThan" />
+                    <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fcbf-d659-0c02-b444" type="lessThan" />
+                    <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d626-bb23-12ad-4867" type="lessThan" />
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="81e0-1733-2e7a-038d" type="max" />
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1f2d-376d-c9de-8f3d" type="min" />
           </constraints>
           <selectionEntries>
             <selectionEntry id="ea0a-90af-cb99-fd6c" name="Biomancy" hidden="false" collective="false" import="true" type="upgrade">
@@ -17628,9 +17756,23 @@ LIMITATIONS - The Warlord must be a Thousand Sons Psyker. At least two Psychic B
       </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup id="0ea1-23df-f8a0-8b23" name="Prosperine Cult" hidden="false" collective="false" import="true">
+          <modifiers>
+            <modifier type="add" field="error" value="Choose a Prosperine Cult.">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cec5-eb1a-ea59-d018" type="lessThan" />
+                    <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="51d1-0990-4a35-049a" type="lessThan" />
+                    <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="51e1-e054-aa7b-3f4f" type="lessThan" />
+                    <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c40d-fdb3-2d2f-f69d" type="lessThan" />
+                    <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f035-4fe3-eb5d-9681" type="lessThan" />
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c3cb-5790-cc5b-a6d8" type="max" />
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f98a-4820-644a-5fdc" type="min" />
           </constraints>
           <selectionEntries>
             <selectionEntry id="cec5-eb1a-ea59-d018" name="Pavoni" hidden="false" collective="false" import="true" type="upgrade">
@@ -32107,9 +32249,23 @@ LIMITATIONS - The Warlord must be a Thousand Sons Psyker. At least two Psychic B
       </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup id="b1f3-ce05-71f1-a57f" name="Prosperine Cult" hidden="false" collective="false" import="true">
+          <modifiers>
+            <modifier type="add" field="error" value="Choose a Prosperine Cult.">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d187-ec69-1a7d-6402" type="lessThan" />
+                    <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="565d-b0b3-2849-1e51" type="lessThan" />
+                    <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9e31-32e0-27de-2224" type="lessThan" />
+                    <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8b0b-103b-7679-32bb" type="lessThan" />
+                    <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="47ea-8a6d-651f-3635" type="lessThan" />
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fa1c-4c7b-c75a-b9a7" type="max" />
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="421d-0546-33ff-4fcd" type="min" />
           </constraints>
           <selectionEntries>
             <selectionEntry id="d187-ec69-1a7d-6402" name="Pavoni" hidden="false" collective="false" import="true" type="upgrade">
@@ -32175,9 +32331,20 @@ LIMITATIONS - The Warlord must be a Thousand Sons Psyker. At least two Psychic B
           </selectionEntries>
         </selectionEntryGroup>
         <selectionEntryGroup id="8bde-72a7-c833-7515" name="Psychic Discipline" hidden="false" collective="false" import="true">
+          <modifiers>
+            <modifier type="add" field="error" value="Choose a Psychic Discipline.">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="22ec-fc3b-4fe2-625b" type="lessThan" />
+                    <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9bc1-3d36-05f2-2fba" type="lessThan" />
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8553-de97-0f97-e297" type="max" />
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ed13-e110-545e-05a7" type="min" />
           </constraints>
           <selectionEntries>
             <selectionEntry id="22ec-fc3b-4fe2-625b" name="Divination" hidden="false" collective="false" import="true" type="upgrade">
@@ -34818,9 +34985,23 @@ LIMITATIONS - The Warlord must be a Thousand Sons Psyker. At least two Psychic B
       </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup id="1e59-7e89-5a10-ab8a" name="Prosperine Cult" hidden="false" collective="false" import="true">
+          <modifiers>
+            <modifier type="add" field="error" value="Choose a Prosperine Cult.">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8368-9441-96f0-263d" type="lessThan" />
+                    <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8bdf-1cbc-385e-aeac" type="lessThan" />
+                    <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a4df-69ff-e033-b20c" type="lessThan" />
+                    <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0275-d15b-7f99-88cc" type="lessThan" />
+                    <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c3b-92aa-eff7-476c" type="lessThan" />
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="96c5-bd38-bd93-5b94" type="max" />
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a246-0616-0275-831c" type="min" />
           </constraints>
           <selectionEntries>
             <selectionEntry id="8368-9441-96f0-263d" name="Pavoni" hidden="false" collective="false" import="true" type="upgrade">
@@ -35412,9 +35593,23 @@ LIMITATIONS - The Warlord must be a Thousand Sons Psyker. At least two Psychic B
           </infoLinks>
           <selectionEntryGroups>
             <selectionEntryGroup id="cf06-35a0-2e15-98f5" name="Prosperine Cult" hidden="false" collective="false" import="true">
+              <modifiers>
+                <modifier type="add" field="error" value="Choose a Prosperine Cult.">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f40c-c76d-7c7c-e9d8" type="lessThan" />
+                        <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bb9c-4cc1-065b-aedb" type="lessThan" />
+                        <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="602f-239a-6cd4-d786" type="lessThan" />
+                        <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d9ce-5e2f-5232-8ef2" type="lessThan" />
+                        <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fdc6-c043-5649-1a4b" type="lessThan" />
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
               <constraints>
                 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="13ec-f10c-5b67-4a6c" type="max" />
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ffd7-0b11-ae39-d21b" type="min" />
               </constraints>
               <selectionEntries>
                 <selectionEntry id="f40c-c76d-7c7c-e9d8" name="Pavoni" hidden="false" collective="false" import="true" type="upgrade">
@@ -36812,9 +37007,23 @@ LIMITATIONS - The Warlord must be a Thousand Sons Psyker. At least two Psychic B
           </infoLinks>
           <selectionEntryGroups>
             <selectionEntryGroup id="3a8a-a7e1-3ab2-7b67" name="Prosperine Cult" hidden="false" collective="false" import="true">
+              <modifiers>
+                <modifier type="add" field="error" value="Choose a Prosperine Cult.">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7396-8a47-4551-0372" type="lessThan" />
+                        <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bc93-0349-2a8f-908f" type="lessThan" />
+                        <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e18f-af3a-0eca-e605" type="lessThan" />
+                        <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ead4-a748-be47-c608" type="lessThan" />
+                        <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="25ad-e670-9502-bb69" type="lessThan" />
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
               <constraints>
                 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="230b-a918-f5aa-5d40" type="max" />
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a7d6-b657-4841-0886" type="min" />
               </constraints>
               <selectionEntries>
                 <selectionEntry id="7396-8a47-4551-0372" name="Pavoni" hidden="false" collective="false" import="true" type="upgrade">
@@ -37244,9 +37453,23 @@ LIMITATIONS - The Warlord must be a Thousand Sons Psyker. At least two Psychic B
       </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup id="b287-66af-6840-02e3" name="Prosperine Cult" hidden="false" collective="false" import="true">
+          <modifiers>
+            <modifier type="add" field="error" value="Choose a Prosperine Cult.">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="273f-0286-07b7-156e" type="lessThan" />
+                    <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ad8f-d441-e397-62a6" type="lessThan" />
+                    <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5c42-3700-93be-5a26" type="lessThan" />
+                    <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a4c2-8554-0b45-d748" type="lessThan" />
+                    <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c669-2b56-44e2-4dc1" type="lessThan" />
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c70f-4b89-bffa-ead5" type="max" />
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2ba3-812a-32ac-4d70" type="min" />
           </constraints>
           <selectionEntries>
             <selectionEntry id="273f-0286-07b7-156e" name="Pavoni" hidden="false" collective="false" import="true" type="upgrade">
@@ -37312,9 +37535,23 @@ LIMITATIONS - The Warlord must be a Thousand Sons Psyker. At least two Psychic B
           </selectionEntries>
         </selectionEntryGroup>
         <selectionEntryGroup id="6e18-84b8-02d8-0447" name="Psychic Discipline" hidden="false" collective="false" import="true">
+          <modifiers>
+            <modifier type="add" field="error" value="Choose a Psychic Discipline.">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f3de-a63d-f659-1780" type="lessThan" />
+                    <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="847a-ca6f-92f6-7775" type="lessThan" />
+                    <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6468-ed98-ee42-509b" type="lessThan" />
+                    <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ae76-320e-aa2b-b9ea" type="lessThan" />
+                    <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8e4e-b137-f888-263a" type="lessThan" />
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="052e-49b8-cea0-990d" type="max" />
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2270-183d-4390-99a4" type="min" />
           </constraints>
           <selectionEntries>
             <selectionEntry id="f3de-a63d-f659-1780" name="Biomancy" hidden="false" collective="false" import="true" type="upgrade">

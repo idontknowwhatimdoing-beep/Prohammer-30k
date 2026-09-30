@@ -348,9 +348,11 @@ def cult_choice(key, required=True, fixed=None):
         ents.append(entry(eid, n, infolinks=rules_links([full, "Cult Mastery"], key=eid),
                           constraints=[constraint(uid(eid, "max"), "max", 1, auto=True)]))
     cons = [constraint(uid(gid, "max"), "max", 1, auto=True)]
+    mods = []
     if required:
-        cons.append(constraint(uid(gid, "min"), "min", 1))
-    return group(gid, "Prosperine Cult", entries=ents, constraints=cons)
+        none = all_of(*[cond(e.get("id"), "parent", "lessThan", 1) for e in ents])
+        mods.append(modifier("add", "error", "Choose a Prosperine Cult.", groups=[none]))
+    return group(gid, "Prosperine Cult", entries=ents, constraints=cons, mods=mods)
 
 
 def discipline_choice(key, options=DISCIPLINES, required=True, title="Psychic Discipline"):
@@ -358,9 +360,11 @@ def discipline_choice(key, options=DISCIPLINES, required=True, title="Psychic Di
     ents = [entry(uid("disc", key, d), d, infolinks=rules_links([f"Discipline: {d}"], key=uid("disc", key, d)),
                   constraints=[constraint(uid("disc", key, d, "max"), "max", 1, auto=True)]) for d in options]
     cons = [constraint(uid(gid, "max"), "max", 1, auto=True)]
+    mods = []
     if required:
-        cons.append(constraint(uid(gid, "min"), "min", 1))
-    return group(gid, title, entries=ents, constraints=cons)
+        none = all_of(*[cond(e.get("id"), "parent", "lessThan", 1) for e in ents])
+        mods.append(modifier("add", "error", f"Choose a {title}.", groups=[none]))
+    return group(gid, title, entries=ents, constraints=cons, mods=mods)
 
 
 def brotherhood(key, cost=25, fellowships_cost=None, visible_if=None):
@@ -462,6 +466,8 @@ def sekhmet(key="Sekhmet Terminator Cabal", root=True):
         mods += [modifier("set-primary", "category", TROOPS, conds=[rite("The Guard of the Crimson King")]),
                  modifier("remove", "category", ELITES, conds=[rite("The Guard of the Crimson King")]),
                  modifier("add", "category", gs.CAT_LINE, conds=[rite("The Guard of the Crimson King")])]
+    if root:
+        mods.append(modifier("increment", uid(u, "force-max"), 5, conds=[rite("The Guard of the Crimson King")]))
     e = entry(u, name, typ="unit", cost=0, cats=cats, mods=mods,
               constraints=[constraint(uid(u, "force-max"), "max", 1, scope="force", deep=True)] if root else [],
               infolinks=rules_links(["Legiones Astartes (Thousand Sons)", "Fearless", "Brotherhood of Psychers",
