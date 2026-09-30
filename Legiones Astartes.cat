@@ -5896,10 +5896,18 @@ LIMITATIONS - No model may have Terminator Armour or Cataphractii Terminator Arm
               </costs>
             </selectionEntry>
             <selectionEntry id="16f3-4196-2250-3a21" name="Legion Destroyer Company" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="add" field="error" value="Legion Destroyer Company: the army must include at least one Moritat.">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8f8a-6255-05f3-580a" type="lessThan" />
+                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="16f3-4196-2250-3a21" type="atLeast" />
+                  </conditions>
+                </modifier>
+              </modifiers>
               <rules>
                 <rule id="8837-8a5f-6f8f-9546" name="Legion Destroyer Company" hidden="false">
                   <description>EFFECTS - Destroyer Formation: Legion Destroyer Squads may be Troops, and compulsory Troops must be Destroyer Squads. Forbidden Arsenal: any Legiones Astartes Character without access to Phosphex Bombs may take one for +10; for every five models in a Destroyer Squad, up to two Destroyers may take a Missile Launcher with Suspensor Web and Rad Missiles (+25).
-LIMITATIONS - At least one Legion Destroyer Squad must be joined by / led by a Moritat. No more than one Heavy Support choice.</description>
+LIMITATIONS - The army must include at least one Moritat. No more than one Heavy Support choice.</description>
                 </rule>
               </rules>
               <costs>
@@ -6018,22 +6026,6 @@ LIMITATIONS - Strength of the Legion: the army must include at least three Legio
       <selectionEntryGroups>
         <selectionEntryGroup id="dc4a-4ba2-b5d1-54bd" name="Vehicle Upgrades" hidden="false" collective="false" import="true">
           <entryLinks>
-            <entryLink id="e6bf-c6de-e4d4-ee1f" name="Hunter-Killer Missile" hidden="false" collective="false" import="true" targetId="9a5d-fd49-68a3-2572" type="selectionEntry">
-              <constraints>
-                <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="15f4-3249-d130-a5a6" type="max" />
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
-              </costs>
-            </entryLink>
-            <entryLink id="637a-b6f1-64e5-8447" name="Dozer Blade" hidden="false" collective="false" import="true" targetId="7d17-3b7b-1d6e-e0f2" type="selectionEntry">
-              <constraints>
-                <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f54f-6b47-7ac2-edc9" type="max" />
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
-              </costs>
-            </entryLink>
             <entryLink id="7eff-5182-f899-abe6" name="Extra Armour" hidden="false" collective="false" import="true" targetId="aef2-b713-c9fe-42d8" type="selectionEntry">
               <constraints>
                 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a409-4586-8f7c-1c32" type="max" />
@@ -6042,72 +6034,9 @@ LIMITATIONS - Strength of the Legion: the army must include at least three Legio
                 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
               </costs>
             </entryLink>
-            <entryLink id="a9b4-4d49-05be-21f1" name="Auxiliary Drive" hidden="false" collective="false" import="true" targetId="4f16-c23a-b791-3446" type="selectionEntry">
+            <entryLink id="b7ba-7ac4-d65d-5c4d" name="Havoc Launcher" hidden="false" collective="false" import="true" targetId="e5ca-0747-ff5e-b3b5" type="selectionEntry">
               <constraints>
-                <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eb95-ea39-ebb4-d8ee" type="max" />
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
-              </costs>
-            </entryLink>
-            <entryLink id="6c28-92a4-6662-1232" name="Armoured Ceramite" hidden="false" collective="false" import="true" targetId="bb4d-c32a-0e96-aae9" type="selectionEntry">
-              <constraints>
-                <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4369-d0a7-1610-c66e" type="max" />
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
-              </costs>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="12c7-c2aa-523c-3302" name="Pintle-mounted Weapon" hidden="false" collective="false" import="true">
-          <constraints>
-            <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4bc5-7cd8-cb08-9c03" type="max" />
-          </constraints>
-          <entryLinks>
-            <entryLink id="78df-b120-c2ad-6274" name="Twin-linked Bolter" hidden="false" collective="false" import="true" targetId="6392-9914-afef-0ec5" type="selectionEntry">
-              <constraints>
-                <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7f01-5963-95fe-db75" type="max" />
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
-              </costs>
-            </entryLink>
-            <entryLink id="1bf3-b565-612b-dfda" name="Combi-Weapon" hidden="false" collective="false" import="true" targetId="dd96-2fe2-b2e1-c755" type="selectionEntry">
-              <constraints>
-                <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6433-324c-9e2b-de69" type="max" />
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
-              </costs>
-            </entryLink>
-            <entryLink id="651d-fb03-7b93-966b" name="Heavy Bolter" hidden="false" collective="false" import="true" targetId="9151-5044-e482-04c9" type="selectionEntry">
-              <constraints>
-                <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="313c-6f3e-e61a-fdf1" type="max" />
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
-              </costs>
-            </entryLink>
-            <entryLink id="5e5b-a576-ca12-74d7" name="Heavy Flamer" hidden="false" collective="false" import="true" targetId="9e6d-afcf-8202-e47c" type="selectionEntry">
-              <constraints>
-                <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2ee4-7d45-c563-5969" type="max" />
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
-              </costs>
-            </entryLink>
-            <entryLink id="21d3-d44f-3388-19d8" name="Multi-Melta" hidden="false" collective="false" import="true" targetId="48fc-4141-3aee-b13c" type="selectionEntry">
-              <constraints>
-                <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e097-a74d-d205-0b37" type="max" />
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
-              </costs>
-            </entryLink>
-            <entryLink id="7476-bb68-a8fe-a2d2" name="Havoc Launcher" hidden="false" collective="false" import="true" targetId="e5ca-0747-ff5e-b3b5" type="selectionEntry">
-              <constraints>
-                <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="59ff-f076-df58-f148" type="max" />
+                <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eb0e-4e58-0b73-6f7a" type="max" />
               </constraints>
               <costs>
                 <cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
@@ -13660,10 +13589,10 @@ LIMITATIONS - Strength of the Legion: the army must include at least three Legio
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="1932-2515-3153-4729" name="Twin-linked Accelerator Autocannon" hidden="false" collective="false" import="true" targetId="9a22-7005-63d8-80ca" type="selectionEntry">
+        <entryLink id="4cea-c195-3cf8-09b9" name="Accelerator Autocannon" hidden="false" collective="false" import="true" targetId="ce89-3e79-4fd3-a0cf" type="selectionEntry">
           <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9f51-5a64-e386-077d" type="min" />
-            <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eb1f-ab55-5004-5b7b" type="max" />
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c894-e1e4-d9e3-5d79" type="min" />
+            <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b1cb-17c7-66f1-3d3b" type="max" />
           </constraints>
         </entryLink>
         <entryLink id="6dbb-3dec-1891-3d7c" name="Extra Armour" hidden="false" collective="false" import="true" targetId="aef2-b713-c9fe-42d8" type="selectionEntry">
@@ -21648,22 +21577,6 @@ LIMITATIONS - Strength of the Legion: the army must include at least three Legio
       <selectionEntryGroups>
         <selectionEntryGroup id="dcb3-36ae-29de-41f6" name="Vehicle Upgrades" hidden="false" collective="false" import="true">
           <entryLinks>
-            <entryLink id="8ce6-5351-8d75-ba26" name="Hunter-Killer Missile" hidden="false" collective="false" import="true" targetId="9a5d-fd49-68a3-2572" type="selectionEntry">
-              <constraints>
-                <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d77d-20f4-2f24-5e5b" type="max" />
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
-              </costs>
-            </entryLink>
-            <entryLink id="5088-e6d2-8225-9771" name="Dozer Blade" hidden="false" collective="false" import="true" targetId="7d17-3b7b-1d6e-e0f2" type="selectionEntry">
-              <constraints>
-                <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a2c0-fe77-5bf2-c767" type="max" />
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
-              </costs>
-            </entryLink>
             <entryLink id="31fa-c88a-6acf-e949" name="Extra Armour" hidden="false" collective="false" import="true" targetId="aef2-b713-c9fe-42d8" type="selectionEntry">
               <constraints>
                 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0fc4-ffca-5afb-4fd4" type="max" />
@@ -21672,72 +21585,9 @@ LIMITATIONS - Strength of the Legion: the army must include at least three Legio
                 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
               </costs>
             </entryLink>
-            <entryLink id="16e9-53e3-5426-4b74" name="Auxiliary Drive" hidden="false" collective="false" import="true" targetId="4f16-c23a-b791-3446" type="selectionEntry">
+            <entryLink id="015a-6daa-a5c4-055d" name="Havoc Launcher" hidden="false" collective="false" import="true" targetId="e5ca-0747-ff5e-b3b5" type="selectionEntry">
               <constraints>
-                <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f707-6615-688f-05d7" type="max" />
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
-              </costs>
-            </entryLink>
-            <entryLink id="0b13-e24a-0954-bf82" name="Armoured Ceramite" hidden="false" collective="false" import="true" targetId="bb4d-c32a-0e96-aae9" type="selectionEntry">
-              <constraints>
-                <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="387b-65bc-e793-5e65" type="max" />
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
-              </costs>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="0698-ef94-d0cc-bfbb" name="Pintle-mounted Weapon" hidden="false" collective="false" import="true">
-          <constraints>
-            <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ceec-acde-becc-549d" type="max" />
-          </constraints>
-          <entryLinks>
-            <entryLink id="54ef-df24-95ef-c0a3" name="Twin-linked Bolter" hidden="false" collective="false" import="true" targetId="6392-9914-afef-0ec5" type="selectionEntry">
-              <constraints>
-                <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9f9d-9133-e3ff-f3d7" type="max" />
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
-              </costs>
-            </entryLink>
-            <entryLink id="9cdd-c689-2741-a6b6" name="Combi-Weapon" hidden="false" collective="false" import="true" targetId="dd96-2fe2-b2e1-c755" type="selectionEntry">
-              <constraints>
-                <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2282-6f12-0d49-d887" type="max" />
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
-              </costs>
-            </entryLink>
-            <entryLink id="0921-35f2-5fb5-e354" name="Heavy Bolter" hidden="false" collective="false" import="true" targetId="9151-5044-e482-04c9" type="selectionEntry">
-              <constraints>
-                <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="df2e-ab52-4ab7-8a9f" type="max" />
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
-              </costs>
-            </entryLink>
-            <entryLink id="16a4-66e3-a441-2da8" name="Heavy Flamer" hidden="false" collective="false" import="true" targetId="9e6d-afcf-8202-e47c" type="selectionEntry">
-              <constraints>
-                <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fd89-2407-2473-4183" type="max" />
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
-              </costs>
-            </entryLink>
-            <entryLink id="a029-8432-1e7e-fb68" name="Multi-Melta" hidden="false" collective="false" import="true" targetId="48fc-4141-3aee-b13c" type="selectionEntry">
-              <constraints>
-                <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8611-bcb2-a770-66c2" type="max" />
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
-              </costs>
-            </entryLink>
-            <entryLink id="6b55-96fa-7c24-9689" name="Havoc Launcher" hidden="false" collective="false" import="true" targetId="e5ca-0747-ff5e-b3b5" type="selectionEntry">
-              <constraints>
-                <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b740-bf50-a9a1-e6fb" type="max" />
+                <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5d9b-9bba-c957-b2a3" type="max" />
               </constraints>
               <costs>
                 <cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
@@ -22236,6 +22086,9 @@ LIMITATIONS - Strength of the Legion: the army must include at least three Legio
       </costs>
     </selectionEntry>
     <selectionEntry id="e5ca-0747-ff5e-b3b5" name="Havoc Launcher" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="7e59-0bd6-d4e2-c4e4" name="Havoc Launcher" hidden="false" targetId="3720-8941-6199-6eac" type="profile" />
+      </infoLinks>
       <costs>
         <cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
       </costs>
@@ -22312,12 +22165,11 @@ LIMITATIONS - Strength of the Legion: the army must include at least three Legio
         <cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
       </costs>
     </selectionEntry>
-    <selectionEntry id="9a22-7005-63d8-80ca" name="Twin-linked Accelerator Autocannon" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="ce89-3e79-4fd3-a0cf" name="Accelerator Autocannon" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
-        <infoLink id="06f0-056b-2a7f-8796" name="Twin-linked Accelerator Autocannon" hidden="false" targetId="f85f-e117-b88c-30a2" type="profile" />
-        <infoLink id="5c3e-2ada-6127-d589" name="Rending" hidden="false" targetId="59e9-d133-77f2-ca5a" type="rule" />
-        <infoLink id="f5cf-23f8-48f7-66aa" name="Rapid Tracking" hidden="false" targetId="4d78-544d-a30f-d6c2" type="rule" />
-        <infoLink id="63d9-e2bb-0a16-98a4" name="Twin-Linked" hidden="false" targetId="7bab-62d5-9d5b-5bba" type="rule" />
+        <infoLink id="7147-4b4e-39de-b6d6" name="Accelerator Autocannon" hidden="false" targetId="6d27-f359-7d86-6e5c" type="profile" />
+        <infoLink id="7efa-266a-8b51-406a" name="Rending" hidden="false" targetId="59e9-d133-77f2-ca5a" type="rule" />
+        <infoLink id="093a-551b-55e6-e1f5" name="Rapid Tracking" hidden="false" targetId="4d78-544d-a30f-d6c2" type="rule" />
       </infoLinks>
       <costs>
         <cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
@@ -22739,6 +22591,10 @@ LIMITATIONS - Strength of the Legion: the army must include at least three Legio
       </costs>
     </selectionEntry>
     <selectionEntry id="7aff-01f7-bfbf-842b" name="Typhoon Missile Launcher" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="45b8-d18c-43cf-ad5d" name="Typhoon Missile Launcher - Frag" hidden="false" targetId="b297-029c-f111-df6a" type="profile" />
+        <infoLink id="fb24-373c-780a-c91d" name="Typhoon Missile Launcher - Krak" hidden="false" targetId="aa17-4b6a-7a03-098c" type="profile" />
+      </infoLinks>
       <costs>
         <cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
       </costs>
@@ -24281,12 +24137,12 @@ Afterwards the squad may not enter Overwatch, may not make Return Fire or Stand 
         <characteristic name="Type" typeId="54df-9f85-8d55-7440">Heavy 2, Twin-linked</characteristic>
       </characteristics>
     </profile>
-    <profile id="f85f-e117-b88c-30a2" name="Twin-linked Accelerator Autocannon" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+    <profile id="6d27-f359-7d86-6e5c" name="Accelerator Autocannon" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">48"</characteristic>
         <characteristic name="S" typeId="6204-806b-a18a-c0be">7</characteristic>
         <characteristic name="AP" typeId="964e-6f66-dcaa-247a">4</characteristic>
-        <characteristic name="Type" typeId="54df-9f85-8d55-7440">Heavy 6, Twin-linked, Rending, Rapid Tracking</characteristic>
+        <characteristic name="Type" typeId="54df-9f85-8d55-7440">Heavy 6, Rending, Rapid Tracking</characteristic>
       </characteristics>
     </profile>
     <profile id="7ecd-bf47-55c6-697f" name="Flamestorm Cannon" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
@@ -24438,7 +24294,7 @@ Afterwards the squad may not enter Overwatch, may not make Return Fire or Stand 
         <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">12"-36"</characteristic>
         <characteristic name="S" typeId="6204-806b-a18a-c0be">4</characteristic>
         <characteristic name="AP" typeId="964e-6f66-dcaa-247a">3</characteristic>
-        <characteristic name="Type" typeId="54df-9f85-8d55-7440">Heavy 4, Barrage, Blast, Poisoned (3+), Crawling Fire, Lingering Death</characteristic>
+        <characteristic name="Type" typeId="54df-9f85-8d55-7440">Heavy 4, Barrage, Blast, Poisoned (3+), Lingering Death</characteristic>
       </characteristics>
     </profile>
     <profile id="9103-f8f6-64f4-2c87" name="Rad Missile" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
@@ -24703,6 +24559,30 @@ Afterwards the squad may not enter Overwatch, may not make Return Fire or Stand 
         <characteristic name="S" typeId="6204-806b-a18a-c0be">8</characteristic>
         <characteristic name="AP" typeId="964e-6f66-dcaa-247a">3</characteristic>
         <characteristic name="Type" typeId="54df-9f85-8d55-7440">Ordnance 1, Large Blast, Barrage, Lance, Twin-linked</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="3720-8941-6199-6eac" name="Havoc Launcher" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">48"</characteristic>
+        <characteristic name="S" typeId="6204-806b-a18a-c0be">5</characteristic>
+        <characteristic name="AP" typeId="964e-6f66-dcaa-247a">5</characteristic>
+        <characteristic name="Type" typeId="54df-9f85-8d55-7440">Heavy 1, Blast, Twin-linked</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="b297-029c-f111-df6a" name="Typhoon Missile Launcher - Frag" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">48"</characteristic>
+        <characteristic name="S" typeId="6204-806b-a18a-c0be">4</characteristic>
+        <characteristic name="AP" typeId="964e-6f66-dcaa-247a">6</characteristic>
+        <characteristic name="Type" typeId="54df-9f85-8d55-7440">Heavy 2, Blast</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="aa17-4b6a-7a03-098c" name="Typhoon Missile Launcher - Krak" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">48"</characteristic>
+        <characteristic name="S" typeId="6204-806b-a18a-c0be">8</characteristic>
+        <characteristic name="AP" typeId="964e-6f66-dcaa-247a">3</characteristic>
+        <characteristic name="Type" typeId="54df-9f85-8d55-7440">Heavy 2</characteristic>
       </characteristics>
     </profile>
     <profile id="588d-0ad6-a548-c9e5" name="Twin-linked Heavy Bolter" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">

@@ -389,7 +389,7 @@ def damocles(typ="unit"):
                                         "Command Vehicle"], key=eid),
                  links=[gear(eid, "Twin-linked Bolter"), gear(eid, "Searchlight"), gear(eid, "Smoke Launchers"),
                         gear(eid, "Focused Bombardment")],
-                 groups=vehicle_upgrades(eid, STD_UPGRADES))
+                 groups=[take(eid, "Vehicle Upgrades", [("Extra Armour", 5), ("Havoc Launcher", 15)])])
 
 
 # ---------------------------------------------------------------- retinues
@@ -1154,7 +1154,7 @@ def heavy_vehicles():
     out.append(single_vehicle(
         "Legion Sicaran Battle Tank", 185,
         lambda u: L.vehicle_profile(u, "Legion Sicaran", "Vehicle (Fast, Tank)", 4, 13, 12, 12),
-        ["Twin-linked Accelerator Autocannon", "Extra Armour", "Searchlight", "Smoke Launchers"],
+        ["Accelerator Autocannon", "Extra Armour", "Searchlight", "Smoke Launchers"],
         ["Rapid Tracking"],
         lambda u: [slot(u, "Replace Heavy Bolter", "Heavy Bolter", [("Heavy Flamer", 0)]),
                    take(u, "Sponsons (one pair)", [("Heavy Bolter Sponsons", 10), ("Lascannon Sponsons", 25)],
@@ -1252,6 +1252,9 @@ def rites_entry():
                                  groups=[any_of(cond(uid("unit", "Legion Dreadnought"), "force", "atLeast", 1),
                                                 cond(uid("unit", "Legion Contemptor Dreadnought"), "force",
                                                      "atLeast", 1))]))
+        if name == "Legion Destroyer Company":
+            mods.append(modifier("add", "error", "Legion Destroyer Company: the army must include at least one Moritat.",
+                                 conds=[cond(L.consul_id("Moritat"), "force", "lessThan", 1)]))
         if name == "Fury of the Ancients":
             mods.append(modifier("add", "error", "Fury of the Ancients: the army must include at least one Techmarine.",
                                  conds=[cond(TECHMARINE_COVENANT, "force", "lessThan", 1)]))

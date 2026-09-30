@@ -74,7 +74,7 @@ WEAPONS.update({
     "Combi-Plasma Gun": ["Bolter", "Plasma Gun"],
     "Combi-Volkite Charger": ["Bolter", "Volkite Charger"],
     "Combi-Weapon": ["Bolter"],
-    "Havoc Launcher": [],
+    "Havoc Launcher": ["Havoc Launcher"],
     "Krak Grenades": ["Krak Grenade"],
     "Melta Bombs": ["Melta Bomb"],
     "Frag Grenades": [],
@@ -451,7 +451,7 @@ WEAPON_PROFILES.update({
     "Assault Cannon": ('24"', "6", "4", "Heavy 3, Rending, Jam"),
     "Kheres Assault Cannon": ('24"', "6", "4", "Heavy 6, Rending"),
     "Reaper Autocannon": ('36"', "7", "4", "Heavy 2, Twin-linked"),
-    "Twin-linked Accelerator Autocannon": ('48"', "7", "4", "Heavy 6, Twin-linked, Rending, Rapid Tracking"),
+    "Accelerator Autocannon": ('48"', "7", "4", "Heavy 6, Rending, Rapid Tracking"),
     "Flamestorm Cannon": ("Template", "6", "3", "Heavy 1"),
     "Plasma Blaster": ('18"', "7", "2", "Assault 2, Gets Hot"),
     "Conversion Beamer (0-18\")": ('0-18"', "6", "-", "Heavy 1, Blast"),
@@ -470,7 +470,7 @@ WEAPON_PROFILES.update({
     "Quad Launcher - Shatter": ('36"', "8", "4", "Heavy 4, Sunder"),
     "Quad Launcher - Incendiary": ('12"-60"', "4", "5", "Heavy 4, Barrage, Blast, Ignores Cover"),
     "Quad Launcher - Splinter": ('12"-36"', "2", "4", "Heavy 4, Barrage, Blast, Rending"),
-    "Quad Launcher - Phosphex": ('12"-36"', "4", "3", "Heavy 4, Barrage, Blast, Poisoned (3+), Crawling Fire, Lingering Death"),
+    "Quad Launcher - Phosphex": ('12"-36"', "4", "3", "Heavy 4, Barrage, Blast, Poisoned (3+), Lingering Death"),
     "Rad Missile": ('48"', "4", "3", "Heavy 1, Blast, Fleshbane, Rad-phage"),
     "Phosphex Bomb": ('6"', "5", "2", "Assault 1, Blast, One Use, Poison (3+), Lingering Death"),
     "M.40 Stalker Bolter": ('24"', "4", "5", "Heavy 2, Pinning"),
@@ -504,6 +504,10 @@ WEAPON_PROFILES.update({
     "Grav-flux Bombard": ('18"', "Special", "2", "Heavy 1, Large Blast, Concussive, Ignores Cover, Graviton Collapse"),
     "Phosphex Discharger": ('6-18"', "5", "2", "Heavy 3, Barrage, Blast, Poison (3+), One Use"),
     "Focused Bombardment": ("Unlimited", "8", "3", "Ordnance 1, Large Blast, Barrage, Lance, Twin-linked"),
+    # not in the army book - taken from Horus Heresy 1st edition / Warhammer 40,000 5th edition
+    "Havoc Launcher": ('48"', "5", "5", "Heavy 1, Blast, Twin-linked"),
+    "Typhoon Missile Launcher - Frag": ('48"', "4", "6", "Heavy 2, Blast"),
+    "Typhoon Missile Launcher - Krak": ('48"', "8", "3", "Heavy 2"),
 })
 
 # twin-linked versions: same profile + Twin-linked
@@ -519,7 +523,7 @@ for part in ["Frag", "Krak"]:
 
 _NEW_WEAPONS = {
     "Volkite Culverin": None, "Assault Cannon": None, "Kheres Assault Cannon": None, "Reaper Autocannon": None,
-    "Twin-linked Accelerator Autocannon": None, "Flamestorm Cannon": None, "Plasma Blaster": None,
+    "Accelerator Autocannon": None, "Flamestorm Cannon": None, "Plasma Blaster": None,
     "Conversion Beamer": ["Conversion Beamer (0-18\")", "Conversion Beamer (18-42\")", "Conversion Beamer (42-72\")"],
     "Heavy Conversion Beamer": ["Heavy Conversion Beamer (0-18\")", "Heavy Conversion Beamer (18-42\")",
                                 "Heavy Conversion Beamer (42-72\")"],
@@ -553,7 +557,7 @@ _NEW_WEAPONS = {
     "Leviathan Siege Drill with Meltagun": ["Leviathan Siege Drill", "Meltagun"],
     "Leviathan Storm Cannon": None, "Cyclonic Melta Lance": None, "Grav-flux Bombard": None,
     "Phosphex Discharger": None, "Focused Bombardment": None,
-    "Typhoon Missile Launcher": [],
+    "Typhoon Missile Launcher": ["Typhoon Missile Launcher - Frag", "Typhoon Missile Launcher - Krak"],
     "Heavy Bolter Sponsons": ["Heavy Bolter"], "Heavy Flamer Sponsons": ["Heavy Flamer"],
     "Lascannon Sponsons": ["Lascannon"],
     "Incendiary Shells": ["Quad Launcher - Incendiary"], "Shatter Shells": ["Quad Launcher - Shatter"],
@@ -571,7 +575,7 @@ for n, profs in _NEW_WEAPONS.items():
 
 WEAPON_RULES.update({
     "Assault Cannon": ["Rending", "Jam"], "Kheres Assault Cannon": ["Rending", "Jam"],
-    "Twin-linked Accelerator Autocannon": ["Rending", "Rapid Tracking", "Twin-Linked"],
+    "Accelerator Autocannon": ["Rending", "Rapid Tracking"],
     "Heavy Conversion Beamer": ["Firing Calibration"], "Plasma Blaster": ["Gets Hot"],
     "Quad Launcher": ["Shell Shock"], "Quad Launcher with Frag and Shatter Shells": ["Shell Shock", "Sunder"],
     "Shatter Shells": ["Sunder"], "Phosphex Canister Shot": ["Lingering Death"],
@@ -810,8 +814,8 @@ RITES = {
         "EFFECTS - Destroyer Formation: Legion Destroyer Squads may be Troops, and compulsory Troops must be Destroyer "
         "Squads. Forbidden Arsenal: any Legiones Astartes Character without access to Phosphex Bombs may take one for +10; "
         "for every five models in a Destroyer Squad, up to two Destroyers may take a Missile Launcher with Suspensor Web "
-        "and Rad Missiles (+25).\nLIMITATIONS - At least one Legion Destroyer Squad must be joined by / led by a Moritat. No "
-        "more than one Heavy Support choice."),
+        "and Rad Missiles (+25).\nLIMITATIONS - The army must include at least one Moritat. No more than one Heavy "
+        "Support choice."),
     "Fury of the Ancients": (
         "EFFECTS - Ancient Warhost: Castraferrum (Legion) Dreadnoughts and Contemptor Dreadnoughts may be Troops; the "
         "compulsory Troops must be selected from these units.\nLIMITATIONS - Keeper of the Ancients: the army must include "
