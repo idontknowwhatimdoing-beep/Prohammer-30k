@@ -35,8 +35,8 @@ def any_rite(*names):
 
 # which rite lets which unit be Troops (and makes it count for the compulsory Troops)
 TROOP_RITES = {
-    "Legion Veteran Squad": ["Pride of the Legion", "Primarch's Chosen"],
-    "Legion Terminator Squad": ["Pride of the Legion", "Primarch's Chosen"],
+    "Legion Veteran Squad": ["Pride of the Legion"],
+    "Legion Terminator Squad": ["Pride of the Legion"],
     "Legion Destroyer Squad": ["Legion Destroyer Company"],
     "Legion Dreadnought": ["Fury of the Ancients"],
     "Legion Contemptor Dreadnought": ["Fury of the Ancients"],
@@ -44,13 +44,13 @@ TROOP_RITES = {
 }
 # which rites force the compulsory Troops to be something else: unit -> rites under which it stops counting
 NOT_LINE_UNDER = {
-    "Legion Tactical Squad": ["Primarch's Chosen", "The Guard of the Crimson King", "Pride of the Legion", "Legion Assault Company", "Legion Breacher Company",
+    "Legion Tactical Squad": ["Pride of the Legion", "Legion Assault Company", "Legion Breacher Company",
                               "Legion Recon Company", "Legion Destroyer Company", "Fury of the Ancients",
                               "Sky Hunter Phalanx"],
-    "Legion Assault Squad": ["Primarch's Chosen", "The Guard of the Crimson King", "Pride of the Legion", "Legion Breacher Company", "Legion Recon Company",
+    "Legion Assault Squad": ["Pride of the Legion", "Legion Breacher Company", "Legion Recon Company",
                              "Legion Destroyer Company", "Fury of the Ancients", "Sky Hunter Phalanx",
                              "Legion Tactical Company"],
-    "Legion Breacher Siege Squad": ["Primarch's Chosen", "The Guard of the Crimson King", "Pride of the Legion", "Legion Assault Company", "Legion Recon Company",
+    "Legion Breacher Siege Squad": ["Pride of the Legion", "Legion Assault Company", "Legion Recon Company",
                                     "Legion Destroyer Company", "Fury of the Ancients", "Sky Hunter Phalanx",
                                     "Legion Tactical Company"],
 }
@@ -1229,7 +1229,7 @@ def heavy_vehicles():
 
 # ------------------------------------------------------------ Rites of War
 def rites_entry():
-    master = [cond(gs.CAT_MASTER, "force", "atLeast", 1), cond(L.consul_id("Delegatus"), "force", "atLeast", 1)]
+    master = [cond(L.PRAETOR, "force", "atLeast", 1), cond(L.consul_id("Delegatus"), "force", "atLeast", 1)]
     no_master = all_of(*[_negate(c) for c in master])
     fa_limit = ["Armoured Breakthrough", "Legion Breacher Company", "Fury of the Ancients"]
     hs_limit = ["Legion Assault Company", "Legion Destroyer Company", "Sky Hunter Phalanx"]
@@ -1255,11 +1255,6 @@ def rites_entry():
         if name == "Legion Destroyer Company":
             mods.append(modifier("add", "error", "Legion Destroyer Company: the army must include at least one Moritat.",
                                  conds=[cond(L.consul_id("Moritat"), "force", "lessThan", 1)]))
-        if name == "Primarch's Chosen":
-            mods.append(modifier("add", "error", "Primarch's Chosen: the army must include the Primarch of its Legion.",
-                                 conds=[cond(gs.CAT_PRIMARCH, "force", "lessThan", 1)]))
-            mods.append(modifier("add", "error", "Primarch's Chosen: the army must contain at least 1,500 points.",
-                                 conds=[cond("any", "roster", "lessThan", 1500, field=PTS, deep=False)]))
         if name == "Fury of the Ancients":
             mods.append(modifier("add", "error", "Fury of the Ancients: the army must include at least one Techmarine.",
                                  conds=[cond(TECHMARINE_COVENANT, "force", "lessThan", 1)]))
