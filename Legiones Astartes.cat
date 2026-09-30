@@ -13041,6 +13041,9 @@ LIMITATIONS - At least one Independent Character must have a Boarding Shield. No
             <selectionEntry id="cf9e-0c8a-1d16-7758" name="Legion Recon Company" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="add" field="error" value="Legion Recon Company: no model may wear Terminator Armour or Cataphractii Terminator Armour.">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cf9e-0c8a-1d16-7758" type="atLeast" />
+                  </conditions>
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
@@ -13077,6 +13080,7 @@ LIMITATIONS - At least one Legion Destroyer Squad must be joined by / led by a M
                 <modifier type="add" field="error" value="Fury of the Ancients: the army must include at least one Techmarine.">
                   <conditions>
                     <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a634-eaa0-f122-089d" type="lessThan" />
+                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7be5-b0e5-9507-5292" type="atLeast" />
                   </conditions>
                 </modifier>
               </modifiers>
@@ -13093,6 +13097,9 @@ LIMITATIONS - Keeper of the Ancients: the army must include at least one Techmar
             <selectionEntry id="8cf8-1ffd-f610-ea86" name="Sky Hunter Phalanx" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="add" field="error" value="Sky Hunter Phalanx: the army may not include Castraferrum (Legion) or Contemptor Dreadnoughts.">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8cf8-1ffd-f610-ea86" type="atLeast" />
+                  </conditions>
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
@@ -13118,6 +13125,7 @@ LIMITATIONS - At least one Independent Character must be mounted on a Jetbike. N
                 <modifier type="add" field="error" value="Legion Tactical Company: the army must include at least three Legion Tactical Squads.">
                   <conditions>
                     <condition field="selections" scope="force" value="3" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9b73-36d5-ba55-fd55" type="lessThan" />
+                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7b54-113c-504b-2b8a" type="atLeast" />
                   </conditions>
                 </modifier>
               </modifiers>

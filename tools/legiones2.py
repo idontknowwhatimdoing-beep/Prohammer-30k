@@ -1235,6 +1235,12 @@ def rites_entry():
         if name == "Fury of the Ancients":
             mods.append(modifier("add", "error", "Fury of the Ancients: the army must include at least one Techmarine.",
                                  conds=[cond(TECHMARINE_COVENANT, "force", "lessThan", 1)]))
+        for m in mods:  # an error only applies while this Rite is the one chosen
+            cs = m.find("conditions")
+            if cs is None:
+                cs = el("conditions")
+                m.insert(0, cs)
+            cs.append(cond(rid, "force", "atLeast", 1))
         ents.append(entry(rid, name, rules=[rule(uid("rite-rule", name), name, text)], mods=mods))
     gid = uid("grp", "rites")
     root_mods = [modifier("add", "error", "A Rite of War requires a model with Master of the Legion (Legion Praetor or "
