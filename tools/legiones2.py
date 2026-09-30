@@ -115,14 +115,15 @@ def slot(key, title, default, options, zero_if=None, show_if=None, default_is_en
         dl = default_is_entry.get("id")
     else:
         dl = uid("link", gid, default)
-        links.append(link(dl, W(default), default, constraints=[constraint(uid(dl, "max"), "max", 1, auto=True)]))
+        links.append(link(dl, W(default), default))
+    # no per-option limits: the group's own min/max of 1 already allows exactly one choice, and per-option
+    # limits would wrongly count the same weapon chosen in a different slot of the same model
     for name, pts in options:
         if not isinstance(name, str):
             entries.append(name)
             continue
         lid = uid("link", gid, name)
-        links.append(link(lid, W(name), name, cost=pts or None,
-                          constraints=[constraint(uid(lid, "max"), "max", 1, auto=True)]))
+        links.append(link(lid, W(name), name, cost=pts or None))
     mn, mx = uid(gid, "min"), uid(gid, "max")
     mods = []
     if zero_if:
@@ -756,9 +757,13 @@ def dreadnought(name, cost, stats, arm1, arm2, rules_, upgrades, extra_groups=()
     ccw1 = uid(u, "arm1-ccw")
     ccw2 = uid(u, "arm2-ccw")
     fist2 = uid(u, "arm2-chainfist")
-    arm1_ccw = entry(ccw1, "Dreadnought Close Combat Weapon", links=[gear(ccw1, "Dreadnought Close Combat Weapon")])
-    arm2_ccw = entry(ccw2, "Dreadnought Close Combat Weapon", links=[gear(ccw2, "Dreadnought Close Combat Weapon")])
-    arm2_fist = entry(fist2, "Chainfist", cost=10, links=[gear(fist2, "Chainfist")])
+    # the built-in weapon lives inside the close-combat arm, so it exists exactly when that arm does
+    arm1_ccw = entry(ccw1, "Dreadnought Close Combat Weapon", links=[gear(ccw1, "Dreadnought Close Combat Weapon")],
+                     groups=[slot(ccw1, "Built-in weapon", "Twin-linked Bolter", BUILT_IN)])
+    arm2_ccw = entry(ccw2, "Dreadnought Close Combat Weapon", links=[gear(ccw2, "Dreadnought Close Combat Weapon")],
+                     groups=[slot(ccw2, "Built-in weapon", "Twin-linked Bolter", BUILT_IN)])
+    arm2_fist = entry(fist2, "Chainfist", cost=10, links=[gear(fist2, "Chainfist")],
+                      groups=[slot(fist2, "Built-in weapon", "Twin-linked Bolter", BUILT_IN)])
     prof = walker_profile(u, name, ws, bs, s, f, si, r, i, a)
     both = all_of(cond(ccw1, u, "atLeast", 1), cond(ccw2, u, "atLeast", 1))
     pilot = [cond(W("Veteran Pilot"), u, "atLeast", 1)]
@@ -773,9 +778,6 @@ def dreadnought(name, cost, stats, arm1, arm2, rules_, upgrades, extra_groups=()
              arm1 + [(arm1_ccw, None)]),
         slot(u, "Weapon Arm 2 (replace Dreadnought Close Combat Weapon)", None, arm2 + [(arm2_fist, None)],
              default_is_entry=arm2_ccw),
-        slot(u, "Arm 1 built-in weapon", "Twin-linked Bolter", BUILT_IN, show_if=[cond(ccw1, u, "atLeast", 1)]),
-        slot(u, "Arm 2 built-in weapon", "Twin-linked Bolter", BUILT_IN,
-             show_if=[cond(ccw2, u, "atLeast", 1), cond(fist2, u, "atLeast", 1)]),
         take(u, "Vehicle Upgrades", upgrades),
         *extra_groups,
     ]
