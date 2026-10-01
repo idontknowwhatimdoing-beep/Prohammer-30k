@@ -16586,6 +16586,21 @@ LIMITATIONS - The army's compulsory Troops choices must be Templar Brethren Squa
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aad5-cfaa-e392-5eee" type="max" />
 </constraints>
+<selectionEntries>
+<selectionEntry id="b3cd-9858-ea15-a816" name="Twin-linked Lascannon" hidden="false" collective="false" import="true" type="upgrade">
+<entryLinks>
+<entryLink id="c462-f9af-ab2f-8ee9" name="Twin-linked Lascannon" hidden="false" collective="false" import="true" targetId="8ddf-f6ab-db49-9512" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7aab-77d7-fac5-96ed" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e02f-77b6-c41d-34ef" type="max" />
+</constraints>
+</entryLink>
+</entryLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
+</costs>
+</selectionEntry>
+</selectionEntries>
 <entryLinks>
 <entryLink id="b4ab-e9a8-fee1-6308" name="Twin-linked Heavy Bolter" hidden="false" collective="false" import="true" targetId="9f1b-33a9-dc3e-5648" type="selectionEntry">
 <costs>
@@ -16595,11 +16610,6 @@ LIMITATIONS - The army's compulsory Troops choices must be Templar Brethren Squa
 <entryLink id="6fbf-f93c-3021-30b8" name="Twin-linked Heavy Flamer" hidden="false" collective="false" import="true" targetId="9bef-466f-d382-e2fd" type="selectionEntry">
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
-</costs>
-</entryLink>
-<entryLink id="b3cd-9858-ea15-a816" name="Twin-linked Lascannon" hidden="false" collective="false" import="true" targetId="8ddf-f6ab-db49-9512" type="selectionEntry">
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
 </costs>
 </entryLink>
 </entryLinks>
@@ -16800,6 +16810,21 @@ LIMITATIONS - The army's compulsory Troops choices must be Templar Brethren Squa
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dab0-0cc0-8269-78b0" type="max" />
 </constraints>
+<selectionEntries>
+<selectionEntry id="9112-73f4-0d25-a8b6" name="Twin-linked Lascannon" hidden="false" collective="false" import="true" type="upgrade">
+<entryLinks>
+<entryLink id="9fd1-53b7-b197-a88b" name="Twin-linked Lascannon" hidden="false" collective="false" import="true" targetId="8ddf-f6ab-db49-9512" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b3f7-cce6-6d65-e33c" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5158-c714-2c4d-998c" type="max" />
+</constraints>
+</entryLink>
+</entryLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
+</costs>
+</selectionEntry>
+</selectionEntries>
 <entryLinks>
 <entryLink id="248a-dd90-be52-d63c" name="Twin-linked Heavy Bolter" hidden="false" collective="false" import="true" targetId="9f1b-33a9-dc3e-5648" type="selectionEntry">
 <costs>
@@ -16809,11 +16834,6 @@ LIMITATIONS - The army's compulsory Troops choices must be Templar Brethren Squa
 <entryLink id="c643-57a6-86ab-1c8d" name="Twin-linked Heavy Flamer" hidden="false" collective="false" import="true" targetId="9bef-466f-d382-e2fd" type="selectionEntry">
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
-</costs>
-</entryLink>
-<entryLink id="9112-73f4-0d25-a8b6" name="Twin-linked Lascannon" hidden="false" collective="false" import="true" targetId="8ddf-f6ab-db49-9512" type="selectionEntry">
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
 </costs>
 </entryLink>
 </entryLinks>
@@ -17014,6 +17034,21 @@ LIMITATIONS - The army's compulsory Troops choices must be Templar Brethren Squa
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2290-f9b1-4b85-8311" type="max" />
 </constraints>
+<selectionEntries>
+<selectionEntry id="ccd1-dbe6-0790-793b" name="Twin-linked Lascannon" hidden="false" collective="false" import="true" type="upgrade">
+<entryLinks>
+<entryLink id="8a5d-b4ec-9ef5-8a93" name="Twin-linked Lascannon" hidden="false" collective="false" import="true" targetId="8ddf-f6ab-db49-9512" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4c57-6041-c044-e12c" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0765-7267-c187-1c9c" type="max" />
+</constraints>
+</entryLink>
+</entryLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
+</costs>
+</selectionEntry>
+</selectionEntries>
 <entryLinks>
 <entryLink id="b0cc-8500-6561-3384" name="Twin-linked Heavy Bolter" hidden="false" collective="false" import="true" targetId="9f1b-33a9-dc3e-5648" type="selectionEntry">
 <costs>
@@ -17023,11 +17058,6 @@ LIMITATIONS - The army's compulsory Troops choices must be Templar Brethren Squa
 <entryLink id="ebac-ed5f-28f2-ef8a" name="Twin-linked Heavy Flamer" hidden="false" collective="false" import="true" targetId="9bef-466f-d382-e2fd" type="selectionEntry">
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
-</costs>
-</entryLink>
-<entryLink id="ccd1-dbe6-0790-793b" name="Twin-linked Lascannon" hidden="false" collective="false" import="true" targetId="8ddf-f6ab-db49-9512" type="selectionEntry">
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
 </costs>
 </entryLink>
 </entryLinks>
@@ -20787,12 +20817,6 @@ LIMITATIONS - The army's compulsory Troops choices must be Templar Brethren Squa
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a2c6-91be-2540-fc9e" type="max" />
 </constraints>
 </entryLink>
-<entryLink id="a9da-d56f-ed89-dad4" name="Bolt Pistol" hidden="false" collective="false" import="true" targetId="10e2-6917-e765-7495" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7c0e-58f6-7290-4c1a" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5739-6496-312d-f127" type="max" />
-</constraints>
-</entryLink>
 </entryLinks>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
@@ -23321,6 +23345,24 @@ LIMITATIONS - The army's compulsory Troops choices must be Templar Brethren Squa
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="964f-1222-bd55-0e1f" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="833b-d63f-56e9-cc39" type="max" />
 </constraints>
+<selectionEntries>
+<selectionEntry id="ceba-d512-b999-aaba" name="Power Weapon" hidden="false" collective="false" import="true" type="upgrade">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3091-6f67-ac1a-059c" type="max" />
+</constraints>
+<entryLinks>
+<entryLink id="ce05-aed6-748c-ed49" name="Power Weapon" hidden="false" collective="false" import="true" targetId="fb4f-b267-7556-185d" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a0c2-1c40-dcde-8e49" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e62f-5b90-42f6-36a3" type="max" />
+</constraints>
+</entryLink>
+</entryLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
+</costs>
+</selectionEntry>
+</selectionEntries>
 <entryLinks>
 <entryLink id="8e0b-fe0c-fcdf-c8f2" name="Bolt Pistol" hidden="false" collective="false" import="true" targetId="10e2-6917-e765-7495" type="selectionEntry" sortIndex="1" defaultAmount="1">
 <constraints>
@@ -23365,14 +23407,6 @@ LIMITATIONS - The army's compulsory Troops choices must be Templar Brethren Squa
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
-</costs>
-</entryLink>
-<entryLink id="ceba-d512-b999-aaba" name="Power Weapon" hidden="false" collective="false" import="true" targetId="fb4f-b267-7556-185d" type="selectionEntry" sortIndex="8">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3091-6f67-ac1a-059c" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
 </costs>
 </entryLink>
 <entryLink id="ca01-1f5e-d682-833c" name="Rending Weapon" hidden="false" collective="false" import="true" targetId="ffab-7f00-50f4-91e0" type="selectionEntry" sortIndex="9">
@@ -23577,12 +23611,6 @@ LIMITATIONS - The army's compulsory Troops choices must be Templar Brethren Squa
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d7a7-6e14-38fc-074d" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8c42-763e-de45-2e73" type="max" />
-</constraints>
-</entryLink>
-<entryLink id="c85e-cbf1-5160-a5a6" name="Bolt Pistol" hidden="false" collective="false" import="true" targetId="10e2-6917-e765-7495" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aded-c125-e8fd-4b9c" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c1ac-e9a6-7038-54a1" type="max" />
 </constraints>
 </entryLink>
 <entryLink id="048b-5552-785d-f5a7" name="Power Weapon" hidden="false" collective="false" import="true" targetId="fb4f-b267-7556-185d" type="selectionEntry">
@@ -26453,6 +26481,24 @@ LIMITATIONS - The army's compulsory Troops choices must be Templar Brethren Squa
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f6d2-b7e2-8b0e-9981" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="95f9-5067-cfa9-ffc1" type="max" />
 </constraints>
+<selectionEntries>
+<selectionEntry id="58d2-436e-13b4-fa12" name="Power Weapon" hidden="false" collective="false" import="true" type="upgrade">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1185-45b3-7162-09f0" type="max" />
+</constraints>
+<entryLinks>
+<entryLink id="9eb4-24f1-e138-8991" name="Power Weapon" hidden="false" collective="false" import="true" targetId="fb4f-b267-7556-185d" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a717-aeae-11fe-937b" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6e92-622a-0d53-948f" type="max" />
+</constraints>
+</entryLink>
+</entryLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
+</costs>
+</selectionEntry>
+</selectionEntries>
 <entryLinks>
 <entryLink id="d4ce-ff23-066f-2ba9" name="Bolt Pistol" hidden="false" collective="false" import="true" targetId="10e2-6917-e765-7495" type="selectionEntry" sortIndex="1" defaultAmount="1">
 <constraints>
@@ -26497,14 +26543,6 @@ LIMITATIONS - The army's compulsory Troops choices must be Templar Brethren Squa
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
-</costs>
-</entryLink>
-<entryLink id="58d2-436e-13b4-fa12" name="Power Weapon" hidden="false" collective="false" import="true" targetId="fb4f-b267-7556-185d" type="selectionEntry" sortIndex="8">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1185-45b3-7162-09f0" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
 </costs>
 </entryLink>
 <entryLink id="0880-aad7-6024-17a4" name="Rending Weapon" hidden="false" collective="false" import="true" targetId="ffab-7f00-50f4-91e0" type="selectionEntry" sortIndex="9">
@@ -26709,12 +26747,6 @@ LIMITATIONS - The army's compulsory Troops choices must be Templar Brethren Squa
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9fc4-0b3e-e749-4579" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4d34-2a5c-3084-b024" type="max" />
-</constraints>
-</entryLink>
-<entryLink id="750e-8cac-4274-85d4" name="Bolt Pistol" hidden="false" collective="false" import="true" targetId="10e2-6917-e765-7495" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="961d-9122-bda2-1ec8" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2283-fd7b-d365-ef07" type="max" />
 </constraints>
 </entryLink>
 <entryLink id="afd9-bf1e-dd7d-f725" name="Power Weapon" hidden="false" collective="false" import="true" targetId="fb4f-b267-7556-185d" type="selectionEntry">
@@ -29823,6 +29855,21 @@ LIMITATIONS - The army's compulsory Troops choices must be Templar Brethren Squa
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4851-b72d-6f53-221d" type="max" />
 </constraints>
+<selectionEntries>
+<selectionEntry id="a063-b862-ca86-8608" name="Twin-linked Lascannon" hidden="false" collective="false" import="true" type="upgrade">
+<entryLinks>
+<entryLink id="6999-a951-309d-aa06" name="Twin-linked Lascannon" hidden="false" collective="false" import="true" targetId="8ddf-f6ab-db49-9512" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b7ad-2595-31e6-66e2" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="218d-d7d5-3655-9f37" type="max" />
+</constraints>
+</entryLink>
+</entryLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
+</costs>
+</selectionEntry>
+</selectionEntries>
 <entryLinks>
 <entryLink id="26aa-404a-4c1f-e25d" name="Twin-linked Heavy Bolter" hidden="false" collective="false" import="true" targetId="9f1b-33a9-dc3e-5648" type="selectionEntry">
 <costs>
@@ -29832,11 +29879,6 @@ LIMITATIONS - The army's compulsory Troops choices must be Templar Brethren Squa
 <entryLink id="4181-96a3-26b4-a45e" name="Twin-linked Heavy Flamer" hidden="false" collective="false" import="true" targetId="9bef-466f-d382-e2fd" type="selectionEntry">
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
-</costs>
-</entryLink>
-<entryLink id="a063-b862-ca86-8608" name="Twin-linked Lascannon" hidden="false" collective="false" import="true" targetId="8ddf-f6ab-db49-9512" type="selectionEntry">
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
 </costs>
 </entryLink>
 </entryLinks>
@@ -30671,12 +30713,6 @@ LIMITATIONS - The army's compulsory Troops choices must be Templar Brethren Squa
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8a28-6891-e841-1851" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1512-067b-bcb7-7d40" type="max" />
-</constraints>
-</entryLink>
-<entryLink id="0220-9c7e-3116-30e5" name="Bolt Pistol" hidden="false" collective="false" import="true" targetId="10e2-6917-e765-7495" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2075-bb30-83f6-d74e" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bfae-9999-68ae-4d07" type="max" />
 </constraints>
 </entryLink>
 </entryLinks>
@@ -32012,6 +32048,24 @@ LIMITATIONS - The army's compulsory Troops choices must be Templar Brethren Squa
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9286-6731-cb37-e935" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f3d1-6e46-3bde-e2ff" type="max" />
 </constraints>
+<selectionEntries>
+<selectionEntry id="e582-51cc-9cad-bd25" name="Power Weapon" hidden="false" collective="false" import="true" type="upgrade">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1ac8-bab6-b448-2f5a" type="max" />
+</constraints>
+<entryLinks>
+<entryLink id="eb2b-af6b-eda7-2969" name="Power Weapon" hidden="false" collective="false" import="true" targetId="fb4f-b267-7556-185d" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="039b-63ce-92d2-7575" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4936-8089-0604-7c5d" type="max" />
+</constraints>
+</entryLink>
+</entryLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
+</costs>
+</selectionEntry>
+</selectionEntries>
 <entryLinks>
 <entryLink id="e3a3-d3e0-525a-c775" name="Bolt Pistol" hidden="false" collective="false" import="true" targetId="10e2-6917-e765-7495" type="selectionEntry" sortIndex="1" defaultAmount="1">
 <constraints>
@@ -32056,14 +32110,6 @@ LIMITATIONS - The army's compulsory Troops choices must be Templar Brethren Squa
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
-</costs>
-</entryLink>
-<entryLink id="e582-51cc-9cad-bd25" name="Power Weapon" hidden="false" collective="false" import="true" targetId="fb4f-b267-7556-185d" type="selectionEntry" sortIndex="8">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1ac8-bab6-b448-2f5a" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
 </costs>
 </entryLink>
 <entryLink id="e8c3-5bdc-1aad-a87a" name="Rending Weapon" hidden="false" collective="false" import="true" targetId="ffab-7f00-50f4-91e0" type="selectionEntry" sortIndex="9">
@@ -32268,12 +32314,6 @@ LIMITATIONS - The army's compulsory Troops choices must be Templar Brethren Squa
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5fc0-f6f0-806b-f102" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fd3c-6cdf-aa7a-147a" type="max" />
-</constraints>
-</entryLink>
-<entryLink id="6e4b-3185-157c-ce64" name="Bolt Pistol" hidden="false" collective="false" import="true" targetId="10e2-6917-e765-7495" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="088e-cf00-75af-b3e8" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4da9-62eb-973d-7ee0" type="max" />
 </constraints>
 </entryLink>
 <entryLink id="3a94-9183-7205-ad55" name="Power Weapon" hidden="false" collective="false" import="true" targetId="fb4f-b267-7556-185d" type="selectionEntry">
@@ -38011,12 +38051,6 @@ LIMITATIONS - The army's compulsory Troops choices must be Templar Brethren Squa
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="15ff-fa0f-b701-f1e2" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e991-4c0d-2b71-d031" type="max" />
-</constraints>
-</entryLink>
-<entryLink id="04f6-8b6d-db65-9e90" name="Bolt Pistol" hidden="false" collective="false" import="true" targetId="10e2-6917-e765-7495" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7ea6-5624-f66c-5a5a" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5db5-078e-4c8a-a80d" type="max" />
 </constraints>
 </entryLink>
 </entryLinks>

@@ -1173,18 +1173,6 @@
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8e19-c9b1-67e9-6b8b" type="max" />
 </constraints>
 </entryLink>
-<entryLink id="0872-61c1-0d26-197c" name="Laspistol or Autopistol" hidden="false" collective="false" import="true" targetId="6b63-f068-e43d-3c47" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c681-3534-0997-bf1e" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c7c2-465b-965d-ddc0" type="max" />
-</constraints>
-</entryLink>
-<entryLink id="622c-812c-c568-9101" name="Close Combat Weapon" hidden="false" collective="false" import="true" targetId="7b6a-5697-5a6a-2d74" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c289-3c2b-c71b-4362" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2138-922b-2b81-d0fd" type="max" />
-</constraints>
-</entryLink>
 <entryLink id="32c2-10e0-d43c-37ad" name="Frag Grenades" hidden="false" collective="false" import="true" targetId="a332-14f3-9d6d-ab7a" type="selectionEntry">
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="93fb-581b-86cb-cd01" type="min" />
@@ -3738,12 +3726,6 @@
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0b78-9bc1-eba2-b7cd" type="max" />
 </constraints>
 </entryLink>
-<entryLink id="e892-e5ff-8abf-7f9d" name="Close Combat Weapon" hidden="false" collective="false" import="true" targetId="7b6a-5697-5a6a-2d74" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bc52-a9cf-b123-f102" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c808-dae9-d549-dd9d" type="max" />
-</constraints>
-</entryLink>
 <entryLink id="a536-310a-e750-3c63" name="Frag Grenades" hidden="false" collective="false" import="true" targetId="a332-14f3-9d6d-ab7a" type="selectionEntry">
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eccd-e158-61e9-cea5" type="min" />
@@ -4838,20 +4820,7 @@
 </selectionEntryGroups>
 </selectionEntryGroup>
 </selectionEntryGroups>
-<entryLinks>
-<entryLink id="b360-9a8d-e7cb-8b8f" name="Laspistol" hidden="false" collective="false" import="true" targetId="b560-9c34-5a09-6fab" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cedc-00e0-c8a1-dfa1" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b416-e9d4-266e-83d4" type="max" />
-</constraints>
-</entryLink>
-<entryLink id="697c-d6f5-89d4-f198" name="Close Combat Weapon" hidden="false" collective="false" import="true" targetId="7b6a-5697-5a6a-2d74" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6137-3862-67ba-1305" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="54d2-0059-947d-db70" type="max" />
-</constraints>
-</entryLink>
-</entryLinks>
+<entryLinks />
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="35" />
 </costs>
@@ -6046,18 +6015,6 @@
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e237-93e3-c1bf-ed3c" type="max" />
 </constraints>
 </entryLink>
-<entryLink id="fb74-789c-acb9-24f1" name="Laspistol" hidden="false" collective="false" import="true" targetId="b560-9c34-5a09-6fab" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ed7f-5d0c-18b8-bccd" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="52e6-5eec-62da-d726" type="max" />
-</constraints>
-</entryLink>
-<entryLink id="04de-9f9e-98ba-845b" name="Power Weapon" hidden="false" collective="false" import="true" targetId="fb4f-b267-7556-185d" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5b8d-7b17-c518-c02b" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ff69-496e-9feb-cd0d" type="max" />
-</constraints>
-</entryLink>
 <entryLink id="f944-19be-5fff-8847" name="Servo-arm" hidden="false" collective="false" import="true" targetId="c1e5-9679-e22f-a3d8" type="selectionEntry">
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fe29-4c9a-aa95-0472" type="min" />
@@ -6404,18 +6361,6 @@
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="759d-a730-dd35-b565" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ed62-5c17-b093-ac74" type="max" />
-</constraints>
-</entryLink>
-<entryLink id="9a19-658f-d8a9-aeb2" name="Laspistol" hidden="false" collective="false" import="true" targetId="b560-9c34-5a09-6fab" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ba4d-4584-b618-04cd" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="84a2-ad10-d7f3-a3f7" type="max" />
-</constraints>
-</entryLink>
-<entryLink id="ef9b-151b-46bb-bedc" name="Power Weapon" hidden="false" collective="false" import="true" targetId="fb4f-b267-7556-185d" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="464c-0f2e-fb64-add4" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8027-a713-acfa-d9aa" type="max" />
 </constraints>
 </entryLink>
 <entryLink id="592b-cef4-1239-e7cf" name="Servo-arm" hidden="false" collective="false" import="true" targetId="c1e5-9679-e22f-a3d8" type="selectionEntry">
@@ -6777,12 +6722,6 @@
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4a9c-1cc3-72ee-d6e7" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2fa9-9729-80fc-c6bd" type="max" />
-</constraints>
-</entryLink>
-<entryLink id="5859-0c73-af40-8be4" name="Close Combat Weapon" hidden="false" collective="false" import="true" targetId="7b6a-5697-5a6a-2d74" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0ce1-b98a-e45d-20f1" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="834a-af04-276b-b27f" type="max" />
 </constraints>
 </entryLink>
 <entryLink id="541e-fa23-a65e-b2c5" name="Frag Grenades" hidden="false" collective="false" import="true" targetId="a332-14f3-9d6d-ab7a" type="selectionEntry">
@@ -7921,12 +7860,6 @@
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bbd6-9208-b099-3e92" type="max" />
 </constraints>
 </entryLink>
-<entryLink id="05b4-9c74-65d2-98bc" name="Close Combat Weapon" hidden="false" collective="false" import="true" targetId="7b6a-5697-5a6a-2d74" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="81bc-dc98-30ed-f0dd" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c013-ca7f-182a-35d0" type="max" />
-</constraints>
-</entryLink>
 <entryLink id="b4da-2783-bd72-7184" name="Frag Grenades" hidden="false" collective="false" import="true" targetId="a332-14f3-9d6d-ab7a" type="selectionEntry">
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="11b2-753b-5888-136c" type="min" />
@@ -8975,12 +8908,6 @@
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="240f-58c6-6013-c99c" type="max" />
 </constraints>
 </entryLink>
-<entryLink id="44bf-c72b-6712-6c05" name="Close Combat Weapon" hidden="false" collective="false" import="true" targetId="7b6a-5697-5a6a-2d74" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="86fa-e1c7-a945-d0f9" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="561f-9319-0e3f-6d2e" type="max" />
-</constraints>
-</entryLink>
 <entryLink id="cfbb-4a8c-4c23-9d53" name="Frag Grenades" hidden="false" collective="false" import="true" targetId="a332-14f3-9d6d-ab7a" type="selectionEntry">
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e8a4-c74a-6baf-7f01" type="min" />
@@ -9860,12 +9787,6 @@
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1ca6-c6e1-34ad-54e8" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2ec1-bcd3-ca4d-6515" type="max" />
-</constraints>
-</entryLink>
-<entryLink id="022c-6705-f4c9-05a6" name="Close Combat Weapon" hidden="false" collective="false" import="true" targetId="7b6a-5697-5a6a-2d74" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f349-e799-b3a5-f1d4" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="69d8-4d5c-6d96-b1f0" type="max" />
 </constraints>
 </entryLink>
 <entryLink id="c224-d13c-da66-7121" name="Frag Grenades" hidden="false" collective="false" import="true" targetId="a332-14f3-9d6d-ab7a" type="selectionEntry">
@@ -10941,12 +10862,6 @@
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6510-4b8b-976b-35b9" type="max" />
 </constraints>
 </entryLink>
-<entryLink id="9255-e493-eeb8-924b" name="Close Combat Weapon" hidden="false" collective="false" import="true" targetId="7b6a-5697-5a6a-2d74" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bca7-0b95-f13b-f4e4" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e346-b0ee-e064-0a23" type="max" />
-</constraints>
-</entryLink>
 <entryLink id="947f-069e-cef7-6eb8" name="Frag Grenades" hidden="false" collective="false" import="true" targetId="a332-14f3-9d6d-ab7a" type="selectionEntry">
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d042-a9fe-42f7-d268" type="min" />
@@ -11691,12 +11606,6 @@
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="136e-4703-3b96-7c06" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0a09-c2a1-dbf3-484d" type="max" />
-</constraints>
-</entryLink>
-<entryLink id="8de6-bf9a-db08-1640" name="Close Combat Weapon" hidden="false" collective="false" import="true" targetId="7b6a-5697-5a6a-2d74" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ca6c-e5d5-d791-7bc6" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8d21-dfaf-83d6-f60d" type="max" />
 </constraints>
 </entryLink>
 <entryLink id="c730-72ba-bc98-92f3" name="Frag Grenades" hidden="false" collective="false" import="true" targetId="a332-14f3-9d6d-ab7a" type="selectionEntry">
@@ -12445,12 +12354,6 @@
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="57b1-c26a-244c-e5d6" type="max" />
 </constraints>
 </entryLink>
-<entryLink id="3d32-1f01-ab79-5340" name="Close Combat Weapon" hidden="false" collective="false" import="true" targetId="7b6a-5697-5a6a-2d74" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c957-b5af-3774-22d7" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5edd-32ab-10e6-d0d9" type="max" />
-</constraints>
-</entryLink>
 <entryLink id="efe2-5e0b-aede-7231" name="Frag Grenades" hidden="false" collective="false" import="true" targetId="a332-14f3-9d6d-ab7a" type="selectionEntry">
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f679-6c8a-c580-2f0f" type="min" />
@@ -13197,12 +13100,6 @@
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7841-d3e9-e0d1-e2e9" type="max" />
 </constraints>
 </entryLink>
-<entryLink id="b97c-908e-8025-3b77" name="Close Combat Weapon" hidden="false" collective="false" import="true" targetId="7b6a-5697-5a6a-2d74" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2a47-e919-477c-b51f" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8696-c300-c577-35b5" type="max" />
-</constraints>
-</entryLink>
 <entryLink id="0203-0f0f-aa83-9e57" name="Frag Grenades" hidden="false" collective="false" import="true" targetId="a332-14f3-9d6d-ab7a" type="selectionEntry">
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c3e1-9e0e-1c7d-7e96" type="min" />
@@ -13947,12 +13844,6 @@
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5f75-6089-fc40-dd3b" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9069-7b93-2861-8b4e" type="max" />
-</constraints>
-</entryLink>
-<entryLink id="0b5f-6e38-50f0-350f" name="Close Combat Weapon" hidden="false" collective="false" import="true" targetId="7b6a-5697-5a6a-2d74" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d617-6681-2bea-31c8" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7b3a-fb8a-3d32-6c85" type="max" />
 </constraints>
 </entryLink>
 <entryLink id="e1b9-7025-5428-2f14" name="Frag Grenades" hidden="false" collective="false" import="true" targetId="a332-14f3-9d6d-ab7a" type="selectionEntry">
@@ -14726,12 +14617,6 @@
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8b84-c9a8-aeae-12b3" type="max" />
 </constraints>
 </entryLink>
-<entryLink id="01ac-6442-58c6-2f94" name="Close Combat Weapon" hidden="false" collective="false" import="true" targetId="7b6a-5697-5a6a-2d74" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="36f4-82bc-bd8a-8fca" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1abb-3558-b1a0-a149" type="max" />
-</constraints>
-</entryLink>
 <entryLink id="6655-2cbb-0cb4-88f3" name="Frag Grenades" hidden="false" collective="false" import="true" targetId="a332-14f3-9d6d-ab7a" type="selectionEntry">
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1cbf-6964-2c04-3f39" type="min" />
@@ -15496,12 +15381,6 @@
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9035-c738-1a9a-f603" type="max" />
 </constraints>
 </entryLink>
-<entryLink id="be35-623b-ac4d-d981" name="Close Combat Weapon" hidden="false" collective="false" import="true" targetId="7b6a-5697-5a6a-2d74" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="06e6-0fff-8d49-7b94" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1f2d-eece-6c74-7e61" type="max" />
-</constraints>
-</entryLink>
 </entryLinks>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
@@ -15948,12 +15827,6 @@
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2f82-f6b5-ef32-e24a" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3b77-ff3e-5b95-41fe" type="max" />
-</constraints>
-</entryLink>
-<entryLink id="97a0-32f4-d9f4-2e81" name="Close Combat Weapon" hidden="false" collective="false" import="true" targetId="7b6a-5697-5a6a-2d74" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9ffa-aa6b-6c69-7c7f" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a539-ea95-2c95-a64f" type="max" />
 </constraints>
 </entryLink>
 <entryLink id="1355-3bbc-1192-a0b8" name="Frag Grenades" hidden="false" collective="false" import="true" targetId="a332-14f3-9d6d-ab7a" type="selectionEntry">
@@ -17367,12 +17240,6 @@
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="502e-0992-75d0-1b5f" type="max" />
 </constraints>
 </entryLink>
-<entryLink id="bb00-1fd7-3599-a4ec" name="Close Combat Weapon" hidden="false" collective="false" import="true" targetId="7b6a-5697-5a6a-2d74" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d3bd-8449-677f-3050" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4222-e281-083c-8072" type="max" />
-</constraints>
-</entryLink>
 <entryLink id="47b3-f86a-3e6e-f1e0" name="Frag Grenades" hidden="false" collective="false" import="true" targetId="a332-14f3-9d6d-ab7a" type="selectionEntry">
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="37af-faaf-1168-4b8b" type="min" />
@@ -17941,12 +17808,6 @@
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7c20-3e1b-4bf7-dfd6" type="max" />
 </constraints>
 </entryLink>
-<entryLink id="1a65-c1ac-9ba4-d3d0" name="Close Combat Weapon" hidden="false" collective="false" import="true" targetId="7b6a-5697-5a6a-2d74" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b7cd-608c-bb65-3c5f" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0d0a-798f-1414-5e00" type="max" />
-</constraints>
-</entryLink>
 <entryLink id="f732-8058-2ec5-3b79" name="Frag Grenades" hidden="false" collective="false" import="true" targetId="a332-14f3-9d6d-ab7a" type="selectionEntry">
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1c7e-ffe0-ced7-51a6" type="min" />
@@ -18455,12 +18316,6 @@
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0756-341e-1614-3c54" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2c5c-ae6b-4603-c89f" type="max" />
-</constraints>
-</entryLink>
-<entryLink id="7692-f6ae-adcb-b36c" name="Close Combat Weapon" hidden="false" collective="false" import="true" targetId="7b6a-5697-5a6a-2d74" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1056-527b-0676-9846" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e773-fb61-3047-5d76" type="max" />
 </constraints>
 </entryLink>
 <entryLink id="2639-877e-c159-f78f" name="Frag Grenades" hidden="false" collective="false" import="true" targetId="a332-14f3-9d6d-ab7a" type="selectionEntry">
@@ -19737,12 +19592,6 @@
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f6b4-1ac5-280e-5117" type="max" />
 </constraints>
 </entryLink>
-<entryLink id="45a8-785e-d939-270a" name="Close Combat Weapon" hidden="false" collective="false" import="true" targetId="7b6a-5697-5a6a-2d74" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e56f-cddb-987a-2228" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ec3f-8c53-7065-29ab" type="max" />
-</constraints>
-</entryLink>
 <entryLink id="0067-cd2b-9b40-271c" name="Cavalry Mount" hidden="false" collective="false" import="true" targetId="e5ed-397c-36eb-ef6d" type="selectionEntry">
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b7ca-1d99-cdd9-fa0b" type="min" />
@@ -20570,12 +20419,6 @@
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="68b9-558a-c2f5-c8d4" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7967-1ce6-d81d-f807" type="max" />
-</constraints>
-</entryLink>
-<entryLink id="e26f-22de-b87a-993b" name="Laspistol or Autopistol" hidden="false" collective="false" import="true" targetId="6b63-f068-e43d-3c47" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1cc0-56cb-f353-881a" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a5f6-4c74-2fb5-9274" type="max" />
 </constraints>
 </entryLink>
 </entryLinks>
@@ -27087,18 +26930,6 @@
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="05b3-c8e3-ab6e-812f" type="max" />
 </constraints>
 </entryLink>
-<entryLink id="64b7-72c8-089a-a505" name="Laspistol or Autopistol" hidden="false" collective="false" import="true" targetId="6b63-f068-e43d-3c47" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ca24-ef04-ca1c-b28b" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="63ff-99db-148a-f137" type="max" />
-</constraints>
-</entryLink>
-<entryLink id="15b9-3114-ca0a-2af9" name="Close Combat Weapon" hidden="false" collective="false" import="true" targetId="7b6a-5697-5a6a-2d74" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a45e-a9b5-3b30-001b" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dc2e-fc2b-8823-fed0" type="max" />
-</constraints>
-</entryLink>
 </entryLinks>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
@@ -27775,18 +27606,6 @@
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1225-84f5-e033-33f6" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="729d-544b-387a-b155" type="max" />
-</constraints>
-</entryLink>
-<entryLink id="e208-d314-19ec-701d" name="Laspistol or Autopistol" hidden="false" collective="false" import="true" targetId="6b63-f068-e43d-3c47" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6ca7-1732-6139-123f" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8e86-ec39-ca15-de48" type="max" />
-</constraints>
-</entryLink>
-<entryLink id="f1f9-6821-f91e-f695" name="Close Combat Weapon" hidden="false" collective="false" import="true" targetId="7b6a-5697-5a6a-2d74" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4862-f3e6-92d7-63c9" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3d01-9bcb-025e-9732" type="max" />
 </constraints>
 </entryLink>
 <entryLink id="9942-b2ff-d8df-80e6" name="Frag Grenades" hidden="false" collective="false" import="true" targetId="a332-14f3-9d6d-ab7a" type="selectionEntry">

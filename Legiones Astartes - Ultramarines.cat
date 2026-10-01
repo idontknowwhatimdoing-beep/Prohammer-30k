@@ -16346,6 +16346,21 @@ LIMITATIONS - Loyalist Ultramarines Detachment only. The army must include an Al
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aad5-cfaa-e392-5eee" type="max" />
 </constraints>
+<selectionEntries>
+<selectionEntry id="b3cd-9858-ea15-a816" name="Twin-linked Lascannon" hidden="false" collective="false" import="true" type="upgrade">
+<entryLinks>
+<entryLink id="c462-f9af-ab2f-8ee9" name="Twin-linked Lascannon" hidden="false" collective="false" import="true" targetId="8ddf-f6ab-db49-9512" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7aab-77d7-fac5-96ed" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e02f-77b6-c41d-34ef" type="max" />
+</constraints>
+</entryLink>
+</entryLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
+</costs>
+</selectionEntry>
+</selectionEntries>
 <entryLinks>
 <entryLink id="b4ab-e9a8-fee1-6308" name="Twin-linked Heavy Bolter" hidden="false" collective="false" import="true" targetId="9f1b-33a9-dc3e-5648" type="selectionEntry">
 <costs>
@@ -16355,11 +16370,6 @@ LIMITATIONS - Loyalist Ultramarines Detachment only. The army must include an Al
 <entryLink id="6fbf-f93c-3021-30b8" name="Twin-linked Heavy Flamer" hidden="false" collective="false" import="true" targetId="9bef-466f-d382-e2fd" type="selectionEntry">
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
-</costs>
-</entryLink>
-<entryLink id="b3cd-9858-ea15-a816" name="Twin-linked Lascannon" hidden="false" collective="false" import="true" targetId="8ddf-f6ab-db49-9512" type="selectionEntry">
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
 </costs>
 </entryLink>
 </entryLinks>
@@ -16560,6 +16570,21 @@ LIMITATIONS - Loyalist Ultramarines Detachment only. The army must include an Al
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dab0-0cc0-8269-78b0" type="max" />
 </constraints>
+<selectionEntries>
+<selectionEntry id="9112-73f4-0d25-a8b6" name="Twin-linked Lascannon" hidden="false" collective="false" import="true" type="upgrade">
+<entryLinks>
+<entryLink id="9fd1-53b7-b197-a88b" name="Twin-linked Lascannon" hidden="false" collective="false" import="true" targetId="8ddf-f6ab-db49-9512" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b3f7-cce6-6d65-e33c" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5158-c714-2c4d-998c" type="max" />
+</constraints>
+</entryLink>
+</entryLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
+</costs>
+</selectionEntry>
+</selectionEntries>
 <entryLinks>
 <entryLink id="248a-dd90-be52-d63c" name="Twin-linked Heavy Bolter" hidden="false" collective="false" import="true" targetId="9f1b-33a9-dc3e-5648" type="selectionEntry">
 <costs>
@@ -16569,11 +16594,6 @@ LIMITATIONS - Loyalist Ultramarines Detachment only. The army must include an Al
 <entryLink id="c643-57a6-86ab-1c8d" name="Twin-linked Heavy Flamer" hidden="false" collective="false" import="true" targetId="9bef-466f-d382-e2fd" type="selectionEntry">
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
-</costs>
-</entryLink>
-<entryLink id="9112-73f4-0d25-a8b6" name="Twin-linked Lascannon" hidden="false" collective="false" import="true" targetId="8ddf-f6ab-db49-9512" type="selectionEntry">
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
 </costs>
 </entryLink>
 </entryLinks>
@@ -16774,6 +16794,21 @@ LIMITATIONS - Loyalist Ultramarines Detachment only. The army must include an Al
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2290-f9b1-4b85-8311" type="max" />
 </constraints>
+<selectionEntries>
+<selectionEntry id="ccd1-dbe6-0790-793b" name="Twin-linked Lascannon" hidden="false" collective="false" import="true" type="upgrade">
+<entryLinks>
+<entryLink id="8a5d-b4ec-9ef5-8a93" name="Twin-linked Lascannon" hidden="false" collective="false" import="true" targetId="8ddf-f6ab-db49-9512" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4c57-6041-c044-e12c" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0765-7267-c187-1c9c" type="max" />
+</constraints>
+</entryLink>
+</entryLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
+</costs>
+</selectionEntry>
+</selectionEntries>
 <entryLinks>
 <entryLink id="b0cc-8500-6561-3384" name="Twin-linked Heavy Bolter" hidden="false" collective="false" import="true" targetId="9f1b-33a9-dc3e-5648" type="selectionEntry">
 <costs>
@@ -16783,11 +16818,6 @@ LIMITATIONS - Loyalist Ultramarines Detachment only. The army must include an Al
 <entryLink id="ebac-ed5f-28f2-ef8a" name="Twin-linked Heavy Flamer" hidden="false" collective="false" import="true" targetId="9bef-466f-d382-e2fd" type="selectionEntry">
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
-</costs>
-</entryLink>
-<entryLink id="ccd1-dbe6-0790-793b" name="Twin-linked Lascannon" hidden="false" collective="false" import="true" targetId="8ddf-f6ab-db49-9512" type="selectionEntry">
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
 </costs>
 </entryLink>
 </entryLinks>
@@ -20629,6 +20659,40 @@ LIMITATIONS - Loyalist Ultramarines Detachment only. The army must include an Al
 <constraints>
 <constraint field="pts0-0000-0000-0001" scope="self" value="50" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="ff80-0a0d-db12-0f4a" type="max" />
 </constraints>
+<selectionEntries>
+<selectionEntry id="a9f0-3a9a-2748-5558" name="Power Fist" hidden="false" collective="false" import="true" type="upgrade">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9ffb-6123-fa16-3d7b" type="max" />
+</constraints>
+<entryLinks>
+<entryLink id="6302-5ef1-2234-9c69" name="Power Fist" hidden="false" collective="false" import="true" targetId="0b4d-922b-4629-b7ca" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d3c5-1ad8-c941-fcd4" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c1ca-5864-cc87-d71c" type="max" />
+</constraints>
+</entryLink>
+</entryLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
+</costs>
+</selectionEntry>
+<selectionEntry id="5891-13f9-6693-9db2" name="Storm Bolter" hidden="false" collective="false" import="true" type="upgrade">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d13d-3cd7-6adc-de77" type="max" />
+</constraints>
+<entryLinks>
+<entryLink id="6f1a-6a85-37fb-99ac" name="Storm Bolter" hidden="false" collective="false" import="true" targetId="4c92-8660-bb6b-730f" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cfc9-1a48-6bfe-42bf" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3f57-d3d0-e0ce-96f7" type="max" />
+</constraints>
+</entryLink>
+</entryLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
+</costs>
+</selectionEntry>
+</selectionEntries>
 <entryLinks>
 <entryLink id="2c71-b6ab-3224-6a20" name="Chainfist" hidden="false" collective="false" import="true" targetId="a078-deea-084f-38e2" type="selectionEntry">
 <constraints>
@@ -20660,14 +20724,6 @@ LIMITATIONS - Loyalist Ultramarines Detachment only. The army must include an Al
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
-</costs>
-</entryLink>
-<entryLink id="a9f0-3a9a-2748-5558" name="Power Fist" hidden="false" collective="false" import="true" targetId="0b4d-922b-4629-b7ca" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9ffb-6123-fa16-3d7b" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
 </costs>
 </entryLink>
 <entryLink id="00dd-791d-fb5e-90a5" name="Power Weapon" hidden="false" collective="false" import="true" targetId="fb4f-b267-7556-185d" type="selectionEntry">
@@ -20737,14 +20793,6 @@ LIMITATIONS - Loyalist Ultramarines Detachment only. The army must include an Al
 <entryLink id="6552-aa54-1436-6f36" name="Foeblaster Boltgun" hidden="false" collective="false" import="true" targetId="9b55-194b-ad9f-fffc" type="selectionEntry">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3cd4-ddc4-9716-2bcb" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
-</costs>
-</entryLink>
-<entryLink id="5891-13f9-6693-9db2" name="Storm Bolter" hidden="false" collective="false" import="true" targetId="4c92-8660-bb6b-730f" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d13d-3cd7-6adc-de77" type="max" />
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
@@ -23039,6 +23087,24 @@ LIMITATIONS - Loyalist Ultramarines Detachment only. The army must include an Al
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="964f-1222-bd55-0e1f" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="833b-d63f-56e9-cc39" type="max" />
 </constraints>
+<selectionEntries>
+<selectionEntry id="ceba-d512-b999-aaba" name="Power Weapon" hidden="false" collective="false" import="true" type="upgrade">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3091-6f67-ac1a-059c" type="max" />
+</constraints>
+<entryLinks>
+<entryLink id="ce05-aed6-748c-ed49" name="Power Weapon" hidden="false" collective="false" import="true" targetId="fb4f-b267-7556-185d" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a0c2-1c40-dcde-8e49" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e62f-5b90-42f6-36a3" type="max" />
+</constraints>
+</entryLink>
+</entryLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
+</costs>
+</selectionEntry>
+</selectionEntries>
 <entryLinks>
 <entryLink id="8e0b-fe0c-fcdf-c8f2" name="Bolt Pistol" hidden="false" collective="false" import="true" targetId="10e2-6917-e765-7495" type="selectionEntry" sortIndex="1" defaultAmount="1">
 <constraints>
@@ -23083,14 +23149,6 @@ LIMITATIONS - Loyalist Ultramarines Detachment only. The army must include an Al
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
-</costs>
-</entryLink>
-<entryLink id="ceba-d512-b999-aaba" name="Power Weapon" hidden="false" collective="false" import="true" targetId="fb4f-b267-7556-185d" type="selectionEntry" sortIndex="8">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3091-6f67-ac1a-059c" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
 </costs>
 </entryLink>
 <entryLink id="ca01-1f5e-d682-833c" name="Rending Weapon" hidden="false" collective="false" import="true" targetId="ffab-7f00-50f4-91e0" type="selectionEntry" sortIndex="9">
@@ -23287,12 +23345,6 @@ LIMITATIONS - Loyalist Ultramarines Detachment only. The army must include an Al
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d7a7-6e14-38fc-074d" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8c42-763e-de45-2e73" type="max" />
-</constraints>
-</entryLink>
-<entryLink id="c85e-cbf1-5160-a5a6" name="Bolt Pistol" hidden="false" collective="false" import="true" targetId="10e2-6917-e765-7495" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aded-c125-e8fd-4b9c" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c1ac-e9a6-7038-54a1" type="max" />
 </constraints>
 </entryLink>
 <entryLink id="048b-5552-785d-f5a7" name="Power Weapon" hidden="false" collective="false" import="true" targetId="fb4f-b267-7556-185d" type="selectionEntry">
@@ -26040,6 +26092,24 @@ LIMITATIONS - Loyalist Ultramarines Detachment only. The army must include an Al
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f6d2-b7e2-8b0e-9981" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="95f9-5067-cfa9-ffc1" type="max" />
 </constraints>
+<selectionEntries>
+<selectionEntry id="58d2-436e-13b4-fa12" name="Power Weapon" hidden="false" collective="false" import="true" type="upgrade">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1185-45b3-7162-09f0" type="max" />
+</constraints>
+<entryLinks>
+<entryLink id="9eb4-24f1-e138-8991" name="Power Weapon" hidden="false" collective="false" import="true" targetId="fb4f-b267-7556-185d" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a717-aeae-11fe-937b" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6e92-622a-0d53-948f" type="max" />
+</constraints>
+</entryLink>
+</entryLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
+</costs>
+</selectionEntry>
+</selectionEntries>
 <entryLinks>
 <entryLink id="d4ce-ff23-066f-2ba9" name="Bolt Pistol" hidden="false" collective="false" import="true" targetId="10e2-6917-e765-7495" type="selectionEntry" sortIndex="1" defaultAmount="1">
 <constraints>
@@ -26084,14 +26154,6 @@ LIMITATIONS - Loyalist Ultramarines Detachment only. The army must include an Al
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
-</costs>
-</entryLink>
-<entryLink id="58d2-436e-13b4-fa12" name="Power Weapon" hidden="false" collective="false" import="true" targetId="fb4f-b267-7556-185d" type="selectionEntry" sortIndex="8">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1185-45b3-7162-09f0" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
 </costs>
 </entryLink>
 <entryLink id="0880-aad7-6024-17a4" name="Rending Weapon" hidden="false" collective="false" import="true" targetId="ffab-7f00-50f4-91e0" type="selectionEntry" sortIndex="9">
@@ -26288,12 +26350,6 @@ LIMITATIONS - Loyalist Ultramarines Detachment only. The army must include an Al
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9fc4-0b3e-e749-4579" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4d34-2a5c-3084-b024" type="max" />
-</constraints>
-</entryLink>
-<entryLink id="750e-8cac-4274-85d4" name="Bolt Pistol" hidden="false" collective="false" import="true" targetId="10e2-6917-e765-7495" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="961d-9122-bda2-1ec8" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2283-fd7b-d365-ef07" type="max" />
 </constraints>
 </entryLink>
 <entryLink id="afd9-bf1e-dd7d-f725" name="Power Weapon" hidden="false" collective="false" import="true" targetId="fb4f-b267-7556-185d" type="selectionEntry">
@@ -29279,6 +29335,21 @@ LIMITATIONS - Loyalist Ultramarines Detachment only. The army must include an Al
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4851-b72d-6f53-221d" type="max" />
 </constraints>
+<selectionEntries>
+<selectionEntry id="a063-b862-ca86-8608" name="Twin-linked Lascannon" hidden="false" collective="false" import="true" type="upgrade">
+<entryLinks>
+<entryLink id="6999-a951-309d-aa06" name="Twin-linked Lascannon" hidden="false" collective="false" import="true" targetId="8ddf-f6ab-db49-9512" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b7ad-2595-31e6-66e2" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="218d-d7d5-3655-9f37" type="max" />
+</constraints>
+</entryLink>
+</entryLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
+</costs>
+</selectionEntry>
+</selectionEntries>
 <entryLinks>
 <entryLink id="26aa-404a-4c1f-e25d" name="Twin-linked Heavy Bolter" hidden="false" collective="false" import="true" targetId="9f1b-33a9-dc3e-5648" type="selectionEntry">
 <costs>
@@ -29288,11 +29359,6 @@ LIMITATIONS - Loyalist Ultramarines Detachment only. The army must include an Al
 <entryLink id="4181-96a3-26b4-a45e" name="Twin-linked Heavy Flamer" hidden="false" collective="false" import="true" targetId="9bef-466f-d382-e2fd" type="selectionEntry">
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
-</costs>
-</entryLink>
-<entryLink id="a063-b862-ca86-8608" name="Twin-linked Lascannon" hidden="false" collective="false" import="true" targetId="8ddf-f6ab-db49-9512" type="selectionEntry">
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
 </costs>
 </entryLink>
 </entryLinks>
@@ -29789,6 +29855,24 @@ LIMITATIONS - Loyalist Ultramarines Detachment only. The army must include an Al
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ddad-0bb4-3aad-19b0" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b054-8731-1d01-cda1" type="max" />
 </constraints>
+<selectionEntries>
+<selectionEntry id="d26e-0c26-df52-d177" name="Power Weapon" hidden="false" collective="false" import="true" type="upgrade">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="22ff-9c8f-2849-2a8c" type="max" />
+</constraints>
+<entryLinks>
+<entryLink id="25dd-b683-f3bb-3fb0" name="Power Weapon" hidden="false" collective="false" import="true" targetId="fb4f-b267-7556-185d" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="95c8-e301-94b7-0dbb" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1c1f-4ac6-f53b-95ca" type="max" />
+</constraints>
+</entryLink>
+</entryLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
+</costs>
+</selectionEntry>
+</selectionEntries>
 <entryLinks>
 <entryLink id="6e8f-46e6-cb9a-6142" name="Bolt Pistol" hidden="false" collective="false" import="true" targetId="10e2-6917-e765-7495" type="selectionEntry" sortIndex="1" defaultAmount="1">
 <constraints>
@@ -29833,14 +29917,6 @@ LIMITATIONS - Loyalist Ultramarines Detachment only. The army must include an Al
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
-</costs>
-</entryLink>
-<entryLink id="d26e-0c26-df52-d177" name="Power Weapon" hidden="false" collective="false" import="true" targetId="fb4f-b267-7556-185d" type="selectionEntry" sortIndex="8">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="22ff-9c8f-2849-2a8c" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
 </costs>
 </entryLink>
 <entryLink id="59e0-3120-51c7-18a1" name="Rending Weapon" hidden="false" collective="false" import="true" targetId="ffab-7f00-50f4-91e0" type="selectionEntry" sortIndex="9">
@@ -30037,12 +30113,6 @@ LIMITATIONS - Loyalist Ultramarines Detachment only. The army must include an Al
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b64f-6c67-2ef7-df1a" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e128-afa7-00c1-1287" type="max" />
-</constraints>
-</entryLink>
-<entryLink id="a29a-b321-b5f4-48f9" name="Bolt Pistol" hidden="false" collective="false" import="true" targetId="10e2-6917-e765-7495" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="57a5-f913-7561-2dad" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1335-9fa6-e352-df79" type="max" />
 </constraints>
 </entryLink>
 <entryLink id="c15b-ce76-40f1-7baf" name="Power Weapon" hidden="false" collective="false" import="true" targetId="fb4f-b267-7556-185d" type="selectionEntry">
@@ -33247,6 +33317,24 @@ LIMITATIONS - Loyalist Ultramarines Detachment only. The army must include an Al
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b645-aebd-38a3-9a6d" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a909-5ecb-0e74-012a" type="max" />
 </constraints>
+<selectionEntries>
+<selectionEntry id="ed86-9582-cec9-37ff" name="Power Weapon" hidden="false" collective="false" import="true" type="upgrade">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7b2e-5b46-d614-c575" type="max" />
+</constraints>
+<entryLinks>
+<entryLink id="5737-81dd-8489-b157" name="Power Weapon" hidden="false" collective="false" import="true" targetId="fb4f-b267-7556-185d" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="abac-0ed9-efef-b697" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3f2c-e030-cb8d-6ab9" type="max" />
+</constraints>
+</entryLink>
+</entryLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
+</costs>
+</selectionEntry>
+</selectionEntries>
 <entryLinks>
 <entryLink id="cefa-40af-9c8a-6720" name="Bolt Pistol" hidden="false" collective="false" import="true" targetId="10e2-6917-e765-7495" type="selectionEntry" sortIndex="1" defaultAmount="1">
 <constraints>
@@ -33291,14 +33379,6 @@ LIMITATIONS - Loyalist Ultramarines Detachment only. The army must include an Al
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
-</costs>
-</entryLink>
-<entryLink id="ed86-9582-cec9-37ff" name="Power Weapon" hidden="false" collective="false" import="true" targetId="fb4f-b267-7556-185d" type="selectionEntry" sortIndex="8">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7b2e-5b46-d614-c575" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
 </costs>
 </entryLink>
 <entryLink id="b7b4-bb4d-4f52-b256" name="Rending Weapon" hidden="false" collective="false" import="true" targetId="ffab-7f00-50f4-91e0" type="selectionEntry" sortIndex="9">
@@ -33495,12 +33575,6 @@ LIMITATIONS - Loyalist Ultramarines Detachment only. The army must include an Al
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2416-80d4-1c20-5907" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="08ff-aaf7-fa28-5059" type="max" />
-</constraints>
-</entryLink>
-<entryLink id="5ff0-d862-ac6d-844c" name="Bolt Pistol" hidden="false" collective="false" import="true" targetId="10e2-6917-e765-7495" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a252-e418-b6b0-b050" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="afe8-ca41-838f-7541" type="max" />
 </constraints>
 </entryLink>
 <entryLink id="37b3-15db-0926-8e44" name="Power Weapon" hidden="false" collective="false" import="true" targetId="fb4f-b267-7556-185d" type="selectionEntry">
@@ -35454,6 +35528,24 @@ LIMITATIONS - Loyalist Ultramarines Detachment only. The army must include an Al
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="448b-1fbc-8dd7-81ec" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="39e5-061b-e2ed-afba" type="max" />
 </constraints>
+<selectionEntries>
+<selectionEntry id="9b15-bba2-84bf-c394" name="Power Weapon" hidden="false" collective="false" import="true" type="upgrade">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f6e6-e450-fa48-bfbc" type="max" />
+</constraints>
+<entryLinks>
+<entryLink id="fd56-d4e0-8d52-f6ef" name="Power Weapon" hidden="false" collective="false" import="true" targetId="fb4f-b267-7556-185d" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4db5-d20e-141c-6a5b" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4f18-ee56-55cc-a7bc" type="max" />
+</constraints>
+</entryLink>
+</entryLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
+</costs>
+</selectionEntry>
+</selectionEntries>
 <entryLinks>
 <entryLink id="378a-1222-4c06-ee4a" name="Bolt Pistol" hidden="false" collective="false" import="true" targetId="10e2-6917-e765-7495" type="selectionEntry" sortIndex="1" defaultAmount="1">
 <constraints>
@@ -35498,14 +35590,6 @@ LIMITATIONS - Loyalist Ultramarines Detachment only. The army must include an Al
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
-</costs>
-</entryLink>
-<entryLink id="9b15-bba2-84bf-c394" name="Power Weapon" hidden="false" collective="false" import="true" targetId="fb4f-b267-7556-185d" type="selectionEntry" sortIndex="8">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f6e6-e450-fa48-bfbc" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
 </costs>
 </entryLink>
 <entryLink id="1541-5911-08d8-7815" name="Rending Weapon" hidden="false" collective="false" import="true" targetId="ffab-7f00-50f4-91e0" type="selectionEntry" sortIndex="9">
@@ -35702,12 +35786,6 @@ LIMITATIONS - Loyalist Ultramarines Detachment only. The army must include an Al
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cb36-7c94-5eb6-ca55" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4b32-5d80-749d-dad1" type="max" />
-</constraints>
-</entryLink>
-<entryLink id="d1dd-3a53-6df9-759c" name="Bolt Pistol" hidden="false" collective="false" import="true" targetId="10e2-6917-e765-7495" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fa59-c88f-6606-0826" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aed1-57e9-3650-eef0" type="max" />
 </constraints>
 </entryLink>
 <entryLink id="1135-756c-7b7c-3724" name="Power Weapon" hidden="false" collective="false" import="true" targetId="fb4f-b267-7556-185d" type="selectionEntry">

@@ -17379,6 +17379,21 @@ LIMITATIONS - Loyalist Raven Guard Detachments only. No units with the Immobile 
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aad5-cfaa-e392-5eee" type="max" />
 </constraints>
+<selectionEntries>
+<selectionEntry id="b3cd-9858-ea15-a816" name="Twin-linked Lascannon" hidden="false" collective="false" import="true" type="upgrade">
+<entryLinks>
+<entryLink id="c462-f9af-ab2f-8ee9" name="Twin-linked Lascannon" hidden="false" collective="false" import="true" targetId="8ddf-f6ab-db49-9512" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7aab-77d7-fac5-96ed" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e02f-77b6-c41d-34ef" type="max" />
+</constraints>
+</entryLink>
+</entryLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
+</costs>
+</selectionEntry>
+</selectionEntries>
 <entryLinks>
 <entryLink id="b4ab-e9a8-fee1-6308" name="Twin-linked Heavy Bolter" hidden="false" collective="false" import="true" targetId="9f1b-33a9-dc3e-5648" type="selectionEntry">
 <costs>
@@ -17388,11 +17403,6 @@ LIMITATIONS - Loyalist Raven Guard Detachments only. No units with the Immobile 
 <entryLink id="6fbf-f93c-3021-30b8" name="Twin-linked Heavy Flamer" hidden="false" collective="false" import="true" targetId="9bef-466f-d382-e2fd" type="selectionEntry">
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
-</costs>
-</entryLink>
-<entryLink id="b3cd-9858-ea15-a816" name="Twin-linked Lascannon" hidden="false" collective="false" import="true" targetId="8ddf-f6ab-db49-9512" type="selectionEntry">
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
 </costs>
 </entryLink>
 </entryLinks>
@@ -17593,6 +17603,21 @@ LIMITATIONS - Loyalist Raven Guard Detachments only. No units with the Immobile 
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dab0-0cc0-8269-78b0" type="max" />
 </constraints>
+<selectionEntries>
+<selectionEntry id="9112-73f4-0d25-a8b6" name="Twin-linked Lascannon" hidden="false" collective="false" import="true" type="upgrade">
+<entryLinks>
+<entryLink id="9fd1-53b7-b197-a88b" name="Twin-linked Lascannon" hidden="false" collective="false" import="true" targetId="8ddf-f6ab-db49-9512" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b3f7-cce6-6d65-e33c" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5158-c714-2c4d-998c" type="max" />
+</constraints>
+</entryLink>
+</entryLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
+</costs>
+</selectionEntry>
+</selectionEntries>
 <entryLinks>
 <entryLink id="248a-dd90-be52-d63c" name="Twin-linked Heavy Bolter" hidden="false" collective="false" import="true" targetId="9f1b-33a9-dc3e-5648" type="selectionEntry">
 <costs>
@@ -17602,11 +17627,6 @@ LIMITATIONS - Loyalist Raven Guard Detachments only. No units with the Immobile 
 <entryLink id="c643-57a6-86ab-1c8d" name="Twin-linked Heavy Flamer" hidden="false" collective="false" import="true" targetId="9bef-466f-d382-e2fd" type="selectionEntry">
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
-</costs>
-</entryLink>
-<entryLink id="9112-73f4-0d25-a8b6" name="Twin-linked Lascannon" hidden="false" collective="false" import="true" targetId="8ddf-f6ab-db49-9512" type="selectionEntry">
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
 </costs>
 </entryLink>
 </entryLinks>
@@ -17807,6 +17827,21 @@ LIMITATIONS - Loyalist Raven Guard Detachments only. No units with the Immobile 
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2290-f9b1-4b85-8311" type="max" />
 </constraints>
+<selectionEntries>
+<selectionEntry id="ccd1-dbe6-0790-793b" name="Twin-linked Lascannon" hidden="false" collective="false" import="true" type="upgrade">
+<entryLinks>
+<entryLink id="8a5d-b4ec-9ef5-8a93" name="Twin-linked Lascannon" hidden="false" collective="false" import="true" targetId="8ddf-f6ab-db49-9512" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4c57-6041-c044-e12c" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0765-7267-c187-1c9c" type="max" />
+</constraints>
+</entryLink>
+</entryLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
+</costs>
+</selectionEntry>
+</selectionEntries>
 <entryLinks>
 <entryLink id="b0cc-8500-6561-3384" name="Twin-linked Heavy Bolter" hidden="false" collective="false" import="true" targetId="9f1b-33a9-dc3e-5648" type="selectionEntry">
 <costs>
@@ -17816,11 +17851,6 @@ LIMITATIONS - Loyalist Raven Guard Detachments only. No units with the Immobile 
 <entryLink id="ebac-ed5f-28f2-ef8a" name="Twin-linked Heavy Flamer" hidden="false" collective="false" import="true" targetId="9bef-466f-d382-e2fd" type="selectionEntry">
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
-</costs>
-</entryLink>
-<entryLink id="ccd1-dbe6-0790-793b" name="Twin-linked Lascannon" hidden="false" collective="false" import="true" targetId="8ddf-f6ab-db49-9512" type="selectionEntry">
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
 </costs>
 </entryLink>
 </entryLinks>
@@ -21601,18 +21631,6 @@ LIMITATIONS - Loyalist Raven Guard Detachments only. No units with the Immobile 
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e155-c6e1-dc7d-deee" type="max" />
 </constraints>
 </entryLink>
-<entryLink id="f779-c9fd-a1a6-1071" name="Bolt Pistol" hidden="false" collective="false" import="true" targetId="10e2-6917-e765-7495" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5921-1c14-2d50-9eb5" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f7cc-4cd3-8626-eba0" type="max" />
-</constraints>
-</entryLink>
-<entryLink id="4b13-5b13-ceaf-3492" name="Close Combat Weapon" hidden="false" collective="false" import="true" targetId="7b6a-5697-5a6a-2d74" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eaca-4a6e-358f-bdf0" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eb88-60a2-e848-044f" type="max" />
-</constraints>
-</entryLink>
 <entryLink id="54b6-5a7d-8cb9-626f" name="Frag Grenades" hidden="false" collective="false" import="true" targetId="f696-7971-36b0-27b5" type="selectionEntry">
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="263d-f9c9-ca90-fcc5" type="min" />
@@ -21865,6 +21883,21 @@ LIMITATIONS - Loyalist Raven Guard Detachments only. No units with the Immobile 
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="65ea-c1ca-585c-8e88" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3159-df14-609e-3980" type="max" />
 </constraints>
+<selectionEntries>
+<selectionEntry id="8e6c-391b-bfbd-6f8e" name="Raven's Talons" hidden="false" collective="false" import="true" type="upgrade">
+<entryLinks>
+<entryLink id="7658-279f-73eb-94ca" name="Raven's Talons" hidden="false" collective="false" import="true" targetId="0541-8483-4e2a-a236" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d1b3-0a33-ad78-6eda" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1563-2e43-c90f-ea46" type="max" />
+</constraints>
+</entryLink>
+</entryLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="35" />
+</costs>
+</selectionEntry>
+</selectionEntries>
 <entryLinks>
 <entryLink id="6d20-f0bf-765d-d8d2" name="Bolt Pistol" hidden="false" collective="false" import="true" targetId="10e2-6917-e765-7495" type="selectionEntry" sortIndex="1" defaultAmount="1">
 <constraints>
@@ -22002,11 +22035,6 @@ LIMITATIONS - Loyalist Raven Guard Detachments only. No units with the Immobile 
 <entryLink id="0889-5fa1-4e11-6c62" name="Fulcrum Hand Cannon" hidden="false" collective="false" import="true" targetId="c07f-75e6-1c51-291e" type="selectionEntry">
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
-</costs>
-</entryLink>
-<entryLink id="8e6c-391b-bfbd-6f8e" name="Raven's Talons" hidden="false" collective="false" import="true" targetId="0541-8483-4e2a-a236" type="selectionEntry" sortIndex="105">
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="35" />
 </costs>
 </entryLink>
 </entryLinks>
@@ -22161,12 +22189,6 @@ LIMITATIONS - Loyalist Raven Guard Detachments only. No units with the Immobile 
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="81d5-ec06-b2e2-1263" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ce69-fe2f-12b6-1c0b" type="max" />
-</constraints>
-</entryLink>
-<entryLink id="b340-799e-909d-0ffc" name="Bolt Pistol" hidden="false" collective="false" import="true" targetId="10e2-6917-e765-7495" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f501-7ebd-7c43-7091" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4ba3-8af8-678a-d632" type="max" />
 </constraints>
 </entryLink>
 <entryLink id="b1af-7b6b-5e85-e852" name="Raven's Talons" hidden="false" collective="false" import="true" targetId="0541-8483-4e2a-a236" type="selectionEntry">
@@ -23334,18 +23356,6 @@ LIMITATIONS - Loyalist Raven Guard Detachments only. No units with the Immobile 
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="35d5-6b64-137b-eb60" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8c26-279e-72b1-79ef" type="max" />
-</constraints>
-</entryLink>
-<entryLink id="e37a-e53b-10d8-be8a" name="Bolt Pistol" hidden="false" collective="false" import="true" targetId="10e2-6917-e765-7495" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4d2e-dd6c-5de4-d364" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c77b-d986-b40e-99bb" type="max" />
-</constraints>
-</entryLink>
-<entryLink id="ddab-26b6-6fa3-92fe" name="Close Combat Weapon" hidden="false" collective="false" import="true" targetId="7b6a-5697-5a6a-2d74" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2c32-e53d-eb91-1d47" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="61c0-6933-33ff-ee48" type="max" />
 </constraints>
 </entryLink>
 <entryLink id="6f5a-d48b-5f0e-8ac8" name="Frag Grenades" hidden="false" collective="false" import="true" targetId="f696-7971-36b0-27b5" type="selectionEntry">
@@ -24660,6 +24670,24 @@ LIMITATIONS - Loyalist Raven Guard Detachments only. No units with the Immobile 
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="964f-1222-bd55-0e1f" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="833b-d63f-56e9-cc39" type="max" />
 </constraints>
+<selectionEntries>
+<selectionEntry id="ceba-d512-b999-aaba" name="Power Weapon" hidden="false" collective="false" import="true" type="upgrade">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3091-6f67-ac1a-059c" type="max" />
+</constraints>
+<entryLinks>
+<entryLink id="ce05-aed6-748c-ed49" name="Power Weapon" hidden="false" collective="false" import="true" targetId="fb4f-b267-7556-185d" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a0c2-1c40-dcde-8e49" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e62f-5b90-42f6-36a3" type="max" />
+</constraints>
+</entryLink>
+</entryLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
+</costs>
+</selectionEntry>
+</selectionEntries>
 <entryLinks>
 <entryLink id="8e0b-fe0c-fcdf-c8f2" name="Bolt Pistol" hidden="false" collective="false" import="true" targetId="10e2-6917-e765-7495" type="selectionEntry" sortIndex="1" defaultAmount="1">
 <constraints>
@@ -24704,14 +24732,6 @@ LIMITATIONS - Loyalist Raven Guard Detachments only. No units with the Immobile 
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
-</costs>
-</entryLink>
-<entryLink id="ceba-d512-b999-aaba" name="Power Weapon" hidden="false" collective="false" import="true" targetId="fb4f-b267-7556-185d" type="selectionEntry" sortIndex="8">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3091-6f67-ac1a-059c" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
 </costs>
 </entryLink>
 <entryLink id="ca01-1f5e-d682-833c" name="Rending Weapon" hidden="false" collective="false" import="true" targetId="ffab-7f00-50f4-91e0" type="selectionEntry" sortIndex="9">
@@ -24928,12 +24948,6 @@ LIMITATIONS - Loyalist Raven Guard Detachments only. No units with the Immobile 
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d7a7-6e14-38fc-074d" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8c42-763e-de45-2e73" type="max" />
-</constraints>
-</entryLink>
-<entryLink id="c85e-cbf1-5160-a5a6" name="Bolt Pistol" hidden="false" collective="false" import="true" targetId="10e2-6917-e765-7495" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aded-c125-e8fd-4b9c" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c1ac-e9a6-7038-54a1" type="max" />
 </constraints>
 </entryLink>
 <entryLink id="048b-5552-785d-f5a7" name="Power Weapon" hidden="false" collective="false" import="true" targetId="fb4f-b267-7556-185d" type="selectionEntry">
@@ -27776,6 +27790,24 @@ LIMITATIONS - Loyalist Raven Guard Detachments only. No units with the Immobile 
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f6d2-b7e2-8b0e-9981" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="95f9-5067-cfa9-ffc1" type="max" />
 </constraints>
+<selectionEntries>
+<selectionEntry id="58d2-436e-13b4-fa12" name="Power Weapon" hidden="false" collective="false" import="true" type="upgrade">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1185-45b3-7162-09f0" type="max" />
+</constraints>
+<entryLinks>
+<entryLink id="9eb4-24f1-e138-8991" name="Power Weapon" hidden="false" collective="false" import="true" targetId="fb4f-b267-7556-185d" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a717-aeae-11fe-937b" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6e92-622a-0d53-948f" type="max" />
+</constraints>
+</entryLink>
+</entryLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
+</costs>
+</selectionEntry>
+</selectionEntries>
 <entryLinks>
 <entryLink id="d4ce-ff23-066f-2ba9" name="Bolt Pistol" hidden="false" collective="false" import="true" targetId="10e2-6917-e765-7495" type="selectionEntry" sortIndex="1" defaultAmount="1">
 <constraints>
@@ -27820,14 +27852,6 @@ LIMITATIONS - Loyalist Raven Guard Detachments only. No units with the Immobile 
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
-</costs>
-</entryLink>
-<entryLink id="58d2-436e-13b4-fa12" name="Power Weapon" hidden="false" collective="false" import="true" targetId="fb4f-b267-7556-185d" type="selectionEntry" sortIndex="8">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1185-45b3-7162-09f0" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
 </costs>
 </entryLink>
 <entryLink id="0880-aad7-6024-17a4" name="Rending Weapon" hidden="false" collective="false" import="true" targetId="ffab-7f00-50f4-91e0" type="selectionEntry" sortIndex="9">
@@ -28044,12 +28068,6 @@ LIMITATIONS - Loyalist Raven Guard Detachments only. No units with the Immobile 
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9fc4-0b3e-e749-4579" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4d34-2a5c-3084-b024" type="max" />
-</constraints>
-</entryLink>
-<entryLink id="750e-8cac-4274-85d4" name="Bolt Pistol" hidden="false" collective="false" import="true" targetId="10e2-6917-e765-7495" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="961d-9122-bda2-1ec8" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2283-fd7b-d365-ef07" type="max" />
 </constraints>
 </entryLink>
 <entryLink id="afd9-bf1e-dd7d-f725" name="Power Weapon" hidden="false" collective="false" import="true" targetId="fb4f-b267-7556-185d" type="selectionEntry">
@@ -31130,6 +31148,21 @@ LIMITATIONS - Loyalist Raven Guard Detachments only. No units with the Immobile 
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4851-b72d-6f53-221d" type="max" />
 </constraints>
+<selectionEntries>
+<selectionEntry id="a063-b862-ca86-8608" name="Twin-linked Lascannon" hidden="false" collective="false" import="true" type="upgrade">
+<entryLinks>
+<entryLink id="6999-a951-309d-aa06" name="Twin-linked Lascannon" hidden="false" collective="false" import="true" targetId="8ddf-f6ab-db49-9512" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b7ad-2595-31e6-66e2" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="218d-d7d5-3655-9f37" type="max" />
+</constraints>
+</entryLink>
+</entryLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
+</costs>
+</selectionEntry>
+</selectionEntries>
 <entryLinks>
 <entryLink id="26aa-404a-4c1f-e25d" name="Twin-linked Heavy Bolter" hidden="false" collective="false" import="true" targetId="9f1b-33a9-dc3e-5648" type="selectionEntry">
 <costs>
@@ -31139,11 +31172,6 @@ LIMITATIONS - Loyalist Raven Guard Detachments only. No units with the Immobile 
 <entryLink id="4181-96a3-26b4-a45e" name="Twin-linked Heavy Flamer" hidden="false" collective="false" import="true" targetId="9bef-466f-d382-e2fd" type="selectionEntry">
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
-</costs>
-</entryLink>
-<entryLink id="a063-b862-ca86-8608" name="Twin-linked Lascannon" hidden="false" collective="false" import="true" targetId="8ddf-f6ab-db49-9512" type="selectionEntry">
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
 </costs>
 </entryLink>
 </entryLinks>
@@ -31590,6 +31618,21 @@ LIMITATIONS - Loyalist Raven Guard Detachments only. No units with the Immobile 
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="256c-3c57-2f66-feba" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a20a-32a2-7264-b5d9" type="max" />
 </constraints>
+<selectionEntries>
+<selectionEntry id="cef7-879a-1cb7-b7e8" name="Raven's Talons" hidden="false" collective="false" import="true" type="upgrade">
+<entryLinks>
+<entryLink id="716c-40e6-c0e1-a46f" name="Raven's Talons" hidden="false" collective="false" import="true" targetId="0541-8483-4e2a-a236" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="94d7-3da3-e497-262d" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8dcd-3e39-08cb-8300" type="max" />
+</constraints>
+</entryLink>
+</entryLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="35" />
+</costs>
+</selectionEntry>
+</selectionEntries>
 <entryLinks>
 <entryLink id="c9ae-7093-0a7a-8b69" name="Bolt Pistol" hidden="false" collective="false" import="true" targetId="10e2-6917-e765-7495" type="selectionEntry" sortIndex="1" defaultAmount="1">
 <constraints>
@@ -31727,11 +31770,6 @@ LIMITATIONS - Loyalist Raven Guard Detachments only. No units with the Immobile 
 <entryLink id="25f5-daba-b5f9-5af0" name="Fulcrum Hand Cannon" hidden="false" collective="false" import="true" targetId="c07f-75e6-1c51-291e" type="selectionEntry">
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
-</costs>
-</entryLink>
-<entryLink id="cef7-879a-1cb7-b7e8" name="Raven's Talons" hidden="false" collective="false" import="true" targetId="0541-8483-4e2a-a236" type="selectionEntry" sortIndex="105">
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="35" />
 </costs>
 </entryLink>
 </entryLinks>
@@ -31886,12 +31924,6 @@ LIMITATIONS - Loyalist Raven Guard Detachments only. No units with the Immobile 
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d10d-c0b3-6fc9-1b61" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="462d-c444-d15b-feb7" type="max" />
-</constraints>
-</entryLink>
-<entryLink id="eb9c-a7f3-a1be-bff8" name="Bolt Pistol" hidden="false" collective="false" import="true" targetId="10e2-6917-e765-7495" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0d7a-a32e-33cd-8a2c" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="89ac-1a56-2f8e-2f9a" type="max" />
 </constraints>
 </entryLink>
 <entryLink id="f23c-5560-ad76-8fa4" name="Raven's Talons" hidden="false" collective="false" import="true" targetId="0541-8483-4e2a-a236" type="selectionEntry">
@@ -32216,6 +32248,24 @@ LIMITATIONS - Loyalist Raven Guard Detachments only. No units with the Immobile 
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3345-d5f9-a356-d702" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ad84-045a-0352-d182" type="max" />
 </constraints>
+<selectionEntries>
+<selectionEntry id="32f2-04af-2a23-aad7" name="Power Weapon" hidden="false" collective="false" import="true" type="upgrade">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8c71-583a-59bc-f39d" type="max" />
+</constraints>
+<entryLinks>
+<entryLink id="9f09-6503-fecf-ea74" name="Power Weapon" hidden="false" collective="false" import="true" targetId="fb4f-b267-7556-185d" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9790-7fbf-3273-d6ae" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="61b9-53a5-9076-83ba" type="max" />
+</constraints>
+</entryLink>
+</entryLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
+</costs>
+</selectionEntry>
+</selectionEntries>
 <entryLinks>
 <entryLink id="d075-ea4b-d234-a33d" name="Bolt Pistol" hidden="false" collective="false" import="true" targetId="10e2-6917-e765-7495" type="selectionEntry" sortIndex="1" defaultAmount="1">
 <constraints>
@@ -32260,14 +32310,6 @@ LIMITATIONS - Loyalist Raven Guard Detachments only. No units with the Immobile 
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
-</costs>
-</entryLink>
-<entryLink id="32f2-04af-2a23-aad7" name="Power Weapon" hidden="false" collective="false" import="true" targetId="fb4f-b267-7556-185d" type="selectionEntry" sortIndex="8">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8c71-583a-59bc-f39d" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
 </costs>
 </entryLink>
 <entryLink id="2be7-fe56-6c2a-765a" name="Rending Weapon" hidden="false" collective="false" import="true" targetId="ffab-7f00-50f4-91e0" type="selectionEntry" sortIndex="9">
@@ -32484,12 +32526,6 @@ LIMITATIONS - Loyalist Raven Guard Detachments only. No units with the Immobile 
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="de5a-8cde-c167-6a79" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b95f-b53c-7e1d-703a" type="max" />
-</constraints>
-</entryLink>
-<entryLink id="4777-5363-1246-accf" name="Bolt Pistol" hidden="false" collective="false" import="true" targetId="10e2-6917-e765-7495" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2ea0-abb7-9d72-388c" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ca4c-f377-933f-3a46" type="max" />
 </constraints>
 </entryLink>
 <entryLink id="a8d2-bc6f-2cdb-e082" name="Power Weapon" hidden="false" collective="false" import="true" targetId="fb4f-b267-7556-185d" type="selectionEntry">
@@ -34026,6 +34062,24 @@ LIMITATIONS - Loyalist Raven Guard Detachments only. No units with the Immobile 
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9bad-dc60-0ae3-5afb" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1a34-ae7f-9f99-98b8" type="max" />
 </constraints>
+<selectionEntries>
+<selectionEntry id="bcda-d898-e929-798e" name="Power Weapon" hidden="false" collective="false" import="true" type="upgrade">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cf16-4ee5-87e5-518f" type="max" />
+</constraints>
+<entryLinks>
+<entryLink id="79d7-10f6-08a9-d415" name="Power Weapon" hidden="false" collective="false" import="true" targetId="fb4f-b267-7556-185d" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5068-c241-f376-8585" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9992-22c1-769b-dbda" type="max" />
+</constraints>
+</entryLink>
+</entryLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
+</costs>
+</selectionEntry>
+</selectionEntries>
 <entryLinks>
 <entryLink id="3c0d-e1f7-094a-b928" name="Bolt Pistol" hidden="false" collective="false" import="true" targetId="10e2-6917-e765-7495" type="selectionEntry" sortIndex="1" defaultAmount="1">
 <constraints>
@@ -34070,14 +34124,6 @@ LIMITATIONS - Loyalist Raven Guard Detachments only. No units with the Immobile 
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
-</costs>
-</entryLink>
-<entryLink id="bcda-d898-e929-798e" name="Power Weapon" hidden="false" collective="false" import="true" targetId="fb4f-b267-7556-185d" type="selectionEntry" sortIndex="8">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cf16-4ee5-87e5-518f" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
 </costs>
 </entryLink>
 <entryLink id="4e60-bf12-613c-e26a" name="Rending Weapon" hidden="false" collective="false" import="true" targetId="ffab-7f00-50f4-91e0" type="selectionEntry" sortIndex="9">
@@ -34294,12 +34340,6 @@ LIMITATIONS - Loyalist Raven Guard Detachments only. No units with the Immobile 
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1ca7-e1a5-5404-0381" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f207-e823-7a49-397d" type="max" />
-</constraints>
-</entryLink>
-<entryLink id="baaa-18be-fc99-3253" name="Bolt Pistol" hidden="false" collective="false" import="true" targetId="10e2-6917-e765-7495" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c1aa-ec2c-30db-f1c5" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c403-551a-6300-d494" type="max" />
 </constraints>
 </entryLink>
 <entryLink id="c816-b9ec-90e7-3ba0" name="Power Weapon" hidden="false" collective="false" import="true" targetId="fb4f-b267-7556-185d" type="selectionEntry">
@@ -37576,6 +37616,21 @@ LIMITATIONS - Loyalist Raven Guard Detachments only. No units with the Immobile 
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8046-1cb0-c6de-7649" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c73d-ccf8-978d-2265" type="max" />
 </constraints>
+<selectionEntries>
+<selectionEntry id="d069-618d-f2cf-aefa" name="Raven's Talons" hidden="false" collective="false" import="true" type="upgrade">
+<entryLinks>
+<entryLink id="0e6c-9040-bbdf-0510" name="Raven's Talons" hidden="false" collective="false" import="true" targetId="0541-8483-4e2a-a236" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="999b-669d-d685-33f2" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b338-6efe-7b58-eb5a" type="max" />
+</constraints>
+</entryLink>
+</entryLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="35" />
+</costs>
+</selectionEntry>
+</selectionEntries>
 <entryLinks>
 <entryLink id="47bc-aeef-772a-e74a" name="Bolt Pistol" hidden="false" collective="false" import="true" targetId="10e2-6917-e765-7495" type="selectionEntry" sortIndex="1" defaultAmount="1">
 <constraints>
@@ -37713,11 +37768,6 @@ LIMITATIONS - Loyalist Raven Guard Detachments only. No units with the Immobile 
 <entryLink id="e54a-5d2a-d872-5d7e" name="Fulcrum Hand Cannon" hidden="false" collective="false" import="true" targetId="c07f-75e6-1c51-291e" type="selectionEntry">
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
-</costs>
-</entryLink>
-<entryLink id="d069-618d-f2cf-aefa" name="Raven's Talons" hidden="false" collective="false" import="true" targetId="0541-8483-4e2a-a236" type="selectionEntry" sortIndex="105">
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="35" />
 </costs>
 </entryLink>
 </entryLinks>
@@ -37872,12 +37922,6 @@ LIMITATIONS - Loyalist Raven Guard Detachments only. No units with the Immobile 
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="504d-dcb5-4c8f-1509" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0ff4-5c29-9390-e54d" type="max" />
-</constraints>
-</entryLink>
-<entryLink id="760d-f3d2-f90d-8e00" name="Bolt Pistol" hidden="false" collective="false" import="true" targetId="10e2-6917-e765-7495" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="089b-27f2-bacc-9e78" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a44b-5f1b-7475-f9ed" type="max" />
 </constraints>
 </entryLink>
 <entryLink id="083b-7702-f1f0-3cef" name="Raven's Talons" hidden="false" collective="false" import="true" targetId="0541-8483-4e2a-a236" type="selectionEntry">
@@ -38583,18 +38627,6 @@ LIMITATIONS - Loyalist Raven Guard Detachments only. No units with the Immobile 
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d3fe-630b-784b-c1c5" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bf22-f6fd-b595-5e63" type="max" />
-</constraints>
-</entryLink>
-<entryLink id="d025-53bd-3718-2cfd" name="Bolt Pistol" hidden="false" collective="false" import="true" targetId="10e2-6917-e765-7495" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e8d0-900e-6fdd-43c7" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4927-2906-2526-ebcd" type="max" />
-</constraints>
-</entryLink>
-<entryLink id="66fa-f1e3-cf42-1588" name="Close Combat Weapon" hidden="false" collective="false" import="true" targetId="7b6a-5697-5a6a-2d74" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9c9d-fddd-c129-582e" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8e9b-2a6c-9e14-c7b9" type="max" />
 </constraints>
 </entryLink>
 <entryLink id="e2cc-201b-236e-7806" name="Frag Grenades" hidden="false" collective="false" import="true" targetId="f696-7971-36b0-27b5" type="selectionEntry">

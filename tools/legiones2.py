@@ -1405,14 +1405,62 @@ def dedupe_kit(root):
         if groups is None or links is None:
             continue
         defaults = set()
-        for g in groups:
+        todo = list(groups)          # groups nested in groups (e.g. a 'Replace' choice inside an Armoury group)
+        while todo:
+            g = todo.pop()
             d = g.get("defaultSelectionEntryId")
             gl = g.find("entryLinks")
             if d and gl is not None:
                 defaults |= {lk.get("targetId") for lk in gl if lk.get("id") == d}
+            sub = g.find("selectionEntryGroups")
+            if sub is not None:
+                todo += list(sub)
         for lk in list(links):
             if lk.get("targetId") in defaults:
                 links.remove(lk)
+
+
+def unclash(root):
+    """An option that offers an item the model already carries as standard wargear (a second Power Weapon,
+    a hull Twin-linked Lascannon beside sponson ones ...) is wrapped in its own entry. New Recruit counts
+    per-item limits by item, so without the wrapper the option and the standard wargear trip each other's
+    limits. The wrapper keeps the option's id, cost, limits and modifiers."""
+    def option_links(e):
+        out = []
+        for g in e.findall("selectionEntryGroups/selectionEntryGroup"):
+            gl = g.find("entryLinks")
+            if gl is not None:
+                out += [(g, gl, lk) for lk in list(gl)]
+            out += option_links(g)
+        return out
+    for e in list(root.iter("selectionEntry")):
+        kit = {lk.get("targetId") for lk in e.findall("entryLinks/entryLink")
+               if any(c.get("type") == "max" for c in lk.findall("constraints/constraint"))}
+        if not kit:
+            continue
+        for g, gl, lk in option_links(e):
+            if lk.get("targetId") not in kit or g.get("defaultSelectionEntryId") == lk.get("id"):
+                continue
+            w = el("selectionEntry", {"id": lk.get("id"), "name": lk.get("name"), "hidden": lk.get("hidden", "false"),
+                                      "collective": "false", "import": "true", "type": "upgrade"})
+            for tag in ("modifiers", "constraints"):
+                x = lk.find(tag)
+                if x is not None:
+                    w.append(x)
+            inner = uid(lk.get("id"), "item")
+            w.append(wrap("entryLinks", [link(inner, lk.get("targetId"), lk.get("name"), constraints=[
+                constraint(uid(inner, "min"), "min", 1), constraint(uid(inner, "max"), "max", 1, auto=True)])]))
+            x = lk.find("costs")
+            if x is not None:
+                w.append(x)
+            gl.remove(lk)
+            se = g.find("selectionEntries")
+            if se is None:
+                se = el("selectionEntries", {})
+                kids = list(g)
+                pos = next((i for i, c in enumerate(kids) if c.tag == "entryLinks"), len(kids))
+                g.insert(pos, se)
+            se.append(w)
 
 
 # ---------------------------------------------------------------- assemble

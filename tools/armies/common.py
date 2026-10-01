@@ -193,4 +193,5 @@ def catalogue(name, units, shared=(), publication=None, force_entries=()):
     root.append(wrap("sharedProfiles", L.shared_profiles()))
     for u in units + list(shared):
         dedupe_kit(u)
+        L2.unclash(u)
     return root

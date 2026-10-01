@@ -670,6 +670,21 @@
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e5b9-fd5e-aabc-6d57" type="max" />
 </constraints>
+<selectionEntries>
+<selectionEntry id="15bf-459e-51fd-a844" name="Heavy Bolter" hidden="false" collective="false" import="true" type="upgrade">
+<entryLinks>
+<entryLink id="6df4-4fc7-5923-99ea" name="Heavy Bolter" hidden="false" collective="false" import="true" targetId="9151-5044-e482-04c9" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c0a2-b988-4daa-035a" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1b8f-eeef-9847-974c" type="max" />
+</constraints>
+</entryLink>
+</entryLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
+</costs>
+</selectionEntry>
+</selectionEntries>
 <entryLinks>
 <entryLink id="f9b4-9b8f-e930-68a8" name="Twin-linked Bolter" hidden="false" collective="false" import="true" targetId="6392-9914-afef-0ec5" type="selectionEntry">
 <costs>
@@ -679,11 +694,6 @@
 <entryLink id="6c8f-2600-3458-0609" name="Combi-weapon" hidden="false" collective="false" import="true" targetId="d60b-3f04-a6b0-5846" type="selectionEntry">
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
-</costs>
-</entryLink>
-<entryLink id="15bf-459e-51fd-a844" name="Heavy Bolter" hidden="false" collective="false" import="true" targetId="9151-5044-e482-04c9" type="selectionEntry">
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
 </entryLink>
 <entryLink id="fd50-38d6-80de-1eb5" name="Heavy Flamer" hidden="false" collective="false" import="true" targetId="9e6d-afcf-8202-e47c" type="selectionEntry">
@@ -2788,15 +2798,25 @@
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b9cf-cc1d-6e4f-56b1" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7f60-a380-71e5-4206" type="max" />
 </constraints>
+<selectionEntries>
+<selectionEntry id="0206-9751-be2e-ef56" name="Lascannon" hidden="false" collective="false" import="true" type="upgrade">
+<entryLinks>
+<entryLink id="d9f5-c821-56f2-819e" name="Lascannon" hidden="false" collective="false" import="true" targetId="c7e9-561f-95b7-1e57" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="42e9-d835-5476-893a" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eb43-8526-92e5-20ba" type="max" />
+</constraints>
+</entryLink>
+</entryLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
+</costs>
+</selectionEntry>
+</selectionEntries>
 <entryLinks>
 <entryLink id="3aa0-625a-4bfa-96d4" name="Multi-laser" hidden="false" collective="false" import="true" targetId="cf1d-775e-c275-a83e" type="selectionEntry" sortIndex="1" defaultAmount="1" />
 <entryLink id="6fd9-f054-6d65-f290" name="Heavy Flamer" hidden="false" collective="false" import="true" targetId="9e6d-afcf-8202-e47c" type="selectionEntry" sortIndex="3" />
 <entryLink id="29c5-efcb-901e-7eb3" name="Heavy Bolter" hidden="false" collective="false" import="true" targetId="9151-5044-e482-04c9" type="selectionEntry" sortIndex="4" />
-<entryLink id="0206-9751-be2e-ef56" name="Lascannon" hidden="false" collective="false" import="true" targetId="c7e9-561f-95b7-1e57" type="selectionEntry" sortIndex="5">
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
-</costs>
-</entryLink>
 </entryLinks>
 </selectionEntryGroup>
 <selectionEntryGroup id="37bd-e7e9-252b-5818" name="Sponson-mounted Multi-laser 2" hidden="false" collective="false" import="true" defaultSelectionEntryId="a765-4529-c3a7-46a9">
@@ -2804,15 +2824,25 @@
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dae3-62bd-b63b-219b" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="013f-f911-a0bd-83d6" type="max" />
 </constraints>
+<selectionEntries>
+<selectionEntry id="36d8-9377-de69-4c8a" name="Lascannon" hidden="false" collective="false" import="true" type="upgrade">
+<entryLinks>
+<entryLink id="71cd-ec66-82a2-30c8" name="Lascannon" hidden="false" collective="false" import="true" targetId="c7e9-561f-95b7-1e57" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="10c7-ff6e-b69c-a6b1" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8a8c-6368-fe76-f343" type="max" />
+</constraints>
+</entryLink>
+</entryLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
+</costs>
+</selectionEntry>
+</selectionEntries>
 <entryLinks>
 <entryLink id="a765-4529-c3a7-46a9" name="Multi-laser" hidden="false" collective="false" import="true" targetId="cf1d-775e-c275-a83e" type="selectionEntry" sortIndex="1" defaultAmount="1" />
 <entryLink id="8f8e-f9b3-4424-4512" name="Heavy Flamer" hidden="false" collective="false" import="true" targetId="9e6d-afcf-8202-e47c" type="selectionEntry" sortIndex="3" />
 <entryLink id="18b8-513f-c013-5cd8" name="Heavy Bolter" hidden="false" collective="false" import="true" targetId="9151-5044-e482-04c9" type="selectionEntry" sortIndex="4" />
-<entryLink id="36d8-9377-de69-4c8a" name="Lascannon" hidden="false" collective="false" import="true" targetId="c7e9-561f-95b7-1e57" type="selectionEntry" sortIndex="5">
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
-</costs>
-</entryLink>
 </entryLinks>
 </selectionEntryGroup>
 <selectionEntryGroup id="40a8-ae64-9d8f-e361" name="Sponson-mounted Multi-laser 3" hidden="false" collective="false" import="true" defaultSelectionEntryId="71a7-1c78-2476-059e">
@@ -2820,15 +2850,25 @@
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b10b-16bf-db9c-45b8" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="18ae-b944-4bdf-7941" type="max" />
 </constraints>
+<selectionEntries>
+<selectionEntry id="2ca6-877d-00ed-9c6a" name="Lascannon" hidden="false" collective="false" import="true" type="upgrade">
+<entryLinks>
+<entryLink id="a14f-487b-5fed-2393" name="Lascannon" hidden="false" collective="false" import="true" targetId="c7e9-561f-95b7-1e57" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="88e4-7cba-7175-c81f" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8420-f620-61db-a400" type="max" />
+</constraints>
+</entryLink>
+</entryLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
+</costs>
+</selectionEntry>
+</selectionEntries>
 <entryLinks>
 <entryLink id="71a7-1c78-2476-059e" name="Multi-laser" hidden="false" collective="false" import="true" targetId="cf1d-775e-c275-a83e" type="selectionEntry" sortIndex="1" defaultAmount="1" />
 <entryLink id="1a3b-2728-5c75-12ee" name="Heavy Flamer" hidden="false" collective="false" import="true" targetId="9e6d-afcf-8202-e47c" type="selectionEntry" sortIndex="3" />
 <entryLink id="dcbc-e3bf-7c60-12ce" name="Heavy Bolter" hidden="false" collective="false" import="true" targetId="9151-5044-e482-04c9" type="selectionEntry" sortIndex="4" />
-<entryLink id="2ca6-877d-00ed-9c6a" name="Lascannon" hidden="false" collective="false" import="true" targetId="c7e9-561f-95b7-1e57" type="selectionEntry" sortIndex="5">
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
-</costs>
-</entryLink>
 </entryLinks>
 </selectionEntryGroup>
 <selectionEntryGroup id="bd99-fc07-2c46-7811" name="Sponson-mounted Multi-laser 4" hidden="false" collective="false" import="true" defaultSelectionEntryId="4807-3daa-2b0c-8387">
@@ -2836,15 +2876,25 @@
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="03e1-e980-3929-ff3f" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3620-7b7e-9aac-b26e" type="max" />
 </constraints>
+<selectionEntries>
+<selectionEntry id="601c-b17d-1555-3c5c" name="Lascannon" hidden="false" collective="false" import="true" type="upgrade">
+<entryLinks>
+<entryLink id="9946-fe3f-1de0-a782" name="Lascannon" hidden="false" collective="false" import="true" targetId="c7e9-561f-95b7-1e57" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c32d-b205-9a3a-b157" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8288-7b41-b3ce-5b80" type="max" />
+</constraints>
+</entryLink>
+</entryLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
+</costs>
+</selectionEntry>
+</selectionEntries>
 <entryLinks>
 <entryLink id="4807-3daa-2b0c-8387" name="Multi-laser" hidden="false" collective="false" import="true" targetId="cf1d-775e-c275-a83e" type="selectionEntry" sortIndex="1" defaultAmount="1" />
 <entryLink id="4aa3-e923-b60e-883c" name="Heavy Flamer" hidden="false" collective="false" import="true" targetId="9e6d-afcf-8202-e47c" type="selectionEntry" sortIndex="3" />
 <entryLink id="ba19-2f22-3f75-58a6" name="Heavy Bolter" hidden="false" collective="false" import="true" targetId="9151-5044-e482-04c9" type="selectionEntry" sortIndex="4" />
-<entryLink id="601c-b17d-1555-3c5c" name="Lascannon" hidden="false" collective="false" import="true" targetId="c7e9-561f-95b7-1e57" type="selectionEntry" sortIndex="5">
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
-</costs>
-</entryLink>
 </entryLinks>
 </selectionEntryGroup>
 <selectionEntryGroup id="2661-64d6-f2c0-1caf" name="Sponson-mounted Multi-laser 5" hidden="false" collective="false" import="true" defaultSelectionEntryId="5ac6-def1-c90a-b356">
@@ -2852,15 +2902,25 @@
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="82ae-8c6a-71d3-f144" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e5fe-3d50-9a01-47dc" type="max" />
 </constraints>
+<selectionEntries>
+<selectionEntry id="1309-517b-f7f9-4404" name="Lascannon" hidden="false" collective="false" import="true" type="upgrade">
+<entryLinks>
+<entryLink id="5fc1-e28d-6661-72d9" name="Lascannon" hidden="false" collective="false" import="true" targetId="c7e9-561f-95b7-1e57" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8698-6293-ebd8-443a" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3052-087d-74fd-b86f" type="max" />
+</constraints>
+</entryLink>
+</entryLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
+</costs>
+</selectionEntry>
+</selectionEntries>
 <entryLinks>
 <entryLink id="5ac6-def1-c90a-b356" name="Multi-laser" hidden="false" collective="false" import="true" targetId="cf1d-775e-c275-a83e" type="selectionEntry" sortIndex="1" defaultAmount="1" />
 <entryLink id="6f24-567d-a773-95db" name="Heavy Flamer" hidden="false" collective="false" import="true" targetId="9e6d-afcf-8202-e47c" type="selectionEntry" sortIndex="3" />
 <entryLink id="1174-a90e-2c1c-c55e" name="Heavy Bolter" hidden="false" collective="false" import="true" targetId="9151-5044-e482-04c9" type="selectionEntry" sortIndex="4" />
-<entryLink id="1309-517b-f7f9-4404" name="Lascannon" hidden="false" collective="false" import="true" targetId="c7e9-561f-95b7-1e57" type="selectionEntry" sortIndex="5">
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
-</costs>
-</entryLink>
 </entryLinks>
 </selectionEntryGroup>
 <selectionEntryGroup id="428e-304c-bafc-3396" name="Sponson-mounted Multi-laser 6" hidden="false" collective="false" import="true" defaultSelectionEntryId="1ab1-fa6f-a97f-cb19">
@@ -2868,15 +2928,25 @@
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5361-53e5-c985-df7f" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a677-daf8-2982-3e55" type="max" />
 </constraints>
+<selectionEntries>
+<selectionEntry id="f0ae-b5d5-be98-bc68" name="Lascannon" hidden="false" collective="false" import="true" type="upgrade">
+<entryLinks>
+<entryLink id="f02f-2a97-9885-ef79" name="Lascannon" hidden="false" collective="false" import="true" targetId="c7e9-561f-95b7-1e57" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a039-6b58-4ac8-cb6a" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a390-47a9-f12b-c5cd" type="max" />
+</constraints>
+</entryLink>
+</entryLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
+</costs>
+</selectionEntry>
+</selectionEntries>
 <entryLinks>
 <entryLink id="1ab1-fa6f-a97f-cb19" name="Multi-laser" hidden="false" collective="false" import="true" targetId="cf1d-775e-c275-a83e" type="selectionEntry" sortIndex="1" defaultAmount="1" />
 <entryLink id="4cac-54ec-5909-5ebd" name="Heavy Flamer" hidden="false" collective="false" import="true" targetId="9e6d-afcf-8202-e47c" type="selectionEntry" sortIndex="3" />
 <entryLink id="cc12-f8a9-e43b-09cd" name="Heavy Bolter" hidden="false" collective="false" import="true" targetId="9151-5044-e482-04c9" type="selectionEntry" sortIndex="4" />
-<entryLink id="f0ae-b5d5-be98-bc68" name="Lascannon" hidden="false" collective="false" import="true" targetId="c7e9-561f-95b7-1e57" type="selectionEntry" sortIndex="5">
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
-</costs>
-</entryLink>
 </entryLinks>
 </selectionEntryGroup>
 <selectionEntryGroup id="9b1d-b2da-65c2-a7c8" name="Vehicle Upgrades" hidden="false" collective="false" import="true">
