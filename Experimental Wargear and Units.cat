@@ -1090,7 +1090,7 @@
 </profile>
 </profiles>
 <selectionEntryGroups>
-<selectionEntryGroup id="cc6b-f14f-1f99-5ac5" name="Replace Anvillus Snub Autocannon" hidden="false" collective="false" import="true" defaultSelectionEntryId="68b6-86de-2c9b-3be7">
+<selectionEntryGroup id="cc6b-f14f-1f99-5ac5" name="Replace Anvillus Snub Autocannon" hidden="false" collective="false" import="true" defaultSelectionEntryId="2e7c-9889-66a1-14fb">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8fc8-4b58-71b0-e1fb" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="88d0-37f8-5395-204b" type="max" />
@@ -1105,7 +1105,7 @@
 </entryLink>
 </entryLinks>
 </selectionEntryGroup>
-<selectionEntryGroup id="fef9-44fe-5018-69cb" name="Replace Hull-mounted Heavy Bolter" hidden="false" collective="false" import="true" defaultSelectionEntryId="9bb8-802f-359c-0a3f">
+<selectionEntryGroup id="fef9-44fe-5018-69cb" name="Replace Hull-mounted Heavy Bolter" hidden="false" collective="false" import="true" defaultSelectionEntryId="f006-f39c-24c4-50ce">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7304-c085-fd3d-e8be" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="480e-d1dc-5ff5-3029" type="max" />
@@ -1272,7 +1272,7 @@
 </profile>
 </profiles>
 <selectionEntryGroups>
-<selectionEntryGroup id="56d4-eeaa-28f3-8444" name="Replace Anvillus Snub Autocannon" hidden="false" collective="false" import="true" defaultSelectionEntryId="68b6-86de-2c9b-3be7">
+<selectionEntryGroup id="56d4-eeaa-28f3-8444" name="Replace Anvillus Snub Autocannon" hidden="false" collective="false" import="true" defaultSelectionEntryId="e1ef-18e2-9ab4-ba27">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="574e-713b-b428-d25d" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6457-c060-a013-e0a0" type="max" />
@@ -1287,7 +1287,7 @@
 </entryLink>
 </entryLinks>
 </selectionEntryGroup>
-<selectionEntryGroup id="eb04-af17-7d47-c411" name="Replace Hull-mounted Heavy Bolter" hidden="false" collective="false" import="true" defaultSelectionEntryId="9bb8-802f-359c-0a3f">
+<selectionEntryGroup id="eb04-af17-7d47-c411" name="Replace Hull-mounted Heavy Bolter" hidden="false" collective="false" import="true" defaultSelectionEntryId="f47c-41a0-2595-53e0">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="41ab-cc26-788b-ce8e" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="93e7-c08e-45cf-9aa6" type="max" />
@@ -1629,7 +1629,7 @@
 </profile>
 </profiles>
 <selectionEntryGroups>
-<selectionEntryGroup id="04f9-7b3f-a2ab-5983" name="Replace Morbus Heavy Bombard" hidden="false" collective="false" import="true" defaultSelectionEntryId="bd69-b4a3-6a42-3587">
+<selectionEntryGroup id="04f9-7b3f-a2ab-5983" name="Replace Morbus Heavy Bombard" hidden="false" collective="false" import="true" defaultSelectionEntryId="5d88-1378-25fe-cc2b">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fcde-f32f-0812-a30b" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1433-09a9-2e9c-72ad" type="max" />
@@ -1640,7 +1640,7 @@
 <entryLink id="0e81-b203-f149-953d" name="Spicula Rocket System" hidden="false" collective="false" import="true" targetId="ad57-b629-95e6-3fab" type="selectionEntry" sortIndex="4" />
 </entryLinks>
 </selectionEntryGroup>
-<selectionEntryGroup id="4e6c-c884-4aaa-66c4" name="Sponson-mounted Weapons" hidden="false" collective="false" import="true" defaultSelectionEntryId="dbe0-2e84-dfef-ea46">
+<selectionEntryGroup id="4e6c-c884-4aaa-66c4" name="Sponson-mounted Weapons" hidden="false" collective="false" import="true" defaultSelectionEntryId="3cc6-afd9-d108-173c">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ea67-903f-7649-0e8c" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="96e9-8021-a788-429b" type="max" />
@@ -1789,7 +1789,7 @@
 </profile>
 </profiles>
 <selectionEntryGroups>
-<selectionEntryGroup id="e290-53ba-aa47-d0cf" name="Replace Morbus Heavy Bombard" hidden="false" collective="false" import="true" defaultSelectionEntryId="bd69-b4a3-6a42-3587">
+<selectionEntryGroup id="e290-53ba-aa47-d0cf" name="Replace Morbus Heavy Bombard" hidden="false" collective="false" import="true" defaultSelectionEntryId="028d-832d-8624-4977">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9d9d-40ec-d407-8a76" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="931d-e815-925f-9dc9" type="max" />
@@ -1800,7 +1800,7 @@
 <entryLink id="41da-3856-adc7-e963" name="Spicula Rocket System" hidden="false" collective="false" import="true" targetId="ad57-b629-95e6-3fab" type="selectionEntry" sortIndex="4" />
 </entryLinks>
 </selectionEntryGroup>
-<selectionEntryGroup id="0bfe-d51b-76b6-d585" name="Sponson-mounted Weapons" hidden="false" collective="false" import="true" defaultSelectionEntryId="dbe0-2e84-dfef-ea46">
+<selectionEntryGroup id="0bfe-d51b-76b6-d585" name="Sponson-mounted Weapons" hidden="false" collective="false" import="true" defaultSelectionEntryId="f668-f4f6-321c-46f5">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b58e-d514-51ec-43a1" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2193-ad60-b4f2-3dd4" type="max" />

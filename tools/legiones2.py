@@ -238,7 +238,7 @@ def numbered(model, count, required=1):
         ids = {e.get("id") for e in m.iter() if e.get("id")}
         remap = {old: uid(old, "copy", i) for old in ids}
         for e in m.iter():
-            for attr in ("id", "childId", "scope", "field"):
+            for attr in ("id", "childId", "scope", "field", "defaultSelectionEntryId"):
                 v = e.get(attr)
                 if v in remap:
                     e.set(attr, remap[v])

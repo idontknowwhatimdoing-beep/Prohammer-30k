@@ -10907,7 +10907,7 @@ LIMITATIONS - The Detachment must include a Legion Chaplain Consul. The Detachme
 </entryLink>
 </entryLinks>
 </selectionEntryGroup>
-<selectionEntryGroup id="fe0d-faa8-ea38-5402" name="Replace Bolt Pistol" hidden="false" collective="false" import="true" defaultSelectionEntryId="9e04-cc26-b180-b7e6">
+<selectionEntryGroup id="fe0d-faa8-ea38-5402" name="Replace Bolt Pistol" hidden="false" collective="false" import="true" defaultSelectionEntryId="92f2-a4d8-505d-8a8b">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="270e-da69-8abd-2af9" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="329e-e510-cb28-c2ec" type="max" />
@@ -10926,7 +10926,7 @@ LIMITATIONS - The Detachment must include a Legion Chaplain Consul. The Detachme
 </entryLink>
 </entryLinks>
 </selectionEntryGroup>
-<selectionEntryGroup id="5b99-9545-454c-c361" name="Replace Power Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="af6e-458e-1cca-0f12">
+<selectionEntryGroup id="5b99-9545-454c-c361" name="Replace Power Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="f1d4-7b3e-6c4b-5c4d">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="032b-b05b-ff9e-06ec" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="675e-524f-1187-b1bc" type="max" />
@@ -11019,7 +11019,7 @@ LIMITATIONS - The Detachment must include a Legion Chaplain Consul. The Detachme
 </entryLink>
 </entryLinks>
 </selectionEntryGroup>
-<selectionEntryGroup id="ba0e-891c-865d-bca5" name="Replace Servo-Arm" hidden="false" collective="false" import="true" defaultSelectionEntryId="e909-f33e-f386-c698">
+<selectionEntryGroup id="ba0e-891c-865d-bca5" name="Replace Servo-Arm" hidden="false" collective="false" import="true" defaultSelectionEntryId="2c2c-6620-8820-05c4">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bc68-5b22-06f2-c11b" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="86d8-378b-7e4f-1e67" type="max" />
@@ -11298,7 +11298,7 @@ LIMITATIONS - The Detachment must include a Legion Chaplain Consul. The Detachme
 </entryLink>
 </entryLinks>
 </selectionEntryGroup>
-<selectionEntryGroup id="9bf0-0b69-2ac3-bae3" name="Replace Bolt Pistol" hidden="false" collective="false" import="true" defaultSelectionEntryId="9e04-cc26-b180-b7e6">
+<selectionEntryGroup id="9bf0-0b69-2ac3-bae3" name="Replace Bolt Pistol" hidden="false" collective="false" import="true" defaultSelectionEntryId="212d-f685-6a32-0282">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="107f-1929-9aa4-8d01" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0d92-a239-d6fe-114e" type="max" />
@@ -11317,7 +11317,7 @@ LIMITATIONS - The Detachment must include a Legion Chaplain Consul. The Detachme
 </entryLink>
 </entryLinks>
 </selectionEntryGroup>
-<selectionEntryGroup id="ed40-40c5-9a8b-a29b" name="Replace Power Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="af6e-458e-1cca-0f12">
+<selectionEntryGroup id="ed40-40c5-9a8b-a29b" name="Replace Power Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="286c-7772-da33-64c9">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5753-65a5-2350-5685" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="df8b-d4c7-ca06-39b2" type="max" />
@@ -11410,7 +11410,7 @@ LIMITATIONS - The Detachment must include a Legion Chaplain Consul. The Detachme
 </entryLink>
 </entryLinks>
 </selectionEntryGroup>
-<selectionEntryGroup id="feca-d5db-b9c6-2a3d" name="Replace Servo-Arm" hidden="false" collective="false" import="true" defaultSelectionEntryId="e909-f33e-f386-c698">
+<selectionEntryGroup id="feca-d5db-b9c6-2a3d" name="Replace Servo-Arm" hidden="false" collective="false" import="true" defaultSelectionEntryId="ad2a-95b2-c079-da03">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="67eb-6b06-6785-4ad0" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6a55-ab3f-e55d-493c" type="max" />
@@ -14322,7 +14322,7 @@ LIMITATIONS - The Detachment must include a Legion Chaplain Consul. The Detachme
 </profile>
 </profiles>
 <selectionEntryGroups>
-<selectionEntryGroup id="e569-6d7d-e5b2-ad6c" name="Replace Heavy Bolter" hidden="false" collective="false" import="true" defaultSelectionEntryId="d000-dcf5-08a7-e239">
+<selectionEntryGroup id="e569-6d7d-e5b2-ad6c" name="Replace Heavy Bolter" hidden="false" collective="false" import="true" defaultSelectionEntryId="9e05-40f1-f770-ca5b">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fcb2-d738-4ccc-03cc" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1377-ae52-9755-baa0" type="max" />
@@ -14401,7 +14401,7 @@ LIMITATIONS - The Detachment must include a Legion Chaplain Consul. The Detachme
 </profile>
 </profiles>
 <selectionEntryGroups>
-<selectionEntryGroup id="9877-87b1-5452-0874" name="Replace Heavy Bolter" hidden="false" collective="false" import="true" defaultSelectionEntryId="d000-dcf5-08a7-e239">
+<selectionEntryGroup id="9877-87b1-5452-0874" name="Replace Heavy Bolter" hidden="false" collective="false" import="true" defaultSelectionEntryId="aaa2-cc9c-06a2-a5b2">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7e14-8a9a-915f-f596" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="da74-afc4-1015-5c16" type="max" />
@@ -14652,7 +14652,7 @@ LIMITATIONS - The Detachment must include a Legion Chaplain Consul. The Detachme
 </profile>
 </profiles>
 <selectionEntryGroups>
-<selectionEntryGroup id="2722-ebbe-ba81-fbe1" name="Replace Heavy Bolter" hidden="false" collective="false" import="true" defaultSelectionEntryId="7f94-7a9c-b628-1924">
+<selectionEntryGroup id="2722-ebbe-ba81-fbe1" name="Replace Heavy Bolter" hidden="false" collective="false" import="true" defaultSelectionEntryId="1ecb-d10a-4d02-593e">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c897-469a-bffe-3ff5" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e72c-9d3c-4ceb-657f" type="max" />
@@ -14769,7 +14769,7 @@ LIMITATIONS - The Detachment must include a Legion Chaplain Consul. The Detachme
 </profile>
 </profiles>
 <selectionEntryGroups>
-<selectionEntryGroup id="8b20-e132-a802-b521" name="Replace Heavy Bolter" hidden="false" collective="false" import="true" defaultSelectionEntryId="7f94-7a9c-b628-1924">
+<selectionEntryGroup id="8b20-e132-a802-b521" name="Replace Heavy Bolter" hidden="false" collective="false" import="true" defaultSelectionEntryId="b777-a355-5e83-1917">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3655-f9b5-eba6-727a" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9f66-954d-4499-ac98" type="max" />
@@ -14973,7 +14973,7 @@ LIMITATIONS - The Detachment must include a Legion Chaplain Consul. The Detachme
 </profile>
 </profiles>
 <selectionEntryGroups>
-<selectionEntryGroup id="741d-af87-06b9-0674" name="Replace Twin-linked Cyclone Missile Launcher" hidden="false" collective="false" import="true" defaultSelectionEntryId="ed52-cb99-a00e-a0c4">
+<selectionEntryGroup id="741d-af87-06b9-0674" name="Replace Twin-linked Cyclone Missile Launcher" hidden="false" collective="false" import="true" defaultSelectionEntryId="a8d1-d12b-48c5-1594">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="da33-f242-9d28-b179" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f99f-51a0-175d-1a7b" type="max" />
@@ -14987,7 +14987,7 @@ LIMITATIONS - The Detachment must include a Legion Chaplain Consul. The Detachme
 </entryLink>
 </entryLinks>
 </selectionEntryGroup>
-<selectionEntryGroup id="ba29-9d84-bd74-c5f5" name="Replace Heavy Bolter" hidden="false" collective="false" import="true" defaultSelectionEntryId="8e0d-8ef0-c982-04da">
+<selectionEntryGroup id="ba29-9d84-bd74-c5f5" name="Replace Heavy Bolter" hidden="false" collective="false" import="true" defaultSelectionEntryId="4b2b-9065-2410-9295">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c50e-df5c-94c9-8f45" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="563a-2b8f-eae1-aaef" type="max" />
@@ -15044,7 +15044,7 @@ LIMITATIONS - The Detachment must include a Legion Chaplain Consul. The Detachme
 </profile>
 </profiles>
 <selectionEntryGroups>
-<selectionEntryGroup id="b3de-44e6-7683-2f0b" name="Replace Twin-linked Cyclone Missile Launcher" hidden="false" collective="false" import="true" defaultSelectionEntryId="ed52-cb99-a00e-a0c4">
+<selectionEntryGroup id="b3de-44e6-7683-2f0b" name="Replace Twin-linked Cyclone Missile Launcher" hidden="false" collective="false" import="true" defaultSelectionEntryId="360f-248f-5100-0e02">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="909a-b1eb-948d-fb50" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2a9d-99af-f81e-f88a" type="max" />
@@ -15058,7 +15058,7 @@ LIMITATIONS - The Detachment must include a Legion Chaplain Consul. The Detachme
 </entryLink>
 </entryLinks>
 </selectionEntryGroup>
-<selectionEntryGroup id="b018-b35d-d30b-31aa" name="Replace Heavy Bolter" hidden="false" collective="false" import="true" defaultSelectionEntryId="8e0d-8ef0-c982-04da">
+<selectionEntryGroup id="b018-b35d-d30b-31aa" name="Replace Heavy Bolter" hidden="false" collective="false" import="true" defaultSelectionEntryId="066d-67f1-b426-e761">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d6f6-eab8-c28a-52dd" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fe24-f00b-2edd-ec7a" type="max" />
@@ -15831,7 +15831,7 @@ LIMITATIONS - The Detachment must include a Legion Chaplain Consul. The Detachme
 </profile>
 </profiles>
 <selectionEntryGroups>
-<selectionEntryGroup id="eb81-2703-6e89-99f1" name="Replace Predator Cannon" hidden="false" collective="false" import="true" defaultSelectionEntryId="1b9f-c202-c41b-4755">
+<selectionEntryGroup id="eb81-2703-6e89-99f1" name="Replace Predator Cannon" hidden="false" collective="false" import="true" defaultSelectionEntryId="9ceb-29a1-a1d4-25f5">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="06bb-5fc7-60c6-2d2b" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b126-b148-418b-1235" type="max" />
@@ -16039,7 +16039,7 @@ LIMITATIONS - The Detachment must include a Legion Chaplain Consul. The Detachme
 </profile>
 </profiles>
 <selectionEntryGroups>
-<selectionEntryGroup id="2436-020d-1d49-3ee3" name="Replace Predator Cannon" hidden="false" collective="false" import="true" defaultSelectionEntryId="1b9f-c202-c41b-4755">
+<selectionEntryGroup id="2436-020d-1d49-3ee3" name="Replace Predator Cannon" hidden="false" collective="false" import="true" defaultSelectionEntryId="c0ef-3c69-e064-f862">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d903-52b1-385f-d7ec" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f5cd-1d39-0144-425c" type="max" />
@@ -16441,7 +16441,7 @@ LIMITATIONS - The Detachment must include a Legion Chaplain Consul. The Detachme
 </profile>
 </profiles>
 <selectionEntryGroups>
-<selectionEntryGroup id="56bb-1034-0409-a363" name="Replace Demolisher Cannon" hidden="false" collective="false" import="true" defaultSelectionEntryId="ad6e-7044-1af2-f189">
+<selectionEntryGroup id="56bb-1034-0409-a363" name="Replace Demolisher Cannon" hidden="false" collective="false" import="true" defaultSelectionEntryId="31d7-2af7-3445-13c9">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="49d3-dade-075b-fa3a" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0ab0-93aa-cc7e-73e0" type="max" />
@@ -16604,7 +16604,7 @@ LIMITATIONS - The Detachment must include a Legion Chaplain Consul. The Detachme
 </profile>
 </profiles>
 <selectionEntryGroups>
-<selectionEntryGroup id="bb68-9775-fdb9-91fc" name="Replace Demolisher Cannon" hidden="false" collective="false" import="true" defaultSelectionEntryId="ad6e-7044-1af2-f189">
+<selectionEntryGroup id="bb68-9775-fdb9-91fc" name="Replace Demolisher Cannon" hidden="false" collective="false" import="true" defaultSelectionEntryId="9307-2d62-1e9a-2157">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e3b3-33fc-530a-e9c5" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a7c6-190b-ccb8-5e82" type="max" />

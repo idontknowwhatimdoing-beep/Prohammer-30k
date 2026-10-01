@@ -3393,7 +3393,7 @@
 </selectionEntry>
 </selectionEntries>
 <selectionEntryGroups>
-<selectionEntryGroup id="d556-b64b-329c-101a" name="Replace Laspistol" hidden="false" collective="false" import="true" defaultSelectionEntryId="6c2a-2402-84f3-062d">
+<selectionEntryGroup id="d556-b64b-329c-101a" name="Replace Laspistol" hidden="false" collective="false" import="true" defaultSelectionEntryId="005f-e46a-6b6f-ac0d">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="93a0-6c5d-b171-e800" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4c96-dacc-1156-706d" type="max" />
@@ -3571,12 +3571,6 @@
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7ebf-0101-77f6-fb59" type="max" />
 </constraints>
 </entryLink>
-<entryLink id="dd25-4505-4982-f900" name="Laspistol" hidden="false" collective="false" import="true" targetId="b560-9c34-5a09-6fab" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="46b9-0f79-448e-db59" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a575-b4b4-1175-0f23" type="max" />
-</constraints>
-</entryLink>
 <entryLink id="c726-33d6-7c21-1a13" name="Mechanicum Axe" hidden="false" collective="false" import="true" targetId="5e8f-19f8-136d-2b99" type="selectionEntry">
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="24f3-6d0e-d0fa-5c44" type="min" />
@@ -3628,7 +3622,7 @@
 </selectionEntry>
 </selectionEntries>
 <selectionEntryGroups>
-<selectionEntryGroup id="b018-bcfd-45c8-0da2" name="Replace Laspistol" hidden="false" collective="false" import="true" defaultSelectionEntryId="6c2a-2402-84f3-062d">
+<selectionEntryGroup id="b018-bcfd-45c8-0da2" name="Replace Laspistol" hidden="false" collective="false" import="true" defaultSelectionEntryId="3aff-953e-3650-639b">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="323d-8bee-6928-07b6" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3482-641b-152e-cd0f" type="max" />
@@ -3806,12 +3800,6 @@
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5838-56fe-d24a-f243" type="max" />
 </constraints>
 </entryLink>
-<entryLink id="c49a-fc44-45c1-3fe6" name="Laspistol" hidden="false" collective="false" import="true" targetId="b560-9c34-5a09-6fab" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3eac-2d67-e9ee-66ed" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ab38-f8c6-3ebe-4f5b" type="max" />
-</constraints>
-</entryLink>
 <entryLink id="f990-8d1f-9e96-27e0" name="Mechanicum Axe" hidden="false" collective="false" import="true" targetId="5e8f-19f8-136d-2b99" type="selectionEntry">
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0a3a-8183-c3d4-bd9b" type="min" />
@@ -3863,7 +3851,7 @@
 </selectionEntry>
 </selectionEntries>
 <selectionEntryGroups>
-<selectionEntryGroup id="958d-79a2-2d8d-b692" name="Replace Laspistol" hidden="false" collective="false" import="true" defaultSelectionEntryId="6c2a-2402-84f3-062d">
+<selectionEntryGroup id="958d-79a2-2d8d-b692" name="Replace Laspistol" hidden="false" collective="false" import="true" defaultSelectionEntryId="62b4-b736-3530-7343">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e86b-f42b-08e0-43de" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1efc-72f2-6b45-4cdb" type="max" />
@@ -4041,12 +4029,6 @@
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1165-08a9-1f58-ac4a" type="max" />
 </constraints>
 </entryLink>
-<entryLink id="91df-7438-6446-1610" name="Laspistol" hidden="false" collective="false" import="true" targetId="b560-9c34-5a09-6fab" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cdca-9ccd-3059-c613" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a98c-7b1b-1e7b-7f0c" type="max" />
-</constraints>
-</entryLink>
 <entryLink id="4eab-7f75-3754-5d46" name="Mechanicum Axe" hidden="false" collective="false" import="true" targetId="5e8f-19f8-136d-2b99" type="selectionEntry">
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="af16-e8e7-2675-e565" type="min" />
@@ -4098,7 +4080,7 @@
 </selectionEntry>
 </selectionEntries>
 <selectionEntryGroups>
-<selectionEntryGroup id="e50f-5e19-33cf-6717" name="Replace Laspistol" hidden="false" collective="false" import="true" defaultSelectionEntryId="6c2a-2402-84f3-062d">
+<selectionEntryGroup id="e50f-5e19-33cf-6717" name="Replace Laspistol" hidden="false" collective="false" import="true" defaultSelectionEntryId="7175-2b64-e10e-f81c">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="336e-358f-8596-d892" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cfe7-05f2-6805-d671" type="max" />
@@ -4274,12 +4256,6 @@
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6d84-2f0e-c23f-986e" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d8ad-837d-49ff-cdd9" type="max" />
-</constraints>
-</entryLink>
-<entryLink id="d1c6-d645-8908-e0dd" name="Laspistol" hidden="false" collective="false" import="true" targetId="b560-9c34-5a09-6fab" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bce1-e4ec-594c-4350" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b8a1-89eb-d65f-fc7f" type="max" />
 </constraints>
 </entryLink>
 <entryLink id="c087-f7ac-4054-5919" name="Mechanicum Axe" hidden="false" collective="false" import="true" targetId="5e8f-19f8-136d-2b99" type="selectionEntry">
@@ -9054,7 +9030,7 @@
 </profile>
 </profiles>
 <selectionEntryGroups>
-<selectionEntryGroup id="f661-8ab6-f52e-0ce3" name="Replace Heavy Bolter" hidden="false" collective="false" import="true" defaultSelectionEntryId="f3b1-f12d-6f2f-53d6">
+<selectionEntryGroup id="f661-8ab6-f52e-0ce3" name="Replace Heavy Bolter" hidden="false" collective="false" import="true" defaultSelectionEntryId="b848-c31e-2d23-c06a">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="12fd-3e27-29d8-a688" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="76df-3f81-7095-230e" type="max" />
@@ -9090,7 +9066,7 @@
 </entryLink>
 </entryLinks>
 </selectionEntryGroup>
-<selectionEntryGroup id="e2e7-9f87-e6e1-ae54" name="Replace Power Fist (melee weapon or second ranged weapon)" hidden="false" collective="false" import="true" defaultSelectionEntryId="4ec8-99e8-1d62-499a">
+<selectionEntryGroup id="e2e7-9f87-e6e1-ae54" name="Replace Power Fist (melee weapon or second ranged weapon)" hidden="false" collective="false" import="true" defaultSelectionEntryId="bcd3-dd85-ef84-239e">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b454-3ebc-39e0-d88a" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7b64-98d2-0c71-4308" type="max" />
@@ -9157,18 +9133,6 @@
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6c59-5225-513f-9ce4" type="max" />
 </constraints>
 </entryLink>
-<entryLink id="0233-fcd7-eb4f-c172" name="Heavy Bolter" hidden="false" collective="false" import="true" targetId="9151-5044-e482-04c9" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="acfc-4703-635d-1ca8" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5e49-a279-79d3-3337" type="max" />
-</constraints>
-</entryLink>
-<entryLink id="385c-b226-8a7d-4a1c" name="Power Fist" hidden="false" collective="false" import="true" targetId="0b4d-922b-4629-b7ca" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ad91-862f-a5f8-0e8a" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="57c1-bb7a-a8a9-fbf8" type="max" />
-</constraints>
-</entryLink>
 <entryLink id="3f12-222e-3f02-e111" name="Bionics" hidden="false" collective="false" import="true" targetId="fe26-aa9a-01b0-3173" type="selectionEntry">
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="45f9-0046-ceac-3d53" type="min" />
@@ -9202,7 +9166,7 @@
 </profile>
 </profiles>
 <selectionEntryGroups>
-<selectionEntryGroup id="a3eb-72ba-520f-7426" name="Replace Heavy Bolter" hidden="false" collective="false" import="true" defaultSelectionEntryId="f3b1-f12d-6f2f-53d6">
+<selectionEntryGroup id="a3eb-72ba-520f-7426" name="Replace Heavy Bolter" hidden="false" collective="false" import="true" defaultSelectionEntryId="3a65-acf1-6e5c-b43c">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0ecf-66c1-61c6-d84e" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5836-4d26-65e0-2950" type="max" />
@@ -9238,7 +9202,7 @@
 </entryLink>
 </entryLinks>
 </selectionEntryGroup>
-<selectionEntryGroup id="9c73-5417-c7d1-7545" name="Replace Power Fist (melee weapon or second ranged weapon)" hidden="false" collective="false" import="true" defaultSelectionEntryId="4ec8-99e8-1d62-499a">
+<selectionEntryGroup id="9c73-5417-c7d1-7545" name="Replace Power Fist (melee weapon or second ranged weapon)" hidden="false" collective="false" import="true" defaultSelectionEntryId="058e-eda6-a1bf-22b7">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c65b-0d60-9ecc-88dd" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ccb2-dd90-3294-dd6b" type="max" />
@@ -9305,18 +9269,6 @@
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1e27-6d68-8fbe-93c1" type="max" />
 </constraints>
 </entryLink>
-<entryLink id="eeaf-a506-2b23-1454" name="Heavy Bolter" hidden="false" collective="false" import="true" targetId="9151-5044-e482-04c9" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="feee-9769-e4e5-ce3e" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d70b-8f25-ece6-aab2" type="max" />
-</constraints>
-</entryLink>
-<entryLink id="144e-b351-1c0f-f0a4" name="Power Fist" hidden="false" collective="false" import="true" targetId="0b4d-922b-4629-b7ca" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="911d-3a24-d55c-ba94" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3cd8-51df-a7a4-1a42" type="max" />
-</constraints>
-</entryLink>
 <entryLink id="ac6d-c749-2692-17ff" name="Bionics" hidden="false" collective="false" import="true" targetId="fe26-aa9a-01b0-3173" type="selectionEntry">
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dcd3-c082-55b3-42c7" type="min" />
@@ -9350,7 +9302,7 @@
 </profile>
 </profiles>
 <selectionEntryGroups>
-<selectionEntryGroup id="6ad5-0f13-2d9e-0bd7" name="Replace Heavy Bolter" hidden="false" collective="false" import="true" defaultSelectionEntryId="f3b1-f12d-6f2f-53d6">
+<selectionEntryGroup id="6ad5-0f13-2d9e-0bd7" name="Replace Heavy Bolter" hidden="false" collective="false" import="true" defaultSelectionEntryId="cad1-e478-59fb-c2b2">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="de72-4492-baeb-8e0d" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9110-4f69-2246-5ce4" type="max" />
@@ -9386,7 +9338,7 @@
 </entryLink>
 </entryLinks>
 </selectionEntryGroup>
-<selectionEntryGroup id="a077-a03f-b350-45e9" name="Replace Power Fist (melee weapon or second ranged weapon)" hidden="false" collective="false" import="true" defaultSelectionEntryId="4ec8-99e8-1d62-499a">
+<selectionEntryGroup id="a077-a03f-b350-45e9" name="Replace Power Fist (melee weapon or second ranged weapon)" hidden="false" collective="false" import="true" defaultSelectionEntryId="9086-98f2-e2db-3877">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f356-d64d-c39d-1f07" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a01c-e629-7ee5-61b0" type="max" />
@@ -9451,18 +9403,6 @@
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="47cb-b3ac-3f4b-fa14" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8e6e-4a11-67c8-05da" type="max" />
-</constraints>
-</entryLink>
-<entryLink id="d4c2-108f-c55c-0a85" name="Heavy Bolter" hidden="false" collective="false" import="true" targetId="9151-5044-e482-04c9" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4a50-4e5f-ed95-c5bb" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="04a4-e131-432d-dc5a" type="max" />
-</constraints>
-</entryLink>
-<entryLink id="3ca7-156a-bd4a-36f6" name="Power Fist" hidden="false" collective="false" import="true" targetId="0b4d-922b-4629-b7ca" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a6b8-44ed-ed7e-c82d" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="32ce-b25e-81e7-be43" type="max" />
 </constraints>
 </entryLink>
 <entryLink id="da81-01bb-2e91-73ac" name="Bionics" hidden="false" collective="false" import="true" targetId="fe26-aa9a-01b0-3173" type="selectionEntry">
@@ -10075,7 +10015,7 @@
 </profile>
 </profiles>
 <selectionEntryGroups>
-<selectionEntryGroup id="34d0-0d98-eb04-6190" name="Replace Lascannon" hidden="false" collective="false" import="true" defaultSelectionEntryId="02b1-3858-c7f9-93f9">
+<selectionEntryGroup id="34d0-0d98-eb04-6190" name="Replace Lascannon" hidden="false" collective="false" import="true" defaultSelectionEntryId="475d-146b-a6fc-3fa7">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c8db-1275-4cd9-253d" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5418-79f5-a86b-efab" type="max" />
@@ -10094,7 +10034,7 @@
 </entryLink>
 </entryLinks>
 </selectionEntryGroup>
-<selectionEntryGroup id="c8f4-62fb-923c-1caa" name="Replace Flamer" hidden="false" collective="false" import="true" defaultSelectionEntryId="9ff1-d017-c1dc-ca46">
+<selectionEntryGroup id="c8f4-62fb-923c-1caa" name="Replace Flamer" hidden="false" collective="false" import="true" defaultSelectionEntryId="8156-5bce-786c-8686">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="27d7-ba03-5130-1c69" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="52d3-e374-ff29-c633" type="max" />
@@ -10113,7 +10053,7 @@
 </entryLink>
 </entryLinks>
 </selectionEntryGroup>
-<selectionEntryGroup id="60c3-53d0-7daf-30d7" name="Replace Bolter" hidden="false" collective="false" import="true" defaultSelectionEntryId="2ba2-e604-80f3-fdc0">
+<selectionEntryGroup id="60c3-53d0-7daf-30d7" name="Replace Bolter" hidden="false" collective="false" import="true" defaultSelectionEntryId="ce11-c4df-0077-9e12">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7b81-38f5-ffe6-705e" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cebc-c22e-1b11-7561" type="max" />
@@ -10129,24 +10069,6 @@
 </selectionEntryGroup>
 </selectionEntryGroups>
 <entryLinks>
-<entryLink id="8797-00f7-cec9-63f5" name="Lascannon" hidden="false" collective="false" import="true" targetId="c7e9-561f-95b7-1e57" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="369a-c380-eb41-8636" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ff08-2850-2ef8-2e77" type="max" />
-</constraints>
-</entryLink>
-<entryLink id="0e4b-8ebc-fa93-6a24" name="Bolter" hidden="false" collective="false" import="true" targetId="8b6f-ff45-9e8a-0d7e" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c3cf-2f3d-6535-b891" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8f5c-d515-46a3-3f71" type="max" />
-</constraints>
-</entryLink>
-<entryLink id="b92d-a0d7-1563-d4c0" name="Flamer" hidden="false" collective="false" import="true" targetId="871b-3cee-4373-04f9" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2609-4ac0-0227-eed5" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b65b-32de-dbd2-d0db" type="max" />
-</constraints>
-</entryLink>
 <entryLink id="e62d-97d1-d9c8-1748" name="Atomantic Shielding" hidden="false" collective="false" import="true" targetId="e6dc-ed0d-769b-3d1d" type="selectionEntry">
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="df92-4bf9-eeee-9f70" type="min" />
@@ -10180,7 +10102,7 @@
 </profile>
 </profiles>
 <selectionEntryGroups>
-<selectionEntryGroup id="fe01-6b0a-d224-8458" name="Replace Lascannon" hidden="false" collective="false" import="true" defaultSelectionEntryId="02b1-3858-c7f9-93f9">
+<selectionEntryGroup id="fe01-6b0a-d224-8458" name="Replace Lascannon" hidden="false" collective="false" import="true" defaultSelectionEntryId="928e-45cc-0da2-ea2a">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="de46-82a8-71e9-06b6" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0f36-ec00-09fb-33e4" type="max" />
@@ -10199,7 +10121,7 @@
 </entryLink>
 </entryLinks>
 </selectionEntryGroup>
-<selectionEntryGroup id="53a0-ca4c-d487-8271" name="Replace Flamer" hidden="false" collective="false" import="true" defaultSelectionEntryId="9ff1-d017-c1dc-ca46">
+<selectionEntryGroup id="53a0-ca4c-d487-8271" name="Replace Flamer" hidden="false" collective="false" import="true" defaultSelectionEntryId="88b1-3fff-8811-4067">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0580-4257-3e83-5fa9" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a37e-5b32-cbab-0e19" type="max" />
@@ -10218,7 +10140,7 @@
 </entryLink>
 </entryLinks>
 </selectionEntryGroup>
-<selectionEntryGroup id="3df9-742e-fcd2-2a2d" name="Replace Bolter" hidden="false" collective="false" import="true" defaultSelectionEntryId="2ba2-e604-80f3-fdc0">
+<selectionEntryGroup id="3df9-742e-fcd2-2a2d" name="Replace Bolter" hidden="false" collective="false" import="true" defaultSelectionEntryId="4ad8-b626-48df-29fc">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b367-88f3-cbfd-9441" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4b7a-d924-dffe-e2a2" type="max" />
@@ -10234,24 +10156,6 @@
 </selectionEntryGroup>
 </selectionEntryGroups>
 <entryLinks>
-<entryLink id="5d2f-f2d0-9458-1a64" name="Lascannon" hidden="false" collective="false" import="true" targetId="c7e9-561f-95b7-1e57" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cb20-a72a-6c95-a8f7" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="74fc-6f75-8512-245c" type="max" />
-</constraints>
-</entryLink>
-<entryLink id="6673-0533-85d3-b0b8" name="Bolter" hidden="false" collective="false" import="true" targetId="8b6f-ff45-9e8a-0d7e" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aec3-a5a5-1cae-320f" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3bf1-05d5-7e40-e9c2" type="max" />
-</constraints>
-</entryLink>
-<entryLink id="d4a3-1a19-3415-1b80" name="Flamer" hidden="false" collective="false" import="true" targetId="871b-3cee-4373-04f9" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e8eb-0bef-2419-d5b4" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f1c6-506b-536c-80ef" type="max" />
-</constraints>
-</entryLink>
 <entryLink id="07e5-70f3-b5b3-2321" name="Atomantic Shielding" hidden="false" collective="false" import="true" targetId="e6dc-ed0d-769b-3d1d" type="selectionEntry">
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0770-900a-b17c-fed0" type="min" />
@@ -10285,7 +10189,7 @@
 </profile>
 </profiles>
 <selectionEntryGroups>
-<selectionEntryGroup id="19a1-367b-9a85-5750" name="Replace Lascannon" hidden="false" collective="false" import="true" defaultSelectionEntryId="02b1-3858-c7f9-93f9">
+<selectionEntryGroup id="19a1-367b-9a85-5750" name="Replace Lascannon" hidden="false" collective="false" import="true" defaultSelectionEntryId="b377-34ec-66b6-2f7d">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d809-23d4-f17f-a8e9" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="71fc-24c2-95f2-0534" type="max" />
@@ -10304,7 +10208,7 @@
 </entryLink>
 </entryLinks>
 </selectionEntryGroup>
-<selectionEntryGroup id="2492-dccb-5e69-f4a6" name="Replace Flamer" hidden="false" collective="false" import="true" defaultSelectionEntryId="9ff1-d017-c1dc-ca46">
+<selectionEntryGroup id="2492-dccb-5e69-f4a6" name="Replace Flamer" hidden="false" collective="false" import="true" defaultSelectionEntryId="1a42-338b-5413-14c8">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="66ad-6f17-8e4e-20ed" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="90bf-4f50-0780-699e" type="max" />
@@ -10323,7 +10227,7 @@
 </entryLink>
 </entryLinks>
 </selectionEntryGroup>
-<selectionEntryGroup id="c201-55c6-12b2-504c" name="Replace Bolter" hidden="false" collective="false" import="true" defaultSelectionEntryId="2ba2-e604-80f3-fdc0">
+<selectionEntryGroup id="c201-55c6-12b2-504c" name="Replace Bolter" hidden="false" collective="false" import="true" defaultSelectionEntryId="fc10-759e-c5ec-48bb">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9f25-7640-efe0-30d6" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3ea6-4e2c-e1c0-25ea" type="max" />
@@ -10339,24 +10243,6 @@
 </selectionEntryGroup>
 </selectionEntryGroups>
 <entryLinks>
-<entryLink id="8c52-e57d-45ad-df5c" name="Lascannon" hidden="false" collective="false" import="true" targetId="c7e9-561f-95b7-1e57" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2653-59e7-201a-5c98" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1e66-1c6d-9915-26f4" type="max" />
-</constraints>
-</entryLink>
-<entryLink id="9d51-9f13-1e5d-5dd8" name="Bolter" hidden="false" collective="false" import="true" targetId="8b6f-ff45-9e8a-0d7e" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="64cc-8979-0f5e-f17e" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d04b-f549-c8d0-5d96" type="max" />
-</constraints>
-</entryLink>
-<entryLink id="851a-698c-62ac-99f0" name="Flamer" hidden="false" collective="false" import="true" targetId="871b-3cee-4373-04f9" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="77a1-f515-90f5-59a7" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7162-785f-eca8-f0f7" type="max" />
-</constraints>
-</entryLink>
 <entryLink id="6db5-b283-708e-c2fd" name="Atomantic Shielding" hidden="false" collective="false" import="true" targetId="e6dc-ed0d-769b-3d1d" type="selectionEntry">
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="114b-761b-f737-93c3" type="min" />
@@ -13574,7 +13460,7 @@
 </profile>
 </profiles>
 <selectionEntryGroups>
-<selectionEntryGroup id="c8a4-4dfb-79e6-fdfa" name="Replace Mauler Bolt Cannon" hidden="false" collective="false" import="true" defaultSelectionEntryId="4aac-0173-3d4d-0193">
+<selectionEntryGroup id="c8a4-4dfb-79e6-fdfa" name="Replace Mauler Bolt Cannon" hidden="false" collective="false" import="true" defaultSelectionEntryId="3f1a-ca6c-159b-bcba">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dbb5-a98f-dbbc-29ff" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3b20-49ca-a91b-e623" type="max" />
@@ -13589,7 +13475,7 @@
 </entryLink>
 </entryLinks>
 </selectionEntryGroup>
-<selectionEntryGroup id="2ebe-7f96-435e-c20b" name="Bolter 1" hidden="false" collective="false" import="true" defaultSelectionEntryId="f528-8527-41a0-9d9c">
+<selectionEntryGroup id="2ebe-7f96-435e-c20b" name="Bolter 1" hidden="false" collective="false" import="true" defaultSelectionEntryId="30ae-1a16-066c-5341">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8aad-d049-d004-737e" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2e68-607e-8761-a142" type="max" />
@@ -13603,7 +13489,7 @@
 </entryLink>
 </entryLinks>
 </selectionEntryGroup>
-<selectionEntryGroup id="b911-27d7-5ae2-55bd" name="Bolter 2" hidden="false" collective="false" import="true" defaultSelectionEntryId="c444-4bf6-36fc-da2d">
+<selectionEntryGroup id="b911-27d7-5ae2-55bd" name="Bolter 2" hidden="false" collective="false" import="true" defaultSelectionEntryId="cd8b-95e5-fdcf-95ff">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8722-340e-d568-7921" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4dd4-6505-1da8-2f88" type="max" />
@@ -13617,7 +13503,7 @@
 </entryLink>
 </entryLinks>
 </selectionEntryGroup>
-<selectionEntryGroup id="b527-22af-ce1a-607b" name="Replace Shock Chargers" hidden="false" collective="false" import="true" defaultSelectionEntryId="a8c8-3e3d-3a5b-538a">
+<selectionEntryGroup id="b527-22af-ce1a-607b" name="Replace Shock Chargers" hidden="false" collective="false" import="true" defaultSelectionEntryId="9999-aab7-83e5-d0c4">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="32ed-a88b-a322-3f77" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b9d1-ea01-a4fc-f29f" type="max" />
@@ -13638,24 +13524,6 @@
 </selectionEntryGroup>
 </selectionEntryGroups>
 <entryLinks>
-<entryLink id="8339-5c53-2b2b-0390" name="Mauler Bolt Cannon" hidden="false" collective="false" import="true" targetId="8064-644a-097a-a800" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f0bd-2921-3630-a20f" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6f94-05dc-6c2c-51e1" type="max" />
-</constraints>
-</entryLink>
-<entryLink id="12de-84b4-11b9-32d6" name="Bolter" hidden="false" collective="false" import="true" targetId="8b6f-ff45-9e8a-0d7e" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5e36-dc45-3b22-a9f9" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7a83-1faf-36c3-0679" type="max" />
-</constraints>
-</entryLink>
-<entryLink id="a197-4587-d0b0-dc38" name="Shock Chargers" hidden="false" collective="false" import="true" targetId="9a2d-6eb0-8843-6c94" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="04db-bf46-60a1-f93f" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6282-0dc2-cbc4-64a9" type="max" />
-</constraints>
-</entryLink>
 <entryLink id="0fbd-ea60-b395-82f0" name="Atomantic Shielding" hidden="false" collective="false" import="true" targetId="e6dc-ed0d-769b-3d1d" type="selectionEntry">
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="806c-823a-2047-a2e4" type="min" />
@@ -13689,7 +13557,7 @@
 </profile>
 </profiles>
 <selectionEntryGroups>
-<selectionEntryGroup id="a9e9-13ee-6ec3-ebac" name="Replace Mauler Bolt Cannon" hidden="false" collective="false" import="true" defaultSelectionEntryId="4aac-0173-3d4d-0193">
+<selectionEntryGroup id="a9e9-13ee-6ec3-ebac" name="Replace Mauler Bolt Cannon" hidden="false" collective="false" import="true" defaultSelectionEntryId="9cc6-412b-afbd-c59a">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="302f-89cf-58f0-2729" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fc19-27ec-9829-0ee1" type="max" />
@@ -13704,7 +13572,7 @@
 </entryLink>
 </entryLinks>
 </selectionEntryGroup>
-<selectionEntryGroup id="9783-8c70-a786-90b0" name="Bolter 1" hidden="false" collective="false" import="true" defaultSelectionEntryId="f528-8527-41a0-9d9c">
+<selectionEntryGroup id="9783-8c70-a786-90b0" name="Bolter 1" hidden="false" collective="false" import="true" defaultSelectionEntryId="7c50-237d-bbad-53d7">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="94d2-772f-95f1-6e95" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d7ed-d54b-c95f-bcb3" type="max" />
@@ -13718,7 +13586,7 @@
 </entryLink>
 </entryLinks>
 </selectionEntryGroup>
-<selectionEntryGroup id="7eef-4c35-ad87-99ac" name="Bolter 2" hidden="false" collective="false" import="true" defaultSelectionEntryId="c444-4bf6-36fc-da2d">
+<selectionEntryGroup id="7eef-4c35-ad87-99ac" name="Bolter 2" hidden="false" collective="false" import="true" defaultSelectionEntryId="5dfe-e432-2109-e6a1">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="42a4-ffd7-0ae8-7b9c" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8ee1-2645-8123-42e9" type="max" />
@@ -13732,7 +13600,7 @@
 </entryLink>
 </entryLinks>
 </selectionEntryGroup>
-<selectionEntryGroup id="4eb9-d698-d6f5-52cc" name="Replace Shock Chargers" hidden="false" collective="false" import="true" defaultSelectionEntryId="a8c8-3e3d-3a5b-538a">
+<selectionEntryGroup id="4eb9-d698-d6f5-52cc" name="Replace Shock Chargers" hidden="false" collective="false" import="true" defaultSelectionEntryId="0675-052a-eb9f-2b48">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1c86-8f79-a8d9-d3fd" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8095-1a02-8723-9114" type="max" />
@@ -13753,24 +13621,6 @@
 </selectionEntryGroup>
 </selectionEntryGroups>
 <entryLinks>
-<entryLink id="b6be-1902-ad98-e50d" name="Mauler Bolt Cannon" hidden="false" collective="false" import="true" targetId="8064-644a-097a-a800" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ad84-de21-9350-6b57" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="99d7-b3d6-5a74-2c27" type="max" />
-</constraints>
-</entryLink>
-<entryLink id="b439-49a3-f95c-bba9" name="Bolter" hidden="false" collective="false" import="true" targetId="8b6f-ff45-9e8a-0d7e" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c26a-1291-4b04-d68b" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7a29-bf92-80f8-b576" type="max" />
-</constraints>
-</entryLink>
-<entryLink id="1196-3456-7280-63d0" name="Shock Chargers" hidden="false" collective="false" import="true" targetId="9a2d-6eb0-8843-6c94" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e2e0-dd52-b026-afee" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2883-65d6-80de-4869" type="max" />
-</constraints>
-</entryLink>
 <entryLink id="e190-a2cf-706b-4570" name="Atomantic Shielding" hidden="false" collective="false" import="true" targetId="e6dc-ed0d-769b-3d1d" type="selectionEntry">
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c951-4a9d-6cc1-314a" type="min" />
@@ -13804,7 +13654,7 @@
 </profile>
 </profiles>
 <selectionEntryGroups>
-<selectionEntryGroup id="a40c-c7c2-b910-363a" name="Replace Mauler Bolt Cannon" hidden="false" collective="false" import="true" defaultSelectionEntryId="4aac-0173-3d4d-0193">
+<selectionEntryGroup id="a40c-c7c2-b910-363a" name="Replace Mauler Bolt Cannon" hidden="false" collective="false" import="true" defaultSelectionEntryId="980d-968f-4f17-2d31">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b0e8-131d-e115-a9f1" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ff7c-da9b-3402-aee1" type="max" />
@@ -13819,7 +13669,7 @@
 </entryLink>
 </entryLinks>
 </selectionEntryGroup>
-<selectionEntryGroup id="eb51-3251-9882-cea3" name="Bolter 1" hidden="false" collective="false" import="true" defaultSelectionEntryId="f528-8527-41a0-9d9c">
+<selectionEntryGroup id="eb51-3251-9882-cea3" name="Bolter 1" hidden="false" collective="false" import="true" defaultSelectionEntryId="fc5e-08c2-e19e-29f9">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b187-0fd7-cd67-fe4e" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f174-2244-c93d-bb54" type="max" />
@@ -13833,7 +13683,7 @@
 </entryLink>
 </entryLinks>
 </selectionEntryGroup>
-<selectionEntryGroup id="b1ac-2329-7b14-454a" name="Bolter 2" hidden="false" collective="false" import="true" defaultSelectionEntryId="c444-4bf6-36fc-da2d">
+<selectionEntryGroup id="b1ac-2329-7b14-454a" name="Bolter 2" hidden="false" collective="false" import="true" defaultSelectionEntryId="5f0e-cb4f-e7ac-e493">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9231-fc3d-7c86-9a98" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bb72-01a5-1502-b88b" type="max" />
@@ -13847,7 +13697,7 @@
 </entryLink>
 </entryLinks>
 </selectionEntryGroup>
-<selectionEntryGroup id="1724-a128-13be-744d" name="Replace Shock Chargers" hidden="false" collective="false" import="true" defaultSelectionEntryId="a8c8-3e3d-3a5b-538a">
+<selectionEntryGroup id="1724-a128-13be-744d" name="Replace Shock Chargers" hidden="false" collective="false" import="true" defaultSelectionEntryId="6bcb-1852-c009-cf90">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9f0a-6222-7faa-966f" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3895-d39c-bfa1-76f2" type="max" />
@@ -13868,24 +13718,6 @@
 </selectionEntryGroup>
 </selectionEntryGroups>
 <entryLinks>
-<entryLink id="88e1-361e-f638-16d1" name="Mauler Bolt Cannon" hidden="false" collective="false" import="true" targetId="8064-644a-097a-a800" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="50f0-667e-9218-7853" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7aa8-b5de-9229-c979" type="max" />
-</constraints>
-</entryLink>
-<entryLink id="ba73-2fc7-917c-068b" name="Bolter" hidden="false" collective="false" import="true" targetId="8b6f-ff45-9e8a-0d7e" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1b4c-fa6b-8ad3-65e0" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="743f-9f70-86d6-8a15" type="max" />
-</constraints>
-</entryLink>
-<entryLink id="e71c-8649-6a85-dedb" name="Shock Chargers" hidden="false" collective="false" import="true" targetId="9a2d-6eb0-8843-6c94" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1c78-b29a-68c7-2062" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a98c-d9da-5a46-d1d5" type="max" />
-</constraints>
-</entryLink>
 <entryLink id="ed2e-f7da-9ef1-bca5" name="Atomantic Shielding" hidden="false" collective="false" import="true" targetId="e6dc-ed0d-769b-3d1d" type="selectionEntry">
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="75d8-58d1-04c9-e950" type="min" />
@@ -13919,7 +13751,7 @@
 </profile>
 </profiles>
 <selectionEntryGroups>
-<selectionEntryGroup id="db63-d766-796b-485e" name="Replace Mauler Bolt Cannon" hidden="false" collective="false" import="true" defaultSelectionEntryId="4aac-0173-3d4d-0193">
+<selectionEntryGroup id="db63-d766-796b-485e" name="Replace Mauler Bolt Cannon" hidden="false" collective="false" import="true" defaultSelectionEntryId="49fa-917b-0bb8-6f2e">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1543-374a-4c10-3f66" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a053-c3fe-0d32-1046" type="max" />
@@ -13934,7 +13766,7 @@
 </entryLink>
 </entryLinks>
 </selectionEntryGroup>
-<selectionEntryGroup id="bc31-3835-626f-e97f" name="Bolter 1" hidden="false" collective="false" import="true" defaultSelectionEntryId="f528-8527-41a0-9d9c">
+<selectionEntryGroup id="bc31-3835-626f-e97f" name="Bolter 1" hidden="false" collective="false" import="true" defaultSelectionEntryId="15e2-98fb-54e0-a11d">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e154-4e49-2453-c2a4" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4978-101b-2677-b98d" type="max" />
@@ -13948,7 +13780,7 @@
 </entryLink>
 </entryLinks>
 </selectionEntryGroup>
-<selectionEntryGroup id="09f4-47d5-634d-55fa" name="Bolter 2" hidden="false" collective="false" import="true" defaultSelectionEntryId="c444-4bf6-36fc-da2d">
+<selectionEntryGroup id="09f4-47d5-634d-55fa" name="Bolter 2" hidden="false" collective="false" import="true" defaultSelectionEntryId="d9ab-7107-931e-739a">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2b66-c4cb-4fb4-216e" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="70c0-1d95-c3b0-0a93" type="max" />
@@ -13962,7 +13794,7 @@
 </entryLink>
 </entryLinks>
 </selectionEntryGroup>
-<selectionEntryGroup id="d679-ce60-db72-44db" name="Replace Shock Chargers" hidden="false" collective="false" import="true" defaultSelectionEntryId="a8c8-3e3d-3a5b-538a">
+<selectionEntryGroup id="d679-ce60-db72-44db" name="Replace Shock Chargers" hidden="false" collective="false" import="true" defaultSelectionEntryId="f442-a7f2-6815-6301">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cbac-256d-440f-61b1" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0982-5cca-e0e6-41d7" type="max" />
@@ -13983,24 +13815,6 @@
 </selectionEntryGroup>
 </selectionEntryGroups>
 <entryLinks>
-<entryLink id="a904-dc81-fe3e-56b0" name="Mauler Bolt Cannon" hidden="false" collective="false" import="true" targetId="8064-644a-097a-a800" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0a35-b192-8076-8efb" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="99b0-4353-a17d-5488" type="max" />
-</constraints>
-</entryLink>
-<entryLink id="8714-a242-48a9-f781" name="Bolter" hidden="false" collective="false" import="true" targetId="8b6f-ff45-9e8a-0d7e" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0104-1a13-8076-52d6" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b127-3be1-5529-9d78" type="max" />
-</constraints>
-</entryLink>
-<entryLink id="7211-a4cd-d315-9452" name="Shock Chargers" hidden="false" collective="false" import="true" targetId="9a2d-6eb0-8843-6c94" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6a89-95fc-674f-6bd2" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6b1d-b9c1-38c1-e6ff" type="max" />
-</constraints>
-</entryLink>
 <entryLink id="d82d-5430-021a-6aca" name="Atomantic Shielding" hidden="false" collective="false" import="true" targetId="e6dc-ed0d-769b-3d1d" type="selectionEntry">
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2050-84d4-c44c-4533" type="min" />
@@ -14872,7 +14686,7 @@
 </profile>
 </profiles>
 <selectionEntryGroups>
-<selectionEntryGroup id="b12d-12ab-9aea-7735" name="Replace Twin-linked Heavy Bolter" hidden="false" collective="false" import="true" defaultSelectionEntryId="0d70-9815-a39e-b443">
+<selectionEntryGroup id="b12d-12ab-9aea-7735" name="Replace Twin-linked Heavy Bolter" hidden="false" collective="false" import="true" defaultSelectionEntryId="68a0-bfab-d67a-313c">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c20d-b5fc-6191-a5e7" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eef4-fb50-0cbf-5de5" type="max" />
@@ -14910,14 +14724,7 @@
 </entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
-<entryLinks>
-<entryLink id="ba91-71ba-1a44-1d42" name="Twin-linked Heavy Bolter" hidden="false" collective="false" import="true" targetId="9f1b-33a9-dc3e-5648" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7830-9b15-3fdb-107f" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aa5b-0391-b04d-3821" type="max" />
-</constraints>
-</entryLink>
-</entryLinks>
+<entryLinks />
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
 </costs>
@@ -14944,7 +14751,7 @@
 </profile>
 </profiles>
 <selectionEntryGroups>
-<selectionEntryGroup id="0aee-8d5f-343b-2c96" name="Replace Twin-linked Heavy Bolter" hidden="false" collective="false" import="true" defaultSelectionEntryId="0d70-9815-a39e-b443">
+<selectionEntryGroup id="0aee-8d5f-343b-2c96" name="Replace Twin-linked Heavy Bolter" hidden="false" collective="false" import="true" defaultSelectionEntryId="7f52-5750-a619-4acd">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="82f6-5775-0748-2b91" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2dc6-4ae0-5813-0b10" type="max" />
@@ -14982,14 +14789,7 @@
 </entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
-<entryLinks>
-<entryLink id="34c9-48f5-026b-5b85" name="Twin-linked Heavy Bolter" hidden="false" collective="false" import="true" targetId="9f1b-33a9-dc3e-5648" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c995-854c-f3b5-e9a1" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="224b-2948-c46d-ff94" type="max" />
-</constraints>
-</entryLink>
-</entryLinks>
+<entryLinks />
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
 </costs>
@@ -15160,7 +14960,7 @@
 </profile>
 </profiles>
 <selectionEntryGroups>
-<selectionEntryGroup id="6837-c70d-a5cc-c049" name="Replace Lightning Gun" hidden="false" collective="false" import="true" defaultSelectionEntryId="ccb5-9229-28fc-5ee2">
+<selectionEntryGroup id="6837-c70d-a5cc-c049" name="Replace Lightning Gun" hidden="false" collective="false" import="true" defaultSelectionEntryId="e057-b4e0-630a-46ba">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f8ed-d791-94c2-d50c" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="df3c-cca8-e474-de0d" type="max" />
@@ -15176,12 +14976,6 @@
 </selectionEntryGroup>
 </selectionEntryGroups>
 <entryLinks>
-<entryLink id="3b51-6ecf-c511-9d8e" name="Lightning Gun" hidden="false" collective="false" import="true" targetId="fe8b-b395-046a-7f71" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bf0b-39f2-b140-a09b" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f5dd-454d-82eb-d11b" type="max" />
-</constraints>
-</entryLink>
 <entryLink id="cb3c-f586-e13d-30a2" name="Two Rotor Cannons" hidden="false" collective="false" import="true" targetId="eb7d-672f-9dbc-c12a" type="selectionEntry">
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0cb7-deec-f4db-16e7" type="min" />
@@ -15227,7 +15021,7 @@
 </profile>
 </profiles>
 <selectionEntryGroups>
-<selectionEntryGroup id="98dd-5be9-2740-1241" name="Replace Lightning Gun" hidden="false" collective="false" import="true" defaultSelectionEntryId="ccb5-9229-28fc-5ee2">
+<selectionEntryGroup id="98dd-5be9-2740-1241" name="Replace Lightning Gun" hidden="false" collective="false" import="true" defaultSelectionEntryId="112a-a0c4-5800-2f01">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d1a9-57f8-9fc6-e0dd" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="136c-8af4-faaf-ae1e" type="max" />
@@ -15243,12 +15037,6 @@
 </selectionEntryGroup>
 </selectionEntryGroups>
 <entryLinks>
-<entryLink id="084d-cefb-b435-7950" name="Lightning Gun" hidden="false" collective="false" import="true" targetId="fe8b-b395-046a-7f71" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="524a-b015-1425-a28a" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6fff-7205-048e-9021" type="max" />
-</constraints>
-</entryLink>
 <entryLink id="1754-f94c-ab4e-e05b" name="Two Rotor Cannons" hidden="false" collective="false" import="true" targetId="eb7d-672f-9dbc-c12a" type="selectionEntry">
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="11f0-7cce-cce8-aefe" type="min" />
@@ -15294,7 +15082,7 @@
 </profile>
 </profiles>
 <selectionEntryGroups>
-<selectionEntryGroup id="ad7a-c024-1662-aa65" name="Replace Lightning Gun" hidden="false" collective="false" import="true" defaultSelectionEntryId="ccb5-9229-28fc-5ee2">
+<selectionEntryGroup id="ad7a-c024-1662-aa65" name="Replace Lightning Gun" hidden="false" collective="false" import="true" defaultSelectionEntryId="95c6-81b4-142b-f04c">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="65a3-3428-6b30-6154" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3f57-2dd5-323f-b7d8" type="max" />
@@ -15310,12 +15098,6 @@
 </selectionEntryGroup>
 </selectionEntryGroups>
 <entryLinks>
-<entryLink id="759c-a3e7-12b5-755d" name="Lightning Gun" hidden="false" collective="false" import="true" targetId="fe8b-b395-046a-7f71" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fe23-10a7-a3b4-5b4c" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b272-22da-09a1-4b49" type="max" />
-</constraints>
-</entryLink>
 <entryLink id="6244-bc35-4e33-9fff" name="Two Rotor Cannons" hidden="false" collective="false" import="true" targetId="eb7d-672f-9dbc-c12a" type="selectionEntry">
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2522-3f31-e367-ba5d" type="min" />
@@ -15361,7 +15143,7 @@
 </profile>
 </profiles>
 <selectionEntryGroups>
-<selectionEntryGroup id="db9a-666f-5192-bdf1" name="Replace Lightning Gun" hidden="false" collective="false" import="true" defaultSelectionEntryId="ccb5-9229-28fc-5ee2">
+<selectionEntryGroup id="db9a-666f-5192-bdf1" name="Replace Lightning Gun" hidden="false" collective="false" import="true" defaultSelectionEntryId="b07e-2331-f527-3ed7">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a132-6655-38a5-ccef" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bc8d-ea6b-44ff-aa6b" type="max" />
@@ -15377,12 +15159,6 @@
 </selectionEntryGroup>
 </selectionEntryGroups>
 <entryLinks>
-<entryLink id="1b7e-2c12-8987-c910" name="Lightning Gun" hidden="false" collective="false" import="true" targetId="fe8b-b395-046a-7f71" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b0e0-f174-81dc-3983" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0676-f4c8-5965-c2c5" type="max" />
-</constraints>
-</entryLink>
 <entryLink id="d1c2-8d65-35ff-be7c" name="Two Rotor Cannons" hidden="false" collective="false" import="true" targetId="eb7d-672f-9dbc-c12a" type="selectionEntry">
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f126-4e67-f0a8-e504" type="min" />
@@ -15428,7 +15204,7 @@
 </profile>
 </profiles>
 <selectionEntryGroups>
-<selectionEntryGroup id="42d6-4373-dd9a-c5c0" name="Replace Lightning Gun" hidden="false" collective="false" import="true" defaultSelectionEntryId="ccb5-9229-28fc-5ee2">
+<selectionEntryGroup id="42d6-4373-dd9a-c5c0" name="Replace Lightning Gun" hidden="false" collective="false" import="true" defaultSelectionEntryId="fb10-3db6-cfff-6063">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0091-fc51-830a-e9ce" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0c63-312a-660d-4f95" type="max" />
@@ -15444,12 +15220,6 @@
 </selectionEntryGroup>
 </selectionEntryGroups>
 <entryLinks>
-<entryLink id="e67e-caa4-c138-974b" name="Lightning Gun" hidden="false" collective="false" import="true" targetId="fe8b-b395-046a-7f71" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0ab8-9d38-baa3-4903" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5700-97d2-34d0-9ee3" type="max" />
-</constraints>
-</entryLink>
 <entryLink id="d6eb-2a46-912d-ae03" name="Two Rotor Cannons" hidden="false" collective="false" import="true" targetId="eb7d-672f-9dbc-c12a" type="selectionEntry">
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aa23-9102-2d6a-7396" type="min" />
@@ -15799,7 +15569,7 @@
 </profile>
 </profiles>
 <selectionEntryGroups>
-<selectionEntryGroup id="021d-e771-0edd-9458" name="Replace one Arlatax Power Claw" hidden="false" collective="false" import="true" defaultSelectionEntryId="ed4b-57ce-3e2e-4f42">
+<selectionEntryGroup id="021d-e771-0edd-9458" name="Replace one Arlatax Power Claw" hidden="false" collective="false" import="true" defaultSelectionEntryId="c80b-a12f-b4a7-8413">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4538-2a64-0806-557e" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8ce5-6425-fbd2-e66b" type="max" />
@@ -15880,7 +15650,7 @@
 </profile>
 </profiles>
 <selectionEntryGroups>
-<selectionEntryGroup id="de2e-92a7-a753-cd89" name="Replace one Arlatax Power Claw" hidden="false" collective="false" import="true" defaultSelectionEntryId="ed4b-57ce-3e2e-4f42">
+<selectionEntryGroup id="de2e-92a7-a753-cd89" name="Replace one Arlatax Power Claw" hidden="false" collective="false" import="true" defaultSelectionEntryId="ef5c-c1af-25f5-d97d">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="786b-e2b6-be0e-0a28" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8085-30ee-fc18-50b4" type="max" />
@@ -16480,7 +16250,7 @@
 </profile>
 </profiles>
 <selectionEntryGroups>
-<selectionEntryGroup id="b444-61df-21d8-a23e" name="Replace Multilaser" hidden="false" collective="false" import="true" defaultSelectionEntryId="9e8b-9829-7ce4-05b2">
+<selectionEntryGroup id="b444-61df-21d8-a23e" name="Replace Multilaser" hidden="false" collective="false" import="true" defaultSelectionEntryId="a630-efe2-7910-d705">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a489-042a-5f0c-82ff" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5d66-55d9-60a0-0f30" type="max" />
@@ -16509,7 +16279,7 @@
 </entryLink>
 </entryLinks>
 </selectionEntryGroup>
-<selectionEntryGroup id="0b99-3a5b-a9ee-2b1e" name="Replace Heavy Flamer" hidden="false" collective="false" import="true" defaultSelectionEntryId="7705-681c-ac46-994a">
+<selectionEntryGroup id="0b99-3a5b-a9ee-2b1e" name="Replace Heavy Flamer" hidden="false" collective="false" import="true" defaultSelectionEntryId="5b5d-3c83-b443-c410">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0f88-eaeb-7187-3be3" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4e0f-32ff-7135-c65f" type="max" />
@@ -16549,20 +16319,7 @@
 </entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
-<entryLinks>
-<entryLink id="543f-d528-8b98-4ba2" name="Multilaser" hidden="false" collective="false" import="true" targetId="e58c-56d4-efe0-ac61" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c455-530a-09ae-6e00" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b943-5812-284a-0766" type="max" />
-</constraints>
-</entryLink>
-<entryLink id="7e32-ff73-27a3-e60c" name="Heavy Flamer" hidden="false" collective="false" import="true" targetId="9e6d-afcf-8202-e47c" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4cdf-1b9d-c66a-de6f" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4d63-a40f-fcd4-5911" type="max" />
-</constraints>
-</entryLink>
-</entryLinks>
+<entryLinks />
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="65" />
 </costs>
@@ -16584,7 +16341,7 @@
 </profile>
 </profiles>
 <selectionEntryGroups>
-<selectionEntryGroup id="bd36-df55-a76e-f7ce" name="Replace Multilaser" hidden="false" collective="false" import="true" defaultSelectionEntryId="9e8b-9829-7ce4-05b2">
+<selectionEntryGroup id="bd36-df55-a76e-f7ce" name="Replace Multilaser" hidden="false" collective="false" import="true" defaultSelectionEntryId="263b-6c41-b603-d5a6">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f2cf-0702-ac4b-e602" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="387d-e5b1-4000-4a11" type="max" />
@@ -16613,7 +16370,7 @@
 </entryLink>
 </entryLinks>
 </selectionEntryGroup>
-<selectionEntryGroup id="0ae8-345b-9ea8-ae27" name="Replace Heavy Flamer" hidden="false" collective="false" import="true" defaultSelectionEntryId="7705-681c-ac46-994a">
+<selectionEntryGroup id="0ae8-345b-9ea8-ae27" name="Replace Heavy Flamer" hidden="false" collective="false" import="true" defaultSelectionEntryId="cb12-972f-6463-4879">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="02f0-2df9-488c-d620" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fc1c-0b34-7ace-e897" type="max" />
@@ -16653,20 +16410,7 @@
 </entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
-<entryLinks>
-<entryLink id="7714-4402-0668-c4d1" name="Multilaser" hidden="false" collective="false" import="true" targetId="e58c-56d4-efe0-ac61" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="61f2-d9de-5bac-6e9e" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d0a2-53b9-ccaa-ee81" type="max" />
-</constraints>
-</entryLink>
-<entryLink id="06fd-6182-b90e-bfaa" name="Heavy Flamer" hidden="false" collective="false" import="true" targetId="9e6d-afcf-8202-e47c" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="31e7-af2f-4560-0cdc" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="483c-d88a-f342-4d5f" type="max" />
-</constraints>
-</entryLink>
-</entryLinks>
+<entryLinks />
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="65" />
 </costs>
@@ -16906,7 +16650,7 @@
 </profile>
 </profiles>
 <selectionEntryGroups>
-<selectionEntryGroup id="30a2-2eb6-d9f7-5684" name="Replace Lascannon" hidden="false" collective="false" import="true" defaultSelectionEntryId="458d-5df1-907e-5d82">
+<selectionEntryGroup id="30a2-2eb6-d9f7-5684" name="Replace Lascannon" hidden="false" collective="false" import="true" defaultSelectionEntryId="8fdf-ae9e-2208-f4b7">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="647d-126c-13f2-68a7" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="34ea-daff-9e29-717a" type="max" />
@@ -16923,12 +16667,6 @@
 </selectionEntryGroup>
 </selectionEntryGroups>
 <entryLinks>
-<entryLink id="1a03-1123-9c4c-bf4b" name="Lascannon" hidden="false" collective="false" import="true" targetId="c7e9-561f-95b7-1e57" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="16d4-65d6-fe60-3f07" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9f71-b512-e0d2-2861" type="max" />
-</constraints>
-</entryLink>
 <entryLink id="01a5-c5e9-043f-0114" name="Two Power Swords" hidden="false" collective="false" import="true" targetId="decd-31b6-5e58-ef01" type="selectionEntry">
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eadf-173e-e5fc-06f0" type="min" />
@@ -16968,7 +16706,7 @@
 </profile>
 </profiles>
 <selectionEntryGroups>
-<selectionEntryGroup id="e1eb-4814-fd30-75ca" name="Replace Lascannon" hidden="false" collective="false" import="true" defaultSelectionEntryId="458d-5df1-907e-5d82">
+<selectionEntryGroup id="e1eb-4814-fd30-75ca" name="Replace Lascannon" hidden="false" collective="false" import="true" defaultSelectionEntryId="738f-ca80-b470-1166">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e173-c139-1c37-2247" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="99a1-3de8-c210-7e43" type="max" />
@@ -16985,12 +16723,6 @@
 </selectionEntryGroup>
 </selectionEntryGroups>
 <entryLinks>
-<entryLink id="a57f-aec1-1250-9f1e" name="Lascannon" hidden="false" collective="false" import="true" targetId="c7e9-561f-95b7-1e57" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="188e-5660-f846-2b4c" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d799-ef7a-ecac-aa4e" type="max" />
-</constraints>
-</entryLink>
 <entryLink id="c097-ce9b-ca5f-6306" name="Two Power Swords" hidden="false" collective="false" import="true" targetId="decd-31b6-5e58-ef01" type="selectionEntry">
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="982d-1e6d-8cb1-2dfd" type="min" />
@@ -17030,7 +16762,7 @@
 </profile>
 </profiles>
 <selectionEntryGroups>
-<selectionEntryGroup id="6749-8f3c-bdd8-03f7" name="Replace Lascannon" hidden="false" collective="false" import="true" defaultSelectionEntryId="458d-5df1-907e-5d82">
+<selectionEntryGroup id="6749-8f3c-bdd8-03f7" name="Replace Lascannon" hidden="false" collective="false" import="true" defaultSelectionEntryId="fb4e-34ab-6657-9da8">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aa19-791b-0c48-0a38" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8059-b6ed-b520-d706" type="max" />
@@ -17047,12 +16779,6 @@
 </selectionEntryGroup>
 </selectionEntryGroups>
 <entryLinks>
-<entryLink id="db50-85f6-8756-1d40" name="Lascannon" hidden="false" collective="false" import="true" targetId="c7e9-561f-95b7-1e57" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="485e-408c-e35e-6686" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2804-df8d-4f3c-bc4f" type="max" />
-</constraints>
-</entryLink>
 <entryLink id="81eb-0d03-2dab-6154" name="Two Power Swords" hidden="false" collective="false" import="true" targetId="decd-31b6-5e58-ef01" type="selectionEntry">
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e8f0-2d67-829d-d775" type="min" />
@@ -17302,7 +17028,7 @@
 </profile>
 </profiles>
 <selectionEntryGroups>
-<selectionEntryGroup id="795d-6d4a-23c4-907b" name="Replace Volkite Charger" hidden="false" collective="false" import="true" defaultSelectionEntryId="e546-da1e-96e9-700d">
+<selectionEntryGroup id="795d-6d4a-23c4-907b" name="Replace Volkite Charger" hidden="false" collective="false" import="true" defaultSelectionEntryId="15dc-4975-d3ef-b556">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e0b4-ba80-88cc-a0ed" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8569-c95b-8907-5607" type="max" />
@@ -17324,12 +17050,6 @@
 </selectionEntryGroup>
 </selectionEntryGroups>
 <entryLinks>
-<entryLink id="12b1-e31c-b585-72f1" name="Volkite Charger" hidden="false" collective="false" import="true" targetId="f7ae-d359-d2ff-f5af" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="19e6-8014-c182-313f" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d301-9bcd-e8bb-07cb" type="max" />
-</constraints>
-</entryLink>
 <entryLink id="7750-820e-37e8-58dd" name="Enhanced Targeting Array" hidden="false" collective="false" import="true" targetId="b048-0e0d-6b05-710a" type="selectionEntry">
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="58b1-3fd6-cea5-ca66" type="min" />
@@ -17375,7 +17095,7 @@
 </profile>
 </profiles>
 <selectionEntryGroups>
-<selectionEntryGroup id="7d88-7b6c-96ac-3381" name="Replace Volkite Charger" hidden="false" collective="false" import="true" defaultSelectionEntryId="e546-da1e-96e9-700d">
+<selectionEntryGroup id="7d88-7b6c-96ac-3381" name="Replace Volkite Charger" hidden="false" collective="false" import="true" defaultSelectionEntryId="fabb-a449-c01e-b96b">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e2c9-030a-facd-12eb" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="41ce-68b6-3cd1-a922" type="max" />
@@ -17397,12 +17117,6 @@
 </selectionEntryGroup>
 </selectionEntryGroups>
 <entryLinks>
-<entryLink id="59f6-356a-d2ab-19ef" name="Volkite Charger" hidden="false" collective="false" import="true" targetId="f7ae-d359-d2ff-f5af" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="759f-edf8-3a8f-f997" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6f7f-1d7c-a5c0-1ce3" type="max" />
-</constraints>
-</entryLink>
 <entryLink id="d3e7-4be4-8974-1896" name="Enhanced Targeting Array" hidden="false" collective="false" import="true" targetId="b048-0e0d-6b05-710a" type="selectionEntry">
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a468-4bb2-faaf-ea0d" type="min" />
@@ -17448,7 +17162,7 @@
 </profile>
 </profiles>
 <selectionEntryGroups>
-<selectionEntryGroup id="2ea5-97c5-6df7-26aa" name="Replace Volkite Charger" hidden="false" collective="false" import="true" defaultSelectionEntryId="e546-da1e-96e9-700d">
+<selectionEntryGroup id="2ea5-97c5-6df7-26aa" name="Replace Volkite Charger" hidden="false" collective="false" import="true" defaultSelectionEntryId="53cf-c6b6-16c5-840f">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9bb7-cec0-6bde-c583" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c14c-f45d-0fbb-0690" type="max" />
@@ -17470,12 +17184,6 @@
 </selectionEntryGroup>
 </selectionEntryGroups>
 <entryLinks>
-<entryLink id="5a88-c275-c8a0-0469" name="Volkite Charger" hidden="false" collective="false" import="true" targetId="f7ae-d359-d2ff-f5af" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8298-3863-ebcd-cb08" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fad4-c2ef-a488-06a3" type="max" />
-</constraints>
-</entryLink>
 <entryLink id="50b5-9004-ef30-7e76" name="Enhanced Targeting Array" hidden="false" collective="false" import="true" targetId="b048-0e0d-6b05-710a" type="selectionEntry">
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5132-2230-e9c8-57ee" type="min" />
@@ -17521,7 +17229,7 @@
 </profile>
 </profiles>
 <selectionEntryGroups>
-<selectionEntryGroup id="fade-5d63-d8e3-8e97" name="Replace Volkite Charger" hidden="false" collective="false" import="true" defaultSelectionEntryId="e546-da1e-96e9-700d">
+<selectionEntryGroup id="fade-5d63-d8e3-8e97" name="Replace Volkite Charger" hidden="false" collective="false" import="true" defaultSelectionEntryId="11bf-e182-acb8-5df9">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e76a-94e2-34c3-f411" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cb75-7590-19da-f80b" type="max" />
@@ -17543,12 +17251,6 @@
 </selectionEntryGroup>
 </selectionEntryGroups>
 <entryLinks>
-<entryLink id="2ea6-1703-d521-c911" name="Volkite Charger" hidden="false" collective="false" import="true" targetId="f7ae-d359-d2ff-f5af" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b644-b6f0-e482-801f" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4cae-5d00-4674-c782" type="max" />
-</constraints>
-</entryLink>
 <entryLink id="2347-d497-5a47-86c3" name="Enhanced Targeting Array" hidden="false" collective="false" import="true" targetId="b048-0e0d-6b05-710a" type="selectionEntry">
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d059-1e95-4630-b20c" type="min" />
@@ -18498,7 +18200,7 @@
 </profile>
 </profiles>
 <selectionEntryGroups>
-<selectionEntryGroup id="3aea-8011-09de-1f93" name="Krios Venator (replace Lightning Cannon)" hidden="false" collective="false" import="true" defaultSelectionEntryId="7744-2cf8-8edf-9245">
+<selectionEntryGroup id="3aea-8011-09de-1f93" name="Krios Venator (replace Lightning Cannon)" hidden="false" collective="false" import="true" defaultSelectionEntryId="4f0c-fcbb-b2cb-d9af">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c37e-bfcc-74ef-0917" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5808-a0fc-8303-f2ae" type="max" />
@@ -18558,12 +18260,6 @@
 </selectionEntryGroup>
 </selectionEntryGroups>
 <entryLinks>
-<entryLink id="78f0-2e5c-9bb7-5479" name="Lightning Cannon" hidden="false" collective="false" import="true" targetId="9419-ecfd-2ee3-1707" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dccc-7d6a-f1ce-b6ce" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2e61-961f-905f-c424" type="max" />
-</constraints>
-</entryLink>
 <entryLink id="1516-742c-d273-e919" name="Flare Shield" hidden="false" collective="false" import="true" targetId="df0a-f966-28f3-1175" type="selectionEntry">
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4724-9234-1369-5ea0" type="min" />
@@ -18611,7 +18307,7 @@
 </profile>
 </profiles>
 <selectionEntryGroups>
-<selectionEntryGroup id="32a1-ad35-a80e-08f2" name="Krios Venator (replace Lightning Cannon)" hidden="false" collective="false" import="true" defaultSelectionEntryId="7744-2cf8-8edf-9245">
+<selectionEntryGroup id="32a1-ad35-a80e-08f2" name="Krios Venator (replace Lightning Cannon)" hidden="false" collective="false" import="true" defaultSelectionEntryId="20c3-dd1a-4887-5c96">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b9bf-735e-e1a5-45b0" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0175-0b6b-7132-2d0e" type="max" />
@@ -18671,12 +18367,6 @@
 </selectionEntryGroup>
 </selectionEntryGroups>
 <entryLinks>
-<entryLink id="0f7d-dc91-d7df-915f" name="Lightning Cannon" hidden="false" collective="false" import="true" targetId="9419-ecfd-2ee3-1707" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="53b9-703e-5d09-854b" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cd8f-ff62-2385-171b" type="max" />
-</constraints>
-</entryLink>
 <entryLink id="5065-642a-7837-2e94" name="Flare Shield" hidden="false" collective="false" import="true" targetId="df0a-f966-28f3-1175" type="selectionEntry">
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b41a-6b5a-6736-1303" type="min" />
@@ -18973,7 +18663,7 @@
 </profile>
 </profiles>
 <selectionEntryGroups>
-<selectionEntryGroup id="70a1-364c-32c9-b348" name="Replace Autocannon" hidden="false" collective="false" import="true" defaultSelectionEntryId="7fa3-5d6e-d309-106e">
+<selectionEntryGroup id="70a1-364c-32c9-b348" name="Replace Autocannon" hidden="false" collective="false" import="true" defaultSelectionEntryId="4e43-bb03-7573-a387">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="70d9-0016-b353-1ee6" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5a78-0d5b-d5aa-2ab9" type="max" />
@@ -18997,7 +18687,7 @@
 </entryLink>
 </entryLinks>
 </selectionEntryGroup>
-<selectionEntryGroup id="998b-70ad-2e2c-2088" name="Replace Heavy Bolter" hidden="false" collective="false" import="true" defaultSelectionEntryId="34af-4abe-3958-f0df">
+<selectionEntryGroup id="998b-70ad-2e2c-2088" name="Replace Heavy Bolter" hidden="false" collective="false" import="true" defaultSelectionEntryId="33a6-b85d-f08f-d8ce">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2e0a-a0d7-3ea2-f7fe" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6095-3473-e148-6b98" type="max" />
@@ -19022,7 +18712,7 @@
 <entryLink id="e2cc-ce06-ced6-4ece" name="Meltagun" hidden="false" collective="false" import="true" targetId="63e8-bee7-88b7-64c6" type="selectionEntry" sortIndex="6" />
 </entryLinks>
 </selectionEntryGroup>
-<selectionEntryGroup id="b823-76e9-4078-60e9" name="Replace Power Fist" hidden="false" collective="false" import="true" defaultSelectionEntryId="8448-63a9-467b-48bd">
+<selectionEntryGroup id="b823-76e9-4078-60e9" name="Replace Power Fist" hidden="false" collective="false" import="true" defaultSelectionEntryId="55cf-2e94-ece0-ec5d">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3a57-05df-84ac-fef0" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f2bb-c64d-2c5c-5b52" type="max" />
@@ -19044,24 +18734,6 @@
 </selectionEntryGroup>
 </selectionEntryGroups>
 <entryLinks>
-<entryLink id="f94e-e4c0-41e8-336c" name="Autocannon" hidden="false" collective="false" import="true" targetId="6114-7ebd-e526-46a8" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="99cc-303f-0dd4-3fed" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ebb2-f6b0-3291-e379" type="max" />
-</constraints>
-</entryLink>
-<entryLink id="6b73-9a55-ec5c-826b" name="Heavy Bolter" hidden="false" collective="false" import="true" targetId="9151-5044-e482-04c9" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ebbd-2032-87ad-4a0e" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="18aa-a19b-4b3c-2fba" type="max" />
-</constraints>
-</entryLink>
-<entryLink id="1d24-ed90-65de-2aea" name="Power Fist" hidden="false" collective="false" import="true" targetId="0b4d-922b-4629-b7ca" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4190-7ed8-a20a-7f6d" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a259-d3a3-2725-fcd2" type="max" />
-</constraints>
-</entryLink>
 <entryLink id="ce68-530e-e69d-4cb6" name="Atomantic Shielding" hidden="false" collective="false" import="true" targetId="e6dc-ed0d-769b-3d1d" type="selectionEntry">
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dae0-2bfa-fcfa-31c0" type="min" />
@@ -19095,7 +18767,7 @@
 </profile>
 </profiles>
 <selectionEntryGroups>
-<selectionEntryGroup id="1552-cb55-5026-a2e1" name="Replace Autocannon" hidden="false" collective="false" import="true" defaultSelectionEntryId="7fa3-5d6e-d309-106e">
+<selectionEntryGroup id="1552-cb55-5026-a2e1" name="Replace Autocannon" hidden="false" collective="false" import="true" defaultSelectionEntryId="3c3c-5e0c-3909-ec5b">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4039-903c-7a7c-60ac" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="37de-8cce-ba39-5de4" type="max" />
@@ -19119,7 +18791,7 @@
 </entryLink>
 </entryLinks>
 </selectionEntryGroup>
-<selectionEntryGroup id="680d-f634-6b53-613e" name="Replace Heavy Bolter" hidden="false" collective="false" import="true" defaultSelectionEntryId="34af-4abe-3958-f0df">
+<selectionEntryGroup id="680d-f634-6b53-613e" name="Replace Heavy Bolter" hidden="false" collective="false" import="true" defaultSelectionEntryId="2441-bc05-76e4-6f21">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ce39-f65c-dacf-cacb" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d7bb-bc96-2b54-df06" type="max" />
@@ -19144,7 +18816,7 @@
 <entryLink id="2e5e-ce25-2f37-f064" name="Meltagun" hidden="false" collective="false" import="true" targetId="63e8-bee7-88b7-64c6" type="selectionEntry" sortIndex="6" />
 </entryLinks>
 </selectionEntryGroup>
-<selectionEntryGroup id="7264-abe4-c613-300b" name="Replace Power Fist" hidden="false" collective="false" import="true" defaultSelectionEntryId="8448-63a9-467b-48bd">
+<selectionEntryGroup id="7264-abe4-c613-300b" name="Replace Power Fist" hidden="false" collective="false" import="true" defaultSelectionEntryId="51fe-c3d3-fdeb-5acb">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d3c8-8ea5-75bc-ce2f" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b65a-b671-c51d-d344" type="max" />
@@ -19166,24 +18838,6 @@
 </selectionEntryGroup>
 </selectionEntryGroups>
 <entryLinks>
-<entryLink id="0839-9019-710d-0426" name="Autocannon" hidden="false" collective="false" import="true" targetId="6114-7ebd-e526-46a8" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3d91-f020-b2aa-d67b" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fb76-9377-a5c1-2a33" type="max" />
-</constraints>
-</entryLink>
-<entryLink id="28f0-97ab-4d87-e724" name="Heavy Bolter" hidden="false" collective="false" import="true" targetId="9151-5044-e482-04c9" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7692-c200-8a4b-38c5" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b85a-bf82-a5d1-10ea" type="max" />
-</constraints>
-</entryLink>
-<entryLink id="93b2-9e13-548b-5853" name="Power Fist" hidden="false" collective="false" import="true" targetId="0b4d-922b-4629-b7ca" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4f48-56b2-9953-b05d" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3282-1be7-b69d-c2df" type="max" />
-</constraints>
-</entryLink>
 <entryLink id="e268-3e90-3205-a285" name="Atomantic Shielding" hidden="false" collective="false" import="true" targetId="e6dc-ed0d-769b-3d1d" type="selectionEntry">
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="67de-984f-870b-21e7" type="min" />
@@ -19217,7 +18871,7 @@
 </profile>
 </profiles>
 <selectionEntryGroups>
-<selectionEntryGroup id="0951-b16a-095c-8ec1" name="Replace Autocannon" hidden="false" collective="false" import="true" defaultSelectionEntryId="7fa3-5d6e-d309-106e">
+<selectionEntryGroup id="0951-b16a-095c-8ec1" name="Replace Autocannon" hidden="false" collective="false" import="true" defaultSelectionEntryId="7c6a-9ff0-b35e-944c">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="739a-4979-172c-a717" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0747-492d-5f5c-9f83" type="max" />
@@ -19241,7 +18895,7 @@
 </entryLink>
 </entryLinks>
 </selectionEntryGroup>
-<selectionEntryGroup id="fabb-8ac9-3e4f-fa6e" name="Replace Heavy Bolter" hidden="false" collective="false" import="true" defaultSelectionEntryId="34af-4abe-3958-f0df">
+<selectionEntryGroup id="fabb-8ac9-3e4f-fa6e" name="Replace Heavy Bolter" hidden="false" collective="false" import="true" defaultSelectionEntryId="2c0e-aaf6-2cae-26f7">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="118b-ffe6-0ad4-8e1b" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3d6c-dc8f-59d4-a4be" type="max" />
@@ -19266,7 +18920,7 @@
 <entryLink id="3f0b-f24a-3f70-dae5" name="Meltagun" hidden="false" collective="false" import="true" targetId="63e8-bee7-88b7-64c6" type="selectionEntry" sortIndex="6" />
 </entryLinks>
 </selectionEntryGroup>
-<selectionEntryGroup id="5a46-f784-2f86-7167" name="Replace Power Fist" hidden="false" collective="false" import="true" defaultSelectionEntryId="8448-63a9-467b-48bd">
+<selectionEntryGroup id="5a46-f784-2f86-7167" name="Replace Power Fist" hidden="false" collective="false" import="true" defaultSelectionEntryId="0d5f-598c-b031-53c7">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3535-3328-2b5f-0020" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2b6a-9afe-68a3-0b54" type="max" />
@@ -19288,24 +18942,6 @@
 </selectionEntryGroup>
 </selectionEntryGroups>
 <entryLinks>
-<entryLink id="e385-b6de-2e46-e788" name="Autocannon" hidden="false" collective="false" import="true" targetId="6114-7ebd-e526-46a8" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a58f-4b94-a915-bc5b" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f443-54d5-d3e6-9f53" type="max" />
-</constraints>
-</entryLink>
-<entryLink id="4955-4d03-a0b2-4862" name="Heavy Bolter" hidden="false" collective="false" import="true" targetId="9151-5044-e482-04c9" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e805-bda7-00f0-1063" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a34a-d6c1-315d-60cb" type="max" />
-</constraints>
-</entryLink>
-<entryLink id="e8b6-4c12-d571-9084" name="Power Fist" hidden="false" collective="false" import="true" targetId="0b4d-922b-4629-b7ca" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0d2d-04bf-da05-14fb" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e980-a0c1-868b-86b4" type="max" />
-</constraints>
-</entryLink>
 <entryLink id="6cff-ec61-24ac-3d5a" name="Atomantic Shielding" hidden="false" collective="false" import="true" targetId="e6dc-ed0d-769b-3d1d" type="selectionEntry">
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fab8-5c02-e27d-924b" type="min" />
@@ -19648,7 +19284,7 @@
 </profile>
 </profiles>
 <selectionEntryGroups>
-<selectionEntryGroup id="deee-d653-7b0d-ddc7" name="Hull-mounted weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="6524-d019-f26f-f210">
+<selectionEntryGroup id="deee-d653-7b0d-ddc7" name="Hull-mounted weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="66ae-17d6-2e4e-390d">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f772-26c9-a19a-0b29" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="215a-2181-fb85-4b48" type="max" />
@@ -19817,7 +19453,7 @@
 </profile>
 </profiles>
 <selectionEntryGroups>
-<selectionEntryGroup id="4165-b99a-fa4b-3f3c" name="Hull-mounted weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="6524-d019-f26f-f210">
+<selectionEntryGroup id="4165-b99a-fa4b-3f3c" name="Hull-mounted weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="6504-a2f1-961f-83cc">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6865-b174-e345-9097" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2e6c-404e-25cb-cc94" type="max" />
@@ -20155,7 +19791,7 @@
 </profile>
 </profiles>
 <selectionEntryGroups>
-<selectionEntryGroup id="855a-2826-fa9c-93b8" name="Hull-mounted weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="2771-db2a-ae8f-599d">
+<selectionEntryGroup id="855a-2826-fa9c-93b8" name="Hull-mounted weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="bf68-5c49-8524-ca79">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="16b9-c299-0f31-4132" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="41bb-8937-ab88-515f" type="max" />
@@ -20324,7 +19960,7 @@
 </profile>
 </profiles>
 <selectionEntryGroups>
-<selectionEntryGroup id="3af2-1076-666c-ec39" name="Hull-mounted weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="2771-db2a-ae8f-599d">
+<selectionEntryGroup id="3af2-1076-666c-ec39" name="Hull-mounted weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="5add-94f0-b760-78a2">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b506-82b8-fd8f-5c72" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1895-5c48-4cb3-5e5e" type="max" />
@@ -20662,7 +20298,7 @@
 </profile>
 </profiles>
 <selectionEntryGroups>
-<selectionEntryGroup id="8650-5f2b-1c63-2ddb" name="Hull-mounted weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="a5d3-5df7-f3d4-9042">
+<selectionEntryGroup id="8650-5f2b-1c63-2ddb" name="Hull-mounted weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="0b1d-28da-cfb6-e183">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="30ca-8674-c254-9db0" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d80b-bc78-3698-f2f2" type="max" />
@@ -20831,7 +20467,7 @@
 </profile>
 </profiles>
 <selectionEntryGroups>
-<selectionEntryGroup id="fef1-a906-e75d-6885" name="Hull-mounted weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="a5d3-5df7-f3d4-9042">
+<selectionEntryGroup id="fef1-a906-e75d-6885" name="Hull-mounted weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="b37c-3a47-ea88-0c72">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0674-66bf-5904-5121" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e26c-8615-62ab-d709" type="max" />
@@ -21185,7 +20821,7 @@
 </profile>
 </profiles>
 <selectionEntryGroups>
-<selectionEntryGroup id="196b-3054-9d4b-60e2" name="Hull-mounted weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="ab25-2c2c-d75d-9867">
+<selectionEntryGroup id="196b-3054-9d4b-60e2" name="Hull-mounted weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="c4a9-18e5-01c5-082d">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6848-5e1c-380a-f38a" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="968d-95f1-d3be-9813" type="max" />
@@ -21370,7 +21006,7 @@
 </profile>
 </profiles>
 <selectionEntryGroups>
-<selectionEntryGroup id="c8bd-a111-d3bf-9b4e" name="Hull-mounted weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="ab25-2c2c-d75d-9867">
+<selectionEntryGroup id="c8bd-a111-d3bf-9b4e" name="Hull-mounted weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="e7a2-7314-d9cf-f002">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f07a-eee9-5298-f34c" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="edb7-1829-bbbd-c74a" type="max" />
@@ -21724,7 +21360,7 @@
 </profile>
 </profiles>
 <selectionEntryGroups>
-<selectionEntryGroup id="9c5a-3399-cddf-b8ae" name="Hull-mounted weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="af6f-6fe9-8f9c-05cc">
+<selectionEntryGroup id="9c5a-3399-cddf-b8ae" name="Hull-mounted weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="abf8-878e-40e3-0079">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e819-9940-e696-d0d4" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8335-d43b-8cab-471f" type="max" />
@@ -21893,7 +21529,7 @@
 </profile>
 </profiles>
 <selectionEntryGroups>
-<selectionEntryGroup id="5307-bc19-5625-00fb" name="Hull-mounted weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="af6f-6fe9-8f9c-05cc">
+<selectionEntryGroup id="5307-bc19-5625-00fb" name="Hull-mounted weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="5664-5320-1b95-46e3">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d854-2afc-c098-2feb" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="91a5-975e-b80e-44f1" type="max" />
@@ -23509,7 +23145,7 @@
 </profile>
 </profiles>
 <selectionEntryGroups>
-<selectionEntryGroup id="1888-41a4-ff4c-3a96" name="Replace Warp-spitter" hidden="false" collective="false" import="true" defaultSelectionEntryId="30e1-2c3a-27f8-d633">
+<selectionEntryGroup id="1888-41a4-ff4c-3a96" name="Replace Warp-spitter" hidden="false" collective="false" import="true" defaultSelectionEntryId="1346-0d60-e748-2eed">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7ca3-85e8-75e4-2a85" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2501-5dbd-0971-40b1" type="max" />
@@ -23542,12 +23178,6 @@
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2842-1ea3-7926-169e" type="max" />
 </constraints>
 </entryLink>
-<entryLink id="ec2e-6ade-4901-a85d" name="Warp-spitter" hidden="false" collective="false" import="true" targetId="c262-a68d-29a2-e4f5" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="be63-b3b1-50c9-7d34" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dcc0-11d0-84cb-e0dd" type="max" />
-</constraints>
-</entryLink>
 </entryLinks>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="120" />
@@ -23575,7 +23205,7 @@
 </profile>
 </profiles>
 <selectionEntryGroups>
-<selectionEntryGroup id="a839-1a89-c3f7-ec92" name="Replace Warp-spitter" hidden="false" collective="false" import="true" defaultSelectionEntryId="30e1-2c3a-27f8-d633">
+<selectionEntryGroup id="a839-1a89-c3f7-ec92" name="Replace Warp-spitter" hidden="false" collective="false" import="true" defaultSelectionEntryId="3cb0-ff24-df72-ec27">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9e91-ed0f-1aa8-83e3" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ea03-3f9c-1578-267e" type="max" />
@@ -23606,12 +23236,6 @@
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b9a9-3c9d-ef13-24be" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="03ba-8a4c-f18d-be78" type="max" />
-</constraints>
-</entryLink>
-<entryLink id="f3e8-5001-ece5-4998" name="Warp-spitter" hidden="false" collective="false" import="true" targetId="c262-a68d-29a2-e4f5" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="52a2-bbf6-643e-0bb9" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="33d6-a289-d163-6adf" type="max" />
 </constraints>
 </entryLink>
 </entryLinks>
@@ -24133,7 +23757,7 @@
 </profile>
 </profiles>
 <selectionEntryGroups>
-<selectionEntryGroup id="6ebf-df75-b4e3-83c1" name="Replace Daemonspitter" hidden="false" collective="false" import="true" defaultSelectionEntryId="70b7-67d2-9505-fe18">
+<selectionEntryGroup id="6ebf-df75-b4e3-83c1" name="Replace Daemonspitter" hidden="false" collective="false" import="true" defaultSelectionEntryId="0df6-9645-2b93-a4c8">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c66a-4507-6dab-80ef" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9344-2b48-b0f0-a3ed" type="max" />
@@ -24166,12 +23790,6 @@
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ea7e-3c3f-c690-b2cc" type="max" />
 </constraints>
 </entryLink>
-<entryLink id="53c3-c76f-f14a-c65b" name="Daemonspitter" hidden="false" collective="false" import="true" targetId="1a36-b304-3b33-e946" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5ce5-aa98-23d3-9a1b" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c99e-a8d3-fdfb-1712" type="max" />
-</constraints>
-</entryLink>
 </entryLinks>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="95" />
@@ -24199,7 +23817,7 @@
 </profile>
 </profiles>
 <selectionEntryGroups>
-<selectionEntryGroup id="f193-2eae-03d3-be91" name="Replace Daemonspitter" hidden="false" collective="false" import="true" defaultSelectionEntryId="70b7-67d2-9505-fe18">
+<selectionEntryGroup id="f193-2eae-03d3-be91" name="Replace Daemonspitter" hidden="false" collective="false" import="true" defaultSelectionEntryId="57a5-353d-ce9f-262e">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2ab0-0376-021d-a0fe" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="82a7-cfea-3130-7b76" type="max" />
@@ -24230,12 +23848,6 @@
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5eab-4efd-e606-2555" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c71d-78a3-d3ff-d016" type="max" />
-</constraints>
-</entryLink>
-<entryLink id="d26d-db60-9379-38b9" name="Daemonspitter" hidden="false" collective="false" import="true" targetId="1a36-b304-3b33-e946" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d301-144c-2af0-57a8" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e715-c775-948b-e279" type="max" />
 </constraints>
 </entryLink>
 </entryLinks>

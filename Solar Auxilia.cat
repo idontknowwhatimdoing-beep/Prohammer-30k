@@ -1628,7 +1628,7 @@
 </profile>
 </profiles>
 <selectionEntryGroups>
-<selectionEntryGroup id="7ae5-b4bb-27e8-7b05" name="Replace Quad Multi-laser" hidden="false" collective="false" import="true" defaultSelectionEntryId="65b4-a249-a350-8eb2">
+<selectionEntryGroup id="7ae5-b4bb-27e8-7b05" name="Replace Quad Multi-laser" hidden="false" collective="false" import="true" defaultSelectionEntryId="a28f-89b5-774e-ac24">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0938-d107-fdcf-f704" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5bad-44b3-2343-2a46" type="max" />
@@ -1679,7 +1679,7 @@
 </profile>
 </profiles>
 <selectionEntryGroups>
-<selectionEntryGroup id="19b2-da63-23d8-0de5" name="Replace Quad Multi-laser" hidden="false" collective="false" import="true" defaultSelectionEntryId="65b4-a249-a350-8eb2">
+<selectionEntryGroup id="19b2-da63-23d8-0de5" name="Replace Quad Multi-laser" hidden="false" collective="false" import="true" defaultSelectionEntryId="17d7-f04c-197b-c940">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="12b9-f137-9e9e-82db" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c6bf-b9b3-974d-a9e9" type="max" />
@@ -3484,7 +3484,7 @@
 </profile>
 </profiles>
 <selectionEntryGroups>
-<selectionEntryGroup id="4ef8-71ee-8d08-7600" name="Replace Twin-linked Heavy Bolter" hidden="false" collective="false" import="true" defaultSelectionEntryId="6c0e-8d19-88fb-5dd8">
+<selectionEntryGroup id="4ef8-71ee-8d08-7600" name="Replace Twin-linked Heavy Bolter" hidden="false" collective="false" import="true" defaultSelectionEntryId="f5bb-3ebe-be46-0969">
 <modifiers>
 <modifier type="set" field="ad87-cbbb-9e36-3d8a" value="0">
 <conditionGroups>
@@ -3590,7 +3590,7 @@
 </profile>
 </profiles>
 <selectionEntryGroups>
-<selectionEntryGroup id="04b2-f0a4-5a4e-d171" name="Replace Twin-linked Heavy Bolter" hidden="false" collective="false" import="true" defaultSelectionEntryId="6c0e-8d19-88fb-5dd8">
+<selectionEntryGroup id="04b2-f0a4-5a4e-d171" name="Replace Twin-linked Heavy Bolter" hidden="false" collective="false" import="true" defaultSelectionEntryId="2c82-d17f-ec69-44a9">
 <modifiers>
 <modifier type="set" field="144e-4ff2-dc20-912f" value="0">
 <conditionGroups>
@@ -4007,7 +4007,7 @@
 </profile>
 </profiles>
 <selectionEntryGroups>
-<selectionEntryGroup id="8b77-4f59-443c-c7e1" name="Replace Hull-mounted Heavy Bolter" hidden="false" collective="false" import="true" defaultSelectionEntryId="34ac-a15a-5edf-aa5e">
+<selectionEntryGroup id="8b77-4f59-443c-c7e1" name="Replace Hull-mounted Heavy Bolter" hidden="false" collective="false" import="true" defaultSelectionEntryId="07b1-6961-39e3-ec63">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8f88-9ccd-abf9-f7a5" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="62b7-a695-62ef-d651" type="max" />
@@ -4162,7 +4162,7 @@
 </profile>
 </profiles>
 <selectionEntryGroups>
-<selectionEntryGroup id="c393-ce5e-5007-ae45" name="Replace Hull-mounted Heavy Bolter" hidden="false" collective="false" import="true" defaultSelectionEntryId="34ac-a15a-5edf-aa5e">
+<selectionEntryGroup id="c393-ce5e-5007-ae45" name="Replace Hull-mounted Heavy Bolter" hidden="false" collective="false" import="true" defaultSelectionEntryId="4ea8-bfb4-c23d-ff49">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c3fe-249f-24de-b9d3" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4263-2d17-ff93-9a82" type="max" />
@@ -4472,7 +4472,7 @@
 </profile>
 </profiles>
 <selectionEntryGroups>
-<selectionEntryGroup id="46e8-3570-c763-1efb" name="Replace Hull-mounted Heavy Bolter" hidden="false" collective="false" import="true" defaultSelectionEntryId="1e08-6c86-3444-4613">
+<selectionEntryGroup id="46e8-3570-c763-1efb" name="Replace Hull-mounted Heavy Bolter" hidden="false" collective="false" import="true" defaultSelectionEntryId="eedb-f2b1-caa4-2e4a">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4975-2c8e-bf12-7d24" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8344-19ba-83ae-4f3c" type="max" />
@@ -4627,7 +4627,7 @@
 </profile>
 </profiles>
 <selectionEntryGroups>
-<selectionEntryGroup id="6c1f-dbe3-e7dd-bfb3" name="Replace Hull-mounted Heavy Bolter" hidden="false" collective="false" import="true" defaultSelectionEntryId="1e08-6c86-3444-4613">
+<selectionEntryGroup id="6c1f-dbe3-e7dd-bfb3" name="Replace Hull-mounted Heavy Bolter" hidden="false" collective="false" import="true" defaultSelectionEntryId="504e-842c-81f7-adfe">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="250a-1779-b6ab-4b3c" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eafb-306e-6b8f-6035" type="max" />
@@ -4937,7 +4937,7 @@
 </profile>
 </profiles>
 <selectionEntryGroups>
-<selectionEntryGroup id="2432-4e28-1135-ec88" name="Replace Hull-mounted Heavy Bolter" hidden="false" collective="false" import="true" defaultSelectionEntryId="205e-7c0d-e224-63f0">
+<selectionEntryGroup id="2432-4e28-1135-ec88" name="Replace Hull-mounted Heavy Bolter" hidden="false" collective="false" import="true" defaultSelectionEntryId="a258-0db5-bba7-d367">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7a14-de8a-1b2b-dd69" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1ab4-67c9-16ed-059d" type="max" />
@@ -5092,7 +5092,7 @@
 </profile>
 </profiles>
 <selectionEntryGroups>
-<selectionEntryGroup id="d165-09ca-e023-0f3d" name="Replace Hull-mounted Heavy Bolter" hidden="false" collective="false" import="true" defaultSelectionEntryId="205e-7c0d-e224-63f0">
+<selectionEntryGroup id="d165-09ca-e023-0f3d" name="Replace Hull-mounted Heavy Bolter" hidden="false" collective="false" import="true" defaultSelectionEntryId="a376-3282-cb41-2812">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8ef8-724d-dedc-21d8" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="268b-a1d5-0454-21d6" type="max" />
@@ -5402,7 +5402,7 @@
 </profile>
 </profiles>
 <selectionEntryGroups>
-<selectionEntryGroup id="69bc-92c2-169e-a182" name="Replace Hull-mounted Heavy Bolter" hidden="false" collective="false" import="true" defaultSelectionEntryId="646b-851e-1f71-704a">
+<selectionEntryGroup id="69bc-92c2-169e-a182" name="Replace Hull-mounted Heavy Bolter" hidden="false" collective="false" import="true" defaultSelectionEntryId="4acd-b96c-3e3a-3460">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fe1d-38c6-6f2b-c156" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3cff-042b-9161-69a5" type="max" />
@@ -5557,7 +5557,7 @@
 </profile>
 </profiles>
 <selectionEntryGroups>
-<selectionEntryGroup id="9a0f-47d3-585a-71c5" name="Replace Hull-mounted Heavy Bolter" hidden="false" collective="false" import="true" defaultSelectionEntryId="646b-851e-1f71-704a">
+<selectionEntryGroup id="9a0f-47d3-585a-71c5" name="Replace Hull-mounted Heavy Bolter" hidden="false" collective="false" import="true" defaultSelectionEntryId="910c-2641-43cb-fcde">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="df45-e45e-54fb-5254" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fd12-59ec-948d-5468" type="max" />
@@ -5906,7 +5906,7 @@
 </profile>
 </profiles>
 <selectionEntryGroups>
-<selectionEntryGroup id="c007-b107-d601-3b59" name="Replace Multi-laser" hidden="false" collective="false" import="true" defaultSelectionEntryId="99a1-8262-b9f3-9fda">
+<selectionEntryGroup id="c007-b107-d601-3b59" name="Replace Multi-laser" hidden="false" collective="false" import="true" defaultSelectionEntryId="d458-5d68-3fc3-f98b">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="346a-e9b9-80b0-0d7d" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7725-d1ca-202e-505e" type="max" />
@@ -6040,7 +6040,7 @@
 </profile>
 </profiles>
 <selectionEntryGroups>
-<selectionEntryGroup id="8d6c-4340-6a5f-2e4e" name="Replace Multi-laser" hidden="false" collective="false" import="true" defaultSelectionEntryId="99a1-8262-b9f3-9fda">
+<selectionEntryGroup id="8d6c-4340-6a5f-2e4e" name="Replace Multi-laser" hidden="false" collective="false" import="true" defaultSelectionEntryId="2812-4121-f697-327a">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bdc0-a42d-4ef0-d9ad" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="60bb-1b83-c0bf-e755" type="max" />
@@ -6174,7 +6174,7 @@
 </profile>
 </profiles>
 <selectionEntryGroups>
-<selectionEntryGroup id="13d4-6cff-da0c-91c4" name="Replace Multi-laser" hidden="false" collective="false" import="true" defaultSelectionEntryId="99a1-8262-b9f3-9fda">
+<selectionEntryGroup id="13d4-6cff-da0c-91c4" name="Replace Multi-laser" hidden="false" collective="false" import="true" defaultSelectionEntryId="f26f-1b1b-252b-2618">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9ec3-de17-ad37-15d3" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f42c-133a-3948-1336" type="max" />
@@ -6308,7 +6308,7 @@
 </profile>
 </profiles>
 <selectionEntryGroups>
-<selectionEntryGroup id="b4d4-9666-f7a3-a3cc" name="Replace Multi-laser" hidden="false" collective="false" import="true" defaultSelectionEntryId="99a1-8262-b9f3-9fda">
+<selectionEntryGroup id="b4d4-9666-f7a3-a3cc" name="Replace Multi-laser" hidden="false" collective="false" import="true" defaultSelectionEntryId="7b0a-abab-bec8-d86f">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="36e4-fe64-1c8f-6fa1" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="63fd-6be2-7953-8c99" type="max" />
@@ -7585,7 +7585,7 @@
 </profile>
 </profiles>
 <selectionEntryGroups>
-<selectionEntryGroup id="e92c-0a52-4278-abf8" name="Replace Hull-mounted Heavy Bolter" hidden="false" collective="false" import="true" defaultSelectionEntryId="0253-5061-e1e9-2908">
+<selectionEntryGroup id="e92c-0a52-4278-abf8" name="Replace Hull-mounted Heavy Bolter" hidden="false" collective="false" import="true" defaultSelectionEntryId="03c6-15e1-d7d0-877e">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6b98-76b3-1b79-3543" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9e2c-e396-7ee3-9831" type="max" />
@@ -7734,7 +7734,7 @@
 </profile>
 </profiles>
 <selectionEntryGroups>
-<selectionEntryGroup id="eae7-1a8c-099d-932e" name="Replace Hull-mounted Heavy Bolter" hidden="false" collective="false" import="true" defaultSelectionEntryId="0253-5061-e1e9-2908">
+<selectionEntryGroup id="eae7-1a8c-099d-932e" name="Replace Hull-mounted Heavy Bolter" hidden="false" collective="false" import="true" defaultSelectionEntryId="5bc9-4152-4226-d9ae">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cdf7-c531-6c52-27ae" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5833-c390-3e17-8eb8" type="max" />
@@ -8032,7 +8032,7 @@
 </profile>
 </profiles>
 <selectionEntryGroups>
-<selectionEntryGroup id="8fb8-05c1-963c-03ae" name="Replace Hull-mounted Heavy Bolter" hidden="false" collective="false" import="true" defaultSelectionEntryId="8882-0245-7d20-d310">
+<selectionEntryGroup id="8fb8-05c1-963c-03ae" name="Replace Hull-mounted Heavy Bolter" hidden="false" collective="false" import="true" defaultSelectionEntryId="912e-61b9-1c24-8819">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f428-766c-9d51-c404" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="da00-3bb1-035f-40ec" type="max" />
@@ -8181,7 +8181,7 @@
 </profile>
 </profiles>
 <selectionEntryGroups>
-<selectionEntryGroup id="2145-29ee-a00a-b149" name="Replace Hull-mounted Heavy Bolter" hidden="false" collective="false" import="true" defaultSelectionEntryId="8882-0245-7d20-d310">
+<selectionEntryGroup id="2145-29ee-a00a-b149" name="Replace Hull-mounted Heavy Bolter" hidden="false" collective="false" import="true" defaultSelectionEntryId="ab38-eda1-95ae-879d">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8daf-9013-c6f6-be6a" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="338b-76a5-c71d-464f" type="max" />
@@ -8479,7 +8479,7 @@
 </profile>
 </profiles>
 <selectionEntryGroups>
-<selectionEntryGroup id="4bfc-5ccd-7453-7ddc" name="Replace Hull-mounted Heavy Bolter" hidden="false" collective="false" import="true" defaultSelectionEntryId="3851-429d-bb7f-acd9">
+<selectionEntryGroup id="4bfc-5ccd-7453-7ddc" name="Replace Hull-mounted Heavy Bolter" hidden="false" collective="false" import="true" defaultSelectionEntryId="2f1d-4163-eaa0-3525">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b9b0-f5d2-2046-db57" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e778-29bf-d989-d42d" type="max" />
@@ -8628,7 +8628,7 @@
 </profile>
 </profiles>
 <selectionEntryGroups>
-<selectionEntryGroup id="46e0-302b-98c2-bfcf" name="Replace Hull-mounted Heavy Bolter" hidden="false" collective="false" import="true" defaultSelectionEntryId="3851-429d-bb7f-acd9">
+<selectionEntryGroup id="46e0-302b-98c2-bfcf" name="Replace Hull-mounted Heavy Bolter" hidden="false" collective="false" import="true" defaultSelectionEntryId="cf85-5c0a-bf61-7479">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="be8d-28c2-1dc9-f8d5" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d7d1-20f2-12d2-7ec4" type="max" />
