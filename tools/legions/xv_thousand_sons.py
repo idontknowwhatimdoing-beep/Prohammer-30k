@@ -8,7 +8,8 @@ import legiones as L
 import legiones2 as L2
 from legiones import W, has, lacks, TDA, has_tda, no_tda, gear, per_model, rules_links, unit_profile
 from legiones2 import (slot, take, pool, choice, transports, add_mods, add_to, dedupe_kit, walker_profile, foc,
-                       rite_id, rite, any_rite, RETINUE_SHARED, TROOPS, ELITES, FA, HQ, _negate)
+                       rite_id, rite, any_rite, RETINUE_SHARED, TROOPS, ELITES, FA, HQ, _negate, model_swaps,
+                       pa_armoury)
 from legiones_wargear import ARMY_RULES, WEAPON_PROFILES, WEAPONS, WEAPON_RULES, WARGEAR
 from legions.common import PRIMARCH_RULES
 
@@ -173,6 +174,24 @@ TS_RULES = {
                                 "Assault phase. No dice may be re-rolled more than once."),
     "Khenetai Retinue": ("Sanakht may select one Khenetai Occult Blade Cabal as his retinue (single HQ selection, no extra "
                          "slot)."),
+    "Psyker (Mastery Level 1)": "This model is a Psyker with Psychic Mastery Level 1.",
+    "Psyker (Mastery Level 2)": "This model is a Psyker with Psychic Mastery Level 2.",
+    "Psyker (Mastery Level 3)": "This model is a Psyker with Psychic Mastery Level 3.",
+    "Psychic Powers (Sanakht)": ("Sanakht knows only Mindsong of Blades; he does not select a psychic power from the "
+                                 "normal Psychic Disciplines. Activating his Force Weapons does not count as invoking a "
+                                 "psychic power."),
+    "Psychic Brotherhood (Khenetai)": (
+        "Assign the Cabal to one Prosperine Cult; it receives both the Cult Arcana and Cult Mastery of that Cult. It does "
+        "not select a power from the normal Psychic Disciplines and knows only Mindsong of Blades. The Blademaster may "
+        "select up to 50 points of permitted weapons and wargear from the Space Marine Armoury but may not replace his "
+        "Paired Prosperine Force Blades."),
+    "Psychic Brotherhood (Ammitara)": (
+        "Assign the Cabal to one Prosperine Cult; it receives both the Cult Arcana and Cult Mastery of that Cult. It "
+        "selects one psychic power from Divination or Telepathy and follows the normal rules for a Brotherhood of "
+        "Psykers (Mastery Level 1). The Ammitara Fate may select up to 50 points of permitted weapons and wargear from "
+        "the Space Marine Armoury."),
+    "Narthecium (Hathor Maat)": "Hathor Maat additionally uses the normal Narthecium rules from the Legiones Astartes "
+                                "Army List.",
     "Command Retinue (Thousand Sons)": ("This character may select one Legion Command Squad as his retinue. It does not "
                                         "occupy a separate Force Organisation slot."),
     # Primarchs (universal)
@@ -223,7 +242,9 @@ TS_RULES = {
     "The Crimson King": ("Magnus may re-roll one failed Psychic Test each player turn. He may Deny the Witch against any "
                          "power whose Psyker or target is within 24\" of him."),
     "The Warp Bends to Magnus": ("Magnus ignores Leadership penalties from Disturbance in the Warp, and his own powers do "
-                                 "not count towards Disturbance in the Warp for other friendly Psykers."),
+                                 "not count towards Disturbance in the Warp for other friendly Psykers; powers of other "
+                                 "friendly Psykers still count normally. He may also attempt to Deny the Witch at 18\" "
+                                 "around him (see The Crimson King for the 24\" Deny the Witch)."),
     "Infernal Phoenix": "Witchfire - Beam. Range 24\", S8, AP1, Melta. Resolve using the normal rules for Beam powers.",
     "Strands of Fate": (
         "Malediction. One enemy non-Vehicle unit within 18\" and line of sight must pass a Leadership test each time it "
@@ -260,8 +281,9 @@ TS_RULES = {
     "The Warp Breathes": (
         "At the beginning of each Thousand Sons turn roll a D6 (modified by Instability Counters): 1 or less - The Crimson "
         "King Fades (placed in Reserve, returns by Deep Strike; counts as destroyed if still in Reserve at the end); 2-5 - "
-        "Reality Holds; 6+ - The Warp Ascendant (every Psyker may re-roll failed Psychic Tests, but any double causes "
-        "Perils) until the next Thousand Sons turn."),
+        "Reality Holds; 6+ - The Warp Ascendant (every Psyker on the battlefield, friendly or enemy, may re-roll failed "
+        "Psychic Tests, but any double causes Perils even if the test succeeds or is re-rolled) until the next Thousand "
+        "Sons turn. The Crimson King Fades does not trigger The Crimson King Shattered."),
     "The Crimson King Shattered": (
         "If Magnus is destroyed, every friendly non-Vehicle Thousand Sons unit suffers D3 Strength 4 AP- hits, then every "
         "friendly Thousand Sons Psyker or Brotherhood suffers Perils of the Warp (Independent Characters twice). This counts "
@@ -369,8 +391,9 @@ def discipline_choice(key, options=DISCIPLINES, required=True, title="Psychic Di
     return group(gid, title, entries=ents, constraints=cons, mods=mods)
 
 
-def brotherhood(key, cost=25, fellowships_cost=None, visible_if=None):
-    """'May purchase the Brotherhood of Psykers special rule' - chooses its Cult (and so its Discipline)."""
+def brotherhood(key, cost=25, fellowships_cost=None, visible_if=None, any_discipline=False):
+    """'May purchase the Brotherhood of Psykers special rule' - chooses its Cult (and so its Discipline).
+    any_discipline: the unit picks its power from any Thousand Sons discipline instead of its Cult's one."""
     eid = uid("brotherhood", key)
     mods = []
     if fellowships_cost is not None:
@@ -378,7 +401,7 @@ def brotherhood(key, cost=25, fellowships_cost=None, visible_if=None):
     e = entry(eid, "Psychic Brotherhood (Brotherhood of Psykers, Mastery Level 1)", cost=cost, mods=mods,
               constraints=[constraint(uid(eid, "max"), "max", 1, auto=True)],
               infolinks=rules_links(["Brotherhood of Psychers", "Psychic Brotherhoods", "Cult Mastery"], key=eid),
-              groups=[cult_choice(eid)])
+              groups=[cult_choice(eid)] + ([discipline_choice(eid)] if any_discipline else []))
     ts_only(e, uid(eid, "max"))
     if visible_if:
         add_mods(e, [modifier("set", "hidden", "true", groups=[visible_if[0]]),
@@ -442,22 +465,25 @@ def sekhmet(key="Sekhmet Terminator Cabal", root=True):
     combis = [("Combi-Flamer", 10), ("Combi-Grenade Launcher", 10), ("Combi-Meltagun", 15), ("Combi-Plasma Gun", 15),
               ("Combi-Volkite Charger", 10)]
 
+    cc = [("Power Fist", 0), ("Chainfist", 10)]
+    heavies = [("Heavy Flamer", 10), ("Plasma Blaster", 15), ("Reaper Autocannon", 20)]
+
     def weap(mid):
-        return [slot(mid, "Replace Prosperine Force Weapon", "Prosperine Force Weapon",
-                     [("Power Fist", 0), ("Chainfist", 10)]),
+        return [slot(mid, "Replace Prosperine Force Weapon", "Prosperine Force Weapon", cc),
                 slot(mid, "Replace Foeblaster Boltgun", "Foeblaster Boltgun", combis)]
     tmin, tmax = uid(tid, "min"), uid(tid, "max")
     terms = entry(tid, "Sekhmet Terminator", typ="model", cost=60,
                   mods=[modifier("decrement", tmin, 1, conds=[cond(iid, u, "atLeast", 1)]),
                         modifier("decrement", tmax, 1, conds=[cond(iid, u, "atLeast", 1)])],
                   constraints=[constraint(tmin, "min", 5, auto=True), constraint(tmax, "max", 10, auto=True)],
-                  profiles=[prof("Sekhmet Terminator", 2, 9)], links=[gear(tid, "Cataphractii Terminator Armour")],
-                  groups=weap(tid))
+                  profiles=[prof("Sekhmet Terminator", 2, 9)],
+                  links=[gear(tid, k) for k in ["Cataphractii Terminator Armour", "Prosperine Force Weapon",
+                                                "Foeblaster Boltgun"]])
     inc = entry(iid, "Sekhmet Inceptor", typ="model", cost=80, constraints=[constraint(uid(iid, "max"), "max", 1)],
                 profiles=[prof("Sekhmet Inceptor", 3, 10)], links=[gear(iid, "Cataphractii Terminator Armour")],
                 groups=weap(iid) + [take(iid, "Inceptor Wargear", [("Grenade Harness", 10)])])
-    heavy, hmx = pool(u, "Heavy Weapons (up to two per five models)", u,
-                      [("Heavy Flamer", 10), ("Plasma Blaster", 15), ("Reaper Autocannon", 20)], 0, every=5)
+    heavy, hmx = pool(u, "Heavy Weapons (up to two per five models, replace Foeblaster Boltgun)", u, heavies, 0,
+                      every=5)
     # two per five: increment again with the same repeat
     add_mods(heavy, [modifier("increment", hmx, 1, repeats=[repeat("model", u, 5)])])
     tp = ts_option(u, "Teleportation Transponders (entire Cabal)", 15, item="Teleportation Transponders")
@@ -475,7 +501,11 @@ def sekhmet(key="Sekhmet Terminator Cabal", root=True):
               infolinks=rules_links(["Legiones Astartes (Thousand Sons)", "Fearless", "Brotherhood of Psychers",
                                      "Scarab Occult", "Prosperine Force Weapon"], key=u),
               entries=[terms, inc, tp],
-              groups=[cult_choice(u), discipline_choice(u), heavy,
+              groups=[cult_choice(u), discipline_choice(u),
+                      model_swaps(u, "Sekhmet Terminators: replace Prosperine Force Weapon (any number)", u, [tid], cc),
+                      model_swaps(u, "Sekhmet Terminators: replace Foeblaster Boltgun (any number)", u, [tid], combis,
+                                  minus=[W(n) for n, _ in heavies]),
+                      heavy,
                       transports(u, u, ["Land Raider Phobos", "Land Raider Proteus",
                                         "Anvillus Pattern Dreadclaw Drop Pod", "Legion Spartan Assault Tank"],
                                  orbital=False)])
@@ -504,7 +534,8 @@ def khenetai(key="Khenetai Occult Blade Cabal", root=True):
                  mods=[modifier("set", "hidden", "true", conds=[not_ts()])],
                  constraints=[constraint(uid(u, "force-max"), "max", 1, scope="force", deep=True)] if root else [],
                  infolinks=rules_links(["Legiones Astartes (Thousand Sons)", "Brotherhood of Psychers",
-                                        "Mindsong of Blades", "Paired Prosperine Force Blades"], key=u),
+                                        "Psychic Brotherhood (Khenetai)", "Mindsong of Blades",
+                                        "Paired Prosperine Force Blades", "Cult Mastery"], key=u),
                  entries=[blades, master, per_model(u, "Krak Grenades (entire squad)", 2, u, ["Krak Grenades"]),
                           per_model(u, "Melta Bombs (entire squad)", 5, u, ["Melta Bombs"])],
                  groups=[cult_choice(u), pistols])
@@ -514,28 +545,32 @@ def ammitara(key="Ammitara Occult Intercession Cabal", root=True):
     name = "Ammitara Occult Intercession Cabal"
     u = uid("unit", key)
     iid, fid = uid("model", u, "Ammitara Intercessor"), uid("model", u, "Ammitara Fate")
-    kit = ["Recon Armour", "Bolt Pistol", "Combat Blade", "Frag Grenades"]
+    kit = ["Recon Armour", "Sniper Rifle", "Bolt Pistol", "Combat Blade", "Frag Grenades"]
     combis = [("Combi-Flamer", 10), ("Combi-Volkite Charger", 10), ("Combi-Meltagun", 15), ("Combi-Plasma Gun", 15)]
     inter = entry(iid, "Ammitara Intercessor", typ="model", cost=20,
                   constraints=[constraint(uid(iid, "min"), "min", 4), constraint(uid(iid, "max"), "max", 9)],
                   profiles=[unit_profile(u, "Ammitara Intercessor", "Infantry", 4, 5, 4, 4, 1, 4, 1, 8, "4+")],
-                  links=[gear(iid, k) for k in kit], groups=[slot(iid, "Replace Sniper Rifle", "Sniper Rifle", combis)])
+                  links=[gear(iid, k) for k in kit])
+    # the Fate's Bolt Pistol / Combat Blade can be exchanged through his Armoury
     fate = entry(fid, "Ammitara Fate", typ="model", constraints=[constraint(uid(fid, "min"), "min", 1),
                                                                   constraint(uid(fid, "max"), "max", 1)],
                  profiles=[unit_profile(u, "Ammitara Fate", "Infantry (Character)", 4, 5, 4, 4, 1, 4, 2, 9, "4+")],
-                 links=[gear(fid, k) for k in kit],
-                 groups=[slot(fid, "Replace Sniper Rifle", "Sniper Rifle", combis), L.sgt_extra_capped(fid, u, 10, skip=())])
-    specials, _ = pool(u, "Special Weapons (up to two models, replace Sniper Rifle)", u,
-                       [("Meltagun", 10), ("Plasma Gun", 15)], 2)
+                 links=[gear(fid, k) for k in ["Recon Armour", "Sniper Rifle", "Frag Grenades"]],
+                 groups=[pa_armoury(fid, u, 10, slots=["Bolt Pistol", "Combat Blade"])])
+    spec_opts = [("Meltagun", 10), ("Plasma Gun", 15)]
+    specials, _ = pool(u, "Special Weapons (up to two models, replace Sniper Rifle)", u, spec_opts, 2)
+    combi_swaps = model_swaps(u, "Any model: replace Sniper Rifle (any number)", u, [iid, fid], combis,
+                              minus=[W(n) for n, _ in spec_opts])
     cats = [foc(FA, "Fast Attack", u)] if root else []
     return entry(u, name, typ="unit", cost=135 - 4 * 20, cats=cats,
                  mods=[modifier("set", "hidden", "true", conds=[not_ts()])],
                  constraints=[constraint(uid(u, "force-max"), "max", 1, scope="force", deep=True)] if root else [],
-                 infolinks=rules_links(["Legiones Astartes (Thousand Sons)", "Brotherhood of Psychers", "Scout",
-                                        "Infiltrate", "Move Through Cover", "Stealth"], key=u),
+                 infolinks=rules_links(["Legiones Astartes (Thousand Sons)", "Brotherhood of Psychers",
+                                        "Psychic Brotherhood (Ammitara)", "Cult Mastery", "Scout", "Infiltrate",
+                                        "Move Through Cover", "Stealth"], key=u),
                  entries=[fate, inter, per_model(u, "Krak Grenades (entire squad)", 2, u, ["Krak Grenades"]),
                           per_model(u, "Melta Bombs (entire squad)", 5, u, ["Melta Bombs"])],
-                 groups=[cult_choice(u), discipline_choice(u, ["Divination", "Telepathy"]), specials,
+                 groups=[cult_choice(u), discipline_choice(u, ["Divination", "Telepathy"]), combi_swaps, specials,
                          L.one_each(u, "Squad Equipment", [("Nuncio Vox", 10)])])
 
 
@@ -546,8 +581,8 @@ def castellax_achea():
     m = entry(mid, "Castellax-Achea", typ="model", cost=130,
               constraints=[constraint(uid(mid, "min"), "min", 1), constraint(uid(mid, "max"), "max", 3)],
               profiles=[unit_profile(u, "Castellax-Achea", "Monstrous Creature", 3, 3, 5, 6, 3, 3, 2, 8, "3+/5+")],
-              links=[gear(mid, "Dreadnought Close Combat Weapon"), gear(mid, "Aether-fire Cannon")],
-              groups=[slot(mid, "Replace Twin-linked Bolter", "Twin-linked Bolter", [("Heavy Flamer", 5)])])
+              links=[gear(mid, "Dreadnought Close Combat Weapon"), gear(mid, "Twin-linked Bolter"),
+                     gear(mid, "Aether-fire Cannon")])
     for lk in m.find("entryLinks"):
         if lk.get("name") == "Dreadnought Close Combat Weapon":
             for c in lk.iter("constraint"):
@@ -557,7 +592,9 @@ def castellax_achea():
                  constraints=[constraint(uid(u, "force-max"), "max", 1, scope="force", deep=True)],
                  infolinks=rules_links(["Fearless", "Aetheric Command Matrix", "Psychic Conduit", "Aetheric Shielding",
                                         "Thousand Sons Construct"], key=u),
-                 entries=[m])
+                 entries=[m],
+                 groups=[model_swaps(u, "Any Castellax-Achea: replace Twin-linked Bolter", u, [mid],
+                                     [("Heavy Flamer", 5)])])
 
 
 def osiron():
@@ -653,24 +690,28 @@ def characters():
     out.append(named_character("Ahzek Ahriman", 210, (5, 5, 4, 4, 3, 5, 3, 10, "2+/4+"),
                                ["Artificer Armour", "Iron Halo", "Black Staff of Ahriman", "Bolt Pistol",
                                 "Frag Grenades"],
-                               ["Psyker", "Corvidae (Ahriman)", "Corvidae - Precognitive Strike", "Cult Mastery",
+                               ["Psyker", "Psyker (Mastery Level 3)", "Corvidae (Ahriman)", "Corvidae - Precognitive Strike", "Cult Mastery",
                                 "Chief Librarian", "Ahriman's Cabal"],
                                retinue=retinue_links("ahriman", [cs]), min_points=1500))
+    mark_brotherhood(cs, cabal)
     # Phosis T'Kar
     p = uid("unit", "Phosis T'Kar")
     out.append(named_character("Phosis T'Kar", 205, (5, 5, 4, 4, 2, 5, 3, 10, "3+/4+"),
                                ["Power Armour", "Eldritch Force Field", "Prosperine Force Weapon", "Bolter",
                                 "Frag Grenades"],
-                               ["Psyker", "Raptora (Phosis)", "Raptora - Kine Shields", "Cult Mastery",
+                               ["Psyker", "Psyker (Mastery Level 2)", "Raptora (Phosis)", "Raptora - Kine Shields", "Cult Mastery",
                                 "Magister of the Raptora", "Command Retinue (Thousand Sons)"],
                                retinue=retinue_links("phosis", [command_squad_for("phosis", p)])))
     # Magistus Amon
     am = uid("unit", "Magistus Amon, the Hidden")
-    amon_ret = [command_squad_for("amon", am), ammitara("amon-ammitara", root=False),
+    amon_amm = ammitara("amon-ammitara", root=False)
+    add_to(amon_amm, "categoryLinks", [category_link(gs.CAT_BROTHERHOOD, "Psychic Brotherhood",
+                                                     key=amon_amm.get("id"))])
+    amon_ret = [command_squad_for("amon", am), amon_amm,
                 clone(L2.seeker_squad(), "amon-seekers")]
     out.append(named_character("Magistus Amon, the Hidden", 185, (5, 5, 4, 4, 2, 5, 3, 10, "2+"),
                                ["Armour of Shades", "Prosperine Force Weapon", "Bolt Pistol", "Frag Grenades"],
-                               ["Psyker", "Athanaeans (Amon)", "Athanaeans - Discipline of the Mind", "Cult Mastery",
+                               ["Psyker", "Psyker (Mastery Level 2)", "Athanaeans (Amon)", "Athanaeans - Discipline of the Mind", "Cult Mastery",
                                 "Psychic Powers (Amon)", "The Hidden One", "Master of the Hidden Orders"],
                                retinue=retinue_links("amon", amon_ret), min_points=1500))
     # Hathor Maat
@@ -678,16 +719,20 @@ def characters():
     out.append(named_character("Hathor Maat", 190, (5, 5, 4, 4, 3, 5, 3, 10, "2+/5+"),
                                ["Artificer Armour", "Aetheric Refractor Field", "Prosperine Force Weapon",
                                 "Bolt Pistol", "Narthecium", "Reductor", "Frag Grenades"],
-                               ["Psyker", "Pavoni (Hathor Maat)", "Pavoni - Quickblood", "Cult Mastery",
-                                "Magister Templi of the Pavoni", "Pavoni Vitalist", "Command Retinue (Thousand Sons)"],
+                               ["Psyker", "Psyker (Mastery Level 2)", "Pavoni (Hathor Maat)", "Pavoni - Quickblood",
+                                "Cult Mastery", "Magister Templi of the Pavoni", "Pavoni Vitalist",
+                                "Narthecium (Hathor Maat)", "Command Retinue (Thousand Sons)"],
                                retinue=retinue_links("hathor", [command_squad_for("hathor", h)])))
     # Sanakht (no Master of the Legion)
+    san_kh = khenetai("sanakht-khenetai", root=False)
+    add_to(san_kh, "categoryLinks", [category_link(gs.CAT_BROTHERHOOD, "Psychic Brotherhood", key=san_kh.get("id"))])
     out.append(named_character("Sanakht", 195, (7, 5, 4, 4, 3, 6, 4, 10, "2+/5+"),
                                ["Artificer Armour", "Refractor Field", "Paired Prosperine Force Blades",
                                 "Frag Grenades"],
-                               ["Psyker", "Athanaeans (Sanakht)", "Athanaeans - Discipline of the Mind",
-                                "Cult Mastery", "Blademaster of Prospero", "Mindsong of Blades", "Khenetai Retinue"],
-                               retinue=retinue_links("sanakht", [khenetai("sanakht-khenetai", root=False)]),
+                               ["Psyker", "Psyker (Mastery Level 1)", "Athanaeans (Sanakht)",
+                                "Athanaeans - Discipline of the Mind", "Cult Mastery", "Psychic Powers (Sanakht)",
+                                "Blademaster of Prospero", "Mindsong of Blades", "Khenetai Retinue"],
+                               retinue=retinue_links("sanakht", [san_kh]),
                                master=False))
     return out
 
@@ -713,7 +758,9 @@ def magnus_retinue():
     hg = L2.honour_guard("magnus")
     tcs = L2.terminator_command_squad("magnus")
     for e in (hg, tcs):
-        add_to(e, "selectionEntries", [brotherhood(e.get("id") + "magnus")])
+        bro = brotherhood(e.get("id") + "magnus", any_discipline=True)
+        add_to(e, "selectionEntries", [bro])
+        mark_brotherhood(e, bro.get("id"))
     sek = sekhmet("magnus-sekhmet", root=False)
     return retinue_links("magnus", [hg, tcs, sek], title="Primarch Retinue")
 
@@ -878,7 +925,7 @@ def _extend(units_by_name, units, shared):
                  cond("model", tid, "lessThan", 20))
     off2 = any_of(cond(rite_id("The Fellowships of Prospero"), "force", "lessThan", 1),
                   cond("model", tid, "lessThan", 20))
-    add_to(tac, "selectionEntries", [brotherhood(tid, 25, visible_if=(off, off2))])
+    add_to(tac, "selectionEntries", [brotherhood(tid, 25, visible_if=(off, off2), any_discipline=True)])
     mark_brotherhood(tac, uid("brotherhood", tid))
 
     # new units
@@ -901,6 +948,10 @@ def _extend(units_by_name, units, shared):
                                                  "Psychic Brotherhoods.",
                                  conds=[cond(rid, "force", "atLeast", 1),
                                         cond(gs.CAT_BROTHERHOOD, "force", "lessThan", 2)]))
+        if n in ("The Axis of Dissolution", "The Guard of the Crimson King"):
+            mods.append(modifier("add", "error", f"{n}: the Detachment may not include a Fortification.",
+                                 conds=[cond(rid, "force", "atLeast", 1),
+                                        cond(gs.cat("Fortification"), "force", "atLeast", 1)]))
         ts_rites.append(entry(rid, f"{n} (Thousand Sons)", rules=[rule(uid("rite-rule", n), n, TS_RULES[n])],
                               mods=mods))
     add_to(rg, "selectionEntries", ts_rites)
@@ -912,4 +963,12 @@ def _extend(units_by_name, units, shared):
     for r in new_shared:
         dedupe_kit(r)
     add_ts_links_to_power_weapons(units + roots + shared + RETINUE_SHARED)
+    # Ahriman's Cabal: Prosperine Force Weapon for +5 (instead of +10) over a Power Weapon
+    cabal = uid("ahriman-cabal")
+    for r in RETINUE_SHARED:
+        if not any(e.get("id") == cabal for e in r.iter("selectionEntry")):
+            continue
+        for lk in r.iter("entryLink"):
+            if lk.get("targetId") == W("Prosperine Force Weapon"):
+                add_mods(lk, [modifier("decrement", PTS, 5, conds=[cond(cabal, r.get("id"), "atLeast", 1)])])
     return roots, new_shared
