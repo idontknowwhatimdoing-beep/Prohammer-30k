@@ -156,8 +156,10 @@ def take(key, title, items, max_total=None, hide=None):
         name, pts = it[0], it[1]
         mx = it[2] if len(it) > 2 else 1
         lid = uid("link", gid, name)
-        links.append(link(lid, W(name), name, cost=pts or None,
-                          constraints=[constraint(uid(lid, "max"), "max", mx, auto=True)]))
+        # New Recruit counts a per-item limit against every copy of that item in the unit (its built-in weapons
+        # too), so a one-of-a-kind group relies on the group limit alone
+        item_cons = [] if (max_total == 1 and mx == 1) else [constraint(uid(lid, "max"), "max", mx, auto=True)]
+        links.append(link(lid, W(name), name, cost=pts or None, constraints=item_cons))
     cons = [constraint(uid(gid, "max"), "max", max_total, auto=True)] if max_total else []
     mods = []
     if hide:

@@ -135,49 +135,31 @@
 </constraints>
 <entryLinks>
 <entryLink id="f1c8-908a-741c-60c3" name="Twin-linked Bolter" hidden="false" collective="false" import="true" targetId="6392-9914-afef-0ec5" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b89f-c4e4-4a51-7088" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
 </costs>
 </entryLink>
 <entryLink id="53e7-c123-c3a9-ffc0" name="Combi-weapon" hidden="false" collective="false" import="true" targetId="d60b-3f04-a6b0-5846" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0c23-fd3e-8199-e492" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
 </costs>
 </entryLink>
 <entryLink id="83fc-d1af-c479-7df1" name="Heavy Bolter" hidden="false" collective="false" import="true" targetId="9151-5044-e482-04c9" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="839d-4097-f4a0-b03e" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
 </entryLink>
 <entryLink id="9285-5ea8-97f0-87f9" name="Heavy Flamer" hidden="false" collective="false" import="true" targetId="9e6d-afcf-8202-e47c" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9c87-7496-4f28-c060" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
 </entryLink>
 <entryLink id="0796-3450-79ed-d6ac" name="Multi-Melta" hidden="false" collective="false" import="true" targetId="48fc-4141-3aee-b13c" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="34f8-62a2-1945-0232" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
 </costs>
 </entryLink>
 <entryLink id="075f-1860-7c73-e968" name="Havoc Launcher" hidden="false" collective="false" import="true" targetId="e5ca-0747-ff5e-b3b5" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6769-b192-6abb-a93a" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
 </costs>
@@ -309,49 +291,31 @@
 </constraints>
 <entryLinks>
 <entryLink id="8c84-c384-7fd0-b689" name="Twin-linked Bolter" hidden="false" collective="false" import="true" targetId="6392-9914-afef-0ec5" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f79f-af29-6747-fe80" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
 </costs>
 </entryLink>
 <entryLink id="70ca-dbd5-2b82-3277" name="Combi-weapon" hidden="false" collective="false" import="true" targetId="d60b-3f04-a6b0-5846" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d9b2-9878-de48-c54c" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
 </costs>
 </entryLink>
 <entryLink id="7bfa-2e3b-7d05-1f8a" name="Heavy Bolter" hidden="false" collective="false" import="true" targetId="9151-5044-e482-04c9" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ae51-db20-94a7-063d" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
 </entryLink>
 <entryLink id="8885-0b14-2ca1-a7c2" name="Heavy Flamer" hidden="false" collective="false" import="true" targetId="9e6d-afcf-8202-e47c" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c3e1-2f4c-93b2-2fd1" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
 </entryLink>
 <entryLink id="8178-f1f2-3a6b-4524" name="Multi-Melta" hidden="false" collective="false" import="true" targetId="48fc-4141-3aee-b13c" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f874-6956-4e74-c0ea" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
 </costs>
 </entryLink>
 <entryLink id="e2ee-4f4b-61e4-565c" name="Havoc Launcher" hidden="false" collective="false" import="true" targetId="e5ca-0747-ff5e-b3b5" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eff8-a025-2559-c4eb" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
 </costs>
@@ -482,49 +446,31 @@
 </constraints>
 <entryLinks>
 <entryLink id="3857-7b38-c21a-9c59" name="Twin-linked Bolter" hidden="false" collective="false" import="true" targetId="6392-9914-afef-0ec5" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6d37-a59f-f62c-4d55" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
 </costs>
 </entryLink>
 <entryLink id="8c0e-85b7-c1a2-6b23" name="Combi-weapon" hidden="false" collective="false" import="true" targetId="d60b-3f04-a6b0-5846" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d9d8-24a2-49e3-4cb5" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
 </entryLink>
 <entryLink id="8352-98e1-e18e-9738" name="Heavy Flamer" hidden="false" collective="false" import="true" targetId="9e6d-afcf-8202-e47c" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="48ca-555c-ee2c-df7f" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
 </costs>
 </entryLink>
 <entryLink id="c60e-e118-1c1c-4099" name="Havoc Launcher" hidden="false" collective="false" import="true" targetId="e5ca-0747-ff5e-b3b5" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1f73-f87c-7ba8-fe3c" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
 </costs>
 </entryLink>
 <entryLink id="de62-e123-3e38-95b0" name="Heavy Bolter" hidden="false" collective="false" import="true" targetId="9151-5044-e482-04c9" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4cb8-6c73-f815-0a6c" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
 </costs>
 </entryLink>
 <entryLink id="7525-ff97-8353-3c39" name="Multi-Melta" hidden="false" collective="false" import="true" targetId="48fc-4141-3aee-b13c" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cbc6-6921-02b7-b94f" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
 </costs>
@@ -726,49 +672,31 @@
 </constraints>
 <entryLinks>
 <entryLink id="f9b4-9b8f-e930-68a8" name="Twin-linked Bolter" hidden="false" collective="false" import="true" targetId="6392-9914-afef-0ec5" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c74b-a9c6-e988-7d51" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
 </costs>
 </entryLink>
 <entryLink id="6c8f-2600-3458-0609" name="Combi-weapon" hidden="false" collective="false" import="true" targetId="d60b-3f04-a6b0-5846" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0a2b-bd0f-ec57-40f6" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
 </costs>
 </entryLink>
 <entryLink id="15bf-459e-51fd-a844" name="Heavy Bolter" hidden="false" collective="false" import="true" targetId="9151-5044-e482-04c9" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fe39-4982-5d13-b250" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
 </entryLink>
 <entryLink id="fd50-38d6-80de-1eb5" name="Heavy Flamer" hidden="false" collective="false" import="true" targetId="9e6d-afcf-8202-e47c" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="32cc-c1cb-635f-3c12" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
 </entryLink>
 <entryLink id="898a-af04-9554-9587" name="Multi-Melta" hidden="false" collective="false" import="true" targetId="48fc-4141-3aee-b13c" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d678-b087-306a-d1a6" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
 </costs>
 </entryLink>
 <entryLink id="bbb1-1351-da8d-fc7f" name="Havoc Launcher" hidden="false" collective="false" import="true" targetId="e5ca-0747-ff5e-b3b5" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="da85-2496-60b7-9529" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
 </costs>
@@ -941,41 +869,26 @@
 </constraints>
 <entryLinks>
 <entryLink id="309d-66ff-7763-2a5c" name="Twin-linked Bolter" hidden="false" collective="false" import="true" targetId="6392-9914-afef-0ec5" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="141c-d39e-a2ca-a15b" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
 </costs>
 </entryLink>
 <entryLink id="b426-ce68-bada-680e" name="Combi-weapon" hidden="false" collective="false" import="true" targetId="d60b-3f04-a6b0-5846" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1431-75f7-8d86-7648" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
 </entryLink>
 <entryLink id="ef18-de49-b755-5f7b" name="Heavy Flamer" hidden="false" collective="false" import="true" targetId="9e6d-afcf-8202-e47c" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="15f7-2f72-43cc-e3c9" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
 </costs>
 </entryLink>
 <entryLink id="74c0-e256-d81a-6cfc" name="Heavy Bolter" hidden="false" collective="false" import="true" targetId="9151-5044-e482-04c9" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9cbd-9fcd-33e5-5ad1" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
 </costs>
 </entryLink>
 <entryLink id="e954-37bd-1c94-6a3b" name="Multi-Melta" hidden="false" collective="false" import="true" targetId="48fc-4141-3aee-b13c" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="09c1-26c4-4795-6f4d" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
 </costs>
@@ -2149,49 +2062,31 @@
 </constraints>
 <entryLinks>
 <entryLink id="f910-8ce6-be57-9245" name="Twin-linked Bolter" hidden="false" collective="false" import="true" targetId="6392-9914-afef-0ec5" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3c32-2537-6f00-39b5" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
 </costs>
 </entryLink>
 <entryLink id="119c-1caa-1af0-8f35" name="Combi-weapon" hidden="false" collective="false" import="true" targetId="d60b-3f04-a6b0-5846" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="113d-98f4-669a-6249" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
 </entryLink>
 <entryLink id="b092-ebd5-2a88-0284" name="Heavy Flamer" hidden="false" collective="false" import="true" targetId="9e6d-afcf-8202-e47c" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d62b-a2fe-d7b8-449f" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
 </costs>
 </entryLink>
 <entryLink id="6fe2-9588-cf12-7b52" name="Heavy Bolter" hidden="false" collective="false" import="true" targetId="9151-5044-e482-04c9" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4be3-0a05-4c7d-6c8e" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
 </costs>
 </entryLink>
 <entryLink id="5904-d75f-7f42-6932" name="Multi-laser" hidden="false" collective="false" import="true" targetId="cf1d-775e-c275-a83e" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9f2b-d5d1-8deb-6ad4" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
 </costs>
 </entryLink>
 <entryLink id="c1ba-1734-e8df-0ae8" name="Multi-Melta" hidden="false" collective="false" import="true" targetId="48fc-4141-3aee-b13c" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eaa2-f286-da91-a3d9" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
 </costs>
@@ -3010,17 +2905,11 @@
 </constraints>
 <entryLinks>
 <entryLink id="a8bf-9c36-f09e-c624" name="Multi-laser" hidden="false" collective="false" import="true" targetId="cf1d-775e-c275-a83e" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f10f-828a-3de7-1665" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
 </entryLink>
 <entryLink id="84c7-edbc-59e8-7fa5" name="Heavy Flamer" hidden="false" collective="false" import="true" targetId="9e6d-afcf-8202-e47c" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3fb3-54fc-08c3-3040" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>

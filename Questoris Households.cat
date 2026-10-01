@@ -190,25 +190,16 @@
 </constraints>
 <entryLinks>
 <entryLink id="a544-7ee9-b244-e685" name="Ironstorm Missile Pod" hidden="false" collective="false" import="true" targetId="3329-24d0-cd42-1b74" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e68c-43e3-9789-ffe1" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
 </costs>
 </entryLink>
 <entryLink id="6665-f422-b179-7998" name="Twin Icarus Autocannon" hidden="false" collective="false" import="true" targetId="e2d3-88ad-ed9f-65de" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b214-152e-ce47-406c" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="35" />
 </costs>
 </entryLink>
 <entryLink id="f242-7037-de74-775b" name="Stormspear Rocket Pod" hidden="false" collective="false" import="true" targetId="e69d-69ec-b834-5532" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7047-9f06-e26d-9702" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="40" />
 </costs>
@@ -300,25 +291,16 @@
 </constraints>
 <entryLinks>
 <entryLink id="0990-d71c-9acf-5725" name="Ironstorm Missile Pod" hidden="false" collective="false" import="true" targetId="3329-24d0-cd42-1b74" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4c5c-5cb5-e510-2889" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
 </costs>
 </entryLink>
 <entryLink id="01a1-398b-dc5c-9839" name="Twin Icarus Autocannon" hidden="false" collective="false" import="true" targetId="e2d3-88ad-ed9f-65de" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="191a-710b-f091-87f0" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="35" />
 </costs>
 </entryLink>
 <entryLink id="b8dd-0cf2-a95e-a6f4" name="Stormspear Rocket Pod" hidden="false" collective="false" import="true" targetId="e69d-69ec-b834-5532" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ebbc-7d3a-4021-2d9c" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="40" />
 </costs>
@@ -440,25 +422,16 @@
 </constraints>
 <entryLinks>
 <entryLink id="c0e7-bb28-ca91-9c31" name="Ironstorm Missile Pod" hidden="false" collective="false" import="true" targetId="3329-24d0-cd42-1b74" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a85f-6ca9-e586-e1e6" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
 </costs>
 </entryLink>
 <entryLink id="47be-7b74-2b02-108e" name="Twin Icarus Autocannon" hidden="false" collective="false" import="true" targetId="e2d3-88ad-ed9f-65de" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f03a-c040-c9b0-7a4f" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="35" />
 </costs>
 </entryLink>
 <entryLink id="63e4-ca78-2ba7-22e3" name="Stormspear Rocket Pod" hidden="false" collective="false" import="true" targetId="e69d-69ec-b834-5532" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="71fb-5b35-0d2f-f338" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="40" />
 </costs>
@@ -576,25 +549,16 @@
 </constraints>
 <entryLinks>
 <entryLink id="6c47-826b-6db0-0408" name="Ironstorm Missile Pod" hidden="false" collective="false" import="true" targetId="3329-24d0-cd42-1b74" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d51a-b8f7-cac1-ad20" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
 </costs>
 </entryLink>
 <entryLink id="5f43-24a1-c5d6-ee9f" name="Twin Icarus Autocannon" hidden="false" collective="false" import="true" targetId="e2d3-88ad-ed9f-65de" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e28e-4549-01f3-2f99" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="35" />
 </costs>
 </entryLink>
 <entryLink id="d699-cd95-315c-15e2" name="Stormspear Rocket Pod" hidden="false" collective="false" import="true" targetId="e69d-69ec-b834-5532" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="da2b-c82d-2fa7-af1c" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="40" />
 </costs>
@@ -761,25 +725,16 @@
 </constraints>
 <entryLinks>
 <entryLink id="5e62-db71-92bd-2d41" name="Ironstorm Missile Pod" hidden="false" collective="false" import="true" targetId="3329-24d0-cd42-1b74" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c5e9-1d81-03ae-91ca" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
 </costs>
 </entryLink>
 <entryLink id="fabc-8f78-f242-d5f0" name="Twin Icarus Autocannon" hidden="false" collective="false" import="true" targetId="e2d3-88ad-ed9f-65de" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="11c8-d392-e2fa-42f6" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="35" />
 </costs>
 </entryLink>
 <entryLink id="5900-440a-6dce-3357" name="Stormspear Rocket Pod" hidden="false" collective="false" import="true" targetId="e69d-69ec-b834-5532" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6991-76f5-fda5-358d" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="40" />
 </costs>
@@ -1610,25 +1565,16 @@
 </constraints>
 <entryLinks>
 <entryLink id="7792-0757-5df2-0607" name="Ironstorm Missile Pod" hidden="false" collective="false" import="true" targetId="3329-24d0-cd42-1b74" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ed37-5f44-8888-c92f" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
 </costs>
 </entryLink>
 <entryLink id="3cd1-6068-9b89-d526" name="Twin Icarus Autocannon" hidden="false" collective="false" import="true" targetId="e2d3-88ad-ed9f-65de" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="30fd-3e9c-0d3d-e199" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="35" />
 </costs>
 </entryLink>
 <entryLink id="db9f-5303-67aa-8c33" name="Stormspear Rocket Pod" hidden="false" collective="false" import="true" targetId="e69d-69ec-b834-5532" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4518-0674-e1cb-098a" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="40" />
 </costs>
@@ -1720,25 +1666,16 @@
 </constraints>
 <entryLinks>
 <entryLink id="793f-c6a1-887c-0bf6" name="Ironstorm Missile Pod" hidden="false" collective="false" import="true" targetId="3329-24d0-cd42-1b74" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="be2f-d948-545e-f5f4" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
 </costs>
 </entryLink>
 <entryLink id="ceed-9994-d4a0-85f9" name="Twin Icarus Autocannon" hidden="false" collective="false" import="true" targetId="e2d3-88ad-ed9f-65de" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3279-7fc8-1437-0648" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="35" />
 </costs>
 </entryLink>
 <entryLink id="bfd9-6e3f-76b7-a758" name="Stormspear Rocket Pod" hidden="false" collective="false" import="true" targetId="e69d-69ec-b834-5532" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b4eb-bdb9-58bb-eb74" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="40" />
 </costs>
@@ -1860,25 +1797,16 @@
 </constraints>
 <entryLinks>
 <entryLink id="e319-83f5-9c6b-62b1" name="Ironstorm Missile Pod" hidden="false" collective="false" import="true" targetId="3329-24d0-cd42-1b74" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6d87-7946-b6f1-2b9e" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
 </costs>
 </entryLink>
 <entryLink id="a25d-fe8b-7e1d-87f1" name="Twin Icarus Autocannon" hidden="false" collective="false" import="true" targetId="e2d3-88ad-ed9f-65de" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ffde-088e-475f-010c" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="35" />
 </costs>
 </entryLink>
 <entryLink id="c800-4825-979e-331b" name="Stormspear Rocket Pod" hidden="false" collective="false" import="true" targetId="e69d-69ec-b834-5532" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="efd3-4ca8-1e60-5a20" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="40" />
 </costs>
@@ -1996,25 +1924,16 @@
 </constraints>
 <entryLinks>
 <entryLink id="6bd2-3bf8-8b40-9776" name="Ironstorm Missile Pod" hidden="false" collective="false" import="true" targetId="3329-24d0-cd42-1b74" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6d9f-ff0b-07d5-35d0" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
 </costs>
 </entryLink>
 <entryLink id="935b-91d0-bd1e-55f1" name="Twin Icarus Autocannon" hidden="false" collective="false" import="true" targetId="e2d3-88ad-ed9f-65de" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6180-1e9c-c932-fedd" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="35" />
 </costs>
 </entryLink>
 <entryLink id="db4e-8743-a680-8f27" name="Stormspear Rocket Pod" hidden="false" collective="false" import="true" targetId="e69d-69ec-b834-5532" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8555-832d-50da-79db" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="40" />
 </costs>
@@ -2181,25 +2100,16 @@
 </constraints>
 <entryLinks>
 <entryLink id="da3a-d8a7-85f8-104e" name="Ironstorm Missile Pod" hidden="false" collective="false" import="true" targetId="3329-24d0-cd42-1b74" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="777f-bd88-dec5-f399" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
 </costs>
 </entryLink>
 <entryLink id="ca05-35eb-b0d1-e190" name="Twin Icarus Autocannon" hidden="false" collective="false" import="true" targetId="e2d3-88ad-ed9f-65de" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6aa1-8ff2-ff4d-53ab" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="35" />
 </costs>
 </entryLink>
 <entryLink id="776c-ac71-2322-a52c" name="Stormspear Rocket Pod" hidden="false" collective="false" import="true" targetId="e69d-69ec-b834-5532" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0ea9-a775-4a71-60ab" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="40" />
 </costs>
@@ -3028,25 +2938,16 @@
 </constraints>
 <entryLinks>
 <entryLink id="84f0-d2ad-f502-be4e" name="Ironstorm Missile Pod" hidden="false" collective="false" import="true" targetId="3329-24d0-cd42-1b74" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6e7d-d93a-039d-2045" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
 </costs>
 </entryLink>
 <entryLink id="8878-87cd-bcab-359c" name="Twin Icarus Autocannon" hidden="false" collective="false" import="true" targetId="e2d3-88ad-ed9f-65de" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8137-8fe3-9cf6-416d" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="35" />
 </costs>
 </entryLink>
 <entryLink id="413c-126d-c218-a924" name="Stormspear Rocket Pod" hidden="false" collective="false" import="true" targetId="e69d-69ec-b834-5532" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="24d7-7f66-f9f3-8e16" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="40" />
 </costs>
@@ -3138,25 +3039,16 @@
 </constraints>
 <entryLinks>
 <entryLink id="1b32-6546-cff5-f9ec" name="Ironstorm Missile Pod" hidden="false" collective="false" import="true" targetId="3329-24d0-cd42-1b74" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f187-6d83-a15d-91a8" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
 </costs>
 </entryLink>
 <entryLink id="7b20-46a3-3fd4-6914" name="Twin Icarus Autocannon" hidden="false" collective="false" import="true" targetId="e2d3-88ad-ed9f-65de" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7b9f-27d2-af37-3dea" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="35" />
 </costs>
 </entryLink>
 <entryLink id="2fb9-7fb8-d259-cb6f" name="Stormspear Rocket Pod" hidden="false" collective="false" import="true" targetId="e69d-69ec-b834-5532" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8591-de4c-8c91-be50" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="40" />
 </costs>
@@ -3278,25 +3170,16 @@
 </constraints>
 <entryLinks>
 <entryLink id="73d2-6ae5-1e57-1953" name="Ironstorm Missile Pod" hidden="false" collective="false" import="true" targetId="3329-24d0-cd42-1b74" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c32a-589a-0f3f-acf3" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
 </costs>
 </entryLink>
 <entryLink id="2314-d35e-e21d-bf1c" name="Twin Icarus Autocannon" hidden="false" collective="false" import="true" targetId="e2d3-88ad-ed9f-65de" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d0e0-7218-2525-28ab" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="35" />
 </costs>
 </entryLink>
 <entryLink id="653c-d8e7-7dc8-0386" name="Stormspear Rocket Pod" hidden="false" collective="false" import="true" targetId="e69d-69ec-b834-5532" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7074-d276-ae32-0ad2" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="40" />
 </costs>
@@ -3414,25 +3297,16 @@
 </constraints>
 <entryLinks>
 <entryLink id="ab9a-e06d-ea7a-eca8" name="Ironstorm Missile Pod" hidden="false" collective="false" import="true" targetId="3329-24d0-cd42-1b74" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e168-e735-6c31-9568" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
 </costs>
 </entryLink>
 <entryLink id="9571-149b-9d54-fd70" name="Twin Icarus Autocannon" hidden="false" collective="false" import="true" targetId="e2d3-88ad-ed9f-65de" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="78a8-d861-94e0-1644" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="35" />
 </costs>
 </entryLink>
 <entryLink id="9199-dcde-99f9-2f28" name="Stormspear Rocket Pod" hidden="false" collective="false" import="true" targetId="e69d-69ec-b834-5532" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f414-bcdc-2195-4bbc" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="40" />
 </costs>
@@ -3599,25 +3473,16 @@
 </constraints>
 <entryLinks>
 <entryLink id="ac49-a8c8-525e-d072" name="Ironstorm Missile Pod" hidden="false" collective="false" import="true" targetId="3329-24d0-cd42-1b74" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="90e7-9f46-dc5d-6843" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
 </costs>
 </entryLink>
 <entryLink id="96fa-c59b-b6cd-2b23" name="Twin Icarus Autocannon" hidden="false" collective="false" import="true" targetId="e2d3-88ad-ed9f-65de" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6cd2-9f31-ac13-fccc" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="35" />
 </costs>
 </entryLink>
 <entryLink id="24f3-7001-87f1-d404" name="Stormspear Rocket Pod" hidden="false" collective="false" import="true" targetId="e69d-69ec-b834-5532" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e0ac-d710-04a6-f64b" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="40" />
 </costs>
@@ -4315,25 +4180,16 @@
 </constraints>
 <entryLinks>
 <entryLink id="fb42-a127-9a28-a3db" name="Ironstorm Missile Pod" hidden="false" collective="false" import="true" targetId="3329-24d0-cd42-1b74" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5eb6-7048-f63d-1fda" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
 </costs>
 </entryLink>
 <entryLink id="03cb-d674-415d-a0ad" name="Twin Icarus Autocannon" hidden="false" collective="false" import="true" targetId="e2d3-88ad-ed9f-65de" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ce84-ff38-4b88-d9a8" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="35" />
 </costs>
 </entryLink>
 <entryLink id="cb3e-3dcd-2771-d65e" name="Stormspear Rocket Pod" hidden="false" collective="false" import="true" targetId="e69d-69ec-b834-5532" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c304-9433-19fd-b1c3" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="40" />
 </costs>
@@ -4425,25 +4281,16 @@
 </constraints>
 <entryLinks>
 <entryLink id="ce16-c03e-8d9c-5325" name="Ironstorm Missile Pod" hidden="false" collective="false" import="true" targetId="3329-24d0-cd42-1b74" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ac25-2be8-a2f6-64cf" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
 </costs>
 </entryLink>
 <entryLink id="157f-e958-843c-d736" name="Twin Icarus Autocannon" hidden="false" collective="false" import="true" targetId="e2d3-88ad-ed9f-65de" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5a71-4ee6-e761-bae4" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="35" />
 </costs>
 </entryLink>
 <entryLink id="b8db-f4cf-21e0-3d41" name="Stormspear Rocket Pod" hidden="false" collective="false" import="true" targetId="e69d-69ec-b834-5532" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3ead-6ad8-de99-de09" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="40" />
 </costs>
@@ -4565,25 +4412,16 @@
 </constraints>
 <entryLinks>
 <entryLink id="5b18-3ac0-15df-d59c" name="Ironstorm Missile Pod" hidden="false" collective="false" import="true" targetId="3329-24d0-cd42-1b74" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a522-2a19-d845-1141" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
 </costs>
 </entryLink>
 <entryLink id="aff7-4099-475b-c7b9" name="Twin Icarus Autocannon" hidden="false" collective="false" import="true" targetId="e2d3-88ad-ed9f-65de" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5386-b94c-a138-4c8d" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="35" />
 </costs>
 </entryLink>
 <entryLink id="4e4f-1202-eb40-9f8f" name="Stormspear Rocket Pod" hidden="false" collective="false" import="true" targetId="e69d-69ec-b834-5532" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="db9b-3d79-652b-a30e" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="40" />
 </costs>
@@ -4701,25 +4539,16 @@
 </constraints>
 <entryLinks>
 <entryLink id="2100-dfbc-56d3-24fa" name="Ironstorm Missile Pod" hidden="false" collective="false" import="true" targetId="3329-24d0-cd42-1b74" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7aeb-ae2d-2880-c55d" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
 </costs>
 </entryLink>
 <entryLink id="0dbe-6838-0275-00c0" name="Twin Icarus Autocannon" hidden="false" collective="false" import="true" targetId="e2d3-88ad-ed9f-65de" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="213c-1ec7-5b06-67bc" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="35" />
 </costs>
 </entryLink>
 <entryLink id="2302-8506-10d2-ea1c" name="Stormspear Rocket Pod" hidden="false" collective="false" import="true" targetId="e69d-69ec-b834-5532" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="01ba-45ef-1ba2-57fc" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="40" />
 </costs>
@@ -4886,25 +4715,16 @@
 </constraints>
 <entryLinks>
 <entryLink id="a844-df91-32ec-a05d" name="Ironstorm Missile Pod" hidden="false" collective="false" import="true" targetId="3329-24d0-cd42-1b74" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7176-4da1-e5d6-33c7" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
 </costs>
 </entryLink>
 <entryLink id="e0d3-b85d-717c-e252" name="Twin Icarus Autocannon" hidden="false" collective="false" import="true" targetId="e2d3-88ad-ed9f-65de" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a424-baf8-21ae-3f89" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="35" />
 </costs>
 </entryLink>
 <entryLink id="e5a4-f455-a1d5-b0c0" name="Stormspear Rocket Pod" hidden="false" collective="false" import="true" targetId="e69d-69ec-b834-5532" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="448f-1238-7936-7e76" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="40" />
 </costs>
@@ -5550,25 +5370,16 @@
 </constraints>
 <entryLinks>
 <entryLink id="9f7d-e305-fa15-1628" name="Ironstorm Missile Pod" hidden="false" collective="false" import="true" targetId="3329-24d0-cd42-1b74" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9586-5cd9-21ac-7881" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
 </costs>
 </entryLink>
 <entryLink id="b21b-d570-aea6-8f5b" name="Twin Icarus Autocannon" hidden="false" collective="false" import="true" targetId="e2d3-88ad-ed9f-65de" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9922-86bf-19a9-4ad5" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="35" />
 </costs>
 </entryLink>
 <entryLink id="c324-6043-cf80-cfd7" name="Stormspear Rocket Pod" hidden="false" collective="false" import="true" targetId="e69d-69ec-b834-5532" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ec9a-a5b7-dc86-89c9" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="40" />
 </costs>
@@ -5660,25 +5471,16 @@
 </constraints>
 <entryLinks>
 <entryLink id="63f9-3b9b-fb36-e2ee" name="Ironstorm Missile Pod" hidden="false" collective="false" import="true" targetId="3329-24d0-cd42-1b74" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7599-6f65-dc5e-5278" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
 </costs>
 </entryLink>
 <entryLink id="ea3d-6031-4106-7d05" name="Twin Icarus Autocannon" hidden="false" collective="false" import="true" targetId="e2d3-88ad-ed9f-65de" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="94b0-8e2c-590e-1101" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="35" />
 </costs>
 </entryLink>
 <entryLink id="d8d8-0533-4140-2fea" name="Stormspear Rocket Pod" hidden="false" collective="false" import="true" targetId="e69d-69ec-b834-5532" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c17e-5cc9-7350-1628" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="40" />
 </costs>
@@ -5800,25 +5602,16 @@
 </constraints>
 <entryLinks>
 <entryLink id="b34e-a950-28e1-fb9b" name="Ironstorm Missile Pod" hidden="false" collective="false" import="true" targetId="3329-24d0-cd42-1b74" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="225e-8ba2-861a-0cca" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
 </costs>
 </entryLink>
 <entryLink id="675a-d808-71c5-b192" name="Twin Icarus Autocannon" hidden="false" collective="false" import="true" targetId="e2d3-88ad-ed9f-65de" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e386-25d6-5d05-b380" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="35" />
 </costs>
 </entryLink>
 <entryLink id="4f7a-2183-1fcc-ba32" name="Stormspear Rocket Pod" hidden="false" collective="false" import="true" targetId="e69d-69ec-b834-5532" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="00f1-6168-555f-2e16" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="40" />
 </costs>
@@ -5936,25 +5729,16 @@
 </constraints>
 <entryLinks>
 <entryLink id="4c98-ec40-81e4-851d" name="Ironstorm Missile Pod" hidden="false" collective="false" import="true" targetId="3329-24d0-cd42-1b74" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d84c-4618-1d3d-2d92" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
 </costs>
 </entryLink>
 <entryLink id="b954-eb72-cefa-575c" name="Twin Icarus Autocannon" hidden="false" collective="false" import="true" targetId="e2d3-88ad-ed9f-65de" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9425-a29e-e427-d805" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="35" />
 </costs>
 </entryLink>
 <entryLink id="5150-265b-c85f-5645" name="Stormspear Rocket Pod" hidden="false" collective="false" import="true" targetId="e69d-69ec-b834-5532" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3238-966d-6f53-7b13" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="40" />
 </costs>
@@ -6121,25 +5905,16 @@
 </constraints>
 <entryLinks>
 <entryLink id="5e6f-353f-ac8e-b6a7" name="Ironstorm Missile Pod" hidden="false" collective="false" import="true" targetId="3329-24d0-cd42-1b74" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0681-2072-94f9-e8c7" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
 </costs>
 </entryLink>
 <entryLink id="b3d7-ed26-cfa8-ff36" name="Twin Icarus Autocannon" hidden="false" collective="false" import="true" targetId="e2d3-88ad-ed9f-65de" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="022f-ab88-8638-8713" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="35" />
 </costs>
 </entryLink>
 <entryLink id="2af0-80b0-af1d-02af" name="Stormspear Rocket Pod" hidden="false" collective="false" import="true" targetId="e69d-69ec-b834-5532" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3a10-9321-3eb7-eda2" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="40" />
 </costs>
@@ -6969,25 +6744,16 @@
 </constraints>
 <entryLinks>
 <entryLink id="5463-1d78-8c7e-6e6f" name="Ironstorm Missile Pod" hidden="false" collective="false" import="true" targetId="3329-24d0-cd42-1b74" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8d33-28b8-e7b5-cdd4" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
 </costs>
 </entryLink>
 <entryLink id="c7f1-cd0f-644a-4ba8" name="Twin Icarus Autocannon" hidden="false" collective="false" import="true" targetId="e2d3-88ad-ed9f-65de" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="af41-cbd6-8a3f-c951" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="35" />
 </costs>
 </entryLink>
 <entryLink id="55e2-dfdd-9e7e-f270" name="Stormspear Rocket Pod" hidden="false" collective="false" import="true" targetId="e69d-69ec-b834-5532" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="97bb-5ea9-d761-8591" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="40" />
 </costs>
@@ -7079,25 +6845,16 @@
 </constraints>
 <entryLinks>
 <entryLink id="b618-ee5a-8640-f536" name="Ironstorm Missile Pod" hidden="false" collective="false" import="true" targetId="3329-24d0-cd42-1b74" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b572-dfd9-0a31-d839" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
 </costs>
 </entryLink>
 <entryLink id="b8b7-66d7-0e1b-fc8d" name="Twin Icarus Autocannon" hidden="false" collective="false" import="true" targetId="e2d3-88ad-ed9f-65de" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="12ca-258c-4d04-b404" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="35" />
 </costs>
 </entryLink>
 <entryLink id="dc48-8477-ef25-417b" name="Stormspear Rocket Pod" hidden="false" collective="false" import="true" targetId="e69d-69ec-b834-5532" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="66de-a56a-5cc0-c189" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="40" />
 </costs>
@@ -7219,25 +6976,16 @@
 </constraints>
 <entryLinks>
 <entryLink id="9d99-afb5-6f77-7aa5" name="Ironstorm Missile Pod" hidden="false" collective="false" import="true" targetId="3329-24d0-cd42-1b74" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="deb4-3008-a93d-5c30" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
 </costs>
 </entryLink>
 <entryLink id="1a71-cd20-c3ee-d27d" name="Twin Icarus Autocannon" hidden="false" collective="false" import="true" targetId="e2d3-88ad-ed9f-65de" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a449-64a2-7845-1a0f" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="35" />
 </costs>
 </entryLink>
 <entryLink id="7c3a-4356-8669-aa7c" name="Stormspear Rocket Pod" hidden="false" collective="false" import="true" targetId="e69d-69ec-b834-5532" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="912f-922a-d77b-c83c" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="40" />
 </costs>
@@ -7355,25 +7103,16 @@
 </constraints>
 <entryLinks>
 <entryLink id="dbe8-95d6-ee25-4b8c" name="Ironstorm Missile Pod" hidden="false" collective="false" import="true" targetId="3329-24d0-cd42-1b74" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="96b7-0cfa-68a3-3845" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
 </costs>
 </entryLink>
 <entryLink id="8fbb-27c2-5979-e78e" name="Twin Icarus Autocannon" hidden="false" collective="false" import="true" targetId="e2d3-88ad-ed9f-65de" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5e26-101b-af3b-5f3e" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="35" />
 </costs>
 </entryLink>
 <entryLink id="0a0d-e4d3-776a-297e" name="Stormspear Rocket Pod" hidden="false" collective="false" import="true" targetId="e69d-69ec-b834-5532" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2c3c-0e6b-433c-847c" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="40" />
 </costs>
@@ -7540,25 +7279,16 @@
 </constraints>
 <entryLinks>
 <entryLink id="d0bf-99ce-5681-6723" name="Ironstorm Missile Pod" hidden="false" collective="false" import="true" targetId="3329-24d0-cd42-1b74" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0eb2-6afb-ca8a-07a9" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
 </costs>
 </entryLink>
 <entryLink id="5497-0bb8-8280-0b12" name="Twin Icarus Autocannon" hidden="false" collective="false" import="true" targetId="e2d3-88ad-ed9f-65de" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e61d-4f1d-f9b4-4f96" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="35" />
 </costs>
 </entryLink>
 <entryLink id="134c-87fd-2176-1de9" name="Stormspear Rocket Pod" hidden="false" collective="false" import="true" targetId="e69d-69ec-b834-5532" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1035-03af-b9ea-cfee" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="40" />
 </costs>
@@ -8205,25 +7935,16 @@
 </constraints>
 <entryLinks>
 <entryLink id="643d-f4d3-bbbe-7dd9" name="Ironstorm Missile Pod" hidden="false" collective="false" import="true" targetId="3329-24d0-cd42-1b74" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c2ea-a3c7-5499-f158" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
 </costs>
 </entryLink>
 <entryLink id="c880-45fc-5c1f-e7ad" name="Twin Icarus Autocannon" hidden="false" collective="false" import="true" targetId="e2d3-88ad-ed9f-65de" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a38e-bb75-be6f-4b54" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="35" />
 </costs>
 </entryLink>
 <entryLink id="1ae1-b061-dc8d-6a11" name="Stormspear Rocket Pod" hidden="false" collective="false" import="true" targetId="e69d-69ec-b834-5532" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f734-53f3-cc7e-1b63" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="40" />
 </costs>
@@ -8315,25 +8036,16 @@
 </constraints>
 <entryLinks>
 <entryLink id="68a1-f5d6-95b3-8371" name="Ironstorm Missile Pod" hidden="false" collective="false" import="true" targetId="3329-24d0-cd42-1b74" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="671e-c222-6cc3-ebc3" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
 </costs>
 </entryLink>
 <entryLink id="9bea-e3bf-46a6-defb" name="Twin Icarus Autocannon" hidden="false" collective="false" import="true" targetId="e2d3-88ad-ed9f-65de" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="19f9-d74f-abb1-0722" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="35" />
 </costs>
 </entryLink>
 <entryLink id="41bc-e84c-de56-a2e5" name="Stormspear Rocket Pod" hidden="false" collective="false" import="true" targetId="e69d-69ec-b834-5532" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="89ee-33c5-ec3d-922e" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="40" />
 </costs>
@@ -8455,25 +8167,16 @@
 </constraints>
 <entryLinks>
 <entryLink id="c742-fa66-2f70-042f" name="Ironstorm Missile Pod" hidden="false" collective="false" import="true" targetId="3329-24d0-cd42-1b74" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6c6a-c3a2-8fea-3f26" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
 </costs>
 </entryLink>
 <entryLink id="80d3-c773-6fba-5468" name="Twin Icarus Autocannon" hidden="false" collective="false" import="true" targetId="e2d3-88ad-ed9f-65de" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a7e1-e239-cfbe-1a50" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="35" />
 </costs>
 </entryLink>
 <entryLink id="09d3-7078-450b-e0c3" name="Stormspear Rocket Pod" hidden="false" collective="false" import="true" targetId="e69d-69ec-b834-5532" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bb9a-011e-86a9-e468" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="40" />
 </costs>
@@ -8591,25 +8294,16 @@
 </constraints>
 <entryLinks>
 <entryLink id="f38c-57d7-626b-595e" name="Ironstorm Missile Pod" hidden="false" collective="false" import="true" targetId="3329-24d0-cd42-1b74" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="65d8-61e8-b377-41ca" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
 </costs>
 </entryLink>
 <entryLink id="8de8-f342-a71a-267b" name="Twin Icarus Autocannon" hidden="false" collective="false" import="true" targetId="e2d3-88ad-ed9f-65de" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1380-8cbd-e1d2-4e9c" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="35" />
 </costs>
 </entryLink>
 <entryLink id="60cd-c602-b956-f465" name="Stormspear Rocket Pod" hidden="false" collective="false" import="true" targetId="e69d-69ec-b834-5532" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3c16-2ad6-ecb0-858b" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="40" />
 </costs>
@@ -8776,25 +8470,16 @@
 </constraints>
 <entryLinks>
 <entryLink id="0b87-175e-1ec3-2aea" name="Ironstorm Missile Pod" hidden="false" collective="false" import="true" targetId="3329-24d0-cd42-1b74" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b61f-f9f4-bd35-3436" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
 </costs>
 </entryLink>
 <entryLink id="e0c4-4b95-aade-ac92" name="Twin Icarus Autocannon" hidden="false" collective="false" import="true" targetId="e2d3-88ad-ed9f-65de" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e201-537a-96ba-b929" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="35" />
 </costs>
 </entryLink>
 <entryLink id="f663-7778-1221-c29f" name="Stormspear Rocket Pod" hidden="false" collective="false" import="true" targetId="e69d-69ec-b834-5532" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="07a2-6bab-2109-35a2" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="40" />
 </costs>
@@ -9625,25 +9310,16 @@
 </constraints>
 <entryLinks>
 <entryLink id="ed48-5657-04d9-1f4e" name="Ironstorm Missile Pod" hidden="false" collective="false" import="true" targetId="3329-24d0-cd42-1b74" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7aab-1be9-49fb-9a70" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
 </costs>
 </entryLink>
 <entryLink id="ab4a-b1f6-b39d-9186" name="Twin Icarus Autocannon" hidden="false" collective="false" import="true" targetId="e2d3-88ad-ed9f-65de" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c60e-d34f-f3e9-f330" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="35" />
 </costs>
 </entryLink>
 <entryLink id="b233-776c-2b88-557d" name="Stormspear Rocket Pod" hidden="false" collective="false" import="true" targetId="e69d-69ec-b834-5532" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d033-39a0-629d-d953" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="40" />
 </costs>
@@ -9735,25 +9411,16 @@
 </constraints>
 <entryLinks>
 <entryLink id="9581-8bdb-b523-356c" name="Ironstorm Missile Pod" hidden="false" collective="false" import="true" targetId="3329-24d0-cd42-1b74" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="49f2-61b3-7a69-5da4" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
 </costs>
 </entryLink>
 <entryLink id="5c9c-897d-a970-b30e" name="Twin Icarus Autocannon" hidden="false" collective="false" import="true" targetId="e2d3-88ad-ed9f-65de" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9112-9c7b-1d97-8fb9" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="35" />
 </costs>
 </entryLink>
 <entryLink id="2a58-fdb8-7463-d51a" name="Stormspear Rocket Pod" hidden="false" collective="false" import="true" targetId="e69d-69ec-b834-5532" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="209e-bc04-99c0-3092" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="40" />
 </costs>
@@ -9875,25 +9542,16 @@
 </constraints>
 <entryLinks>
 <entryLink id="2582-1feb-2246-a3c9" name="Ironstorm Missile Pod" hidden="false" collective="false" import="true" targetId="3329-24d0-cd42-1b74" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b136-67c9-321c-1184" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
 </costs>
 </entryLink>
 <entryLink id="4695-5790-0547-9894" name="Twin Icarus Autocannon" hidden="false" collective="false" import="true" targetId="e2d3-88ad-ed9f-65de" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4e79-8a21-28bf-5a6e" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="35" />
 </costs>
 </entryLink>
 <entryLink id="91f0-f0d6-7098-f0a5" name="Stormspear Rocket Pod" hidden="false" collective="false" import="true" targetId="e69d-69ec-b834-5532" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2080-968d-33c9-f0c4" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="40" />
 </costs>
@@ -10011,25 +9669,16 @@
 </constraints>
 <entryLinks>
 <entryLink id="6e0f-434e-fc5a-bf34" name="Ironstorm Missile Pod" hidden="false" collective="false" import="true" targetId="3329-24d0-cd42-1b74" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2110-0875-6253-452a" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
 </costs>
 </entryLink>
 <entryLink id="4766-210a-6f2d-d57c" name="Twin Icarus Autocannon" hidden="false" collective="false" import="true" targetId="e2d3-88ad-ed9f-65de" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5475-b73f-2ed3-90b3" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="35" />
 </costs>
 </entryLink>
 <entryLink id="ee93-8600-161c-0ce1" name="Stormspear Rocket Pod" hidden="false" collective="false" import="true" targetId="e69d-69ec-b834-5532" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a1b6-ad2c-6d6f-c63d" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="40" />
 </costs>
@@ -10196,25 +9845,16 @@
 </constraints>
 <entryLinks>
 <entryLink id="24d5-f556-1e48-ba20" name="Ironstorm Missile Pod" hidden="false" collective="false" import="true" targetId="3329-24d0-cd42-1b74" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d496-a508-9f96-0670" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
 </costs>
 </entryLink>
 <entryLink id="25d5-564f-045b-78ae" name="Twin Icarus Autocannon" hidden="false" collective="false" import="true" targetId="e2d3-88ad-ed9f-65de" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aa23-fd62-718c-2bc3" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="35" />
 </costs>
 </entryLink>
 <entryLink id="ac6f-50ae-f816-792d" name="Stormspear Rocket Pod" hidden="false" collective="false" import="true" targetId="e69d-69ec-b834-5532" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f640-ce9e-79a2-bc20" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="40" />
 </costs>
@@ -11042,25 +10682,16 @@
 </constraints>
 <entryLinks>
 <entryLink id="b37a-3acb-3673-ff96" name="Ironstorm Missile Pod" hidden="false" collective="false" import="true" targetId="3329-24d0-cd42-1b74" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b6c2-615c-b4d7-4cd7" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
 </costs>
 </entryLink>
 <entryLink id="ba59-b5c1-aa1a-8ddb" name="Twin Icarus Autocannon" hidden="false" collective="false" import="true" targetId="e2d3-88ad-ed9f-65de" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="82c7-560d-817f-f5c0" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="35" />
 </costs>
 </entryLink>
 <entryLink id="a59b-b9cb-37b1-4569" name="Stormspear Rocket Pod" hidden="false" collective="false" import="true" targetId="e69d-69ec-b834-5532" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e50b-db4d-dd68-b72e" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="40" />
 </costs>
@@ -11152,25 +10783,16 @@
 </constraints>
 <entryLinks>
 <entryLink id="2d37-8a61-e898-bfa6" name="Ironstorm Missile Pod" hidden="false" collective="false" import="true" targetId="3329-24d0-cd42-1b74" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="22bc-aa19-55f1-7e01" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
 </costs>
 </entryLink>
 <entryLink id="237a-5c9f-c2f5-d79b" name="Twin Icarus Autocannon" hidden="false" collective="false" import="true" targetId="e2d3-88ad-ed9f-65de" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1acc-4c51-35e5-d1bb" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="35" />
 </costs>
 </entryLink>
 <entryLink id="ea48-67b2-8214-d6f4" name="Stormspear Rocket Pod" hidden="false" collective="false" import="true" targetId="e69d-69ec-b834-5532" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a106-b16a-12f5-c404" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="40" />
 </costs>
@@ -11292,25 +10914,16 @@
 </constraints>
 <entryLinks>
 <entryLink id="dac8-08b1-2ee1-f76f" name="Ironstorm Missile Pod" hidden="false" collective="false" import="true" targetId="3329-24d0-cd42-1b74" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6fd4-b26e-07de-0188" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
 </costs>
 </entryLink>
 <entryLink id="8ad9-ac4e-3e08-db43" name="Twin Icarus Autocannon" hidden="false" collective="false" import="true" targetId="e2d3-88ad-ed9f-65de" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ec56-ed07-6610-f270" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="35" />
 </costs>
 </entryLink>
 <entryLink id="57e9-0f68-5782-08c0" name="Stormspear Rocket Pod" hidden="false" collective="false" import="true" targetId="e69d-69ec-b834-5532" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fc80-2bdf-84e4-46ad" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="40" />
 </costs>
@@ -11428,25 +11041,16 @@
 </constraints>
 <entryLinks>
 <entryLink id="9a77-3b0a-e4cd-beb9" name="Ironstorm Missile Pod" hidden="false" collective="false" import="true" targetId="3329-24d0-cd42-1b74" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6f4c-d84c-a510-8586" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
 </costs>
 </entryLink>
 <entryLink id="4896-aa99-b3c9-f718" name="Twin Icarus Autocannon" hidden="false" collective="false" import="true" targetId="e2d3-88ad-ed9f-65de" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cabc-2f3c-da10-ff41" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="35" />
 </costs>
 </entryLink>
 <entryLink id="64d7-6d49-a2bd-f071" name="Stormspear Rocket Pod" hidden="false" collective="false" import="true" targetId="e69d-69ec-b834-5532" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c896-6e7a-8c18-a4b0" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="40" />
 </costs>
@@ -11613,25 +11217,16 @@
 </constraints>
 <entryLinks>
 <entryLink id="65ca-9e30-c8d1-fd18" name="Ironstorm Missile Pod" hidden="false" collective="false" import="true" targetId="3329-24d0-cd42-1b74" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f82a-2473-58ba-a6c8" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
 </costs>
 </entryLink>
 <entryLink id="356e-d9e9-ed2e-d50a" name="Twin Icarus Autocannon" hidden="false" collective="false" import="true" targetId="e2d3-88ad-ed9f-65de" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b9ff-c9fa-0688-8994" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="35" />
 </costs>
 </entryLink>
 <entryLink id="7322-ef7d-8ee7-6a63" name="Stormspear Rocket Pod" hidden="false" collective="false" import="true" targetId="e69d-69ec-b834-5532" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="de26-3a5a-3666-56bd" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="40" />
 </costs>
@@ -12461,25 +12056,16 @@
 </constraints>
 <entryLinks>
 <entryLink id="3fb8-8af9-85e1-9367" name="Ironstorm Missile Pod" hidden="false" collective="false" import="true" targetId="3329-24d0-cd42-1b74" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="23fb-b6af-e101-29a0" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
 </costs>
 </entryLink>
 <entryLink id="4ea6-a025-c819-8311" name="Twin Icarus Autocannon" hidden="false" collective="false" import="true" targetId="e2d3-88ad-ed9f-65de" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d2b5-673c-33e7-c37a" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="35" />
 </costs>
 </entryLink>
 <entryLink id="8887-0e09-c6fa-9059" name="Stormspear Rocket Pod" hidden="false" collective="false" import="true" targetId="e69d-69ec-b834-5532" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="be25-1bed-c1f1-13fc" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="40" />
 </costs>
@@ -12571,25 +12157,16 @@
 </constraints>
 <entryLinks>
 <entryLink id="47b4-d2e1-328f-975a" name="Ironstorm Missile Pod" hidden="false" collective="false" import="true" targetId="3329-24d0-cd42-1b74" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0986-98ae-7a20-3679" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
 </costs>
 </entryLink>
 <entryLink id="bf11-252a-ae15-3025" name="Twin Icarus Autocannon" hidden="false" collective="false" import="true" targetId="e2d3-88ad-ed9f-65de" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7d82-d611-eb64-3bd4" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="35" />
 </costs>
 </entryLink>
 <entryLink id="1b1f-a08a-4bb8-c331" name="Stormspear Rocket Pod" hidden="false" collective="false" import="true" targetId="e69d-69ec-b834-5532" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1aee-3acb-32da-d493" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="40" />
 </costs>
@@ -12711,25 +12288,16 @@
 </constraints>
 <entryLinks>
 <entryLink id="e00d-60a6-28a7-2604" name="Ironstorm Missile Pod" hidden="false" collective="false" import="true" targetId="3329-24d0-cd42-1b74" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6efe-1250-627b-add8" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
 </costs>
 </entryLink>
 <entryLink id="fab0-9fe3-6fa4-fe35" name="Twin Icarus Autocannon" hidden="false" collective="false" import="true" targetId="e2d3-88ad-ed9f-65de" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4905-5575-aa79-af99" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="35" />
 </costs>
 </entryLink>
 <entryLink id="4c96-af2c-c0da-b746" name="Stormspear Rocket Pod" hidden="false" collective="false" import="true" targetId="e69d-69ec-b834-5532" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f508-a788-b0e3-1000" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="40" />
 </costs>
@@ -12847,25 +12415,16 @@
 </constraints>
 <entryLinks>
 <entryLink id="65fe-ecc8-ef10-d854" name="Ironstorm Missile Pod" hidden="false" collective="false" import="true" targetId="3329-24d0-cd42-1b74" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="85c6-333d-8887-ff2e" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
 </costs>
 </entryLink>
 <entryLink id="609b-6beb-2185-2f7c" name="Twin Icarus Autocannon" hidden="false" collective="false" import="true" targetId="e2d3-88ad-ed9f-65de" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0cf9-d6d7-08a6-bb49" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="35" />
 </costs>
 </entryLink>
 <entryLink id="760e-6d15-4f63-2318" name="Stormspear Rocket Pod" hidden="false" collective="false" import="true" targetId="e69d-69ec-b834-5532" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5bc7-e922-3351-178f" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="40" />
 </costs>
@@ -13032,25 +12591,16 @@
 </constraints>
 <entryLinks>
 <entryLink id="34c9-e070-a2ba-a222" name="Ironstorm Missile Pod" hidden="false" collective="false" import="true" targetId="3329-24d0-cd42-1b74" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="afc0-5b7a-877b-7e2e" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
 </costs>
 </entryLink>
 <entryLink id="9473-e561-f31b-798e" name="Twin Icarus Autocannon" hidden="false" collective="false" import="true" targetId="e2d3-88ad-ed9f-65de" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cacf-fa25-cf86-2098" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="35" />
 </costs>
 </entryLink>
 <entryLink id="951e-fa3f-d701-328a" name="Stormspear Rocket Pod" hidden="false" collective="false" import="true" targetId="e69d-69ec-b834-5532" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b7c3-13cc-4e0a-00e4" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="40" />
 </costs>

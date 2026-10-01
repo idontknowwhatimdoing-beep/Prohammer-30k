@@ -246,23 +246,13 @@
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cfcf-dc35-6181-263d" type="max" />
 </constraints>
 <entryLinks>
-<entryLink id="4a1b-e03b-0292-aaca" name="Lastrum Storm Bolter" hidden="false" collective="false" import="true" targetId="a43f-c531-5bf1-267d" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="83aa-2e0c-0d51-e5c7" type="max" />
-</constraints>
-</entryLink>
+<entryLink id="4a1b-e03b-0292-aaca" name="Lastrum Storm Bolter" hidden="false" collective="false" import="true" targetId="a43f-c531-5bf1-267d" type="selectionEntry" />
 <entryLink id="fa64-ceb9-1cd7-8a88" name="Infernus Firepike" hidden="false" collective="false" import="true" targetId="88e7-802f-cb09-a43c" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fade-2752-f52d-1e30" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
 </entryLink>
 <entryLink id="2c77-a4aa-a6dd-bb08" name="Twin-linked Adrathic Destructor" hidden="false" collective="false" import="true" targetId="c481-b924-4934-ac1f" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="72fd-50ad-1e7a-bc2c" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
 </costs>
@@ -487,17 +477,11 @@
 </constraints>
 <entryLinks>
 <entryLink id="80eb-ffbf-aaf8-4147" name="Praesidium Shield" hidden="false" collective="false" import="true" targetId="8128-96e8-a746-f86a" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bfc4-33e6-8e80-f7ce" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
 </costs>
 </entryLink>
 <entryLink id="f298-ebcc-1fdb-492a" name="Advanced Praesidium Shield" hidden="false" collective="false" import="true" targetId="1d4a-3754-1dd2-5798" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1456-0ce2-3deb-099e" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
 </costs>
@@ -739,17 +723,11 @@
 </constraints>
 <entryLinks>
 <entryLink id="703c-dd0b-925e-b0f1" name="Voidsheen Cloak" hidden="false" collective="false" import="true" targetId="b4e0-e11a-3c9c-cde1" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="62a8-621c-3cc0-8382" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
 </entryLink>
 <entryLink id="65a5-dca3-d360-63ea" name="Enhanced Voidsheen Cloak" hidden="false" collective="false" import="true" targetId="2b23-a3f4-9109-6951" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="30a0-3b87-7b98-f8a0" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
 </costs>
@@ -933,17 +911,11 @@
 </constraints>
 <entryLinks>
 <entryLink id="c53d-ac74-8f67-a9b3" name="Voidsheen Cloak" hidden="false" collective="false" import="true" targetId="b4e0-e11a-3c9c-cde1" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4a3f-d052-7cc7-04b2" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
 </entryLink>
 <entryLink id="2135-52db-1106-5fd4" name="Enhanced Voidsheen Cloak" hidden="false" collective="false" import="true" targetId="2b23-a3f4-9109-6951" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4318-2181-07cc-5743" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
 </costs>
@@ -3412,17 +3384,11 @@
 </constraints>
 <entryLinks>
 <entryLink id="700b-229e-58ef-dee2" name="Power Weapon" hidden="false" collective="false" import="true" targetId="fb4f-b267-7556-185d" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7ae7-87a5-875f-d798" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
 </entryLink>
 <entryLink id="1c10-a61e-e886-a429" name="Power Stake" hidden="false" collective="false" import="true" targetId="102c-88b2-d1b0-a220" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c7ea-3624-1b25-6a15" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
@@ -5886,25 +5852,16 @@
 </constraints>
 <entryLinks>
 <entryLink id="3e25-682d-71d0-3c19" name="Power Weapon" hidden="false" collective="false" import="true" targetId="fb4f-b267-7556-185d" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="84ed-250e-e3a3-6d7d" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
 </entryLink>
 <entryLink id="e532-53bb-b9d6-d9b4" name="Power Stake" hidden="false" collective="false" import="true" targetId="102c-88b2-d1b0-a220" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4599-284f-9b15-3896" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
 </entryLink>
 <entryLink id="aeff-e3a2-8ea1-bd52" name="Charnabal Sabre" hidden="false" collective="false" import="true" targetId="8d67-fee4-b075-2efa" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1890-54c8-7fc0-5dd5" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
 </costs>
@@ -6641,17 +6598,11 @@
 </constraints>
 <entryLinks>
 <entryLink id="5815-3b86-4e5f-30d6" name="Power Weapon" hidden="false" collective="false" import="true" targetId="fb4f-b267-7556-185d" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="829a-7712-772f-06c4" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
 </entryLink>
 <entryLink id="4409-3244-5bf5-96fe" name="Power Stake" hidden="false" collective="false" import="true" targetId="102c-88b2-d1b0-a220" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9eea-9390-cbef-c31c" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>

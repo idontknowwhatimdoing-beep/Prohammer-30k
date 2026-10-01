@@ -1283,41 +1283,26 @@
 </constraints>
 <entryLinks>
 <entryLink id="cd1f-1cbb-4a99-c99d" name="Servo-Arm" hidden="false" collective="false" import="true" targetId="f22f-860f-2504-0c1e" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0fb0-1b90-b5b7-e23e" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
 </entryLink>
 <entryLink id="436a-90a0-1df5-80a6" name="Machinator Array" hidden="false" collective="false" import="true" targetId="63b2-cbd9-86cf-353e" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fe89-c985-0ec3-df38" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
 </costs>
 </entryLink>
 <entryLink id="08a2-9a23-6815-2f6a" name="Jet Pack" hidden="false" collective="false" import="true" targetId="89a4-715a-06e0-6d0f" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="33e2-3ee4-f319-d973" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
 </costs>
 </entryLink>
 <entryLink id="23f1-aec7-531d-7990" name="Conversion Beamer" hidden="false" collective="false" import="true" targetId="1980-3f24-be3a-553f" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f449-01eb-80fd-9b2e" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
 </costs>
 </entryLink>
 <entryLink id="ba95-aaf2-a688-4c81" name="Graviton Imploder" hidden="false" collective="false" import="true" targetId="3e72-3be9-ec45-5ea3" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="57a5-f9cc-a620-2cea" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
 </costs>
@@ -1330,49 +1315,31 @@
 </constraints>
 <entryLinks>
 <entryLink id="8bb6-8a32-ffd1-c185" name="Rotor Cannon" hidden="false" collective="false" import="true" targetId="999e-e59c-f69d-ab6e" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6863-b49b-117e-03b5" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
 </costs>
 </entryLink>
 <entryLink id="3c36-cd7f-50d9-3af4" name="Meltagun" hidden="false" collective="false" import="true" targetId="63e8-bee7-88b7-64c6" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9ed2-6a2c-bb96-6bd1" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
 </entryLink>
 <entryLink id="2331-4198-5222-c45a" name="Graviton Gun" hidden="false" collective="false" import="true" targetId="0364-6cd6-3741-b6cf" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="db0a-9e04-ea3d-ee56" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
 </costs>
 </entryLink>
 <entryLink id="c991-44ca-1fae-42d2" name="Phased Plasma-Fusil" hidden="false" collective="false" import="true" targetId="8e08-7633-23ed-7a48" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="99f2-4cb2-2280-6394" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
 </costs>
 </entryLink>
 <entryLink id="6800-99b0-f07e-a076" name="Irad Cleanser" hidden="false" collective="false" import="true" targetId="71a2-0b3d-aa39-2dc0" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="17a4-27c1-8b55-9ac4" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
 </costs>
 </entryLink>
 <entryLink id="3358-1fc2-49ee-e316" name="Photon Thruster" hidden="false" collective="false" import="true" targetId="a167-881a-e9c2-9ab6" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="369f-5169-1e81-e186" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
 </costs>
@@ -1477,57 +1444,36 @@
 </constraints>
 <entryLinks>
 <entryLink id="f8b7-27cc-1b7c-f6a2" name="Rotor Cannon" hidden="false" collective="false" import="true" targetId="999e-e59c-f69d-ab6e" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1cbc-49bc-1bec-9922" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
 </costs>
 </entryLink>
 <entryLink id="895d-05d0-2b50-2caa" name="Volkite Charger" hidden="false" collective="false" import="true" targetId="f7ae-d359-d2ff-f5af" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b2f4-f6cf-ea7b-321c" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
 </entryLink>
 <entryLink id="db9e-5b88-3ca1-ba05" name="Meltagun" hidden="false" collective="false" import="true" targetId="63e8-bee7-88b7-64c6" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9749-46d9-f27b-a3a1" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
 </entryLink>
 <entryLink id="84e3-9ad8-018d-7019" name="Graviton Gun" hidden="false" collective="false" import="true" targetId="0364-6cd6-3741-b6cf" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9d9c-05da-6395-dd74" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
 </costs>
 </entryLink>
 <entryLink id="a587-ec25-dc82-9580" name="Irad Cleanser" hidden="false" collective="false" import="true" targetId="71a2-0b3d-aa39-2dc0" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f22e-674d-39f1-8bb9" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
 </costs>
 </entryLink>
 <entryLink id="92bc-aa75-d61c-0c1d" name="Phased Plasma-Fusil" hidden="false" collective="false" import="true" targetId="8e08-7633-23ed-7a48" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cf25-6de7-9579-9b19" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
 </costs>
 </entryLink>
 <entryLink id="7852-bcd7-309d-aa1d" name="Photon Thruster" hidden="false" collective="false" import="true" targetId="a167-881a-e9c2-9ab6" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6172-da97-10af-d8bb" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
 </costs>
@@ -2035,41 +1981,26 @@
 </constraints>
 <entryLinks>
 <entryLink id="fadb-a2d6-c4f4-1f85" name="Servo-Arm" hidden="false" collective="false" import="true" targetId="f22f-860f-2504-0c1e" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b656-3b2b-b968-687e" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
 </entryLink>
 <entryLink id="0b05-757a-c745-f837" name="Machinator Array" hidden="false" collective="false" import="true" targetId="63b2-cbd9-86cf-353e" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a86c-5105-6d00-a356" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
 </costs>
 </entryLink>
 <entryLink id="aa47-fdb3-f4ba-eb26" name="Jet Pack" hidden="false" collective="false" import="true" targetId="89a4-715a-06e0-6d0f" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0372-58e9-4dbf-acd2" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
 </costs>
 </entryLink>
 <entryLink id="6695-6a80-a861-9318" name="Conversion Beamer" hidden="false" collective="false" import="true" targetId="1980-3f24-be3a-553f" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4884-9711-4bff-3f31" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
 </costs>
 </entryLink>
 <entryLink id="276f-0506-9f35-951d" name="Graviton Imploder" hidden="false" collective="false" import="true" targetId="3e72-3be9-ec45-5ea3" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4183-91c5-2281-4698" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
 </costs>
@@ -2082,49 +2013,31 @@
 </constraints>
 <entryLinks>
 <entryLink id="20f7-9eb5-2050-25a8" name="Rotor Cannon" hidden="false" collective="false" import="true" targetId="999e-e59c-f69d-ab6e" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7ddb-69b3-2a20-4c53" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
 </costs>
 </entryLink>
 <entryLink id="569a-8cd1-e8aa-a412" name="Meltagun" hidden="false" collective="false" import="true" targetId="63e8-bee7-88b7-64c6" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8c08-0e94-b1fc-b75c" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
 </entryLink>
 <entryLink id="e29b-1a23-7281-c579" name="Graviton Gun" hidden="false" collective="false" import="true" targetId="0364-6cd6-3741-b6cf" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3af0-6a80-61cd-89b5" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
 </costs>
 </entryLink>
 <entryLink id="1144-1a7a-3782-70f0" name="Phased Plasma-Fusil" hidden="false" collective="false" import="true" targetId="8e08-7633-23ed-7a48" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1738-ec87-5a0d-88fe" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
 </costs>
 </entryLink>
 <entryLink id="246b-00cd-5d7b-022a" name="Irad Cleanser" hidden="false" collective="false" import="true" targetId="71a2-0b3d-aa39-2dc0" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="defd-ec43-b74b-d9f9" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
 </costs>
 </entryLink>
 <entryLink id="0908-c4c0-0ec5-a341" name="Photon Thruster" hidden="false" collective="false" import="true" targetId="a167-881a-e9c2-9ab6" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d2dd-c873-176f-500c" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
 </costs>
@@ -2221,57 +2134,36 @@
 </constraints>
 <entryLinks>
 <entryLink id="3a83-454c-b5b3-a03e" name="Rotor Cannon" hidden="false" collective="false" import="true" targetId="999e-e59c-f69d-ab6e" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3833-5478-0abf-a9d2" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
 </costs>
 </entryLink>
 <entryLink id="1741-a167-1ea1-df15" name="Volkite Charger" hidden="false" collective="false" import="true" targetId="f7ae-d359-d2ff-f5af" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8e0d-b66e-cfb5-36b7" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
 </entryLink>
 <entryLink id="3ac2-08da-9eb4-a9ea" name="Meltagun" hidden="false" collective="false" import="true" targetId="63e8-bee7-88b7-64c6" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="748c-288d-7b21-bbfd" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
 </entryLink>
 <entryLink id="764d-1141-5002-1a55" name="Graviton Gun" hidden="false" collective="false" import="true" targetId="0364-6cd6-3741-b6cf" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a18e-1572-3d9a-a967" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
 </costs>
 </entryLink>
 <entryLink id="1a92-2838-46a4-c6a4" name="Irad Cleanser" hidden="false" collective="false" import="true" targetId="71a2-0b3d-aa39-2dc0" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="adbd-af2f-15da-618c" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
 </costs>
 </entryLink>
 <entryLink id="fc09-84af-5bfe-05ab" name="Phased Plasma-Fusil" hidden="false" collective="false" import="true" targetId="8e08-7633-23ed-7a48" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f285-9198-9375-377a" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
 </costs>
 </entryLink>
 <entryLink id="36b7-0ed7-a2a3-8d98" name="Photon Thruster" hidden="false" collective="false" import="true" targetId="a167-881a-e9c2-9ab6" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cc64-5583-280f-a863" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
 </costs>
@@ -2854,49 +2746,31 @@
 </constraints>
 <entryLinks>
 <entryLink id="bdb5-20b1-7433-1de1" name="Bolt Pistol" hidden="false" collective="false" import="true" targetId="10e2-6917-e765-7495" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="df31-67e6-ab94-3ffd" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="1" />
 </costs>
 </entryLink>
 <entryLink id="66a7-4b8e-9817-5a2b" name="Volkite Serpenta" hidden="false" collective="false" import="true" targetId="48a3-89aa-47ef-c849" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0e8f-4b06-3a7f-62b2" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
 </costs>
 </entryLink>
 <entryLink id="29a1-33ea-4b10-fb56" name="Archaeotech Pistol" hidden="false" collective="false" import="true" targetId="c098-8080-37e3-294b" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0760-6dbe-a707-bb05" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
 </entryLink>
 <entryLink id="2da3-04c8-a8d1-3f4b" name="Photon Gauntlet" hidden="false" collective="false" import="true" targetId="794f-28f9-623d-5688" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5121-9584-f334-afeb" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
 </entryLink>
 <entryLink id="8aee-678d-7947-0c19" name="Plasma Pistol" hidden="false" collective="false" import="true" targetId="523c-5dd4-3402-0e99" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cfe3-42db-2d2b-d56b" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
 </costs>
 </entryLink>
 <entryLink id="f2df-03cf-30cb-527f" name="Lucifex" hidden="false" collective="false" import="true" targetId="8cfb-193d-8d92-6f7d" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="da51-592d-50d5-d682" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
@@ -3270,41 +3144,26 @@
 </constraints>
 <entryLinks>
 <entryLink id="5353-c148-1e67-1493" name="Bolter" hidden="false" collective="false" import="true" targetId="8b6f-ff45-9e8a-0d7e" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9840-9ede-ca40-a149" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="2" />
 </costs>
 </entryLink>
 <entryLink id="a33b-69db-84db-c7c2" name="Volkite Charger" hidden="false" collective="false" import="true" targetId="f7ae-d359-d2ff-f5af" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0262-f419-2a1d-b3f2" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
 </costs>
 </entryLink>
 <entryLink id="e9e0-fef9-8bd6-4c0f" name="Meltagun" hidden="false" collective="false" import="true" targetId="63e8-bee7-88b7-64c6" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a0fe-ab7d-27d1-e4ff" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
 </entryLink>
 <entryLink id="94a8-cf98-1971-4052" name="Plasma Gun" hidden="false" collective="false" import="true" targetId="325e-cf5b-6af4-1818" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5a84-7d4d-cadd-9d2f" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
 </costs>
 </entryLink>
 <entryLink id="3370-3e66-9684-87f8" name="Graviton Gun" hidden="false" collective="false" import="true" targetId="0364-6cd6-3741-b6cf" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dd6d-daeb-3143-25c4" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
 </costs>
@@ -3499,41 +3358,26 @@
 </constraints>
 <entryLinks>
 <entryLink id="db83-9e9e-91c6-2a75" name="Bolter" hidden="false" collective="false" import="true" targetId="8b6f-ff45-9e8a-0d7e" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="235c-575d-4e2c-4b90" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="2" />
 </costs>
 </entryLink>
 <entryLink id="606e-1401-4d66-262a" name="Volkite Charger" hidden="false" collective="false" import="true" targetId="f7ae-d359-d2ff-f5af" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ab85-a22f-6e6a-3b8b" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
 </costs>
 </entryLink>
 <entryLink id="4568-9f02-8614-727c" name="Meltagun" hidden="false" collective="false" import="true" targetId="63e8-bee7-88b7-64c6" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d4d4-fccb-3583-3613" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
 </entryLink>
 <entryLink id="fdd2-a707-03a3-7bfc" name="Plasma Gun" hidden="false" collective="false" import="true" targetId="325e-cf5b-6af4-1818" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9709-cfc4-3a74-e8d5" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
 </costs>
 </entryLink>
 <entryLink id="044f-f26c-8962-5cc2" name="Graviton Gun" hidden="false" collective="false" import="true" targetId="0364-6cd6-3741-b6cf" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5580-32ff-8687-027d" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
 </costs>
@@ -3728,41 +3572,26 @@
 </constraints>
 <entryLinks>
 <entryLink id="0c6c-6ee2-7541-5076" name="Bolter" hidden="false" collective="false" import="true" targetId="8b6f-ff45-9e8a-0d7e" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2333-f755-b9bf-ddc2" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="2" />
 </costs>
 </entryLink>
 <entryLink id="0c16-646c-0ca0-ebe5" name="Volkite Charger" hidden="false" collective="false" import="true" targetId="f7ae-d359-d2ff-f5af" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5e48-2704-7e9e-73da" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
 </costs>
 </entryLink>
 <entryLink id="1470-6961-d2d3-c73f" name="Meltagun" hidden="false" collective="false" import="true" targetId="63e8-bee7-88b7-64c6" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8413-4ef5-b1f6-fc7d" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
 </entryLink>
 <entryLink id="fc83-5ebc-4b4f-458c" name="Plasma Gun" hidden="false" collective="false" import="true" targetId="325e-cf5b-6af4-1818" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b295-76cb-1f34-4c6f" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
 </costs>
 </entryLink>
 <entryLink id="0fe4-93a3-81a6-19ed" name="Graviton Gun" hidden="false" collective="false" import="true" targetId="0364-6cd6-3741-b6cf" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ea39-78ce-ccb2-dede" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
 </costs>
@@ -3957,41 +3786,26 @@
 </constraints>
 <entryLinks>
 <entryLink id="6543-ebe8-a195-48f1" name="Bolter" hidden="false" collective="false" import="true" targetId="8b6f-ff45-9e8a-0d7e" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="69a1-09e2-e4e7-9e75" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="2" />
 </costs>
 </entryLink>
 <entryLink id="2579-683b-f2fb-22dc" name="Volkite Charger" hidden="false" collective="false" import="true" targetId="f7ae-d359-d2ff-f5af" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="37a2-b5cf-84e6-a3d6" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
 </costs>
 </entryLink>
 <entryLink id="9e7c-c8f3-ab86-a83d" name="Meltagun" hidden="false" collective="false" import="true" targetId="63e8-bee7-88b7-64c6" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e7b5-0b68-48c3-9ea0" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
 </entryLink>
 <entryLink id="ae62-ced2-31f0-6f91" name="Plasma Gun" hidden="false" collective="false" import="true" targetId="325e-cf5b-6af4-1818" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b65e-1ac3-66d6-badc" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
 </costs>
 </entryLink>
 <entryLink id="fd18-fe74-7556-debd" name="Graviton Gun" hidden="false" collective="false" import="true" targetId="0364-6cd6-3741-b6cf" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0f62-cc1a-50b8-f8d5" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
 </costs>
@@ -4186,41 +4000,26 @@
 </constraints>
 <entryLinks>
 <entryLink id="728c-f98a-45c0-d52d" name="Bolter" hidden="false" collective="false" import="true" targetId="8b6f-ff45-9e8a-0d7e" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="691d-293e-2661-0783" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="2" />
 </costs>
 </entryLink>
 <entryLink id="3460-5d2d-428a-ea62" name="Volkite Charger" hidden="false" collective="false" import="true" targetId="f7ae-d359-d2ff-f5af" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="412c-d73e-5d80-6194" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
 </costs>
 </entryLink>
 <entryLink id="3205-8924-0241-0f06" name="Meltagun" hidden="false" collective="false" import="true" targetId="63e8-bee7-88b7-64c6" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9e0f-08a2-93ae-aa30" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
 </entryLink>
 <entryLink id="0fa2-1c48-590c-afa1" name="Plasma Gun" hidden="false" collective="false" import="true" targetId="325e-cf5b-6af4-1818" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="60e8-aa8b-80e6-4df3" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
 </costs>
 </entryLink>
 <entryLink id="681b-0b1f-cd84-edab" name="Graviton Gun" hidden="false" collective="false" import="true" targetId="0364-6cd6-3741-b6cf" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ccd8-a967-786d-9226" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
 </costs>
@@ -11588,33 +11387,21 @@
 </constraints>
 <entryLinks>
 <entryLink id="a57e-6cb0-1a57-9193" name="Taser Goad" hidden="false" collective="false" import="true" targetId="d750-4b1d-0ff2-f53b" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="63bb-0fba-bf7b-a6e5" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
 </costs>
 </entryLink>
 <entryLink id="88e7-fa32-7f67-a053" name="Corposant Stave" hidden="false" collective="false" import="true" targetId="3e97-7924-1e2b-9952" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="945f-32f1-815f-7857" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
 </costs>
 </entryLink>
 <entryLink id="670c-b847-4b94-824d" name="Arc Maul" hidden="false" collective="false" import="true" targetId="869f-8107-61b1-8278" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="29a8-ffd5-5987-b725" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
 </entryLink>
 <entryLink id="6342-87b5-92f7-cdd2" name="Power Fist" hidden="false" collective="false" import="true" targetId="0b4d-922b-4629-b7ca" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="63f7-a32b-7971-8398" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
 </costs>
@@ -12203,25 +11990,16 @@
 </constraints>
 <entryLinks>
 <entryLink id="5b9f-d087-7d7a-abcf" name="Radium Pistol" hidden="false" collective="false" import="true" targetId="e8b6-7747-a7f5-8a94" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6584-5840-bc92-3ed2" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
 </costs>
 </entryLink>
 <entryLink id="8d8b-587f-a267-c953" name="Volkite Serpenta" hidden="false" collective="false" import="true" targetId="48a3-89aa-47ef-c849" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4cc0-07ca-eb02-14e5" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
 </costs>
 </entryLink>
 <entryLink id="a22a-b0a7-0086-88f5" name="Arc Pistol" hidden="false" collective="false" import="true" targetId="0173-1cf1-7efa-0b9a" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6bcf-b7c1-0057-0a8c" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
@@ -12466,25 +12244,16 @@
 </constraints>
 <entryLinks>
 <entryLink id="2a02-9f2b-459b-39b6" name="Radium Pistol" hidden="false" collective="false" import="true" targetId="e8b6-7747-a7f5-8a94" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a3fc-1909-fd2e-b8a2" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
 </costs>
 </entryLink>
 <entryLink id="c414-a58f-105e-c745" name="Volkite Serpenta" hidden="false" collective="false" import="true" targetId="48a3-89aa-47ef-c849" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="79b4-5295-90de-a455" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
 </costs>
 </entryLink>
 <entryLink id="c351-54ac-7c40-59db" name="Arc Pistol" hidden="false" collective="false" import="true" targetId="0173-1cf1-7efa-0b9a" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="694a-947a-1415-5528" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
@@ -19139,17 +18908,11 @@
 </constraints>
 <entryLinks>
 <entryLink id="86ba-defa-71a4-6e83" name="Two Heavy Bolters (sponsons)" hidden="false" collective="false" import="true" targetId="395e-ee60-606a-9628" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1238-767d-3f3c-9c24" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
 </entryLink>
 <entryLink id="5da7-6ca5-2969-86bc" name="Two Heavy Flamers (sponsons)" hidden="false" collective="false" import="true" targetId="8b61-7fc9-0e0a-2879" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2dd8-3ac4-736b-e8cd" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
@@ -19308,17 +19071,11 @@
 </constraints>
 <entryLinks>
 <entryLink id="8191-b31c-9e6a-0f28" name="Two Heavy Bolters (sponsons)" hidden="false" collective="false" import="true" targetId="395e-ee60-606a-9628" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a6b0-599c-3b38-b30f" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
 </entryLink>
 <entryLink id="9480-7cdf-c3f2-bfa7" name="Two Heavy Flamers (sponsons)" hidden="false" collective="false" import="true" targetId="8b61-7fc9-0e0a-2879" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dd6d-2999-1289-531e" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
@@ -19477,17 +19234,11 @@
 </constraints>
 <entryLinks>
 <entryLink id="f16b-93ed-0544-a1dc" name="Two Heavy Bolters (sponsons)" hidden="false" collective="false" import="true" targetId="395e-ee60-606a-9628" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ebea-d7fb-349a-095d" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
 </entryLink>
 <entryLink id="b8b0-d078-83df-c235" name="Two Heavy Flamers (sponsons)" hidden="false" collective="false" import="true" targetId="8b61-7fc9-0e0a-2879" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1ff6-e790-a632-85d2" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
@@ -19646,17 +19397,11 @@
 </constraints>
 <entryLinks>
 <entryLink id="291e-68b8-6fb5-fdfd" name="Two Heavy Bolters (sponsons)" hidden="false" collective="false" import="true" targetId="395e-ee60-606a-9628" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9c2a-80bb-8143-2e73" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
 </entryLink>
 <entryLink id="d4d8-98e8-b062-786c" name="Two Heavy Flamers (sponsons)" hidden="false" collective="false" import="true" targetId="8b61-7fc9-0e0a-2879" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6ad0-1e12-00b4-0c90" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
@@ -19815,17 +19560,11 @@
 </constraints>
 <entryLinks>
 <entryLink id="69ba-900b-ed01-0e80" name="Two Heavy Bolters (sponsons)" hidden="false" collective="false" import="true" targetId="395e-ee60-606a-9628" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="66b4-56aa-f761-2110" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
 </entryLink>
 <entryLink id="8c57-b82f-06af-0ea8" name="Two Heavy Flamers (sponsons)" hidden="false" collective="false" import="true" targetId="8b61-7fc9-0e0a-2879" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b9eb-4532-a5ad-cf33" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
@@ -19984,17 +19723,11 @@
 </constraints>
 <entryLinks>
 <entryLink id="b55b-a115-09eb-aa42" name="Two Heavy Bolters (sponsons)" hidden="false" collective="false" import="true" targetId="395e-ee60-606a-9628" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="594a-c109-73df-2f4d" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
 </entryLink>
 <entryLink id="2bb1-d7fa-0f37-f766" name="Two Heavy Flamers (sponsons)" hidden="false" collective="false" import="true" targetId="8b61-7fc9-0e0a-2879" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="324c-97f4-a1d7-1542" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
@@ -20153,17 +19886,11 @@
 </constraints>
 <entryLinks>
 <entryLink id="ed9c-5d31-8e61-c8a8" name="Two Heavy Bolters (sponsons)" hidden="false" collective="false" import="true" targetId="395e-ee60-606a-9628" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fbd6-7198-6b91-aeb1" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
 </entryLink>
 <entryLink id="4384-94c5-25a2-8226" name="Two Heavy Flamers (sponsons)" hidden="false" collective="false" import="true" targetId="8b61-7fc9-0e0a-2879" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bb91-d0af-7e1a-30d9" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
@@ -20322,17 +20049,11 @@
 </constraints>
 <entryLinks>
 <entryLink id="dbfc-7906-0708-5724" name="Two Heavy Bolters (sponsons)" hidden="false" collective="false" import="true" targetId="395e-ee60-606a-9628" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f564-dba0-4dd4-9a68" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
 </entryLink>
 <entryLink id="cfa6-090f-9721-9832" name="Two Heavy Flamers (sponsons)" hidden="false" collective="false" import="true" targetId="8b61-7fc9-0e0a-2879" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d304-83f2-e9ae-cf08" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
@@ -20491,17 +20212,11 @@
 </constraints>
 <entryLinks>
 <entryLink id="3cb2-7a0b-e1d5-ded5" name="Two Heavy Bolters (sponsons)" hidden="false" collective="false" import="true" targetId="395e-ee60-606a-9628" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3976-06cc-5c1c-efbb" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
 </entryLink>
 <entryLink id="96fb-22d5-fea6-6b84" name="Two Heavy Flamers (sponsons)" hidden="false" collective="false" import="true" targetId="8b61-7fc9-0e0a-2879" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3229-c5e3-eae0-6fa3" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
@@ -20660,33 +20375,21 @@
 </constraints>
 <entryLinks>
 <entryLink id="6866-e601-d220-fa78" name="Two Heavy Bolters (sponsons)" hidden="false" collective="false" import="true" targetId="395e-ee60-606a-9628" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dd82-c5cc-7920-4880" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
 </entryLink>
 <entryLink id="2468-3498-788f-fedf" name="Two Heavy Flamers (sponsons)" hidden="false" collective="false" import="true" targetId="8b61-7fc9-0e0a-2879" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="be29-df3b-9937-3ff9" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
 </entryLink>
 <entryLink id="a310-ed66-0a0f-9d0b" name="Two Multi-Meltas (sponsons)" hidden="false" collective="false" import="true" targetId="bfc0-56be-1f77-eb19" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fcfb-cb5a-ab00-9f57" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
 </costs>
 </entryLink>
 <entryLink id="91df-d1a3-cb4a-fb30" name="Two Plasma Cannons (sponsons)" hidden="false" collective="false" import="true" targetId="94f1-b4f3-fb2b-32a1" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="804d-9ed5-f925-15ef" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
 </costs>
@@ -20845,33 +20548,21 @@
 </constraints>
 <entryLinks>
 <entryLink id="1e10-4dbe-d50f-87da" name="Two Heavy Bolters (sponsons)" hidden="false" collective="false" import="true" targetId="395e-ee60-606a-9628" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e1dc-392e-9e77-de0a" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
 </entryLink>
 <entryLink id="003b-af94-8124-afb9" name="Two Heavy Flamers (sponsons)" hidden="false" collective="false" import="true" targetId="8b61-7fc9-0e0a-2879" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="10ce-afc1-0227-db8d" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
 </entryLink>
 <entryLink id="a42b-e1b6-74f7-bf4d" name="Two Multi-Meltas (sponsons)" hidden="false" collective="false" import="true" targetId="bfc0-56be-1f77-eb19" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="735c-099a-d50a-3a5d" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
 </costs>
 </entryLink>
 <entryLink id="fb9c-0b2e-041d-6bce" name="Two Plasma Cannons (sponsons)" hidden="false" collective="false" import="true" targetId="94f1-b4f3-fb2b-32a1" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="916f-eb6a-3a0c-d97e" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
 </costs>
@@ -21030,33 +20721,21 @@
 </constraints>
 <entryLinks>
 <entryLink id="049d-caad-7e85-9984" name="Two Heavy Bolters (sponsons)" hidden="false" collective="false" import="true" targetId="395e-ee60-606a-9628" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7fb3-bfb0-48e4-350f" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
 </entryLink>
 <entryLink id="ea60-717c-0e65-4ecf" name="Two Heavy Flamers (sponsons)" hidden="false" collective="false" import="true" targetId="8b61-7fc9-0e0a-2879" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="82d7-8ac5-77e6-391c" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
 </entryLink>
 <entryLink id="2a29-874d-eb5a-0ba2" name="Two Multi-Meltas (sponsons)" hidden="false" collective="false" import="true" targetId="bfc0-56be-1f77-eb19" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="788b-eabb-6adc-e2a2" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
 </costs>
 </entryLink>
 <entryLink id="e674-ca62-f5a8-be7b" name="Two Plasma Cannons (sponsons)" hidden="false" collective="false" import="true" targetId="94f1-b4f3-fb2b-32a1" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c37e-396a-354c-a041" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
 </costs>
@@ -21215,17 +20894,11 @@
 </constraints>
 <entryLinks>
 <entryLink id="d1da-2812-c322-30e7" name="Two Heavy Bolters (sponsons)" hidden="false" collective="false" import="true" targetId="395e-ee60-606a-9628" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="244c-c272-3407-aeae" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
 </entryLink>
 <entryLink id="64eb-131a-b9d7-ca63" name="Two Heavy Flamers (sponsons)" hidden="false" collective="false" import="true" targetId="8b61-7fc9-0e0a-2879" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b906-f982-d3fb-a576" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
@@ -21384,17 +21057,11 @@
 </constraints>
 <entryLinks>
 <entryLink id="7da3-ea18-e781-bf44" name="Two Heavy Bolters (sponsons)" hidden="false" collective="false" import="true" targetId="395e-ee60-606a-9628" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d64d-cad1-79d4-57f9" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
 </entryLink>
 <entryLink id="6f64-643d-6c0e-de39" name="Two Heavy Flamers (sponsons)" hidden="false" collective="false" import="true" targetId="8b61-7fc9-0e0a-2879" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a97d-a84b-5687-0e38" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
@@ -21553,17 +21220,11 @@
 </constraints>
 <entryLinks>
 <entryLink id="d2dc-7c1a-40bd-c27f" name="Two Heavy Bolters (sponsons)" hidden="false" collective="false" import="true" targetId="395e-ee60-606a-9628" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c7b0-9ea5-3b59-16cc" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
 </entryLink>
 <entryLink id="db74-1ac8-49e3-301b" name="Two Heavy Flamers (sponsons)" hidden="false" collective="false" import="true" targetId="8b61-7fc9-0e0a-2879" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="56b9-89da-ae53-fff9" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
@@ -22003,17 +21664,11 @@
 </constraints>
 <entryLinks>
 <entryLink id="4889-e582-2fb6-dbd2" name="Hull-mounted Heavy Bolter" hidden="false" collective="false" import="true" targetId="66b1-b059-0366-5606" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="328c-b9a0-3532-3877" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
 </entryLink>
 <entryLink id="5f9e-d576-03df-2bf4" name="Hull-mounted Heavy Flamer" hidden="false" collective="false" import="true" targetId="5df5-1147-9ede-845f" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e30e-02ec-4fae-ea30" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
@@ -22135,17 +21790,11 @@
 </constraints>
 <entryLinks>
 <entryLink id="7dcf-be7a-beba-f6df" name="Hull-mounted Heavy Bolter" hidden="false" collective="false" import="true" targetId="66b1-b059-0366-5606" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2e56-6f9a-9099-8c21" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
 </entryLink>
 <entryLink id="67d6-4c94-8508-fdc8" name="Hull-mounted Heavy Flamer" hidden="false" collective="false" import="true" targetId="5df5-1147-9ede-845f" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4b69-e803-1105-8c76" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
@@ -22267,17 +21916,11 @@
 </constraints>
 <entryLinks>
 <entryLink id="ce36-8f2b-1cdb-422b" name="Hull-mounted Heavy Bolter" hidden="false" collective="false" import="true" targetId="66b1-b059-0366-5606" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eec7-d39c-d85e-4d86" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
 </entryLink>
 <entryLink id="7241-08c4-a671-6550" name="Hull-mounted Heavy Flamer" hidden="false" collective="false" import="true" targetId="5df5-1147-9ede-845f" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a51b-7c49-e75c-67fa" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
@@ -23926,25 +23569,16 @@
 </constraints>
 <entryLinks>
 <entryLink id="6fdb-7844-e187-e793" name="Heavy Flamer" hidden="false" collective="false" import="true" targetId="9e6d-afcf-8202-e47c" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="92b6-819e-3404-b245" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
 </costs>
 </entryLink>
 <entryLink id="3467-803d-9cde-2bf4" name="Meltagun" hidden="false" collective="false" import="true" targetId="63e8-bee7-88b7-64c6" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3873-33c2-4933-194d" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
 </entryLink>
 <entryLink id="69f8-ee9c-07ca-3a99" name="Plasma Blaster" hidden="false" collective="false" import="true" targetId="bb90-ab7a-87fe-54e2" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a298-3ee0-9cee-d191" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
 </costs>
@@ -23992,25 +23626,16 @@
 </constraints>
 <entryLinks>
 <entryLink id="f49b-b922-c5ea-4ceb" name="Heavy Flamer" hidden="false" collective="false" import="true" targetId="9e6d-afcf-8202-e47c" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6cc7-60bb-ff38-38dc" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
 </costs>
 </entryLink>
 <entryLink id="9e53-8633-7a39-452e" name="Meltagun" hidden="false" collective="false" import="true" targetId="63e8-bee7-88b7-64c6" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="02c3-fe87-fc64-bcf5" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
 </entryLink>
 <entryLink id="01d6-7089-f263-8239" name="Plasma Blaster" hidden="false" collective="false" import="true" targetId="bb90-ab7a-87fe-54e2" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a2cb-acc4-bfb6-4a60" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
 </costs>
@@ -24058,25 +23683,16 @@
 </constraints>
 <entryLinks>
 <entryLink id="c484-e717-fdd1-f44c" name="Heavy Flamer" hidden="false" collective="false" import="true" targetId="9e6d-afcf-8202-e47c" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="98ab-d03c-f723-7ba0" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
 </costs>
 </entryLink>
 <entryLink id="61f0-4e46-6ec4-bccd" name="Meltagun" hidden="false" collective="false" import="true" targetId="63e8-bee7-88b7-64c6" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9edb-17b2-b39d-6ebc" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
 </entryLink>
 <entryLink id="2613-0c79-5c95-a3fa" name="Plasma Blaster" hidden="false" collective="false" import="true" targetId="bb90-ab7a-87fe-54e2" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="997e-67d0-ae43-e733" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
 </costs>

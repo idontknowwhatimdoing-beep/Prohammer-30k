@@ -1159,9 +1159,6 @@
 </constraints>
 <entryLinks>
 <entryLink id="882c-8c21-2307-d14b" name="Winged" hidden="false" collective="false" import="true" targetId="a180-cd0b-1fce-62cd" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5ff6-7509-3e16-fd73" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="35" />
 </costs>
@@ -2053,9 +2050,6 @@
 </constraints>
 <entryLinks>
 <entryLink id="040d-b73c-3756-d6eb" name="Winged" hidden="false" collective="false" import="true" targetId="a180-cd0b-1fce-62cd" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="25a4-2b7b-6e7d-f3b3" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
 </costs>
@@ -3149,25 +3143,16 @@
 </constraints>
 <entryLinks>
 <entryLink id="f045-58fe-32f4-cb44" name="Winged" hidden="false" collective="false" import="true" targetId="a180-cd0b-1fce-62cd" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e017-80a5-dd68-54c0" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
 </costs>
 </entryLink>
 <entryLink id="6bc7-acac-d709-065c" name="Mounted" hidden="false" collective="false" import="true" targetId="e241-dc14-c85e-b83f" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9071-a9c8-a6f6-ec2a" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
 </costs>
 </entryLink>
 <entryLink id="f04f-0728-a635-2d0a" name="Beast Form" hidden="false" collective="false" import="true" targetId="41b1-dea9-8d7e-346a" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9b12-0a72-edcc-677e" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
 </costs>
@@ -6695,33 +6680,21 @@
 </constraints>
 <entryLinks>
 <entryLink id="e35b-694f-d591-652e" name="Power Weapon" hidden="false" collective="false" import="true" targetId="fb4f-b267-7556-185d" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="544b-6174-8462-2a67" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
 </entryLink>
 <entryLink id="1868-b35f-2b76-e169" name="Power Fist" hidden="false" collective="false" import="true" targetId="0b4d-922b-4629-b7ca" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4ec9-b25e-5db8-76cd" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
 </costs>
 </entryLink>
 <entryLink id="2543-39a2-c250-41e1" name="Lightning Claw" hidden="false" collective="false" import="true" targetId="0826-0946-b6a1-f42b" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3057-82f3-8685-4996" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
 </costs>
 </entryLink>
 <entryLink id="e839-97f0-65fb-105a" name="Thunder Hammer" hidden="false" collective="false" import="true" targetId="5dfe-22a3-22b6-fb7c" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b513-1066-e52a-37dd" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
 </costs>
@@ -9449,9 +9422,6 @@
 </constraints>
 <entryLinks>
 <entryLink id="1fb2-0d61-439a-37b3" name="Winged" hidden="false" collective="false" import="true" targetId="a180-cd0b-1fce-62cd" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1942-c469-59d4-6fa8" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="50" />
 </costs>
@@ -10479,9 +10449,6 @@
 </constraints>
 <entryLinks>
 <entryLink id="207f-7391-8a84-34e7" name="Winged" hidden="false" collective="false" import="true" targetId="a180-cd0b-1fce-62cd" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e873-edb9-992f-815c" type="max" />
-</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="60" />
 </costs>

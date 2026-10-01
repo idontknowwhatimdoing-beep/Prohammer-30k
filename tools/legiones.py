@@ -311,7 +311,7 @@ def ic_armoury(key, unit_id, praetor):
         gid = uid("slot", key, slot_name)
         links = []
         dl = uid("link", gid, default)
-        links.append(link(dl, W(default), default, constraints=[constraint(uid(dl, "max"), "max", 1)]))
+        links.append(link(dl, W(default), default, constraints=[constraint(uid(dl, "max"), "max", 2)]))
         for name, pts, *_rest in weapons:
             note = _rest[-1]
             if name == default or (note == "pair" and not allow_pair):
@@ -319,7 +319,7 @@ def ic_armoury(key, unit_id, praetor):
             lid = uid("link", gid, name)
             f = item_forbids(name, unit_id, note, is_cent)
             links.append(link(lid, W(name), name, cost=pts, mods=forbid_mods(lid, f),
-                              constraints=[constraint(uid(lid, "max"), "max", 1, auto=True)]))
+                              constraints=[constraint(uid(lid, "max"), "max", 2, auto=True)]))
         mn, mx = uid(gid, "min"), uid(gid, "max")
         mods = []
         if not allow_pair:
