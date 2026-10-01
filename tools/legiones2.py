@@ -148,10 +148,21 @@ def _negate(c):
     return n
 
 
-def take(key, title, items, max_total=None, hide=None):
-    """Optional extras: items [(name, pts)] or [(name, pts, max)]."""
+def take(key, title, items, max_total=None, hide=None, wrapped=False):
+    """Optional extras: items [(name, pts)] or [(name, pts, max)].
+    wrapped=True puts each item inside its own entry, so an extra weapon of the same kind as a built-in one
+    (e.g. a pintle Heavy Bolter on a tank with a hull Heavy Bolter) is not counted against the built-in one."""
     gid = uid("grp", key, title)
     links = []
+    if wrapped:
+        ents = []
+        for it in items:
+            name, pts = it[0], it[1]
+            eid = uid("wrap", gid, name)
+            ents.append(entry(eid, name, cost=pts or 0, links=[L.gear(eid, name)]))
+        cons = [constraint(uid(gid, "max"), "max", max_total or 1, auto=True)]
+        mods = [modifier("set", "hidden", "true", groups=[any_of(*hide)])] if hide else []
+        return group(gid, title, entries=ents, constraints=cons, mods=mods)
     for it in items:
         name, pts = it[0], it[1]
         mx = it[2] if len(it) > 2 else 1
@@ -355,7 +366,7 @@ def transports(key, unit_id, options, max_models=None, block_if=(), orbital=True
 def vehicle_upgrades(key, items, pintle=True):
     out = [take(key, "Vehicle Upgrades", items)]
     if pintle:
-        out.append(take(key, "Pintle-mounted Weapon", PINTLE, max_total=1))
+        out.append(take(key, "Pintle-mounted Weapon", PINTLE, max_total=1, wrapped=True))
     return out
 
 
@@ -1220,7 +1231,7 @@ def artillery_squadron():
         others = [cond(c, u, "atLeast", 1) for o in ids if o != mid
                   for c in [o] + [uid(o, "copy", i) for i in (2, 3)]]
         groups = [take(mid, "Vehicle Upgrades", STD_UPGRADES[:4]),
-                  take(mid, "Pintle-mounted Weapon", PINTLE, max_total=1)]
+                  take(mid, "Pintle-mounted Weapon", PINTLE, max_total=1, wrapped=True)]
         if n == "Legion Whirlwind":
             groups.insert(0, take(mid, "Warheads", [("Hyperios Warheads", 0)]))
         models.append(entry(mid, n, typ="model", cost=cost,
