@@ -15288,9 +15288,6 @@
 </costs>
 </selectionEntry>
 <selectionEntry id="33a9-e5ba-d380-edde" name="Iron Halo" hidden="false" collective="false" import="true" type="upgrade">
-<constraints>
-<constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1a45-a351-c5a5-8048" type="max" />
-</constraints>
 <rules>
 <rule id="3c57-e4f2-7a0f-6271" name="Iron Halo" hidden="false">
 <description>An Iron Halo grants a 4+ Invulnerable Save.</description>

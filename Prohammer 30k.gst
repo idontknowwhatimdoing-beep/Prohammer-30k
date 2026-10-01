@@ -76,6 +76,7 @@
 <categoryEntry id="8ed0-3d67-f51e-f8e3" name="Limit: 0-1 Fast Attack" hidden="false" />
 <categoryEntry id="006c-5d7a-c1ea-e594" name="Limit: 0-1 Heavy Support" hidden="false" />
 <categoryEntry id="ef4e-f5b8-029c-6e3f" name="Primarch" hidden="false" />
+<categoryEntry id="7e81-7178-7650-6f77" name="Iron Halo (one per army)" hidden="false" />
 <categoryEntry id="7c52-2dbc-9a97-85a9" name="Psychic Brotherhood" hidden="false" />
 <categoryEntry id="2142-52ae-4dcb-bfb1" name="Force Org: +1 HQ" hidden="false" />
 <categoryEntry id="2870-2a95-cac6-2507" name="Force Org: +1 Troops" hidden="false" />

@@ -155,6 +155,11 @@
 </conditionGroup>
 </conditionGroups>
 </modifier>
+<modifier type="add" field="error" value="Only one Iron Halo per army (Praetors and Centurions).">
+<conditions>
+<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7e81-7178-7650-6f77" type="greaterThan" />
+</conditions>
+</modifier>
 <modifier type="add" field="error" value="A Terranic Greatsword is Two-Handed: a model may only carry one.">
 <conditions>
 <condition field="selections" scope="2390-3489-e470-7f7f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a56b-e268-793a-1520" type="greaterThan" />
@@ -1859,6 +1864,9 @@
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b4a5-c592-6a76-11c6" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="594e-7b19-6c69-2e2d" type="max" />
 </constraints>
+<categoryLinks>
+<categoryLink id="950f-6d98-a14d-6c33" name="Iron Halo (one per army)" hidden="false" targetId="7e81-7178-7650-6f77" primary="false" />
+</categoryLinks>
 </entryLink>
 </entryLinks>
 <selectionEntries>
@@ -2077,6 +2085,11 @@
 </conditionGroups>
 </conditionGroup>
 </conditionGroups>
+</modifier>
+<modifier type="add" field="error" value="Only one Iron Halo per army (Praetors and Centurions).">
+<conditions>
+<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7e81-7178-7650-6f77" type="greaterThan" />
+</conditions>
 </modifier>
 <modifier type="add" field="error" value="A Terranic Greatsword is Two-Handed: a model may only carry one.">
 <conditions>
@@ -4249,6 +4262,9 @@
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="385b-694f-258f-7af3" type="max" />
 </constraints>
+<categoryLinks>
+<categoryLink id="1882-a7f3-4568-9dfd" name="Iron Halo (one per army)" hidden="false" targetId="7e81-7178-7650-6f77" primary="false" />
+</categoryLinks>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
 </costs>
@@ -5918,6 +5934,11 @@
 </conditionGroups>
 </conditionGroup>
 </conditionGroups>
+</modifier>
+<modifier type="add" field="error" value="Only one Iron Halo per army (Praetors and Centurions).">
+<conditions>
+<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7e81-7178-7650-6f77" type="greaterThan" />
+</conditions>
 </modifier>
 <modifier type="add" field="error" value="A Terranic Greatsword is Two-Handed: a model may only carry one.">
 <conditions>
@@ -8089,6 +8110,9 @@
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="158a-5ea7-c61d-4735" type="max" />
 </constraints>
+<categoryLinks>
+<categoryLink id="9e67-69c4-a772-1057" name="Iron Halo (one per army)" hidden="false" targetId="7e81-7178-7650-6f77" primary="false" />
+</categoryLinks>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
 </costs>
@@ -10034,6 +10058,11 @@
 </conditionGroups>
 </conditionGroup>
 </conditionGroups>
+</modifier>
+<modifier type="add" field="error" value="Only one Iron Halo per army (Praetors and Centurions).">
+<conditions>
+<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7e81-7178-7650-6f77" type="greaterThan" />
+</conditions>
 </modifier>
 <modifier type="add" field="error" value="A Terranic Greatsword is Two-Handed: a model may only carry one.">
 <conditions>
@@ -12205,6 +12234,9 @@
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="35a9-f97a-bf3f-af2a" type="max" />
 </constraints>
+<categoryLinks>
+<categoryLink id="9077-6e18-3e55-298d" name="Iron Halo (one per army)" hidden="false" targetId="7e81-7178-7650-6f77" primary="false" />
+</categoryLinks>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
 </costs>
@@ -50008,9 +50040,6 @@ LIMITATIONS - The Warlord must belong to the Firewing. The compulsory Troops mus
 </costs>
 </selectionEntry>
 <selectionEntry id="33a9-e5ba-d380-edde" name="Iron Halo" hidden="false" collective="false" import="true" type="upgrade">
-<constraints>
-<constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1a45-a351-c5a5-8048" type="max" />
-</constraints>
 <rules>
 <rule id="3c57-e4f2-7a0f-6271" name="Iron Halo" hidden="false">
 <description>Grants a 4+ Invulnerable Save. An army may normally contain no more than one Iron Halo.</description>

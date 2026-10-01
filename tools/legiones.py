@@ -176,8 +176,8 @@ def shared_items():
         if name in WEAPONS:
             continue
         cons = []
-        if name == "Iron Halo":  # normally one per army
-            cons.append(constraint(uid("ironhalo", "roster"), "max", 1, scope="roster", deep=True))
+        # Iron Halo "normally one per army": counted through the CAT_HALO category on the Praetor's and Centurion's
+        # Iron Halo (see halo_limited), so named characters with their own Iron Halo do not trip the limit
         inline = [rule(uid("gear-rule", name), name, text)] if text else []
         out.append(entry(W(name), name, cost=0, rules=inline, infolinks=rules_links(core, key=name),
                          constraints=cons))
@@ -338,8 +338,9 @@ def ic_armoury(key, unit_id, praetor):
         note = _rest[-1]
         lid = uid("link", gid, name)
         f = item_forbids(name, unit_id, note, is_cent)
-        extra_links.append(link(lid, W(name), name, cost=pts, mods=forbid_mods(lid, f),
-                                constraints=[constraint(uid(lid, "max"), "max", 1, auto=True)]))
+        lk = link(lid, W(name), name, cost=pts, mods=forbid_mods(lid, f),
+                  constraints=[constraint(uid(lid, "max"), "max", 1, auto=True)])
+        extra_links.append(halo_limited(lk) if name == "Iron Halo" else lk)
     extra = group(gid, "Additional Wargear", links=extra_links)
 
     cap = uid("grp", key, "armoury")
@@ -454,9 +455,23 @@ def tda_pistol_error(unit_id):
                     groups=[grp])
 
 
+def halo_limited(lk):
+    """Mark an Iron Halo link as one that counts towards the one-per-army limit."""
+    cl = wrap("categoryLinks", [category_link(gs.CAT_HALO, "Iron Halo (one per army)", key=lk.get("id"))])
+    kids = list(lk)
+    pos = next((i for i, c in enumerate(kids) if c.tag == "costs"), len(kids))
+    lk.insert(pos, cl)
+    return lk
+
+
+def halo_error():
+    return modifier("add", "error", "Only one Iron Halo per army (Praetors and Centurions).",
+                    conds=[cond(gs.CAT_HALO, "roster", "greaterThan", 1)])
+
+
 def praetor():
     uid_ = PRAETOR
-    return entry(uid_, "Legion Praetor", typ="unit", cost=125, mods=[tda_pistol_error(uid_)],
+    return entry(uid_, "Legion Praetor", typ="unit", cost=125, mods=[tda_pistol_error(uid_), halo_error()],
                  cats=[category_link(gs.cat("HQ"), "HQ", primary=True, key=uid_),
                        category_link(gs.CAT_COMMANDER, "Compulsory HQ Eligible", key=uid_),
                        category_link(gs.CAT_MASTER, "Master of the Legion", key=uid_)],
@@ -464,7 +479,7 @@ def praetor():
                                         6, 5, 4, 4, 3, 5, 3, 10, "3+")],
                  infolinks=rules_links(["Legiones Astartes", "Independent Character", "Master of the Legion",
                                         "Honour Guard"], key=uid_),
-                 links=[gear(uid_, "Frag Grenades"), gear(uid_, "Iron Halo")],
+                 links=[gear(uid_, "Frag Grenades"), halo_limited(gear(uid_, "Iron Halo"))],
                  groups=[ic_armoury("praetor", uid_, True), *ic_armour_mobility("praetor", uid_, False)])
 
 
@@ -473,7 +488,7 @@ def centurion():
     remove_cmd = modifier("remove", "category", gs.CAT_COMMANDER,
                           groups=[any_of(*[has(consul_id(c), uid_) for c in SUPPORT_OFFICERS + ["Moritat"]])])
     rename = [modifier("set", "name", f"Legion {c} Consul", conds=[has(consul_id(c), uid_)]) for c in CONSULS]
-    return entry(uid_, "Legion Centurion", typ="unit", cost=50, mods=[remove_cmd, *rename, tda_pistol_error(uid_)],
+    return entry(uid_, "Legion Centurion", typ="unit", cost=50, mods=[remove_cmd, *rename, tda_pistol_error(uid_), halo_error()],
                  cats=[category_link(gs.cat("HQ"), "HQ", primary=True, key=uid_),
                        category_link(gs.CAT_COMMANDER, "Compulsory HQ Eligible", key=uid_)],
                  profiles=[unit_profile("centurion", "Legion Centurion", "Infantry (Character)",

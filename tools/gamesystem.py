@@ -63,13 +63,14 @@ CAT_HQ_PLUS1 = FOC_PLUS["HQ"]
 CAT_EL_PLUS1 = FOC_PLUS["Elites"]
 CAT_FA_MINUS1 = FOC_MINUS["Fast Attack"]
 CAT_PRIMARCH = cat("Primarch")
+CAT_HALO = cat("Iron Halo (one per army)")  # Iron Halos of Praetors and Centurions; named characters' own do not count
 CAT_BROTHERHOOD = cat("Psychic Brotherhood")
 EXTRA_CATS = [("Configuration", CAT_CONFIG), ("Dedicated Transport", CAT_TRANSPORT),
               ("Compulsory HQ Eligible", CAT_COMMANDER),
               ("Compulsory Troops Eligible", CAT_LINE),
               ("Master of the Legion", CAT_MASTER),
               ("Limit: 0-1 Fast Attack", CAT_LIMIT_FA), ("Limit: 0-1 Heavy Support", CAT_LIMIT_HS),
-              ("Primarch", CAT_PRIMARCH), ("Psychic Brotherhood", CAT_BROTHERHOOD)]
+              ("Primarch", CAT_PRIMARCH), ("Iron Halo (one per army)", CAT_HALO), ("Psychic Brotherhood", CAT_BROTHERHOOD)]
 EXTRA_CATS += [(f"Force Org: +1 {n}", FOC_PLUS[n]) for n in FOC_SLOTS]
 EXTRA_CATS += [(f"Force Org: -1 {n}", FOC_MINUS[n]) for n in FOC_SLOTS]
 

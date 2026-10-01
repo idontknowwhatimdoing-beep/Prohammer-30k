@@ -152,6 +152,11 @@
 </conditionGroup>
 </conditionGroups>
 </modifier>
+<modifier type="add" field="error" value="Only one Iron Halo per army (Praetors and Centurions).">
+<conditions>
+<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7e81-7178-7650-6f77" type="greaterThan" />
+</conditions>
+</modifier>
 <modifier type="add" field="error" value="Digital Lasers may not be combined with Terminator Honours.">
 <conditionGroups>
 <conditionGroup type="and">
@@ -1726,6 +1731,9 @@
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b4a5-c592-6a76-11c6" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="594e-7b19-6c69-2e2d" type="max" />
 </constraints>
+<categoryLinks>
+<categoryLink id="950f-6d98-a14d-6c33" name="Iron Halo (one per army)" hidden="false" targetId="7e81-7178-7650-6f77" primary="false" />
+</categoryLinks>
 </entryLink>
 <entryLink id="8f80-d93c-7b08-46ce" name="Sonic Weapon (one Praetor or Centurion per army, Traitor only)" hidden="false" collective="false" import="true" targetId="d78b-5f18-189b-808c" type="selectionEntry">
 <modifiers>
@@ -1920,6 +1928,11 @@
 </conditionGroups>
 </conditionGroup>
 </conditionGroups>
+</modifier>
+<modifier type="add" field="error" value="Only one Iron Halo per army (Praetors and Centurions).">
+<conditions>
+<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7e81-7178-7650-6f77" type="greaterThan" />
+</conditions>
 </modifier>
 <modifier type="add" field="error" value="Digital Lasers may not be combined with Terminator Honours.">
 <conditionGroups>
@@ -4000,6 +4013,9 @@
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="385b-694f-258f-7af3" type="max" />
 </constraints>
+<categoryLinks>
+<categoryLink id="1882-a7f3-4568-9dfd" name="Iron Halo (one per army)" hidden="false" targetId="7e81-7178-7650-6f77" primary="false" />
+</categoryLinks>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
 </costs>
@@ -36034,9 +36050,6 @@ LIMITATIONS - Only a Traitor Emperor's Children Detachment. The army must includ
 </costs>
 </selectionEntry>
 <selectionEntry id="33a9-e5ba-d380-edde" name="Iron Halo" hidden="false" collective="false" import="true" type="upgrade">
-<constraints>
-<constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1a45-a351-c5a5-8048" type="max" />
-</constraints>
 <rules>
 <rule id="3c57-e4f2-7a0f-6271" name="Iron Halo" hidden="false">
 <description>Grants a 4+ Invulnerable Save. An army may normally contain no more than one Iron Halo.</description>
