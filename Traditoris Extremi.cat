@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue id="2fcb-afff-8e66-926c" name="Traditoris Extremi" revision="1" battleScribeVersion="2.03" authorName="idontknowwhatimdoing-beep" authorUrl="https://github.com/idontknowwhatimdoing-beep/Prohammer-30k" library="false" gameSystemId="p30k-0000-0000-0001" gameSystemRevision="1" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<publications>
+<publication id="4b39-b100-6367-395b" name="Traditoris Extremi" shortName="Traditoris Extremi" />
+</publications>
+<entryLinks>
+<entryLink id="57dd-6851-bf83-428f" name="Allegiance" hidden="false" collective="false" import="true" targetId="47ae-c94f-98e8-ca99" type="selectionEntry" />
+<entryLink id="d3d3-5655-c590-2ffd" name="Daemon Prince" hidden="false" collective="false" import="true" targetId="17f5-d1c2-4386-ceca" type="selectionEntry" />
+</entryLinks>
+<sharedSelectionEntries>
+<selectionEntry id="47ae-c94f-98e8-ca99" name="Allegiance" hidden="false" collective="false" import="true" type="upgrade">
+<constraints>
+<constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="9cc7-271d-cd0c-ee34" type="min" />
+<constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="49e1-f908-136c-22bb" type="max" />
+</constraints>
+<categoryLinks>
+<categoryLink id="816e-ac90-8793-d76b" name="Configuration" hidden="false" targetId="ba14-d0f1-f942-df54" primary="true" />
+</categoryLinks>
+<selectionEntryGroups>
+<selectionEntryGroup id="60c9-40ed-16e7-2eb5" name="Allegiance" hidden="false" collective="false" import="true" defaultSelectionEntryId="267b-12c2-839b-a93a">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="11ea-1391-eb52-a0b4" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="80b8-8eda-d04f-85f3" type="max" />
+</constraints>
+<selectionEntries>
+<selectionEntry id="267b-12c2-839b-a93a" name="Traitor" hidden="false" collective="false" import="true" type="upgrade" sortIndex="1" defaultAmount="1">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f732-afe9-63d6-9312" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+</selectionEntries>
+</selectionEntryGroup>
+</selectionEntryGroups>
+<infoLinks>
+<infoLink id="53e3-485a-0c5b-2c6d" name="Traditoris Extremi" hidden="false" targetId="bc4e-db27-ed1d-7928" type="rule" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+<selectionEntry id="17f5-d1c2-4386-ceca" name="Daemon Prince" hidden="false" collective="false" import="true" type="unit">
+<infoLinks>
+<infoLink id="5021-4d61-ac87-a496" name="Legiones Astartes" hidden="false" targetId="0ed8-99c2-6b0e-f182" type="rule" />
+<infoLink id="d672-a490-10d3-5fcf" name="Independent Character" hidden="false" targetId="03f2-ed94-7611-f6a1" type="rule" />
+<infoLink id="e139-2bec-222b-8dd4" name="Daemon" hidden="false" targetId="2e04-a925-ec32-e078" type="rule" />
+</infoLinks>
+<categoryLinks>
+<categoryLink id="ceb1-9370-6b75-d5cb" name="HQ" hidden="false" targetId="cd54-54be-0cb1-3474" primary="true" />
+<categoryLink id="2297-d784-83f3-e375" name="Compulsory HQ Eligible" hidden="false" targetId="e89b-053d-1bdc-4e2e" primary="false" />
+</categoryLinks>
+<selectionEntries>
+<selectionEntry id="d8e0-95e5-a0d9-5476" name="Daemon Prince" hidden="false" collective="false" import="true" type="model">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aca8-2971-7f0d-cae0" type="max" />
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f0d8-e88d-01f5-36f3" type="min" />
+</constraints>
+<profiles>
+<profile id="015a-2f86-0963-e058" name="Daemon Prince" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
+<characteristics>
+<characteristic name="Unit Type" typeId="b0cf-47d7-3836-cf93">Monstrous Creature (Character)</characteristic>
+<characteristic name="WS" typeId="52b0-fc35-42a9-af3d">7</characteristic>
+<characteristic name="BS" typeId="445c-b7e0-7a15-ba83">5</characteristic>
+<characteristic name="S" typeId="7e44-d066-921a-29bd">6</characteristic>
+<characteristic name="T" typeId="a21c-b80a-e1e4-079a">5</characteristic>
+<characteristic name="W" typeId="6ba7-776c-9ed0-b148">4</characteristic>
+<characteristic name="I" typeId="6f24-6315-ebd0-9465">5</characteristic>
+<characteristic name="A" typeId="e39a-3da9-2567-cfd3">4</characteristic>
+<characteristic name="Ld" typeId="7e63-7406-c8d0-7e03">10</characteristic>
+<characteristic name="Sv" typeId="d23d-aa50-ddfb-88a0">3+/5++</characteristic>
+</characteristics>
+</profile>
+</profiles>
+<entryLinks>
+<entryLink id="4b59-3f4b-82a8-aa6a" name="Power Armour" hidden="false" collective="false" import="true" targetId="1133-946a-2323-7a81" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ab03-f6a1-cd16-d822" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="846a-5153-4807-4994" type="max" />
+</constraints>
+</entryLink>
+<entryLink id="7bd7-215a-8688-8bed" name="Daemonic Weapon" hidden="false" collective="false" import="true" targetId="d8cf-6475-f5a3-da15" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9cf5-5b65-9894-bda6" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5ecb-dc0f-2d6b-c763" type="max" />
+</constraints>
+</entryLink>
+<entryLink id="6684-d6b0-7d26-aa68" name="Daemonic Aura" hidden="false" collective="false" import="true" targetId="ae0d-ff63-136d-ac6d" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e740-7ddf-8502-5293" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="747a-8ca6-27d8-aff8" type="max" />
+</constraints>
+</entryLink>
+</entryLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+</selectionEntries>
+<selectionEntryGroups>
+<selectionEntryGroup id="626d-eae8-32e3-d487" name="Legion (named Legiones Astartes rule)" hidden="false" collective="false" import="true">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="310f-2163-b51c-b0fb" type="max" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6589-f26f-a0a8-46d4" type="min" />
+</constraints>
+<selectionEntries>
+<selectionEntry id="4e14-bb02-3489-94aa" name="III - Emperor's Children" hidden="false" collective="false" import="true" type="upgrade">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0120-6751-af27-98af" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+<selectionEntry id="6107-e416-f254-e000" name="IV - Iron Warriors" hidden="false" collective="false" import="true" type="upgrade">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3b2e-0792-6585-6b2e" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+<selectionEntry id="24b4-db4a-6cf6-969a" name="VIII - Night Lords" hidden="false" collective="false" import="true" type="upgrade">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e20a-95e8-f808-7191" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+<selectionEntry id="4423-a1b5-82d3-30b9" name="XII - World Eaters" hidden="false" collective="false" import="true" type="upgrade">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="51d1-f4b1-f8c3-bd60" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+<selectionEntry id="be09-f697-e622-424b" name="XIV - Death Guard" hidden="false" collective="false" import="true" type="upgrade">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e287-eaa2-dbb1-d10e" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+<selectionEntry id="9b67-df6e-ca05-0f7c" name="XV - Thousand Sons" hidden="false" collective="false" import="true" type="upgrade">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6326-7836-1acd-574b" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+<selectionEntry id="761b-244c-9b68-1fa7" name="XVI - Sons of Horus" hidden="false" collective="false" import="true" type="upgrade">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d964-7950-0f09-a1ef" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+<selectionEntry id="cec3-cb74-145a-f338" name="XVII - Word Bearers" hidden="false" collective="false" import="true" type="upgrade">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1c2b-4e43-a048-8f15" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+<selectionEntry id="b2d1-fefb-7706-1308" name="XX - Alpha Legion" hidden="false" collective="false" import="true" type="upgrade">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ed96-4ff6-c942-e93f" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+</selectionEntries>
+</selectionEntryGroup>
+</selectionEntryGroups>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="125" />
+</costs>
+</selectionEntry>
+<selectionEntry id="d8cf-6475-f5a3-da15" name="Daemonic Weapon" hidden="false" collective="false" import="true" type="upgrade">
+<infoLinks>
+<infoLink id="15c6-06eb-7012-0d66" name="Daemonic Weapon" hidden="false" targetId="7c91-8a14-30d9-8f28" type="profile" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+<selectionEntry id="1133-946a-2323-7a81" name="Power Armour" hidden="false" collective="false" import="true" type="upgrade">
+<rules>
+<rule id="1b85-2517-ee81-6d6f" name="Power Armour" hidden="false">
+<description>A model wearing Power Armour has a 3+ Armour Save.</description>
+</rule>
+</rules>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+<selectionEntry id="ae0d-ff63-136d-ac6d" name="Daemonic Aura" hidden="false" collective="false" import="true" type="upgrade">
+<rules>
+<rule id="e2cb-a590-19be-0420" name="Daemonic Aura" hidden="false">
+<description>Listed as wargear of the Daemon Prince; the supplement does not yet give its rules (work in progress). The Daemon Prince's profile shows a 5+ Invulnerable Save.</description>
+</rule>
+</rules>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+</sharedSelectionEntries>
+<sharedRules>
+<rule id="bc4e-db27-ed1d-7928" name="Traditoris Extremi" hidden="false">
+<description>This supplement represents the fully corrupted and mutated Traitor Legions of the latter days of the Horus Heresy and the Scouring, which have dedicated their worship to Chaos. It is used together with the regular Legiones Astartes army list and the Legion army books (Forces of the Legions): certain Force Organisation spaces are changed and certain unit upgrades may be applied (not yet defined in this work-in-progress supplement). Traitor Allegiance only. In New Recruit, add this catalogue as an additional Detachment next to the Legion Detachment; the units here must belong to the same Traitor Legion army.</description>
+</rule>
+<rule id="0ed8-99c2-6b0e-f182" name="Legiones Astartes" hidden="false">
+<description>All models with this special rule also have the And They Shall Know No Fear special rule as presented in ProHammer Classic. They are not Fearless, though, and lose that bonus.
+In addition, each model possesses a named version of the Legiones Astartes special rule corresponding to its Legion, such as Legiones Astartes (Sons of Horus). A model may only ever possess one named version. Models with a named Legiones Astartes special rule gain any additional rules associated with that Legion (see Forces of the Legions).
+Unless specifically stated otherwise, vehicles do not have this special rule.</description>
+</rule>
+</sharedRules>
+<sharedProfiles>
+<profile id="7c91-8a14-30d9-8f28" name="Daemonic Weapon" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+<characteristics>
+<characteristic name="Range" typeId="4b89-f4f0-2a22-1135">-</characteristic>
+<characteristic name="S" typeId="6204-806b-a18a-c0be">User</characteristic>
+<characteristic name="AP" typeId="964e-6f66-dcaa-247a">-</characteristic>
+<characteristic name="Type" typeId="54df-9f85-8d55-7440">Counts as a Power Weapon (Ignores Armour Saves)</characteristic>
+</characteristics>
+</profile>
+</sharedProfiles>
+</catalogue>

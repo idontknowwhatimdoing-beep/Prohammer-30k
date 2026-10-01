@@ -5982,6 +5982,83 @@
 </selectionEntry>
 </selectionEntries>
 </selectionEntryGroup>
+<selectionEntryGroup id="a1bc-789b-28a2-83d6" name="Psychic Discipline" hidden="false" collective="false" import="true">
+<modifiers>
+<modifier type="add" field="error" value="Choose a Psychic Discipline.">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8074-a375-a9d9-c2ea" type="lessThan" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="32c6-da17-6b08-a270" type="lessThan" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3b66-f74c-02fe-80f9" type="lessThan" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="abd6-6f73-88fc-560c" type="lessThan" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="eb92-83cb-7998-6294" type="lessThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+</modifiers>
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fd06-238e-1a50-c029" type="max" />
+</constraints>
+<selectionEntries>
+<selectionEntry id="8074-a375-a9d9-c2ea" name="Biomancy" hidden="false" collective="false" import="true" type="upgrade">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6828-b466-9c7b-5fd4" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="44be-b964-9a51-9d7f" name="Discipline: Biomancy" hidden="false" targetId="c676-5629-6301-c1ae" type="rule" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+<selectionEntry id="32c6-da17-6b08-a270" name="Divination" hidden="false" collective="false" import="true" type="upgrade">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8b3a-f0c1-6697-7d31" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="de42-3e9a-daf0-41e1" name="Discipline: Divination" hidden="false" targetId="c9dc-bd2d-7d4f-bca3" type="rule" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+<selectionEntry id="3b66-f74c-02fe-80f9" name="Pyromancy" hidden="false" collective="false" import="true" type="upgrade">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="66b8-34b2-6a9e-c867" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="c6ec-5321-4556-4888" name="Discipline: Pyromancy" hidden="false" targetId="0d01-4887-ea9d-57d1" type="rule" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+<selectionEntry id="abd6-6f73-88fc-560c" name="Telekinesis" hidden="false" collective="false" import="true" type="upgrade">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4100-12dd-74ae-b24d" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="8dd2-d12a-943f-4fc3" name="Discipline: Telekinesis" hidden="false" targetId="b737-b555-191c-0792" type="rule" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+<selectionEntry id="eb92-83cb-7998-6294" name="Telepathy" hidden="false" collective="false" import="true" type="upgrade">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cdc5-35d2-2953-c225" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="622b-0ef3-d544-6277" name="Discipline: Telepathy" hidden="false" targetId="58b2-89a8-e8fe-6845" type="rule" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+</selectionEntries>
+</selectionEntryGroup>
 </selectionEntryGroups>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
@@ -7981,6 +8058,12 @@ LIMITATIONS - No other Lord of War; no Allied Detachment; no more than one other
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f8ac-1a86-9422-097c" type="lessThan" />
 </conditions>
 </modifier>
+<modifier type="add" field="error" value="The Axis of Dissolution: the Detachment may not include a Fortification.">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ec5f-6e1f-876e-f969" type="atLeast" />
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1f6e-6456-710f-fbe7" type="atLeast" />
+</conditions>
+</modifier>
 </modifiers>
 <rules>
 <rule id="2dd0-f1b5-5ce4-fc91" name="The Axis of Dissolution" hidden="false">
@@ -7997,6 +8080,12 @@ LIMITATIONS - Every Troops choice must be taken at its maximum unit size. No mor
 <modifier type="set" field="hidden" value="true">
 <conditions>
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f8ac-1a86-9422-097c" type="lessThan" />
+</conditions>
+</modifier>
+<modifier type="add" field="error" value="The Guard of the Crimson King: the Detachment may not include a Fortification.">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1060-0ef5-0483-9b95" type="atLeast" />
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1f6e-6456-710f-fbe7" type="atLeast" />
 </conditions>
 </modifier>
 </modifiers>
@@ -20822,62 +20911,23 @@ LIMITATIONS - The Warlord must be a Thousand Sons Psyker. At least two Psychic B
 </characteristics>
 </profile>
 </profiles>
-<selectionEntryGroups>
-<selectionEntryGroup id="6fe6-904b-ed77-4b8a" name="Replace Prosperine Force Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="90c4-00f1-3698-ad1d">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5e53-6ba2-5b90-8a6e" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a228-7669-95ff-ad14" type="max" />
-</constraints>
-<entryLinks>
-<entryLink id="90c4-00f1-3698-ad1d" name="Prosperine Force Weapon" hidden="false" collective="false" import="true" targetId="7a10-6da9-2be9-c27c" type="selectionEntry" sortIndex="1" defaultAmount="1" />
-<entryLink id="8986-ada0-f7c9-3c39" name="Power Fist" hidden="false" collective="false" import="true" targetId="0b4d-922b-4629-b7ca" type="selectionEntry" sortIndex="3" />
-<entryLink id="b47b-605b-8b76-984d" name="Chainfist" hidden="false" collective="false" import="true" targetId="a078-deea-084f-38e2" type="selectionEntry" sortIndex="4">
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
-</costs>
-</entryLink>
-</entryLinks>
-</selectionEntryGroup>
-<selectionEntryGroup id="5657-c477-66c7-a654" name="Replace Foeblaster Boltgun" hidden="false" collective="false" import="true" defaultSelectionEntryId="4707-c49c-b3cd-82ca">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0606-1904-a027-fcc2" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="08aa-f44c-3162-078f" type="max" />
-</constraints>
-<entryLinks>
-<entryLink id="4707-c49c-b3cd-82ca" name="Foeblaster Boltgun" hidden="false" collective="false" import="true" targetId="9b55-194b-ad9f-fffc" type="selectionEntry" sortIndex="1" defaultAmount="1" />
-<entryLink id="fedc-b80d-7e8e-68c5" name="Combi-Flamer" hidden="false" collective="false" import="true" targetId="8a4e-3dc8-c0e4-b9cf" type="selectionEntry" sortIndex="3">
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
-</costs>
-</entryLink>
-<entryLink id="1af3-057a-7fea-fece" name="Combi-Grenade Launcher" hidden="false" collective="false" import="true" targetId="53ca-71d4-e838-5ab2" type="selectionEntry" sortIndex="4">
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
-</costs>
-</entryLink>
-<entryLink id="3a48-062a-3d39-e2fd" name="Combi-Meltagun" hidden="false" collective="false" import="true" targetId="b147-b586-15e9-f12b" type="selectionEntry" sortIndex="5">
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
-</costs>
-</entryLink>
-<entryLink id="1325-1bd5-0e8c-5082" name="Combi-Plasma Gun" hidden="false" collective="false" import="true" targetId="e700-2c4d-9283-a7b7" type="selectionEntry" sortIndex="6">
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
-</costs>
-</entryLink>
-<entryLink id="dc49-f3aa-6735-a4e0" name="Combi-Volkite Charger" hidden="false" collective="false" import="true" targetId="2125-78bc-6ae3-2391" type="selectionEntry" sortIndex="7">
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
-</costs>
-</entryLink>
-</entryLinks>
-</selectionEntryGroup>
-</selectionEntryGroups>
 <entryLinks>
 <entryLink id="06b2-676e-054d-2e19" name="Cataphractii Terminator Armour" hidden="false" collective="false" import="true" targetId="0656-5d6b-29bb-1441" type="selectionEntry">
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b886-131f-7863-3c19" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2b67-2a48-1abd-b3de" type="max" />
+</constraints>
+</entryLink>
+<entryLink id="2ea7-2920-9031-a4a1" name="Prosperine Force Weapon" hidden="false" collective="false" import="true" targetId="7a10-6da9-2be9-c27c" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ba50-2bdf-ea2b-62aa" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5b0e-1ceb-aacc-9b2d" type="max" />
+</constraints>
+</entryLink>
+<entryLink id="e479-30fe-c6bd-c6fd" name="Foeblaster Boltgun" hidden="false" collective="false" import="true" targetId="9b55-194b-ad9f-fffc" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6aae-c6fd-cb35-ae70" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="abc5-1fc2-13f8-e4e0" type="max" />
 </constraints>
 </entryLink>
 </entryLinks>
@@ -21174,34 +21224,108 @@ LIMITATIONS - The Warlord must be a Thousand Sons Psyker. At least two Psychic B
 </selectionEntry>
 </selectionEntries>
 </selectionEntryGroup>
-<selectionEntryGroup id="a7d4-0a0b-ecd6-656c" name="Heavy Weapons (up to two per five models)" hidden="false" collective="false" import="true">
+<selectionEntryGroup id="5a45-a0da-f8b1-d78b" name="Sekhmet Terminators: replace Prosperine Force Weapon (any number)" hidden="false" collective="false" import="true">
 <modifiers>
-<modifier type="increment" field="b562-80d1-bf92-3715" value="1">
+<modifier type="increment" field="96d6-5b34-a9ae-edbe" value="1">
+<repeats>
+<repeat field="selections" scope="21b1-f4f0-3335-4880" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8924-7bef-1fa0-3242" repeats="1" roundUp="false" />
+</repeats>
+</modifier>
+</modifiers>
+<constraints>
+<constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="96d6-5b34-a9ae-edbe" type="max" />
+</constraints>
+<entryLinks>
+<entryLink id="20ef-f696-6c6f-b58a" name="Power Fist" hidden="false" collective="false" import="true" targetId="0b4d-922b-4629-b7ca" type="selectionEntry" />
+<entryLink id="4bac-2911-aefa-d919" name="Chainfist" hidden="false" collective="false" import="true" targetId="a078-deea-084f-38e2" type="selectionEntry">
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
+</costs>
+</entryLink>
+</entryLinks>
+</selectionEntryGroup>
+<selectionEntryGroup id="1456-3b89-31a5-e034" name="Sekhmet Terminators: replace Foeblaster Boltgun (any number)" hidden="false" collective="false" import="true">
+<modifiers>
+<modifier type="increment" field="6129-a82c-4aa1-c486" value="1">
+<repeats>
+<repeat field="selections" scope="21b1-f4f0-3335-4880" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8924-7bef-1fa0-3242" repeats="1" roundUp="false" />
+</repeats>
+</modifier>
+<modifier type="decrement" field="6129-a82c-4aa1-c486" value="1">
+<repeats>
+<repeat field="selections" scope="21b1-f4f0-3335-4880" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9e6d-afcf-8202-e47c" repeats="1" roundUp="false" />
+</repeats>
+</modifier>
+<modifier type="decrement" field="6129-a82c-4aa1-c486" value="1">
+<repeats>
+<repeat field="selections" scope="21b1-f4f0-3335-4880" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bb90-ab7a-87fe-54e2" repeats="1" roundUp="false" />
+</repeats>
+</modifier>
+<modifier type="decrement" field="6129-a82c-4aa1-c486" value="1">
+<repeats>
+<repeat field="selections" scope="21b1-f4f0-3335-4880" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ce1c-c1c4-b57e-d841" repeats="1" roundUp="false" />
+</repeats>
+</modifier>
+</modifiers>
+<constraints>
+<constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6129-a82c-4aa1-c486" type="max" />
+</constraints>
+<entryLinks>
+<entryLink id="6064-dbf4-4936-9ce6" name="Combi-Flamer" hidden="false" collective="false" import="true" targetId="8a4e-3dc8-c0e4-b9cf" type="selectionEntry">
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
+</costs>
+</entryLink>
+<entryLink id="e75c-87a4-931b-eb69" name="Combi-Grenade Launcher" hidden="false" collective="false" import="true" targetId="53ca-71d4-e838-5ab2" type="selectionEntry">
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
+</costs>
+</entryLink>
+<entryLink id="6cd5-0b9f-d322-34ac" name="Combi-Meltagun" hidden="false" collective="false" import="true" targetId="b147-b586-15e9-f12b" type="selectionEntry">
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
+</costs>
+</entryLink>
+<entryLink id="1277-f033-9641-64dd" name="Combi-Plasma Gun" hidden="false" collective="false" import="true" targetId="e700-2c4d-9283-a7b7" type="selectionEntry">
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
+</costs>
+</entryLink>
+<entryLink id="32ea-4911-5e96-6311" name="Combi-Volkite Charger" hidden="false" collective="false" import="true" targetId="2125-78bc-6ae3-2391" type="selectionEntry">
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
+</costs>
+</entryLink>
+</entryLinks>
+</selectionEntryGroup>
+<selectionEntryGroup id="3e52-c705-a1d0-e3a4" name="Heavy Weapons (up to two per five models, replace Foeblaster Boltgun)" hidden="false" collective="false" import="true">
+<modifiers>
+<modifier type="increment" field="a9ff-a154-571b-860e" value="1">
 <repeats>
 <repeat field="selections" scope="21b1-f4f0-3335-4880" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" repeats="1" roundUp="false" />
 </repeats>
 </modifier>
-<modifier type="increment" field="b562-80d1-bf92-3715" value="1">
+<modifier type="increment" field="a9ff-a154-571b-860e" value="1">
 <repeats>
 <repeat field="selections" scope="21b1-f4f0-3335-4880" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" repeats="1" roundUp="false" />
 </repeats>
 </modifier>
 </modifiers>
 <constraints>
-<constraint automatic="true" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b562-80d1-bf92-3715" type="max" />
+<constraint automatic="true" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a9ff-a154-571b-860e" type="max" />
 </constraints>
 <entryLinks>
-<entryLink id="cfb7-48e3-60cd-7360" name="Heavy Flamer" hidden="false" collective="false" import="true" targetId="9e6d-afcf-8202-e47c" type="selectionEntry">
+<entryLink id="9d74-58ee-7230-50c3" name="Heavy Flamer" hidden="false" collective="false" import="true" targetId="9e6d-afcf-8202-e47c" type="selectionEntry">
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
 </entryLink>
-<entryLink id="ef09-b46f-6961-96d7" name="Plasma Blaster" hidden="false" collective="false" import="true" targetId="bb90-ab7a-87fe-54e2" type="selectionEntry">
+<entryLink id="a4e2-13a9-d4ab-4d43" name="Plasma Blaster" hidden="false" collective="false" import="true" targetId="bb90-ab7a-87fe-54e2" type="selectionEntry">
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
 </costs>
 </entryLink>
-<entryLink id="8df6-e30e-b323-f995" name="Reaper Autocannon" hidden="false" collective="false" import="true" targetId="ce1c-c1c4-b57e-d841" type="selectionEntry">
+<entryLink id="cc22-5b99-6799-aca7" name="Reaper Autocannon" hidden="false" collective="false" import="true" targetId="ce1c-c1c4-b57e-d841" type="selectionEntry">
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
 </costs>
@@ -21238,8 +21362,10 @@ LIMITATIONS - The Warlord must be a Thousand Sons Psyker. At least two Psychic B
 <infoLinks>
 <infoLink id="4b46-3b1e-80e8-9dc5" name="Legiones Astartes (Thousand Sons)" hidden="false" targetId="8fbc-6d9b-192b-6483" type="rule" />
 <infoLink id="5440-6dab-2d42-7109" name="Brotherhood of Psychers" hidden="false" targetId="c570-8770-c568-34a0" type="rule" />
+<infoLink id="91de-0217-67a9-631c" name="Psychic Brotherhood (Khenetai)" hidden="false" targetId="9360-62b6-2611-5040" type="rule" />
 <infoLink id="826e-ea78-129e-8754" name="Mindsong of Blades" hidden="false" targetId="c165-b3e0-1c39-cd79" type="rule" />
 <infoLink id="04c5-4d27-fec4-2668" name="Paired Prosperine Force Blades" hidden="false" targetId="958d-dec3-49c4-8cc2" type="rule" />
+<infoLink id="1d39-2a8a-cb63-bd79" name="Cult Mastery" hidden="false" targetId="2599-76c2-9d19-f4e8" type="rule" />
 </infoLinks>
 <categoryLinks>
 <categoryLink id="db8f-d03e-ee98-154a" name="Elites" hidden="false" targetId="6b19-97ac-7c40-0bdf" primary="true" />
@@ -21655,6 +21781,8 @@ LIMITATIONS - The Warlord must be a Thousand Sons Psyker. At least two Psychic B
 <infoLinks>
 <infoLink id="0bde-4fe0-5bb3-038d" name="Legiones Astartes (Thousand Sons)" hidden="false" targetId="8fbc-6d9b-192b-6483" type="rule" />
 <infoLink id="7f5e-78f8-f989-559b" name="Brotherhood of Psychers" hidden="false" targetId="c570-8770-c568-34a0" type="rule" />
+<infoLink id="7e9c-e09d-17c8-67bc" name="Psychic Brotherhood (Ammitara)" hidden="false" targetId="3b43-b50e-d89c-65d3" type="rule" />
+<infoLink id="faf1-84ac-c7cc-259f" name="Cult Mastery" hidden="false" targetId="2599-76c2-9d19-f4e8" type="rule" />
 <infoLink id="12fb-918b-3015-deeb" name="Scouts" hidden="false" targetId="6bb0-de35-696c-e22a" type="rule" />
 <infoLink id="d597-e8fa-b18d-ddcd" name="Infiltrate" hidden="false" targetId="ad57-6634-e426-3e1c" type="rule" />
 <infoLink id="f222-b2c1-0aba-ae2d" name="Move Through Cover" hidden="false" targetId="c616-0756-b610-40d6" type="rule" />
@@ -21687,40 +21815,326 @@ LIMITATIONS - The Warlord must be a Thousand Sons Psyker. At least two Psychic B
 </profile>
 </profiles>
 <selectionEntryGroups>
-<selectionEntryGroup id="8434-644b-f04a-ff63" name="Replace Sniper Rifle" hidden="false" collective="false" import="true" defaultSelectionEntryId="286d-8470-82fd-c37e">
+<selectionEntryGroup id="03d9-6fce-0be1-00e8" name="Space Marine Armoury (max 50 pts)" hidden="false" collective="false" import="true">
 <constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3aad-9edf-4a27-2481" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="740d-9a96-d41b-6350" type="max" />
+<constraint field="pts0-0000-0000-0001" scope="self" value="50" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="d140-ae53-dbcb-f0b0" type="max" />
+</constraints>
+<selectionEntryGroups>
+<selectionEntryGroup id="c071-8140-e614-198e" name="Replace Bolt Pistol" hidden="false" collective="false" import="true" defaultSelectionEntryId="07ba-db1b-6e55-faaf">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1f57-fb00-7c07-03ed" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="667b-d08f-cf1e-5af8" type="max" />
 </constraints>
 <entryLinks>
-<entryLink id="286d-8470-82fd-c37e" name="Sniper Rifle" hidden="false" collective="false" import="true" targetId="2b77-b821-eadf-91fa" type="selectionEntry" sortIndex="1" defaultAmount="1" />
-<entryLink id="90ae-bea9-d831-9fa2" name="Combi-Flamer" hidden="false" collective="false" import="true" targetId="8a4e-3dc8-c0e4-b9cf" type="selectionEntry" sortIndex="3">
+<entryLink id="07ba-db1b-6e55-faaf" name="Bolt Pistol" hidden="false" collective="false" import="true" targetId="10e2-6917-e765-7495" type="selectionEntry" sortIndex="1" defaultAmount="1">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b466-3d47-45a4-9fae" type="max" />
+</constraints>
+</entryLink>
+<entryLink id="c3cf-25b6-65b1-11a4" name="Hand Flamer" hidden="false" collective="false" import="true" targetId="25eb-7e5c-f08a-e9b9" type="selectionEntry" sortIndex="3">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6517-3bf9-3f94-a546" type="max" />
+</constraints>
 <costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
+<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
 </costs>
 </entryLink>
-<entryLink id="9687-01c6-6e0d-dfd9" name="Combi-Volkite Charger" hidden="false" collective="false" import="true" targetId="2125-78bc-6ae3-2391" type="selectionEntry" sortIndex="4">
+<entryLink id="2e69-c09e-2b7b-3478" name="Lightning Claw" hidden="false" collective="false" import="true" targetId="0826-0946-b6a1-f42b" type="selectionEntry" sortIndex="4">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2f82-721c-eac0-e256" type="max" />
+</constraints>
 <costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
+<cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
 </costs>
 </entryLink>
-<entryLink id="6e21-e04b-ed2d-e12c" name="Combi-Meltagun" hidden="false" collective="false" import="true" targetId="b147-b586-15e9-f12b" type="selectionEntry" sortIndex="5">
+<entryLink id="8af7-986e-1e7f-af0f" name="Pair of Lightning Claws" hidden="false" collective="false" import="true" targetId="af2b-d487-5b80-ae9b" type="selectionEntry" sortIndex="5">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3ab7-31a7-4efc-976a" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
+</costs>
+</entryLink>
+<entryLink id="873f-a9aa-4f0c-e485" name="Plasma Pistol" hidden="false" collective="false" import="true" targetId="523c-5dd4-3402-0e99" type="selectionEntry" sortIndex="6">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5865-23a5-1f5f-d8ac" type="max" />
+</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
 </costs>
 </entryLink>
-<entryLink id="fe32-8466-b7b8-fa2f" name="Combi-Plasma Gun" hidden="false" collective="false" import="true" targetId="e700-2c4d-9283-a7b7" type="selectionEntry" sortIndex="6">
+<entryLink id="41ab-60a7-2775-f3e2" name="Power Fist" hidden="false" collective="false" import="true" targetId="0b4d-922b-4629-b7ca" type="selectionEntry" sortIndex="7">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f381-3828-8e7a-9a77" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
+</costs>
+</entryLink>
+<entryLink id="0ad0-0cf8-d17b-07cd" name="Power Weapon" hidden="false" collective="false" import="true" targetId="fb4f-b267-7556-185d" type="selectionEntry" sortIndex="8">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4348-d889-6140-19db" type="max" />
+</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
+</costs>
+</entryLink>
+<entryLink id="4ff3-aae5-ce58-8938" name="Rending Weapon" hidden="false" collective="false" import="true" targetId="ffab-7f00-50f4-91e0" type="selectionEntry" sortIndex="9">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3f71-e08e-5396-bb2a" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
+</costs>
+</entryLink>
+<entryLink id="c31f-611c-9797-dc9d" name="Thunder Hammer" hidden="false" collective="false" import="true" targetId="5dfe-22a3-22b6-fb7c" type="selectionEntry" sortIndex="10">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6bc0-a61b-7542-d9b8" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
+</costs>
+</entryLink>
+<entryLink id="267f-f62a-a8d3-8a8a" name="Volkite Serpenta" hidden="false" collective="false" import="true" targetId="48a3-89aa-47ef-c849" type="selectionEntry" sortIndex="11">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="57ed-e902-a430-2793" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
+</costs>
+</entryLink>
+<entryLink id="6c66-68da-ecb7-28bc" name="Combi-Bolter" hidden="false" collective="false" import="true" targetId="5d48-9963-61d3-1a72" type="selectionEntry" sortIndex="12">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a314-9ab7-8db2-e664" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
+</costs>
+</entryLink>
+<entryLink id="9340-4244-c26e-8235" name="Combi-Flamer" hidden="false" collective="false" import="true" targetId="8a4e-3dc8-c0e4-b9cf" type="selectionEntry" sortIndex="13">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="05c8-bc19-ad6b-4661" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
+</costs>
+</entryLink>
+<entryLink id="c988-b7a1-026e-7cec" name="Combi-Grenade Launcher" hidden="false" collective="false" import="true" targetId="53ca-71d4-e838-5ab2" type="selectionEntry" sortIndex="14">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0d88-1b6e-6bca-f102" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
+</costs>
+</entryLink>
+<entryLink id="0335-371c-8717-f3d9" name="Combi-Meltagun" hidden="false" collective="false" import="true" targetId="b147-b586-15e9-f12b" type="selectionEntry" sortIndex="15">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3263-14d6-3f32-255e" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
+</costs>
+</entryLink>
+<entryLink id="1082-ef0a-a570-61ae" name="Combi-Plasma Gun" hidden="false" collective="false" import="true" targetId="e700-2c4d-9283-a7b7" type="selectionEntry" sortIndex="16">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3af0-b421-692f-be4f" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
+</costs>
+</entryLink>
+<entryLink id="bb54-9a2c-be74-64fe" name="Combi-Volkite Charger" hidden="false" collective="false" import="true" targetId="2125-78bc-6ae3-2391" type="selectionEntry" sortIndex="17">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c246-ae78-9fcd-9a71" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
+</costs>
+</entryLink>
+<entryLink id="1370-d817-556d-1134" name="Storm Bolter" hidden="false" collective="false" import="true" targetId="4c92-8660-bb6b-730f" type="selectionEntry" sortIndex="18">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0aee-edbc-6af2-cac8" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
+</costs>
+</entryLink>
+<entryLink id="88c4-d09f-ce6c-f32d" name="Prosperine Force Weapon" hidden="false" collective="false" import="true" targetId="7a10-6da9-2be9-c27c" type="selectionEntry" sortIndex="108">
+<modifiers>
+<modifier type="set" field="hidden" value="true">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f8ac-1a86-9422-097c" type="lessThan" />
+</conditions>
+</modifier>
+</modifiers>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
 </costs>
 </entryLink>
 </entryLinks>
 </selectionEntryGroup>
-<selectionEntryGroup id="6fcf-31b3-c187-bfa3" name="Space Marine Armoury (max 50 pts)" hidden="false" collective="false" import="true">
+<selectionEntryGroup id="f647-79ff-f15c-8b18" name="Replace Combat Blade" hidden="false" collective="false" import="true" defaultSelectionEntryId="36aa-0ffa-406e-3979">
+<modifiers>
+<modifier type="set" field="ce5f-3a05-7d36-5f4b" value="0">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="af2b-d487-5b80-ae9b" type="atLeast" />
+</conditions>
+</modifier>
+<modifier type="set" field="26d9-4406-dbb5-703e" value="0">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="af2b-d487-5b80-ae9b" type="atLeast" />
+</conditions>
+</modifier>
+<modifier type="set" field="hidden" value="true">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="af2b-d487-5b80-ae9b" type="atLeast" />
+</conditions>
+</modifier>
+</modifiers>
 <constraints>
-<constraint field="pts0-0000-0000-0001" scope="self" value="50" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="db2a-52b6-c0ef-4029" type="max" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ce5f-3a05-7d36-5f4b" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="26d9-4406-dbb5-703e" type="max" />
 </constraints>
-<selectionEntryGroups>
+<entryLinks>
+<entryLink id="36aa-0ffa-406e-3979" name="Combat Blade" hidden="false" collective="false" import="true" targetId="c76a-de0b-ff6d-b795" type="selectionEntry" sortIndex="1" defaultAmount="1">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c801-094e-be43-c553" type="max" />
+</constraints>
+</entryLink>
+<entryLink id="acea-1f03-a7e4-5abc" name="Hand Flamer" hidden="false" collective="false" import="true" targetId="25eb-7e5c-f08a-e9b9" type="selectionEntry" sortIndex="3">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f36a-5e7b-7e1c-d8d8" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
+</costs>
+</entryLink>
+<entryLink id="f4ed-25b0-855b-a733" name="Lightning Claw" hidden="false" collective="false" import="true" targetId="0826-0946-b6a1-f42b" type="selectionEntry" sortIndex="4">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f697-87a3-b877-1d17" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
+</costs>
+</entryLink>
+<entryLink id="1b2d-2c6c-b7d6-92ab" name="Plasma Pistol" hidden="false" collective="false" import="true" targetId="523c-5dd4-3402-0e99" type="selectionEntry" sortIndex="5">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d222-b60f-094c-aa89" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
+</costs>
+</entryLink>
+<entryLink id="c192-7cb8-fb4d-73d2" name="Power Fist" hidden="false" collective="false" import="true" targetId="0b4d-922b-4629-b7ca" type="selectionEntry" sortIndex="6">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="74f0-4e5e-e791-4a54" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
+</costs>
+</entryLink>
+<entryLink id="2ca6-6b9c-7dda-1787" name="Power Weapon" hidden="false" collective="false" import="true" targetId="fb4f-b267-7556-185d" type="selectionEntry" sortIndex="7">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="885e-983a-0f7e-3962" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
+</costs>
+</entryLink>
+<entryLink id="388c-08c5-68d6-c64c" name="Rending Weapon" hidden="false" collective="false" import="true" targetId="ffab-7f00-50f4-91e0" type="selectionEntry" sortIndex="8">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bb57-f26f-4f37-e4f1" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
+</costs>
+</entryLink>
+<entryLink id="e9cb-2f41-4564-bb9b" name="Thunder Hammer" hidden="false" collective="false" import="true" targetId="5dfe-22a3-22b6-fb7c" type="selectionEntry" sortIndex="9">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7c5b-be99-4ece-193b" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
+</costs>
+</entryLink>
+<entryLink id="9bb1-c7ce-09c7-dd5f" name="Volkite Serpenta" hidden="false" collective="false" import="true" targetId="48a3-89aa-47ef-c849" type="selectionEntry" sortIndex="10">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1906-f36c-e0d6-1e56" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
+</costs>
+</entryLink>
+<entryLink id="5bd5-f1fc-c04f-f236" name="Combi-Bolter" hidden="false" collective="false" import="true" targetId="5d48-9963-61d3-1a72" type="selectionEntry" sortIndex="11">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0666-c376-75b7-e607" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
+</costs>
+</entryLink>
+<entryLink id="fba7-8909-e4a5-4521" name="Combi-Flamer" hidden="false" collective="false" import="true" targetId="8a4e-3dc8-c0e4-b9cf" type="selectionEntry" sortIndex="12">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="57b5-bdfb-8853-b5d8" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
+</costs>
+</entryLink>
+<entryLink id="4197-ad81-7c79-ece5" name="Combi-Grenade Launcher" hidden="false" collective="false" import="true" targetId="53ca-71d4-e838-5ab2" type="selectionEntry" sortIndex="13">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="60a8-6dbc-6380-020e" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
+</costs>
+</entryLink>
+<entryLink id="c29a-75a8-475e-8fe0" name="Combi-Meltagun" hidden="false" collective="false" import="true" targetId="b147-b586-15e9-f12b" type="selectionEntry" sortIndex="14">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="858d-4b2e-da06-dc03" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
+</costs>
+</entryLink>
+<entryLink id="94cc-96ff-e8ca-d5e1" name="Combi-Plasma Gun" hidden="false" collective="false" import="true" targetId="e700-2c4d-9283-a7b7" type="selectionEntry" sortIndex="15">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4f73-552f-6806-4446" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
+</costs>
+</entryLink>
+<entryLink id="5957-4fdf-7d3a-81aa" name="Combi-Volkite Charger" hidden="false" collective="false" import="true" targetId="2125-78bc-6ae3-2391" type="selectionEntry" sortIndex="16">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f4e6-2092-5635-e156" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
+</costs>
+</entryLink>
+<entryLink id="f031-62af-af83-1f3d" name="Storm Bolter" hidden="false" collective="false" import="true" targetId="4c92-8660-bb6b-730f" type="selectionEntry" sortIndex="17">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="449c-3e47-54ab-2c6c" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
+</costs>
+</entryLink>
+<entryLink id="ff0b-ec04-e44c-7064" name="Prosperine Force Weapon" hidden="false" collective="false" import="true" targetId="7a10-6da9-2be9-c27c" type="selectionEntry" sortIndex="107">
+<modifiers>
+<modifier type="set" field="hidden" value="true">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f8ac-1a86-9422-097c" type="lessThan" />
+</conditions>
+</modifier>
+</modifiers>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
+</costs>
+</entryLink>
+</entryLinks>
+</selectionEntryGroup>
 <selectionEntryGroup id="98c2-7887-abca-c2b8" name="Additional Wargear" hidden="false" collective="false" import="true">
 <entryLinks>
 <entryLink id="8a82-086f-de86-5e88" name="Artificer Armour" hidden="false" collective="false" import="true" targetId="2c2c-d091-28f2-2343" type="selectionEntry">
@@ -21857,16 +22271,10 @@ LIMITATIONS - The Warlord must be a Thousand Sons Psyker. At least two Psychic B
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5c66-80d5-00be-db69" type="max" />
 </constraints>
 </entryLink>
-<entryLink id="bf9b-c8df-2820-3ba2" name="Bolt Pistol" hidden="false" collective="false" import="true" targetId="10e2-6917-e765-7495" type="selectionEntry">
+<entryLink id="cafc-88d8-d578-5ce5" name="Sniper Rifle" hidden="false" collective="false" import="true" targetId="2b77-b821-eadf-91fa" type="selectionEntry">
 <constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7217-3a16-1a5c-72e4" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f0ca-3a74-bff6-eeea" type="max" />
-</constraints>
-</entryLink>
-<entryLink id="a0ae-2b2b-782a-8633" name="Combat Blade" hidden="false" collective="false" import="true" targetId="c76a-de0b-ff6d-b795" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ed02-006c-376b-5a99" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="47ad-44e4-d592-10cd" type="max" />
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f367-0c96-2147-b8f4" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3160-9419-4ed1-841f" type="max" />
 </constraints>
 </entryLink>
 <entryLink id="8fd7-351b-c910-0018" name="Frag Grenades" hidden="false" collective="false" import="true" targetId="f696-7971-36b0-27b5" type="selectionEntry">
@@ -21901,42 +22309,17 @@ LIMITATIONS - The Warlord must be a Thousand Sons Psyker. At least two Psychic B
 </characteristics>
 </profile>
 </profiles>
-<selectionEntryGroups>
-<selectionEntryGroup id="de27-0421-58e9-1c6a" name="Replace Sniper Rifle" hidden="false" collective="false" import="true" defaultSelectionEntryId="d450-a72a-4dc9-1c1d">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0b48-877f-1771-3f51" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3118-16d2-d26a-2f3a" type="max" />
-</constraints>
-<entryLinks>
-<entryLink id="d450-a72a-4dc9-1c1d" name="Sniper Rifle" hidden="false" collective="false" import="true" targetId="2b77-b821-eadf-91fa" type="selectionEntry" sortIndex="1" defaultAmount="1" />
-<entryLink id="bcff-b646-1d3c-4220" name="Combi-Flamer" hidden="false" collective="false" import="true" targetId="8a4e-3dc8-c0e4-b9cf" type="selectionEntry" sortIndex="3">
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
-</costs>
-</entryLink>
-<entryLink id="c28e-1833-1427-a8bd" name="Combi-Volkite Charger" hidden="false" collective="false" import="true" targetId="2125-78bc-6ae3-2391" type="selectionEntry" sortIndex="4">
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
-</costs>
-</entryLink>
-<entryLink id="15af-8e28-1402-122d" name="Combi-Meltagun" hidden="false" collective="false" import="true" targetId="b147-b586-15e9-f12b" type="selectionEntry" sortIndex="5">
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
-</costs>
-</entryLink>
-<entryLink id="df75-009f-82ce-2c56" name="Combi-Plasma Gun" hidden="false" collective="false" import="true" targetId="e700-2c4d-9283-a7b7" type="selectionEntry" sortIndex="6">
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
-</costs>
-</entryLink>
-</entryLinks>
-</selectionEntryGroup>
-</selectionEntryGroups>
 <entryLinks>
 <entryLink id="9c19-dff8-e4c4-1ab1" name="Recon Armour" hidden="false" collective="false" import="true" targetId="998d-0c7a-f4a8-2d4b" type="selectionEntry">
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="354e-6cbb-4468-ee5f" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="78de-2af1-fb26-101f" type="max" />
+</constraints>
+</entryLink>
+<entryLink id="6556-2cbf-27ee-3408" name="Sniper Rifle" hidden="false" collective="false" import="true" targetId="2b77-b821-eadf-91fa" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="486e-7ca5-af68-3684" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1e37-4492-d5ba-c266" type="max" />
 </constraints>
 </entryLink>
 <entryLink id="9061-eb74-fc0e-e1f0" name="Bolt Pistol" hidden="false" collective="false" import="true" targetId="10e2-6917-e765-7495" type="selectionEntry">
@@ -22133,6 +22516,55 @@ LIMITATIONS - The Warlord must be a Thousand Sons Psyker. At least two Psychic B
 </selectionEntry>
 </selectionEntries>
 </selectionEntryGroup>
+<selectionEntryGroup id="58c8-c361-606e-f79b" name="Any model: replace Sniper Rifle (any number)" hidden="false" collective="false" import="true">
+<modifiers>
+<modifier type="increment" field="0850-8f3c-2874-1513" value="1">
+<repeats>
+<repeat field="selections" scope="4689-c3b5-64ad-a52f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fe64-0b00-88af-32ed" repeats="1" roundUp="false" />
+</repeats>
+</modifier>
+<modifier type="increment" field="0850-8f3c-2874-1513" value="1">
+<repeats>
+<repeat field="selections" scope="4689-c3b5-64ad-a52f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8808-4332-d73e-8253" repeats="1" roundUp="false" />
+</repeats>
+</modifier>
+<modifier type="decrement" field="0850-8f3c-2874-1513" value="1">
+<repeats>
+<repeat field="selections" scope="4689-c3b5-64ad-a52f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="63e8-bee7-88b7-64c6" repeats="1" roundUp="false" />
+</repeats>
+</modifier>
+<modifier type="decrement" field="0850-8f3c-2874-1513" value="1">
+<repeats>
+<repeat field="selections" scope="4689-c3b5-64ad-a52f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="325e-cf5b-6af4-1818" repeats="1" roundUp="false" />
+</repeats>
+</modifier>
+</modifiers>
+<constraints>
+<constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0850-8f3c-2874-1513" type="max" />
+</constraints>
+<entryLinks>
+<entryLink id="3f3a-3d09-ecc6-bb6d" name="Combi-Flamer" hidden="false" collective="false" import="true" targetId="8a4e-3dc8-c0e4-b9cf" type="selectionEntry">
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
+</costs>
+</entryLink>
+<entryLink id="1c30-8322-3b9f-2fe7" name="Combi-Volkite Charger" hidden="false" collective="false" import="true" targetId="2125-78bc-6ae3-2391" type="selectionEntry">
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
+</costs>
+</entryLink>
+<entryLink id="1f3f-b6eb-bf6e-d29d" name="Combi-Meltagun" hidden="false" collective="false" import="true" targetId="b147-b586-15e9-f12b" type="selectionEntry">
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
+</costs>
+</entryLink>
+<entryLink id="0521-d318-019d-8012" name="Combi-Plasma Gun" hidden="false" collective="false" import="true" targetId="e700-2c4d-9283-a7b7" type="selectionEntry">
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
+</costs>
+</entryLink>
+</entryLinks>
+</selectionEntryGroup>
 <selectionEntryGroup id="1404-61e0-c48d-c672" name="Special Weapons (up to two models, replace Sniper Rifle)" hidden="false" collective="false" import="true">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="efb3-fab8-1a56-ff78" type="max" />
@@ -22210,27 +22642,17 @@ LIMITATIONS - The Warlord must be a Thousand Sons Psyker. At least two Psychic B
 </characteristics>
 </profile>
 </profiles>
-<selectionEntryGroups>
-<selectionEntryGroup id="ba2a-d8bf-86b3-a98b" name="Replace Twin-linked Bolter" hidden="false" collective="false" import="true" defaultSelectionEntryId="b43a-0a0d-b266-0706">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="48f6-c45e-a895-de16" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aab1-d168-4596-ba4e" type="max" />
-</constraints>
-<entryLinks>
-<entryLink id="b43a-0a0d-b266-0706" name="Twin-linked Bolter" hidden="false" collective="false" import="true" targetId="6392-9914-afef-0ec5" type="selectionEntry" sortIndex="1" defaultAmount="1" />
-<entryLink id="5c7e-4dff-0a0f-7042" name="Heavy Flamer" hidden="false" collective="false" import="true" targetId="9e6d-afcf-8202-e47c" type="selectionEntry" sortIndex="3">
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
-</costs>
-</entryLink>
-</entryLinks>
-</selectionEntryGroup>
-</selectionEntryGroups>
 <entryLinks>
 <entryLink id="e4d8-7443-5cad-f856" name="Dreadnought Close Combat Weapon" hidden="false" collective="false" import="true" targetId="1057-48e9-72b7-8582" type="selectionEntry">
 <constraints>
 <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7a00-9a1e-95be-9564" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9829-8c5d-4538-9646" type="max" />
+</constraints>
+</entryLink>
+<entryLink id="b2df-7d69-9c69-710d" name="Twin-linked Bolter" hidden="false" collective="false" import="true" targetId="6392-9914-afef-0ec5" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2ae4-fd5e-caf3-d120" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="58cc-3982-2db5-941b" type="max" />
 </constraints>
 </entryLink>
 <entryLink id="a2c4-7c1b-478b-00b9" name="Aether-fire Cannon" hidden="false" collective="false" import="true" targetId="44f4-da57-7a62-7f1e" type="selectionEntry">
@@ -22245,6 +22667,27 @@ LIMITATIONS - The Warlord must be a Thousand Sons Psyker. At least two Psychic B
 </costs>
 </selectionEntry>
 </selectionEntries>
+<selectionEntryGroups>
+<selectionEntryGroup id="ff0e-4727-4cc2-4ade" name="Any Castellax-Achea: replace Twin-linked Bolter" hidden="false" collective="false" import="true">
+<modifiers>
+<modifier type="increment" field="fa2b-860c-0ca6-5019" value="1">
+<repeats>
+<repeat field="selections" scope="bef8-d5b9-0923-47f6" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="eea0-7126-71e8-bbeb" repeats="1" roundUp="false" />
+</repeats>
+</modifier>
+</modifiers>
+<constraints>
+<constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fa2b-860c-0ca6-5019" type="max" />
+</constraints>
+<entryLinks>
+<entryLink id="6289-0318-e95e-71f1" name="Heavy Flamer" hidden="false" collective="false" import="true" targetId="9e6d-afcf-8202-e47c" type="selectionEntry">
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
+</costs>
+</entryLink>
+</entryLinks>
+</selectionEntryGroup>
+</selectionEntryGroups>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
 </costs>
@@ -22868,6 +23311,7 @@ LIMITATIONS - The Warlord must be a Thousand Sons Psyker. At least two Psychic B
 <infoLink id="6681-3a2f-d661-87fb" name="Independent Character" hidden="false" targetId="03f2-ed94-7611-f6a1" type="rule" />
 <infoLink id="4823-f7cf-1da9-4e63" name="Master of the Legion" hidden="false" targetId="7a4c-8b34-41a7-547b" type="rule" />
 <infoLink id="76df-b063-7d87-5a7a" name="Psyker" hidden="false" targetId="b92c-c0d1-f76c-d5dd" type="rule" />
+<infoLink id="966d-977a-a7d9-d0c8" name="Psyker (Mastery Level 3)" hidden="false" targetId="9015-356c-a0e4-446f" type="rule" />
 <infoLink id="a5f6-126e-97f1-819c" name="Corvidae (Ahriman)" hidden="false" targetId="b5e7-ac9d-5bfa-17e0" type="rule" />
 <infoLink id="e106-fac7-2a90-c5d0" name="Corvidae - Precognitive Strike" hidden="false" targetId="9da7-82a5-b44e-c6cb" type="rule" />
 <infoLink id="b60b-abe2-3d7f-3cba" name="Cult Mastery" hidden="false" targetId="2599-76c2-9d19-f4e8" type="rule" />
@@ -22969,6 +23413,7 @@ LIMITATIONS - The Warlord must be a Thousand Sons Psyker. At least two Psychic B
 <infoLink id="0974-8f14-996a-4249" name="Independent Character" hidden="false" targetId="03f2-ed94-7611-f6a1" type="rule" />
 <infoLink id="be2d-5fd8-a735-5486" name="Master of the Legion" hidden="false" targetId="7a4c-8b34-41a7-547b" type="rule" />
 <infoLink id="eca2-dd70-0275-c4aa" name="Psyker" hidden="false" targetId="b92c-c0d1-f76c-d5dd" type="rule" />
+<infoLink id="59a4-ae83-bb6f-488a" name="Psyker (Mastery Level 2)" hidden="false" targetId="f0a8-ecc8-56d4-6a23" type="rule" />
 <infoLink id="d7f0-99f2-e51b-df13" name="Raptora (Phosis)" hidden="false" targetId="4e75-75a6-109c-9e4e" type="rule" />
 <infoLink id="9373-23b7-9379-1ee9" name="Raptora - Kine Shields" hidden="false" targetId="af47-beaa-42f9-eac7" type="rule" />
 <infoLink id="4e96-3d1d-558a-15ac" name="Cult Mastery" hidden="false" targetId="2599-76c2-9d19-f4e8" type="rule" />
@@ -23075,6 +23520,7 @@ LIMITATIONS - The Warlord must be a Thousand Sons Psyker. At least two Psychic B
 <infoLink id="0842-1796-f96b-5e27" name="Independent Character" hidden="false" targetId="03f2-ed94-7611-f6a1" type="rule" />
 <infoLink id="06f6-2bf0-19f7-6fe6" name="Master of the Legion" hidden="false" targetId="7a4c-8b34-41a7-547b" type="rule" />
 <infoLink id="7b77-cd6e-bb98-d4ba" name="Psyker" hidden="false" targetId="b92c-c0d1-f76c-d5dd" type="rule" />
+<infoLink id="e25d-bf87-c15f-63fb" name="Psyker (Mastery Level 2)" hidden="false" targetId="f0a8-ecc8-56d4-6a23" type="rule" />
 <infoLink id="6c2e-20e5-1be0-e198" name="Athanaeans (Amon)" hidden="false" targetId="52b8-d0c4-40b1-dd97" type="rule" />
 <infoLink id="2193-20d2-7631-ec1d" name="Athanaeans - Discipline of the Mind" hidden="false" targetId="094d-2f82-5296-840c" type="rule" />
 <infoLink id="da07-f5fd-d4a4-a65b" name="Cult Mastery" hidden="false" targetId="2599-76c2-9d19-f4e8" type="rule" />
@@ -23173,11 +23619,13 @@ LIMITATIONS - The Warlord must be a Thousand Sons Psyker. At least two Psychic B
 <infoLink id="2df0-1cf3-dea5-bbb9" name="Independent Character" hidden="false" targetId="03f2-ed94-7611-f6a1" type="rule" />
 <infoLink id="b917-cb6b-0baf-ba10" name="Master of the Legion" hidden="false" targetId="7a4c-8b34-41a7-547b" type="rule" />
 <infoLink id="7ac6-5fb9-505e-71e1" name="Psyker" hidden="false" targetId="b92c-c0d1-f76c-d5dd" type="rule" />
+<infoLink id="41e7-799f-e6d0-2ec8" name="Psyker (Mastery Level 2)" hidden="false" targetId="f0a8-ecc8-56d4-6a23" type="rule" />
 <infoLink id="6402-f029-23be-bd53" name="Pavoni (Hathor Maat)" hidden="false" targetId="2536-3b77-da73-b2d7" type="rule" />
 <infoLink id="e793-28f1-6890-b9af" name="Pavoni - Quickblood" hidden="false" targetId="cc09-7b60-3ba8-5b7a" type="rule" />
 <infoLink id="46a3-990d-d832-dfd3" name="Cult Mastery" hidden="false" targetId="2599-76c2-9d19-f4e8" type="rule" />
 <infoLink id="3bb8-e6b7-94dc-0e8a" name="Magister Templi of the Pavoni" hidden="false" targetId="b9df-32d4-f53a-0c69" type="rule" />
 <infoLink id="e492-63ed-458b-8941" name="Pavoni Vitalist" hidden="false" targetId="db99-1f4e-a687-065c" type="rule" />
+<infoLink id="0a99-22f3-e57c-f07f" name="Narthecium (Hathor Maat)" hidden="false" targetId="872a-92d1-e8bd-5691" type="rule" />
 <infoLink id="0263-0e7f-9591-8851" name="Command Retinue (Thousand Sons)" hidden="false" targetId="9ffc-3cd4-3ff3-18a3" type="rule" />
 </infoLinks>
 <categoryLinks>
@@ -23286,9 +23734,11 @@ LIMITATIONS - The Warlord must be a Thousand Sons Psyker. At least two Psychic B
 <infoLink id="ca8a-80d6-a512-7d99" name="Legiones Astartes (Thousand Sons)" hidden="false" targetId="8fbc-6d9b-192b-6483" type="rule" />
 <infoLink id="d33a-e749-c916-b43d" name="Independent Character" hidden="false" targetId="03f2-ed94-7611-f6a1" type="rule" />
 <infoLink id="f40d-bcaa-3859-d7b7" name="Psyker" hidden="false" targetId="b92c-c0d1-f76c-d5dd" type="rule" />
+<infoLink id="2095-f753-4fb7-58e8" name="Psyker (Mastery Level 1)" hidden="false" targetId="8c7e-c3c7-8f33-92de" type="rule" />
 <infoLink id="24b6-7977-16e5-3e83" name="Athanaeans (Sanakht)" hidden="false" targetId="0a1c-5022-1a10-3402" type="rule" />
 <infoLink id="5793-9171-8c88-c28a" name="Athanaeans - Discipline of the Mind" hidden="false" targetId="094d-2f82-5296-840c" type="rule" />
 <infoLink id="e854-0606-b140-970d" name="Cult Mastery" hidden="false" targetId="2599-76c2-9d19-f4e8" type="rule" />
+<infoLink id="4ae0-685d-6337-c8eb" name="Psychic Powers (Sanakht)" hidden="false" targetId="0a39-f0c2-0c24-7a15" type="rule" />
 <infoLink id="ed49-96af-aeb4-6c91" name="Blademaster of Prospero" hidden="false" targetId="04dd-0dce-6e4c-6059" type="rule" />
 <infoLink id="e2bf-d548-7afc-8594" name="Mindsong of Blades" hidden="false" targetId="c165-b3e0-1c39-cd79" type="rule" />
 <infoLink id="fc3c-116c-0c57-9564" name="Khenetai Retinue" hidden="false" targetId="996b-ab7f-f62c-6602" type="rule" />
@@ -31317,6 +31767,13 @@ LIMITATIONS - The Warlord must be a Thousand Sons Psyker. At least two Psychic B
 </costs>
 </selectionEntry>
 <selectionEntry id="801a-07de-b425-7c59" name="Legion Command Squad" hidden="false" collective="false" import="true" type="unit">
+<modifiers>
+<modifier type="add" field="category" value="7c52-2dbc-9a97-85a9">
+<conditions>
+<condition field="selections" scope="self" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cf05-d431-cdef-669c" type="atLeast" />
+</conditions>
+</modifier>
+</modifiers>
 <infoLinks>
 <infoLink id="d91f-bf00-30f8-5ce8" name="Legiones Astartes" hidden="false" targetId="0ed8-99c2-6b0e-f182" type="rule" />
 <infoLink id="b750-622d-ac2d-1e49" name="Retinue" hidden="false" targetId="c829-0c60-f219-6cc8" type="rule" />
@@ -31563,6 +32020,11 @@ LIMITATIONS - The Warlord must be a Thousand Sons Psyker. At least two Psychic B
 <modifier type="set" field="hidden" value="true">
 <conditions>
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f8ac-1a86-9422-097c" type="lessThan" />
+</conditions>
+</modifier>
+<modifier type="decrement" field="pts0-0000-0000-0001" value="5">
+<conditions>
+<condition field="selections" scope="801a-07de-b425-7c59" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cf05-d431-cdef-669c" type="atLeast" />
 </conditions>
 </modifier>
 </modifiers>
@@ -31893,6 +32355,11 @@ LIMITATIONS - The Warlord must be a Thousand Sons Psyker. At least two Psychic B
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f8ac-1a86-9422-097c" type="lessThan" />
 </conditions>
 </modifier>
+<modifier type="decrement" field="pts0-0000-0000-0001" value="5">
+<conditions>
+<condition field="selections" scope="801a-07de-b425-7c59" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cf05-d431-cdef-669c" type="atLeast" />
+</conditions>
+</modifier>
 </modifiers>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
@@ -32053,6 +32520,11 @@ LIMITATIONS - The Warlord must be a Thousand Sons Psyker. At least two Psychic B
 <modifier type="set" field="hidden" value="true">
 <conditions>
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f8ac-1a86-9422-097c" type="lessThan" />
+</conditions>
+</modifier>
+<modifier type="decrement" field="pts0-0000-0000-0001" value="5">
+<conditions>
+<condition field="selections" scope="801a-07de-b425-7c59" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cf05-d431-cdef-669c" type="atLeast" />
 </conditions>
 </modifier>
 </modifiers>
@@ -32438,6 +32910,11 @@ LIMITATIONS - The Warlord must be a Thousand Sons Psyker. At least two Psychic B
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f8ac-1a86-9422-097c" type="lessThan" />
 </conditions>
 </modifier>
+<modifier type="decrement" field="pts0-0000-0000-0001" value="5">
+<conditions>
+<condition field="selections" scope="801a-07de-b425-7c59" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cf05-d431-cdef-669c" type="atLeast" />
+</conditions>
+</modifier>
 </modifiers>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
@@ -32598,6 +33075,11 @@ LIMITATIONS - The Warlord must be a Thousand Sons Psyker. At least two Psychic B
 <modifier type="set" field="hidden" value="true">
 <conditions>
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f8ac-1a86-9422-097c" type="lessThan" />
+</conditions>
+</modifier>
+<modifier type="decrement" field="pts0-0000-0000-0001" value="5">
+<conditions>
+<condition field="selections" scope="801a-07de-b425-7c59" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cf05-d431-cdef-669c" type="atLeast" />
 </conditions>
 </modifier>
 </modifiers>
@@ -32880,6 +33362,11 @@ LIMITATIONS - The Warlord must be a Thousand Sons Psyker. At least two Psychic B
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f8ac-1a86-9422-097c" type="lessThan" />
 </conditions>
 </modifier>
+<modifier type="decrement" field="pts0-0000-0000-0001" value="5">
+<conditions>
+<condition field="selections" scope="801a-07de-b425-7c59" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cf05-d431-cdef-669c" type="atLeast" />
+</conditions>
+</modifier>
 </modifiers>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
@@ -32995,6 +33482,11 @@ LIMITATIONS - The Warlord must be a Thousand Sons Psyker. At least two Psychic B
 <modifier type="set" field="hidden" value="true">
 <conditions>
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f8ac-1a86-9422-097c" type="lessThan" />
+</conditions>
+</modifier>
+<modifier type="decrement" field="pts0-0000-0000-0001" value="5">
+<conditions>
+<condition field="selections" scope="801a-07de-b425-7c59" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cf05-d431-cdef-669c" type="atLeast" />
 </conditions>
 </modifier>
 </modifiers>
@@ -36843,6 +37335,8 @@ LIMITATIONS - The Warlord must be a Thousand Sons Psyker. At least two Psychic B
 <infoLinks>
 <infoLink id="87b0-3214-d05d-79c6" name="Legiones Astartes (Thousand Sons)" hidden="false" targetId="8fbc-6d9b-192b-6483" type="rule" />
 <infoLink id="cba8-7995-a99a-56e7" name="Brotherhood of Psychers" hidden="false" targetId="c570-8770-c568-34a0" type="rule" />
+<infoLink id="7b39-fe45-0219-5a9b" name="Psychic Brotherhood (Ammitara)" hidden="false" targetId="3b43-b50e-d89c-65d3" type="rule" />
+<infoLink id="060a-fc3f-f54e-b7af" name="Cult Mastery" hidden="false" targetId="2599-76c2-9d19-f4e8" type="rule" />
 <infoLink id="5f05-a011-2e39-adf9" name="Scouts" hidden="false" targetId="6bb0-de35-696c-e22a" type="rule" />
 <infoLink id="59a6-ae58-baa5-98f8" name="Infiltrate" hidden="false" targetId="ad57-6634-e426-3e1c" type="rule" />
 <infoLink id="141e-8ab8-b76b-c528" name="Move Through Cover" hidden="false" targetId="c616-0756-b610-40d6" type="rule" />
@@ -36871,40 +37365,326 @@ LIMITATIONS - The Warlord must be a Thousand Sons Psyker. At least two Psychic B
 </profile>
 </profiles>
 <selectionEntryGroups>
-<selectionEntryGroup id="dd87-0564-21c1-6311" name="Replace Sniper Rifle" hidden="false" collective="false" import="true" defaultSelectionEntryId="1e88-ab6d-9102-79e7">
+<selectionEntryGroup id="2ed2-7cca-8420-c1e7" name="Space Marine Armoury (max 50 pts)" hidden="false" collective="false" import="true">
 <constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a42c-e21a-dfc6-adf3" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aff9-027d-7923-fe61" type="max" />
+<constraint field="pts0-0000-0000-0001" scope="self" value="50" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1a19-a114-515b-940a" type="max" />
+</constraints>
+<selectionEntryGroups>
+<selectionEntryGroup id="2371-daa6-8ff2-fffe" name="Replace Bolt Pistol" hidden="false" collective="false" import="true" defaultSelectionEntryId="b7b6-1330-f125-4b8d">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7116-dbf5-376f-ade1" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4a3b-ce26-70eb-f9a3" type="max" />
 </constraints>
 <entryLinks>
-<entryLink id="1e88-ab6d-9102-79e7" name="Sniper Rifle" hidden="false" collective="false" import="true" targetId="2b77-b821-eadf-91fa" type="selectionEntry" sortIndex="1" defaultAmount="1" />
-<entryLink id="d8df-807b-bdfc-2eae" name="Combi-Flamer" hidden="false" collective="false" import="true" targetId="8a4e-3dc8-c0e4-b9cf" type="selectionEntry" sortIndex="3">
+<entryLink id="b7b6-1330-f125-4b8d" name="Bolt Pistol" hidden="false" collective="false" import="true" targetId="10e2-6917-e765-7495" type="selectionEntry" sortIndex="1" defaultAmount="1">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bc14-dcab-75c9-b3c3" type="max" />
+</constraints>
+</entryLink>
+<entryLink id="f988-dd26-aef4-504e" name="Hand Flamer" hidden="false" collective="false" import="true" targetId="25eb-7e5c-f08a-e9b9" type="selectionEntry" sortIndex="3">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c3dc-56f2-8c61-b3e3" type="max" />
+</constraints>
 <costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
+<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
 </costs>
 </entryLink>
-<entryLink id="0752-a0a2-0868-3528" name="Combi-Volkite Charger" hidden="false" collective="false" import="true" targetId="2125-78bc-6ae3-2391" type="selectionEntry" sortIndex="4">
+<entryLink id="6e43-f891-5359-23b8" name="Lightning Claw" hidden="false" collective="false" import="true" targetId="0826-0946-b6a1-f42b" type="selectionEntry" sortIndex="4">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d20d-ad54-abb8-6bba" type="max" />
+</constraints>
 <costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
+<cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
 </costs>
 </entryLink>
-<entryLink id="5572-e46e-3fdc-87ff" name="Combi-Meltagun" hidden="false" collective="false" import="true" targetId="b147-b586-15e9-f12b" type="selectionEntry" sortIndex="5">
+<entryLink id="19ee-07a9-c019-a750" name="Pair of Lightning Claws" hidden="false" collective="false" import="true" targetId="af2b-d487-5b80-ae9b" type="selectionEntry" sortIndex="5">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d1d3-a10a-75d4-f30f" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
+</costs>
+</entryLink>
+<entryLink id="da9c-4470-1989-e11a" name="Plasma Pistol" hidden="false" collective="false" import="true" targetId="523c-5dd4-3402-0e99" type="selectionEntry" sortIndex="6">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c53a-dfda-e819-021c" type="max" />
+</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
 </costs>
 </entryLink>
-<entryLink id="fedd-7fad-e014-f02d" name="Combi-Plasma Gun" hidden="false" collective="false" import="true" targetId="e700-2c4d-9283-a7b7" type="selectionEntry" sortIndex="6">
+<entryLink id="5cff-3b1d-7893-e871" name="Power Fist" hidden="false" collective="false" import="true" targetId="0b4d-922b-4629-b7ca" type="selectionEntry" sortIndex="7">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5622-e1f1-33b7-757c" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
+</costs>
+</entryLink>
+<entryLink id="8987-e5d8-a00e-5ec2" name="Power Weapon" hidden="false" collective="false" import="true" targetId="fb4f-b267-7556-185d" type="selectionEntry" sortIndex="8">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="19ae-974d-b672-9eef" type="max" />
+</constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
+</costs>
+</entryLink>
+<entryLink id="aa4b-bd4b-2cc6-50c1" name="Rending Weapon" hidden="false" collective="false" import="true" targetId="ffab-7f00-50f4-91e0" type="selectionEntry" sortIndex="9">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="13a9-849b-cab3-6c2c" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
+</costs>
+</entryLink>
+<entryLink id="86c6-f833-a986-49a9" name="Thunder Hammer" hidden="false" collective="false" import="true" targetId="5dfe-22a3-22b6-fb7c" type="selectionEntry" sortIndex="10">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="460a-8429-62bc-de0d" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
+</costs>
+</entryLink>
+<entryLink id="00a9-ee7e-885e-e6df" name="Volkite Serpenta" hidden="false" collective="false" import="true" targetId="48a3-89aa-47ef-c849" type="selectionEntry" sortIndex="11">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3bd8-e647-3c7a-bb0f" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
+</costs>
+</entryLink>
+<entryLink id="eff9-d761-f47d-677b" name="Combi-Bolter" hidden="false" collective="false" import="true" targetId="5d48-9963-61d3-1a72" type="selectionEntry" sortIndex="12">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="837c-1523-666f-22ec" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
+</costs>
+</entryLink>
+<entryLink id="834d-65ab-a75b-abac" name="Combi-Flamer" hidden="false" collective="false" import="true" targetId="8a4e-3dc8-c0e4-b9cf" type="selectionEntry" sortIndex="13">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="79e5-b591-6ccd-15df" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
+</costs>
+</entryLink>
+<entryLink id="b13f-d064-ecc0-a5ac" name="Combi-Grenade Launcher" hidden="false" collective="false" import="true" targetId="53ca-71d4-e838-5ab2" type="selectionEntry" sortIndex="14">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6528-6972-3fc5-e060" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
+</costs>
+</entryLink>
+<entryLink id="f4bd-1511-b445-1cf7" name="Combi-Meltagun" hidden="false" collective="false" import="true" targetId="b147-b586-15e9-f12b" type="selectionEntry" sortIndex="15">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="400c-2e24-79d3-5e86" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
+</costs>
+</entryLink>
+<entryLink id="c472-35b3-c328-406f" name="Combi-Plasma Gun" hidden="false" collective="false" import="true" targetId="e700-2c4d-9283-a7b7" type="selectionEntry" sortIndex="16">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8cd7-c873-5195-b90f" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
+</costs>
+</entryLink>
+<entryLink id="26fe-26d0-3f19-8b38" name="Combi-Volkite Charger" hidden="false" collective="false" import="true" targetId="2125-78bc-6ae3-2391" type="selectionEntry" sortIndex="17">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="47d3-e421-b6c2-9d1f" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
+</costs>
+</entryLink>
+<entryLink id="76e2-edc2-ca80-fa9c" name="Storm Bolter" hidden="false" collective="false" import="true" targetId="4c92-8660-bb6b-730f" type="selectionEntry" sortIndex="18">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7f33-efc6-3536-5ff6" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
+</costs>
+</entryLink>
+<entryLink id="4932-70b6-f54f-9c98" name="Prosperine Force Weapon" hidden="false" collective="false" import="true" targetId="7a10-6da9-2be9-c27c" type="selectionEntry" sortIndex="108">
+<modifiers>
+<modifier type="set" field="hidden" value="true">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f8ac-1a86-9422-097c" type="lessThan" />
+</conditions>
+</modifier>
+</modifiers>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
 </costs>
 </entryLink>
 </entryLinks>
 </selectionEntryGroup>
-<selectionEntryGroup id="6724-dcac-0daf-e50e" name="Space Marine Armoury (max 50 pts)" hidden="false" collective="false" import="true">
+<selectionEntryGroup id="887f-ef74-aec3-4d09" name="Replace Combat Blade" hidden="false" collective="false" import="true" defaultSelectionEntryId="dd2a-f1e0-c531-2157">
+<modifiers>
+<modifier type="set" field="22df-d461-1196-2f7a" value="0">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="af2b-d487-5b80-ae9b" type="atLeast" />
+</conditions>
+</modifier>
+<modifier type="set" field="bddd-91d8-c118-d3f7" value="0">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="af2b-d487-5b80-ae9b" type="atLeast" />
+</conditions>
+</modifier>
+<modifier type="set" field="hidden" value="true">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="af2b-d487-5b80-ae9b" type="atLeast" />
+</conditions>
+</modifier>
+</modifiers>
 <constraints>
-<constraint field="pts0-0000-0000-0001" scope="self" value="50" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="3e94-94e5-e057-aed2" type="max" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="22df-d461-1196-2f7a" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bddd-91d8-c118-d3f7" type="max" />
 </constraints>
-<selectionEntryGroups>
+<entryLinks>
+<entryLink id="dd2a-f1e0-c531-2157" name="Combat Blade" hidden="false" collective="false" import="true" targetId="c76a-de0b-ff6d-b795" type="selectionEntry" sortIndex="1" defaultAmount="1">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="672a-4790-0125-16fe" type="max" />
+</constraints>
+</entryLink>
+<entryLink id="f59c-da46-d164-948c" name="Hand Flamer" hidden="false" collective="false" import="true" targetId="25eb-7e5c-f08a-e9b9" type="selectionEntry" sortIndex="3">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cde0-ba4c-4213-5299" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
+</costs>
+</entryLink>
+<entryLink id="173a-c521-4eec-fea3" name="Lightning Claw" hidden="false" collective="false" import="true" targetId="0826-0946-b6a1-f42b" type="selectionEntry" sortIndex="4">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b6d3-288b-e5f9-f731" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
+</costs>
+</entryLink>
+<entryLink id="ac29-42a7-1214-eeb2" name="Plasma Pistol" hidden="false" collective="false" import="true" targetId="523c-5dd4-3402-0e99" type="selectionEntry" sortIndex="5">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f5e3-f3f1-651f-89ca" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
+</costs>
+</entryLink>
+<entryLink id="1c0e-de1f-1876-8090" name="Power Fist" hidden="false" collective="false" import="true" targetId="0b4d-922b-4629-b7ca" type="selectionEntry" sortIndex="6">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="96eb-ccec-b12d-25e7" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
+</costs>
+</entryLink>
+<entryLink id="477a-791b-84f9-2128" name="Power Weapon" hidden="false" collective="false" import="true" targetId="fb4f-b267-7556-185d" type="selectionEntry" sortIndex="7">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="91c1-fa7b-1e58-3e89" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
+</costs>
+</entryLink>
+<entryLink id="06ec-9121-8191-2b25" name="Rending Weapon" hidden="false" collective="false" import="true" targetId="ffab-7f00-50f4-91e0" type="selectionEntry" sortIndex="8">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1d3e-8b79-8e06-4f90" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
+</costs>
+</entryLink>
+<entryLink id="e745-6567-ccd1-e4ee" name="Thunder Hammer" hidden="false" collective="false" import="true" targetId="5dfe-22a3-22b6-fb7c" type="selectionEntry" sortIndex="9">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b7b2-6ded-6b20-8621" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
+</costs>
+</entryLink>
+<entryLink id="2006-a90a-8f8b-c87a" name="Volkite Serpenta" hidden="false" collective="false" import="true" targetId="48a3-89aa-47ef-c849" type="selectionEntry" sortIndex="10">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ed41-c5d9-d138-a87c" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
+</costs>
+</entryLink>
+<entryLink id="c93d-29ce-6b85-53bf" name="Combi-Bolter" hidden="false" collective="false" import="true" targetId="5d48-9963-61d3-1a72" type="selectionEntry" sortIndex="11">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="41f1-3f00-dba0-0eb7" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
+</costs>
+</entryLink>
+<entryLink id="3aa9-3f7d-b990-1061" name="Combi-Flamer" hidden="false" collective="false" import="true" targetId="8a4e-3dc8-c0e4-b9cf" type="selectionEntry" sortIndex="12">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e05e-8abb-9f9e-a9f8" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
+</costs>
+</entryLink>
+<entryLink id="fb0f-9fc7-6af8-1a39" name="Combi-Grenade Launcher" hidden="false" collective="false" import="true" targetId="53ca-71d4-e838-5ab2" type="selectionEntry" sortIndex="13">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0dce-aad0-cf2c-acc3" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
+</costs>
+</entryLink>
+<entryLink id="80ee-6329-6074-ef01" name="Combi-Meltagun" hidden="false" collective="false" import="true" targetId="b147-b586-15e9-f12b" type="selectionEntry" sortIndex="14">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="92f4-96a6-5168-ebe2" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
+</costs>
+</entryLink>
+<entryLink id="dfb6-73cf-e494-ae8a" name="Combi-Plasma Gun" hidden="false" collective="false" import="true" targetId="e700-2c4d-9283-a7b7" type="selectionEntry" sortIndex="15">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e2dd-0bad-1743-75f4" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
+</costs>
+</entryLink>
+<entryLink id="9421-23fa-d908-4e55" name="Combi-Volkite Charger" hidden="false" collective="false" import="true" targetId="2125-78bc-6ae3-2391" type="selectionEntry" sortIndex="16">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b05c-f0a6-b803-420e" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
+</costs>
+</entryLink>
+<entryLink id="cb9d-dc3c-25dd-88a9" name="Storm Bolter" hidden="false" collective="false" import="true" targetId="4c92-8660-bb6b-730f" type="selectionEntry" sortIndex="17">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6072-9731-962f-a3ac" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
+</costs>
+</entryLink>
+<entryLink id="afa7-9dac-3d25-42dc" name="Prosperine Force Weapon" hidden="false" collective="false" import="true" targetId="7a10-6da9-2be9-c27c" type="selectionEntry" sortIndex="107">
+<modifiers>
+<modifier type="set" field="hidden" value="true">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f8ac-1a86-9422-097c" type="lessThan" />
+</conditions>
+</modifier>
+</modifiers>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
+</costs>
+</entryLink>
+</entryLinks>
+</selectionEntryGroup>
 <selectionEntryGroup id="b06e-0adb-2ad4-53ac" name="Additional Wargear" hidden="false" collective="false" import="true">
 <entryLinks>
 <entryLink id="4715-6f3e-8fa5-9535" name="Artificer Armour" hidden="false" collective="false" import="true" targetId="2c2c-d091-28f2-2343" type="selectionEntry">
@@ -37041,16 +37821,10 @@ LIMITATIONS - The Warlord must be a Thousand Sons Psyker. At least two Psychic B
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3ba4-8860-436e-19bc" type="max" />
 </constraints>
 </entryLink>
-<entryLink id="7079-bc07-d65d-49d0" name="Bolt Pistol" hidden="false" collective="false" import="true" targetId="10e2-6917-e765-7495" type="selectionEntry">
+<entryLink id="b5c7-f75a-fa38-fc2b" name="Sniper Rifle" hidden="false" collective="false" import="true" targetId="2b77-b821-eadf-91fa" type="selectionEntry">
 <constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ab93-2979-e1f0-ddc4" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="07a1-34ef-527b-2d6b" type="max" />
-</constraints>
-</entryLink>
-<entryLink id="c522-1df0-7576-10b6" name="Combat Blade" hidden="false" collective="false" import="true" targetId="c76a-de0b-ff6d-b795" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e375-771d-5b01-25dc" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ac5a-6ba8-a896-22d6" type="max" />
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="92ef-803a-57b2-942d" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dbe5-3244-6539-56c6" type="max" />
 </constraints>
 </entryLink>
 <entryLink id="6e9e-1914-ca9f-288c" name="Frag Grenades" hidden="false" collective="false" import="true" targetId="f696-7971-36b0-27b5" type="selectionEntry">
@@ -37085,42 +37859,17 @@ LIMITATIONS - The Warlord must be a Thousand Sons Psyker. At least two Psychic B
 </characteristics>
 </profile>
 </profiles>
-<selectionEntryGroups>
-<selectionEntryGroup id="ae53-0b48-13e8-6ec8" name="Replace Sniper Rifle" hidden="false" collective="false" import="true" defaultSelectionEntryId="d196-cf3a-792e-199d">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="258b-734a-780f-dc03" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="678c-b807-2289-fac8" type="max" />
-</constraints>
-<entryLinks>
-<entryLink id="d196-cf3a-792e-199d" name="Sniper Rifle" hidden="false" collective="false" import="true" targetId="2b77-b821-eadf-91fa" type="selectionEntry" sortIndex="1" defaultAmount="1" />
-<entryLink id="720a-d81b-6c44-0348" name="Combi-Flamer" hidden="false" collective="false" import="true" targetId="8a4e-3dc8-c0e4-b9cf" type="selectionEntry" sortIndex="3">
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
-</costs>
-</entryLink>
-<entryLink id="a7ce-cbbf-ba9e-122d" name="Combi-Volkite Charger" hidden="false" collective="false" import="true" targetId="2125-78bc-6ae3-2391" type="selectionEntry" sortIndex="4">
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
-</costs>
-</entryLink>
-<entryLink id="d71f-3ea3-1400-42a9" name="Combi-Meltagun" hidden="false" collective="false" import="true" targetId="b147-b586-15e9-f12b" type="selectionEntry" sortIndex="5">
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
-</costs>
-</entryLink>
-<entryLink id="6bb2-50e6-aaf7-9f23" name="Combi-Plasma Gun" hidden="false" collective="false" import="true" targetId="e700-2c4d-9283-a7b7" type="selectionEntry" sortIndex="6">
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
-</costs>
-</entryLink>
-</entryLinks>
-</selectionEntryGroup>
-</selectionEntryGroups>
 <entryLinks>
 <entryLink id="9980-20f0-b8d3-c25b" name="Recon Armour" hidden="false" collective="false" import="true" targetId="998d-0c7a-f4a8-2d4b" type="selectionEntry">
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6964-131a-595a-2379" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0ba3-cb9e-1769-c21f" type="max" />
+</constraints>
+</entryLink>
+<entryLink id="b0c8-1ef5-037e-fc91" name="Sniper Rifle" hidden="false" collective="false" import="true" targetId="2b77-b821-eadf-91fa" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e344-2f3c-fbc9-3dd9" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9100-0010-b39e-4a9d" type="max" />
 </constraints>
 </entryLink>
 <entryLink id="ab28-da17-4836-aa4b" name="Bolt Pistol" hidden="false" collective="false" import="true" targetId="10e2-6917-e765-7495" type="selectionEntry">
@@ -37317,6 +38066,55 @@ LIMITATIONS - The Warlord must be a Thousand Sons Psyker. At least two Psychic B
 </selectionEntry>
 </selectionEntries>
 </selectionEntryGroup>
+<selectionEntryGroup id="fd64-be06-0a4d-72e2" name="Any model: replace Sniper Rifle (any number)" hidden="false" collective="false" import="true">
+<modifiers>
+<modifier type="increment" field="a58a-4bd1-2b1a-1a56" value="1">
+<repeats>
+<repeat field="selections" scope="df3e-487c-0ba0-13b4" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="01bd-3f19-f5c7-d906" repeats="1" roundUp="false" />
+</repeats>
+</modifier>
+<modifier type="increment" field="a58a-4bd1-2b1a-1a56" value="1">
+<repeats>
+<repeat field="selections" scope="df3e-487c-0ba0-13b4" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="63ac-b0aa-d1a7-3f5d" repeats="1" roundUp="false" />
+</repeats>
+</modifier>
+<modifier type="decrement" field="a58a-4bd1-2b1a-1a56" value="1">
+<repeats>
+<repeat field="selections" scope="df3e-487c-0ba0-13b4" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="63e8-bee7-88b7-64c6" repeats="1" roundUp="false" />
+</repeats>
+</modifier>
+<modifier type="decrement" field="a58a-4bd1-2b1a-1a56" value="1">
+<repeats>
+<repeat field="selections" scope="df3e-487c-0ba0-13b4" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="325e-cf5b-6af4-1818" repeats="1" roundUp="false" />
+</repeats>
+</modifier>
+</modifiers>
+<constraints>
+<constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a58a-4bd1-2b1a-1a56" type="max" />
+</constraints>
+<entryLinks>
+<entryLink id="6d49-799b-8e28-3c9f" name="Combi-Flamer" hidden="false" collective="false" import="true" targetId="8a4e-3dc8-c0e4-b9cf" type="selectionEntry">
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
+</costs>
+</entryLink>
+<entryLink id="c233-5aff-c98c-35c4" name="Combi-Volkite Charger" hidden="false" collective="false" import="true" targetId="2125-78bc-6ae3-2391" type="selectionEntry">
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
+</costs>
+</entryLink>
+<entryLink id="f94c-c5d4-fe9a-ab5c" name="Combi-Meltagun" hidden="false" collective="false" import="true" targetId="b147-b586-15e9-f12b" type="selectionEntry">
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
+</costs>
+</entryLink>
+<entryLink id="24b5-04f4-0db0-4741" name="Combi-Plasma Gun" hidden="false" collective="false" import="true" targetId="e700-2c4d-9283-a7b7" type="selectionEntry">
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
+</costs>
+</entryLink>
+</entryLinks>
+</selectionEntryGroup>
 <selectionEntryGroup id="bd74-2d88-7a1f-6fef" name="Special Weapons (up to two models, replace Sniper Rifle)" hidden="false" collective="false" import="true">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8301-b955-2705-bfaf" type="max" />
@@ -37347,6 +38145,9 @@ LIMITATIONS - The Warlord must be a Thousand Sons Psyker. At least two Psychic B
 </entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
+<categoryLinks>
+<categoryLink id="004a-4738-4196-02b9" name="Psychic Brotherhood" hidden="false" targetId="7c52-2dbc-9a97-85a9" primary="false" />
+</categoryLinks>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="55" />
 </costs>
@@ -39715,8 +40516,10 @@ LIMITATIONS - The Warlord must be a Thousand Sons Psyker. At least two Psychic B
 <infoLinks>
 <infoLink id="fba3-b9d3-2122-1684" name="Legiones Astartes (Thousand Sons)" hidden="false" targetId="8fbc-6d9b-192b-6483" type="rule" />
 <infoLink id="fe66-f843-a931-ea83" name="Brotherhood of Psychers" hidden="false" targetId="c570-8770-c568-34a0" type="rule" />
+<infoLink id="bf94-633e-d65d-9186" name="Psychic Brotherhood (Khenetai)" hidden="false" targetId="9360-62b6-2611-5040" type="rule" />
 <infoLink id="072e-d4c1-1366-a2d8" name="Mindsong of Blades" hidden="false" targetId="c165-b3e0-1c39-cd79" type="rule" />
 <infoLink id="108e-2d5f-df96-e6f0" name="Paired Prosperine Force Blades" hidden="false" targetId="958d-dec3-49c4-8cc2" type="rule" />
+<infoLink id="ef48-3bbd-e319-8d17" name="Cult Mastery" hidden="false" targetId="2599-76c2-9d19-f4e8" type="rule" />
 </infoLinks>
 <selectionEntries>
 <selectionEntry id="d712-7b06-f76d-4f06" name="Khenetai Blade" hidden="false" collective="false" import="true" type="model">
@@ -40110,11 +40913,21 @@ LIMITATIONS - The Warlord must be a Thousand Sons Psyker. At least two Psychic B
 </entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
+<categoryLinks>
+<categoryLink id="8ae0-1741-eb98-db29" name="Psychic Brotherhood" hidden="false" targetId="7c52-2dbc-9a97-85a9" primary="false" />
+</categoryLinks>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
 </costs>
 </selectionEntry>
 <selectionEntry id="7bcf-873f-2c22-779e" name="Legion Honour Guard Squad" hidden="false" collective="false" import="true" type="unit">
+<modifiers>
+<modifier type="add" field="category" value="7c52-2dbc-9a97-85a9">
+<conditions>
+<condition field="selections" scope="self" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c938-9d24-cca3-ffd9" type="atLeast" />
+</conditions>
+</modifier>
+</modifiers>
 <infoLinks>
 <infoLink id="71ee-5a87-0ea6-6c19" name="Legiones Astartes" hidden="false" targetId="0ed8-99c2-6b0e-f182" type="rule" />
 <infoLink id="dd8b-071b-4d65-261d" name="Honour or Death" hidden="false" targetId="391c-09bb-ed66-a025" type="rule" />
@@ -40621,6 +41434,83 @@ LIMITATIONS - The Warlord must be a Thousand Sons Psyker. At least two Psychic B
 </selectionEntry>
 </selectionEntries>
 </selectionEntryGroup>
+<selectionEntryGroup id="2af1-ba19-c17c-3abe" name="Psychic Discipline" hidden="false" collective="false" import="true">
+<modifiers>
+<modifier type="add" field="error" value="Choose a Psychic Discipline.">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d672-97e6-37fa-a899" type="lessThan" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b375-215e-1345-547d" type="lessThan" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2403-d5b3-73a1-1a76" type="lessThan" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="32fa-a73b-6c9b-03fd" type="lessThan" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="11cb-765f-f17c-05eb" type="lessThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+</modifiers>
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b7cb-9c3a-a912-3154" type="max" />
+</constraints>
+<selectionEntries>
+<selectionEntry id="d672-97e6-37fa-a899" name="Biomancy" hidden="false" collective="false" import="true" type="upgrade">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="37cb-c793-eaa8-1fc3" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="0bb3-44aa-0eb1-b9f1" name="Discipline: Biomancy" hidden="false" targetId="c676-5629-6301-c1ae" type="rule" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+<selectionEntry id="b375-215e-1345-547d" name="Divination" hidden="false" collective="false" import="true" type="upgrade">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f0be-4edf-c8d6-ca98" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="a4fe-11d4-1aa2-c17a" name="Discipline: Divination" hidden="false" targetId="c9dc-bd2d-7d4f-bca3" type="rule" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+<selectionEntry id="2403-d5b3-73a1-1a76" name="Pyromancy" hidden="false" collective="false" import="true" type="upgrade">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5f8f-2735-c5c0-81e4" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="472b-0bea-5896-ec33" name="Discipline: Pyromancy" hidden="false" targetId="0d01-4887-ea9d-57d1" type="rule" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+<selectionEntry id="32fa-a73b-6c9b-03fd" name="Telekinesis" hidden="false" collective="false" import="true" type="upgrade">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f794-a921-8de3-f6d5" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="a5e1-14f1-06a9-ef13" name="Discipline: Telekinesis" hidden="false" targetId="b737-b555-191c-0792" type="rule" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+<selectionEntry id="11cb-765f-f17c-05eb" name="Telepathy" hidden="false" collective="false" import="true" type="upgrade">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3e06-92b2-8540-8b34" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="35ab-07ea-7bcd-d33f" name="Discipline: Telepathy" hidden="false" targetId="58b2-89a8-e8fe-6845" type="rule" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+</selectionEntries>
+</selectionEntryGroup>
 </selectionEntryGroups>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
@@ -40724,6 +41614,13 @@ LIMITATIONS - The Warlord must be a Thousand Sons Psyker. At least two Psychic B
 </costs>
 </selectionEntry>
 <selectionEntry id="47eb-7e14-4dcf-a7c3" name="Legion Terminator Command Squad" hidden="false" collective="false" import="true" type="unit">
+<modifiers>
+<modifier type="add" field="category" value="7c52-2dbc-9a97-85a9">
+<conditions>
+<condition field="selections" scope="self" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7d67-d9c2-b1b4-a9b5" type="atLeast" />
+</conditions>
+</modifier>
+</modifiers>
 <infoLinks>
 <infoLink id="25eb-1d35-8bfb-e6fb" name="Legiones Astartes" hidden="false" targetId="0ed8-99c2-6b0e-f182" type="rule" />
 <infoLink id="3f38-eac2-6e29-b71d" name="Retinue" hidden="false" targetId="c829-0c60-f219-6cc8" type="rule" />
@@ -41905,6 +42802,83 @@ LIMITATIONS - The Warlord must be a Thousand Sons Psyker. At least two Psychic B
 </selectionEntry>
 </selectionEntries>
 </selectionEntryGroup>
+<selectionEntryGroup id="b205-7957-2fc4-6cef" name="Psychic Discipline" hidden="false" collective="false" import="true">
+<modifiers>
+<modifier type="add" field="error" value="Choose a Psychic Discipline.">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dcdc-c6e7-01cf-adac" type="lessThan" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="da97-6917-df62-d059" type="lessThan" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a742-8ea5-c710-f9e7" type="lessThan" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4aa9-2e70-2e3b-742e" type="lessThan" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ca56-0f45-53bd-9b7d" type="lessThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+</modifiers>
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a314-f5bf-a966-c772" type="max" />
+</constraints>
+<selectionEntries>
+<selectionEntry id="dcdc-c6e7-01cf-adac" name="Biomancy" hidden="false" collective="false" import="true" type="upgrade">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9984-2511-c321-2045" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="9fa1-1ca0-3d70-09ea" name="Discipline: Biomancy" hidden="false" targetId="c676-5629-6301-c1ae" type="rule" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+<selectionEntry id="da97-6917-df62-d059" name="Divination" hidden="false" collective="false" import="true" type="upgrade">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2743-8e39-6041-10b0" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="ebf8-cab4-9961-23df" name="Discipline: Divination" hidden="false" targetId="c9dc-bd2d-7d4f-bca3" type="rule" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+<selectionEntry id="a742-8ea5-c710-f9e7" name="Pyromancy" hidden="false" collective="false" import="true" type="upgrade">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ba2d-6d61-c0c0-450a" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="03f0-dff9-b8e5-03f1" name="Discipline: Pyromancy" hidden="false" targetId="0d01-4887-ea9d-57d1" type="rule" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+<selectionEntry id="4aa9-2e70-2e3b-742e" name="Telekinesis" hidden="false" collective="false" import="true" type="upgrade">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="469a-1ff8-20d2-8d03" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="2552-4dce-084b-7ece" name="Discipline: Telekinesis" hidden="false" targetId="b737-b555-191c-0792" type="rule" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+<selectionEntry id="ca56-0f45-53bd-9b7d" name="Telepathy" hidden="false" collective="false" import="true" type="upgrade">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f6a2-a6bd-6959-44b6" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="9f74-414d-7acf-95ea" name="Discipline: Telepathy" hidden="false" targetId="58b2-89a8-e8fe-6845" type="rule" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+</selectionEntries>
+</selectionEntryGroup>
 </selectionEntryGroups>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
@@ -42204,62 +43178,23 @@ LIMITATIONS - The Warlord must be a Thousand Sons Psyker. At least two Psychic B
 </characteristics>
 </profile>
 </profiles>
-<selectionEntryGroups>
-<selectionEntryGroup id="e1f2-e6b3-1d2c-4fbc" name="Replace Prosperine Force Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="3632-de38-ef69-3058">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="402c-c8d6-0937-2cc3" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="654a-9139-59a7-c103" type="max" />
-</constraints>
-<entryLinks>
-<entryLink id="3632-de38-ef69-3058" name="Prosperine Force Weapon" hidden="false" collective="false" import="true" targetId="7a10-6da9-2be9-c27c" type="selectionEntry" sortIndex="1" defaultAmount="1" />
-<entryLink id="87c8-deb4-1b50-704f" name="Power Fist" hidden="false" collective="false" import="true" targetId="0b4d-922b-4629-b7ca" type="selectionEntry" sortIndex="3" />
-<entryLink id="c581-c956-2c5d-ca70" name="Chainfist" hidden="false" collective="false" import="true" targetId="a078-deea-084f-38e2" type="selectionEntry" sortIndex="4">
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
-</costs>
-</entryLink>
-</entryLinks>
-</selectionEntryGroup>
-<selectionEntryGroup id="84e6-fde7-5b21-690d" name="Replace Foeblaster Boltgun" hidden="false" collective="false" import="true" defaultSelectionEntryId="62a6-e16c-d00f-569a">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ef2e-ed7f-5fb8-a54e" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e7e5-628d-3d91-9367" type="max" />
-</constraints>
-<entryLinks>
-<entryLink id="62a6-e16c-d00f-569a" name="Foeblaster Boltgun" hidden="false" collective="false" import="true" targetId="9b55-194b-ad9f-fffc" type="selectionEntry" sortIndex="1" defaultAmount="1" />
-<entryLink id="f8ea-0cb7-d4b5-5350" name="Combi-Flamer" hidden="false" collective="false" import="true" targetId="8a4e-3dc8-c0e4-b9cf" type="selectionEntry" sortIndex="3">
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
-</costs>
-</entryLink>
-<entryLink id="2953-b33a-a190-3e80" name="Combi-Grenade Launcher" hidden="false" collective="false" import="true" targetId="53ca-71d4-e838-5ab2" type="selectionEntry" sortIndex="4">
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
-</costs>
-</entryLink>
-<entryLink id="1a83-9a16-20d0-dcbf" name="Combi-Meltagun" hidden="false" collective="false" import="true" targetId="b147-b586-15e9-f12b" type="selectionEntry" sortIndex="5">
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
-</costs>
-</entryLink>
-<entryLink id="508f-643d-f729-be0c" name="Combi-Plasma Gun" hidden="false" collective="false" import="true" targetId="e700-2c4d-9283-a7b7" type="selectionEntry" sortIndex="6">
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
-</costs>
-</entryLink>
-<entryLink id="2736-67fe-ec37-5b8b" name="Combi-Volkite Charger" hidden="false" collective="false" import="true" targetId="2125-78bc-6ae3-2391" type="selectionEntry" sortIndex="7">
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
-</costs>
-</entryLink>
-</entryLinks>
-</selectionEntryGroup>
-</selectionEntryGroups>
 <entryLinks>
 <entryLink id="62ab-fa2e-d39f-7567" name="Cataphractii Terminator Armour" hidden="false" collective="false" import="true" targetId="0656-5d6b-29bb-1441" type="selectionEntry">
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ae2b-bfb3-11cc-283c" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="637d-a781-7abe-1189" type="max" />
+</constraints>
+</entryLink>
+<entryLink id="8884-304a-acfc-d350" name="Prosperine Force Weapon" hidden="false" collective="false" import="true" targetId="7a10-6da9-2be9-c27c" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="19a9-ba15-8c73-b8fa" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aaae-bbbf-635a-6001" type="max" />
+</constraints>
+</entryLink>
+<entryLink id="bc4e-69c0-1ffb-f090" name="Foeblaster Boltgun" hidden="false" collective="false" import="true" targetId="9b55-194b-ad9f-fffc" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="40f4-458f-a3bd-4224" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bef0-77c2-a134-6b43" type="max" />
 </constraints>
 </entryLink>
 </entryLinks>
@@ -42556,34 +43491,108 @@ LIMITATIONS - The Warlord must be a Thousand Sons Psyker. At least two Psychic B
 </selectionEntry>
 </selectionEntries>
 </selectionEntryGroup>
-<selectionEntryGroup id="0398-6c1a-e26e-dc26" name="Heavy Weapons (up to two per five models)" hidden="false" collective="false" import="true">
+<selectionEntryGroup id="cf66-9142-1de0-0be7" name="Sekhmet Terminators: replace Prosperine Force Weapon (any number)" hidden="false" collective="false" import="true">
 <modifiers>
-<modifier type="increment" field="658e-53bc-37a8-2db8" value="1">
+<modifier type="increment" field="1cd6-9729-c31b-9cab" value="1">
+<repeats>
+<repeat field="selections" scope="2eab-cade-65d9-3a5e" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7f96-e86a-3e5d-87b7" repeats="1" roundUp="false" />
+</repeats>
+</modifier>
+</modifiers>
+<constraints>
+<constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1cd6-9729-c31b-9cab" type="max" />
+</constraints>
+<entryLinks>
+<entryLink id="1b6c-7dd9-52e9-3375" name="Power Fist" hidden="false" collective="false" import="true" targetId="0b4d-922b-4629-b7ca" type="selectionEntry" />
+<entryLink id="a0a0-b59c-4a9f-9c1c" name="Chainfist" hidden="false" collective="false" import="true" targetId="a078-deea-084f-38e2" type="selectionEntry">
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
+</costs>
+</entryLink>
+</entryLinks>
+</selectionEntryGroup>
+<selectionEntryGroup id="f664-f0ba-ac20-a464" name="Sekhmet Terminators: replace Foeblaster Boltgun (any number)" hidden="false" collective="false" import="true">
+<modifiers>
+<modifier type="increment" field="9748-68af-3e7c-f655" value="1">
+<repeats>
+<repeat field="selections" scope="2eab-cade-65d9-3a5e" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7f96-e86a-3e5d-87b7" repeats="1" roundUp="false" />
+</repeats>
+</modifier>
+<modifier type="decrement" field="9748-68af-3e7c-f655" value="1">
+<repeats>
+<repeat field="selections" scope="2eab-cade-65d9-3a5e" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9e6d-afcf-8202-e47c" repeats="1" roundUp="false" />
+</repeats>
+</modifier>
+<modifier type="decrement" field="9748-68af-3e7c-f655" value="1">
+<repeats>
+<repeat field="selections" scope="2eab-cade-65d9-3a5e" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bb90-ab7a-87fe-54e2" repeats="1" roundUp="false" />
+</repeats>
+</modifier>
+<modifier type="decrement" field="9748-68af-3e7c-f655" value="1">
+<repeats>
+<repeat field="selections" scope="2eab-cade-65d9-3a5e" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ce1c-c1c4-b57e-d841" repeats="1" roundUp="false" />
+</repeats>
+</modifier>
+</modifiers>
+<constraints>
+<constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9748-68af-3e7c-f655" type="max" />
+</constraints>
+<entryLinks>
+<entryLink id="bf93-9f0a-f0bc-ef5f" name="Combi-Flamer" hidden="false" collective="false" import="true" targetId="8a4e-3dc8-c0e4-b9cf" type="selectionEntry">
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
+</costs>
+</entryLink>
+<entryLink id="870f-5c11-bba5-a0b7" name="Combi-Grenade Launcher" hidden="false" collective="false" import="true" targetId="53ca-71d4-e838-5ab2" type="selectionEntry">
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
+</costs>
+</entryLink>
+<entryLink id="0f65-be40-a0c2-42eb" name="Combi-Meltagun" hidden="false" collective="false" import="true" targetId="b147-b586-15e9-f12b" type="selectionEntry">
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
+</costs>
+</entryLink>
+<entryLink id="3bdd-6ae9-33d3-5712" name="Combi-Plasma Gun" hidden="false" collective="false" import="true" targetId="e700-2c4d-9283-a7b7" type="selectionEntry">
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
+</costs>
+</entryLink>
+<entryLink id="12ce-542f-ed29-bc22" name="Combi-Volkite Charger" hidden="false" collective="false" import="true" targetId="2125-78bc-6ae3-2391" type="selectionEntry">
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
+</costs>
+</entryLink>
+</entryLinks>
+</selectionEntryGroup>
+<selectionEntryGroup id="aa7d-9795-ed07-6481" name="Heavy Weapons (up to two per five models, replace Foeblaster Boltgun)" hidden="false" collective="false" import="true">
+<modifiers>
+<modifier type="increment" field="8467-238c-baeb-7565" value="1">
 <repeats>
 <repeat field="selections" scope="2eab-cade-65d9-3a5e" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" repeats="1" roundUp="false" />
 </repeats>
 </modifier>
-<modifier type="increment" field="658e-53bc-37a8-2db8" value="1">
+<modifier type="increment" field="8467-238c-baeb-7565" value="1">
 <repeats>
 <repeat field="selections" scope="2eab-cade-65d9-3a5e" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" repeats="1" roundUp="false" />
 </repeats>
 </modifier>
 </modifiers>
 <constraints>
-<constraint automatic="true" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="658e-53bc-37a8-2db8" type="max" />
+<constraint automatic="true" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8467-238c-baeb-7565" type="max" />
 </constraints>
 <entryLinks>
-<entryLink id="714a-adf4-294e-fa85" name="Heavy Flamer" hidden="false" collective="false" import="true" targetId="9e6d-afcf-8202-e47c" type="selectionEntry">
+<entryLink id="ec89-289e-2fdb-b332" name="Heavy Flamer" hidden="false" collective="false" import="true" targetId="9e6d-afcf-8202-e47c" type="selectionEntry">
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
 </entryLink>
-<entryLink id="e8e5-738f-5710-68f8" name="Plasma Blaster" hidden="false" collective="false" import="true" targetId="bb90-ab7a-87fe-54e2" type="selectionEntry">
+<entryLink id="fc52-eb0f-1138-e049" name="Plasma Blaster" hidden="false" collective="false" import="true" targetId="bb90-ab7a-87fe-54e2" type="selectionEntry">
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
 </costs>
 </entryLink>
-<entryLink id="239c-31a1-7030-cdc3" name="Reaper Autocannon" hidden="false" collective="false" import="true" targetId="ce1c-c1c4-b57e-d841" type="selectionEntry">
+<entryLink id="0c67-bc31-d34a-2d65" name="Reaper Autocannon" hidden="false" collective="false" import="true" targetId="ce1c-c1c4-b57e-d841" type="selectionEntry">
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
 </costs>
@@ -44969,6 +45978,27 @@ Afterwards the squad may not enter Overwatch, may not make Return Fire or Stand 
 <rule id="996b-ab7f-f62c-6602" name="Khenetai Retinue" hidden="false">
 <description>Sanakht may select one Khenetai Occult Blade Cabal as his retinue (single HQ selection, no extra slot).</description>
 </rule>
+<rule id="8c7e-c3c7-8f33-92de" name="Psyker (Mastery Level 1)" hidden="false">
+<description>This model is a Psyker with Psychic Mastery Level 1.</description>
+</rule>
+<rule id="f0a8-ecc8-56d4-6a23" name="Psyker (Mastery Level 2)" hidden="false">
+<description>This model is a Psyker with Psychic Mastery Level 2.</description>
+</rule>
+<rule id="9015-356c-a0e4-446f" name="Psyker (Mastery Level 3)" hidden="false">
+<description>This model is a Psyker with Psychic Mastery Level 3.</description>
+</rule>
+<rule id="0a39-f0c2-0c24-7a15" name="Psychic Powers (Sanakht)" hidden="false">
+<description>Sanakht knows only Mindsong of Blades; he does not select a psychic power from the normal Psychic Disciplines. Activating his Force Weapons does not count as invoking a psychic power.</description>
+</rule>
+<rule id="9360-62b6-2611-5040" name="Psychic Brotherhood (Khenetai)" hidden="false">
+<description>Assign the Cabal to one Prosperine Cult; it receives both the Cult Arcana and Cult Mastery of that Cult. It does not select a power from the normal Psychic Disciplines and knows only Mindsong of Blades. The Blademaster may select up to 50 points of permitted weapons and wargear from the Space Marine Armoury but may not replace his Paired Prosperine Force Blades.</description>
+</rule>
+<rule id="3b43-b50e-d89c-65d3" name="Psychic Brotherhood (Ammitara)" hidden="false">
+<description>Assign the Cabal to one Prosperine Cult; it receives both the Cult Arcana and Cult Mastery of that Cult. It selects one psychic power from Divination or Telepathy and follows the normal rules for a Brotherhood of Psykers (Mastery Level 1). The Ammitara Fate may select up to 50 points of permitted weapons and wargear from the Space Marine Armoury.</description>
+</rule>
+<rule id="872a-92d1-e8bd-5691" name="Narthecium (Hathor Maat)" hidden="false">
+<description>Hathor Maat additionally uses the normal Narthecium rules from the Legiones Astartes Army List.</description>
+</rule>
 <rule id="9ffc-3cd4-3ff3-18a3" name="Command Retinue (Thousand Sons)" hidden="false">
 <description>This character may select one Legion Command Squad as his retinue. It does not occupy a separate Force Organisation slot.</description>
 </rule>
@@ -44991,7 +46021,7 @@ Afterwards the squad may not enter Overwatch, may not make Return Fire or Stand 
 <description>Magnus may re-roll one failed Psychic Test each player turn. He may Deny the Witch against any power whose Psyker or target is within 24" of him.</description>
 </rule>
 <rule id="3174-91c6-4641-6d6a" name="The Warp Bends to Magnus" hidden="false">
-<description>Magnus ignores Leadership penalties from Disturbance in the Warp, and his own powers do not count towards Disturbance in the Warp for other friendly Psykers.</description>
+<description>Magnus ignores Leadership penalties from Disturbance in the Warp, and his own powers do not count towards Disturbance in the Warp for other friendly Psykers; powers of other friendly Psykers still count normally. He may also attempt to Deny the Witch at 18" around him (see The Crimson King for the 24" Deny the Witch).</description>
 </rule>
 <rule id="2a80-6009-f183-75a6" name="Infernal Phoenix" hidden="false">
 <description>Witchfire - Beam. Range 24", S8, AP1, Melta. Resolve using the normal rules for Beam powers.</description>
@@ -45027,7 +46057,7 @@ Afterwards the squad may not enter Overwatch, may not make Return Fire or Stand 
 <description>Instead of suffering Perils of the Warp, Magnus gains one Instability Counter (-1 each to his next Warp Breath roll, then all are removed).</description>
 </rule>
 <rule id="05ff-e307-2b27-ec6f" name="The Warp Breathes" hidden="false">
-<description>At the beginning of each Thousand Sons turn roll a D6 (modified by Instability Counters): 1 or less - The Crimson King Fades (placed in Reserve, returns by Deep Strike; counts as destroyed if still in Reserve at the end); 2-5 - Reality Holds; 6+ - The Warp Ascendant (every Psyker may re-roll failed Psychic Tests, but any double causes Perils) until the next Thousand Sons turn.</description>
+<description>At the beginning of each Thousand Sons turn roll a D6 (modified by Instability Counters): 1 or less - The Crimson King Fades (placed in Reserve, returns by Deep Strike; counts as destroyed if still in Reserve at the end); 2-5 - Reality Holds; 6+ - The Warp Ascendant (every Psyker on the battlefield, friendly or enemy, may re-roll failed Psychic Tests, but any double causes Perils even if the test succeeds or is re-rolled) until the next Thousand Sons turn. The Crimson King Fades does not trigger The Crimson King Shattered.</description>
 </rule>
 <rule id="f655-3201-2392-7e9b" name="The Crimson King Shattered" hidden="false">
 <description>If Magnus is destroyed, every friendly non-Vehicle Thousand Sons unit suffers D3 Strength 4 AP- hits, then every friendly Thousand Sons Psyker or Brotherhood suffers Perils of the Warp (Independent Characters twice). This counts as one Signs and Portents event.</description>

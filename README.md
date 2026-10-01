@@ -12,13 +12,12 @@ After an update is pushed, refresh New Recruit (or fully close and reopen on mob
 | File | Contents |
 |---|---|
 | `Prohammer 30k.gst` | Game system: points, profile types, Standard Force Organisation Chart, ProHammer Classic universal special rules |
-| `Legiones Astartes.cat` | Legiones Astartes Army List (work in progress, see below) |
+| `Legiones Astartes - <Legion>.cat` (18) | The full Legiones Astartes Army List plus that Legion's Forces of the Legions content: Legion rules, armoury, Consuls, Rites of War, unique units, named characters, Primarch |
+| `Solar Auxilia.cat`, `Mechanicum.cat`, `Talons of the Emperor.cat`, `Questoris Households.cat`, `Daemons of the Ruinstorm.cat`, `The Lost and the Damned.cat`, `Exercitus Imperialis.cat` | The other main army books |
+| `Lords of War.cat`, `Legio Titanica.cat`, `Aeronautica Imperialis.cat`, `Experimental Wargear and Units.cat`, `Traditoris Extremi.cat` | Supplementary lists |
 
-### Legiones Astartes status
-
-Complete army list: HQ (with retinues and all Consuls), Troops, Elites, Fast Attack, Heavy Support,
-Dedicated Transports, Space Marine Armoury and all 11 Rites of War. Legion-specific rules (Forces of the
-Legions) are not in yet.
+Pick the catalogue for your army when you create a list (e.g. "Legiones Astartes - Sons of Horus").
+Open points that still need the author's decision are collected per army in `tools/questions/`.
 
 ### Rules enforced by the builder
 
@@ -39,7 +38,8 @@ Legions) are not in yet.
 
 ## Editing the data
 
-The `.gst` / `.cat` files are generated from `tools/`. Change the data there and rebuild:
+The `.gst` / `.cat` files are generated from `tools/` (Legion modules in `tools/legions/`, other armies in
+`tools/armies/`, each folder has a README for writing a module). Change the data there and rebuild:
 
 ```
 python3 tools/build.py
