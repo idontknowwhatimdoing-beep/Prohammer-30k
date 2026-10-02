@@ -832,6 +832,9 @@ def ic_additions(key, e, praetor):
     add_mods(dg, [modifier("set", dmin, 1, groups=[all_of(*need)]),
                   modifier("set", "hidden", "true", groups=[any_of(not_ts(), *exclude)] if exclude else None,
                            conds=None if exclude else [not_ts()])])
+    if exclude:
+        # an Esoterist / Primus Nullificator drops a Discipline picked earlier
+        add_mods(dg, [modifier("set", uid(dg.get("id"), "max"), 0, groups=[any_of(*exclude)])])
     cg = cult_choice(key, required=True, only_ts=True)
     ts_only(cg)
     add_to(e, "selectionEntryGroups", [g, dg, cg])
