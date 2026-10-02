@@ -112,3 +112,9 @@ Source: `/home/claude/src/legions/I_Dark_Angels.txt` (line numbers below). Modul
 25. **Named characters "Master of the Legion"**. Corswain, Sedras, Redloss and Holguin all have Master of the Legion
     (L1372, L1534, L1623, L1691). Done as printed. They need no minimum points, and allegiance is not limited (none is
     printed). OK?
+
+## Author's answers applied (2026-10-02)
+
+All 25 questions are answered. See `scratchpad/applied/I - Dark Angels.done.md` for the changes. Still open:
+Warlord toggle is built inside the module (not shared); Siege Specialists should become a general (core) rule;
+Predator-as-Troops limit of six applied to The Steel Fist only.

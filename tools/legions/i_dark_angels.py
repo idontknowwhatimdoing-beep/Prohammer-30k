@@ -36,7 +36,9 @@ RULES = {
         "Ironwing, Firewing or Ravenwing. A unit normally belongs to only one Wing. A Dedicated Transport belongs to the "
         "Wing of the unit for which it was purchased. Units and named characters with a predetermined Wing may not select "
         "another. Independent Characters keep their own Wing when joining another unit; a Wing rule is not conferred "
-        "between an Independent Character and a unit unless stated otherwise."),
+        "between an Independent Character and a unit unless stated otherwise. Only units with the Legiones Astartes (Dark "
+        "Angels) rule choose a Wing (allied units do not, unless they are Dark Angels). Lion El'Jonson is not assigned to "
+        "a Wing and never benefits from a Wing rule. The Inner Circle Knights Cenobium do not belong to a Wing."),
     "Stormwing": ("When the unit resolves a First Fire or Overwatch shooting attack, models may re-roll To Hit rolls of 1 "
                   "with Bolters, Bolt Pistols, Storm Bolters, Foeblaster Boltguns and the bolter component of "
                   "Combi-weapons."),
@@ -70,7 +72,9 @@ RULES = {
         "original Wound is ignored. Against a Massive Wound this is used before rolling the D3 Wounds."),
     "Deathwing Retinue": (
         "A Deathwing Companion Detachment may be selected instead of a Legion Command Squad or Legion Honour Guard Squad for "
-        "a Dark Angels Praetor or an appropriate named Dark Angels Character. It does not occupy a separate Force "
+        "a Master of the Legion type of character: a Dark Angels Praetor, a Centurion with the Delegatus Consul upgrade, a "
+        "named Dark Angels Character (Corswain, Marduk Sedras, Farith Redloss, Holguin) or Lion El'Jonson. It does not "
+        "occupy a separate Force "
         "Organisation slot; the Character and the Detachment count as a single HQ selection."),
     "Deathwing Retinue (Terminators)": (
         "A Deathwing Terminator Companion Detachment may be selected instead of a Legion Terminator Command Squad for an "
@@ -101,6 +105,9 @@ RULES = {
         "supercharged blade, resolve one Strength 4 hit against that model after its attacks (Armour Saves allowed)."),
     "Hatred (Characters)": ("The unit has the Hatred special rule against enemy units containing one or more Characters "
                             "or Independent Characters."),
+    "Army's Warlord": (
+        "This model is the army's Warlord (one per army). Several Rites of War require the Warlord to belong to a "
+        "particular Wing. A Primarch in the army must be the Warlord (Supreme Commander)."),
     # named characters
     "Paladin of Glory": (
         "When Corswain directs his attacks against an enemy Character or Independent Character he always hits on a 3+ "
@@ -168,7 +175,7 @@ RITE_TEXT = {
         "phase if the unit remained stationary. Officers of the Storm: a Stormwing Infantry unit containing a Stormwing "
         "Character gains Stubborn.\nLIMITATIONS - The Warlord must belong to the Stormwing. The compulsory Troops must be "
         "Stormwing Legion Tactical Squads or Legion Assault Squads of 20 models each and may not select Dedicated "
-        "Transports."),
+        "Transports (in the builder: no 20-model Stormwing Tactical or Assault Squad may select one)."),
     "The Unbroken Vow": (
         "EFFECTS - The Hammer of Caliban: Legion Veteran Squads and Legion Terminator Squads may be selected as Troops and "
         "may fulfil compulsory Troops. Death is not the End: a Deathwing unit with a model within 6\" of an Objective gains "
@@ -190,7 +197,8 @@ RITE_TEXT = {
         "Pinned wholly or partially within its own deployment zone it gains +150 Victory Points (+300 if that unit is "
         "Scoring); Victory Point missions only."),
     "The Steel Fist": (
-        "EFFECTS - Iron Brethren: Legion Predator Strike Squadrons may be Troops and fulfil compulsory Troops. Armoured "
+        "EFFECTS - Iron Brethren: Legion Predator Strike Squadrons may be Troops (at most six in the army) and fulfil "
+        "compulsory Troops. Armoured "
         "Assault: an Ironwing Infantry unit of 10 models or fewer may buy a Land Raider Phobos or Proteus as a Dedicated "
         "Transport at normal cost; one of 11-20 models may buy a Legion Spartan Assault Tank (normal Transport Capacity "
         "applies). Marshal of the Steel Fist: a Transport carrying an Ironwing Independent Character gains a 6+ "
@@ -238,6 +246,7 @@ WEAPONS_ = {
     "The Lion Sword": ("-", "User +1", "-", "Power Weapon, Two-Handed, Master-crafted, Fleshbane, Lance"),
     "The Wolf Blade": ("-", "User +3", "-", "Power Weapon, Two-Handed, Shred"),
     "Fusil Actinaeus": ('18"', "7", "2", "Salvo 2/4, Twin-linked, Blind"),
+    "Twin-linked Calibanite Plasma Gun": ('24"', "6", "2", "Rapid Fire, Twin-linked"),
 }
 MULTI = {
     "The Blade": {"The Blade (one-handed)": ("-", "User +1", "-", "Power Weapon, Master-crafted"),
@@ -264,7 +273,8 @@ WEAPON_RULES_ = {
     "Needle Pistol": ["Poisoned", "Rending"], "Calibanite Charge-blade": ["Rending", "Supercharged Blades"],
     "Death of Worlds": ["Two-Handed", "Murderous Strike (5+)"], "The Blade": ["The Blade", "Master-Crafted"],
     "The Lion Sword": ["Two-Handed", "Master-Crafted", "Fleshbane", "Lance"], "The Wolf Blade": ["Two-Handed", "Shred"],
-    "Fusil Actinaeus": ["Twin-Linked", "Blind"],
+    "Fusil Actinaeus": ["Twin-Linked", "Blind"], "Twin-linked Calibanite Plasma Gun": ["Twin-Linked"],
+    "Calibanite Combi-Plasma Gun": ["Combi-Weapon"],
     "Missile Launcher with Suspensor Web, Rad Missiles and Stasis Missiles": ["Suspensor Web", "Rad-phage", "Fleshbane",
                                                                               "Stasis Anomaly"],
     "Grenade Launcher with Frag, Krak and Stasis Grenades": ["Stasis Anomaly"],
@@ -315,6 +325,8 @@ def register():
     register_data(rules=RULES, weapons=WEAPONS_, weapon_rules=WEAPON_RULES_, wargear=WARGEAR_, multi_profile=MULTI)
     for n, profs in MULTI.items():
         WEAPON_RULES.setdefault(n, WEAPON_RULES_.get(n, []))
+    # Calibanite Combi-Plasma Gun: bolter + Calibanite Plasma Gun profiles (both already registered)
+    WEAPONS["Calibanite Combi-Plasma Gun"] = ["Bolter", "Calibanite Plasma Gun"]
 
 
 # ---------------------------------------------------------------- local helpers
@@ -713,7 +725,8 @@ def characters():
          "Death of Worlds", "Grenade Harness"],
         ["Dreadwing", "Stubborn", "Ancient of War", "Eskaton", "Siege Specialists", "Cenobium Retinue",
          "Mastery of the Blade"],
-        retinue=retinue_links("sedras", [cenobium("sedras-cenobium", root=False)]),
+        retinue=retinue_links("sedras", [cenobium("sedras-cenobium", root=False),
+                                         companions("sedras-companions", root=False)]),
         extra_groups=[wing_group(sed, "Dreadwing")],
         extra_entries=[option(sed, "Teleportation Transponders", 10)], profile_name="Marduk Sedras"))
     # Farith Redloss
@@ -722,7 +735,8 @@ def characters():
         LR, "Farith Redloss", 185, (6, 5, 4, 4, 3, 5, 3, 10, "2+/4+"),
         ["Artificer Armour", "Iron Halo", "Terranic Greatsword", "Rad Grenades", "Frag Grenades"],
         ["Dreadwing", "Stubborn", "Voted-Lieutenant of the Dreadwing", "Extermination Protocol", "Mastery of the Blade"],
-        retinue=retinue_links("redloss", [interemptors("redloss-interemptors", root=False)]),
+        retinue=retinue_links("redloss", [interemptors("redloss-interemptors", root=False),
+                                          companions("redloss-companions", root=False)]),
         extra_groups=[wing_group(red, "Dreadwing"), krak(red),
                       slot(red, "Replace Plasma Pistol", "Plasma Pistol", [("Calibanite Plasma Pistol", 0)])])
     pb = uid("link", red, "phosphex")
@@ -737,7 +751,8 @@ def characters():
         ["Cataphractii Terminator Armour", "Combi-Bolter", "Master-crafted Terranic Greatsword", "Grenade Harness"],
         ["Deathwing", "Stubborn", "Voted-Lieutenant of the Deathwing", "Unbroken Line", "Mastery of the Blade"],
         retinue=retinue_links("holguin", [term_companions("holguin-termcomp", root=False,
-                                                          fixed_pattern="Cataphractii Terminator Armour")]),
+                                                          fixed_pattern="Cataphractii Terminator Armour"),
+                                          companions("holguin-companions", root=False)]),
         extra_groups=[wing_group(hol, "Deathwing")],
         extra_entries=[option(hol, "Teleportation Transponders", 10)]))
     return out
@@ -824,6 +839,59 @@ def steel_fist_transports(unit):
                              conds=[cond(gs.CAT_TRANSPORT, u, "greaterThan", 1)])])
 
 
+RITE_WINGS = {"The Storm of War": "Stormwing", "The Unbroken Vow": "Deathwing", "The Eskaton Imperative": "Dreadwing",
+              "The Steel Fist": "Ironwing", "The Seeker's Arrow": "Ravenwing", "The Serpent's Bane": "Firewing"}
+WARLORD = uid("da", "entry", "Army's Warlord")
+
+
+def warlord(ctx):
+    """Author's answer to Q10: a Warlord toggle (one per army) on every HQ / Lord of War unit with a Character, so that
+    'The Warlord must belong to the <Wing>' can be checked. Built inside this module (no shared change)."""
+    wl = entry(WARLORD, "Army's Warlord", cost=0,
+               constraints=[constraint(uid(WARLORD, "roster"), "max", 1, scope="roster")],
+               infolinks=rules_links(["Army's Warlord"], key=WARLORD))
+    ctx.add_shared(wl)
+    for e in unique_entries(legion_units(ctx)):
+        prim = [c.get("targetId") for c in e.findall("categoryLinks/categoryLink") if c.get("primary") == "true"]
+        if not any(t in (HQ, LOW) for t in prim):
+            continue
+        if not (is_char(e) or any(is_char(x) for x in e.iter("selectionEntry"))):
+            continue
+        u = e.get("id")
+        lid = uid("link", u, "warlord")
+        add_to(e, "entryLinks", [link(lid, WARLORD, "Army's Warlord",
+                                      constraints=[constraint(uid(lid, "max"), "max", 1, auto=True)])])
+        has_wing = any(g.get("name") == WING for g in e.findall("selectionEntryGroups/selectionEntryGroup"))
+        for rn, w in RITE_WINGS.items():
+            conds = [rite(rn), cond(WARLORD, u, "atLeast", 1)]
+            if has_wing:
+                conds.append(cond(wing_id(u, w), u, "lessThan", 1))
+            add_mods(e, [modifier("add", "error", f"{rn}: the Warlord must belong to the {w}.", conds=conds)])
+
+
+def add_wrapped_variant(entries, base, new):
+    """Option entries that only contain `base` (e.g. the Bike Squadron's 'Twin-linked Plasma Guns') get a sibling
+    option with `new` instead, same cost and limits."""
+    base_id = W(base)
+    for r in unique_entries(entries):
+        parents = {c: p for p in r.iter() for c in p}
+        for e in list(r.iter("selectionEntry")):
+            lks = e.findall("entryLinks/entryLink")
+            if e is r or len(lks) != 1 or lks[0].get("targetId") != base_id:
+                continue
+            if e.find("selectionEntries") is not None or e.find("selectionEntryGroups") is not None:
+                continue
+            holder = parents.get(e)
+            new_name = e.get("name").replace("Plasma", "Calibanite Plasma", 1)
+            if holder is None or any(x.get("name") == new_name for x in holder):
+                continue
+            c = clone(e, "da-calibanite-" + new, strip_cats=False, new_name=new_name)
+            lk = c.find("entryLinks/entryLink")
+            lk.set("targetId", W(new))
+            lk.set("name", new)
+            holder.insert(list(holder).index(e) + 1, c)
+
+
 def is_infantry_unit(e):
     types = [ut for t, ut in profile_types(e) if t == "Unit"]
     return bool(types) and all(ut.startswith("Infantry") for ut in types)
@@ -857,7 +925,8 @@ def extend(ctx):
     pr_comp = companions("praetor-da-companions", root=False, jump_char=praetor.get("id"))
     pr_term = term_companions("praetor-da-termcomp", root=False)
     ce_term = term_companions("centurion-da-termcomp", root=False)
-    for char, ents in [(praetor, [pr_comp, pr_term]), (centurion, [ce_term])]:
+    ce_comp = companions("centurion-da-companions", root=False, jump_char=centurion.get("id"))
+    for char, ents in [(praetor, [pr_comp, pr_term]), (centurion, [ce_term, ce_comp])]:
         cid = char.get("id")
         g = find_group(char, "Retinue (no Force Organisation slot)")
         for r in ents:
@@ -873,8 +942,16 @@ def extend(ctx):
                                              conds=[cond(choice_id(ru, "Terminator Armour Pattern (entire squad)", p),
                                                          cid, "atLeast", 1),
                                                     cond(W(p), cid, "lessThan", 2)])])
+            cons = []
+            if r is ce_comp:
+                # only a Centurion with the Delegatus Consul upgrade (a Master of the Legion type of character)
+                lid = uid("link", g.get("id"), r.get("id"))
+                no_del = lambda: cond(L.consul_id("Delegatus"), cid, "lessThan", 1)
+                mods = [modifier("set", "hidden", "true", conds=[no_del()]),
+                        modifier("set", uid(lid, "max"), 0, conds=[no_del()])]
+                cons = [constraint(uid(lid, "max"), "max", 1, auto=True)]
             g.find("entryLinks").append(link(uid("link", g.get("id"), r.get("id")), r.get("id"), r.get("name"),
-                                             mods=mods))
+                                             mods=mods, constraints=cons))
 
     # ---- characters and the Primarch
     chars = characters()
@@ -905,12 +982,18 @@ def extend(ctx):
         need_wing(sq, "The Storm of War", ["Stormwing"])
         add_mods(sq, [modifier("remove", "category", gs.CAT_LINE,
                                conds=[rite("The Storm of War"), cond("model", sq.get("id"), "lessThan", 20)])])
+        sid = sq.get("id")
+        add_mods(sq, [modifier("add", "error", "The Storm of War: a 20-model Stormwing Tactical or Assault Squad (a "
+                                               "compulsory Troops choice) may not select a Dedicated Transport.",
+                               conds=[rite("The Storm of War"), cond("model", sid, "atLeast", 20),
+                                      cond(wing_id(sid, "Stormwing"), sid, "atLeast", 1),
+                                      cond(gs.CAT_TRANSPORT, sid, "atLeast", 1)])])
     # Unbroken Vow: Deathwing Veterans / Terminators
     for n in ["Legion Veteran Squad", "Legion Terminator Squad"]:
         need_wing(ctx.unit(n), "The Unbroken Vow", ["Deathwing"])
     # Eskaton: Dreadwing Destroyers (Interemptors are always Dreadwing)
     need_wing(ctx.unit("Legion Destroyer Squad"), "The Eskaton Imperative", ["Dreadwing"])
-    # Steel Fist: Predators as Troops (no 0-2 limit), Ironwing only
+    # Steel Fist: Predators as Troops (at most six, author's answer), Ironwing only
     pred = ctx.unit("Legion Predator Strike Squadron")
     tog = find_entry(pred, "Selected as Troops (Armoured Breakthrough)")
     tid = tog.get("id")
@@ -920,7 +1003,7 @@ def extend(ctx):
                              cond(rite_id("The Steel Fist"), "force", "lessThan", 1))
     add_mods(tog, [modifier("set", "hidden", "true", groups=[neither()]),
                    modifier("set", uid(tid, "max"), 0, groups=[neither()]),
-                   modifier("increment", uid(tid, "roster"), 99, conds=[rite("The Steel Fist")]),
+                   modifier("set", uid(tid, "roster"), 6, conds=[rite("The Steel Fist")]),
                    modifier("set", "name", "Selected as Troops (The Steel Fist)", conds=[rite("The Steel Fist")])])
     need_wing(pred, "The Steel Fist", ["Ironwing"])
     # Seeker's Arrow: Ravenwing Bikes / Sky Hunters
@@ -942,11 +1025,15 @@ def extend(ctx):
     add_variants(everything, "Plasma Gun", [("Calibanite Plasma Gun", 0), ("Plasma Repeater", 10),
                                             ("Plasma Burner", 5)])
     add_variants(everything, "Plasma Cannon", [("Calibanite Plasma Cannon", 0)])
+    # author: vehicle / Dreadnought plasma weapons and Combi-plasma guns are included too
+    add_variants(everything, "Combi-Plasma Gun", [("Calibanite Combi-Plasma Gun", 0)])
+    add_variants(everything, "Twin-linked Plasma Gun", [("Twin-linked Calibanite Plasma Gun", 0)])
+    add_wrapped_variant(everything, "Twin-linked Plasma Gun", "Twin-linked Calibanite Plasma Gun")
     ml = ["Missile Launcher", "Missile Launcher with Suspensor Web", "Missile Launcher with Suspensor Web and Rad Missiles",
           "Twin-linked Missile Launcher"]
     gl = ["Combi-Grenade Launcher"]
     hb = ["Heavy Bolter", "Twin-linked Heavy Bolter", "Heavy Bolter with Suspensor Web",
-          "Heavy Bolter with Suspensor and Hellfire Rounds"]
+          "Heavy Bolter with Suspensor and Hellfire Rounds", "Heavy Bolter Sponsons", "Scimitar Jetbike with Heavy Bolter"]
     for e in everything:
         if e.get("name") in ("Legion", "Allegiance", "Rite of War"):
             continue
@@ -954,10 +1041,10 @@ def extend(ctx):
             ammo_upgrade(e, "Stasis Shells (per Missile Launcher)", 5, "Stasis Shell - Missile", ml)
         if has_link_to(e, {W(x) for x in gl}):
             ammo_upgrade(e, "Stasis Shells (per Grenade Launcher)", 5, "Stasis Shell - Grenade", gl)
-        pts = profile_types(e)
-        vehicle = any(t == "Vehicle" for t, _ in pts) and not any(t == "Walker" for t, _ in pts)
-        if not vehicle and has_link_to(e, {W(x) for x in hb}):
-            ammo_upgrade(e, "Molecular Acid Shells (per Heavy Bolter)", 7, "Molecular Acid Heavy Bolter", hb)
+        # author: Vehicles and Sky Hunters may take them too
+        if has_link_to(e, {W(x) for x in hb if x in WEAPONS}):
+            ammo_upgrade(e, "Molecular Acid Shells (per Heavy Bolter)", 7, "Molecular Acid Heavy Bolter",
+                         [x for x in hb if x in WEAPONS])
 
     # ---- The Hexagrammaton: every Dark Angels unit chooses a Wing (Primarch and Inner Circle excepted)
     skip = {LION, uid("unit", "Inner Circle Knights Cenobium")}
@@ -978,5 +1065,6 @@ def extend(ctx):
         if (wg and find_group(e, "Dedicated Transport") is not None and is_infantry_unit(e)
                 and e.get("id") != LION):
             steel_fist_transports(e)
+    warlord(ctx)
     for e in unique_entries(ctx.all_entries()):
         dedupe_kit(e)

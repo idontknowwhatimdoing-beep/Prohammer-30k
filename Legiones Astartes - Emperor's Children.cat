@@ -1745,7 +1745,7 @@
 <categoryLink id="950f-6d98-a14d-6c33" name="Iron Halo (one per army)" hidden="false" targetId="7e81-7178-7650-6f77" primary="false" />
 </categoryLinks>
 </entryLink>
-<entryLink id="8f80-d93c-7b08-46ce" name="Sonic Weapon (one Praetor or Centurion per army, Traitor only)" hidden="false" collective="false" import="true" targetId="d78b-5f18-189b-808c" type="selectionEntry">
+<entryLink id="8f80-d93c-7b08-46ce" name="Sonic Weapon (one Praetor, Centurion or Consul per army, Traitor only)" hidden="false" collective="false" import="true" targetId="d78b-5f18-189b-808c" type="selectionEntry">
 <modifiers>
 <modifier type="set" field="hidden" value="true">
 <conditionGroups>
@@ -4747,7 +4747,7 @@
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="86b7-1046-8955-d41a" type="max" />
 </constraints>
 </entryLink>
-<entryLink id="d978-3824-d43b-cb2d" name="Sonic Weapon (one Praetor or Centurion per army, Traitor only)" hidden="false" collective="false" import="true" targetId="d78b-5f18-189b-808c" type="selectionEntry">
+<entryLink id="d978-3824-d43b-cb2d" name="Sonic Weapon (one Praetor, Centurion or Consul per army, Traitor only)" hidden="false" collective="false" import="true" targetId="d78b-5f18-189b-808c" type="selectionEntry">
 <modifiers>
 <modifier type="set" field="hidden" value="true">
 <conditionGroups>
@@ -6049,7 +6049,7 @@
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="96f2-844e-de7c-96b5" type="max" />
 </constraints>
 <costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
+<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
 </costs>
 </entryLink>
 </entryLinks>
@@ -8132,22 +8132,17 @@ LIMITATIONS - No other Lord of War; no Allied Detachment; no more than one other
 <condition field="selections" scope="force" value="2" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a78f-9734-db0c-b938" type="greaterThan" />
 </conditions>
 </modifier>
-<modifier type="add" field="error" value="The Maru Skara: Immobile units (Legion Drop Pods, Dreadnought Drop Pods) may not be selected.">
+<modifier type="add" field="error" value="The Maru Skara: Immobile units (Fortifications) may not be selected.">
 <conditions>
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="356d-f049-8fd6-5aeb" type="atLeast" />
-<conditionGroup type="or">
-<conditions>
-<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4e1c-55bd-1f6c-9584" type="atLeast" />
-<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="baf7-a5cf-a01e-9c3f" type="atLeast" />
-</conditions>
-</conditionGroup>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1f6e-6456-710f-fbe7" type="atLeast" />
 </conditions>
 </modifier>
 </modifiers>
 <rules>
 <rule id="95cb-23a8-73ad-d1bf" name="The Maru Skara" hidden="false">
 <description>EFFECTS - The Open Blade: all units deployed normally at the beginning of the battle form the Open Blade; the army's Warlord must form part of it and must begin the battle on the battlefield. The Hidden Blade: before deployment, nominate up to three Emperor's Children units from Legion Assault Squads, Legion Veteran Squads, Legion Terminator Squads, Palatine Blade Squads, Phoenix Terminator Squads, Legion Bike Squadrons and Legion Sky Hunter Jetbike Squadrons. An Independent Character may accompany a nominated unit normally; Dedicated Transports purchased for a nominated unit form part of the Hidden Blade with it. All units of the Hidden Blade must begin the battle in Reserve. Perfectly Timed Strike: after deployment zones are determined but before either army deploys, secretly record game turn 2 or 3 and the left or right side table edge. At the beginning of the chosen Emperor's Children turn reveal the choice: every surviving Hidden Blade unit becomes available automatically without a Reserve roll, enters play from the chosen side table edge and may act normally that turn. The Killing Stroke: during the player turn in which the Hidden Blade arrives, all Emperor's Children units may re-roll failed Advance rolls and failed Charge distance rolls (the second result must be accepted).
-LIMITATIONS - The army's Warlord must begin the battle as part of the Open Blade. The Hidden Blade may contain no more than three units, excluding attached Independent Characters and Dedicated Transports. The army may include no more than two Heavy Support choices. Immobile units may not be selected.</description>
+LIMITATIONS - The army's Warlord must begin the battle as part of the Open Blade. The Hidden Blade may contain no more than three units, excluding attached Independent Characters and Dedicated Transports. The army may include no more than two Heavy Support choices. Immobile units (Fortifications) may not be selected.</description>
 </rule>
 </rules>
 <costs>
@@ -8165,13 +8160,13 @@ LIMITATIONS - The army's Warlord must begin the battle as part of the Open Blade
 <modifier type="add" field="error" value="3rd Company Elite: the army must include at least one Kakophoni Squad.">
 <conditions>
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac1-f121-fe1b-d3e4" type="atLeast" />
-<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b086-8642-0716-0043" type="lessThan" />
+<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b086-8642-0716-0043" type="lessThan" />
 </conditions>
 </modifier>
 <modifier type="add" field="error" value="3rd Company Elite: the army may include no more than one Fortification.">
 <conditions>
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac1-f121-fe1b-d3e4" type="atLeast" />
-<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1f6e-6456-710f-fbe7" type="greaterThan" />
+<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1f6e-6456-710f-fbe7" type="greaterThan" />
 </conditions>
 </modifier>
 </modifiers>
@@ -8179,7 +8174,7 @@ LIMITATIONS - The army's Warlord must begin the battle as part of the Open Blade
 <rule id="2915-d3d5-37e6-a0fd" name="3rd Company Elite" hidden="false">
 <description>TRAITOR ONLY.
 EFFECTS - Chosen of Vairosean: Kakophoni Squads may be selected as Troops choices and may then fulfil compulsory Troops selections. All Kakophoni Squads in the Detachment gain Relentless. Sonic Assault: any Emperor's Children Infantry unit composed entirely of models wearing Power Armour or Artificer Armour may purchase Sonic Shriekers for +2 points per model; every eligible model in the unit must purchase the upgrade (normal Sonic Shrieker rules). Armoury of Excess: up to two Legion Heavy Support Squads may select Sonic Weaponry. Perfect Cacophony: a unit in which every surviving model is equipped with either a Sonic Weapon or a Sonic Shrieker gains the Fear special rule.
-LIMITATIONS - Only a Traitor Emperor's Children Detachment. The army must include at least one Kakophoni Squad. The army's Warlord must either be equipped with a Sonic Shrieker or be a named Character whose rules specifically associate him with the Kakophoni or 3rd Company. The army may include no more than one Fortification.</description>
+LIMITATIONS - Only a Traitor Emperor's Children Detachment. The army must include at least one Kakophoni Squad. The army's Warlord must be equipped with a Sonic Shrieker or a Doom Siren. The army may include no more than one Fortification.</description>
 </rule>
 </rules>
 <costs>
@@ -8382,7 +8377,7 @@ LIMITATIONS - Only a Traitor Emperor's Children Detachment. The army must includ
 </entryLink>
 <entryLink id="a510-d36b-8811-f1a5" name="Phoenix Spear" hidden="false" collective="false" import="true" targetId="649b-4d99-b503-5a77" type="selectionEntry" sortIndex="105">
 <costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
+<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
 </costs>
 </entryLink>
 </entryLinks>
@@ -10263,7 +10258,7 @@ LIMITATIONS - Only a Traitor Emperor's Children Detachment. The army must includ
 </entryLink>
 <entryLink id="9219-3160-644f-a23f" name="Phoenix Spear" hidden="false" collective="false" import="true" targetId="649b-4d99-b503-5a77" type="selectionEntry" sortIndex="104">
 <costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
+<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
 </costs>
 </entryLink>
 </entryLinks>
@@ -13398,7 +13393,7 @@ LIMITATIONS - Only a Traitor Emperor's Children Detachment. The army must includ
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e38a-3096-c52f-55df" type="max" />
 </constraints>
 <costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
+<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
 </costs>
 </entryLink>
 </entryLinks>
@@ -14186,7 +14181,7 @@ LIMITATIONS - Only a Traitor Emperor's Children Detachment. The army must includ
 </entryLink>
 <entryLink id="36b5-2fb6-1cfe-7adc" name="Phoenix Spear" hidden="false" collective="false" import="true" targetId="649b-4d99-b503-5a77" type="selectionEntry" sortIndex="104">
 <costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
+<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
 </costs>
 </entryLink>
 </entryLinks>
@@ -14740,7 +14735,7 @@ LIMITATIONS - Only a Traitor Emperor's Children Detachment. The army must includ
 </entryLink>
 <entryLink id="29f5-dcee-866a-e91d" name="Phoenix Spear" hidden="false" collective="false" import="true" targetId="649b-4d99-b503-5a77" type="selectionEntry" sortIndex="104">
 <costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
+<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
 </costs>
 </entryLink>
 </entryLinks>
@@ -16297,7 +16292,7 @@ LIMITATIONS - Only a Traitor Emperor's Children Detachment. The army must includ
 <cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
 </costs>
 </selectionEntry>
-<selectionEntry id="fa24-27c7-e30f-0ec9" name="Perfect Cacophony (Fearless)" hidden="false" collective="false" import="true" type="upgrade">
+<selectionEntry id="0217-cde0-11a2-aff7" name="Perfect Cacophony (Fearless, at least two Sonic Weapons)" hidden="false" collective="false" import="true" type="upgrade">
 <modifiers>
 <modifier type="set" field="hidden" value="true">
 <conditionGroups>
@@ -16305,25 +16300,83 @@ LIMITATIONS - Only a Traitor Emperor's Children Detachment. The army must includ
 <conditions>
 <condition field="selections" scope="b2c2-59c9-f233-25d2" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="424a-a379-e1e2-6b4b" type="equalTo" />
 </conditions>
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="b2c2-59c9-f233-25d2" value="2" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e78b-cbf1-79a4-5542" type="lessThan" />
+<condition field="selections" scope="b2c2-59c9-f233-25d2" value="2" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d31c-8a39-1e38-3a74" type="lessThan" />
+<condition field="selections" scope="b2c2-59c9-f233-25d2" value="2" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8069-b31c-e9c6-059f" type="lessThan" />
+</conditions>
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="b2c2-59c9-f233-25d2" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e78b-cbf1-79a4-5542" type="lessThan" />
+<condition field="selections" scope="b2c2-59c9-f233-25d2" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d31c-8a39-1e38-3a74" type="lessThan" />
+</conditions>
+</conditionGroup>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="b2c2-59c9-f233-25d2" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e78b-cbf1-79a4-5542" type="lessThan" />
+<condition field="selections" scope="b2c2-59c9-f233-25d2" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8069-b31c-e9c6-059f" type="lessThan" />
+</conditions>
+</conditionGroup>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="b2c2-59c9-f233-25d2" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d31c-8a39-1e38-3a74" type="lessThan" />
+<condition field="selections" scope="b2c2-59c9-f233-25d2" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8069-b31c-e9c6-059f" type="lessThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</conditionGroup>
+</conditionGroups>
 </conditionGroup>
 </conditionGroups>
 </modifier>
-<modifier type="set" field="03a3-7029-351f-1fa1" value="0">
+<modifier type="set" field="528e-bcb0-7253-b800" value="0">
 <conditionGroups>
 <conditionGroup type="or">
 <conditions>
 <condition field="selections" scope="b2c2-59c9-f233-25d2" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="424a-a379-e1e2-6b4b" type="equalTo" />
 </conditions>
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="b2c2-59c9-f233-25d2" value="2" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e78b-cbf1-79a4-5542" type="lessThan" />
+<condition field="selections" scope="b2c2-59c9-f233-25d2" value="2" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d31c-8a39-1e38-3a74" type="lessThan" />
+<condition field="selections" scope="b2c2-59c9-f233-25d2" value="2" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8069-b31c-e9c6-059f" type="lessThan" />
+</conditions>
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="b2c2-59c9-f233-25d2" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e78b-cbf1-79a4-5542" type="lessThan" />
+<condition field="selections" scope="b2c2-59c9-f233-25d2" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d31c-8a39-1e38-3a74" type="lessThan" />
+</conditions>
+</conditionGroup>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="b2c2-59c9-f233-25d2" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e78b-cbf1-79a4-5542" type="lessThan" />
+<condition field="selections" scope="b2c2-59c9-f233-25d2" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8069-b31c-e9c6-059f" type="lessThan" />
+</conditions>
+</conditionGroup>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="b2c2-59c9-f233-25d2" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d31c-8a39-1e38-3a74" type="lessThan" />
+<condition field="selections" scope="b2c2-59c9-f233-25d2" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8069-b31c-e9c6-059f" type="lessThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</conditionGroup>
+</conditionGroups>
 </conditionGroup>
 </conditionGroups>
 </modifier>
 </modifiers>
 <constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="03a3-7029-351f-1fa1" type="max" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="528e-bcb0-7253-b800" type="max" />
 </constraints>
 <infoLinks>
-<infoLink id="8c12-30ba-70f6-ea38" name="Perfect Cacophony (Armoury)" hidden="false" targetId="dc73-6d8f-605c-bfd3" type="rule" />
-<infoLink id="3492-353f-6fa2-0e49" name="Fearless" hidden="false" targetId="7460-d0b4-32f7-f367" type="rule" />
+<infoLink id="26dd-2164-d8da-2c99" name="Perfect Cacophony (Armoury)" hidden="false" targetId="dc73-6d8f-605c-bfd3" type="rule" />
+<infoLink id="7296-d83d-cb9d-f4c1" name="Fearless" hidden="false" targetId="7460-d0b4-32f7-f367" type="rule" />
 </infoLinks>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
@@ -16444,15 +16497,20 @@ LIMITATIONS - Only a Traitor Emperor's Children Detachment. The army must includ
 <selectionEntryGroups>
 <selectionEntryGroup id="ac47-1102-52e9-30b1" name="Heavy Weapons (up to four models)" hidden="false" collective="false" import="true">
 <modifiers>
-<modifier type="set" field="9e30-c3b8-7e55-4822" value="0">
-<conditions>
-<condition field="selections" scope="b2c2-59c9-f233-25d2" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="424a-a379-e1e2-6b4b" type="atLeast" />
-</conditions>
+<modifier type="decrement" field="9e30-c3b8-7e55-4822" value="1">
+<repeats>
+<repeat field="selections" scope="b2c2-59c9-f233-25d2" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e78b-cbf1-79a4-5542" repeats="1" roundUp="false" />
+</repeats>
 </modifier>
-<modifier type="set" field="hidden" value="true">
-<conditions>
-<condition field="selections" scope="b2c2-59c9-f233-25d2" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="424a-a379-e1e2-6b4b" type="atLeast" />
-</conditions>
+<modifier type="decrement" field="9e30-c3b8-7e55-4822" value="1">
+<repeats>
+<repeat field="selections" scope="b2c2-59c9-f233-25d2" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d31c-8a39-1e38-3a74" repeats="1" roundUp="false" />
+</repeats>
+</modifier>
+<modifier type="decrement" field="9e30-c3b8-7e55-4822" value="1">
+<repeats>
+<repeat field="selections" scope="b2c2-59c9-f233-25d2" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8069-b31c-e9c6-059f" repeats="1" roundUp="false" />
+</repeats>
 </modifier>
 </modifiers>
 <constraints>
@@ -16675,7 +16733,7 @@ LIMITATIONS - Only a Traitor Emperor's Children Detachment. The army must includ
 </entryLink>
 </entryLinks>
 </selectionEntryGroup>
-<selectionEntryGroup id="ffa6-bf59-b68c-f786" name="Sonic Weapons (up to four, instead of Heavy Weapons)" hidden="false" collective="false" import="true">
+<selectionEntryGroup id="e297-b26a-2bbe-da4b" name="Sonic Weapons (replace Bolters; up to four Heavy and Sonic Weapons in total)" hidden="false" collective="false" import="true">
 <modifiers>
 <modifier type="set" field="hidden" value="true">
 <conditionGroups>
@@ -16686,7 +16744,7 @@ LIMITATIONS - Only a Traitor Emperor's Children Detachment. The army must includ
 </conditionGroup>
 </conditionGroups>
 </modifier>
-<modifier type="set" field="ffc4-b0c9-5085-9ff8" value="0">
+<modifier type="set" field="f1d4-0cd5-7080-9a83" value="0">
 <conditionGroups>
 <conditionGroup type="or">
 <conditions>
@@ -16697,28 +16755,28 @@ LIMITATIONS - Only a Traitor Emperor's Children Detachment. The army must includ
 </modifier>
 </modifiers>
 <constraints>
-<constraint automatic="true" field="selections" scope="parent" value="4" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ffc4-b0c9-5085-9ff8" type="max" />
+<constraint automatic="true" field="selections" scope="parent" value="4" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f1d4-0cd5-7080-9a83" type="max" />
 </constraints>
 <entryLinks>
-<entryLink id="07cc-41ef-c1a6-f317" name="Sonic Blaster" hidden="false" collective="false" import="true" targetId="e78b-cbf1-79a4-5542" type="selectionEntry">
+<entryLink id="97d8-6017-9ab7-8ad9" name="Sonic Blaster" hidden="false" collective="false" import="true" targetId="e78b-cbf1-79a4-5542" type="selectionEntry">
 <constraints>
-<constraint automatic="true" field="selections" scope="parent" value="4" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="834d-1361-19fd-156a" type="max" />
+<constraint automatic="true" field="selections" scope="parent" value="4" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cb38-0b2d-ab05-62ed" type="max" />
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
 </costs>
 </entryLink>
-<entryLink id="d7c0-e714-d14a-ecb6" name="Doom Siren" hidden="false" collective="false" import="true" targetId="d31c-8a39-1e38-3a74" type="selectionEntry">
+<entryLink id="5cad-f198-9afc-caf6" name="Doom Siren" hidden="false" collective="false" import="true" targetId="d31c-8a39-1e38-3a74" type="selectionEntry">
 <constraints>
-<constraint automatic="true" field="selections" scope="parent" value="4" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9c6a-7d4b-48bf-1eed" type="max" />
+<constraint automatic="true" field="selections" scope="parent" value="4" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7b6b-2a6d-188f-111f" type="max" />
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
 </costs>
 </entryLink>
-<entryLink id="ba09-80c2-78e1-3183" name="Blastmaster" hidden="false" collective="false" import="true" targetId="8069-b31c-e9c6-059f" type="selectionEntry">
+<entryLink id="368a-3d25-9169-2016" name="Blastmaster" hidden="false" collective="false" import="true" targetId="8069-b31c-e9c6-059f" type="selectionEntry">
 <constraints>
-<constraint automatic="true" field="selections" scope="parent" value="4" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e81b-ecf1-9290-cf33" type="max" />
+<constraint automatic="true" field="selections" scope="parent" value="4" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="82c0-956c-5516-4b96" type="max" />
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="35" />
@@ -22561,25 +22619,6 @@ LIMITATIONS - Only a Traitor Emperor's Children Detachment. The army must includ
 </profile>
 </profiles>
 <selectionEntryGroups>
-<selectionEntryGroup id="b9b7-94cb-e02b-131d" name="Replace Rending Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="f544-933c-fe59-f0ac">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="93f2-4449-6bd8-a8a7" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e26c-6f8e-7b72-046f" type="max" />
-</constraints>
-<entryLinks>
-<entryLink id="f544-933c-fe59-f0ac" name="Rending Weapon" hidden="false" collective="false" import="true" targetId="ffab-7f00-50f4-91e0" type="selectionEntry" sortIndex="1" defaultAmount="1" />
-<entryLink id="540f-c311-416a-b460" name="Power Weapon" hidden="false" collective="false" import="true" targetId="fb4f-b267-7556-185d" type="selectionEntry" sortIndex="3">
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
-</costs>
-</entryLink>
-<entryLink id="88e1-adc6-e72f-895d" name="Phoenix Spear" hidden="false" collective="false" import="true" targetId="649b-4d99-b503-5a77" type="selectionEntry" sortIndex="103">
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
-</costs>
-</entryLink>
-</entryLinks>
-</selectionEntryGroup>
 <selectionEntryGroup id="ad47-6d2c-7252-dcb0" name="Wargear" hidden="false" collective="false" import="true">
 <entryLinks>
 <entryLink id="7697-cd54-8e8f-e72b" name="Combat Shield" hidden="false" collective="false" import="true" targetId="f57e-a9bf-6089-441a" type="selectionEntry">
@@ -22600,11 +22639,320 @@ LIMITATIONS - Only a Traitor Emperor's Children Detachment. The army must includ
 </entryLink>
 </entryLinks>
 </selectionEntryGroup>
-<selectionEntryGroup id="17f2-7863-cce7-2b16" name="Space Marine Armoury (max 50 pts)" hidden="false" collective="false" import="true">
+<selectionEntryGroup id="ed22-8725-f1f7-4e97" name="Space Marine Armoury (max 50 pts)" hidden="false" collective="false" import="true">
 <constraints>
-<constraint field="pts0-0000-0000-0001" scope="self" value="50" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="0dc4-aa79-2082-e0f2" type="max" />
+<constraint field="pts0-0000-0000-0001" scope="self" value="50" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="ebef-b2b5-7351-96f0" type="max" />
 </constraints>
 <selectionEntryGroups>
+<selectionEntryGroup id="8fbe-1d6e-0ebd-4d14" name="Replace Bolt Pistol" hidden="false" collective="false" import="true" defaultSelectionEntryId="4034-1556-2ee6-5689">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5c6d-fb38-2dad-adf3" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="860e-f7f7-1ece-e211" type="max" />
+</constraints>
+<selectionEntries>
+<selectionEntry id="0457-1518-657d-0056" name="Rending Weapon" hidden="false" collective="false" import="true" type="upgrade">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cc07-bb15-1f6b-ebcc" type="max" />
+</constraints>
+<entryLinks>
+<entryLink id="7bf8-2302-73d0-0194" name="Rending Weapon" hidden="false" collective="false" import="true" targetId="ffab-7f00-50f4-91e0" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8b60-ca26-0331-02ee" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0c5d-0f3a-71d1-bb64" type="max" />
+</constraints>
+</entryLink>
+</entryLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
+</costs>
+</selectionEntry>
+</selectionEntries>
+<entryLinks>
+<entryLink id="4034-1556-2ee6-5689" name="Bolt Pistol" hidden="false" collective="false" import="true" targetId="10e2-6917-e765-7495" type="selectionEntry" sortIndex="1" defaultAmount="1">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="702d-d928-ad24-7231" type="max" />
+</constraints>
+</entryLink>
+<entryLink id="7e29-3f9c-b791-1df9" name="Hand Flamer" hidden="false" collective="false" import="true" targetId="25eb-7e5c-f08a-e9b9" type="selectionEntry" sortIndex="3">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6a41-6f67-acf2-19bb" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
+</costs>
+</entryLink>
+<entryLink id="ea1d-7061-eed3-a9ba" name="Lightning Claw" hidden="false" collective="false" import="true" targetId="0826-0946-b6a1-f42b" type="selectionEntry" sortIndex="4">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d1d0-1127-89ad-be7a" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
+</costs>
+</entryLink>
+<entryLink id="da6d-6a03-9e5b-3e38" name="Pair of Lightning Claws" hidden="false" collective="false" import="true" targetId="af2b-d487-5b80-ae9b" type="selectionEntry" sortIndex="5">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a047-3aba-855d-6683" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
+</costs>
+</entryLink>
+<entryLink id="be0c-b029-531e-097c" name="Plasma Pistol" hidden="false" collective="false" import="true" targetId="523c-5dd4-3402-0e99" type="selectionEntry" sortIndex="6">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="47e8-f0d9-7886-0cc1" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
+</costs>
+</entryLink>
+<entryLink id="7a98-556f-1c4f-1001" name="Power Fist" hidden="false" collective="false" import="true" targetId="0b4d-922b-4629-b7ca" type="selectionEntry" sortIndex="7">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f0eb-a283-6016-f9e6" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
+</costs>
+</entryLink>
+<entryLink id="3e8e-764c-b884-22f5" name="Power Weapon" hidden="false" collective="false" import="true" targetId="fb4f-b267-7556-185d" type="selectionEntry" sortIndex="8">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8bdd-e46f-2ffa-cb54" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
+</costs>
+</entryLink>
+<entryLink id="6be4-ac24-cc9e-3a44" name="Thunder Hammer" hidden="false" collective="false" import="true" targetId="5dfe-22a3-22b6-fb7c" type="selectionEntry" sortIndex="10">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4c0c-fa82-3833-f4e7" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
+</costs>
+</entryLink>
+<entryLink id="334d-42e7-0df0-8226" name="Volkite Serpenta" hidden="false" collective="false" import="true" targetId="48a3-89aa-47ef-c849" type="selectionEntry" sortIndex="11">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="84d0-f88f-16f4-0e39" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
+</costs>
+</entryLink>
+<entryLink id="e779-de89-1646-781c" name="Combi-Bolter" hidden="false" collective="false" import="true" targetId="5d48-9963-61d3-1a72" type="selectionEntry" sortIndex="12">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8b8c-2ef9-b439-695d" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
+</costs>
+</entryLink>
+<entryLink id="ad68-eb35-940b-f631" name="Combi-Flamer" hidden="false" collective="false" import="true" targetId="8a4e-3dc8-c0e4-b9cf" type="selectionEntry" sortIndex="13">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c17c-e2d5-2ca4-670c" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
+</costs>
+</entryLink>
+<entryLink id="ad8c-9002-6174-8fe3" name="Combi-Grenade Launcher" hidden="false" collective="false" import="true" targetId="53ca-71d4-e838-5ab2" type="selectionEntry" sortIndex="14">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aee4-ee01-acf3-da24" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
+</costs>
+</entryLink>
+<entryLink id="c4d9-edef-c03c-c33f" name="Combi-Meltagun" hidden="false" collective="false" import="true" targetId="b147-b586-15e9-f12b" type="selectionEntry" sortIndex="15">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6235-71d0-aa75-5a53" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
+</costs>
+</entryLink>
+<entryLink id="e08a-7cdd-deeb-6815" name="Combi-Plasma Gun" hidden="false" collective="false" import="true" targetId="e700-2c4d-9283-a7b7" type="selectionEntry" sortIndex="16">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5978-4c2a-8a95-9f4e" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
+</costs>
+</entryLink>
+<entryLink id="e777-4ec3-de1f-91b1" name="Combi-Volkite Charger" hidden="false" collective="false" import="true" targetId="2125-78bc-6ae3-2391" type="selectionEntry" sortIndex="17">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ae72-7893-a09a-dc6b" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
+</costs>
+</entryLink>
+<entryLink id="0bcf-993d-d74a-32ea" name="Storm Bolter" hidden="false" collective="false" import="true" targetId="4c92-8660-bb6b-730f" type="selectionEntry" sortIndex="18">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7fbb-e8da-1ef4-817a" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
+</costs>
+</entryLink>
+<entryLink id="be85-a151-03e5-873c" name="Phoenix Spear" hidden="false" collective="false" import="true" targetId="649b-4d99-b503-5a77" type="selectionEntry" sortIndex="108">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8b92-68c3-85ed-ef48" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
+</costs>
+</entryLink>
+</entryLinks>
+</selectionEntryGroup>
+<selectionEntryGroup id="f43e-431d-5e9e-860c" name="Replace Rending Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="d310-3dad-b47b-59e4">
+<modifiers>
+<modifier type="set" field="3ccb-4842-cbb1-0421" value="0">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="af2b-d487-5b80-ae9b" type="atLeast" />
+</conditions>
+</modifier>
+<modifier type="set" field="50a4-6dd2-a2f7-3758" value="0">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="af2b-d487-5b80-ae9b" type="atLeast" />
+</conditions>
+</modifier>
+<modifier type="set" field="hidden" value="true">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="af2b-d487-5b80-ae9b" type="atLeast" />
+</conditions>
+</modifier>
+</modifiers>
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3ccb-4842-cbb1-0421" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="50a4-6dd2-a2f7-3758" type="max" />
+</constraints>
+<entryLinks>
+<entryLink id="d310-3dad-b47b-59e4" name="Rending Weapon" hidden="false" collective="false" import="true" targetId="ffab-7f00-50f4-91e0" type="selectionEntry" sortIndex="1" defaultAmount="1">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4bb6-18e8-3f7c-0064" type="max" />
+</constraints>
+</entryLink>
+<entryLink id="a343-5724-50a9-4985" name="Hand Flamer" hidden="false" collective="false" import="true" targetId="25eb-7e5c-f08a-e9b9" type="selectionEntry" sortIndex="3">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="235e-c372-fe32-363b" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
+</costs>
+</entryLink>
+<entryLink id="dd90-0829-ae7a-73d3" name="Lightning Claw" hidden="false" collective="false" import="true" targetId="0826-0946-b6a1-f42b" type="selectionEntry" sortIndex="4">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8e60-7848-3c98-9ac9" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
+</costs>
+</entryLink>
+<entryLink id="cc0f-83aa-4421-0fc8" name="Plasma Pistol" hidden="false" collective="false" import="true" targetId="523c-5dd4-3402-0e99" type="selectionEntry" sortIndex="5">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5f2e-d285-d4ec-656e" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
+</costs>
+</entryLink>
+<entryLink id="4df0-6ef2-9429-e684" name="Power Fist" hidden="false" collective="false" import="true" targetId="0b4d-922b-4629-b7ca" type="selectionEntry" sortIndex="6">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="13a0-abe8-67b7-f306" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
+</costs>
+</entryLink>
+<entryLink id="9e9b-d652-f7d9-4f5c" name="Power Weapon" hidden="false" collective="false" import="true" targetId="fb4f-b267-7556-185d" type="selectionEntry" sortIndex="7">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1007-2ffe-b073-1d29" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
+</costs>
+</entryLink>
+<entryLink id="facc-a1fa-5948-0804" name="Thunder Hammer" hidden="false" collective="false" import="true" targetId="5dfe-22a3-22b6-fb7c" type="selectionEntry" sortIndex="8">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="75af-d59f-c756-5962" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
+</costs>
+</entryLink>
+<entryLink id="26fe-0d00-dee6-dd5d" name="Volkite Serpenta" hidden="false" collective="false" import="true" targetId="48a3-89aa-47ef-c849" type="selectionEntry" sortIndex="9">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="12cc-8f4a-0d9e-3c79" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
+</costs>
+</entryLink>
+<entryLink id="a05b-a103-1f3d-476b" name="Combi-Bolter" hidden="false" collective="false" import="true" targetId="5d48-9963-61d3-1a72" type="selectionEntry" sortIndex="10">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e896-7aae-3db0-dfb9" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
+</costs>
+</entryLink>
+<entryLink id="d919-cac0-47c1-e49c" name="Combi-Flamer" hidden="false" collective="false" import="true" targetId="8a4e-3dc8-c0e4-b9cf" type="selectionEntry" sortIndex="11">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d547-9217-351e-d878" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
+</costs>
+</entryLink>
+<entryLink id="c860-5c3e-142d-4d28" name="Combi-Grenade Launcher" hidden="false" collective="false" import="true" targetId="53ca-71d4-e838-5ab2" type="selectionEntry" sortIndex="12">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4bfe-5007-66fd-7a4e" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
+</costs>
+</entryLink>
+<entryLink id="0d1f-2a64-71dc-e983" name="Combi-Meltagun" hidden="false" collective="false" import="true" targetId="b147-b586-15e9-f12b" type="selectionEntry" sortIndex="13">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f5ff-28dd-6beb-2354" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
+</costs>
+</entryLink>
+<entryLink id="606d-ee6d-e4be-2877" name="Combi-Plasma Gun" hidden="false" collective="false" import="true" targetId="e700-2c4d-9283-a7b7" type="selectionEntry" sortIndex="14">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f6c4-ea4b-855d-e508" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
+</costs>
+</entryLink>
+<entryLink id="64f9-d384-7db5-767f" name="Combi-Volkite Charger" hidden="false" collective="false" import="true" targetId="2125-78bc-6ae3-2391" type="selectionEntry" sortIndex="15">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="01c1-04e2-f34f-b49f" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
+</costs>
+</entryLink>
+<entryLink id="4a87-4e1e-5d51-c9b1" name="Storm Bolter" hidden="false" collective="false" import="true" targetId="4c92-8660-bb6b-730f" type="selectionEntry" sortIndex="16">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8b40-7a29-474d-5105" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
+</costs>
+</entryLink>
+<entryLink id="660f-6d9b-f96f-1706" name="Phoenix Spear" hidden="false" collective="false" import="true" targetId="649b-4d99-b503-5a77" type="selectionEntry" sortIndex="107">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="75b5-49fb-82b1-83de" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
+</costs>
+</entryLink>
+</entryLinks>
+</selectionEntryGroup>
 <selectionEntryGroup id="a9c5-6f51-2251-15ea" name="Additional Wargear" hidden="false" collective="false" import="true">
 <entryLinks>
 <entryLink id="bf5c-a445-8fbb-2d19" name="Refractor Field" hidden="false" collective="false" import="true" targetId="b458-ffe2-cc5c-e913" type="selectionEntry">
@@ -22697,12 +23045,6 @@ LIMITATIONS - Only a Traitor Emperor's Children Detachment. The army must includ
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c9c1-9014-19e3-1a12" type="max" />
 </constraints>
 </entryLink>
-<entryLink id="dd04-0900-59af-d813" name="Bolt Pistol" hidden="false" collective="false" import="true" targetId="10e2-6917-e765-7495" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dbaf-e2d0-8dc6-a2e7" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3ed4-23af-caa2-2284" type="max" />
-</constraints>
-</entryLink>
 <entryLink id="67bf-0c84-801b-3f0d" name="Frag Grenades" hidden="false" collective="false" import="true" targetId="f696-7971-36b0-27b5" type="selectionEntry">
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="98eb-b9e8-ea31-b002" type="min" />
@@ -22749,16 +23091,16 @@ LIMITATIONS - Only a Traitor Emperor's Children Detachment. The army must includ
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a4c8-b41d-6afd-881d" type="max" />
 </constraints>
 </entryLink>
-<entryLink id="968d-9832-d872-5656" name="Bolt Pistol" hidden="false" collective="false" import="true" targetId="10e2-6917-e765-7495" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2336-931c-4408-3c9a" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8daf-0cfc-62ec-be8b" type="max" />
-</constraints>
-</entryLink>
 <entryLink id="1380-2ad7-1645-9730" name="Frag Grenades" hidden="false" collective="false" import="true" targetId="f696-7971-36b0-27b5" type="selectionEntry">
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3d7b-688a-4583-4547" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bbe7-3b2f-e858-23e1" type="max" />
+</constraints>
+</entryLink>
+<entryLink id="968d-9832-d872-5656" name="Bolt Pistol" hidden="false" collective="false" import="true" targetId="10e2-6917-e765-7495" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2336-931c-4408-3c9a" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8daf-0cfc-62ec-be8b" type="max" />
 </constraints>
 </entryLink>
 <entryLink id="8fda-1f0b-dc87-d2bf" name="Rending Weapon" hidden="false" collective="false" import="true" targetId="ffab-7f00-50f4-91e0" type="selectionEntry">
@@ -23140,6 +23482,39 @@ LIMITATIONS - Only a Traitor Emperor's Children Detachment. The army must includ
 </modifier>
 </modifiers>
 </entryLink>
+<entryLink id="7827-82c6-b66d-e9ea" name="Land Raider Proteus" hidden="false" collective="false" import="true" targetId="fbad-f14e-6366-7f2a" type="selectionEntry">
+<modifiers>
+<modifier type="add" field="error" value="Too many models for a Land Raider Proteus (capacity 10).">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fbad-f14e-6366-7f2a" type="atLeast" />
+<condition field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="add" field="error" value="Terminator Armour counts as two models: too many for a Land Raider Proteus (capacity 10).">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fbad-f14e-6366-7f2a" type="atLeast" />
+<condition field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
+</conditions>
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a6a2-abea-01b2-ad81" type="atLeast" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d900-78c3-2b10-8f9c" type="atLeast" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0656-5d6b-29bb-1441" type="atLeast" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+</modifiers>
+</entryLink>
 </entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
@@ -23316,6 +23691,39 @@ LIMITATIONS - Only a Traitor Emperor's Children Detachment. The army must includ
 <conditionGroup type="and">
 <conditions>
 <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="368f-8af7-ba1b-d0f6" type="atLeast" />
+<condition field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
+</conditions>
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a6a2-abea-01b2-ad81" type="atLeast" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d900-78c3-2b10-8f9c" type="atLeast" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0656-5d6b-29bb-1441" type="atLeast" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+</modifiers>
+</entryLink>
+<entryLink id="6a31-9c2f-b9ad-6e9c" name="Land Raider Proteus" hidden="false" collective="false" import="true" targetId="fbad-f14e-6366-7f2a" type="selectionEntry">
+<modifiers>
+<modifier type="add" field="error" value="Too many models for a Land Raider Proteus (capacity 10).">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fbad-f14e-6366-7f2a" type="atLeast" />
+<condition field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="add" field="error" value="Terminator Armour counts as two models: too many for a Land Raider Proteus (capacity 10).">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fbad-f14e-6366-7f2a" type="atLeast" />
 <condition field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
 </conditions>
 <conditionGroups>
@@ -23521,7 +23929,7 @@ LIMITATIONS - Only a Traitor Emperor's Children Detachment. The army must includ
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="66a5-89ca-5507-f6e6" type="max" />
 </constraints>
 <costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
+<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
 </costs>
 </entryLink>
 </entryLinks>
@@ -24431,14 +24839,27 @@ LIMITATIONS - Only a Traitor Emperor's Children Detachment. The army must includ
 </profile>
 </profiles>
 <infoLinks>
+<infoLink id="35f0-42a4-737d-9dea" name="Legiones Astartes (Emperor's Children)" hidden="false" targetId="aba0-ab17-8604-1160" type="rule" />
+<infoLink id="3da4-0186-5fff-d763" name="Crusader" hidden="false" targetId="69cf-8169-9d04-4ef0" type="rule" />
 <infoLink id="cac9-e52f-aae7-3976" name="Atomantic Shielding" hidden="false" targetId="f1e3-bf7d-a199-18a5" type="rule" />
 <infoLink id="03a2-9785-2e8a-692b" name="Fleet" hidden="false" targetId="f476-21af-6ce0-b8da" type="rule" />
 <infoLink id="ba7b-41e3-a7ad-70b0" name="Ancient of Rites" hidden="false" targetId="3305-660a-6552-f984" type="rule" />
 <infoLink id="6d79-cfb5-c628-4992" name="Living Icon of the Legion" hidden="false" targetId="a57c-a6e5-b669-c531" type="rule" />
+<infoLink id="3dcb-2e0e-3210-ffea" name="Dreadnought Drop Pod (Rylanor)" hidden="false" targetId="f82b-fedc-c63d-bb7e" type="rule" />
 </infoLinks>
 <categoryLinks>
 <categoryLink id="9ec0-513c-224a-66d4" name="Elites" hidden="false" targetId="6b19-97ac-7c40-0bdf" primary="true" />
 </categoryLinks>
+<selectionEntryGroups>
+<selectionEntryGroup id="0dcc-a002-fba2-f73c" name="Dedicated Transport" hidden="false" collective="false" import="true">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="59ae-bb08-9c49-c203" type="max" />
+</constraints>
+<entryLinks>
+<entryLink id="8cfc-c22e-349d-06d2" name="Legion Dreadnought Drop Pod" hidden="false" collective="false" import="true" targetId="baf7-a5cf-a01e-9c3f" type="selectionEntry" />
+</entryLinks>
+</selectionEntryGroup>
+</selectionEntryGroups>
 <entryLinks>
 <entryLink id="f71e-152e-8f06-f456" name="Kheres Assault Cannon" hidden="false" collective="false" import="true" targetId="6b4f-b699-2a43-78a1" type="selectionEntry">
 <constraints>
@@ -24508,6 +24929,41 @@ LIMITATIONS - Only a Traitor Emperor's Children Detachment. The army must includ
 <categoryLink id="5901-356f-bad0-0b54" name="Master of the Legion" hidden="false" targetId="cf42-da2a-93a6-6913" primary="false" />
 </categoryLinks>
 <selectionEntryGroups>
+<selectionEntryGroup id="6d49-48fd-db37-92f8" name="Wargear" hidden="false" collective="false" import="true">
+<entryLinks>
+<entryLink id="9a13-29fb-a1f7-3dee" name="Digital Lasers" hidden="false" collective="false" import="true" targetId="9dd8-38b1-01d1-0265" type="selectionEntry">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f038-8b92-5a3d-727d" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
+</costs>
+</entryLink>
+</entryLinks>
+</selectionEntryGroup>
+<selectionEntryGroup id="5c1a-401c-7c56-8274" name="Sonic Shrieker (Traitor only)" hidden="false" collective="false" import="true">
+<modifiers>
+<modifier type="set" field="hidden" value="true">
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="af50-de01-cc93-f43e" type="atLeast" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+</modifiers>
+<entryLinks>
+<entryLink id="7654-9d24-97d9-df45" name="Sonic Shrieker" hidden="false" collective="false" import="true" targetId="f60a-e924-1b72-5539" type="selectionEntry">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4705-b137-70ce-61e1" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
+</costs>
+</entryLink>
+</entryLinks>
+</selectionEntryGroup>
 <selectionEntryGroup id="e415-793e-92d3-c38b" name="Retinue (no Force Organisation slot)" hidden="false" collective="false" import="true">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f4e9-4275-93e6-21a7" type="max" />
@@ -24638,6 +25094,14 @@ LIMITATIONS - Only a Traitor Emperor's Children Detachment. The army must includ
 <cost name="pts" typeId="pts0-0000-0000-0001" value="2" />
 </costs>
 </entryLink>
+<entryLink id="5528-830e-9ef1-d25b" name="Digital Lasers" hidden="false" collective="false" import="true" targetId="9dd8-38b1-01d1-0265" type="selectionEntry">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="839f-406c-b2de-bb5e" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
+</costs>
+</entryLink>
 </entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
@@ -24749,6 +25213,37 @@ LIMITATIONS - Only a Traitor Emperor's Children Detachment. The army must includ
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="2" />
+</costs>
+</entryLink>
+<entryLink id="3756-f909-9462-6f43" name="Digital Lasers" hidden="false" collective="false" import="true" targetId="9dd8-38b1-01d1-0265" type="selectionEntry">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="66a0-1984-3d11-c234" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
+</costs>
+</entryLink>
+</entryLinks>
+</selectionEntryGroup>
+<selectionEntryGroup id="758f-11be-d736-7fd9" name="Sonic Shrieker (Traitor only)" hidden="false" collective="false" import="true">
+<modifiers>
+<modifier type="set" field="hidden" value="true">
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="af50-de01-cc93-f43e" type="atLeast" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+</modifiers>
+<entryLinks>
+<entryLink id="e1df-d3b6-1ef8-3224" name="Sonic Shrieker" hidden="false" collective="false" import="true" targetId="f60a-e924-1b72-5539" type="selectionEntry">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7aa9-5e34-d3d6-a617" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
 </entryLink>
 </entryLinks>
@@ -24871,6 +25366,37 @@ LIMITATIONS - Only a Traitor Emperor's Children Detachment. The army must includ
 <cost name="pts" typeId="pts0-0000-0000-0001" value="2" />
 </costs>
 </entryLink>
+<entryLink id="87ea-d450-4bdd-0162" name="Digital Lasers" hidden="false" collective="false" import="true" targetId="9dd8-38b1-01d1-0265" type="selectionEntry">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c839-026c-63b2-cc7f" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
+</costs>
+</entryLink>
+</entryLinks>
+</selectionEntryGroup>
+<selectionEntryGroup id="370e-5d3f-7874-2a01" name="Sonic Shrieker (Traitor only)" hidden="false" collective="false" import="true">
+<modifiers>
+<modifier type="set" field="hidden" value="true">
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="af50-de01-cc93-f43e" type="atLeast" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+</modifiers>
+<entryLinks>
+<entryLink id="6a10-4b7f-3dfa-4646" name="Sonic Shrieker" hidden="false" collective="false" import="true" targetId="f60a-e924-1b72-5539" type="selectionEntry">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7a0f-331c-2d37-04f7" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
+</costs>
+</entryLink>
 </entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
@@ -24887,10 +25413,10 @@ LIMITATIONS - Only a Traitor Emperor's Children Detachment. The army must includ
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d4df-b8bd-00dd-6f2a" type="max" />
 </constraints>
 </entryLink>
-<entryLink id="a3de-2854-dc7b-3cb4" name="Xyclos Needler" hidden="false" collective="false" import="true" targetId="c110-2b51-802f-a3f7" type="selectionEntry">
+<entryLink id="cc0f-3078-c422-a855" name="Rending Weapon" hidden="false" collective="false" import="true" targetId="ffab-7f00-50f4-91e0" type="selectionEntry">
 <constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b88f-dda4-b51e-554a" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="45a6-459b-e8fa-ebe3" type="max" />
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="608d-3ef4-3888-d161" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5037-99ec-b6ab-c518" type="max" />
 </constraints>
 </entryLink>
 <entryLink id="9854-59fd-36c1-0a00" name="Frag Grenades" hidden="false" collective="false" import="true" targetId="f696-7971-36b0-27b5" type="selectionEntry">
@@ -25788,42 +26314,6 @@ LIMITATIONS - Only a Traitor Emperor's Children Detachment. The army must includ
 </entryLinks>
 <infoLinks>
 <infoLink id="c3c5-e910-337f-d14a" name="Sonic Assault (3rd Company Elite)" hidden="false" targetId="07cc-d352-541c-8222" type="rule" />
-</infoLinks>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
-</costs>
-</selectionEntry>
-<selectionEntry id="53b2-d16e-6915-0bd9" name="Enhanced Warriors (Fabius Bile)" hidden="false" collective="false" import="true" type="upgrade">
-<modifiers>
-<modifier type="increment" field="pts0-0000-0000-0001" value="3">
-<repeats>
-<repeat field="selections" scope="c8be-82af-6040-137b" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" repeats="1" roundUp="false" />
-</repeats>
-</modifier>
-<modifier type="set" field="hidden" value="true">
-<conditionGroups>
-<conditionGroup type="or">
-<conditions>
-<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cf85-954b-a1a7-757c" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-<modifier type="set" field="8a31-d3d6-b880-0615" value="0">
-<conditionGroups>
-<conditionGroup type="or">
-<conditions>
-<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cf85-954b-a1a7-757c" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-</modifiers>
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8a31-d3d6-b880-0615" type="max" />
-</constraints>
-<infoLinks>
-<infoLink id="891e-a455-a851-64a7" name="Enhanced Warriors" hidden="false" targetId="e4e8-0057-b8e2-1088" type="rule" />
 </infoLinks>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
@@ -27550,42 +28040,6 @@ LIMITATIONS - Only a Traitor Emperor's Children Detachment. The army must includ
 </entryLinks>
 <infoLinks>
 <infoLink id="6d69-9afe-a6b9-2ca9" name="Sonic Assault (3rd Company Elite)" hidden="false" targetId="07cc-d352-541c-8222" type="rule" />
-</infoLinks>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
-</costs>
-</selectionEntry>
-<selectionEntry id="d34b-cd65-d69c-f30a" name="Enhanced Warriors (Fabius Bile)" hidden="false" collective="false" import="true" type="upgrade">
-<modifiers>
-<modifier type="increment" field="pts0-0000-0000-0001" value="3">
-<repeats>
-<repeat field="selections" scope="6e9c-0ec5-5baf-e2d8" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" repeats="1" roundUp="false" />
-</repeats>
-</modifier>
-<modifier type="set" field="hidden" value="true">
-<conditionGroups>
-<conditionGroup type="or">
-<conditions>
-<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cf85-954b-a1a7-757c" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-<modifier type="set" field="c276-cdee-f8b1-9801" value="0">
-<conditionGroups>
-<conditionGroup type="or">
-<conditions>
-<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cf85-954b-a1a7-757c" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-</modifiers>
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c276-cdee-f8b1-9801" type="max" />
-</constraints>
-<infoLinks>
-<infoLink id="308f-2584-0af4-4beb" name="Enhanced Warriors" hidden="false" targetId="e4e8-0057-b8e2-1088" type="rule" />
 </infoLinks>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
@@ -31066,42 +31520,6 @@ LIMITATIONS - Only a Traitor Emperor's Children Detachment. The army must includ
 <cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
 </costs>
 </selectionEntry>
-<selectionEntry id="44c3-29b1-2b81-f48a" name="Enhanced Warriors (Fabius Bile)" hidden="false" collective="false" import="true" type="upgrade">
-<modifiers>
-<modifier type="increment" field="pts0-0000-0000-0001" value="3">
-<repeats>
-<repeat field="selections" scope="5fb6-a52b-4f8b-575d" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" repeats="1" roundUp="false" />
-</repeats>
-</modifier>
-<modifier type="set" field="hidden" value="true">
-<conditionGroups>
-<conditionGroup type="or">
-<conditions>
-<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cf85-954b-a1a7-757c" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-<modifier type="set" field="9691-39a0-6aa3-55ed" value="0">
-<conditionGroups>
-<conditionGroup type="or">
-<conditions>
-<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cf85-954b-a1a7-757c" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-</modifiers>
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9691-39a0-6aa3-55ed" type="max" />
-</constraints>
-<infoLinks>
-<infoLink id="a13f-bcf5-b674-cea1" name="Enhanced Warriors" hidden="false" targetId="e4e8-0057-b8e2-1088" type="rule" />
-</infoLinks>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
-</costs>
-</selectionEntry>
 <selectionEntry id="ff01-5f7e-f180-5c0c" name="Blessing of Slaanesh (Fulgrim Transfigured)" hidden="false" collective="false" import="true" type="upgrade">
 <modifiers>
 <modifier type="set" field="hidden" value="true">
@@ -34339,42 +34757,6 @@ LIMITATIONS - Only a Traitor Emperor's Children Detachment. The army must includ
 <cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
 </costs>
 </selectionEntry>
-<selectionEntry id="aeef-0ead-ce1e-c20a" name="Enhanced Warriors (Fabius Bile)" hidden="false" collective="false" import="true" type="upgrade">
-<modifiers>
-<modifier type="increment" field="pts0-0000-0000-0001" value="3">
-<repeats>
-<repeat field="selections" scope="5fa0-4f5e-ce2c-35ea" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" repeats="1" roundUp="false" />
-</repeats>
-</modifier>
-<modifier type="set" field="hidden" value="true">
-<conditionGroups>
-<conditionGroup type="or">
-<conditions>
-<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cf85-954b-a1a7-757c" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-<modifier type="set" field="6ab7-3771-5420-d444" value="0">
-<conditionGroups>
-<conditionGroup type="or">
-<conditions>
-<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cf85-954b-a1a7-757c" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-</modifiers>
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6ab7-3771-5420-d444" type="max" />
-</constraints>
-<infoLinks>
-<infoLink id="372a-aa3c-ac84-be09" name="Enhanced Warriors" hidden="false" targetId="e4e8-0057-b8e2-1088" type="rule" />
-</infoLinks>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
-</costs>
-</selectionEntry>
 <selectionEntry id="f783-1dc3-cf92-9c96" name="Blessing of Slaanesh (Fulgrim Transfigured)" hidden="false" collective="false" import="true" type="upgrade">
 <modifiers>
 <modifier type="set" field="hidden" value="true">
@@ -36113,42 +36495,6 @@ LIMITATIONS - Only a Traitor Emperor's Children Detachment. The army must includ
 <cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
 </costs>
 </selectionEntry>
-<selectionEntry id="27dd-ed3b-2d66-1a46" name="Enhanced Warriors (Fabius Bile)" hidden="false" collective="false" import="true" type="upgrade">
-<modifiers>
-<modifier type="increment" field="pts0-0000-0000-0001" value="3">
-<repeats>
-<repeat field="selections" scope="1563-d662-f2ea-6b98" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" repeats="1" roundUp="false" />
-</repeats>
-</modifier>
-<modifier type="set" field="hidden" value="true">
-<conditionGroups>
-<conditionGroup type="or">
-<conditions>
-<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cf85-954b-a1a7-757c" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-<modifier type="set" field="2598-cfe9-0b53-eacb" value="0">
-<conditionGroups>
-<conditionGroup type="or">
-<conditions>
-<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cf85-954b-a1a7-757c" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-</modifiers>
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2598-cfe9-0b53-eacb" type="max" />
-</constraints>
-<infoLinks>
-<infoLink id="57ec-8d58-fc0e-3bdd" name="Enhanced Warriors" hidden="false" targetId="e4e8-0057-b8e2-1088" type="rule" />
-</infoLinks>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
-</costs>
-</selectionEntry>
 <selectionEntry id="ed9b-033b-0642-9bd4" name="Blessing of Slaanesh (Fulgrim Transfigured)" hidden="false" collective="false" import="true" type="upgrade">
 <modifiers>
 <modifier type="set" field="hidden" value="true">
@@ -37107,42 +37453,6 @@ LIMITATIONS - Only a Traitor Emperor's Children Detachment. The army must includ
 </entryLinks>
 <infoLinks>
 <infoLink id="41fd-3a2e-63c3-587a" name="Sonic Assault (3rd Company Elite)" hidden="false" targetId="07cc-d352-541c-8222" type="rule" />
-</infoLinks>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
-</costs>
-</selectionEntry>
-<selectionEntry id="fcdf-e13f-aed6-01e9" name="Enhanced Warriors (Fabius Bile)" hidden="false" collective="false" import="true" type="upgrade">
-<modifiers>
-<modifier type="increment" field="pts0-0000-0000-0001" value="3">
-<repeats>
-<repeat field="selections" scope="4947-3149-7a6b-182b" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" repeats="1" roundUp="false" />
-</repeats>
-</modifier>
-<modifier type="set" field="hidden" value="true">
-<conditionGroups>
-<conditionGroup type="or">
-<conditions>
-<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cf85-954b-a1a7-757c" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-<modifier type="set" field="4842-c0b0-1cb2-3774" value="0">
-<conditionGroups>
-<conditionGroup type="or">
-<conditions>
-<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cf85-954b-a1a7-757c" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-</modifiers>
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4842-c0b0-1cb2-3774" type="max" />
-</constraints>
-<infoLinks>
-<infoLink id="6f8e-b6ac-cb44-5b8f" name="Enhanced Warriors" hidden="false" targetId="e4e8-0057-b8e2-1088" type="rule" />
 </infoLinks>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
@@ -39054,6 +39364,39 @@ LIMITATIONS - Only a Traitor Emperor's Children Detachment. The army must includ
 </modifier>
 </modifiers>
 </entryLink>
+<entryLink id="21f9-1a20-15a2-2dc3" name="Land Raider Proteus" hidden="false" collective="false" import="true" targetId="fbad-f14e-6366-7f2a" type="selectionEntry">
+<modifiers>
+<modifier type="add" field="error" value="Too many models for a Land Raider Proteus (capacity 10).">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fbad-f14e-6366-7f2a" type="atLeast" />
+<condition field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="add" field="error" value="Terminator Armour counts as two models: too many for a Land Raider Proteus (capacity 10).">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fbad-f14e-6366-7f2a" type="atLeast" />
+<condition field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
+</conditions>
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a6a2-abea-01b2-ad81" type="atLeast" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d900-78c3-2b10-8f9c" type="atLeast" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0656-5d6b-29bb-1441" type="atLeast" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+</modifiers>
+</entryLink>
 <entryLink id="21d7-2dbf-9256-1b65" name="Anvillus Pattern Dreadclaw Drop Pod" hidden="false" collective="false" import="true" targetId="2bad-68df-db1e-95d9" type="selectionEntry">
 <modifiers>
 <modifier type="add" field="error" value="Too many models for a Anvillus Pattern Dreadclaw Drop Pod (capacity 10).">
@@ -39160,7 +39503,7 @@ LIMITATIONS - Only a Traitor Emperor's Children Detachment. The army must includ
 <cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
 </costs>
 </selectionEntry>
-<selectionEntry id="d78b-5f18-189b-808c" name="Sonic Weapon (one Praetor or Centurion per army, Traitor only)" hidden="false" collective="false" import="true" type="upgrade">
+<selectionEntry id="d78b-5f18-189b-808c" name="Sonic Weapon (one Praetor, Centurion or Consul per army, Traitor only)" hidden="false" collective="false" import="true" type="upgrade">
 <constraints>
 <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="6a5c-a4e5-ff48-22e9" type="max" />
 </constraints>
@@ -41008,7 +41351,7 @@ LIMITATIONS - Only a Traitor Emperor's Children Detachment. The army must includ
 <selectionEntry id="9dd8-38b1-01d1-0265" name="Digital Lasers" hidden="false" collective="false" import="true" type="upgrade">
 <rules>
 <rule id="0406-53a5-aeef-7fe6" name="Digital Lasers" hidden="false">
-<description>An Emperor's Children Independent Character may purchase Digital Lasers for +15 points. A model equipped with Digital Lasers adds +1 to its Attacks characteristic. Digital Lasers may not be combined with Terminator Honours.</description>
+<description>An Emperor's Children Independent Character may purchase Digital Lasers for +15 points. A model equipped with Digital Lasers adds +1 to its Attacks characteristic. Digital Lasers may not be combined with Terminator Honours. They count towards the Armoury points limit; named Independent Characters may also purchase them.</description>
 </rule>
 </rules>
 <costs>
@@ -41018,7 +41361,7 @@ LIMITATIONS - Only a Traitor Emperor's Children Detachment. The army must includ
 <selectionEntry id="f60a-e924-1b72-5539" name="Sonic Shrieker" hidden="false" collective="false" import="true" type="upgrade">
 <rules>
 <rule id="8f78-5549-aff0-cedf" name="Sonic Shrieker" hidden="false">
-<description>TRAITOR ONLY. An Emperor's Children Independent Character may purchase a Sonic Shrieker for +10 points (other units may gain access through their unit entry or a Rite of War). During the first round of a close combat, an enemy model in base contact with a model equipped with a Sonic Shrieker suffers -1 Weapon Skill. If every model in an Emperor's Children unit is equipped with a Sonic Shrieker, every enemy model engaged with that unit suffers -1 Weapon Skill during the first round of close combat instead. This modifier is not cumulative. Fearless models are unaffected.</description>
+<description>TRAITOR ONLY. An Emperor's Children Independent Character (including named Independent Characters, except Saul Tarvitz) may purchase a Sonic Shrieker for +10 points (other units may gain access through their unit entry or a Rite of War). During the first round of a close combat, an enemy model in base contact with a model equipped with a Sonic Shrieker suffers -1 Weapon Skill. If every model in an Emperor's Children unit is equipped with a Sonic Shrieker, every enemy model engaged with that unit suffers -1 Weapon Skill during the first round of close combat instead. This modifier is not cumulative. Fearless models are unaffected.</description>
 </rule>
 </rules>
 <costs>
@@ -41029,16 +41372,6 @@ LIMITATIONS - Only a Traitor Emperor's Children Detachment. The army must includ
 <rules>
 <rule id="dd61-6b4a-6e66-534a" name="The Chirurgeon" hidden="false">
 <description>The Chirurgeon grants Fabius Bile a 4+ Invulnerable Save.</description>
-</rule>
-</rules>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
-</costs>
-</selectionEntry>
-<selectionEntry id="c110-2b51-802f-a3f7" name="Xyclos Needler" hidden="false" collective="false" import="true" type="upgrade">
-<rules>
-<rule id="443a-9b5f-d07b-a093" name="Xyclos Needler" hidden="false">
-<description>Fabius Bile's Xyclos Needler. The army book gives no profile for this weapon (see the questions file).</description>
 </rule>
 </rules>
 <costs>
@@ -41461,28 +41794,28 @@ Afterwards the squad may not enter Overwatch, may not make Return Fire or Stand 
 <description>During the first round of each close combat, attacks made with a Phoenix Spear are resolved at +1 Strength. After the first round, the weapon is resolved at the bearer's normal Strength.</description>
 </rule>
 <rule id="a42c-65d3-2388-52c2" name="Phoenix Spear" hidden="false">
-<description>Any Emperor's Children Independent Character or unit Character able to select a Power Weapon may instead select a Phoenix Spear for +20 points. A model already equipped with a Power Weapon as part of its basic wargear may exchange it for a Phoenix Spear for +5 points.</description>
+<description>Any Emperor's Children Independent Character or unit Character able to select a Power Weapon may instead select a Phoenix Spear instead for the cost of that Power Weapon +5 points. A model already equipped with a Power Weapon as part of its basic wargear may exchange it for a Phoenix Spear for +5 points. Named characters may not exchange their weapons for a Phoenix Spear.</description>
 </rule>
 <rule id="1ee6-7dad-c83d-06e9" name="Digital Lasers" hidden="false">
-<description>An Emperor's Children Independent Character may purchase Digital Lasers for +15 points. A model equipped with Digital Lasers adds +1 to its Attacks characteristic. Digital Lasers may not be combined with Terminator Honours.</description>
+<description>An Emperor's Children Independent Character may purchase Digital Lasers for +15 points. A model equipped with Digital Lasers adds +1 to its Attacks characteristic. Digital Lasers may not be combined with Terminator Honours. They count towards the Armoury points limit; named Independent Characters may also purchase them.</description>
 </rule>
 <rule id="22e5-5b42-4705-a8e8" name="Sonic Shrieker" hidden="false">
-<description>TRAITOR ONLY. An Emperor's Children Independent Character may purchase a Sonic Shrieker for +10 points (other units may gain access through their unit entry or a Rite of War). During the first round of a close combat, an enemy model in base contact with a model equipped with a Sonic Shrieker suffers -1 Weapon Skill. If every model in an Emperor's Children unit is equipped with a Sonic Shrieker, every enemy model engaged with that unit suffers -1 Weapon Skill during the first round of close combat instead. This modifier is not cumulative. Fearless models are unaffected.</description>
+<description>TRAITOR ONLY. An Emperor's Children Independent Character (including named Independent Characters, except Saul Tarvitz) may purchase a Sonic Shrieker for +10 points (other units may gain access through their unit entry or a Rite of War). During the first round of a close combat, an enemy model in base contact with a model equipped with a Sonic Shrieker suffers -1 Weapon Skill. If every model in an Emperor's Children unit is equipped with a Sonic Shrieker, every enemy model engaged with that unit suffers -1 Weapon Skill during the first round of close combat instead. This modifier is not cumulative. Fearless models are unaffected.</description>
 </rule>
 <rule id="c2e6-18e8-7967-3957" name="Sonic Weaponry" hidden="false">
-<description>TRAITOR ONLY. One Legion Heavy Support Squad in an Emperor's Children Detachment may select up to four Sonic Weapons instead of selecting weapons from its normal Heavy Weapon options: Sonic Blaster +15, Doom Siren +20, Blastmaster +35 points each. In addition, one Emperor's Children Praetor or Centurion in the army may select a Sonic Blaster (+15) or a Doom Siren (+20). A Character may carry no more than one Sonic Weapon.</description>
+<description>TRAITOR ONLY. One Legion Heavy Support Squad in an Emperor's Children Detachment may select up to four Sonic Weapons (Sonic Blaster +15, Doom Siren +20, Blastmaster +35 points each); they may be mixed with weapons from its normal Heavy Weapon options, up to four Heavy and Sonic Weapons in total, and each replaces the Bolter of the model carrying it. In addition, one Emperor's Children Praetor or Centurion (including a Legion Consul) in the army may select a Sonic Blaster (+15) or a Doom Siren (+20); this does not count towards the Armoury points limit. A Character may carry no more than one Sonic Weapon.</description>
 </rule>
 <rule id="dc73-6d8f-605c-bfd3" name="Perfect Cacophony (Armoury)" hidden="false">
-<description>A Legion Heavy Support Squad in which the majority of surviving models are equipped with Sonic Weapons may purchase the Fearless special rule for +20 points per squad.</description>
+<description>A Legion Heavy Support Squad equipped with at least two Sonic Weapons may purchase the Fearless special rule for +20 points per squad.</description>
 </rule>
 <rule id="8740-8428-182a-0668" name="The Maru Skara" hidden="false">
 <description>EFFECTS - The Open Blade: all units deployed normally at the beginning of the battle form the Open Blade; the army's Warlord must form part of it and must begin the battle on the battlefield. The Hidden Blade: before deployment, nominate up to three Emperor's Children units from Legion Assault Squads, Legion Veteran Squads, Legion Terminator Squads, Palatine Blade Squads, Phoenix Terminator Squads, Legion Bike Squadrons and Legion Sky Hunter Jetbike Squadrons. An Independent Character may accompany a nominated unit normally; Dedicated Transports purchased for a nominated unit form part of the Hidden Blade with it. All units of the Hidden Blade must begin the battle in Reserve. Perfectly Timed Strike: after deployment zones are determined but before either army deploys, secretly record game turn 2 or 3 and the left or right side table edge. At the beginning of the chosen Emperor's Children turn reveal the choice: every surviving Hidden Blade unit becomes available automatically without a Reserve roll, enters play from the chosen side table edge and may act normally that turn. The Killing Stroke: during the player turn in which the Hidden Blade arrives, all Emperor's Children units may re-roll failed Advance rolls and failed Charge distance rolls (the second result must be accepted).
-LIMITATIONS - The army's Warlord must begin the battle as part of the Open Blade. The Hidden Blade may contain no more than three units, excluding attached Independent Characters and Dedicated Transports. The army may include no more than two Heavy Support choices. Immobile units may not be selected.</description>
+LIMITATIONS - The army's Warlord must begin the battle as part of the Open Blade. The Hidden Blade may contain no more than three units, excluding attached Independent Characters and Dedicated Transports. The army may include no more than two Heavy Support choices. Immobile units (Fortifications) may not be selected.</description>
 </rule>
 <rule id="fb59-a152-a903-8618" name="3rd Company Elite" hidden="false">
 <description>TRAITOR ONLY.
 EFFECTS - Chosen of Vairosean: Kakophoni Squads may be selected as Troops choices and may then fulfil compulsory Troops selections. All Kakophoni Squads in the Detachment gain Relentless. Sonic Assault: any Emperor's Children Infantry unit composed entirely of models wearing Power Armour or Artificer Armour may purchase Sonic Shriekers for +2 points per model; every eligible model in the unit must purchase the upgrade (normal Sonic Shrieker rules). Armoury of Excess: up to two Legion Heavy Support Squads may select Sonic Weaponry. Perfect Cacophony: a unit in which every surviving model is equipped with either a Sonic Weapon or a Sonic Shrieker gains the Fear special rule.
-LIMITATIONS - Only a Traitor Emperor's Children Detachment. The army must include at least one Kakophoni Squad. The army's Warlord must either be equipped with a Sonic Shrieker or be a named Character whose rules specifically associate him with the Kakophoni or 3rd Company. The army may include no more than one Fortification.</description>
+LIMITATIONS - Only a Traitor Emperor's Children Detachment. The army must include at least one Kakophoni Squad. The army's Warlord must be equipped with a Sonic Shrieker or a Doom Siren. The army may include no more than one Fortification.</description>
 </rule>
 <rule id="689d-1f2d-30a6-19c7" name="Selected as Troops (3rd Company Elite)" hidden="false">
 <description>Under the 3rd Company Elite Rite of War this Kakophoni Squad is a Troops choice, may fulfil compulsory Troops selections and has the Relentless special rule.</description>
@@ -41521,13 +41854,16 @@ LIMITATIONS - Only a Traitor Emperor's Children Detachment. The army must includ
 <description>Lucius may select one Legion Command Squad. The Command Squad does not occupy a separate Force Organisation slot. Lucius and the Command Squad count as a single HQ selection, but do not have to deploy together and operate as separate units during the battle.</description>
 </rule>
 <rule id="e4e8-0057-b8e2-1088" name="Enhanced Warriors" hidden="false">
-<description>If an Emperor's Children army includes Fabius Bile, any number of Emperor's Children Infantry squads with the Legiones Astartes special rule may be enhanced for +3 points per model (units wearing Terminator Armour may not be enhanced). After deployment but before the first turn begins, roll a D6 separately for each enhanced squad: 1 - Berserk Rage: make an Armour Save for every model in the squad, remove any model which fails as a casualty; the survivors gain +1 Strength for the remainder of the battle. 2-5 - Stable Mutation: every model gains +1 Strength and +1 Initiative for the remainder of the battle. 6 - Created a Monster: every model gains +1 Strength, +1 Initiative and +1 Attack for the remainder of the battle; however, in missions using Victory Points, every model from the squad which survives the battle counts as a casualty when calculating Victory Points.</description>
+<description>If an Emperor's Children army includes Fabius Bile, any number of Emperor's Children Infantry squads (including Jump Infantry, but not retinues) with the Legiones Astartes special rule may be enhanced for +3 points per model (units wearing Terminator Armour may not be enhanced). After deployment but before the first turn begins, roll a D6 separately for each enhanced squad: 1 - Berserk Rage: make an Armour Save for every model in the squad, remove any model which fails as a casualty; the survivors gain +1 Strength for the remainder of the battle. 2-5 - Stable Mutation: every model gains +1 Strength and +1 Initiative for the remainder of the battle. 6 - Created a Monster: every model gains +1 Strength, +1 Initiative and +1 Attack for the remainder of the battle; however, in missions using Victory Points, every model from the squad which survives the battle counts as a casualty when calculating Victory Points.</description>
 </rule>
 <rule id="3305-660a-6552-f984" name="Ancient of Rites" hidden="false">
 <description>Once per player turn, when Rylanor suffers a Glancing or Penetrating Hit which is not ignored by Atomantic Shielding, the Emperor's Children player may force the opponent to re-roll the resulting Vehicle Damage roll (the second result must be accepted). In addition, if the mission requires a dice roll to determine which player takes the first turn, an Emperor's Children army containing Rylanor may re-roll that roll once.</description>
 </rule>
 <rule id="a57c-a6e5-b669-c531" name="Living Icon of the Legion" hidden="false">
 <description>Friendly Emperor's Children units with at least one model within 6" of Rylanor automatically pass Morale tests (this does not cause them to automatically pass Pinning tests). If Rylanor is destroyed, every friendly Emperor's Children unit with line of sight to him must immediately take a Pinning test at -1 Leadership.</description>
+</rule>
+<rule id="f82b-fedc-c63d-bb7e" name="Dreadnought Drop Pod (Rylanor)" hidden="false">
+<description>Rylanor may select a Legion Dreadnought Drop Pod as a Dedicated Transport like any other Dreadnought.</description>
 </rule>
 <rule id="87a9-ac2c-3a0b-808e" name="Gilded Panoply" hidden="false">
 <description>Counts as Primarch Armour, except that Fulgrim has a 5+ Invulnerable Save against ranged attacks and a 3+ Invulnerable Save against attacks made in close combat.</description>
@@ -41575,7 +41911,7 @@ LIMITATIONS - Only a Traitor Emperor's Children Detachment. The army must includ
 <description>If Fulgrim personally slays an enemy Independent Character during the Assault phase and the enemy subsequently Falls Back, Fulgrim may not Pursue. He may Consolidate normally.</description>
 </rule>
 <rule id="ea7d-b731-4ef8-842c" name="The Phoenician's Favour" hidden="false">
-<description>If Fulgrim Transfigured is included in an Emperor's Children army, the following may purchase the Blessing of Slaanesh: Emperor's Children Infantry unit +25 points per unit; Emperor's Children Independent Character +20 points per model. Models with the Blessing of Slaanesh gain +1 Initiative (cumulative with other Initiative modifiers). Fulgrim himself does not gain this bonus.</description>
+<description>If Fulgrim Transfigured is included in an Emperor's Children army, the following may purchase the Blessing of Slaanesh (Traitor only): Emperor's Children Infantry unit (including Jump Infantry and retinues) +25 points per unit; Emperor's Children Independent Character (including named Independent Characters) +20 points per model. Models with the Blessing of Slaanesh gain +1 Initiative (cumulative with other Initiative modifiers). Fulgrim himself does not gain this bonus.</description>
 </rule>
 <rule id="6d46-813d-6cd4-5d0a" name="Blessing of Slaanesh" hidden="false">
 <description>Models with the Blessing of Slaanesh gain +1 Initiative. This bonus is cumulative with other Initiative modifiers. (Only while Fulgrim Transfigured is in the army.)</description>

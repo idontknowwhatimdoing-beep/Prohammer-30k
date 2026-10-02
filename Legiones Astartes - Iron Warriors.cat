@@ -43,7 +43,6 @@
 <entryLink id="d98d-2c8d-4f26-9f86" name="Tyrant Siege Terminator Squad" hidden="false" collective="false" import="true" targetId="9c83-9179-fd07-72a2" type="selectionEntry" />
 <entryLink id="3167-e300-4e3a-db42" name="Iron Havoc Squad" hidden="false" collective="false" import="true" targetId="af6b-9119-6d8a-287f" type="selectionEntry" />
 <entryLink id="23d4-2356-4c7c-2ec8" name="Dominator Cohort" hidden="false" collective="false" import="true" targetId="4d67-e0ba-2576-e571" type="selectionEntry" />
-<entryLink id="23c7-e281-5efc-d928" name="Iron Circle Domitar-Ferrum Maniple" hidden="false" collective="false" import="true" targetId="fefa-de75-92aa-7491" type="selectionEntry" />
 <entryLink id="8232-a4cf-e330-1629" name="Nârik Dreygur" hidden="false" collective="false" import="true" targetId="2785-3a3e-d524-1071" type="selectionEntry" />
 <entryLink id="c5cf-4574-688b-f452" name="Erasmus Golg" hidden="false" collective="false" import="true" targetId="d7a7-baf4-cbb9-b4f1" type="selectionEntry" />
 <entryLink id="6bfd-938f-447b-2669" name="Kyr Vhalen" hidden="false" collective="false" import="true" targetId="09d8-f821-a3f7-dfab" type="selectionEntry" />
@@ -54,14 +53,11 @@
 <sharedSelectionEntries>
 <selectionEntry id="ddfd-5b26-3ecb-564c" name="Legion" hidden="false" collective="false" import="true" type="upgrade">
 <modifiers>
-<modifier type="add" field="category" value="e489-2c4a-d6ff-4b13">
+<modifier type="add" field="category" value="3ac4-d8d3-a5bd-f6c3" />
+<modifier type="add" field="error" value="An Army of Steel and Wrath: a Detachment with four Heavy Support choices may include no more than one Fast Attack choice.">
 <conditions>
-<condition field="selections" scope="self" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f7ec-80bf-3d23-ef1d" type="atLeast" />
-</conditions>
-</modifier>
-<modifier type="add" field="category" value="3ac4-d8d3-a5bd-f6c3">
-<conditions>
-<condition field="selections" scope="self" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f7ec-80bf-3d23-ef1d" type="atLeast" />
+<condition field="selections" scope="force" value="4" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a78f-9734-db0c-b938" type="atLeast" />
+<condition field="selections" scope="force" value="2" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5e5f-f512-de8c-9505" type="atLeast" />
 </conditions>
 </modifier>
 </modifiers>
@@ -105,22 +101,6 @@
 </selectionEntries>
 </selectionEntryGroup>
 </selectionEntryGroups>
-<selectionEntries>
-<selectionEntry id="f7ec-80bf-3d23-ef1d" name="An Army of Steel and Wrath: exchange two Fast Attack for one additional Heavy Support (1 FA / 4 HS)" hidden="false" collective="false" import="true" type="upgrade">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4f8f-aefd-4270-41df" type="max" />
-</constraints>
-<infoLinks>
-<infoLink id="01c4-59e2-467b-0c98" name="An Army of Steel and Wrath" hidden="false" targetId="795e-7bf1-e1b0-2116" type="rule" />
-</infoLinks>
-<categoryLinks>
-<categoryLink id="25e3-1afd-5f8e-03ef" name="Force Org: -1 Fast Attack" hidden="false" targetId="e489-2c4a-d6ff-4b13" primary="false" />
-</categoryLinks>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
-</costs>
-</selectionEntry>
-</selectionEntries>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
 </costs>
@@ -1746,28 +1726,6 @@
 </costs>
 </selectionEntry>
 <selectionEntry id="2d1a-e1d7-686b-b3e5" name="Shrapnel Bolts (unit)" hidden="false" collective="false" import="true" type="upgrade">
-<modifiers>
-<modifier type="set" field="hidden" value="true">
-<conditionGroups>
-<conditionGroup type="or">
-<conditions>
-<condition field="selections" scope="2390-3489-e470-7f7f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a240-1557-2ee9-dfe9" type="atLeast" />
-<condition field="selections" scope="2390-3489-e470-7f7f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7831-236a-6ac1-af83" type="atLeast" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-<modifier type="set" field="0370-bc16-5ccf-2f55" value="0">
-<conditionGroups>
-<conditionGroup type="or">
-<conditions>
-<condition field="selections" scope="2390-3489-e470-7f7f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a240-1557-2ee9-dfe9" type="atLeast" />
-<condition field="selections" scope="2390-3489-e470-7f7f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7831-236a-6ac1-af83" type="atLeast" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-</modifiers>
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0370-bc16-5ccf-2f55" type="max" />
 </constraints>
@@ -4658,28 +4616,6 @@
 </costs>
 </selectionEntry>
 <selectionEntry id="15e5-3d57-d119-01f7" name="Shrapnel Bolts (unit)" hidden="false" collective="false" import="true" type="upgrade">
-<modifiers>
-<modifier type="set" field="hidden" value="true">
-<conditionGroups>
-<conditionGroup type="or">
-<conditions>
-<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a240-1557-2ee9-dfe9" type="atLeast" />
-<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7831-236a-6ac1-af83" type="atLeast" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-<modifier type="set" field="80df-e358-0b41-af94" value="0">
-<conditionGroups>
-<conditionGroup type="or">
-<conditions>
-<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a240-1557-2ee9-dfe9" type="atLeast" />
-<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7831-236a-6ac1-af83" type="atLeast" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-</modifiers>
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="80df-e358-0b41-af94" type="max" />
 </constraints>
@@ -4717,6 +4653,15 @@
 <infoLinks>
 <infoLink id="757b-1f73-f566-b381" name="Legiones Astartes" hidden="false" targetId="0ed8-99c2-6b0e-f182" type="rule" />
 <infoLink id="00c8-5314-e346-bb5b" name="Fury of the Legion" hidden="false" targetId="3120-95b4-fcab-2115" type="rule" />
+<infoLink id="b104-d5ae-56ab-ce77" name="Shrapnel Bolts (The Hammer of Olympia)" hidden="false" targetId="527e-19ff-023a-210b" type="rule">
+<modifiers>
+<modifier type="set" field="hidden" value="true">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="89f2-026e-d325-e262" type="lessThan" />
+</conditions>
+</modifier>
+</modifiers>
+</infoLink>
 </infoLinks>
 <categoryLinks>
 <categoryLink id="e593-2b9e-a5a5-92de" name="Troops" hidden="false" targetId="adf0-dc10-89d4-f51e" primary="true" />
@@ -5287,26 +5232,11 @@
 <selectionEntry id="e7ff-60cb-f99f-0455" name="Shrapnel Bolts (unit)" hidden="false" collective="false" import="true" type="upgrade">
 <modifiers>
 <modifier type="set" field="hidden" value="true">
-<conditionGroups>
-<conditionGroup type="or">
 <conditions>
-<condition field="selections" scope="9b73-36d5-ba55-fd55" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a240-1557-2ee9-dfe9" type="atLeast" />
-<condition field="selections" scope="9b73-36d5-ba55-fd55" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7831-236a-6ac1-af83" type="atLeast" />
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="89f2-026e-d325-e262" type="atLeast" />
 </conditions>
-</conditionGroup>
-</conditionGroups>
 </modifier>
 <modifier type="set" field="ec6c-1114-1b91-741e" value="0">
-<conditionGroups>
-<conditionGroup type="or">
-<conditions>
-<condition field="selections" scope="9b73-36d5-ba55-fd55" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a240-1557-2ee9-dfe9" type="atLeast" />
-<condition field="selections" scope="9b73-36d5-ba55-fd55" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7831-236a-6ac1-af83" type="atLeast" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-<modifier type="set" field="pts0-0000-0000-0001" value="0">
 <conditions>
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="89f2-026e-d325-e262" type="atLeast" />
 </conditions>
@@ -6102,28 +6032,6 @@
 </costs>
 </selectionEntry>
 <selectionEntry id="e12f-b3f0-3c5f-24c9" name="Shrapnel Bolts (unit)" hidden="false" collective="false" import="true" type="upgrade">
-<modifiers>
-<modifier type="set" field="hidden" value="true">
-<conditionGroups>
-<conditionGroup type="or">
-<conditions>
-<condition field="selections" scope="b702-3a6c-f240-09db" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a240-1557-2ee9-dfe9" type="atLeast" />
-<condition field="selections" scope="b702-3a6c-f240-09db" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7831-236a-6ac1-af83" type="atLeast" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-<modifier type="set" field="6e50-c2fd-f5a3-d4a2" value="0">
-<conditionGroups>
-<conditionGroup type="or">
-<conditions>
-<condition field="selections" scope="b702-3a6c-f240-09db" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a240-1557-2ee9-dfe9" type="atLeast" />
-<condition field="selections" scope="b702-3a6c-f240-09db" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7831-236a-6ac1-af83" type="atLeast" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-</modifiers>
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6e50-c2fd-f5a3-d4a2" type="max" />
 </constraints>
@@ -6222,6 +6130,15 @@
 <infoLinks>
 <infoLink id="eed9-21b3-5412-c82e" name="Legiones Astartes" hidden="false" targetId="0ed8-99c2-6b0e-f182" type="rule" />
 <infoLink id="6f2c-becc-56d9-d34d" name="Hardened Armour" hidden="false" targetId="3917-f92f-f23a-1cee" type="rule" />
+<infoLink id="82bc-3fb7-3b05-01d3" name="Shrapnel Bolts (The Hammer of Olympia)" hidden="false" targetId="527e-19ff-023a-210b" type="rule">
+<modifiers>
+<modifier type="set" field="hidden" value="true">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="89f2-026e-d325-e262" type="lessThan" />
+</conditions>
+</modifier>
+</modifiers>
+</infoLink>
 </infoLinks>
 <categoryLinks>
 <categoryLink id="b78f-00ce-f1c9-0237" name="Troops" hidden="false" targetId="adf0-dc10-89d4-f51e" primary="true" />
@@ -6572,26 +6489,11 @@
 <selectionEntry id="04cc-edd4-b424-6f88" name="Shrapnel Bolts (unit)" hidden="false" collective="false" import="true" type="upgrade">
 <modifiers>
 <modifier type="set" field="hidden" value="true">
-<conditionGroups>
-<conditionGroup type="or">
 <conditions>
-<condition field="selections" scope="c114-92be-ee01-c705" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a240-1557-2ee9-dfe9" type="atLeast" />
-<condition field="selections" scope="c114-92be-ee01-c705" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7831-236a-6ac1-af83" type="atLeast" />
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="89f2-026e-d325-e262" type="atLeast" />
 </conditions>
-</conditionGroup>
-</conditionGroups>
 </modifier>
 <modifier type="set" field="82b3-3e94-b1d3-2e2d" value="0">
-<conditionGroups>
-<conditionGroup type="or">
-<conditions>
-<condition field="selections" scope="c114-92be-ee01-c705" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a240-1557-2ee9-dfe9" type="atLeast" />
-<condition field="selections" scope="c114-92be-ee01-c705" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7831-236a-6ac1-af83" type="atLeast" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-<modifier type="set" field="pts0-0000-0000-0001" value="0">
 <conditions>
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="89f2-026e-d325-e262" type="atLeast" />
 </conditions>
@@ -7309,28 +7211,6 @@
 </costs>
 </selectionEntry>
 <selectionEntry id="d585-e2c9-e399-5a06" name="Shrapnel Bolts (unit)" hidden="false" collective="false" import="true" type="upgrade">
-<modifiers>
-<modifier type="set" field="hidden" value="true">
-<conditionGroups>
-<conditionGroup type="or">
-<conditions>
-<condition field="selections" scope="dc5f-e6e9-ddec-ab25" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a240-1557-2ee9-dfe9" type="atLeast" />
-<condition field="selections" scope="dc5f-e6e9-ddec-ab25" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7831-236a-6ac1-af83" type="atLeast" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-<modifier type="set" field="a3c5-68a1-f0eb-102b" value="0">
-<conditionGroups>
-<conditionGroup type="or">
-<conditions>
-<condition field="selections" scope="dc5f-e6e9-ddec-ab25" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a240-1557-2ee9-dfe9" type="atLeast" />
-<condition field="selections" scope="dc5f-e6e9-ddec-ab25" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7831-236a-6ac1-af83" type="atLeast" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-</modifiers>
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a3c5-68a1-f0eb-102b" type="max" />
 </constraints>
@@ -7803,7 +7683,7 @@ LIMITATIONS - No other Lord of War; no Allied Detachment; no more than one other
 </selectionEntry>
 <selectionEntry id="89f2-026e-d325-e262" name="The Hammer of Olympia (Iron Warriors)" hidden="false" collective="false" import="true" type="upgrade">
 <modifiers>
-<modifier type="add" field="error" value="The Hammer of Olympia: units which are required to enter play by Deep Strike (Drop Pods, Dreadclaws) may not be selected.">
+<modifier type="add" field="error" value="The Hammer of Olympia: units which are required to enter play by Deep Strike (Drop Pods, Dreadclaws) and Deep Strike wargear (Teleport Homers, Locator Beacons) may not be selected.">
 <conditions>
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="89f2-026e-d325-e262" type="atLeast" />
 </conditions>
@@ -7813,6 +7693,8 @@ LIMITATIONS - No other Lord of War; no Allied Detachment; no more than one other
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4e1c-55bd-1f6c-9584" type="atLeast" />
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2bad-68df-db1e-95d9" type="atLeast" />
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="baf7-a5cf-a01e-9c3f" type="atLeast" />
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7df2-4804-4366-580e" type="atLeast" />
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b965-0f45-aa0e-c149" type="atLeast" />
 </conditions>
 </conditionGroup>
 </conditionGroups>
@@ -7820,7 +7702,7 @@ LIMITATIONS - No other Lord of War; no Allied Detachment; no more than one other
 </modifiers>
 <rules>
 <rule id="d2db-c63a-1a1e-2181" name="The Hammer of Olympia" hidden="false">
-<description>EFFECTS - The Iron Line: the army's compulsory Troops choices must be selected from Legion Tactical Squads and Legion Breacher Siege Squads; compulsory Troops choices gain Shrapnel Bolts at no additional points cost. Hail of Fire: Iron Warriors Tactical Squads and Breacher Siege Squads equipped with Shrapnel Bolts may declare a charge after firing Rapid Fire weapons during the Shooting phase; a unit which does so does not receive the normal +1 Attack bonus for charging that Assault phase. A unit which used Fury of the Legion during the same player turn may not benefit from this rule. Fury of Olympia: models equipped with Shrapnel Bolts may re-roll To Hit rolls of 1 when firing those weapons at an enemy unit within 12" (not when firing Snap Shots). Armoured Resolve: Iron Warriors Legion Predator Strike Squadrons, Legion Vindicator Siege Tank Squadrons, Land Raiders and Legion Spartan Assault Tanks ignore Crew Shaken and Crew Stunned results; other Vehicle Damage results apply normally. LIMITATIONS - The army's Warlord must possess the Master of the Legion special rule. The compulsory Troops choices must be Legion Tactical Squads or Legion Breacher Siege Squads. No Iron Warriors unit may deploy using Deep Strike; units which are required to enter play by Deep Strike may not be selected.</description>
+<description>EFFECTS - The Iron Line: the army's compulsory Troops choices must be selected from Legion Tactical Squads and Legion Breacher Siege Squads; Legion Tactical Squads and Legion Breacher Siege Squads automatically gain Shrapnel Bolts at no additional points cost. Hail of Fire: Iron Warriors Tactical Squads and Breacher Siege Squads equipped with Shrapnel Bolts may declare a charge after firing Rapid Fire weapons during the Shooting phase; a unit which does so does not receive the normal +1 Attack bonus for charging that Assault phase. A unit which used Fury of the Legion during the same player turn may not benefit from this rule. Fury of Olympia: models equipped with Shrapnel Bolts may re-roll To Hit rolls of 1 when firing those weapons at an enemy unit within 12" (not when firing Snap Shots). Armoured Resolve: Iron Warriors Legion Predator Strike Squadrons, Legion Vindicator Siege Tank Squadrons, Land Raiders (every Land Raider variant, including Achilles-Alpha Land Raiders and Land Raider Battle Squadrons) and Legion Spartan Assault Tanks ignore Crew Shaken and Crew Stunned results; other Vehicle Damage results apply normally. LIMITATIONS - The army's Warlord must possess the Master of the Legion special rule. The compulsory Troops choices must be Legion Tactical Squads or Legion Breacher Siege Squads. No Iron Warriors unit may deploy using Deep Strike; units which are required to enter play by Deep Strike (Drop Pods, Dreadclaws) may not be selected, and no Deep Strike wargear (Teleport Homers, Locator Beacons) may be taken.</description>
 </rule>
 </rules>
 <costs>
@@ -7962,6 +7844,19 @@ LIMITATIONS - No other Lord of War; no Allied Detachment; no more than one other
 </constraints>
 </entryLink>
 </entryLinks>
+<selectionEntries>
+<selectionEntry id="c021-40df-32c6-979c" name="Shrapnel Bolts (unit)" hidden="false" collective="false" import="true" type="upgrade">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7558-9f33-efde-99be" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="1013-878e-722b-62da" name="Shrapnel Bolts" hidden="false" targetId="dae7-1524-4fa1-5702" type="rule" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
+</costs>
+</selectionEntry>
+</selectionEntries>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="100" />
 </costs>
@@ -8412,28 +8307,6 @@ LIMITATIONS - No other Lord of War; no Allied Detachment; no more than one other
 </costs>
 </selectionEntry>
 <selectionEntry id="829d-d4e0-63f3-a2b4" name="Shrapnel Bolts (unit)" hidden="false" collective="false" import="true" type="upgrade">
-<modifiers>
-<modifier type="set" field="hidden" value="true">
-<conditionGroups>
-<conditionGroup type="or">
-<conditions>
-<condition field="selections" scope="5234-c493-83a2-9202" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a240-1557-2ee9-dfe9" type="atLeast" />
-<condition field="selections" scope="5234-c493-83a2-9202" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7831-236a-6ac1-af83" type="atLeast" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-<modifier type="set" field="bee9-94db-bd8e-b533" value="0">
-<conditionGroups>
-<conditionGroup type="or">
-<conditions>
-<condition field="selections" scope="5234-c493-83a2-9202" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a240-1557-2ee9-dfe9" type="atLeast" />
-<condition field="selections" scope="5234-c493-83a2-9202" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7831-236a-6ac1-af83" type="atLeast" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-</modifiers>
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bee9-94db-bd8e-b533" type="max" />
 </constraints>
@@ -9390,28 +9263,6 @@ LIMITATIONS - No other Lord of War; no Allied Detachment; no more than one other
 </costs>
 </selectionEntry>
 <selectionEntry id="7c1e-6670-9d14-73b4" name="Shrapnel Bolts (unit)" hidden="false" collective="false" import="true" type="upgrade">
-<modifiers>
-<modifier type="set" field="hidden" value="true">
-<conditionGroups>
-<conditionGroup type="or">
-<conditions>
-<condition field="selections" scope="63d4-b2d6-4d21-18dc" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a240-1557-2ee9-dfe9" type="atLeast" />
-<condition field="selections" scope="63d4-b2d6-4d21-18dc" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7831-236a-6ac1-af83" type="atLeast" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-<modifier type="set" field="c2f2-9389-880c-4ad7" value="0">
-<conditionGroups>
-<conditionGroup type="or">
-<conditions>
-<condition field="selections" scope="63d4-b2d6-4d21-18dc" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a240-1557-2ee9-dfe9" type="atLeast" />
-<condition field="selections" scope="63d4-b2d6-4d21-18dc" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7831-236a-6ac1-af83" type="atLeast" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-</modifiers>
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c2f2-9389-880c-4ad7" type="max" />
 </constraints>
@@ -11615,28 +11466,6 @@ LIMITATIONS - No other Lord of War; no Allied Detachment; no more than one other
 </costs>
 </selectionEntry>
 <selectionEntry id="8a1a-36ff-525a-196c" name="Shrapnel Bolts (unit)" hidden="false" collective="false" import="true" type="upgrade">
-<modifiers>
-<modifier type="set" field="hidden" value="true">
-<conditionGroups>
-<conditionGroup type="or">
-<conditions>
-<condition field="selections" scope="a634-eaa0-f122-089d" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a240-1557-2ee9-dfe9" type="atLeast" />
-<condition field="selections" scope="a634-eaa0-f122-089d" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7831-236a-6ac1-af83" type="atLeast" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-<modifier type="set" field="915a-3ce5-7d5c-fe44" value="0">
-<conditionGroups>
-<conditionGroup type="or">
-<conditions>
-<condition field="selections" scope="a634-eaa0-f122-089d" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a240-1557-2ee9-dfe9" type="atLeast" />
-<condition field="selections" scope="a634-eaa0-f122-089d" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7831-236a-6ac1-af83" type="atLeast" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-</modifiers>
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="915a-3ce5-7d5c-fe44" type="max" />
 </constraints>
@@ -12118,6 +11947,19 @@ LIMITATIONS - No other Lord of War; no Allied Detachment; no more than one other
 </constraints>
 </entryLink>
 </entryLinks>
+<selectionEntries>
+<selectionEntry id="1780-b285-4656-0439" name="Shrapnel Bolts (unit)" hidden="false" collective="false" import="true" type="upgrade">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4fc9-5173-744c-b8da" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="369d-8681-c74f-7ca7" name="Shrapnel Bolts" hidden="false" targetId="dae7-1524-4fa1-5702" type="rule" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
+</costs>
+</selectionEntry>
+</selectionEntries>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="105" />
 </costs>
@@ -12548,6 +12390,19 @@ LIMITATIONS - No other Lord of War; no Allied Detachment; no more than one other
 </constraints>
 </entryLink>
 </entryLinks>
+<selectionEntries>
+<selectionEntry id="1e7a-f143-613f-8bd6" name="Shrapnel Bolts (unit)" hidden="false" collective="false" import="true" type="upgrade">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7d69-4de9-ac8a-9ba4" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="00e5-40e9-ed77-af17" name="Shrapnel Bolts" hidden="false" targetId="dae7-1524-4fa1-5702" type="rule" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
+</costs>
+</selectionEntry>
+</selectionEntries>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="155" />
 </costs>
@@ -12648,28 +12503,6 @@ LIMITATIONS - No other Lord of War; no Allied Detachment; no more than one other
 </costs>
 </selectionEntry>
 <selectionEntry id="9e42-ab3e-b487-5d99" name="Shrapnel Bolts (unit)" hidden="false" collective="false" import="true" type="upgrade">
-<modifiers>
-<modifier type="set" field="hidden" value="true">
-<conditionGroups>
-<conditionGroup type="or">
-<conditions>
-<condition field="selections" scope="feeb-7d37-bbdc-aebc" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a240-1557-2ee9-dfe9" type="atLeast" />
-<condition field="selections" scope="feeb-7d37-bbdc-aebc" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7831-236a-6ac1-af83" type="atLeast" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-<modifier type="set" field="80ef-146d-bfba-fe57" value="0">
-<conditionGroups>
-<conditionGroup type="or">
-<conditions>
-<condition field="selections" scope="feeb-7d37-bbdc-aebc" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a240-1557-2ee9-dfe9" type="atLeast" />
-<condition field="selections" scope="feeb-7d37-bbdc-aebc" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7831-236a-6ac1-af83" type="atLeast" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-</modifiers>
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="80ef-146d-bfba-fe57" type="max" />
 </constraints>
@@ -13261,6 +13094,17 @@ LIMITATIONS - No other Lord of War; no Allied Detachment; no more than one other
 </entryLinks>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+<selectionEntry id="78a3-8db5-22fc-d702" name="Shrapnel Bolts (unit)" hidden="false" collective="false" import="true" type="upgrade">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9a72-83a3-a50f-2815" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="d6b7-f55a-137a-6883" name="Shrapnel Bolts" hidden="false" targetId="dae7-1524-4fa1-5702" type="rule" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
 </costs>
 </selectionEntry>
 </selectionEntries>
@@ -13964,28 +13808,6 @@ LIMITATIONS - No other Lord of War; no Allied Detachment; no more than one other
 </costs>
 </selectionEntry>
 <selectionEntry id="8087-9ea2-cf9f-7cb7" name="Shrapnel Bolts (unit)" hidden="false" collective="false" import="true" type="upgrade">
-<modifiers>
-<modifier type="set" field="hidden" value="true">
-<conditionGroups>
-<conditionGroup type="or">
-<conditions>
-<condition field="selections" scope="90a2-e396-d5a3-fdbb" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a240-1557-2ee9-dfe9" type="atLeast" />
-<condition field="selections" scope="90a2-e396-d5a3-fdbb" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7831-236a-6ac1-af83" type="atLeast" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-<modifier type="set" field="97b4-a816-d68e-3da7" value="0">
-<conditionGroups>
-<conditionGroup type="or">
-<conditions>
-<condition field="selections" scope="90a2-e396-d5a3-fdbb" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a240-1557-2ee9-dfe9" type="atLeast" />
-<condition field="selections" scope="90a2-e396-d5a3-fdbb" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7831-236a-6ac1-af83" type="atLeast" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-</modifiers>
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="97b4-a816-d68e-3da7" type="max" />
 </constraints>
@@ -14568,28 +14390,6 @@ LIMITATIONS - No other Lord of War; no Allied Detachment; no more than one other
 </costs>
 </selectionEntry>
 <selectionEntry id="2a9d-66b8-2311-e129" name="Shrapnel Bolts (unit)" hidden="false" collective="false" import="true" type="upgrade">
-<modifiers>
-<modifier type="set" field="hidden" value="true">
-<conditionGroups>
-<conditionGroup type="or">
-<conditions>
-<condition field="selections" scope="7eaa-3fe3-c9e0-60c9" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a240-1557-2ee9-dfe9" type="atLeast" />
-<condition field="selections" scope="7eaa-3fe3-c9e0-60c9" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7831-236a-6ac1-af83" type="atLeast" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-<modifier type="set" field="ecd8-0c00-bfea-d317" value="0">
-<conditionGroups>
-<conditionGroup type="or">
-<conditions>
-<condition field="selections" scope="7eaa-3fe3-c9e0-60c9" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a240-1557-2ee9-dfe9" type="atLeast" />
-<condition field="selections" scope="7eaa-3fe3-c9e0-60c9" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7831-236a-6ac1-af83" type="atLeast" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-</modifiers>
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ecd8-0c00-bfea-d317" type="max" />
 </constraints>
@@ -14928,28 +14728,6 @@ LIMITATIONS - No other Lord of War; no Allied Detachment; no more than one other
 </costs>
 </selectionEntry>
 <selectionEntry id="e8e9-f872-4dba-32cd" name="Shrapnel Bolts (unit)" hidden="false" collective="false" import="true" type="upgrade">
-<modifiers>
-<modifier type="set" field="hidden" value="true">
-<conditionGroups>
-<conditionGroup type="or">
-<conditions>
-<condition field="selections" scope="a9f2-5e7a-219e-8fa5" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a240-1557-2ee9-dfe9" type="atLeast" />
-<condition field="selections" scope="a9f2-5e7a-219e-8fa5" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7831-236a-6ac1-af83" type="atLeast" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-<modifier type="set" field="5b09-8c40-3d7b-a020" value="0">
-<conditionGroups>
-<conditionGroup type="or">
-<conditions>
-<condition field="selections" scope="a9f2-5e7a-219e-8fa5" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a240-1557-2ee9-dfe9" type="atLeast" />
-<condition field="selections" scope="a9f2-5e7a-219e-8fa5" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7831-236a-6ac1-af83" type="atLeast" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-</modifiers>
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5b09-8c40-3d7b-a020" type="max" />
 </constraints>
@@ -15292,6 +15070,17 @@ LIMITATIONS - No other Lord of War; no Allied Detachment; no more than one other
 <cost name="pts" typeId="pts0-0000-0000-0001" value="50" />
 </costs>
 </selectionEntry>
+<selectionEntry id="3cdd-36b7-05b8-9940" name="Shrapnel Bolts (unit)" hidden="false" collective="false" import="true" type="upgrade">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f8bd-71b8-6485-bcfb" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="ddbe-027d-8131-dc74" name="Shrapnel Bolts" hidden="false" targetId="dae7-1524-4fa1-5702" type="rule" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
+</costs>
+</selectionEntry>
 </selectionEntries>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
@@ -15519,6 +15308,17 @@ LIMITATIONS - No other Lord of War; no Allied Detachment; no more than one other
 </selectionEntryGroups>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="75" />
+</costs>
+</selectionEntry>
+<selectionEntry id="c9e9-ceb7-226c-81a1" name="Shrapnel Bolts (unit)" hidden="false" collective="false" import="true" type="upgrade">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4e8a-f51b-b89d-1da6" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="d4f5-c517-a252-5cd4" name="Shrapnel Bolts" hidden="false" targetId="dae7-1524-4fa1-5702" type="rule" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
 </costs>
 </selectionEntry>
 </selectionEntries>
@@ -15906,28 +15706,6 @@ LIMITATIONS - No other Lord of War; no Allied Detachment; no more than one other
 </costs>
 </selectionEntry>
 <selectionEntry id="9588-dea4-cdd0-28cf" name="Shrapnel Bolts (unit)" hidden="false" collective="false" import="true" type="upgrade">
-<modifiers>
-<modifier type="set" field="hidden" value="true">
-<conditionGroups>
-<conditionGroup type="or">
-<conditions>
-<condition field="selections" scope="b2c2-59c9-f233-25d2" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a240-1557-2ee9-dfe9" type="atLeast" />
-<condition field="selections" scope="b2c2-59c9-f233-25d2" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7831-236a-6ac1-af83" type="atLeast" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-<modifier type="set" field="bbe8-2b74-c7f6-e5b8" value="0">
-<conditionGroups>
-<conditionGroup type="or">
-<conditions>
-<condition field="selections" scope="b2c2-59c9-f233-25d2" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a240-1557-2ee9-dfe9" type="atLeast" />
-<condition field="selections" scope="b2c2-59c9-f233-25d2" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7831-236a-6ac1-af83" type="atLeast" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-</modifiers>
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bbe8-2b74-c7f6-e5b8" type="max" />
 </constraints>
@@ -16891,6 +16669,17 @@ LIMITATIONS - No other Lord of War; no Allied Detachment; no more than one other
 <cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
 </costs>
 </selectionEntry>
+<selectionEntry id="897c-3dce-c4ab-d394" name="Shrapnel Bolts (unit)" hidden="false" collective="false" import="true" type="upgrade">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="229a-029f-06b7-6bf2" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="d49c-eb6b-b00f-1d2a" name="Shrapnel Bolts" hidden="false" targetId="dae7-1524-4fa1-5702" type="rule" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
+</costs>
+</selectionEntry>
 </selectionEntries>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
@@ -17478,6 +17267,17 @@ LIMITATIONS - No other Lord of War; no Allied Detachment; no more than one other
 </entryLinks>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="120" />
+</costs>
+</selectionEntry>
+<selectionEntry id="6de6-5bfe-7cce-4465" name="Shrapnel Bolts (unit)" hidden="false" collective="false" import="true" type="upgrade">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8b83-18dc-b454-a8b8" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="bad9-0e99-5793-c18f" name="Shrapnel Bolts" hidden="false" targetId="dae7-1524-4fa1-5702" type="rule" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
 </costs>
 </selectionEntry>
 </selectionEntries>
@@ -18916,6 +18716,17 @@ LIMITATIONS - No other Lord of War; no Allied Detachment; no more than one other
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="275" />
+</costs>
+</selectionEntry>
+<selectionEntry id="5760-741c-3cc8-41dd" name="Shrapnel Bolts (unit)" hidden="false" collective="false" import="true" type="upgrade">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="56de-b425-6e84-6e23" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="6ccc-663e-1f48-bb08" name="Shrapnel Bolts" hidden="false" targetId="dae7-1524-4fa1-5702" type="rule" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
 </costs>
 </selectionEntry>
 </selectionEntries>
@@ -20798,6 +20609,17 @@ LIMITATIONS - No other Lord of War; no Allied Detachment; no more than one other
 <cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
 </costs>
 </selectionEntry>
+<selectionEntry id="8682-e8f8-a3d1-ec3c" name="Shrapnel Bolts (unit)" hidden="false" collective="false" import="true" type="upgrade">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9c04-77af-ef5e-c877" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="65d2-f319-d9d0-8e05" name="Shrapnel Bolts" hidden="false" targetId="dae7-1524-4fa1-5702" type="rule" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
+</costs>
+</selectionEntry>
 </selectionEntries>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
@@ -20962,6 +20784,19 @@ LIMITATIONS - No other Lord of War; no Allied Detachment; no more than one other
 </constraints>
 </entryLink>
 </entryLinks>
+<selectionEntries>
+<selectionEntry id="b230-1f8b-b34e-c37d" name="Shrapnel Bolts (unit)" hidden="false" collective="false" import="true" type="upgrade">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="63f5-6c8a-d70c-4e9d" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="91a6-b25e-3723-2689" name="Shrapnel Bolts" hidden="false" targetId="dae7-1524-4fa1-5702" type="rule" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
+</costs>
+</selectionEntry>
+</selectionEntries>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="115" />
 </costs>
@@ -21195,6 +21030,19 @@ LIMITATIONS - No other Lord of War; no Allied Detachment; no more than one other
 </constraints>
 </entryLink>
 </entryLinks>
+<selectionEntries>
+<selectionEntry id="5fd1-ae1f-a47b-f5db" name="Shrapnel Bolts (unit)" hidden="false" collective="false" import="true" type="upgrade">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ee99-5c13-2068-9385" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="f7e7-23aa-fc7f-2a9e" name="Shrapnel Bolts" hidden="false" targetId="dae7-1524-4fa1-5702" type="rule" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
+</costs>
+</selectionEntry>
+</selectionEntries>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="305" />
 </costs>
@@ -21393,6 +21241,19 @@ LIMITATIONS - No other Lord of War; no Allied Detachment; no more than one other
 </constraints>
 </entryLink>
 </entryLinks>
+<selectionEntries>
+<selectionEntry id="19ca-c0b1-742d-f88d" name="Shrapnel Bolts (unit)" hidden="false" collective="false" import="true" type="upgrade">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fc57-3d52-3460-c9cb" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="6e1a-6f42-c497-ac67" name="Shrapnel Bolts" hidden="false" targetId="dae7-1524-4fa1-5702" type="rule" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
+</costs>
+</selectionEntry>
+</selectionEntries>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="185" />
 </costs>
@@ -21691,6 +21552,19 @@ LIMITATIONS - No other Lord of War; no Allied Detachment; no more than one other
 </constraints>
 </entryLink>
 </entryLinks>
+<selectionEntries>
+<selectionEntry id="f452-9027-c7df-25da" name="Shrapnel Bolts (unit)" hidden="false" collective="false" import="true" type="upgrade">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0bbe-e05d-94fd-af7d" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="ae0a-41c4-714b-e364" name="Shrapnel Bolts" hidden="false" targetId="dae7-1524-4fa1-5702" type="rule" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
+</costs>
+</selectionEntry>
+</selectionEntries>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="190" />
 </costs>
@@ -22150,28 +22024,6 @@ LIMITATIONS - No other Lord of War; no Allied Detachment; no more than one other
 </costs>
 </selectionEntry>
 <selectionEntry id="566d-2af5-95ec-b5d4" name="Shrapnel Bolts (unit)" hidden="false" collective="false" import="true" type="upgrade">
-<modifiers>
-<modifier type="set" field="hidden" value="true">
-<conditionGroups>
-<conditionGroup type="or">
-<conditions>
-<condition field="selections" scope="9c83-9179-fd07-72a2" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a240-1557-2ee9-dfe9" type="atLeast" />
-<condition field="selections" scope="9c83-9179-fd07-72a2" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7831-236a-6ac1-af83" type="atLeast" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-<modifier type="set" field="90a2-404b-13cc-35b9" value="0">
-<conditionGroups>
-<conditionGroup type="or">
-<conditions>
-<condition field="selections" scope="9c83-9179-fd07-72a2" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a240-1557-2ee9-dfe9" type="atLeast" />
-<condition field="selections" scope="9c83-9179-fd07-72a2" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7831-236a-6ac1-af83" type="atLeast" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-</modifiers>
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="90a2-404b-13cc-35b9" type="max" />
 </constraints>
@@ -22232,72 +22084,6 @@ LIMITATIONS - No other Lord of War; no Allied Detachment; no more than one other
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="299a-4b60-7992-42c0" type="max" />
 </constraints>
 <entryLinks>
-<entryLink id="cc3a-9c97-a0b9-9396" name="Land Raider Phobos" hidden="false" collective="false" import="true" targetId="368f-8af7-ba1b-d0f6" type="selectionEntry">
-<modifiers>
-<modifier type="add" field="error" value="Too many models for a Land Raider Phobos (capacity 10).">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="368f-8af7-ba1b-d0f6" type="atLeast" />
-<condition field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-<modifier type="add" field="error" value="Terminator Armour counts as two models: too many for a Land Raider Phobos (capacity 10).">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="368f-8af7-ba1b-d0f6" type="atLeast" />
-<condition field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
-</conditions>
-<conditionGroups>
-<conditionGroup type="or">
-<conditions>
-<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a6a2-abea-01b2-ad81" type="atLeast" />
-<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d900-78c3-2b10-8f9c" type="atLeast" />
-<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0656-5d6b-29bb-1441" type="atLeast" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-</modifiers>
-</entryLink>
-<entryLink id="fa96-df43-0e55-9fe5" name="Land Raider Proteus" hidden="false" collective="false" import="true" targetId="fbad-f14e-6366-7f2a" type="selectionEntry">
-<modifiers>
-<modifier type="add" field="error" value="Too many models for a Land Raider Proteus (capacity 10).">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fbad-f14e-6366-7f2a" type="atLeast" />
-<condition field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-<modifier type="add" field="error" value="Terminator Armour counts as two models: too many for a Land Raider Proteus (capacity 10).">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fbad-f14e-6366-7f2a" type="atLeast" />
-<condition field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
-</conditions>
-<conditionGroups>
-<conditionGroup type="or">
-<conditions>
-<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a6a2-abea-01b2-ad81" type="atLeast" />
-<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d900-78c3-2b10-8f9c" type="atLeast" />
-<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0656-5d6b-29bb-1441" type="atLeast" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-</modifiers>
-</entryLink>
 <entryLink id="7b02-9696-1a85-44ff" name="Anvillus Pattern Dreadclaw Drop Pod" hidden="false" collective="false" import="true" targetId="2bad-68df-db1e-95d9" type="selectionEntry">
 <modifiers>
 <modifier type="add" field="error" value="Too many models for a Anvillus Pattern Dreadclaw Drop Pod (capacity 10).">
@@ -22363,6 +22149,47 @@ LIMITATIONS - No other Lord of War; no Allied Detachment; no more than one other
 </conditionGroups>
 </modifier>
 </modifiers>
+</entryLink>
+<entryLink id="cd02-99ec-ee14-fa39" name="Land Raider Phobos (Armoured Spearhead)" hidden="false" collective="false" import="true" targetId="368f-8af7-ba1b-d0f6" type="selectionEntry">
+<modifiers>
+<modifier type="set" field="hidden" value="true">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9128-42be-bd92-cf70" type="lessThan" />
+</conditions>
+</modifier>
+<modifier type="add" field="error" value="Too many models for a Land Raider Phobos (capacity 10).">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="368f-8af7-ba1b-d0f6" type="atLeast" />
+<condition field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="add" field="error" value="Terminator Armour counts as two models: too many for a Land Raider Phobos (capacity 10).">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="368f-8af7-ba1b-d0f6" type="atLeast" />
+<condition field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
+</conditions>
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a6a2-abea-01b2-ad81" type="atLeast" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d900-78c3-2b10-8f9c" type="atLeast" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0656-5d6b-29bb-1441" type="atLeast" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+</modifiers>
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2c10-5528-d27a-54ce" type="max" />
+</constraints>
 </entryLink>
 </entryLinks>
 </selectionEntryGroup>
@@ -22972,28 +22799,6 @@ LIMITATIONS - No other Lord of War; no Allied Detachment; no more than one other
 </costs>
 </selectionEntry>
 <selectionEntry id="f316-b0b4-9a6c-8066" name="Shrapnel Bolts (unit)" hidden="false" collective="false" import="true" type="upgrade">
-<modifiers>
-<modifier type="set" field="hidden" value="true">
-<conditionGroups>
-<conditionGroup type="or">
-<conditions>
-<condition field="selections" scope="af6b-9119-6d8a-287f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a240-1557-2ee9-dfe9" type="atLeast" />
-<condition field="selections" scope="af6b-9119-6d8a-287f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7831-236a-6ac1-af83" type="atLeast" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-<modifier type="set" field="2e85-d3e6-b8b6-6aa8" value="0">
-<conditionGroups>
-<conditionGroup type="or">
-<conditions>
-<condition field="selections" scope="af6b-9119-6d8a-287f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a240-1557-2ee9-dfe9" type="atLeast" />
-<condition field="selections" scope="af6b-9119-6d8a-287f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7831-236a-6ac1-af83" type="atLeast" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-</modifiers>
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2e85-d3e6-b8b6-6aa8" type="max" />
 </constraints>
@@ -23181,28 +22986,6 @@ LIMITATIONS - No other Lord of War; no Allied Detachment; no more than one other
 </costs>
 </selectionEntry>
 <selectionEntry id="7403-2ebd-efaf-993a" name="Shrapnel Bolts (unit)" hidden="false" collective="false" import="true" type="upgrade">
-<modifiers>
-<modifier type="set" field="hidden" value="true">
-<conditionGroups>
-<conditionGroup type="or">
-<conditions>
-<condition field="selections" scope="4d67-e0ba-2576-e571" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a240-1557-2ee9-dfe9" type="atLeast" />
-<condition field="selections" scope="4d67-e0ba-2576-e571" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7831-236a-6ac1-af83" type="atLeast" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-<modifier type="set" field="b62d-a53e-ddaa-d303" value="0">
-<conditionGroups>
-<conditionGroup type="or">
-<conditions>
-<condition field="selections" scope="4d67-e0ba-2576-e571" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a240-1557-2ee9-dfe9" type="atLeast" />
-<condition field="selections" scope="4d67-e0ba-2576-e571" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7831-236a-6ac1-af83" type="atLeast" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-</modifiers>
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b62d-a53e-ddaa-d303" type="max" />
 </constraints>
@@ -23313,72 +23096,6 @@ LIMITATIONS - No other Lord of War; no Allied Detachment; no more than one other
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f36b-f635-9ebf-ec20" type="max" />
 </constraints>
 <entryLinks>
-<entryLink id="a83b-cfee-b38b-08d3" name="Land Raider Phobos" hidden="false" collective="false" import="true" targetId="368f-8af7-ba1b-d0f6" type="selectionEntry">
-<modifiers>
-<modifier type="add" field="error" value="Too many models for a Land Raider Phobos (capacity 10).">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="368f-8af7-ba1b-d0f6" type="atLeast" />
-<condition field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-<modifier type="add" field="error" value="Terminator Armour counts as two models: too many for a Land Raider Phobos (capacity 10).">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="368f-8af7-ba1b-d0f6" type="atLeast" />
-<condition field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
-</conditions>
-<conditionGroups>
-<conditionGroup type="or">
-<conditions>
-<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a6a2-abea-01b2-ad81" type="atLeast" />
-<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d900-78c3-2b10-8f9c" type="atLeast" />
-<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0656-5d6b-29bb-1441" type="atLeast" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-</modifiers>
-</entryLink>
-<entryLink id="671d-1de7-847b-bb68" name="Land Raider Proteus" hidden="false" collective="false" import="true" targetId="fbad-f14e-6366-7f2a" type="selectionEntry">
-<modifiers>
-<modifier type="add" field="error" value="Too many models for a Land Raider Proteus (capacity 10).">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fbad-f14e-6366-7f2a" type="atLeast" />
-<condition field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-<modifier type="add" field="error" value="Terminator Armour counts as two models: too many for a Land Raider Proteus (capacity 10).">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fbad-f14e-6366-7f2a" type="atLeast" />
-<condition field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
-</conditions>
-<conditionGroups>
-<conditionGroup type="or">
-<conditions>
-<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a6a2-abea-01b2-ad81" type="atLeast" />
-<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d900-78c3-2b10-8f9c" type="atLeast" />
-<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0656-5d6b-29bb-1441" type="atLeast" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-</modifiers>
-</entryLink>
 <entryLink id="0c9b-88f7-e062-b403" name="Anvillus Pattern Dreadclaw Drop Pod" hidden="false" collective="false" import="true" targetId="2bad-68df-db1e-95d9" type="selectionEntry">
 <modifiers>
 <modifier type="add" field="error" value="Too many models for a Anvillus Pattern Dreadclaw Drop Pod (capacity 10).">
@@ -23445,73 +23162,52 @@ LIMITATIONS - No other Lord of War; no Allied Detachment; no more than one other
 </modifier>
 </modifiers>
 </entryLink>
+<entryLink id="1706-df9b-d9e4-ec9c" name="Land Raider Phobos (Armoured Spearhead)" hidden="false" collective="false" import="true" targetId="368f-8af7-ba1b-d0f6" type="selectionEntry">
+<modifiers>
+<modifier type="set" field="hidden" value="true">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9128-42be-bd92-cf70" type="lessThan" />
+</conditions>
+</modifier>
+<modifier type="add" field="error" value="Too many models for a Land Raider Phobos (capacity 10).">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="368f-8af7-ba1b-d0f6" type="atLeast" />
+<condition field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="add" field="error" value="Terminator Armour counts as two models: too many for a Land Raider Phobos (capacity 10).">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="368f-8af7-ba1b-d0f6" type="atLeast" />
+<condition field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
+</conditions>
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a6a2-abea-01b2-ad81" type="atLeast" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d900-78c3-2b10-8f9c" type="atLeast" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0656-5d6b-29bb-1441" type="atLeast" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+</modifiers>
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fbc7-5cc3-7b50-5681" type="max" />
+</constraints>
+</entryLink>
 </entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="50" />
-</costs>
-</selectionEntry>
-<selectionEntry id="fefa-de75-92aa-7491" name="Iron Circle Domitar-Ferrum Maniple" hidden="false" collective="false" import="true" type="unit">
-<infoLinks>
-<infoLink id="89ab-bd3d-8aae-3b61" name="Cybernetica Cortex" hidden="false" targetId="8d61-66bd-1c1d-5a6c" type="rule" />
-<infoLink id="1486-f90d-7321-65fd" name="Reactor Blast" hidden="false" targetId="e087-532e-5312-6e29" type="rule" />
-<infoLink id="23fe-3449-4fa9-32d3" name="Crusader" hidden="false" targetId="69cf-8169-9d04-4ef0" type="rule" />
-<infoLink id="ef4a-2c33-1cfe-c4cb" name="Moving Bulwark" hidden="false" targetId="9ef6-fd88-1841-8362" type="rule" />
-<infoLink id="34d0-5a60-9ec0-527f" name="Iron Warriors Construct" hidden="false" targetId="2eea-4140-3e0f-cf4a" type="rule" />
-</infoLinks>
-<categoryLinks>
-<categoryLink id="08ed-4b11-1330-884b" name="Elites" hidden="false" targetId="6b19-97ac-7c40-0bdf" primary="true" />
-</categoryLinks>
-<selectionEntries>
-<selectionEntry id="c616-f821-9516-b288" name="Domitar-Ferrum" hidden="false" collective="false" import="true" type="model">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5bbb-9fb7-4ddd-555f" type="min" />
-<constraint field="selections" scope="parent" value="6" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8d72-9f49-ecdf-5368" type="max" />
-</constraints>
-<profiles>
-<profile id="1d40-44b7-58e8-0535" name="Domitar-Ferrum" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
-<characteristics>
-<characteristic name="Unit Type" typeId="b0cf-47d7-3836-cf93">Monstrous Creature</characteristic>
-<characteristic name="WS" typeId="52b0-fc35-42a9-af3d">4</characteristic>
-<characteristic name="BS" typeId="445c-b7e0-7a15-ba83">4</characteristic>
-<characteristic name="S" typeId="7e44-d066-921a-29bd">7</characteristic>
-<characteristic name="T" typeId="a21c-b80a-e1e4-079a">7</characteristic>
-<characteristic name="W" typeId="6ba7-776c-9ed0-b148">4</characteristic>
-<characteristic name="I" typeId="6f24-6315-ebd0-9465">3</characteristic>
-<characteristic name="A" typeId="e39a-3da9-2567-cfd3">3</characteristic>
-<characteristic name="Ld" typeId="7e63-7406-c8d0-7e03">8</characteristic>
-<characteristic name="Sv" typeId="d23d-aa50-ddfb-88a0">3+/5+</characteristic>
-</characteristics>
-</profile>
-</profiles>
-<entryLinks>
-<entryLink id="32d4-276e-91e9-dd22" name="Olympia-pattern Bolt Cannon" hidden="false" collective="false" import="true" targetId="a407-f3e9-3db1-9639" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2558-2878-7a68-416b" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5475-7bbd-2caa-39c5" type="max" />
-</constraints>
-</entryLink>
-<entryLink id="a1bc-948d-5a17-e4b6" name="Graviton Maul" hidden="false" collective="false" import="true" targetId="6cbb-955b-2b16-e4e4" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1f53-e680-4b09-4fb4" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a5ca-8ac7-574e-8101" type="max" />
-</constraints>
-</entryLink>
-<entryLink id="4a65-8fd8-2140-1215" name="Karceri Battle Shield" hidden="false" collective="false" import="true" targetId="6891-f010-32fb-5e10" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b5fe-e5f8-3138-c937" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6c14-2a2f-8c76-459c" type="max" />
-</constraints>
-</entryLink>
-</entryLinks>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="205" />
-</costs>
-</selectionEntry>
-</selectionEntries>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
 </costs>
 </selectionEntry>
 <selectionEntry id="2785-3a3e-d524-1071" name="Nârik Dreygur" hidden="false" collective="false" import="true" type="unit">
@@ -23544,7 +23240,6 @@ LIMITATIONS - No other Lord of War; no Allied Detachment; no more than one other
 </infoLinks>
 <categoryLinks>
 <categoryLink id="e4b2-9aee-689e-d494" name="HQ" hidden="false" targetId="cd54-54be-0cb1-3474" primary="true" />
-<categoryLink id="9228-02eb-75f5-72aa" name="Compulsory HQ Eligible" hidden="false" targetId="e89b-053d-1bdc-4e2e" primary="false" />
 </categoryLinks>
 <selectionEntryGroups>
 <selectionEntryGroup id="b0da-d027-19d6-b1d9" name="Wargear" hidden="false" collective="false" import="true">
@@ -23598,6 +23293,19 @@ LIMITATIONS - No other Lord of War; no Allied Detachment; no more than one other
 </constraints>
 </entryLink>
 </entryLinks>
+<selectionEntries>
+<selectionEntry id="2935-f0ad-9ba4-fddf" name="Shrapnel Bolts (unit)" hidden="false" collective="false" import="true" type="upgrade">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4f91-c896-caed-7c10" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="a6ab-fd3d-824f-136c" name="Shrapnel Bolts" hidden="false" targetId="dae7-1524-4fa1-5702" type="rule" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
+</costs>
+</selectionEntry>
+</selectionEntries>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="140" />
 </costs>
@@ -23673,6 +23381,19 @@ LIMITATIONS - No other Lord of War; no Allied Detachment; no more than one other
 </constraints>
 </entryLink>
 </entryLinks>
+<selectionEntries>
+<selectionEntry id="989c-7605-9fb4-27a0" name="Shrapnel Bolts (unit)" hidden="false" collective="false" import="true" type="upgrade">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="57e0-8aa9-bc75-7fc0" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="8e44-4378-76ca-a33f" name="Shrapnel Bolts" hidden="false" targetId="dae7-1524-4fa1-5702" type="rule" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
+</costs>
+</selectionEntry>
+</selectionEntries>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="175" />
 </costs>
@@ -23803,6 +23524,7 @@ LIMITATIONS - No other Lord of War; no Allied Detachment; no more than one other
 <infoLinks>
 <infoLink id="9ffc-d5d5-dffe-486b" name="Legiones Astartes (Iron Warriors)" hidden="false" targetId="c82d-1f52-4a44-5a92" type="rule" />
 <infoLink id="c21b-a2a8-57fb-6978" name="Independent Character" hidden="false" targetId="03f2-ed94-7611-f6a1" type="rule" />
+<infoLink id="3f27-f49b-0b72-d6d1" name="Master of the Legion" hidden="false" targetId="7a4c-8b34-41a7-547b" type="rule" />
 <infoLink id="6db7-be19-623c-f968" name="Master of the First Grand Battalion" hidden="false" targetId="4dc5-1981-aea4-6f4d" type="rule" />
 <infoLink id="fd2e-d635-e135-d465" name="Siege Commander" hidden="false" targetId="4635-2a84-000f-307d" type="rule" />
 <infoLink id="40ba-8e14-51d4-680a" name="Command Retinue (Forrix)" hidden="false" targetId="b0f2-e5dd-7e08-3fa2" type="rule" />
@@ -23810,6 +23532,7 @@ LIMITATIONS - No other Lord of War; no Allied Detachment; no more than one other
 <categoryLinks>
 <categoryLink id="b085-3636-a306-d9f4" name="HQ" hidden="false" targetId="cd54-54be-0cb1-3474" primary="true" />
 <categoryLink id="2f49-8490-9dd7-3297" name="Compulsory HQ Eligible" hidden="false" targetId="e89b-053d-1bdc-4e2e" primary="false" />
+<categoryLink id="15c4-40c7-fe38-2791" name="Master of the Legion" hidden="false" targetId="cf42-da2a-93a6-6913" primary="false" />
 </categoryLinks>
 <selectionEntryGroups>
 <selectionEntryGroup id="b4f5-38cb-6886-2db6" name="Retinue (no Force Organisation slot)" hidden="false" collective="false" import="true">
@@ -23842,6 +23565,19 @@ LIMITATIONS - No other Lord of War; no Allied Detachment; no more than one other
 </constraints>
 </entryLink>
 </entryLinks>
+<selectionEntries>
+<selectionEntry id="4e9e-9bfc-179e-023a" name="Shrapnel Bolts (unit)" hidden="false" collective="false" import="true" type="upgrade">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="96de-7c8d-1b01-7b35" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="0745-dff2-ed00-cb2c" name="Shrapnel Bolts" hidden="false" targetId="dae7-1524-4fa1-5702" type="rule" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
+</costs>
+</selectionEntry>
+</selectionEntries>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="190" />
 </costs>
@@ -23932,6 +23668,19 @@ LIMITATIONS - No other Lord of War; no Allied Detachment; no more than one other
 </constraints>
 </entryLink>
 </entryLinks>
+<selectionEntries>
+<selectionEntry id="d5d0-2337-45e3-1e49" name="Shrapnel Bolts (unit)" hidden="false" collective="false" import="true" type="upgrade">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9d26-314f-fca7-88dd" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="1b48-4518-366d-0d7c" name="Shrapnel Bolts" hidden="false" targetId="dae7-1524-4fa1-5702" type="rule" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
+</costs>
+</selectionEntry>
+</selectionEntries>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="140" />
 </costs>
@@ -24035,7 +23784,26 @@ LIMITATIONS - No other Lord of War; no Allied Detachment; no more than one other
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e9c8-daf5-8f69-2ab6" type="max" />
 </constraints>
 </entryLink>
+<entryLink id="9679-da3e-db81-01b5" name="Cortex Controller" hidden="false" collective="false" import="true" targetId="ff67-9d42-dc7e-30f4" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5b11-377a-0066-a0ff" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="24ef-34cd-5aee-34ab" type="max" />
+</constraints>
+</entryLink>
 </entryLinks>
+<selectionEntries>
+<selectionEntry id="3b5a-a924-edeb-ecd9" name="Shrapnel Bolts (unit)" hidden="false" collective="false" import="true" type="upgrade">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="14dd-f3a6-f4ef-7405" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="b986-0526-5880-a5af" name="Shrapnel Bolts" hidden="false" targetId="dae7-1524-4fa1-5702" type="rule" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
+</costs>
+</selectionEntry>
+</selectionEntries>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="500" />
 </costs>
@@ -24160,6 +23928,19 @@ LIMITATIONS - No other Lord of War; no Allied Detachment; no more than one other
 </constraints>
 </entryLink>
 </entryLinks>
+<selectionEntries>
+<selectionEntry id="df00-78ac-7374-d39a" name="Shrapnel Bolts (unit)" hidden="false" collective="false" import="true" type="upgrade">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e79a-3164-09a4-2481" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="3602-a14b-de96-d984" name="Shrapnel Bolts" hidden="false" targetId="dae7-1524-4fa1-5702" type="rule" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
+</costs>
+</selectionEntry>
+</selectionEntries>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="50" />
 </costs>
@@ -24228,6 +24009,19 @@ LIMITATIONS - No other Lord of War; no Allied Detachment; no more than one other
 </entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
+<selectionEntries>
+<selectionEntry id="c2ee-f799-aeef-97eb" name="Shrapnel Bolts (unit)" hidden="false" collective="false" import="true" type="upgrade">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a136-6809-781b-89ad" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="565b-199f-228c-bd49" name="Shrapnel Bolts" hidden="false" targetId="dae7-1524-4fa1-5702" type="rule" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
+</costs>
+</selectionEntry>
+</selectionEntries>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="50" />
 </costs>
@@ -24672,28 +24466,6 @@ LIMITATIONS - No other Lord of War; no Allied Detachment; no more than one other
 </costs>
 </selectionEntry>
 <selectionEntry id="2814-3bcb-47f6-8748" name="Shrapnel Bolts (unit)" hidden="false" collective="false" import="true" type="upgrade">
-<modifiers>
-<modifier type="set" field="hidden" value="true">
-<conditionGroups>
-<conditionGroup type="or">
-<conditions>
-<condition field="selections" scope="c8be-82af-6040-137b" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a240-1557-2ee9-dfe9" type="atLeast" />
-<condition field="selections" scope="c8be-82af-6040-137b" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7831-236a-6ac1-af83" type="atLeast" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-<modifier type="set" field="b1c5-7b89-c176-6e9f" value="0">
-<conditionGroups>
-<conditionGroup type="or">
-<conditions>
-<condition field="selections" scope="c8be-82af-6040-137b" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a240-1557-2ee9-dfe9" type="atLeast" />
-<condition field="selections" scope="c8be-82af-6040-137b" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7831-236a-6ac1-af83" type="atLeast" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-</modifiers>
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b1c5-7b89-c176-6e9f" type="max" />
 </constraints>
@@ -26374,28 +26146,6 @@ LIMITATIONS - No other Lord of War; no Allied Detachment; no more than one other
 </costs>
 </selectionEntry>
 <selectionEntry id="abc4-8605-a961-f67b" name="Shrapnel Bolts (unit)" hidden="false" collective="false" import="true" type="upgrade">
-<modifiers>
-<modifier type="set" field="hidden" value="true">
-<conditionGroups>
-<conditionGroup type="or">
-<conditions>
-<condition field="selections" scope="6e9c-0ec5-5baf-e2d8" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a240-1557-2ee9-dfe9" type="atLeast" />
-<condition field="selections" scope="6e9c-0ec5-5baf-e2d8" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7831-236a-6ac1-af83" type="atLeast" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-<modifier type="set" field="8f43-c552-4bbd-4524" value="0">
-<conditionGroups>
-<conditionGroup type="or">
-<conditions>
-<condition field="selections" scope="6e9c-0ec5-5baf-e2d8" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a240-1557-2ee9-dfe9" type="atLeast" />
-<condition field="selections" scope="6e9c-0ec5-5baf-e2d8" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7831-236a-6ac1-af83" type="atLeast" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-</modifiers>
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8f43-c552-4bbd-4524" type="max" />
 </constraints>
@@ -28026,28 +27776,6 @@ LIMITATIONS - No other Lord of War; no Allied Detachment; no more than one other
 </costs>
 </selectionEntry>
 <selectionEntry id="271b-d8d8-3d38-1233" name="Shrapnel Bolts (unit)" hidden="false" collective="false" import="true" type="upgrade">
-<modifiers>
-<modifier type="set" field="hidden" value="true">
-<conditionGroups>
-<conditionGroup type="or">
-<conditions>
-<condition field="selections" scope="f695-25a8-479c-bae7" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a240-1557-2ee9-dfe9" type="atLeast" />
-<condition field="selections" scope="f695-25a8-479c-bae7" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7831-236a-6ac1-af83" type="atLeast" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-<modifier type="set" field="d292-e8b1-7582-a3a4" value="0">
-<conditionGroups>
-<conditionGroup type="or">
-<conditions>
-<condition field="selections" scope="f695-25a8-479c-bae7" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a240-1557-2ee9-dfe9" type="atLeast" />
-<condition field="selections" scope="f695-25a8-479c-bae7" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7831-236a-6ac1-af83" type="atLeast" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-</modifiers>
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d292-e8b1-7582-a3a4" type="max" />
 </constraints>
@@ -29848,28 +29576,6 @@ LIMITATIONS - No other Lord of War; no Allied Detachment; no more than one other
 </costs>
 </selectionEntry>
 <selectionEntry id="b658-64c4-290b-8edb" name="Shrapnel Bolts (unit)" hidden="false" collective="false" import="true" type="upgrade">
-<modifiers>
-<modifier type="set" field="hidden" value="true">
-<conditionGroups>
-<conditionGroup type="or">
-<conditions>
-<condition field="selections" scope="5fb6-a52b-4f8b-575d" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a240-1557-2ee9-dfe9" type="atLeast" />
-<condition field="selections" scope="5fb6-a52b-4f8b-575d" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7831-236a-6ac1-af83" type="atLeast" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-<modifier type="set" field="f67f-51f4-7112-0ca1" value="0">
-<conditionGroups>
-<conditionGroup type="or">
-<conditions>
-<condition field="selections" scope="5fb6-a52b-4f8b-575d" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a240-1557-2ee9-dfe9" type="atLeast" />
-<condition field="selections" scope="5fb6-a52b-4f8b-575d" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7831-236a-6ac1-af83" type="atLeast" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-</modifiers>
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f67f-51f4-7112-0ca1" type="max" />
 </constraints>
@@ -31500,28 +31206,6 @@ LIMITATIONS - No other Lord of War; no Allied Detachment; no more than one other
 </costs>
 </selectionEntry>
 <selectionEntry id="7b1d-7f59-a522-aa3e" name="Shrapnel Bolts (unit)" hidden="false" collective="false" import="true" type="upgrade">
-<modifiers>
-<modifier type="set" field="hidden" value="true">
-<conditionGroups>
-<conditionGroup type="or">
-<conditions>
-<condition field="selections" scope="eddc-ad51-0f19-97f5" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a240-1557-2ee9-dfe9" type="atLeast" />
-<condition field="selections" scope="eddc-ad51-0f19-97f5" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7831-236a-6ac1-af83" type="atLeast" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-<modifier type="set" field="182b-78b5-36af-29d7" value="0">
-<conditionGroups>
-<conditionGroup type="or">
-<conditions>
-<condition field="selections" scope="eddc-ad51-0f19-97f5" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a240-1557-2ee9-dfe9" type="atLeast" />
-<condition field="selections" scope="eddc-ad51-0f19-97f5" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7831-236a-6ac1-af83" type="atLeast" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-</modifiers>
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="182b-78b5-36af-29d7" type="max" />
 </constraints>
@@ -32056,6 +31740,19 @@ LIMITATIONS - No other Lord of War; no Allied Detachment; no more than one other
 </constraints>
 </entryLink>
 </entryLinks>
+<selectionEntries>
+<selectionEntry id="8485-066f-1fab-9734" name="Shrapnel Bolts (unit)" hidden="false" collective="false" import="true" type="upgrade">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0864-090a-7243-705b" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="01cd-2d88-faa5-3529" name="Shrapnel Bolts" hidden="false" targetId="dae7-1524-4fa1-5702" type="rule" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
+</costs>
+</selectionEntry>
+</selectionEntries>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="250" />
 </costs>
@@ -32280,6 +31977,19 @@ LIMITATIONS - No other Lord of War; no Allied Detachment; no more than one other
 </constraints>
 </entryLink>
 </entryLinks>
+<selectionEntries>
+<selectionEntry id="affd-2e25-34ab-39d0" name="Shrapnel Bolts (unit)" hidden="false" collective="false" import="true" type="upgrade">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9740-1f20-5a8d-9cc8" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="b931-7585-3182-7cf8" name="Shrapnel Bolts" hidden="false" targetId="dae7-1524-4fa1-5702" type="rule" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
+</costs>
+</selectionEntry>
+</selectionEntries>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="200" />
 </costs>
@@ -32547,6 +32257,19 @@ LIMITATIONS - No other Lord of War; no Allied Detachment; no more than one other
 </constraints>
 </entryLink>
 </entryLinks>
+<selectionEntries>
+<selectionEntry id="0d2f-46cd-08a0-283c" name="Shrapnel Bolts (unit)" hidden="false" collective="false" import="true" type="upgrade">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="96a6-ce30-c812-adcb" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="9e4c-b5fb-7d97-2bcf" name="Shrapnel Bolts" hidden="false" targetId="dae7-1524-4fa1-5702" type="rule" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
+</costs>
+</selectionEntry>
+</selectionEntries>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="305" />
 </costs>
@@ -32627,6 +32350,19 @@ LIMITATIONS - No other Lord of War; no Allied Detachment; no more than one other
 </constraints>
 </entryLink>
 </entryLinks>
+<selectionEntries>
+<selectionEntry id="d7c9-cfe4-5157-f63b" name="Shrapnel Bolts (unit)" hidden="false" collective="false" import="true" type="upgrade">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fffe-4590-c0c1-a98d" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="766f-ac54-0847-c365" name="Shrapnel Bolts" hidden="false" targetId="dae7-1524-4fa1-5702" type="rule" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
+</costs>
+</selectionEntry>
+</selectionEntries>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="100" />
 </costs>
@@ -33752,28 +33488,6 @@ LIMITATIONS - No other Lord of War; no Allied Detachment; no more than one other
 </costs>
 </selectionEntry>
 <selectionEntry id="82ba-8f47-dc19-b5a7" name="Shrapnel Bolts (unit)" hidden="false" collective="false" import="true" type="upgrade">
-<modifiers>
-<modifier type="set" field="hidden" value="true">
-<conditionGroups>
-<conditionGroup type="or">
-<conditions>
-<condition field="selections" scope="b188-4d6d-fb49-44c8" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a240-1557-2ee9-dfe9" type="atLeast" />
-<condition field="selections" scope="b188-4d6d-fb49-44c8" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7831-236a-6ac1-af83" type="atLeast" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-<modifier type="set" field="4944-8169-9318-36c8" value="0">
-<conditionGroups>
-<conditionGroup type="or">
-<conditions>
-<condition field="selections" scope="b188-4d6d-fb49-44c8" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a240-1557-2ee9-dfe9" type="atLeast" />
-<condition field="selections" scope="b188-4d6d-fb49-44c8" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7831-236a-6ac1-af83" type="atLeast" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-</modifiers>
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4944-8169-9318-36c8" type="max" />
 </constraints>
@@ -34270,28 +33984,6 @@ LIMITATIONS - No other Lord of War; no Allied Detachment; no more than one other
 </costs>
 </selectionEntry>
 <selectionEntry id="cdfd-9eff-ae84-a599" name="Shrapnel Bolts (unit)" hidden="false" collective="false" import="true" type="upgrade">
-<modifiers>
-<modifier type="set" field="hidden" value="true">
-<conditionGroups>
-<conditionGroup type="or">
-<conditions>
-<condition field="selections" scope="375f-494d-bdfd-3b24" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a240-1557-2ee9-dfe9" type="atLeast" />
-<condition field="selections" scope="375f-494d-bdfd-3b24" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7831-236a-6ac1-af83" type="atLeast" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-<modifier type="set" field="ac12-4ff1-db09-10e2" value="0">
-<conditionGroups>
-<conditionGroup type="or">
-<conditions>
-<condition field="selections" scope="375f-494d-bdfd-3b24" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a240-1557-2ee9-dfe9" type="atLeast" />
-<condition field="selections" scope="375f-494d-bdfd-3b24" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7831-236a-6ac1-af83" type="atLeast" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-</modifiers>
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ac12-4ff1-db09-10e2" type="max" />
 </constraints>
@@ -34352,72 +34044,6 @@ LIMITATIONS - No other Lord of War; no Allied Detachment; no more than one other
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="80eb-6ff1-be3d-289f" type="max" />
 </constraints>
 <entryLinks>
-<entryLink id="3eec-a30b-fc3b-1c34" name="Land Raider Phobos" hidden="false" collective="false" import="true" targetId="368f-8af7-ba1b-d0f6" type="selectionEntry">
-<modifiers>
-<modifier type="add" field="error" value="Too many models for a Land Raider Phobos (capacity 10).">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="368f-8af7-ba1b-d0f6" type="atLeast" />
-<condition field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-<modifier type="add" field="error" value="Terminator Armour counts as two models: too many for a Land Raider Phobos (capacity 10).">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="368f-8af7-ba1b-d0f6" type="atLeast" />
-<condition field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
-</conditions>
-<conditionGroups>
-<conditionGroup type="or">
-<conditions>
-<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a6a2-abea-01b2-ad81" type="atLeast" />
-<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d900-78c3-2b10-8f9c" type="atLeast" />
-<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0656-5d6b-29bb-1441" type="atLeast" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-</modifiers>
-</entryLink>
-<entryLink id="8c55-7273-3322-bc45" name="Land Raider Proteus" hidden="false" collective="false" import="true" targetId="fbad-f14e-6366-7f2a" type="selectionEntry">
-<modifiers>
-<modifier type="add" field="error" value="Too many models for a Land Raider Proteus (capacity 10).">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fbad-f14e-6366-7f2a" type="atLeast" />
-<condition field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-<modifier type="add" field="error" value="Terminator Armour counts as two models: too many for a Land Raider Proteus (capacity 10).">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fbad-f14e-6366-7f2a" type="atLeast" />
-<condition field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
-</conditions>
-<conditionGroups>
-<conditionGroup type="or">
-<conditions>
-<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a6a2-abea-01b2-ad81" type="atLeast" />
-<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d900-78c3-2b10-8f9c" type="atLeast" />
-<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0656-5d6b-29bb-1441" type="atLeast" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-</modifiers>
-</entryLink>
 <entryLink id="f14c-ad04-2ee5-2041" name="Anvillus Pattern Dreadclaw Drop Pod" hidden="false" collective="false" import="true" targetId="2bad-68df-db1e-95d9" type="selectionEntry">
 <modifiers>
 <modifier type="add" field="error" value="Too many models for a Anvillus Pattern Dreadclaw Drop Pod (capacity 10).">
@@ -34483,6 +34109,47 @@ LIMITATIONS - No other Lord of War; no Allied Detachment; no more than one other
 </conditionGroups>
 </modifier>
 </modifiers>
+</entryLink>
+<entryLink id="235b-ae63-db18-b810" name="Land Raider Phobos (Armoured Spearhead)" hidden="false" collective="false" import="true" targetId="368f-8af7-ba1b-d0f6" type="selectionEntry">
+<modifiers>
+<modifier type="set" field="hidden" value="true">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9128-42be-bd92-cf70" type="lessThan" />
+</conditions>
+</modifier>
+<modifier type="add" field="error" value="Too many models for a Land Raider Phobos (capacity 10).">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="368f-8af7-ba1b-d0f6" type="atLeast" />
+<condition field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="add" field="error" value="Terminator Armour counts as two models: too many for a Land Raider Phobos (capacity 10).">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="368f-8af7-ba1b-d0f6" type="atLeast" />
+<condition field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
+</conditions>
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a6a2-abea-01b2-ad81" type="atLeast" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d900-78c3-2b10-8f9c" type="atLeast" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0656-5d6b-29bb-1441" type="atLeast" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+</modifiers>
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d1c5-0618-fe07-7527" type="max" />
+</constraints>
 </entryLink>
 </entryLinks>
 </selectionEntryGroup>
@@ -34632,28 +34299,6 @@ LIMITATIONS - No other Lord of War; no Allied Detachment; no more than one other
 </costs>
 </selectionEntry>
 <selectionEntry id="764e-0ef4-78fa-cb6b" name="Shrapnel Bolts (unit)" hidden="false" collective="false" import="true" type="upgrade">
-<modifiers>
-<modifier type="set" field="hidden" value="true">
-<conditionGroups>
-<conditionGroup type="or">
-<conditions>
-<condition field="selections" scope="a6ee-8c35-01e3-07e5" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a240-1557-2ee9-dfe9" type="atLeast" />
-<condition field="selections" scope="a6ee-8c35-01e3-07e5" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7831-236a-6ac1-af83" type="atLeast" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-<modifier type="set" field="fba3-ba90-72ee-0cdf" value="0">
-<conditionGroups>
-<conditionGroup type="or">
-<conditions>
-<condition field="selections" scope="a6ee-8c35-01e3-07e5" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a240-1557-2ee9-dfe9" type="atLeast" />
-<condition field="selections" scope="a6ee-8c35-01e3-07e5" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7831-236a-6ac1-af83" type="atLeast" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-</modifiers>
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fba3-ba90-72ee-0cdf" type="max" />
 </constraints>
@@ -34764,72 +34409,6 @@ LIMITATIONS - No other Lord of War; no Allied Detachment; no more than one other
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="df95-37d8-f9e6-6f09" type="max" />
 </constraints>
 <entryLinks>
-<entryLink id="0e01-5222-8258-2870" name="Land Raider Phobos" hidden="false" collective="false" import="true" targetId="368f-8af7-ba1b-d0f6" type="selectionEntry">
-<modifiers>
-<modifier type="add" field="error" value="Too many models for a Land Raider Phobos (capacity 10).">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="368f-8af7-ba1b-d0f6" type="atLeast" />
-<condition field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-<modifier type="add" field="error" value="Terminator Armour counts as two models: too many for a Land Raider Phobos (capacity 10).">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="368f-8af7-ba1b-d0f6" type="atLeast" />
-<condition field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
-</conditions>
-<conditionGroups>
-<conditionGroup type="or">
-<conditions>
-<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a6a2-abea-01b2-ad81" type="atLeast" />
-<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d900-78c3-2b10-8f9c" type="atLeast" />
-<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0656-5d6b-29bb-1441" type="atLeast" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-</modifiers>
-</entryLink>
-<entryLink id="b7c0-9273-9a9c-99f5" name="Land Raider Proteus" hidden="false" collective="false" import="true" targetId="fbad-f14e-6366-7f2a" type="selectionEntry">
-<modifiers>
-<modifier type="add" field="error" value="Too many models for a Land Raider Proteus (capacity 10).">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fbad-f14e-6366-7f2a" type="atLeast" />
-<condition field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-<modifier type="add" field="error" value="Terminator Armour counts as two models: too many for a Land Raider Proteus (capacity 10).">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fbad-f14e-6366-7f2a" type="atLeast" />
-<condition field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
-</conditions>
-<conditionGroups>
-<conditionGroup type="or">
-<conditions>
-<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a6a2-abea-01b2-ad81" type="atLeast" />
-<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d900-78c3-2b10-8f9c" type="atLeast" />
-<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0656-5d6b-29bb-1441" type="atLeast" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-</modifiers>
-</entryLink>
 <entryLink id="d0ac-2ff1-4525-72fd" name="Anvillus Pattern Dreadclaw Drop Pod" hidden="false" collective="false" import="true" targetId="2bad-68df-db1e-95d9" type="selectionEntry">
 <modifiers>
 <modifier type="add" field="error" value="Too many models for a Anvillus Pattern Dreadclaw Drop Pod (capacity 10).">
@@ -34895,6 +34474,47 @@ LIMITATIONS - No other Lord of War; no Allied Detachment; no more than one other
 </conditionGroups>
 </modifier>
 </modifiers>
+</entryLink>
+<entryLink id="8888-d735-85c4-8349" name="Land Raider Phobos (Armoured Spearhead)" hidden="false" collective="false" import="true" targetId="368f-8af7-ba1b-d0f6" type="selectionEntry">
+<modifiers>
+<modifier type="set" field="hidden" value="true">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9128-42be-bd92-cf70" type="lessThan" />
+</conditions>
+</modifier>
+<modifier type="add" field="error" value="Too many models for a Land Raider Phobos (capacity 10).">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="368f-8af7-ba1b-d0f6" type="atLeast" />
+<condition field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="add" field="error" value="Terminator Armour counts as two models: too many for a Land Raider Phobos (capacity 10).">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="368f-8af7-ba1b-d0f6" type="atLeast" />
+<condition field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
+</conditions>
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a6a2-abea-01b2-ad81" type="atLeast" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d900-78c3-2b10-8f9c" type="atLeast" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0656-5d6b-29bb-1441" type="atLeast" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+</modifiers>
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fd73-deec-aa35-1893" type="max" />
+</constraints>
 </entryLink>
 </entryLinks>
 </selectionEntryGroup>
@@ -36024,28 +35644,6 @@ LIMITATIONS - No other Lord of War; no Allied Detachment; no more than one other
 </costs>
 </selectionEntry>
 <selectionEntry id="0a21-b902-2729-0e09" name="Shrapnel Bolts (unit)" hidden="false" collective="false" import="true" type="upgrade">
-<modifiers>
-<modifier type="set" field="hidden" value="true">
-<conditionGroups>
-<conditionGroup type="or">
-<conditions>
-<condition field="selections" scope="111c-b197-031e-46f0" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a240-1557-2ee9-dfe9" type="atLeast" />
-<condition field="selections" scope="111c-b197-031e-46f0" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7831-236a-6ac1-af83" type="atLeast" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-<modifier type="set" field="7d61-e3f1-2340-05ce" value="0">
-<conditionGroups>
-<conditionGroup type="or">
-<conditions>
-<condition field="selections" scope="111c-b197-031e-46f0" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a240-1557-2ee9-dfe9" type="atLeast" />
-<condition field="selections" scope="111c-b197-031e-46f0" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7831-236a-6ac1-af83" type="atLeast" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-</modifiers>
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7d61-e3f1-2340-05ce" type="max" />
 </constraints>
@@ -36542,28 +36140,6 @@ LIMITATIONS - No other Lord of War; no Allied Detachment; no more than one other
 </costs>
 </selectionEntry>
 <selectionEntry id="3529-4279-97a1-0189" name="Shrapnel Bolts (unit)" hidden="false" collective="false" import="true" type="upgrade">
-<modifiers>
-<modifier type="set" field="hidden" value="true">
-<conditionGroups>
-<conditionGroup type="or">
-<conditions>
-<condition field="selections" scope="d640-627b-07e5-a86e" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a240-1557-2ee9-dfe9" type="atLeast" />
-<condition field="selections" scope="d640-627b-07e5-a86e" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7831-236a-6ac1-af83" type="atLeast" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-<modifier type="set" field="906b-a6a8-1455-981b" value="0">
-<conditionGroups>
-<conditionGroup type="or">
-<conditions>
-<condition field="selections" scope="d640-627b-07e5-a86e" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a240-1557-2ee9-dfe9" type="atLeast" />
-<condition field="selections" scope="d640-627b-07e5-a86e" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7831-236a-6ac1-af83" type="atLeast" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-</modifiers>
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="906b-a6a8-1455-981b" type="max" />
 </constraints>
@@ -36624,72 +36200,6 @@ LIMITATIONS - No other Lord of War; no Allied Detachment; no more than one other
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="53cd-e9ca-8ef3-4ce8" type="max" />
 </constraints>
 <entryLinks>
-<entryLink id="85b7-a564-5cbc-4a9e" name="Land Raider Phobos" hidden="false" collective="false" import="true" targetId="368f-8af7-ba1b-d0f6" type="selectionEntry">
-<modifiers>
-<modifier type="add" field="error" value="Too many models for a Land Raider Phobos (capacity 10).">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="368f-8af7-ba1b-d0f6" type="atLeast" />
-<condition field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-<modifier type="add" field="error" value="Terminator Armour counts as two models: too many for a Land Raider Phobos (capacity 10).">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="368f-8af7-ba1b-d0f6" type="atLeast" />
-<condition field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
-</conditions>
-<conditionGroups>
-<conditionGroup type="or">
-<conditions>
-<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a6a2-abea-01b2-ad81" type="atLeast" />
-<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d900-78c3-2b10-8f9c" type="atLeast" />
-<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0656-5d6b-29bb-1441" type="atLeast" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-</modifiers>
-</entryLink>
-<entryLink id="e512-b969-7e71-ec7a" name="Land Raider Proteus" hidden="false" collective="false" import="true" targetId="fbad-f14e-6366-7f2a" type="selectionEntry">
-<modifiers>
-<modifier type="add" field="error" value="Too many models for a Land Raider Proteus (capacity 10).">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fbad-f14e-6366-7f2a" type="atLeast" />
-<condition field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-<modifier type="add" field="error" value="Terminator Armour counts as two models: too many for a Land Raider Proteus (capacity 10).">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fbad-f14e-6366-7f2a" type="atLeast" />
-<condition field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
-</conditions>
-<conditionGroups>
-<conditionGroup type="or">
-<conditions>
-<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a6a2-abea-01b2-ad81" type="atLeast" />
-<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d900-78c3-2b10-8f9c" type="atLeast" />
-<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0656-5d6b-29bb-1441" type="atLeast" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-</modifiers>
-</entryLink>
 <entryLink id="1fa3-aad8-7e92-8a83" name="Anvillus Pattern Dreadclaw Drop Pod" hidden="false" collective="false" import="true" targetId="2bad-68df-db1e-95d9" type="selectionEntry">
 <modifiers>
 <modifier type="add" field="error" value="Too many models for a Anvillus Pattern Dreadclaw Drop Pod (capacity 10).">
@@ -36755,6 +36265,47 @@ LIMITATIONS - No other Lord of War; no Allied Detachment; no more than one other
 </conditionGroups>
 </modifier>
 </modifiers>
+</entryLink>
+<entryLink id="9a91-d9d7-ccf0-33d7" name="Land Raider Phobos (Armoured Spearhead)" hidden="false" collective="false" import="true" targetId="368f-8af7-ba1b-d0f6" type="selectionEntry">
+<modifiers>
+<modifier type="set" field="hidden" value="true">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9128-42be-bd92-cf70" type="lessThan" />
+</conditions>
+</modifier>
+<modifier type="add" field="error" value="Too many models for a Land Raider Phobos (capacity 10).">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="368f-8af7-ba1b-d0f6" type="atLeast" />
+<condition field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="add" field="error" value="Terminator Armour counts as two models: too many for a Land Raider Phobos (capacity 10).">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="368f-8af7-ba1b-d0f6" type="atLeast" />
+<condition field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
+</conditions>
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a6a2-abea-01b2-ad81" type="atLeast" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d900-78c3-2b10-8f9c" type="atLeast" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0656-5d6b-29bb-1441" type="atLeast" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+</modifiers>
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="10fa-5261-c1c9-8361" type="max" />
+</constraints>
 </entryLink>
 </entryLinks>
 </selectionEntryGroup>
@@ -38212,28 +37763,6 @@ LIMITATIONS - No other Lord of War; no Allied Detachment; no more than one other
 </costs>
 </selectionEntry>
 <selectionEntry id="36da-fbbf-c11f-3e3b" name="Shrapnel Bolts (unit)" hidden="false" collective="false" import="true" type="upgrade">
-<modifiers>
-<modifier type="set" field="hidden" value="true">
-<conditionGroups>
-<conditionGroup type="or">
-<conditions>
-<condition field="selections" scope="f979-dbda-afd4-2f9f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a240-1557-2ee9-dfe9" type="atLeast" />
-<condition field="selections" scope="f979-dbda-afd4-2f9f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7831-236a-6ac1-af83" type="atLeast" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-<modifier type="set" field="f2fa-0c21-f31e-e199" value="0">
-<conditionGroups>
-<conditionGroup type="or">
-<conditions>
-<condition field="selections" scope="f979-dbda-afd4-2f9f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a240-1557-2ee9-dfe9" type="atLeast" />
-<condition field="selections" scope="f979-dbda-afd4-2f9f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7831-236a-6ac1-af83" type="atLeast" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-</modifiers>
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f2fa-0c21-f31e-e199" type="max" />
 </constraints>
@@ -39150,28 +38679,6 @@ LIMITATIONS - No other Lord of War; no Allied Detachment; no more than one other
 </costs>
 </selectionEntry>
 <selectionEntry id="68a0-feed-0ee0-d01d" name="Shrapnel Bolts (unit)" hidden="false" collective="false" import="true" type="upgrade">
-<modifiers>
-<modifier type="set" field="hidden" value="true">
-<conditionGroups>
-<conditionGroup type="or">
-<conditions>
-<condition field="selections" scope="0921-a952-4bed-02df" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a240-1557-2ee9-dfe9" type="atLeast" />
-<condition field="selections" scope="0921-a952-4bed-02df" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7831-236a-6ac1-af83" type="atLeast" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-<modifier type="set" field="4e99-a58d-2fd6-8414" value="0">
-<conditionGroups>
-<conditionGroup type="or">
-<conditions>
-<condition field="selections" scope="0921-a952-4bed-02df" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a240-1557-2ee9-dfe9" type="atLeast" />
-<condition field="selections" scope="0921-a952-4bed-02df" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7831-236a-6ac1-af83" type="atLeast" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-</modifiers>
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4e99-a58d-2fd6-8414" type="max" />
 </constraints>
@@ -40524,28 +40031,6 @@ LIMITATIONS - No other Lord of War; no Allied Detachment; no more than one other
 </costs>
 </selectionEntry>
 <selectionEntry id="d7d0-74ab-c43d-9cb8" name="Shrapnel Bolts (unit)" hidden="false" collective="false" import="true" type="upgrade">
-<modifiers>
-<modifier type="set" field="hidden" value="true">
-<conditionGroups>
-<conditionGroup type="or">
-<conditions>
-<condition field="selections" scope="88fb-6766-816f-ed9b" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a240-1557-2ee9-dfe9" type="atLeast" />
-<condition field="selections" scope="88fb-6766-816f-ed9b" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7831-236a-6ac1-af83" type="atLeast" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-<modifier type="set" field="0be4-719d-4f9e-5dbc" value="0">
-<conditionGroups>
-<conditionGroup type="or">
-<conditions>
-<condition field="selections" scope="88fb-6766-816f-ed9b" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a240-1557-2ee9-dfe9" type="atLeast" />
-<condition field="selections" scope="88fb-6766-816f-ed9b" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7831-236a-6ac1-af83" type="atLeast" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-</modifiers>
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0be4-719d-4f9e-5dbc" type="max" />
 </constraints>
@@ -41038,28 +40523,6 @@ LIMITATIONS - No other Lord of War; no Allied Detachment; no more than one other
 </costs>
 </selectionEntry>
 <selectionEntry id="d20c-9318-6098-e799" name="Shrapnel Bolts (unit)" hidden="false" collective="false" import="true" type="upgrade">
-<modifiers>
-<modifier type="set" field="hidden" value="true">
-<conditionGroups>
-<conditionGroup type="or">
-<conditions>
-<condition field="selections" scope="67ed-2254-7ddd-53fd" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a240-1557-2ee9-dfe9" type="atLeast" />
-<condition field="selections" scope="67ed-2254-7ddd-53fd" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7831-236a-6ac1-af83" type="atLeast" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-<modifier type="set" field="862c-f8aa-240a-19a5" value="0">
-<conditionGroups>
-<conditionGroup type="or">
-<conditions>
-<condition field="selections" scope="67ed-2254-7ddd-53fd" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a240-1557-2ee9-dfe9" type="atLeast" />
-<condition field="selections" scope="67ed-2254-7ddd-53fd" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7831-236a-6ac1-af83" type="atLeast" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-</modifiers>
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="862c-f8aa-240a-19a5" type="max" />
 </constraints>
@@ -41170,72 +40633,6 @@ LIMITATIONS - No other Lord of War; no Allied Detachment; no more than one other
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7938-491d-28b1-69b8" type="max" />
 </constraints>
 <entryLinks>
-<entryLink id="ce1a-11e0-77d6-9124" name="Land Raider Phobos" hidden="false" collective="false" import="true" targetId="368f-8af7-ba1b-d0f6" type="selectionEntry">
-<modifiers>
-<modifier type="add" field="error" value="Too many models for a Land Raider Phobos (capacity 10).">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="368f-8af7-ba1b-d0f6" type="atLeast" />
-<condition field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-<modifier type="add" field="error" value="Terminator Armour counts as two models: too many for a Land Raider Phobos (capacity 10).">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="368f-8af7-ba1b-d0f6" type="atLeast" />
-<condition field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
-</conditions>
-<conditionGroups>
-<conditionGroup type="or">
-<conditions>
-<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a6a2-abea-01b2-ad81" type="atLeast" />
-<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d900-78c3-2b10-8f9c" type="atLeast" />
-<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0656-5d6b-29bb-1441" type="atLeast" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-</modifiers>
-</entryLink>
-<entryLink id="f20a-172c-2c7f-bbff" name="Land Raider Proteus" hidden="false" collective="false" import="true" targetId="fbad-f14e-6366-7f2a" type="selectionEntry">
-<modifiers>
-<modifier type="add" field="error" value="Too many models for a Land Raider Proteus (capacity 10).">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fbad-f14e-6366-7f2a" type="atLeast" />
-<condition field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-<modifier type="add" field="error" value="Terminator Armour counts as two models: too many for a Land Raider Proteus (capacity 10).">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fbad-f14e-6366-7f2a" type="atLeast" />
-<condition field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
-</conditions>
-<conditionGroups>
-<conditionGroup type="or">
-<conditions>
-<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a6a2-abea-01b2-ad81" type="atLeast" />
-<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d900-78c3-2b10-8f9c" type="atLeast" />
-<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0656-5d6b-29bb-1441" type="atLeast" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-</modifiers>
-</entryLink>
 <entryLink id="db4d-3c1c-f3a3-4b45" name="Anvillus Pattern Dreadclaw Drop Pod" hidden="false" collective="false" import="true" targetId="2bad-68df-db1e-95d9" type="selectionEntry">
 <modifiers>
 <modifier type="add" field="error" value="Too many models for a Anvillus Pattern Dreadclaw Drop Pod (capacity 10).">
@@ -41302,6 +40699,47 @@ LIMITATIONS - No other Lord of War; no Allied Detachment; no more than one other
 </modifier>
 </modifiers>
 </entryLink>
+<entryLink id="785d-88ce-7c4f-57ff" name="Land Raider Phobos (Armoured Spearhead)" hidden="false" collective="false" import="true" targetId="368f-8af7-ba1b-d0f6" type="selectionEntry">
+<modifiers>
+<modifier type="set" field="hidden" value="true">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9128-42be-bd92-cf70" type="lessThan" />
+</conditions>
+</modifier>
+<modifier type="add" field="error" value="Too many models for a Land Raider Phobos (capacity 10).">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="368f-8af7-ba1b-d0f6" type="atLeast" />
+<condition field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="add" field="error" value="Terminator Armour counts as two models: too many for a Land Raider Phobos (capacity 10).">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="368f-8af7-ba1b-d0f6" type="atLeast" />
+<condition field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
+</conditions>
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a6a2-abea-01b2-ad81" type="atLeast" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d900-78c3-2b10-8f9c" type="atLeast" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0656-5d6b-29bb-1441" type="atLeast" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+</modifiers>
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b2a4-e650-d76b-2504" type="max" />
+</constraints>
+</entryLink>
 </entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
@@ -41362,6 +40800,17 @@ LIMITATIONS - No other Lord of War; no Allied Detachment; no more than one other
 </entryLinks>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="205" />
+</costs>
+</selectionEntry>
+<selectionEntry id="d1bc-d2d0-13e2-e981" name="Shrapnel Bolts (unit)" hidden="false" collective="false" import="true" type="upgrade">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3afa-d7c5-3fc9-4b72" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="1b4c-5156-46ca-2ca8" name="Shrapnel Bolts" hidden="false" targetId="dae7-1524-4fa1-5702" type="rule" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
 </costs>
 </selectionEntry>
 </selectionEntries>
@@ -43584,7 +43033,7 @@ Afterwards the squad may not enter Overwatch, may not make Return Fire or Stand 
 <description>Non-vehicle models with the Legiones Astartes (Iron Warriors) special rule receive +1 to Armour Penetration rolls made against Fortifications, Buildings, Bunkers, Tank Traps and other immobile structures with an Armour Value. Iron Warriors models only trigger enemy Minefields on a roll of 6. An Iron Warriors unit occupying a friendly Fortification or Bunker gains the Stubborn special rule; this provides no benefit while occupying a Fortification belonging to the enemy at the beginning of the battle.</description>
 </rule>
 <rule id="795e-7bf1-e1b0-2116" name="An Army of Steel and Wrath" hidden="false">
-<description>When constructing an Iron Warriors Detachment, the player may exchange two Fast Attack selections for one additional Heavy Support selection. This exchange may only be made once. With the Standard Force Organisation Chart the army may therefore include 0-1 Fast Attack and 0-4 Heavy Support choices; all other Force Organisation limits remain unchanged. (Select the exchange on the Legion entry.)</description>
+<description>When constructing an Iron Warriors Detachment, the player may exchange two Fast Attack selections for one additional Heavy Support selection. This exchange may only be made once. With the Standard Force Organisation Chart the army may therefore include 0-1 Fast Attack and 0-4 Heavy Support choices; all other Force Organisation limits remain unchanged. The exchange is made automatically: as soon as the Detachment contains a fourth Heavy Support choice, it may include no more than one Fast Attack choice.</description>
 </rule>
 <rule id="e2b3-d53f-4e33-e2b5" name="Stubborn Resolve" hidden="false">
 <description>If a mission uses a variable game length and the game would normally end, the opposing player may demand that one additional complete game turn be played. Roll a D6: on a 3+ one additional complete game turn is played. This roll may only be made once; after the additional game turn the battle ends automatically. No effect in a mission which ends immediately when a particular objective or action is completed once it has occurred.</description>
@@ -43593,7 +43042,10 @@ Afterwards the squad may not enter Overwatch, may not make Return Fire or Stand 
 <description>Only in missions which already use Preliminary Bombardment. The Iron Warriors player receives one additional Preliminary Bombardment roll for every full 500 points in the army. Before any Preliminary Bombardment rolls are made, each additional roll must be assigned to an eligible enemy unit or obstacle; several may be assigned to the same target, but all rolls assigned to a target are made together. Additional rolls may not be assigned after bombardment rolls have begun. Resolve them using the normal Preliminary Bombardment rules.</description>
 </rule>
 <rule id="dae7-1524-4fa1-5702" name="Shrapnel Bolts" hidden="false">
-<description>5 points per unit. The following weapons carried by models in the unit gain the Pinning special rule: Bolt Pistols, Bolters, Combi-Bolters, Storm Bolters, Heavy Bolters, Twin-linked Bolters and the bolter component of Combi-Weapons. Shrapnel Bolts may not be combined with Special Issue Ammunition, Hellfire Rounds or another special ammunition type.</description>
+<description>5 points per unit. The following weapons carried by models in the unit gain the Pinning special rule: Bolt Pistols, Bolters, Combi-Bolters, Storm Bolters, Heavy Bolters, Twin-linked Bolters and the bolter component of Combi-Weapons. Any unit may purchase Shrapnel Bolts (including vehicles, Dreadnoughts, named characters and Primarchs) for the bolt weapons it carries. Shrapnel Bolts may not be combined with Special Issue Ammunition, Hellfire Rounds or another special ammunition type: a bolt weapon firing Shrapnel Bolts uses no other special ammunition for that attack, and a weapon firing another special ammunition type does not gain Pinning from Shrapnel Bolts for that attack.</description>
+</rule>
+<rule id="527e-19ff-023a-210b" name="Shrapnel Bolts (The Hammer of Olympia)" hidden="false">
+<description>The Hammer of Olympia: this unit has Shrapnel Bolts at no additional points cost (applied automatically; see Shrapnel Bolts).</description>
 </rule>
 <rule id="3d97-b149-3ed7-8580" name="Servo-Arm (Iron Warriors)" hidden="false">
 <description>Any Iron Warriors model with access to the Space Marine Armoury may purchase a Servo-Arm for +30 points, even if it is not normally permitted to select Techmarine equipment. The Servo-Arm follows the normal rules of the Legiones Astartes Army List. A model equipped with a Jump Pack may not purchase a Servo-Arm.</description>
@@ -43602,7 +43054,7 @@ Afterwards the squad may not enter Overwatch, may not make Return Fire or Stand 
 <description>Any Iron Warriors model with access to the Space Marine Armoury may purchase Bionics for +5 points instead of the normal +10 points. Bionics otherwise follow the normal rules.</description>
 </rule>
 <rule id="9d70-5308-654d-5469" name="The Hammer of Olympia" hidden="false">
-<description>EFFECTS - The Iron Line: the army's compulsory Troops choices must be selected from Legion Tactical Squads and Legion Breacher Siege Squads; compulsory Troops choices gain Shrapnel Bolts at no additional points cost. Hail of Fire: Iron Warriors Tactical Squads and Breacher Siege Squads equipped with Shrapnel Bolts may declare a charge after firing Rapid Fire weapons during the Shooting phase; a unit which does so does not receive the normal +1 Attack bonus for charging that Assault phase. A unit which used Fury of the Legion during the same player turn may not benefit from this rule. Fury of Olympia: models equipped with Shrapnel Bolts may re-roll To Hit rolls of 1 when firing those weapons at an enemy unit within 12" (not when firing Snap Shots). Armoured Resolve: Iron Warriors Legion Predator Strike Squadrons, Legion Vindicator Siege Tank Squadrons, Land Raiders and Legion Spartan Assault Tanks ignore Crew Shaken and Crew Stunned results; other Vehicle Damage results apply normally. LIMITATIONS - The army's Warlord must possess the Master of the Legion special rule. The compulsory Troops choices must be Legion Tactical Squads or Legion Breacher Siege Squads. No Iron Warriors unit may deploy using Deep Strike; units which are required to enter play by Deep Strike may not be selected.</description>
+<description>EFFECTS - The Iron Line: the army's compulsory Troops choices must be selected from Legion Tactical Squads and Legion Breacher Siege Squads; Legion Tactical Squads and Legion Breacher Siege Squads automatically gain Shrapnel Bolts at no additional points cost. Hail of Fire: Iron Warriors Tactical Squads and Breacher Siege Squads equipped with Shrapnel Bolts may declare a charge after firing Rapid Fire weapons during the Shooting phase; a unit which does so does not receive the normal +1 Attack bonus for charging that Assault phase. A unit which used Fury of the Legion during the same player turn may not benefit from this rule. Fury of Olympia: models equipped with Shrapnel Bolts may re-roll To Hit rolls of 1 when firing those weapons at an enemy unit within 12" (not when firing Snap Shots). Armoured Resolve: Iron Warriors Legion Predator Strike Squadrons, Legion Vindicator Siege Tank Squadrons, Land Raiders (every Land Raider variant, including Achilles-Alpha Land Raiders and Land Raider Battle Squadrons) and Legion Spartan Assault Tanks ignore Crew Shaken and Crew Stunned results; other Vehicle Damage results apply normally. LIMITATIONS - The army's Warlord must possess the Master of the Legion special rule. The compulsory Troops choices must be Legion Tactical Squads or Legion Breacher Siege Squads. No Iron Warriors unit may deploy using Deep Strike; units which are required to enter play by Deep Strike (Drop Pods, Dreadclaws) may not be selected, and no Deep Strike wargear (Teleport Homers, Locator Beacons) may be taken.</description>
 </rule>
 <rule id="15d3-d419-512e-6027" name="The Ironfire" hidden="false">
 <description>EFFECTS - Artillery Column: one Legion Artillery Tank Squadron may be selected as a non-compulsory Troops choice; it does not occupy a Heavy Support choice, may not fulfil a compulsory Troops selection and does not count as a Scoring Unit unless it would normally do so for another reason. The normal 0-1 restriction on Legion Artillery Tank Squadrons still applies. Rolling Bombardment: when an Iron Warriors Barrage weapon fires at a point within 12" of a friendly Iron Warriors unit, an attack that would scatter 2D6" scatters only D6"; after resolving it, place an Ironfire Marker at the final centre point of the Blast marker. Walking the Fire: when another Iron Warriors Barrage weapon fires, it does not scatter if the initial target point is within 18" of an Ironfire Marker AND within 6" of a friendly Iron Warriors unit; afterwards place a new Ironfire Marker at the centre of the Blast marker. If an Iron Warriors Shooting phase ends without a new Ironfire Marker being placed, remove all Ironfire Markers. Ride the Ironfire: Iron Warriors Infantry units with at least one model within 6" of an Ironfire Marker gain Fearless while at least one model remains within 6" of a marker. LIMITATIONS - The army's Warlord must possess the Master of the Legion special rule. The army must contain at least one unit equipped with a Barrage weapon. If the mission designates an Attacker and a Defender, the Iron Warriors must be the Attacker. The army may not include a Fortification.</description>
@@ -43623,16 +43075,16 @@ Afterwards the squad may not enter Overwatch, may not make Return Fire or Stand 
 <description>One Dominator Cohort may be selected as Perturabo's personal retinue. If selected in this manner, the squad does not occupy an Elites choice and Perturabo and the Dominator Cohort count as a single HQ selection. (Select it in Perturabo's Primarch Retinue.)</description>
 </rule>
 <rule id="8d61-66bd-1c1d-5a6c" name="Cybernetica Cortex" hidden="false">
-<description>Battle-Automata controlled by a Cybernetica Cortex: see the Cybernetica Cortex rules of the Mechanicum army list (not reproduced in Forces of the Legions).</description>
+<description>Battle-Automata controlled by a Cybernetica Cortex: use the Cybernetica Cortex rules of the ProHammer Mechanicum document. Perturabo carries a Cortex Controller for his Iron Circle retinue.</description>
 </rule>
 <rule id="e087-532e-5312-6e29" name="Reactor Blast" hidden="false">
-<description>See the Reactor Blast rule of the Mechanicum army list (when the model is removed as a casualty, nearby units may suffer hits). Not reproduced in Forces of the Legions.</description>
+<description>Use the Reactor Blast rule of the ProHammer Mechanicum document.</description>
 </rule>
 <rule id="9ef6-fd88-1841-8362" name="Moving Bulwark" hidden="false">
 <description>If a Domitar-Ferrum is in base contact with another friendly Domitar-Ferrum from the same unit, both models improve their Invulnerable Save from 5+ to 4+. The bonus is lost as soon as they are no longer in base contact.</description>
 </rule>
 <rule id="2eea-4140-3e0f-cf4a" name="Iron Warriors Construct" hidden="false">
-<description>The Iron Circle counts as an Iron Warriors unit for rules which specifically affect friendly Iron Warriors units. It does not possess the Legiones Astartes special rule.</description>
+<description>The Iron Circle counts as an Iron Warriors unit for rules which specifically affect friendly Iron Warriors units. It does not possess the Legiones Astartes special rule. The Iron Circle may only be selected as Perturabo's Primarch Retinue.</description>
 </rule>
 <rule id="3510-d70f-076c-1cfe" name="Feel No Pain (5+)" hidden="false">
 <description>This model has the Feel No Pain special rule with a 5+ roll.</description>
@@ -43677,7 +43129,7 @@ Afterwards the squad may not enter Overwatch, may not make Return Fire or Stand 
 <description>Kroeger may select one Legion Command Squad as his retinue. The Command Squad does not occupy a separate Force Organisation slot and Kroeger and the squad count as a single HQ selection.</description>
 </rule>
 <rule id="4d5d-d679-e8a3-5297" name="Siege Specialists" hidden="false">
-<description>Perturabo has the Siege Specialists special rule (no rule text is given in Forces of the Legions - see the author's question).</description>
+<description>A unit using Siege Specialists receives +1 to Armour Penetration rolls against Fortifications, Buildings, Bunkers and other immobile structures with an Armour Value. All other abilities use their normal ProHammer rules.</description>
 </rule>
 <rule id="1d10-9df4-8041-9c91" name="Lord of Iron" hidden="false">
 <description>Perturabo has the Tank Hunters and Siege Specialists special rules. Any unit Perturabo has joined gains Tank Hunters while he remains part of that unit.</description>
