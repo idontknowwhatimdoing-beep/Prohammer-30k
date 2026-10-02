@@ -1466,6 +1466,37 @@ def unclash(root):
             se.append(w)
 
 
+# capacity per transport: (models, Terminator Armour allowed and counting as two models)
+CAPACITY = {"Legion Rhino Armoured Carrier": (10, False), "Legion Drop Pod": (10, True),
+            "Anvillus Pattern Dreadclaw Drop Pod": (10, True), "Land Raider Phobos": (10, True),
+            "Land Raider Proteus": (10, True), "Legion Spartan Assault Tank": (25, True),
+            "Damocles Command Rhino": (6, True)}
+
+
+def transport_capacity(root):
+    """Errors on a Dedicated Transport taken by a unit that does not fit inside it (Terminator Armour counts as
+    two models; a Rhino cannot carry Terminator Armour)."""
+    ids = {T[n]: (n, cap, tda) for n, (cap, tda) in CAPACITY.items() if n in T}
+    for lk in root.iter("entryLink"):
+        if lk.get("targetId") not in ids or lk.find("modifiers/modifier[@type='add']") is not None:
+            continue
+        name, cap, tda_ok = ids[lk.get("targetId")]
+        taken = cond(lk.get("targetId"), "parent", "atLeast", 1)
+        any_tda = any_of(*has_tda("parent"))
+        mods = [modifier("add", "error", f"Too many models for a {name} (capacity {cap}).",
+                         groups=[all_of(taken, cond("model", "parent", "greaterThan", cap))])]
+        if tda_ok:
+            g = all_of(taken, cond("model", "parent", "greaterThan", cap // 2))
+            g.append(wrap("conditionGroups", [any_tda]))
+            mods.append(modifier("add", "error", f"Terminator Armour counts as two models: too many for a {name} "
+                                                 f"(capacity {cap}).", groups=[g]))
+        else:
+            g = all_of(taken)
+            g.append(wrap("conditionGroups", [any_tda]))
+            mods.append(modifier("add", "error", f"A {name} cannot carry models in Terminator Armour.", groups=[g]))
+        add_to(lk, "modifiers", mods)
+
+
 # ---------------------------------------------------------------- assemble
 def extend(units_by_name, shared):
     """Attach retinues / new options to slice-1 entries and return (root units, shared entries)."""

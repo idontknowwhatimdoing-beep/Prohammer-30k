@@ -2316,7 +2316,39 @@
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a536-5af6-42f1-e1f7" type="max" />
 </constraints>
 <entryLinks>
-<entryLink id="433d-bc57-9eba-532b" name="Damocles Command Rhino" hidden="false" collective="false" import="true" targetId="8183-f830-b66f-3752" type="selectionEntry" />
+<entryLink id="433d-bc57-9eba-532b" name="Damocles Command Rhino" hidden="false" collective="false" import="true" targetId="8183-f830-b66f-3752" type="selectionEntry">
+<modifiers>
+<modifier type="add" field="error" value="Too many models for a Damocles Command Rhino (capacity 6).">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8183-f830-b66f-3752" type="atLeast" />
+<condition field="selections" scope="parent" value="6" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="add" field="error" value="Terminator Armour counts as two models: too many for a Damocles Command Rhino (capacity 6).">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8183-f830-b66f-3752" type="atLeast" />
+<condition field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
+</conditions>
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a6a2-abea-01b2-ad81" type="atLeast" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d900-78c3-2b10-8f9c" type="atLeast" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0656-5d6b-29bb-1441" type="atLeast" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+</modifiers>
+</entryLink>
 </entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
@@ -5595,15 +5627,139 @@
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ca2e-e80d-cfbe-83ff" type="max" />
 </constraints>
 <entryLinks>
-<entryLink id="862d-d69c-b1c0-73a6" name="Legion Rhino Armoured Carrier" hidden="false" collective="false" import="true" targetId="9572-f669-c5f3-b3d0" type="selectionEntry" />
-<entryLink id="628f-ee2f-3e88-824a" name="Legion Drop Pod" hidden="false" collective="false" import="true" targetId="4e1c-55bd-1f6c-9584" type="selectionEntry" />
-<entryLink id="75cd-c92a-2ade-4270" name="Anvillus Pattern Dreadclaw Drop Pod" hidden="false" collective="false" import="true" targetId="2bad-68df-db1e-95d9" type="selectionEntry" />
+<entryLink id="862d-d69c-b1c0-73a6" name="Legion Rhino Armoured Carrier" hidden="false" collective="false" import="true" targetId="9572-f669-c5f3-b3d0" type="selectionEntry">
+<modifiers>
+<modifier type="add" field="error" value="Too many models for a Legion Rhino Armoured Carrier (capacity 10).">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9572-f669-c5f3-b3d0" type="atLeast" />
+<condition field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="add" field="error" value="A Legion Rhino Armoured Carrier cannot carry models in Terminator Armour.">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9572-f669-c5f3-b3d0" type="atLeast" />
+</conditions>
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a6a2-abea-01b2-ad81" type="atLeast" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d900-78c3-2b10-8f9c" type="atLeast" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0656-5d6b-29bb-1441" type="atLeast" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+</modifiers>
+</entryLink>
+<entryLink id="628f-ee2f-3e88-824a" name="Legion Drop Pod" hidden="false" collective="false" import="true" targetId="4e1c-55bd-1f6c-9584" type="selectionEntry">
+<modifiers>
+<modifier type="add" field="error" value="Too many models for a Legion Drop Pod (capacity 10).">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4e1c-55bd-1f6c-9584" type="atLeast" />
+<condition field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="add" field="error" value="Terminator Armour counts as two models: too many for a Legion Drop Pod (capacity 10).">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4e1c-55bd-1f6c-9584" type="atLeast" />
+<condition field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
+</conditions>
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a6a2-abea-01b2-ad81" type="atLeast" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d900-78c3-2b10-8f9c" type="atLeast" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0656-5d6b-29bb-1441" type="atLeast" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+</modifiers>
+</entryLink>
+<entryLink id="75cd-c92a-2ade-4270" name="Anvillus Pattern Dreadclaw Drop Pod" hidden="false" collective="false" import="true" targetId="2bad-68df-db1e-95d9" type="selectionEntry">
+<modifiers>
+<modifier type="add" field="error" value="Too many models for a Anvillus Pattern Dreadclaw Drop Pod (capacity 10).">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2bad-68df-db1e-95d9" type="atLeast" />
+<condition field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="add" field="error" value="Terminator Armour counts as two models: too many for a Anvillus Pattern Dreadclaw Drop Pod (capacity 10).">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2bad-68df-db1e-95d9" type="atLeast" />
+<condition field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
+</conditions>
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a6a2-abea-01b2-ad81" type="atLeast" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d900-78c3-2b10-8f9c" type="atLeast" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0656-5d6b-29bb-1441" type="atLeast" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+</modifiers>
+</entryLink>
 <entryLink id="084c-96bc-5a05-8f98" name="Land Raider Phobos (Armoured Spearhead)" hidden="false" collective="false" import="true" targetId="368f-8af7-ba1b-d0f6" type="selectionEntry">
 <modifiers>
 <modifier type="set" field="hidden" value="true">
 <conditions>
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9128-42be-bd92-cf70" type="lessThan" />
 </conditions>
+</modifier>
+<modifier type="add" field="error" value="Too many models for a Land Raider Phobos (capacity 10).">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="368f-8af7-ba1b-d0f6" type="atLeast" />
+<condition field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="add" field="error" value="Terminator Armour counts as two models: too many for a Land Raider Phobos (capacity 10).">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="368f-8af7-ba1b-d0f6" type="atLeast" />
+<condition field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
+</conditions>
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a6a2-abea-01b2-ad81" type="atLeast" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d900-78c3-2b10-8f9c" type="atLeast" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0656-5d6b-29bb-1441" type="atLeast" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</conditionGroup>
+</conditionGroups>
 </modifier>
 </modifiers>
 <constraints>
@@ -6598,14 +6754,107 @@
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="68c1-9c3f-d366-33b1" type="max" />
 </constraints>
 <entryLinks>
-<entryLink id="ae6d-6061-a009-2022" name="Land Raider Phobos" hidden="false" collective="false" import="true" targetId="368f-8af7-ba1b-d0f6" type="selectionEntry" />
-<entryLink id="003b-42be-0b9c-5701" name="Land Raider Proteus" hidden="false" collective="false" import="true" targetId="fbad-f14e-6366-7f2a" type="selectionEntry" />
+<entryLink id="ae6d-6061-a009-2022" name="Land Raider Phobos" hidden="false" collective="false" import="true" targetId="368f-8af7-ba1b-d0f6" type="selectionEntry">
+<modifiers>
+<modifier type="add" field="error" value="Too many models for a Land Raider Phobos (capacity 10).">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="368f-8af7-ba1b-d0f6" type="atLeast" />
+<condition field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="add" field="error" value="Terminator Armour counts as two models: too many for a Land Raider Phobos (capacity 10).">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="368f-8af7-ba1b-d0f6" type="atLeast" />
+<condition field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
+</conditions>
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a6a2-abea-01b2-ad81" type="atLeast" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d900-78c3-2b10-8f9c" type="atLeast" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0656-5d6b-29bb-1441" type="atLeast" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+</modifiers>
+</entryLink>
+<entryLink id="003b-42be-0b9c-5701" name="Land Raider Proteus" hidden="false" collective="false" import="true" targetId="fbad-f14e-6366-7f2a" type="selectionEntry">
+<modifiers>
+<modifier type="add" field="error" value="Too many models for a Land Raider Proteus (capacity 10).">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fbad-f14e-6366-7f2a" type="atLeast" />
+<condition field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="add" field="error" value="Terminator Armour counts as two models: too many for a Land Raider Proteus (capacity 10).">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fbad-f14e-6366-7f2a" type="atLeast" />
+<condition field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
+</conditions>
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a6a2-abea-01b2-ad81" type="atLeast" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d900-78c3-2b10-8f9c" type="atLeast" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0656-5d6b-29bb-1441" type="atLeast" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+</modifiers>
+</entryLink>
 <entryLink id="8289-c8d5-352c-67bc" name="Legion Drop Pod (Orbital Assault)" hidden="false" collective="false" import="true" targetId="4e1c-55bd-1f6c-9584" type="selectionEntry">
 <modifiers>
 <modifier type="set" field="hidden" value="true">
 <conditions>
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b68d-b2ba-b013-f6c1" type="lessThan" />
 </conditions>
+</modifier>
+<modifier type="add" field="error" value="Too many models for a Legion Drop Pod (capacity 10).">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4e1c-55bd-1f6c-9584" type="atLeast" />
+<condition field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="add" field="error" value="Terminator Armour counts as two models: too many for a Legion Drop Pod (capacity 10).">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4e1c-55bd-1f6c-9584" type="atLeast" />
+<condition field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
+</conditions>
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a6a2-abea-01b2-ad81" type="atLeast" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d900-78c3-2b10-8f9c" type="atLeast" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0656-5d6b-29bb-1441" type="atLeast" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</conditionGroup>
+</conditionGroups>
 </modifier>
 </modifiers>
 <constraints>
@@ -6618,6 +6867,35 @@
 <conditions>
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b68d-b2ba-b013-f6c1" type="lessThan" />
 </conditions>
+</modifier>
+<modifier type="add" field="error" value="Too many models for a Anvillus Pattern Dreadclaw Drop Pod (capacity 10).">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2bad-68df-db1e-95d9" type="atLeast" />
+<condition field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="add" field="error" value="Terminator Armour counts as two models: too many for a Anvillus Pattern Dreadclaw Drop Pod (capacity 10).">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2bad-68df-db1e-95d9" type="atLeast" />
+<condition field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
+</conditions>
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a6a2-abea-01b2-ad81" type="atLeast" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d900-78c3-2b10-8f9c" type="atLeast" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0656-5d6b-29bb-1441" type="atLeast" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</conditionGroup>
+</conditionGroups>
 </modifier>
 </modifiers>
 <constraints>
@@ -7238,13 +7516,73 @@
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="da9e-ea87-c891-fb77" type="max" />
 </constraints>
 <entryLinks>
-<entryLink id="0f46-d46e-bb30-d282" name="Legion Rhino Armoured Carrier" hidden="false" collective="false" import="true" targetId="9572-f669-c5f3-b3d0" type="selectionEntry" />
+<entryLink id="0f46-d46e-bb30-d282" name="Legion Rhino Armoured Carrier" hidden="false" collective="false" import="true" targetId="9572-f669-c5f3-b3d0" type="selectionEntry">
+<modifiers>
+<modifier type="add" field="error" value="Too many models for a Legion Rhino Armoured Carrier (capacity 10).">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9572-f669-c5f3-b3d0" type="atLeast" />
+<condition field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="add" field="error" value="A Legion Rhino Armoured Carrier cannot carry models in Terminator Armour.">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9572-f669-c5f3-b3d0" type="atLeast" />
+</conditions>
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a6a2-abea-01b2-ad81" type="atLeast" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d900-78c3-2b10-8f9c" type="atLeast" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0656-5d6b-29bb-1441" type="atLeast" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+</modifiers>
+</entryLink>
 <entryLink id="dca3-c890-82d4-3e28" name="Legion Drop Pod (Orbital Assault)" hidden="false" collective="false" import="true" targetId="4e1c-55bd-1f6c-9584" type="selectionEntry">
 <modifiers>
 <modifier type="set" field="hidden" value="true">
 <conditions>
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b68d-b2ba-b013-f6c1" type="lessThan" />
 </conditions>
+</modifier>
+<modifier type="add" field="error" value="Too many models for a Legion Drop Pod (capacity 10).">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4e1c-55bd-1f6c-9584" type="atLeast" />
+<condition field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="add" field="error" value="Terminator Armour counts as two models: too many for a Legion Drop Pod (capacity 10).">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4e1c-55bd-1f6c-9584" type="atLeast" />
+<condition field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
+</conditions>
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a6a2-abea-01b2-ad81" type="atLeast" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d900-78c3-2b10-8f9c" type="atLeast" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0656-5d6b-29bb-1441" type="atLeast" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</conditionGroup>
+</conditionGroups>
 </modifier>
 </modifiers>
 <constraints>
@@ -7258,6 +7596,35 @@
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b68d-b2ba-b013-f6c1" type="lessThan" />
 </conditions>
 </modifier>
+<modifier type="add" field="error" value="Too many models for a Anvillus Pattern Dreadclaw Drop Pod (capacity 10).">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2bad-68df-db1e-95d9" type="atLeast" />
+<condition field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="add" field="error" value="Terminator Armour counts as two models: too many for a Anvillus Pattern Dreadclaw Drop Pod (capacity 10).">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2bad-68df-db1e-95d9" type="atLeast" />
+<condition field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
+</conditions>
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a6a2-abea-01b2-ad81" type="atLeast" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d900-78c3-2b10-8f9c" type="atLeast" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0656-5d6b-29bb-1441" type="atLeast" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</conditionGroup>
+</conditionGroups>
+</modifier>
 </modifiers>
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2795-2c7e-4c91-1426" type="max" />
@@ -7269,6 +7636,35 @@
 <conditions>
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9128-42be-bd92-cf70" type="lessThan" />
 </conditions>
+</modifier>
+<modifier type="add" field="error" value="Too many models for a Land Raider Phobos (capacity 10).">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="368f-8af7-ba1b-d0f6" type="atLeast" />
+<condition field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="add" field="error" value="Terminator Armour counts as two models: too many for a Land Raider Phobos (capacity 10).">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="368f-8af7-ba1b-d0f6" type="atLeast" />
+<condition field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
+</conditions>
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a6a2-abea-01b2-ad81" type="atLeast" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d900-78c3-2b10-8f9c" type="atLeast" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0656-5d6b-29bb-1441" type="atLeast" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</conditionGroup>
+</conditionGroups>
 </modifier>
 </modifiers>
 <constraints>
@@ -8970,10 +9366,137 @@ LIMITATIONS - Loyalist Raven Guard Detachments only. No units with the Immobile 
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6fea-3431-e45a-2545" type="max" />
 </constraints>
 <entryLinks>
-<entryLink id="d168-412e-dde3-f818" name="Legion Rhino Armoured Carrier" hidden="false" collective="false" import="true" targetId="9572-f669-c5f3-b3d0" type="selectionEntry" />
-<entryLink id="8380-2506-e6de-0d1f" name="Legion Drop Pod" hidden="false" collective="false" import="true" targetId="4e1c-55bd-1f6c-9584" type="selectionEntry" />
-<entryLink id="30f8-b232-efa6-081a" name="Anvillus Pattern Dreadclaw Drop Pod" hidden="false" collective="false" import="true" targetId="2bad-68df-db1e-95d9" type="selectionEntry" />
-<entryLink id="b689-ca9c-155d-a0d7" name="Land Raider Phobos" hidden="false" collective="false" import="true" targetId="368f-8af7-ba1b-d0f6" type="selectionEntry" />
+<entryLink id="d168-412e-dde3-f818" name="Legion Rhino Armoured Carrier" hidden="false" collective="false" import="true" targetId="9572-f669-c5f3-b3d0" type="selectionEntry">
+<modifiers>
+<modifier type="add" field="error" value="Too many models for a Legion Rhino Armoured Carrier (capacity 10).">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9572-f669-c5f3-b3d0" type="atLeast" />
+<condition field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="add" field="error" value="A Legion Rhino Armoured Carrier cannot carry models in Terminator Armour.">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9572-f669-c5f3-b3d0" type="atLeast" />
+</conditions>
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a6a2-abea-01b2-ad81" type="atLeast" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d900-78c3-2b10-8f9c" type="atLeast" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0656-5d6b-29bb-1441" type="atLeast" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+</modifiers>
+</entryLink>
+<entryLink id="8380-2506-e6de-0d1f" name="Legion Drop Pod" hidden="false" collective="false" import="true" targetId="4e1c-55bd-1f6c-9584" type="selectionEntry">
+<modifiers>
+<modifier type="add" field="error" value="Too many models for a Legion Drop Pod (capacity 10).">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4e1c-55bd-1f6c-9584" type="atLeast" />
+<condition field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="add" field="error" value="Terminator Armour counts as two models: too many for a Legion Drop Pod (capacity 10).">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4e1c-55bd-1f6c-9584" type="atLeast" />
+<condition field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
+</conditions>
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a6a2-abea-01b2-ad81" type="atLeast" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d900-78c3-2b10-8f9c" type="atLeast" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0656-5d6b-29bb-1441" type="atLeast" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+</modifiers>
+</entryLink>
+<entryLink id="30f8-b232-efa6-081a" name="Anvillus Pattern Dreadclaw Drop Pod" hidden="false" collective="false" import="true" targetId="2bad-68df-db1e-95d9" type="selectionEntry">
+<modifiers>
+<modifier type="add" field="error" value="Too many models for a Anvillus Pattern Dreadclaw Drop Pod (capacity 10).">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2bad-68df-db1e-95d9" type="atLeast" />
+<condition field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="add" field="error" value="Terminator Armour counts as two models: too many for a Anvillus Pattern Dreadclaw Drop Pod (capacity 10).">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2bad-68df-db1e-95d9" type="atLeast" />
+<condition field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
+</conditions>
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a6a2-abea-01b2-ad81" type="atLeast" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d900-78c3-2b10-8f9c" type="atLeast" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0656-5d6b-29bb-1441" type="atLeast" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+</modifiers>
+</entryLink>
+<entryLink id="b689-ca9c-155d-a0d7" name="Land Raider Phobos" hidden="false" collective="false" import="true" targetId="368f-8af7-ba1b-d0f6" type="selectionEntry">
+<modifiers>
+<modifier type="add" field="error" value="Too many models for a Land Raider Phobos (capacity 10).">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="368f-8af7-ba1b-d0f6" type="atLeast" />
+<condition field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="add" field="error" value="Terminator Armour counts as two models: too many for a Land Raider Phobos (capacity 10).">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="368f-8af7-ba1b-d0f6" type="atLeast" />
+<condition field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
+</conditions>
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a6a2-abea-01b2-ad81" type="atLeast" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d900-78c3-2b10-8f9c" type="atLeast" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0656-5d6b-29bb-1441" type="atLeast" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+</modifiers>
+</entryLink>
 </entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
@@ -9638,10 +10161,138 @@ LIMITATIONS - Loyalist Raven Guard Detachments only. No units with the Immobile 
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="077b-a009-d365-6625" type="max" />
 </constraints>
 <entryLinks>
-<entryLink id="ccb1-8731-5084-6e96" name="Land Raider Phobos" hidden="false" collective="false" import="true" targetId="368f-8af7-ba1b-d0f6" type="selectionEntry" />
-<entryLink id="3530-e601-c1d0-099d" name="Land Raider Proteus" hidden="false" collective="false" import="true" targetId="fbad-f14e-6366-7f2a" type="selectionEntry" />
-<entryLink id="d4c0-1414-495f-773c" name="Anvillus Pattern Dreadclaw Drop Pod" hidden="false" collective="false" import="true" targetId="2bad-68df-db1e-95d9" type="selectionEntry" />
-<entryLink id="1bf4-326a-e9a7-6f1a" name="Legion Spartan Assault Tank" hidden="false" collective="false" import="true" targetId="2070-31bc-7598-b201" type="selectionEntry" />
+<entryLink id="ccb1-8731-5084-6e96" name="Land Raider Phobos" hidden="false" collective="false" import="true" targetId="368f-8af7-ba1b-d0f6" type="selectionEntry">
+<modifiers>
+<modifier type="add" field="error" value="Too many models for a Land Raider Phobos (capacity 10).">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="368f-8af7-ba1b-d0f6" type="atLeast" />
+<condition field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="add" field="error" value="Terminator Armour counts as two models: too many for a Land Raider Phobos (capacity 10).">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="368f-8af7-ba1b-d0f6" type="atLeast" />
+<condition field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
+</conditions>
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a6a2-abea-01b2-ad81" type="atLeast" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d900-78c3-2b10-8f9c" type="atLeast" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0656-5d6b-29bb-1441" type="atLeast" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+</modifiers>
+</entryLink>
+<entryLink id="3530-e601-c1d0-099d" name="Land Raider Proteus" hidden="false" collective="false" import="true" targetId="fbad-f14e-6366-7f2a" type="selectionEntry">
+<modifiers>
+<modifier type="add" field="error" value="Too many models for a Land Raider Proteus (capacity 10).">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fbad-f14e-6366-7f2a" type="atLeast" />
+<condition field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="add" field="error" value="Terminator Armour counts as two models: too many for a Land Raider Proteus (capacity 10).">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fbad-f14e-6366-7f2a" type="atLeast" />
+<condition field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
+</conditions>
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a6a2-abea-01b2-ad81" type="atLeast" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d900-78c3-2b10-8f9c" type="atLeast" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0656-5d6b-29bb-1441" type="atLeast" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+</modifiers>
+</entryLink>
+<entryLink id="d4c0-1414-495f-773c" name="Anvillus Pattern Dreadclaw Drop Pod" hidden="false" collective="false" import="true" targetId="2bad-68df-db1e-95d9" type="selectionEntry">
+<modifiers>
+<modifier type="add" field="error" value="Too many models for a Anvillus Pattern Dreadclaw Drop Pod (capacity 10).">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2bad-68df-db1e-95d9" type="atLeast" />
+<condition field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="add" field="error" value="Terminator Armour counts as two models: too many for a Anvillus Pattern Dreadclaw Drop Pod (capacity 10).">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2bad-68df-db1e-95d9" type="atLeast" />
+<condition field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
+</conditions>
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a6a2-abea-01b2-ad81" type="atLeast" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d900-78c3-2b10-8f9c" type="atLeast" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0656-5d6b-29bb-1441" type="atLeast" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+</modifiers>
+</entryLink>
+<entryLink id="1bf4-326a-e9a7-6f1a" name="Legion Spartan Assault Tank" hidden="false" collective="false" import="true" targetId="2070-31bc-7598-b201" type="selectionEntry">
+<modifiers>
+<modifier type="add" field="error" value="Too many models for a Legion Spartan Assault Tank (capacity 25).">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2070-31bc-7598-b201" type="atLeast" />
+<condition field="selections" scope="parent" value="25" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="add" field="error" value="Terminator Armour counts as two models: too many for a Legion Spartan Assault Tank (capacity 25).">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2070-31bc-7598-b201" type="atLeast" />
+<condition field="selections" scope="parent" value="12" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
+</conditions>
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a6a2-abea-01b2-ad81" type="atLeast" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d900-78c3-2b10-8f9c" type="atLeast" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0656-5d6b-29bb-1441" type="atLeast" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+</modifiers>
+</entryLink>
 </entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
@@ -10213,10 +10864,137 @@ LIMITATIONS - Loyalist Raven Guard Detachments only. No units with the Immobile 
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6b19-f680-d91d-86cd" type="max" />
 </constraints>
 <entryLinks>
-<entryLink id="90f5-6d9b-fe0c-34a6" name="Legion Rhino Armoured Carrier" hidden="false" collective="false" import="true" targetId="9572-f669-c5f3-b3d0" type="selectionEntry" />
-<entryLink id="204e-e3c9-c684-1472" name="Legion Drop Pod" hidden="false" collective="false" import="true" targetId="4e1c-55bd-1f6c-9584" type="selectionEntry" />
-<entryLink id="5eed-08f0-7775-f842" name="Anvillus Pattern Dreadclaw Drop Pod" hidden="false" collective="false" import="true" targetId="2bad-68df-db1e-95d9" type="selectionEntry" />
-<entryLink id="8a28-7862-e58d-8f16" name="Land Raider Phobos" hidden="false" collective="false" import="true" targetId="368f-8af7-ba1b-d0f6" type="selectionEntry" />
+<entryLink id="90f5-6d9b-fe0c-34a6" name="Legion Rhino Armoured Carrier" hidden="false" collective="false" import="true" targetId="9572-f669-c5f3-b3d0" type="selectionEntry">
+<modifiers>
+<modifier type="add" field="error" value="Too many models for a Legion Rhino Armoured Carrier (capacity 10).">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9572-f669-c5f3-b3d0" type="atLeast" />
+<condition field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="add" field="error" value="A Legion Rhino Armoured Carrier cannot carry models in Terminator Armour.">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9572-f669-c5f3-b3d0" type="atLeast" />
+</conditions>
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a6a2-abea-01b2-ad81" type="atLeast" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d900-78c3-2b10-8f9c" type="atLeast" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0656-5d6b-29bb-1441" type="atLeast" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+</modifiers>
+</entryLink>
+<entryLink id="204e-e3c9-c684-1472" name="Legion Drop Pod" hidden="false" collective="false" import="true" targetId="4e1c-55bd-1f6c-9584" type="selectionEntry">
+<modifiers>
+<modifier type="add" field="error" value="Too many models for a Legion Drop Pod (capacity 10).">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4e1c-55bd-1f6c-9584" type="atLeast" />
+<condition field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="add" field="error" value="Terminator Armour counts as two models: too many for a Legion Drop Pod (capacity 10).">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4e1c-55bd-1f6c-9584" type="atLeast" />
+<condition field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
+</conditions>
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a6a2-abea-01b2-ad81" type="atLeast" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d900-78c3-2b10-8f9c" type="atLeast" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0656-5d6b-29bb-1441" type="atLeast" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+</modifiers>
+</entryLink>
+<entryLink id="5eed-08f0-7775-f842" name="Anvillus Pattern Dreadclaw Drop Pod" hidden="false" collective="false" import="true" targetId="2bad-68df-db1e-95d9" type="selectionEntry">
+<modifiers>
+<modifier type="add" field="error" value="Too many models for a Anvillus Pattern Dreadclaw Drop Pod (capacity 10).">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2bad-68df-db1e-95d9" type="atLeast" />
+<condition field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="add" field="error" value="Terminator Armour counts as two models: too many for a Anvillus Pattern Dreadclaw Drop Pod (capacity 10).">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2bad-68df-db1e-95d9" type="atLeast" />
+<condition field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
+</conditions>
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a6a2-abea-01b2-ad81" type="atLeast" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d900-78c3-2b10-8f9c" type="atLeast" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0656-5d6b-29bb-1441" type="atLeast" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+</modifiers>
+</entryLink>
+<entryLink id="8a28-7862-e58d-8f16" name="Land Raider Phobos" hidden="false" collective="false" import="true" targetId="368f-8af7-ba1b-d0f6" type="selectionEntry">
+<modifiers>
+<modifier type="add" field="error" value="Too many models for a Land Raider Phobos (capacity 10).">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="368f-8af7-ba1b-d0f6" type="atLeast" />
+<condition field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="add" field="error" value="Terminator Armour counts as two models: too many for a Land Raider Phobos (capacity 10).">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="368f-8af7-ba1b-d0f6" type="atLeast" />
+<condition field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
+</conditions>
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a6a2-abea-01b2-ad81" type="atLeast" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d900-78c3-2b10-8f9c" type="atLeast" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0656-5d6b-29bb-1441" type="atLeast" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+</modifiers>
+</entryLink>
 </entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
@@ -10571,7 +11349,38 @@ LIMITATIONS - Loyalist Raven Guard Detachments only. No units with the Immobile 
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2df5-2cf8-46d0-de81" type="max" />
 </constraints>
 <entryLinks>
-<entryLink id="09e4-5974-368b-d3a7" name="Legion Rhino Armoured Carrier" hidden="false" collective="false" import="true" targetId="9572-f669-c5f3-b3d0" type="selectionEntry" />
+<entryLink id="09e4-5974-368b-d3a7" name="Legion Rhino Armoured Carrier" hidden="false" collective="false" import="true" targetId="9572-f669-c5f3-b3d0" type="selectionEntry">
+<modifiers>
+<modifier type="add" field="error" value="Too many models for a Legion Rhino Armoured Carrier (capacity 10).">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9572-f669-c5f3-b3d0" type="atLeast" />
+<condition field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="add" field="error" value="A Legion Rhino Armoured Carrier cannot carry models in Terminator Armour.">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9572-f669-c5f3-b3d0" type="atLeast" />
+</conditions>
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a6a2-abea-01b2-ad81" type="atLeast" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d900-78c3-2b10-8f9c" type="atLeast" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0656-5d6b-29bb-1441" type="atLeast" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+</modifiers>
+</entryLink>
 </entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
@@ -10935,7 +11744,38 @@ LIMITATIONS - Loyalist Raven Guard Detachments only. No units with the Immobile 
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="459e-0ada-9425-8bbd" type="max" />
 </constraints>
 <entryLinks>
-<entryLink id="fb8f-1a5a-3fdb-9478" name="Legion Rhino Armoured Carrier" hidden="false" collective="false" import="true" targetId="9572-f669-c5f3-b3d0" type="selectionEntry" />
+<entryLink id="fb8f-1a5a-3fdb-9478" name="Legion Rhino Armoured Carrier" hidden="false" collective="false" import="true" targetId="9572-f669-c5f3-b3d0" type="selectionEntry">
+<modifiers>
+<modifier type="add" field="error" value="Too many models for a Legion Rhino Armoured Carrier (capacity 10).">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9572-f669-c5f3-b3d0" type="atLeast" />
+<condition field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="add" field="error" value="A Legion Rhino Armoured Carrier cannot carry models in Terminator Armour.">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9572-f669-c5f3-b3d0" type="atLeast" />
+</conditions>
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a6a2-abea-01b2-ad81" type="atLeast" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d900-78c3-2b10-8f9c" type="atLeast" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0656-5d6b-29bb-1441" type="atLeast" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+</modifiers>
+</entryLink>
 </entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
@@ -11299,7 +12139,38 @@ LIMITATIONS - Loyalist Raven Guard Detachments only. No units with the Immobile 
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d228-14a6-c05a-64c4" type="max" />
 </constraints>
 <entryLinks>
-<entryLink id="1391-3545-4096-d255" name="Legion Rhino Armoured Carrier" hidden="false" collective="false" import="true" targetId="9572-f669-c5f3-b3d0" type="selectionEntry" />
+<entryLink id="1391-3545-4096-d255" name="Legion Rhino Armoured Carrier" hidden="false" collective="false" import="true" targetId="9572-f669-c5f3-b3d0" type="selectionEntry">
+<modifiers>
+<modifier type="add" field="error" value="Too many models for a Legion Rhino Armoured Carrier (capacity 10).">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9572-f669-c5f3-b3d0" type="atLeast" />
+<condition field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="add" field="error" value="A Legion Rhino Armoured Carrier cannot carry models in Terminator Armour.">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9572-f669-c5f3-b3d0" type="atLeast" />
+</conditions>
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a6a2-abea-01b2-ad81" type="atLeast" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d900-78c3-2b10-8f9c" type="atLeast" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0656-5d6b-29bb-1441" type="atLeast" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+</modifiers>
+</entryLink>
 </entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
@@ -11700,6 +12571,35 @@ LIMITATIONS - Loyalist Raven Guard Detachments only. No units with the Immobile 
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b68d-b2ba-b013-f6c1" type="lessThan" />
 </conditions>
 </modifier>
+<modifier type="add" field="error" value="Too many models for a Legion Drop Pod (capacity 10).">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4e1c-55bd-1f6c-9584" type="atLeast" />
+<condition field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="add" field="error" value="Terminator Armour counts as two models: too many for a Legion Drop Pod (capacity 10).">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4e1c-55bd-1f6c-9584" type="atLeast" />
+<condition field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
+</conditions>
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a6a2-abea-01b2-ad81" type="atLeast" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d900-78c3-2b10-8f9c" type="atLeast" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0656-5d6b-29bb-1441" type="atLeast" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</conditionGroup>
+</conditionGroups>
+</modifier>
 </modifiers>
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5bb1-041f-8d76-3af7" type="max" />
@@ -11711,6 +12611,35 @@ LIMITATIONS - Loyalist Raven Guard Detachments only. No units with the Immobile 
 <conditions>
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b68d-b2ba-b013-f6c1" type="lessThan" />
 </conditions>
+</modifier>
+<modifier type="add" field="error" value="Too many models for a Anvillus Pattern Dreadclaw Drop Pod (capacity 10).">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2bad-68df-db1e-95d9" type="atLeast" />
+<condition field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="add" field="error" value="Terminator Armour counts as two models: too many for a Anvillus Pattern Dreadclaw Drop Pod (capacity 10).">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2bad-68df-db1e-95d9" type="atLeast" />
+<condition field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
+</conditions>
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a6a2-abea-01b2-ad81" type="atLeast" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d900-78c3-2b10-8f9c" type="atLeast" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0656-5d6b-29bb-1441" type="atLeast" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</conditionGroup>
+</conditionGroups>
 </modifier>
 </modifiers>
 <constraints>
@@ -12072,6 +13001,35 @@ LIMITATIONS - Loyalist Raven Guard Detachments only. No units with the Immobile 
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b68d-b2ba-b013-f6c1" type="lessThan" />
 </conditions>
 </modifier>
+<modifier type="add" field="error" value="Too many models for a Legion Drop Pod (capacity 10).">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4e1c-55bd-1f6c-9584" type="atLeast" />
+<condition field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="add" field="error" value="Terminator Armour counts as two models: too many for a Legion Drop Pod (capacity 10).">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4e1c-55bd-1f6c-9584" type="atLeast" />
+<condition field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
+</conditions>
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a6a2-abea-01b2-ad81" type="atLeast" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d900-78c3-2b10-8f9c" type="atLeast" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0656-5d6b-29bb-1441" type="atLeast" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</conditionGroup>
+</conditionGroups>
+</modifier>
 </modifiers>
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4be5-2d77-5ab7-9cdf" type="max" />
@@ -12083,6 +13041,35 @@ LIMITATIONS - Loyalist Raven Guard Detachments only. No units with the Immobile 
 <conditions>
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b68d-b2ba-b013-f6c1" type="lessThan" />
 </conditions>
+</modifier>
+<modifier type="add" field="error" value="Too many models for a Anvillus Pattern Dreadclaw Drop Pod (capacity 10).">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2bad-68df-db1e-95d9" type="atLeast" />
+<condition field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="add" field="error" value="Terminator Armour counts as two models: too many for a Anvillus Pattern Dreadclaw Drop Pod (capacity 10).">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2bad-68df-db1e-95d9" type="atLeast" />
+<condition field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
+</conditions>
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a6a2-abea-01b2-ad81" type="atLeast" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d900-78c3-2b10-8f9c" type="atLeast" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0656-5d6b-29bb-1441" type="atLeast" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</conditionGroup>
+</conditionGroups>
 </modifier>
 </modifiers>
 <constraints>
@@ -13012,15 +13999,139 @@ LIMITATIONS - Loyalist Raven Guard Detachments only. No units with the Immobile 
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b4e2-f56c-7c30-c7b3" type="max" />
 </constraints>
 <entryLinks>
-<entryLink id="3b26-112c-062d-ec87" name="Legion Rhino Armoured Carrier" hidden="false" collective="false" import="true" targetId="9572-f669-c5f3-b3d0" type="selectionEntry" />
-<entryLink id="4912-f930-63ee-aaa2" name="Legion Drop Pod" hidden="false" collective="false" import="true" targetId="4e1c-55bd-1f6c-9584" type="selectionEntry" />
-<entryLink id="d120-90fb-648b-6944" name="Anvillus Pattern Dreadclaw Drop Pod" hidden="false" collective="false" import="true" targetId="2bad-68df-db1e-95d9" type="selectionEntry" />
+<entryLink id="3b26-112c-062d-ec87" name="Legion Rhino Armoured Carrier" hidden="false" collective="false" import="true" targetId="9572-f669-c5f3-b3d0" type="selectionEntry">
+<modifiers>
+<modifier type="add" field="error" value="Too many models for a Legion Rhino Armoured Carrier (capacity 10).">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9572-f669-c5f3-b3d0" type="atLeast" />
+<condition field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="add" field="error" value="A Legion Rhino Armoured Carrier cannot carry models in Terminator Armour.">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9572-f669-c5f3-b3d0" type="atLeast" />
+</conditions>
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a6a2-abea-01b2-ad81" type="atLeast" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d900-78c3-2b10-8f9c" type="atLeast" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0656-5d6b-29bb-1441" type="atLeast" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+</modifiers>
+</entryLink>
+<entryLink id="4912-f930-63ee-aaa2" name="Legion Drop Pod" hidden="false" collective="false" import="true" targetId="4e1c-55bd-1f6c-9584" type="selectionEntry">
+<modifiers>
+<modifier type="add" field="error" value="Too many models for a Legion Drop Pod (capacity 10).">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4e1c-55bd-1f6c-9584" type="atLeast" />
+<condition field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="add" field="error" value="Terminator Armour counts as two models: too many for a Legion Drop Pod (capacity 10).">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4e1c-55bd-1f6c-9584" type="atLeast" />
+<condition field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
+</conditions>
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a6a2-abea-01b2-ad81" type="atLeast" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d900-78c3-2b10-8f9c" type="atLeast" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0656-5d6b-29bb-1441" type="atLeast" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+</modifiers>
+</entryLink>
+<entryLink id="d120-90fb-648b-6944" name="Anvillus Pattern Dreadclaw Drop Pod" hidden="false" collective="false" import="true" targetId="2bad-68df-db1e-95d9" type="selectionEntry">
+<modifiers>
+<modifier type="add" field="error" value="Too many models for a Anvillus Pattern Dreadclaw Drop Pod (capacity 10).">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2bad-68df-db1e-95d9" type="atLeast" />
+<condition field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="add" field="error" value="Terminator Armour counts as two models: too many for a Anvillus Pattern Dreadclaw Drop Pod (capacity 10).">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2bad-68df-db1e-95d9" type="atLeast" />
+<condition field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
+</conditions>
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a6a2-abea-01b2-ad81" type="atLeast" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d900-78c3-2b10-8f9c" type="atLeast" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0656-5d6b-29bb-1441" type="atLeast" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+</modifiers>
+</entryLink>
 <entryLink id="be26-4428-3bdb-b227" name="Land Raider Phobos (Armoured Spearhead)" hidden="false" collective="false" import="true" targetId="368f-8af7-ba1b-d0f6" type="selectionEntry">
 <modifiers>
 <modifier type="set" field="hidden" value="true">
 <conditions>
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9128-42be-bd92-cf70" type="lessThan" />
 </conditions>
+</modifier>
+<modifier type="add" field="error" value="Too many models for a Land Raider Phobos (capacity 10).">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="368f-8af7-ba1b-d0f6" type="atLeast" />
+<condition field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="add" field="error" value="Terminator Armour counts as two models: too many for a Land Raider Phobos (capacity 10).">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="368f-8af7-ba1b-d0f6" type="atLeast" />
+<condition field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
+</conditions>
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a6a2-abea-01b2-ad81" type="atLeast" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d900-78c3-2b10-8f9c" type="atLeast" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0656-5d6b-29bb-1441" type="atLeast" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</conditionGroup>
+</conditionGroups>
 </modifier>
 </modifiers>
 <constraints>
@@ -15350,13 +16461,73 @@ LIMITATIONS - Loyalist Raven Guard Detachments only. No units with the Immobile 
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4ea6-7556-e525-974a" type="max" />
 </constraints>
 <entryLinks>
-<entryLink id="8a1a-6096-51e2-f650" name="Legion Rhino Armoured Carrier" hidden="false" collective="false" import="true" targetId="9572-f669-c5f3-b3d0" type="selectionEntry" />
+<entryLink id="8a1a-6096-51e2-f650" name="Legion Rhino Armoured Carrier" hidden="false" collective="false" import="true" targetId="9572-f669-c5f3-b3d0" type="selectionEntry">
+<modifiers>
+<modifier type="add" field="error" value="Too many models for a Legion Rhino Armoured Carrier (capacity 10).">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9572-f669-c5f3-b3d0" type="atLeast" />
+<condition field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="add" field="error" value="A Legion Rhino Armoured Carrier cannot carry models in Terminator Armour.">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9572-f669-c5f3-b3d0" type="atLeast" />
+</conditions>
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a6a2-abea-01b2-ad81" type="atLeast" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d900-78c3-2b10-8f9c" type="atLeast" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0656-5d6b-29bb-1441" type="atLeast" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+</modifiers>
+</entryLink>
 <entryLink id="2a09-5624-bc97-a7ca" name="Legion Drop Pod (Orbital Assault)" hidden="false" collective="false" import="true" targetId="4e1c-55bd-1f6c-9584" type="selectionEntry">
 <modifiers>
 <modifier type="set" field="hidden" value="true">
 <conditions>
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b68d-b2ba-b013-f6c1" type="lessThan" />
 </conditions>
+</modifier>
+<modifier type="add" field="error" value="Too many models for a Legion Drop Pod (capacity 10).">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4e1c-55bd-1f6c-9584" type="atLeast" />
+<condition field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="add" field="error" value="Terminator Armour counts as two models: too many for a Legion Drop Pod (capacity 10).">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4e1c-55bd-1f6c-9584" type="atLeast" />
+<condition field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
+</conditions>
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a6a2-abea-01b2-ad81" type="atLeast" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d900-78c3-2b10-8f9c" type="atLeast" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0656-5d6b-29bb-1441" type="atLeast" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</conditionGroup>
+</conditionGroups>
 </modifier>
 </modifiers>
 <constraints>
@@ -15370,6 +16541,35 @@ LIMITATIONS - Loyalist Raven Guard Detachments only. No units with the Immobile 
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b68d-b2ba-b013-f6c1" type="lessThan" />
 </conditions>
 </modifier>
+<modifier type="add" field="error" value="Too many models for a Anvillus Pattern Dreadclaw Drop Pod (capacity 10).">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2bad-68df-db1e-95d9" type="atLeast" />
+<condition field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="add" field="error" value="Terminator Armour counts as two models: too many for a Anvillus Pattern Dreadclaw Drop Pod (capacity 10).">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2bad-68df-db1e-95d9" type="atLeast" />
+<condition field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
+</conditions>
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a6a2-abea-01b2-ad81" type="atLeast" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d900-78c3-2b10-8f9c" type="atLeast" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0656-5d6b-29bb-1441" type="atLeast" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</conditionGroup>
+</conditionGroups>
+</modifier>
 </modifiers>
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="157c-7a72-2cd7-dcd7" type="max" />
@@ -15381,6 +16581,35 @@ LIMITATIONS - Loyalist Raven Guard Detachments only. No units with the Immobile 
 <conditions>
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9128-42be-bd92-cf70" type="lessThan" />
 </conditions>
+</modifier>
+<modifier type="add" field="error" value="Too many models for a Land Raider Phobos (capacity 10).">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="368f-8af7-ba1b-d0f6" type="atLeast" />
+<condition field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="add" field="error" value="Terminator Armour counts as two models: too many for a Land Raider Phobos (capacity 10).">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="368f-8af7-ba1b-d0f6" type="atLeast" />
+<condition field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
+</conditions>
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a6a2-abea-01b2-ad81" type="atLeast" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d900-78c3-2b10-8f9c" type="atLeast" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0656-5d6b-29bb-1441" type="atLeast" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</conditionGroup>
+</conditionGroups>
 </modifier>
 </modifiers>
 <constraints>
@@ -15394,6 +16623,35 @@ LIMITATIONS - Loyalist Raven Guard Detachments only. No units with the Immobile 
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9cc7-3aa4-2c47-553c" type="lessThan" />
 </conditions>
 </modifier>
+<modifier type="add" field="error" value="Too many models for a Legion Drop Pod (capacity 10).">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4e1c-55bd-1f6c-9584" type="atLeast" />
+<condition field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="add" field="error" value="Terminator Armour counts as two models: too many for a Legion Drop Pod (capacity 10).">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4e1c-55bd-1f6c-9584" type="atLeast" />
+<condition field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
+</conditions>
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a6a2-abea-01b2-ad81" type="atLeast" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d900-78c3-2b10-8f9c" type="atLeast" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0656-5d6b-29bb-1441" type="atLeast" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</conditionGroup>
+</conditionGroups>
+</modifier>
 </modifiers>
 </entryLink>
 <entryLink id="8e24-5281-06f4-7c9f" name="Anvillus Pattern Dreadclaw Drop Pod (Decapitation Strike)" hidden="false" collective="false" import="true" targetId="2bad-68df-db1e-95d9" type="selectionEntry">
@@ -15402,6 +16660,35 @@ LIMITATIONS - Loyalist Raven Guard Detachments only. No units with the Immobile 
 <conditions>
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9cc7-3aa4-2c47-553c" type="lessThan" />
 </conditions>
+</modifier>
+<modifier type="add" field="error" value="Too many models for a Anvillus Pattern Dreadclaw Drop Pod (capacity 10).">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2bad-68df-db1e-95d9" type="atLeast" />
+<condition field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="add" field="error" value="Terminator Armour counts as two models: too many for a Anvillus Pattern Dreadclaw Drop Pod (capacity 10).">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2bad-68df-db1e-95d9" type="atLeast" />
+<condition field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
+</conditions>
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a6a2-abea-01b2-ad81" type="atLeast" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d900-78c3-2b10-8f9c" type="atLeast" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0656-5d6b-29bb-1441" type="atLeast" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</conditionGroup>
+</conditionGroups>
 </modifier>
 </modifiers>
 </entryLink>
@@ -22949,10 +24236,138 @@ LIMITATIONS - Loyalist Raven Guard Detachments only. No units with the Immobile 
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1c82-a174-dd2a-0420" type="max" />
 </constraints>
 <entryLinks>
-<entryLink id="f542-bd72-40b8-6a4f" name="Land Raider Phobos" hidden="false" collective="false" import="true" targetId="368f-8af7-ba1b-d0f6" type="selectionEntry" />
-<entryLink id="627b-e734-f0bc-853f" name="Land Raider Proteus" hidden="false" collective="false" import="true" targetId="fbad-f14e-6366-7f2a" type="selectionEntry" />
-<entryLink id="2c74-ac35-7840-8eec" name="Anvillus Pattern Dreadclaw Drop Pod" hidden="false" collective="false" import="true" targetId="2bad-68df-db1e-95d9" type="selectionEntry" />
-<entryLink id="cca1-6183-2853-73fa" name="Legion Spartan Assault Tank" hidden="false" collective="false" import="true" targetId="2070-31bc-7598-b201" type="selectionEntry" />
+<entryLink id="f542-bd72-40b8-6a4f" name="Land Raider Phobos" hidden="false" collective="false" import="true" targetId="368f-8af7-ba1b-d0f6" type="selectionEntry">
+<modifiers>
+<modifier type="add" field="error" value="Too many models for a Land Raider Phobos (capacity 10).">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="368f-8af7-ba1b-d0f6" type="atLeast" />
+<condition field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="add" field="error" value="Terminator Armour counts as two models: too many for a Land Raider Phobos (capacity 10).">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="368f-8af7-ba1b-d0f6" type="atLeast" />
+<condition field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
+</conditions>
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a6a2-abea-01b2-ad81" type="atLeast" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d900-78c3-2b10-8f9c" type="atLeast" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0656-5d6b-29bb-1441" type="atLeast" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+</modifiers>
+</entryLink>
+<entryLink id="627b-e734-f0bc-853f" name="Land Raider Proteus" hidden="false" collective="false" import="true" targetId="fbad-f14e-6366-7f2a" type="selectionEntry">
+<modifiers>
+<modifier type="add" field="error" value="Too many models for a Land Raider Proteus (capacity 10).">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fbad-f14e-6366-7f2a" type="atLeast" />
+<condition field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="add" field="error" value="Terminator Armour counts as two models: too many for a Land Raider Proteus (capacity 10).">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fbad-f14e-6366-7f2a" type="atLeast" />
+<condition field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
+</conditions>
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a6a2-abea-01b2-ad81" type="atLeast" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d900-78c3-2b10-8f9c" type="atLeast" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0656-5d6b-29bb-1441" type="atLeast" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+</modifiers>
+</entryLink>
+<entryLink id="2c74-ac35-7840-8eec" name="Anvillus Pattern Dreadclaw Drop Pod" hidden="false" collective="false" import="true" targetId="2bad-68df-db1e-95d9" type="selectionEntry">
+<modifiers>
+<modifier type="add" field="error" value="Too many models for a Anvillus Pattern Dreadclaw Drop Pod (capacity 10).">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2bad-68df-db1e-95d9" type="atLeast" />
+<condition field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="add" field="error" value="Terminator Armour counts as two models: too many for a Anvillus Pattern Dreadclaw Drop Pod (capacity 10).">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2bad-68df-db1e-95d9" type="atLeast" />
+<condition field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
+</conditions>
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a6a2-abea-01b2-ad81" type="atLeast" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d900-78c3-2b10-8f9c" type="atLeast" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0656-5d6b-29bb-1441" type="atLeast" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+</modifiers>
+</entryLink>
+<entryLink id="cca1-6183-2853-73fa" name="Legion Spartan Assault Tank" hidden="false" collective="false" import="true" targetId="2070-31bc-7598-b201" type="selectionEntry">
+<modifiers>
+<modifier type="add" field="error" value="Too many models for a Legion Spartan Assault Tank (capacity 25).">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2070-31bc-7598-b201" type="atLeast" />
+<condition field="selections" scope="parent" value="25" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="add" field="error" value="Terminator Armour counts as two models: too many for a Legion Spartan Assault Tank (capacity 25).">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2070-31bc-7598-b201" type="atLeast" />
+<condition field="selections" scope="parent" value="12" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
+</conditions>
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a6a2-abea-01b2-ad81" type="atLeast" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d900-78c3-2b10-8f9c" type="atLeast" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0656-5d6b-29bb-1441" type="atLeast" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+</modifiers>
+</entryLink>
 </entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
@@ -24644,15 +26059,139 @@ LIMITATIONS - Loyalist Raven Guard Detachments only. No units with the Immobile 
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9cd9-e207-07b5-9fdd" type="max" />
 </constraints>
 <entryLinks>
-<entryLink id="37b9-830b-0cbe-4751" name="Legion Rhino Armoured Carrier" hidden="false" collective="false" import="true" targetId="9572-f669-c5f3-b3d0" type="selectionEntry" />
-<entryLink id="8933-1c49-3fa9-fad0" name="Legion Drop Pod" hidden="false" collective="false" import="true" targetId="4e1c-55bd-1f6c-9584" type="selectionEntry" />
-<entryLink id="22ff-70af-2d9e-56a4" name="Land Raider Phobos" hidden="false" collective="false" import="true" targetId="368f-8af7-ba1b-d0f6" type="selectionEntry" />
+<entryLink id="37b9-830b-0cbe-4751" name="Legion Rhino Armoured Carrier" hidden="false" collective="false" import="true" targetId="9572-f669-c5f3-b3d0" type="selectionEntry">
+<modifiers>
+<modifier type="add" field="error" value="Too many models for a Legion Rhino Armoured Carrier (capacity 10).">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9572-f669-c5f3-b3d0" type="atLeast" />
+<condition field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="add" field="error" value="A Legion Rhino Armoured Carrier cannot carry models in Terminator Armour.">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9572-f669-c5f3-b3d0" type="atLeast" />
+</conditions>
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a6a2-abea-01b2-ad81" type="atLeast" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d900-78c3-2b10-8f9c" type="atLeast" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0656-5d6b-29bb-1441" type="atLeast" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+</modifiers>
+</entryLink>
+<entryLink id="8933-1c49-3fa9-fad0" name="Legion Drop Pod" hidden="false" collective="false" import="true" targetId="4e1c-55bd-1f6c-9584" type="selectionEntry">
+<modifiers>
+<modifier type="add" field="error" value="Too many models for a Legion Drop Pod (capacity 10).">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4e1c-55bd-1f6c-9584" type="atLeast" />
+<condition field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="add" field="error" value="Terminator Armour counts as two models: too many for a Legion Drop Pod (capacity 10).">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4e1c-55bd-1f6c-9584" type="atLeast" />
+<condition field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
+</conditions>
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a6a2-abea-01b2-ad81" type="atLeast" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d900-78c3-2b10-8f9c" type="atLeast" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0656-5d6b-29bb-1441" type="atLeast" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+</modifiers>
+</entryLink>
+<entryLink id="22ff-70af-2d9e-56a4" name="Land Raider Phobos" hidden="false" collective="false" import="true" targetId="368f-8af7-ba1b-d0f6" type="selectionEntry">
+<modifiers>
+<modifier type="add" field="error" value="Too many models for a Land Raider Phobos (capacity 10).">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="368f-8af7-ba1b-d0f6" type="atLeast" />
+<condition field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="add" field="error" value="Terminator Armour counts as two models: too many for a Land Raider Phobos (capacity 10).">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="368f-8af7-ba1b-d0f6" type="atLeast" />
+<condition field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
+</conditions>
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a6a2-abea-01b2-ad81" type="atLeast" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d900-78c3-2b10-8f9c" type="atLeast" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0656-5d6b-29bb-1441" type="atLeast" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+</modifiers>
+</entryLink>
 <entryLink id="88bb-bf7f-0ac6-5ec4" name="Anvillus Pattern Dreadclaw Drop Pod (Orbital Assault)" hidden="false" collective="false" import="true" targetId="2bad-68df-db1e-95d9" type="selectionEntry">
 <modifiers>
 <modifier type="set" field="hidden" value="true">
 <conditions>
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b68d-b2ba-b013-f6c1" type="lessThan" />
 </conditions>
+</modifier>
+<modifier type="add" field="error" value="Too many models for a Anvillus Pattern Dreadclaw Drop Pod (capacity 10).">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2bad-68df-db1e-95d9" type="atLeast" />
+<condition field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="add" field="error" value="Terminator Armour counts as two models: too many for a Anvillus Pattern Dreadclaw Drop Pod (capacity 10).">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2bad-68df-db1e-95d9" type="atLeast" />
+<condition field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
+</conditions>
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a6a2-abea-01b2-ad81" type="atLeast" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d900-78c3-2b10-8f9c" type="atLeast" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0656-5d6b-29bb-1441" type="atLeast" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</conditionGroup>
+</conditionGroups>
 </modifier>
 </modifiers>
 <constraints>
@@ -26469,10 +28008,137 @@ LIMITATIONS - Loyalist Raven Guard Detachments only. No units with the Immobile 
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="32c8-8406-bd30-560a" type="max" />
 </constraints>
 <entryLinks>
-<entryLink id="1fd5-e4a3-2904-9202" name="Legion Rhino Armoured Carrier" hidden="false" collective="false" import="true" targetId="9572-f669-c5f3-b3d0" type="selectionEntry" />
-<entryLink id="8016-0ba5-24c1-3eb3" name="Legion Drop Pod" hidden="false" collective="false" import="true" targetId="4e1c-55bd-1f6c-9584" type="selectionEntry" />
-<entryLink id="d766-91c0-aa2b-33a6" name="Anvillus Pattern Dreadclaw Drop Pod" hidden="false" collective="false" import="true" targetId="2bad-68df-db1e-95d9" type="selectionEntry" />
-<entryLink id="f98e-6d53-19dd-392c" name="Land Raider Phobos" hidden="false" collective="false" import="true" targetId="368f-8af7-ba1b-d0f6" type="selectionEntry" />
+<entryLink id="1fd5-e4a3-2904-9202" name="Legion Rhino Armoured Carrier" hidden="false" collective="false" import="true" targetId="9572-f669-c5f3-b3d0" type="selectionEntry">
+<modifiers>
+<modifier type="add" field="error" value="Too many models for a Legion Rhino Armoured Carrier (capacity 10).">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9572-f669-c5f3-b3d0" type="atLeast" />
+<condition field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="add" field="error" value="A Legion Rhino Armoured Carrier cannot carry models in Terminator Armour.">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9572-f669-c5f3-b3d0" type="atLeast" />
+</conditions>
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a6a2-abea-01b2-ad81" type="atLeast" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d900-78c3-2b10-8f9c" type="atLeast" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0656-5d6b-29bb-1441" type="atLeast" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+</modifiers>
+</entryLink>
+<entryLink id="8016-0ba5-24c1-3eb3" name="Legion Drop Pod" hidden="false" collective="false" import="true" targetId="4e1c-55bd-1f6c-9584" type="selectionEntry">
+<modifiers>
+<modifier type="add" field="error" value="Too many models for a Legion Drop Pod (capacity 10).">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4e1c-55bd-1f6c-9584" type="atLeast" />
+<condition field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="add" field="error" value="Terminator Armour counts as two models: too many for a Legion Drop Pod (capacity 10).">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4e1c-55bd-1f6c-9584" type="atLeast" />
+<condition field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
+</conditions>
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a6a2-abea-01b2-ad81" type="atLeast" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d900-78c3-2b10-8f9c" type="atLeast" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0656-5d6b-29bb-1441" type="atLeast" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+</modifiers>
+</entryLink>
+<entryLink id="d766-91c0-aa2b-33a6" name="Anvillus Pattern Dreadclaw Drop Pod" hidden="false" collective="false" import="true" targetId="2bad-68df-db1e-95d9" type="selectionEntry">
+<modifiers>
+<modifier type="add" field="error" value="Too many models for a Anvillus Pattern Dreadclaw Drop Pod (capacity 10).">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2bad-68df-db1e-95d9" type="atLeast" />
+<condition field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="add" field="error" value="Terminator Armour counts as two models: too many for a Anvillus Pattern Dreadclaw Drop Pod (capacity 10).">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2bad-68df-db1e-95d9" type="atLeast" />
+<condition field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
+</conditions>
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a6a2-abea-01b2-ad81" type="atLeast" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d900-78c3-2b10-8f9c" type="atLeast" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0656-5d6b-29bb-1441" type="atLeast" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+</modifiers>
+</entryLink>
+<entryLink id="f98e-6d53-19dd-392c" name="Land Raider Phobos" hidden="false" collective="false" import="true" targetId="368f-8af7-ba1b-d0f6" type="selectionEntry">
+<modifiers>
+<modifier type="add" field="error" value="Too many models for a Land Raider Phobos (capacity 10).">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="368f-8af7-ba1b-d0f6" type="atLeast" />
+<condition field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="add" field="error" value="Terminator Armour counts as two models: too many for a Land Raider Phobos (capacity 10).">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="368f-8af7-ba1b-d0f6" type="atLeast" />
+<condition field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
+</conditions>
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a6a2-abea-01b2-ad81" type="atLeast" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d900-78c3-2b10-8f9c" type="atLeast" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0656-5d6b-29bb-1441" type="atLeast" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+</modifiers>
+</entryLink>
 </entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
@@ -27830,9 +29496,105 @@ LIMITATIONS - Loyalist Raven Guard Detachments only. No units with the Immobile 
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8a37-681f-0e09-687d" type="max" />
 </constraints>
 <entryLinks>
-<entryLink id="8e7d-d8b0-ecdf-7e29" name="Land Raider Phobos" hidden="false" collective="false" import="true" targetId="368f-8af7-ba1b-d0f6" type="selectionEntry" />
-<entryLink id="b701-aa24-286a-5c18" name="Land Raider Proteus" hidden="false" collective="false" import="true" targetId="fbad-f14e-6366-7f2a" type="selectionEntry" />
-<entryLink id="3d61-2546-6b46-1f08" name="Anvillus Pattern Dreadclaw Drop Pod" hidden="false" collective="false" import="true" targetId="2bad-68df-db1e-95d9" type="selectionEntry" />
+<entryLink id="8e7d-d8b0-ecdf-7e29" name="Land Raider Phobos" hidden="false" collective="false" import="true" targetId="368f-8af7-ba1b-d0f6" type="selectionEntry">
+<modifiers>
+<modifier type="add" field="error" value="Too many models for a Land Raider Phobos (capacity 10).">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="368f-8af7-ba1b-d0f6" type="atLeast" />
+<condition field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="add" field="error" value="Terminator Armour counts as two models: too many for a Land Raider Phobos (capacity 10).">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="368f-8af7-ba1b-d0f6" type="atLeast" />
+<condition field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
+</conditions>
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a6a2-abea-01b2-ad81" type="atLeast" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d900-78c3-2b10-8f9c" type="atLeast" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0656-5d6b-29bb-1441" type="atLeast" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+</modifiers>
+</entryLink>
+<entryLink id="b701-aa24-286a-5c18" name="Land Raider Proteus" hidden="false" collective="false" import="true" targetId="fbad-f14e-6366-7f2a" type="selectionEntry">
+<modifiers>
+<modifier type="add" field="error" value="Too many models for a Land Raider Proteus (capacity 10).">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fbad-f14e-6366-7f2a" type="atLeast" />
+<condition field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="add" field="error" value="Terminator Armour counts as two models: too many for a Land Raider Proteus (capacity 10).">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fbad-f14e-6366-7f2a" type="atLeast" />
+<condition field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
+</conditions>
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a6a2-abea-01b2-ad81" type="atLeast" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d900-78c3-2b10-8f9c" type="atLeast" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0656-5d6b-29bb-1441" type="atLeast" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+</modifiers>
+</entryLink>
+<entryLink id="3d61-2546-6b46-1f08" name="Anvillus Pattern Dreadclaw Drop Pod" hidden="false" collective="false" import="true" targetId="2bad-68df-db1e-95d9" type="selectionEntry">
+<modifiers>
+<modifier type="add" field="error" value="Too many models for a Anvillus Pattern Dreadclaw Drop Pod (capacity 10).">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2bad-68df-db1e-95d9" type="atLeast" />
+<condition field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="add" field="error" value="Terminator Armour counts as two models: too many for a Anvillus Pattern Dreadclaw Drop Pod (capacity 10).">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2bad-68df-db1e-95d9" type="atLeast" />
+<condition field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
+</conditions>
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a6a2-abea-01b2-ad81" type="atLeast" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d900-78c3-2b10-8f9c" type="atLeast" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0656-5d6b-29bb-1441" type="atLeast" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+</modifiers>
+</entryLink>
 </entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
@@ -29643,10 +31405,137 @@ LIMITATIONS - Loyalist Raven Guard Detachments only. No units with the Immobile 
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="33c9-112e-dc2d-42f2" type="max" />
 </constraints>
 <entryLinks>
-<entryLink id="4da3-12ba-b88c-3194" name="Legion Rhino Armoured Carrier" hidden="false" collective="false" import="true" targetId="9572-f669-c5f3-b3d0" type="selectionEntry" />
-<entryLink id="93e0-9a9f-0c88-bafa" name="Legion Drop Pod" hidden="false" collective="false" import="true" targetId="4e1c-55bd-1f6c-9584" type="selectionEntry" />
-<entryLink id="9bf6-c369-b150-1651" name="Anvillus Pattern Dreadclaw Drop Pod" hidden="false" collective="false" import="true" targetId="2bad-68df-db1e-95d9" type="selectionEntry" />
-<entryLink id="2d66-1599-c09e-c25f" name="Land Raider Phobos" hidden="false" collective="false" import="true" targetId="368f-8af7-ba1b-d0f6" type="selectionEntry" />
+<entryLink id="4da3-12ba-b88c-3194" name="Legion Rhino Armoured Carrier" hidden="false" collective="false" import="true" targetId="9572-f669-c5f3-b3d0" type="selectionEntry">
+<modifiers>
+<modifier type="add" field="error" value="Too many models for a Legion Rhino Armoured Carrier (capacity 10).">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9572-f669-c5f3-b3d0" type="atLeast" />
+<condition field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="add" field="error" value="A Legion Rhino Armoured Carrier cannot carry models in Terminator Armour.">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9572-f669-c5f3-b3d0" type="atLeast" />
+</conditions>
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a6a2-abea-01b2-ad81" type="atLeast" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d900-78c3-2b10-8f9c" type="atLeast" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0656-5d6b-29bb-1441" type="atLeast" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+</modifiers>
+</entryLink>
+<entryLink id="93e0-9a9f-0c88-bafa" name="Legion Drop Pod" hidden="false" collective="false" import="true" targetId="4e1c-55bd-1f6c-9584" type="selectionEntry">
+<modifiers>
+<modifier type="add" field="error" value="Too many models for a Legion Drop Pod (capacity 10).">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4e1c-55bd-1f6c-9584" type="atLeast" />
+<condition field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="add" field="error" value="Terminator Armour counts as two models: too many for a Legion Drop Pod (capacity 10).">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4e1c-55bd-1f6c-9584" type="atLeast" />
+<condition field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
+</conditions>
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a6a2-abea-01b2-ad81" type="atLeast" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d900-78c3-2b10-8f9c" type="atLeast" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0656-5d6b-29bb-1441" type="atLeast" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+</modifiers>
+</entryLink>
+<entryLink id="9bf6-c369-b150-1651" name="Anvillus Pattern Dreadclaw Drop Pod" hidden="false" collective="false" import="true" targetId="2bad-68df-db1e-95d9" type="selectionEntry">
+<modifiers>
+<modifier type="add" field="error" value="Too many models for a Anvillus Pattern Dreadclaw Drop Pod (capacity 10).">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2bad-68df-db1e-95d9" type="atLeast" />
+<condition field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="add" field="error" value="Terminator Armour counts as two models: too many for a Anvillus Pattern Dreadclaw Drop Pod (capacity 10).">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2bad-68df-db1e-95d9" type="atLeast" />
+<condition field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
+</conditions>
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a6a2-abea-01b2-ad81" type="atLeast" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d900-78c3-2b10-8f9c" type="atLeast" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0656-5d6b-29bb-1441" type="atLeast" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+</modifiers>
+</entryLink>
+<entryLink id="2d66-1599-c09e-c25f" name="Land Raider Phobos" hidden="false" collective="false" import="true" targetId="368f-8af7-ba1b-d0f6" type="selectionEntry">
+<modifiers>
+<modifier type="add" field="error" value="Too many models for a Land Raider Phobos (capacity 10).">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="368f-8af7-ba1b-d0f6" type="atLeast" />
+<condition field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="add" field="error" value="Terminator Armour counts as two models: too many for a Land Raider Phobos (capacity 10).">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="368f-8af7-ba1b-d0f6" type="atLeast" />
+<condition field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
+</conditions>
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a6a2-abea-01b2-ad81" type="atLeast" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d900-78c3-2b10-8f9c" type="atLeast" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0656-5d6b-29bb-1441" type="atLeast" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+</modifiers>
+</entryLink>
 </entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
@@ -31004,9 +32893,105 @@ LIMITATIONS - Loyalist Raven Guard Detachments only. No units with the Immobile 
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0889-cec2-81a8-ab00" type="max" />
 </constraints>
 <entryLinks>
-<entryLink id="043b-6395-7150-7aac" name="Land Raider Phobos" hidden="false" collective="false" import="true" targetId="368f-8af7-ba1b-d0f6" type="selectionEntry" />
-<entryLink id="8c5a-e099-67f3-8d77" name="Land Raider Proteus" hidden="false" collective="false" import="true" targetId="fbad-f14e-6366-7f2a" type="selectionEntry" />
-<entryLink id="5356-bcd3-5dd6-74e0" name="Anvillus Pattern Dreadclaw Drop Pod" hidden="false" collective="false" import="true" targetId="2bad-68df-db1e-95d9" type="selectionEntry" />
+<entryLink id="043b-6395-7150-7aac" name="Land Raider Phobos" hidden="false" collective="false" import="true" targetId="368f-8af7-ba1b-d0f6" type="selectionEntry">
+<modifiers>
+<modifier type="add" field="error" value="Too many models for a Land Raider Phobos (capacity 10).">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="368f-8af7-ba1b-d0f6" type="atLeast" />
+<condition field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="add" field="error" value="Terminator Armour counts as two models: too many for a Land Raider Phobos (capacity 10).">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="368f-8af7-ba1b-d0f6" type="atLeast" />
+<condition field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
+</conditions>
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a6a2-abea-01b2-ad81" type="atLeast" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d900-78c3-2b10-8f9c" type="atLeast" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0656-5d6b-29bb-1441" type="atLeast" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+</modifiers>
+</entryLink>
+<entryLink id="8c5a-e099-67f3-8d77" name="Land Raider Proteus" hidden="false" collective="false" import="true" targetId="fbad-f14e-6366-7f2a" type="selectionEntry">
+<modifiers>
+<modifier type="add" field="error" value="Too many models for a Land Raider Proteus (capacity 10).">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fbad-f14e-6366-7f2a" type="atLeast" />
+<condition field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="add" field="error" value="Terminator Armour counts as two models: too many for a Land Raider Proteus (capacity 10).">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fbad-f14e-6366-7f2a" type="atLeast" />
+<condition field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
+</conditions>
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a6a2-abea-01b2-ad81" type="atLeast" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d900-78c3-2b10-8f9c" type="atLeast" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0656-5d6b-29bb-1441" type="atLeast" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+</modifiers>
+</entryLink>
+<entryLink id="5356-bcd3-5dd6-74e0" name="Anvillus Pattern Dreadclaw Drop Pod" hidden="false" collective="false" import="true" targetId="2bad-68df-db1e-95d9" type="selectionEntry">
+<modifiers>
+<modifier type="add" field="error" value="Too many models for a Anvillus Pattern Dreadclaw Drop Pod (capacity 10).">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2bad-68df-db1e-95d9" type="atLeast" />
+<condition field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="add" field="error" value="Terminator Armour counts as two models: too many for a Anvillus Pattern Dreadclaw Drop Pod (capacity 10).">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2bad-68df-db1e-95d9" type="atLeast" />
+<condition field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
+</conditions>
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a6a2-abea-01b2-ad81" type="atLeast" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d900-78c3-2b10-8f9c" type="atLeast" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0656-5d6b-29bb-1441" type="atLeast" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+</modifiers>
+</entryLink>
 </entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
@@ -34155,10 +36140,137 @@ LIMITATIONS - Loyalist Raven Guard Detachments only. No units with the Immobile 
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7ca0-21ac-98dc-aaf0" type="max" />
 </constraints>
 <entryLinks>
-<entryLink id="ef5d-19f7-9ff2-8dae" name="Legion Rhino Armoured Carrier" hidden="false" collective="false" import="true" targetId="9572-f669-c5f3-b3d0" type="selectionEntry" />
-<entryLink id="7406-ac9c-a12f-6308" name="Legion Drop Pod" hidden="false" collective="false" import="true" targetId="4e1c-55bd-1f6c-9584" type="selectionEntry" />
-<entryLink id="40c7-f934-5dae-1fc9" name="Anvillus Pattern Dreadclaw Drop Pod" hidden="false" collective="false" import="true" targetId="2bad-68df-db1e-95d9" type="selectionEntry" />
-<entryLink id="6fc7-0f88-d5c1-7532" name="Land Raider Phobos" hidden="false" collective="false" import="true" targetId="368f-8af7-ba1b-d0f6" type="selectionEntry" />
+<entryLink id="ef5d-19f7-9ff2-8dae" name="Legion Rhino Armoured Carrier" hidden="false" collective="false" import="true" targetId="9572-f669-c5f3-b3d0" type="selectionEntry">
+<modifiers>
+<modifier type="add" field="error" value="Too many models for a Legion Rhino Armoured Carrier (capacity 10).">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9572-f669-c5f3-b3d0" type="atLeast" />
+<condition field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="add" field="error" value="A Legion Rhino Armoured Carrier cannot carry models in Terminator Armour.">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9572-f669-c5f3-b3d0" type="atLeast" />
+</conditions>
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a6a2-abea-01b2-ad81" type="atLeast" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d900-78c3-2b10-8f9c" type="atLeast" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0656-5d6b-29bb-1441" type="atLeast" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+</modifiers>
+</entryLink>
+<entryLink id="7406-ac9c-a12f-6308" name="Legion Drop Pod" hidden="false" collective="false" import="true" targetId="4e1c-55bd-1f6c-9584" type="selectionEntry">
+<modifiers>
+<modifier type="add" field="error" value="Too many models for a Legion Drop Pod (capacity 10).">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4e1c-55bd-1f6c-9584" type="atLeast" />
+<condition field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="add" field="error" value="Terminator Armour counts as two models: too many for a Legion Drop Pod (capacity 10).">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4e1c-55bd-1f6c-9584" type="atLeast" />
+<condition field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
+</conditions>
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a6a2-abea-01b2-ad81" type="atLeast" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d900-78c3-2b10-8f9c" type="atLeast" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0656-5d6b-29bb-1441" type="atLeast" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+</modifiers>
+</entryLink>
+<entryLink id="40c7-f934-5dae-1fc9" name="Anvillus Pattern Dreadclaw Drop Pod" hidden="false" collective="false" import="true" targetId="2bad-68df-db1e-95d9" type="selectionEntry">
+<modifiers>
+<modifier type="add" field="error" value="Too many models for a Anvillus Pattern Dreadclaw Drop Pod (capacity 10).">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2bad-68df-db1e-95d9" type="atLeast" />
+<condition field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="add" field="error" value="Terminator Armour counts as two models: too many for a Anvillus Pattern Dreadclaw Drop Pod (capacity 10).">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2bad-68df-db1e-95d9" type="atLeast" />
+<condition field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
+</conditions>
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a6a2-abea-01b2-ad81" type="atLeast" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d900-78c3-2b10-8f9c" type="atLeast" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0656-5d6b-29bb-1441" type="atLeast" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+</modifiers>
+</entryLink>
+<entryLink id="6fc7-0f88-d5c1-7532" name="Land Raider Phobos" hidden="false" collective="false" import="true" targetId="368f-8af7-ba1b-d0f6" type="selectionEntry">
+<modifiers>
+<modifier type="add" field="error" value="Too many models for a Land Raider Phobos (capacity 10).">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="368f-8af7-ba1b-d0f6" type="atLeast" />
+<condition field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="add" field="error" value="Terminator Armour counts as two models: too many for a Land Raider Phobos (capacity 10).">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="368f-8af7-ba1b-d0f6" type="atLeast" />
+<condition field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
+</conditions>
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a6a2-abea-01b2-ad81" type="atLeast" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d900-78c3-2b10-8f9c" type="atLeast" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0656-5d6b-29bb-1441" type="atLeast" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+</modifiers>
+</entryLink>
 </entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
@@ -35969,10 +38081,137 @@ LIMITATIONS - Loyalist Raven Guard Detachments only. No units with the Immobile 
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5254-f9f6-1ec0-47ae" type="max" />
 </constraints>
 <entryLinks>
-<entryLink id="aa5d-cbc1-be48-7ef2" name="Legion Rhino Armoured Carrier" hidden="false" collective="false" import="true" targetId="9572-f669-c5f3-b3d0" type="selectionEntry" />
-<entryLink id="d000-cdf7-93df-171b" name="Legion Drop Pod" hidden="false" collective="false" import="true" targetId="4e1c-55bd-1f6c-9584" type="selectionEntry" />
-<entryLink id="a40d-1feb-07ea-01cd" name="Anvillus Pattern Dreadclaw Drop Pod" hidden="false" collective="false" import="true" targetId="2bad-68df-db1e-95d9" type="selectionEntry" />
-<entryLink id="98cd-5b02-4376-ca9b" name="Land Raider Phobos" hidden="false" collective="false" import="true" targetId="368f-8af7-ba1b-d0f6" type="selectionEntry" />
+<entryLink id="aa5d-cbc1-be48-7ef2" name="Legion Rhino Armoured Carrier" hidden="false" collective="false" import="true" targetId="9572-f669-c5f3-b3d0" type="selectionEntry">
+<modifiers>
+<modifier type="add" field="error" value="Too many models for a Legion Rhino Armoured Carrier (capacity 10).">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9572-f669-c5f3-b3d0" type="atLeast" />
+<condition field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="add" field="error" value="A Legion Rhino Armoured Carrier cannot carry models in Terminator Armour.">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9572-f669-c5f3-b3d0" type="atLeast" />
+</conditions>
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a6a2-abea-01b2-ad81" type="atLeast" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d900-78c3-2b10-8f9c" type="atLeast" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0656-5d6b-29bb-1441" type="atLeast" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+</modifiers>
+</entryLink>
+<entryLink id="d000-cdf7-93df-171b" name="Legion Drop Pod" hidden="false" collective="false" import="true" targetId="4e1c-55bd-1f6c-9584" type="selectionEntry">
+<modifiers>
+<modifier type="add" field="error" value="Too many models for a Legion Drop Pod (capacity 10).">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4e1c-55bd-1f6c-9584" type="atLeast" />
+<condition field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="add" field="error" value="Terminator Armour counts as two models: too many for a Legion Drop Pod (capacity 10).">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4e1c-55bd-1f6c-9584" type="atLeast" />
+<condition field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
+</conditions>
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a6a2-abea-01b2-ad81" type="atLeast" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d900-78c3-2b10-8f9c" type="atLeast" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0656-5d6b-29bb-1441" type="atLeast" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+</modifiers>
+</entryLink>
+<entryLink id="a40d-1feb-07ea-01cd" name="Anvillus Pattern Dreadclaw Drop Pod" hidden="false" collective="false" import="true" targetId="2bad-68df-db1e-95d9" type="selectionEntry">
+<modifiers>
+<modifier type="add" field="error" value="Too many models for a Anvillus Pattern Dreadclaw Drop Pod (capacity 10).">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2bad-68df-db1e-95d9" type="atLeast" />
+<condition field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="add" field="error" value="Terminator Armour counts as two models: too many for a Anvillus Pattern Dreadclaw Drop Pod (capacity 10).">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2bad-68df-db1e-95d9" type="atLeast" />
+<condition field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
+</conditions>
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a6a2-abea-01b2-ad81" type="atLeast" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d900-78c3-2b10-8f9c" type="atLeast" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0656-5d6b-29bb-1441" type="atLeast" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+</modifiers>
+</entryLink>
+<entryLink id="98cd-5b02-4376-ca9b" name="Land Raider Phobos" hidden="false" collective="false" import="true" targetId="368f-8af7-ba1b-d0f6" type="selectionEntry">
+<modifiers>
+<modifier type="add" field="error" value="Too many models for a Land Raider Phobos (capacity 10).">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="368f-8af7-ba1b-d0f6" type="atLeast" />
+<condition field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="add" field="error" value="Terminator Armour counts as two models: too many for a Land Raider Phobos (capacity 10).">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="368f-8af7-ba1b-d0f6" type="atLeast" />
+<condition field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
+</conditions>
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a6a2-abea-01b2-ad81" type="atLeast" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d900-78c3-2b10-8f9c" type="atLeast" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0656-5d6b-29bb-1441" type="atLeast" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+</modifiers>
+</entryLink>
 </entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
@@ -36449,15 +38688,139 @@ LIMITATIONS - Loyalist Raven Guard Detachments only. No units with the Immobile 
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4d5b-a193-1ece-ab12" type="max" />
 </constraints>
 <entryLinks>
-<entryLink id="b44d-b4e5-1c4b-06e7" name="Legion Rhino Armoured Carrier" hidden="false" collective="false" import="true" targetId="9572-f669-c5f3-b3d0" type="selectionEntry" />
-<entryLink id="b871-dae6-20bf-b28b" name="Legion Drop Pod" hidden="false" collective="false" import="true" targetId="4e1c-55bd-1f6c-9584" type="selectionEntry" />
-<entryLink id="cbc8-8b2f-db98-f103" name="Land Raider Phobos" hidden="false" collective="false" import="true" targetId="368f-8af7-ba1b-d0f6" type="selectionEntry" />
+<entryLink id="b44d-b4e5-1c4b-06e7" name="Legion Rhino Armoured Carrier" hidden="false" collective="false" import="true" targetId="9572-f669-c5f3-b3d0" type="selectionEntry">
+<modifiers>
+<modifier type="add" field="error" value="Too many models for a Legion Rhino Armoured Carrier (capacity 10).">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9572-f669-c5f3-b3d0" type="atLeast" />
+<condition field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="add" field="error" value="A Legion Rhino Armoured Carrier cannot carry models in Terminator Armour.">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9572-f669-c5f3-b3d0" type="atLeast" />
+</conditions>
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a6a2-abea-01b2-ad81" type="atLeast" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d900-78c3-2b10-8f9c" type="atLeast" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0656-5d6b-29bb-1441" type="atLeast" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+</modifiers>
+</entryLink>
+<entryLink id="b871-dae6-20bf-b28b" name="Legion Drop Pod" hidden="false" collective="false" import="true" targetId="4e1c-55bd-1f6c-9584" type="selectionEntry">
+<modifiers>
+<modifier type="add" field="error" value="Too many models for a Legion Drop Pod (capacity 10).">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4e1c-55bd-1f6c-9584" type="atLeast" />
+<condition field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="add" field="error" value="Terminator Armour counts as two models: too many for a Legion Drop Pod (capacity 10).">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4e1c-55bd-1f6c-9584" type="atLeast" />
+<condition field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
+</conditions>
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a6a2-abea-01b2-ad81" type="atLeast" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d900-78c3-2b10-8f9c" type="atLeast" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0656-5d6b-29bb-1441" type="atLeast" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+</modifiers>
+</entryLink>
+<entryLink id="cbc8-8b2f-db98-f103" name="Land Raider Phobos" hidden="false" collective="false" import="true" targetId="368f-8af7-ba1b-d0f6" type="selectionEntry">
+<modifiers>
+<modifier type="add" field="error" value="Too many models for a Land Raider Phobos (capacity 10).">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="368f-8af7-ba1b-d0f6" type="atLeast" />
+<condition field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="add" field="error" value="Terminator Armour counts as two models: too many for a Land Raider Phobos (capacity 10).">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="368f-8af7-ba1b-d0f6" type="atLeast" />
+<condition field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
+</conditions>
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a6a2-abea-01b2-ad81" type="atLeast" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d900-78c3-2b10-8f9c" type="atLeast" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0656-5d6b-29bb-1441" type="atLeast" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+</modifiers>
+</entryLink>
 <entryLink id="ac0b-c653-17dd-2f86" name="Anvillus Pattern Dreadclaw Drop Pod (Orbital Assault)" hidden="false" collective="false" import="true" targetId="2bad-68df-db1e-95d9" type="selectionEntry">
 <modifiers>
 <modifier type="set" field="hidden" value="true">
 <conditions>
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b68d-b2ba-b013-f6c1" type="lessThan" />
 </conditions>
+</modifier>
+<modifier type="add" field="error" value="Too many models for a Anvillus Pattern Dreadclaw Drop Pod (capacity 10).">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2bad-68df-db1e-95d9" type="atLeast" />
+<condition field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="add" field="error" value="Terminator Armour counts as two models: too many for a Anvillus Pattern Dreadclaw Drop Pod (capacity 10).">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2bad-68df-db1e-95d9" type="atLeast" />
+<condition field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
+</conditions>
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a6a2-abea-01b2-ad81" type="atLeast" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d900-78c3-2b10-8f9c" type="atLeast" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0656-5d6b-29bb-1441" type="atLeast" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</conditionGroup>
+</conditionGroups>
 </modifier>
 </modifiers>
 <constraints>
@@ -37821,9 +40184,105 @@ LIMITATIONS - Loyalist Raven Guard Detachments only. No units with the Immobile 
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e3be-86b2-d6e6-6ce1" type="max" />
 </constraints>
 <entryLinks>
-<entryLink id="a82d-6a60-80e5-3193" name="Land Raider Phobos" hidden="false" collective="false" import="true" targetId="368f-8af7-ba1b-d0f6" type="selectionEntry" />
-<entryLink id="c2ce-d355-9930-046b" name="Land Raider Proteus" hidden="false" collective="false" import="true" targetId="fbad-f14e-6366-7f2a" type="selectionEntry" />
-<entryLink id="05d9-8cc9-d42d-3ccc" name="Anvillus Pattern Dreadclaw Drop Pod" hidden="false" collective="false" import="true" targetId="2bad-68df-db1e-95d9" type="selectionEntry" />
+<entryLink id="a82d-6a60-80e5-3193" name="Land Raider Phobos" hidden="false" collective="false" import="true" targetId="368f-8af7-ba1b-d0f6" type="selectionEntry">
+<modifiers>
+<modifier type="add" field="error" value="Too many models for a Land Raider Phobos (capacity 10).">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="368f-8af7-ba1b-d0f6" type="atLeast" />
+<condition field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="add" field="error" value="Terminator Armour counts as two models: too many for a Land Raider Phobos (capacity 10).">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="368f-8af7-ba1b-d0f6" type="atLeast" />
+<condition field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
+</conditions>
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a6a2-abea-01b2-ad81" type="atLeast" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d900-78c3-2b10-8f9c" type="atLeast" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0656-5d6b-29bb-1441" type="atLeast" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+</modifiers>
+</entryLink>
+<entryLink id="c2ce-d355-9930-046b" name="Land Raider Proteus" hidden="false" collective="false" import="true" targetId="fbad-f14e-6366-7f2a" type="selectionEntry">
+<modifiers>
+<modifier type="add" field="error" value="Too many models for a Land Raider Proteus (capacity 10).">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fbad-f14e-6366-7f2a" type="atLeast" />
+<condition field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="add" field="error" value="Terminator Armour counts as two models: too many for a Land Raider Proteus (capacity 10).">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fbad-f14e-6366-7f2a" type="atLeast" />
+<condition field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
+</conditions>
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a6a2-abea-01b2-ad81" type="atLeast" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d900-78c3-2b10-8f9c" type="atLeast" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0656-5d6b-29bb-1441" type="atLeast" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+</modifiers>
+</entryLink>
+<entryLink id="05d9-8cc9-d42d-3ccc" name="Anvillus Pattern Dreadclaw Drop Pod" hidden="false" collective="false" import="true" targetId="2bad-68df-db1e-95d9" type="selectionEntry">
+<modifiers>
+<modifier type="add" field="error" value="Too many models for a Anvillus Pattern Dreadclaw Drop Pod (capacity 10).">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2bad-68df-db1e-95d9" type="atLeast" />
+<condition field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="add" field="error" value="Terminator Armour counts as two models: too many for a Anvillus Pattern Dreadclaw Drop Pod (capacity 10).">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2bad-68df-db1e-95d9" type="atLeast" />
+<condition field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
+</conditions>
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a6a2-abea-01b2-ad81" type="atLeast" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d900-78c3-2b10-8f9c" type="atLeast" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0656-5d6b-29bb-1441" type="atLeast" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+</modifiers>
+</entryLink>
 </entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
