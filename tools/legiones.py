@@ -870,6 +870,7 @@ def build(legion=None, module=None):
     for u in units + transports:
         legiones2.unclash(u)
         legiones2.transport_capacity(u)
+        legiones2.auto_model_limits(u)
     root.append(wrap("entryLinks", [
         link(uid("root", u.get("id")), u.get("id"), u.get("name")) for u in units]))
     root.append(wrap("sharedSelectionEntries", units + transports + shared_items()))

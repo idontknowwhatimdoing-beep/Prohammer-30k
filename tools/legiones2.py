@@ -1497,6 +1497,18 @@ def transport_capacity(root):
         add_to(lk, "modifiers", mods)
 
 
+def auto_model_limits(root):
+    """A model limit that an option lowers (Aeonid Thiel replaces the Sergeant, a Champion replaces a Veteran ...)
+    is made automatic, so New Recruit removes the replaced model instead of showing an error."""
+    lowered = {m.get("field") for m in root.iter("modifier") if m.get("type") in ("decrement", "set")}
+    for e in root.iter("selectionEntry"):
+        if e.get("type") != "model":
+            continue
+        for c in e.findall("constraints/constraint"):
+            if c.get("type") in ("max", "min") and c.get("id") in lowered:
+                c.set("automatic", "true")
+
+
 # ---------------------------------------------------------------- assemble
 def extend(units_by_name, shared):
     """Attach retinues / new options to slice-1 entries and return (root units, shared entries)."""

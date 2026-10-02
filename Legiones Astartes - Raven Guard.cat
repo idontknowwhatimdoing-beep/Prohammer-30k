@@ -6959,8 +6959,8 @@
 </modifier>
 </modifiers>
 <constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f381-30f3-28bf-ed94" type="min" />
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ee66-4812-079e-9c27" type="max" />
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f381-30f3-28bf-ed94" type="min" automatic="true" />
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ee66-4812-079e-9c27" type="max" automatic="true" />
 </constraints>
 <profiles>
 <profile id="718e-23b0-d9b3-ecab" name="Legion Recon Sergeant" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
@@ -10354,8 +10354,8 @@ LIMITATIONS - Loyalist Raven Guard Detachments only. No units with the Immobile 
 </modifier>
 </modifiers>
 <constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="afde-807b-a18e-1532" type="min" />
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ce1c-4820-f569-9ff1" type="max" />
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="afde-807b-a18e-1532" type="min" automatic="true" />
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ce1c-4820-f569-9ff1" type="max" automatic="true" />
 </constraints>
 <profiles>
 <profile id="40d9-fd66-2311-7efe" name="Legion Destroyer Sergeant" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
@@ -13426,8 +13426,8 @@ LIMITATIONS - Loyalist Raven Guard Detachments only. No units with the Immobile 
 </modifier>
 </modifiers>
 <constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3346-cf93-24a6-e280" type="min" />
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="248b-538a-1a8a-6d96" type="max" />
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3346-cf93-24a6-e280" type="min" automatic="true" />
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="248b-538a-1a8a-6d96" type="max" automatic="true" />
 </constraints>
 <profiles>
 <profile id="5b26-25e4-d20d-745f" name="Legion Seeker Sergeant" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
@@ -19508,7 +19508,7 @@ LIMITATIONS - Loyalist Raven Guard Detachments only. No units with the Immobile 
 </modifier>
 </modifiers>
 <constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6ded-ef67-f6e9-0b11" type="max" />
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6ded-ef67-f6e9-0b11" type="max" automatic="true" />
 </constraints>
 <profiles>
 <profile id="9004-337a-cc57-3122" name="Legion Whirlwind" hidden="false" typeId="c1e2-c3f6-f1e3-c783" typeName="Vehicle">
@@ -19715,7 +19715,7 @@ LIMITATIONS - Loyalist Raven Guard Detachments only. No units with the Immobile 
 </modifier>
 </modifiers>
 <constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="558f-dee1-81ca-5d54" type="max" />
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="558f-dee1-81ca-5d54" type="max" automatic="true" />
 </constraints>
 <profiles>
 <profile id="e781-92d6-f7ce-6d19" name="Legion Whirlwind" hidden="false" typeId="c1e2-c3f6-f1e3-c783" typeName="Vehicle">
@@ -19922,7 +19922,7 @@ LIMITATIONS - Loyalist Raven Guard Detachments only. No units with the Immobile 
 </modifier>
 </modifiers>
 <constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a0f5-c56d-ca16-3c50" type="max" />
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a0f5-c56d-ca16-3c50" type="max" automatic="true" />
 </constraints>
 <profiles>
 <profile id="77b2-bfb9-2003-49da" name="Legion Whirlwind" hidden="false" typeId="c1e2-c3f6-f1e3-c783" typeName="Vehicle">
@@ -20129,7 +20129,7 @@ LIMITATIONS - Loyalist Raven Guard Detachments only. No units with the Immobile 
 </modifier>
 </modifiers>
 <constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ba55-0d3d-3e97-552f" type="max" />
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ba55-0d3d-3e97-552f" type="max" automatic="true" />
 </constraints>
 <profiles>
 <profile id="0fcd-fedb-c845-2b85" name="Legion Basilisk" hidden="false" typeId="c1e2-c3f6-f1e3-c783" typeName="Vehicle">
@@ -20327,7 +20327,7 @@ LIMITATIONS - Loyalist Raven Guard Detachments only. No units with the Immobile 
 </modifier>
 </modifiers>
 <constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ed4e-442f-1e4d-2803" type="max" />
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ed4e-442f-1e4d-2803" type="max" automatic="true" />
 </constraints>
 <profiles>
 <profile id="4805-bbf1-4d1d-357d" name="Legion Basilisk" hidden="false" typeId="c1e2-c3f6-f1e3-c783" typeName="Vehicle">
@@ -20525,7 +20525,7 @@ LIMITATIONS - Loyalist Raven Guard Detachments only. No units with the Immobile 
 </modifier>
 </modifiers>
 <constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1732-a016-aba5-9f9a" type="max" />
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1732-a016-aba5-9f9a" type="max" automatic="true" />
 </constraints>
 <profiles>
 <profile id="3363-4de5-2ff6-f593" name="Legion Basilisk" hidden="false" typeId="c1e2-c3f6-f1e3-c783" typeName="Vehicle">
@@ -20723,7 +20723,7 @@ LIMITATIONS - Loyalist Raven Guard Detachments only. No units with the Immobile 
 </modifier>
 </modifiers>
 <constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="41fa-3c8c-5ff8-ce12" type="max" />
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="41fa-3c8c-5ff8-ce12" type="max" automatic="true" />
 </constraints>
 <profiles>
 <profile id="ef5e-a4f5-e53c-2697" name="Legion Medusa" hidden="false" typeId="c1e2-c3f6-f1e3-c783" typeName="Vehicle">
@@ -20921,7 +20921,7 @@ LIMITATIONS - Loyalist Raven Guard Detachments only. No units with the Immobile 
 </modifier>
 </modifiers>
 <constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ef95-443d-5775-e268" type="max" />
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ef95-443d-5775-e268" type="max" automatic="true" />
 </constraints>
 <profiles>
 <profile id="1c79-d684-4ea3-76b9" name="Legion Medusa" hidden="false" typeId="c1e2-c3f6-f1e3-c783" typeName="Vehicle">
@@ -21119,7 +21119,7 @@ LIMITATIONS - Loyalist Raven Guard Detachments only. No units with the Immobile 
 </modifier>
 </modifiers>
 <constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1fa5-81f5-6135-04cf" type="max" />
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1fa5-81f5-6135-04cf" type="max" automatic="true" />
 </constraints>
 <profiles>
 <profile id="534e-7100-7b33-1720" name="Legion Medusa" hidden="false" typeId="c1e2-c3f6-f1e3-c783" typeName="Vehicle">
@@ -23226,8 +23226,8 @@ LIMITATIONS - Loyalist Raven Guard Detachments only. No units with the Immobile 
 </modifier>
 </modifiers>
 <constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d695-b8d4-f4d1-6e89" type="min" />
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fcfd-e9b6-3693-5a29" type="max" />
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d695-b8d4-f4d1-6e89" type="min" automatic="true" />
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fcfd-e9b6-3693-5a29" type="max" automatic="true" />
 </constraints>
 <profiles>
 <profile id="26a1-561b-5f6c-5660" name="Dark Fury Strike Leader" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
@@ -25801,8 +25801,8 @@ LIMITATIONS - Loyalist Raven Guard Detachments only. No units with the Immobile 
 </modifier>
 </modifiers>
 <constraints>
-<constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ddfa-8fa5-b175-a1ce" type="min" />
-<constraint field="selections" scope="parent" value="9" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5133-6c5c-9504-bbb6" type="max" />
+<constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ddfa-8fa5-b175-a1ce" type="min" automatic="true" />
+<constraint field="selections" scope="parent" value="9" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5133-6c5c-9504-bbb6" type="max" automatic="true" />
 </constraints>
 <profiles>
 <profile id="e3dc-94a6-9b0f-60ed" name="Legion Honour Guard" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
@@ -25853,7 +25853,7 @@ LIMITATIONS - Loyalist Raven Guard Detachments only. No units with the Immobile 
 </modifier>
 </modifiers>
 <constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6bc1-cfd1-a399-0f84" type="max" />
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6bc1-cfd1-a399-0f84" type="max" automatic="true" />
 </constraints>
 <profiles>
 <profile id="d8f4-12f0-91cf-2f51" name="Legion Honour Guard Standard Bearer" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
@@ -33785,8 +33785,8 @@ LIMITATIONS - Loyalist Raven Guard Detachments only. No units with the Immobile 
 </modifier>
 </modifiers>
 <constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2cab-65ad-684a-94ce" type="min" />
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3719-ee18-b198-3257" type="max" />
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2cab-65ad-684a-94ce" type="min" automatic="true" />
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3719-ee18-b198-3257" type="max" automatic="true" />
 </constraints>
 <profiles>
 <profile id="c6e2-5c2a-ed8c-a13b" name="Dark Fury Strike Leader" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
@@ -38430,8 +38430,8 @@ LIMITATIONS - Loyalist Raven Guard Detachments only. No units with the Immobile 
 </modifier>
 </modifiers>
 <constraints>
-<constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e425-1ffa-2855-9567" type="min" />
-<constraint field="selections" scope="parent" value="9" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5920-6887-a6bf-f5ea" type="max" />
+<constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e425-1ffa-2855-9567" type="min" automatic="true" />
+<constraint field="selections" scope="parent" value="9" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5920-6887-a6bf-f5ea" type="max" automatic="true" />
 </constraints>
 <profiles>
 <profile id="0e9d-10a1-545e-db90" name="Legion Honour Guard" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
@@ -38482,7 +38482,7 @@ LIMITATIONS - Loyalist Raven Guard Detachments only. No units with the Immobile 
 </modifier>
 </modifiers>
 <constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fc3b-2346-679f-364f" type="max" />
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fc3b-2346-679f-364f" type="max" automatic="true" />
 </constraints>
 <profiles>
 <profile id="b578-ea05-6343-7a1b" name="Legion Honour Guard Standard Bearer" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
@@ -40311,8 +40311,8 @@ LIMITATIONS - Loyalist Raven Guard Detachments only. No units with the Immobile 
 </modifier>
 </modifiers>
 <constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8b80-19a1-4fea-56c1" type="min" />
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0e67-2815-36e6-ff23" type="max" />
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8b80-19a1-4fea-56c1" type="min" automatic="true" />
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0e67-2815-36e6-ff23" type="max" automatic="true" />
 </constraints>
 <profiles>
 <profile id="71e7-11df-e547-fa42" name="Dark Fury Strike Leader" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">

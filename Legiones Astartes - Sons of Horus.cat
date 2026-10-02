@@ -5144,8 +5144,8 @@
 </modifier>
 </modifiers>
 <constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d049-af7a-c174-7cd9" type="min" />
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="43d1-4f57-61a3-552d" type="max" />
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d049-af7a-c174-7cd9" type="min" automatic="true" />
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="43d1-4f57-61a3-552d" type="max" automatic="true" />
 </constraints>
 <profiles>
 <profile id="7b6e-263d-3266-f00f" name="Legion Tactical Sergeant" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
@@ -5705,7 +5705,7 @@
 </modifier>
 </modifiers>
 <constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ff1e-3c20-7723-7b08" type="max" />
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ff1e-3c20-7723-7b08" type="max" automatic="true" />
 <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="fa0f-e335-bc72-8ce0" type="max" />
 </constraints>
 <profiles>
@@ -8764,8 +8764,8 @@ LIMITATIONS - The Detachment must include a Legion Centurion upgraded to a Maste
 </modifier>
 </modifiers>
 <constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="540a-7e1b-417a-715f" type="min" />
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e1e5-25a4-32a5-63b2" type="max" />
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="540a-7e1b-417a-715f" type="min" automatic="true" />
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e1e5-25a4-32a5-63b2" type="max" automatic="true" />
 </constraints>
 <profiles>
 <profile id="c2d1-3094-f92d-986a" name="Legion Veteran Sergeant" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
@@ -20410,7 +20410,7 @@ LIMITATIONS - The Detachment must include a Legion Centurion upgraded to a Maste
 </modifier>
 </modifiers>
 <constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6ded-ef67-f6e9-0b11" type="max" />
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6ded-ef67-f6e9-0b11" type="max" automatic="true" />
 </constraints>
 <profiles>
 <profile id="9004-337a-cc57-3122" name="Legion Whirlwind" hidden="false" typeId="c1e2-c3f6-f1e3-c783" typeName="Vehicle">
@@ -20617,7 +20617,7 @@ LIMITATIONS - The Detachment must include a Legion Centurion upgraded to a Maste
 </modifier>
 </modifiers>
 <constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="558f-dee1-81ca-5d54" type="max" />
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="558f-dee1-81ca-5d54" type="max" automatic="true" />
 </constraints>
 <profiles>
 <profile id="e781-92d6-f7ce-6d19" name="Legion Whirlwind" hidden="false" typeId="c1e2-c3f6-f1e3-c783" typeName="Vehicle">
@@ -20824,7 +20824,7 @@ LIMITATIONS - The Detachment must include a Legion Centurion upgraded to a Maste
 </modifier>
 </modifiers>
 <constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a0f5-c56d-ca16-3c50" type="max" />
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a0f5-c56d-ca16-3c50" type="max" automatic="true" />
 </constraints>
 <profiles>
 <profile id="77b2-bfb9-2003-49da" name="Legion Whirlwind" hidden="false" typeId="c1e2-c3f6-f1e3-c783" typeName="Vehicle">
@@ -21031,7 +21031,7 @@ LIMITATIONS - The Detachment must include a Legion Centurion upgraded to a Maste
 </modifier>
 </modifiers>
 <constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ba55-0d3d-3e97-552f" type="max" />
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ba55-0d3d-3e97-552f" type="max" automatic="true" />
 </constraints>
 <profiles>
 <profile id="0fcd-fedb-c845-2b85" name="Legion Basilisk" hidden="false" typeId="c1e2-c3f6-f1e3-c783" typeName="Vehicle">
@@ -21229,7 +21229,7 @@ LIMITATIONS - The Detachment must include a Legion Centurion upgraded to a Maste
 </modifier>
 </modifiers>
 <constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ed4e-442f-1e4d-2803" type="max" />
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ed4e-442f-1e4d-2803" type="max" automatic="true" />
 </constraints>
 <profiles>
 <profile id="4805-bbf1-4d1d-357d" name="Legion Basilisk" hidden="false" typeId="c1e2-c3f6-f1e3-c783" typeName="Vehicle">
@@ -21427,7 +21427,7 @@ LIMITATIONS - The Detachment must include a Legion Centurion upgraded to a Maste
 </modifier>
 </modifiers>
 <constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1732-a016-aba5-9f9a" type="max" />
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1732-a016-aba5-9f9a" type="max" automatic="true" />
 </constraints>
 <profiles>
 <profile id="3363-4de5-2ff6-f593" name="Legion Basilisk" hidden="false" typeId="c1e2-c3f6-f1e3-c783" typeName="Vehicle">
@@ -21625,7 +21625,7 @@ LIMITATIONS - The Detachment must include a Legion Centurion upgraded to a Maste
 </modifier>
 </modifiers>
 <constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="41fa-3c8c-5ff8-ce12" type="max" />
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="41fa-3c8c-5ff8-ce12" type="max" automatic="true" />
 </constraints>
 <profiles>
 <profile id="ef5e-a4f5-e53c-2697" name="Legion Medusa" hidden="false" typeId="c1e2-c3f6-f1e3-c783" typeName="Vehicle">
@@ -21823,7 +21823,7 @@ LIMITATIONS - The Detachment must include a Legion Centurion upgraded to a Maste
 </modifier>
 </modifiers>
 <constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ef95-443d-5775-e268" type="max" />
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ef95-443d-5775-e268" type="max" automatic="true" />
 </constraints>
 <profiles>
 <profile id="1c79-d684-4ea3-76b9" name="Legion Medusa" hidden="false" typeId="c1e2-c3f6-f1e3-c783" typeName="Vehicle">
@@ -22021,7 +22021,7 @@ LIMITATIONS - The Detachment must include a Legion Centurion upgraded to a Maste
 </modifier>
 </modifiers>
 <constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1fa5-81f5-6135-04cf" type="max" />
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1fa5-81f5-6135-04cf" type="max" automatic="true" />
 </constraints>
 <profiles>
 <profile id="534e-7100-7b33-1720" name="Legion Medusa" hidden="false" typeId="c1e2-c3f6-f1e3-c783" typeName="Vehicle">
@@ -23451,8 +23451,8 @@ LIMITATIONS - The Detachment must include a Legion Centurion upgraded to a Maste
 </modifier>
 </modifiers>
 <constraints>
-<constraint field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="51f3-3658-6c11-abd9" type="min" />
-<constraint field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9d76-0a16-6da1-6412" type="max" />
+<constraint field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="51f3-3658-6c11-abd9" type="min" automatic="true" />
+<constraint field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9d76-0a16-6da1-6412" type="max" automatic="true" />
 </constraints>
 <profiles>
 <profile id="4e06-8caa-6f5f-d1e6" name="Justaerin Terminator" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
@@ -27921,8 +27921,8 @@ LIMITATIONS - The Detachment must include a Legion Centurion upgraded to a Maste
 </modifier>
 </modifiers>
 <constraints>
-<constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ddfa-8fa5-b175-a1ce" type="min" />
-<constraint field="selections" scope="parent" value="9" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5133-6c5c-9504-bbb6" type="max" />
+<constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ddfa-8fa5-b175-a1ce" type="min" automatic="true" />
+<constraint field="selections" scope="parent" value="9" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5133-6c5c-9504-bbb6" type="max" automatic="true" />
 </constraints>
 <profiles>
 <profile id="e3dc-94a6-9b0f-60ed" name="Legion Honour Guard" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
@@ -27973,7 +27973,7 @@ LIMITATIONS - The Detachment must include a Legion Centurion upgraded to a Maste
 </modifier>
 </modifiers>
 <constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6bc1-cfd1-a399-0f84" type="max" />
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6bc1-cfd1-a399-0f84" type="max" automatic="true" />
 </constraints>
 <profiles>
 <profile id="d8f4-12f0-91cf-2f51" name="Legion Honour Guard Standard Bearer" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
@@ -29356,7 +29356,7 @@ LIMITATIONS - The Detachment must include a Legion Centurion upgraded to a Maste
 </modifier>
 </modifiers>
 <constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ac92-1c4d-8e1e-2030" type="max" />
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ac92-1c4d-8e1e-2030" type="max" automatic="true" />
 </constraints>
 <profiles>
 <profile id="cec8-cf1a-a07b-c8c4" name="Legion Standard Bearer" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
@@ -33058,7 +33058,7 @@ LIMITATIONS - The Detachment must include a Legion Centurion upgraded to a Maste
 </modifier>
 </modifiers>
 <constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="583e-10cd-f768-2477" type="max" />
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="583e-10cd-f768-2477" type="max" automatic="true" />
 </constraints>
 <profiles>
 <profile id="c21d-f22a-c604-ad8a" name="Legion Standard Bearer" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
@@ -36629,8 +36629,8 @@ LIMITATIONS - The Detachment must include a Legion Centurion upgraded to a Maste
 </modifier>
 </modifiers>
 <constraints>
-<constraint field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ad5d-e727-bb09-f359" type="min" />
-<constraint field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bb1f-f2ab-888e-e035" type="max" />
+<constraint field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ad5d-e727-bb09-f359" type="min" automatic="true" />
+<constraint field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bb1f-f2ab-888e-e035" type="max" automatic="true" />
 </constraints>
 <profiles>
 <profile id="4827-1c25-1769-16ff" name="Justaerin Terminator" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
@@ -39757,7 +39757,7 @@ LIMITATIONS - The Detachment must include a Legion Centurion upgraded to a Maste
 </modifier>
 </modifiers>
 <constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2d09-1577-7dfd-5b7e" type="max" />
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2d09-1577-7dfd-5b7e" type="max" automatic="true" />
 </constraints>
 <profiles>
 <profile id="63f8-dbf0-48df-e0ed" name="Legion Standard Bearer" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
@@ -42621,7 +42621,7 @@ LIMITATIONS - The Detachment must include a Legion Centurion upgraded to a Maste
 </modifier>
 </modifiers>
 <constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5c40-54b5-1447-8a62" type="max" />
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5c40-54b5-1447-8a62" type="max" automatic="true" />
 </constraints>
 <profiles>
 <profile id="7eb7-e00e-5056-8c0a" name="Legion Standard Bearer" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
@@ -43872,8 +43872,8 @@ LIMITATIONS - The Detachment must include a Legion Centurion upgraded to a Maste
 </modifier>
 </modifiers>
 <constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3d11-30ea-9325-9ca0" type="min" />
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c9a3-552f-b9bc-fd49" type="max" />
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3d11-30ea-9325-9ca0" type="min" automatic="true" />
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c9a3-552f-b9bc-fd49" type="max" automatic="true" />
 </constraints>
 <profiles>
 <profile id="74a7-59ce-0a2c-8baf" name="Legion Veteran Sergeant" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
@@ -44966,8 +44966,8 @@ LIMITATIONS - The Detachment must include a Legion Centurion upgraded to a Maste
 </modifier>
 </modifiers>
 <constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9cd9-e684-6447-8f2b" type="min" />
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="25a1-80b7-00b0-a670" type="max" />
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9cd9-e684-6447-8f2b" type="min" automatic="true" />
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="25a1-80b7-00b0-a670" type="max" automatic="true" />
 </constraints>
 <profiles>
 <profile id="cb95-6ee9-64ca-1c9d" name="Legion Veteran Sergeant" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
@@ -48231,8 +48231,8 @@ LIMITATIONS - The Detachment must include a Legion Centurion upgraded to a Maste
 </modifier>
 </modifiers>
 <constraints>
-<constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e216-2509-a073-3f35" type="min" />
-<constraint field="selections" scope="parent" value="9" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a305-7ebb-22ca-a158" type="max" />
+<constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e216-2509-a073-3f35" type="min" automatic="true" />
+<constraint field="selections" scope="parent" value="9" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a305-7ebb-22ca-a158" type="max" automatic="true" />
 </constraints>
 <profiles>
 <profile id="a853-3b9a-0867-3840" name="Legion Honour Guard" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
@@ -48283,7 +48283,7 @@ LIMITATIONS - The Detachment must include a Legion Centurion upgraded to a Maste
 </modifier>
 </modifiers>
 <constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="418a-db86-91fd-268a" type="max" />
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="418a-db86-91fd-268a" type="max" automatic="true" />
 </constraints>
 <profiles>
 <profile id="c808-682e-d66f-8234" name="Legion Honour Guard Standard Bearer" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
@@ -50337,8 +50337,8 @@ LIMITATIONS - The Detachment must include a Legion Centurion upgraded to a Maste
 </modifier>
 </modifiers>
 <constraints>
-<constraint field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aedc-ad97-aed7-b632" type="min" />
-<constraint field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="11a8-8d2c-9fbb-a7f4" type="max" />
+<constraint field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aedc-ad97-aed7-b632" type="min" automatic="true" />
+<constraint field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="11a8-8d2c-9fbb-a7f4" type="max" automatic="true" />
 </constraints>
 <profiles>
 <profile id="0f31-5af3-7690-a856" name="Justaerin Terminator" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
@@ -51181,8 +51181,8 @@ LIMITATIONS - The Detachment must include a Legion Centurion upgraded to a Maste
 </modifier>
 </modifiers>
 <constraints>
-<constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9d0c-42f6-7108-13d4" type="min" />
-<constraint field="selections" scope="parent" value="9" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c224-474b-4355-b5e9" type="max" />
+<constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9d0c-42f6-7108-13d4" type="min" automatic="true" />
+<constraint field="selections" scope="parent" value="9" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c224-474b-4355-b5e9" type="max" automatic="true" />
 </constraints>
 <profiles>
 <profile id="3eb4-e8e5-058e-4367" name="Legion Honour Guard" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
@@ -51233,7 +51233,7 @@ LIMITATIONS - The Detachment must include a Legion Centurion upgraded to a Maste
 </modifier>
 </modifiers>
 <constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3deb-2574-6e7b-6fbb" type="max" />
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3deb-2574-6e7b-6fbb" type="max" automatic="true" />
 </constraints>
 <profiles>
 <profile id="77f0-3436-222f-2bc0" name="Legion Honour Guard Standard Bearer" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
@@ -53287,8 +53287,8 @@ LIMITATIONS - The Detachment must include a Legion Centurion upgraded to a Maste
 </modifier>
 </modifiers>
 <constraints>
-<constraint field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1cc3-cd2a-e0ea-ae8f" type="min" />
-<constraint field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="add6-2575-d375-1495" type="max" />
+<constraint field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1cc3-cd2a-e0ea-ae8f" type="min" automatic="true" />
+<constraint field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="add6-2575-d375-1495" type="max" automatic="true" />
 </constraints>
 <profiles>
 <profile id="3cab-1c44-864b-4701" name="Justaerin Terminator" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
@@ -53945,8 +53945,8 @@ LIMITATIONS - The Detachment must include a Legion Centurion upgraded to a Maste
 </modifier>
 </modifiers>
 <constraints>
-<constraint field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0b1f-5f60-5af0-124e" type="min" />
-<constraint field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f94b-c257-5b70-5cd3" type="max" />
+<constraint field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0b1f-5f60-5af0-124e" type="min" automatic="true" />
+<constraint field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f94b-c257-5b70-5cd3" type="max" automatic="true" />
 </constraints>
 <profiles>
 <profile id="71a8-ceac-063b-6faf" name="Justaerin Terminator" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">

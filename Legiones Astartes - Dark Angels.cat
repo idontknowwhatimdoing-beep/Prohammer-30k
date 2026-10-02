@@ -9108,7 +9108,7 @@
 </selectionEntry>
 </selectionEntries>
 <constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4f17-e693-b5d2-9f24" type="max" />
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4f17-e693-b5d2-9f24" type="max" automatic="true" />
 </constraints>
 <rules>
 <rule id="251c-d84f-0026-e41a" name="Masters of the Storm of War" hidden="false">
@@ -13485,7 +13485,7 @@
 </selectionEntry>
 </selectionEntries>
 <constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ed08-adfc-463c-41e0" type="max" />
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ed08-adfc-463c-41e0" type="max" automatic="true" />
 </constraints>
 <rules>
 <rule id="539f-2241-c843-710d" name="Masters of the Storm of War" hidden="false">
@@ -30435,7 +30435,7 @@ LIMITATIONS - The Warlord must belong to the Firewing. The compulsory Troops mus
 </modifier>
 </modifiers>
 <constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6ded-ef67-f6e9-0b11" type="max" />
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6ded-ef67-f6e9-0b11" type="max" automatic="true" />
 </constraints>
 <profiles>
 <profile id="9004-337a-cc57-3122" name="Legion Whirlwind" hidden="false" typeId="c1e2-c3f6-f1e3-c783" typeName="Vehicle">
@@ -30642,7 +30642,7 @@ LIMITATIONS - The Warlord must belong to the Firewing. The compulsory Troops mus
 </modifier>
 </modifiers>
 <constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="558f-dee1-81ca-5d54" type="max" />
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="558f-dee1-81ca-5d54" type="max" automatic="true" />
 </constraints>
 <profiles>
 <profile id="e781-92d6-f7ce-6d19" name="Legion Whirlwind" hidden="false" typeId="c1e2-c3f6-f1e3-c783" typeName="Vehicle">
@@ -30849,7 +30849,7 @@ LIMITATIONS - The Warlord must belong to the Firewing. The compulsory Troops mus
 </modifier>
 </modifiers>
 <constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a0f5-c56d-ca16-3c50" type="max" />
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a0f5-c56d-ca16-3c50" type="max" automatic="true" />
 </constraints>
 <profiles>
 <profile id="77b2-bfb9-2003-49da" name="Legion Whirlwind" hidden="false" typeId="c1e2-c3f6-f1e3-c783" typeName="Vehicle">
@@ -31056,7 +31056,7 @@ LIMITATIONS - The Warlord must belong to the Firewing. The compulsory Troops mus
 </modifier>
 </modifiers>
 <constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ba55-0d3d-3e97-552f" type="max" />
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ba55-0d3d-3e97-552f" type="max" automatic="true" />
 </constraints>
 <profiles>
 <profile id="0fcd-fedb-c845-2b85" name="Legion Basilisk" hidden="false" typeId="c1e2-c3f6-f1e3-c783" typeName="Vehicle">
@@ -31254,7 +31254,7 @@ LIMITATIONS - The Warlord must belong to the Firewing. The compulsory Troops mus
 </modifier>
 </modifiers>
 <constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ed4e-442f-1e4d-2803" type="max" />
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ed4e-442f-1e4d-2803" type="max" automatic="true" />
 </constraints>
 <profiles>
 <profile id="4805-bbf1-4d1d-357d" name="Legion Basilisk" hidden="false" typeId="c1e2-c3f6-f1e3-c783" typeName="Vehicle">
@@ -31452,7 +31452,7 @@ LIMITATIONS - The Warlord must belong to the Firewing. The compulsory Troops mus
 </modifier>
 </modifiers>
 <constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1732-a016-aba5-9f9a" type="max" />
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1732-a016-aba5-9f9a" type="max" automatic="true" />
 </constraints>
 <profiles>
 <profile id="3363-4de5-2ff6-f593" name="Legion Basilisk" hidden="false" typeId="c1e2-c3f6-f1e3-c783" typeName="Vehicle">
@@ -31650,7 +31650,7 @@ LIMITATIONS - The Warlord must belong to the Firewing. The compulsory Troops mus
 </modifier>
 </modifiers>
 <constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="41fa-3c8c-5ff8-ce12" type="max" />
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="41fa-3c8c-5ff8-ce12" type="max" automatic="true" />
 </constraints>
 <profiles>
 <profile id="ef5e-a4f5-e53c-2697" name="Legion Medusa" hidden="false" typeId="c1e2-c3f6-f1e3-c783" typeName="Vehicle">
@@ -31848,7 +31848,7 @@ LIMITATIONS - The Warlord must belong to the Firewing. The compulsory Troops mus
 </modifier>
 </modifiers>
 <constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ef95-443d-5775-e268" type="max" />
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ef95-443d-5775-e268" type="max" automatic="true" />
 </constraints>
 <profiles>
 <profile id="1c79-d684-4ea3-76b9" name="Legion Medusa" hidden="false" typeId="c1e2-c3f6-f1e3-c783" typeName="Vehicle">
@@ -32046,7 +32046,7 @@ LIMITATIONS - The Warlord must belong to the Firewing. The compulsory Troops mus
 </modifier>
 </modifiers>
 <constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1fa5-81f5-6135-04cf" type="max" />
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1fa5-81f5-6135-04cf" type="max" automatic="true" />
 </constraints>
 <profiles>
 <profile id="534e-7100-7b33-1720" name="Legion Medusa" hidden="false" typeId="c1e2-c3f6-f1e3-c783" typeName="Vehicle">
@@ -37934,8 +37934,8 @@ LIMITATIONS - The Warlord must belong to the Firewing. The compulsory Troops mus
 </modifier>
 </modifiers>
 <constraints>
-<constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ddfa-8fa5-b175-a1ce" type="min" />
-<constraint field="selections" scope="parent" value="9" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5133-6c5c-9504-bbb6" type="max" />
+<constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ddfa-8fa5-b175-a1ce" type="min" automatic="true" />
+<constraint field="selections" scope="parent" value="9" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5133-6c5c-9504-bbb6" type="max" automatic="true" />
 </constraints>
 <profiles>
 <profile id="e3dc-94a6-9b0f-60ed" name="Legion Honour Guard" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
@@ -37986,7 +37986,7 @@ LIMITATIONS - The Warlord must belong to the Firewing. The compulsory Troops mus
 </modifier>
 </modifiers>
 <constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6bc1-cfd1-a399-0f84" type="max" />
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6bc1-cfd1-a399-0f84" type="max" automatic="true" />
 </constraints>
 <profiles>
 <profile id="d8f4-12f0-91cf-2f51" name="Legion Honour Guard Standard Bearer" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
@@ -51900,8 +51900,8 @@ LIMITATIONS - The Warlord must belong to the Firewing. The compulsory Troops mus
 </modifier>
 </modifiers>
 <constraints>
-<constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4d67-0d7e-8795-7b41" type="min" />
-<constraint field="selections" scope="parent" value="9" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="58fa-eee8-4be4-238b" type="max" />
+<constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4d67-0d7e-8795-7b41" type="min" automatic="true" />
+<constraint field="selections" scope="parent" value="9" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="58fa-eee8-4be4-238b" type="max" automatic="true" />
 </constraints>
 <profiles>
 <profile id="0b29-d904-aa64-3350" name="Legion Honour Guard" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
@@ -51952,7 +51952,7 @@ LIMITATIONS - The Warlord must belong to the Firewing. The compulsory Troops mus
 </modifier>
 </modifiers>
 <constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f903-d61c-4587-8fa0" type="max" />
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f903-d61c-4587-8fa0" type="max" automatic="true" />
 </constraints>
 <profiles>
 <profile id="71ae-39fa-78f7-4755" name="Legion Honour Guard Standard Bearer" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
