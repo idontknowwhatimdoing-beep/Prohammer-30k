@@ -2973,12 +2973,22 @@
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a016-d9a7-edf9-75a5" type="max" />
 </constraints>
+<selectionEntries>
+<selectionEntry id="a8bf-9c36-f09e-c624" name="Multi-laser" hidden="false" collective="false" import="true" type="upgrade">
 <entryLinks>
-<entryLink id="a8bf-9c36-f09e-c624" name="Multi-laser" hidden="false" collective="false" import="true" targetId="cf1d-775e-c275-a83e" type="selectionEntry">
+<entryLink id="ad45-d984-f42f-bfe6" name="Multi-laser" hidden="false" collective="false" import="true" targetId="cf1d-775e-c275-a83e" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="53f0-6c4c-9e53-75c4" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e761-5fdd-1d44-2034" type="max" />
+</constraints>
+</entryLink>
+</entryLinks>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
-</entryLink>
+</selectionEntry>
+</selectionEntries>
+<entryLinks>
 <entryLink id="84c7-edbc-59e8-7fa5" name="Heavy Flamer" hidden="false" collective="false" import="true" targetId="9e6d-afcf-8202-e47c" type="selectionEntry">
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />

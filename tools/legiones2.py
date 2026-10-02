@@ -1436,9 +1436,12 @@ def unclash(root):
     for e in list(root.iter("selectionEntry")):
         kit = {lk.get("targetId") for lk in e.findall("entryLinks/entryLink")
                if any(c.get("type") == "max" for c in lk.findall("constraints/constraint"))}
+        links_here = option_links(e)
+        # the default of a 'Replace X' choice is standard wargear too
+        kit |= {lk.get("targetId") for g, gl, lk in links_here if g.get("defaultSelectionEntryId") == lk.get("id")}
         if not kit:
             continue
-        for g, gl, lk in option_links(e):
+        for g, gl, lk in links_here:
             if lk.get("targetId") not in kit or g.get("defaultSelectionEntryId") == lk.get("id"):
                 continue
             w = el("selectionEntry", {"id": lk.get("id"), "name": lk.get("name"), "hidden": lk.get("hidden", "false"),

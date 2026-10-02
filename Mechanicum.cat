@@ -8734,6 +8734,21 @@
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0126-6d12-3034-7a88" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5edf-cc67-0059-b528" type="max" />
 </constraints>
+<selectionEntries>
+<selectionEntry id="a210-2d58-eed3-9d07" name="Heavy Bolter" hidden="false" collective="false" import="true" type="upgrade">
+<entryLinks>
+<entryLink id="955d-8d16-3ce7-54bd" name="Heavy Bolter" hidden="false" collective="false" import="true" targetId="9151-5044-e482-04c9" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="69c2-2f30-599d-4b1c" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2d2a-b31f-0463-6703" type="max" />
+</constraints>
+</entryLink>
+</entryLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
+</costs>
+</selectionEntry>
+</selectionEntries>
 <entryLinks>
 <entryLink id="4ec8-99e8-1d62-499a" name="Power Fist" hidden="false" collective="false" import="true" targetId="0b4d-922b-4629-b7ca" type="selectionEntry" sortIndex="1" defaultAmount="1" />
 <entryLink id="951c-4a08-4e13-159c" name="Chainfist" hidden="false" collective="false" import="true" targetId="a078-deea-084f-38e2" type="selectionEntry" sortIndex="3">
@@ -8744,11 +8759,6 @@
 <entryLink id="a131-c6d3-fc74-4d64" name="Siege Wrecker" hidden="false" collective="false" import="true" targetId="646d-93b5-ccf4-8ddc" type="selectionEntry" sortIndex="4">
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
-</costs>
-</entryLink>
-<entryLink id="a210-2d58-eed3-9d07" name="Heavy Bolter" hidden="false" collective="false" import="true" targetId="9151-5044-e482-04c9" type="selectionEntry" sortIndex="5">
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
 </entryLink>
 <entryLink id="9faa-bec0-e563-b92b" name="Multilaser" hidden="false" collective="false" import="true" targetId="e58c-56d4-efe0-ac61" type="selectionEntry" sortIndex="6">
@@ -8870,6 +8880,21 @@
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b454-3ebc-39e0-d88a" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7b64-98d2-0c71-4308" type="max" />
 </constraints>
+<selectionEntries>
+<selectionEntry id="ec01-f082-a5a2-0821" name="Heavy Bolter" hidden="false" collective="false" import="true" type="upgrade">
+<entryLinks>
+<entryLink id="b4fd-6cee-c05b-f8ef" name="Heavy Bolter" hidden="false" collective="false" import="true" targetId="9151-5044-e482-04c9" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fcb2-6c6a-3a68-0253" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="04ff-57c0-14ff-d44b" type="max" />
+</constraints>
+</entryLink>
+</entryLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
+</costs>
+</selectionEntry>
+</selectionEntries>
 <entryLinks>
 <entryLink id="bcd3-dd85-ef84-239e" name="Power Fist" hidden="false" collective="false" import="true" targetId="0b4d-922b-4629-b7ca" type="selectionEntry" sortIndex="1" defaultAmount="1" />
 <entryLink id="58f4-629f-9108-41b7" name="Chainfist" hidden="false" collective="false" import="true" targetId="a078-deea-084f-38e2" type="selectionEntry" sortIndex="3">
@@ -8880,11 +8905,6 @@
 <entryLink id="1696-ba76-1ebe-8582" name="Siege Wrecker" hidden="false" collective="false" import="true" targetId="646d-93b5-ccf4-8ddc" type="selectionEntry" sortIndex="4">
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
-</costs>
-</entryLink>
-<entryLink id="ec01-f082-a5a2-0821" name="Heavy Bolter" hidden="false" collective="false" import="true" targetId="9151-5044-e482-04c9" type="selectionEntry" sortIndex="5">
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
 </entryLink>
 <entryLink id="27a7-448c-4c1d-e4cd" name="Multilaser" hidden="false" collective="false" import="true" targetId="e58c-56d4-efe0-ac61" type="selectionEntry" sortIndex="6">
@@ -9006,6 +9026,21 @@
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c65b-0d60-9ecc-88dd" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ccb2-dd90-3294-dd6b" type="max" />
 </constraints>
+<selectionEntries>
+<selectionEntry id="3fc2-e014-0797-6450" name="Heavy Bolter" hidden="false" collective="false" import="true" type="upgrade">
+<entryLinks>
+<entryLink id="892a-5206-dae1-b488" name="Heavy Bolter" hidden="false" collective="false" import="true" targetId="9151-5044-e482-04c9" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e873-9581-6787-3f9f" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a367-fcd4-b99f-177b" type="max" />
+</constraints>
+</entryLink>
+</entryLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
+</costs>
+</selectionEntry>
+</selectionEntries>
 <entryLinks>
 <entryLink id="058e-eda6-a1bf-22b7" name="Power Fist" hidden="false" collective="false" import="true" targetId="0b4d-922b-4629-b7ca" type="selectionEntry" sortIndex="1" defaultAmount="1" />
 <entryLink id="0981-2be8-eef8-31e5" name="Chainfist" hidden="false" collective="false" import="true" targetId="a078-deea-084f-38e2" type="selectionEntry" sortIndex="3">
@@ -9016,11 +9051,6 @@
 <entryLink id="4eb9-bb13-e13f-ae50" name="Siege Wrecker" hidden="false" collective="false" import="true" targetId="646d-93b5-ccf4-8ddc" type="selectionEntry" sortIndex="4">
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
-</costs>
-</entryLink>
-<entryLink id="3fc2-e014-0797-6450" name="Heavy Bolter" hidden="false" collective="false" import="true" targetId="9151-5044-e482-04c9" type="selectionEntry" sortIndex="5">
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
 </entryLink>
 <entryLink id="3999-e574-53f5-a1ec" name="Multilaser" hidden="false" collective="false" import="true" targetId="e58c-56d4-efe0-ac61" type="selectionEntry" sortIndex="6">
@@ -9142,6 +9172,21 @@
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f356-d64d-c39d-1f07" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a01c-e629-7ee5-61b0" type="max" />
 </constraints>
+<selectionEntries>
+<selectionEntry id="cbea-d25f-e891-56f3" name="Heavy Bolter" hidden="false" collective="false" import="true" type="upgrade">
+<entryLinks>
+<entryLink id="7d8b-9471-91f4-1ab6" name="Heavy Bolter" hidden="false" collective="false" import="true" targetId="9151-5044-e482-04c9" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="960d-8a6c-f552-5867" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2ee1-3035-1e48-3fb1" type="max" />
+</constraints>
+</entryLink>
+</entryLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
+</costs>
+</selectionEntry>
+</selectionEntries>
 <entryLinks>
 <entryLink id="9086-98f2-e2db-3877" name="Power Fist" hidden="false" collective="false" import="true" targetId="0b4d-922b-4629-b7ca" type="selectionEntry" sortIndex="1" defaultAmount="1" />
 <entryLink id="e76c-c450-ac34-fe93" name="Chainfist" hidden="false" collective="false" import="true" targetId="a078-deea-084f-38e2" type="selectionEntry" sortIndex="3">
@@ -9152,11 +9197,6 @@
 <entryLink id="752b-692b-d04e-e1c7" name="Siege Wrecker" hidden="false" collective="false" import="true" targetId="646d-93b5-ccf4-8ddc" type="selectionEntry" sortIndex="4">
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
-</costs>
-</entryLink>
-<entryLink id="cbea-d25f-e891-56f3" name="Heavy Bolter" hidden="false" collective="false" import="true" targetId="9151-5044-e482-04c9" type="selectionEntry" sortIndex="5">
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
 </entryLink>
 <entryLink id="f686-f463-3d06-8cb6" name="Multilaser" hidden="false" collective="false" import="true" targetId="e58c-56d4-efe0-ac61" type="selectionEntry" sortIndex="6">
@@ -18333,6 +18373,21 @@
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="19db-cfd0-1cf6-145c" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b2b2-a9cd-6391-70ad" type="max" />
 </constraints>
+<selectionEntries>
+<selectionEntry id="58e4-2d0f-e90f-d0a8" name="Heavy Bolter" hidden="false" collective="false" import="true" type="upgrade">
+<entryLinks>
+<entryLink id="3483-aaa6-ab2b-dbb4" name="Heavy Bolter" hidden="false" collective="false" import="true" targetId="9151-5044-e482-04c9" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0b41-4846-173c-3c2b" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="80f9-f784-393b-059a" type="max" />
+</constraints>
+</entryLink>
+</entryLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="-5" />
+</costs>
+</selectionEntry>
+</selectionEntries>
 <entryLinks>
 <entryLink id="7fa3-5d6e-d309-106e" name="Autocannon" hidden="false" collective="false" import="true" targetId="6114-7ebd-e526-46a8" type="selectionEntry" sortIndex="1" defaultAmount="1" />
 <entryLink id="dfdd-f3a4-4d79-e087" name="Lascannon" hidden="false" collective="false" import="true" targetId="c7e9-561f-95b7-1e57" type="selectionEntry" sortIndex="3">
@@ -18345,11 +18400,6 @@
 <cost name="pts" typeId="pts0-0000-0000-0001" value="-10" />
 </costs>
 </entryLink>
-<entryLink id="58e4-2d0f-e90f-d0a8" name="Heavy Bolter" hidden="false" collective="false" import="true" targetId="9151-5044-e482-04c9" type="selectionEntry" sortIndex="5">
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="-5" />
-</costs>
-</entryLink>
 </entryLinks>
 </selectionEntryGroup>
 <selectionEntryGroup id="7b1c-0e3d-8646-0ca6" name="Replace Heavy Bolter" hidden="false" collective="false" import="true" defaultSelectionEntryId="34af-4abe-3958-f0df">
@@ -18357,13 +18407,23 @@
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cbae-b95f-2b51-6622" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7fa0-30e3-a697-0996" type="max" />
 </constraints>
+<selectionEntries>
+<selectionEntry id="8ae4-ad6b-52a0-7bbd" name="Autocannon" hidden="false" collective="false" import="true" type="upgrade">
 <entryLinks>
-<entryLink id="34af-4abe-3958-f0df" name="Heavy Bolter" hidden="false" collective="false" import="true" targetId="9151-5044-e482-04c9" type="selectionEntry" sortIndex="1" defaultAmount="1" />
-<entryLink id="8ae4-ad6b-52a0-7bbd" name="Autocannon" hidden="false" collective="false" import="true" targetId="6114-7ebd-e526-46a8" type="selectionEntry" sortIndex="3">
+<entryLink id="beed-56f6-2edd-1e8a" name="Autocannon" hidden="false" collective="false" import="true" targetId="6114-7ebd-e526-46a8" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dcbf-5296-f381-008a" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5ed6-8193-8ce6-1a8c" type="max" />
+</constraints>
+</entryLink>
+</entryLinks>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
 </costs>
-</entryLink>
+</selectionEntry>
+</selectionEntries>
+<entryLinks>
+<entryLink id="34af-4abe-3958-f0df" name="Heavy Bolter" hidden="false" collective="false" import="true" targetId="9151-5044-e482-04c9" type="selectionEntry" sortIndex="1" defaultAmount="1" />
 <entryLink id="3649-ac2a-26e0-27ce" name="Lascannon" hidden="false" collective="false" import="true" targetId="c7e9-561f-95b7-1e57" type="selectionEntry" sortIndex="4">
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
@@ -18382,18 +18442,36 @@
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="133d-9d94-a0d3-ec9b" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a4a3-2cc0-f770-05f4" type="max" />
 </constraints>
+<selectionEntries>
+<selectionEntry id="b104-ca47-ddcc-52ef" name="Autocannon" hidden="false" collective="false" import="true" type="upgrade">
 <entryLinks>
-<entryLink id="8448-63a9-467b-48bd" name="Power Fist" hidden="false" collective="false" import="true" targetId="0b4d-922b-4629-b7ca" type="selectionEntry" sortIndex="1" defaultAmount="1" />
-<entryLink id="b104-ca47-ddcc-52ef" name="Autocannon" hidden="false" collective="false" import="true" targetId="6114-7ebd-e526-46a8" type="selectionEntry" sortIndex="3">
+<entryLink id="a639-de99-6480-bffc" name="Autocannon" hidden="false" collective="false" import="true" targetId="6114-7ebd-e526-46a8" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d139-2b1f-6dd1-2365" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="270e-7358-60f6-f478" type="max" />
+</constraints>
+</entryLink>
+</entryLinks>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
+</selectionEntry>
+<selectionEntry id="e2b6-7ee6-84d0-31c9" name="Heavy Bolter" hidden="false" collective="false" import="true" type="upgrade">
+<entryLinks>
+<entryLink id="5231-15c3-1980-b118" name="Heavy Bolter" hidden="false" collective="false" import="true" targetId="9151-5044-e482-04c9" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dc3c-4494-0d5f-0a50" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8903-0174-3409-8a84" type="max" />
+</constraints>
 </entryLink>
-<entryLink id="e2b6-7ee6-84d0-31c9" name="Heavy Bolter" hidden="false" collective="false" import="true" targetId="9151-5044-e482-04c9" type="selectionEntry" sortIndex="4">
+</entryLinks>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
 </costs>
-</entryLink>
+</selectionEntry>
+</selectionEntries>
+<entryLinks>
+<entryLink id="8448-63a9-467b-48bd" name="Power Fist" hidden="false" collective="false" import="true" targetId="0b4d-922b-4629-b7ca" type="selectionEntry" sortIndex="1" defaultAmount="1" />
 <entryLink id="ef43-a420-998a-66b6" name="Meltagun" hidden="false" collective="false" import="true" targetId="63e8-bee7-88b7-64c6" type="selectionEntry" sortIndex="5" />
 </entryLinks>
 </selectionEntryGroup>
@@ -18437,6 +18515,21 @@
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="70d9-0016-b353-1ee6" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5a78-0d5b-d5aa-2ab9" type="max" />
 </constraints>
+<selectionEntries>
+<selectionEntry id="5048-4c1e-7952-8aea" name="Heavy Bolter" hidden="false" collective="false" import="true" type="upgrade">
+<entryLinks>
+<entryLink id="c877-c794-fef8-5e80" name="Heavy Bolter" hidden="false" collective="false" import="true" targetId="9151-5044-e482-04c9" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3d94-31e2-1a4f-ecbe" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3e27-e240-7727-9bb3" type="max" />
+</constraints>
+</entryLink>
+</entryLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="-5" />
+</costs>
+</selectionEntry>
+</selectionEntries>
 <entryLinks>
 <entryLink id="4e43-bb03-7573-a387" name="Autocannon" hidden="false" collective="false" import="true" targetId="6114-7ebd-e526-46a8" type="selectionEntry" sortIndex="1" defaultAmount="1" />
 <entryLink id="c4d1-4d37-fa93-1075" name="Lascannon" hidden="false" collective="false" import="true" targetId="c7e9-561f-95b7-1e57" type="selectionEntry" sortIndex="3">
@@ -18449,11 +18542,6 @@
 <cost name="pts" typeId="pts0-0000-0000-0001" value="-10" />
 </costs>
 </entryLink>
-<entryLink id="5048-4c1e-7952-8aea" name="Heavy Bolter" hidden="false" collective="false" import="true" targetId="9151-5044-e482-04c9" type="selectionEntry" sortIndex="5">
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="-5" />
-</costs>
-</entryLink>
 </entryLinks>
 </selectionEntryGroup>
 <selectionEntryGroup id="998b-70ad-2e2c-2088" name="Replace Heavy Bolter" hidden="false" collective="false" import="true" defaultSelectionEntryId="33a6-b85d-f08f-d8ce">
@@ -18461,13 +18549,23 @@
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2e0a-a0d7-3ea2-f7fe" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6095-3473-e148-6b98" type="max" />
 </constraints>
+<selectionEntries>
+<selectionEntry id="50a2-1cd2-9c50-88ad" name="Autocannon" hidden="false" collective="false" import="true" type="upgrade">
 <entryLinks>
-<entryLink id="33a6-b85d-f08f-d8ce" name="Heavy Bolter" hidden="false" collective="false" import="true" targetId="9151-5044-e482-04c9" type="selectionEntry" sortIndex="1" defaultAmount="1" />
-<entryLink id="50a2-1cd2-9c50-88ad" name="Autocannon" hidden="false" collective="false" import="true" targetId="6114-7ebd-e526-46a8" type="selectionEntry" sortIndex="3">
+<entryLink id="64f2-0637-2249-7631" name="Autocannon" hidden="false" collective="false" import="true" targetId="6114-7ebd-e526-46a8" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="926e-7ae7-27c2-c7a3" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="44e5-c662-272e-b0f5" type="max" />
+</constraints>
+</entryLink>
+</entryLinks>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
 </costs>
-</entryLink>
+</selectionEntry>
+</selectionEntries>
+<entryLinks>
+<entryLink id="33a6-b85d-f08f-d8ce" name="Heavy Bolter" hidden="false" collective="false" import="true" targetId="9151-5044-e482-04c9" type="selectionEntry" sortIndex="1" defaultAmount="1" />
 <entryLink id="cc15-d17c-854b-a48e" name="Lascannon" hidden="false" collective="false" import="true" targetId="c7e9-561f-95b7-1e57" type="selectionEntry" sortIndex="4">
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
@@ -18486,18 +18584,36 @@
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3a57-05df-84ac-fef0" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f2bb-c64d-2c5c-5b52" type="max" />
 </constraints>
+<selectionEntries>
+<selectionEntry id="036c-f49b-52a7-d881" name="Autocannon" hidden="false" collective="false" import="true" type="upgrade">
 <entryLinks>
-<entryLink id="55cf-2e94-ece0-ec5d" name="Power Fist" hidden="false" collective="false" import="true" targetId="0b4d-922b-4629-b7ca" type="selectionEntry" sortIndex="1" defaultAmount="1" />
-<entryLink id="036c-f49b-52a7-d881" name="Autocannon" hidden="false" collective="false" import="true" targetId="6114-7ebd-e526-46a8" type="selectionEntry" sortIndex="3">
+<entryLink id="d240-595f-787e-03b0" name="Autocannon" hidden="false" collective="false" import="true" targetId="6114-7ebd-e526-46a8" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="828d-cab9-48df-dfad" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0128-53f1-d6fd-7297" type="max" />
+</constraints>
+</entryLink>
+</entryLinks>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
+</selectionEntry>
+<selectionEntry id="518f-f9e8-17db-f22b" name="Heavy Bolter" hidden="false" collective="false" import="true" type="upgrade">
+<entryLinks>
+<entryLink id="6da2-8cda-1104-8cb4" name="Heavy Bolter" hidden="false" collective="false" import="true" targetId="9151-5044-e482-04c9" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9f40-1bc7-ef26-cc80" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2c38-362c-4a59-eacb" type="max" />
+</constraints>
 </entryLink>
-<entryLink id="518f-f9e8-17db-f22b" name="Heavy Bolter" hidden="false" collective="false" import="true" targetId="9151-5044-e482-04c9" type="selectionEntry" sortIndex="4">
+</entryLinks>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
 </costs>
-</entryLink>
+</selectionEntry>
+</selectionEntries>
+<entryLinks>
+<entryLink id="55cf-2e94-ece0-ec5d" name="Power Fist" hidden="false" collective="false" import="true" targetId="0b4d-922b-4629-b7ca" type="selectionEntry" sortIndex="1" defaultAmount="1" />
 <entryLink id="7257-0a5b-961a-c706" name="Meltagun" hidden="false" collective="false" import="true" targetId="63e8-bee7-88b7-64c6" type="selectionEntry" sortIndex="5" />
 </entryLinks>
 </selectionEntryGroup>
@@ -18541,6 +18657,21 @@
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4039-903c-7a7c-60ac" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="37de-8cce-ba39-5de4" type="max" />
 </constraints>
+<selectionEntries>
+<selectionEntry id="d06b-79b0-fa70-7553" name="Heavy Bolter" hidden="false" collective="false" import="true" type="upgrade">
+<entryLinks>
+<entryLink id="6d2d-b776-4d2e-6009" name="Heavy Bolter" hidden="false" collective="false" import="true" targetId="9151-5044-e482-04c9" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="48dc-39bf-c13f-1590" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2ed2-bee2-db02-1944" type="max" />
+</constraints>
+</entryLink>
+</entryLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="-5" />
+</costs>
+</selectionEntry>
+</selectionEntries>
 <entryLinks>
 <entryLink id="3c3c-5e0c-3909-ec5b" name="Autocannon" hidden="false" collective="false" import="true" targetId="6114-7ebd-e526-46a8" type="selectionEntry" sortIndex="1" defaultAmount="1" />
 <entryLink id="ced9-cb99-eae7-5f6e" name="Lascannon" hidden="false" collective="false" import="true" targetId="c7e9-561f-95b7-1e57" type="selectionEntry" sortIndex="3">
@@ -18553,11 +18684,6 @@
 <cost name="pts" typeId="pts0-0000-0000-0001" value="-10" />
 </costs>
 </entryLink>
-<entryLink id="d06b-79b0-fa70-7553" name="Heavy Bolter" hidden="false" collective="false" import="true" targetId="9151-5044-e482-04c9" type="selectionEntry" sortIndex="5">
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="-5" />
-</costs>
-</entryLink>
 </entryLinks>
 </selectionEntryGroup>
 <selectionEntryGroup id="680d-f634-6b53-613e" name="Replace Heavy Bolter" hidden="false" collective="false" import="true" defaultSelectionEntryId="2441-bc05-76e4-6f21">
@@ -18565,13 +18691,23 @@
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ce39-f65c-dacf-cacb" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d7bb-bc96-2b54-df06" type="max" />
 </constraints>
+<selectionEntries>
+<selectionEntry id="39dd-1e3d-b83e-0241" name="Autocannon" hidden="false" collective="false" import="true" type="upgrade">
 <entryLinks>
-<entryLink id="2441-bc05-76e4-6f21" name="Heavy Bolter" hidden="false" collective="false" import="true" targetId="9151-5044-e482-04c9" type="selectionEntry" sortIndex="1" defaultAmount="1" />
-<entryLink id="39dd-1e3d-b83e-0241" name="Autocannon" hidden="false" collective="false" import="true" targetId="6114-7ebd-e526-46a8" type="selectionEntry" sortIndex="3">
+<entryLink id="a525-7ecc-2fbc-d0ca" name="Autocannon" hidden="false" collective="false" import="true" targetId="6114-7ebd-e526-46a8" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f92e-ef89-cf88-72db" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7b63-529b-b5ad-beaf" type="max" />
+</constraints>
+</entryLink>
+</entryLinks>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
 </costs>
-</entryLink>
+</selectionEntry>
+</selectionEntries>
+<entryLinks>
+<entryLink id="2441-bc05-76e4-6f21" name="Heavy Bolter" hidden="false" collective="false" import="true" targetId="9151-5044-e482-04c9" type="selectionEntry" sortIndex="1" defaultAmount="1" />
 <entryLink id="2d7c-b600-e599-ad06" name="Lascannon" hidden="false" collective="false" import="true" targetId="c7e9-561f-95b7-1e57" type="selectionEntry" sortIndex="4">
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
@@ -18590,18 +18726,36 @@
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d3c8-8ea5-75bc-ce2f" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b65a-b671-c51d-d344" type="max" />
 </constraints>
+<selectionEntries>
+<selectionEntry id="04b9-c6db-fa5b-5c82" name="Autocannon" hidden="false" collective="false" import="true" type="upgrade">
 <entryLinks>
-<entryLink id="51fe-c3d3-fdeb-5acb" name="Power Fist" hidden="false" collective="false" import="true" targetId="0b4d-922b-4629-b7ca" type="selectionEntry" sortIndex="1" defaultAmount="1" />
-<entryLink id="04b9-c6db-fa5b-5c82" name="Autocannon" hidden="false" collective="false" import="true" targetId="6114-7ebd-e526-46a8" type="selectionEntry" sortIndex="3">
+<entryLink id="7455-253a-deff-73ac" name="Autocannon" hidden="false" collective="false" import="true" targetId="6114-7ebd-e526-46a8" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6b4b-4cbf-cdd9-d908" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f12a-950c-f138-9d08" type="max" />
+</constraints>
+</entryLink>
+</entryLinks>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
+</selectionEntry>
+<selectionEntry id="b62a-c24b-f35c-cb57" name="Heavy Bolter" hidden="false" collective="false" import="true" type="upgrade">
+<entryLinks>
+<entryLink id="3f68-158b-043b-7efa" name="Heavy Bolter" hidden="false" collective="false" import="true" targetId="9151-5044-e482-04c9" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3af7-3405-926a-58f4" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4597-d20b-b37b-2b3e" type="max" />
+</constraints>
 </entryLink>
-<entryLink id="b62a-c24b-f35c-cb57" name="Heavy Bolter" hidden="false" collective="false" import="true" targetId="9151-5044-e482-04c9" type="selectionEntry" sortIndex="4">
+</entryLinks>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
 </costs>
-</entryLink>
+</selectionEntry>
+</selectionEntries>
+<entryLinks>
+<entryLink id="51fe-c3d3-fdeb-5acb" name="Power Fist" hidden="false" collective="false" import="true" targetId="0b4d-922b-4629-b7ca" type="selectionEntry" sortIndex="1" defaultAmount="1" />
 <entryLink id="1b94-1b2a-363d-bc2a" name="Meltagun" hidden="false" collective="false" import="true" targetId="63e8-bee7-88b7-64c6" type="selectionEntry" sortIndex="5" />
 </entryLinks>
 </selectionEntryGroup>
@@ -18645,6 +18799,21 @@
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="739a-4979-172c-a717" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0747-492d-5f5c-9f83" type="max" />
 </constraints>
+<selectionEntries>
+<selectionEntry id="5630-9e5e-fdcd-4f10" name="Heavy Bolter" hidden="false" collective="false" import="true" type="upgrade">
+<entryLinks>
+<entryLink id="7ce5-a35b-dc09-62b0" name="Heavy Bolter" hidden="false" collective="false" import="true" targetId="9151-5044-e482-04c9" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="19a4-70e5-f8f1-3882" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8aed-02be-a2b3-1d1a" type="max" />
+</constraints>
+</entryLink>
+</entryLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="-5" />
+</costs>
+</selectionEntry>
+</selectionEntries>
 <entryLinks>
 <entryLink id="7c6a-9ff0-b35e-944c" name="Autocannon" hidden="false" collective="false" import="true" targetId="6114-7ebd-e526-46a8" type="selectionEntry" sortIndex="1" defaultAmount="1" />
 <entryLink id="388a-719f-b394-ede8" name="Lascannon" hidden="false" collective="false" import="true" targetId="c7e9-561f-95b7-1e57" type="selectionEntry" sortIndex="3">
@@ -18657,11 +18826,6 @@
 <cost name="pts" typeId="pts0-0000-0000-0001" value="-10" />
 </costs>
 </entryLink>
-<entryLink id="5630-9e5e-fdcd-4f10" name="Heavy Bolter" hidden="false" collective="false" import="true" targetId="9151-5044-e482-04c9" type="selectionEntry" sortIndex="5">
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="-5" />
-</costs>
-</entryLink>
 </entryLinks>
 </selectionEntryGroup>
 <selectionEntryGroup id="fabb-8ac9-3e4f-fa6e" name="Replace Heavy Bolter" hidden="false" collective="false" import="true" defaultSelectionEntryId="2c0e-aaf6-2cae-26f7">
@@ -18669,13 +18833,23 @@
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="118b-ffe6-0ad4-8e1b" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3d6c-dc8f-59d4-a4be" type="max" />
 </constraints>
+<selectionEntries>
+<selectionEntry id="69e9-22d0-3093-1c55" name="Autocannon" hidden="false" collective="false" import="true" type="upgrade">
 <entryLinks>
-<entryLink id="2c0e-aaf6-2cae-26f7" name="Heavy Bolter" hidden="false" collective="false" import="true" targetId="9151-5044-e482-04c9" type="selectionEntry" sortIndex="1" defaultAmount="1" />
-<entryLink id="69e9-22d0-3093-1c55" name="Autocannon" hidden="false" collective="false" import="true" targetId="6114-7ebd-e526-46a8" type="selectionEntry" sortIndex="3">
+<entryLink id="70e8-e58f-2f53-de05" name="Autocannon" hidden="false" collective="false" import="true" targetId="6114-7ebd-e526-46a8" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c607-ae2a-996f-b923" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a74f-7ae7-91be-76b0" type="max" />
+</constraints>
+</entryLink>
+</entryLinks>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
 </costs>
-</entryLink>
+</selectionEntry>
+</selectionEntries>
+<entryLinks>
+<entryLink id="2c0e-aaf6-2cae-26f7" name="Heavy Bolter" hidden="false" collective="false" import="true" targetId="9151-5044-e482-04c9" type="selectionEntry" sortIndex="1" defaultAmount="1" />
 <entryLink id="4a3d-2400-7395-9d8d" name="Lascannon" hidden="false" collective="false" import="true" targetId="c7e9-561f-95b7-1e57" type="selectionEntry" sortIndex="4">
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
@@ -18694,18 +18868,36 @@
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3535-3328-2b5f-0020" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2b6a-9afe-68a3-0b54" type="max" />
 </constraints>
+<selectionEntries>
+<selectionEntry id="bf83-01ed-708d-a5b4" name="Autocannon" hidden="false" collective="false" import="true" type="upgrade">
 <entryLinks>
-<entryLink id="0d5f-598c-b031-53c7" name="Power Fist" hidden="false" collective="false" import="true" targetId="0b4d-922b-4629-b7ca" type="selectionEntry" sortIndex="1" defaultAmount="1" />
-<entryLink id="bf83-01ed-708d-a5b4" name="Autocannon" hidden="false" collective="false" import="true" targetId="6114-7ebd-e526-46a8" type="selectionEntry" sortIndex="3">
+<entryLink id="63ff-5217-d2e7-51b2" name="Autocannon" hidden="false" collective="false" import="true" targetId="6114-7ebd-e526-46a8" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2336-ea45-3a4a-0df3" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="438c-c95f-a501-2e72" type="max" />
+</constraints>
+</entryLink>
+</entryLinks>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
+</selectionEntry>
+<selectionEntry id="930d-4682-d225-1b69" name="Heavy Bolter" hidden="false" collective="false" import="true" type="upgrade">
+<entryLinks>
+<entryLink id="827c-f742-3a99-dd09" name="Heavy Bolter" hidden="false" collective="false" import="true" targetId="9151-5044-e482-04c9" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d77f-6b95-cef2-3aa5" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cf56-4a95-6891-7b84" type="max" />
+</constraints>
 </entryLink>
-<entryLink id="930d-4682-d225-1b69" name="Heavy Bolter" hidden="false" collective="false" import="true" targetId="9151-5044-e482-04c9" type="selectionEntry" sortIndex="4">
+</entryLinks>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
 </costs>
-</entryLink>
+</selectionEntry>
+</selectionEntries>
+<entryLinks>
+<entryLink id="0d5f-598c-b031-53c7" name="Power Fist" hidden="false" collective="false" import="true" targetId="0b4d-922b-4629-b7ca" type="selectionEntry" sortIndex="1" defaultAmount="1" />
 <entryLink id="aa75-37f8-5359-3974" name="Meltagun" hidden="false" collective="false" import="true" targetId="63e8-bee7-88b7-64c6" type="selectionEntry" sortIndex="5" />
 </entryLinks>
 </selectionEntryGroup>

@@ -26212,9 +26212,20 @@
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="441a-9e4c-422e-ac3f" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="841f-4898-4849-b0ca" type="max" />
 </constraints>
+<selectionEntries>
+<selectionEntry id="f7c5-4cc8-45b8-47ab" name="Heavy Bolter" hidden="false" collective="false" import="true" type="upgrade">
+<entryLinks>
+<entryLink id="045d-cbe1-c2ff-cdda" name="Heavy Bolter" hidden="false" collective="false" import="true" targetId="9151-5044-e482-04c9" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9284-fe0a-9332-4ac9" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e89f-df9c-b44a-1052" type="max" />
+</constraints>
+</entryLink>
+</entryLinks>
+</selectionEntry>
+</selectionEntries>
 <entryLinks>
 <entryLink id="98a5-2ea4-e815-7de2" name="Multi-Laser" hidden="false" collective="false" import="true" targetId="931a-1402-b027-9ee0" type="selectionEntry" sortIndex="1" defaultAmount="1" />
-<entryLink id="f7c5-4cc8-45b8-47ab" name="Heavy Bolter" hidden="false" collective="false" import="true" targetId="9151-5044-e482-04c9" type="selectionEntry" sortIndex="3" />
 <entryLink id="d0e3-e07c-68e5-7377" name="Heavy Flamer" hidden="false" collective="false" import="true" targetId="9e6d-afcf-8202-e47c" type="selectionEntry" sortIndex="4" />
 </entryLinks>
 </selectionEntryGroup>
