@@ -119,24 +119,29 @@ def option(key, name, cost, forbid=None, max_=1, extra_mods=None, min_=0, min_mo
     return link(lid, W(name), name, cost=cost, mods=mods, constraints=cons)
 
 
-def has(item_id, scope, n=1):
-    return cond(item_id, scope, "atLeast", n)
+def has(item_id, scope, n=1, deep=True):
+    return cond(item_id, scope, "atLeast", n, deep=deep)
 
 
-def lacks(item_id, scope):
-    return cond(item_id, scope, "equalTo", 0)
+def lacks(item_id, scope, deep=True):
+    return cond(item_id, scope, "equalTo", 0, deep=deep)
+
+
+def own(item_id, scope):
+    """The character himself has the item (not counting his retinue or anything else below him)."""
+    return cond(item_id, scope, "atLeast", 1, deep=False)
 
 
 TDA = ["Terminator Armour", "Tartaros Terminator Armour", "Cataphractii Terminator Armour"]
 
 
-def has_tda(scope):
-    return [has(W(n), scope) for n in TDA]
+def has_tda(scope, deep=True):
+    return [has(W(n), scope, deep=deep) for n in TDA]
 
 
-def no_tda(scope):
+def no_tda(scope, deep=True):
     """Condition group: none of the Terminator Armour patterns selected."""
-    return all_of(*[lacks(W(n), scope) for n in TDA])
+    return all_of(*[lacks(W(n), scope, deep=deep) for n in TDA])
 
 
 def per_model(key, name, per, unit_id, contains, rules_text=None, max_=1):
@@ -260,28 +265,28 @@ def item_forbids(item, scope, note, is_centurion):
     """Conditions under which an Independent Character may NOT take `item`."""
     f = []
     if is_centurion:
-        f += [has(consul_id(c), scope) for c in CONSUL_FORBIDS.get(item, [])]
+        f += [own(consul_id(c), scope) for c in CONSUL_FORBIDS.get(item, [])]
     if note == "tda":
         # needs Terminator Armour: forbidden when no pattern is selected
-        f.append(("group", no_tda(scope)))
+        f.append(("group", no_tda(scope, deep=False)))
     if item in NOT_WITH_TDA:
-        f += has_tda(scope)
+        f += has_tda(scope, deep=False)
     if note == "psyker":
-        f.append(("group", all_of(*[lacks(consul_id(c), scope) for c in PSYKER_CONSULS])))
+        f.append(("group", all_of(*[lacks(consul_id(c), scope, deep=False) for c in PSYKER_CONSULS])))
     if note == "apothecary":
-        f.append(lacks(consul_id("Primus Medicae"), scope))
-    save5 = has_tda(scope) + [has(W("Iron Halo"), scope), has(W("Boarding Shield"), scope),
-                              has(W("Refractor Field"), scope)]
+        f.append(lacks(consul_id("Primus Medicae"), scope, deep=False))
+    save5 = has_tda(scope, deep=False) + [own(W("Iron Halo"), scope), own(W("Boarding Shield"), scope),
+                              own(W("Refractor Field"), scope)]
     if is_centurion:
-        save5.append(has(consul_id("Chaplain"), scope))
+        save5.append(own(consul_id("Chaplain"), scope))
     if note == "inv6":
         f += save5
     if note in ("inv5", "refractor"):
         f += [c for c in save5 if c.get("childId") != W(item)]
     if note == "ironhalo":
-        f += [has(W("Cataphractii Terminator Armour"), scope)]
+        f += [own(W("Cataphractii Terminator Armour"), scope)]
         if is_centurion:
-            f.append(has(consul_id("Chaplain"), scope))
+            f.append(own(consul_id("Chaplain"), scope))
     return f
 
 
@@ -323,9 +328,9 @@ def ic_armoury(key, unit_id, praetor):
         mn, mx = uid(gid, "min"), uid(gid, "max")
         mods = []
         if not allow_pair:
-            zero_when = [has(W("Pair of Lightning Claws"), unit_id)]
+            zero_when = [own(W("Pair of Lightning Claws"), unit_id)]
             if is_cent:
-                zero_when += [has(consul_id(c), unit_id) for c in REPLACES_CHAINSWORD]
+                zero_when += [own(consul_id(c), unit_id) for c in REPLACES_CHAINSWORD]
             mods = [modifier("set", mn, 0, groups=[any_of(*zero_when)]),
                     modifier("set", mx, 0, groups=[any_of(*zero_when)]),
                     modifier("set", "hidden", "true", groups=[any_of(*zero_when)])]
@@ -356,13 +361,13 @@ def ic_armour_mobility(key, unit_id, is_cent):
     for name, pts in [("Artificer Armour", 20), ("Terminator Armour", 25), ("Tartaros Terminator Armour", 25),
                       ("Cataphractii Terminator Armour", 25)]:
         lid = uid("link", gid, name)
-        f = [has(consul_id(c), unit_id) for c in CONSUL_FORBIDS.get(name, [])] if is_cent else []
+        f = [own(consul_id(c), unit_id) for c in CONSUL_FORBIDS.get(name, [])] if is_cent else []
         cons = [constraint(uid(lid, "max"), "max", 1, auto=True)]
         mods = forbid_mods(lid, f)
         if is_cent and name == "Cataphractii Terminator Armour":
             min_id = uid(lid, "min")
             cons.append(constraint(min_id, "min", 0))
-            mods.append(modifier("set", min_id, 1, conds=[has(consul_id("Primus Nullificator"), unit_id)]))
+            mods.append(modifier("set", min_id, 1, conds=[own(consul_id("Primus Nullificator"), unit_id)]))
         links.append(link(lid, W(name), name, cost=pts, mods=mods, constraints=cons))
     mn, mx = uid(gid, "min"), uid(gid, "max")
     armour = group(gid, "Armour", default=dl, links=links,
@@ -372,8 +377,8 @@ def ic_armour_mobility(key, unit_id, is_cent):
     mob_links = []
     for name, pts in [("Jump Pack", 20), ("Space Marine Bike", 35)]:
         lid = uid("link", mid, name)
-        f = [has(consul_id(c), unit_id) for c in CONSUL_FORBIDS.get(name, [])] if is_cent else []
-        f += has_tda(unit_id)  # "If not equipped with Terminator Armour"
+        f = [own(consul_id(c), unit_id) for c in CONSUL_FORBIDS.get(name, [])] if is_cent else []
+        f += has_tda(unit_id, deep=False)  # "If not equipped with Terminator Armour"
         mob_links.append(link(lid, W(name), name, cost=pts, mods=forbid_mods(lid, f),
                               constraints=[constraint(uid(lid, "max"), "max", 1, auto=True)]))
     mobility = group(mid, "Mobility", links=mob_links, constraints=[constraint(uid(mid, "max"), "max", 1)])
@@ -449,8 +454,8 @@ def consul_group(unit_id):
 
 def tda_pistol_error(unit_id):
     """Bolt Pistols are 'Not with Terminator Armour' - the default pistol has to be replaced."""
-    grp = el("conditionGroup", {"type": "and"}, [wrap("conditions", [has(W("Bolt Pistol"), unit_id)]),
-                                                 wrap("conditionGroups", [any_of(*has_tda(unit_id))])])
+    grp = el("conditionGroup", {"type": "and"}, [wrap("conditions", [own(W("Bolt Pistol"), unit_id)]),
+                                                 wrap("conditionGroups", [any_of(*has_tda(unit_id, deep=False))])])
     return modifier("add", "error", "A model in Terminator Armour can't keep a Bolt Pistol - replace it.",
                     groups=[grp])
 

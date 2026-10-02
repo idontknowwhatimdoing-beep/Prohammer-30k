@@ -666,7 +666,7 @@ def retinue_group(char_key, char_id, praetor):
         lid = uid("link", gid, e.get("id"))
         mods = []
         if e is tcs:
-            mods = [modifier("set", "hidden", "true", groups=[no_tda(char_id)])]
+            mods = [modifier("set", "hidden", "true", groups=[no_tda(char_id, deep=False)])]
         links.append(link(lid, e.get("id"), e.get("name"), mods=mods))
     return group(gid, "Retinue (no Force Organisation slot)", links=links,
                  constraints=[constraint(uid(gid, "max"), "max", 1, auto=True)],
