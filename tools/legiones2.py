@@ -1509,6 +1509,39 @@ def auto_model_limits(root):
                 c.set("automatic", "true")
 
 
+def hide_when_zero(root):
+    """An option whose own limit is set to 0 under some condition is also hidden under that condition, so players
+    are not offered a choice that would only produce an error."""
+    import copy as _copy
+    for x in root.iter():
+        if x.tag not in ("selectionEntry", "selectionEntryGroup", "entryLink"):
+            continue
+        maxes = {c.get("id") for c in x.findall("constraints/constraint") if c.get("type") == "max"}
+        mods = x.find("modifiers")
+        if not maxes or mods is None:
+            continue
+        have = [ET_tostring(m.find("conditions")) + ET_tostring(m.find("conditionGroups"))
+                for m in mods if m.get("field") == "hidden" and m.get("value") == "true"]
+        for m in list(mods):
+            if m.get("type") == "set" and m.get("field") in maxes and m.get("value") in ("0", "0.0") \
+                    and m.find("repeats") is None:
+                key = ET_tostring(m.find("conditions")) + ET_tostring(m.find("conditionGroups"))
+                if key in have or (m.find("conditions") is None and m.find("conditionGroups") is None):
+                    continue
+                h = el("modifier", {"type": "set", "field": "hidden", "value": "true"})
+                for tag in ("conditions", "conditionGroups"):
+                    c = m.find(tag)
+                    if c is not None:
+                        h.append(_copy.deepcopy(c))
+                mods.append(h)
+                have.append(key)
+
+
+def ET_tostring(e):
+    import xml.etree.ElementTree as _ET
+    return "" if e is None else _ET.tostring(e, encoding="unicode")
+
+
 # ---------------------------------------------------------------- assemble
 def extend(units_by_name, shared):
     """Attach retinues / new options to slice-1 entries and return (root units, shared entries)."""

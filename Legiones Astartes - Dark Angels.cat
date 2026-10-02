@@ -15905,6 +15905,11 @@ LIMITATIONS - The Warlord must belong to the Firewing. The compulsory Troops mus
 <condition field="pts0-0000-0000-0001" scope="roster" value="1000" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="any" type="lessThan" />
 </conditions>
 </modifier>
+<modifier type="set" field="hidden" value="true">
+<conditions>
+<condition field="pts0-0000-0000-0001" scope="roster" value="1000" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="any" type="lessThan" />
+</conditions>
+</modifier>
 </modifiers>
 <constraints>
 <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a032-4373-7bf9-c1c0" type="max" />
@@ -37984,6 +37989,11 @@ LIMITATIONS - The Warlord must belong to the Firewing. The compulsory Troops mus
 <condition field="pts0-0000-0000-0001" scope="roster" value="2000" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="any" type="lessThan" />
 </conditions>
 </modifier>
+<modifier type="set" field="hidden" value="true">
+<conditions>
+<condition field="pts0-0000-0000-0001" scope="roster" value="2000" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="any" type="lessThan" />
+</conditions>
+</modifier>
 </modifiers>
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6bc1-cfd1-a399-0f84" type="max" automatic="true" />
@@ -51946,6 +51956,11 @@ LIMITATIONS - The Warlord must belong to the Firewing. The compulsory Troops mus
 <selectionEntry id="d3bf-f462-1c64-d2a2" name="Legion Honour Guard Standard Bearer (Legion Standard)" hidden="false" collective="false" import="true" type="model">
 <modifiers>
 <modifier type="set" field="f903-d61c-4587-8fa0" value="0">
+<conditions>
+<condition field="pts0-0000-0000-0001" scope="roster" value="2000" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="any" type="lessThan" />
+</conditions>
+</modifier>
+<modifier type="set" field="hidden" value="true">
 <conditions>
 <condition field="pts0-0000-0000-0001" scope="roster" value="2000" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="any" type="lessThan" />
 </conditions>

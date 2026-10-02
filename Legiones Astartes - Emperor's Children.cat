@@ -8200,6 +8200,11 @@ LIMITATIONS - Only a Traitor Emperor's Children Detachment. The army must includ
 <condition field="pts0-0000-0000-0001" scope="roster" value="1000" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="any" type="lessThan" />
 </conditions>
 </modifier>
+<modifier type="set" field="hidden" value="true">
+<conditions>
+<condition field="pts0-0000-0000-0001" scope="roster" value="1000" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="any" type="lessThan" />
+</conditions>
+</modifier>
 </modifiers>
 <constraints>
 <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a032-4373-7bf9-c1c0" type="max" />
@@ -25606,6 +25611,11 @@ LIMITATIONS - Only a Traitor Emperor's Children Detachment. The army must includ
 <condition field="pts0-0000-0000-0001" scope="roster" value="2000" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="any" type="lessThan" />
 </conditions>
 </modifier>
+<modifier type="set" field="hidden" value="true">
+<conditions>
+<condition field="pts0-0000-0000-0001" scope="roster" value="2000" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="any" type="lessThan" />
+</conditions>
+</modifier>
 </modifiers>
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6bc1-cfd1-a399-0f84" type="max" automatic="true" />
@@ -34117,6 +34127,11 @@ LIMITATIONS - Only a Traitor Emperor's Children Detachment. The army must includ
 <condition field="pts0-0000-0000-0001" scope="roster" value="2000" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="any" type="lessThan" />
 </conditions>
 </modifier>
+<modifier type="set" field="hidden" value="true">
+<conditions>
+<condition field="pts0-0000-0000-0001" scope="roster" value="2000" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="any" type="lessThan" />
+</conditions>
+</modifier>
 </modifiers>
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7b1b-74df-87ed-33bf" type="max" automatic="true" />
@@ -36911,6 +36926,11 @@ LIMITATIONS - Only a Traitor Emperor's Children Detachment. The army must includ
 <selectionEntry id="bc2b-e050-5777-eec0" name="Legion Honour Guard Standard Bearer (Legion Standard)" hidden="false" collective="false" import="true" type="model">
 <modifiers>
 <modifier type="set" field="d62c-d40b-64cc-46d0" value="0">
+<conditions>
+<condition field="pts0-0000-0000-0001" scope="roster" value="2000" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="any" type="lessThan" />
+</conditions>
+</modifier>
+<modifier type="set" field="hidden" value="true">
 <conditions>
 <condition field="pts0-0000-0000-0001" scope="roster" value="2000" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="any" type="lessThan" />
 </conditions>

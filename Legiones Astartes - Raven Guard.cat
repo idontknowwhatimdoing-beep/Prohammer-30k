@@ -2085,6 +2085,11 @@
 <condition field="selections" scope="8f8a-6255-05f3-580a" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fa2e-4609-fd31-604d" type="atLeast" />
 </conditions>
 </modifier>
+<modifier type="set" field="hidden" value="true">
+<conditions>
+<condition field="selections" scope="8f8a-6255-05f3-580a" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fa2e-4609-fd31-604d" type="atLeast" />
+</conditions>
+</modifier>
 </modifiers>
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a1b4-60d3-1608-2c3f" type="min" />
@@ -6957,6 +6962,11 @@
 <condition field="selections" scope="dc5f-e6e9-ddec-ab25" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e3ec-b352-04c2-d243" type="atLeast" />
 </conditions>
 </modifier>
+<modifier type="set" field="hidden" value="true">
+<conditions>
+<condition field="selections" scope="dc5f-e6e9-ddec-ab25" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e3ec-b352-04c2-d243" type="atLeast" />
+</conditions>
+</modifier>
 </modifiers>
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f381-30f3-28bf-ed94" type="min" automatic="true" />
@@ -8405,6 +8415,11 @@ LIMITATIONS - Loyalist Raven Guard Detachments only. No units with the Immobile 
 <condition field="pts0-0000-0000-0001" scope="roster" value="1000" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="any" type="lessThan" />
 </conditions>
 </modifier>
+<modifier type="set" field="hidden" value="true">
+<conditions>
+<condition field="pts0-0000-0000-0001" scope="roster" value="1000" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="any" type="lessThan" />
+</conditions>
+</modifier>
 </modifiers>
 <constraints>
 <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a032-4373-7bf9-c1c0" type="max" />
@@ -8804,6 +8819,16 @@ LIMITATIONS - Loyalist Raven Guard Detachments only. No units with the Immobile 
 </conditions>
 </modifier>
 <modifier type="set" field="7736-e127-8431-cb1b" value="0">
+<conditions>
+<condition field="selections" scope="a34e-5c80-57bd-554d" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e1c4-da75-2629-0ec0" type="atLeast" />
+</conditions>
+</modifier>
+<modifier type="set" field="hidden" value="true">
+<conditions>
+<condition field="selections" scope="a34e-5c80-57bd-554d" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="70e1-5338-1292-56ea" type="atLeast" />
+</conditions>
+</modifier>
+<modifier type="set" field="hidden" value="true">
 <conditions>
 <condition field="selections" scope="a34e-5c80-57bd-554d" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e1c4-da75-2629-0ec0" type="atLeast" />
 </conditions>
@@ -10348,6 +10373,11 @@ LIMITATIONS - Loyalist Raven Guard Detachments only. No units with the Immobile 
 </conditions>
 </modifier>
 <modifier type="set" field="ce1c-4820-f569-9ff1" value="0">
+<conditions>
+<condition field="selections" scope="dc24-cdef-2339-2629" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ff7f-a445-0abb-e8ea" type="atLeast" />
+</conditions>
+</modifier>
+<modifier type="set" field="hidden" value="true">
 <conditions>
 <condition field="selections" scope="dc24-cdef-2339-2629" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ff7f-a445-0abb-e8ea" type="atLeast" />
 </conditions>
@@ -13420,6 +13450,11 @@ LIMITATIONS - Loyalist Raven Guard Detachments only. No units with the Immobile 
 </conditions>
 </modifier>
 <modifier type="set" field="248b-538a-1a8a-6d96" value="0">
+<conditions>
+<condition field="selections" scope="b2a1-bc50-ae60-bf88" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="aa5c-4457-69fe-72e7" type="atLeast" />
+</conditions>
+</modifier>
+<modifier type="set" field="hidden" value="true">
 <conditions>
 <condition field="selections" scope="b2a1-bc50-ae60-bf88" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="aa5c-4457-69fe-72e7" type="atLeast" />
 </conditions>
@@ -23224,6 +23259,11 @@ LIMITATIONS - Loyalist Raven Guard Detachments only. No units with the Immobile 
 <condition field="selections" scope="cea8-ce41-4f62-ce90" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ab37-5acc-fcea-2a9c" type="atLeast" />
 </conditions>
 </modifier>
+<modifier type="set" field="hidden" value="true">
+<conditions>
+<condition field="selections" scope="cea8-ce41-4f62-ce90" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ab37-5acc-fcea-2a9c" type="atLeast" />
+</conditions>
+</modifier>
 </modifiers>
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d695-b8d4-f4d1-6e89" type="min" automatic="true" />
@@ -25847,6 +25887,11 @@ LIMITATIONS - Loyalist Raven Guard Detachments only. No units with the Immobile 
 <selectionEntry id="f97e-70e9-845f-d86c" name="Legion Honour Guard Standard Bearer (Legion Standard)" hidden="false" collective="false" import="true" type="model">
 <modifiers>
 <modifier type="set" field="6bc1-cfd1-a399-0f84" value="0">
+<conditions>
+<condition field="pts0-0000-0000-0001" scope="roster" value="2000" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="any" type="lessThan" />
+</conditions>
+</modifier>
+<modifier type="set" field="hidden" value="true">
 <conditions>
 <condition field="pts0-0000-0000-0001" scope="roster" value="2000" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="any" type="lessThan" />
 </conditions>
@@ -33783,6 +33828,11 @@ LIMITATIONS - Loyalist Raven Guard Detachments only. No units with the Immobile 
 <condition field="selections" scope="586b-fa90-8d55-67dd" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1d19-37d3-727d-3dc5" type="atLeast" />
 </conditions>
 </modifier>
+<modifier type="set" field="hidden" value="true">
+<conditions>
+<condition field="selections" scope="586b-fa90-8d55-67dd" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1d19-37d3-727d-3dc5" type="atLeast" />
+</conditions>
+</modifier>
 </modifiers>
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2cab-65ad-684a-94ce" type="min" automatic="true" />
@@ -38480,6 +38530,11 @@ LIMITATIONS - Loyalist Raven Guard Detachments only. No units with the Immobile 
 <condition field="pts0-0000-0000-0001" scope="roster" value="2000" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="any" type="lessThan" />
 </conditions>
 </modifier>
+<modifier type="set" field="hidden" value="true">
+<conditions>
+<condition field="pts0-0000-0000-0001" scope="roster" value="2000" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="any" type="lessThan" />
+</conditions>
+</modifier>
 </modifiers>
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fc3b-2346-679f-364f" type="max" automatic="true" />
@@ -40305,6 +40360,11 @@ LIMITATIONS - Loyalist Raven Guard Detachments only. No units with the Immobile 
 </conditions>
 </modifier>
 <modifier type="set" field="0e67-2815-36e6-ff23" value="0">
+<conditions>
+<condition field="selections" scope="5029-8b80-226d-3815" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a882-eaf6-ce86-10b8" type="atLeast" />
+</conditions>
+</modifier>
+<modifier type="set" field="hidden" value="true">
 <conditions>
 <condition field="selections" scope="5029-8b80-226d-3815" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a882-eaf6-ce86-10b8" type="atLeast" />
 </conditions>

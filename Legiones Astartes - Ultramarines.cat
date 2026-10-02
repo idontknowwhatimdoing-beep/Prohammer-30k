@@ -7707,6 +7707,11 @@ LIMITATIONS - Loyalist Ultramarines Detachment only. The army must include an Al
 <condition field="pts0-0000-0000-0001" scope="roster" value="1000" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="any" type="lessThan" />
 </conditions>
 </modifier>
+<modifier type="set" field="hidden" value="true">
+<conditions>
+<condition field="pts0-0000-0000-0001" scope="roster" value="1000" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="any" type="lessThan" />
+</conditions>
+</modifier>
 </modifiers>
 <constraints>
 <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a032-4373-7bf9-c1c0" type="max" />
@@ -24351,6 +24356,11 @@ LIMITATIONS - Loyalist Ultramarines Detachment only. The army must include an Al
 <condition field="pts0-0000-0000-0001" scope="roster" value="2000" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="any" type="lessThan" />
 </conditions>
 </modifier>
+<modifier type="set" field="hidden" value="true">
+<conditions>
+<condition field="pts0-0000-0000-0001" scope="roster" value="2000" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="any" type="lessThan" />
+</conditions>
+</modifier>
 </modifiers>
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6bc1-cfd1-a399-0f84" type="max" automatic="true" />
@@ -40684,6 +40694,11 @@ LIMITATIONS - Loyalist Ultramarines Detachment only. The army must include an Al
 <selectionEntry id="0334-5aee-ffb9-40eb" name="Legion Honour Guard Standard Bearer (Legion Standard)" hidden="false" collective="false" import="true" type="model">
 <modifiers>
 <modifier type="set" field="85e5-e8f3-c10d-2cc8" value="0">
+<conditions>
+<condition field="pts0-0000-0000-0001" scope="roster" value="2000" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="any" type="lessThan" />
+</conditions>
+</modifier>
+<modifier type="set" field="hidden" value="true">
 <conditions>
 <condition field="pts0-0000-0000-0001" scope="roster" value="2000" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="any" type="lessThan" />
 </conditions>

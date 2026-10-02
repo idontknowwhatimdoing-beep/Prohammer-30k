@@ -5136,6 +5136,16 @@
 </conditionGroup>
 </conditionGroups>
 </modifier>
+<modifier type="set" field="hidden" value="true">
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b029-bbbc-d097-e679" type="atLeast" />
+<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a0c2-eb37-42db-2813" type="atLeast" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
 </modifiers>
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2ea2-5ad1-59da-43e9" type="max" />
@@ -8575,6 +8585,11 @@ LIMITATIONS - The Warlord must be a Thousand Sons Psyker. At least two Psychic B
 <selectionEntry id="57df-9f1d-b10f-3a20" name="Damocles Command Rhino" hidden="false" collective="false" import="true" type="unit">
 <modifiers>
 <modifier type="set" field="a032-4373-7bf9-c1c0" value="0">
+<conditions>
+<condition field="pts0-0000-0000-0001" scope="roster" value="1000" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="any" type="lessThan" />
+</conditions>
+</modifier>
+<modifier type="set" field="hidden" value="true">
 <conditions>
 <condition field="pts0-0000-0000-0001" scope="roster" value="1000" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="any" type="lessThan" />
 </conditions>
@@ -26524,6 +26539,11 @@ LIMITATIONS - The Warlord must be a Thousand Sons Psyker. At least two Psychic B
 <selectionEntry id="f97e-70e9-845f-d86c" name="Legion Honour Guard Standard Bearer (Legion Standard)" hidden="false" collective="false" import="true" type="model">
 <modifiers>
 <modifier type="set" field="6bc1-cfd1-a399-0f84" value="0">
+<conditions>
+<condition field="pts0-0000-0000-0001" scope="roster" value="2000" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="any" type="lessThan" />
+</conditions>
+</modifier>
+<modifier type="set" field="hidden" value="true">
 <conditions>
 <condition field="pts0-0000-0000-0001" scope="roster" value="2000" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="any" type="lessThan" />
 </conditions>
@@ -44657,6 +44677,11 @@ LIMITATIONS - The Warlord must be a Thousand Sons Psyker. At least two Psychic B
 <selectionEntry id="a6dd-0ac8-31c0-b101" name="Legion Honour Guard Standard Bearer (Legion Standard)" hidden="false" collective="false" import="true" type="model">
 <modifiers>
 <modifier type="set" field="accf-ad0e-30c3-9965" value="0">
+<conditions>
+<condition field="pts0-0000-0000-0001" scope="roster" value="2000" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="any" type="lessThan" />
+</conditions>
+</modifier>
+<modifier type="set" field="hidden" value="true">
 <conditions>
 <condition field="pts0-0000-0000-0001" scope="roster" value="2000" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="any" type="lessThan" />
 </conditions>

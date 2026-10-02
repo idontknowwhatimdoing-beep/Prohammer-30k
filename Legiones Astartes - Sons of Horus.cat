@@ -1915,6 +1915,11 @@
 <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="af50-de01-cc93-f43e" type="atLeast" />
 </conditions>
 </modifier>
+<modifier type="set" field="hidden" value="true">
+<conditions>
+<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="af50-de01-cc93-f43e" type="atLeast" />
+</conditions>
+</modifier>
 </modifiers>
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3b20-b58d-5893-d1ab" type="max" />
@@ -4975,6 +4980,11 @@
 <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="af50-de01-cc93-f43e" type="atLeast" />
 </conditions>
 </modifier>
+<modifier type="set" field="hidden" value="true">
+<conditions>
+<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="af50-de01-cc93-f43e" type="atLeast" />
+</conditions>
+</modifier>
 </modifiers>
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5c9f-972b-5b9d-8274" type="max" />
@@ -5138,6 +5148,11 @@
 </conditions>
 </modifier>
 <modifier type="set" field="43d1-4f57-61a3-552d" value="0">
+<conditions>
+<condition field="selections" scope="9b73-36d5-ba55-fd55" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="71a5-9046-3e66-565a" type="atLeast" />
+</conditions>
+</modifier>
+<modifier type="set" field="hidden" value="true">
 <conditions>
 <condition field="selections" scope="9b73-36d5-ba55-fd55" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="71a5-9046-3e66-565a" type="atLeast" />
 </conditions>
@@ -6115,6 +6130,11 @@
 <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="af50-de01-cc93-f43e" type="atLeast" />
 </conditions>
 </modifier>
+<modifier type="set" field="hidden" value="true">
+<conditions>
+<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="af50-de01-cc93-f43e" type="atLeast" />
+</conditions>
+</modifier>
 </modifiers>
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c63d-c8c7-b5b0-19ee" type="max" />
@@ -6744,6 +6764,11 @@
 </conditions>
 </modifier>
 <modifier type="set" field="2964-668d-872f-e45f" value="0">
+<conditions>
+<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="af50-de01-cc93-f43e" type="atLeast" />
+</conditions>
+</modifier>
+<modifier type="set" field="hidden" value="true">
 <conditions>
 <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="af50-de01-cc93-f43e" type="atLeast" />
 </conditions>
@@ -7438,6 +7463,11 @@
 </conditions>
 </modifier>
 <modifier type="set" field="91da-ac07-a0e7-55af" value="0">
+<conditions>
+<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="af50-de01-cc93-f43e" type="atLeast" />
+</conditions>
+</modifier>
+<modifier type="set" field="hidden" value="true">
 <conditions>
 <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="af50-de01-cc93-f43e" type="atLeast" />
 </conditions>
@@ -8203,6 +8233,11 @@
 <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="af50-de01-cc93-f43e" type="atLeast" />
 </conditions>
 </modifier>
+<modifier type="set" field="hidden" value="true">
+<conditions>
+<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="af50-de01-cc93-f43e" type="atLeast" />
+</conditions>
+</modifier>
 </modifiers>
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7219-f695-a7de-8eae" type="max" />
@@ -8626,6 +8661,11 @@ LIMITATIONS - The Detachment must include a Legion Centurion upgraded to a Maste
 <condition field="pts0-0000-0000-0001" scope="roster" value="1000" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="any" type="lessThan" />
 </conditions>
 </modifier>
+<modifier type="set" field="hidden" value="true">
+<conditions>
+<condition field="pts0-0000-0000-0001" scope="roster" value="1000" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="any" type="lessThan" />
+</conditions>
+</modifier>
 </modifiers>
 <constraints>
 <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a032-4373-7bf9-c1c0" type="max" />
@@ -8758,6 +8798,11 @@ LIMITATIONS - The Detachment must include a Legion Centurion upgraded to a Maste
 </conditions>
 </modifier>
 <modifier type="set" field="e1e5-25a4-32a5-63b2" value="0">
+<conditions>
+<condition field="selections" scope="5234-c493-83a2-9202" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c559-a7d4-7d54-c8d7" type="atLeast" />
+</conditions>
+</modifier>
+<modifier type="set" field="hidden" value="true">
 <conditions>
 <condition field="selections" scope="5234-c493-83a2-9202" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c559-a7d4-7d54-c8d7" type="atLeast" />
 </conditions>
@@ -9725,6 +9770,11 @@ LIMITATIONS - The Detachment must include a Legion Centurion upgraded to a Maste
 </conditions>
 </modifier>
 <modifier type="set" field="6e49-6a6d-0a7d-d369" value="0">
+<conditions>
+<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="af50-de01-cc93-f43e" type="atLeast" />
+</conditions>
+</modifier>
+<modifier type="set" field="hidden" value="true">
 <conditions>
 <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="af50-de01-cc93-f43e" type="atLeast" />
 </conditions>
@@ -10699,6 +10749,11 @@ LIMITATIONS - The Detachment must include a Legion Centurion upgraded to a Maste
 <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="af50-de01-cc93-f43e" type="atLeast" />
 </conditions>
 </modifier>
+<modifier type="set" field="hidden" value="true">
+<conditions>
+<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="af50-de01-cc93-f43e" type="atLeast" />
+</conditions>
+</modifier>
 </modifiers>
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7d9e-021f-f41e-8446" type="max" />
@@ -11435,6 +11490,11 @@ LIMITATIONS - The Detachment must include a Legion Centurion upgraded to a Maste
 </conditions>
 </modifier>
 <modifier type="set" field="2850-b942-e894-3541" value="0">
+<conditions>
+<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="af50-de01-cc93-f43e" type="atLeast" />
+</conditions>
+</modifier>
+<modifier type="set" field="hidden" value="true">
 <conditions>
 <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="af50-de01-cc93-f43e" type="atLeast" />
 </conditions>
@@ -14659,6 +14719,11 @@ LIMITATIONS - The Detachment must include a Legion Centurion upgraded to a Maste
 <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="af50-de01-cc93-f43e" type="atLeast" />
 </conditions>
 </modifier>
+<modifier type="set" field="hidden" value="true">
+<conditions>
+<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="af50-de01-cc93-f43e" type="atLeast" />
+</conditions>
+</modifier>
 </modifiers>
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="59e2-9c04-0d70-69b3" type="max" />
@@ -15313,6 +15378,11 @@ LIMITATIONS - The Detachment must include a Legion Centurion upgraded to a Maste
 <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="af50-de01-cc93-f43e" type="atLeast" />
 </conditions>
 </modifier>
+<modifier type="set" field="hidden" value="true">
+<conditions>
+<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="af50-de01-cc93-f43e" type="atLeast" />
+</conditions>
+</modifier>
 </modifiers>
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7963-6d86-31e9-e31c" type="max" />
@@ -15872,6 +15942,11 @@ LIMITATIONS - The Detachment must include a Legion Centurion upgraded to a Maste
 <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="af50-de01-cc93-f43e" type="atLeast" />
 </conditions>
 </modifier>
+<modifier type="set" field="hidden" value="true">
+<conditions>
+<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="af50-de01-cc93-f43e" type="atLeast" />
+</conditions>
+</modifier>
 </modifiers>
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3119-ee43-e0e9-0428" type="max" />
@@ -16247,6 +16322,11 @@ LIMITATIONS - The Detachment must include a Legion Centurion upgraded to a Maste
 </conditions>
 </modifier>
 <modifier type="set" field="f67b-2fc1-9884-e006" value="0">
+<conditions>
+<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="af50-de01-cc93-f43e" type="atLeast" />
+</conditions>
+</modifier>
+<modifier type="set" field="hidden" value="true">
 <conditions>
 <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="af50-de01-cc93-f43e" type="atLeast" />
 </conditions>
@@ -17489,6 +17569,11 @@ LIMITATIONS - The Detachment must include a Legion Centurion upgraded to a Maste
 </conditions>
 </modifier>
 <modifier type="set" field="4bf2-786e-b31b-0926" value="0">
+<conditions>
+<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="af50-de01-cc93-f43e" type="atLeast" />
+</conditions>
+</modifier>
+<modifier type="set" field="hidden" value="true">
 <conditions>
 <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="af50-de01-cc93-f43e" type="atLeast" />
 </conditions>
@@ -24043,6 +24128,11 @@ LIMITATIONS - The Detachment must include a Legion Centurion upgraded to a Maste
 <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="af50-de01-cc93-f43e" type="atLeast" />
 </conditions>
 </modifier>
+<modifier type="set" field="hidden" value="true">
+<conditions>
+<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="af50-de01-cc93-f43e" type="atLeast" />
+</conditions>
+</modifier>
 </modifiers>
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fa97-5f3e-1784-a6e0" type="max" />
@@ -25056,6 +25146,11 @@ LIMITATIONS - The Detachment must include a Legion Centurion upgraded to a Maste
 <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="af50-de01-cc93-f43e" type="atLeast" />
 </conditions>
 </modifier>
+<modifier type="set" field="hidden" value="true">
+<conditions>
+<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="af50-de01-cc93-f43e" type="atLeast" />
+</conditions>
+</modifier>
 </modifiers>
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="afea-9a0f-1206-8d5f" type="max" />
@@ -25785,6 +25880,11 @@ LIMITATIONS - The Detachment must include a Legion Centurion upgraded to a Maste
 <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="af50-de01-cc93-f43e" type="atLeast" />
 </conditions>
 </modifier>
+<modifier type="set" field="hidden" value="true">
+<conditions>
+<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="af50-de01-cc93-f43e" type="atLeast" />
+</conditions>
+</modifier>
 </modifiers>
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b939-f6b7-0290-a591" type="max" />
@@ -26066,6 +26166,11 @@ LIMITATIONS - The Detachment must include a Legion Centurion upgraded to a Maste
 <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="af50-de01-cc93-f43e" type="atLeast" />
 </conditions>
 </modifier>
+<modifier type="set" field="hidden" value="true">
+<conditions>
+<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="af50-de01-cc93-f43e" type="atLeast" />
+</conditions>
+</modifier>
 </modifiers>
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="485c-d0c0-6020-1e77" type="max" />
@@ -26238,6 +26343,11 @@ LIMITATIONS - The Detachment must include a Legion Centurion upgraded to a Maste
 </conditions>
 </modifier>
 <modifier type="set" field="8d72-21a2-97d0-722d" value="0">
+<conditions>
+<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="af50-de01-cc93-f43e" type="atLeast" />
+</conditions>
+</modifier>
+<modifier type="set" field="hidden" value="true">
 <conditions>
 <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="af50-de01-cc93-f43e" type="atLeast" />
 </conditions>
@@ -26438,6 +26548,11 @@ LIMITATIONS - The Detachment must include a Legion Centurion upgraded to a Maste
 </conditions>
 </modifier>
 <modifier type="set" field="d5d9-7875-152c-475a" value="0">
+<conditions>
+<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="af50-de01-cc93-f43e" type="atLeast" />
+</conditions>
+</modifier>
+<modifier type="set" field="hidden" value="true">
 <conditions>
 <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="af50-de01-cc93-f43e" type="atLeast" />
 </conditions>
@@ -26644,6 +26759,11 @@ LIMITATIONS - The Detachment must include a Legion Centurion upgraded to a Maste
 <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="af50-de01-cc93-f43e" type="atLeast" />
 </conditions>
 </modifier>
+<modifier type="set" field="hidden" value="true">
+<conditions>
+<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="af50-de01-cc93-f43e" type="atLeast" />
+</conditions>
+</modifier>
 </modifiers>
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7131-759a-3e33-2f0d" type="max" />
@@ -26845,6 +26965,11 @@ LIMITATIONS - The Detachment must include a Legion Centurion upgraded to a Maste
 <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="af50-de01-cc93-f43e" type="atLeast" />
 </conditions>
 </modifier>
+<modifier type="set" field="hidden" value="true">
+<conditions>
+<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="af50-de01-cc93-f43e" type="atLeast" />
+</conditions>
+</modifier>
 </modifiers>
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="502e-0d52-3de6-c763" type="max" />
@@ -27041,6 +27166,11 @@ LIMITATIONS - The Detachment must include a Legion Centurion upgraded to a Maste
 </conditions>
 </modifier>
 <modifier type="set" field="5ea2-15f3-4a6a-24a9" value="0">
+<conditions>
+<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="af50-de01-cc93-f43e" type="atLeast" />
+</conditions>
+</modifier>
+<modifier type="set" field="hidden" value="true">
 <conditions>
 <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="af50-de01-cc93-f43e" type="atLeast" />
 </conditions>
@@ -27971,6 +28101,11 @@ LIMITATIONS - The Detachment must include a Legion Centurion upgraded to a Maste
 <condition field="pts0-0000-0000-0001" scope="roster" value="2000" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="any" type="lessThan" />
 </conditions>
 </modifier>
+<modifier type="set" field="hidden" value="true">
+<conditions>
+<condition field="pts0-0000-0000-0001" scope="roster" value="2000" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="any" type="lessThan" />
+</conditions>
+</modifier>
 </modifiers>
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6bc1-cfd1-a399-0f84" type="max" automatic="true" />
@@ -28333,6 +28468,11 @@ LIMITATIONS - The Detachment must include a Legion Centurion upgraded to a Maste
 </conditions>
 </modifier>
 <modifier type="set" field="3583-b987-5575-6516" value="0">
+<conditions>
+<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="af50-de01-cc93-f43e" type="atLeast" />
+</conditions>
+</modifier>
+<modifier type="set" field="hidden" value="true">
 <conditions>
 <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="af50-de01-cc93-f43e" type="atLeast" />
 </conditions>
@@ -29350,6 +29490,11 @@ LIMITATIONS - The Detachment must include a Legion Centurion upgraded to a Maste
 <selectionEntry id="85db-1131-a1ec-9829" name="Legion Standard Bearer" hidden="false" collective="false" import="true" type="model">
 <modifiers>
 <modifier type="set" field="ac92-1c4d-8e1e-2030" value="0">
+<conditions>
+<condition field="selections" scope="6e9c-0ec5-5baf-e2d8" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d665-4d3a-518a-0e1a" type="atLeast" />
+</conditions>
+</modifier>
+<modifier type="set" field="hidden" value="true">
 <conditions>
 <condition field="selections" scope="6e9c-0ec5-5baf-e2d8" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d665-4d3a-518a-0e1a" type="atLeast" />
 </conditions>
@@ -30474,6 +30619,11 @@ LIMITATIONS - The Detachment must include a Legion Centurion upgraded to a Maste
 </conditions>
 </modifier>
 <modifier type="set" field="6e29-f0a7-9241-a0ce" value="0">
+<conditions>
+<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="af50-de01-cc93-f43e" type="atLeast" />
+</conditions>
+</modifier>
+<modifier type="set" field="hidden" value="true">
 <conditions>
 <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="af50-de01-cc93-f43e" type="atLeast" />
 </conditions>
@@ -32039,6 +32189,11 @@ LIMITATIONS - The Detachment must include a Legion Centurion upgraded to a Maste
 <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="af50-de01-cc93-f43e" type="atLeast" />
 </conditions>
 </modifier>
+<modifier type="set" field="hidden" value="true">
+<conditions>
+<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="af50-de01-cc93-f43e" type="atLeast" />
+</conditions>
+</modifier>
 </modifiers>
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5477-d18e-6435-c1ea" type="max" />
@@ -33052,6 +33207,11 @@ LIMITATIONS - The Detachment must include a Legion Centurion upgraded to a Maste
 <selectionEntry id="de57-92a7-dc01-ee51" name="Legion Standard Bearer" hidden="false" collective="false" import="true" type="model">
 <modifiers>
 <modifier type="set" field="583e-10cd-f768-2477" value="0">
+<conditions>
+<condition field="selections" scope="5fb6-a52b-4f8b-575d" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1df3-f709-bb1b-be47" type="atLeast" />
+</conditions>
+</modifier>
+<modifier type="set" field="hidden" value="true">
 <conditions>
 <condition field="selections" scope="5fb6-a52b-4f8b-575d" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1df3-f709-bb1b-be47" type="atLeast" />
 </conditions>
@@ -34176,6 +34336,11 @@ LIMITATIONS - The Detachment must include a Legion Centurion upgraded to a Maste
 </conditions>
 </modifier>
 <modifier type="set" field="8fce-6a0b-7d7e-deab" value="0">
+<conditions>
+<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="af50-de01-cc93-f43e" type="atLeast" />
+</conditions>
+</modifier>
+<modifier type="set" field="hidden" value="true">
 <conditions>
 <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="af50-de01-cc93-f43e" type="atLeast" />
 </conditions>
@@ -35741,6 +35906,11 @@ LIMITATIONS - The Detachment must include a Legion Centurion upgraded to a Maste
 <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="af50-de01-cc93-f43e" type="atLeast" />
 </conditions>
 </modifier>
+<modifier type="set" field="hidden" value="true">
+<conditions>
+<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="af50-de01-cc93-f43e" type="atLeast" />
+</conditions>
+</modifier>
 </modifiers>
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="39b0-254d-32a8-0ddd" type="max" />
@@ -37173,6 +37343,11 @@ LIMITATIONS - The Detachment must include a Legion Centurion upgraded to a Maste
 </conditions>
 </modifier>
 <modifier type="set" field="524a-1052-82e0-5e42" value="0">
+<conditions>
+<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="af50-de01-cc93-f43e" type="atLeast" />
+</conditions>
+</modifier>
+<modifier type="set" field="hidden" value="true">
 <conditions>
 <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="af50-de01-cc93-f43e" type="atLeast" />
 </conditions>
@@ -38738,6 +38913,11 @@ LIMITATIONS - The Detachment must include a Legion Centurion upgraded to a Maste
 <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="af50-de01-cc93-f43e" type="atLeast" />
 </conditions>
 </modifier>
+<modifier type="set" field="hidden" value="true">
+<conditions>
+<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="af50-de01-cc93-f43e" type="atLeast" />
+</conditions>
+</modifier>
 </modifiers>
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="17c3-7455-6178-37e5" type="max" />
@@ -39751,6 +39931,11 @@ LIMITATIONS - The Detachment must include a Legion Centurion upgraded to a Maste
 <selectionEntry id="5e9d-0fcf-75b8-cb2f" name="Legion Standard Bearer" hidden="false" collective="false" import="true" type="model">
 <modifiers>
 <modifier type="set" field="2d09-1577-7dfd-5b7e" value="0">
+<conditions>
+<condition field="selections" scope="ef1e-5566-ce27-02af" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e5ad-2d37-77ac-b172" type="atLeast" />
+</conditions>
+</modifier>
+<modifier type="set" field="hidden" value="true">
 <conditions>
 <condition field="selections" scope="ef1e-5566-ce27-02af" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e5ad-2d37-77ac-b172" type="atLeast" />
 </conditions>
@@ -40879,6 +41064,11 @@ LIMITATIONS - The Detachment must include a Legion Centurion upgraded to a Maste
 <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="af50-de01-cc93-f43e" type="atLeast" />
 </conditions>
 </modifier>
+<modifier type="set" field="hidden" value="true">
+<conditions>
+<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="af50-de01-cc93-f43e" type="atLeast" />
+</conditions>
+</modifier>
 </modifiers>
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="86c0-3f53-5ecc-683e" type="max" />
@@ -41598,6 +41788,11 @@ LIMITATIONS - The Detachment must include a Legion Centurion upgraded to a Maste
 </conditions>
 </modifier>
 <modifier type="set" field="eec2-f4b0-1bf9-08cc" value="0">
+<conditions>
+<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="af50-de01-cc93-f43e" type="atLeast" />
+</conditions>
+</modifier>
+<modifier type="set" field="hidden" value="true">
 <conditions>
 <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="af50-de01-cc93-f43e" type="atLeast" />
 </conditions>
@@ -42615,6 +42810,11 @@ LIMITATIONS - The Detachment must include a Legion Centurion upgraded to a Maste
 <selectionEntry id="5c94-56f5-2886-2ce1" name="Legion Standard Bearer" hidden="false" collective="false" import="true" type="model">
 <modifiers>
 <modifier type="set" field="5c40-54b5-1447-8a62" value="0">
+<conditions>
+<condition field="selections" scope="7859-0f24-7846-62e5" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8592-eebf-9c46-9a41" type="atLeast" />
+</conditions>
+</modifier>
+<modifier type="set" field="hidden" value="true">
 <conditions>
 <condition field="selections" scope="7859-0f24-7846-62e5" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8592-eebf-9c46-9a41" type="atLeast" />
 </conditions>
@@ -43743,6 +43943,11 @@ LIMITATIONS - The Detachment must include a Legion Centurion upgraded to a Maste
 <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="af50-de01-cc93-f43e" type="atLeast" />
 </conditions>
 </modifier>
+<modifier type="set" field="hidden" value="true">
+<conditions>
+<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="af50-de01-cc93-f43e" type="atLeast" />
+</conditions>
+</modifier>
 </modifiers>
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a12f-b956-5de2-430b" type="max" />
@@ -43866,6 +44071,11 @@ LIMITATIONS - The Detachment must include a Legion Centurion upgraded to a Maste
 </conditions>
 </modifier>
 <modifier type="set" field="c9a3-552f-b9bc-fd49" value="0">
+<conditions>
+<condition field="selections" scope="46bf-ee88-191d-40c0" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7d1b-3193-3dcc-f571" type="atLeast" />
+</conditions>
+</modifier>
+<modifier type="set" field="hidden" value="true">
 <conditions>
 <condition field="selections" scope="46bf-ee88-191d-40c0" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7d1b-3193-3dcc-f571" type="atLeast" />
 </conditions>
@@ -44837,6 +45047,11 @@ LIMITATIONS - The Detachment must include a Legion Centurion upgraded to a Maste
 <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="af50-de01-cc93-f43e" type="atLeast" />
 </conditions>
 </modifier>
+<modifier type="set" field="hidden" value="true">
+<conditions>
+<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="af50-de01-cc93-f43e" type="atLeast" />
+</conditions>
+</modifier>
 </modifiers>
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9d39-229c-ec21-5679" type="max" />
@@ -44960,6 +45175,11 @@ LIMITATIONS - The Detachment must include a Legion Centurion upgraded to a Maste
 </conditions>
 </modifier>
 <modifier type="set" field="25a1-80b7-00b0-a670" value="0">
+<conditions>
+<condition field="selections" scope="bab9-f9c1-dd3e-fb92" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1b3b-d7da-9c54-55df" type="atLeast" />
+</conditions>
+</modifier>
+<modifier type="set" field="hidden" value="true">
 <conditions>
 <condition field="selections" scope="bab9-f9c1-dd3e-fb92" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1b3b-d7da-9c54-55df" type="atLeast" />
 </conditions>
@@ -45927,6 +46147,11 @@ LIMITATIONS - The Detachment must include a Legion Centurion upgraded to a Maste
 </conditions>
 </modifier>
 <modifier type="set" field="ac52-9569-b41a-af78" value="0">
+<conditions>
+<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="af50-de01-cc93-f43e" type="atLeast" />
+</conditions>
+</modifier>
+<modifier type="set" field="hidden" value="true">
 <conditions>
 <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="af50-de01-cc93-f43e" type="atLeast" />
 </conditions>
@@ -46924,6 +47149,11 @@ LIMITATIONS - The Detachment must include a Legion Centurion upgraded to a Maste
 <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="af50-de01-cc93-f43e" type="atLeast" />
 </conditions>
 </modifier>
+<modifier type="set" field="hidden" value="true">
+<conditions>
+<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="af50-de01-cc93-f43e" type="atLeast" />
+</conditions>
+</modifier>
 </modifiers>
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="be4f-ca93-5e3e-0a28" type="max" />
@@ -47917,6 +48147,11 @@ LIMITATIONS - The Detachment must include a Legion Centurion upgraded to a Maste
 <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="af50-de01-cc93-f43e" type="atLeast" />
 </conditions>
 </modifier>
+<modifier type="set" field="hidden" value="true">
+<conditions>
+<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="af50-de01-cc93-f43e" type="atLeast" />
+</conditions>
+</modifier>
 </modifiers>
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e9b2-4a51-e96e-e03e" type="max" />
@@ -48277,6 +48512,11 @@ LIMITATIONS - The Detachment must include a Legion Centurion upgraded to a Maste
 <selectionEntry id="4d29-ddb3-5d27-0e72" name="Legion Honour Guard Standard Bearer (Legion Standard)" hidden="false" collective="false" import="true" type="model">
 <modifiers>
 <modifier type="set" field="418a-db86-91fd-268a" value="0">
+<conditions>
+<condition field="pts0-0000-0000-0001" scope="roster" value="2000" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="any" type="lessThan" />
+</conditions>
+</modifier>
+<modifier type="set" field="hidden" value="true">
 <conditions>
 <condition field="pts0-0000-0000-0001" scope="roster" value="2000" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="any" type="lessThan" />
 </conditions>
@@ -48643,6 +48883,11 @@ LIMITATIONS - The Detachment must include a Legion Centurion upgraded to a Maste
 </conditions>
 </modifier>
 <modifier type="set" field="5f09-1335-01ed-5e83" value="0">
+<conditions>
+<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="af50-de01-cc93-f43e" type="atLeast" />
+</conditions>
+</modifier>
+<modifier type="set" field="hidden" value="true">
 <conditions>
 <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="af50-de01-cc93-f43e" type="atLeast" />
 </conditions>
@@ -50208,6 +50453,11 @@ LIMITATIONS - The Detachment must include a Legion Centurion upgraded to a Maste
 <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="af50-de01-cc93-f43e" type="atLeast" />
 </conditions>
 </modifier>
+<modifier type="set" field="hidden" value="true">
+<conditions>
+<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="af50-de01-cc93-f43e" type="atLeast" />
+</conditions>
+</modifier>
 </modifiers>
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8b4d-ae2a-9e1e-dc05" type="max" />
@@ -50867,6 +51117,11 @@ LIMITATIONS - The Detachment must include a Legion Centurion upgraded to a Maste
 <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="af50-de01-cc93-f43e" type="atLeast" />
 </conditions>
 </modifier>
+<modifier type="set" field="hidden" value="true">
+<conditions>
+<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="af50-de01-cc93-f43e" type="atLeast" />
+</conditions>
+</modifier>
 </modifiers>
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8507-6224-dd7c-0cd3" type="max" />
@@ -51227,6 +51482,11 @@ LIMITATIONS - The Detachment must include a Legion Centurion upgraded to a Maste
 <selectionEntry id="27b1-9990-29a1-5f76" name="Legion Honour Guard Standard Bearer (Legion Standard)" hidden="false" collective="false" import="true" type="model">
 <modifiers>
 <modifier type="set" field="3deb-2574-6e7b-6fbb" value="0">
+<conditions>
+<condition field="pts0-0000-0000-0001" scope="roster" value="2000" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="any" type="lessThan" />
+</conditions>
+</modifier>
+<modifier type="set" field="hidden" value="true">
 <conditions>
 <condition field="pts0-0000-0000-0001" scope="roster" value="2000" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="any" type="lessThan" />
 </conditions>
@@ -51593,6 +51853,11 @@ LIMITATIONS - The Detachment must include a Legion Centurion upgraded to a Maste
 </conditions>
 </modifier>
 <modifier type="set" field="5076-a539-c226-1f92" value="0">
+<conditions>
+<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="af50-de01-cc93-f43e" type="atLeast" />
+</conditions>
+</modifier>
+<modifier type="set" field="hidden" value="true">
 <conditions>
 <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="af50-de01-cc93-f43e" type="atLeast" />
 </conditions>
@@ -53158,6 +53423,11 @@ LIMITATIONS - The Detachment must include a Legion Centurion upgraded to a Maste
 <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="af50-de01-cc93-f43e" type="atLeast" />
 </conditions>
 </modifier>
+<modifier type="set" field="hidden" value="true">
+<conditions>
+<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="af50-de01-cc93-f43e" type="atLeast" />
+</conditions>
+</modifier>
 </modifiers>
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4a29-ffa7-07fb-9d68" type="max" />
@@ -53813,6 +54083,11 @@ LIMITATIONS - The Detachment must include a Legion Centurion upgraded to a Maste
 </conditions>
 </modifier>
 <modifier type="set" field="3bdc-f999-921c-3864" value="0">
+<conditions>
+<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="af50-de01-cc93-f43e" type="atLeast" />
+</conditions>
+</modifier>
+<modifier type="set" field="hidden" value="true">
 <conditions>
 <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="af50-de01-cc93-f43e" type="atLeast" />
 </conditions>
@@ -54499,6 +54774,11 @@ LIMITATIONS - The Detachment must include a Legion Centurion upgraded to a Maste
 </conditions>
 </modifier>
 <modifier type="set" field="db2e-d1a0-1309-5b1d" value="0">
+<conditions>
+<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="af50-de01-cc93-f43e" type="atLeast" />
+</conditions>
+</modifier>
+<modifier type="set" field="hidden" value="true">
 <conditions>
 <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="af50-de01-cc93-f43e" type="atLeast" />
 </conditions>
@@ -55222,6 +55502,11 @@ LIMITATIONS - The Detachment must include a Legion Centurion upgraded to a Maste
 </conditions>
 </modifier>
 <modifier type="set" field="00b2-b623-6def-fa24" value="0">
+<conditions>
+<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="af50-de01-cc93-f43e" type="atLeast" />
+</conditions>
+</modifier>
+<modifier type="set" field="hidden" value="true">
 <conditions>
 <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="af50-de01-cc93-f43e" type="atLeast" />
 </conditions>

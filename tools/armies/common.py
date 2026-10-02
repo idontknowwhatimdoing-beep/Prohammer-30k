@@ -194,4 +194,5 @@ def catalogue(name, units, shared=(), publication=None, force_entries=()):
     for u in units + list(shared):
         dedupe_kit(u)
         L2.unclash(u)
+        L2.hide_when_zero(u)
     return root
