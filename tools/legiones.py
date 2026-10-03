@@ -154,6 +154,138 @@ def per_model(key, name, per, unit_id, contains, rules_text=None, max_=1):
                  links=kids)
 
 
+# ------------------------------------------------------------ psychic powers
+import itertools
+import psychic_powers as PSY
+
+PSY_GROUP = "Psychic Powers"
+_PSY_REGISTERED = []
+
+
+def power_rule(name):
+    """Rule (and profile) name of a psychic power, e.g. 'Smite (Biomancy)' / 'Unseen Bolt (Psychic Power)'."""
+    d = PSY.POWERS[name]["discipline"]
+    return f"{name} ({d})" if d else f"{name} (Psychic Power)"
+
+
+def power_label(name):
+    d = PSY.POWERS[name]["discipline"]
+    return f"{name} ({d})" if d else name
+
+
+def power_type_rule(t):
+    return f"Psychic Power Type: {t}"
+
+
+def register_psychic():
+    """Add every power / power type to the catalogue's shared rules and profiles (once, when first used)."""
+    if _PSY_REGISTERED:
+        return
+    _PSY_REGISTERED.append(1)
+    for t, txt in PSY.POWER_TYPES.items():
+        ARMY_RULES[power_type_rule(t)] = txt
+    for n, p in PSY.POWERS.items():
+        ARMY_RULES[power_rule(n)] = p["text"]
+        if p["profile"]:
+            WEAPON_PROFILES[power_rule(n)] = p["profile"]
+
+
+def power_entry(key, name, fixed=False, mods=()):
+    """One psychic power as a selectable entry carrying its rule text, power type and (shooting powers) profile.
+    Ids are keyed per psyker, so New Recruit never counts the same power of two psykers in one unit together."""
+    register_psychic()
+    p = PSY.POWERS[name]
+    eid = uid("psy-power", key, name)
+    cons = [constraint(uid(eid, "max"), "max", 1, auto=fixed)]
+    if fixed:
+        cons.insert(0, constraint(uid(eid, "min"), "min", 1))
+    il = rules_links([power_rule(name), power_type_rule(p["type"])], key=eid)
+    if p["profile"]:
+        il.append(info_link(uid("prof-weapon", power_rule(name)), power_rule(name), "profile", key=eid))
+    return entry(eid, power_label(name), mods=list(mods), constraints=cons, infolinks=il)
+
+
+def negate(c):
+    n = el("condition", dict(c.attrib))
+    n.set("type", {"atLeast": "lessThan", "lessThan": "atLeast", "equalTo": "notEqualTo", "notEqualTo": "equalTo",
+                   "greaterThan": "atMost", "atMost": "greaterThan"}[c.get("type")])
+    return n
+
+
+def psychic_powers(key, owner, count=0, disciplines=(), fixed=(), filters=None, filter_scope=None, more=(), hide=(),
+                   extra=(), min_disciplines_text=None, title=PSY_GROUP):
+    """A psyker's 'Psychic Powers' selection group.
+
+    key:         unique key of this psyker (power entry ids derive from it)
+    owner:       id of the unit (or other ancestor entry) the group lives in - used to count the chosen powers
+    count:       number of powers the psyker selects (Mastery Level), not counting `fixed`
+    disciplines: disciplines whose powers may be selected
+    fixed:       powers always known (auto-included, cannot be removed); they are in the group but not in `count`
+    filters:     {discipline: [entry ids]} - that discipline's powers are only offered while one of the ids (e.g. the
+                 psyker's Psychic Discipline / Prosperine Cult choice) is selected in filter_scope (default: owner)
+    more:        [(n, condition)] - n more powers while the (simple) condition is true (Epistolary, Mastery Level 2 ...)
+    hide:        [conditions] - the whole group is hidden (and empty) while any is true (e.g. another Consul chosen)
+    extra:       [(power, [conditions])] - an extra selectable power, offered only while any condition is true
+    min_disciplines_text: error text when all selected powers come from a single discipline (e.g. Magnus)
+    Too few powers is an error (New Recruit does not pick powers for the player); too many is blocked by the max."""
+    register_psychic()
+    gid = uid("grp", key, "psychic-powers")
+    fscope = filter_scope or owner
+    ents = [power_entry(key, n, fixed=True) for n in fixed]
+    chosen = []
+    for d in disciplines:
+        for n in PSY.in_discipline(d):
+            if n in fixed:
+                continue
+            eid = uid("psy-power", key, n)
+            mods = []
+            if filters and d in filters:
+                off = all_of(*[cond(i, fscope, "lessThan", 1) for i in filters[d]])
+                mods = [modifier("set", "hidden", "true", groups=[off]), modifier("set", uid(eid, "max"), 0, groups=[off])]
+            ents.append(power_entry(key, n, mods=mods))
+            chosen.append((d, eid))
+    for n, show in extra:
+        eid = uid("psy-power", key, n)
+        off = all_of(*[negate(c) for c in show])
+        ents.append(power_entry(key, n, mods=[modifier("set", "hidden", "true", groups=[off]),
+                                              modifier("set", uid(eid, "max"), 0, groups=[off])]))
+        chosen.append((None, eid))
+    total = count + len(fixed)
+    cons, mods = [], []
+    if count or more:
+        mx = uid(gid, "max")
+        cons.append(constraint(mx, "max", total))
+        mods += [modifier("increment", mx, n, conds=[c]) for n, c in more]
+        for flags in itertools.product([False, True], repeat=len(more)):
+            need = total + sum(n for (n, _c), f in zip(more, flags) if f)
+            if need <= len(fixed):
+                continue
+            conds = [c if f else negate(c) for (_n, c), f in zip(more, flags)]
+            conds += [negate(h) for h in hide] + [cond(gid, owner, "lessThan", need)]
+            k = need - len(fixed)
+            mods.append(modifier("add", "error", f"Choose {k} psychic power{'s' if k > 1 else ''}"
+                                                 f"{' (in addition to the powers always known)' if fixed else ''}.",
+                                 conds=conds))
+        if hide:
+            mods.append(modifier("set", mx, 0, groups=[any_of(*hide)]))
+    if hide:
+        mods.append(modifier("set", "hidden", "true", groups=[any_of(*hide)]))
+    if min_disciplines_text:
+        for d in disciplines:
+            others = [eid for dd, eid in chosen if dd != d]
+            mods.append(modifier("add", "error", min_disciplines_text, conds=[cond(gid, owner, "atLeast", total)] +
+                                 [cond(e, owner, "lessThan", 1) for e in others]))
+    return group(gid, title, entries=ents, constraints=cons, mods=mods)
+
+
+def powers_group(e):
+    """The 'Psychic Powers' group directly inside entry e (or None)."""
+    for g in e.findall("selectionEntryGroups/selectionEntryGroup"):
+        if g.get("name") == PSY_GROUP:
+            return g
+    return None
+
+
 # ------------------------------------------------------------------- shared
 def shared_rules():
     return [rule(uid("rule", n), n, t) for n, t in ARMY_RULES.items()]
@@ -427,12 +559,16 @@ def consul_group(unit_id):
     entries = [
         ce("Chaplain", 35, ["Honour of the Legion", "Liturgies of Battle"], kit=["Crozius Arcanum", "Rosarius"]),
         ce("Librarian", 25, ["Psyker", "Legion Support Officer", "Psychic Powers (Librarian)"],
-           kit=["Force Weapon"], options=[epistolary]),
+           kit=["Force Weapon"], options=[epistolary], groups_=[psychic_powers(
+               consul_id("Librarian"), unit_id, 1, PSY.LIBRARIAN,
+               more=[(1, has(uid("consul-opt", "Epistolary"), unit_id))])]),
         ce("Moritat", 45, ["Scout", "Counter-Attack", "Dual Pistols", "Lone Killer", "Chain Fire"],
            kit=["Bolt Pistol"]),
         ce("Delegatus", 15, ["Master of the Legion", "Delegated Authority"],
            mods=[hide_if(has(PRAETOR, "force"))]),
-        ce("Esoterist", 25, ["Psyker", "Legion Support Officer", "Forbidden Lore"], kit=["Force Weapon"]),
+        ce("Esoterist", 25, ["Psyker", "Legion Support Officer", "Forbidden Lore"], kit=["Force Weapon"],
+           groups_=[psychic_powers(consul_id("Esoterist"), unit_id, 1,
+                                   ["Daemonology (Sanctic)", "Daemonology (Malefic)"])]),
         ce("Forge Lord", 70, ["Battlesmith", "Lord of the Armoury"], kit=["Artificer Armour", "Servo-Arm"],
            options=[cortex]),
         ce("Herald", 40, ["Legion Support Officer", "Fallen Honour"], groups_=[banner]),
@@ -441,7 +577,8 @@ def consul_group(unit_id):
         ce("Primus Medicae", 35, ["Legion Support Officer", "Sacred Trust"], kit=["Narthecium"]),
         ce("Primus Nullificator", 25, ["Psyker", "Legion Support Officer", "Adamantium Will", "Hexagrammic Wards",
                                        "Credo Annihilato", "Psychic Powers (Nullificator)"],
-           kit=["Aether-shock Maul"]),
+           kit=["Aether-shock Maul"], groups_=[psychic_powers(consul_id("Primus Nullificator"), unit_id, 1,
+                                                              ["Daemonology (Sanctic)"])]),
         ce("Vigilator", 35, ["Scout", "Stealth", "Sabotage", "Special Issue Ammunition (Vigilator)"],
            kit=["Bolter", "Cameleoline"], options=[scout_armour]),
         ce("Praevian", 35, ["Legion Support Officer", "Master of Cybernetica", "Legion Inductees"],

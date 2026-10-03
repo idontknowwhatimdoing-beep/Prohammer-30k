@@ -413,6 +413,12 @@ def discipline_choice(key):
     return required_choice(key, "Burning Lore Discipline (one power)", [(d, []) for d in DISCIPLINES])
 
 
+def burning_lore_powers(key, owner):
+    """Burning Lore: one power from the Discipline picked with discipline_choice(key)."""
+    return psychic_powers(key, owner, 1, DISCIPLINES,
+                          filters={d: [choice_id(key, "Burning Lore Discipline (one power)", d)] for d in DISCIPLINES})
+
+
 # ------------------------------------------------------------------ ids
 ZEALOTS = uid("unit", "Covenant Zealot Mob")
 GAL_VORBAK = uid("unit", "Gal Vorbak Dark Brethren")
@@ -638,21 +644,22 @@ def characters():
         ["Artificer Armour", "Master-crafted Accursed Crozius", "Bolt Pistol", "Anathame Dagger", "Frag Grenades"],
         ["Psyker", "High Chaplain", "Burning Lore", "Burning Lore (Named Character)", "Command Retinue (Word Bearers)"],
         retinue=retinue_links("erebus", [command_squad_for("erebus", EREBUS)]),
-        extra_groups=[krak(EREBUS), discipline_choice(EREBUS)], loyalist=False, profile_name="Erebus"))
+        extra_groups=[krak(EREBUS), discipline_choice(EREBUS), burning_lore_powers(EREBUS, EREBUS)], loyalist=False, profile_name="Erebus"))
     out.append(named_character(
         LR, "Kor Phaeron, the Black Cardinal", 165, (4, 4, 4, 3, 4, 3, 2, 10, "2+/4+"),
         ["Terminus Consolaris", "Pair of Lightning Claws", "Hand Flamer"],
         ["Psyker", "Feel No Pain", "Burning Lore", "Burning Lore (Named Character)", "Black Cardinal",
          "Jealous Command", "Command Retinue (Word Bearers)"],
         retinue=retinue_links("kor", [L2.terminator_command_squad("kor")]),
-        extra_groups=[discipline_choice(KOR)], loyalist=False, profile_name="Kor Phaeron"))
+        extra_groups=[discipline_choice(KOR), burning_lore_powers(KOR, KOR)], loyalist=False, profile_name="Kor Phaeron"))
     out.append(named_character(
         LR, "Zardu Layak", 175, (5, 5, 4, 5, 2, 5, 2, 10, "2+/5+"),
         ["Artificer Armour", "Refractor Field", "Master-crafted Force Weapon", "Bolt Pistol", "Legion Standard",
          "Frag Grenades"],
         ["Daemon", "Zealot", "Psyker", "Psychic Powers (Zardu Layak)", "Crimson Apostle", "Dark Channeler",
          "Reign of Fire"],
-        extra_groups=[krak(ZARDU, melta=False)], extra_entries=[anakatis_kul()], loyalist=False))
+        extra_groups=[krak(ZARDU, melta=False), psychic_powers(ZARDU, ZARDU, 2, ["Daemonology (Malefic)"])],
+        extra_entries=[anakatis_kul()], loyalist=False))
     out.append(named_character(
         LR, "Hol Beloth", 175, (6, 5, 4, 4, 3, 5, 4, 10, "2+/4+"),
         ["Artificer Armour", "Iron Halo (Named Character)", "Master-crafted Power Fist", "Tainted Weapon",
@@ -676,7 +683,8 @@ def lorgar():
                   constraints=[constraint(uid(tid, "max"), "max", 1, auto=True)],
                   mods=[modifier("set", "hidden", "true", conds=loyal())],
                   infolinks=rules_links(["Lorgar Transfigured", "Psyker", "Psychic Ascendancy",
-                                         "Illuminarum (Transfigured)", "Force"], key=tid))
+                                         "Illuminarum (Transfigured)", "Force"], key=tid),
+                  groups=[psychic_powers(tid, u, 3, ["Divination", "Telekinesis"])])
     e = primarch(LR, "Lorgar Aurelian, the Urizen", 460, (6, 6, 6, 6, 5, 6, 5, 10, "1+"),
                  ["Armour of the Word", "Illuminarum", "Frag Grenades"],
                  ["Primarch Armour", "Fanatical Devotion", "Voice of the Urizen", "Fanatical Devotion (Lorgar)",
@@ -768,7 +776,7 @@ def add_ic_options(ctx):
         lore = entry(bl, "Burning Lore (Psyker, Mastery Level 1)", cost=30,
                      constraints=[constraint(uid(bl, "max"), "max", 1, auto=True)],
                      infolinks=rules_links(["Burning Lore", "Psyker"], key=bl),
-                     groups=[discipline_choice(bl)])
+                     groups=[discipline_choice(bl), burning_lore_powers(bl, u)])
         if n == "Legion Centurion":
             add_mods(lore, hide_mods(bl, lambda: [any_of(*[has(c, u) for c in psy])]))
         hb = option(u + "wb", "Hex-Bolts", 5, item="Hex-Bolts")

@@ -485,10 +485,11 @@ def characters():
         LR, "Jago Sevatarion", 200, (7, 5, 4, 4, 3, 5, 4, 10, "2+/4+"),
         ["Artificer Armour", "Iron Halo (Sevatar)", "Night's Whisper", "Bolt Pistol", "Trophies of Judgement",
          "Frag Grenades"],
-        ["Psyker", "Visions of Doom", "Withering Gaze", "Command Retinue (Sevatar)"],
+        ["Psyker", "Visions of Doom", "Command Retinue (Sevatar)"],
         retinue=retinue_links("sevatar", [command_squad_for("sevatar", sev), L2.terminator_command_squad("sevatar"),
                                           atramentar("sevatar-atramentar", root=False)]),
-        extra_groups=[krak_melta(sev, melta=False)], profile_name="Sevatar"))
+        extra_groups=[krak_melta(sev, melta=False), psychic_powers(sev, sev, fixed=["Withering Gaze"])],
+        profile_name="Sevatar"))
     oph = uid("unit", "Kheron Ophion")
     out.append(named_character(
         LR, "Kheron Ophion", 180, (6, 5, 4, 4, 3, 5, 4, 10, "3+/5+"),
@@ -532,7 +533,7 @@ def curze():
                     ["Nightmare Mantle", "Mercy & Forgiveness", "Widowmakers", "Frag Grenades"],
                     ["Primarch Armour", "Psyker", "King of Terrors", "Night Haunter", "Stealth",
                      "Hit & Run", "Dark Precognition", "Primarch Retinue (Konrad Curze)"],
-                    retinue=ret)
+                    retinue=ret, extra_groups=[psychic_powers(CURZE, CURZE, fixed=["Precognition"])])
 
 
 # ---------------------------------------------------------------- extend

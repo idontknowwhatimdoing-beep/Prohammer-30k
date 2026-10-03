@@ -106,6 +106,11 @@ Legion helpers (common.py):
 - `add_weapon_variant(ctx.all_entries(), "Power Weapon", "Calibanite Warblade", 10)` "any character able to
   select a Power Weapon may instead select X for +10".
 - `forbid_items(unit, [items], [conds])`, `option(key, name, cost, ...)`, `upgrade(key, name, cost, rules_, text=)`.
+- `psychic_powers(key, owner_unit_id, count, [disciplines], fixed=[powers always known], filters={discipline:
+  [choice ids]}, more=[(n, condition)])` gives a psyker its "Psychic Powers" group (power data and texts in
+  `tools/data/psychic_powers.py`; `PSY.LIBRARIAN` = the Librarian disciplines). Pass it in `extra_groups=` /
+  `groups_=`. `filters` shows a discipline's powers only while its Discipline choice is selected; `more` adds powers
+  (Epistolary, Mastery Level 2). Do not link a known power as wargear/rule separately - list it in `fixed`.
 - `named_character(LR, name, cost, (WS,BS,S,T,W,I,A,Ld,Sv), kit, rules, retinue=, master=, min_points=, loyalist=)`.
 - `primarch(LR, name, cost, stats, kit, rules, retinue=primarch_retinue(key, extra=[...]), other=id_of_other_form,
   loyalist=True/False/None)` - adds the universal Primarch rules, Lord of War slot, 2,000 pts check, one per army.

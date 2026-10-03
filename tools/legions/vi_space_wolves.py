@@ -639,11 +639,12 @@ def characters():
         extra_groups=[take(GEIGOR, "Wargear", [("Krak Grenades", 2)] + WOLF_ITEMS)], extra_entries=[wolf_retinue("geigor")]))
     out.append(named_character(
         LR, "Ohthere Wyrdmake", 150, (5, 5, 4, 4, 3, 5, 3, 10, "2+"),
-        ["Runic Armour", "Bolt Pistol", "Runic Staff", "Frag Grenades", "Living Lightning"],
-        ["Psyker", "Legion Support Officer", "Mystic Winds of Fenris", "Living Lightning",
-         "Command Retinue (Ohthere Wyrdmake)"], master=False, compulsory=False,
+        ["Runic Armour", "Bolt Pistol", "Runic Staff", "Frag Grenades"],
+        ["Psyker", "Legion Support Officer", "Command Retinue (Ohthere Wyrdmake)"], master=False, compulsory=False,
         retinue=retinue_links("ohthere", [command_squad_for("ohthere", OHTHERE)]),
-        extra_groups=[take(OHTHERE, "Wargear", [("Krak Grenades", 2)] + WOLF_ITEMS)], extra_entries=[wolf_retinue("ohthere")]))
+        extra_groups=[take(OHTHERE, "Wargear", [("Krak Grenades", 2)] + WOLF_ITEMS),
+                      psychic_powers(OHTHERE, OHTHERE, fixed=["Mystic Winds of Fenris", "Living Lightning"])],
+        extra_entries=[wolf_retinue("ohthere")]))
     # Bjorn the Fell-Handed - a Dreadnought HQ
     u = BJORN
     out.append(entry(u, "Bjorn the Fell-Handed", typ="unit", cost=190,
@@ -744,14 +745,18 @@ def consuls(ctx):
     # a Rosarius does not combine with other invulnerable saves
     forbid_items(cen, ["Refractor Field", "Iron Halo"], [has(wp, L.CENTURION)])
     mor = uid("sw-rune-priest", "master-of-runes")
+    lib = PSY.LIBRARIAN
     master = entry(mor, "Master of Runes (Mastery Level 2)", cost=25,
                    constraints=[constraint(uid(mor, "max"), "max", 1, auto=True)],
                    infolinks=rules_links(["Master of Runes"], key=mor),
-                   groups=[required_choice(mor, "Additional Psychic Power Discipline",
-                                           [(d, []) for d in ["Biomancy", "Divination", "Pyromancy", "Telekinesis",
-                                                              "Telepathy"]])])
-    rp = add_consul(ctx, "Rune Priest", 25, ["Psyker", "Legion Support Officer", "Rune Priest", "Mystic Winds of Fenris"],
-                    kit=["Runic Force Weapon", "Wolf Tail Talisman"], options=[master], support_officer=True)
+                   groups=[required_choice(mor, "Additional Psychic Power Discipline", [(d, []) for d in lib])])
+    # Mystic Winds of Fenris is always known; a Master of Runes selects one more power from the Discipline picked
+    powers = psychic_powers(uid("sw-rune-priest", "powers"), L.CENTURION, 0, lib, fixed=["Mystic Winds of Fenris"],
+                            more=[(1, has(mor, L.CENTURION))],
+                            filters={d: [choice_id(mor, "Additional Psychic Power Discipline", d)] for d in lib})
+    rp = add_consul(ctx, "Rune Priest", 25, ["Psyker", "Legion Support Officer", "Rune Priest"],
+                    kit=["Runic Force Weapon", "Wolf Tail Talisman"], options=[master], groups_=[powers],
+                    support_officer=True)
     consul_replaces_chainsword(ctx, rp)
     consul_unlocks_psyker_items(ctx, rp, ["Psychic Hood"])
     # he already carries a Wolf Tail Talisman: hide the Armoury one

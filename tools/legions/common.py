@@ -27,6 +27,7 @@ import gamesystem as gs
 import legiones as L
 import legiones2 as L2
 from legiones import W, has, lacks, TDA, has_tda, no_tda, gear, per_model, rules_links, unit_profile, rule_ref
+from legiones import psychic_powers, power_entry, powers_group, power_rule, PSY, negate
 from legiones2 import (slot, take, pool, choice, transports, add_mods, add_to, dedupe_kit, walker_profile, foc,
                        rite_id, rite, any_rite, RETINUE_SHARED, TROOPS, ELITES, FA, HQ, HS, _negate, model_swaps,
                        model_takes, model_pair_claws, numbered, specials_decrement, standard_choice, armour_pattern,

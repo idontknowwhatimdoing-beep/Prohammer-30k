@@ -1804,6 +1804,470 @@
 </selectionEntry>
 </selectionEntries>
 </selectionEntryGroup>
+<selectionEntryGroup id="ee40-59e6-73f4-347e" name="Psychic Powers" hidden="false" collective="false" import="true">
+<modifiers>
+<modifier type="add" field="error" value="Choose 1 psychic power.">
+<conditions>
+<condition field="selections" scope="2390-3489-e470-7f7f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ee40-59e6-73f4-347e" type="lessThan" />
+</conditions>
+</modifier>
+</modifiers>
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1c8b-32f8-9323-f6fe" type="max" />
+</constraints>
+<selectionEntries>
+<selectionEntry id="2762-66a1-83ec-b626" name="Smite (Biomancy)" hidden="false" collective="false" import="true" type="upgrade">
+<modifiers>
+<modifier type="set" field="hidden" value="true">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="2390-3489-e470-7f7f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5e17-8a37-a800-edf1" type="lessThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="set" field="a932-e376-eb66-9761" value="0">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="2390-3489-e470-7f7f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5e17-8a37-a800-edf1" type="lessThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+</modifiers>
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a932-e376-eb66-9761" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="aef4-743a-679f-19aa" name="Smite (Biomancy)" hidden="false" targetId="52f2-9ce3-6607-ec42" type="rule" />
+<infoLink id="de63-16a7-50a0-e3d7" name="Psychic Power Type: Witchfire" hidden="false" targetId="d57f-7eaf-5589-f80d" type="rule" />
+<infoLink id="7801-4f28-63b9-9918" name="Smite (Biomancy)" hidden="false" targetId="a2e8-3ba1-613d-734e" type="profile" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+<selectionEntry id="97b0-7d9d-0641-ea26" name="Iron Arm (Biomancy)" hidden="false" collective="false" import="true" type="upgrade">
+<modifiers>
+<modifier type="set" field="hidden" value="true">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="2390-3489-e470-7f7f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5e17-8a37-a800-edf1" type="lessThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="set" field="ec57-a4f5-574b-948e" value="0">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="2390-3489-e470-7f7f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5e17-8a37-a800-edf1" type="lessThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+</modifiers>
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ec57-a4f5-574b-948e" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="4273-9027-971b-f076" name="Iron Arm (Biomancy)" hidden="false" targetId="091a-6782-fcc5-d23b" type="rule" />
+<infoLink id="daa2-b434-7bf3-f361" name="Psychic Power Type: Blessing" hidden="false" targetId="2df7-351e-d581-ff63" type="rule" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+<selectionEntry id="da7e-c347-3cb6-f38f" name="Enfeeble (Biomancy)" hidden="false" collective="false" import="true" type="upgrade">
+<modifiers>
+<modifier type="set" field="hidden" value="true">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="2390-3489-e470-7f7f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5e17-8a37-a800-edf1" type="lessThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="set" field="27aa-7438-7ce2-b601" value="0">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="2390-3489-e470-7f7f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5e17-8a37-a800-edf1" type="lessThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+</modifiers>
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="27aa-7438-7ce2-b601" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="5631-c8df-8ba0-f9bc" name="Enfeeble (Biomancy)" hidden="false" targetId="8385-2b4a-7ae1-55ee" type="rule" />
+<infoLink id="5d40-8e10-9377-3201" name="Psychic Power Type: Malediction" hidden="false" targetId="e2e5-b205-e6b0-3644" type="rule" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+<selectionEntry id="317c-5306-922a-05c1" name="Life Leech (Biomancy)" hidden="false" collective="false" import="true" type="upgrade">
+<modifiers>
+<modifier type="set" field="hidden" value="true">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="2390-3489-e470-7f7f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5e17-8a37-a800-edf1" type="lessThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="set" field="3693-698a-2afe-a69f" value="0">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="2390-3489-e470-7f7f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5e17-8a37-a800-edf1" type="lessThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+</modifiers>
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3693-698a-2afe-a69f" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="69c5-5ded-9c77-e47b" name="Life Leech (Biomancy)" hidden="false" targetId="a803-e87a-6035-2e91" type="rule" />
+<infoLink id="2b8b-ebe9-98ea-3aa5" name="Psychic Power Type: Witchfire" hidden="false" targetId="d57f-7eaf-5589-f80d" type="rule" />
+<infoLink id="cfeb-0acd-3939-670f" name="Life Leech (Biomancy)" hidden="false" targetId="5871-c332-e125-3fb3" type="profile" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+<selectionEntry id="122e-49d4-9bfe-1374" name="Warp Speed (Biomancy)" hidden="false" collective="false" import="true" type="upgrade">
+<modifiers>
+<modifier type="set" field="hidden" value="true">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="2390-3489-e470-7f7f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5e17-8a37-a800-edf1" type="lessThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="set" field="b387-9f91-5aa9-27f5" value="0">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="2390-3489-e470-7f7f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5e17-8a37-a800-edf1" type="lessThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+</modifiers>
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b387-9f91-5aa9-27f5" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="d839-6cf1-89f3-c3ee" name="Warp Speed (Biomancy)" hidden="false" targetId="8f4e-a616-6967-9063" type="rule" />
+<infoLink id="f119-f2cb-3d2a-0491" name="Psychic Power Type: Blessing" hidden="false" targetId="2df7-351e-d581-ff63" type="rule" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+<selectionEntry id="f7a4-ed46-cd47-4ac6" name="Endurance (Biomancy)" hidden="false" collective="false" import="true" type="upgrade">
+<modifiers>
+<modifier type="set" field="hidden" value="true">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="2390-3489-e470-7f7f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5e17-8a37-a800-edf1" type="lessThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="set" field="92fe-82e3-9208-4dfd" value="0">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="2390-3489-e470-7f7f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5e17-8a37-a800-edf1" type="lessThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+</modifiers>
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="92fe-82e3-9208-4dfd" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="dd86-2172-afd7-809d" name="Endurance (Biomancy)" hidden="false" targetId="a57c-dffd-b470-659b" type="rule" />
+<infoLink id="e168-cb46-a129-223d" name="Psychic Power Type: Blessing" hidden="false" targetId="2df7-351e-d581-ff63" type="rule" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+<selectionEntry id="81f9-4725-947e-9a68" name="Haemorrhage (Biomancy)" hidden="false" collective="false" import="true" type="upgrade">
+<modifiers>
+<modifier type="set" field="hidden" value="true">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="2390-3489-e470-7f7f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5e17-8a37-a800-edf1" type="lessThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="set" field="4b42-8c7e-246d-7f44" value="0">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="2390-3489-e470-7f7f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5e17-8a37-a800-edf1" type="lessThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+</modifiers>
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4b42-8c7e-246d-7f44" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="1cf4-a6bd-a709-441a" name="Haemorrhage (Biomancy)" hidden="false" targetId="783b-cded-f04c-2da4" type="rule" />
+<infoLink id="f1b3-4394-ead4-1295" name="Psychic Power Type: Witchfire - Focused" hidden="false" targetId="728a-56b9-f9e8-53a2" type="rule" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+<selectionEntry id="fde0-d4d1-20c9-0851" name="Psychic Shriek (Telepathy)" hidden="false" collective="false" import="true" type="upgrade">
+<modifiers>
+<modifier type="set" field="hidden" value="true">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="2390-3489-e470-7f7f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b82b-650c-aa9a-eb20" type="lessThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="set" field="580e-c5af-99e8-5f91" value="0">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="2390-3489-e470-7f7f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b82b-650c-aa9a-eb20" type="lessThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+</modifiers>
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="580e-c5af-99e8-5f91" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="968d-c868-17c8-92f9" name="Psychic Shriek (Telepathy)" hidden="false" targetId="9149-632a-4b99-44cd" type="rule" />
+<infoLink id="8f59-12ab-4348-4a3d" name="Psychic Power Type: Witchfire" hidden="false" targetId="d57f-7eaf-5589-f80d" type="rule" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+<selectionEntry id="4295-f1d3-862a-8f91" name="Dominate (Telepathy)" hidden="false" collective="false" import="true" type="upgrade">
+<modifiers>
+<modifier type="set" field="hidden" value="true">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="2390-3489-e470-7f7f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b82b-650c-aa9a-eb20" type="lessThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="set" field="535b-77db-1237-1a0f" value="0">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="2390-3489-e470-7f7f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b82b-650c-aa9a-eb20" type="lessThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+</modifiers>
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="535b-77db-1237-1a0f" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="d19f-1099-9679-9ce4" name="Dominate (Telepathy)" hidden="false" targetId="66d3-f174-c6d3-f8e9" type="rule" />
+<infoLink id="9947-adb1-1538-ce41" name="Psychic Power Type: Malediction" hidden="false" targetId="e2e5-b205-e6b0-3644" type="rule" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+<selectionEntry id="9cea-db1d-7a81-a34a" name="Mental Fortitude (Telepathy)" hidden="false" collective="false" import="true" type="upgrade">
+<modifiers>
+<modifier type="set" field="hidden" value="true">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="2390-3489-e470-7f7f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b82b-650c-aa9a-eb20" type="lessThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="set" field="7261-900f-9d6f-3218" value="0">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="2390-3489-e470-7f7f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b82b-650c-aa9a-eb20" type="lessThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+</modifiers>
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7261-900f-9d6f-3218" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="578b-67a0-fd1a-3e48" name="Mental Fortitude (Telepathy)" hidden="false" targetId="320b-ad20-8eac-1316" type="rule" />
+<infoLink id="3cc7-1c7f-befe-584b" name="Psychic Power Type: Blessing" hidden="false" targetId="2df7-351e-d581-ff63" type="rule" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+<selectionEntry id="3a96-7f20-fc2b-c800" name="Terrify (Telepathy)" hidden="false" collective="false" import="true" type="upgrade">
+<modifiers>
+<modifier type="set" field="hidden" value="true">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="2390-3489-e470-7f7f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b82b-650c-aa9a-eb20" type="lessThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="set" field="2b41-e9ad-dbea-23d6" value="0">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="2390-3489-e470-7f7f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b82b-650c-aa9a-eb20" type="lessThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+</modifiers>
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2b41-e9ad-dbea-23d6" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="a433-2cca-a0b2-1742" name="Terrify (Telepathy)" hidden="false" targetId="80b7-b11e-b9a9-6d15" type="rule" />
+<infoLink id="00f9-2b17-a7ae-2bd2" name="Psychic Power Type: Malediction" hidden="false" targetId="e2e5-b205-e6b0-3644" type="rule" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+<selectionEntry id="3eba-cefa-5caa-2bb3" name="Hallucination (Telepathy)" hidden="false" collective="false" import="true" type="upgrade">
+<modifiers>
+<modifier type="set" field="hidden" value="true">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="2390-3489-e470-7f7f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b82b-650c-aa9a-eb20" type="lessThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="set" field="497f-d87b-fbcd-286b" value="0">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="2390-3489-e470-7f7f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b82b-650c-aa9a-eb20" type="lessThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+</modifiers>
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="497f-d87b-fbcd-286b" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="86af-50d0-68f7-fca2" name="Hallucination (Telepathy)" hidden="false" targetId="0a3c-f34c-987d-1bf3" type="rule" />
+<infoLink id="ac6b-74d5-7b0c-0844" name="Psychic Power Type: Malediction" hidden="false" targetId="e2e5-b205-e6b0-3644" type="rule" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+<selectionEntry id="cae3-f051-2ceb-b692" name="Invisibility (Telepathy)" hidden="false" collective="false" import="true" type="upgrade">
+<modifiers>
+<modifier type="set" field="hidden" value="true">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="2390-3489-e470-7f7f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b82b-650c-aa9a-eb20" type="lessThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="set" field="3f71-176b-7e54-b2ef" value="0">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="2390-3489-e470-7f7f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b82b-650c-aa9a-eb20" type="lessThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+</modifiers>
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3f71-176b-7e54-b2ef" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="9956-5a1d-9a84-8e51" name="Invisibility (Telepathy)" hidden="false" targetId="3478-c0c3-4cfd-1181" type="rule" />
+<infoLink id="22ea-89aa-a0de-b190" name="Psychic Power Type: Blessing" hidden="false" targetId="2df7-351e-d581-ff63" type="rule" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+<selectionEntry id="77e0-98c2-e586-5acc" name="Shrouding (Telepathy)" hidden="false" collective="false" import="true" type="upgrade">
+<modifiers>
+<modifier type="set" field="hidden" value="true">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="2390-3489-e470-7f7f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b82b-650c-aa9a-eb20" type="lessThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="set" field="0f22-cd67-f085-911b" value="0">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="2390-3489-e470-7f7f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b82b-650c-aa9a-eb20" type="lessThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+</modifiers>
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0f22-cd67-f085-911b" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="48b4-9aa2-2a28-66e1" name="Shrouding (Telepathy)" hidden="false" targetId="57fe-3119-47a7-1431" type="rule" />
+<infoLink id="8aae-1d1e-639c-19fe" name="Psychic Power Type: Blessing" hidden="false" targetId="2df7-351e-d581-ff63" type="rule" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+</selectionEntries>
+</selectionEntryGroup>
 </selectionEntryGroups>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
@@ -2205,6 +2669,463 @@
 </costs>
 </selectionEntry>
 </selectionEntries>
+<selectionEntryGroups>
+<selectionEntryGroup id="a8f9-4e69-0040-e002" name="Psychic Powers" hidden="false" collective="false" import="true">
+<modifiers>
+<modifier type="increment" field="ead0-ae2d-dd51-8212" value="1">
+<conditions>
+<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4929-630e-c87b-b697" type="atLeast" />
+</conditions>
+</modifier>
+<modifier type="add" field="error" value="Choose 1 psychic power.">
+<conditions>
+<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4929-630e-c87b-b697" type="lessThan" />
+<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a8f9-4e69-0040-e002" type="lessThan" />
+</conditions>
+</modifier>
+<modifier type="add" field="error" value="Choose 2 psychic powers.">
+<conditions>
+<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4929-630e-c87b-b697" type="atLeast" />
+<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="2" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a8f9-4e69-0040-e002" type="lessThan" />
+</conditions>
+</modifier>
+</modifiers>
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ead0-ae2d-dd51-8212" type="max" />
+</constraints>
+<selectionEntries>
+<selectionEntry id="abf0-b882-df39-2a85" name="Smite (Biomancy)" hidden="false" collective="false" import="true" type="upgrade">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="223e-a189-3e77-9208" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="7678-45d6-8275-c007" name="Smite (Biomancy)" hidden="false" targetId="52f2-9ce3-6607-ec42" type="rule" />
+<infoLink id="0bf5-53c2-5443-c680" name="Psychic Power Type: Witchfire" hidden="false" targetId="d57f-7eaf-5589-f80d" type="rule" />
+<infoLink id="0250-a9ec-d487-4490" name="Smite (Biomancy)" hidden="false" targetId="a2e8-3ba1-613d-734e" type="profile" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+<selectionEntry id="150c-a99a-5655-13c4" name="Iron Arm (Biomancy)" hidden="false" collective="false" import="true" type="upgrade">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e84b-c179-46cf-a7b1" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="ef94-f536-7e7b-cca2" name="Iron Arm (Biomancy)" hidden="false" targetId="091a-6782-fcc5-d23b" type="rule" />
+<infoLink id="5795-08e6-378a-19a0" name="Psychic Power Type: Blessing" hidden="false" targetId="2df7-351e-d581-ff63" type="rule" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+<selectionEntry id="468e-fe3e-6b79-5bd6" name="Enfeeble (Biomancy)" hidden="false" collective="false" import="true" type="upgrade">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e9bf-1252-62ec-39e3" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="1ec0-0596-74b0-3f6e" name="Enfeeble (Biomancy)" hidden="false" targetId="8385-2b4a-7ae1-55ee" type="rule" />
+<infoLink id="7688-c7ba-d64c-935d" name="Psychic Power Type: Malediction" hidden="false" targetId="e2e5-b205-e6b0-3644" type="rule" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+<selectionEntry id="7e12-cf59-78c4-dc6e" name="Life Leech (Biomancy)" hidden="false" collective="false" import="true" type="upgrade">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4272-0c9c-166a-eb51" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="9d86-982d-149f-3e72" name="Life Leech (Biomancy)" hidden="false" targetId="a803-e87a-6035-2e91" type="rule" />
+<infoLink id="4646-a94c-16f2-ff65" name="Psychic Power Type: Witchfire" hidden="false" targetId="d57f-7eaf-5589-f80d" type="rule" />
+<infoLink id="7199-39be-7cb8-e58d" name="Life Leech (Biomancy)" hidden="false" targetId="5871-c332-e125-3fb3" type="profile" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+<selectionEntry id="76d9-a0e1-9bb4-d0ea" name="Warp Speed (Biomancy)" hidden="false" collective="false" import="true" type="upgrade">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9dd7-87c7-5ed3-7f3b" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="f6f8-305c-5344-f174" name="Warp Speed (Biomancy)" hidden="false" targetId="8f4e-a616-6967-9063" type="rule" />
+<infoLink id="b42c-da64-fd67-afe3" name="Psychic Power Type: Blessing" hidden="false" targetId="2df7-351e-d581-ff63" type="rule" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+<selectionEntry id="d684-1c20-b051-5696" name="Endurance (Biomancy)" hidden="false" collective="false" import="true" type="upgrade">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e29b-bda9-1361-2112" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="7976-9765-29d7-6130" name="Endurance (Biomancy)" hidden="false" targetId="a57c-dffd-b470-659b" type="rule" />
+<infoLink id="ba9b-3a8c-3aa0-9207" name="Psychic Power Type: Blessing" hidden="false" targetId="2df7-351e-d581-ff63" type="rule" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+<selectionEntry id="5d62-2b88-75cc-8991" name="Haemorrhage (Biomancy)" hidden="false" collective="false" import="true" type="upgrade">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f471-0718-0a06-e8cf" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="c5f5-809b-d72d-ab0b" name="Haemorrhage (Biomancy)" hidden="false" targetId="783b-cded-f04c-2da4" type="rule" />
+<infoLink id="cdd5-028b-c683-9657" name="Psychic Power Type: Witchfire - Focused" hidden="false" targetId="728a-56b9-f9e8-53a2" type="rule" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+<selectionEntry id="6bf4-8b7e-5c7c-411a" name="Prescience (Divination)" hidden="false" collective="false" import="true" type="upgrade">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8ab5-8fec-64af-41ed" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="a8fe-2b19-6d98-08d5" name="Prescience (Divination)" hidden="false" targetId="5416-80f8-d8ed-dfc4" type="rule" />
+<infoLink id="3128-70ac-ca57-2eaa" name="Psychic Power Type: Blessing" hidden="false" targetId="2df7-351e-d581-ff63" type="rule" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+<selectionEntry id="a2a8-a127-b6cf-4d70" name="Foreboding (Divination)" hidden="false" collective="false" import="true" type="upgrade">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fe50-5759-6bd4-ff22" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="b672-2a6a-98cc-dcdf" name="Foreboding (Divination)" hidden="false" targetId="eb39-a70a-b04b-5312" type="rule" />
+<infoLink id="ddf3-91a2-fe56-1cf9" name="Psychic Power Type: Blessing" hidden="false" targetId="2df7-351e-d581-ff63" type="rule" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+<selectionEntry id="c3b1-488f-be36-3401" name="Forewarning (Divination)" hidden="false" collective="false" import="true" type="upgrade">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6633-c2e9-6bb5-ac9b" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="ed06-5f7e-0b49-e3ac" name="Forewarning (Divination)" hidden="false" targetId="f11a-bd15-adc6-6379" type="rule" />
+<infoLink id="b384-a4f0-19d1-b223" name="Psychic Power Type: Blessing" hidden="false" targetId="2df7-351e-d581-ff63" type="rule" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+<selectionEntry id="e848-a18f-8467-67f2" name="Perfect Timing (Divination)" hidden="false" collective="false" import="true" type="upgrade">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a8f7-db84-02da-16e9" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="a1d4-96fd-11d1-c035" name="Perfect Timing (Divination)" hidden="false" targetId="c562-bc1b-dda7-cdfd" type="rule" />
+<infoLink id="88df-8c2f-7cfc-e250" name="Psychic Power Type: Blessing" hidden="false" targetId="2df7-351e-d581-ff63" type="rule" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+<selectionEntry id="abae-8c81-1ac4-a612" name="Precognition (Divination)" hidden="false" collective="false" import="true" type="upgrade">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="698c-6e9d-75ab-9422" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="1fb5-3483-0a2e-8457" name="Precognition (Divination)" hidden="false" targetId="2a79-53b6-4d37-0525" type="rule" />
+<infoLink id="bc3e-33a9-dc78-e857" name="Psychic Power Type: Blessing" hidden="false" targetId="2df7-351e-d581-ff63" type="rule" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+<selectionEntry id="f655-4e40-e672-f09c" name="Misfortune (Divination)" hidden="false" collective="false" import="true" type="upgrade">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f9fc-6c90-66e0-8a61" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="8d80-8261-46b5-7f73" name="Misfortune (Divination)" hidden="false" targetId="4b6f-e423-a39d-b5a6" type="rule" />
+<infoLink id="0673-8924-69f7-c506" name="Psychic Power Type: Malediction" hidden="false" targetId="e2e5-b205-e6b0-3644" type="rule" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+<selectionEntry id="12a7-0032-feee-0c53" name="Scrier's Gaze (Divination)" hidden="false" collective="false" import="true" type="upgrade">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4d27-f6cd-62dc-3775" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="71fb-7bef-55af-6e23" name="Scrier's Gaze (Divination)" hidden="false" targetId="7777-889f-8f67-ff48" type="rule" />
+<infoLink id="858e-256d-f8d1-1d0e" name="Psychic Power Type: Blessing" hidden="false" targetId="2df7-351e-d581-ff63" type="rule" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+<selectionEntry id="0c33-cc8e-68eb-a37a" name="Flame Breath (Pyromancy)" hidden="false" collective="false" import="true" type="upgrade">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c740-8076-6196-d51b" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="6ad7-de68-b4ab-11f5" name="Flame Breath (Pyromancy)" hidden="false" targetId="277c-cee6-2884-7a2c" type="rule" />
+<infoLink id="bf96-8c67-0549-c14e" name="Psychic Power Type: Witchfire" hidden="false" targetId="d57f-7eaf-5589-f80d" type="rule" />
+<infoLink id="c491-9728-a453-875f" name="Flame Breath (Pyromancy)" hidden="false" targetId="8ffa-f0a6-7581-2472" type="profile" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+<selectionEntry id="1fa0-d9fc-dc11-e220" name="Fiery Form (Pyromancy)" hidden="false" collective="false" import="true" type="upgrade">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="69e0-0691-f389-d256" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="ff94-032b-fa21-ce98" name="Fiery Form (Pyromancy)" hidden="false" targetId="fc81-b0c0-beb0-eb70" type="rule" />
+<infoLink id="87a3-86fe-aa13-089a" name="Psychic Power Type: Blessing" hidden="false" targetId="2df7-351e-d581-ff63" type="rule" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+<selectionEntry id="ce5a-8955-e38b-9ce9" name="Molten Beam (Pyromancy)" hidden="false" collective="false" import="true" type="upgrade">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ec82-ce9b-f0e2-ec1f" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="0946-aa2b-3ed6-0825" name="Molten Beam (Pyromancy)" hidden="false" targetId="b62b-2b4b-bc8b-a644" type="rule" />
+<infoLink id="1cb1-2b05-3615-46bd" name="Psychic Power Type: Witchfire - Beam" hidden="false" targetId="6ffa-5b76-2c20-0597" type="rule" />
+<infoLink id="bb6f-71bd-09a4-ba0d" name="Molten Beam (Pyromancy)" hidden="false" targetId="bd6c-0b68-e41d-eac8" type="profile" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+<selectionEntry id="4029-0a59-1d27-7c0a" name="Fire Shield (Pyromancy)" hidden="false" collective="false" import="true" type="upgrade">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2c92-2023-ea20-8bf2" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="ebd2-16f6-a658-107b" name="Fire Shield (Pyromancy)" hidden="false" targetId="6c4d-e519-5076-c88b" type="rule" />
+<infoLink id="7f65-f41d-fd66-66ec" name="Psychic Power Type: Blessing" hidden="false" targetId="2df7-351e-d581-ff63" type="rule" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+<selectionEntry id="a78e-0b02-fdc4-be4c" name="Sunburst (Pyromancy)" hidden="false" collective="false" import="true" type="upgrade">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ac3a-cba4-72e7-4928" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="c7d7-4023-1569-ed61" name="Sunburst (Pyromancy)" hidden="false" targetId="83b3-a2a7-6c11-d3a1" type="rule" />
+<infoLink id="3794-2615-184c-3e34" name="Psychic Power Type: Witchfire - Nova" hidden="false" targetId="e76f-abfe-254a-2d7d" type="rule" />
+<infoLink id="d5d9-60d3-e21d-b07a" name="Sunburst (Pyromancy)" hidden="false" targetId="eb65-7f75-dacc-cc4a" type="profile" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+<selectionEntry id="d9bb-00a9-8cfe-6007" name="Inferno (Pyromancy)" hidden="false" collective="false" import="true" type="upgrade">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="430c-00f5-7d2f-92cd" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="252b-30c4-4d45-2f15" name="Inferno (Pyromancy)" hidden="false" targetId="e658-12d8-882e-da27" type="rule" />
+<infoLink id="ccc9-34b8-2507-58b6" name="Psychic Power Type: Witchfire" hidden="false" targetId="d57f-7eaf-5589-f80d" type="rule" />
+<infoLink id="c97a-8b15-5f95-41f8" name="Inferno (Pyromancy)" hidden="false" targetId="fec0-8ff7-24bf-deb0" type="profile" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+<selectionEntry id="017e-75b8-b66f-1b95" name="Spontaneous Combustion (Pyromancy)" hidden="false" collective="false" import="true" type="upgrade">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eeb7-0dd4-04ac-9ec0" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="27dd-f268-c94e-484e" name="Spontaneous Combustion (Pyromancy)" hidden="false" targetId="06ff-3e2f-11e7-3f1e" type="rule" />
+<infoLink id="1ae9-087d-6fb8-3262" name="Psychic Power Type: Witchfire - Focused" hidden="false" targetId="728a-56b9-f9e8-53a2" type="rule" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+<selectionEntry id="7281-8f5d-2b65-f6f6" name="Assail (Telekinesis)" hidden="false" collective="false" import="true" type="upgrade">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aad0-7883-83fc-ffbe" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="8f70-cb53-f7e3-7a8e" name="Assail (Telekinesis)" hidden="false" targetId="5d92-02cc-bbf7-59ac" type="rule" />
+<infoLink id="a09b-e5e4-84bf-439c" name="Psychic Power Type: Witchfire - Beam" hidden="false" targetId="6ffa-5b76-2c20-0597" type="rule" />
+<infoLink id="aef7-0cb2-2750-94bd" name="Assail (Telekinesis)" hidden="false" targetId="0115-6823-ed57-522f" type="profile" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+<selectionEntry id="1f9d-9504-b54a-f2f2" name="Crush (Telekinesis)" hidden="false" collective="false" import="true" type="upgrade">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="949f-5a95-2cf9-d79e" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="a1e6-507c-4a18-56bd" name="Crush (Telekinesis)" hidden="false" targetId="1654-f41b-864b-1ba4" type="rule" />
+<infoLink id="b3aa-ac8e-4aca-12b2" name="Psychic Power Type: Witchfire - Focused" hidden="false" targetId="728a-56b9-f9e8-53a2" type="rule" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+<selectionEntry id="6c54-1089-880e-521a" name="Objuration Mechanicum (Telekinesis)" hidden="false" collective="false" import="true" type="upgrade">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ea17-ea1f-a7e4-4852" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="5816-fb13-933b-4a7a" name="Objuration Mechanicum (Telekinesis)" hidden="false" targetId="7ac4-158f-a86e-9e94" type="rule" />
+<infoLink id="230a-53e4-baef-9971" name="Psychic Power Type: Malediction" hidden="false" targetId="e2e5-b205-e6b0-3644" type="rule" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+<selectionEntry id="a476-f035-5e56-0e58" name="Shockwave (Telekinesis)" hidden="false" collective="false" import="true" type="upgrade">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="33df-0206-cfd1-5e06" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="d83a-ec1d-3971-64d5" name="Shockwave (Telekinesis)" hidden="false" targetId="3e74-22f0-bf8a-4ef6" type="rule" />
+<infoLink id="902f-c438-bf3e-6bbe" name="Psychic Power Type: Witchfire - Nova" hidden="false" targetId="e76f-abfe-254a-2d7d" type="rule" />
+<infoLink id="6c3b-e257-f10f-ce3e" name="Shockwave (Telekinesis)" hidden="false" targetId="7464-e6d6-4e12-687d" type="profile" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+<selectionEntry id="3284-c438-8104-b5ef" name="Levitation (Telekinesis)" hidden="false" collective="false" import="true" type="upgrade">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0d85-6544-56ce-ffdf" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="2c4a-c9cd-c026-9660" name="Levitation (Telekinesis)" hidden="false" targetId="7c63-0e21-421a-78b5" type="rule" />
+<infoLink id="93c5-0bd8-7008-3209" name="Psychic Power Type: Blessing" hidden="false" targetId="2df7-351e-d581-ff63" type="rule" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+<selectionEntry id="19e5-758b-5c53-17d8" name="Telekine Dome (Telekinesis)" hidden="false" collective="false" import="true" type="upgrade">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2308-7611-3d4e-f647" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="933b-2413-651d-71a0" name="Telekine Dome (Telekinesis)" hidden="false" targetId="b07b-bd1e-43ea-fda3" type="rule" />
+<infoLink id="a0e5-c1ca-f969-ad60" name="Psychic Power Type: Blessing" hidden="false" targetId="2df7-351e-d581-ff63" type="rule" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+<selectionEntry id="a64b-645b-936b-20f8" name="Psychic Maelstrom (Telekinesis)" hidden="false" collective="false" import="true" type="upgrade">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b408-e50c-ddd1-2488" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="685b-c9bf-1f88-c5d3" name="Psychic Maelstrom (Telekinesis)" hidden="false" targetId="1325-888e-37e6-233b" type="rule" />
+<infoLink id="0f65-a917-24dc-b67d" name="Psychic Power Type: Witchfire" hidden="false" targetId="d57f-7eaf-5589-f80d" type="rule" />
+<infoLink id="d387-eed1-671f-c85d" name="Psychic Maelstrom (Telekinesis)" hidden="false" targetId="b8da-74e2-4b8b-d671" type="profile" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+<selectionEntry id="9690-6df5-9219-0971" name="Psychic Shriek (Telepathy)" hidden="false" collective="false" import="true" type="upgrade">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ef78-0f4a-20cb-6405" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="7c68-8326-4cf1-62d7" name="Psychic Shriek (Telepathy)" hidden="false" targetId="9149-632a-4b99-44cd" type="rule" />
+<infoLink id="9eee-5aab-5bef-f253" name="Psychic Power Type: Witchfire" hidden="false" targetId="d57f-7eaf-5589-f80d" type="rule" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+<selectionEntry id="08c3-5fb8-397e-7392" name="Dominate (Telepathy)" hidden="false" collective="false" import="true" type="upgrade">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8cc8-0f14-bf1a-825e" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="ec3d-dcd4-e55a-1c10" name="Dominate (Telepathy)" hidden="false" targetId="66d3-f174-c6d3-f8e9" type="rule" />
+<infoLink id="f065-6d47-a436-1f00" name="Psychic Power Type: Malediction" hidden="false" targetId="e2e5-b205-e6b0-3644" type="rule" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+<selectionEntry id="3c6f-c49c-cf5b-6f12" name="Mental Fortitude (Telepathy)" hidden="false" collective="false" import="true" type="upgrade">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="62c0-fe0f-2c15-614f" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="ce14-22f3-1d16-036b" name="Mental Fortitude (Telepathy)" hidden="false" targetId="320b-ad20-8eac-1316" type="rule" />
+<infoLink id="f705-1152-db3d-d601" name="Psychic Power Type: Blessing" hidden="false" targetId="2df7-351e-d581-ff63" type="rule" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+<selectionEntry id="3324-e743-039c-0139" name="Terrify (Telepathy)" hidden="false" collective="false" import="true" type="upgrade">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fba3-c741-dc51-d366" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="a144-178e-300e-2f9d" name="Terrify (Telepathy)" hidden="false" targetId="80b7-b11e-b9a9-6d15" type="rule" />
+<infoLink id="8475-f30d-15a8-8fff" name="Psychic Power Type: Malediction" hidden="false" targetId="e2e5-b205-e6b0-3644" type="rule" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+<selectionEntry id="8d5e-14bc-2987-f08f" name="Hallucination (Telepathy)" hidden="false" collective="false" import="true" type="upgrade">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e38a-c2b9-cecb-9157" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="23f4-4599-9d0b-a72d" name="Hallucination (Telepathy)" hidden="false" targetId="0a3c-f34c-987d-1bf3" type="rule" />
+<infoLink id="4305-417a-c432-25dc" name="Psychic Power Type: Malediction" hidden="false" targetId="e2e5-b205-e6b0-3644" type="rule" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+<selectionEntry id="0609-4263-19c0-cb4c" name="Invisibility (Telepathy)" hidden="false" collective="false" import="true" type="upgrade">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1b33-ff50-f1a8-870b" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="da2c-e6a4-8388-6a82" name="Invisibility (Telepathy)" hidden="false" targetId="3478-c0c3-4cfd-1181" type="rule" />
+<infoLink id="f00b-71fe-55a4-d58b" name="Psychic Power Type: Blessing" hidden="false" targetId="2df7-351e-d581-ff63" type="rule" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+<selectionEntry id="8c67-46af-643c-4239" name="Shrouding (Telepathy)" hidden="false" collective="false" import="true" type="upgrade">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1abb-102d-1f08-1244" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="62e7-0843-3cfa-a020" name="Shrouding (Telepathy)" hidden="false" targetId="57fe-3119-47a7-1431" type="rule" />
+<infoLink id="55f5-8776-bf05-6885" name="Psychic Power Type: Blessing" hidden="false" targetId="2df7-351e-d581-ff63" type="rule" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+</selectionEntries>
+</selectionEntryGroup>
+</selectionEntryGroups>
 <entryLinks>
 <entryLink id="f038-83e5-617b-91d1" name="Force Weapon" hidden="false" collective="false" import="true" targetId="9ff9-8820-4811-5aee" type="selectionEntry">
 <constraints>
@@ -2268,6 +3189,194 @@
 <infoLink id="b66c-6d49-63f8-ae0e" name="Legion Support Officer" hidden="false" targetId="b440-9ff1-ba27-6a12" type="rule" />
 <infoLink id="575a-a479-9c07-be3f" name="Forbidden Lore" hidden="false" targetId="87e2-3216-ead6-d79a" type="rule" />
 </infoLinks>
+<selectionEntryGroups>
+<selectionEntryGroup id="3662-7a0b-0a66-e5b2" name="Psychic Powers" hidden="false" collective="false" import="true">
+<modifiers>
+<modifier type="add" field="error" value="Choose 1 psychic power.">
+<conditions>
+<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3662-7a0b-0a66-e5b2" type="lessThan" />
+</conditions>
+</modifier>
+</modifiers>
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="97b4-6e38-70f8-9ad1" type="max" />
+</constraints>
+<selectionEntries>
+<selectionEntry id="d1ef-86dc-9780-9616" name="Banishment (Daemonology (Sanctic))" hidden="false" collective="false" import="true" type="upgrade">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bbc1-ce68-b1b6-9f6b" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="9c3d-0710-56c5-0334" name="Banishment (Daemonology (Sanctic))" hidden="false" targetId="d45c-c394-609a-3f60" type="rule" />
+<infoLink id="7ea3-f7c4-f586-e413" name="Psychic Power Type: Malediction" hidden="false" targetId="e2e5-b205-e6b0-3644" type="rule" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+<selectionEntry id="f817-86ad-a298-bc65" name="Gate of Infinity (Daemonology (Sanctic))" hidden="false" collective="false" import="true" type="upgrade">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="585a-0b0f-1993-1103" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="e01d-c34a-a600-74c4" name="Gate of Infinity (Daemonology (Sanctic))" hidden="false" targetId="0228-9ef8-ec1a-8b2a" type="rule" />
+<infoLink id="622f-4881-7ea4-305e" name="Psychic Power Type: Blessing" hidden="false" targetId="2df7-351e-d581-ff63" type="rule" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+<selectionEntry id="6c43-7ffb-a8f9-1b7e" name="Hammerhand (Daemonology (Sanctic))" hidden="false" collective="false" import="true" type="upgrade">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="14a6-4d84-772c-bf38" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="a330-10f4-fe93-8782" name="Hammerhand (Daemonology (Sanctic))" hidden="false" targetId="a83e-9861-9b28-f50b" type="rule" />
+<infoLink id="35ce-5239-2253-ea49" name="Psychic Power Type: Blessing" hidden="false" targetId="2df7-351e-d581-ff63" type="rule" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+<selectionEntry id="7ed0-6d6d-45a7-6ae0" name="Sanctuary (Daemonology (Sanctic))" hidden="false" collective="false" import="true" type="upgrade">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ff00-24fd-a9e7-7c44" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="d222-80d2-e93f-fa9f" name="Sanctuary (Daemonology (Sanctic))" hidden="false" targetId="e178-e8da-a0ab-cbbc" type="rule" />
+<infoLink id="54e5-9b50-8123-56d2" name="Psychic Power Type: Blessing" hidden="false" targetId="2df7-351e-d581-ff63" type="rule" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+<selectionEntry id="2559-36f8-b4af-80d9" name="Purge Soul (Daemonology (Sanctic))" hidden="false" collective="false" import="true" type="upgrade">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1278-b9eb-fe64-d7a8" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="1b85-0366-fe98-f82f" name="Purge Soul (Daemonology (Sanctic))" hidden="false" targetId="c1b2-4222-7138-0701" type="rule" />
+<infoLink id="80b5-bf0e-9ae0-37d8" name="Psychic Power Type: Witchfire - Focused" hidden="false" targetId="728a-56b9-f9e8-53a2" type="rule" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+<selectionEntry id="0d59-f64a-fe6f-ce89" name="Cleansing Flame (Daemonology (Sanctic))" hidden="false" collective="false" import="true" type="upgrade">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="746b-4f67-b9a0-1351" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="54b0-4641-9b3e-4189" name="Cleansing Flame (Daemonology (Sanctic))" hidden="false" targetId="618c-99c4-745b-820e" type="rule" />
+<infoLink id="ad75-1c77-3eee-296a" name="Psychic Power Type: Witchfire - Nova" hidden="false" targetId="e76f-abfe-254a-2d7d" type="rule" />
+<infoLink id="9892-60a2-0e1f-e115" name="Cleansing Flame (Daemonology (Sanctic))" hidden="false" targetId="ae1c-b16b-7a30-912a" type="profile" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+<selectionEntry id="15fa-ac8a-2ace-002b" name="Vortex of Doom (Daemonology (Sanctic))" hidden="false" collective="false" import="true" type="upgrade">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7796-19e3-ca0b-6c88" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="3d5a-d6aa-20bb-9972" name="Vortex of Doom (Daemonology (Sanctic))" hidden="false" targetId="9391-3293-b113-1723" type="rule" />
+<infoLink id="0e05-bef2-a53d-0d0a" name="Psychic Power Type: Witchfire" hidden="false" targetId="d57f-7eaf-5589-f80d" type="rule" />
+<infoLink id="e2b6-586f-ce2c-5a15" name="Vortex of Doom (Daemonology (Sanctic))" hidden="false" targetId="7757-8114-68b2-772b" type="profile" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+<selectionEntry id="abb3-bf82-043b-fb41" name="Summoning (Daemonology (Malefic))" hidden="false" collective="false" import="true" type="upgrade">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="625f-fa3b-e058-95b9" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="7f9e-c2bb-bfd8-e523" name="Summoning (Daemonology (Malefic))" hidden="false" targetId="b472-6a17-6840-bf64" type="rule" />
+<infoLink id="3cc3-ccb5-3325-e245" name="Psychic Power Type: Conjuration" hidden="false" targetId="c913-19fd-3d6e-40c8" type="rule" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+<selectionEntry id="f807-3ca4-7182-e716" name="Cursed Earth (Daemonology (Malefic))" hidden="false" collective="false" import="true" type="upgrade">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9934-ff65-a9e6-2109" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="34f9-5bc6-5fef-a7d4" name="Cursed Earth (Daemonology (Malefic))" hidden="false" targetId="a431-20f9-34c8-fcd3" type="rule" />
+<infoLink id="c97b-8df2-9d90-1a29" name="Psychic Power Type: Blessing" hidden="false" targetId="2df7-351e-d581-ff63" type="rule" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+<selectionEntry id="b6cf-87b4-7c27-d32d" name="Dark Flame (Daemonology (Malefic))" hidden="false" collective="false" import="true" type="upgrade">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2c52-de22-137b-473a" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="d72e-9191-1adf-efe0" name="Dark Flame (Daemonology (Malefic))" hidden="false" targetId="6eb6-8caf-e509-20f1" type="rule" />
+<infoLink id="83d3-2453-c2b3-cbd6" name="Psychic Power Type: Witchfire" hidden="false" targetId="d57f-7eaf-5589-f80d" type="rule" />
+<infoLink id="ab18-69ac-7210-260c" name="Dark Flame (Daemonology (Malefic))" hidden="false" targetId="052f-aed2-8ef8-a7e6" type="profile" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+<selectionEntry id="da24-4f13-4257-e70b" name="Possession (Daemonology (Malefic))" hidden="false" collective="false" import="true" type="upgrade">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="379d-b5e3-2388-6599" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="1dc3-979e-054b-4bbe" name="Possession (Daemonology (Malefic))" hidden="false" targetId="0507-b55d-f00f-4254" type="rule" />
+<infoLink id="051e-07b2-a761-ceac" name="Psychic Power Type: Conjuration" hidden="false" targetId="c913-19fd-3d6e-40c8" type="rule" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+<selectionEntry id="8a03-cd7c-7704-6579" name="Sacrifice (Daemonology (Malefic))" hidden="false" collective="false" import="true" type="upgrade">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fe6e-d8f7-24b3-b444" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="622b-84a6-42d5-d019" name="Sacrifice (Daemonology (Malefic))" hidden="false" targetId="848a-996b-d4f4-cf5f" type="rule" />
+<infoLink id="5764-1afc-3446-3f66" name="Psychic Power Type: Conjuration" hidden="false" targetId="c913-19fd-3d6e-40c8" type="rule" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+<selectionEntry id="a30a-d930-ed66-5c8b" name="Incursion (Daemonology (Malefic))" hidden="false" collective="false" import="true" type="upgrade">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8ae0-be2e-97f2-837f" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="ee50-9bbd-5e34-d0bf" name="Incursion (Daemonology (Malefic))" hidden="false" targetId="b27d-213a-3ecd-97e2" type="rule" />
+<infoLink id="e5a2-2bda-363a-a811" name="Psychic Power Type: Conjuration" hidden="false" targetId="c913-19fd-3d6e-40c8" type="rule" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+<selectionEntry id="a6e7-630d-ab2e-5d94" name="Infernal Gaze (Daemonology (Malefic))" hidden="false" collective="false" import="true" type="upgrade">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="93b9-b867-3b50-a7fe" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="927e-902a-35f5-689b" name="Infernal Gaze (Daemonology (Malefic))" hidden="false" targetId="2b77-f966-c88d-4c0d" type="rule" />
+<infoLink id="1021-c6a7-8cf8-a9c7" name="Psychic Power Type: Witchfire - Beam" hidden="false" targetId="6ffa-5b76-2c20-0597" type="rule" />
+<infoLink id="a60d-42bc-de5c-d110" name="Infernal Gaze (Daemonology (Malefic))" hidden="false" targetId="940f-1cf6-44ef-80d6" type="profile" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+</selectionEntries>
+</selectionEntryGroup>
+</selectionEntryGroups>
 <entryLinks>
 <entryLink id="2fdf-fae0-6822-f74a" name="Force Weapon" hidden="false" collective="false" import="true" targetId="9ff9-8820-4811-5aee" type="selectionEntry">
 <constraints>
@@ -2528,6 +3637,108 @@
 <infoLink id="994f-e7aa-064a-dc90" name="Credo Annihilato" hidden="false" targetId="3d95-2818-63ae-8081" type="rule" />
 <infoLink id="d617-005d-99d6-085d" name="Psychic Powers (Nullificator)" hidden="false" targetId="ffb9-5eba-1d36-ee66" type="rule" />
 </infoLinks>
+<selectionEntryGroups>
+<selectionEntryGroup id="446b-82eb-5612-2f0a" name="Psychic Powers" hidden="false" collective="false" import="true">
+<modifiers>
+<modifier type="add" field="error" value="Choose 1 psychic power.">
+<conditions>
+<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="446b-82eb-5612-2f0a" type="lessThan" />
+</conditions>
+</modifier>
+</modifiers>
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="de96-fde0-6e72-157e" type="max" />
+</constraints>
+<selectionEntries>
+<selectionEntry id="2f1d-96eb-9cc5-9764" name="Banishment (Daemonology (Sanctic))" hidden="false" collective="false" import="true" type="upgrade">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c34a-524d-7bb7-4b0c" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="e6f5-894e-5f67-91f3" name="Banishment (Daemonology (Sanctic))" hidden="false" targetId="d45c-c394-609a-3f60" type="rule" />
+<infoLink id="356c-8403-d6ce-9b79" name="Psychic Power Type: Malediction" hidden="false" targetId="e2e5-b205-e6b0-3644" type="rule" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+<selectionEntry id="4f79-f8cf-a001-5b97" name="Gate of Infinity (Daemonology (Sanctic))" hidden="false" collective="false" import="true" type="upgrade">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="56b6-28f7-a927-4f65" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="82c4-8b5e-7de9-5113" name="Gate of Infinity (Daemonology (Sanctic))" hidden="false" targetId="0228-9ef8-ec1a-8b2a" type="rule" />
+<infoLink id="ba87-a841-be70-815a" name="Psychic Power Type: Blessing" hidden="false" targetId="2df7-351e-d581-ff63" type="rule" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+<selectionEntry id="4bd0-6512-a5d2-aeca" name="Hammerhand (Daemonology (Sanctic))" hidden="false" collective="false" import="true" type="upgrade">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="44cf-ed99-9da0-8418" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="138b-9381-5a4a-4b62" name="Hammerhand (Daemonology (Sanctic))" hidden="false" targetId="a83e-9861-9b28-f50b" type="rule" />
+<infoLink id="f12f-ca12-5cff-7955" name="Psychic Power Type: Blessing" hidden="false" targetId="2df7-351e-d581-ff63" type="rule" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+<selectionEntry id="73bb-769b-147b-6754" name="Sanctuary (Daemonology (Sanctic))" hidden="false" collective="false" import="true" type="upgrade">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9bc4-22f5-1a66-dd06" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="8cf1-91a2-708f-d642" name="Sanctuary (Daemonology (Sanctic))" hidden="false" targetId="e178-e8da-a0ab-cbbc" type="rule" />
+<infoLink id="17b0-a416-d036-102a" name="Psychic Power Type: Blessing" hidden="false" targetId="2df7-351e-d581-ff63" type="rule" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+<selectionEntry id="8c0f-9339-bb1b-8d4e" name="Purge Soul (Daemonology (Sanctic))" hidden="false" collective="false" import="true" type="upgrade">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="044c-8a55-a15a-ad69" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="2d1d-65b3-6767-027a" name="Purge Soul (Daemonology (Sanctic))" hidden="false" targetId="c1b2-4222-7138-0701" type="rule" />
+<infoLink id="4d63-9f47-d309-f24c" name="Psychic Power Type: Witchfire - Focused" hidden="false" targetId="728a-56b9-f9e8-53a2" type="rule" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+<selectionEntry id="5835-6895-31e9-8b98" name="Cleansing Flame (Daemonology (Sanctic))" hidden="false" collective="false" import="true" type="upgrade">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="962b-a9d6-b019-709e" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="7032-9910-9c79-f50f" name="Cleansing Flame (Daemonology (Sanctic))" hidden="false" targetId="618c-99c4-745b-820e" type="rule" />
+<infoLink id="73a8-58ee-68d6-7a69" name="Psychic Power Type: Witchfire - Nova" hidden="false" targetId="e76f-abfe-254a-2d7d" type="rule" />
+<infoLink id="fba8-c2c3-14e6-032d" name="Cleansing Flame (Daemonology (Sanctic))" hidden="false" targetId="ae1c-b16b-7a30-912a" type="profile" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+<selectionEntry id="8f98-6e02-80c2-1a0f" name="Vortex of Doom (Daemonology (Sanctic))" hidden="false" collective="false" import="true" type="upgrade">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1e45-41ff-3e71-411c" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="ab63-5a09-0165-253b" name="Vortex of Doom (Daemonology (Sanctic))" hidden="false" targetId="9391-3293-b113-1723" type="rule" />
+<infoLink id="0307-dccd-6a6e-5bc5" name="Psychic Power Type: Witchfire" hidden="false" targetId="d57f-7eaf-5589-f80d" type="rule" />
+<infoLink id="db28-3b06-3dc8-7253" name="Vortex of Doom (Daemonology (Sanctic))" hidden="false" targetId="7757-8114-68b2-772b" type="profile" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+</selectionEntries>
+</selectionEntryGroup>
+</selectionEntryGroups>
 <entryLinks>
 <entryLink id="b152-bc94-f161-11d4" name="Aether-shock Maul" hidden="false" collective="false" import="true" targetId="b791-66a4-3948-3fce" type="selectionEntry">
 <constraints>
@@ -5092,6 +6303,470 @@
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="34f9-c0a4-56aa-ef55" type="max" />
 </constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+</selectionEntries>
+</selectionEntryGroup>
+<selectionEntryGroup id="14dc-680c-ca5e-01a7" name="Psychic Powers" hidden="false" collective="false" import="true">
+<modifiers>
+<modifier type="add" field="error" value="Choose 1 psychic power.">
+<conditions>
+<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="14dc-680c-ca5e-01a7" type="lessThan" />
+</conditions>
+</modifier>
+</modifiers>
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="19d6-c597-7582-2ab3" type="max" />
+</constraints>
+<selectionEntries>
+<selectionEntry id="d407-6ada-49b8-cffd" name="Smite (Biomancy)" hidden="false" collective="false" import="true" type="upgrade">
+<modifiers>
+<modifier type="set" field="hidden" value="true">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="80de-798e-ac85-92e3" type="lessThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="set" field="0720-1938-0776-9819" value="0">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="80de-798e-ac85-92e3" type="lessThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+</modifiers>
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0720-1938-0776-9819" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="8451-ae07-0bce-9432" name="Smite (Biomancy)" hidden="false" targetId="52f2-9ce3-6607-ec42" type="rule" />
+<infoLink id="aa3e-c412-120b-8a59" name="Psychic Power Type: Witchfire" hidden="false" targetId="d57f-7eaf-5589-f80d" type="rule" />
+<infoLink id="7218-81f5-ef72-50eb" name="Smite (Biomancy)" hidden="false" targetId="a2e8-3ba1-613d-734e" type="profile" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+<selectionEntry id="cde3-7a8c-b55c-07e8" name="Iron Arm (Biomancy)" hidden="false" collective="false" import="true" type="upgrade">
+<modifiers>
+<modifier type="set" field="hidden" value="true">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="80de-798e-ac85-92e3" type="lessThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="set" field="c555-1644-b56a-4094" value="0">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="80de-798e-ac85-92e3" type="lessThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+</modifiers>
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c555-1644-b56a-4094" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="046a-c919-9a08-40b5" name="Iron Arm (Biomancy)" hidden="false" targetId="091a-6782-fcc5-d23b" type="rule" />
+<infoLink id="3ffd-b364-ab51-32e0" name="Psychic Power Type: Blessing" hidden="false" targetId="2df7-351e-d581-ff63" type="rule" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+<selectionEntry id="95e5-9669-8b2e-21fa" name="Enfeeble (Biomancy)" hidden="false" collective="false" import="true" type="upgrade">
+<modifiers>
+<modifier type="set" field="hidden" value="true">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="80de-798e-ac85-92e3" type="lessThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="set" field="6550-de2b-cb3d-45df" value="0">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="80de-798e-ac85-92e3" type="lessThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+</modifiers>
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6550-de2b-cb3d-45df" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="a930-2856-9abe-0f4c" name="Enfeeble (Biomancy)" hidden="false" targetId="8385-2b4a-7ae1-55ee" type="rule" />
+<infoLink id="a577-b671-cf64-12f6" name="Psychic Power Type: Malediction" hidden="false" targetId="e2e5-b205-e6b0-3644" type="rule" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+<selectionEntry id="f242-8ee3-f229-2f7d" name="Life Leech (Biomancy)" hidden="false" collective="false" import="true" type="upgrade">
+<modifiers>
+<modifier type="set" field="hidden" value="true">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="80de-798e-ac85-92e3" type="lessThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="set" field="3977-f545-7b52-b9c3" value="0">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="80de-798e-ac85-92e3" type="lessThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+</modifiers>
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3977-f545-7b52-b9c3" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="5ee3-a9b3-0f29-3378" name="Life Leech (Biomancy)" hidden="false" targetId="a803-e87a-6035-2e91" type="rule" />
+<infoLink id="f281-2092-7529-689b" name="Psychic Power Type: Witchfire" hidden="false" targetId="d57f-7eaf-5589-f80d" type="rule" />
+<infoLink id="5c49-6a75-ffdc-aaf2" name="Life Leech (Biomancy)" hidden="false" targetId="5871-c332-e125-3fb3" type="profile" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+<selectionEntry id="952f-1bf8-7a3f-3a2b" name="Warp Speed (Biomancy)" hidden="false" collective="false" import="true" type="upgrade">
+<modifiers>
+<modifier type="set" field="hidden" value="true">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="80de-798e-ac85-92e3" type="lessThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="set" field="fb1d-a565-39f8-6a36" value="0">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="80de-798e-ac85-92e3" type="lessThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+</modifiers>
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fb1d-a565-39f8-6a36" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="cef5-f47b-b30d-923f" name="Warp Speed (Biomancy)" hidden="false" targetId="8f4e-a616-6967-9063" type="rule" />
+<infoLink id="d11b-f075-5931-6224" name="Psychic Power Type: Blessing" hidden="false" targetId="2df7-351e-d581-ff63" type="rule" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+<selectionEntry id="ff60-2ca0-9ec4-25ad" name="Endurance (Biomancy)" hidden="false" collective="false" import="true" type="upgrade">
+<modifiers>
+<modifier type="set" field="hidden" value="true">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="80de-798e-ac85-92e3" type="lessThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="set" field="af0a-444d-b076-11fd" value="0">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="80de-798e-ac85-92e3" type="lessThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+</modifiers>
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="af0a-444d-b076-11fd" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="7598-8c81-9aaa-76a2" name="Endurance (Biomancy)" hidden="false" targetId="a57c-dffd-b470-659b" type="rule" />
+<infoLink id="77a7-f8da-d399-2bea" name="Psychic Power Type: Blessing" hidden="false" targetId="2df7-351e-d581-ff63" type="rule" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+<selectionEntry id="65a4-8064-a44a-aa5a" name="Haemorrhage (Biomancy)" hidden="false" collective="false" import="true" type="upgrade">
+<modifiers>
+<modifier type="set" field="hidden" value="true">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="80de-798e-ac85-92e3" type="lessThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="set" field="4c77-d60e-deb3-0cab" value="0">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="80de-798e-ac85-92e3" type="lessThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+</modifiers>
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4c77-d60e-deb3-0cab" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="fdca-71f7-06be-8242" name="Haemorrhage (Biomancy)" hidden="false" targetId="783b-cded-f04c-2da4" type="rule" />
+<infoLink id="f723-b737-08d8-6cf5" name="Psychic Power Type: Witchfire - Focused" hidden="false" targetId="728a-56b9-f9e8-53a2" type="rule" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+<selectionEntry id="a526-eeb6-425d-f6e0" name="Psychic Shriek (Telepathy)" hidden="false" collective="false" import="true" type="upgrade">
+<modifiers>
+<modifier type="set" field="hidden" value="true">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3953-0e96-e218-4664" type="lessThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="set" field="697d-085a-b941-fcae" value="0">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3953-0e96-e218-4664" type="lessThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+</modifiers>
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="697d-085a-b941-fcae" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="247b-87bf-64fa-1cbb" name="Psychic Shriek (Telepathy)" hidden="false" targetId="9149-632a-4b99-44cd" type="rule" />
+<infoLink id="3498-68ad-7280-e7fa" name="Psychic Power Type: Witchfire" hidden="false" targetId="d57f-7eaf-5589-f80d" type="rule" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+<selectionEntry id="4ec1-fe8e-044e-a7da" name="Dominate (Telepathy)" hidden="false" collective="false" import="true" type="upgrade">
+<modifiers>
+<modifier type="set" field="hidden" value="true">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3953-0e96-e218-4664" type="lessThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="set" field="9287-db8d-a6aa-3cd2" value="0">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3953-0e96-e218-4664" type="lessThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+</modifiers>
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9287-db8d-a6aa-3cd2" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="0074-c0f1-f0e6-1176" name="Dominate (Telepathy)" hidden="false" targetId="66d3-f174-c6d3-f8e9" type="rule" />
+<infoLink id="8932-2430-6dd2-750b" name="Psychic Power Type: Malediction" hidden="false" targetId="e2e5-b205-e6b0-3644" type="rule" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+<selectionEntry id="234e-070e-f22b-92ce" name="Mental Fortitude (Telepathy)" hidden="false" collective="false" import="true" type="upgrade">
+<modifiers>
+<modifier type="set" field="hidden" value="true">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3953-0e96-e218-4664" type="lessThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="set" field="e235-97ad-928b-26b0" value="0">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3953-0e96-e218-4664" type="lessThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+</modifiers>
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e235-97ad-928b-26b0" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="3169-bdae-b402-abd5" name="Mental Fortitude (Telepathy)" hidden="false" targetId="320b-ad20-8eac-1316" type="rule" />
+<infoLink id="ace6-45b4-4892-30d7" name="Psychic Power Type: Blessing" hidden="false" targetId="2df7-351e-d581-ff63" type="rule" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+<selectionEntry id="1a6c-c115-9a42-bdcb" name="Terrify (Telepathy)" hidden="false" collective="false" import="true" type="upgrade">
+<modifiers>
+<modifier type="set" field="hidden" value="true">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3953-0e96-e218-4664" type="lessThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="set" field="2d1c-2520-3cdb-5e38" value="0">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3953-0e96-e218-4664" type="lessThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+</modifiers>
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2d1c-2520-3cdb-5e38" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="5454-10a5-3baa-b5d5" name="Terrify (Telepathy)" hidden="false" targetId="80b7-b11e-b9a9-6d15" type="rule" />
+<infoLink id="b055-f4a4-b6a4-2aef" name="Psychic Power Type: Malediction" hidden="false" targetId="e2e5-b205-e6b0-3644" type="rule" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+<selectionEntry id="15e9-5215-35a0-0862" name="Hallucination (Telepathy)" hidden="false" collective="false" import="true" type="upgrade">
+<modifiers>
+<modifier type="set" field="hidden" value="true">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3953-0e96-e218-4664" type="lessThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="set" field="dc65-7722-c37e-5362" value="0">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3953-0e96-e218-4664" type="lessThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+</modifiers>
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dc65-7722-c37e-5362" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="8bf0-c0ad-5868-b109" name="Hallucination (Telepathy)" hidden="false" targetId="0a3c-f34c-987d-1bf3" type="rule" />
+<infoLink id="f87d-1f34-ddd0-bd22" name="Psychic Power Type: Malediction" hidden="false" targetId="e2e5-b205-e6b0-3644" type="rule" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+<selectionEntry id="8881-d7d1-c937-186d" name="Invisibility (Telepathy)" hidden="false" collective="false" import="true" type="upgrade">
+<modifiers>
+<modifier type="set" field="hidden" value="true">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3953-0e96-e218-4664" type="lessThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="set" field="fa5b-ea7b-27fa-9e3f" value="0">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3953-0e96-e218-4664" type="lessThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+</modifiers>
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fa5b-ea7b-27fa-9e3f" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="87ba-3263-47d0-0d6a" name="Invisibility (Telepathy)" hidden="false" targetId="3478-c0c3-4cfd-1181" type="rule" />
+<infoLink id="c7ee-9cc0-9bb1-876a" name="Psychic Power Type: Blessing" hidden="false" targetId="2df7-351e-d581-ff63" type="rule" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+<selectionEntry id="3c50-2fd0-e10e-6b47" name="Shrouding (Telepathy)" hidden="false" collective="false" import="true" type="upgrade">
+<modifiers>
+<modifier type="set" field="hidden" value="true">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3953-0e96-e218-4664" type="lessThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="set" field="ea2a-a6bd-f0e1-34ab" value="0">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3953-0e96-e218-4664" type="lessThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+</modifiers>
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ea2a-a6bd-f0e1-34ab" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="06e7-d652-d34e-7c05" name="Shrouding (Telepathy)" hidden="false" targetId="57fe-3119-47a7-1431" type="rule" />
+<infoLink id="db6c-1872-0a67-754d" name="Psychic Power Type: Blessing" hidden="false" targetId="2df7-351e-d581-ff63" type="rule" />
+</infoLinks>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
 </costs>
@@ -24871,6 +26546,470 @@ LIMITATIONS - Only a Traitor Word Bearers Detachment. All Infantry units must be
 </selectionEntry>
 </selectionEntries>
 </selectionEntryGroup>
+<selectionEntryGroup id="f2f0-1a6c-656f-f531" name="Psychic Powers" hidden="false" collective="false" import="true">
+<modifiers>
+<modifier type="add" field="error" value="Choose 1 psychic power.">
+<conditions>
+<condition field="selections" scope="c5f7-3def-ee7f-dd9d" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f2f0-1a6c-656f-f531" type="lessThan" />
+</conditions>
+</modifier>
+</modifiers>
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b16f-4496-9242-c13d" type="max" />
+</constraints>
+<selectionEntries>
+<selectionEntry id="cf51-1265-e6c8-407f" name="Smite (Biomancy)" hidden="false" collective="false" import="true" type="upgrade">
+<modifiers>
+<modifier type="set" field="hidden" value="true">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="c5f7-3def-ee7f-dd9d" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1169-8ad4-eab7-20c4" type="lessThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="set" field="1829-7ec2-807b-ea8c" value="0">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="c5f7-3def-ee7f-dd9d" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1169-8ad4-eab7-20c4" type="lessThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+</modifiers>
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1829-7ec2-807b-ea8c" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="c12e-abcd-6969-1853" name="Smite (Biomancy)" hidden="false" targetId="52f2-9ce3-6607-ec42" type="rule" />
+<infoLink id="f366-5c42-0797-bdb5" name="Psychic Power Type: Witchfire" hidden="false" targetId="d57f-7eaf-5589-f80d" type="rule" />
+<infoLink id="2add-f8d2-de60-64fe" name="Smite (Biomancy)" hidden="false" targetId="a2e8-3ba1-613d-734e" type="profile" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+<selectionEntry id="3cca-1a36-be56-14af" name="Iron Arm (Biomancy)" hidden="false" collective="false" import="true" type="upgrade">
+<modifiers>
+<modifier type="set" field="hidden" value="true">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="c5f7-3def-ee7f-dd9d" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1169-8ad4-eab7-20c4" type="lessThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="set" field="9d94-0aa7-5f66-4875" value="0">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="c5f7-3def-ee7f-dd9d" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1169-8ad4-eab7-20c4" type="lessThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+</modifiers>
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9d94-0aa7-5f66-4875" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="4bb7-a39f-15e9-1e12" name="Iron Arm (Biomancy)" hidden="false" targetId="091a-6782-fcc5-d23b" type="rule" />
+<infoLink id="dad8-1928-38c1-2d53" name="Psychic Power Type: Blessing" hidden="false" targetId="2df7-351e-d581-ff63" type="rule" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+<selectionEntry id="edff-3de4-af33-a609" name="Enfeeble (Biomancy)" hidden="false" collective="false" import="true" type="upgrade">
+<modifiers>
+<modifier type="set" field="hidden" value="true">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="c5f7-3def-ee7f-dd9d" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1169-8ad4-eab7-20c4" type="lessThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="set" field="d7aa-65c3-5da3-4681" value="0">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="c5f7-3def-ee7f-dd9d" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1169-8ad4-eab7-20c4" type="lessThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+</modifiers>
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d7aa-65c3-5da3-4681" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="8f15-aa32-651b-b5cc" name="Enfeeble (Biomancy)" hidden="false" targetId="8385-2b4a-7ae1-55ee" type="rule" />
+<infoLink id="8f49-743c-5f0e-3288" name="Psychic Power Type: Malediction" hidden="false" targetId="e2e5-b205-e6b0-3644" type="rule" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+<selectionEntry id="ac04-b046-7eda-7e67" name="Life Leech (Biomancy)" hidden="false" collective="false" import="true" type="upgrade">
+<modifiers>
+<modifier type="set" field="hidden" value="true">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="c5f7-3def-ee7f-dd9d" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1169-8ad4-eab7-20c4" type="lessThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="set" field="cc80-705b-5dca-b998" value="0">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="c5f7-3def-ee7f-dd9d" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1169-8ad4-eab7-20c4" type="lessThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+</modifiers>
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cc80-705b-5dca-b998" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="9da3-1707-c284-1678" name="Life Leech (Biomancy)" hidden="false" targetId="a803-e87a-6035-2e91" type="rule" />
+<infoLink id="0712-ae01-ec5e-dbcc" name="Psychic Power Type: Witchfire" hidden="false" targetId="d57f-7eaf-5589-f80d" type="rule" />
+<infoLink id="4dce-92d6-9c24-a50b" name="Life Leech (Biomancy)" hidden="false" targetId="5871-c332-e125-3fb3" type="profile" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+<selectionEntry id="b44d-cd44-557c-8163" name="Warp Speed (Biomancy)" hidden="false" collective="false" import="true" type="upgrade">
+<modifiers>
+<modifier type="set" field="hidden" value="true">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="c5f7-3def-ee7f-dd9d" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1169-8ad4-eab7-20c4" type="lessThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="set" field="7b3e-48b7-0125-1221" value="0">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="c5f7-3def-ee7f-dd9d" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1169-8ad4-eab7-20c4" type="lessThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+</modifiers>
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7b3e-48b7-0125-1221" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="e9f0-df58-fd63-460b" name="Warp Speed (Biomancy)" hidden="false" targetId="8f4e-a616-6967-9063" type="rule" />
+<infoLink id="bcf2-c9ee-3438-4ff3" name="Psychic Power Type: Blessing" hidden="false" targetId="2df7-351e-d581-ff63" type="rule" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+<selectionEntry id="2d23-a3c3-edbe-15a4" name="Endurance (Biomancy)" hidden="false" collective="false" import="true" type="upgrade">
+<modifiers>
+<modifier type="set" field="hidden" value="true">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="c5f7-3def-ee7f-dd9d" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1169-8ad4-eab7-20c4" type="lessThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="set" field="0d1a-5143-ce44-8259" value="0">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="c5f7-3def-ee7f-dd9d" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1169-8ad4-eab7-20c4" type="lessThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+</modifiers>
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0d1a-5143-ce44-8259" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="3fdf-6f0f-978c-618c" name="Endurance (Biomancy)" hidden="false" targetId="a57c-dffd-b470-659b" type="rule" />
+<infoLink id="21b7-bcf6-19f5-7fa2" name="Psychic Power Type: Blessing" hidden="false" targetId="2df7-351e-d581-ff63" type="rule" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+<selectionEntry id="80e5-9110-d6d9-a8f7" name="Haemorrhage (Biomancy)" hidden="false" collective="false" import="true" type="upgrade">
+<modifiers>
+<modifier type="set" field="hidden" value="true">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="c5f7-3def-ee7f-dd9d" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1169-8ad4-eab7-20c4" type="lessThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="set" field="5ffc-de5d-f714-08a5" value="0">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="c5f7-3def-ee7f-dd9d" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1169-8ad4-eab7-20c4" type="lessThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+</modifiers>
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5ffc-de5d-f714-08a5" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="a3ba-4460-0cea-1982" name="Haemorrhage (Biomancy)" hidden="false" targetId="783b-cded-f04c-2da4" type="rule" />
+<infoLink id="a9d1-647d-63e5-1c4b" name="Psychic Power Type: Witchfire - Focused" hidden="false" targetId="728a-56b9-f9e8-53a2" type="rule" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+<selectionEntry id="620c-4115-b251-2489" name="Psychic Shriek (Telepathy)" hidden="false" collective="false" import="true" type="upgrade">
+<modifiers>
+<modifier type="set" field="hidden" value="true">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="c5f7-3def-ee7f-dd9d" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="beaa-9755-6f9b-8225" type="lessThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="set" field="8e24-6226-6c96-3cd7" value="0">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="c5f7-3def-ee7f-dd9d" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="beaa-9755-6f9b-8225" type="lessThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+</modifiers>
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8e24-6226-6c96-3cd7" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="391e-17df-33c6-6356" name="Psychic Shriek (Telepathy)" hidden="false" targetId="9149-632a-4b99-44cd" type="rule" />
+<infoLink id="62e9-8a6e-f4eb-e5a6" name="Psychic Power Type: Witchfire" hidden="false" targetId="d57f-7eaf-5589-f80d" type="rule" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+<selectionEntry id="7c9d-b799-5040-9fda" name="Dominate (Telepathy)" hidden="false" collective="false" import="true" type="upgrade">
+<modifiers>
+<modifier type="set" field="hidden" value="true">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="c5f7-3def-ee7f-dd9d" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="beaa-9755-6f9b-8225" type="lessThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="set" field="8203-1818-d2c6-f482" value="0">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="c5f7-3def-ee7f-dd9d" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="beaa-9755-6f9b-8225" type="lessThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+</modifiers>
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8203-1818-d2c6-f482" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="9c02-373f-8673-2c01" name="Dominate (Telepathy)" hidden="false" targetId="66d3-f174-c6d3-f8e9" type="rule" />
+<infoLink id="fc8d-a12e-5c97-b199" name="Psychic Power Type: Malediction" hidden="false" targetId="e2e5-b205-e6b0-3644" type="rule" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+<selectionEntry id="dc07-39df-d410-02bc" name="Mental Fortitude (Telepathy)" hidden="false" collective="false" import="true" type="upgrade">
+<modifiers>
+<modifier type="set" field="hidden" value="true">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="c5f7-3def-ee7f-dd9d" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="beaa-9755-6f9b-8225" type="lessThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="set" field="b969-bbe9-5a03-093f" value="0">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="c5f7-3def-ee7f-dd9d" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="beaa-9755-6f9b-8225" type="lessThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+</modifiers>
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b969-bbe9-5a03-093f" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="1ff7-df1f-cbd6-26e7" name="Mental Fortitude (Telepathy)" hidden="false" targetId="320b-ad20-8eac-1316" type="rule" />
+<infoLink id="0765-ce4f-bd94-bcf2" name="Psychic Power Type: Blessing" hidden="false" targetId="2df7-351e-d581-ff63" type="rule" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+<selectionEntry id="ce6e-088a-bb1a-bb0c" name="Terrify (Telepathy)" hidden="false" collective="false" import="true" type="upgrade">
+<modifiers>
+<modifier type="set" field="hidden" value="true">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="c5f7-3def-ee7f-dd9d" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="beaa-9755-6f9b-8225" type="lessThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="set" field="29a8-29e7-75d8-754f" value="0">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="c5f7-3def-ee7f-dd9d" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="beaa-9755-6f9b-8225" type="lessThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+</modifiers>
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="29a8-29e7-75d8-754f" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="c449-4af9-f786-9163" name="Terrify (Telepathy)" hidden="false" targetId="80b7-b11e-b9a9-6d15" type="rule" />
+<infoLink id="cf10-e8bf-8ed4-5717" name="Psychic Power Type: Malediction" hidden="false" targetId="e2e5-b205-e6b0-3644" type="rule" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+<selectionEntry id="eac3-1849-6b2f-667c" name="Hallucination (Telepathy)" hidden="false" collective="false" import="true" type="upgrade">
+<modifiers>
+<modifier type="set" field="hidden" value="true">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="c5f7-3def-ee7f-dd9d" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="beaa-9755-6f9b-8225" type="lessThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="set" field="5a0c-b01f-7446-79a3" value="0">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="c5f7-3def-ee7f-dd9d" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="beaa-9755-6f9b-8225" type="lessThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+</modifiers>
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5a0c-b01f-7446-79a3" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="9b4c-dcd4-3d38-4faa" name="Hallucination (Telepathy)" hidden="false" targetId="0a3c-f34c-987d-1bf3" type="rule" />
+<infoLink id="c8c0-0829-55d8-edf5" name="Psychic Power Type: Malediction" hidden="false" targetId="e2e5-b205-e6b0-3644" type="rule" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+<selectionEntry id="ad18-decb-fe4c-e7f8" name="Invisibility (Telepathy)" hidden="false" collective="false" import="true" type="upgrade">
+<modifiers>
+<modifier type="set" field="hidden" value="true">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="c5f7-3def-ee7f-dd9d" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="beaa-9755-6f9b-8225" type="lessThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="set" field="d371-9550-1e78-4db4" value="0">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="c5f7-3def-ee7f-dd9d" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="beaa-9755-6f9b-8225" type="lessThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+</modifiers>
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d371-9550-1e78-4db4" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="1182-cd57-4979-a121" name="Invisibility (Telepathy)" hidden="false" targetId="3478-c0c3-4cfd-1181" type="rule" />
+<infoLink id="69d7-f554-02ce-c35a" name="Psychic Power Type: Blessing" hidden="false" targetId="2df7-351e-d581-ff63" type="rule" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+<selectionEntry id="9cd4-79be-dc62-b715" name="Shrouding (Telepathy)" hidden="false" collective="false" import="true" type="upgrade">
+<modifiers>
+<modifier type="set" field="hidden" value="true">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="c5f7-3def-ee7f-dd9d" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="beaa-9755-6f9b-8225" type="lessThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="set" field="938b-fbd5-c033-1c81" value="0">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="c5f7-3def-ee7f-dd9d" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="beaa-9755-6f9b-8225" type="lessThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+</modifiers>
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="938b-fbd5-c033-1c81" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="083a-7209-a94d-0cd3" name="Shrouding (Telepathy)" hidden="false" targetId="57fe-3119-47a7-1431" type="rule" />
+<infoLink id="89c4-3ac6-496d-4939" name="Psychic Power Type: Blessing" hidden="false" targetId="2df7-351e-d581-ff63" type="rule" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+</selectionEntries>
+</selectionEntryGroup>
 <selectionEntryGroup id="44c2-e3de-7398-761d" name="Retinue (no Force Organisation slot)" hidden="false" collective="false" import="true">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="635d-2e0a-51e8-9da6" type="max" />
@@ -24990,6 +27129,470 @@ LIMITATIONS - Only a Traitor Word Bearers Detachment. All Infantry units must be
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a0c7-6577-870c-db8e" type="max" />
 </constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+</selectionEntries>
+</selectionEntryGroup>
+<selectionEntryGroup id="2f21-0568-d900-6bb9" name="Psychic Powers" hidden="false" collective="false" import="true">
+<modifiers>
+<modifier type="add" field="error" value="Choose 1 psychic power.">
+<conditions>
+<condition field="selections" scope="18f6-e29a-4529-ae38" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2f21-0568-d900-6bb9" type="lessThan" />
+</conditions>
+</modifier>
+</modifiers>
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3690-b84e-bd5a-fe72" type="max" />
+</constraints>
+<selectionEntries>
+<selectionEntry id="5805-11c0-2859-8aec" name="Smite (Biomancy)" hidden="false" collective="false" import="true" type="upgrade">
+<modifiers>
+<modifier type="set" field="hidden" value="true">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="18f6-e29a-4529-ae38" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0071-0d5e-2f0d-ca51" type="lessThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="set" field="1323-d0a9-033d-6f9f" value="0">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="18f6-e29a-4529-ae38" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0071-0d5e-2f0d-ca51" type="lessThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+</modifiers>
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1323-d0a9-033d-6f9f" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="8483-d05d-8460-00bc" name="Smite (Biomancy)" hidden="false" targetId="52f2-9ce3-6607-ec42" type="rule" />
+<infoLink id="f39d-12a4-acc7-649e" name="Psychic Power Type: Witchfire" hidden="false" targetId="d57f-7eaf-5589-f80d" type="rule" />
+<infoLink id="c395-e37c-4f86-00b2" name="Smite (Biomancy)" hidden="false" targetId="a2e8-3ba1-613d-734e" type="profile" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+<selectionEntry id="b46d-0106-2eb8-b066" name="Iron Arm (Biomancy)" hidden="false" collective="false" import="true" type="upgrade">
+<modifiers>
+<modifier type="set" field="hidden" value="true">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="18f6-e29a-4529-ae38" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0071-0d5e-2f0d-ca51" type="lessThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="set" field="71ef-730a-1338-30c8" value="0">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="18f6-e29a-4529-ae38" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0071-0d5e-2f0d-ca51" type="lessThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+</modifiers>
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="71ef-730a-1338-30c8" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="8376-ec3b-a687-1380" name="Iron Arm (Biomancy)" hidden="false" targetId="091a-6782-fcc5-d23b" type="rule" />
+<infoLink id="918a-d904-0193-0ecb" name="Psychic Power Type: Blessing" hidden="false" targetId="2df7-351e-d581-ff63" type="rule" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+<selectionEntry id="9836-f2ee-bd08-ea17" name="Enfeeble (Biomancy)" hidden="false" collective="false" import="true" type="upgrade">
+<modifiers>
+<modifier type="set" field="hidden" value="true">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="18f6-e29a-4529-ae38" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0071-0d5e-2f0d-ca51" type="lessThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="set" field="4635-2bd1-f173-0320" value="0">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="18f6-e29a-4529-ae38" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0071-0d5e-2f0d-ca51" type="lessThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+</modifiers>
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4635-2bd1-f173-0320" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="19b2-a470-a422-fd38" name="Enfeeble (Biomancy)" hidden="false" targetId="8385-2b4a-7ae1-55ee" type="rule" />
+<infoLink id="3b86-5752-58fd-1f05" name="Psychic Power Type: Malediction" hidden="false" targetId="e2e5-b205-e6b0-3644" type="rule" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+<selectionEntry id="dd92-e25d-bc3d-478f" name="Life Leech (Biomancy)" hidden="false" collective="false" import="true" type="upgrade">
+<modifiers>
+<modifier type="set" field="hidden" value="true">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="18f6-e29a-4529-ae38" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0071-0d5e-2f0d-ca51" type="lessThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="set" field="0a4b-9ecd-06bb-674d" value="0">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="18f6-e29a-4529-ae38" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0071-0d5e-2f0d-ca51" type="lessThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+</modifiers>
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0a4b-9ecd-06bb-674d" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="82b4-1181-ea82-2ac8" name="Life Leech (Biomancy)" hidden="false" targetId="a803-e87a-6035-2e91" type="rule" />
+<infoLink id="753a-757b-6f93-5868" name="Psychic Power Type: Witchfire" hidden="false" targetId="d57f-7eaf-5589-f80d" type="rule" />
+<infoLink id="6526-4c36-a617-369f" name="Life Leech (Biomancy)" hidden="false" targetId="5871-c332-e125-3fb3" type="profile" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+<selectionEntry id="57fb-acb7-98db-3d9a" name="Warp Speed (Biomancy)" hidden="false" collective="false" import="true" type="upgrade">
+<modifiers>
+<modifier type="set" field="hidden" value="true">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="18f6-e29a-4529-ae38" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0071-0d5e-2f0d-ca51" type="lessThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="set" field="dfa9-1f33-19ac-b64f" value="0">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="18f6-e29a-4529-ae38" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0071-0d5e-2f0d-ca51" type="lessThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+</modifiers>
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dfa9-1f33-19ac-b64f" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="6f6f-251f-9562-603d" name="Warp Speed (Biomancy)" hidden="false" targetId="8f4e-a616-6967-9063" type="rule" />
+<infoLink id="2d93-8e4d-9807-be45" name="Psychic Power Type: Blessing" hidden="false" targetId="2df7-351e-d581-ff63" type="rule" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+<selectionEntry id="5084-524e-b522-e561" name="Endurance (Biomancy)" hidden="false" collective="false" import="true" type="upgrade">
+<modifiers>
+<modifier type="set" field="hidden" value="true">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="18f6-e29a-4529-ae38" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0071-0d5e-2f0d-ca51" type="lessThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="set" field="0bff-828f-e98a-3fd9" value="0">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="18f6-e29a-4529-ae38" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0071-0d5e-2f0d-ca51" type="lessThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+</modifiers>
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0bff-828f-e98a-3fd9" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="e1c2-d2de-91c2-73ae" name="Endurance (Biomancy)" hidden="false" targetId="a57c-dffd-b470-659b" type="rule" />
+<infoLink id="f202-f0cc-6bdc-3992" name="Psychic Power Type: Blessing" hidden="false" targetId="2df7-351e-d581-ff63" type="rule" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+<selectionEntry id="adcc-02a3-1627-46bb" name="Haemorrhage (Biomancy)" hidden="false" collective="false" import="true" type="upgrade">
+<modifiers>
+<modifier type="set" field="hidden" value="true">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="18f6-e29a-4529-ae38" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0071-0d5e-2f0d-ca51" type="lessThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="set" field="fd46-8e08-0d7c-9dc9" value="0">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="18f6-e29a-4529-ae38" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0071-0d5e-2f0d-ca51" type="lessThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+</modifiers>
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fd46-8e08-0d7c-9dc9" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="bceb-2e6e-1ff4-1b6d" name="Haemorrhage (Biomancy)" hidden="false" targetId="783b-cded-f04c-2da4" type="rule" />
+<infoLink id="abf7-a851-8e7f-f22b" name="Psychic Power Type: Witchfire - Focused" hidden="false" targetId="728a-56b9-f9e8-53a2" type="rule" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+<selectionEntry id="e843-a595-db4d-1dce" name="Psychic Shriek (Telepathy)" hidden="false" collective="false" import="true" type="upgrade">
+<modifiers>
+<modifier type="set" field="hidden" value="true">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="18f6-e29a-4529-ae38" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0718-f2d2-4099-d1c8" type="lessThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="set" field="0ea6-77dc-7962-619f" value="0">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="18f6-e29a-4529-ae38" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0718-f2d2-4099-d1c8" type="lessThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+</modifiers>
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0ea6-77dc-7962-619f" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="aeb2-ddc9-4acd-086b" name="Psychic Shriek (Telepathy)" hidden="false" targetId="9149-632a-4b99-44cd" type="rule" />
+<infoLink id="dc62-18e3-ce16-6ca6" name="Psychic Power Type: Witchfire" hidden="false" targetId="d57f-7eaf-5589-f80d" type="rule" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+<selectionEntry id="55df-45ca-f05f-fc89" name="Dominate (Telepathy)" hidden="false" collective="false" import="true" type="upgrade">
+<modifiers>
+<modifier type="set" field="hidden" value="true">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="18f6-e29a-4529-ae38" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0718-f2d2-4099-d1c8" type="lessThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="set" field="9505-6cc7-d50a-7d20" value="0">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="18f6-e29a-4529-ae38" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0718-f2d2-4099-d1c8" type="lessThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+</modifiers>
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9505-6cc7-d50a-7d20" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="0981-0d44-397b-6e21" name="Dominate (Telepathy)" hidden="false" targetId="66d3-f174-c6d3-f8e9" type="rule" />
+<infoLink id="cb22-6075-8120-8389" name="Psychic Power Type: Malediction" hidden="false" targetId="e2e5-b205-e6b0-3644" type="rule" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+<selectionEntry id="9b52-09ff-0cfb-6751" name="Mental Fortitude (Telepathy)" hidden="false" collective="false" import="true" type="upgrade">
+<modifiers>
+<modifier type="set" field="hidden" value="true">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="18f6-e29a-4529-ae38" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0718-f2d2-4099-d1c8" type="lessThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="set" field="fcfb-ff44-1265-2b44" value="0">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="18f6-e29a-4529-ae38" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0718-f2d2-4099-d1c8" type="lessThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+</modifiers>
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fcfb-ff44-1265-2b44" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="2865-98e0-1890-eb4f" name="Mental Fortitude (Telepathy)" hidden="false" targetId="320b-ad20-8eac-1316" type="rule" />
+<infoLink id="2213-689a-c00b-4fdf" name="Psychic Power Type: Blessing" hidden="false" targetId="2df7-351e-d581-ff63" type="rule" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+<selectionEntry id="e1bc-615d-8195-2aaf" name="Terrify (Telepathy)" hidden="false" collective="false" import="true" type="upgrade">
+<modifiers>
+<modifier type="set" field="hidden" value="true">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="18f6-e29a-4529-ae38" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0718-f2d2-4099-d1c8" type="lessThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="set" field="a9c5-f4c4-6a4e-3bb8" value="0">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="18f6-e29a-4529-ae38" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0718-f2d2-4099-d1c8" type="lessThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+</modifiers>
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a9c5-f4c4-6a4e-3bb8" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="095e-8363-abc2-47fc" name="Terrify (Telepathy)" hidden="false" targetId="80b7-b11e-b9a9-6d15" type="rule" />
+<infoLink id="b144-9e9a-ed0e-5bd2" name="Psychic Power Type: Malediction" hidden="false" targetId="e2e5-b205-e6b0-3644" type="rule" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+<selectionEntry id="c3c4-b409-07c9-f313" name="Hallucination (Telepathy)" hidden="false" collective="false" import="true" type="upgrade">
+<modifiers>
+<modifier type="set" field="hidden" value="true">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="18f6-e29a-4529-ae38" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0718-f2d2-4099-d1c8" type="lessThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="set" field="5b6e-c761-d617-478c" value="0">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="18f6-e29a-4529-ae38" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0718-f2d2-4099-d1c8" type="lessThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+</modifiers>
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5b6e-c761-d617-478c" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="8580-09aa-295f-4de9" name="Hallucination (Telepathy)" hidden="false" targetId="0a3c-f34c-987d-1bf3" type="rule" />
+<infoLink id="66a5-9275-fb7f-03ca" name="Psychic Power Type: Malediction" hidden="false" targetId="e2e5-b205-e6b0-3644" type="rule" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+<selectionEntry id="ca8c-cf8b-a680-81a4" name="Invisibility (Telepathy)" hidden="false" collective="false" import="true" type="upgrade">
+<modifiers>
+<modifier type="set" field="hidden" value="true">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="18f6-e29a-4529-ae38" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0718-f2d2-4099-d1c8" type="lessThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="set" field="886b-a1df-4584-8a68" value="0">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="18f6-e29a-4529-ae38" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0718-f2d2-4099-d1c8" type="lessThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+</modifiers>
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="886b-a1df-4584-8a68" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="f212-9f0f-1f24-47d0" name="Invisibility (Telepathy)" hidden="false" targetId="3478-c0c3-4cfd-1181" type="rule" />
+<infoLink id="a272-1e97-ae56-7416" name="Psychic Power Type: Blessing" hidden="false" targetId="2df7-351e-d581-ff63" type="rule" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+<selectionEntry id="ba8d-3d89-2897-ba17" name="Shrouding (Telepathy)" hidden="false" collective="false" import="true" type="upgrade">
+<modifiers>
+<modifier type="set" field="hidden" value="true">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="18f6-e29a-4529-ae38" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0718-f2d2-4099-d1c8" type="lessThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="set" field="4113-90b2-b45e-8412" value="0">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="18f6-e29a-4529-ae38" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0718-f2d2-4099-d1c8" type="lessThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+</modifiers>
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4113-90b2-b45e-8412" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="98b7-3aab-20d1-cfc1" name="Shrouding (Telepathy)" hidden="false" targetId="57fe-3119-47a7-1431" type="rule" />
+<infoLink id="d4a3-e61e-643e-caf1" name="Psychic Power Type: Blessing" hidden="false" targetId="2df7-351e-d581-ff63" type="rule" />
+</infoLinks>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
 </costs>
@@ -25140,6 +27743,106 @@ LIMITATIONS - Only a Traitor Word Bearers Detachment. All Infantry units must be
 </costs>
 </entryLink>
 </entryLinks>
+</selectionEntryGroup>
+<selectionEntryGroup id="44ac-e91c-633e-9030" name="Psychic Powers" hidden="false" collective="false" import="true">
+<modifiers>
+<modifier type="add" field="error" value="Choose 2 psychic powers.">
+<conditions>
+<condition field="selections" scope="ae2f-73e4-bb01-f406" value="2" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="44ac-e91c-633e-9030" type="lessThan" />
+</conditions>
+</modifier>
+</modifiers>
+<constraints>
+<constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6b35-e6b6-825f-8e42" type="max" />
+</constraints>
+<selectionEntries>
+<selectionEntry id="0784-33fe-1978-bca0" name="Summoning (Daemonology (Malefic))" hidden="false" collective="false" import="true" type="upgrade">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a2cf-47da-c2eb-2c5d" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="a6d9-800f-1bb3-fcf5" name="Summoning (Daemonology (Malefic))" hidden="false" targetId="b472-6a17-6840-bf64" type="rule" />
+<infoLink id="911a-45c3-ab61-c5d8" name="Psychic Power Type: Conjuration" hidden="false" targetId="c913-19fd-3d6e-40c8" type="rule" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+<selectionEntry id="ddfb-c2a6-bfba-cf8f" name="Cursed Earth (Daemonology (Malefic))" hidden="false" collective="false" import="true" type="upgrade">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cdc2-7b77-04bb-790f" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="df35-6481-bb02-79da" name="Cursed Earth (Daemonology (Malefic))" hidden="false" targetId="a431-20f9-34c8-fcd3" type="rule" />
+<infoLink id="c26e-3ba3-be30-e1b1" name="Psychic Power Type: Blessing" hidden="false" targetId="2df7-351e-d581-ff63" type="rule" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+<selectionEntry id="6a9e-0f62-adb2-4a93" name="Dark Flame (Daemonology (Malefic))" hidden="false" collective="false" import="true" type="upgrade">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4366-c2e4-5eaf-9334" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="d395-477b-3fd8-4da6" name="Dark Flame (Daemonology (Malefic))" hidden="false" targetId="6eb6-8caf-e509-20f1" type="rule" />
+<infoLink id="34bb-6a93-b3b4-3b55" name="Psychic Power Type: Witchfire" hidden="false" targetId="d57f-7eaf-5589-f80d" type="rule" />
+<infoLink id="675f-72a2-93a2-ef01" name="Dark Flame (Daemonology (Malefic))" hidden="false" targetId="052f-aed2-8ef8-a7e6" type="profile" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+<selectionEntry id="e4ce-32d8-c5db-683f" name="Possession (Daemonology (Malefic))" hidden="false" collective="false" import="true" type="upgrade">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2102-570c-4755-c15a" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="df62-0e37-13e9-ef16" name="Possession (Daemonology (Malefic))" hidden="false" targetId="0507-b55d-f00f-4254" type="rule" />
+<infoLink id="3f47-0813-5f8d-48e3" name="Psychic Power Type: Conjuration" hidden="false" targetId="c913-19fd-3d6e-40c8" type="rule" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+<selectionEntry id="e675-6661-de40-91ad" name="Sacrifice (Daemonology (Malefic))" hidden="false" collective="false" import="true" type="upgrade">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4889-01cb-82f5-82e7" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="893d-cc05-e31d-d362" name="Sacrifice (Daemonology (Malefic))" hidden="false" targetId="848a-996b-d4f4-cf5f" type="rule" />
+<infoLink id="0795-fd8b-853c-ea67" name="Psychic Power Type: Conjuration" hidden="false" targetId="c913-19fd-3d6e-40c8" type="rule" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+<selectionEntry id="2e42-0cc6-53ae-aebc" name="Incursion (Daemonology (Malefic))" hidden="false" collective="false" import="true" type="upgrade">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fd9d-3c79-ea21-7cae" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="b3fb-018f-eb4b-b501" name="Incursion (Daemonology (Malefic))" hidden="false" targetId="b27d-213a-3ecd-97e2" type="rule" />
+<infoLink id="631a-6586-c310-f5f2" name="Psychic Power Type: Conjuration" hidden="false" targetId="c913-19fd-3d6e-40c8" type="rule" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+<selectionEntry id="a0ee-1a8d-71bd-aa43" name="Infernal Gaze (Daemonology (Malefic))" hidden="false" collective="false" import="true" type="upgrade">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5d21-32f9-332a-0f95" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="50f6-cd59-bb28-d7f7" name="Infernal Gaze (Daemonology (Malefic))" hidden="false" targetId="2b77-f966-c88d-4c0d" type="rule" />
+<infoLink id="9883-0def-ce00-ced5" name="Psychic Power Type: Witchfire - Beam" hidden="false" targetId="6ffa-5b76-2c20-0597" type="rule" />
+<infoLink id="973b-f36f-cf92-593b" name="Infernal Gaze (Daemonology (Malefic))" hidden="false" targetId="940f-1cf6-44ef-80d6" type="profile" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+</selectionEntries>
 </selectionEntryGroup>
 </selectionEntryGroups>
 <entryLinks>
@@ -25386,6 +28089,193 @@ LIMITATIONS - Only a Traitor Word Bearers Detachment. All Infantry units must be
 <infoLink id="20e0-b122-627e-d9f8" name="Illuminarum (Transfigured)" hidden="false" targetId="b5f9-b109-55f3-e95d" type="rule" />
 <infoLink id="b24d-3487-4bf5-a5fa" name="Force" hidden="false" targetId="e6d4-3555-f4ed-9ca9" type="rule" />
 </infoLinks>
+<selectionEntryGroups>
+<selectionEntryGroup id="8b6f-a779-6eab-9636" name="Psychic Powers" hidden="false" collective="false" import="true">
+<modifiers>
+<modifier type="add" field="error" value="Choose 3 psychic powers.">
+<conditions>
+<condition field="selections" scope="4f56-c287-0276-f98c" value="3" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8b6f-a779-6eab-9636" type="lessThan" />
+</conditions>
+</modifier>
+</modifiers>
+<constraints>
+<constraint field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="159a-8780-5ea3-bcc7" type="max" />
+</constraints>
+<selectionEntries>
+<selectionEntry id="7183-e6f4-7f16-d679" name="Prescience (Divination)" hidden="false" collective="false" import="true" type="upgrade">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aefa-c4be-7506-0faa" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="d4f8-480b-bc22-9856" name="Prescience (Divination)" hidden="false" targetId="5416-80f8-d8ed-dfc4" type="rule" />
+<infoLink id="3b64-b408-cb8b-38a8" name="Psychic Power Type: Blessing" hidden="false" targetId="2df7-351e-d581-ff63" type="rule" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+<selectionEntry id="fa5f-2b59-ee85-ff79" name="Foreboding (Divination)" hidden="false" collective="false" import="true" type="upgrade">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5f0b-0dc9-efc5-0727" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="6ad7-6f57-d8c6-4902" name="Foreboding (Divination)" hidden="false" targetId="eb39-a70a-b04b-5312" type="rule" />
+<infoLink id="83d1-7904-66fa-5a7b" name="Psychic Power Type: Blessing" hidden="false" targetId="2df7-351e-d581-ff63" type="rule" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+<selectionEntry id="a476-ed58-7e50-bd9a" name="Forewarning (Divination)" hidden="false" collective="false" import="true" type="upgrade">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="96f2-37ba-8446-31c6" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="db8e-c7e3-024e-d5c0" name="Forewarning (Divination)" hidden="false" targetId="f11a-bd15-adc6-6379" type="rule" />
+<infoLink id="4916-b14c-c787-9ca3" name="Psychic Power Type: Blessing" hidden="false" targetId="2df7-351e-d581-ff63" type="rule" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+<selectionEntry id="8157-4a0f-13c3-bb05" name="Perfect Timing (Divination)" hidden="false" collective="false" import="true" type="upgrade">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0408-a643-e026-0db5" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="78f0-f4fe-58e7-21a1" name="Perfect Timing (Divination)" hidden="false" targetId="c562-bc1b-dda7-cdfd" type="rule" />
+<infoLink id="ad3a-0d80-79d5-559d" name="Psychic Power Type: Blessing" hidden="false" targetId="2df7-351e-d581-ff63" type="rule" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+<selectionEntry id="882e-0aab-4333-8d59" name="Precognition (Divination)" hidden="false" collective="false" import="true" type="upgrade">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d167-fc2e-f0d5-9dde" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="caa4-3d41-153f-ba01" name="Precognition (Divination)" hidden="false" targetId="2a79-53b6-4d37-0525" type="rule" />
+<infoLink id="7580-b5ef-d9fd-0c71" name="Psychic Power Type: Blessing" hidden="false" targetId="2df7-351e-d581-ff63" type="rule" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+<selectionEntry id="df60-4d08-caef-2d42" name="Misfortune (Divination)" hidden="false" collective="false" import="true" type="upgrade">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="917a-197e-3d2a-ce72" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="fc79-08a6-6916-a56d" name="Misfortune (Divination)" hidden="false" targetId="4b6f-e423-a39d-b5a6" type="rule" />
+<infoLink id="3df3-0aa8-f2f0-c1ff" name="Psychic Power Type: Malediction" hidden="false" targetId="e2e5-b205-e6b0-3644" type="rule" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+<selectionEntry id="8142-bf93-df76-890e" name="Scrier's Gaze (Divination)" hidden="false" collective="false" import="true" type="upgrade">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a9e0-dd0c-cc27-f4b9" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="64de-7ed5-00b5-1936" name="Scrier's Gaze (Divination)" hidden="false" targetId="7777-889f-8f67-ff48" type="rule" />
+<infoLink id="75e0-2191-a3ba-2f76" name="Psychic Power Type: Blessing" hidden="false" targetId="2df7-351e-d581-ff63" type="rule" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+<selectionEntry id="b30a-8123-2642-122d" name="Assail (Telekinesis)" hidden="false" collective="false" import="true" type="upgrade">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5487-0464-5a40-ed4c" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="20f6-9dfe-6061-8d0c" name="Assail (Telekinesis)" hidden="false" targetId="5d92-02cc-bbf7-59ac" type="rule" />
+<infoLink id="55c8-0408-0b84-9288" name="Psychic Power Type: Witchfire - Beam" hidden="false" targetId="6ffa-5b76-2c20-0597" type="rule" />
+<infoLink id="73f3-0c5a-b7b9-2170" name="Assail (Telekinesis)" hidden="false" targetId="0115-6823-ed57-522f" type="profile" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+<selectionEntry id="033e-8167-1575-f5b3" name="Crush (Telekinesis)" hidden="false" collective="false" import="true" type="upgrade">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cf83-8fff-152f-e5d0" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="fff3-538b-5612-b331" name="Crush (Telekinesis)" hidden="false" targetId="1654-f41b-864b-1ba4" type="rule" />
+<infoLink id="db72-5059-064c-c447" name="Psychic Power Type: Witchfire - Focused" hidden="false" targetId="728a-56b9-f9e8-53a2" type="rule" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+<selectionEntry id="8550-7888-b20d-1650" name="Objuration Mechanicum (Telekinesis)" hidden="false" collective="false" import="true" type="upgrade">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ab9a-9d86-b082-0282" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="c848-2337-c380-f9e5" name="Objuration Mechanicum (Telekinesis)" hidden="false" targetId="7ac4-158f-a86e-9e94" type="rule" />
+<infoLink id="1bbe-03cc-eb64-b7a4" name="Psychic Power Type: Malediction" hidden="false" targetId="e2e5-b205-e6b0-3644" type="rule" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+<selectionEntry id="f0ee-8687-de8e-5bc7" name="Shockwave (Telekinesis)" hidden="false" collective="false" import="true" type="upgrade">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4323-108e-886b-8561" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="9265-5d4f-6d96-053b" name="Shockwave (Telekinesis)" hidden="false" targetId="3e74-22f0-bf8a-4ef6" type="rule" />
+<infoLink id="7820-5133-1085-cedd" name="Psychic Power Type: Witchfire - Nova" hidden="false" targetId="e76f-abfe-254a-2d7d" type="rule" />
+<infoLink id="fb14-6bc5-eaa4-34e4" name="Shockwave (Telekinesis)" hidden="false" targetId="7464-e6d6-4e12-687d" type="profile" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+<selectionEntry id="b35e-dd59-e6c0-766b" name="Levitation (Telekinesis)" hidden="false" collective="false" import="true" type="upgrade">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="47f4-cc99-2fc9-b81b" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="3133-9592-3489-57aa" name="Levitation (Telekinesis)" hidden="false" targetId="7c63-0e21-421a-78b5" type="rule" />
+<infoLink id="9dc4-8682-8aea-4424" name="Psychic Power Type: Blessing" hidden="false" targetId="2df7-351e-d581-ff63" type="rule" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+<selectionEntry id="624d-6f04-9e0f-39ed" name="Telekine Dome (Telekinesis)" hidden="false" collective="false" import="true" type="upgrade">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6606-6069-916b-b185" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="5fa3-f337-1e27-bb4d" name="Telekine Dome (Telekinesis)" hidden="false" targetId="b07b-bd1e-43ea-fda3" type="rule" />
+<infoLink id="752b-2b97-a0f2-8bac" name="Psychic Power Type: Blessing" hidden="false" targetId="2df7-351e-d581-ff63" type="rule" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+<selectionEntry id="3cef-e4f8-0ff5-3481" name="Psychic Maelstrom (Telekinesis)" hidden="false" collective="false" import="true" type="upgrade">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d5a7-fce5-d5a1-9ba1" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="4ad0-83cd-09af-52e1" name="Psychic Maelstrom (Telekinesis)" hidden="false" targetId="1325-888e-37e6-233b" type="rule" />
+<infoLink id="bc22-ef5e-f075-4b65" name="Psychic Power Type: Witchfire" hidden="false" targetId="d57f-7eaf-5589-f80d" type="rule" />
+<infoLink id="1289-6c2d-35c0-24fc" name="Psychic Maelstrom (Telekinesis)" hidden="false" targetId="b8da-74e2-4b8b-d671" type="profile" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+</selectionEntries>
+</selectionEntryGroup>
+</selectionEntryGroups>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="75" />
 </costs>
@@ -44904,6 +47794,219 @@ LIMITATIONS - Only a Traitor Word Bearers Detachment. All Infantry units must be
 <rule id="6252-8d69-de79-37b4" name="Primarch Retinue (Lorgar)" hidden="false">
 <description>Lorgar may select a Legion Honour Guard Squad, a Legion Terminator Command Squad or Gal Vorbak Dark Brethren as his Primarch Retinue. It does not occupy an additional Force Organisation selection and otherwise follows the normal Primarch Retinue rules. Gal Vorbak Dark Brethren may only be selected as Lorgar's Primarch Retinue in a Traitor army.</description>
 </rule>
+<rule id="2df7-351e-d581-ff63" name="Psychic Power Type: Blessing" hidden="false">
+<description>Blessings target a friendly unit and confer some benefit. Invoked at any time during the psyker's Movement phase unless otherwise noted. Duration: until the start of the psyker's own next turn. Blessings with the same effects stack if they are differently named powers; exact copies (same name) cannot be stacked on the same unit. Characteristics cannot be modified above 10 or below 1. If a psyker with an active blessing is removed from play, its blessings are immediately cancelled.</description>
+</rule>
+<rule id="e2e5-b205-e6b0-3644" name="Psychic Power Type: Malediction" hidden="false">
+<description>Maledictions weaken and hinder opposing units. Invoked during the psyker's Movement phase unless otherwise noted. Duration: until the start of the psyker's own next turn. Maledictions with the same effects stack if they are differently named powers; exact copies (same name) cannot be stacked on the same unit. Characteristics cannot be modified above 10 or below 1. If a psyker with an active malediction is removed from play, its maledictions are immediately cancelled.</description>
+</rule>
+<rule id="c913-19fd-3d6e-40c8" name="Psychic Power Type: Conjuration" hidden="false">
+<description>Conjurations summon outside forces onto the battlefield. Invoked at the start of the psyker's Movement phase unless otherwise noted. A unit using a conjuration may not perform any other actions that turn (no movement, shooting, other psychic powers, charging, etc.). Any doubles rolled on the psychic test inflict Perils of the Warp, whether or not the conjuration succeeded. Can only summon daemons matching the psyker's Chaos mark. Each psyker may only successfully cast a selected conjuration once per game. Summoned psykers may not select conjuration powers. Summoned units arrive following the Deep Strike rules; the centre model must be placed within the power's range.</description>
+</rule>
+<rule id="d57f-7eaf-5589-f80d" name="Psychic Power Type: Witchfire" hidden="false">
+<description>Witchfire powers are ranged attacks and count as a shooting attack for the model (it may not make other ranged attacks unless normally allowed more than one). Invoked during the psyker's Shooting phase. Treated as Assault weapons unless otherwise specified. After invoking the power the psyker must still roll To Hit, with line of sight and range as normal; a witchfire power with no weapon/attack profile does not roll To Hit unless otherwise specified. A psyker may only invoke one witchfire power per turn, unless the model may shoot more than one weapon AND knows two or more different witchfire powers. Psychic powers which count as a shooting attack are witchfire powers.</description>
+</rule>
+<rule id="6ffa-5b76-2c20-0597" name="Psychic Power Type: Witchfire - Beam" hidden="false">
+<description>A witchfire power (see Witchfire). Draw a line between the psyker and a chosen point within the power's range (the power may or may not require line of sight to that point). Each unit with a model in the path of the beam takes a number of hits equal to the number of its models under the path. Unsaved wounds may be given to any models in the unit with the same saving throw.</description>
+</rule>
+<rule id="728a-56b9-f9e8-53a2" name="Psychic Power Type: Witchfire - Focused" hidden="false">
+<description>A witchfire power (see Witchfire) that attacks a specific model in the target unit. If the psychic test roll was equal to or within two points below the psyker's Leadership, the opposing player chooses which model in the target unit is affected; otherwise the psyker's owner chooses.</description>
+</rule>
+<rule id="e76f-abfe-254a-2d7d" name="Psychic Power Type: Witchfire - Nova" hidden="false">
+<description>A witchfire power (see Witchfire) that automatically targets and hits all ENEMY units within the power's maximum range. Line of sight, being engaged in melee, intervening terrain, etc. are ignored unless otherwise specified.</description>
+</rule>
+<rule id="a626-2187-4165-66fd" name="Psychic Power Type: Witchfire - Maelstrom" hidden="false">
+<description>A witchfire power (see Witchfire) that automatically hits all units (friendly or enemy) within the affected area (typically a maximum range centred on the psyker). Line of sight, being engaged in melee, intervening terrain, etc. are ignored unless otherwise specified. May include effects that are blessings or maledictions.</description>
+</rule>
+<rule id="c702-6698-d8a4-30de" name="Psychic Power Type: Psychic Power" hidden="false">
+<description>A psychic power with its own timing, described in the power's text. Invoked with a Psychic Test using the normal ProHammer psychic rules (Perils of the Warp, Deny the Witch, Disturbance in the Warp) unless its text says otherwise.</description>
+</rule>
+<rule id="52f2-9ce3-6607-ec42" name="Smite (Biomancy)" hidden="false">
+<description>Witchfire. Range 18", S4, AP2, Assault 4.</description>
+</rule>
+<rule id="091a-6782-fcc5-d23b" name="Iron Arm (Biomancy)" hidden="false">
+<description>Blessing - targets the psyker. Adds +2 to Strength and +1 Toughness.</description>
+</rule>
+<rule id="8385-2b4a-7ae1-55ee" name="Enfeeble (Biomancy)" hidden="false">
+<description>Malediction - enemy unit within 24". -1 to Strength and Toughness, and the unit treats all movement as difficult terrain.</description>
+</rule>
+<rule id="a803-e87a-6035-2e91" name="Life Leech (Biomancy)" hidden="false">
+<description>Witchfire. Range 18", S6, AP2, Assault 2. If it causes at least one unsaved wound, a model within 6" of the psyker regains a wound.</description>
+</rule>
+<rule id="8f4e-a616-6967-9063" name="Warp Speed (Biomancy)" hidden="false">
+<description>Blessing - targets the psyker. Gains +3 Initiative and +3 Attacks, and gains Fleet.</description>
+</rule>
+<rule id="a57c-dffd-b470-659b" name="Endurance (Biomancy)" hidden="false">
+<description>Blessing - friendly unit within 24". Models in the unit gain Eternal Warrior, Feel No Pain (5+) and Relentless.</description>
+</rule>
+<rule id="783b-cded-f04c-2da4" name="Haemorrhage (Biomancy)" hidden="false">
+<description>Focused Witchfire - range 18". The target model must pass two Toughness tests or suffer a wound with no armour or cover saves. If a model is killed, select another model within 2", which must pass a single Toughness test or suffer a wound as well. Repeat until a Toughness test is passed.</description>
+</rule>
+<rule id="5416-80f8-d8ed-dfc4" name="Prescience (Divination)" hidden="false">
+<description>Blessing - friendly unit within 12". The unit re-rolls all failed To Hit rolls.</description>
+</rule>
+<rule id="eb39-a70a-b04b-5312" name="Foreboding (Divination)" hidden="false">
+<description>Blessing - targets the psyker. The psyker and any joined unit gain Counter-Attack and may fire reaction fire using the full number of allowed shots.</description>
+</rule>
+<rule id="f11a-bd15-adc6-6379" name="Forewarning (Divination)" hidden="false">
+<description>Blessing - friendly unit within 12". The unit gains a 4+ invulnerable save.</description>
+</rule>
+<rule id="c562-bc1b-dda7-cdfd" name="Perfect Timing (Divination)" hidden="false">
+<description>Blessing - targets the psyker. The psyker and any joined unit ignore cover when shooting an enemy unit.</description>
+</rule>
+<rule id="2a79-53b6-4d37-0525" name="Precognition (Divination)" hidden="false">
+<description>Blessing - targets the psyker. The psyker re-rolls all failed To Hit and To Wound rolls. The psyker model re-rolls failed saving throws.</description>
+</rule>
+<rule id="4b6f-e423-a39d-b5a6" name="Misfortune (Divination)" hidden="false">
+<description>Malediction - enemy unit within 24". All attacks against this unit count as Rending.</description>
+</rule>
+<rule id="7777-889f-8f67-ff48" name="Scrier's Gaze (Divination)" hidden="false">
+<description>Blessing - targets the psyker. While the power is in effect, one reserve each turn may automatically pass its reserve roll; other reserve and outflank rolls may be re-rolled. Mysterious objective rolls can be re-rolled.</description>
+</rule>
+<rule id="277c-cee6-2884-7a2c" name="Flame Breath (Pyromancy)" hidden="false">
+<description>Witchfire. Template, S5, AP4, Assault 1, Soul Blaze.</description>
+</rule>
+<rule id="fc81-b0c0-beb0-eb70" name="Fiery Form (Pyromancy)" hidden="false">
+<description>Blessing - targets the psyker. Gains a 4+ invulnerable save and all its melee attacks cause Soul Blaze. Re-rolls failed wounds inflicted by any other Pyromancy powers.</description>
+</rule>
+<rule id="b62b-2b4b-bc8b-a644" name="Molten Beam (Pyromancy)" hidden="false">
+<description>Beam. Range 12", S8, AP1, Assault 1, Melta.</description>
+</rule>
+<rule id="6c4d-e519-5076-c88b" name="Fire Shield (Pyromancy)" hidden="false">
+<description>Blessing - friendly unit within 24". The unit gains a 4+ cover save and all enemy units within 6" of it treat all terrain (even open ground) as dangerous terrain.</description>
+</rule>
+<rule id="83b3-a2a7-6c11-d3a1" name="Sunburst (Pyromancy)" hidden="false">
+<description>Nova. Range 9", S4, AP5, Assault 2D6, Ignores Cover, causes Soul Blaze.</description>
+</rule>
+<rule id="e658-12d8-882e-da27" name="Inferno (Pyromancy)" hidden="false">
+<description>Witchfire. Range 24", S4, AP5, Assault 1, Ignores Cover, Large Blast, Soul Blaze.</description>
+</rule>
+<rule id="06ff-3e2f-11e7-3f1e" name="Spontaneous Combustion (Pyromancy)" hidden="false">
+<description>Focused Witchfire - range 18". The target model suffers a S6 AP3 hit with Soul Blaze. If the model is slain, place a blast marker over the removed model: all models hit suffer a S5 AP4 hit that ignores cover and causes Soul Blaze.</description>
+</rule>
+<rule id="d45c-c394-609a-3f60" name="Banishment (Daemonology (Sanctic))" hidden="false">
+<description>Malediction - enemy DAEMON unit within 24". All models in the target unit suffer -1 to their invulnerable saves.</description>
+</rule>
+<rule id="0228-9ef8-ec1a-8b2a" name="Gate of Infinity (Daemonology (Sanctic))" hidden="false">
+<description>Blessing - targets the psyker. Remove the psyker and any joined unit from the board and immediately re-deploy it using the Deep Strike rules.</description>
+</rule>
+<rule id="a83e-9861-9b28-f50b" name="Hammerhand (Daemonology (Sanctic))" hidden="false">
+<description>Blessing - targets the psyker. The psyker and any joined unit gain +2 Strength.</description>
+</rule>
+<rule id="e178-e8da-a0ab-cbbc" name="Sanctuary (Daemonology (Sanctic))" hidden="false">
+<description>Blessing - targets the psyker. The psyker and any joined unit receive +1 to their invulnerable saves (or gain a 6+ invulnerable save). Units with the Daemon special rule treat all terrain within 12" of the psyker as dangerous terrain (even open ground).</description>
+</rule>
+<rule id="c1b2-4222-7138-0701" name="Purge Soul (Daemonology (Sanctic))" hidden="false">
+<description>Focused Witchfire - range 24". The psyker and the target model each roll a D6 and add their Leadership. If the psyker's total is greater than or equal, the target suffers an automatic wound with no armour or cover saves allowed.</description>
+</rule>
+<rule id="618c-99c4-745b-820e" name="Cleansing Flame (Daemonology (Sanctic))" hidden="false">
+<description>Nova. Range 9", S5, AP4, Assault 2D6, Ignores Cover, Soul Blaze.</description>
+</rule>
+<rule id="9391-3293-b113-1723" name="Vortex of Doom (Daemonology (Sanctic))" hidden="false">
+<description>Witchfire. Range 12", S10, AP1, Assault 1, Blast, Vortex.</description>
+</rule>
+<rule id="b472-6a17-6840-bf64" name="Summoning (Daemonology (Malefic))" hidden="false">
+<description>Conjuration - range 12". Summons one of the following: 8 Bloodletters, 9 Pink Horrors, 7 Plaguebearers, 6 Daemonettes, 4 Flesh Hounds, 3 Flamers, 4 Nurglings or 6 Seekers.</description>
+</rule>
+<rule id="a431-20f9-34c8-fcd3" name="Cursed Earth (Daemonology (Malefic))" hidden="false">
+<description>Blessing - targets the psyker. All DAEMON models within 12" of the psyker have +1 to their invulnerable saves. Deep striking daemons do not scatter when the centre model is placed within 12" of the psyker.</description>
+</rule>
+<rule id="6eb6-8caf-e509-20f1" name="Dark Flame (Daemonology (Malefic))" hidden="false">
+<description>Witchfire. Template, S4, AP5, Assault 1, Soul Blaze, Torrent.</description>
+</rule>
+<rule id="0507-b55d-f00f-4254" name="Possession (Daemonology (Malefic))" hidden="false">
+<description>Conjuration - range 6". Summons 1 Bloodthirster, Lord of Change, Great Unclean One or Keeper of Secrets. If successful, the invoking psyker is removed as a casualty. MAY ONLY BE USED BY A PSYKER WITH MASTERY LEVEL 2 OR GREATER.</description>
+</rule>
+<rule id="848a-996b-d4f4-cf5f" name="Sacrifice (Daemonology (Malefic))" hidden="false">
+<description>Conjuration - range 6". Summons 1 Herald of Khorne / Tzeentch / Nurgle / Slaanesh with 30 pts of wargear (see Codex: Chaos Daemons). If successfully invoked, one friendly model within 6" of the psyker takes a wound with no saves of any kind allowed.</description>
+</rule>
+<rule id="b27d-213a-3ecd-97e2" name="Incursion (Daemonology (Malefic))" hidden="false">
+<description>Conjuration - range 12". Summons 3 Bloodcrushers, 4 Screamers, 3 Plague Drones or 3 Fiends.</description>
+</rule>
+<rule id="2b77-f966-c88d-4c0d" name="Infernal Gaze (Daemonology (Malefic))" hidden="false">
+<description>Beam. Range 18", S3, AP4, Assault 1, Armourbane, Fleshbane.</description>
+</rule>
+<rule id="5d92-02cc-bbf7-59ac" name="Assail (Telekinesis)" hidden="false">
+<description>Beam. Range 18", S6, AP -, Assault 1, Strikedown.</description>
+</rule>
+<rule id="1654-f41b-864b-1ba4" name="Crush (Telekinesis)" hidden="false">
+<description>Focused Witchfire - range 18". Roll 2D6: the target suffers a hit with Strength equal to the roll. Roll another D6 for the AP value.</description>
+</rule>
+<rule id="7ac4-158f-a86e-9e94" name="Objuration Mechanicum (Telekinesis)" hidden="false">
+<description>Malediction - enemy unit within 24". All of the target unit's ranged weapon attacks have the Gets Hot special rule. Vehicles suffer an immediate hit with the Haywire effect.</description>
+</rule>
+<rule id="3e74-22f0-bf8a-4ef6" name="Shockwave (Telekinesis)" hidden="false">
+<description>Nova. Range 9", S4, AP -, Assault 2D6, Pinning.</description>
+</rule>
+<rule id="7c63-0e21-421a-78b5" name="Levitation (Telekinesis)" hidden="false">
+<description>Blessing - targets the psyker. The psyker and any joined unit may immediately move up to 12" (cannot land on other models or impassable terrain). They cannot charge this turn and count as having moved.</description>
+</rule>
+<rule id="b07b-bd1e-43ea-fda3" name="Telekine Dome (Telekinesis)" hidden="false">
+<description>Blessing - targets the psyker. The psyker and all friendly models within 12" have a 5+ invulnerable save against shooting attacks.</description>
+</rule>
+<rule id="1325-888e-37e6-233b" name="Psychic Maelstrom (Telekinesis)" hidden="false">
+<description>Witchfire. Range 12", S10, AP1, Assault 1, Barrage, Large Blast.</description>
+</rule>
+<rule id="9149-632a-4b99-44cd" name="Psychic Shriek (Telepathy)" hidden="false">
+<description>Witchfire - range 18". Roll 3D6 and subtract the target's Leadership: the unit suffers wounds equal to the result, with no armour or cover saves.</description>
+</rule>
+<rule id="66d3-f174-c6d3-f8e9" name="Dominate (Telepathy)" hidden="false">
+<description>Malediction - enemy unit within 24". The target unit must pass a Leadership test each time it attempts to move, advance, shoot, charge or use a psychic power.</description>
+</rule>
+<rule id="320b-ad20-8eac-1316" name="Mental Fortitude (Telepathy)" hidden="false">
+<description>Blessing - friendly unit within 24". If the target is falling back, it immediately regroups. The target gains Fearless.</description>
+</rule>
+<rule id="80b7-b11e-b9a9-6d15" name="Terrify (Telepathy)" hidden="false">
+<description>Malediction - enemy unit within 24". The target unit has -1 Leadership and treats all opposing units as if they had Fear. It must take a casualty test at the end of the turn.</description>
+</rule>
+<rule id="0a3c-f34c-987d-1bf3" name="Hallucination (Telepathy)" hidden="false">
+<description>Malediction - enemy unit within 24". Roll a D6 and the unit suffers the result: 1-2: the unit must take a Pinning test; 3-4: the unit suffers -1 WS, BS, Initiative and Attacks; 5-6: randomly select a model in the unit - it takes a hit for every other model in the unit, with Strength equal to the majority Strength in the unit.</description>
+</rule>
+<rule id="3478-c0c3-4cfd-1181" name="Invisibility (Telepathy)" hidden="false">
+<description>Blessing - friendly unit within 24". Opposing units suffer -1 To Hit when making ranged and melee attacks against the target unit.</description>
+</rule>
+<rule id="57fe-3119-47a7-1431" name="Shrouding (Telepathy)" hidden="false">
+<description>Blessing - targets the psyker. All friendly models within 6" of the psyker have the Shrouded special rule.</description>
+</rule>
+<rule id="b3a9-86c8-5b95-7f2c" name="Unseen Bolt (Psychic Power)" hidden="false">
+<description>Psychic shooting power, used during the psyker's Shooting phase instead of firing another weapon. Range 36", S6, AP4, Assault 1, Blast, Pinning. Take a Psychic test using the normal ProHammer psychic rules; if successful, resolve the attack using this profile. Unseen Bolt may not be invoked during Return Fire, Overwatch or Stand &amp; Shoot.</description>
+</rule>
+<rule id="3a57-01ae-87cb-6a03" name="Mystic Winds of Fenris (Psychic Power)" hidden="false">
+<description>Blessing - friendly Space Wolves unit within 6". If the Psychic Test is passed, nominate the Rune Priest or one friendly Space Wolves unit with at least one model within 6". Until the beginning of the next Space Wolves turn, the nominated unit receives a 5+ Cover Save. If the unit already has a Cover Save, improve that save by 1, to a maximum of 4+.</description>
+</rule>
+<rule id="707b-d3a4-834a-f58a" name="Living Lightning (Psychic Power)" hidden="false">
+<description>Witchfire psychic power used during the Shooting phase. If successfully invoked, resolve it using the profile: Range 24", S5, AP4, Assault D6.</description>
+</rule>
+<rule id="e417-90d5-4a23-a91a" name="Withering Gaze (Psychic Power)" hidden="false">
+<description>Used during the Night Lords Shooting phase instead of Sevatar firing a weapon. Choose one visible enemy unit within 12" and take a Psychic Test (Sevatar uses Leadership 7). If successful, until the beginning of the next Night Lords turn, that enemy unit must pass a Leadership test before it may declare a charge against Sevatar or a unit he has joined. If the test is failed, the unit may not declare that charge during that Assault phase, but may declare a charge against another eligible target.</description>
+</rule>
+<rule id="9381-f1ec-8336-edf0" name="Aura of Pestilence (Psychic Power)" hidden="false">
+<description>At the beginning of either player's Assault phase, Typhon may attempt to invoke Aura of Pestilence (Psychic Test on Leadership 7). If passed, every enemy model within 2" of Typhon suffers -1 Attack, to a minimum of 1, until the end of that Assault phase. If failed, every friendly model within 2" of Typhon instead suffers -1 Attack, to a minimum of 1, until the end of that Assault phase. Typhon may fight normally during an Assault phase in which Aura of Pestilence is used.</description>
+</rule>
+<rule id="7a03-30c5-8f0e-ba64" name="Miasma of Pestilence (Psychic Power)" hidden="false">
+<description>Phase: beginning of the enemy Assault phase. Range 12". Choose one enemy unit within range and take a Psychic Test. If successful, the unit suffers -1 Initiative and -1 Attack, to a minimum of 1, until the end of the Assault phase.</description>
+</rule>
+<rule id="1e10-16bc-9d50-4bf5" name="Curse of Decay (Psychic Power)" hidden="false">
+<description>Phase: Mortarion's Shooting phase. Range 18". Choose one enemy unit within range and take a Psychic Test. If successful, the unit treats all terrain, including open ground, as Difficult Terrain until the beginning of Mortarion's next turn.</description>
+</rule>
+<rule id="79a3-9593-24c6-5687" name="Nurgle's Rot (Psychic Power)" hidden="false">
+<description>Phase: Mortarion's Shooting phase. Range 12". Choose one enemy unit within range and take a Psychic Test. If successful, the target suffers D6 Strength 4 AP4 hits with Poisoned (3+).</description>
+</rule>
+<rule id="1a5a-a9af-9423-7331" name="Mindsong of Blades (Psychic Power)" hidden="false">
+<description>Blessing invoked at the beginning of an Assault phase. If successfully invoked, until the end of that Assault phase models in the Psyker's unit gain +1 Initiative and may re-roll close-combat To Hit rolls of 1.</description>
+</rule>
+<rule id="5fb9-2436-91d3-6d98" name="Psy-Synchronicity (Psychic Power)" hidden="false">
+<description>Blessing invoked during the Thousand Sons Movement phase. If successfully invoked, select up to two friendly Thousand Sons units with at least one model within 6" of the Numerologist. Until the end of the following Thousand Sons Shooting phase, models in those units may re-roll shooting To Hit rolls of 1. The Numerologist may not fire a weapon during a player turn in which he successfully invokes Psy-Synchronicity.</description>
+</rule>
+<rule id="f7fa-4381-e928-dfd4" name="Infernal Phoenix (Psychic Power)" hidden="false">
+<description>Witchfire - Beam. Range 24", Strength 8, AP1, Melta. Resolve using the normal rules for Beam psychic powers.</description>
+</rule>
+<rule id="778a-fc7e-2570-301d" name="Strands of Fate (Psychic Power)" hidden="false">
+<description>Malediction. Choose one enemy non-Vehicle unit within 18" and line of sight. Until the beginning of Magnus' next turn, that unit must pass a Leadership Test each time it attempts to move during the Movement phase, shoot during the Shooting phase or declare a Charge. If the test is failed, the attempted action is lost and the unit may not attempt that type of action again during that phase. A separate Leadership Test is required for each different action attempted.</description>
+</rule>
+<rule id="c5fb-6297-1376-4e29" name="Fury of the Salamander (Psychic Power)" hidden="false">
+<description>Witchfire - Beam. Range 18", S5, AP1, Assault 1, Elemental Horror. Elemental Horror: if an enemy unit suffers one or more unsaved Wounds from Fury of the Salamander, it must immediately take a Morale test regardless of how many casualties were caused, with a Leadership penalty equal to the number of unsaved Wounds caused by Fury of the Salamander. (Counts as a Pyromancy power for Salamanders Librarians in a Detachment using The Awakening Fire.)</description>
+</rule>
 </sharedRules>
 <sharedProfiles>
 <profile id="5f3b-a070-9db3-da49" name="Bolt Pistol" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
@@ -46016,6 +49119,142 @@ LIMITATIONS - Only a Traitor Word Bearers Detachment. All Infantry units must be
 <characteristic name="S" typeId="6204-806b-a18a-c0be">User +2</characteristic>
 <characteristic name="AP" typeId="964e-6f66-dcaa-247a">-</characteristic>
 <characteristic name="Type" typeId="54df-9f85-8d55-7440">Power Weapon, Master-crafted, Concussive, Smash</characteristic>
+</characteristics>
+</profile>
+<profile id="a2e8-3ba1-613d-734e" name="Smite (Biomancy)" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+<characteristics>
+<characteristic name="Range" typeId="4b89-f4f0-2a22-1135">18"</characteristic>
+<characteristic name="S" typeId="6204-806b-a18a-c0be">4</characteristic>
+<characteristic name="AP" typeId="964e-6f66-dcaa-247a">2</characteristic>
+<characteristic name="Type" typeId="54df-9f85-8d55-7440">Witchfire, Assault 4</characteristic>
+</characteristics>
+</profile>
+<profile id="5871-c332-e125-3fb3" name="Life Leech (Biomancy)" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+<characteristics>
+<characteristic name="Range" typeId="4b89-f4f0-2a22-1135">18"</characteristic>
+<characteristic name="S" typeId="6204-806b-a18a-c0be">6</characteristic>
+<characteristic name="AP" typeId="964e-6f66-dcaa-247a">2</characteristic>
+<characteristic name="Type" typeId="54df-9f85-8d55-7440">Witchfire, Assault 2</characteristic>
+</characteristics>
+</profile>
+<profile id="8ffa-f0a6-7581-2472" name="Flame Breath (Pyromancy)" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+<characteristics>
+<characteristic name="Range" typeId="4b89-f4f0-2a22-1135">Template</characteristic>
+<characteristic name="S" typeId="6204-806b-a18a-c0be">5</characteristic>
+<characteristic name="AP" typeId="964e-6f66-dcaa-247a">4</characteristic>
+<characteristic name="Type" typeId="54df-9f85-8d55-7440">Witchfire, Assault 1, Soul Blaze</characteristic>
+</characteristics>
+</profile>
+<profile id="bd6c-0b68-e41d-eac8" name="Molten Beam (Pyromancy)" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+<characteristics>
+<characteristic name="Range" typeId="4b89-f4f0-2a22-1135">12"</characteristic>
+<characteristic name="S" typeId="6204-806b-a18a-c0be">8</characteristic>
+<characteristic name="AP" typeId="964e-6f66-dcaa-247a">1</characteristic>
+<characteristic name="Type" typeId="54df-9f85-8d55-7440">Witchfire - Beam, Assault 1, Melta</characteristic>
+</characteristics>
+</profile>
+<profile id="eb65-7f75-dacc-cc4a" name="Sunburst (Pyromancy)" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+<characteristics>
+<characteristic name="Range" typeId="4b89-f4f0-2a22-1135">9"</characteristic>
+<characteristic name="S" typeId="6204-806b-a18a-c0be">4</characteristic>
+<characteristic name="AP" typeId="964e-6f66-dcaa-247a">5</characteristic>
+<characteristic name="Type" typeId="54df-9f85-8d55-7440">Witchfire - Nova, Assault 2D6, Ignores Cover, Soul Blaze</characteristic>
+</characteristics>
+</profile>
+<profile id="fec0-8ff7-24bf-deb0" name="Inferno (Pyromancy)" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+<characteristics>
+<characteristic name="Range" typeId="4b89-f4f0-2a22-1135">24"</characteristic>
+<characteristic name="S" typeId="6204-806b-a18a-c0be">4</characteristic>
+<characteristic name="AP" typeId="964e-6f66-dcaa-247a">5</characteristic>
+<characteristic name="Type" typeId="54df-9f85-8d55-7440">Witchfire, Assault 1, Ignores Cover, Large Blast, Soul Blaze</characteristic>
+</characteristics>
+</profile>
+<profile id="ae1c-b16b-7a30-912a" name="Cleansing Flame (Daemonology (Sanctic))" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+<characteristics>
+<characteristic name="Range" typeId="4b89-f4f0-2a22-1135">9"</characteristic>
+<characteristic name="S" typeId="6204-806b-a18a-c0be">5</characteristic>
+<characteristic name="AP" typeId="964e-6f66-dcaa-247a">4</characteristic>
+<characteristic name="Type" typeId="54df-9f85-8d55-7440">Witchfire - Nova, Assault 2D6, Ignores Cover, Soul Blaze</characteristic>
+</characteristics>
+</profile>
+<profile id="7757-8114-68b2-772b" name="Vortex of Doom (Daemonology (Sanctic))" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+<characteristics>
+<characteristic name="Range" typeId="4b89-f4f0-2a22-1135">12"</characteristic>
+<characteristic name="S" typeId="6204-806b-a18a-c0be">10</characteristic>
+<characteristic name="AP" typeId="964e-6f66-dcaa-247a">1</characteristic>
+<characteristic name="Type" typeId="54df-9f85-8d55-7440">Witchfire, Assault 1, Blast, Vortex</characteristic>
+</characteristics>
+</profile>
+<profile id="052f-aed2-8ef8-a7e6" name="Dark Flame (Daemonology (Malefic))" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+<characteristics>
+<characteristic name="Range" typeId="4b89-f4f0-2a22-1135">Template</characteristic>
+<characteristic name="S" typeId="6204-806b-a18a-c0be">4</characteristic>
+<characteristic name="AP" typeId="964e-6f66-dcaa-247a">5</characteristic>
+<characteristic name="Type" typeId="54df-9f85-8d55-7440">Witchfire, Assault 1, Soul Blaze, Torrent</characteristic>
+</characteristics>
+</profile>
+<profile id="940f-1cf6-44ef-80d6" name="Infernal Gaze (Daemonology (Malefic))" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+<characteristics>
+<characteristic name="Range" typeId="4b89-f4f0-2a22-1135">18"</characteristic>
+<characteristic name="S" typeId="6204-806b-a18a-c0be">3</characteristic>
+<characteristic name="AP" typeId="964e-6f66-dcaa-247a">4</characteristic>
+<characteristic name="Type" typeId="54df-9f85-8d55-7440">Witchfire - Beam, Assault 1, Armourbane, Fleshbane</characteristic>
+</characteristics>
+</profile>
+<profile id="0115-6823-ed57-522f" name="Assail (Telekinesis)" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+<characteristics>
+<characteristic name="Range" typeId="4b89-f4f0-2a22-1135">18"</characteristic>
+<characteristic name="S" typeId="6204-806b-a18a-c0be">6</characteristic>
+<characteristic name="AP" typeId="964e-6f66-dcaa-247a">-</characteristic>
+<characteristic name="Type" typeId="54df-9f85-8d55-7440">Witchfire - Beam, Assault 1, Strikedown</characteristic>
+</characteristics>
+</profile>
+<profile id="7464-e6d6-4e12-687d" name="Shockwave (Telekinesis)" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+<characteristics>
+<characteristic name="Range" typeId="4b89-f4f0-2a22-1135">9"</characteristic>
+<characteristic name="S" typeId="6204-806b-a18a-c0be">4</characteristic>
+<characteristic name="AP" typeId="964e-6f66-dcaa-247a">-</characteristic>
+<characteristic name="Type" typeId="54df-9f85-8d55-7440">Witchfire - Nova, Assault 2D6, Pinning</characteristic>
+</characteristics>
+</profile>
+<profile id="b8da-74e2-4b8b-d671" name="Psychic Maelstrom (Telekinesis)" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+<characteristics>
+<characteristic name="Range" typeId="4b89-f4f0-2a22-1135">12"</characteristic>
+<characteristic name="S" typeId="6204-806b-a18a-c0be">10</characteristic>
+<characteristic name="AP" typeId="964e-6f66-dcaa-247a">1</characteristic>
+<characteristic name="Type" typeId="54df-9f85-8d55-7440">Witchfire, Assault 1, Barrage, Large Blast</characteristic>
+</characteristics>
+</profile>
+<profile id="1130-1803-f630-cdda" name="Unseen Bolt (Psychic Power)" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+<characteristics>
+<characteristic name="Range" typeId="4b89-f4f0-2a22-1135">36"</characteristic>
+<characteristic name="S" typeId="6204-806b-a18a-c0be">6</characteristic>
+<characteristic name="AP" typeId="964e-6f66-dcaa-247a">4</characteristic>
+<characteristic name="Type" typeId="54df-9f85-8d55-7440">Witchfire, Assault 1, Blast, Pinning</characteristic>
+</characteristics>
+</profile>
+<profile id="ec38-1d43-8e66-1649" name="Living Lightning (Psychic Power)" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+<characteristics>
+<characteristic name="Range" typeId="4b89-f4f0-2a22-1135">24"</characteristic>
+<characteristic name="S" typeId="6204-806b-a18a-c0be">5</characteristic>
+<characteristic name="AP" typeId="964e-6f66-dcaa-247a">4</characteristic>
+<characteristic name="Type" typeId="54df-9f85-8d55-7440">Witchfire, Assault D6</characteristic>
+</characteristics>
+</profile>
+<profile id="6447-21b4-3db6-62e8" name="Infernal Phoenix (Psychic Power)" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+<characteristics>
+<characteristic name="Range" typeId="4b89-f4f0-2a22-1135">24"</characteristic>
+<characteristic name="S" typeId="6204-806b-a18a-c0be">8</characteristic>
+<characteristic name="AP" typeId="964e-6f66-dcaa-247a">1</characteristic>
+<characteristic name="Type" typeId="54df-9f85-8d55-7440">Witchfire - Beam, Melta</characteristic>
+</characteristics>
+</profile>
+<profile id="b8cb-5ad9-fce6-e6ba" name="Fury of the Salamander (Psychic Power)" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+<characteristics>
+<characteristic name="Range" typeId="4b89-f4f0-2a22-1135">18"</characteristic>
+<characteristic name="S" typeId="6204-806b-a18a-c0be">5</characteristic>
+<characteristic name="AP" typeId="964e-6f66-dcaa-247a">1</characteristic>
+<characteristic name="Type" typeId="54df-9f85-8d55-7440">Witchfire - Beam, Assault 1, Elemental Horror</characteristic>
 </characteristics>
 </profile>
 </sharedProfiles>

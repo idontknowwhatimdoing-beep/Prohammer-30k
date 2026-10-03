@@ -370,8 +370,9 @@ def characters():
     out.append(named_character(
         LR, "Calas Typhon, First Captain", 195, (6, 5, 4, 4, 3, 5, 3, 9, "2+/4+"),
         ["Cataphractii Terminator Armour", "Manreaper", "Alchem Flamer"],
-        ["Latent Psyker", "Aura of Pestilence", "Command Retinue (Typhon)"],
+        ["Latent Psyker", "Command Retinue (Typhon)"],
         retinue=retinue_links("typhon", [ds_retinue(), L2.terminator_command_squad("typhon")]),
+        extra_groups=[psychic_powers(t, t, fixed=["Aura of Pestilence"])],
         min_points=1500, loyalist=False, profile_name="Calas Typhon"))
     m = uid("unit", "Crysos Morturg")
     out.append(named_character(
@@ -382,7 +383,8 @@ def characters():
          "Command Retinue (Morturg)"],
         retinue=retinue_links("morturg", [mortus_poisoners("morturg-poisoners", root=False)]),
         master=False, loyalist=True,
-        extra_groups=[take(m, "Wargear", [("Krak Grenades", 2), ("Melta Bombs", 5)])]))
+        extra_groups=[take(m, "Wargear", [("Krak Grenades", 2), ("Melta Bombs", 5)]),
+                      psychic_powers(m, m, 1, ["Telepathy"])]))
     r = uid("unit", "Durak Rask")
     out.append(named_character(
         LR, "Durak Rask", 165, (5, 5, 4, 4, 3, 4, 3, 9, "2+/5+"),
@@ -422,9 +424,10 @@ def daemon_mortarion():
                     ["Silence (Daemon Primarch)", "Lantern (Daemon Primarch)", "Daemonic Barbaran Plate"],
                     ["Daemon", "Fear", "Fearless", "Eternal Warrior", "Feel No Pain", "Adamantium Will",
                      "Poison Cannot Kill Death", "Master of the Legion", "Psyker", "Burdened Wings", "The Reaper's Miasma",
-                     "Reluctant Sorcerer", "Miasma of Pestilence", "Curse of Decay", "Nurgle's Rot",
-                     "Sons of the Plague Father", "Only one Mortarion"],
-                    other=MORTARION, unit_type="Monstrous Creature (Character)", loyalist=False)
+                     "Reluctant Sorcerer", "Sons of the Plague Father", "Only one Mortarion"],
+                    other=MORTARION, unit_type="Monstrous Creature (Character)", loyalist=False,
+                    extra_groups=[psychic_powers(DAEMON_MORTARION, DAEMON_MORTARION,
+                                                 fixed=["Miasma of Pestilence", "Curse of Decay", "Nurgle's Rot"])])
 
 
 # ------------------------------------------------------------------ Legion-wide changes

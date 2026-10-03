@@ -14,6 +14,8 @@ from legiones_wargear import ARMY_RULES, WEAPON_PROFILES, WEAPONS, WEAPON_RULES,
 
 LEGION = "V - White Scars"
 LR = "Legiones Astartes (White Scars)"
+# "he may select one psychic power from the normal Psychic Powers list" (kept as built before: four disciplines)
+YESUGEI_DISCIPLINES = ["Biomancy", "Divination", "Pyromancy", "Telepathy"]
 
 RULES = {
     LR: ("Models with this rule belong to the V Legion and use the White Scars Legion special rules: Swift Advance, "
@@ -576,12 +578,14 @@ def characters():
     y = uid("unit", "Targutai Yesugei")
     out.append(named_character(
         LR, "Targutai Yesugei", 195, (5, 5, 4, 4, 3, 5, 3, 10, "2+/5+"),
-        ["Artificer Armour", "Refractor Field", "Force Weapon", "Psychic Hood", "Bolt Pistol", "Frag Grenades",
-         "Unseen Bolt"],
+        ["Artificer Armour", "Refractor Field", "Force Weapon", "Psychic Hood", "Bolt Pistol", "Frag Grenades"],
         ["Psyker", "Adamantium Will", "Legion Support Officer", "Chief Stormseer"], master=False, compulsory=False,
         extra_groups=[take(y, "Wargear", [("Krak Grenades", 2)]), talisman_group("yesugei"),
                       required_choice(y, "Psychic Discipline (one additional power)",
-                                      [(d, []) for d in ["Biomancy", "Divination", "Pyromancy", "Telepathy"]])]))
+                                      [(d, []) for d in YESUGEI_DISCIPLINES]),
+                      psychic_powers(y, y, 1, YESUGEI_DISCIPLINES, fixed=["Unseen Bolt"],
+                                     filters={d: [choice_id(y, "Psychic Discipline (one additional power)", d)]
+                                              for d in YESUGEI_DISCIPLINES})]))
     # Shiban Khan
     s = uid("unit", "Shiban Khan")
     out.append(named_character(
@@ -656,14 +660,18 @@ def extend(ctx):
     # Stormseer Consul replaces the Librarian
     hide_consul(ctx, "Librarian")
     epi = uid("ws-stormseer", "epistolary")
+    epi_disc = ["Divination", "Biomancy", "Telepathy", "Pyromancy"]
     epistolary = entry(epi, "Epistolary (Mastery Level 2)", cost=25,
                        constraints=[constraint(uid(epi, "max"), "max", 1, auto=True)],
                        infolinks=rules_links(["Epistolary (Stormseer)"], key=epi),
                        groups=[required_choice(epi, "Additional Psychic Power Discipline",
-                                               [(d, []) for d in ["Divination", "Biomancy", "Telepathy", "Pyromancy"]])])
-    cid = add_consul(ctx, "Stormseer", 35, ["Psyker", "Adamantium Will", "Legion Support Officer", "Stormseer",
-                                            "Unseen Bolt"],
-                     kit=["Force Weapon", "Unseen Bolt"], options=[epistolary], support_officer=True)
+                                               [(d, []) for d in epi_disc])])
+    # Unseen Bolt is always known; the Epistolary selects one more power from the Discipline picked above
+    powers = psychic_powers(uid("ws-stormseer", "powers"), L.CENTURION, 0, epi_disc, fixed=["Unseen Bolt"],
+                            more=[(1, has(epi, L.CENTURION))],
+                            filters={d: [choice_id(epi, "Additional Psychic Power Discipline", d)] for d in epi_disc})
+    cid = add_consul(ctx, "Stormseer", 35, ["Psyker", "Adamantium Will", "Legion Support Officer", "Stormseer"],
+                     kit=["Force Weapon"], options=[epistolary], groups_=[powers], support_officer=True)
     consul_replaces_chainsword(ctx, cid)
     consul_unlocks_psyker_items(ctx, cid, ["Psychic Hood"])
 

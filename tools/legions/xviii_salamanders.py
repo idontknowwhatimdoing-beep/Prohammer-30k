@@ -515,9 +515,10 @@ def characters():
     out.append(named_character(
         LR, "Xiaphas Jurr, Prophet of Fire", 150, (5, 5, 4, 4, 2, 5, 3, 10, "2+/4+"),
         ["Artificer Armour", "The Burning Halo", "Dragonscale Storm Shield", "Ignatus", "Bolt Pistol",
-         "Frag Grenades", "Fury of the Salamander"],
-        ["Stubborn", "Chaplain-Lieutenant", "Prophet of Fire", "Psyker", "Fury of the Salamander"], master=False,
-        extra_groups=[grenades(JURR)], profile_name="Xiaphas Jurr"))
+         "Frag Grenades"],
+        ["Stubborn", "Chaplain-Lieutenant", "Prophet of Fire", "Psyker"], master=False,
+        extra_groups=[grenades(JURR), psychic_powers(JURR, JURR, fixed=["Fury of the Salamander"])],
+        profile_name="Xiaphas Jurr"))
     out.append(named_character(
         LR, "Forgefather T'Kell", 155, (5, 5, 4, 4, 2, 5, 2, 10, "2+/5+"),
         ["Artificer Armour", "Refractor Field", "Master-crafted Thunder Hammer", "Bolt Pistol", "Servo-Arm", "Signum",
@@ -674,16 +675,17 @@ def keeper_of_the_keys(ctx):
 
 
 def fury_for_librarians(ctx):
+    """The Awakening Fire: Salamanders Librarians may select Fury of the Salamander as a Pyromancy power - an extra
+    option in the Librarian Consul's Psychic Powers, offered only while the Rite of War is chosen."""
     cen = ctx.unit("Legion Centurion")
     lib = L.consul_id("Librarian")
     for e in cen.iter("selectionEntry"):
         if e.get("id") == lib:
-            fid = uid("sal", "fury-librarian")
-            hide = [cond(rite_id(AWAKENING), "force", "lessThan", 1)]
-            add_to(e, "selectionEntries", [entry(
-                fid, "Fury of the Salamander (Pyromancy, The Awakening Fire)", mods=hide_unless(fid, hide),
-                constraints=[constraint(uid(fid, "max"), "max", 1, auto=True)],
-                links=[gear(fid, "Fury of the Salamander")])])
+            g = powers_group(e)
+            eid = uid("psy-power", lib, "Fury of the Salamander")
+            off = [cond(rite_id(AWAKENING), "force", "lessThan", 1)]
+            add_to(g, "selectionEntries", [power_entry(lib, "Fury of the Salamander", mods=[
+                modifier("set", "hidden", "true", conds=off), modifier("set", uid(eid, "max"), 0, conds=off)])])
 
 
 def rites(ctx):

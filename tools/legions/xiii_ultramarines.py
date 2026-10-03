@@ -316,7 +316,9 @@ def characters():
                                retinue=retinue_links("prayto", [command_squad_for("prayto", p),
                                                                 suzerain("prayto-suzerains", root=False)]),
                                master=False, compulsory=False,
-                               extra_groups=[take(p, "Wargear", [("Krak Grenades", 2)])]))
+                               extra_groups=[take(p, "Wargear", [("Krak Grenades", 2)]),
+                                             # "two psychic powers from the normal Psychic Power list" (Librarian list)
+                                             psychic_powers(p, p, 2, PSY.LIBRARIAN)]))
     out.append(telemechrus())
     return out
 

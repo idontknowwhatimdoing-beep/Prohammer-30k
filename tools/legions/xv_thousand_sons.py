@@ -11,7 +11,7 @@ from legiones2 import (slot, take, pool, choice, transports, add_mods, add_to, d
                        rite_id, rite, any_rite, RETINUE_SHARED, TROOPS, ELITES, FA, HQ, _negate, model_swaps,
                        pa_armoury)
 from legiones_wargear import ARMY_RULES, WEAPON_PROFILES, WEAPONS, WEAPON_RULES, WARGEAR
-from legions.common import PRIMARCH_RULES, allegiance_only
+from legions.common import PRIMARCH_RULES, allegiance_only, psychic_powers, powers_group
 
 LEGION = "XV - Thousand Sons"
 
@@ -406,17 +406,28 @@ def discipline_choice(key, options=DISCIPLINES, required=True, title="Psychic Di
     return group(gid, title, entries=ents, constraints=cons, mods=mods)
 
 
-def brotherhood(key, cost=25, fellowships_cost=None, visible_if=None, any_discipline=False):
+def cult_disciplines(unit_id):
+    """Brotherhood powers come from the Discipline of the unit's Prosperine Cult: {discipline: [cult choice id]}."""
+    return {disc: [uid("cult", unit_id, n)] for n, (_f, _t, disc) in CULTS.items()}
+
+
+def brotherhood(key, cost=25, fellowships_cost=None, visible_if=None, any_discipline=False, owner=None):
     """'May purchase the Brotherhood of Psykers special rule' - the unit's own Cult gives the Discipline.
-    any_discipline: the unit picks its power from any Thousand Sons discipline instead of its Cult's one."""
+    any_discipline: the unit picks its power from any Thousand Sons discipline instead of its Cult's one.
+    owner: id of the unit (default: key)."""
     eid = uid("brotherhood", key)
+    owner = owner or key
+    if any_discipline:
+        powers = psychic_powers(eid, owner, 1, DISCIPLINES, filters={d: [uid("disc", eid, d)] for d in DISCIPLINES})
+    else:
+        powers = psychic_powers(eid, owner, 1, DISCIPLINES, filters=cult_disciplines(owner))
     mods = []
     if fellowships_cost is not None:
         mods.append(modifier("set", PTS, fellowships_cost, conds=[rite("The Fellowships of Prospero")]))
     e = entry(eid, "Psychic Brotherhood (Brotherhood of Psykers, Mastery Level 1)", cost=cost, mods=mods,
               constraints=[constraint(uid(eid, "max"), "max", 1, auto=True)],
               infolinks=rules_links(["Brotherhood of Psychers", "Psychic Brotherhoods", "Cult Mastery"], key=eid),
-              groups=[discipline_choice(eid)] if any_discipline else [])
+              groups=([discipline_choice(eid)] if any_discipline else []) + [powers])
     ts_only(e, uid(eid, "max"))
     if visible_if:
         add_mods(e, [modifier("set", "hidden", "true", groups=[visible_if[0]]),
@@ -517,6 +528,9 @@ def sekhmet(key="Sekhmet Terminator Cabal", root=True):
                                      "Scarab Occult", "Prosperine Force Weapon"], key=u),
               entries=[terms, inc, tp],
               groups=[cult_choice(u), discipline_choice(u),
+                      # one power; one more while the Sekhmet Inceptor is in the unit (Mastery Level 2)
+                      psychic_powers(u, u, 1, DISCIPLINES, more=[(1, cond(iid, u, "atLeast", 1))],
+                                     filters={d: [uid("disc", u, d)] for d in DISCIPLINES}),
                       model_swaps(u, "Sekhmet Terminators: replace Prosperine Force Weapon (any number)", u, [tid], cc),
                       model_swaps(u, "Sekhmet Terminators: replace Foeblaster Boltgun (any number)", u, [tid], combis,
                                   minus=[W(n) for n, _ in heavies]),
@@ -554,11 +568,11 @@ def khenetai(key="Khenetai Occult Blade Cabal", root=True):
                  mods=[modifier("set", "hidden", "true", conds=[not_ts()])],
                  constraints=[constraint(uid(u, "force-max"), "max", 1, scope="force", deep=True)] if root else [],
                  infolinks=rules_links(["Legiones Astartes (Thousand Sons)", "Brotherhood of Psychers",
-                                        "Psychic Brotherhood (Khenetai)", "Mindsong of Blades",
+                                        "Psychic Brotherhood (Khenetai)",
                                         "Paired Prosperine Force Blades", "Cult Mastery"], key=u),
                  entries=[blades, master, per_model(u, "Krak Grenades (entire squad)", 2, u, ["Krak Grenades"]),
                           per_model(u, "Melta Bombs (entire squad)", 5, u, ["Melta Bombs"])],
-                 groups=[cult_choice(u), pistols])
+                 groups=[cult_choice(u), psychic_powers(u, u, fixed=["Mindsong of Blades"]), pistols])
 
 
 def ammitara(key="Ammitara Occult Intercession Cabal", root=True):
@@ -590,7 +604,10 @@ def ammitara(key="Ammitara Occult Intercession Cabal", root=True):
                                         "Move Through Cover", "Stealth"], key=u),
                  entries=[fate, inter, per_model(u, "Krak Grenades (entire squad)", 2, u, ["Krak Grenades"]),
                           per_model(u, "Melta Bombs (entire squad)", 5, u, ["Melta Bombs"])],
-                 groups=[cult_choice(u), discipline_choice(u, ["Divination", "Telepathy"]), combi_swaps, specials,
+                 groups=[cult_choice(u), discipline_choice(u, ["Divination", "Telepathy"]),
+                         psychic_powers(u, u, 1, ["Divination", "Telepathy"],
+                                        filters={d: [uid("disc", u, d)] for d in ["Divination", "Telepathy"]}),
+                         combi_swaps, specials,
                          L.one_each(u, "Squad Equipment", [("Nuncio Vox", 10)])])
 
 
@@ -638,7 +655,9 @@ def osiron():
                                ("Plasma Cannon", 10), ("Twin-linked Volkite Culverin", 15),
                                ("Kheres Assault Cannon", 15), ("Twin-linked Lascannon", 25)]),
                          take(u, "Upgrades", [("Extra Armour", 5)]),
-                         discipline_choice(u)])
+                         discipline_choice(u),
+                         psychic_powers(u, u, 1, DISCIPLINES, more=[(1, cond(ml2, u, "atLeast", 1))],
+                                        filters={d: [uid("disc", u, d)] for d in DISCIPLINES})])
 
 
 def numerologist():
@@ -648,14 +667,15 @@ def numerologist():
     num = entry(nid, "Numerologist", typ="model", constraints=[constraint(uid(nid, "min"), "min", 1),
                                                                  constraint(uid(nid, "max"), "max", 1)],
                 profiles=[unit_profile(u, "Numerologist", "Infantry (Character)", 5, 5, 4, 4, 2, 4, 2, 9, "2+")],
-                infolinks=rules_links(["Psyker", "Battlesmith (Techmarine)", "Psy-Synchronicity"], key=nid),
+                infolinks=rules_links(["Psyker", "Battlesmith (Techmarine)"], key=nid),
                 links=[gear(nid, k) for k in ["Artificer Armour", "Servo-Arm", "Frag Grenades"]],
                 groups=[slot(nid, "Replace Chainsword", "Chainsword", [("Power Weapon", 10),
                                                                        ("Prosperine Force Weapon", 20),
                                                                        ("Thunder Hammer", 20)]),
                         slot(nid, "Replace Bolt Pistol", "Bolt Pistol", [("Volkite Charger", 5), ("Flamer", 5),
                                                                          ("Plasma Gun", 15), ("Meltagun", 15),
-                                                                         ("Graviton Gun", 15)])])
+                                                                         ("Graviton Gun", 15)]),
+                        psychic_powers(nid, u, fixed=["Psy-Synchronicity"])])
     wards = entry(lid, "Life Ward", typ="model", cost=15,
                   constraints=[constraint(uid(lid, "min"), "min", 4), constraint(uid(lid, "max"), "max", 9)],
                   profiles=[unit_profile(u, "Life Ward", "Infantry", 4, 4, 4, 4, 1, 4, 2, 8, "3+")],
@@ -707,12 +727,17 @@ def characters():
         constraints=[constraint(uid(cabal, "max"), "max", 1, auto=True)],
         infolinks=rules_links(["Ahriman's Cabal", "Brotherhood of Psychers", "Corvidae - Precognitive Strike",
                                "Cult Mastery"], key=cabal))])
+    # the Cabal selects two Divination powers (counted within the Command Squad)
+    for ce in cs.iter("selectionEntry"):
+        if ce.get("id") == cabal:
+            add_to(ce, "selectionEntryGroups", [psychic_powers(cabal, cs.get("id"), 2, ["Divination"])])
     out.append(named_character("Ahzek Ahriman", 210, (5, 5, 4, 4, 3, 5, 3, 10, "2+/4+"),
                                ["Artificer Armour", "Iron Halo", "Black Staff of Ahriman", "Bolt Pistol",
                                 "Frag Grenades"],
                                ["Psyker", "Psyker (Mastery Level 3)", "Corvidae (Ahriman)", "Corvidae - Precognitive Strike", "Cult Mastery",
                                 "Chief Librarian", "Ahriman's Cabal"],
-                               retinue=retinue_links("ahriman", [cs]), min_points=1500))
+                               retinue=retinue_links("ahriman", [cs]), min_points=1500,
+                               extra_groups=[psychic_powers(a, a, fixed=L.PSY.in_discipline("Divination"))]))
     # Ahriman's Cabal is always Corvidae: the squad's other Cults are removed while it is taken
     cg = cult_choice(cs.get("id"))
     for ce in cg.iter("selectionEntry"):
@@ -728,7 +753,8 @@ def characters():
                                 "Frag Grenades"],
                                ["Psyker", "Psyker (Mastery Level 2)", "Raptora (Phosis)", "Raptora - Kine Shields", "Cult Mastery",
                                 "Magister of the Raptora", "Command Retinue (Thousand Sons)"],
-                               retinue=retinue_links("phosis", [command_squad_for("phosis", p)])))
+                               retinue=retinue_links("phosis", [command_squad_for("phosis", p)]),
+                               extra_groups=[psychic_powers(p, p, 2, ["Telekinesis"])]))
     # Magistus Amon
     am = uid("unit", "Magistus Amon, the Hidden")
     amon_amm = ammitara("amon-ammitara", root=False)
@@ -738,7 +764,8 @@ def characters():
                                ["Armour of Shades", "Prosperine Force Weapon", "Bolt Pistol", "Frag Grenades"],
                                ["Psyker", "Psyker (Mastery Level 2)", "Athanaeans (Amon)", "Athanaeans - Discipline of the Mind", "Cult Mastery",
                                 "Psychic Powers (Amon)", "The Hidden One", "Master of the Hidden Orders"],
-                               retinue=retinue_links("amon", amon_ret), min_points=1500))
+                               retinue=retinue_links("amon", amon_ret), min_points=1500,
+                               extra_groups=[psychic_powers(am, am, 2, ["Telepathy"])]))
     # Hathor Maat
     h = uid("unit", "Hathor Maat")
     out.append(named_character("Hathor Maat", 190, (5, 5, 4, 4, 3, 5, 3, 10, "2+/5+"),
@@ -747,7 +774,8 @@ def characters():
                                ["Psyker", "Psyker (Mastery Level 2)", "Pavoni (Hathor Maat)", "Pavoni - Quickblood",
                                 "Cult Mastery", "Magister Templi of the Pavoni", "Pavoni Vitalist",
                                 "Narthecium (Hathor Maat)", "Command Retinue (Thousand Sons)"],
-                               retinue=retinue_links("hathor", [command_squad_for("hathor", h)])))
+                               retinue=retinue_links("hathor", [command_squad_for("hathor", h)]),
+                               extra_groups=[psychic_powers(h, h, 2, ["Biomancy"])]))
     # Sanakht (no Master of the Legion)
     san_kh = khenetai("sanakht-khenetai", root=False)
     out.append(named_character("Sanakht", 195, (7, 5, 4, 4, 3, 6, 4, 10, "2+/5+"),
@@ -755,9 +783,11 @@ def characters():
                                 "Frag Grenades"],
                                ["Psyker", "Psyker (Mastery Level 1)", "Athanaeans (Sanakht)",
                                 "Athanaeans - Discipline of the Mind", "Cult Mastery", "Psychic Powers (Sanakht)",
-                                "Blademaster of Prospero", "Mindsong of Blades", "Khenetai Retinue"],
+                                "Blademaster of Prospero", "Khenetai Retinue"],
                                retinue=retinue_links("sanakht", [san_kh]),
-                               master=False))
+                               master=False,
+                               extra_groups=[psychic_powers(uid("unit", "Sanakht"), uid("unit", "Sanakht"),
+                                                            fixed=["Mindsong of Blades"])]))
     return out
 
 
@@ -782,7 +812,7 @@ def magnus_retinue():
     hg = L2.honour_guard("magnus")
     tcs = L2.terminator_command_squad("magnus")
     for e in (hg, tcs):
-        bro = brotherhood(e.get("id") + "magnus", any_discipline=True)
+        bro = brotherhood(e.get("id") + "magnus", any_discipline=True, owner=e.get("id"))
         add_to(e, "selectionEntries", [bro])
     sek = sekhmet("magnus-sekhmet", root=False)
     return retinue_links("magnus", [hg, tcs, sek], title="Primarch Retinue")
@@ -805,10 +835,13 @@ def magnus():
                                         "Primarchs and Transports", "The Price of Failure", "The Clash of Demigods",
                                         "Legiones Astartes (Thousand Sons)", "Psyker - Mastery Level 4 (Magnus)",
                                         "Lord of the Ether", "The Crimson King", "The Warp Bends to Magnus",
-                                        "Strands of Fate", "Sorcerous Duellist", "The Crimson King's Guard",
+                                        "Sorcerous Duellist", "The Crimson King's Guard",
                                         "Primarch Armour", "Arcane Litanies (Magnus)"], key=u),
-                 links=[gear(u, "Horned Raiment"), gear(u, "Blade of Ahn-Nunurta"), gear(u, "Infernal Phoenix")],
-                 groups=[magnus_retinue()])
+                 links=[gear(u, "Horned Raiment"), gear(u, "Blade of Ahn-Nunurta")],
+                 groups=[psychic_powers(u, u, 3, DISCIPLINES, fixed=["Infernal Phoenix", "Strands of Fate"],
+                                        min_disciplines_text="Magnus must select powers from at least two different "
+                                                             "psychic disciplines."),
+                         magnus_retinue()])
 
 
 def magnus_shard():
@@ -821,11 +854,12 @@ def magnus_shard():
                                         7, 7, 7, "*", "7*", 6, 5, 10, "-")],
                  infolinks=rules_links(["Daemon Primarchs", "Fielding a Primarch (Magnus, Shard)",
                                         "Supreme Commander", "Fear", "Fearless", "Master of the Legion", "Ethereal",
-                                        "Incorporeal Will", "The Crimson King Unbound", "Strands of Fate",
+                                        "Incorporeal Will", "The Crimson King Unbound",
                                         "Beyond the Prosperine Cults", "Nothing to Bless", "Master of the Great Ocean",
                                         "Beyond the Perils of the Warp", "The Warp Breathes",
                                         "The Crimson King Shattered"], key=u),
-                 links=[gear(u, "Aetheric Blade"), gear(u, "Infernal Phoenix")])
+                 links=[gear(u, "Aetheric Blade")],
+                 groups=[psychic_powers(u, u, 6, DISCIPLINES, fixed=["Infernal Phoenix", "Strands of Fate"])])
     return allegiance_only(e, loyalist=False)
 
 
@@ -875,9 +909,25 @@ def ic_additions(key, e, praetor):
     if exclude:
         # an Esoterist / Primus Nullificator drops a Discipline picked earlier
         add_mods(dg, [modifier("set", uid(dg.get("id"), "max"), 0, groups=[any_of(*exclude)])])
+    # psychic powers from the chosen Discipline: Praetor Mastery Level 2 (3 with the Guard of the Crimson King
+    # upgrade), Centurion Mastery Level 1 (2 as an Epistolary). An Esoterist / Primus Nullificator uses his own
+    # Consul powers instead; the base Librarian Consul's own power list is replaced by this one.
+    filters = {d: [uid("disc", key, d)] for d in DISCIPLINES}
+    if praetor:
+        pw = psychic_powers(key + "-powers", uid_, 2, DISCIPLINES, filters=filters, hide=[not_ts()],
+                            more=[(1, cond(uid(key, "ml3"), uid_, "atLeast", 1))])
+    else:
+        pw = psychic_powers(key + "-powers", uid_, 1, DISCIPLINES, filters=filters, hide=[not_ts()] + exclude,
+                            more=[(1, has(uid("consul-opt", "Epistolary"), uid_))])
+        for ce in e.iter("selectionEntry"):
+            if ce.get("id") == L.consul_id("Librarian"):
+                gs_ = ce.find("selectionEntryGroups")
+                gs_.remove(powers_group(ce))
+                if not len(gs_):
+                    ce.remove(gs_)
     cg = cult_choice(key, required=True, only_ts=True)
     ts_only(cg)
-    add_to(e, "selectionEntryGroups", groups_ + [dg, cg])
+    add_to(e, "selectionEntryGroups", groups_ + [dg, pw, cg])
     ml = "Psyker (Mastery Level 2) - Sorcerers of Prospero" if praetor else "Psyker (Mastery Level 1) - Sorcerers of Prospero"
     add_to(e, "infoLinks", [info_link(L.rule_ref("Sorcerers of Prospero")[0], ml, key=key + "sop",
                                       mods=[modifier("set", "hidden", "true", conds=[not_ts()])])])
