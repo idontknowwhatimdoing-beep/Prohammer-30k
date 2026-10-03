@@ -42642,7 +42642,7 @@ LIMITATIONS - No other Lord of War; no Allied Detachment; no more than one other
 <selectionEntry id="61f3-a0bc-0457-b9b8" name="The Logos" hidden="false" collective="false" import="true" type="upgrade">
 <rules>
 <rule id="93c8-3ce0-de6b-1231" name="The Logos" hidden="false">
-<description>Counts as Primarch Armour and incorporates a Nuncio Vox. In addition, once during each friendly Shooting phase, one friendly Iron Warriors Heavy Support unit with at least one model within 12" of Perturabo may re-roll one failed To Hit roll made with a shooting attack.</description>
+<description>Counts as Primarch Armour and incorporates a Nuncio Vox and a Cortex Controller. In addition, once during each friendly Shooting phase, one friendly Iron Warriors Heavy Support unit with at least one model within 12" of Perturabo may re-roll one failed To Hit roll made with a shooting attack.</description>
 </rule>
 </rules>
 <infoLinks>

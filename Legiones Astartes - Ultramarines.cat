@@ -22272,6 +22272,7 @@ LIMITATIONS - Loyalist Ultramarines Detachment only. The army must include an Al
 </modifier>
 </modifiers>
 </entryLink>
+<entryLink id="b322-190b-3a79-f0a7" name="Land Raider Achilles" hidden="false" collective="false" import="true" targetId="1197-3edb-db94-5cb8" type="selectionEntry" />
 <entryLink id="4e52-5891-b13e-9c4a" name="Anvillus Pattern Dreadclaw Drop Pod" hidden="false" collective="false" import="true" targetId="2bad-68df-db1e-95d9" type="selectionEntry">
 <modifiers>
 <modifier type="add" field="error" value="Too many models for a Anvillus Pattern Dreadclaw Drop Pod (capacity 10).">
@@ -22864,26 +22865,6 @@ LIMITATIONS - Loyalist Ultramarines Detachment only. The army must include an Al
 </entryLink>
 </entryLinks>
 </selectionEntryGroup>
-<selectionEntryGroup id="a925-36bd-a90c-44df" name="Sergeant Wargear" hidden="false" collective="false" import="true">
-<entryLinks>
-<entryLink id="e7eb-237d-0f98-4350" name="Artificer Armour" hidden="false" collective="false" import="true" targetId="2c2c-d091-28f2-2343" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1403-a1a9-da11-382d" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
-</costs>
-</entryLink>
-<entryLink id="5e38-356d-cb98-fdc5" name="Phosphex Bomb" hidden="false" collective="false" import="true" targetId="b024-e458-cdd4-7943" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c5a1-0fdc-7905-fb6a" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
-</costs>
-</entryLink>
-</entryLinks>
-</selectionEntryGroup>
 <selectionEntryGroup id="b778-74d9-f168-8075" name="Space Marine Armoury (max 50 pts)" hidden="false" collective="false" import="true">
 <constraints>
 <constraint field="pts0-0000-0000-0001" scope="self" value="50" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="675f-4da3-d06e-174d" type="max" />
@@ -23003,6 +22984,26 @@ LIMITATIONS - Loyalist Ultramarines Detachment only. The army must include an Al
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
+</costs>
+</entryLink>
+</entryLinks>
+</selectionEntryGroup>
+<selectionEntryGroup id="a925-36bd-a90c-44df" name="Sergeant Wargear" hidden="false" collective="false" import="true">
+<entryLinks>
+<entryLink id="e7eb-237d-0f98-4350" name="Artificer Armour" hidden="false" collective="false" import="true" targetId="2c2c-d091-28f2-2343" type="selectionEntry">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1403-a1a9-da11-382d" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
+</costs>
+</entryLink>
+<entryLink id="5e38-356d-cb98-fdc5" name="Phosphex Bomb" hidden="false" collective="false" import="true" targetId="b024-e458-cdd4-7943" type="selectionEntry">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c5a1-0fdc-7905-fb6a" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
 </entryLink>
 </entryLinks>
@@ -32035,6 +32036,189 @@ LIMITATIONS - Loyalist Ultramarines Detachment only. The army must include an Al
 </entryLinks>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="100" />
+</costs>
+</selectionEntry>
+<selectionEntry id="1197-3edb-db94-5cb8" name="Land Raider Achilles" hidden="false" collective="false" import="true" type="unit">
+<profiles>
+<profile id="9b93-e2d0-581c-a9dc" name="Land Raider Achilles" hidden="false" typeId="c1e2-c3f6-f1e3-c783" typeName="Vehicle">
+<characteristics>
+<characteristic name="Unit Type" typeId="6095-ae79-f2c4-f05d">Vehicle (Tank, Transport)</characteristic>
+<characteristic name="BS" typeId="e7f5-6a1a-ac58-5b0a">4</characteristic>
+<characteristic name="Front" typeId="f537-badc-bfd2-5234">14</characteristic>
+<characteristic name="Side" typeId="0c3e-a00e-5d47-7352">14</characteristic>
+<characteristic name="Rear" typeId="7074-ea68-65bb-46bb">14</characteristic>
+</characteristics>
+</profile>
+<profile id="28c6-5ab1-888e-b150" name="Land Raider Achilles" hidden="false" typeId="3dca-e183-c6eb-8cea" typeName="Transport">
+<characteristics>
+<characteristic name="Capacity" typeId="43e8-af23-5b9c-f1d8">6 models</characteristic>
+<characteristic name="Access Points" typeId="bd35-f8fa-db6e-e920">Side and front access points</characteristic>
+<characteristic name="Fire Points" typeId="d703-d9d3-280c-8462">-</characteristic>
+</characteristics>
+</profile>
+</profiles>
+<infoLinks>
+<infoLink id="93b2-1048-22a5-5910" name="Power of the Machine Spirit" hidden="false" targetId="37cc-c497-b81f-76d0" type="rule" />
+<infoLink id="445e-6f00-f15b-7020" name="Ferromantic Invulnerability" hidden="false" targetId="af77-666d-d146-cc3f" type="rule" />
+</infoLinks>
+<categoryLinks>
+<categoryLink id="bbed-9713-e116-f261" name="Dedicated Transport" hidden="false" targetId="2c06-cce8-6863-d996" primary="true" />
+</categoryLinks>
+<selectionEntryGroups>
+<selectionEntryGroup id="268f-8b6d-07ff-8dd1" name="Vehicle Upgrades" hidden="false" collective="false" import="true">
+<entryLinks>
+<entryLink id="b11e-0bac-c36d-54dc" name="Hunter-Killer Missile" hidden="false" collective="false" import="true" targetId="9a5d-fd49-68a3-2572" type="selectionEntry">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9c03-e9a1-08d6-3648" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
+</costs>
+</entryLink>
+<entryLink id="7927-b925-971b-2e37" name="Dozer Blade" hidden="false" collective="false" import="true" targetId="7d17-3b7b-1d6e-e0f2" type="selectionEntry">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d807-8e64-830d-4df5" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
+</costs>
+</entryLink>
+<entryLink id="90e5-3e68-f297-9a53" name="Auxiliary Drive" hidden="false" collective="false" import="true" targetId="4f16-c23a-b791-3446" type="selectionEntry">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e86d-cb62-a123-4c85" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
+</costs>
+</entryLink>
+</entryLinks>
+</selectionEntryGroup>
+<selectionEntryGroup id="0ddc-290b-09fa-6f21" name="Pintle-mounted Weapon" hidden="false" collective="false" import="true">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e5dd-661b-bbb4-d0d2" type="max" />
+</constraints>
+<selectionEntries>
+<selectionEntry id="2d11-8511-8289-339d" name="Twin-linked Bolter" hidden="false" collective="false" import="true" type="upgrade">
+<entryLinks>
+<entryLink id="6b3a-1144-80df-2091" name="Twin-linked Bolter" hidden="false" collective="false" import="true" targetId="6392-9914-afef-0ec5" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="78b9-40ac-d527-711b" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7664-161f-0bdf-417b" type="max" />
+</constraints>
+</entryLink>
+</entryLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
+</costs>
+</selectionEntry>
+<selectionEntry id="ace6-377b-9fd6-b5b3" name="Combi-Weapon" hidden="false" collective="false" import="true" type="upgrade">
+<entryLinks>
+<entryLink id="7d44-da8d-3a13-85a5" name="Combi-Weapon" hidden="false" collective="false" import="true" targetId="dd96-2fe2-b2e1-c755" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f687-5530-4c59-3d4f" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ed2a-3c10-8895-9899" type="max" />
+</constraints>
+</entryLink>
+</entryLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
+</costs>
+</selectionEntry>
+<selectionEntry id="815f-d00e-6209-ab46" name="Heavy Bolter" hidden="false" collective="false" import="true" type="upgrade">
+<entryLinks>
+<entryLink id="ac04-2323-6aac-ac4a" name="Heavy Bolter" hidden="false" collective="false" import="true" targetId="9151-5044-e482-04c9" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e798-9ac9-9a66-4346" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b594-ac16-35b3-35b5" type="max" />
+</constraints>
+</entryLink>
+</entryLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
+</costs>
+</selectionEntry>
+<selectionEntry id="cd1f-dcb3-8031-5ca2" name="Heavy Flamer" hidden="false" collective="false" import="true" type="upgrade">
+<entryLinks>
+<entryLink id="1fbf-f6b9-d24a-89df" name="Heavy Flamer" hidden="false" collective="false" import="true" targetId="9e6d-afcf-8202-e47c" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e672-70a9-146b-76aa" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1c12-d20a-c1b0-4337" type="max" />
+</constraints>
+</entryLink>
+</entryLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
+</costs>
+</selectionEntry>
+<selectionEntry id="ca3a-b37f-f7e6-4aff" name="Multi-Melta" hidden="false" collective="false" import="true" type="upgrade">
+<entryLinks>
+<entryLink id="e6fc-4a28-9212-8513" name="Multi-Melta" hidden="false" collective="false" import="true" targetId="48fc-4141-3aee-b13c" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1534-7c9e-84e9-c4aa" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="326b-8086-69d0-9d04" type="max" />
+</constraints>
+</entryLink>
+</entryLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
+</costs>
+</selectionEntry>
+<selectionEntry id="728f-4be1-6585-2527" name="Havoc Launcher" hidden="false" collective="false" import="true" type="upgrade">
+<entryLinks>
+<entryLink id="1fe1-a4b2-b3eb-1e71" name="Havoc Launcher" hidden="false" collective="false" import="true" targetId="e5ca-0747-ff5e-b3b5" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a6c2-0c6e-1308-b037" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="16c5-8bd1-e49e-2c2a" type="max" />
+</constraints>
+</entryLink>
+</entryLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
+</costs>
+</selectionEntry>
+</selectionEntries>
+</selectionEntryGroup>
+</selectionEntryGroups>
+<entryLinks>
+<entryLink id="6245-5039-1fa7-cba1" name="Quad Launcher with Frag and Shatter Shells" hidden="false" collective="false" import="true" targetId="490f-b2c1-8e40-791b" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="426d-014c-9688-8acf" type="min" />
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="47ed-be63-8336-b15e" type="max" />
+</constraints>
+</entryLink>
+<entryLink id="b386-0a56-b518-e63d" name="Twin-linked Multi-Melta" hidden="false" collective="false" import="true" targetId="ae1e-8538-0d19-c91e" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6d3a-3b4c-c35e-b343" type="min" />
+<constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6e0e-1e3c-4527-3463" type="max" />
+</constraints>
+</entryLink>
+<entryLink id="f18d-6a77-b327-4d8e" name="Extra Armour" hidden="false" collective="false" import="true" targetId="aef2-b713-c9fe-42d8" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7a79-fb1c-cd87-ce46" type="min" />
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5774-6c44-5f03-5034" type="max" />
+</constraints>
+</entryLink>
+<entryLink id="a0e9-f23c-e1a5-a6db" name="Armoured Ceramite" hidden="false" collective="false" import="true" targetId="bb4d-c32a-0e96-aae9" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="51bf-82b6-ba9e-b535" type="min" />
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ca33-8f7d-2217-efa5" type="max" />
+</constraints>
+</entryLink>
+<entryLink id="fd90-021d-8741-e30c" name="Searchlight" hidden="false" collective="false" import="true" targetId="3941-9fef-114f-2d9e" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="df18-2f47-4cde-469d" type="min" />
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="37a3-a66c-0a43-89d6" type="max" />
+</constraints>
+</entryLink>
+<entryLink id="19ce-bb75-8edf-998f" name="Smoke Launchers" hidden="false" collective="false" import="true" targetId="4cbd-e91f-c507-7c1b" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b8e9-9c84-fbd7-2fd4" type="min" />
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4d8b-adf6-7db7-281d" type="max" />
+</constraints>
+</entryLink>
+</entryLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="275" />
 </costs>
 </selectionEntry>
 <selectionEntry id="a5cd-a375-0764-ab91" name="Legion Command Squad" hidden="false" collective="false" import="true" type="unit">
@@ -45595,7 +45779,7 @@ LIMITATIONS - Loyalist Ultramarines Detachment only. The army must include an Al
 <description>After deployment but before the first turn, choose Counter-Attack, Move Through Cover, Night Vision or Tank Hunters. Thiel and every model in his squad gain it for the battle, even if Thiel is later slain.</description>
 </rule>
 <rule id="8cd2-202e-af1d-f8b9" name="Aeonid Thiel" hidden="false">
-<description>One Legion Tactical Squad or Legion Veteran Squad may replace its Sergeant with Aeonid Thiel for +80 points. Thiel remains part of the squad for the entire battle; he is a Character but not an Independent Character. If the squad purchases Krak Grenades or Melta Bombs, Thiel receives the same upgrade at the normal squad cost.</description>
+<description>One Legion Tactical Squad or Legion Veteran Squad may replace its Sergeant with Aeonid Thiel for +80 points. Thiel remains part of the squad for the entire battle; he is a Character but not an Independent Character. If the squad purchases Krak Grenades or Melta Bombs, Thiel receives the same upgrade at the normal squad cost. A Legion Tactical Squad led by Thiel may still be divided by Codex Astartes; Thiel joins one of the Combat Squads.</description>
 </rule>
 <rule id="3007-8cd9-5b9f-196e" name="Psychic Powers (Prayto)" hidden="false">
 <description>Titus Prayto is a Psyker (Mastery Level 2) and selects two psychic powers from the normal Psychic Power list, following all normal rules for Psykers and Disturbance in the Warp.</description>

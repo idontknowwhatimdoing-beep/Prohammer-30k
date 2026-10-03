@@ -16292,7 +16292,7 @@ LIMITATIONS - Only a Traitor Emperor's Children Detachment. The army must includ
 <cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
 </costs>
 </selectionEntry>
-<selectionEntry id="0217-cde0-11a2-aff7" name="Perfect Cacophony (Fearless, at least two Sonic Weapons)" hidden="false" collective="false" import="true" type="upgrade">
+<selectionEntry id="61fc-69a5-3b8f-55af" name="Deafening Cacophony (Fearless, at least two Sonic Weapons)" hidden="false" collective="false" import="true" type="upgrade">
 <modifiers>
 <modifier type="set" field="hidden" value="true">
 <conditionGroups>
@@ -16332,7 +16332,7 @@ LIMITATIONS - Only a Traitor Emperor's Children Detachment. The army must includ
 </conditionGroup>
 </conditionGroups>
 </modifier>
-<modifier type="set" field="528e-bcb0-7253-b800" value="0">
+<modifier type="set" field="7f00-b88a-058b-6ebd" value="0">
 <conditionGroups>
 <conditionGroup type="or">
 <conditions>
@@ -16372,11 +16372,11 @@ LIMITATIONS - Only a Traitor Emperor's Children Detachment. The army must includ
 </modifier>
 </modifiers>
 <constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="528e-bcb0-7253-b800" type="max" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7f00-b88a-058b-6ebd" type="max" />
 </constraints>
 <infoLinks>
-<infoLink id="26dd-2164-d8da-2c99" name="Perfect Cacophony (Armoury)" hidden="false" targetId="dc73-6d8f-605c-bfd3" type="rule" />
-<infoLink id="7296-d83d-cb9d-f4c1" name="Fearless" hidden="false" targetId="7460-d0b4-32f7-f367" type="rule" />
+<infoLink id="f0b0-c087-6728-0584" name="Deafening Cacophony" hidden="false" targetId="0810-484e-b1e8-7833" type="rule" />
+<infoLink id="f476-8fd1-88d6-8e5e" name="Fearless" hidden="false" targetId="7460-d0b4-32f7-f367" type="rule" />
 </infoLinks>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
@@ -25411,6 +25411,12 @@ LIMITATIONS - Only a Traitor Emperor's Children Detachment. The army must includ
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7850-3b53-4b47-a988" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d4df-b8bd-00dd-6f2a" type="max" />
+</constraints>
+</entryLink>
+<entryLink id="a3de-2854-dc7b-3cb4" name="Xyclos Needler" hidden="false" collective="false" import="true" targetId="c110-2b51-802f-a3f7" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b88f-dda4-b51e-554a" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="45a6-459b-e8fa-ebe3" type="max" />
 </constraints>
 </entryLink>
 <entryLink id="cc0f-3078-c422-a855" name="Rending Weapon" hidden="false" collective="false" import="true" targetId="ffab-7f00-50f4-91e0" type="selectionEntry">
@@ -41378,6 +41384,16 @@ LIMITATIONS - Only a Traitor Emperor's Children Detachment. The army must includ
 <cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
 </costs>
 </selectionEntry>
+<selectionEntry id="c110-2b51-802f-a3f7" name="Xyclos Needler" hidden="false" collective="false" import="true" type="upgrade">
+<rules>
+<rule id="443a-9b5f-d07b-a093" name="Xyclos Needler" hidden="false">
+<description>Fabius Bile's Xyclos Needler. The army book gives no profile for this weapon.</description>
+</rule>
+</rules>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
 <selectionEntry id="4e05-68f4-bc88-3f8c" name="Gilded Panoply" hidden="false" collective="false" import="true" type="upgrade">
 <rules>
 <rule id="916b-074b-90d4-237e" name="Gilded Panoply" hidden="false">
@@ -41805,7 +41821,7 @@ Afterwards the squad may not enter Overwatch, may not make Return Fire or Stand 
 <rule id="c2e6-18e8-7967-3957" name="Sonic Weaponry" hidden="false">
 <description>TRAITOR ONLY. One Legion Heavy Support Squad in an Emperor's Children Detachment may select up to four Sonic Weapons (Sonic Blaster +15, Doom Siren +20, Blastmaster +35 points each); they may be mixed with weapons from its normal Heavy Weapon options, up to four Heavy and Sonic Weapons in total, and each replaces the Bolter of the model carrying it. In addition, one Emperor's Children Praetor or Centurion (including a Legion Consul) in the army may select a Sonic Blaster (+15) or a Doom Siren (+20); this does not count towards the Armoury points limit. A Character may carry no more than one Sonic Weapon.</description>
 </rule>
-<rule id="dc73-6d8f-605c-bfd3" name="Perfect Cacophony (Armoury)" hidden="false">
+<rule id="0810-484e-b1e8-7833" name="Deafening Cacophony" hidden="false">
 <description>A Legion Heavy Support Squad equipped with at least two Sonic Weapons may purchase the Fearless special rule for +20 points per squad.</description>
 </rule>
 <rule id="8740-8428-182a-0668" name="The Maru Skara" hidden="false">

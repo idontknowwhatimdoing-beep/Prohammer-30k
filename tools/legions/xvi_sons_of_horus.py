@@ -35,11 +35,13 @@ RULES = {
     "Banestrike Ammunition": (
         "Sons of Horus Seeker Squads, Justaerin Terminator Squads and Independent Characters equipped with a Bolter, "
         "Foeblaster Boltgun, Combi-Bolter, Storm Bolter or Combi-Weapon may purchase Banestrike Ammunition (+5 points per "
-        "eligible model). Every eligible model in a squad must purchase it, or none. Models that replaced their bolt "
+        "eligible model; Justaerin Terminator Squads +2 points per eligible model). Every eligible model in a squad must purchase it, or none. Models that replaced their bolt "
         "weapon neither pay for nor benefit from it. Bolter profile: 18\", S4, AP4, Rapid Fire, Banestrike. With a "
         "Foeblaster Boltgun, Storm Bolter, Combi-Bolter or the bolter component of a Combi-Weapon keep the weapon's "
         "shots and firing type but use 18\" range, AP4 and Banestrike. May not be combined with Special Issue Ammunition "
-        "or another ammunition upgrade."),
+        "or another ammunition upgrade in the same attack: a unit that also has Special Issue Ammunition chooses for each "
+        "shooting attack which ammunition it uses and resolves that attack with it; it does not lose Special Issue "
+        "Ammunition."),
     "Rending (5+)": ("Follows the normal Rending rules, except that the effect is triggered on a natural To Wound roll of "
                      "5 or 6. Against Vehicles, Rending is still triggered only by a natural Armour Penetration roll of "
                      "6. A Cthonian Culling Blade does not count as a Power Weapon."),
@@ -70,16 +72,18 @@ RULES = {
         "(only in the player turn it charged).\n"
         "LIMITATIONS - The Detachment must include a Legion Centurion upgraded to a Master of Signals Consul. At least "
         "one compulsory Troops choice must be a Reaver Attack Squad. At least as many Fast Attack as Heavy Support "
-        "choices. No Fortification or Allied Detachment."),
+        "choices (Reaver Attack Squads selected as Troops count as Troops, not as Fast Attack, so additional Fast Attack "
+        "choices are still required). No Fortification or Allied Detachment."),
     # units
     "Chosen of the Warmaster": (
         "A Sons of Horus Praetor, Ezekyle Abaddon or Horus Lupercal may select one Justaerin Terminator Squad as a "
-        "retinue; it then does not occupy a separate Elites choice. 0-1 per Detachment otherwise."),
+        "retinue; it then does not occupy a separate Elites choice and does not count against the 0-1 limit. 0-1 per "
+        "Detachment otherwise."),
     "Justaerin Primus": ("While Falkus Kibre remains alive, his Justaerin Terminator Squad has Fearless. The squad may "
                          "purchase the Furious Charge Veteran Skill for +4 points per model."),
     "Cthonian Retinue": (
         "One Chieftain Squad may be selected as the retinue of a Sons of Horus Praetor or an appropriate named Sons of "
-        "Horus Independent Character. It does not occupy a separate Elites choice; the Character and Chieftain Squad "
+        "Horus Independent Character (Horus, Horus Aximand or Tybalt Marr). It does not occupy a separate Elites choice; the Character and Chieftain Squad "
         "count as a single HQ selection."),
     "Jump Assault": ("The entire squad may purchase Jump Packs for +15 points per model: the unit becomes Jump Infantry, "
                      "follows the normal Jump Infantry rules and may not select a Dedicated Transport."),
@@ -88,8 +92,7 @@ RULES = {
                "it has the Daemon special rule."),
     # characters
     "Cthonian Dreadplate": ("Counts as Cataphractii Terminator Armour. Add +1 to the Reserve roll made for Abaddon and any "
-                            "unit with which he began the battle in Reserve."),
-    "First Captain": "Listed in Abaddon's special rules; the army book gives no text for this rule (see questions).",
+                            "unit with which he began the battle in Reserve. He also gains the Deep Strike special rule."),
     "Master of the Justaerin": (
         "If Abaddon is the army's Warlord, the army may include one additional Justaerin Terminator Squad beyond the "
         "normal 0-1 limit. A Justaerin Terminator Squad containing Abaddon gains Fearless and may purchase the Furious "
@@ -119,8 +122,9 @@ RULES = {
                    "with that unit."),
     "Hunter of the Broken Legions": ("Marr and any Sons of Horus unit he has joined may re-roll To Hit rolls of 1 during "
                                      "the first Assault phase after entering play from Reserve."),
-    "Command Retinue (Marr)": ("Marr may select one Legion Veteran Squad or Reaver Attack Squad as his retinue. It does "
-                               "not occupy a separate Force Organisation slot."),
+    "Command Retinue (Marr)": ("Marr may select one Legion Veteran Squad or Reaver Attack Squad (or, as an appropriate "
+                               "named character, a Chieftain Squad - Cthonian Retinue) as his retinue. It does not "
+                               "occupy a separate Force Organisation slot."),
     "Axe Serpentis": "A Master-crafted Power Weapon. Attacks made with it are resolved at +1 Strength.",
     "First Reaver": ("Ashurhaddon may select one Reaver Attack Squad as his personal retinue. It does not occupy a "
                      "separate Force Organisation slot."),
@@ -134,7 +138,9 @@ RULES = {
         "Torgaddon (total cost 105 points; do not also pay for the Sergeant). Torgaddon remains part of the squad for the "
         "entire battle, is a Character but not an Independent Character, and occupies no Force Organisation selection. "
         "No Independent Character may join Torgaddon's squad."),
-    "Defensive Grenades": "Listed in Aximand's wargear; the army book gives no rules text (see questions).",
+    "Defensive Grenades": ("Core rules: if a unit with Defensive Grenades was unengaged at the start of the current Assault "
+                           "phase and is charged this turn, all charging units lose their bonus Attack for charging "
+                           "(Disordered Charge)."),
     # Horus
     "Serpent's Scales": "The Serpent's Scales count as Primarch Armour.",
     "Worldbreaker": ("A Master-crafted Thunder Hammer. When Horus attacks with Worldbreaker he resolves his attacks at "
@@ -166,7 +172,7 @@ RULES = {
         "Horus may select a Legion Honour Guard Squad, Legion Terminator Command Squad or Justaerin Terminator Squad as "
         "his Primarch Retinue. A Justaerin Terminator Squad selected this way does not count against the 0-1 limit, "
         "gains Furious Charge at no cost and may purchase any upgrades normally available to it (including Falkus "
-        "Kibre)."),
+        "Kibre). Horus may also select a Chieftain Squad (Cthonian Retinue) as his Primarch Retinue."),
     "Great Crusade Panoply": ("Horus may exchange Worldbreaker and the Talon of Horus for a Master-crafted Power Sword and "
                               "a Master-crafted Seeker Bolter with Special Issue Ammunition, reducing his cost by 25 "
                               "points. Only one ammunition type may be used each time the Seeker Bolter is fired."),
@@ -190,7 +196,8 @@ RULES = {
     "The Vengeful Spirit (Ascended)": (
         "Drop Pods and Dreadclaws in Horus' army use the reduced costs of the Sons of Horus army list (-10 points). Once "
         "per battle Horus may call down a Lance Strike in his Shooting phase (Unlimited, S10, AP1, Ordnance 1, Blast), "
-        "resolved using the normal rules for an Orbital Strike."),
+        "resolved using Horus' own Orbital Bombardment rules (not the general Orbital Strike rules): place the Blast "
+        "marker anywhere on the battlefield, no line of sight required; it scatters D6\" unless a Hit is rolled."),
     "Vessel of the Four": (
         "Horus counts as a Daemon for all rules, weapons and abilities which specifically affect Daemons. He bears the "
         "favour of all four Chaos Gods but receives no additional characteristic bonuses from Blessings of the Four "
@@ -563,8 +570,8 @@ def characters(ctx):
     out.append(named_character(LR, "Ezekyle Abaddon, First Captain", 210, (6, 5, 5, 4, 3, 5, 3, 10, "2+/4+"),
                                ["Cthonian Dreadplate", "Master-crafted Power Fist", "Master-crafted Power Sword",
                                 "Master-crafted Storm Bolter", "Banestrike Ammunition"],
-                               ["First Captain", "Master of the Justaerin", "Command Retinue (Abaddon)",
-                                "Cthonian Dreadplate"],
+                               ["Master of the Justaerin", "Command Retinue (Abaddon)", "Cthonian Dreadplate",
+                                "Deep Strike"],
                                retinue=abd_ret, min_points=1500, profile_name="Ezekyle Abaddon"))
     # Aximand
     ax = uid("unit", "Horus Aximand, \"Little Horus\"")
@@ -592,7 +599,8 @@ def characters(ctx):
                                ["Artificer Armour", "Refractor Field", "Master-crafted Lightning Claw", "Bolt Pistol",
                                 "Frag Grenades"],
                                ["The Either", "Hunter of the Broken Legions", "Command Retinue (Marr)"],
-                               retinue=retinue_links("marr", [mvets, reavers("marr-reavers", root=False)]),
+                               retinue=retinue_links("marr", [mvets, reavers("marr-reavers", root=False),
+                                                              chieftains("marr-chieftains", root=False)]),
                                loyalist=False, profile_name="Tybalt Marr", extra_groups=[krak(mr, melta=True)]))
     # Ashurhaddon
     ash = uid("unit", "Vheren Ashurhaddon")
@@ -615,7 +623,8 @@ def weapons_choice(key):
 
 
 def horus():
-    ret = primarch_retinue("horus", extra=[justaerin("horus-justaerin", root=False, variant="horus")])
+    ret = primarch_retinue("horus", extra=[justaerin("horus-justaerin", root=False, variant="horus"),
+                                           chieftains("horus-chieftains", root=False)])
     return primarch(LR, "Horus Lupercal, the Warmaster", 525, (8, 6, 6, 6, 6, 6, 6, 10, "1+/4+"),
                     ["Serpent's Scales", "Frag Grenades", "Krak Grenades"],
                     ["Will of the Warmaster", "Master of the Speartip", "The First Company", "The Vengeful Spirit",
@@ -632,7 +641,8 @@ def lance_strike(key):
 
 
 def horus_ascended():
-    ret = primarch_retinue("horus-asc", extra=[justaerin("horus-asc-justaerin", root=False, variant="horus")])
+    ret = primarch_retinue("horus-asc", extra=[justaerin("horus-asc-justaerin", root=False, variant="horus"),
+                                               chieftains("horus-asc-chieftains", root=False)])
     return primarch(LR, "Horus Ascended, the Warmaster", 725, (9, 7, 7, 7, 7, 7, 7, 10, "1+/3+"),
                     ["Serpent's Scales (Ascended)", "Worldbreaker (Ascended)", "The Talon of Horus (Ascended)",
                      "Frag Grenades", "Krak Grenades"],
@@ -838,6 +848,44 @@ def blessings(ctx):
         add_to(e, "selectionEntryGroups", [g])
 
 
+BASIC_MELEE = ("Chainsword", "Close Combat Weapon", "Chainaxe")
+
+
+def add_culling_blade(roots):
+    """Cthonian Culling Blade (+10): replaces a basic weapon such as a Chainsword, for Independent Characters and
+    Sergeants with access to the Space Marine Armoury that are not in Terminator Armour."""
+    tda_ids = {W(n) for n in TDA}
+    basic = {W(b) for b in BASIC_MELEE}
+    blade = W("Cthonian Culling Blade")
+    n = 0
+    for e in character_entries(roots):
+        groups = char_groups(e)
+        if not any((g.get("name") or "").startswith("Space Marine Armoury") for g in groups):
+            continue
+        if any(lk.get("targetId") in tda_ids for lk in e.findall("entryLinks/entryLink")):
+            continue  # fixed Terminator Armour
+        tda_choice = any(lk.get("targetId") in tda_ids for g in groups for lk in g.findall("entryLinks/entryLink"))
+        u = e.get("id")
+        for g in groups:
+            links = g.find("entryLinks")
+            if links is None:
+                continue
+            if blade in {lk.get("targetId") for lk in links}:
+                continue
+            base = next((lk for lk in links if lk.get("targetId") in basic), None)
+            if base is None:
+                continue
+            nid = uid(base.get("id"), "variant", "Cthonian Culling Blade")
+            mods = None
+            if tda_choice:
+                mods = [modifier("set", "hidden", "true", groups=[any_of(*[has(W(t), u) for t in TDA])]),
+                        modifier("set", uid(nid, "max"), 0, groups=[any_of(*[has(W(t), u) for t in TDA])])]
+            links.append(link(nid, blade, "Cthonian Culling Blade", cost=10, mods=mods,
+                              constraints=[constraint(uid(nid, "max"), "max", 1, auto=True)]))
+            n += 1
+    return n
+
+
 def add_chainaxe(roots):
     add_character_variant(roots, "Chainsword", "Chainaxe", 4)
     add_character_variant(roots, "Close Combat Weapon", "Chainaxe", 4)
@@ -886,6 +934,6 @@ def extend(ctx):
                           [cond(reaver.get("id"), "force", "lessThan", 1)])])
 
     # Chainaxe for characters, Blessings of the Four
-    add_armoury_items(ctx, [("Cthonian Culling Blade", 10)])
+    add_culling_blade(all_entries(ctx))
     add_chainaxe(all_entries(ctx))
     blessings(ctx)

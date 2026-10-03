@@ -45,7 +45,7 @@
 <entryLink id="7087-d628-d324-fee1" name="Red Hand Destroyer Mortalis Squad" hidden="false" collective="false" import="true" targetId="67de-c8d6-2e60-c61d" type="selectionEntry" />
 <entryLink id="1726-f18d-759b-d1d6" name="World Eaters Inductii Squad" hidden="false" collective="false" import="true" targetId="8e04-4cbf-49e1-0d72" type="selectionEntry" />
 <entryLink id="635c-2285-de1d-7d82" name="Devourer Terminator Squad" hidden="false" collective="false" import="true" targetId="5dcb-c6d4-2c89-a7fd" type="selectionEntry" />
-<entryLink id="2945-7e39-ef48-1c8e" name="Triarii Breacher Squad" hidden="false" collective="false" import="true" targetId="4d2e-0a5c-9dcd-da29" type="selectionEntry" />
+<entryLink id="2945-7e39-ef48-1c8e" name="Trarii Breacher Squad" hidden="false" collective="false" import="true" targetId="4d2e-0a5c-9dcd-da29" type="selectionEntry" />
 <entryLink id="6aa1-4f29-265e-f61b" name="Khârn the Bloody" hidden="false" collective="false" import="true" targetId="0f7b-6e4a-2806-3a5c" type="selectionEntry" />
 <entryLink id="1a87-be37-59ec-ca0a" name="Shabran Darr" hidden="false" collective="false" import="true" targetId="661c-9c9d-4cf3-7ba5" type="selectionEntry" />
 <entryLink id="56fa-2545-4466-185e" name="Gahlan Surlak" hidden="false" collective="false" import="true" targetId="45c7-b257-c539-735c" type="selectionEntry" />
@@ -188,6 +188,13 @@
 </categoryLinks>
 <selectionEntryGroups>
 <selectionEntryGroup id="fdea-054a-996f-0cf0" name="Space Marine Armoury (max 100 pts)" hidden="false" collective="false" import="true">
+<modifiers>
+<modifier type="increment" field="f8eb-b9f6-2231-5e9b" value="15">
+<conditions>
+<condition field="selections" scope="2390-3489-e470-7f7f" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0f74-edec-f682-9a91" type="atLeast" />
+</conditions>
+</modifier>
+</modifiers>
 <constraints>
 <constraint field="pts0-0000-0000-0001" scope="self" value="100" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="f8eb-b9f6-2231-5e9b" type="max" />
 </constraints>
@@ -1191,6 +1198,38 @@
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
 </entryLink>
+<entryLink id="0983-223a-9dcf-87df" name="Caedere Weapon" hidden="false" collective="false" import="true" targetId="0f74-edec-f682-9a91" type="selectionEntry" sortIndex="91">
+<modifiers>
+<modifier type="set" field="hidden" value="true">
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="2390-3489-e470-7f7f" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a6a2-abea-01b2-ad81" type="atLeast" />
+<condition field="selections" scope="2390-3489-e470-7f7f" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d900-78c3-2b10-8f9c" type="atLeast" />
+<condition field="selections" scope="2390-3489-e470-7f7f" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0656-5d6b-29bb-1441" type="atLeast" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="set" field="0c91-b55c-a168-4022" value="0">
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="2390-3489-e470-7f7f" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a6a2-abea-01b2-ad81" type="atLeast" />
+<condition field="selections" scope="2390-3489-e470-7f7f" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d900-78c3-2b10-8f9c" type="atLeast" />
+<condition field="selections" scope="2390-3489-e470-7f7f" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0656-5d6b-29bb-1441" type="atLeast" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+</modifiers>
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0c91-b55c-a168-4022" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
+</costs>
+</entryLink>
 </entryLinks>
 </selectionEntryGroup>
 <selectionEntryGroup id="13dc-9da7-73e4-bb0e" name="Additional Wargear" hidden="false" collective="false" import="true">
@@ -1486,14 +1525,6 @@
 </modifiers>
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="31ad-2be6-b2ad-06b9" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
-</costs>
-</entryLink>
-<entryLink id="f5cf-0a85-6a9f-c0f0" name="Caedere Weapon" hidden="false" collective="false" import="true" targetId="0f74-edec-f682-9a91" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bc09-8816-f56a-17a4" type="max" />
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
@@ -2302,6 +2333,13 @@
 </selectionEntries>
 </selectionEntryGroup>
 <selectionEntryGroup id="bb8f-01c1-93ae-388f" name="Space Marine Armoury (max 100 pts)" hidden="false" collective="false" import="true">
+<modifiers>
+<modifier type="increment" field="1666-551b-6180-8a99" value="15">
+<conditions>
+<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0f74-edec-f682-9a91" type="atLeast" />
+</conditions>
+</modifier>
+</modifiers>
 <constraints>
 <constraint field="pts0-0000-0000-0001" scope="self" value="100" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1666-551b-6180-8a99" type="max" />
 </constraints>
@@ -3755,6 +3793,38 @@
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
 </entryLink>
+<entryLink id="7b87-c734-9f21-b000" name="Caedere Weapon" hidden="false" collective="false" import="true" targetId="0f74-edec-f682-9a91" type="selectionEntry" sortIndex="91">
+<modifiers>
+<modifier type="set" field="hidden" value="true">
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a6a2-abea-01b2-ad81" type="atLeast" />
+<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d900-78c3-2b10-8f9c" type="atLeast" />
+<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0656-5d6b-29bb-1441" type="atLeast" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="set" field="26a8-381d-8960-583a" value="0">
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a6a2-abea-01b2-ad81" type="atLeast" />
+<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d900-78c3-2b10-8f9c" type="atLeast" />
+<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0656-5d6b-29bb-1441" type="atLeast" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+</modifiers>
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="26a8-381d-8960-583a" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
+</costs>
+</entryLink>
 </entryLinks>
 </selectionEntryGroup>
 <selectionEntryGroup id="143a-d12c-f97a-70c8" name="Additional Wargear" hidden="false" collective="false" import="true">
@@ -4234,14 +4304,6 @@
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
-</costs>
-</entryLink>
-<entryLink id="ba84-2cf6-6354-d1fd" name="Caedere Weapon" hidden="false" collective="false" import="true" targetId="0f74-edec-f682-9a91" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a55d-f7af-01c3-11e9" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
 </costs>
 </entryLink>
 </entryLinks>
@@ -5050,16 +5112,6 @@
 </entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
-<entryLinks>
-<entryLink id="658d-463c-39d0-2349" name="Caedere Weapon" hidden="false" collective="false" import="true" targetId="0f74-edec-f682-9a91" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f0b9-5795-6997-2d53" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
-</costs>
-</entryLink>
-</entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
 <entryLinks>
@@ -5640,6 +5692,14 @@
 <cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
 </costs>
 </entryLink>
+<entryLink id="345f-a2ce-8379-016d" name="Caedere Weapon" hidden="false" collective="false" import="true" targetId="0f74-edec-f682-9a91" type="selectionEntry" sortIndex="91">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="57cd-d836-bc14-7f6b" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
+</costs>
+</entryLink>
 <entryLink id="9402-814f-7c6c-1d3f" name="Chainaxe" hidden="false" collective="false" import="true" targetId="83c9-472f-b7f4-4e0b" type="selectionEntry" sortIndex="90">
 <modifiers>
 <modifier type="set" field="pts0-0000-0000-0001" value="2">
@@ -5770,16 +5830,6 @@
 </entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
-<entryLinks>
-<entryLink id="5d40-a9ff-3536-ab92" name="Caedere Weapon" hidden="false" collective="false" import="true" targetId="0f74-edec-f682-9a91" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f478-ee52-9c47-5724" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
-</costs>
-</entryLink>
-</entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
 <entryLinks>
@@ -6243,16 +6293,6 @@
 </entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
-<entryLinks>
-<entryLink id="7952-314a-aebd-d06b" name="Caedere Weapon" hidden="false" collective="false" import="true" targetId="0f74-edec-f682-9a91" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e98f-a4ff-dc2f-698d" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
-</costs>
-</entryLink>
-</entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
 <entryLinks>
@@ -6746,6 +6786,14 @@
 <cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
 </costs>
 </entryLink>
+<entryLink id="493f-0949-4766-ce9e" name="Caedere Weapon" hidden="false" collective="false" import="true" targetId="0f74-edec-f682-9a91" type="selectionEntry" sortIndex="91">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d6be-157a-4fa7-e099" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
+</costs>
+</entryLink>
 <entryLink id="7660-4e15-44cd-4c1f" name="Chainaxe" hidden="false" collective="false" import="true" targetId="83c9-472f-b7f4-4e0b" type="selectionEntry" sortIndex="90">
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="4" />
@@ -6926,16 +6974,6 @@
 </entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
-<entryLinks>
-<entryLink id="1253-9396-9201-60cd" name="Caedere Weapon" hidden="false" collective="false" import="true" targetId="0f74-edec-f682-9a91" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aa84-562f-3489-8fb9" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
-</costs>
-</entryLink>
-</entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
 <entryLinks>
@@ -7548,7 +7586,7 @@ LIMITATIONS - No other Lord of War; no Allied Detachment; no more than one other
 </selectionEntry>
 <selectionEntry id="337f-8759-e091-d57b" name="Berserker Assault (World Eaters)" hidden="false" collective="false" import="true" type="upgrade">
 <modifiers>
-<modifier type="add" field="error" value="Berserker Assault: at least one compulsory Troops choice must be a Rampager Squad.">
+<modifier type="add" field="error" value="Berserker Assault: the Detachment must include at least one Rampager Squad as a Troops choice.">
 <conditions>
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="337f-8759-e091-d57b" type="atLeast" />
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="78d1-95a6-bc9a-f137" type="lessThan" />
@@ -7788,6 +7826,14 @@ LIMITATIONS - No units with Slow and Purposeful. No Immobile units (e.g. Drop Po
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
 </entryLink>
+<entryLink id="5cb7-3176-8edd-1a5c" name="Caedere Weapon" hidden="false" collective="false" import="true" targetId="0f74-edec-f682-9a91" type="selectionEntry" sortIndex="91">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b88a-4efc-6742-fabb" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
+</costs>
+</entryLink>
 </entryLinks>
 </selectionEntryGroup>
 <selectionEntryGroup id="f695-ec20-24b7-a51d" name="Replace Bolter" hidden="false" collective="false" import="true" defaultSelectionEntryId="0189-64eb-77d7-a9bd">
@@ -7967,16 +8013,6 @@ LIMITATIONS - No units with Slow and Purposeful. No Immobile units (e.g. Drop Po
 </entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
-<entryLinks>
-<entryLink id="bb98-1914-e696-b51c" name="Caedere Weapon" hidden="false" collective="false" import="true" targetId="0f74-edec-f682-9a91" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cad3-858e-78d1-7847" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
-</costs>
-</entryLink>
-</entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
 <entryLinks>
@@ -8983,14 +9019,6 @@ LIMITATIONS - No units with Slow and Purposeful. No Immobile units (e.g. Drop Po
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
 </costs>
 </entryLink>
-<entryLink id="d130-17ba-53cf-6bfd" name="Caedere Weapon" hidden="false" collective="false" import="true" targetId="0f74-edec-f682-9a91" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a92a-233e-be8c-bccb" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
-</costs>
-</entryLink>
 </entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
@@ -9492,6 +9520,14 @@ LIMITATIONS - No units with Slow and Purposeful. No Immobile units (e.g. Drop Po
 <cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
 </costs>
 </entryLink>
+<entryLink id="3503-7183-0734-dac1" name="Caedere Weapon" hidden="false" collective="false" import="true" targetId="0f74-edec-f682-9a91" type="selectionEntry" sortIndex="91">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0db4-5ced-cf90-2108" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
+</costs>
+</entryLink>
 <entryLink id="816e-97e6-bb6d-441f" name="Chainaxe" hidden="false" collective="false" import="true" targetId="83c9-472f-b7f4-4e0b" type="selectionEntry" sortIndex="90">
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="4" />
@@ -9643,16 +9679,6 @@ LIMITATIONS - No units with Slow and Purposeful. No Immobile units (e.g. Drop Po
 </entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
-<entryLinks>
-<entryLink id="eefd-17af-8413-8aa9" name="Caedere Weapon" hidden="false" collective="false" import="true" targetId="0f74-edec-f682-9a91" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="95d3-d802-f9f4-e37d" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
-</costs>
-</entryLink>
-</entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
 <entryLinks>
@@ -10333,11 +10359,6 @@ LIMITATIONS - No units with Slow and Purposeful. No Immobile units (e.g. Drop Po
 <cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
 </costs>
 </entryLink>
-<entryLink id="1b30-dbd5-209c-b6de" name="Chainaxe" hidden="false" collective="false" import="true" targetId="83c9-472f-b7f4-4e0b" type="selectionEntry">
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="4" />
-</costs>
-</entryLink>
 </entryLinks>
 </selectionEntryGroup>
 <selectionEntryGroup id="04a2-24d4-4edb-d548" name="Servo-automata: Rad Missiles for Missile Launchers" hidden="false" collective="false" import="true">
@@ -10733,11 +10754,6 @@ LIMITATIONS - No units with Slow and Purposeful. No Immobile units (e.g. Drop Po
 <cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
 </costs>
 </entryLink>
-<entryLink id="689a-9959-505f-44fc" name="Chainaxe" hidden="false" collective="false" import="true" targetId="83c9-472f-b7f4-4e0b" type="selectionEntry">
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="4" />
-</costs>
-</entryLink>
 </entryLinks>
 </selectionEntryGroup>
 <selectionEntryGroup id="c6b4-878f-5d90-b5fc" name="Servo-automata: Rad Missiles for Missile Launchers" hidden="false" collective="false" import="true">
@@ -11131,11 +11147,6 @@ LIMITATIONS - No units with Slow and Purposeful. No Immobile units (e.g. Drop Po
 <entryLink id="c612-2c46-8036-8d6b" name="Power Fist" hidden="false" collective="false" import="true" targetId="0b4d-922b-4629-b7ca" type="selectionEntry">
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
-</costs>
-</entryLink>
-<entryLink id="271e-dd96-709d-414c" name="Chainaxe" hidden="false" collective="false" import="true" targetId="83c9-472f-b7f4-4e0b" type="selectionEntry">
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="4" />
 </costs>
 </entryLink>
 </entryLinks>
@@ -12668,16 +12679,6 @@ LIMITATIONS - No units with Slow and Purposeful. No Immobile units (e.g. Drop Po
 </entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
-<entryLinks>
-<entryLink id="bd8a-21fe-152d-6ae2" name="Caedere Weapon" hidden="false" collective="false" import="true" targetId="0f74-edec-f682-9a91" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="03c4-a4c9-bf87-6f10" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
-</costs>
-</entryLink>
-</entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
 <entryLinks>
@@ -13224,6 +13225,14 @@ LIMITATIONS - No units with Slow and Purposeful. No Immobile units (e.g. Drop Po
 <cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
 </costs>
 </entryLink>
+<entryLink id="5384-0849-879d-5ccb" name="Caedere Weapon" hidden="false" collective="false" import="true" targetId="0f74-edec-f682-9a91" type="selectionEntry" sortIndex="91">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2bf0-7ac9-a01f-16ad" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
+</costs>
+</entryLink>
 <entryLink id="d49d-d157-8267-0f53" name="Chainaxe" hidden="false" collective="false" import="true" targetId="83c9-472f-b7f4-4e0b" type="selectionEntry" sortIndex="90">
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="4" />
@@ -13367,16 +13376,6 @@ LIMITATIONS - No units with Slow and Purposeful. No Immobile units (e.g. Drop Po
 </entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
-<entryLinks>
-<entryLink id="a33b-f000-eed1-d4bd" name="Caedere Weapon" hidden="false" collective="false" import="true" targetId="0f74-edec-f682-9a91" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fdb2-afca-e1df-443e" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
-</costs>
-</entryLink>
-</entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
 <entryLinks>
@@ -13807,6 +13806,14 @@ LIMITATIONS - No units with Slow and Purposeful. No Immobile units (e.g. Drop Po
 <cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
 </costs>
 </entryLink>
+<entryLink id="6d71-9cb2-8225-d4a9" name="Caedere Weapon" hidden="false" collective="false" import="true" targetId="0f74-edec-f682-9a91" type="selectionEntry" sortIndex="91">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1f2c-2b66-23ac-c259" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
+</costs>
+</entryLink>
 <entryLink id="e6bc-20c0-651e-7d9e" name="Chainaxe" hidden="false" collective="false" import="true" targetId="83c9-472f-b7f4-4e0b" type="selectionEntry" sortIndex="90">
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="4" />
@@ -13950,16 +13957,6 @@ LIMITATIONS - No units with Slow and Purposeful. No Immobile units (e.g. Drop Po
 </entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
-<entryLinks>
-<entryLink id="b2f3-e796-84b3-4f2c" name="Caedere Weapon" hidden="false" collective="false" import="true" targetId="0f74-edec-f682-9a91" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9eb6-9014-23d7-bceb" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
-</costs>
-</entryLink>
-</entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
 <entryLinks>
@@ -15091,6 +15088,14 @@ LIMITATIONS - No units with Slow and Purposeful. No Immobile units (e.g. Drop Po
 <cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
 </costs>
 </entryLink>
+<entryLink id="0d13-0f20-6b06-a15b" name="Caedere Weapon" hidden="false" collective="false" import="true" targetId="0f74-edec-f682-9a91" type="selectionEntry" sortIndex="91">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2a5d-9d8d-dd1f-1ef2" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
+</costs>
+</entryLink>
 <entryLink id="7571-959b-1f9c-5f61" name="Chainaxe" hidden="false" collective="false" import="true" targetId="83c9-472f-b7f4-4e0b" type="selectionEntry" sortIndex="90">
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="4" />
@@ -15289,16 +15294,6 @@ LIMITATIONS - No units with Slow and Purposeful. No Immobile units (e.g. Drop Po
 </entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
-<entryLinks>
-<entryLink id="7717-1616-ba73-bfcd" name="Caedere Weapon" hidden="false" collective="false" import="true" targetId="0f74-edec-f682-9a91" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0d41-fc16-c115-c84d" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
-</costs>
-</entryLink>
-</entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
 <entryLinks>
@@ -21472,6 +21467,23 @@ LIMITATIONS - No units with Slow and Purposeful. No Immobile units (e.g. Drop Po
 </profiles>
 <selectionEntryGroups>
 <selectionEntryGroup id="f28c-2537-8b86-2baa" name="Space Marine Armoury (max 50 pts)" hidden="false" collective="false" import="true">
+<modifiers>
+<modifier type="increment" field="a2b5-df62-ce59-012b" value="10">
+<conditions>
+<condition field="selections" scope="445c-3a61-6799-5b9a" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="523c-5dd4-3402-0e99" type="atLeast" />
+</conditions>
+</modifier>
+<modifier type="increment" field="a2b5-df62-ce59-012b" value="3">
+<conditions>
+<condition field="selections" scope="445c-3a61-6799-5b9a" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0f74-edec-f682-9a91" type="atLeast" />
+</conditions>
+</modifier>
+<modifier type="increment" field="a2b5-df62-ce59-012b" value="7">
+<conditions>
+<condition field="selections" scope="445c-3a61-6799-5b9a" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fb4f-b267-7556-185d" type="atLeast" />
+</conditions>
+</modifier>
+</modifiers>
 <constraints>
 <constraint field="pts0-0000-0000-0001" scope="self" value="50" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a2b5-df62-ce59-012b" type="max" />
 </constraints>
@@ -21516,7 +21528,7 @@ LIMITATIONS - No units with Slow and Purposeful. No Immobile units (e.g. Drop Po
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c0cf-1fde-56a1-ed76" type="max" />
 </constraints>
 <costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
+<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
 </entryLink>
 <entryLink id="c08c-615b-387a-d914" name="Power Fist" hidden="false" collective="false" import="true" targetId="0b4d-922b-4629-b7ca" type="selectionEntry" sortIndex="7">
@@ -21682,7 +21694,7 @@ LIMITATIONS - No units with Slow and Purposeful. No Immobile units (e.g. Drop Po
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="28fd-c98e-0607-da60" type="max" />
 </constraints>
 <costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
+<cost name="pts" typeId="pts0-0000-0000-0001" value="7" />
 </costs>
 </entryLink>
 <entryLink id="35bd-5fbf-5664-c5a1" name="Rending Weapon" hidden="false" collective="false" import="true" targetId="ffab-7f00-50f4-91e0" type="selectionEntry" sortIndex="8">
@@ -21763,6 +21775,14 @@ LIMITATIONS - No units with Slow and Purposeful. No Immobile units (e.g. Drop Po
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
+</costs>
+</entryLink>
+<entryLink id="c0fc-f668-61c8-7c26" name="Caedere Weapon" hidden="false" collective="false" import="true" targetId="0f74-edec-f682-9a91" type="selectionEntry">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="09ce-dbda-7731-75ce" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="3" />
 </costs>
 </entryLink>
 </entryLinks>
@@ -21894,16 +21914,6 @@ LIMITATIONS - No units with Slow and Purposeful. No Immobile units (e.g. Drop Po
 </entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
-<entryLinks>
-<entryLink id="1f4c-eff7-21d9-0716" name="Caedere Weapon" hidden="false" collective="false" import="true" targetId="0f74-edec-f682-9a91" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0a2d-7e90-f781-f160" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
-</costs>
-</entryLink>
-</entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
 <entryLinks>
@@ -22475,6 +22485,33 @@ LIMITATIONS - No units with Slow and Purposeful. No Immobile units (e.g. Drop Po
 <condition field="selections" scope="67de-c8d6-2e60-c61d" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4c3c-61b2-c772-8028" type="atLeast" />
 </conditions>
 </modifier>
+<modifier type="set-primary" field="category" value="adf0-dc10-89d4-f51e">
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="16f3-4196-2250-3a21" type="atLeast" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="remove" field="category" value="6b19-97ac-7c40-0bdf">
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="16f3-4196-2250-3a21" type="atLeast" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="add" field="category" value="071f-8316-97af-8fd6">
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="16f3-4196-2250-3a21" type="atLeast" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
 </modifiers>
 <infoLinks>
 <infoLink id="5fb4-51f6-cc16-692e" name="Legiones Astartes (World Eaters)" hidden="false" targetId="d664-55bf-393e-b5d6" type="rule" />
@@ -22723,34 +22760,42 @@ LIMITATIONS - No units with Slow and Purposeful. No Immobile units (e.g. Drop Po
 </selectionEntry>
 </selectionEntries>
 <selectionEntryGroups>
-<selectionEntryGroup id="faf0-877e-9460-15c7" name="Red Hand Destroyers: replace one Bolt Pistol (1 per 5 models)" hidden="false" collective="false" import="true">
+<selectionEntryGroup id="d673-5483-fd05-b0fc" name="Red Hand Destroyers: replace one Bolt Pistol (1 per 5 models; 2 per 5 in a Destroyer Company)" hidden="false" collective="false" import="true">
 <modifiers>
-<modifier type="increment" field="82f4-a8f9-73ed-dad6" value="1">
+<modifier type="increment" field="99c9-f6d1-31fa-ecca" value="1">
 <repeats>
 <repeat field="selections" scope="67de-c8d6-2e60-c61d" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" repeats="1" roundUp="false" />
 </repeats>
 </modifier>
+<modifier type="increment" field="99c9-f6d1-31fa-ecca" value="1">
+<repeats>
+<repeat field="selections" scope="67de-c8d6-2e60-c61d" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" repeats="1" roundUp="false" />
+</repeats>
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="16f3-4196-2250-3a21" type="atLeast" />
+</conditions>
+</modifier>
 </modifiers>
 <constraints>
-<constraint automatic="true" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="82f4-a8f9-73ed-dad6" type="max" />
+<constraint automatic="true" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="99c9-f6d1-31fa-ecca" type="max" />
 </constraints>
 <entryLinks>
-<entryLink id="f1ed-dcd2-ca4d-1958" name="Volkite Serpenta" hidden="false" collective="false" import="true" targetId="48a3-89aa-47ef-c849" type="selectionEntry">
+<entryLink id="b79c-5378-05f9-73dd" name="Volkite Serpenta" hidden="false" collective="false" import="true" targetId="48a3-89aa-47ef-c849" type="selectionEntry">
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
 </costs>
 </entryLink>
-<entryLink id="5ad0-f0a1-8edf-8100" name="Hand Flamer" hidden="false" collective="false" import="true" targetId="25eb-7e5c-f08a-e9b9" type="selectionEntry">
+<entryLink id="75c6-072c-e1fe-2992" name="Hand Flamer" hidden="false" collective="false" import="true" targetId="25eb-7e5c-f08a-e9b9" type="selectionEntry">
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
 </costs>
 </entryLink>
-<entryLink id="e9cd-e77b-11eb-79e6" name="Plasma Pistol" hidden="false" collective="false" import="true" targetId="523c-5dd4-3402-0e99" type="selectionEntry">
+<entryLink id="6873-a2d2-ec34-d8fb" name="Plasma Pistol" hidden="false" collective="false" import="true" targetId="523c-5dd4-3402-0e99" type="selectionEntry">
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
 </costs>
 </entryLink>
-<entryLink id="bb79-37e2-600a-bf5c" name="Missile Launcher with Suspensor Web and Rad Missiles" hidden="false" collective="false" import="true" targetId="b433-2f89-1970-965a" type="selectionEntry">
+<entryLink id="d9a9-0908-dcd7-fa15" name="Missile Launcher with Suspensor Web and Rad Missiles" hidden="false" collective="false" import="true" targetId="b433-2f89-1970-965a" type="selectionEntry">
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
 </costs>
@@ -23347,6 +23392,9 @@ LIMITATIONS - No units with Slow and Purposeful. No Immobile units (e.g. Drop Po
 </costs>
 </selectionEntry>
 <selectionEntry id="5dcb-c6d4-2c89-a7fd" name="Devourer Terminator Squad" hidden="false" collective="false" import="true" type="unit">
+<constraints>
+<constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="be4e-de67-e953-db35" type="max" />
+</constraints>
 <infoLinks>
 <infoLink id="08d8-02c8-d721-8c37" name="Legiones Astartes (World Eaters)" hidden="false" targetId="d664-55bf-393e-b5d6" type="rule" />
 <infoLink id="21a6-e716-fc1e-1f56" name="Stubborn" hidden="false" targetId="4221-0014-a08b-6fb4" type="rule" />
@@ -23687,21 +23735,22 @@ LIMITATIONS - No units with Slow and Purposeful. No Immobile units (e.g. Drop Po
 <cost name="pts" typeId="pts0-0000-0000-0001" value="45" />
 </costs>
 </selectionEntry>
-<selectionEntry id="4d2e-0a5c-9dcd-da29" name="Triarii Breacher Squad" hidden="false" collective="false" import="true" type="unit">
+<selectionEntry id="4d2e-0a5c-9dcd-da29" name="Trarii Breacher Squad" hidden="false" collective="false" import="true" type="unit">
 <infoLinks>
 <infoLink id="6e57-2165-c129-a9b0" name="Legiones Astartes (World Eaters)" hidden="false" targetId="d664-55bf-393e-b5d6" type="rule" />
+<infoLink id="31be-d0d4-2749-32c1" name="Hardened Armour" hidden="false" targetId="3917-f92f-f23a-1cee" type="rule" />
 </infoLinks>
 <categoryLinks>
 <categoryLink id="c382-6705-d2b5-9f40" name="Elites" hidden="false" targetId="6b19-97ac-7c40-0bdf" primary="true" />
 </categoryLinks>
 <selectionEntries>
-<selectionEntry id="35c6-eb5c-3cf8-0f2c" name="Triarii Breacher Champion" hidden="false" collective="false" import="true" type="model">
+<selectionEntry id="ec18-94b6-5073-8eb0" name="Trarii Breacher Champion" hidden="false" collective="false" import="true" type="model">
 <constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="02ca-50e5-5255-1ebd" type="min" />
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3bd5-fc66-1df3-e92b" type="max" />
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="290c-3d74-84c8-3d3d" type="min" />
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="73d7-6a86-76d1-8f19" type="max" />
 </constraints>
 <profiles>
-<profile id="5fe5-9bca-5194-0903" name="Triarii Breacher Champion" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
+<profile id="d245-c600-ea29-2438" name="Trarii Breacher Champion" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
 <characteristics>
 <characteristic name="Unit Type" typeId="b0cf-47d7-3836-cf93">Infantry (Character)</characteristic>
 <characteristic name="WS" typeId="52b0-fc35-42a9-af3d">4</characteristic>
@@ -24140,29 +24189,19 @@ LIMITATIONS - No units with Slow and Purposeful. No Immobile units (e.g. Drop Po
 </entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
-<entryLinks>
-<entryLink id="7527-582d-5550-9a37" name="Caedere Weapon" hidden="false" collective="false" import="true" targetId="0f74-edec-f682-9a91" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="556b-b301-13b8-45c3" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
-</costs>
-</entryLink>
-</entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
 <entryLinks>
-<entryLink id="eb12-0579-8d74-81b8" name="Power Armour" hidden="false" collective="false" import="true" targetId="1133-946a-2323-7a81" type="selectionEntry">
+<entryLink id="2b72-f7b5-28b3-287e" name="Power Armour" hidden="false" collective="false" import="true" targetId="1133-946a-2323-7a81" type="selectionEntry">
 <constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1e5d-d9dd-e5a1-ac15" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="38a0-c83c-e9ea-f3a3" type="max" />
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d680-4336-88fa-b298" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0e58-8454-83b2-aa12" type="max" />
 </constraints>
 </entryLink>
-<entryLink id="f75f-ad80-61c0-be05" name="Boarding Shield" hidden="false" collective="false" import="true" targetId="6d9c-93b7-f35e-12ee" type="selectionEntry">
+<entryLink id="b12e-82b8-1e3d-27fb" name="Boarding Shield" hidden="false" collective="false" import="true" targetId="6d9c-93b7-f35e-12ee" type="selectionEntry">
 <constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="238a-0ba1-80b4-a43b" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8535-a51b-a702-aae7" type="max" />
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bf41-ddd6-50c6-5d71" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3bfa-750b-07d0-75fa" type="max" />
 </constraints>
 </entryLink>
 </entryLinks>
@@ -24170,13 +24209,13 @@ LIMITATIONS - No units with Slow and Purposeful. No Immobile units (e.g. Drop Po
 <cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
 </costs>
 </selectionEntry>
-<selectionEntry id="fab4-20a0-56cc-2058" name="Triarii Breacher" hidden="false" collective="false" import="true" type="model">
+<selectionEntry id="3a49-f7eb-e834-885f" name="Trarii Breacher" hidden="false" collective="false" import="true" type="model">
 <constraints>
-<constraint field="selections" scope="parent" value="4" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="af31-8b77-7d7a-80f7" type="min" />
-<constraint field="selections" scope="parent" value="9" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="04b2-34d4-20e2-6d34" type="max" />
+<constraint field="selections" scope="parent" value="4" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3688-e773-9ead-31e0" type="min" />
+<constraint field="selections" scope="parent" value="9" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8312-1c11-85c7-62c1" type="max" />
 </constraints>
 <profiles>
-<profile id="513e-9226-edbd-66d3" name="Triarii Breacher" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
+<profile id="72ad-0788-a4b1-ff68" name="Trarii Breacher" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
 <characteristics>
 <characteristic name="Unit Type" typeId="b0cf-47d7-3836-cf93">Infantry</characteristic>
 <characteristic name="WS" typeId="52b0-fc35-42a9-af3d">4</characteristic>
@@ -24192,28 +24231,28 @@ LIMITATIONS - No units with Slow and Purposeful. No Immobile units (e.g. Drop Po
 </profile>
 </profiles>
 <entryLinks>
-<entryLink id="e8e6-b069-4851-fa88" name="Power Armour" hidden="false" collective="false" import="true" targetId="1133-946a-2323-7a81" type="selectionEntry">
+<entryLink id="4ac4-56a5-4c03-4276" name="Power Armour" hidden="false" collective="false" import="true" targetId="1133-946a-2323-7a81" type="selectionEntry">
 <constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2598-93af-81be-20b6" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3462-61f9-307b-6e2b" type="max" />
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fa12-2362-c225-931a" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6822-ea45-f620-1764" type="max" />
 </constraints>
 </entryLink>
-<entryLink id="3746-6f60-82f7-c483" name="Bolt Pistol" hidden="false" collective="false" import="true" targetId="10e2-6917-e765-7495" type="selectionEntry">
+<entryLink id="31b2-ea7a-583d-3989" name="Bolt Pistol" hidden="false" collective="false" import="true" targetId="10e2-6917-e765-7495" type="selectionEntry">
 <constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="71fe-ec89-dac7-9c49" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dba6-2ca5-7d7a-0001" type="max" />
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5dbb-fa96-0833-beb3" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="058a-8c83-b327-5a2e" type="max" />
 </constraints>
 </entryLink>
-<entryLink id="e3fc-a1a8-4fa7-fabb" name="Chainaxe" hidden="false" collective="false" import="true" targetId="83c9-472f-b7f4-4e0b" type="selectionEntry">
+<entryLink id="3a22-1d10-0f28-f761" name="Chainaxe" hidden="false" collective="false" import="true" targetId="83c9-472f-b7f4-4e0b" type="selectionEntry">
 <constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1e47-e00a-5fd4-0c2c" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1ec3-e1de-ace8-629a" type="max" />
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8bea-c1ea-dd8f-e7c3" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="59fb-72a0-0eae-61eb" type="max" />
 </constraints>
 </entryLink>
-<entryLink id="fa04-874e-5949-a951" name="Boarding Shield" hidden="false" collective="false" import="true" targetId="6d9c-93b7-f35e-12ee" type="selectionEntry">
+<entryLink id="d6ca-2e07-350a-4c89" name="Boarding Shield" hidden="false" collective="false" import="true" targetId="6d9c-93b7-f35e-12ee" type="selectionEntry">
 <constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d414-8a55-7baa-7db1" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3db6-ea7b-b289-3d99" type="max" />
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bd57-1c94-66d7-3ee1" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c590-15c0-3c31-ee54" type="max" />
 </constraints>
 </entryLink>
 </entryLinks>
@@ -24269,27 +24308,27 @@ LIMITATIONS - No units with Slow and Purposeful. No Immobile units (e.g. Drop Po
 </selectionEntry>
 </selectionEntries>
 <selectionEntryGroups>
-<selectionEntryGroup id="b52e-a718-4613-5ca0" name="All Triarii Breachers: replace Chainaxe" hidden="false" collective="false" import="true">
+<selectionEntryGroup id="ac7c-8585-9dc2-63e8" name="All Trarii Breachers: replace Chainaxe" hidden="false" collective="false" import="true">
 <constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f29c-3965-99ed-cc95" type="max" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3680-273f-1675-70f3" type="max" />
 </constraints>
 <selectionEntries>
-<selectionEntry id="6503-d3b3-90b1-999b" name="Caedere Weapon" hidden="false" collective="false" import="true" type="upgrade">
+<selectionEntry id="a6b5-50c5-79b7-63c6" name="Caedere Weapon" hidden="false" collective="false" import="true" type="upgrade">
 <modifiers>
 <modifier type="increment" field="pts0-0000-0000-0001" value="5">
 <repeats>
-<repeat field="selections" scope="4d2e-0a5c-9dcd-da29" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fab4-20a0-56cc-2058" repeats="1" roundUp="false" />
+<repeat field="selections" scope="4d2e-0a5c-9dcd-da29" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3a49-f7eb-e834-885f" repeats="1" roundUp="false" />
 </repeats>
 </modifier>
 </modifiers>
 <constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3c9a-2519-ada3-943f" type="max" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5d74-3adc-f50c-5ded" type="max" />
 </constraints>
 <entryLinks>
-<entryLink id="f7fa-dd66-9bc0-cf2a" name="Caedere Weapon" hidden="false" collective="false" import="true" targetId="0f74-edec-f682-9a91" type="selectionEntry">
+<entryLink id="f1df-84f6-1a06-417e" name="Caedere Weapon" hidden="false" collective="false" import="true" targetId="0f74-edec-f682-9a91" type="selectionEntry">
 <constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d8ba-5207-da52-dc4d" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5e46-13b4-a574-4d24" type="max" />
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6524-1c16-5bb6-a8b4" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d28c-dd9f-383c-b754" type="max" />
 </constraints>
 </entryLink>
 </entryLinks>
@@ -24297,22 +24336,22 @@ LIMITATIONS - No units with Slow and Purposeful. No Immobile units (e.g. Drop Po
 <cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
 </costs>
 </selectionEntry>
-<selectionEntry id="c1a6-7561-1626-e3db" name="Power Weapon" hidden="false" collective="false" import="true" type="upgrade">
+<selectionEntry id="a6f9-762a-4a7d-744e" name="Power Weapon" hidden="false" collective="false" import="true" type="upgrade">
 <modifiers>
 <modifier type="increment" field="pts0-0000-0000-0001" value="10">
 <repeats>
-<repeat field="selections" scope="4d2e-0a5c-9dcd-da29" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fab4-20a0-56cc-2058" repeats="1" roundUp="false" />
+<repeat field="selections" scope="4d2e-0a5c-9dcd-da29" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3a49-f7eb-e834-885f" repeats="1" roundUp="false" />
 </repeats>
 </modifier>
 </modifiers>
 <constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="21db-2b70-6ec3-8a1b" type="max" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8683-874d-5df4-6f83" type="max" />
 </constraints>
 <entryLinks>
-<entryLink id="f3d8-9cc9-bfe5-524e" name="Power Weapon" hidden="false" collective="false" import="true" targetId="fb4f-b267-7556-185d" type="selectionEntry">
+<entryLink id="2886-42cc-b787-3c8e" name="Power Weapon" hidden="false" collective="false" import="true" targetId="fb4f-b267-7556-185d" type="selectionEntry">
 <constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c5c1-de3e-0849-88ef" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="36de-79ee-d9fd-ef4b" type="max" />
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8d9e-b9b2-0aa0-6dd7" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="11c9-0151-0f8d-007c" type="max" />
 </constraints>
 </entryLink>
 </entryLinks>
@@ -24321,144 +24360,6 @@ LIMITATIONS - No units with Slow and Purposeful. No Immobile units (e.g. Drop Po
 </costs>
 </selectionEntry>
 </selectionEntries>
-</selectionEntryGroup>
-<selectionEntryGroup id="0310-d47d-50df-e365" name="Dedicated Transport" hidden="false" collective="false" import="true">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2970-49e0-8e87-f0f1" type="max" />
-</constraints>
-<entryLinks>
-<entryLink id="1f22-0f20-a00c-4d0d" name="Legion Rhino Armoured Carrier" hidden="false" collective="false" import="true" targetId="9572-f669-c5f3-b3d0" type="selectionEntry">
-<modifiers>
-<modifier type="add" field="error" value="Too many models for a Legion Rhino Armoured Carrier (capacity 10).">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9572-f669-c5f3-b3d0" type="atLeast" />
-<condition field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-<modifier type="add" field="error" value="A Legion Rhino Armoured Carrier cannot carry models in Terminator Armour.">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9572-f669-c5f3-b3d0" type="atLeast" />
-</conditions>
-<conditionGroups>
-<conditionGroup type="or">
-<conditions>
-<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a6a2-abea-01b2-ad81" type="atLeast" />
-<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d900-78c3-2b10-8f9c" type="atLeast" />
-<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0656-5d6b-29bb-1441" type="atLeast" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-</modifiers>
-</entryLink>
-<entryLink id="6237-711f-dead-187b" name="Legion Drop Pod" hidden="false" collective="false" import="true" targetId="4e1c-55bd-1f6c-9584" type="selectionEntry">
-<modifiers>
-<modifier type="add" field="error" value="Too many models for a Legion Drop Pod (capacity 10).">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4e1c-55bd-1f6c-9584" type="atLeast" />
-<condition field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-<modifier type="add" field="error" value="Terminator Armour counts as two models: too many for a Legion Drop Pod (capacity 10).">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4e1c-55bd-1f6c-9584" type="atLeast" />
-<condition field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
-</conditions>
-<conditionGroups>
-<conditionGroup type="or">
-<conditions>
-<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a6a2-abea-01b2-ad81" type="atLeast" />
-<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d900-78c3-2b10-8f9c" type="atLeast" />
-<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0656-5d6b-29bb-1441" type="atLeast" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-</modifiers>
-</entryLink>
-<entryLink id="79e3-0101-478b-3c7d" name="Anvillus Pattern Dreadclaw Drop Pod" hidden="false" collective="false" import="true" targetId="2bad-68df-db1e-95d9" type="selectionEntry">
-<modifiers>
-<modifier type="add" field="error" value="Too many models for a Anvillus Pattern Dreadclaw Drop Pod (capacity 10).">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2bad-68df-db1e-95d9" type="atLeast" />
-<condition field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-<modifier type="add" field="error" value="Terminator Armour counts as two models: too many for a Anvillus Pattern Dreadclaw Drop Pod (capacity 10).">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2bad-68df-db1e-95d9" type="atLeast" />
-<condition field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
-</conditions>
-<conditionGroups>
-<conditionGroup type="or">
-<conditions>
-<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a6a2-abea-01b2-ad81" type="atLeast" />
-<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d900-78c3-2b10-8f9c" type="atLeast" />
-<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0656-5d6b-29bb-1441" type="atLeast" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-</modifiers>
-</entryLink>
-<entryLink id="b3bd-9b83-1b75-a8c9" name="Land Raider Phobos" hidden="false" collective="false" import="true" targetId="368f-8af7-ba1b-d0f6" type="selectionEntry">
-<modifiers>
-<modifier type="add" field="error" value="Too many models for a Land Raider Phobos (capacity 10).">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="368f-8af7-ba1b-d0f6" type="atLeast" />
-<condition field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-<modifier type="add" field="error" value="Terminator Armour counts as two models: too many for a Land Raider Phobos (capacity 10).">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="368f-8af7-ba1b-d0f6" type="atLeast" />
-<condition field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
-</conditions>
-<conditionGroups>
-<conditionGroup type="or">
-<conditions>
-<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a6a2-abea-01b2-ad81" type="atLeast" />
-<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d900-78c3-2b10-8f9c" type="atLeast" />
-<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0656-5d6b-29bb-1441" type="atLeast" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-</modifiers>
-</entryLink>
-</entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
 <costs>
@@ -24724,7 +24625,6 @@ LIMITATIONS - No units with Slow and Purposeful. No Immobile units (e.g. Drop Po
 <infoLinks>
 <infoLink id="f610-3b2d-9ddd-08da" name="Legiones Astartes (World Eaters)" hidden="false" targetId="d664-55bf-393e-b5d6" type="rule" />
 <infoLink id="6048-d42d-03f1-b4a6" name="Independent Character" hidden="false" targetId="03f2-ed94-7611-f6a1" type="rule" />
-<infoLink id="39da-f4b2-7c03-9fb4" name="Apothecary" hidden="false" targetId="c972-c81a-ff4f-feb9" type="rule" />
 <infoLink id="a862-7e14-11a0-2850" name="Architect of the Nails" hidden="false" targetId="6b84-51f5-a65a-718b" type="rule" />
 <infoLink id="aa86-9faf-0aa2-a1d4" name="Legion Support Officer" hidden="false" targetId="b440-9ff1-ba27-6a12" type="rule" />
 </infoLinks>
@@ -25042,7 +24942,7 @@ LIMITATIONS - No units with Slow and Purposeful. No Immobile units (e.g. Drop Po
 <characteristic name="I" typeId="6f24-6315-ebd0-9465">5</characteristic>
 <characteristic name="A" typeId="e39a-3da9-2567-cfd3">3</characteristic>
 <characteristic name="Ld" typeId="7e63-7406-c8d0-7e03">9</characteristic>
-<characteristic name="Sv" typeId="d23d-aa50-ddfb-88a0">3+</characteristic>
+<characteristic name="Sv" typeId="d23d-aa50-ddfb-88a0">3+/5+</characteristic>
 </characteristics>
 </profile>
 </profiles>
@@ -25082,7 +24982,7 @@ LIMITATIONS - No units with Slow and Purposeful. No Immobile units (e.g. Drop Po
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9bc9-01cb-0a51-405b" type="max" />
 </constraints>
 <entryLinks>
-<entryLink id="d659-a651-4e03-2dc2" name="Triarii Breacher Squad" hidden="false" collective="false" import="true" targetId="5281-5b3c-5206-11f6" type="selectionEntry" />
+<entryLink id="d659-a651-4e03-2dc2" name="Trarii Breacher Squad" hidden="false" collective="false" import="true" targetId="5281-5b3c-5206-11f6" type="selectionEntry" />
 </entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
@@ -25143,6 +25043,11 @@ LIMITATIONS - No units with Slow and Purposeful. No Immobile units (e.g. Drop Po
 <modifier type="add" field="category" value="e89b-053d-1bdc-4e2e">
 <conditions>
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c0b2-49b1-48fd-3fc2" type="atLeast" />
+</conditions>
+</modifier>
+<modifier type="add" field="error" value="Angron, the Red Angel is Traitor only.">
+<conditions>
+<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="af50-de01-cc93-f43e" type="atLeast" />
 </conditions>
 </modifier>
 </modifiers>
@@ -25282,6 +25187,7 @@ LIMITATIONS - No units with Slow and Purposeful. No Immobile units (e.g. Drop Po
 </profile>
 </profiles>
 <infoLinks>
+<infoLink id="2b54-8fa4-7435-8f2b" name="Legiones Astartes (World Eaters)" hidden="false" targetId="d664-55bf-393e-b5d6" type="rule" />
 <infoLink id="5aa1-ca3a-69f6-4787" name="Daemon Primarchs" hidden="false" targetId="448f-6e48-10bd-071d" type="rule" />
 <infoLink id="8f1b-1bdb-618a-245e" name="Daemon" hidden="false" targetId="2e04-a925-ec32-e078" type="rule" />
 <infoLink id="e4cc-9d81-404a-2488" name="Fear" hidden="false" targetId="a68f-1456-3d88-39b5" type="rule" />
@@ -25701,16 +25607,6 @@ LIMITATIONS - No units with Slow and Purposeful. No Immobile units (e.g. Drop Po
 </entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
-<entryLinks>
-<entryLink id="9d4f-63ed-376e-0557" name="Caedere Weapon" hidden="false" collective="false" import="true" targetId="0f74-edec-f682-9a91" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ff03-e7ce-09fb-a3cd" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
-</costs>
-</entryLink>
-</entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
 <entryLinks>
@@ -26513,16 +26409,6 @@ LIMITATIONS - No units with Slow and Purposeful. No Immobile units (e.g. Drop Po
 </entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
-<entryLinks>
-<entryLink id="814d-854f-64db-b54e" name="Caedere Weapon" hidden="false" collective="false" import="true" targetId="0f74-edec-f682-9a91" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="32df-4be2-abad-505e" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
-</costs>
-</entryLink>
-</entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
 <entryLinks>
@@ -27016,16 +26902,6 @@ LIMITATIONS - No units with Slow and Purposeful. No Immobile units (e.g. Drop Po
 </entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
-<entryLinks>
-<entryLink id="d84e-55ab-5d55-99bb" name="Caedere Weapon" hidden="false" collective="false" import="true" targetId="0f74-edec-f682-9a91" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2f49-f470-97a5-f0d1" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
-</costs>
-</entryLink>
-</entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
 <entryLinks>
@@ -27552,16 +27428,6 @@ LIMITATIONS - No units with Slow and Purposeful. No Immobile units (e.g. Drop Po
 </entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
-<entryLinks>
-<entryLink id="8a38-cc3f-91ed-69ae" name="Caedere Weapon" hidden="false" collective="false" import="true" targetId="0f74-edec-f682-9a91" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1197-6987-f200-e8a5" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
-</costs>
-</entryLink>
-</entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
 <entryLinks>
@@ -28454,14 +28320,6 @@ LIMITATIONS - No units with Slow and Purposeful. No Immobile units (e.g. Drop Po
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
 </costs>
 </entryLink>
-<entryLink id="c704-9214-c19a-9e1f" name="Caedere Weapon" hidden="false" collective="false" import="true" targetId="0f74-edec-f682-9a91" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="39e3-6ab7-b0eb-5d84" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
-</costs>
-</entryLink>
 </entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
@@ -28779,14 +28637,6 @@ LIMITATIONS - No units with Slow and Purposeful. No Immobile units (e.g. Drop Po
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
-</costs>
-</entryLink>
-<entryLink id="e147-7a0f-8156-5929" name="Caedere Weapon" hidden="false" collective="false" import="true" targetId="0f74-edec-f682-9a91" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a8e8-d502-e6f7-9dc2" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
 </costs>
 </entryLink>
 </entryLinks>
@@ -29153,14 +29003,6 @@ LIMITATIONS - No units with Slow and Purposeful. No Immobile units (e.g. Drop Po
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
-</costs>
-</entryLink>
-<entryLink id="a9dc-c41b-a309-f738" name="Caedere Weapon" hidden="false" collective="false" import="true" targetId="0f74-edec-f682-9a91" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2477-a240-a958-acb5" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
 </costs>
 </entryLink>
 </entryLinks>
@@ -29864,16 +29706,6 @@ LIMITATIONS - No units with Slow and Purposeful. No Immobile units (e.g. Drop Po
 </entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
-<entryLinks>
-<entryLink id="fea3-aa99-e962-4667" name="Caedere Weapon" hidden="false" collective="false" import="true" targetId="0f74-edec-f682-9a91" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0c0b-dc18-0573-f729" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
-</costs>
-</entryLink>
-</entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
 <entryLinks>
@@ -30367,16 +30199,6 @@ LIMITATIONS - No units with Slow and Purposeful. No Immobile units (e.g. Drop Po
 </entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
-<entryLinks>
-<entryLink id="24db-9102-f61a-b571" name="Caedere Weapon" hidden="false" collective="false" import="true" targetId="0f74-edec-f682-9a91" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3612-12ac-842a-930d" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
-</costs>
-</entryLink>
-</entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
 <entryLinks>
@@ -30903,16 +30725,6 @@ LIMITATIONS - No units with Slow and Purposeful. No Immobile units (e.g. Drop Po
 </entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
-<entryLinks>
-<entryLink id="c88c-2b7d-83f1-b24d" name="Caedere Weapon" hidden="false" collective="false" import="true" targetId="0f74-edec-f682-9a91" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d224-6c4f-81cb-792b" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
-</costs>
-</entryLink>
-</entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
 <entryLinks>
@@ -31805,14 +31617,6 @@ LIMITATIONS - No units with Slow and Purposeful. No Immobile units (e.g. Drop Po
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
 </costs>
 </entryLink>
-<entryLink id="4b6a-1ebe-aa20-6482" name="Caedere Weapon" hidden="false" collective="false" import="true" targetId="0f74-edec-f682-9a91" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2ba6-e9b4-bbc3-8dd0" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
-</costs>
-</entryLink>
 </entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
@@ -32130,14 +31934,6 @@ LIMITATIONS - No units with Slow and Purposeful. No Immobile units (e.g. Drop Po
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
-</costs>
-</entryLink>
-<entryLink id="3012-8c1a-b49f-2ca4" name="Caedere Weapon" hidden="false" collective="false" import="true" targetId="0f74-edec-f682-9a91" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0e64-cef0-8767-5e8b" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
 </costs>
 </entryLink>
 </entryLinks>
@@ -32504,14 +32300,6 @@ LIMITATIONS - No units with Slow and Purposeful. No Immobile units (e.g. Drop Po
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
-</costs>
-</entryLink>
-<entryLink id="2509-3291-b617-3691" name="Caedere Weapon" hidden="false" collective="false" import="true" targetId="0f74-edec-f682-9a91" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1940-0ac0-9e3e-ef53" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
 </costs>
 </entryLink>
 </entryLinks>
@@ -33973,16 +33761,6 @@ LIMITATIONS - No units with Slow and Purposeful. No Immobile units (e.g. Drop Po
 </entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
-<entryLinks>
-<entryLink id="ddb6-ec78-a7b0-a1b0" name="Caedere Weapon" hidden="false" collective="false" import="true" targetId="0f74-edec-f682-9a91" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f709-bf81-970a-25ef" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
-</costs>
-</entryLink>
-</entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
 <entryLinks>
@@ -34476,16 +34254,6 @@ LIMITATIONS - No units with Slow and Purposeful. No Immobile units (e.g. Drop Po
 </entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
-<entryLinks>
-<entryLink id="2f10-9dc3-8de7-1df1" name="Caedere Weapon" hidden="false" collective="false" import="true" targetId="0f74-edec-f682-9a91" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3b6c-20b9-6257-d0fd" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
-</costs>
-</entryLink>
-</entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
 <entryLinks>
@@ -35012,16 +34780,6 @@ LIMITATIONS - No units with Slow and Purposeful. No Immobile units (e.g. Drop Po
 </entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
-<entryLinks>
-<entryLink id="f86b-de6d-db7b-7d37" name="Caedere Weapon" hidden="false" collective="false" import="true" targetId="0f74-edec-f682-9a91" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3b44-d58a-d253-f7aa" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
-</costs>
-</entryLink>
-</entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
 <entryLinks>
@@ -35575,6 +35333,23 @@ LIMITATIONS - No units with Slow and Purposeful. No Immobile units (e.g. Drop Po
 </profiles>
 <selectionEntryGroups>
 <selectionEntryGroup id="2aba-2f27-81d3-1d45" name="Space Marine Armoury (max 50 pts)" hidden="false" collective="false" import="true">
+<modifiers>
+<modifier type="increment" field="08db-55ac-6b39-b0e9" value="10">
+<conditions>
+<condition field="selections" scope="d05f-eddd-8d97-d5cd" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="523c-5dd4-3402-0e99" type="atLeast" />
+</conditions>
+</modifier>
+<modifier type="increment" field="08db-55ac-6b39-b0e9" value="3">
+<conditions>
+<condition field="selections" scope="d05f-eddd-8d97-d5cd" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0f74-edec-f682-9a91" type="atLeast" />
+</conditions>
+</modifier>
+<modifier type="increment" field="08db-55ac-6b39-b0e9" value="7">
+<conditions>
+<condition field="selections" scope="d05f-eddd-8d97-d5cd" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fb4f-b267-7556-185d" type="atLeast" />
+</conditions>
+</modifier>
+</modifiers>
 <constraints>
 <constraint field="pts0-0000-0000-0001" scope="self" value="50" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="08db-55ac-6b39-b0e9" type="max" />
 </constraints>
@@ -35619,7 +35394,7 @@ LIMITATIONS - No units with Slow and Purposeful. No Immobile units (e.g. Drop Po
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="87b8-598f-b36b-8f05" type="max" />
 </constraints>
 <costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
+<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
 </entryLink>
 <entryLink id="a377-66fa-76ce-12e4" name="Power Fist" hidden="false" collective="false" import="true" targetId="0b4d-922b-4629-b7ca" type="selectionEntry" sortIndex="7">
@@ -35785,7 +35560,7 @@ LIMITATIONS - No units with Slow and Purposeful. No Immobile units (e.g. Drop Po
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e5b3-63e5-368c-950a" type="max" />
 </constraints>
 <costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
+<cost name="pts" typeId="pts0-0000-0000-0001" value="7" />
 </costs>
 </entryLink>
 <entryLink id="3bf4-f7e0-2575-e427" name="Rending Weapon" hidden="false" collective="false" import="true" targetId="ffab-7f00-50f4-91e0" type="selectionEntry" sortIndex="8">
@@ -35866,6 +35641,14 @@ LIMITATIONS - No units with Slow and Purposeful. No Immobile units (e.g. Drop Po
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
+</costs>
+</entryLink>
+<entryLink id="87d3-8124-0723-961e" name="Caedere Weapon" hidden="false" collective="false" import="true" targetId="0f74-edec-f682-9a91" type="selectionEntry">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2c7d-f290-4c1c-0435" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="3" />
 </costs>
 </entryLink>
 </entryLinks>
@@ -35997,16 +35780,6 @@ LIMITATIONS - No units with Slow and Purposeful. No Immobile units (e.g. Drop Po
 </entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
-<entryLinks>
-<entryLink id="8f36-a672-4c37-902f" name="Caedere Weapon" hidden="false" collective="false" import="true" targetId="0f74-edec-f682-9a91" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d8f0-5689-4a1d-874a" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
-</costs>
-</entryLink>
-</entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
 <entryLinks>
@@ -36595,34 +36368,42 @@ LIMITATIONS - No units with Slow and Purposeful. No Immobile units (e.g. Drop Po
 </selectionEntry>
 </selectionEntries>
 <selectionEntryGroups>
-<selectionEntryGroup id="4bf9-3ad6-203d-3bf2" name="Red Hand Destroyers: replace one Bolt Pistol (1 per 5 models)" hidden="false" collective="false" import="true">
+<selectionEntryGroup id="0481-7150-4fec-175f" name="Red Hand Destroyers: replace one Bolt Pistol (1 per 5 models; 2 per 5 in a Destroyer Company)" hidden="false" collective="false" import="true">
 <modifiers>
-<modifier type="increment" field="21a4-3369-2150-ff9a" value="1">
+<modifier type="increment" field="26b3-39b4-bc49-a485" value="1">
 <repeats>
 <repeat field="selections" scope="56a3-80ca-3374-c69e" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" repeats="1" roundUp="false" />
 </repeats>
 </modifier>
+<modifier type="increment" field="26b3-39b4-bc49-a485" value="1">
+<repeats>
+<repeat field="selections" scope="56a3-80ca-3374-c69e" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" repeats="1" roundUp="false" />
+</repeats>
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="16f3-4196-2250-3a21" type="atLeast" />
+</conditions>
+</modifier>
 </modifiers>
 <constraints>
-<constraint automatic="true" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="21a4-3369-2150-ff9a" type="max" />
+<constraint automatic="true" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="26b3-39b4-bc49-a485" type="max" />
 </constraints>
 <entryLinks>
-<entryLink id="7423-4084-4b69-97a8" name="Volkite Serpenta" hidden="false" collective="false" import="true" targetId="48a3-89aa-47ef-c849" type="selectionEntry">
+<entryLink id="9292-e5a5-8362-d279" name="Volkite Serpenta" hidden="false" collective="false" import="true" targetId="48a3-89aa-47ef-c849" type="selectionEntry">
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
 </costs>
 </entryLink>
-<entryLink id="38d4-35bc-5abd-eded" name="Hand Flamer" hidden="false" collective="false" import="true" targetId="25eb-7e5c-f08a-e9b9" type="selectionEntry">
+<entryLink id="9c8f-4ead-22d3-1b84" name="Hand Flamer" hidden="false" collective="false" import="true" targetId="25eb-7e5c-f08a-e9b9" type="selectionEntry">
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
 </costs>
 </entryLink>
-<entryLink id="e55f-db28-4b22-ce14" name="Plasma Pistol" hidden="false" collective="false" import="true" targetId="523c-5dd4-3402-0e99" type="selectionEntry">
+<entryLink id="e910-2771-6141-cf21" name="Plasma Pistol" hidden="false" collective="false" import="true" targetId="523c-5dd4-3402-0e99" type="selectionEntry">
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
 </costs>
 </entryLink>
-<entryLink id="205d-fbc8-b9d3-0b85" name="Missile Launcher with Suspensor Web and Rad Missiles" hidden="false" collective="false" import="true" targetId="b433-2f89-1970-965a" type="selectionEntry">
+<entryLink id="1567-0d6b-3223-bff1" name="Missile Launcher with Suspensor Web and Rad Missiles" hidden="false" collective="false" import="true" targetId="b433-2f89-1970-965a" type="selectionEntry">
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
 </costs>
@@ -37164,16 +36945,6 @@ LIMITATIONS - No units with Slow and Purposeful. No Immobile units (e.g. Drop Po
 </entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
-<entryLinks>
-<entryLink id="86ce-5640-e2f9-230e" name="Caedere Weapon" hidden="false" collective="false" import="true" targetId="0f74-edec-f682-9a91" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a879-d80d-edd0-c528" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
-</costs>
-</entryLink>
-</entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
 <entryLinks>
@@ -37667,16 +37438,6 @@ LIMITATIONS - No units with Slow and Purposeful. No Immobile units (e.g. Drop Po
 </entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
-<entryLinks>
-<entryLink id="777c-7b7e-52be-2418" name="Caedere Weapon" hidden="false" collective="false" import="true" targetId="0f74-edec-f682-9a91" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f091-6eae-dce4-15be" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
-</costs>
-</entryLink>
-</entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
 <entryLinks>
@@ -38203,16 +37964,6 @@ LIMITATIONS - No units with Slow and Purposeful. No Immobile units (e.g. Drop Po
 </entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
-<entryLinks>
-<entryLink id="7ab9-2e52-071c-f3d4" name="Caedere Weapon" hidden="false" collective="false" import="true" targetId="0f74-edec-f682-9a91" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f577-3c71-2a20-ea76" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
-</costs>
-</entryLink>
-</entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
 <entryLinks>
@@ -39090,16 +38841,6 @@ LIMITATIONS - No units with Slow and Purposeful. No Immobile units (e.g. Drop Po
 </entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
-<entryLinks>
-<entryLink id="a428-80d1-d588-ed02" name="Caedere Weapon" hidden="false" collective="false" import="true" targetId="0f74-edec-f682-9a91" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c230-2c6b-c2a9-4853" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
-</costs>
-</entryLink>
-</entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
 <entryLinks>
@@ -39593,16 +39334,6 @@ LIMITATIONS - No units with Slow and Purposeful. No Immobile units (e.g. Drop Po
 </entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
-<entryLinks>
-<entryLink id="73b2-64fa-3279-3b8c" name="Caedere Weapon" hidden="false" collective="false" import="true" targetId="0f74-edec-f682-9a91" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="18ea-4721-4c91-be55" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
-</costs>
-</entryLink>
-</entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
 <entryLinks>
@@ -40129,16 +39860,6 @@ LIMITATIONS - No units with Slow and Purposeful. No Immobile units (e.g. Drop Po
 </entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
-<entryLinks>
-<entryLink id="3f56-7271-d5f0-2bae" name="Caedere Weapon" hidden="false" collective="false" import="true" targetId="0f74-edec-f682-9a91" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3d23-a31d-e208-1b03" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
-</costs>
-</entryLink>
-</entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
 <entryLinks>
@@ -40663,18 +40384,19 @@ LIMITATIONS - No units with Slow and Purposeful. No Immobile units (e.g. Drop Po
 <cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
 </costs>
 </selectionEntry>
-<selectionEntry id="5281-5b3c-5206-11f6" name="Triarii Breacher Squad" hidden="false" collective="false" import="true" type="unit">
+<selectionEntry id="5281-5b3c-5206-11f6" name="Trarii Breacher Squad" hidden="false" collective="false" import="true" type="unit">
 <infoLinks>
 <infoLink id="fb3c-19a2-6076-2961" name="Legiones Astartes (World Eaters)" hidden="false" targetId="d664-55bf-393e-b5d6" type="rule" />
+<infoLink id="8355-048a-f71f-7891" name="Hardened Armour" hidden="false" targetId="3917-f92f-f23a-1cee" type="rule" />
 </infoLinks>
 <selectionEntries>
-<selectionEntry id="3b7b-e70e-ee81-ae3d" name="Triarii Breacher Champion" hidden="false" collective="false" import="true" type="model">
+<selectionEntry id="9d99-4b90-bbeb-6aab" name="Trarii Breacher Champion" hidden="false" collective="false" import="true" type="model">
 <constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4b5c-8323-3b2e-aefa" type="min" />
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c2ab-33fd-2ace-783e" type="max" />
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="071b-1f2f-f214-006f" type="min" />
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8267-ee13-3a3b-f79d" type="max" />
 </constraints>
 <profiles>
-<profile id="e98f-e7f5-114e-da5a" name="Triarii Breacher Champion" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
+<profile id="39a5-40d1-575d-5f61" name="Trarii Breacher Champion" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
 <characteristics>
 <characteristic name="Unit Type" typeId="b0cf-47d7-3836-cf93">Infantry (Character)</characteristic>
 <characteristic name="WS" typeId="52b0-fc35-42a9-af3d">4</characteristic>
@@ -41113,29 +40835,19 @@ LIMITATIONS - No units with Slow and Purposeful. No Immobile units (e.g. Drop Po
 </entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
-<entryLinks>
-<entryLink id="a7c4-a481-b528-60f0" name="Caedere Weapon" hidden="false" collective="false" import="true" targetId="0f74-edec-f682-9a91" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="97dc-bfd1-8e1b-6a3d" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
-</costs>
-</entryLink>
-</entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
 <entryLinks>
-<entryLink id="5f49-4c52-fdad-18b6" name="Power Armour" hidden="false" collective="false" import="true" targetId="1133-946a-2323-7a81" type="selectionEntry">
+<entryLink id="23cf-f4a5-30fd-ceb2" name="Power Armour" hidden="false" collective="false" import="true" targetId="1133-946a-2323-7a81" type="selectionEntry">
 <constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1fe7-64b1-fd31-0998" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1d0f-9ff5-0cfe-2b8d" type="max" />
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ac1d-2751-57d0-f4bd" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7974-6d6a-47c9-a336" type="max" />
 </constraints>
 </entryLink>
-<entryLink id="fe34-0d76-198f-d72c" name="Boarding Shield" hidden="false" collective="false" import="true" targetId="6d9c-93b7-f35e-12ee" type="selectionEntry">
+<entryLink id="a8c5-b1c7-60f8-ba0c" name="Boarding Shield" hidden="false" collective="false" import="true" targetId="6d9c-93b7-f35e-12ee" type="selectionEntry">
 <constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="88d7-8179-0d39-8414" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7ac1-6d34-bcaf-5d4c" type="max" />
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c33d-df6c-19d2-28ff" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="90bb-012f-7f86-2015" type="max" />
 </constraints>
 </entryLink>
 </entryLinks>
@@ -41143,13 +40855,13 @@ LIMITATIONS - No units with Slow and Purposeful. No Immobile units (e.g. Drop Po
 <cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
 </costs>
 </selectionEntry>
-<selectionEntry id="cca5-1bbc-44a1-3cd5" name="Triarii Breacher" hidden="false" collective="false" import="true" type="model">
+<selectionEntry id="c162-027b-12c1-72bb" name="Trarii Breacher" hidden="false" collective="false" import="true" type="model">
 <constraints>
-<constraint field="selections" scope="parent" value="4" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="be4a-5376-0b86-d391" type="min" />
-<constraint field="selections" scope="parent" value="9" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6eb7-6986-72b0-aa9e" type="max" />
+<constraint field="selections" scope="parent" value="4" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="94f2-6e2c-7763-c77f" type="min" />
+<constraint field="selections" scope="parent" value="9" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8a53-90d9-9201-10c4" type="max" />
 </constraints>
 <profiles>
-<profile id="fb9c-7bcc-f009-73f7" name="Triarii Breacher" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
+<profile id="756c-ca77-535d-8085" name="Trarii Breacher" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
 <characteristics>
 <characteristic name="Unit Type" typeId="b0cf-47d7-3836-cf93">Infantry</characteristic>
 <characteristic name="WS" typeId="52b0-fc35-42a9-af3d">4</characteristic>
@@ -41165,28 +40877,28 @@ LIMITATIONS - No units with Slow and Purposeful. No Immobile units (e.g. Drop Po
 </profile>
 </profiles>
 <entryLinks>
-<entryLink id="78e4-6b81-26e4-a9aa" name="Power Armour" hidden="false" collective="false" import="true" targetId="1133-946a-2323-7a81" type="selectionEntry">
+<entryLink id="5fb4-58e1-d117-7d73" name="Power Armour" hidden="false" collective="false" import="true" targetId="1133-946a-2323-7a81" type="selectionEntry">
 <constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bc68-0baf-f7f8-4240" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="422d-cf29-239c-3fda" type="max" />
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b085-6374-a514-86c3" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6cbb-0f44-3c9b-c38e" type="max" />
 </constraints>
 </entryLink>
-<entryLink id="fe80-2fa3-6c5d-3376" name="Bolt Pistol" hidden="false" collective="false" import="true" targetId="10e2-6917-e765-7495" type="selectionEntry">
+<entryLink id="15c9-c63c-a445-a0d0" name="Bolt Pistol" hidden="false" collective="false" import="true" targetId="10e2-6917-e765-7495" type="selectionEntry">
 <constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9807-0618-244f-61b4" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e323-263a-1ece-9fda" type="max" />
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="22e4-74e7-6999-2883" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="240e-6e09-3c9c-c6cf" type="max" />
 </constraints>
 </entryLink>
-<entryLink id="2d49-b28b-b045-217e" name="Chainaxe" hidden="false" collective="false" import="true" targetId="83c9-472f-b7f4-4e0b" type="selectionEntry">
+<entryLink id="faf2-2671-9baf-80af" name="Chainaxe" hidden="false" collective="false" import="true" targetId="83c9-472f-b7f4-4e0b" type="selectionEntry">
 <constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c11a-42b4-9426-94e2" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4d92-65a2-bae1-d222" type="max" />
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1954-a824-ff88-24fe" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b712-2563-b957-f517" type="max" />
 </constraints>
 </entryLink>
-<entryLink id="f847-37c5-e9d1-666f" name="Boarding Shield" hidden="false" collective="false" import="true" targetId="6d9c-93b7-f35e-12ee" type="selectionEntry">
+<entryLink id="d7e3-cef8-7757-145b" name="Boarding Shield" hidden="false" collective="false" import="true" targetId="6d9c-93b7-f35e-12ee" type="selectionEntry">
 <constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bb31-0d99-715d-edd8" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4789-7513-37b7-06b2" type="max" />
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a4a7-b1cd-3f30-a490" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dbc9-dd45-28b9-dc09" type="max" />
 </constraints>
 </entryLink>
 </entryLinks>
@@ -41242,27 +40954,27 @@ LIMITATIONS - No units with Slow and Purposeful. No Immobile units (e.g. Drop Po
 </selectionEntry>
 </selectionEntries>
 <selectionEntryGroups>
-<selectionEntryGroup id="fded-5c2b-8019-72fb" name="All Triarii Breachers: replace Chainaxe" hidden="false" collective="false" import="true">
+<selectionEntryGroup id="c990-f8fc-70a0-3f98" name="All Trarii Breachers: replace Chainaxe" hidden="false" collective="false" import="true">
 <constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1331-bbf2-83d0-53be" type="max" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d26b-0504-bb67-acda" type="max" />
 </constraints>
 <selectionEntries>
-<selectionEntry id="f2f9-d526-064b-f8c4" name="Caedere Weapon" hidden="false" collective="false" import="true" type="upgrade">
+<selectionEntry id="06cd-09d1-a245-1b69" name="Caedere Weapon" hidden="false" collective="false" import="true" type="upgrade">
 <modifiers>
 <modifier type="increment" field="pts0-0000-0000-0001" value="5">
 <repeats>
-<repeat field="selections" scope="5281-5b3c-5206-11f6" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cca5-1bbc-44a1-3cd5" repeats="1" roundUp="false" />
+<repeat field="selections" scope="5281-5b3c-5206-11f6" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c162-027b-12c1-72bb" repeats="1" roundUp="false" />
 </repeats>
 </modifier>
 </modifiers>
 <constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5b8c-918d-8dd8-8e1a" type="max" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4321-695d-33b1-39dd" type="max" />
 </constraints>
 <entryLinks>
-<entryLink id="7a72-9be2-3c98-f8d2" name="Caedere Weapon" hidden="false" collective="false" import="true" targetId="0f74-edec-f682-9a91" type="selectionEntry">
+<entryLink id="5425-308b-7e19-8918" name="Caedere Weapon" hidden="false" collective="false" import="true" targetId="0f74-edec-f682-9a91" type="selectionEntry">
 <constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5e0e-2a86-a286-5b5b" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c5dd-fd27-9c71-b24e" type="max" />
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="44b7-96df-6f7f-9659" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="345b-22fa-1520-f01a" type="max" />
 </constraints>
 </entryLink>
 </entryLinks>
@@ -41270,22 +40982,22 @@ LIMITATIONS - No units with Slow and Purposeful. No Immobile units (e.g. Drop Po
 <cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
 </costs>
 </selectionEntry>
-<selectionEntry id="e96b-1f7b-05a0-32f1" name="Power Weapon" hidden="false" collective="false" import="true" type="upgrade">
+<selectionEntry id="10ff-59b3-d905-3809" name="Power Weapon" hidden="false" collective="false" import="true" type="upgrade">
 <modifiers>
 <modifier type="increment" field="pts0-0000-0000-0001" value="10">
 <repeats>
-<repeat field="selections" scope="5281-5b3c-5206-11f6" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cca5-1bbc-44a1-3cd5" repeats="1" roundUp="false" />
+<repeat field="selections" scope="5281-5b3c-5206-11f6" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c162-027b-12c1-72bb" repeats="1" roundUp="false" />
 </repeats>
 </modifier>
 </modifiers>
 <constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5aee-102c-dafb-0f75" type="max" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9e62-6a7d-3ce2-caab" type="max" />
 </constraints>
 <entryLinks>
-<entryLink id="4868-d3ed-07b7-b0ed" name="Power Weapon" hidden="false" collective="false" import="true" targetId="fb4f-b267-7556-185d" type="selectionEntry">
+<entryLink id="7b33-1bab-17bf-46cf" name="Power Weapon" hidden="false" collective="false" import="true" targetId="fb4f-b267-7556-185d" type="selectionEntry">
 <constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6667-8c20-114c-688d" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ba1c-1c46-69ac-4578" type="max" />
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5f29-0603-6121-8f62" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="64e7-8471-3558-a8b3" type="max" />
 </constraints>
 </entryLink>
 </entryLinks>
@@ -41294,144 +41006,6 @@ LIMITATIONS - No units with Slow and Purposeful. No Immobile units (e.g. Drop Po
 </costs>
 </selectionEntry>
 </selectionEntries>
-</selectionEntryGroup>
-<selectionEntryGroup id="73bd-f0f0-1b7f-e8c5" name="Dedicated Transport" hidden="false" collective="false" import="true">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="35e7-d053-8811-6453" type="max" />
-</constraints>
-<entryLinks>
-<entryLink id="1719-7ab9-8efc-65f2" name="Legion Rhino Armoured Carrier" hidden="false" collective="false" import="true" targetId="9572-f669-c5f3-b3d0" type="selectionEntry">
-<modifiers>
-<modifier type="add" field="error" value="Too many models for a Legion Rhino Armoured Carrier (capacity 10).">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9572-f669-c5f3-b3d0" type="atLeast" />
-<condition field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-<modifier type="add" field="error" value="A Legion Rhino Armoured Carrier cannot carry models in Terminator Armour.">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9572-f669-c5f3-b3d0" type="atLeast" />
-</conditions>
-<conditionGroups>
-<conditionGroup type="or">
-<conditions>
-<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a6a2-abea-01b2-ad81" type="atLeast" />
-<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d900-78c3-2b10-8f9c" type="atLeast" />
-<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0656-5d6b-29bb-1441" type="atLeast" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-</modifiers>
-</entryLink>
-<entryLink id="2079-18fd-6886-6f89" name="Legion Drop Pod" hidden="false" collective="false" import="true" targetId="4e1c-55bd-1f6c-9584" type="selectionEntry">
-<modifiers>
-<modifier type="add" field="error" value="Too many models for a Legion Drop Pod (capacity 10).">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4e1c-55bd-1f6c-9584" type="atLeast" />
-<condition field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-<modifier type="add" field="error" value="Terminator Armour counts as two models: too many for a Legion Drop Pod (capacity 10).">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4e1c-55bd-1f6c-9584" type="atLeast" />
-<condition field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
-</conditions>
-<conditionGroups>
-<conditionGroup type="or">
-<conditions>
-<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a6a2-abea-01b2-ad81" type="atLeast" />
-<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d900-78c3-2b10-8f9c" type="atLeast" />
-<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0656-5d6b-29bb-1441" type="atLeast" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-</modifiers>
-</entryLink>
-<entryLink id="6a55-4bce-28f1-79e0" name="Anvillus Pattern Dreadclaw Drop Pod" hidden="false" collective="false" import="true" targetId="2bad-68df-db1e-95d9" type="selectionEntry">
-<modifiers>
-<modifier type="add" field="error" value="Too many models for a Anvillus Pattern Dreadclaw Drop Pod (capacity 10).">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2bad-68df-db1e-95d9" type="atLeast" />
-<condition field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-<modifier type="add" field="error" value="Terminator Armour counts as two models: too many for a Anvillus Pattern Dreadclaw Drop Pod (capacity 10).">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2bad-68df-db1e-95d9" type="atLeast" />
-<condition field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
-</conditions>
-<conditionGroups>
-<conditionGroup type="or">
-<conditions>
-<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a6a2-abea-01b2-ad81" type="atLeast" />
-<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d900-78c3-2b10-8f9c" type="atLeast" />
-<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0656-5d6b-29bb-1441" type="atLeast" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-</modifiers>
-</entryLink>
-<entryLink id="e680-4233-87e8-77e1" name="Land Raider Phobos" hidden="false" collective="false" import="true" targetId="368f-8af7-ba1b-d0f6" type="selectionEntry">
-<modifiers>
-<modifier type="add" field="error" value="Too many models for a Land Raider Phobos (capacity 10).">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="368f-8af7-ba1b-d0f6" type="atLeast" />
-<condition field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-<modifier type="add" field="error" value="Terminator Armour counts as two models: too many for a Land Raider Phobos (capacity 10).">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="368f-8af7-ba1b-d0f6" type="atLeast" />
-<condition field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
-</conditions>
-<conditionGroups>
-<conditionGroup type="or">
-<conditions>
-<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a6a2-abea-01b2-ad81" type="atLeast" />
-<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d900-78c3-2b10-8f9c" type="atLeast" />
-<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0656-5d6b-29bb-1441" type="atLeast" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-</modifiers>
-</entryLink>
-</entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
 <costs>
@@ -41594,16 +41168,6 @@ LIMITATIONS - No units with Slow and Purposeful. No Immobile units (e.g. Drop Po
 </entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
-<entryLinks>
-<entryLink id="ec4c-f228-7e27-4fd8" name="Caedere Weapon" hidden="false" collective="false" import="true" targetId="0f74-edec-f682-9a91" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2673-74a8-41ca-9190" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
-</costs>
-</entryLink>
-</entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
 <entryLinks>
@@ -42421,14 +41985,6 @@ LIMITATIONS - No units with Slow and Purposeful. No Immobile units (e.g. Drop Po
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
 </costs>
 </entryLink>
-<entryLink id="efd9-d74e-5f54-25bb" name="Caedere Weapon" hidden="false" collective="false" import="true" targetId="0f74-edec-f682-9a91" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2ffc-299e-9fd9-7f91" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
-</costs>
-</entryLink>
 </entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
@@ -42746,14 +42302,6 @@ LIMITATIONS - No units with Slow and Purposeful. No Immobile units (e.g. Drop Po
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
-</costs>
-</entryLink>
-<entryLink id="0d5c-032a-5ed2-1ea9" name="Caedere Weapon" hidden="false" collective="false" import="true" targetId="0f74-edec-f682-9a91" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2e2b-758d-d16e-fcd2" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
 </costs>
 </entryLink>
 </entryLinks>
@@ -43120,14 +42668,6 @@ LIMITATIONS - No units with Slow and Purposeful. No Immobile units (e.g. Drop Po
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
-</costs>
-</entryLink>
-<entryLink id="370c-f984-d1b9-7b03" name="Caedere Weapon" hidden="false" collective="false" import="true" targetId="0f74-edec-f682-9a91" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b91b-860c-0870-8e13" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
 </costs>
 </entryLink>
 </entryLinks>
@@ -45983,10 +45523,10 @@ Afterwards the squad may not enter Overwatch, may not make Return Fire or Stand 
 <description>World Eaters Infantry, Bike, Jump Infantry and Dreadnought models gain +1 Attack during an Assault phase in which they charged (first round of that close combat only). Whenever a World Eaters unit wins a close combat it gains the Rage special rule (ProHammer 3rd-5th Edition version) for the remainder of the battle. A World Eaters unit which wins a close combat must Pursue a retreating enemy whenever it is permitted to do so; if no Pursuit is possible because the enemy was completely destroyed, it must Consolidate as directly as possible towards the nearest enemy unit.</description>
 </rule>
 <rule id="5df5-8136-ec72-41aa" name="World Eaters Armoury" hidden="false">
-<description>Chainaxe (+4): any World Eaters model eligible to carry a Close Combat Weapon may replace it with a Chainaxe. Caedere Weapon (+15): any World Eaters Independent Character or squad Sergeant with access to the Space Marine Armoury may purchase a Caedere Weapon (Rampager Squads through their own entry).</description>
+<description>Chainaxe (+4): any World Eaters model eligible to carry a Close Combat Weapon may replace it with a Chainaxe (not Servo-automata). Caedere Weapon (+15): any World Eaters Independent Character or squad Sergeant with access to the Space Marine Armoury may replace a Chainsword with a Caedere Weapon; it does not count towards the Armoury points limit and may not be taken by models in Terminator Armour (Rampager Squads gain access through their own entry).</description>
 </rule>
 <rule id="e2c5-fdef-a878-bbcb" name="Caedere Weapon" hidden="false">
-<description>A Caedere Weapon counts as a one-handed close-combat weapon (Strength User +1, Rending). It does not count as a Power Weapon. (Rampager Squad entry: it counts as a Rending Weapon.)</description>
+<description>A Caedere Weapon counts as a one-handed close-combat weapon (Strength User +1, Rending). It does not count as a Power Weapon.</description>
 </rule>
 <rule id="9b41-1d29-7114-637c" name="Berserker Assault" hidden="false">
 <description>EFFECTS - The Red Hand: Rampager Squads may be selected as Troops and may fulfil compulsory Troops; Legion Assault Squads may fulfil compulsory Troops normally. Headlong Assault: World Eaters Infantry and Jump Infantry units gain Fleet (a unit with Fleet may charge after making an Advance move). Weapons of the Pits: models in Legion Assault Squads and Rampager Squads may purchase Chainaxes for +2 points per model instead of +4. Blood Forward: a non-Vehicle World Eaters unit must declare a charge if it is eligible and at least one enemy unit is within its current charge distance (the World Eaters player chooses between legal targets).
@@ -46006,7 +45546,7 @@ LIMITATIONS - No units with Slow and Purposeful. No Immobile units (e.g. Drop Po
 <description>If an Inductii Squad is able to declare a charge during the Assault phase, it must do so. If more than one enemy unit may legally be charged, the World Eaters player chooses the target normally.</description>
 </rule>
 <rule id="1ea8-d18e-cf3c-b1b2" name="Devourers" hidden="false">
-<description>Angron may select one Devourer Terminator Squad as his retinue. If selected in this manner, the Devourers do not occupy a separate Elites choice.</description>
+<description>0-1 Devourer Terminator Squad per Detachment. Angron may select one Devourer Terminator Squad as his retinue. If selected in this manner, the Devourers do not occupy a separate Elites choice.</description>
 </rule>
 <rule id="933a-e94e-ba31-4b45" name="Red Hand Assault Squad" hidden="false">
 <description>If the entire squad takes Jump Packs it becomes Jump Infantry, is renamed a Red Hand Destroyer Assault Squad and may not select a Dedicated Transport.</description>
@@ -46039,10 +45579,10 @@ LIMITATIONS - No units with Slow and Purposeful. No Immobile units (e.g. Drop Po
 <description>Ehrlen may select one Legion Command Squad as his retinue (no separate Force Organisation slot). Every model in it may purchase a Jump Pack for +15 points per model; if so, every model must receive one and the squad may not select a Dedicated Transport.</description>
 </rule>
 <rule id="393b-59fe-ad27-ffda" name="Gladiator Champion" hidden="false">
-<description>Any Triarii Breacher Squad joined by Delvarus becomes Stubborn and gains Furious Charge.</description>
+<description>Any Trarii Breacher Squad joined by Delvarus becomes Stubborn and gains Furious Charge.</description>
 </rule>
 <rule id="4ce1-21bf-1976-6d5e" name="Command Retinue (Delvarus)" hidden="false">
-<description>Delvarus may select one Triarii Breacher Squad as his retinue. It does not occupy a separate Force Organisation slot.</description>
+<description>Delvarus may select one Trarii Breacher Squad as his retinue. It does not occupy a separate Force Organisation slot.</description>
 </rule>
 <rule id="680b-7dd9-8af8-93b4" name="Armour of Mars" hidden="false">
 <description>The Armour of Mars counts as Primarch Armour (1+ Armour Save, 4+ Invulnerable Save).</description>
@@ -46072,7 +45612,7 @@ LIMITATIONS - No units with Slow and Purposeful. No Immobile units (e.g. Drop Po
 <description>Angron may move up to 12" in the Movement phase, moving over intervening models and terrain. He may never join another unit and no model may join him.</description>
 </rule>
 <rule id="f839-a4ca-fc2d-70fb" name="Blades of the Red Angel" hidden="false">
-<description>Count as a pair of Master-crafted Power Weapons; Angron receives the normal +1 Attack for two close-combat weapons. Against Vehicles they have Armourbane. Against Monstrous Creatures and models with Toughness 6 or more, Angron may re-roll failed To Wound rolls.</description>
+<description>The Blades of the Red Angel count as a pair of Master-crafted Power Weapons. Angron receives the normal +1 Attack for fighting with two close-combat weapons. Against Vehicles, attacks made with the Blades of the Red Angel have Armourbane. Against Monstrous Creatures and models with Toughness 6 or greater, Angron may re-roll failed To Wound rolls.</description>
 </rule>
 <rule id="c666-b7c0-ce2e-7a6f" name="Daemonic Armour" hidden="false">
 <description>Angron, the Red Angel has a 2+ Armour Save and a 4+ Invulnerable Save (as shown in his profile).</description>

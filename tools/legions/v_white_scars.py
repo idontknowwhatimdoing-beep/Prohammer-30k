@@ -29,19 +29,20 @@ RULES = {
         "Jetbike Squadrons gain Hit & Run; the unit may only use it if every model, including any attached Independent "
         "Character, is mounted on a Bike or Jetbike. Legion Attack Bike Squadrons do not gain Hit & Run from this rule."),
     "Mounted Brotherhoods": (
-        "Legion Bike Squadrons may be selected as Troops choices in a White Scars Detachment; if so they may fulfil the "
-        "army's compulsory Troops selections. They are otherwise identical to the Legion Bike Squadron entry."),
+        "In a White Scars Detachment Legion Bike Squadrons are always Troops choices and may fulfil the army's compulsory "
+        "Troops selections. They are otherwise identical to the Legion Bike Squadron entry."),
     # Armoury
     "Power Glaive": (
-        "Any White Scars Character able to select a Power Weapon may instead select a Power Glaive for +25 points; a model "
-        "with a Power Weapon as part of its basic wargear may exchange it for +10 points. At the beginning of each Assault "
+        "Any White Scars Character able to select a Power Weapon may instead select a Power Glaive for the cost of a Power "
+        "Weapon for that unit or model +10 points; a model with a Power Weapon as part of its basic wargear may exchange it "
+        "for +10 points. At the beginning of each Assault "
         "phase the bearer chooses how it is wielded (One-Handed: User, Power Weapon; Two-Handed: User +1, Power Weapon, "
         "Two-Handed) for the rest of that Assault phase."),
     "Cavalry Lance": (
         "During the first round of a close combat in which the bearer charged, it receives +1 Initiative; during any round "
         "of close combat in which it did not charge it suffers -1 Initiative. A Chogorian Warlance is a one-handed weapon. "
         "Only White Scars models with access to the Space Marine Armoury mounted on a Bike or Jetbike may purchase it "
-        "(+15 points)."),
+        "(+15 points); it does not count towards the Space Marine Armoury points limit."),
     "Cyber-hawk": (
         "At the beginning of each White Scars turn place the Cyber-hawk marker anywhere on the battlefield (it may be moved "
         "at the beginning of each later White Scars turn). When a White Scars Infantry unit attacks an enemy unit with at "
@@ -76,6 +77,8 @@ RULES = {
         "Hunt: the White Scars player may re-roll Reserve rolls (successful or failed) for units in this Detachment; the "
         "second result stands. Strike and Vanish: a White Scars Bike or Jetbike unit that successfully uses Hit & Run rolls "
         "one additional D6 for its Hit & Run move and discards the lowest.\n"
+        "While this Rite is chosen, a Praetor or Centurion mounted on a Space Marine Bike may upgrade it to a Jetbike for "
+        "+5 points.\n"
         "LIMITATIONS - The Warlord must be mounted on a Space Marine Bike or a Jetbike. The compulsory Troops must be Legion "
         "Bike Squadrons or Legion Sky Hunter Jetbike Squadrons. No more than one Heavy Support choice. If every Bike and "
         "Jetbike unit in the Detachment has been completely destroyed by the end of the battle, the enemy receives an "
@@ -99,8 +102,6 @@ RULES = {
         "After both armies have deployed but before the first game turn, nominate one enemy unit, Vehicle or Fortification "
         "(an Independent Character only if part of another unit). It suffers D6 Strength 5 AP6 hits (against the lowest "
         "Armour Value for Vehicles or Fortifications). Casualties do not cause Morale or Pinning tests."),
-    "Selected as Troops (Mounted Brotherhoods)": (
-        "This Legion Bike Squadron is a Troops choice and may fulfil the compulsory Troops selections."),
     # Characters
     "The Tails of the Dragon": (
         "A pair of Power Weapons; the bonus Attack for two close-combat weapons is included in Qin Xa's profile. At the "
@@ -117,7 +118,9 @@ RULES = {
     "Command Retinue (White Scars Khans)": (
         "The character may select one Legion Command Squad (Hibou Khan and Hasik Noyan-Khan: or one Legion Veteran Squad) "
         "as his retinue; it does not occupy a separate Force Organisation slot. If the character is mounted on a Bike or "
-        "Jetbike, every model in the retinue may purchase a Space Marine Bike for +20 points per model."),
+        "Jetbike, every model in the retinue may purchase a Space Marine Bike for +20 points per model; if the character "
+        "is mounted on a Jetbike, the retinue may instead purchase Jetbikes (+25 points per model). A retinue mounted on "
+        "Bikes or Jetbikes may not take Jump Packs or a Dedicated Transport."),
     "Breath of the Storm": (
         "A Master-crafted Power Weapon: +2 Strength during an Assault phase in which Hibou Khan charged, +1 Strength during "
         "any other Assault phase."),
@@ -220,10 +223,10 @@ def is_character(e):
     return bool(t) and "Character" in t
 
 
-def character_variant(roots, base, new, cost_exchange, cost_other, skip_names=()):
+def character_variant(roots, base, new, extra, skip_names=()):
     """'Any Character able to select <base> may instead select <new>': adds <new> next to every <base> option
-    inside a Character model's own weapon groups. Cost: cost_exchange where <base> is free (basic wargear),
-    cost_other otherwise. Returns the number of links added."""
+    inside a Character model's own weapon groups, for the <base> price in that list + extra (author: always the
+    Power Weapon price +10, so +10 where the Power Weapon is basic wargear). Returns the number of links added."""
     base_id = W(base)
     done = set()
     n = 0
@@ -247,7 +250,7 @@ def character_variant(roots, base, new, cost_exchange, cost_other, skip_names=()
                     cons = []
                     if any(c.get("type") == "max" for c in lk.iter("constraint")):
                         cons = [constraint(uid(nid, "max"), "max", 1, auto=True)]
-                    new_l = link(nid, W(new), new, cost=(cost_exchange if cost == 0 else cost_other) or None,
+                    new_l = link(nid, W(new), new, cost=int(cost + extra) or None,
                                  constraints=cons)
                     if g.get("defaultSelectionEntryId") is not None:
                         new_l.set("sortIndex", str(int(lk.get("sortIndex") or 1) + 100))
@@ -266,10 +269,48 @@ def add_links(grp, key, items, hide=None):
         lid = uid("link", grp.get("id"), key, n)
         mods = []
         if hide:
-            mods = [modifier("set", "hidden", "true", groups=[any_of(*hide)]),
-                    modifier("set", uid(lid, "max"), 0, groups=[any_of(*hide)])]
+            g = [or_group([c for c in hide if c.tag == "condition"], [c for c in hide if c.tag != "condition"])]
+            mods = [modifier("set", "hidden", "true", groups=g), modifier("set", uid(lid, "max"), 0, groups=g)]
         links.append(link(lid, W(n), n, cost=p or None, mods=mods,
                           constraints=[constraint(uid(lid, "max"), "max", 1, auto=True)]))
+
+
+def or_group(conds=(), groups=()):
+    """An 'or' condition group that may contain nested condition groups."""
+    return el("conditionGroup", {"type": "or"}, [wrap("conditions", list(conds)), wrap("conditionGroups", list(groups))])
+
+
+def block(e, max_id, conds=(), groups=()):
+    """Hide an entry/link and set its max to 0 while any of conds/groups is true."""
+    g = [or_group(conds, groups)]
+    add_mods(e, [modifier("set", "hidden", "true", groups=g), modifier("set", max_id, 0, groups=g)])
+
+
+def parent_of(root, child):
+    for p in root.iter():
+        for c in p:
+            if c is child:
+                return p
+    return None
+
+
+def owner_entry(root, node):
+    """The nearest selectionEntry that contains node."""
+    p = parent_of(root, node)
+    while p is not None and p.tag != "selectionEntry":
+        p = parent_of(root, p)
+    return p
+
+
+def warlance_beside_armoury(root, key, hide=None):
+    """Chogorian Warlance (+15) for every model of root that has a Space Marine Armoury group; outside the points cap."""
+    for g in [g for g in root.iter("selectionEntryGroup") if (g.get("name") or "").startswith("Space Marine Armoury")]:
+        owner = owner_entry(root, g)
+        if owner is None:
+            continue
+        ng = group(uid("grp", key, owner.get("id"), "ws-warlance"), "White Scars Wargear")
+        add_links(ng, "ws", [("Chogorian Warlance", 15)], hide=hide)
+        add_group(owner, ng)
 
 
 def find_group(e, name):
@@ -354,21 +395,78 @@ def mobility_group(u):
     return g
 
 
+RETINUE_JETBIKE_COST = 25
+
+
+def jetbike_option(key, unit_id, char_id):
+    """Khan on a Jetbike: the retinue may purchase Jetbikes (entire squad) instead of Space Marine Bikes."""
+    name = "Jetbikes (entire squad)"
+    e = per_model(key, name, RETINUE_JETBIKE_COST, unit_id, ["Jetbike"])
+    block(e, uid(uid("squadwide", key, name), "max"), conds=[lacks(uid(char_id, "jetbike"), char_id)])
+    return e
+
+
 def bike_option(key, unit_id, char_id):
     """'If the character is mounted on a Bike or Jetbike, every model in the retinue may purchase a Space Marine Bike
-    for +20 points per model.'"""
-    e = per_model(key, "Space Marine Bikes (entire squad)", 20, unit_id, ["Space Marine Bike"])
-    no = [lacks(W("Space Marine Bike"), char_id)]
-    add_mods(e, [modifier("set", "hidden", "true", conds=no),
-                 modifier("set", uid(uid("squadwide", key, "Space Marine Bikes (entire squad)"), "max"), 0, conds=no)])
+    for +20 points per model.' (Jetbike Khans: Jetbikes instead)"""
+    name = "Space Marine Bikes (entire squad)"
+    e = per_model(key, name, 20, unit_id, ["Space Marine Bike"])
+    block(e, uid(uid("squadwide", key, name), "max"),
+          conds=[lacks(W("Space Marine Bike"), char_id), has(uid(char_id, "jetbike"), char_id)])
     return e
+
+
+def mounted_blocks(squad, mounted_ids):
+    """Bikes/Jetbikes exclude Jump Packs and a Dedicated Transport (and Jump Packs exclude the mounts)."""
+    sid = squad.get("id")
+    on = [has(m, sid) for m in mounted_ids]
+    tr = find_group(squad, "Dedicated Transport")
+    block(tr, uid_of_max(tr), conds=on)
+    for e in squad.iter("selectionEntry"):
+        if e.get("name") == "Jump Packs (entire squad)":
+            block(e, uid_of_max(e), conds=on)
+            for m in mounted_ids:
+                for x in squad.iter("selectionEntry"):
+                    if x.get("id") == m:
+                        block(x, uid_of_max(x), conds=[has(e.get("id"), sid)])
+
+
+def uid_of_max(e):
+    for c in e.iter("constraint"):
+        if c.get("type") == "max" and c.get("field") == "selections":
+            return c.get("id")
+    raise KeyError(e.get("name"))
 
 
 def veteran_retinue(key, char_id):
     vs = strip_category_mods(clone(L2.veteran_squad(), key))
-    add_to(vs, "selectionEntries", [bike_option(key + "bikes", vs.get("id"), char_id)])
+    bk, jk = key + "bikes", key + "jetbikes"
+    add_to(vs, "selectionEntries", [bike_option(bk, vs.get("id"), char_id), jetbike_option(jk, vs.get("id"), char_id)])
     add_to(vs, "infoLinks", rules_links(["Retinue"], key=key))
+    mounted_blocks(vs, [uid("squadwide", bk, "Space Marine Bikes (entire squad)"),
+                        uid("squadwide", jk, "Jetbikes (entire squad)")])
     return vs
+
+
+def khan_command_squad(key, char_id):
+    """Legion Command Squad for a Khan: its Space Marine Bikes become Jetbikes when the Khan rides a Jetbike."""
+    jk = key + "-jetbikes"
+    cs = command_squad_for(key, char_id)
+    jet = jetbike_option(jk, cs.get("id"), char_id)
+    add_to(cs, "selectionEntries", [jet])
+    for e in cs.iter("selectionEntry"):
+        if e.get("name") == "Space Marine Bikes":
+            block(e, uid(e.get("id"), "max"), conds=[has(uid(char_id, "jetbike"), char_id)])
+    tr = find_group(cs, "Dedicated Transport")
+    block(tr, uid_of_max(tr), conds=[has(jet.get("id"), cs.get("id"))])
+    return cs
+
+
+def talisman_group(key):
+    tid = uid("ws", "horsetail", key)
+    return group(uid("grp", "ws-wargear", key), "White Scars Wargear", entries=[
+        entry(tid, "Horsetail Talisman", cost=25, links=[gear(tid, "Horsetail Talisman")],
+              constraints=[constraint(uid(tid, "max"), "max", 1, auto=True)])])
 
 
 # ------------------------------------------------------------------ units
@@ -382,7 +480,7 @@ def golden_keshig(key="Golden Keshig Squadron", root=True):
     jw, _ = pool(u, "Jetbike Weapons (1 per 3 models, replace Heavy Bolter with Hellfire Rounds)", u,
                  [("Multi-Melta", 10), ("Volkite Culverin", 10)], 0, every=3)
     return entry(u, name, typ="unit", cost=180 - 2 * 55, cats=[foc(FA, "Fast Attack", u)] if root else [],
-                 infolinks=rules_links([LR, "Deep Strike", "Skilled Rider"] + ([] if root else ["Retinue"]), key=u),
+                 infolinks=rules_links([LR, "Deep Strike", "Skilled Rider", "Hit & Run"] + ([] if root else ["Retinue"]), key=u),
                  entries=[champ, keshig, per_model(u, "Krak Grenades (entire squad)", 2, u, ["Krak Grenades"]),
                           per_model(u, "Melta Bombs (entire squad)", 5, u, ["Melta Bombs"])],
                  groups=[jw])
@@ -393,17 +491,24 @@ def ebon_keshig(key="Ebon Keshig", root=True):
     u = uid("unit", key)
     m = model(u, "Ebon Keshig", 45, 5, 10, "Infantry", (5, 4, 4, 4, 1, 5, 3, 9, "2+/5+"),
               ["Terminator Armour", "Dragon Dao"])
+    tr = transports(u, u, ["Land Raider Phobos", "Land Raider Proteus", "Anvillus Pattern Dreadclaw Drop Pod",
+                           "Legion Spartan Assault Tank"], orbital=False)
+    # a squad of more than five may only take the Spartan (Transport Capacity)
+    big = [cond("model", u, "greaterThan", 5)]
+    for lk in tr.iter("entryLink"):
+        if lk.get("name") != "Legion Spartan Assault Tank":
+            mid_ = uid(lk.get("id"), "ws-max")
+            add_to(lk, "constraints", [constraint(mid_, "max", 1, auto=True)])
+            block(lk, mid_, conds=big)
     mods = []
     if root:
         sm = [rite("The Sagyar Mazan")]
         mods = [modifier("set-primary", "category", TROOPS, conds=sm), modifier("remove", "category", ELITES, conds=sm),
                 modifier("add", "category", gs.CAT_LINE, conds=sm)]
-    return entry(u, name, typ="unit", cost=225 - 5 * 45, cats=[foc(ELITES, "Elites", u)] if root else [], mods=mods,
+    e = entry(u, name, typ="unit", cost=225 - 5 * 45, cats=[foc(ELITES, "Elites", u)] if root else [], mods=mods,
                  infolinks=rules_links([LR, "Fearless"] + ([] if root else ["Retinue"]), key=u),
-                 entries=[m],
-                 groups=[transports(u, u, ["Land Raider Phobos", "Land Raider Proteus",
-                                           "Anvillus Pattern Dreadclaw Drop Pod", "Legion Spartan Assault Tank"],
-                                    max_models=5, orbital=False)])
+                 entries=[m], groups=[tr])
+    return allegiance_only(e, loyalist=True)
 
 
 def dark_sons():
@@ -415,11 +520,16 @@ def dark_sons():
     speaker = model(u, "Death Speaker", 0, 1, 1, "Infantry (Character)", (5, 4, 4, 4, 1, 4, 2, 9, "3+"), kit,
                     groups=[take(sid, "Death Speaker Wargear", [("Artificer Armour", 10), ("Phosphex Bomb", 10, 3)]),
                             pa_armoury(sid, u, 10, skip=("Artificer Armour",))])
-    weapons, _ = pool(u, "Destroyer Weapons (1 per 5 models, replace one Bolt Pistol)", u,
-                      [("Volkite Serpenta", 5), ("Hand Flamer", 5), ("Plasma Pistol", 15),
-                       ("Missile Launcher with Suspensor Web and Rad Missiles", 25)], 0, every=5)
+    weapons, wmx = pool(u, "Destroyer Weapons (1 per 5 models, 2 per 5 in a Destroyer Company; replace one Bolt Pistol)",
+                        u, [("Volkite Serpenta", 5), ("Hand Flamer", 5), ("Plasma Pistol", 15),
+                            ("Missile Launcher with Suspensor Web and Rad Missiles", 25)], 0, every=5)
+    add_mods(weapons, [modifier("increment", wmx, 1, conds=[rite("Legion Destroyer Company")],
+                                repeats=[repeat("model", u, 5)])])
+    dc = [rite("Legion Destroyer Company")]
+    role = [modifier("set-primary", "category", TROOPS, conds=dc), modifier("remove", "category", ELITES, conds=dc),
+            modifier("add", "category", gs.CAT_LINE, conds=dc)]
     jp_id = uid("squadwide", u, "Jump Packs (entire squad)")
-    return entry(u, name, typ="unit", cost=200 - 4 * 35, cats=[foc(ELITES, "Elites", u)],
+    return entry(u, name, typ="unit", cost=200 - 4 * 35, cats=[foc(ELITES, "Elites", u)], mods=role,
                  infolinks=rules_links([LR, "Counter-Attack", "Dual Pistols (Destroyers)", "Destroyer Cadre"], key=u),
                  entries=[speaker, sons, per_model(u, "Krak Grenades (entire squad)", 2, u, ["Krak Grenades"]),
                           per_model(u, "Melta Bombs (entire squad)", 5, u, ["Melta Bombs"]),
@@ -459,7 +569,7 @@ def characters():
     out.append(named_character(
         LR, "Qin Xa, Master of the Keshig", 180, (6, 4, 4, 4, 3, 5, 4, 10, "2+/4+"),
         ["Tartaros Terminator Armour", "Iron Halo (Named Character)", "The Tails of the Dragon"],
-        ["Fearless", "Master of the Keshig"],
+        ["Fearless", "Master of the Keshig"], extra_groups=[talisman_group("qinxa")],
         retinue=retinue_links("qinxa", [ebon_keshig("qinxa-ebon", root=False), L2.terminator_command_squad("qinxa")]),
         profile_name="Qin Xa"))
     # Targutai Yesugei (Legion Support Officer)
@@ -469,7 +579,7 @@ def characters():
         ["Artificer Armour", "Refractor Field", "Force Weapon", "Psychic Hood", "Bolt Pistol", "Frag Grenades",
          "Unseen Bolt"],
         ["Psyker", "Adamantium Will", "Legion Support Officer", "Chief Stormseer"], master=False, compulsory=False,
-        extra_groups=[take(y, "Wargear", [("Krak Grenades", 2)]),
+        extra_groups=[take(y, "Wargear", [("Krak Grenades", 2)]), talisman_group("yesugei"),
                       required_choice(y, "Psychic Discipline (one additional power)",
                                       [(d, []) for d in ["Biomancy", "Divination", "Pyromancy", "Telepathy"]])]))
     # Shiban Khan
@@ -478,24 +588,26 @@ def characters():
         LR, "Shiban Khan", 155, (6, 5, 4, 4, 3, 5, 3, 10, "2+/5+"),
         ["Artificer Armour", "Refractor Field", "Power Weapon", "Bolt Pistol", "Frag Grenades"],
         ["Fleet", "Brotherhood of the Storm", "Command Retinue (White Scars Khans)"],
-        retinue=retinue_links("shiban", [command_squad_for("shiban", s)]),
-        extra_groups=[take(s, "Wargear", [("Krak Grenades", 2), ("Melta Bombs", 5)]), mobility_group(s)]))
+        retinue=retinue_links("shiban", [khan_command_squad("shiban", s)]),
+        extra_groups=[take(s, "Wargear", [("Krak Grenades", 2), ("Melta Bombs", 5)]), mobility_group(s),
+                      talisman_group("shiban")]))
     # Hibou Khan
     h = uid("unit", "Hibou Khan")
     out.append(named_character(
         LR, "Hibou Khan", 155, (6, 5, 4, 4, 3, 5, 3, 10, "3+/4+"),
         ["Power Armour", "Iron Halo (Named Character)", "Breath of the Storm", "Bolt Pistol", "Frag Grenades"],
         ["The Seeker of Atonement", "Command Retinue (White Scars Khans)"],
-        retinue=retinue_links("hibou", [command_squad_for("hibou", h), veteran_retinue("hibou-vets", h)]),
-        extra_groups=[take(h, "Wargear", [("Krak Grenades", 2)]), mobility_group(h)]))
+        retinue=retinue_links("hibou", [khan_command_squad("hibou", h), veteran_retinue("hibou-vets", h)]),
+        extra_groups=[take(h, "Wargear", [("Krak Grenades", 2)]), mobility_group(h), talisman_group("hibou")]))
     # Hasik Noyan-Khan (Traitor)
     k = uid("unit", "Hasik Noyan-Khan")
     out.append(named_character(
         LR, "Hasik Noyan-Khan", 175, (6, 5, 4, 4, 3, 5, 4, 10, "2+/4+"),
         ["Artificer Armour", "Iron Halo (Named Character)", "Power Weapon", "Bolt Pistol", "Frag Grenades"],
         ["Stubborn", "Lord of the Horde", "Command Retinue (White Scars Khans)"],
-        retinue=retinue_links("hasik", [command_squad_for("hasik", k), veteran_retinue("hasik-vets", k)]),
-        extra_groups=[take(k, "Wargear", [("Krak Grenades", 2), ("Melta Bombs", 5)]), mobility_group(k)],
+        retinue=retinue_links("hasik", [khan_command_squad("hasik", k), veteran_retinue("hasik-vets", k)]),
+        extra_groups=[take(k, "Wargear", [("Krak Grenades", 2), ("Melta Bombs", 5)]), mobility_group(k),
+                      talisman_group("hasik")],
         loyalist=False))
     return out
 
@@ -533,15 +645,9 @@ def extend(ctx):
     bikes = ctx.unit("Legion Bike Squadron")
     bid = bikes.get("id")
     add_to(bikes, "infoLinks", rules_links(["Hit & Run", "Skilled Rider", "Mounted Brotherhoods"], key=bid + "ws"))
-    tog = uid(bid, "ws-troops")
-    add_to(bikes, "selectionEntries", [entry(tog, "Selected as Troops (Mounted Brotherhoods)",
-                                             constraints=[constraint(uid(tog, "max"), "max", 1, auto=True)],
-                                             infolinks=rules_links(["Selected as Troops (Mounted Brotherhoods)"],
-                                                                   key=tog))])
-    on = [cond(tog, "self", "atLeast", 1)]
-    add_mods(bikes, [modifier("set-primary", "category", TROOPS, conds=on),
-                     modifier("remove", "category", FA, conds=on),
-                     modifier("add", "category", gs.CAT_LINE, conds=on)])
+    # Mounted Brotherhoods: always Troops, may fill the compulsory Troops
+    add_mods(bikes, [modifier("set-primary", "category", TROOPS), modifier("remove", "category", FA),
+                     modifier("add", "category", gs.CAT_LINE)])
     sky = ctx.unit("Legion Sky Hunter Jetbike Squadron")
     add_to(sky, "infoLinks", rules_links(["Hit & Run", "Skilled Rider"], key=sky.get("id") + "ws"))
     ab = ctx.unit("Legion Attack Bike Squadron")
@@ -565,20 +671,18 @@ def extend(ctx):
     ctx.add_units(golden_keshig(), ebon_keshig(), dark_sons(), falcons_claws(), *characters(), jaghatai())
 
     # Armoury: Power Glaive wherever a Character may choose a Power Weapon
-    character_variant(ctx.all_entries(), "Power Weapon", "Power Glaive", 10, 25)
+    character_variant(ctx.all_entries(), "Power Weapon", "Power Glaive", 10)
     # Chogorian Warlance: models with the Armoury mounted on a Bike or Jetbike
-    for n, uid_ in [("Legion Praetor", L.PRAETOR), ("Legion Centurion", L.CENTURION)]:
-        add_links(ic_wargear_group(ctx.unit(n)), "ws", [("Chogorian Warlance", 15)],
-                  hide=[lacks(W("Space Marine Bike"), uid_)])
+    # (outside the Armoury points cap; Praetor/Centurion: in their White Scars Wargear group below)
     for n in ["Legion Bike Squadron", "Legion Sky Hunter Jetbike Squadron"]:
-        for g in ctx.unit(n).iter("selectionEntryGroup"):
-            if g.get("name") == "Space Marine Armoury (max 50 pts)":
-                add_links(g, "ws", [("Chogorian Warlance", 15)])
-    for cs in ctx.retinues("Legion Command Squad"):
-        bike_choice = [e.get("id") for e in cs.iter("selectionEntry") if e.get("name") == "Space Marine Bikes"]
-        for g in cs.iter("selectionEntryGroup"):
-            if g.get("name") == "Space Marine Armoury (max 50 pts)" and bike_choice:
-                add_links(g, "ws", [("Chogorian Warlance", 15)], hide=[lacks(bike_choice[0], cs.get("id"))])
+        warlance_beside_armoury(ctx.unit(n), "ws-" + n)
+    for squad in ctx.retinues("Legion Command Squad") + ctx.retinues("Legion Veteran Squad"):
+        sid = squad.get("id")
+        mounts = [e.get("id") for e in squad.iter("selectionEntry")
+                  if e.get("name") in ("Space Marine Bikes", "Space Marine Bikes (entire squad)",
+                                       "Jetbikes (entire squad)")]
+        if mounts:
+            warlance_beside_armoury(squad, "ws-" + sid, hide=[all_of(*[lacks(m, sid) for m in mounts])])
     # Cyber-hawk (one Praetor) and Horsetail Talisman (one Independent Character)
     for n, uid_ in [("Legion Praetor", L.PRAETOR), ("Legion Centurion", L.CENTURION)]:
         e = ctx.unit(n)
@@ -588,6 +692,11 @@ def extend(ctx):
             ents.append(entry(hid, "Cyber-hawk", cost=10, links=[gear(hid, "Cyber-hawk")],
                               constraints=[constraint(uid(hid, "max"), "max", 1, auto=True),
                                            constraint(uid(hid, "roster"), "max", 1, scope="roster", deep=True)]))
+        lid = uid("ws", "warlance", n)
+        ents.append(entry(lid, "Chogorian Warlance", cost=15, links=[gear(lid, "Chogorian Warlance")],
+                          constraints=[constraint(uid(lid, "max"), "max", 1, auto=True)],
+                          mods=[modifier("set", "hidden", "true", conds=[lacks(W("Space Marine Bike"), uid_)]),
+                                modifier("set", uid(lid, "max"), 0, conds=[lacks(W("Space Marine Bike"), uid_)])]))
         tid = uid("ws", "horsetail", n)
         ents.append(entry(tid, "Horsetail Talisman", cost=25, links=[gear(tid, "Horsetail Talisman")],
                           constraints=[constraint(uid(tid, "max"), "max", 1, auto=True)]))
@@ -596,6 +705,19 @@ def extend(ctx):
     legion = ctx.unit("Legion")
     add_mods(legion, [modifier("add", "error", "Only one Horsetail Talisman may be included in an army.",
                                conds=[cond(W("Horsetail Talisman"), "roster", "greaterThan", 1)])])
+
+    # Chogorian Brotherhood: Praetor/Centurion on a Bike may upgrade to a Jetbike (as under Sky Hunter Phalanx)
+    for key, n in [("praetor", "Legion Praetor"), ("centurion", "Legion Centurion")]:
+        e = ctx.unit(n)
+        jid = uid(key, "jetbike")
+        for x in e.iter("selectionEntry"):
+            if x.get("id") != jid:
+                continue
+            x.set("name", "Upgrade Bike to Jetbike (Sky Hunter Phalanx / Chogorian Brotherhood)")
+            x.remove(x.find("modifiers"))
+            no_rite = all_of(cond(rite_id("Sky Hunter Phalanx"), "force", "lessThan", 1),
+                             cond(rite_id("Chogorian Brotherhood"), "force", "lessThan", 1))
+            block(x, uid(jid, "max"), conds=[lacks(W("Space Marine Bike"), e.get("id"))], groups=[no_rite])
 
     # Rites of War
     ctx.add_rite("Chogorian Brotherhood", RULES["Chogorian Brotherhood"], limit_hs=True)

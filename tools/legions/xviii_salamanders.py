@@ -28,7 +28,7 @@ RULES = {
         "rolls of 1 when firing Flame weapons."),
     "Sturdy": (
         "All Salamanders models with an Initiative characteristic, except Dreadnoughts, suffer -1 Initiative. This "
-        "modifier applies after all other profile modifications (it is NOT already included in the printed profiles). "
+        "modifier applies after all other profile modifications (already included in the profiles shown). "
         "Salamanders units also subtract 1\" from their Fall Back distance, to a minimum of 1\". The Initiative penalty "
         "applies normally when resolving Pursuit."),
     "Never Give Up": (
@@ -44,12 +44,14 @@ RULES = {
         "(normal restrictions apply). ARTIFICER ARMOUR: a Salamanders non-Independent Character with access to the Space "
         "Marine Armoury may purchase Artificer Armour for +15 points even if his unit entry would not normally allow it; "
         "if his own unit entry offers it for less, use that cost. FIRE-BASED WARFARE: Flamers and Heavy Flamers used by "
-        "Salamanders models gain +1 Strength (Dragon's Breath flamers; already included in the profiles). Where a Legion "
+        "Salamanders models gain +1 Strength (Dragon's Breath flamers; already included in the profiles; Hand Flamers "
+        "are S4). Where a Legion "
         "Tactical Squad or Legion Veteran Squad may purchase a Flamer it may instead purchase a Heavy Flamer for +10 "
         "points; Legion Heavy Support Squads may select Heavy Flamers as a Heavy Weapon option for +10 points per model. "
         "INFERNO PISTOL (15): any Salamanders Independent Character or squad Sergeant with access to the Space Marine "
         "Armoury. REINFORCED CERAMITE: any Salamanders Vehicle or Dreadnought which may normally purchase Armoured Ceramite "
-        "may purchase it for +10 points instead (Land Raiders and Spartans pay their normal cost). PROSCRIBED MUNITIONS: "
+        "may purchase it for +10 points instead of its normal points cost (Land Raiders and Spartans pay their normal "
+        "cost). PROSCRIBED MUNITIONS: "
         "a Salamanders Detachment may not select Phosphex weapons or Phosphex ammunition unless a specific unit or "
         "Character entry explicitly states otherwise."),
     "Salamanders Mantle": (
@@ -108,9 +110,8 @@ RULES = {
         "permitted to join Destroyer units."),
     # Named characters
     "Captain of the Pyre Guard": (
-        "Numeon may select one Firedrake Terminator Squad as his personal retinue. One Firedrake in that unit may be "
-        "upgraded to a Firedrake Master at no additional points cost. The squad does not occupy a separate Elites "
-        "selection. Command Retinue: instead of a Firedrake Terminator Squad, Numeon may select a Legion Command Squad or "
+        "Numeon may select one Firedrake Terminator Squad as his personal retinue. The squad does not occupy a "
+        "separate Elites selection. Command Retinue: instead of a Firedrake Terminator Squad, Numeon may select a Legion Command Squad or "
         "Legion Terminator Command Squad."),
     "Vulkan's Heir": "Numeon and any Salamanders unit he has joined may re-roll failed Morale tests.",
     "Lord Chaplain": ("Nomus Rhy'tan counts as a Legion Chaplain Consul for all rules, army construction requirements and "
@@ -239,6 +240,7 @@ DRAGONS_BREATH = {
     "Heavy Flamer": ("Template", "6", "4", "Assault 1"),
     "Twin-linked Flamer": ("Template", "5", "5", "Assault 1, Twin-linked"),
     "Twin-linked Heavy Flamer": ("Template", "6", "4", "Assault 1, Twin-linked"),
+    "Hand Flamer": ("Template", "4", "6", "Pistol"),   # author: Hand Flamers get +1 S too
 }
 PHOSPHEX = ["Phosphex Bomb", "Phosphex Discharger", "Phosphex Canister Shot"]
 
@@ -593,7 +595,7 @@ def legion_armoury(ctx):
             if t in targets and link_cost(lk) == targets[t][0]:
                 set_link_cost(lk, targets[t][1])
             # Reinforced Ceramite
-            if t == ceramite and link_cost(lk) == 20 and not lr_or_spartan:
+            if t == ceramite and link_cost(lk) != 10 and not lr_or_spartan:
                 set_link_cost(lk, 10)
                 lk.set("name", "Armoured Ceramite (Reinforced Ceramite)")
             # Proscribed Munitions
@@ -722,6 +724,23 @@ def rites(ctx):
     ])
 
 
+STURDY_SKIP = {"Servo-automata", "Rapier Carrier"}   # not Salamanders models / no Initiative
+
+
+def sturdy_profiles(ctx):
+    """Sturdy: -1 Initiative on every Salamanders Unit profile (Dreadnoughts use Walker profiles and are skipped)."""
+    ini = gs.char_id("Unit", "I")
+    done = set()
+    for r in ctx.all_entries():
+        for p in r.iter("profile"):
+            if id(p) in done or p.get("typeId") != gs.UNIT or p.get("name") in STURDY_SKIP:
+                continue
+            done.add(id(p))
+            for c in p.iter("characteristic"):
+                if c.get("typeId") == ini and (c.text or "").strip().isdigit():
+                    c.text = str(max(1, int(c.text) - 1))
+
+
 # ------------------------------------------------------------------ extend
 def extend(ctx):
     ctx.legion_rules([LR, "Promethean Cult", "Sturdy", "Never Give Up", "Salamanders Armoury", "Proscribed Munitions"])
@@ -735,3 +754,4 @@ def extend(ctx):
     ctx.add_units(firedrakes(), pyroclasts(), infernus(), adherents(), sanctifiers(), *characters(), vulkan())
     ctx.finish()
     rites(ctx)
+    sturdy_profiles(ctx)

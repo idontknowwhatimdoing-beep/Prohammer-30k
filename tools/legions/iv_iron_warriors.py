@@ -233,7 +233,7 @@ WARGEAR_ = {
         "Grants a 4+ Invulnerable Save. Part of this named character's own wargear; not counted towards the army's normal "
         "limit of one Iron Halo."),
     "The Logos": (
-        "Counts as Primarch Armour and incorporates a Nuncio Vox. In addition, once during each friendly Shooting phase, "
+        "Counts as Primarch Armour and incorporates a Nuncio Vox and a Cortex Controller. In addition, once during each friendly Shooting phase, "
         "one friendly Iron Warriors Heavy Support unit with at least one model within 12\" of Perturabo may re-roll one "
         "failed To Hit roll made with a shooting attack.", ["Primarch Armour"]),
 }

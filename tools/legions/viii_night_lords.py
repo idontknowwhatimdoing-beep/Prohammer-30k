@@ -22,7 +22,7 @@ RULES = {
                                       "table edge they arrive from."),
     "Terror Assault": ("A Night Lords army may exchange two Heavy Support selections for one additional Fast Attack "
                        "selection; the Standard Force Organisation Chart then allows 4 Fast Attack / 1 Heavy Support. "
-                       "(Select the option on the Legion entry.)"),
+                       "(Toggle the option on the Legion entry on or off.)"),
     # armoury
     "Nostraman Chainglaive": "The Nostraman Chainglaive does not count as a Power Weapon.",
     "Stealth Adept": (
@@ -39,7 +39,8 @@ RULES = {
     "Preferred Enemy (Infantry)": "The unit has the Preferred Enemy special rule against Infantry units.",
     "Preferred Enemy (Independent Characters)": ("The model has the Preferred Enemy special rule against Independent "
                                                  "Characters."),
-    "Nostraman Chainblade": "A Nostraman Chainblade is a Two-Handed Rending Weapon which grants +1 Strength.",
+    "Nostraman Chainblade": ("A Nostraman Chainblade is a Two-Handed Rending Weapon which grants +1 Strength. It counts "
+                             "as a Power Weapon (attacks ignore Armour Saves)."),
     "Escaton Power Claw": ("Counts as a Power Fist. In addition, the wielder may re-roll failed To Wound rolls made with "
                            "the Escaton Power Claw."),
     "Teleport Assault": ("An Atramentar Flay-Clade may deploy using Deep Strike even if the mission being played does "
@@ -85,7 +86,6 @@ RULES = {
                          "nor Invulnerable Saves. Cover Saves may be taken normally."),
     "King of Terrors": ("Enemy units with at least one model within 12\" of Konrad Curze suffer -2 Leadership. Models "
                         "and units with Fearless are unaffected."),
-    "Bloody Murder": "Listed in Konrad Curze's special rules; no rule text is given in the army book.",
     "Night Haunter": (
         "Konrad Curze has Stealth and Hit & Run. In the Movement phase he moves as though he were Jump Infantry, despite "
         "not having a Jump Pack. This does not change his Unit Type or grant him Deep Strike, Bulky, Swift or any other "
@@ -97,8 +97,8 @@ RULES = {
         "Disturbance in the Warp) apply normally."),
     "Primarch Retinue (Konrad Curze)": (
         "Konrad Curze may select one Legion Terminator Command Squad, Atramentar Flay-Clade, Night Raptor Squad or "
-        "Terror Squad as his Primarch Retinue (no additional Force Organisation selection). Night Raptor Retinue: a "
-        "Night Raptor Squad selected this way may use his Hit & Run special rule while he remains part of the unit."),
+        "Terror Squad as his Primarch Retinue (no additional Force Organisation selection); it otherwise follows the "
+        "normal Primarch Retinue rules."),
 }
 RULES["Nightmare Mantle"] = "The Nightmare Mantle counts as Primarch Armour (1+ Armour Save, 4+ Invulnerable Save)."
 
@@ -109,15 +109,16 @@ TERROR_ASSAULT_RITE = (
     "benefit from Night Vision. Terror Formations: Night Raptor Squads and Terror Squads may be selected as Troops and "
     "may fulfil compulsory Troops; at least one compulsory Troops selection must be a Night Raptor Squad or Terror "
     "Squad. Terror Attack: after the opposing player has made all Reserve rolls, the Night Lords player may force one "
-    "successful Reserve roll to be re-rolled (second result stands; no die re-rolled more than once). Rapid Strike "
-    "Force: Fast Attack 0-4, Heavy Support 0-1.\n"
+    "successful Reserve roll to be re-rolled (second result stands; no die re-rolled more than once).\n"
     "LIMITATIONS - The Detachment must include at least one Night Raptor Squad or Terror Squad. No more than one Heavy "
     "Support choice. No Fortification.")
 HORROR_CULT_RITE = (
     "EFFECTS - Raptor Cult: Night Raptor Squads may be selected as Troops and may fulfil compulsory Troops; at least one "
     "compulsory Troops selection must be a Night Raptor Squad. Beyond Judgement: any Night Lords Infantry or Jump "
     "Infantry squad may purchase Trophies of Judgement for +25 points per unit; every model counts as equipped (measure "
-    "the 8\" from any model) and the unit gains Fear; penalties from multiple Trophies remain non-cumulative. Vox-Scream "
+    "the 8\" from any model) and the unit gains Fear; penalties from multiple Trophies remain non-cumulative. Squads "
+    "that are already equipped with Trophies of Judgement as a whole (Terror Squads, Night Raptor Squads, Atramentar) "
+    "gain Fear without paying. Vox-Scream "
     "Broadcast: once per battle, at the beginning of any Night Lords player turn, all enemy units suffer -1 Leadership "
     "until the beginning of the next Night Lords player turn (may combine with Trophies of Judgement). The Scent of "
     "Blood: a non-Vehicle Night Lords unit must declare a charge in its Assault phase if it is eligible to charge, an "
@@ -128,7 +129,7 @@ HORROR_CULT_RITE = (
 
 WEAPONS = {
     "Nostraman Chainglaive": ("-", "User +1", "-", "Rending, Two-Handed"),
-    "Nostraman Chainblade": ("-", "User +1", "-", "Rending, Two-Handed"),
+    "Nostraman Chainblade": ("-", "User +1", "-", "Power Weapon, Rending, Two-Handed"),
     "Escaton Power Claw": ("-", "x2", "-", "Power Fist, re-roll failed To Wound rolls"),
     "Night's Whisper": ("-", "6", "-", "Power Weapon, Two-Handed, Master-crafted"),
     "Power Axe": ("-", "User", "-", "Power Weapon"),
@@ -177,6 +178,8 @@ TDA_UNITS = ["Legion Terminator Squad", "Legion Terminator Command Squad", "Cont
 
 def register():
     register_data(rules=RULES, weapons=WEAPONS, weapon_rules=WEAPON_RULES, wargear=WARGEAR)
+    # "Land Raider" Dedicated Transports include the Achilles (author: all Land Raiders)
+    L2.T.setdefault("Land Raider Achilles", uid("transport", "Land Raider Achilles"))
 
 
 # ---------------------------------------------------------------- local helpers
@@ -284,10 +287,69 @@ def krak_melta(key, krak=True, melta=True):
     return take(key, "Options", items)
 
 
+def _is_character_model(m):
+    for c in m.iter("characteristic"):
+        if c.get("name") == "Unit Type" and "Character" in (c.text or ""):
+            return True
+    return False
+
+
+def sergeant_trophies(ctx):
+    """Trophies of Judgement (+10) for squad leaders that have no Space Marine Armoury (where the Armoury exists the
+    item is added to it). Squads already carrying Trophies are skipped."""
+    for r in all_unique(ctx):
+        if r.get("type") != "unit":
+            continue
+        models = [m for m in r.iter("selectionEntry") if m.get("type") == "model"]
+        if len(models) < 2:
+            continue
+        for m in models:
+            if not _is_character_model(m):
+                continue
+            names = {x.get("name") for x in m.iter("entryLink")} | {x.get("name") for x in m.iter("selectionEntry")}
+            groups = {g.get("name") for g in m.iter("selectionEntryGroup")}
+            if "Trophies of Judgement" in names or any(g and "Armoury" in g for g in groups):
+                continue
+            add_to(m, "selectionEntries", [option(m.get("id") + "nl-trophies", "Trophies of Judgement", 10)])
+
+
 # ---------------------------------------------------------------- units
 TDA_RANGED = [("Storm Bolter", 0), ("Foeblaster Boltgun", 5), ("Combi-Flamer", 10), ("Combi-Volkite Charger", 10),
               ("Combi-Meltagun", 15), ("Combi-Plasma Gun", 15)]
 TDA_CC = [("Power Fist", 5), ("Lightning Claw", 5), ("Chainfist", 10), ("Thunder Hammer", 10)]
+
+
+def headsman_armoury(hid, u):
+    """Headsman: listed Chainsword / Bolter replacements (not counted against the cap) merged with his 50-pt Space
+    Marine Armoury, which may replace his Bolt Pistol, Chainsword or Bolter and buy wargear."""
+    listed = {"Chainsword": [("Rending Weapon", 5), ("Power Weapon", 10)], "Bolter": [("Volkite Charger", 10)]}
+    cap = uid("grp", hid, "sgt-armoury")
+    cap_max = uid(cap, "maxpts")
+    groups, cap_mods = [], []
+    for default in ("Bolt Pistol", "Chainsword", "Bolter"):
+        gid = uid("slot", hid, default)
+        dl = uid("link", gid, default)
+        links = [link(dl, W(default), default, constraints=[constraint(uid(dl, "max"), "max", 1)])]
+        ents = []
+        own = listed.get(default, [])
+        for name, pts in own:
+            iid = uid(gid, "listed", name)
+            ents.append(entry(iid, name, cost=pts, constraints=[constraint(uid(iid, "max"), "max", 1, auto=True)],
+                              links=[gear(iid, name)]))
+            # listed options do not count towards the 50-point Armoury cap
+            cap_mods.append(modifier("increment", cap_max, pts, conds=[has(iid, hid)]))
+        for name, pts, *_r in L.PA_SGT_WEAPONS:
+            if name == default or _r[-1] == "pair" or name in [n for n, _ in own]:
+                continue
+            lid = uid("link", gid, name)
+            links.append(link(lid, W(name), name, cost=pts,
+                              constraints=[constraint(uid(lid, "max"), "max", 1, auto=True)]))
+        mn, mx = uid(gid, "min"), uid(gid, "max")
+        groups.append(group(gid, f"Replace {default}", default=dl, links=links, entries=ents,
+                            constraints=[constraint(mn, "min", 1, auto=True), constraint(mx, "max", 1, auto=True)]))
+    groups.append(L.sgt_extra_wargear(hid, u, 10))
+    return group(cap, "Space Marine Armoury (max 50 pts)", groups=groups, mods=cap_mods,
+                 constraints=[constraint(cap_max, "max", 50, scope="self", field=PTS, deep=True)])
 
 
 def terror_squad(key="Terror Squad", root=True):
@@ -299,9 +361,7 @@ def terror_squad(key="Terror Squad", root=True):
                  constraints=[constraint(uid(hid, "min"), "min", 1), constraint(uid(hid, "max"), "max", 1)],
                  profiles=[unit_profile(u, "Headsman", "Infantry (Character)", 5, 4, 4, 4, 1, 4, 3, 9, "3+")],
                  links=[gear(hid, k) for k in kit if k != "Bolt Pistol"],
-                 groups=[slot(hid, "Replace Chainsword", "Chainsword", cc),
-                         slot(hid, "Replace Bolter", "Bolter", [("Volkite Charger", 10)]),
-                         pa_armoury(hid, u, 10, slots=["Bolt Pistol"])])
+                 groups=[headsman_armoury(hid, u)])
     marines = entry(mid, "Terror Marine", typ="model", cost=25,
                     constraints=[constraint(uid(mid, "min"), "min", 4), constraint(uid(mid, "max"), "max", 9)],
                     profiles=[unit_profile(u, "Terror Marine", "Infantry", 5, 4, 4, 4, 1, 4, 2, 9, "3+")],
@@ -318,11 +378,12 @@ def terror_squad(key="Terror Squad", root=True):
                  entries=[head, marines,
                           per_model(u, "Krak Grenades (entire squad)", 2, u, ["Krak Grenades"]),
                           per_model(u, "Melta Bombs (entire squad)", 5, u, ["Melta Bombs"]),
-                          per_model(u, "Stealth Adept (entire squad)", 1, u, ["Stealth Adept"])],
+                          per_model(u, "Stealth Adept (entire squad)", 1, u, ["Stealth Adept"]),
+                          option(u, "Kraken Light Bolts (unit)", 10, item="Kraken Light Bolts")],
                  groups=[*swaps, specials,
                          transports(u, u, ["Legion Rhino Armoured Carrier", "Legion Drop Pod",
                                            "Anvillus Pattern Dreadclaw Drop Pod", "Land Raider Phobos",
-                                           "Land Raider Proteus"])])
+                                           "Land Raider Proteus", "Land Raider Achilles"])])
 
 
 GATES = []   # (group, conditionGroup) gated after the Night Lords Armoury has been added
@@ -388,8 +449,8 @@ def contekar(key="Contekar Terminator Elite", root=True):
                  groups=[model_swaps(u, "Contekar: replace Heavy Flamer (any number)", u, [mid],
                                      [("Volkite Culverin", 10)]), claws,
                          transports(u, u, ["Land Raider Phobos", "Land Raider Proteus",
-                                           "Anvillus Pattern Dreadclaw Drop Pod", "Legion Spartan Assault Tank"],
-                                    orbital=False)])
+                                           "Anvillus Pattern Dreadclaw Drop Pod", "Legion Spartan Assault Tank",
+                                           "Land Raider Achilles"], orbital=False)])
 
 
 def atramentar(key="Atramentar Flay-Clade", root=True):
@@ -412,7 +473,8 @@ def atramentar(key="Atramentar Flay-Clade", root=True):
                  entries=[m], groups=[*swaps, hp,
                                       transports(u, u, ["Land Raider Phobos", "Land Raider Proteus",
                                                         "Anvillus Pattern Dreadclaw Drop Pod",
-                                                        "Legion Spartan Assault Tank"], orbital=False)])
+                                                        "Legion Spartan Assault Tank", "Land Raider Achilles"],
+                                               orbital=False)])
 
 
 # ---------------------------------------------------------------- characters
@@ -468,7 +530,7 @@ def curze():
                         title="Primarch Retinue")
     return primarch(LR, "Konrad Curze, the Night Haunter", 500, (8, 6, 6, 6, 6, 8, 6, 10, "1+/4+"),
                     ["Nightmare Mantle", "Mercy & Forgiveness", "Widowmakers", "Frag Grenades"],
-                    ["Primarch Armour", "Psyker", "King of Terrors", "Bloody Murder", "Night Haunter", "Stealth",
+                    ["Primarch Armour", "Psyker", "King of Terrors", "Night Haunter", "Stealth",
                      "Hit & Run", "Dark Precognition", "Primarch Retinue (Konrad Curze)"],
                     retinue=ret)
 
@@ -478,22 +540,26 @@ def extend(ctx):
     legion = ctx.unit("Legion")
     ctx.legion_rules([LR, "Lords of the Night", "Night Vision", "Terror Made Manifest", "Masters of the Terror Assault",
                       "Terror Assault"])
-    # Terror Assault (Legion rule): exchange two Heavy Support for one Fast Attack (the Rite does the same)
+    # Terror Assault (Legion rule): optional toggle - exchange two Heavy Support for one Fast Attack (4 FA / 1 HS).
+    # The Terror Assault Rite of War only limits Heavy Support to one choice.
     ex = uid("nl", "terror-assault-exchange")
-    rite_on = cond(rite_id("Terror Assault"), "force", "atLeast", 1)
     add_to(legion, "selectionEntries", [entry(
         ex, "Terror Assault: exchange two Heavy Support for one additional Fast Attack (4 FA / 1 HS)",
         constraints=[constraint(uid(ex, "max"), "max", 1, auto=True)],
-        mods=[modifier("set", "hidden", "true", conds=[rite_on]), modifier("set", uid(ex, "max"), 0, conds=[rite_on])],
         infolinks=rules_links(["Terror Assault"], key=ex))])
-    on = any_of(cond(ex, "self", "atLeast", 1), cond(rite_id("Terror Assault"), "force", "atLeast", 1))
-    add_mods(legion, [modifier("add", "category", gs.FOC_PLUS["Fast Attack"], groups=[on]),
-                      modifier("add", "category", gs.CAT_LIMIT_HS, groups=[copy_group(on)])])
+    hs1 = any_of(cond(ex, "self", "atLeast", 1), cond(rite_id("Terror Assault"), "force", "atLeast", 1))
+    add_mods(legion, [modifier("add", "category", gs.FOC_PLUS["Fast Attack"], conds=[cond(ex, "self", "atLeast", 1)]),
+                      modifier("add", "category", gs.CAT_LIMIT_HS, groups=[hs1])])
 
     # units
     GATES.clear()
-    units = [terror_squad(), night_raptors(), contekar(), atramentar(), *characters(), curze()]
+    chars = characters()
+    units = [terror_squad(), night_raptors(), contekar(), atramentar(), *chars, curze()]
     ctx.add_units(*units)
+    ctx.add_shared(L2.land_raider("Land Raider Achilles"))
+    # named characters may buy Stealth Adept (none of them wears Terminator Armour or rides a Bike)
+    for e in chars:
+        add_to(e, "selectionEntries", [option(e.get("id"), "Stealth Adept", 5)])
 
     # Rites of War
     none_nr_terror = [cond(RAPTORS, "force", "lessThan", 1), cond(TERROR, "force", "lessThan", 1)]
@@ -527,6 +593,8 @@ def extend(ctx):
     add_legion_armoury(ctx, [("Trophies of Judgement", 10)], skip_units=("Terror Squad", "Night Raptor Squad"))
     for g, grp in GATES:
         gate_group(g, grp)
+    # every squad leader without Armoury access may still buy Trophies of Judgement
+    sergeant_trophies(ctx)
 
     # Stealth Adept (+1 per model) for Infantry / Jump Infantry squads
     for e in entries_named(ctx, PA_INFANTRY):
@@ -545,8 +613,13 @@ def extend(ctx):
                                               item="Teleportation Transponders")])
     # Horror Cult - Beyond Judgement
     no_cult = cgroup("or", [cond(rite_id("Horror Cult"), "force", "lessThan", 1)])
-    for e in entries_named(ctx, PA_INFANTRY + TDA_UNITS + ["Terror Squad", "Night Raptor Squad",
-                                                           "Atramentar Flay-Clade"]):
+    for e in entries_named(ctx, ["Terror Squad", "Night Raptor Squad", "Atramentar Flay-Clade"]):
+        # already equipped with Trophies as a whole: Fear for free under Horror Cult
+        fl = rules_links(["Fear"], key=uid("nl-bj-free", e.get("id")))
+        for x in fl:
+            add_mods(x, [modifier("set", "hidden", "true", groups=[copy_group(no_cult)])])
+        add_to(e, "infoLinks", fl)
+    for e in entries_named(ctx, PA_INFANTRY + TDA_UNITS):
         bj = uid("nl-bj", e.get("id"))
         o = entry(bj, "Trophies of Judgement (entire squad, Beyond Judgement)", cost=25,
                   constraints=[constraint(uid(bj, "max"), "max", 1, auto=True)],

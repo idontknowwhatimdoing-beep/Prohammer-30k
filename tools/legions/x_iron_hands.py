@@ -45,7 +45,7 @@ RULES = {
         "roll of 6."),
     "Albian Power Gladius": (
         "Any Iron Hands Character with access to the Space Marine Armoury may purchase an Albian Power Gladius for +10 "
-        "points."),
+        "points. It is a weapon and does not count towards the Armoury points limit."),
     # Iron Father
     "Iron Father": (
         "Any Iron Hands Forge Lord Consul may be further upgraded to an Iron Father for +25 points. Wargear: Iron Halo, "
@@ -200,6 +200,7 @@ WARGEAR_ = {
 
 def register():
     ARMY_RULES.update(RULES)
+    T.setdefault("Land Raider Achilles", uid("transport", "Land Raider Achilles"))
     register_data(weapons=WEAPONS_, weapon_rules=WEAPON_RULES_, wargear=WARGEAR_)
     # Bionics in a WARGEAR core-rule list must be a rule name -> give it one
     ARMY_RULES.setdefault("Bionics", "When the model loses its final Wound, leave it on its side. At the start of its "
@@ -400,6 +401,7 @@ def model(u, name, cost, mn, mx, utype, stats, kit, groups=(), rules_=()):
 
 # ------------------------------------------------------------------ units
 IMMORTALS = uid("unit", "Medusan Immortal Squad")
+LAND_RAIDERS = ["Land Raider Phobos", "Land Raider Proteus", "Land Raider Achilles"]
 GORGONS = uid("unit", "Gorgon Terminator Squad")
 MORLOCKS = uid("unit", "Morlock Terminator Squad")
 VFL = uid("unit", "Venerable Forge Lord")
@@ -427,8 +429,7 @@ def immortals():
               groups=[spec, L.one_each(u, "Squad Equipment (different models)", [("Legion Vexilla", 10),
                                                                                    ("Nuncio Vox", 10)]),
                       transports(u, u, ["Legion Rhino Armoured Carrier", "Legion Drop Pod",
-                                        "Anvillus Pattern Dreadclaw Drop Pod", "Land Raider Phobos",
-                                        "Land Raider Proteus"], max_models=10)])
+                                        "Anvillus Pattern Dreadclaw Drop Pod"] + LAND_RAIDERS, max_models=10)])
     del fmax
     return e
 
@@ -461,8 +462,8 @@ def terminator_unit(key, name, model_name, leader_name, per, base_cost, stats, l
         groups.insert(0, model_swaps(u, f"{model_name}s: replace Storm Bolter (any number)", u, [tid], GORGON_RANGED,
                                      minus=minus_ranged))
         groups.insert(1, model_swaps(u, f"{model_name}s: replace Power Weapon (any number)", u, [tid], cc))
-    groups.append(transports(u, u, ["Land Raider Phobos", "Land Raider Proteus", "Anvillus Pattern Dreadclaw Drop Pod",
-                                    "Legion Spartan Assault Tank"], orbital=False))
+    groups.append(transports(u, u, LAND_RAIDERS + ["Anvillus Pattern Dreadclaw Drop Pod", "Legion Spartan Assault Tank"],
+                             orbital=False))
     cons = [force_limit(u, 1)] if (limit and root) else []
     return entry(u, name, typ="unit", cost=base_cost - 4 * per, cats=[foc(cat, "Elites", u)] if root else [],
                  constraints=cons,
@@ -508,7 +509,7 @@ def venerable_forge_lord():
                                                               cond(ccws[1], u, "atLeast", 1))])]))
     return entry(u, "Venerable Forge Lord", typ="unit", cost=155, cats=[foc(ELITES, "Elites", u)],
                  constraints=[force_limit(u, 1)], profiles=[prof],
-                 infolinks=rules_links(["Paired Close-Combat Arms (Venerable Forge Lord)", "Old & Wise", "Hard to Kill", "Auto-Repair Simulacra"],
+                 infolinks=rules_links([LR, "Paired Close-Combat Arms (Venerable Forge Lord)", "Old & Wise", "Hard to Kill", "Auto-Repair Simulacra"],
                                        key=u),
                  links=[gear(u, "Smoke Launchers"), gear(u, "Searchlight")],
                  groups=arms + [take(u, "Vehicle Upgrades", [("Extra Armour", 5)])])
@@ -528,7 +529,7 @@ def characters():
         LR, "Shadrak Meduson", 165, (5, 5, 4, 5, 2, 4, 3, 10, "3+/4+"),
         ["Power Armour", "Iron Halo (Iron Hands)", "Master-crafted Bolter", "Power Weapon", "Bionics", "Mechadendrites",
          "Frag Grenades"],
-        ["Fury of the Survivors", "Command Retinue (Meduson)"],
+        ["Fury of the Survivors", "Command Retinue (Meduson)"], loyalist=True,
         retinue=retinue_links("meduson", [command_squad_for("meduson", MEDUSON)]),
         extra_groups=[take(MEDUSON, "Wargear", [("Krak Grenades", 2), ("Melta Bombs", 5)])]))
     out.append(named_character(
@@ -539,7 +540,7 @@ def characters():
     out.append(named_character(
         LR, "Gabriel Santar", 220, (6, 5, 4, 5, 3, 4, 4, 10, "2+/4+"),
         ["The Iron Aegis", "Iron Aegis Power Claws", "Nuncio Vox", "Mechadendrites", "Servo-Arm"],
-        ["Master of the Morlocks"], min_points=1500,
+        ["Master of the Morlocks"], min_points=1500, loyalist=True,
         retinue=retinue_links("santar", [morlocks("santar-morlocks", root=False)])))
     return out
 
@@ -558,7 +559,7 @@ def ferrus():
                     ["Primarch Armour", "The Gorgon", "Feel No Pain", "Master of the Forge", "Battlesmith",
                      "Forged for War", "Primarch Retinue (Ferrus Manus)"],
                     retinue=primarch_retinue("ferrus", extra=[morlocks("ferrus-morlocks", root=False)]),
-                    profile_name="Ferrus Manus")
+                    profile_name="Ferrus Manus", loyalist=True)
 
 
 # ------------------------------------------------------------------ Legion-wide changes
@@ -568,11 +569,19 @@ SKIP_CHAR = {MEDUSON, AUTEK, SANTAR, FERRUS}
 def more_machine_than_man(ctx):
     """Bionics: 5 points for Characters (and Veteran Sergeants), +3 per model for whole units."""
     n_char = n_unit = 0
+    whole = {r.get("id") for r in everything(ctx) if unit_bionics_ok(r)}
     for r in everything(ctx):
         if r.get("id") in SKIP_CHAR or r.get("name") in ("Legion", "Allegiance", "Rite of War"):
             continue
         for m in model_entries(r):
             if not is_character(m):
+                continue
+            if m is not r and r.get("id") in whole:
+                # the unit-wide +3 option covers the sergeant: no separate Bionics in his Armoury
+                parents = {c: p for p in m.iter() for c in p}
+                for x in list(walk_own(m)):
+                    if x.tag == "entryLink" and x.get("targetId") == W("Bionics"):
+                        parents[x].remove(x)
                 continue
             own = m.find("entryLinks")
             if own is not None and any(x.get("targetId") == W("Bionics") for x in own):
@@ -586,24 +595,30 @@ def more_machine_than_man(ctx):
                 add_group(m, take(uid(m.get("id"), "ih"), "More Machine than Man", [("Bionics", 5)]))
             n_char += 1
         # whole units
-        if r.get("type") != "unit" or r.get("id") in SKIP_CHAR:
+        if r.get("id") not in whole:
             continue
-        if any(p.get("typeName") == "Unit" for p in own_profiles(r)):
-            continue  # single-model characters (Praetor, Centurion, named characters)
-        profs = list(r.iter("profile"))
-        types = [(p.get("typeName"), unit_type_of(p)) for p in profs]
-        unit_types = [ut for tn, ut in types if tn == "Unit"]
-        if not unit_types or any(tn in ("Vehicle", "Walker") for tn, _ in types):
-            continue
-        ok = ("Infantry", "Jump Infantry", "Bike", "Jetbike")
-        if not all(ut.replace(" (Character)", "") in ok for ut in unit_types):
-            continue
-        if r.get("id") in (GORGONS, MORLOCKS) or r.get("name") == "Morlock Terminator Squad":
-            continue  # every model already has Bionics
         u = r.get("id")
         add_entry(r, per_model(u + "ih", "Bionics (entire unit, More Machine than Man)", 3, u, ["Bionics"]))
         n_unit += 1
     return n_char, n_unit
+
+
+def unit_bionics_ok(r):
+    """Multi-model unit made wholly of Infantry, Jump Infantry, Bikes and/or Jetbikes (unit-wide Bionics, +3/model)."""
+    if r.get("type") != "unit" or r.get("id") in SKIP_CHAR:
+        return False
+    if any(p.get("typeName") == "Unit" for p in own_profiles(r)):
+        return False  # single-model characters (Praetor, Centurion, named characters)
+    types = [(p.get("typeName"), unit_type_of(p)) for p in r.iter("profile")]
+    unit_types = [ut for tn, ut in types if tn == "Unit"]
+    if not unit_types or any(tn in ("Vehicle", "Walker") for tn, _ in types):
+        return False
+    ok = ("Infantry", "Jump Infantry", "Bike", "Jetbike")
+    if not all(ut.replace(" (Character)", "") in ok for ut in unit_types):
+        return False
+    if r.get("id") in (GORGONS, MORLOCKS) or r.get("name") == "Morlock Terminator Squad":
+        return False  # every model already has Bionics
+    return True
 
 
 BOLTERS = ["Bolter", "Combi-Bolter", "Twin-linked Bolter", "Combi-Flamer", "Combi-Grenade Launcher", "Combi-Meltagun",
@@ -639,13 +654,16 @@ def splinter_bolts(ctx):
 def armoury(ctx):
     targets = armoury_targets(ctx)
     forge = L.consul_id("Forge Lord")
+    done = set()
     for r, m, g in targets:
         ru = r.get("id")
         hide = [has(W("Jump Pack"), ru)]
         if r.get("name") == "Legion Centurion":
             hide.append(has(forge, ru))
         add_link(g, "servo", "Servo-Arm", 30, hide=hide)
-        add_link(g, "gladius", "Albian Power Gladius", 10)
+        if id(m) not in done:  # a weapon: outside the Armoury points cap
+            done.add(id(m))
+            add_group(m, take(uid(m.get("id"), "ih-gladius"), "Iron Hands Weaponry", [("Albian Power Gladius", 10)]))
         name = m.get("name") or ""
         if r.get("name") in ("Legion Praetor", "Legion Centurion") or "Sergeant" in name:
             add_link(g, "mecha", "Mechadendrites", 15)
@@ -756,7 +774,7 @@ def extend(ctx):
     ctx.legion_rules([LR, "Wisdom of the Omnissiah", "Inexorable Advance", "More Machine than Man",
                       "Servo-Arm (Iron Hands Armoury)", "Dangerous Weaponry"])
     iron_father(ctx)
-    ctx.add_shared(orth_entry())
+    ctx.add_shared(orth_entry(), L2.land_raider("Land Raider Achilles"))
     ctx.add_units(immortals(), gorgons(), morlocks(), venerable_forge_lord(), *characters(), ferrus())
     ctx.finish()  # new retinues become shared entries before the Legion-wide changes below
 

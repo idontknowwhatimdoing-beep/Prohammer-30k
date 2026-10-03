@@ -55,14 +55,9 @@
 <selectionEntry id="ddfd-5b26-3ecb-564c" name="Legion" hidden="false" collective="false" import="true" type="upgrade">
 <modifiers>
 <modifier type="add" field="category" value="f74f-7be9-3cd6-9617">
-<conditionGroups>
-<conditionGroup type="or">
 <conditions>
 <condition field="selections" scope="self" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="566e-9837-c7cc-b87d" type="atLeast" />
-<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9220-ccf2-3203-abd6" type="atLeast" />
 </conditions>
-</conditionGroup>
-</conditionGroups>
 </modifier>
 <modifier type="add" field="category" value="006c-5d7a-c1ea-e594">
 <conditionGroups>
@@ -115,18 +110,6 @@
 </selectionEntryGroups>
 <selectionEntries>
 <selectionEntry id="566e-9837-c7cc-b87d" name="Terror Assault: exchange two Heavy Support for one additional Fast Attack (4 FA / 1 HS)" hidden="false" collective="false" import="true" type="upgrade">
-<modifiers>
-<modifier type="set" field="hidden" value="true">
-<conditions>
-<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9220-ccf2-3203-abd6" type="atLeast" />
-</conditions>
-</modifier>
-<modifier type="set" field="5c7a-aa13-c31b-20a6" value="0">
-<conditions>
-<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9220-ccf2-3203-abd6" type="atLeast" />
-</conditions>
-</modifier>
-</modifiers>
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5c7a-aa13-c31b-20a6" type="max" />
 </constraints>
@@ -8033,7 +8016,7 @@ LIMITATIONS - No other Lord of War; no Allied Detachment; no more than one other
 </modifiers>
 <rules>
 <rule id="f2fe-97e2-65c4-810b" name="Terror Assault" hidden="false">
-<description>EFFECTS - Cover of Darkness: the first Battle Round is fought using the Night Fighting rules; at the beginning of the second Battle Round roll a D6, on a 3+ Night Fighting remains in effect; if it did, at the beginning of the third Battle Round it remains on a 6; it always ends at the beginning of the fourth Battle Round. Night Lords units benefit from Night Vision. Terror Formations: Night Raptor Squads and Terror Squads may be selected as Troops and may fulfil compulsory Troops; at least one compulsory Troops selection must be a Night Raptor Squad or Terror Squad. Terror Attack: after the opposing player has made all Reserve rolls, the Night Lords player may force one successful Reserve roll to be re-rolled (second result stands; no die re-rolled more than once). Rapid Strike Force: Fast Attack 0-4, Heavy Support 0-1.
+<description>EFFECTS - Cover of Darkness: the first Battle Round is fought using the Night Fighting rules; at the beginning of the second Battle Round roll a D6, on a 3+ Night Fighting remains in effect; if it did, at the beginning of the third Battle Round it remains on a 6; it always ends at the beginning of the fourth Battle Round. Night Lords units benefit from Night Vision. Terror Formations: Night Raptor Squads and Terror Squads may be selected as Troops and may fulfil compulsory Troops; at least one compulsory Troops selection must be a Night Raptor Squad or Terror Squad. Terror Attack: after the opposing player has made all Reserve rolls, the Night Lords player may force one successful Reserve roll to be re-rolled (second result stands; no die re-rolled more than once).
 LIMITATIONS - The Detachment must include at least one Night Raptor Squad or Terror Squad. No more than one Heavy Support choice. No Fortification.</description>
 </rule>
 </rules>
@@ -8058,7 +8041,7 @@ LIMITATIONS - The Detachment must include at least one Night Raptor Squad or Ter
 </modifiers>
 <rules>
 <rule id="6a9b-cd16-602f-431f" name="Horror Cult" hidden="false">
-<description>EFFECTS - Raptor Cult: Night Raptor Squads may be selected as Troops and may fulfil compulsory Troops; at least one compulsory Troops selection must be a Night Raptor Squad. Beyond Judgement: any Night Lords Infantry or Jump Infantry squad may purchase Trophies of Judgement for +25 points per unit; every model counts as equipped (measure the 8" from any model) and the unit gains Fear; penalties from multiple Trophies remain non-cumulative. Vox-Scream Broadcast: once per battle, at the beginning of any Night Lords player turn, all enemy units suffer -1 Leadership until the beginning of the next Night Lords player turn (may combine with Trophies of Judgement). The Scent of Blood: a non-Vehicle Night Lords unit must declare a charge in its Assault phase if it is eligible to charge, an enemy unit is within its current charge distance and that unit is a legal charge target (the player chooses among several; never an illegal charge).
+<description>EFFECTS - Raptor Cult: Night Raptor Squads may be selected as Troops and may fulfil compulsory Troops; at least one compulsory Troops selection must be a Night Raptor Squad. Beyond Judgement: any Night Lords Infantry or Jump Infantry squad may purchase Trophies of Judgement for +25 points per unit; every model counts as equipped (measure the 8" from any model) and the unit gains Fear; penalties from multiple Trophies remain non-cumulative. Squads that are already equipped with Trophies of Judgement as a whole (Terror Squads, Night Raptor Squads, Atramentar) gain Fear without paying. Vox-Scream Broadcast: once per battle, at the beginning of any Night Lords player turn, all enemy units suffer -1 Leadership until the beginning of the next Night Lords player turn (may combine with Trophies of Judgement). The Scent of Blood: a non-Vehicle Night Lords unit must declare a charge in its Assault phase if it is eligible to charge, an enemy unit is within its current charge distance and that unit is a legal charge target (the player chooses among several; never an illegal charge).
 LIMITATIONS - Traitor Night Lords Detachment only. No Fortification. Night Lords units may not voluntarily withdraw from close combat.</description>
 </rule>
 </rules>
@@ -10772,6 +10755,22 @@ LIMITATIONS - Traitor Night Lords Detachment only. No Fortification. Night Lords
 <cost name="pts" typeId="pts0-0000-0000-0001" value="12" />
 </costs>
 </selectionEntry>
+<selectionEntry id="4048-c924-5cc1-c929" name="Trophies of Judgement" hidden="false" collective="false" import="true" type="upgrade">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bb81-01b0-d372-d350" type="max" />
+</constraints>
+<entryLinks>
+<entryLink id="fbc8-edaf-98dd-4c5b" name="Trophies of Judgement" hidden="false" collective="false" import="true" targetId="51e4-aa76-a175-a3bf" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4123-94ce-7abc-00f5" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f45e-a515-4fa1-44a6" type="max" />
+</constraints>
+</entryLink>
+</entryLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
+</costs>
+</selectionEntry>
 </selectionEntries>
 <selectionEntryGroups>
 <selectionEntryGroup id="ca89-e2cf-b4e5-d9ef" name="Wargear" hidden="false" collective="false" import="true">
@@ -11167,6 +11166,22 @@ LIMITATIONS - Traitor Night Lords Detachment only. No Fortification. Night Lords
 <cost name="pts" typeId="pts0-0000-0000-0001" value="12" />
 </costs>
 </selectionEntry>
+<selectionEntry id="a4f1-a7a7-a4b2-7bd0" name="Trophies of Judgement" hidden="false" collective="false" import="true" type="upgrade">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5066-94ec-e85d-e897" type="max" />
+</constraints>
+<entryLinks>
+<entryLink id="357e-c68a-2e92-383d" name="Trophies of Judgement" hidden="false" collective="false" import="true" targetId="51e4-aa76-a175-a3bf" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="52c9-348f-f5ce-d73f" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c9c9-e7d2-23fb-822b" type="max" />
+</constraints>
+</entryLink>
+</entryLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
+</costs>
+</selectionEntry>
 </selectionEntries>
 <selectionEntryGroups>
 <selectionEntryGroup id="d313-20b0-cfaf-aed4" name="Wargear" hidden="false" collective="false" import="true">
@@ -11560,6 +11575,22 @@ LIMITATIONS - Traitor Night Lords Detachment only. No Fortification. Night Lords
 </entryLinks>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="12" />
+</costs>
+</selectionEntry>
+<selectionEntry id="f6c4-9bc5-69b9-4406" name="Trophies of Judgement" hidden="false" collective="false" import="true" type="upgrade">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4064-dc87-560e-5bb5" type="max" />
+</constraints>
+<entryLinks>
+<entryLink id="dd9b-3f55-7a71-18a1" name="Trophies of Judgement" hidden="false" collective="false" import="true" targetId="51e4-aa76-a175-a3bf" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1be0-e81e-7eaf-8061" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f0a5-ed52-9aaf-05f9" type="max" />
+</constraints>
+</entryLink>
+</entryLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
 </selectionEntry>
 </selectionEntries>
@@ -22175,6 +22206,19 @@ LIMITATIONS - Traitor Night Lords Detachment only. No Fortification. Night Lords
 <infoLink id="2772-f003-a6d6-cc16" name="Infiltrate" hidden="false" targetId="ad57-6634-e426-3e1c" type="rule" />
 <infoLink id="c978-10a3-d0bd-ca81" name="Preferred Enemy (Infantry)" hidden="false" targetId="5a90-eee2-01f0-5b47" type="rule" />
 <infoLink id="71e5-34ec-a5f4-41e3" name="Preferred Enemy" hidden="false" targetId="17b8-dd24-3326-9022" type="rule" />
+<infoLink id="c803-dc27-577c-34b0" name="Fear" hidden="false" targetId="a68f-1456-3d88-39b5" type="rule">
+<modifiers>
+<modifier type="set" field="hidden" value="true">
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="88ec-1ae0-3620-ed91" type="lessThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+</modifiers>
+</infoLink>
 </infoLinks>
 <categoryLinks>
 <categoryLink id="54fc-6332-aea8-266c" name="Elites" hidden="false" targetId="6b19-97ac-7c40-0bdf" primary="true" />
@@ -22202,40 +22246,24 @@ LIMITATIONS - Traitor Night Lords Detachment only. No Fortification. Night Lords
 </profile>
 </profiles>
 <selectionEntryGroups>
-<selectionEntryGroup id="412e-8b54-a9aa-e6bb" name="Replace Chainsword" hidden="false" collective="false" import="true" defaultSelectionEntryId="e300-2a3d-51dc-1fd7">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3188-cdcc-4aa1-580c" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cd2f-0ddf-5fe4-0524" type="max" />
-</constraints>
-<entryLinks>
-<entryLink id="e300-2a3d-51dc-1fd7" name="Chainsword" hidden="false" collective="false" import="true" targetId="3f81-4517-73f5-ceb7" type="selectionEntry" sortIndex="1" defaultAmount="1" />
-<entryLink id="5fc4-00e1-ede5-8903" name="Rending Weapon" hidden="false" collective="false" import="true" targetId="ffab-7f00-50f4-91e0" type="selectionEntry" sortIndex="3">
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
-</costs>
-</entryLink>
-<entryLink id="e2a9-7398-d2ec-d4ad" name="Power Weapon" hidden="false" collective="false" import="true" targetId="fb4f-b267-7556-185d" type="selectionEntry" sortIndex="4">
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
-</costs>
-</entryLink>
-</entryLinks>
-</selectionEntryGroup>
-<selectionEntryGroup id="ad36-f953-695d-6b0e" name="Replace Bolter" hidden="false" collective="false" import="true" defaultSelectionEntryId="d99d-5c45-e4f0-b17e">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dc2d-a483-50ac-ab7e" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b699-282b-9019-62b8" type="max" />
-</constraints>
-<entryLinks>
-<entryLink id="d99d-5c45-e4f0-b17e" name="Bolter" hidden="false" collective="false" import="true" targetId="8b6f-ff45-9e8a-0d7e" type="selectionEntry" sortIndex="1" defaultAmount="1" />
-<entryLink id="c1f2-989a-3644-5886" name="Volkite Charger" hidden="false" collective="false" import="true" targetId="f7ae-d359-d2ff-f5af" type="selectionEntry" sortIndex="3">
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
-</costs>
-</entryLink>
-</entryLinks>
-</selectionEntryGroup>
 <selectionEntryGroup id="91ae-5dc0-d0f1-625b" name="Space Marine Armoury (max 50 pts)" hidden="false" collective="false" import="true">
+<modifiers>
+<modifier type="increment" field="48ac-f24a-0ebe-fef7" value="5">
+<conditions>
+<condition field="selections" scope="e674-cd82-f6bf-1863" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3842-1220-596e-c3e4" type="atLeast" />
+</conditions>
+</modifier>
+<modifier type="increment" field="48ac-f24a-0ebe-fef7" value="10">
+<conditions>
+<condition field="selections" scope="e674-cd82-f6bf-1863" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="570a-4cb3-ff04-9601" type="atLeast" />
+</conditions>
+</modifier>
+<modifier type="increment" field="48ac-f24a-0ebe-fef7" value="10">
+<conditions>
+<condition field="selections" scope="e674-cd82-f6bf-1863" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ba42-afe3-ad01-497d" type="atLeast" />
+</conditions>
+</modifier>
+</modifiers>
 <constraints>
 <constraint field="pts0-0000-0000-0001" scope="self" value="50" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="48ac-f24a-0ebe-fef7" type="max" />
 </constraints>
@@ -22267,15 +22295,7 @@ LIMITATIONS - Traitor Night Lords Detachment only. No Fortification. Night Lords
 <cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
 </costs>
 </entryLink>
-<entryLink id="518b-9186-9c7e-e356" name="Pair of Lightning Claws" hidden="false" collective="false" import="true" targetId="af2b-d487-5b80-ae9b" type="selectionEntry" sortIndex="5">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="64a3-9860-cf4e-5efd" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
-</costs>
-</entryLink>
-<entryLink id="3e55-edf0-3b3c-7af0" name="Plasma Pistol" hidden="false" collective="false" import="true" targetId="523c-5dd4-3402-0e99" type="selectionEntry" sortIndex="6">
+<entryLink id="3e55-edf0-3b3c-7af0" name="Plasma Pistol" hidden="false" collective="false" import="true" targetId="523c-5dd4-3402-0e99" type="selectionEntry" sortIndex="5">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cf96-8694-904c-eebc" type="max" />
 </constraints>
@@ -22283,7 +22303,7 @@ LIMITATIONS - Traitor Night Lords Detachment only. No Fortification. Night Lords
 <cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
 </costs>
 </entryLink>
-<entryLink id="7ecb-eb49-e72e-ed36" name="Power Fist" hidden="false" collective="false" import="true" targetId="0b4d-922b-4629-b7ca" type="selectionEntry" sortIndex="7">
+<entryLink id="7ecb-eb49-e72e-ed36" name="Power Fist" hidden="false" collective="false" import="true" targetId="0b4d-922b-4629-b7ca" type="selectionEntry" sortIndex="6">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d2b9-5c68-9592-2069" type="max" />
 </constraints>
@@ -22291,7 +22311,7 @@ LIMITATIONS - Traitor Night Lords Detachment only. No Fortification. Night Lords
 <cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
 </costs>
 </entryLink>
-<entryLink id="5bbe-29e1-4bd5-1f6d" name="Power Weapon" hidden="false" collective="false" import="true" targetId="fb4f-b267-7556-185d" type="selectionEntry" sortIndex="8">
+<entryLink id="5bbe-29e1-4bd5-1f6d" name="Power Weapon" hidden="false" collective="false" import="true" targetId="fb4f-b267-7556-185d" type="selectionEntry" sortIndex="7">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="52a6-5c30-6b09-4b47" type="max" />
 </constraints>
@@ -22299,7 +22319,7 @@ LIMITATIONS - Traitor Night Lords Detachment only. No Fortification. Night Lords
 <cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
 </costs>
 </entryLink>
-<entryLink id="2a25-76e2-34ce-2b70" name="Rending Weapon" hidden="false" collective="false" import="true" targetId="ffab-7f00-50f4-91e0" type="selectionEntry" sortIndex="9">
+<entryLink id="2a25-76e2-34ce-2b70" name="Rending Weapon" hidden="false" collective="false" import="true" targetId="ffab-7f00-50f4-91e0" type="selectionEntry" sortIndex="8">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8071-2e22-fbbd-fcd4" type="max" />
 </constraints>
@@ -22307,7 +22327,7 @@ LIMITATIONS - Traitor Night Lords Detachment only. No Fortification. Night Lords
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
 </costs>
 </entryLink>
-<entryLink id="0b64-97d9-8529-d995" name="Thunder Hammer" hidden="false" collective="false" import="true" targetId="5dfe-22a3-22b6-fb7c" type="selectionEntry" sortIndex="10">
+<entryLink id="0b64-97d9-8529-d995" name="Thunder Hammer" hidden="false" collective="false" import="true" targetId="5dfe-22a3-22b6-fb7c" type="selectionEntry" sortIndex="9">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4db1-b9dc-3234-7a25" type="max" />
 </constraints>
@@ -22315,7 +22335,7 @@ LIMITATIONS - Traitor Night Lords Detachment only. No Fortification. Night Lords
 <cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
 </costs>
 </entryLink>
-<entryLink id="6baa-ac77-97ba-a81b" name="Volkite Serpenta" hidden="false" collective="false" import="true" targetId="48a3-89aa-47ef-c849" type="selectionEntry" sortIndex="11">
+<entryLink id="6baa-ac77-97ba-a81b" name="Volkite Serpenta" hidden="false" collective="false" import="true" targetId="48a3-89aa-47ef-c849" type="selectionEntry" sortIndex="10">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="01a2-7405-70a4-8e2a" type="max" />
 </constraints>
@@ -22323,7 +22343,7 @@ LIMITATIONS - Traitor Night Lords Detachment only. No Fortification. Night Lords
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
 </costs>
 </entryLink>
-<entryLink id="11cf-84f9-0369-6243" name="Combi-Bolter" hidden="false" collective="false" import="true" targetId="5d48-9963-61d3-1a72" type="selectionEntry" sortIndex="12">
+<entryLink id="11cf-84f9-0369-6243" name="Combi-Bolter" hidden="false" collective="false" import="true" targetId="5d48-9963-61d3-1a72" type="selectionEntry" sortIndex="11">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6c5f-74ed-ba14-333d" type="max" />
 </constraints>
@@ -22331,7 +22351,7 @@ LIMITATIONS - Traitor Night Lords Detachment only. No Fortification. Night Lords
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
 </costs>
 </entryLink>
-<entryLink id="f4fb-1726-4d76-a843" name="Combi-Flamer" hidden="false" collective="false" import="true" targetId="8a4e-3dc8-c0e4-b9cf" type="selectionEntry" sortIndex="13">
+<entryLink id="f4fb-1726-4d76-a843" name="Combi-Flamer" hidden="false" collective="false" import="true" targetId="8a4e-3dc8-c0e4-b9cf" type="selectionEntry" sortIndex="12">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="987d-5c22-eeb3-4a91" type="max" />
 </constraints>
@@ -22339,7 +22359,7 @@ LIMITATIONS - Traitor Night Lords Detachment only. No Fortification. Night Lords
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
 </entryLink>
-<entryLink id="cc6c-9158-4eca-6a40" name="Combi-Grenade Launcher" hidden="false" collective="false" import="true" targetId="53ca-71d4-e838-5ab2" type="selectionEntry" sortIndex="14">
+<entryLink id="cc6c-9158-4eca-6a40" name="Combi-Grenade Launcher" hidden="false" collective="false" import="true" targetId="53ca-71d4-e838-5ab2" type="selectionEntry" sortIndex="13">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4feb-3694-6ca0-2566" type="max" />
 </constraints>
@@ -22347,7 +22367,7 @@ LIMITATIONS - Traitor Night Lords Detachment only. No Fortification. Night Lords
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
 </entryLink>
-<entryLink id="9598-ba54-fd51-e939" name="Combi-Meltagun" hidden="false" collective="false" import="true" targetId="b147-b586-15e9-f12b" type="selectionEntry" sortIndex="15">
+<entryLink id="9598-ba54-fd51-e939" name="Combi-Meltagun" hidden="false" collective="false" import="true" targetId="b147-b586-15e9-f12b" type="selectionEntry" sortIndex="14">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ab34-2b82-8321-6a86" type="max" />
 </constraints>
@@ -22355,7 +22375,7 @@ LIMITATIONS - Traitor Night Lords Detachment only. No Fortification. Night Lords
 <cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
 </costs>
 </entryLink>
-<entryLink id="b83a-b5dc-2fb0-c307" name="Combi-Plasma Gun" hidden="false" collective="false" import="true" targetId="e700-2c4d-9283-a7b7" type="selectionEntry" sortIndex="16">
+<entryLink id="b83a-b5dc-2fb0-c307" name="Combi-Plasma Gun" hidden="false" collective="false" import="true" targetId="e700-2c4d-9283-a7b7" type="selectionEntry" sortIndex="15">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ea2f-294f-646b-cae1" type="max" />
 </constraints>
@@ -22363,7 +22383,7 @@ LIMITATIONS - Traitor Night Lords Detachment only. No Fortification. Night Lords
 <cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
 </costs>
 </entryLink>
-<entryLink id="dc16-a257-63f0-fd1c" name="Combi-Volkite Charger" hidden="false" collective="false" import="true" targetId="2125-78bc-6ae3-2391" type="selectionEntry" sortIndex="17">
+<entryLink id="dc16-a257-63f0-fd1c" name="Combi-Volkite Charger" hidden="false" collective="false" import="true" targetId="2125-78bc-6ae3-2391" type="selectionEntry" sortIndex="16">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6b67-8dff-3adc-04cc" type="max" />
 </constraints>
@@ -22371,9 +22391,311 @@ LIMITATIONS - Traitor Night Lords Detachment only. No Fortification. Night Lords
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
 </entryLink>
-<entryLink id="4104-a415-5ed3-a9a8" name="Storm Bolter" hidden="false" collective="false" import="true" targetId="4c92-8660-bb6b-730f" type="selectionEntry" sortIndex="18">
+<entryLink id="4104-a415-5ed3-a9a8" name="Storm Bolter" hidden="false" collective="false" import="true" targetId="4c92-8660-bb6b-730f" type="selectionEntry" sortIndex="17">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7d12-fd9e-6454-becf" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
+</costs>
+</entryLink>
+</entryLinks>
+</selectionEntryGroup>
+<selectionEntryGroup id="fecb-5eea-2afb-4c23" name="Replace Chainsword" hidden="false" collective="false" import="true" defaultSelectionEntryId="41f6-f8d9-8f89-4e3b">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0f42-fffa-95bd-5851" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3c68-aa09-8b3c-f3a4" type="max" />
+</constraints>
+<selectionEntries>
+<selectionEntry id="3842-1220-596e-c3e4" name="Rending Weapon" hidden="false" collective="false" import="true" type="upgrade" sortIndex="2">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="09f4-0e16-d627-b7d2" type="max" />
+</constraints>
+<entryLinks>
+<entryLink id="a83e-ff9d-2199-1057" name="Rending Weapon" hidden="false" collective="false" import="true" targetId="ffab-7f00-50f4-91e0" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a560-1dba-411d-e296" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="80d0-ce0e-c2ed-ff43" type="max" />
+</constraints>
+</entryLink>
+</entryLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
+</costs>
+</selectionEntry>
+<selectionEntry id="570a-4cb3-ff04-9601" name="Power Weapon" hidden="false" collective="false" import="true" type="upgrade" sortIndex="3">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="498a-60cb-25b3-02e9" type="max" />
+</constraints>
+<entryLinks>
+<entryLink id="3cc0-6215-a533-c129" name="Power Weapon" hidden="false" collective="false" import="true" targetId="fb4f-b267-7556-185d" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8438-a35e-e5d1-b24e" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="05ca-7e15-c281-e3e4" type="max" />
+</constraints>
+</entryLink>
+</entryLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
+</costs>
+</selectionEntry>
+</selectionEntries>
+<entryLinks>
+<entryLink id="41f6-f8d9-8f89-4e3b" name="Chainsword" hidden="false" collective="false" import="true" targetId="3f81-4517-73f5-ceb7" type="selectionEntry" sortIndex="1" defaultAmount="1">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b444-7248-c42f-7018" type="max" />
+</constraints>
+</entryLink>
+<entryLink id="bfda-d0ed-58a4-bfa2" name="Hand Flamer" hidden="false" collective="false" import="true" targetId="25eb-7e5c-f08a-e9b9" type="selectionEntry" sortIndex="5">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="49dd-9b4c-81f1-0009" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
+</costs>
+</entryLink>
+<entryLink id="dcb4-8585-1c49-0ea4" name="Lightning Claw" hidden="false" collective="false" import="true" targetId="0826-0946-b6a1-f42b" type="selectionEntry" sortIndex="6">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9b88-04cc-f0e9-1067" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
+</costs>
+</entryLink>
+<entryLink id="cb59-88c0-2adf-17e7" name="Plasma Pistol" hidden="false" collective="false" import="true" targetId="523c-5dd4-3402-0e99" type="selectionEntry" sortIndex="7">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1956-ac9a-7b91-b56d" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
+</costs>
+</entryLink>
+<entryLink id="14fa-4193-b327-1c19" name="Power Fist" hidden="false" collective="false" import="true" targetId="0b4d-922b-4629-b7ca" type="selectionEntry" sortIndex="8">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a391-7724-425a-6a22" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
+</costs>
+</entryLink>
+<entryLink id="4e7c-ef88-23b2-69c0" name="Thunder Hammer" hidden="false" collective="false" import="true" targetId="5dfe-22a3-22b6-fb7c" type="selectionEntry" sortIndex="9">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9b50-ed42-08e8-871b" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
+</costs>
+</entryLink>
+<entryLink id="7ca8-141f-9e70-67b5" name="Volkite Serpenta" hidden="false" collective="false" import="true" targetId="48a3-89aa-47ef-c849" type="selectionEntry" sortIndex="10">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="efb5-4ddb-69a4-d966" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
+</costs>
+</entryLink>
+<entryLink id="89ad-eef2-af38-0415" name="Combi-Bolter" hidden="false" collective="false" import="true" targetId="5d48-9963-61d3-1a72" type="selectionEntry" sortIndex="11">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="03a7-0326-fcf7-9fd0" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
+</costs>
+</entryLink>
+<entryLink id="2328-ef40-e8e2-cc67" name="Combi-Flamer" hidden="false" collective="false" import="true" targetId="8a4e-3dc8-c0e4-b9cf" type="selectionEntry" sortIndex="12">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="09fc-b3a8-446f-2d87" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
+</costs>
+</entryLink>
+<entryLink id="0c1e-79bf-ed93-fcb5" name="Combi-Grenade Launcher" hidden="false" collective="false" import="true" targetId="53ca-71d4-e838-5ab2" type="selectionEntry" sortIndex="13">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="255e-59e7-ccaf-98dc" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
+</costs>
+</entryLink>
+<entryLink id="b913-603b-a8d0-3f6f" name="Combi-Meltagun" hidden="false" collective="false" import="true" targetId="b147-b586-15e9-f12b" type="selectionEntry" sortIndex="14">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6f22-6709-66b4-f976" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
+</costs>
+</entryLink>
+<entryLink id="a142-4b46-807d-7171" name="Combi-Plasma Gun" hidden="false" collective="false" import="true" targetId="e700-2c4d-9283-a7b7" type="selectionEntry" sortIndex="15">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8148-02be-6c00-b43f" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
+</costs>
+</entryLink>
+<entryLink id="0847-e937-8207-6e2f" name="Combi-Volkite Charger" hidden="false" collective="false" import="true" targetId="2125-78bc-6ae3-2391" type="selectionEntry" sortIndex="16">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="39d2-3eac-7f26-e200" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
+</costs>
+</entryLink>
+<entryLink id="1a96-54eb-aeac-1516" name="Storm Bolter" hidden="false" collective="false" import="true" targetId="4c92-8660-bb6b-730f" type="selectionEntry" sortIndex="17">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3d23-aa8c-3d7d-7b39" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
+</costs>
+</entryLink>
+</entryLinks>
+</selectionEntryGroup>
+<selectionEntryGroup id="8a39-2752-6664-f725" name="Replace Bolter" hidden="false" collective="false" import="true" defaultSelectionEntryId="a66e-95ab-18d1-feac">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b35f-eb7a-2b9e-1b7e" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="be4b-1ada-a475-516d" type="max" />
+</constraints>
+<selectionEntries>
+<selectionEntry id="ba42-afe3-ad01-497d" name="Volkite Charger" hidden="false" collective="false" import="true" type="upgrade" sortIndex="2">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3860-5e26-7e6d-aae2" type="max" />
+</constraints>
+<entryLinks>
+<entryLink id="9537-e5da-1024-6f8c" name="Volkite Charger" hidden="false" collective="false" import="true" targetId="f7ae-d359-d2ff-f5af" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d480-6bfc-1895-ffbb" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1dd7-0e39-2a0e-b6a0" type="max" />
+</constraints>
+</entryLink>
+</entryLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
+</costs>
+</selectionEntry>
+</selectionEntries>
+<entryLinks>
+<entryLink id="a66e-95ab-18d1-feac" name="Bolter" hidden="false" collective="false" import="true" targetId="8b6f-ff45-9e8a-0d7e" type="selectionEntry" sortIndex="1" defaultAmount="1">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6206-8119-a84f-3c41" type="max" />
+</constraints>
+</entryLink>
+<entryLink id="72b0-2b23-da6d-7507" name="Hand Flamer" hidden="false" collective="false" import="true" targetId="25eb-7e5c-f08a-e9b9" type="selectionEntry" sortIndex="4">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e98c-11c8-5bdf-15c3" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
+</costs>
+</entryLink>
+<entryLink id="d559-376d-3490-7e50" name="Lightning Claw" hidden="false" collective="false" import="true" targetId="0826-0946-b6a1-f42b" type="selectionEntry" sortIndex="5">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8a05-52d3-511e-4f69" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
+</costs>
+</entryLink>
+<entryLink id="11a8-7017-598a-00a5" name="Plasma Pistol" hidden="false" collective="false" import="true" targetId="523c-5dd4-3402-0e99" type="selectionEntry" sortIndex="6">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9ba6-8eec-28e9-3f45" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
+</costs>
+</entryLink>
+<entryLink id="4609-30d5-2cfd-d175" name="Power Fist" hidden="false" collective="false" import="true" targetId="0b4d-922b-4629-b7ca" type="selectionEntry" sortIndex="7">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="24b3-1b16-faa9-7fb9" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
+</costs>
+</entryLink>
+<entryLink id="ad7e-076c-88f2-35d5" name="Power Weapon" hidden="false" collective="false" import="true" targetId="fb4f-b267-7556-185d" type="selectionEntry" sortIndex="8">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7029-6129-6e60-04a0" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
+</costs>
+</entryLink>
+<entryLink id="c52c-0633-ec77-9a33" name="Rending Weapon" hidden="false" collective="false" import="true" targetId="ffab-7f00-50f4-91e0" type="selectionEntry" sortIndex="9">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ffd0-ee5c-4eb2-1437" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
+</costs>
+</entryLink>
+<entryLink id="18b4-1cb3-b113-79f0" name="Thunder Hammer" hidden="false" collective="false" import="true" targetId="5dfe-22a3-22b6-fb7c" type="selectionEntry" sortIndex="10">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="74b8-0fbb-305e-e472" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
+</costs>
+</entryLink>
+<entryLink id="3344-8124-a0ce-275a" name="Volkite Serpenta" hidden="false" collective="false" import="true" targetId="48a3-89aa-47ef-c849" type="selectionEntry" sortIndex="11">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3a65-ec77-3bb0-d8aa" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
+</costs>
+</entryLink>
+<entryLink id="9996-1cf2-300a-3c1a" name="Combi-Bolter" hidden="false" collective="false" import="true" targetId="5d48-9963-61d3-1a72" type="selectionEntry" sortIndex="12">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0bfd-e439-1810-cda9" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
+</costs>
+</entryLink>
+<entryLink id="60fe-3fd1-6eab-363a" name="Combi-Flamer" hidden="false" collective="false" import="true" targetId="8a4e-3dc8-c0e4-b9cf" type="selectionEntry" sortIndex="13">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b3aa-7e5a-e7c6-49cc" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
+</costs>
+</entryLink>
+<entryLink id="97ed-bef4-66a3-62c7" name="Combi-Grenade Launcher" hidden="false" collective="false" import="true" targetId="53ca-71d4-e838-5ab2" type="selectionEntry" sortIndex="14">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5194-aa58-501e-26d1" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
+</costs>
+</entryLink>
+<entryLink id="7868-253f-b673-4920" name="Combi-Meltagun" hidden="false" collective="false" import="true" targetId="b147-b586-15e9-f12b" type="selectionEntry" sortIndex="15">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f7bd-c7e4-5421-73c2" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
+</costs>
+</entryLink>
+<entryLink id="b2c6-6f9a-eb2a-c062" name="Combi-Plasma Gun" hidden="false" collective="false" import="true" targetId="e700-2c4d-9283-a7b7" type="selectionEntry" sortIndex="16">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8c76-5028-2085-a4bf" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
+</costs>
+</entryLink>
+<entryLink id="4b9a-636e-bbb4-2a83" name="Combi-Volkite Charger" hidden="false" collective="false" import="true" targetId="2125-78bc-6ae3-2391" type="selectionEntry" sortIndex="17">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5f55-fa74-e19f-5022" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
+</costs>
+</entryLink>
+<entryLink id="7b78-8e79-146a-a5af" name="Storm Bolter" hidden="false" collective="false" import="true" targetId="4c92-8660-bb6b-730f" type="selectionEntry" sortIndex="18">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2238-2d26-9574-9e22" type="max" />
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
@@ -22676,43 +22998,20 @@ LIMITATIONS - Traitor Night Lords Detachment only. No Fortification. Night Lords
 <cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
 </costs>
 </selectionEntry>
-<selectionEntry id="c88f-ee1a-e49d-e7d8" name="Trophies of Judgement (entire squad, Beyond Judgement)" hidden="false" collective="false" import="true" type="upgrade">
-<modifiers>
-<modifier type="set" field="hidden" value="true">
-<conditionGroups>
-<conditionGroup type="or">
-<conditions>
-<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="88ec-1ae0-3620-ed91" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-<modifier type="set" field="a637-8465-3c80-7c2b" value="0">
-<conditionGroups>
-<conditionGroup type="or">
-<conditions>
-<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="88ec-1ae0-3620-ed91" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-</modifiers>
+<selectionEntry id="873b-0dc1-ae00-0b11" name="Kraken Light Bolts (unit)" hidden="false" collective="false" import="true" type="upgrade">
 <constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a637-8465-3c80-7c2b" type="max" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4e38-14e7-fe2b-2675" type="max" />
 </constraints>
-<infoLinks>
-<infoLink id="f29f-ad8c-3bfa-6c71" name="Fear" hidden="false" targetId="a68f-1456-3d88-39b5" type="rule" />
-</infoLinks>
 <entryLinks>
-<entryLink id="0ed2-7e3e-40a5-1087" name="Trophies of Judgement" hidden="false" collective="false" import="true" targetId="51e4-aa76-a175-a3bf" type="selectionEntry">
+<entryLink id="8716-44de-c3e1-4fb1" name="Kraken Light Bolts" hidden="false" collective="false" import="true" targetId="a325-f7d3-55d6-f52f" type="selectionEntry">
 <constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b6d7-21b0-3326-4d7b" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a755-8b73-1a48-5b05" type="max" />
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4799-5a37-ecc5-6ca1" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8031-f497-6a87-0482" type="max" />
 </constraints>
 </entryLink>
 </entryLinks>
 <costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
+<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
 </selectionEntry>
 </selectionEntries>
@@ -22973,6 +23272,7 @@ LIMITATIONS - Traitor Night Lords Detachment only. No Fortification. Night Lords
 </modifier>
 </modifiers>
 </entryLink>
+<entryLink id="3c30-9722-ba58-c580" name="Land Raider Achilles" hidden="false" collective="false" import="true" targetId="1197-3edb-db94-5cb8" type="selectionEntry" />
 </entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
@@ -23016,6 +23316,19 @@ LIMITATIONS - Traitor Night Lords Detachment only. No Fortification. Night Lords
 <infoLinks>
 <infoLink id="2c9b-67df-0d5e-52a7" name="Legiones Astartes (Night Lords)" hidden="false" targetId="3e24-c793-00a3-ed21" type="rule" />
 <infoLink id="b3b4-21f6-d440-fc1c" name="Hit &amp; Run" hidden="false" targetId="9ad4-0242-3691-d8b3" type="rule" />
+<infoLink id="cc0a-636a-abe6-961e" name="Fear" hidden="false" targetId="a68f-1456-3d88-39b5" type="rule">
+<modifiers>
+<modifier type="set" field="hidden" value="true">
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="88ec-1ae0-3620-ed91" type="lessThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+</modifiers>
+</infoLink>
 </infoLinks>
 <categoryLinks>
 <categoryLink id="5fbc-aa3e-7596-79ca" name="Fast Attack" hidden="false" targetId="5e5f-f512-de8c-9505" primary="true" />
@@ -24041,45 +24354,6 @@ LIMITATIONS - Traitor Night Lords Detachment only. No Fortification. Night Lords
 <cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
 </costs>
 </selectionEntry>
-<selectionEntry id="6c3a-3715-ebaf-b6c4" name="Trophies of Judgement (entire squad, Beyond Judgement)" hidden="false" collective="false" import="true" type="upgrade">
-<modifiers>
-<modifier type="set" field="hidden" value="true">
-<conditionGroups>
-<conditionGroup type="or">
-<conditions>
-<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="88ec-1ae0-3620-ed91" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-<modifier type="set" field="47cb-2e6d-01f1-ee68" value="0">
-<conditionGroups>
-<conditionGroup type="or">
-<conditions>
-<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="88ec-1ae0-3620-ed91" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-</modifiers>
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="47cb-2e6d-01f1-ee68" type="max" />
-</constraints>
-<infoLinks>
-<infoLink id="5409-4426-b40b-44cc" name="Fear" hidden="false" targetId="a68f-1456-3d88-39b5" type="rule" />
-</infoLinks>
-<entryLinks>
-<entryLink id="00cd-9a8d-9d72-a2fc" name="Trophies of Judgement" hidden="false" collective="false" import="true" targetId="51e4-aa76-a175-a3bf" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="97ec-57da-f75f-509c" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4292-05bd-c13e-2df7" type="max" />
-</constraints>
-</entryLink>
-</entryLinks>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
-</costs>
-</selectionEntry>
 </selectionEntries>
 <selectionEntryGroups>
 <selectionEntryGroup id="ecb8-c15d-af2a-224c" name="Replace Chainsword (up to five models)" hidden="false" collective="false" import="true">
@@ -24492,6 +24766,7 @@ LIMITATIONS - Traitor Night Lords Detachment only. No Fortification. Night Lords
 </modifier>
 </modifiers>
 </entryLink>
+<entryLink id="afd2-beff-d24a-e031" name="Land Raider Achilles" hidden="false" collective="false" import="true" targetId="1197-3edb-db94-5cb8" type="selectionEntry" />
 </entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
@@ -24504,6 +24779,19 @@ LIMITATIONS - Traitor Night Lords Detachment only. No Fortification. Night Lords
 <infoLink id="6d2b-4331-146b-ed2c" name="Legiones Astartes (Night Lords)" hidden="false" targetId="3e24-c793-00a3-ed21" type="rule" />
 <infoLink id="55c3-5839-5ed3-b4ac" name="Fearless" hidden="false" targetId="7460-d0b4-32f7-f367" type="rule" />
 <infoLink id="84c3-6e30-187a-c1b4" name="Teleport Assault" hidden="false" targetId="7e58-c0ac-405d-0194" type="rule" />
+<infoLink id="0e6c-e9cf-dd9f-1e1c" name="Fear" hidden="false" targetId="a68f-1456-3d88-39b5" type="rule">
+<modifiers>
+<modifier type="set" field="hidden" value="true">
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="88ec-1ae0-3620-ed91" type="lessThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+</modifiers>
+</infoLink>
 </infoLinks>
 <categoryLinks>
 <categoryLink id="be3c-aa79-3a10-e9f4" name="Elites" hidden="false" targetId="6b19-97ac-7c40-0bdf" primary="true" />
@@ -24558,45 +24846,6 @@ LIMITATIONS - Traitor Night Lords Detachment only. No Fortification. Night Lords
 </entryLinks>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="50" />
-</costs>
-</selectionEntry>
-<selectionEntry id="616f-b4e2-66c2-993c" name="Trophies of Judgement (entire squad, Beyond Judgement)" hidden="false" collective="false" import="true" type="upgrade">
-<modifiers>
-<modifier type="set" field="hidden" value="true">
-<conditionGroups>
-<conditionGroup type="or">
-<conditions>
-<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="88ec-1ae0-3620-ed91" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-<modifier type="set" field="9374-d8dc-3b56-1a9d" value="0">
-<conditionGroups>
-<conditionGroup type="or">
-<conditions>
-<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="88ec-1ae0-3620-ed91" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-</modifiers>
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9374-d8dc-3b56-1a9d" type="max" />
-</constraints>
-<infoLinks>
-<infoLink id="8dd4-aa5a-efd3-87bc" name="Fear" hidden="false" targetId="a68f-1456-3d88-39b5" type="rule" />
-</infoLinks>
-<entryLinks>
-<entryLink id="3175-86c8-8c6c-0ac6" name="Trophies of Judgement" hidden="false" collective="false" import="true" targetId="51e4-aa76-a175-a3bf" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="78a6-c76e-0b4d-22de" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="26d1-f664-e757-9525" type="max" />
-</constraints>
-</entryLink>
-</entryLinks>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
 </costs>
 </selectionEntry>
 </selectionEntries>
@@ -24886,6 +25135,7 @@ LIMITATIONS - Traitor Night Lords Detachment only. No Fortification. Night Lords
 </modifier>
 </modifiers>
 </entryLink>
+<entryLink id="1460-cf27-412c-1eca" name="Land Raider Achilles" hidden="false" collective="false" import="true" targetId="1197-3edb-db94-5cb8" type="selectionEntry" />
 </entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
@@ -24989,6 +25239,24 @@ LIMITATIONS - Traitor Night Lords Detachment only. No Fortification. Night Lords
 </constraints>
 </entryLink>
 </entryLinks>
+<selectionEntries>
+<selectionEntry id="a2e2-3769-0d36-83f6" name="Stealth Adept" hidden="false" collective="false" import="true" type="upgrade">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7604-2be9-7073-886e" type="max" />
+</constraints>
+<entryLinks>
+<entryLink id="0eeb-76c7-f7fd-213f" name="Stealth Adept" hidden="false" collective="false" import="true" targetId="9cd7-b006-a29c-e86f" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f505-66dc-c076-628e" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9995-d63e-547f-f7cc" type="max" />
+</constraints>
+</entryLink>
+</entryLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
+</costs>
+</selectionEntry>
+</selectionEntries>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="200" />
 </costs>
@@ -25100,6 +25368,24 @@ LIMITATIONS - Traitor Night Lords Detachment only. No Fortification. Night Lords
 </constraints>
 </entryLink>
 </entryLinks>
+<selectionEntries>
+<selectionEntry id="403e-63cc-12a3-65d4" name="Stealth Adept" hidden="false" collective="false" import="true" type="upgrade">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fb2b-cc7e-ea57-fa98" type="max" />
+</constraints>
+<entryLinks>
+<entryLink id="f2d1-9583-7268-36bc" name="Stealth Adept" hidden="false" collective="false" import="true" targetId="9cd7-b006-a29c-e86f" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5544-1e5b-ac2b-ba1f" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="88b8-1704-9e56-a9df" type="max" />
+</constraints>
+</entryLink>
+</entryLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
+</costs>
+</selectionEntry>
+</selectionEntries>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="180" />
 </costs>
@@ -25209,6 +25495,24 @@ LIMITATIONS - Traitor Night Lords Detachment only. No Fortification. Night Lords
 </constraints>
 </entryLink>
 </entryLinks>
+<selectionEntries>
+<selectionEntry id="8810-ef66-d702-f6e8" name="Stealth Adept" hidden="false" collective="false" import="true" type="upgrade">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="263c-4b28-06aa-e455" type="max" />
+</constraints>
+<entryLinks>
+<entryLink id="55c2-9360-2e4d-13a5" name="Stealth Adept" hidden="false" collective="false" import="true" targetId="9cd7-b006-a29c-e86f" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="27f4-972e-a692-5572" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a7f3-4a2d-c80b-9379" type="max" />
+</constraints>
+</entryLink>
+</entryLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
+</costs>
+</selectionEntry>
+</selectionEntries>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="155" />
 </costs>
@@ -25321,6 +25625,24 @@ LIMITATIONS - Traitor Night Lords Detachment only. No Fortification. Night Lords
 </constraints>
 </entryLink>
 </entryLinks>
+<selectionEntries>
+<selectionEntry id="6f99-ce5e-ab7a-efbd" name="Stealth Adept" hidden="false" collective="false" import="true" type="upgrade">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b5a7-e1b1-9c08-213b" type="max" />
+</constraints>
+<entryLinks>
+<entryLink id="5ca1-bbcf-677a-7c72" name="Stealth Adept" hidden="false" collective="false" import="true" targetId="9cd7-b006-a29c-e86f" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fe34-8d2a-ae2f-7819" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="84a0-30d7-d161-eb95" type="max" />
+</constraints>
+</entryLink>
+</entryLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
+</costs>
+</selectionEntry>
+</selectionEntries>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="165" />
 </costs>
@@ -25416,6 +25738,24 @@ LIMITATIONS - Traitor Night Lords Detachment only. No Fortification. Night Lords
 </constraints>
 </entryLink>
 </entryLinks>
+<selectionEntries>
+<selectionEntry id="0930-bd97-45be-9168" name="Stealth Adept" hidden="false" collective="false" import="true" type="upgrade">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0da2-5c62-87fb-d7dc" type="max" />
+</constraints>
+<entryLinks>
+<entryLink id="db67-bb16-bc7a-7c56" name="Stealth Adept" hidden="false" collective="false" import="true" targetId="9cd7-b006-a29c-e86f" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="afe7-5aae-ee35-d3c9" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="693e-dda2-ec2d-37f9" type="max" />
+</constraints>
+</entryLink>
+</entryLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
+</costs>
+</selectionEntry>
+</selectionEntries>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="125" />
 </costs>
@@ -25470,7 +25810,6 @@ LIMITATIONS - Traitor Night Lords Detachment only. No Fortification. Night Lords
 <infoLink id="8b6b-8104-faae-9861" name="Primarch Armour" hidden="false" targetId="c215-947e-967a-20e5" type="rule" />
 <infoLink id="dbda-1fda-9722-8699" name="Psyker" hidden="false" targetId="b92c-c0d1-f76c-d5dd" type="rule" />
 <infoLink id="0179-6b84-c3cf-982b" name="King of Terrors" hidden="false" targetId="e352-b398-39c1-7090" type="rule" />
-<infoLink id="81e6-9517-a93d-cee8" name="Bloody Murder" hidden="false" targetId="c4a3-c906-8f01-fefd" type="rule" />
 <infoLink id="e7cb-a548-9bab-e334" name="Night Haunter" hidden="false" targetId="4591-ebee-21c3-9578" type="rule" />
 <infoLink id="929f-d84f-43d6-dc12" name="Stealth" hidden="false" targetId="f422-fcf4-c205-b822" type="rule" />
 <infoLink id="08b2-98a3-e66d-b1bd" name="Hit &amp; Run" hidden="false" targetId="9ad4-0242-3691-d8b3" type="rule" />
@@ -34231,6 +34570,189 @@ LIMITATIONS - Traitor Night Lords Detachment only. No Fortification. Night Lords
 <cost name="pts" typeId="pts0-0000-0000-0001" value="100" />
 </costs>
 </selectionEntry>
+<selectionEntry id="1197-3edb-db94-5cb8" name="Land Raider Achilles" hidden="false" collective="false" import="true" type="unit">
+<profiles>
+<profile id="9b93-e2d0-581c-a9dc" name="Land Raider Achilles" hidden="false" typeId="c1e2-c3f6-f1e3-c783" typeName="Vehicle">
+<characteristics>
+<characteristic name="Unit Type" typeId="6095-ae79-f2c4-f05d">Vehicle (Tank, Transport)</characteristic>
+<characteristic name="BS" typeId="e7f5-6a1a-ac58-5b0a">4</characteristic>
+<characteristic name="Front" typeId="f537-badc-bfd2-5234">14</characteristic>
+<characteristic name="Side" typeId="0c3e-a00e-5d47-7352">14</characteristic>
+<characteristic name="Rear" typeId="7074-ea68-65bb-46bb">14</characteristic>
+</characteristics>
+</profile>
+<profile id="28c6-5ab1-888e-b150" name="Land Raider Achilles" hidden="false" typeId="3dca-e183-c6eb-8cea" typeName="Transport">
+<characteristics>
+<characteristic name="Capacity" typeId="43e8-af23-5b9c-f1d8">6 models</characteristic>
+<characteristic name="Access Points" typeId="bd35-f8fa-db6e-e920">Side and front access points</characteristic>
+<characteristic name="Fire Points" typeId="d703-d9d3-280c-8462">-</characteristic>
+</characteristics>
+</profile>
+</profiles>
+<infoLinks>
+<infoLink id="93b2-1048-22a5-5910" name="Power of the Machine Spirit" hidden="false" targetId="37cc-c497-b81f-76d0" type="rule" />
+<infoLink id="445e-6f00-f15b-7020" name="Ferromantic Invulnerability" hidden="false" targetId="af77-666d-d146-cc3f" type="rule" />
+</infoLinks>
+<categoryLinks>
+<categoryLink id="bbed-9713-e116-f261" name="Dedicated Transport" hidden="false" targetId="2c06-cce8-6863-d996" primary="true" />
+</categoryLinks>
+<selectionEntryGroups>
+<selectionEntryGroup id="268f-8b6d-07ff-8dd1" name="Vehicle Upgrades" hidden="false" collective="false" import="true">
+<entryLinks>
+<entryLink id="b11e-0bac-c36d-54dc" name="Hunter-Killer Missile" hidden="false" collective="false" import="true" targetId="9a5d-fd49-68a3-2572" type="selectionEntry">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9c03-e9a1-08d6-3648" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
+</costs>
+</entryLink>
+<entryLink id="7927-b925-971b-2e37" name="Dozer Blade" hidden="false" collective="false" import="true" targetId="7d17-3b7b-1d6e-e0f2" type="selectionEntry">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d807-8e64-830d-4df5" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
+</costs>
+</entryLink>
+<entryLink id="90e5-3e68-f297-9a53" name="Auxiliary Drive" hidden="false" collective="false" import="true" targetId="4f16-c23a-b791-3446" type="selectionEntry">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e86d-cb62-a123-4c85" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
+</costs>
+</entryLink>
+</entryLinks>
+</selectionEntryGroup>
+<selectionEntryGroup id="0ddc-290b-09fa-6f21" name="Pintle-mounted Weapon" hidden="false" collective="false" import="true">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e5dd-661b-bbb4-d0d2" type="max" />
+</constraints>
+<selectionEntries>
+<selectionEntry id="2d11-8511-8289-339d" name="Twin-linked Bolter" hidden="false" collective="false" import="true" type="upgrade">
+<entryLinks>
+<entryLink id="6b3a-1144-80df-2091" name="Twin-linked Bolter" hidden="false" collective="false" import="true" targetId="6392-9914-afef-0ec5" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="78b9-40ac-d527-711b" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7664-161f-0bdf-417b" type="max" />
+</constraints>
+</entryLink>
+</entryLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
+</costs>
+</selectionEntry>
+<selectionEntry id="ace6-377b-9fd6-b5b3" name="Combi-Weapon" hidden="false" collective="false" import="true" type="upgrade">
+<entryLinks>
+<entryLink id="7d44-da8d-3a13-85a5" name="Combi-Weapon" hidden="false" collective="false" import="true" targetId="dd96-2fe2-b2e1-c755" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f687-5530-4c59-3d4f" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ed2a-3c10-8895-9899" type="max" />
+</constraints>
+</entryLink>
+</entryLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
+</costs>
+</selectionEntry>
+<selectionEntry id="815f-d00e-6209-ab46" name="Heavy Bolter" hidden="false" collective="false" import="true" type="upgrade">
+<entryLinks>
+<entryLink id="ac04-2323-6aac-ac4a" name="Heavy Bolter" hidden="false" collective="false" import="true" targetId="9151-5044-e482-04c9" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e798-9ac9-9a66-4346" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b594-ac16-35b3-35b5" type="max" />
+</constraints>
+</entryLink>
+</entryLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
+</costs>
+</selectionEntry>
+<selectionEntry id="cd1f-dcb3-8031-5ca2" name="Heavy Flamer" hidden="false" collective="false" import="true" type="upgrade">
+<entryLinks>
+<entryLink id="1fbf-f6b9-d24a-89df" name="Heavy Flamer" hidden="false" collective="false" import="true" targetId="9e6d-afcf-8202-e47c" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e672-70a9-146b-76aa" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1c12-d20a-c1b0-4337" type="max" />
+</constraints>
+</entryLink>
+</entryLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
+</costs>
+</selectionEntry>
+<selectionEntry id="ca3a-b37f-f7e6-4aff" name="Multi-Melta" hidden="false" collective="false" import="true" type="upgrade">
+<entryLinks>
+<entryLink id="e6fc-4a28-9212-8513" name="Multi-Melta" hidden="false" collective="false" import="true" targetId="48fc-4141-3aee-b13c" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1534-7c9e-84e9-c4aa" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="326b-8086-69d0-9d04" type="max" />
+</constraints>
+</entryLink>
+</entryLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
+</costs>
+</selectionEntry>
+<selectionEntry id="728f-4be1-6585-2527" name="Havoc Launcher" hidden="false" collective="false" import="true" type="upgrade">
+<entryLinks>
+<entryLink id="1fe1-a4b2-b3eb-1e71" name="Havoc Launcher" hidden="false" collective="false" import="true" targetId="e5ca-0747-ff5e-b3b5" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a6c2-0c6e-1308-b037" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="16c5-8bd1-e49e-2c2a" type="max" />
+</constraints>
+</entryLink>
+</entryLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
+</costs>
+</selectionEntry>
+</selectionEntries>
+</selectionEntryGroup>
+</selectionEntryGroups>
+<entryLinks>
+<entryLink id="6245-5039-1fa7-cba1" name="Quad Launcher with Frag and Shatter Shells" hidden="false" collective="false" import="true" targetId="490f-b2c1-8e40-791b" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="426d-014c-9688-8acf" type="min" />
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="47ed-be63-8336-b15e" type="max" />
+</constraints>
+</entryLink>
+<entryLink id="b386-0a56-b518-e63d" name="Twin-linked Multi-Melta" hidden="false" collective="false" import="true" targetId="ae1e-8538-0d19-c91e" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6d3a-3b4c-c35e-b343" type="min" />
+<constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6e0e-1e3c-4527-3463" type="max" />
+</constraints>
+</entryLink>
+<entryLink id="f18d-6a77-b327-4d8e" name="Extra Armour" hidden="false" collective="false" import="true" targetId="aef2-b713-c9fe-42d8" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7a79-fb1c-cd87-ce46" type="min" />
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5774-6c44-5f03-5034" type="max" />
+</constraints>
+</entryLink>
+<entryLink id="a0e9-f23c-e1a5-a6db" name="Armoured Ceramite" hidden="false" collective="false" import="true" targetId="bb4d-c32a-0e96-aae9" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="51bf-82b6-ba9e-b535" type="min" />
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ca33-8f7d-2217-efa5" type="max" />
+</constraints>
+</entryLink>
+<entryLink id="fd90-021d-8741-e30c" name="Searchlight" hidden="false" collective="false" import="true" targetId="3941-9fef-114f-2d9e" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="df18-2f47-4cde-469d" type="min" />
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="37a3-a66c-0a43-89d6" type="max" />
+</constraints>
+</entryLink>
+<entryLink id="19ce-bb75-8edf-998f" name="Smoke Launchers" hidden="false" collective="false" import="true" targetId="4cbd-e91f-c507-7c1b" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b8e9-9c84-fbd7-2fd4" type="min" />
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4d8b-adf6-7db7-281d" type="max" />
+</constraints>
+</entryLink>
+</entryLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="275" />
+</costs>
+</selectionEntry>
 <selectionEntry id="003b-e7d8-6607-8483" name="Legion Command Squad" hidden="false" collective="false" import="true" type="unit">
 <infoLinks>
 <infoLink id="c5b9-16dd-cc67-8294" name="Legiones Astartes" hidden="false" targetId="0ed8-99c2-6b0e-f182" type="rule" />
@@ -37755,6 +38277,19 @@ LIMITATIONS - Traitor Night Lords Detachment only. No Fortification. Night Lords
 <infoLink id="e3ca-1188-f65a-c0a4" name="Legiones Astartes (Night Lords)" hidden="false" targetId="3e24-c793-00a3-ed21" type="rule" />
 <infoLink id="5110-a7d2-f9af-cd5a" name="Fearless" hidden="false" targetId="7460-d0b4-32f7-f367" type="rule" />
 <infoLink id="d792-bb6e-a95f-ae93" name="Teleport Assault" hidden="false" targetId="7e58-c0ac-405d-0194" type="rule" />
+<infoLink id="f5d5-3c67-5dcc-6e4d" name="Fear" hidden="false" targetId="a68f-1456-3d88-39b5" type="rule">
+<modifiers>
+<modifier type="set" field="hidden" value="true">
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="88ec-1ae0-3620-ed91" type="lessThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+</modifiers>
+</infoLink>
 </infoLinks>
 <selectionEntries>
 <selectionEntry id="3afc-eabc-c796-83ab" name="Atramentar" hidden="false" collective="false" import="true" type="model">
@@ -37806,45 +38341,6 @@ LIMITATIONS - Traitor Night Lords Detachment only. No Fortification. Night Lords
 </entryLinks>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="50" />
-</costs>
-</selectionEntry>
-<selectionEntry id="8c8d-30b7-136a-1d49" name="Trophies of Judgement (entire squad, Beyond Judgement)" hidden="false" collective="false" import="true" type="upgrade">
-<modifiers>
-<modifier type="set" field="hidden" value="true">
-<conditionGroups>
-<conditionGroup type="or">
-<conditions>
-<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="88ec-1ae0-3620-ed91" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-<modifier type="set" field="2891-2ccb-0969-c389" value="0">
-<conditionGroups>
-<conditionGroup type="or">
-<conditions>
-<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="88ec-1ae0-3620-ed91" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-</modifiers>
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2891-2ccb-0969-c389" type="max" />
-</constraints>
-<infoLinks>
-<infoLink id="fb04-e3f7-6287-28b4" name="Fear" hidden="false" targetId="a68f-1456-3d88-39b5" type="rule" />
-</infoLinks>
-<entryLinks>
-<entryLink id="3de2-710a-ab1f-7664" name="Trophies of Judgement" hidden="false" collective="false" import="true" targetId="51e4-aa76-a175-a3bf" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d029-e2c2-41ef-d258" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f2a3-0afc-7b9e-42dc" type="max" />
-</constraints>
-</entryLink>
-</entryLinks>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
 </costs>
 </selectionEntry>
 </selectionEntries>
@@ -38134,6 +38630,7 @@ LIMITATIONS - Traitor Night Lords Detachment only. No Fortification. Night Lords
 </modifier>
 </modifiers>
 </entryLink>
+<entryLink id="eea2-34c2-203a-3ffc" name="Land Raider Achilles" hidden="false" collective="false" import="true" targetId="1197-3edb-db94-5cb8" type="selectionEntry" />
 </entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
@@ -40507,6 +41004,7 @@ LIMITATIONS - Traitor Night Lords Detachment only. No Fortification. Night Lords
 </modifier>
 </modifiers>
 </entryLink>
+<entryLink id="7b98-567e-f06e-c572" name="Land Raider Achilles" hidden="false" collective="false" import="true" targetId="1197-3edb-db94-5cb8" type="selectionEntry" />
 </entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
@@ -43507,6 +44005,19 @@ LIMITATIONS - Traitor Night Lords Detachment only. No Fortification. Night Lords
 <infoLink id="5591-6022-baf4-8eaf" name="Infiltrate" hidden="false" targetId="ad57-6634-e426-3e1c" type="rule" />
 <infoLink id="e7a7-7b31-53be-e2fa" name="Preferred Enemy (Infantry)" hidden="false" targetId="5a90-eee2-01f0-5b47" type="rule" />
 <infoLink id="fcc6-08d5-c65d-04ce" name="Preferred Enemy" hidden="false" targetId="17b8-dd24-3326-9022" type="rule" />
+<infoLink id="3e38-2902-8ab5-c325" name="Fear" hidden="false" targetId="a68f-1456-3d88-39b5" type="rule">
+<modifiers>
+<modifier type="set" field="hidden" value="true">
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="88ec-1ae0-3620-ed91" type="lessThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+</modifiers>
+</infoLink>
 </infoLinks>
 <selectionEntries>
 <selectionEntry id="6e8c-be5a-dfdb-31d5" name="Headsman" hidden="false" collective="false" import="true" type="model">
@@ -43531,40 +44042,24 @@ LIMITATIONS - Traitor Night Lords Detachment only. No Fortification. Night Lords
 </profile>
 </profiles>
 <selectionEntryGroups>
-<selectionEntryGroup id="2f44-8461-32aa-35f3" name="Replace Chainsword" hidden="false" collective="false" import="true" defaultSelectionEntryId="a04e-72ba-5d4e-a50d">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="72e7-0f0b-6d29-fb00" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c87f-36e8-f5cc-f35c" type="max" />
-</constraints>
-<entryLinks>
-<entryLink id="a04e-72ba-5d4e-a50d" name="Chainsword" hidden="false" collective="false" import="true" targetId="3f81-4517-73f5-ceb7" type="selectionEntry" sortIndex="1" defaultAmount="1" />
-<entryLink id="0847-b47e-125d-8238" name="Rending Weapon" hidden="false" collective="false" import="true" targetId="ffab-7f00-50f4-91e0" type="selectionEntry" sortIndex="3">
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
-</costs>
-</entryLink>
-<entryLink id="a4a1-347c-6c48-ac42" name="Power Weapon" hidden="false" collective="false" import="true" targetId="fb4f-b267-7556-185d" type="selectionEntry" sortIndex="4">
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
-</costs>
-</entryLink>
-</entryLinks>
-</selectionEntryGroup>
-<selectionEntryGroup id="6acd-ee4e-a724-d0e6" name="Replace Bolter" hidden="false" collective="false" import="true" defaultSelectionEntryId="ca17-1a92-bd3e-19b5">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2db7-0587-e749-f585" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4318-f615-8942-809a" type="max" />
-</constraints>
-<entryLinks>
-<entryLink id="ca17-1a92-bd3e-19b5" name="Bolter" hidden="false" collective="false" import="true" targetId="8b6f-ff45-9e8a-0d7e" type="selectionEntry" sortIndex="1" defaultAmount="1" />
-<entryLink id="b73d-4123-00dd-54e6" name="Volkite Charger" hidden="false" collective="false" import="true" targetId="f7ae-d359-d2ff-f5af" type="selectionEntry" sortIndex="3">
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
-</costs>
-</entryLink>
-</entryLinks>
-</selectionEntryGroup>
 <selectionEntryGroup id="931e-afb5-a4e1-fe27" name="Space Marine Armoury (max 50 pts)" hidden="false" collective="false" import="true">
+<modifiers>
+<modifier type="increment" field="1a07-2420-70e6-2d05" value="5">
+<conditions>
+<condition field="selections" scope="6e8c-be5a-dfdb-31d5" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="52e5-3582-6314-cc0d" type="atLeast" />
+</conditions>
+</modifier>
+<modifier type="increment" field="1a07-2420-70e6-2d05" value="10">
+<conditions>
+<condition field="selections" scope="6e8c-be5a-dfdb-31d5" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="37da-abe4-26e9-15a6" type="atLeast" />
+</conditions>
+</modifier>
+<modifier type="increment" field="1a07-2420-70e6-2d05" value="10">
+<conditions>
+<condition field="selections" scope="6e8c-be5a-dfdb-31d5" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="35ed-cf5f-e25e-0da3" type="atLeast" />
+</conditions>
+</modifier>
+</modifiers>
 <constraints>
 <constraint field="pts0-0000-0000-0001" scope="self" value="50" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1a07-2420-70e6-2d05" type="max" />
 </constraints>
@@ -43596,15 +44091,7 @@ LIMITATIONS - Traitor Night Lords Detachment only. No Fortification. Night Lords
 <cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
 </costs>
 </entryLink>
-<entryLink id="2c0f-3930-a55b-1bce" name="Pair of Lightning Claws" hidden="false" collective="false" import="true" targetId="af2b-d487-5b80-ae9b" type="selectionEntry" sortIndex="5">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b601-bd83-48fb-d5ef" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
-</costs>
-</entryLink>
-<entryLink id="f17e-cb66-d3b5-e2b9" name="Plasma Pistol" hidden="false" collective="false" import="true" targetId="523c-5dd4-3402-0e99" type="selectionEntry" sortIndex="6">
+<entryLink id="f17e-cb66-d3b5-e2b9" name="Plasma Pistol" hidden="false" collective="false" import="true" targetId="523c-5dd4-3402-0e99" type="selectionEntry" sortIndex="5">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="814e-6173-5660-f3f4" type="max" />
 </constraints>
@@ -43612,7 +44099,7 @@ LIMITATIONS - Traitor Night Lords Detachment only. No Fortification. Night Lords
 <cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
 </costs>
 </entryLink>
-<entryLink id="276f-613a-ea13-9fe5" name="Power Fist" hidden="false" collective="false" import="true" targetId="0b4d-922b-4629-b7ca" type="selectionEntry" sortIndex="7">
+<entryLink id="276f-613a-ea13-9fe5" name="Power Fist" hidden="false" collective="false" import="true" targetId="0b4d-922b-4629-b7ca" type="selectionEntry" sortIndex="6">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="48c3-9995-e387-a648" type="max" />
 </constraints>
@@ -43620,7 +44107,7 @@ LIMITATIONS - Traitor Night Lords Detachment only. No Fortification. Night Lords
 <cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
 </costs>
 </entryLink>
-<entryLink id="067b-4497-c883-cab9" name="Power Weapon" hidden="false" collective="false" import="true" targetId="fb4f-b267-7556-185d" type="selectionEntry" sortIndex="8">
+<entryLink id="067b-4497-c883-cab9" name="Power Weapon" hidden="false" collective="false" import="true" targetId="fb4f-b267-7556-185d" type="selectionEntry" sortIndex="7">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2f4c-9db1-c5a8-9b32" type="max" />
 </constraints>
@@ -43628,7 +44115,7 @@ LIMITATIONS - Traitor Night Lords Detachment only. No Fortification. Night Lords
 <cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
 </costs>
 </entryLink>
-<entryLink id="fe75-13db-1246-0b6c" name="Rending Weapon" hidden="false" collective="false" import="true" targetId="ffab-7f00-50f4-91e0" type="selectionEntry" sortIndex="9">
+<entryLink id="fe75-13db-1246-0b6c" name="Rending Weapon" hidden="false" collective="false" import="true" targetId="ffab-7f00-50f4-91e0" type="selectionEntry" sortIndex="8">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cff8-aa23-7e04-555c" type="max" />
 </constraints>
@@ -43636,7 +44123,7 @@ LIMITATIONS - Traitor Night Lords Detachment only. No Fortification. Night Lords
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
 </costs>
 </entryLink>
-<entryLink id="ddf0-9ff7-728c-fb4f" name="Thunder Hammer" hidden="false" collective="false" import="true" targetId="5dfe-22a3-22b6-fb7c" type="selectionEntry" sortIndex="10">
+<entryLink id="ddf0-9ff7-728c-fb4f" name="Thunder Hammer" hidden="false" collective="false" import="true" targetId="5dfe-22a3-22b6-fb7c" type="selectionEntry" sortIndex="9">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2c59-6b01-9156-a28f" type="max" />
 </constraints>
@@ -43644,7 +44131,7 @@ LIMITATIONS - Traitor Night Lords Detachment only. No Fortification. Night Lords
 <cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
 </costs>
 </entryLink>
-<entryLink id="bb6c-c249-abfc-5788" name="Volkite Serpenta" hidden="false" collective="false" import="true" targetId="48a3-89aa-47ef-c849" type="selectionEntry" sortIndex="11">
+<entryLink id="bb6c-c249-abfc-5788" name="Volkite Serpenta" hidden="false" collective="false" import="true" targetId="48a3-89aa-47ef-c849" type="selectionEntry" sortIndex="10">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="62fa-6972-3b47-3544" type="max" />
 </constraints>
@@ -43652,7 +44139,7 @@ LIMITATIONS - Traitor Night Lords Detachment only. No Fortification. Night Lords
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
 </costs>
 </entryLink>
-<entryLink id="f189-0205-4c92-757b" name="Combi-Bolter" hidden="false" collective="false" import="true" targetId="5d48-9963-61d3-1a72" type="selectionEntry" sortIndex="12">
+<entryLink id="f189-0205-4c92-757b" name="Combi-Bolter" hidden="false" collective="false" import="true" targetId="5d48-9963-61d3-1a72" type="selectionEntry" sortIndex="11">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7b47-5884-be9a-3c52" type="max" />
 </constraints>
@@ -43660,7 +44147,7 @@ LIMITATIONS - Traitor Night Lords Detachment only. No Fortification. Night Lords
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
 </costs>
 </entryLink>
-<entryLink id="cbf0-75e6-1c37-2d37" name="Combi-Flamer" hidden="false" collective="false" import="true" targetId="8a4e-3dc8-c0e4-b9cf" type="selectionEntry" sortIndex="13">
+<entryLink id="cbf0-75e6-1c37-2d37" name="Combi-Flamer" hidden="false" collective="false" import="true" targetId="8a4e-3dc8-c0e4-b9cf" type="selectionEntry" sortIndex="12">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c0c0-e3da-ffc8-9744" type="max" />
 </constraints>
@@ -43668,7 +44155,7 @@ LIMITATIONS - Traitor Night Lords Detachment only. No Fortification. Night Lords
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
 </entryLink>
-<entryLink id="adcf-5389-1d09-0acd" name="Combi-Grenade Launcher" hidden="false" collective="false" import="true" targetId="53ca-71d4-e838-5ab2" type="selectionEntry" sortIndex="14">
+<entryLink id="adcf-5389-1d09-0acd" name="Combi-Grenade Launcher" hidden="false" collective="false" import="true" targetId="53ca-71d4-e838-5ab2" type="selectionEntry" sortIndex="13">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1c26-d027-eb69-444d" type="max" />
 </constraints>
@@ -43676,7 +44163,7 @@ LIMITATIONS - Traitor Night Lords Detachment only. No Fortification. Night Lords
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
 </entryLink>
-<entryLink id="08bb-0f52-1990-c4f5" name="Combi-Meltagun" hidden="false" collective="false" import="true" targetId="b147-b586-15e9-f12b" type="selectionEntry" sortIndex="15">
+<entryLink id="08bb-0f52-1990-c4f5" name="Combi-Meltagun" hidden="false" collective="false" import="true" targetId="b147-b586-15e9-f12b" type="selectionEntry" sortIndex="14">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4522-6dbb-4e51-af39" type="max" />
 </constraints>
@@ -43684,7 +44171,7 @@ LIMITATIONS - Traitor Night Lords Detachment only. No Fortification. Night Lords
 <cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
 </costs>
 </entryLink>
-<entryLink id="d5bd-8e4d-6b4e-e4bf" name="Combi-Plasma Gun" hidden="false" collective="false" import="true" targetId="e700-2c4d-9283-a7b7" type="selectionEntry" sortIndex="16">
+<entryLink id="d5bd-8e4d-6b4e-e4bf" name="Combi-Plasma Gun" hidden="false" collective="false" import="true" targetId="e700-2c4d-9283-a7b7" type="selectionEntry" sortIndex="15">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="603b-56bd-46d8-82f3" type="max" />
 </constraints>
@@ -43692,7 +44179,7 @@ LIMITATIONS - Traitor Night Lords Detachment only. No Fortification. Night Lords
 <cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
 </costs>
 </entryLink>
-<entryLink id="f2c1-7aa6-4d65-d1d2" name="Combi-Volkite Charger" hidden="false" collective="false" import="true" targetId="2125-78bc-6ae3-2391" type="selectionEntry" sortIndex="17">
+<entryLink id="f2c1-7aa6-4d65-d1d2" name="Combi-Volkite Charger" hidden="false" collective="false" import="true" targetId="2125-78bc-6ae3-2391" type="selectionEntry" sortIndex="16">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d105-2a0a-3a76-6239" type="max" />
 </constraints>
@@ -43700,9 +44187,311 @@ LIMITATIONS - Traitor Night Lords Detachment only. No Fortification. Night Lords
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
 </entryLink>
-<entryLink id="04fb-35e9-c111-bb2f" name="Storm Bolter" hidden="false" collective="false" import="true" targetId="4c92-8660-bb6b-730f" type="selectionEntry" sortIndex="18">
+<entryLink id="04fb-35e9-c111-bb2f" name="Storm Bolter" hidden="false" collective="false" import="true" targetId="4c92-8660-bb6b-730f" type="selectionEntry" sortIndex="17">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e89e-5ba0-d189-3287" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
+</costs>
+</entryLink>
+</entryLinks>
+</selectionEntryGroup>
+<selectionEntryGroup id="89ca-6538-1f18-27dd" name="Replace Chainsword" hidden="false" collective="false" import="true" defaultSelectionEntryId="09f8-b70c-a2db-a3b1">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="041d-cc61-5fdd-e58b" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="902f-bdbe-3ac4-5afc" type="max" />
+</constraints>
+<selectionEntries>
+<selectionEntry id="52e5-3582-6314-cc0d" name="Rending Weapon" hidden="false" collective="false" import="true" type="upgrade" sortIndex="2">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eace-0dda-00df-f54f" type="max" />
+</constraints>
+<entryLinks>
+<entryLink id="173f-8dd5-58ae-d1f4" name="Rending Weapon" hidden="false" collective="false" import="true" targetId="ffab-7f00-50f4-91e0" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c56f-da2b-3469-0cc4" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8e22-e5e1-0d42-4474" type="max" />
+</constraints>
+</entryLink>
+</entryLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
+</costs>
+</selectionEntry>
+<selectionEntry id="37da-abe4-26e9-15a6" name="Power Weapon" hidden="false" collective="false" import="true" type="upgrade" sortIndex="3">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c6c0-17d4-37b7-b00f" type="max" />
+</constraints>
+<entryLinks>
+<entryLink id="f523-41d8-4a2b-e459" name="Power Weapon" hidden="false" collective="false" import="true" targetId="fb4f-b267-7556-185d" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6a4e-92c6-e040-ef5e" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="19be-1c15-d797-a475" type="max" />
+</constraints>
+</entryLink>
+</entryLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
+</costs>
+</selectionEntry>
+</selectionEntries>
+<entryLinks>
+<entryLink id="09f8-b70c-a2db-a3b1" name="Chainsword" hidden="false" collective="false" import="true" targetId="3f81-4517-73f5-ceb7" type="selectionEntry" sortIndex="1" defaultAmount="1">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2ab7-8840-7efb-e729" type="max" />
+</constraints>
+</entryLink>
+<entryLink id="deab-5bc1-9027-d975" name="Hand Flamer" hidden="false" collective="false" import="true" targetId="25eb-7e5c-f08a-e9b9" type="selectionEntry" sortIndex="5">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c88d-5360-f93b-4cc5" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
+</costs>
+</entryLink>
+<entryLink id="ca07-cc63-9803-b695" name="Lightning Claw" hidden="false" collective="false" import="true" targetId="0826-0946-b6a1-f42b" type="selectionEntry" sortIndex="6">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5785-07df-f78c-d720" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
+</costs>
+</entryLink>
+<entryLink id="b36a-999c-3a4b-3e4c" name="Plasma Pistol" hidden="false" collective="false" import="true" targetId="523c-5dd4-3402-0e99" type="selectionEntry" sortIndex="7">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="60d3-ae3d-dd5a-c8c1" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
+</costs>
+</entryLink>
+<entryLink id="c147-8b5c-e7d6-188b" name="Power Fist" hidden="false" collective="false" import="true" targetId="0b4d-922b-4629-b7ca" type="selectionEntry" sortIndex="8">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="362b-8763-ffc0-5fd0" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
+</costs>
+</entryLink>
+<entryLink id="6f75-6190-4508-ec95" name="Thunder Hammer" hidden="false" collective="false" import="true" targetId="5dfe-22a3-22b6-fb7c" type="selectionEntry" sortIndex="9">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="774f-b8f0-4ec3-b398" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
+</costs>
+</entryLink>
+<entryLink id="fa04-f55d-6665-e98e" name="Volkite Serpenta" hidden="false" collective="false" import="true" targetId="48a3-89aa-47ef-c849" type="selectionEntry" sortIndex="10">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="83c1-6897-ba02-3c46" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
+</costs>
+</entryLink>
+<entryLink id="0145-1de3-7f57-8782" name="Combi-Bolter" hidden="false" collective="false" import="true" targetId="5d48-9963-61d3-1a72" type="selectionEntry" sortIndex="11">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="002b-20b3-96fc-fa25" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
+</costs>
+</entryLink>
+<entryLink id="58aa-06b5-7346-51c4" name="Combi-Flamer" hidden="false" collective="false" import="true" targetId="8a4e-3dc8-c0e4-b9cf" type="selectionEntry" sortIndex="12">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7862-7caa-7bed-1ccd" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
+</costs>
+</entryLink>
+<entryLink id="c233-d36c-c871-5dce" name="Combi-Grenade Launcher" hidden="false" collective="false" import="true" targetId="53ca-71d4-e838-5ab2" type="selectionEntry" sortIndex="13">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="af60-4126-4632-bbcd" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
+</costs>
+</entryLink>
+<entryLink id="ae98-136f-fe9d-5567" name="Combi-Meltagun" hidden="false" collective="false" import="true" targetId="b147-b586-15e9-f12b" type="selectionEntry" sortIndex="14">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1db7-d143-bbd9-48cd" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
+</costs>
+</entryLink>
+<entryLink id="d99b-c8e1-4cec-e18b" name="Combi-Plasma Gun" hidden="false" collective="false" import="true" targetId="e700-2c4d-9283-a7b7" type="selectionEntry" sortIndex="15">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d86b-b702-3e42-8f0b" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
+</costs>
+</entryLink>
+<entryLink id="4c61-a2cf-41e5-a3ab" name="Combi-Volkite Charger" hidden="false" collective="false" import="true" targetId="2125-78bc-6ae3-2391" type="selectionEntry" sortIndex="16">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4cbd-738b-ddb2-f194" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
+</costs>
+</entryLink>
+<entryLink id="5e91-4504-ea4d-45a2" name="Storm Bolter" hidden="false" collective="false" import="true" targetId="4c92-8660-bb6b-730f" type="selectionEntry" sortIndex="17">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="11a8-a1df-5ca3-d735" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
+</costs>
+</entryLink>
+</entryLinks>
+</selectionEntryGroup>
+<selectionEntryGroup id="6b85-ae3d-e438-43de" name="Replace Bolter" hidden="false" collective="false" import="true" defaultSelectionEntryId="b305-182b-9c7d-d15d">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1a07-dcea-3163-a874" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="56a3-812e-0d02-c0e9" type="max" />
+</constraints>
+<selectionEntries>
+<selectionEntry id="35ed-cf5f-e25e-0da3" name="Volkite Charger" hidden="false" collective="false" import="true" type="upgrade" sortIndex="2">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2c81-47c1-db25-752c" type="max" />
+</constraints>
+<entryLinks>
+<entryLink id="1095-1b1a-c6f9-cdb7" name="Volkite Charger" hidden="false" collective="false" import="true" targetId="f7ae-d359-d2ff-f5af" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cd3b-1f4b-3246-950c" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d9aa-66bf-c446-0055" type="max" />
+</constraints>
+</entryLink>
+</entryLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
+</costs>
+</selectionEntry>
+</selectionEntries>
+<entryLinks>
+<entryLink id="b305-182b-9c7d-d15d" name="Bolter" hidden="false" collective="false" import="true" targetId="8b6f-ff45-9e8a-0d7e" type="selectionEntry" sortIndex="1" defaultAmount="1">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c226-e1b2-d836-4bb4" type="max" />
+</constraints>
+</entryLink>
+<entryLink id="74e8-c0d1-7b76-532a" name="Hand Flamer" hidden="false" collective="false" import="true" targetId="25eb-7e5c-f08a-e9b9" type="selectionEntry" sortIndex="4">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a9ca-23b6-8c45-84a1" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
+</costs>
+</entryLink>
+<entryLink id="e3e7-ee2a-7c93-3454" name="Lightning Claw" hidden="false" collective="false" import="true" targetId="0826-0946-b6a1-f42b" type="selectionEntry" sortIndex="5">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1b79-ec3a-526b-f13b" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
+</costs>
+</entryLink>
+<entryLink id="5288-6035-bc34-62d2" name="Plasma Pistol" hidden="false" collective="false" import="true" targetId="523c-5dd4-3402-0e99" type="selectionEntry" sortIndex="6">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4383-4c40-3aba-1ff8" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
+</costs>
+</entryLink>
+<entryLink id="4077-b9b6-9edc-0e7b" name="Power Fist" hidden="false" collective="false" import="true" targetId="0b4d-922b-4629-b7ca" type="selectionEntry" sortIndex="7">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bd31-1ffd-6799-2b3e" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
+</costs>
+</entryLink>
+<entryLink id="7061-a3f7-e961-affd" name="Power Weapon" hidden="false" collective="false" import="true" targetId="fb4f-b267-7556-185d" type="selectionEntry" sortIndex="8">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3f20-1ecc-d343-83fe" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
+</costs>
+</entryLink>
+<entryLink id="9386-8901-de31-995b" name="Rending Weapon" hidden="false" collective="false" import="true" targetId="ffab-7f00-50f4-91e0" type="selectionEntry" sortIndex="9">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="24ae-a4d4-d247-4e4a" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
+</costs>
+</entryLink>
+<entryLink id="2448-551a-c1ee-d259" name="Thunder Hammer" hidden="false" collective="false" import="true" targetId="5dfe-22a3-22b6-fb7c" type="selectionEntry" sortIndex="10">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0f88-99f1-1efd-a9b4" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
+</costs>
+</entryLink>
+<entryLink id="47a9-0041-2c4b-19f8" name="Volkite Serpenta" hidden="false" collective="false" import="true" targetId="48a3-89aa-47ef-c849" type="selectionEntry" sortIndex="11">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c9c8-04c8-aa2c-0997" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
+</costs>
+</entryLink>
+<entryLink id="ef6c-3514-a351-e343" name="Combi-Bolter" hidden="false" collective="false" import="true" targetId="5d48-9963-61d3-1a72" type="selectionEntry" sortIndex="12">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0734-66b3-d221-0585" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
+</costs>
+</entryLink>
+<entryLink id="a3dc-c492-0e3e-2cc1" name="Combi-Flamer" hidden="false" collective="false" import="true" targetId="8a4e-3dc8-c0e4-b9cf" type="selectionEntry" sortIndex="13">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1f46-e4a7-6ca6-cdc5" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
+</costs>
+</entryLink>
+<entryLink id="9c1a-8d92-0750-58e2" name="Combi-Grenade Launcher" hidden="false" collective="false" import="true" targetId="53ca-71d4-e838-5ab2" type="selectionEntry" sortIndex="14">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="398d-0ae5-b968-e332" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
+</costs>
+</entryLink>
+<entryLink id="77c2-8adc-e28b-65ca" name="Combi-Meltagun" hidden="false" collective="false" import="true" targetId="b147-b586-15e9-f12b" type="selectionEntry" sortIndex="15">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e94d-372b-a3fc-8e57" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
+</costs>
+</entryLink>
+<entryLink id="6874-20fc-a4aa-3898" name="Combi-Plasma Gun" hidden="false" collective="false" import="true" targetId="e700-2c4d-9283-a7b7" type="selectionEntry" sortIndex="16">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c09d-9bcf-4aaf-42ec" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
+</costs>
+</entryLink>
+<entryLink id="3339-36db-c86a-95c6" name="Combi-Volkite Charger" hidden="false" collective="false" import="true" targetId="2125-78bc-6ae3-2391" type="selectionEntry" sortIndex="17">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="22f5-3de1-0dfa-cff5" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
+</costs>
+</entryLink>
+<entryLink id="7266-15a5-02c1-15ca" name="Storm Bolter" hidden="false" collective="false" import="true" targetId="4c92-8660-bb6b-730f" type="selectionEntry" sortIndex="18">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a2ca-7c01-1fd3-9ae8" type="max" />
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
@@ -44005,43 +44794,20 @@ LIMITATIONS - Traitor Night Lords Detachment only. No Fortification. Night Lords
 <cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
 </costs>
 </selectionEntry>
-<selectionEntry id="28b7-ca4f-c6f8-e899" name="Trophies of Judgement (entire squad, Beyond Judgement)" hidden="false" collective="false" import="true" type="upgrade">
-<modifiers>
-<modifier type="set" field="hidden" value="true">
-<conditionGroups>
-<conditionGroup type="or">
-<conditions>
-<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="88ec-1ae0-3620-ed91" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-<modifier type="set" field="fcdd-5dac-98b0-26a2" value="0">
-<conditionGroups>
-<conditionGroup type="or">
-<conditions>
-<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="88ec-1ae0-3620-ed91" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-</modifiers>
+<selectionEntry id="1fd4-39a0-dc52-78b1" name="Kraken Light Bolts (unit)" hidden="false" collective="false" import="true" type="upgrade">
 <constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fcdd-5dac-98b0-26a2" type="max" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ffda-95f6-3311-aae3" type="max" />
 </constraints>
-<infoLinks>
-<infoLink id="5c6f-d5c1-3216-0970" name="Fear" hidden="false" targetId="a68f-1456-3d88-39b5" type="rule" />
-</infoLinks>
 <entryLinks>
-<entryLink id="e0e6-84fc-e471-ff4d" name="Trophies of Judgement" hidden="false" collective="false" import="true" targetId="51e4-aa76-a175-a3bf" type="selectionEntry">
+<entryLink id="a670-b102-3bdd-6e59" name="Kraken Light Bolts" hidden="false" collective="false" import="true" targetId="a325-f7d3-55d6-f52f" type="selectionEntry">
 <constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fc2a-744a-0401-c884" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0ac6-6a23-8bce-22a6" type="max" />
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9390-7dfd-63c3-3e13" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1810-b7f5-2127-fd5b" type="max" />
 </constraints>
 </entryLink>
 </entryLinks>
 <costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
+<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
 </selectionEntry>
 </selectionEntries>
@@ -44302,6 +45068,7 @@ LIMITATIONS - Traitor Night Lords Detachment only. No Fortification. Night Lords
 </modifier>
 </modifiers>
 </entryLink>
+<entryLink id="3c75-0b99-b660-321a" name="Land Raider Achilles" hidden="false" collective="false" import="true" targetId="1197-3edb-db94-5cb8" type="selectionEntry" />
 </entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
@@ -45818,6 +46585,19 @@ LIMITATIONS - Traitor Night Lords Detachment only. No Fortification. Night Lords
 <infoLink id="5c1b-72b2-ee76-b4bb" name="Legiones Astartes (Night Lords)" hidden="false" targetId="3e24-c793-00a3-ed21" type="rule" />
 <infoLink id="f365-3b80-34c2-a0e8" name="Fearless" hidden="false" targetId="7460-d0b4-32f7-f367" type="rule" />
 <infoLink id="5ac7-ba28-256b-f2b8" name="Teleport Assault" hidden="false" targetId="7e58-c0ac-405d-0194" type="rule" />
+<infoLink id="4b69-8028-cfb8-850a" name="Fear" hidden="false" targetId="a68f-1456-3d88-39b5" type="rule">
+<modifiers>
+<modifier type="set" field="hidden" value="true">
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="88ec-1ae0-3620-ed91" type="lessThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+</modifiers>
+</infoLink>
 </infoLinks>
 <selectionEntries>
 <selectionEntry id="bd0e-5298-6366-1bec" name="Atramentar" hidden="false" collective="false" import="true" type="model">
@@ -45869,45 +46649,6 @@ LIMITATIONS - Traitor Night Lords Detachment only. No Fortification. Night Lords
 </entryLinks>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="50" />
-</costs>
-</selectionEntry>
-<selectionEntry id="ff29-d3b5-b73c-c356" name="Trophies of Judgement (entire squad, Beyond Judgement)" hidden="false" collective="false" import="true" type="upgrade">
-<modifiers>
-<modifier type="set" field="hidden" value="true">
-<conditionGroups>
-<conditionGroup type="or">
-<conditions>
-<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="88ec-1ae0-3620-ed91" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-<modifier type="set" field="a5f4-36af-162c-bf59" value="0">
-<conditionGroups>
-<conditionGroup type="or">
-<conditions>
-<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="88ec-1ae0-3620-ed91" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-</modifiers>
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a5f4-36af-162c-bf59" type="max" />
-</constraints>
-<infoLinks>
-<infoLink id="2840-143e-7419-0feb" name="Fear" hidden="false" targetId="a68f-1456-3d88-39b5" type="rule" />
-</infoLinks>
-<entryLinks>
-<entryLink id="173a-1831-e8ec-55f3" name="Trophies of Judgement" hidden="false" collective="false" import="true" targetId="51e4-aa76-a175-a3bf" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="18b0-aefc-de66-b958" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6734-bed0-1cc4-ccb2" type="max" />
-</constraints>
-</entryLink>
-</entryLinks>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
 </costs>
 </selectionEntry>
 </selectionEntries>
@@ -46197,6 +46938,7 @@ LIMITATIONS - Traitor Night Lords Detachment only. No Fortification. Night Lords
 </modifier>
 </modifiers>
 </entryLink>
+<entryLink id="d840-4d44-5fb4-8657" name="Land Raider Achilles" hidden="false" collective="false" import="true" targetId="1197-3edb-db94-5cb8" type="selectionEntry" />
 </entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
@@ -46208,6 +46950,19 @@ LIMITATIONS - Traitor Night Lords Detachment only. No Fortification. Night Lords
 <infoLinks>
 <infoLink id="6e41-029c-2171-230c" name="Legiones Astartes (Night Lords)" hidden="false" targetId="3e24-c793-00a3-ed21" type="rule" />
 <infoLink id="e65f-fa21-a88a-6bbb" name="Hit &amp; Run" hidden="false" targetId="9ad4-0242-3691-d8b3" type="rule" />
+<infoLink id="febd-f7b9-6333-d981" name="Fear" hidden="false" targetId="a68f-1456-3d88-39b5" type="rule">
+<modifiers>
+<modifier type="set" field="hidden" value="true">
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="88ec-1ae0-3620-ed91" type="lessThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+</modifiers>
+</infoLink>
 </infoLinks>
 <selectionEntries>
 <selectionEntry id="463c-8377-e8c7-9404" name="Raptor Sergeant" hidden="false" collective="false" import="true" type="model">
@@ -47230,45 +47985,6 @@ LIMITATIONS - Traitor Night Lords Detachment only. No Fortification. Night Lords
 <cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
 </costs>
 </selectionEntry>
-<selectionEntry id="1170-22aa-e48b-3e59" name="Trophies of Judgement (entire squad, Beyond Judgement)" hidden="false" collective="false" import="true" type="upgrade">
-<modifiers>
-<modifier type="set" field="hidden" value="true">
-<conditionGroups>
-<conditionGroup type="or">
-<conditions>
-<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="88ec-1ae0-3620-ed91" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-<modifier type="set" field="4c52-361b-411e-e3d1" value="0">
-<conditionGroups>
-<conditionGroup type="or">
-<conditions>
-<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="88ec-1ae0-3620-ed91" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-</modifiers>
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4c52-361b-411e-e3d1" type="max" />
-</constraints>
-<infoLinks>
-<infoLink id="b472-d690-2a0f-365f" name="Fear" hidden="false" targetId="a68f-1456-3d88-39b5" type="rule" />
-</infoLinks>
-<entryLinks>
-<entryLink id="23c6-7c70-fde1-b2d1" name="Trophies of Judgement" hidden="false" collective="false" import="true" targetId="51e4-aa76-a175-a3bf" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e90e-f39f-8f63-fdb1" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a11f-7f08-aee9-0d1a" type="max" />
-</constraints>
-</entryLink>
-</entryLinks>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
-</costs>
-</selectionEntry>
 </selectionEntries>
 <selectionEntryGroups>
 <selectionEntryGroup id="69b0-6375-507a-9640" name="Replace Chainsword (up to five models)" hidden="false" collective="false" import="true">
@@ -47333,6 +48049,19 @@ LIMITATIONS - Traitor Night Lords Detachment only. No Fortification. Night Lords
 <infoLink id="8ba1-1c17-c758-e2fb" name="Infiltrate" hidden="false" targetId="ad57-6634-e426-3e1c" type="rule" />
 <infoLink id="9b1b-8b7a-bfe1-de47" name="Preferred Enemy (Infantry)" hidden="false" targetId="5a90-eee2-01f0-5b47" type="rule" />
 <infoLink id="ebe1-8fbc-19cd-c586" name="Preferred Enemy" hidden="false" targetId="17b8-dd24-3326-9022" type="rule" />
+<infoLink id="b51e-764c-f6f6-834e" name="Fear" hidden="false" targetId="a68f-1456-3d88-39b5" type="rule">
+<modifiers>
+<modifier type="set" field="hidden" value="true">
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="88ec-1ae0-3620-ed91" type="lessThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+</modifiers>
+</infoLink>
 </infoLinks>
 <selectionEntries>
 <selectionEntry id="5745-5b67-ede7-8a87" name="Headsman" hidden="false" collective="false" import="true" type="model">
@@ -47357,40 +48086,24 @@ LIMITATIONS - Traitor Night Lords Detachment only. No Fortification. Night Lords
 </profile>
 </profiles>
 <selectionEntryGroups>
-<selectionEntryGroup id="7ca6-16c3-e4f0-1a66" name="Replace Chainsword" hidden="false" collective="false" import="true" defaultSelectionEntryId="480f-5118-5d20-2b8c">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4d5e-50e9-7dc0-d763" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="41a7-e1df-2410-bbc0" type="max" />
-</constraints>
-<entryLinks>
-<entryLink id="480f-5118-5d20-2b8c" name="Chainsword" hidden="false" collective="false" import="true" targetId="3f81-4517-73f5-ceb7" type="selectionEntry" sortIndex="1" defaultAmount="1" />
-<entryLink id="297e-04b8-72af-62e1" name="Rending Weapon" hidden="false" collective="false" import="true" targetId="ffab-7f00-50f4-91e0" type="selectionEntry" sortIndex="3">
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
-</costs>
-</entryLink>
-<entryLink id="8018-9559-dbd1-e7d7" name="Power Weapon" hidden="false" collective="false" import="true" targetId="fb4f-b267-7556-185d" type="selectionEntry" sortIndex="4">
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
-</costs>
-</entryLink>
-</entryLinks>
-</selectionEntryGroup>
-<selectionEntryGroup id="6be3-5cf0-dcac-2d75" name="Replace Bolter" hidden="false" collective="false" import="true" defaultSelectionEntryId="d971-be93-0d55-e097">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f822-69b9-247e-0598" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="23e9-ed9f-9e64-19a6" type="max" />
-</constraints>
-<entryLinks>
-<entryLink id="d971-be93-0d55-e097" name="Bolter" hidden="false" collective="false" import="true" targetId="8b6f-ff45-9e8a-0d7e" type="selectionEntry" sortIndex="1" defaultAmount="1" />
-<entryLink id="95f0-4112-7b5b-7e20" name="Volkite Charger" hidden="false" collective="false" import="true" targetId="f7ae-d359-d2ff-f5af" type="selectionEntry" sortIndex="3">
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
-</costs>
-</entryLink>
-</entryLinks>
-</selectionEntryGroup>
 <selectionEntryGroup id="2e64-ec88-802a-4f2a" name="Space Marine Armoury (max 50 pts)" hidden="false" collective="false" import="true">
+<modifiers>
+<modifier type="increment" field="9bc9-698c-b8fd-631e" value="5">
+<conditions>
+<condition field="selections" scope="5745-5b67-ede7-8a87" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b6c5-882a-03b5-4cb8" type="atLeast" />
+</conditions>
+</modifier>
+<modifier type="increment" field="9bc9-698c-b8fd-631e" value="10">
+<conditions>
+<condition field="selections" scope="5745-5b67-ede7-8a87" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="548e-8ef7-8ed9-71c7" type="atLeast" />
+</conditions>
+</modifier>
+<modifier type="increment" field="9bc9-698c-b8fd-631e" value="10">
+<conditions>
+<condition field="selections" scope="5745-5b67-ede7-8a87" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ca2b-98fb-0c2e-8074" type="atLeast" />
+</conditions>
+</modifier>
+</modifiers>
 <constraints>
 <constraint field="pts0-0000-0000-0001" scope="self" value="50" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="9bc9-698c-b8fd-631e" type="max" />
 </constraints>
@@ -47422,15 +48135,7 @@ LIMITATIONS - Traitor Night Lords Detachment only. No Fortification. Night Lords
 <cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
 </costs>
 </entryLink>
-<entryLink id="b562-0d50-91ae-ce45" name="Pair of Lightning Claws" hidden="false" collective="false" import="true" targetId="af2b-d487-5b80-ae9b" type="selectionEntry" sortIndex="5">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="857a-9c92-d9eb-921a" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
-</costs>
-</entryLink>
-<entryLink id="5682-727e-ff2b-9900" name="Plasma Pistol" hidden="false" collective="false" import="true" targetId="523c-5dd4-3402-0e99" type="selectionEntry" sortIndex="6">
+<entryLink id="5682-727e-ff2b-9900" name="Plasma Pistol" hidden="false" collective="false" import="true" targetId="523c-5dd4-3402-0e99" type="selectionEntry" sortIndex="5">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4c96-9100-4cbb-902c" type="max" />
 </constraints>
@@ -47438,7 +48143,7 @@ LIMITATIONS - Traitor Night Lords Detachment only. No Fortification. Night Lords
 <cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
 </costs>
 </entryLink>
-<entryLink id="9475-e31e-0d46-b991" name="Power Fist" hidden="false" collective="false" import="true" targetId="0b4d-922b-4629-b7ca" type="selectionEntry" sortIndex="7">
+<entryLink id="9475-e31e-0d46-b991" name="Power Fist" hidden="false" collective="false" import="true" targetId="0b4d-922b-4629-b7ca" type="selectionEntry" sortIndex="6">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="14d7-db97-35f0-363c" type="max" />
 </constraints>
@@ -47446,7 +48151,7 @@ LIMITATIONS - Traitor Night Lords Detachment only. No Fortification. Night Lords
 <cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
 </costs>
 </entryLink>
-<entryLink id="68cf-c6e2-e1a5-e789" name="Power Weapon" hidden="false" collective="false" import="true" targetId="fb4f-b267-7556-185d" type="selectionEntry" sortIndex="8">
+<entryLink id="68cf-c6e2-e1a5-e789" name="Power Weapon" hidden="false" collective="false" import="true" targetId="fb4f-b267-7556-185d" type="selectionEntry" sortIndex="7">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bf18-8989-0dbf-83c1" type="max" />
 </constraints>
@@ -47454,7 +48159,7 @@ LIMITATIONS - Traitor Night Lords Detachment only. No Fortification. Night Lords
 <cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
 </costs>
 </entryLink>
-<entryLink id="ed8d-d3da-84bd-a3ae" name="Rending Weapon" hidden="false" collective="false" import="true" targetId="ffab-7f00-50f4-91e0" type="selectionEntry" sortIndex="9">
+<entryLink id="ed8d-d3da-84bd-a3ae" name="Rending Weapon" hidden="false" collective="false" import="true" targetId="ffab-7f00-50f4-91e0" type="selectionEntry" sortIndex="8">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f751-87ce-80c4-0362" type="max" />
 </constraints>
@@ -47462,7 +48167,7 @@ LIMITATIONS - Traitor Night Lords Detachment only. No Fortification. Night Lords
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
 </costs>
 </entryLink>
-<entryLink id="bdbe-794d-62e7-04fa" name="Thunder Hammer" hidden="false" collective="false" import="true" targetId="5dfe-22a3-22b6-fb7c" type="selectionEntry" sortIndex="10">
+<entryLink id="bdbe-794d-62e7-04fa" name="Thunder Hammer" hidden="false" collective="false" import="true" targetId="5dfe-22a3-22b6-fb7c" type="selectionEntry" sortIndex="9">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="33dd-ee0e-c55e-0780" type="max" />
 </constraints>
@@ -47470,7 +48175,7 @@ LIMITATIONS - Traitor Night Lords Detachment only. No Fortification. Night Lords
 <cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
 </costs>
 </entryLink>
-<entryLink id="47ac-afd7-c0a4-db06" name="Volkite Serpenta" hidden="false" collective="false" import="true" targetId="48a3-89aa-47ef-c849" type="selectionEntry" sortIndex="11">
+<entryLink id="47ac-afd7-c0a4-db06" name="Volkite Serpenta" hidden="false" collective="false" import="true" targetId="48a3-89aa-47ef-c849" type="selectionEntry" sortIndex="10">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5244-eb0c-9dc3-3e2b" type="max" />
 </constraints>
@@ -47478,7 +48183,7 @@ LIMITATIONS - Traitor Night Lords Detachment only. No Fortification. Night Lords
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
 </costs>
 </entryLink>
-<entryLink id="1eff-29c0-305b-d12b" name="Combi-Bolter" hidden="false" collective="false" import="true" targetId="5d48-9963-61d3-1a72" type="selectionEntry" sortIndex="12">
+<entryLink id="1eff-29c0-305b-d12b" name="Combi-Bolter" hidden="false" collective="false" import="true" targetId="5d48-9963-61d3-1a72" type="selectionEntry" sortIndex="11">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0b60-5480-89f5-d5f5" type="max" />
 </constraints>
@@ -47486,7 +48191,7 @@ LIMITATIONS - Traitor Night Lords Detachment only. No Fortification. Night Lords
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
 </costs>
 </entryLink>
-<entryLink id="5d9d-fd68-adc4-e6dc" name="Combi-Flamer" hidden="false" collective="false" import="true" targetId="8a4e-3dc8-c0e4-b9cf" type="selectionEntry" sortIndex="13">
+<entryLink id="5d9d-fd68-adc4-e6dc" name="Combi-Flamer" hidden="false" collective="false" import="true" targetId="8a4e-3dc8-c0e4-b9cf" type="selectionEntry" sortIndex="12">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7bed-adaf-7008-23b3" type="max" />
 </constraints>
@@ -47494,7 +48199,7 @@ LIMITATIONS - Traitor Night Lords Detachment only. No Fortification. Night Lords
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
 </entryLink>
-<entryLink id="ff02-a516-efbc-348a" name="Combi-Grenade Launcher" hidden="false" collective="false" import="true" targetId="53ca-71d4-e838-5ab2" type="selectionEntry" sortIndex="14">
+<entryLink id="ff02-a516-efbc-348a" name="Combi-Grenade Launcher" hidden="false" collective="false" import="true" targetId="53ca-71d4-e838-5ab2" type="selectionEntry" sortIndex="13">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6396-bf75-58a3-c888" type="max" />
 </constraints>
@@ -47502,7 +48207,7 @@ LIMITATIONS - Traitor Night Lords Detachment only. No Fortification. Night Lords
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
 </entryLink>
-<entryLink id="7f86-2279-9a74-97c8" name="Combi-Meltagun" hidden="false" collective="false" import="true" targetId="b147-b586-15e9-f12b" type="selectionEntry" sortIndex="15">
+<entryLink id="7f86-2279-9a74-97c8" name="Combi-Meltagun" hidden="false" collective="false" import="true" targetId="b147-b586-15e9-f12b" type="selectionEntry" sortIndex="14">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="288c-e0da-2b2d-18f1" type="max" />
 </constraints>
@@ -47510,7 +48215,7 @@ LIMITATIONS - Traitor Night Lords Detachment only. No Fortification. Night Lords
 <cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
 </costs>
 </entryLink>
-<entryLink id="d108-7645-1f61-7ec1" name="Combi-Plasma Gun" hidden="false" collective="false" import="true" targetId="e700-2c4d-9283-a7b7" type="selectionEntry" sortIndex="16">
+<entryLink id="d108-7645-1f61-7ec1" name="Combi-Plasma Gun" hidden="false" collective="false" import="true" targetId="e700-2c4d-9283-a7b7" type="selectionEntry" sortIndex="15">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3499-dbb7-db6e-5e6a" type="max" />
 </constraints>
@@ -47518,7 +48223,7 @@ LIMITATIONS - Traitor Night Lords Detachment only. No Fortification. Night Lords
 <cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
 </costs>
 </entryLink>
-<entryLink id="5326-cfbc-00ab-4472" name="Combi-Volkite Charger" hidden="false" collective="false" import="true" targetId="2125-78bc-6ae3-2391" type="selectionEntry" sortIndex="17">
+<entryLink id="5326-cfbc-00ab-4472" name="Combi-Volkite Charger" hidden="false" collective="false" import="true" targetId="2125-78bc-6ae3-2391" type="selectionEntry" sortIndex="16">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f9cb-a080-7b57-b860" type="max" />
 </constraints>
@@ -47526,9 +48231,311 @@ LIMITATIONS - Traitor Night Lords Detachment only. No Fortification. Night Lords
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
 </entryLink>
-<entryLink id="07e5-d1e9-e936-166f" name="Storm Bolter" hidden="false" collective="false" import="true" targetId="4c92-8660-bb6b-730f" type="selectionEntry" sortIndex="18">
+<entryLink id="07e5-d1e9-e936-166f" name="Storm Bolter" hidden="false" collective="false" import="true" targetId="4c92-8660-bb6b-730f" type="selectionEntry" sortIndex="17">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cdac-2d85-8e59-27a7" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
+</costs>
+</entryLink>
+</entryLinks>
+</selectionEntryGroup>
+<selectionEntryGroup id="1c29-87b0-6782-bbb7" name="Replace Chainsword" hidden="false" collective="false" import="true" defaultSelectionEntryId="9183-3a49-431d-1a99">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="36d5-08c7-66d4-4710" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6ec5-34f0-fb22-2f76" type="max" />
+</constraints>
+<selectionEntries>
+<selectionEntry id="b6c5-882a-03b5-4cb8" name="Rending Weapon" hidden="false" collective="false" import="true" type="upgrade" sortIndex="2">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f09c-3d3b-b77e-0f86" type="max" />
+</constraints>
+<entryLinks>
+<entryLink id="ebc5-7ea1-ffdd-3fcf" name="Rending Weapon" hidden="false" collective="false" import="true" targetId="ffab-7f00-50f4-91e0" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aa6f-d396-51c7-6d83" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a333-1042-b14a-71b5" type="max" />
+</constraints>
+</entryLink>
+</entryLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
+</costs>
+</selectionEntry>
+<selectionEntry id="548e-8ef7-8ed9-71c7" name="Power Weapon" hidden="false" collective="false" import="true" type="upgrade" sortIndex="3">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a11a-0a92-ac50-80af" type="max" />
+</constraints>
+<entryLinks>
+<entryLink id="e16e-97fe-38fa-8104" name="Power Weapon" hidden="false" collective="false" import="true" targetId="fb4f-b267-7556-185d" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7bcf-f2b9-6942-c5b7" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="78c3-2393-ff2c-f65b" type="max" />
+</constraints>
+</entryLink>
+</entryLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
+</costs>
+</selectionEntry>
+</selectionEntries>
+<entryLinks>
+<entryLink id="9183-3a49-431d-1a99" name="Chainsword" hidden="false" collective="false" import="true" targetId="3f81-4517-73f5-ceb7" type="selectionEntry" sortIndex="1" defaultAmount="1">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="314f-2493-e024-230c" type="max" />
+</constraints>
+</entryLink>
+<entryLink id="7684-723b-20cb-6648" name="Hand Flamer" hidden="false" collective="false" import="true" targetId="25eb-7e5c-f08a-e9b9" type="selectionEntry" sortIndex="5">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="70b5-9f24-6647-2c45" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
+</costs>
+</entryLink>
+<entryLink id="7e0e-3b12-0fd4-ed95" name="Lightning Claw" hidden="false" collective="false" import="true" targetId="0826-0946-b6a1-f42b" type="selectionEntry" sortIndex="6">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5691-9762-3521-7cf6" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
+</costs>
+</entryLink>
+<entryLink id="d85a-8029-7a7c-39fa" name="Plasma Pistol" hidden="false" collective="false" import="true" targetId="523c-5dd4-3402-0e99" type="selectionEntry" sortIndex="7">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c278-e366-0420-fd52" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
+</costs>
+</entryLink>
+<entryLink id="d534-ba44-91d2-7bb6" name="Power Fist" hidden="false" collective="false" import="true" targetId="0b4d-922b-4629-b7ca" type="selectionEntry" sortIndex="8">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="037a-228a-0092-c0ca" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
+</costs>
+</entryLink>
+<entryLink id="939d-7a2a-8fa1-4294" name="Thunder Hammer" hidden="false" collective="false" import="true" targetId="5dfe-22a3-22b6-fb7c" type="selectionEntry" sortIndex="9">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="91d3-8924-7c58-46fb" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
+</costs>
+</entryLink>
+<entryLink id="be24-5966-8e55-4500" name="Volkite Serpenta" hidden="false" collective="false" import="true" targetId="48a3-89aa-47ef-c849" type="selectionEntry" sortIndex="10">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e400-17a6-e5aa-bdc3" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
+</costs>
+</entryLink>
+<entryLink id="8824-5c7d-9d67-deb2" name="Combi-Bolter" hidden="false" collective="false" import="true" targetId="5d48-9963-61d3-1a72" type="selectionEntry" sortIndex="11">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="936c-6828-2a85-c9fb" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
+</costs>
+</entryLink>
+<entryLink id="9e77-9e47-f1a9-0725" name="Combi-Flamer" hidden="false" collective="false" import="true" targetId="8a4e-3dc8-c0e4-b9cf" type="selectionEntry" sortIndex="12">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7a7a-1b17-340a-4f7c" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
+</costs>
+</entryLink>
+<entryLink id="159a-a5f7-829d-6399" name="Combi-Grenade Launcher" hidden="false" collective="false" import="true" targetId="53ca-71d4-e838-5ab2" type="selectionEntry" sortIndex="13">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3d2c-9610-3887-1e48" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
+</costs>
+</entryLink>
+<entryLink id="bcb9-5965-14ba-fa74" name="Combi-Meltagun" hidden="false" collective="false" import="true" targetId="b147-b586-15e9-f12b" type="selectionEntry" sortIndex="14">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eb62-59ec-f650-6efc" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
+</costs>
+</entryLink>
+<entryLink id="9455-dd3f-dadb-3700" name="Combi-Plasma Gun" hidden="false" collective="false" import="true" targetId="e700-2c4d-9283-a7b7" type="selectionEntry" sortIndex="15">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f6dc-b6e2-694e-065a" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
+</costs>
+</entryLink>
+<entryLink id="457f-24f6-1a11-72f3" name="Combi-Volkite Charger" hidden="false" collective="false" import="true" targetId="2125-78bc-6ae3-2391" type="selectionEntry" sortIndex="16">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1463-ce3e-965c-300b" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
+</costs>
+</entryLink>
+<entryLink id="3084-f1db-3a6e-669a" name="Storm Bolter" hidden="false" collective="false" import="true" targetId="4c92-8660-bb6b-730f" type="selectionEntry" sortIndex="17">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8bfa-6388-b8e8-a493" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
+</costs>
+</entryLink>
+</entryLinks>
+</selectionEntryGroup>
+<selectionEntryGroup id="0268-c0a0-754a-2e52" name="Replace Bolter" hidden="false" collective="false" import="true" defaultSelectionEntryId="4336-aaea-e286-2053">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f1f9-3ae8-695c-6f38" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6be7-4e17-9fec-5436" type="max" />
+</constraints>
+<selectionEntries>
+<selectionEntry id="ca2b-98fb-0c2e-8074" name="Volkite Charger" hidden="false" collective="false" import="true" type="upgrade" sortIndex="2">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bb17-4188-e0dc-7bb4" type="max" />
+</constraints>
+<entryLinks>
+<entryLink id="dbe3-644b-6fa1-c7bc" name="Volkite Charger" hidden="false" collective="false" import="true" targetId="f7ae-d359-d2ff-f5af" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9f33-7962-e527-4d01" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9fe2-f88e-d1f7-a139" type="max" />
+</constraints>
+</entryLink>
+</entryLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
+</costs>
+</selectionEntry>
+</selectionEntries>
+<entryLinks>
+<entryLink id="4336-aaea-e286-2053" name="Bolter" hidden="false" collective="false" import="true" targetId="8b6f-ff45-9e8a-0d7e" type="selectionEntry" sortIndex="1" defaultAmount="1">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="39a1-da97-cf27-932c" type="max" />
+</constraints>
+</entryLink>
+<entryLink id="54c4-0615-24c1-477c" name="Hand Flamer" hidden="false" collective="false" import="true" targetId="25eb-7e5c-f08a-e9b9" type="selectionEntry" sortIndex="4">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="56eb-3c28-32b5-0a3f" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
+</costs>
+</entryLink>
+<entryLink id="a347-ff72-2d84-6e12" name="Lightning Claw" hidden="false" collective="false" import="true" targetId="0826-0946-b6a1-f42b" type="selectionEntry" sortIndex="5">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6df0-a92f-21bd-3f66" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
+</costs>
+</entryLink>
+<entryLink id="08f7-9017-a7be-d677" name="Plasma Pistol" hidden="false" collective="false" import="true" targetId="523c-5dd4-3402-0e99" type="selectionEntry" sortIndex="6">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eabd-9c24-a516-90af" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
+</costs>
+</entryLink>
+<entryLink id="4e45-c240-c4a3-5274" name="Power Fist" hidden="false" collective="false" import="true" targetId="0b4d-922b-4629-b7ca" type="selectionEntry" sortIndex="7">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1178-3455-72c9-6029" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
+</costs>
+</entryLink>
+<entryLink id="73a0-e7c7-519b-3e93" name="Power Weapon" hidden="false" collective="false" import="true" targetId="fb4f-b267-7556-185d" type="selectionEntry" sortIndex="8">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8761-b157-1dcb-9449" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
+</costs>
+</entryLink>
+<entryLink id="d5c5-9612-875d-d2a5" name="Rending Weapon" hidden="false" collective="false" import="true" targetId="ffab-7f00-50f4-91e0" type="selectionEntry" sortIndex="9">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e4d4-9a45-5cb7-7407" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
+</costs>
+</entryLink>
+<entryLink id="f5e0-4f26-4098-47ba" name="Thunder Hammer" hidden="false" collective="false" import="true" targetId="5dfe-22a3-22b6-fb7c" type="selectionEntry" sortIndex="10">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2548-3696-878c-03d7" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
+</costs>
+</entryLink>
+<entryLink id="a81e-54ac-643f-1e97" name="Volkite Serpenta" hidden="false" collective="false" import="true" targetId="48a3-89aa-47ef-c849" type="selectionEntry" sortIndex="11">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ffee-e242-13f9-82cb" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
+</costs>
+</entryLink>
+<entryLink id="d82a-816f-a7ff-f1b8" name="Combi-Bolter" hidden="false" collective="false" import="true" targetId="5d48-9963-61d3-1a72" type="selectionEntry" sortIndex="12">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8b36-f75c-4d76-c47f" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
+</costs>
+</entryLink>
+<entryLink id="60e8-c01c-fa06-e807" name="Combi-Flamer" hidden="false" collective="false" import="true" targetId="8a4e-3dc8-c0e4-b9cf" type="selectionEntry" sortIndex="13">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ec36-a161-f59f-80f5" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
+</costs>
+</entryLink>
+<entryLink id="8dfe-54dc-6f73-883d" name="Combi-Grenade Launcher" hidden="false" collective="false" import="true" targetId="53ca-71d4-e838-5ab2" type="selectionEntry" sortIndex="14">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4ab3-7bbc-6e96-f045" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
+</costs>
+</entryLink>
+<entryLink id="6e0b-7842-b515-5404" name="Combi-Meltagun" hidden="false" collective="false" import="true" targetId="b147-b586-15e9-f12b" type="selectionEntry" sortIndex="15">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="50b2-50a4-1dd8-de76" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
+</costs>
+</entryLink>
+<entryLink id="f4ed-8331-89e5-66cc" name="Combi-Plasma Gun" hidden="false" collective="false" import="true" targetId="e700-2c4d-9283-a7b7" type="selectionEntry" sortIndex="16">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="268f-1b8e-6806-f392" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
+</costs>
+</entryLink>
+<entryLink id="176b-7ffa-9669-ec19" name="Combi-Volkite Charger" hidden="false" collective="false" import="true" targetId="2125-78bc-6ae3-2391" type="selectionEntry" sortIndex="17">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7b44-c338-e375-2ba6" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
+</costs>
+</entryLink>
+<entryLink id="d0e2-482f-6d47-9cc0" name="Storm Bolter" hidden="false" collective="false" import="true" targetId="4c92-8660-bb6b-730f" type="selectionEntry" sortIndex="18">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="35fd-56c6-947f-44ec" type="max" />
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
@@ -47831,43 +48838,20 @@ LIMITATIONS - Traitor Night Lords Detachment only. No Fortification. Night Lords
 <cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
 </costs>
 </selectionEntry>
-<selectionEntry id="9e61-5f10-a0cf-6b5e" name="Trophies of Judgement (entire squad, Beyond Judgement)" hidden="false" collective="false" import="true" type="upgrade">
-<modifiers>
-<modifier type="set" field="hidden" value="true">
-<conditionGroups>
-<conditionGroup type="or">
-<conditions>
-<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="88ec-1ae0-3620-ed91" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-<modifier type="set" field="f6fd-8cc9-a2f4-d40b" value="0">
-<conditionGroups>
-<conditionGroup type="or">
-<conditions>
-<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="88ec-1ae0-3620-ed91" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-</modifiers>
+<selectionEntry id="9276-3f01-26c5-b494" name="Kraken Light Bolts (unit)" hidden="false" collective="false" import="true" type="upgrade">
 <constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f6fd-8cc9-a2f4-d40b" type="max" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e473-63f0-03c7-2cb1" type="max" />
 </constraints>
-<infoLinks>
-<infoLink id="194d-0f16-07cf-fffe" name="Fear" hidden="false" targetId="a68f-1456-3d88-39b5" type="rule" />
-</infoLinks>
 <entryLinks>
-<entryLink id="37a9-61f7-0457-64fd" name="Trophies of Judgement" hidden="false" collective="false" import="true" targetId="51e4-aa76-a175-a3bf" type="selectionEntry">
+<entryLink id="ae49-1cf4-61a9-b592" name="Kraken Light Bolts" hidden="false" collective="false" import="true" targetId="a325-f7d3-55d6-f52f" type="selectionEntry">
 <constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3507-dfa3-7cd5-6a0a" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6978-2907-e858-06b6" type="max" />
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b36d-9d82-97ab-e544" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2c48-fba6-6d98-e51a" type="max" />
 </constraints>
 </entryLink>
 </entryLinks>
 <costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
+<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
 </selectionEntry>
 </selectionEntries>
@@ -48128,6 +49112,7 @@ LIMITATIONS - Traitor Night Lords Detachment only. No Fortification. Night Lords
 </modifier>
 </modifiers>
 </entryLink>
+<entryLink id="45c4-b26e-a7bb-f821" name="Land Raider Achilles" hidden="false" collective="false" import="true" targetId="1197-3edb-db94-5cb8" type="selectionEntry" />
 </entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
@@ -50373,7 +51358,7 @@ Afterwards the squad may not enter Overwatch, may not make Return Fire or Stand 
 <description>Night Lords units arriving by Deep Strike may re-roll the Scatter die. Night Lords units arriving by Outflank may re-roll the roll that determines which table edge they arrive from.</description>
 </rule>
 <rule id="8f74-712d-951e-740b" name="Terror Assault" hidden="false">
-<description>A Night Lords army may exchange two Heavy Support selections for one additional Fast Attack selection; the Standard Force Organisation Chart then allows 4 Fast Attack / 1 Heavy Support. (Select the option on the Legion entry.)</description>
+<description>A Night Lords army may exchange two Heavy Support selections for one additional Fast Attack selection; the Standard Force Organisation Chart then allows 4 Fast Attack / 1 Heavy Support. (Toggle the option on the Legion entry on or off.)</description>
 </rule>
 <rule id="3875-e379-dc58-9290" name="Nostraman Chainglaive" hidden="false">
 <description>The Nostraman Chainglaive does not count as a Power Weapon.</description>
@@ -50391,7 +51376,7 @@ Afterwards the squad may not enter Overwatch, may not make Return Fire or Stand 
 <description>The model has the Preferred Enemy special rule against Independent Characters.</description>
 </rule>
 <rule id="9260-037b-20a7-9d1e" name="Nostraman Chainblade" hidden="false">
-<description>A Nostraman Chainblade is a Two-Handed Rending Weapon which grants +1 Strength.</description>
+<description>A Nostraman Chainblade is a Two-Handed Rending Weapon which grants +1 Strength. It counts as a Power Weapon (attacks ignore Armour Saves).</description>
 </rule>
 <rule id="eb1e-767d-a030-112a" name="Escaton Power Claw" hidden="false">
 <description>Counts as a Power Fist. In addition, the wielder may re-roll failed To Wound rolls made with the Escaton Power Claw.</description>
@@ -50453,9 +51438,6 @@ Afterwards the squad may not enter Overwatch, may not make Return Fire or Stand 
 <rule id="e352-b398-39c1-7090" name="King of Terrors" hidden="false">
 <description>Enemy units with at least one model within 12" of Konrad Curze suffer -2 Leadership. Models and units with Fearless are unaffected.</description>
 </rule>
-<rule id="c4a3-c906-8f01-fefd" name="Bloody Murder" hidden="false">
-<description>Listed in Konrad Curze's special rules; no rule text is given in the army book.</description>
-</rule>
 <rule id="4591-ebee-21c3-9578" name="Night Haunter" hidden="false">
 <description>Konrad Curze has Stealth and Hit &amp; Run. In the Movement phase he moves as though he were Jump Infantry, despite not having a Jump Pack. This does not change his Unit Type or grant him Deep Strike, Bulky, Swift or any other rule normally associated with Jump Infantry.</description>
 </rule>
@@ -50463,7 +51445,7 @@ Afterwards the squad may not enter Overwatch, may not make Return Fire or Stand 
 <description>The first successful To Hit roll made against Konrad Curze during each player turn must be re-rolled; the second result must be accepted. Curze is a Psyker (Mastery Level 1) and knows only the Precognition power (Divination); he takes the Psychic Test for it on Leadership 8. All other rules (Perils of the Warp, Disturbance in the Warp) apply normally.</description>
 </rule>
 <rule id="1f85-6a7c-b631-f329" name="Primarch Retinue (Konrad Curze)" hidden="false">
-<description>Konrad Curze may select one Legion Terminator Command Squad, Atramentar Flay-Clade, Night Raptor Squad or Terror Squad as his Primarch Retinue (no additional Force Organisation selection). Night Raptor Retinue: a Night Raptor Squad selected this way may use his Hit &amp; Run special rule while he remains part of the unit.</description>
+<description>Konrad Curze may select one Legion Terminator Command Squad, Atramentar Flay-Clade, Night Raptor Squad or Terror Squad as his Primarch Retinue (no additional Force Organisation selection); it otherwise follows the normal Primarch Retinue rules.</description>
 </rule>
 <rule id="35fe-cb8b-e206-eecb" name="Nightmare Mantle" hidden="false">
 <description>The Nightmare Mantle counts as Primarch Armour (1+ Armour Save, 4+ Invulnerable Save).</description>
@@ -51507,7 +52489,7 @@ Afterwards the squad may not enter Overwatch, may not make Return Fire or Stand 
 <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">-</characteristic>
 <characteristic name="S" typeId="6204-806b-a18a-c0be">User +1</characteristic>
 <characteristic name="AP" typeId="964e-6f66-dcaa-247a">-</characteristic>
-<characteristic name="Type" typeId="54df-9f85-8d55-7440">Rending, Two-Handed</characteristic>
+<characteristic name="Type" typeId="54df-9f85-8d55-7440">Power Weapon, Rending, Two-Handed</characteristic>
 </characteristics>
 </profile>
 <profile id="026f-3c5a-f41e-f4af" name="Escaton Power Claw" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">

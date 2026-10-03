@@ -103,8 +103,8 @@ RULES = {
         "gains Furious Charge for that Assault phase. Bloodied Claws: Grey Slayer Squads and Legion Assault Squads must "
         "declare a charge during the Assault phase if an enemy unit is within their legal charge distance (the Space "
         "Wolves player chooses which if several).\n"
-        "LIMITATIONS - No Prey Left Unhunted: Grey Slayer Squads may fulfil compulsory Troops selections; at least one "
-        "compulsory Troops choice must be a Grey Slayer Squad. No Path of Retreat: units in this Detachment may not "
+        "LIMITATIONS - No Prey Left Unhunted: Grey Slayer Squads must fulfil compulsory Troops selections when using "
+        "this Rite. No Path of Retreat: units in this Detachment may not "
         "voluntarily withdraw from close combat; if a Space Wolves unit wins a close combat and an enemy unit retreats, the "
         "Space Wolves must Pursue whenever able. The Breaking of the Line: the Detachment may not include Artillery units, "
         "units with Slow and Purposeful, Immobile units or Fortifications, and may not include an Allied Detachment "
@@ -257,8 +257,7 @@ WARGEAR_ = {
     "Yimira Stasis Bombs": (
         "A Deathsworn Pack counts as being equipped with Defensive Grenades. In addition, when an enemy unit Retreats from "
         "a close combat involving a Deathsworn Pack, roll two dice for the D6 portion of its Retreat distance and use the "
-        "lower result. During the Shooting phase, one Deathsworn may throw a Yimira Stasis Bomb instead of firing another "
-        "weapon. Yimira Stasis Bombs have no effect against Vehicles."),
+        "lower result."),
     "Scout Armour (Wolf Scouts)": "Confers a 4+ Armour Save.",
     "Iron Halo (Named Character)": (
         "Grants a 4+ Invulnerable Save. Part of this named character's own wargear; not counted towards the army's normal "
@@ -456,8 +455,7 @@ def grey_slayers():
     shields = model_swaps(u, "Grey Slayers: replace Bolter with Combat Shield (any number)", u, [gid],
                           [("Combat Shield", 3)], minus=[W(n) for n, _ in SPECIALS])
     return entry(u, "Grey Slayer Pack", typ="unit", cost=105 - 4 * 18,
-                 cats=[foc(TROOPS, "Troops", u)],
-                 mods=[modifier("add", "category", gs.CAT_LINE, conds=[rite("The Bloodied Claws")])],
+                 cats=[foc(TROOPS, "Troops", u), category_link(gs.CAT_LINE, "Compulsory Troops Eligible", key=u)],
                  infolinks=rules_links([LR, "True Grit", "Pack Assault"], key=u),
                  entries=[huscarl, slayers,
                           per_model(u, "Frag Grenades (entire pack)", 1, u, ["Frag Grenades"]),
@@ -479,7 +477,8 @@ def grey_stalkers():
                        ["Power Armour"], groups=[pa_armoury(hid, u, 15, slots=["Bolter", "Close Combat Weapon"])])
     ranged, _ = pool(u, "Special Weapons (1 per 5 models, replace Bolter)", u,
                      SPECIALS + [("Volkite Charger", 10)], 0, every=5)
-    return entry(u, "Grey Stalker Pack", typ="unit", cost=100 - 4 * 17, cats=[foc(TROOPS, "Troops", u)],
+    return entry(u, "Grey Stalker Pack", typ="unit", cost=100 - 4 * 17,
+                 cats=[foc(TROOPS, "Troops", u), category_link(gs.CAT_LINE, "Compulsory Troops Eligible", key=u)],
                  infolinks=rules_links([LR, "Infiltrate", "Move Through Cover", "Night Vision",
                                         "Grey Stalker Transport"], key=u),
                  entries=[huscarl, stalkers,
@@ -514,14 +513,14 @@ def wolf_scouts():
                        ["Scout Armour (Wolf Scouts)"], groups=[hus_swap, arm])
     heavy = [("Heavy Bolter", 10), ("Missile Launcher", 15)]
     hgid = uid("grp", u, "sw-heavy")
-    heavy_g = group(hgid, "Heavy Weapon (one Wolf Scout, instead of a special weapon)",
+    heavy_g = group(hgid, "Heavy Weapon (one Wolf Scout, instead of a special weapon; replaces Bolt Pistol)",
                     links=[link(uid("link", hgid, n), W(n), n, cost=p) for n, p in heavy],
                     constraints=[constraint(uid(hgid, "max"), "max", 1, auto=True)])
     took_heavy = [has(W(n), u) for n, _ in heavy]
-    specials, smx = pool(u, "Special Weapons (up to two Wolf Scouts, one each)", u,
-                         SPECIALS + [("Plasma Pistol", 15), ("Power Weapon", 10)], 2,
-                         extra_mods=[modifier("decrement", uid(uid("grp", u, "Special Weapons (up to two Wolf Scouts, "
-                                                                           "one each)"), "max"), 1,
+    stitle = "Special Weapons (up to two Wolf Scouts, one each; replaces Bolt Pistol)"
+    scout_specials = SPECIALS + [("Plasma Pistol", 15), ("Power Weapon", 10)]
+    specials, smx = pool(u, stitle, u, scout_specials, 2,
+                         extra_mods=[modifier("decrement", uid(uid("grp", u, stitle), "max"), 1,
                                               groups=[any_of(*took_heavy)])])
     return entry(u, "Wolf Scout Squad", typ="unit", cost=85 - 4 * 14, cats=[foc(ELITES, "Elites", u)],
                  infolinks=rules_links([LR, "Infiltrate", "Move Through Cover", "Behind Enemy Lines"], key=u),
@@ -530,7 +529,8 @@ def wolf_scouts():
                           per_model(u, "Krak Grenades (entire squad)", 2, u, ["Krak Grenades"]),
                           per_model(u, "Melta Bombs (entire squad)", 5, u, ["Melta Bombs"])],
                  groups=[model_swaps(u, "Wolf Scouts: replace Bolt Pistol and Close-combat weapon (any number)", u,
-                                     [sid], SCOUT_SWAPS),
+                                     [sid], SCOUT_SWAPS,
+                                     minus=[W(n) for n, _ in scout_specials + heavy]),
                          specials, heavy_g,
                          transports(u, u, ["Legion Rhino Armoured Carrier"], orbital=False, spearhead=False)])
 
@@ -620,33 +620,41 @@ OHTHERE = uid("unit", "Ohthere Wyrdmake")
 RUSS = uid("unit", "Leman Russ, the Wolf King")
 
 
+WOLF_ITEMS = [("Wolf Pelt", 5), ("Wolf Tooth Necklace", 10), ("Wolf Tail Talisman", 5)]
+
+
 def characters():
     out = []
     out.append(named_character(
         LR, "Hvarl Red-Blade", 195, (6, 5, 4, 4, 3, 5, 4, 10, "2+/4+"),
         ["Terminator Armour", "Iron Halo (Named Character)", "Heavy Bolter", "The Red-Blade"],
         ["The Headsman", "Command Retinue (Hvarl Red-Blade)"], min_points=1500,
+        extra_groups=[take(HVARL, "Space Wolves Wargear", WOLF_ITEMS)],
         retinue=retinue_links("hvarl", [L2.terminator_command_squad("hvarl"), varagyr("hvarl-varagyr", root=False)]),
         extra_entries=[wolf_retinue("hvarl")]))
     out.append(named_character(
         LR, "Geigor Fell-Hand", 145, (6, 5, 4, 4, 3, 5, 3, 9, "2+/5+"),
         ["Artificer Armour", "Refractor Field", "Bolter", "Bolt Pistol", "The Fell-Hand", "Frag Grenades"],
         ["Preferred Enemy (Independent Characters)", "Preferred Enemy"], master=False,
-        extra_groups=[take(GEIGOR, "Wargear", [("Krak Grenades", 2)])], extra_entries=[wolf_retinue("geigor")]))
+        extra_groups=[take(GEIGOR, "Wargear", [("Krak Grenades", 2)] + WOLF_ITEMS)], extra_entries=[wolf_retinue("geigor")]))
     out.append(named_character(
         LR, "Ohthere Wyrdmake", 150, (5, 5, 4, 4, 3, 5, 3, 10, "2+"),
         ["Runic Armour", "Bolt Pistol", "Runic Staff", "Frag Grenades", "Living Lightning"],
         ["Psyker", "Legion Support Officer", "Mystic Winds of Fenris", "Living Lightning",
          "Command Retinue (Ohthere Wyrdmake)"], master=False, compulsory=False,
         retinue=retinue_links("ohthere", [command_squad_for("ohthere", OHTHERE)]),
-        extra_groups=[take(OHTHERE, "Wargear", [("Krak Grenades", 2)])], extra_entries=[wolf_retinue("ohthere")]))
+        extra_groups=[take(OHTHERE, "Wargear", [("Krak Grenades", 2)] + WOLF_ITEMS)], extra_entries=[wolf_retinue("ohthere")]))
     # Bjorn the Fell-Handed - a Dreadnought HQ
     u = BJORN
     out.append(entry(u, "Bjorn the Fell-Handed", typ="unit", cost=190,
                      cats=[foc(HQ, "HQ", u), category_link(gs.CAT_COMMANDER, "Compulsory HQ Eligible", key=u)],
                      constraints=[unique(u)],
                      profiles=[walker_profile(u, "Bjorn the Fell-Handed", 5, 5, 6, 12, 12, 10, 4, 3)],
-                     infolinks=rules_links(["Old and Wise", "Hard to Kill"], key=u),
+                     infolinks=rules_links(["Old and Wise", "Hard to Kill", LR], key=u),
+                     groups=[group(uid("grp", u, "transport"), "Dedicated Transport",
+                                   links=[link(uid("link", uid("grp", u, "transport"), "dp"),
+                                               L2.T["Legion Dreadnought Drop Pod"], "Legion Dreadnought Drop Pod")],
+                                   constraints=[constraint(uid("grp", u, "transport", "max"), "max", 1, auto=True)])],
                      links=[gear(u, k) for k in ["Assault Cannon",
                                                  "Dreadnought Close Combat Weapon with built-in Heavy Flamer",
                                                  "Smoke Launchers", "Searchlight"]]))
@@ -780,17 +788,26 @@ def rites(ctx):
         ("the army may not include Legion Artillery Tank Squadrons.", [cond(art, "force", "atLeast", 1)]),
         ("the army may not include Rapier Weapons Batteries.", [cond(rapier, "force", "atLeast", 1)]),
     ] + [(f"the army may not include {n}.", [cond(i, "force", "atLeast", 1)]) for n, i in pods])
-    ctx.add_rite("The Bloodied Claws", RULES["The Bloodied Claws"], errors=[
-        ("at least one compulsory Troops choice must be a Grey Slayer Pack.",
-         [cond(GREY_SLAYERS, "force", "lessThan", 1)]),
+    bc = ctx.add_rite("The Bloodied Claws", RULES["The Bloodied Claws"], errors=[
+        ("Grey Slayer Packs must fulfil the compulsory Troops selections (at least two Grey Slayer Packs).",
+         [cond(GREY_SLAYERS, "force", "lessThan", 2)]),
         ("the Detachment may not include Artillery units (Rapier Weapons Batteries).",
          [cond(rapier, "force", "atLeast", 1)]),
-        ("the Detachment may not include Immobile units (Drop Pods, Dreadnought Drop Pods).",
-         [cond(T["Legion Drop Pod"], "force", "atLeast", 1)]),
-        ("the Detachment may not include Immobile units (Drop Pods, Dreadnought Drop Pods).",
-         [cond(T["Legion Dreadnought Drop Pod"], "force", "atLeast", 1)]),
         ("the Detachment may not include Fortifications.", [cond(gs.cat("Fortification"), "force", "atLeast", 1)]),
     ])
+    # The Breaking of the Line: no units with the Immobile or Slow and Purposeful special rules
+    bad = {L.rule_ref("Immobile")[0], L.rule_ref("Slow and Purposeful")[0]}
+    done = set()
+    for r_ in ctx.all_entries():
+        for e in r_.iter("selectionEntry"):
+            if e.get("type") != "unit" or e.get("id") in done:
+                continue
+            il = e.find("infoLinks")
+            if il is not None and any(x.get("targetId") in bad for x in il):
+                done.add(e.get("id"))
+                add_mods(e, [modifier("add", "error", "The Bloodied Claws: the Detachment may not include Immobile "
+                                                      "units or units with the Slow and Purposeful special rule.",
+                                      conds=[cond(bc, "force", "atLeast", 1)])])
 
 
 # ------------------------------------------------------------------ extend

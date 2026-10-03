@@ -193,7 +193,7 @@
 <characteristic name="S" typeId="7e44-d066-921a-29bd">4</characteristic>
 <characteristic name="T" typeId="a21c-b80a-e1e4-079a">4</characteristic>
 <characteristic name="W" typeId="6ba7-776c-9ed0-b148">3</characteristic>
-<characteristic name="I" typeId="6f24-6315-ebd0-9465">5</characteristic>
+<characteristic name="I" typeId="6f24-6315-ebd0-9465">4</characteristic>
 <characteristic name="A" typeId="e39a-3da9-2567-cfd3">3</characteristic>
 <characteristic name="Ld" typeId="7e63-7406-c8d0-7e03">10</characteristic>
 <characteristic name="Sv" typeId="d23d-aa50-ddfb-88a0">3+</characteristic>
@@ -1924,7 +1924,7 @@
 <characteristic name="S" typeId="7e44-d066-921a-29bd">4</characteristic>
 <characteristic name="T" typeId="a21c-b80a-e1e4-079a">4</characteristic>
 <characteristic name="W" typeId="6ba7-776c-9ed0-b148">2</characteristic>
-<characteristic name="I" typeId="6f24-6315-ebd0-9465">5</characteristic>
+<characteristic name="I" typeId="6f24-6315-ebd0-9465">4</characteristic>
 <characteristic name="A" typeId="e39a-3da9-2567-cfd3">3</characteristic>
 <characteristic name="Ld" typeId="7e63-7406-c8d0-7e03">9</characteristic>
 <characteristic name="Sv" typeId="d23d-aa50-ddfb-88a0">3+</characteristic>
@@ -4822,7 +4822,7 @@
 <characteristic name="S" typeId="7e44-d066-921a-29bd">4</characteristic>
 <characteristic name="T" typeId="a21c-b80a-e1e4-079a">4</characteristic>
 <characteristic name="W" typeId="6ba7-776c-9ed0-b148">1</characteristic>
-<characteristic name="I" typeId="6f24-6315-ebd0-9465">4</characteristic>
+<characteristic name="I" typeId="6f24-6315-ebd0-9465">3</characteristic>
 <characteristic name="A" typeId="e39a-3da9-2567-cfd3">2</characteristic>
 <characteristic name="Ld" typeId="7e63-7406-c8d0-7e03">9</characteristic>
 <characteristic name="Sv" typeId="d23d-aa50-ddfb-88a0">3+</characteristic>
@@ -5303,7 +5303,7 @@
 <characteristic name="S" typeId="7e44-d066-921a-29bd">4</characteristic>
 <characteristic name="T" typeId="a21c-b80a-e1e4-079a">4</characteristic>
 <characteristic name="W" typeId="6ba7-776c-9ed0-b148">1</characteristic>
-<characteristic name="I" typeId="6f24-6315-ebd0-9465">4</characteristic>
+<characteristic name="I" typeId="6f24-6315-ebd0-9465">3</characteristic>
 <characteristic name="A" typeId="e39a-3da9-2567-cfd3">1</characteristic>
 <characteristic name="Ld" typeId="7e63-7406-c8d0-7e03">8</characteristic>
 <characteristic name="Sv" typeId="d23d-aa50-ddfb-88a0">3+</characteristic>
@@ -5733,7 +5733,7 @@
 <characteristic name="S" typeId="7e44-d066-921a-29bd">4</characteristic>
 <characteristic name="T" typeId="a21c-b80a-e1e4-079a">4</characteristic>
 <characteristic name="W" typeId="6ba7-776c-9ed0-b148">1</characteristic>
-<characteristic name="I" typeId="6f24-6315-ebd0-9465">4</characteristic>
+<characteristic name="I" typeId="6f24-6315-ebd0-9465">3</characteristic>
 <characteristic name="A" typeId="e39a-3da9-2567-cfd3">2</characteristic>
 <characteristic name="Ld" typeId="7e63-7406-c8d0-7e03">9</characteristic>
 <characteristic name="Sv" typeId="d23d-aa50-ddfb-88a0">3+</characteristic>
@@ -6020,7 +6020,7 @@
 <characteristic name="S" typeId="7e44-d066-921a-29bd">4</characteristic>
 <characteristic name="T" typeId="a21c-b80a-e1e4-079a">4</characteristic>
 <characteristic name="W" typeId="6ba7-776c-9ed0-b148">1</characteristic>
-<characteristic name="I" typeId="6f24-6315-ebd0-9465">4</characteristic>
+<characteristic name="I" typeId="6f24-6315-ebd0-9465">3</characteristic>
 <characteristic name="A" typeId="e39a-3da9-2567-cfd3">1</characteristic>
 <characteristic name="Ld" typeId="7e63-7406-c8d0-7e03">8</characteristic>
 <characteristic name="Sv" typeId="d23d-aa50-ddfb-88a0">3+</characteristic>
@@ -6240,7 +6240,7 @@
 <characteristic name="S" typeId="7e44-d066-921a-29bd">4</characteristic>
 <characteristic name="T" typeId="a21c-b80a-e1e4-079a">4</characteristic>
 <characteristic name="W" typeId="6ba7-776c-9ed0-b148">1</characteristic>
-<characteristic name="I" typeId="6f24-6315-ebd0-9465">4</characteristic>
+<characteristic name="I" typeId="6f24-6315-ebd0-9465">3</characteristic>
 <characteristic name="A" typeId="e39a-3da9-2567-cfd3">2</characteristic>
 <characteristic name="Ld" typeId="7e63-7406-c8d0-7e03">9</characteristic>
 <characteristic name="Sv" typeId="d23d-aa50-ddfb-88a0">3+</characteristic>
@@ -6464,7 +6464,7 @@
 <characteristic name="S" typeId="7e44-d066-921a-29bd">4</characteristic>
 <characteristic name="T" typeId="a21c-b80a-e1e4-079a">4</characteristic>
 <characteristic name="W" typeId="6ba7-776c-9ed0-b148">1</characteristic>
-<characteristic name="I" typeId="6f24-6315-ebd0-9465">4</characteristic>
+<characteristic name="I" typeId="6f24-6315-ebd0-9465">3</characteristic>
 <characteristic name="A" typeId="e39a-3da9-2567-cfd3">1</characteristic>
 <characteristic name="Ld" typeId="7e63-7406-c8d0-7e03">8</characteristic>
 <characteristic name="Sv" typeId="d23d-aa50-ddfb-88a0">3+</characteristic>
@@ -6843,7 +6843,7 @@
 <characteristic name="S" typeId="7e44-d066-921a-29bd">4</characteristic>
 <characteristic name="T" typeId="a21c-b80a-e1e4-079a">4</characteristic>
 <characteristic name="W" typeId="6ba7-776c-9ed0-b148">1</characteristic>
-<characteristic name="I" typeId="6f24-6315-ebd0-9465">4</characteristic>
+<characteristic name="I" typeId="6f24-6315-ebd0-9465">3</characteristic>
 <characteristic name="A" typeId="e39a-3da9-2567-cfd3">2</characteristic>
 <characteristic name="Ld" typeId="7e63-7406-c8d0-7e03">9</characteristic>
 <characteristic name="Sv" typeId="d23d-aa50-ddfb-88a0">4+</characteristic>
@@ -7134,7 +7134,7 @@
 <characteristic name="S" typeId="7e44-d066-921a-29bd">4</characteristic>
 <characteristic name="T" typeId="a21c-b80a-e1e4-079a">4</characteristic>
 <characteristic name="W" typeId="6ba7-776c-9ed0-b148">1</characteristic>
-<characteristic name="I" typeId="6f24-6315-ebd0-9465">4</characteristic>
+<characteristic name="I" typeId="6f24-6315-ebd0-9465">3</characteristic>
 <characteristic name="A" typeId="e39a-3da9-2567-cfd3">1</characteristic>
 <characteristic name="Ld" typeId="7e63-7406-c8d0-7e03">8</characteristic>
 <characteristic name="Sv" typeId="d23d-aa50-ddfb-88a0">4+</characteristic>
@@ -8975,7 +8975,7 @@ LIMITATIONS - The Detachment must include a Legion Chaplain Consul. The Detachme
 <characteristic name="S" typeId="7e44-d066-921a-29bd">4</characteristic>
 <characteristic name="T" typeId="a21c-b80a-e1e4-079a">4</characteristic>
 <characteristic name="W" typeId="6ba7-776c-9ed0-b148">1</characteristic>
-<characteristic name="I" typeId="6f24-6315-ebd0-9465">4</characteristic>
+<characteristic name="I" typeId="6f24-6315-ebd0-9465">3</characteristic>
 <characteristic name="A" typeId="e39a-3da9-2567-cfd3">2</characteristic>
 <characteristic name="Ld" typeId="7e63-7406-c8d0-7e03">9</characteristic>
 <characteristic name="Sv" typeId="d23d-aa50-ddfb-88a0">3+</characteristic>
@@ -9232,7 +9232,7 @@ LIMITATIONS - The Detachment must include a Legion Chaplain Consul. The Detachme
 <characteristic name="S" typeId="7e44-d066-921a-29bd">4</characteristic>
 <characteristic name="T" typeId="a21c-b80a-e1e4-079a">4</characteristic>
 <characteristic name="W" typeId="6ba7-776c-9ed0-b148">1</characteristic>
-<characteristic name="I" typeId="6f24-6315-ebd0-9465">4</characteristic>
+<characteristic name="I" typeId="6f24-6315-ebd0-9465">3</characteristic>
 <characteristic name="A" typeId="e39a-3da9-2567-cfd3">2</characteristic>
 <characteristic name="Ld" typeId="7e63-7406-c8d0-7e03">9</characteristic>
 <characteristic name="Sv" typeId="d23d-aa50-ddfb-88a0">3+</characteristic>
@@ -9898,7 +9898,7 @@ LIMITATIONS - The Detachment must include a Legion Chaplain Consul. The Detachme
 <characteristic name="S" typeId="7e44-d066-921a-29bd">4</characteristic>
 <characteristic name="T" typeId="a21c-b80a-e1e4-079a">4</characteristic>
 <characteristic name="W" typeId="6ba7-776c-9ed0-b148">1</characteristic>
-<characteristic name="I" typeId="6f24-6315-ebd0-9465">4</characteristic>
+<characteristic name="I" typeId="6f24-6315-ebd0-9465">3</characteristic>
 <characteristic name="A" typeId="e39a-3da9-2567-cfd3">2</characteristic>
 <characteristic name="Ld" typeId="7e63-7406-c8d0-7e03">9</characteristic>
 <characteristic name="Sv" typeId="d23d-aa50-ddfb-88a0">2+</characteristic>
@@ -10224,7 +10224,7 @@ LIMITATIONS - The Detachment must include a Legion Chaplain Consul. The Detachme
 <characteristic name="S" typeId="7e44-d066-921a-29bd">4</characteristic>
 <characteristic name="T" typeId="a21c-b80a-e1e4-079a">4</characteristic>
 <characteristic name="W" typeId="6ba7-776c-9ed0-b148">1</characteristic>
-<characteristic name="I" typeId="6f24-6315-ebd0-9465">4</characteristic>
+<characteristic name="I" typeId="6f24-6315-ebd0-9465">3</characteristic>
 <characteristic name="A" typeId="e39a-3da9-2567-cfd3">2</characteristic>
 <characteristic name="Ld" typeId="7e63-7406-c8d0-7e03">9</characteristic>
 <characteristic name="Sv" typeId="d23d-aa50-ddfb-88a0">2+</characteristic>
@@ -10664,7 +10664,7 @@ LIMITATIONS - The Detachment must include a Legion Chaplain Consul. The Detachme
 <characteristic name="S" typeId="7e44-d066-921a-29bd">4</characteristic>
 <characteristic name="T" typeId="a21c-b80a-e1e4-079a">4</characteristic>
 <characteristic name="W" typeId="6ba7-776c-9ed0-b148">1</characteristic>
-<characteristic name="I" typeId="6f24-6315-ebd0-9465">4</characteristic>
+<characteristic name="I" typeId="6f24-6315-ebd0-9465">3</characteristic>
 <characteristic name="A" typeId="e39a-3da9-2567-cfd3">2</characteristic>
 <characteristic name="Ld" typeId="7e63-7406-c8d0-7e03">9</characteristic>
 <characteristic name="Sv" typeId="d23d-aa50-ddfb-88a0">3+</characteristic>
@@ -10905,7 +10905,7 @@ LIMITATIONS - The Detachment must include a Legion Chaplain Consul. The Detachme
 <characteristic name="S" typeId="7e44-d066-921a-29bd">4</characteristic>
 <characteristic name="T" typeId="a21c-b80a-e1e4-079a">4</characteristic>
 <characteristic name="W" typeId="6ba7-776c-9ed0-b148">1</characteristic>
-<characteristic name="I" typeId="6f24-6315-ebd0-9465">4</characteristic>
+<characteristic name="I" typeId="6f24-6315-ebd0-9465">3</characteristic>
 <characteristic name="A" typeId="e39a-3da9-2567-cfd3">1</characteristic>
 <characteristic name="Ld" typeId="7e63-7406-c8d0-7e03">9</characteristic>
 <characteristic name="Sv" typeId="d23d-aa50-ddfb-88a0">3+</characteristic>
@@ -11243,7 +11243,7 @@ LIMITATIONS - The Detachment must include a Legion Chaplain Consul. The Detachme
 <characteristic name="S" typeId="7e44-d066-921a-29bd">4</characteristic>
 <characteristic name="T" typeId="a21c-b80a-e1e4-079a">4</characteristic>
 <characteristic name="W" typeId="6ba7-776c-9ed0-b148">1</characteristic>
-<characteristic name="I" typeId="6f24-6315-ebd0-9465">4</characteristic>
+<characteristic name="I" typeId="6f24-6315-ebd0-9465">3</characteristic>
 <characteristic name="A" typeId="e39a-3da9-2567-cfd3">1</characteristic>
 <characteristic name="Ld" typeId="7e63-7406-c8d0-7e03">9</characteristic>
 <characteristic name="Sv" typeId="d23d-aa50-ddfb-88a0">3+</characteristic>
@@ -11638,7 +11638,7 @@ LIMITATIONS - The Detachment must include a Legion Chaplain Consul. The Detachme
 <characteristic name="S" typeId="7e44-d066-921a-29bd">4</characteristic>
 <characteristic name="T" typeId="a21c-b80a-e1e4-079a">4</characteristic>
 <characteristic name="W" typeId="6ba7-776c-9ed0-b148">1</characteristic>
-<characteristic name="I" typeId="6f24-6315-ebd0-9465">4</characteristic>
+<characteristic name="I" typeId="6f24-6315-ebd0-9465">3</characteristic>
 <characteristic name="A" typeId="e39a-3da9-2567-cfd3">1</characteristic>
 <characteristic name="Ld" typeId="7e63-7406-c8d0-7e03">9</characteristic>
 <characteristic name="Sv" typeId="d23d-aa50-ddfb-88a0">3+</characteristic>
@@ -12033,7 +12033,7 @@ LIMITATIONS - The Detachment must include a Legion Chaplain Consul. The Detachme
 <characteristic name="S" typeId="7e44-d066-921a-29bd">4</characteristic>
 <characteristic name="T" typeId="a21c-b80a-e1e4-079a">4</characteristic>
 <characteristic name="W" typeId="6ba7-776c-9ed0-b148">1</characteristic>
-<characteristic name="I" typeId="6f24-6315-ebd0-9465">4</characteristic>
+<characteristic name="I" typeId="6f24-6315-ebd0-9465">3</characteristic>
 <characteristic name="A" typeId="e39a-3da9-2567-cfd3">1</characteristic>
 <characteristic name="Ld" typeId="7e63-7406-c8d0-7e03">9</characteristic>
 <characteristic name="Sv" typeId="d23d-aa50-ddfb-88a0">3+</characteristic>
@@ -13430,7 +13430,7 @@ LIMITATIONS - The Detachment must include a Legion Chaplain Consul. The Detachme
 <characteristic name="S" typeId="7e44-d066-921a-29bd">4</characteristic>
 <characteristic name="T" typeId="a21c-b80a-e1e4-079a">4</characteristic>
 <characteristic name="W" typeId="6ba7-776c-9ed0-b148">1</characteristic>
-<characteristic name="I" typeId="6f24-6315-ebd0-9465">4</characteristic>
+<characteristic name="I" typeId="6f24-6315-ebd0-9465">3</characteristic>
 <characteristic name="A" typeId="e39a-3da9-2567-cfd3">1</characteristic>
 <characteristic name="Ld" typeId="7e63-7406-c8d0-7e03">8</characteristic>
 <characteristic name="Sv" typeId="d23d-aa50-ddfb-88a0">3+</characteristic>
@@ -13700,7 +13700,7 @@ LIMITATIONS - The Detachment must include a Legion Chaplain Consul. The Detachme
 <characteristic name="S" typeId="7e44-d066-921a-29bd">4</characteristic>
 <characteristic name="T" typeId="a21c-b80a-e1e4-079a">4</characteristic>
 <characteristic name="W" typeId="6ba7-776c-9ed0-b148">1</characteristic>
-<characteristic name="I" typeId="6f24-6315-ebd0-9465">4</characteristic>
+<characteristic name="I" typeId="6f24-6315-ebd0-9465">3</characteristic>
 <characteristic name="A" typeId="e39a-3da9-2567-cfd3">2</characteristic>
 <characteristic name="Ld" typeId="7e63-7406-c8d0-7e03">9</characteristic>
 <characteristic name="Sv" typeId="d23d-aa50-ddfb-88a0">3+</characteristic>
@@ -13946,7 +13946,7 @@ LIMITATIONS - The Detachment must include a Legion Chaplain Consul. The Detachme
 <characteristic name="S" typeId="7e44-d066-921a-29bd">4</characteristic>
 <characteristic name="T" typeId="a21c-b80a-e1e4-079a">4</characteristic>
 <characteristic name="W" typeId="6ba7-776c-9ed0-b148">1</characteristic>
-<characteristic name="I" typeId="6f24-6315-ebd0-9465">4</characteristic>
+<characteristic name="I" typeId="6f24-6315-ebd0-9465">3</characteristic>
 <characteristic name="A" typeId="e39a-3da9-2567-cfd3">1</characteristic>
 <characteristic name="Ld" typeId="7e63-7406-c8d0-7e03">8</characteristic>
 <characteristic name="Sv" typeId="d23d-aa50-ddfb-88a0">3+</characteristic>
@@ -14338,7 +14338,7 @@ LIMITATIONS - The Detachment must include a Legion Chaplain Consul. The Detachme
 <characteristic name="S" typeId="7e44-d066-921a-29bd">4</characteristic>
 <characteristic name="T" typeId="a21c-b80a-e1e4-079a">5</characteristic>
 <characteristic name="W" typeId="6ba7-776c-9ed0-b148">1</characteristic>
-<characteristic name="I" typeId="6f24-6315-ebd0-9465">4</characteristic>
+<characteristic name="I" typeId="6f24-6315-ebd0-9465">3</characteristic>
 <characteristic name="A" typeId="e39a-3da9-2567-cfd3">2</characteristic>
 <characteristic name="Ld" typeId="7e63-7406-c8d0-7e03">9</characteristic>
 <characteristic name="Sv" typeId="d23d-aa50-ddfb-88a0">3+</characteristic>
@@ -14632,7 +14632,7 @@ LIMITATIONS - The Detachment must include a Legion Chaplain Consul. The Detachme
 <characteristic name="S" typeId="7e44-d066-921a-29bd">4</characteristic>
 <characteristic name="T" typeId="a21c-b80a-e1e4-079a">5</characteristic>
 <characteristic name="W" typeId="6ba7-776c-9ed0-b148">1</characteristic>
-<characteristic name="I" typeId="6f24-6315-ebd0-9465">4</characteristic>
+<characteristic name="I" typeId="6f24-6315-ebd0-9465">3</characteristic>
 <characteristic name="A" typeId="e39a-3da9-2567-cfd3">1</characteristic>
 <characteristic name="Ld" typeId="7e63-7406-c8d0-7e03">8</characteristic>
 <characteristic name="Sv" typeId="d23d-aa50-ddfb-88a0">3+</characteristic>
@@ -14895,7 +14895,7 @@ LIMITATIONS - The Detachment must include a Legion Chaplain Consul. The Detachme
 <characteristic name="S" typeId="7e44-d066-921a-29bd">4</characteristic>
 <characteristic name="T" typeId="a21c-b80a-e1e4-079a">5</characteristic>
 <characteristic name="W" typeId="6ba7-776c-9ed0-b148">1</characteristic>
-<characteristic name="I" typeId="6f24-6315-ebd0-9465">4</characteristic>
+<characteristic name="I" typeId="6f24-6315-ebd0-9465">3</characteristic>
 <characteristic name="A" typeId="e39a-3da9-2567-cfd3">2</characteristic>
 <characteristic name="Ld" typeId="7e63-7406-c8d0-7e03">9</characteristic>
 <characteristic name="Sv" typeId="d23d-aa50-ddfb-88a0">2+</characteristic>
@@ -15189,7 +15189,7 @@ LIMITATIONS - The Detachment must include a Legion Chaplain Consul. The Detachme
 <characteristic name="S" typeId="7e44-d066-921a-29bd">4</characteristic>
 <characteristic name="T" typeId="a21c-b80a-e1e4-079a">5</characteristic>
 <characteristic name="W" typeId="6ba7-776c-9ed0-b148">1</characteristic>
-<characteristic name="I" typeId="6f24-6315-ebd0-9465">4</characteristic>
+<characteristic name="I" typeId="6f24-6315-ebd0-9465">3</characteristic>
 <characteristic name="A" typeId="e39a-3da9-2567-cfd3">1</characteristic>
 <characteristic name="Ld" typeId="7e63-7406-c8d0-7e03">8</characteristic>
 <characteristic name="Sv" typeId="d23d-aa50-ddfb-88a0">2+</characteristic>
@@ -15336,7 +15336,7 @@ LIMITATIONS - The Detachment must include a Legion Chaplain Consul. The Detachme
 <characteristic name="S" typeId="7e44-d066-921a-29bd">4</characteristic>
 <characteristic name="T" typeId="a21c-b80a-e1e4-079a">5</characteristic>
 <characteristic name="W" typeId="6ba7-776c-9ed0-b148">2</characteristic>
-<characteristic name="I" typeId="6f24-6315-ebd0-9465">4</characteristic>
+<characteristic name="I" typeId="6f24-6315-ebd0-9465">3</characteristic>
 <characteristic name="A" typeId="e39a-3da9-2567-cfd3">1</characteristic>
 <characteristic name="Ld" typeId="7e63-7406-c8d0-7e03">8</characteristic>
 <characteristic name="Sv" typeId="d23d-aa50-ddfb-88a0">3+</characteristic>
@@ -15415,7 +15415,7 @@ LIMITATIONS - The Detachment must include a Legion Chaplain Consul. The Detachme
 <characteristic name="S" typeId="7e44-d066-921a-29bd">4</characteristic>
 <characteristic name="T" typeId="a21c-b80a-e1e4-079a">5</characteristic>
 <characteristic name="W" typeId="6ba7-776c-9ed0-b148">2</characteristic>
-<characteristic name="I" typeId="6f24-6315-ebd0-9465">4</characteristic>
+<characteristic name="I" typeId="6f24-6315-ebd0-9465">3</characteristic>
 <characteristic name="A" typeId="e39a-3da9-2567-cfd3">1</characteristic>
 <characteristic name="Ld" typeId="7e63-7406-c8d0-7e03">8</characteristic>
 <characteristic name="Sv" typeId="d23d-aa50-ddfb-88a0">3+</characteristic>
@@ -15494,7 +15494,7 @@ LIMITATIONS - The Detachment must include a Legion Chaplain Consul. The Detachme
 <characteristic name="S" typeId="7e44-d066-921a-29bd">4</characteristic>
 <characteristic name="T" typeId="a21c-b80a-e1e4-079a">5</characteristic>
 <characteristic name="W" typeId="6ba7-776c-9ed0-b148">2</characteristic>
-<characteristic name="I" typeId="6f24-6315-ebd0-9465">4</characteristic>
+<characteristic name="I" typeId="6f24-6315-ebd0-9465">3</characteristic>
 <characteristic name="A" typeId="e39a-3da9-2567-cfd3">1</characteristic>
 <characteristic name="Ld" typeId="7e63-7406-c8d0-7e03">8</characteristic>
 <characteristic name="Sv" typeId="d23d-aa50-ddfb-88a0">3+</characteristic>
@@ -16193,7 +16193,7 @@ LIMITATIONS - The Detachment must include a Legion Chaplain Consul. The Detachme
 <characteristic name="S" typeId="7e44-d066-921a-29bd">4</characteristic>
 <characteristic name="T" typeId="a21c-b80a-e1e4-079a">4</characteristic>
 <characteristic name="W" typeId="6ba7-776c-9ed0-b148">1</characteristic>
-<characteristic name="I" typeId="6f24-6315-ebd0-9465">4</characteristic>
+<characteristic name="I" typeId="6f24-6315-ebd0-9465">3</characteristic>
 <characteristic name="A" typeId="e39a-3da9-2567-cfd3">2</characteristic>
 <characteristic name="Ld" typeId="7e63-7406-c8d0-7e03">9</characteristic>
 <characteristic name="Sv" typeId="d23d-aa50-ddfb-88a0">3+</characteristic>
@@ -16465,7 +16465,7 @@ LIMITATIONS - The Detachment must include a Legion Chaplain Consul. The Detachme
 <characteristic name="S" typeId="7e44-d066-921a-29bd">4</characteristic>
 <characteristic name="T" typeId="a21c-b80a-e1e4-079a">4</characteristic>
 <characteristic name="W" typeId="6ba7-776c-9ed0-b148">1</characteristic>
-<characteristic name="I" typeId="6f24-6315-ebd0-9465">4</characteristic>
+<characteristic name="I" typeId="6f24-6315-ebd0-9465">3</characteristic>
 <characteristic name="A" typeId="e39a-3da9-2567-cfd3">1</characteristic>
 <characteristic name="Ld" typeId="7e63-7406-c8d0-7e03">8</characteristic>
 <characteristic name="Sv" typeId="d23d-aa50-ddfb-88a0">3+</characteristic>
@@ -22590,7 +22590,7 @@ LIMITATIONS - The Detachment must include a Legion Chaplain Consul. The Detachme
 <characteristic name="S" typeId="7e44-d066-921a-29bd">4</characteristic>
 <characteristic name="T" typeId="a21c-b80a-e1e4-079a">4</characteristic>
 <characteristic name="W" typeId="6ba7-776c-9ed0-b148">1</characteristic>
-<characteristic name="I" typeId="6f24-6315-ebd0-9465">4</characteristic>
+<characteristic name="I" typeId="6f24-6315-ebd0-9465">3</characteristic>
 <characteristic name="A" typeId="e39a-3da9-2567-cfd3">3</characteristic>
 <characteristic name="Ld" typeId="7e63-7406-c8d0-7e03">10</characteristic>
 <characteristic name="Sv" typeId="d23d-aa50-ddfb-88a0">2+/5+</characteristic>
@@ -22806,7 +22806,7 @@ LIMITATIONS - The Detachment must include a Legion Chaplain Consul. The Detachme
 <characteristic name="S" typeId="7e44-d066-921a-29bd">4</characteristic>
 <characteristic name="T" typeId="a21c-b80a-e1e4-079a">4</characteristic>
 <characteristic name="W" typeId="6ba7-776c-9ed0-b148">1</characteristic>
-<characteristic name="I" typeId="6f24-6315-ebd0-9465">4</characteristic>
+<characteristic name="I" typeId="6f24-6315-ebd0-9465">3</characteristic>
 <characteristic name="A" typeId="e39a-3da9-2567-cfd3">2</characteristic>
 <characteristic name="Ld" typeId="7e63-7406-c8d0-7e03">9</characteristic>
 <characteristic name="Sv" typeId="d23d-aa50-ddfb-88a0">2+/5+</characteristic>
@@ -23067,7 +23067,7 @@ LIMITATIONS - The Detachment must include a Legion Chaplain Consul. The Detachme
 <characteristic name="S" typeId="7e44-d066-921a-29bd">4</characteristic>
 <characteristic name="T" typeId="a21c-b80a-e1e4-079a">4</characteristic>
 <characteristic name="W" typeId="6ba7-776c-9ed0-b148">1</characteristic>
-<characteristic name="I" typeId="6f24-6315-ebd0-9465">4</characteristic>
+<characteristic name="I" typeId="6f24-6315-ebd0-9465">3</characteristic>
 <characteristic name="A" typeId="e39a-3da9-2567-cfd3">2</characteristic>
 <characteristic name="Ld" typeId="7e63-7406-c8d0-7e03">10</characteristic>
 <characteristic name="Sv" typeId="d23d-aa50-ddfb-88a0">2+</characteristic>
@@ -23417,7 +23417,7 @@ LIMITATIONS - The Detachment must include a Legion Chaplain Consul. The Detachme
 <characteristic name="S" typeId="7e44-d066-921a-29bd">4</characteristic>
 <characteristic name="T" typeId="a21c-b80a-e1e4-079a">4</characteristic>
 <characteristic name="W" typeId="6ba7-776c-9ed0-b148">1</characteristic>
-<characteristic name="I" typeId="6f24-6315-ebd0-9465">4</characteristic>
+<characteristic name="I" typeId="6f24-6315-ebd0-9465">3</characteristic>
 <characteristic name="A" typeId="e39a-3da9-2567-cfd3">1</characteristic>
 <characteristic name="Ld" typeId="7e63-7406-c8d0-7e03">9</characteristic>
 <characteristic name="Sv" typeId="d23d-aa50-ddfb-88a0">2+</characteristic>
@@ -23729,7 +23729,7 @@ LIMITATIONS - The Detachment must include a Legion Chaplain Consul. The Detachme
 <characteristic name="S" typeId="7e44-d066-921a-29bd">4</characteristic>
 <characteristic name="T" typeId="a21c-b80a-e1e4-079a">4</characteristic>
 <characteristic name="W" typeId="6ba7-776c-9ed0-b148">1</characteristic>
-<characteristic name="I" typeId="6f24-6315-ebd0-9465">4</characteristic>
+<characteristic name="I" typeId="6f24-6315-ebd0-9465">3</characteristic>
 <characteristic name="A" typeId="e39a-3da9-2567-cfd3">3</characteristic>
 <characteristic name="Ld" typeId="7e63-7406-c8d0-7e03">9</characteristic>
 <characteristic name="Sv" typeId="d23d-aa50-ddfb-88a0">3+</characteristic>
@@ -23992,7 +23992,7 @@ LIMITATIONS - The Detachment must include a Legion Chaplain Consul. The Detachme
 <characteristic name="S" typeId="7e44-d066-921a-29bd">4</characteristic>
 <characteristic name="T" typeId="a21c-b80a-e1e4-079a">4</characteristic>
 <characteristic name="W" typeId="6ba7-776c-9ed0-b148">1</characteristic>
-<characteristic name="I" typeId="6f24-6315-ebd0-9465">4</characteristic>
+<characteristic name="I" typeId="6f24-6315-ebd0-9465">3</characteristic>
 <characteristic name="A" typeId="e39a-3da9-2567-cfd3">2</characteristic>
 <characteristic name="Ld" typeId="7e63-7406-c8d0-7e03">9</characteristic>
 <characteristic name="Sv" typeId="d23d-aa50-ddfb-88a0">3+</characteristic>
@@ -24386,7 +24386,7 @@ LIMITATIONS - The Detachment must include a Legion Chaplain Consul. The Detachme
 <characteristic name="S" typeId="7e44-d066-921a-29bd">4</characteristic>
 <characteristic name="T" typeId="a21c-b80a-e1e4-079a">4</characteristic>
 <characteristic name="W" typeId="6ba7-776c-9ed0-b148">1</characteristic>
-<characteristic name="I" typeId="6f24-6315-ebd0-9465">4</characteristic>
+<characteristic name="I" typeId="6f24-6315-ebd0-9465">3</characteristic>
 <characteristic name="A" typeId="e39a-3da9-2567-cfd3">2</characteristic>
 <characteristic name="Ld" typeId="7e63-7406-c8d0-7e03">9</characteristic>
 <characteristic name="Sv" typeId="d23d-aa50-ddfb-88a0">3+</characteristic>
@@ -24758,7 +24758,7 @@ LIMITATIONS - The Detachment must include a Legion Chaplain Consul. The Detachme
 <characteristic name="S" typeId="7e44-d066-921a-29bd">4</characteristic>
 <characteristic name="T" typeId="a21c-b80a-e1e4-079a">4</characteristic>
 <characteristic name="W" typeId="6ba7-776c-9ed0-b148">1</characteristic>
-<characteristic name="I" typeId="6f24-6315-ebd0-9465">4</characteristic>
+<characteristic name="I" typeId="6f24-6315-ebd0-9465">3</characteristic>
 <characteristic name="A" typeId="e39a-3da9-2567-cfd3">2</characteristic>
 <characteristic name="Ld" typeId="7e63-7406-c8d0-7e03">8</characteristic>
 <characteristic name="Sv" typeId="d23d-aa50-ddfb-88a0">3+</characteristic>
@@ -25043,7 +25043,7 @@ LIMITATIONS - The Detachment must include a Legion Chaplain Consul. The Detachme
 <characteristic name="S" typeId="7e44-d066-921a-29bd">4</characteristic>
 <characteristic name="T" typeId="a21c-b80a-e1e4-079a">4</characteristic>
 <characteristic name="W" typeId="6ba7-776c-9ed0-b148">1</characteristic>
-<characteristic name="I" typeId="6f24-6315-ebd0-9465">4</characteristic>
+<characteristic name="I" typeId="6f24-6315-ebd0-9465">3</characteristic>
 <characteristic name="A" typeId="e39a-3da9-2567-cfd3">3</characteristic>
 <characteristic name="Ld" typeId="7e63-7406-c8d0-7e03">9</characteristic>
 <characteristic name="Sv" typeId="d23d-aa50-ddfb-88a0">3+</characteristic>
@@ -25142,7 +25142,7 @@ LIMITATIONS - The Detachment must include a Legion Chaplain Consul. The Detachme
 <characteristic name="S" typeId="7e44-d066-921a-29bd">4</characteristic>
 <characteristic name="T" typeId="a21c-b80a-e1e4-079a">4</characteristic>
 <characteristic name="W" typeId="6ba7-776c-9ed0-b148">1</characteristic>
-<characteristic name="I" typeId="6f24-6315-ebd0-9465">4</characteristic>
+<characteristic name="I" typeId="6f24-6315-ebd0-9465">3</characteristic>
 <characteristic name="A" typeId="e39a-3da9-2567-cfd3">2</characteristic>
 <characteristic name="Ld" typeId="7e63-7406-c8d0-7e03">9</characteristic>
 <characteristic name="Sv" typeId="d23d-aa50-ddfb-88a0">3+</characteristic>
@@ -25476,7 +25476,7 @@ LIMITATIONS - The Detachment must include a Legion Chaplain Consul. The Detachme
 <characteristic name="S" typeId="7e44-d066-921a-29bd">4</characteristic>
 <characteristic name="T" typeId="a21c-b80a-e1e4-079a">4</characteristic>
 <characteristic name="W" typeId="6ba7-776c-9ed0-b148">3</characteristic>
-<characteristic name="I" typeId="6f24-6315-ebd0-9465">5</characteristic>
+<characteristic name="I" typeId="6f24-6315-ebd0-9465">4</characteristic>
 <characteristic name="A" typeId="e39a-3da9-2567-cfd3">3</characteristic>
 <characteristic name="Ld" typeId="7e63-7406-c8d0-7e03">10</characteristic>
 <characteristic name="Sv" typeId="d23d-aa50-ddfb-88a0">2+/4+</characteristic>
@@ -25583,7 +25583,7 @@ LIMITATIONS - The Detachment must include a Legion Chaplain Consul. The Detachme
 <characteristic name="S" typeId="7e44-d066-921a-29bd">4</characteristic>
 <characteristic name="T" typeId="a21c-b80a-e1e4-079a">4</characteristic>
 <characteristic name="W" typeId="6ba7-776c-9ed0-b148">3</characteristic>
-<characteristic name="I" typeId="6f24-6315-ebd0-9465">5</characteristic>
+<characteristic name="I" typeId="6f24-6315-ebd0-9465">4</characteristic>
 <characteristic name="A" typeId="e39a-3da9-2567-cfd3">3</characteristic>
 <characteristic name="Ld" typeId="7e63-7406-c8d0-7e03">10</characteristic>
 <characteristic name="Sv" typeId="d23d-aa50-ddfb-88a0">2+/4+</characteristic>
@@ -25698,7 +25698,7 @@ LIMITATIONS - The Detachment must include a Legion Chaplain Consul. The Detachme
 <characteristic name="S" typeId="7e44-d066-921a-29bd">4</characteristic>
 <characteristic name="T" typeId="a21c-b80a-e1e4-079a">4</characteristic>
 <characteristic name="W" typeId="6ba7-776c-9ed0-b148">2</characteristic>
-<characteristic name="I" typeId="6f24-6315-ebd0-9465">5</characteristic>
+<characteristic name="I" typeId="6f24-6315-ebd0-9465">4</characteristic>
 <characteristic name="A" typeId="e39a-3da9-2567-cfd3">3</characteristic>
 <characteristic name="Ld" typeId="7e63-7406-c8d0-7e03">10</characteristic>
 <characteristic name="Sv" typeId="d23d-aa50-ddfb-88a0">2+/4+</characteristic>
@@ -25801,7 +25801,7 @@ LIMITATIONS - The Detachment must include a Legion Chaplain Consul. The Detachme
 <characteristic name="S" typeId="7e44-d066-921a-29bd">4</characteristic>
 <characteristic name="T" typeId="a21c-b80a-e1e4-079a">4</characteristic>
 <characteristic name="W" typeId="6ba7-776c-9ed0-b148">2</characteristic>
-<characteristic name="I" typeId="6f24-6315-ebd0-9465">5</characteristic>
+<characteristic name="I" typeId="6f24-6315-ebd0-9465">4</characteristic>
 <characteristic name="A" typeId="e39a-3da9-2567-cfd3">2</characteristic>
 <characteristic name="Ld" typeId="7e63-7406-c8d0-7e03">10</characteristic>
 <characteristic name="Sv" typeId="d23d-aa50-ddfb-88a0">2+/5+</characteristic>
@@ -26062,7 +26062,7 @@ LIMITATIONS - The Detachment must include a Legion Chaplain Consul. The Detachme
 <characteristic name="S" typeId="7e44-d066-921a-29bd">7</characteristic>
 <characteristic name="T" typeId="a21c-b80a-e1e4-079a">7</characteristic>
 <characteristic name="W" typeId="6ba7-776c-9ed0-b148">7</characteristic>
-<characteristic name="I" typeId="6f24-6315-ebd0-9465">5</characteristic>
+<characteristic name="I" typeId="6f24-6315-ebd0-9465">4</characteristic>
 <characteristic name="A" typeId="e39a-3da9-2567-cfd3">5</characteristic>
 <characteristic name="Ld" typeId="7e63-7406-c8d0-7e03">10</characteristic>
 <characteristic name="Sv" typeId="d23d-aa50-ddfb-88a0">1+</characteristic>
@@ -26391,7 +26391,7 @@ LIMITATIONS - The Detachment must include a Legion Chaplain Consul. The Detachme
 <characteristic name="S" typeId="7e44-d066-921a-29bd">4</characteristic>
 <characteristic name="T" typeId="a21c-b80a-e1e4-079a">4</characteristic>
 <characteristic name="W" typeId="6ba7-776c-9ed0-b148">2</characteristic>
-<characteristic name="I" typeId="6f24-6315-ebd0-9465">4</characteristic>
+<characteristic name="I" typeId="6f24-6315-ebd0-9465">3</characteristic>
 <characteristic name="A" typeId="e39a-3da9-2567-cfd3">3</characteristic>
 <characteristic name="Ld" typeId="7e63-7406-c8d0-7e03">10</characteristic>
 <characteristic name="Sv" typeId="d23d-aa50-ddfb-88a0">2+</characteristic>
@@ -26586,7 +26586,7 @@ LIMITATIONS - The Detachment must include a Legion Chaplain Consul. The Detachme
 <characteristic name="S" typeId="7e44-d066-921a-29bd">4</characteristic>
 <characteristic name="T" typeId="a21c-b80a-e1e4-079a">4</characteristic>
 <characteristic name="W" typeId="6ba7-776c-9ed0-b148">1</characteristic>
-<characteristic name="I" typeId="6f24-6315-ebd0-9465">4</characteristic>
+<characteristic name="I" typeId="6f24-6315-ebd0-9465">3</characteristic>
 <characteristic name="A" typeId="e39a-3da9-2567-cfd3">2</characteristic>
 <characteristic name="Ld" typeId="7e63-7406-c8d0-7e03">10</characteristic>
 <characteristic name="Sv" typeId="d23d-aa50-ddfb-88a0">2+</characteristic>
@@ -26642,7 +26642,7 @@ LIMITATIONS - The Detachment must include a Legion Chaplain Consul. The Detachme
 <characteristic name="S" typeId="7e44-d066-921a-29bd">4</characteristic>
 <characteristic name="T" typeId="a21c-b80a-e1e4-079a">4</characteristic>
 <characteristic name="W" typeId="6ba7-776c-9ed0-b148">1</characteristic>
-<characteristic name="I" typeId="6f24-6315-ebd0-9465">4</characteristic>
+<characteristic name="I" typeId="6f24-6315-ebd0-9465">3</characteristic>
 <characteristic name="A" typeId="e39a-3da9-2567-cfd3">2</characteristic>
 <characteristic name="Ld" typeId="7e63-7406-c8d0-7e03">10</characteristic>
 <characteristic name="Sv" typeId="d23d-aa50-ddfb-88a0">2+</characteristic>
@@ -27035,7 +27035,7 @@ LIMITATIONS - The Detachment must include a Legion Chaplain Consul. The Detachme
 <characteristic name="S" typeId="7e44-d066-921a-29bd">4</characteristic>
 <characteristic name="T" typeId="a21c-b80a-e1e4-079a">4</characteristic>
 <characteristic name="W" typeId="6ba7-776c-9ed0-b148">1</characteristic>
-<characteristic name="I" typeId="6f24-6315-ebd0-9465">4</characteristic>
+<characteristic name="I" typeId="6f24-6315-ebd0-9465">3</characteristic>
 <characteristic name="A" typeId="e39a-3da9-2567-cfd3">2</characteristic>
 <characteristic name="Ld" typeId="7e63-7406-c8d0-7e03">9</characteristic>
 <characteristic name="Sv" typeId="d23d-aa50-ddfb-88a0">3+</characteristic>
@@ -27073,7 +27073,7 @@ LIMITATIONS - The Detachment must include a Legion Chaplain Consul. The Detachme
 <characteristic name="S" typeId="7e44-d066-921a-29bd">4</characteristic>
 <characteristic name="T" typeId="a21c-b80a-e1e4-079a">4</characteristic>
 <characteristic name="W" typeId="6ba7-776c-9ed0-b148">1</characteristic>
-<characteristic name="I" typeId="6f24-6315-ebd0-9465">4</characteristic>
+<characteristic name="I" typeId="6f24-6315-ebd0-9465">3</characteristic>
 <characteristic name="A" typeId="e39a-3da9-2567-cfd3">2</characteristic>
 <characteristic name="Ld" typeId="7e63-7406-c8d0-7e03">9</characteristic>
 <characteristic name="Sv" typeId="d23d-aa50-ddfb-88a0">3+</characteristic>
@@ -27389,7 +27389,7 @@ LIMITATIONS - The Detachment must include a Legion Chaplain Consul. The Detachme
 <characteristic name="S" typeId="7e44-d066-921a-29bd">4</characteristic>
 <characteristic name="T" typeId="a21c-b80a-e1e4-079a">4</characteristic>
 <characteristic name="W" typeId="6ba7-776c-9ed0-b148">1</characteristic>
-<characteristic name="I" typeId="6f24-6315-ebd0-9465">4</characteristic>
+<characteristic name="I" typeId="6f24-6315-ebd0-9465">3</characteristic>
 <characteristic name="A" typeId="e39a-3da9-2567-cfd3">2</characteristic>
 <characteristic name="Ld" typeId="7e63-7406-c8d0-7e03">9</characteristic>
 <characteristic name="Sv" typeId="d23d-aa50-ddfb-88a0">3+</characteristic>
@@ -27887,7 +27887,7 @@ LIMITATIONS - The Detachment must include a Legion Chaplain Consul. The Detachme
 <characteristic name="S" typeId="7e44-d066-921a-29bd">4</characteristic>
 <characteristic name="T" typeId="a21c-b80a-e1e4-079a">4</characteristic>
 <characteristic name="W" typeId="6ba7-776c-9ed0-b148">1</characteristic>
-<characteristic name="I" typeId="6f24-6315-ebd0-9465">4</characteristic>
+<characteristic name="I" typeId="6f24-6315-ebd0-9465">3</characteristic>
 <characteristic name="A" typeId="e39a-3da9-2567-cfd3">2</characteristic>
 <characteristic name="Ld" typeId="7e63-7406-c8d0-7e03">9</characteristic>
 <characteristic name="Sv" typeId="d23d-aa50-ddfb-88a0">3+</characteristic>
@@ -28956,7 +28956,7 @@ LIMITATIONS - The Detachment must include a Legion Chaplain Consul. The Detachme
 <characteristic name="S" typeId="7e44-d066-921a-29bd">4</characteristic>
 <characteristic name="T" typeId="a21c-b80a-e1e4-079a">4</characteristic>
 <characteristic name="W" typeId="6ba7-776c-9ed0-b148">1</characteristic>
-<characteristic name="I" typeId="6f24-6315-ebd0-9465">4</characteristic>
+<characteristic name="I" typeId="6f24-6315-ebd0-9465">3</characteristic>
 <characteristic name="A" typeId="e39a-3da9-2567-cfd3">2</characteristic>
 <characteristic name="Ld" typeId="7e63-7406-c8d0-7e03">9</characteristic>
 <characteristic name="Sv" typeId="d23d-aa50-ddfb-88a0">2+</characteristic>
@@ -28980,7 +28980,7 @@ LIMITATIONS - The Detachment must include a Legion Chaplain Consul. The Detachme
 <characteristic name="S" typeId="7e44-d066-921a-29bd">4</characteristic>
 <characteristic name="T" typeId="a21c-b80a-e1e4-079a">4</characteristic>
 <characteristic name="W" typeId="6ba7-776c-9ed0-b148">1</characteristic>
-<characteristic name="I" typeId="6f24-6315-ebd0-9465">4</characteristic>
+<characteristic name="I" typeId="6f24-6315-ebd0-9465">3</characteristic>
 <characteristic name="A" typeId="e39a-3da9-2567-cfd3">2</characteristic>
 <characteristic name="Ld" typeId="7e63-7406-c8d0-7e03">9</characteristic>
 <characteristic name="Sv" typeId="d23d-aa50-ddfb-88a0">2+</characteristic>
@@ -29292,7 +29292,7 @@ LIMITATIONS - The Detachment must include a Legion Chaplain Consul. The Detachme
 <characteristic name="S" typeId="7e44-d066-921a-29bd">4</characteristic>
 <characteristic name="T" typeId="a21c-b80a-e1e4-079a">4</characteristic>
 <characteristic name="W" typeId="6ba7-776c-9ed0-b148">1</characteristic>
-<characteristic name="I" typeId="6f24-6315-ebd0-9465">4</characteristic>
+<characteristic name="I" typeId="6f24-6315-ebd0-9465">3</characteristic>
 <characteristic name="A" typeId="e39a-3da9-2567-cfd3">2</characteristic>
 <characteristic name="Ld" typeId="7e63-7406-c8d0-7e03">9</characteristic>
 <characteristic name="Sv" typeId="d23d-aa50-ddfb-88a0">2+</characteristic>
@@ -29619,7 +29619,7 @@ LIMITATIONS - The Detachment must include a Legion Chaplain Consul. The Detachme
 <characteristic name="S" typeId="7e44-d066-921a-29bd">4</characteristic>
 <characteristic name="T" typeId="a21c-b80a-e1e4-079a">4</characteristic>
 <characteristic name="W" typeId="6ba7-776c-9ed0-b148">1</characteristic>
-<characteristic name="I" typeId="6f24-6315-ebd0-9465">4</characteristic>
+<characteristic name="I" typeId="6f24-6315-ebd0-9465">3</characteristic>
 <characteristic name="A" typeId="e39a-3da9-2567-cfd3">2</characteristic>
 <characteristic name="Ld" typeId="7e63-7406-c8d0-7e03">9</characteristic>
 <characteristic name="Sv" typeId="d23d-aa50-ddfb-88a0">2+</characteristic>
@@ -30357,7 +30357,7 @@ LIMITATIONS - The Detachment must include a Legion Chaplain Consul. The Detachme
 <characteristic name="S" typeId="7e44-d066-921a-29bd">4</characteristic>
 <characteristic name="T" typeId="a21c-b80a-e1e4-079a">4</characteristic>
 <characteristic name="W" typeId="6ba7-776c-9ed0-b148">1</characteristic>
-<characteristic name="I" typeId="6f24-6315-ebd0-9465">4</characteristic>
+<characteristic name="I" typeId="6f24-6315-ebd0-9465">3</characteristic>
 <characteristic name="A" typeId="e39a-3da9-2567-cfd3">2</characteristic>
 <characteristic name="Ld" typeId="7e63-7406-c8d0-7e03">9</characteristic>
 <characteristic name="Sv" typeId="d23d-aa50-ddfb-88a0">3+</characteristic>
@@ -30395,7 +30395,7 @@ LIMITATIONS - The Detachment must include a Legion Chaplain Consul. The Detachme
 <characteristic name="S" typeId="7e44-d066-921a-29bd">4</characteristic>
 <characteristic name="T" typeId="a21c-b80a-e1e4-079a">4</characteristic>
 <characteristic name="W" typeId="6ba7-776c-9ed0-b148">1</characteristic>
-<characteristic name="I" typeId="6f24-6315-ebd0-9465">4</characteristic>
+<characteristic name="I" typeId="6f24-6315-ebd0-9465">3</characteristic>
 <characteristic name="A" typeId="e39a-3da9-2567-cfd3">2</characteristic>
 <characteristic name="Ld" typeId="7e63-7406-c8d0-7e03">9</characteristic>
 <characteristic name="Sv" typeId="d23d-aa50-ddfb-88a0">3+</characteristic>
@@ -30711,7 +30711,7 @@ LIMITATIONS - The Detachment must include a Legion Chaplain Consul. The Detachme
 <characteristic name="S" typeId="7e44-d066-921a-29bd">4</characteristic>
 <characteristic name="T" typeId="a21c-b80a-e1e4-079a">4</characteristic>
 <characteristic name="W" typeId="6ba7-776c-9ed0-b148">1</characteristic>
-<characteristic name="I" typeId="6f24-6315-ebd0-9465">4</characteristic>
+<characteristic name="I" typeId="6f24-6315-ebd0-9465">3</characteristic>
 <characteristic name="A" typeId="e39a-3da9-2567-cfd3">2</characteristic>
 <characteristic name="Ld" typeId="7e63-7406-c8d0-7e03">9</characteristic>
 <characteristic name="Sv" typeId="d23d-aa50-ddfb-88a0">3+</characteristic>
@@ -31209,7 +31209,7 @@ LIMITATIONS - The Detachment must include a Legion Chaplain Consul. The Detachme
 <characteristic name="S" typeId="7e44-d066-921a-29bd">4</characteristic>
 <characteristic name="T" typeId="a21c-b80a-e1e4-079a">4</characteristic>
 <characteristic name="W" typeId="6ba7-776c-9ed0-b148">1</characteristic>
-<characteristic name="I" typeId="6f24-6315-ebd0-9465">4</characteristic>
+<characteristic name="I" typeId="6f24-6315-ebd0-9465">3</characteristic>
 <characteristic name="A" typeId="e39a-3da9-2567-cfd3">2</characteristic>
 <characteristic name="Ld" typeId="7e63-7406-c8d0-7e03">9</characteristic>
 <characteristic name="Sv" typeId="d23d-aa50-ddfb-88a0">3+</characteristic>
@@ -32278,7 +32278,7 @@ LIMITATIONS - The Detachment must include a Legion Chaplain Consul. The Detachme
 <characteristic name="S" typeId="7e44-d066-921a-29bd">4</characteristic>
 <characteristic name="T" typeId="a21c-b80a-e1e4-079a">4</characteristic>
 <characteristic name="W" typeId="6ba7-776c-9ed0-b148">1</characteristic>
-<characteristic name="I" typeId="6f24-6315-ebd0-9465">4</characteristic>
+<characteristic name="I" typeId="6f24-6315-ebd0-9465">3</characteristic>
 <characteristic name="A" typeId="e39a-3da9-2567-cfd3">2</characteristic>
 <characteristic name="Ld" typeId="7e63-7406-c8d0-7e03">9</characteristic>
 <characteristic name="Sv" typeId="d23d-aa50-ddfb-88a0">2+</characteristic>
@@ -32302,7 +32302,7 @@ LIMITATIONS - The Detachment must include a Legion Chaplain Consul. The Detachme
 <characteristic name="S" typeId="7e44-d066-921a-29bd">4</characteristic>
 <characteristic name="T" typeId="a21c-b80a-e1e4-079a">4</characteristic>
 <characteristic name="W" typeId="6ba7-776c-9ed0-b148">1</characteristic>
-<characteristic name="I" typeId="6f24-6315-ebd0-9465">4</characteristic>
+<characteristic name="I" typeId="6f24-6315-ebd0-9465">3</characteristic>
 <characteristic name="A" typeId="e39a-3da9-2567-cfd3">2</characteristic>
 <characteristic name="Ld" typeId="7e63-7406-c8d0-7e03">9</characteristic>
 <characteristic name="Sv" typeId="d23d-aa50-ddfb-88a0">2+</characteristic>
@@ -32614,7 +32614,7 @@ LIMITATIONS - The Detachment must include a Legion Chaplain Consul. The Detachme
 <characteristic name="S" typeId="7e44-d066-921a-29bd">4</characteristic>
 <characteristic name="T" typeId="a21c-b80a-e1e4-079a">4</characteristic>
 <characteristic name="W" typeId="6ba7-776c-9ed0-b148">1</characteristic>
-<characteristic name="I" typeId="6f24-6315-ebd0-9465">4</characteristic>
+<characteristic name="I" typeId="6f24-6315-ebd0-9465">3</characteristic>
 <characteristic name="A" typeId="e39a-3da9-2567-cfd3">2</characteristic>
 <characteristic name="Ld" typeId="7e63-7406-c8d0-7e03">9</characteristic>
 <characteristic name="Sv" typeId="d23d-aa50-ddfb-88a0">2+</characteristic>
@@ -32941,7 +32941,7 @@ LIMITATIONS - The Detachment must include a Legion Chaplain Consul. The Detachme
 <characteristic name="S" typeId="7e44-d066-921a-29bd">4</characteristic>
 <characteristic name="T" typeId="a21c-b80a-e1e4-079a">4</characteristic>
 <characteristic name="W" typeId="6ba7-776c-9ed0-b148">1</characteristic>
-<characteristic name="I" typeId="6f24-6315-ebd0-9465">4</characteristic>
+<characteristic name="I" typeId="6f24-6315-ebd0-9465">3</characteristic>
 <characteristic name="A" typeId="e39a-3da9-2567-cfd3">2</characteristic>
 <characteristic name="Ld" typeId="7e63-7406-c8d0-7e03">9</characteristic>
 <characteristic name="Sv" typeId="d23d-aa50-ddfb-88a0">2+</characteristic>
@@ -34431,7 +34431,7 @@ LIMITATIONS - The Detachment must include a Legion Chaplain Consul. The Detachme
 <characteristic name="S" typeId="7e44-d066-921a-29bd">4</characteristic>
 <characteristic name="T" typeId="a21c-b80a-e1e4-079a">4</characteristic>
 <characteristic name="W" typeId="6ba7-776c-9ed0-b148">1</characteristic>
-<characteristic name="I" typeId="6f24-6315-ebd0-9465">4</characteristic>
+<characteristic name="I" typeId="6f24-6315-ebd0-9465">3</characteristic>
 <characteristic name="A" typeId="e39a-3da9-2567-cfd3">3</characteristic>
 <characteristic name="Ld" typeId="7e63-7406-c8d0-7e03">10</characteristic>
 <characteristic name="Sv" typeId="d23d-aa50-ddfb-88a0">2+/5+</characteristic>
@@ -34647,7 +34647,7 @@ LIMITATIONS - The Detachment must include a Legion Chaplain Consul. The Detachme
 <characteristic name="S" typeId="7e44-d066-921a-29bd">4</characteristic>
 <characteristic name="T" typeId="a21c-b80a-e1e4-079a">4</characteristic>
 <characteristic name="W" typeId="6ba7-776c-9ed0-b148">1</characteristic>
-<characteristic name="I" typeId="6f24-6315-ebd0-9465">4</characteristic>
+<characteristic name="I" typeId="6f24-6315-ebd0-9465">3</characteristic>
 <characteristic name="A" typeId="e39a-3da9-2567-cfd3">2</characteristic>
 <characteristic name="Ld" typeId="7e63-7406-c8d0-7e03">9</characteristic>
 <characteristic name="Sv" typeId="d23d-aa50-ddfb-88a0">2+/5+</characteristic>
@@ -34895,7 +34895,7 @@ LIMITATIONS - The Detachment must include a Legion Chaplain Consul. The Detachme
 <characteristic name="S" typeId="7e44-d066-921a-29bd">4</characteristic>
 <characteristic name="T" typeId="a21c-b80a-e1e4-079a">4</characteristic>
 <characteristic name="W" typeId="6ba7-776c-9ed0-b148">1</characteristic>
-<characteristic name="I" typeId="6f24-6315-ebd0-9465">4</characteristic>
+<characteristic name="I" typeId="6f24-6315-ebd0-9465">3</characteristic>
 <characteristic name="A" typeId="e39a-3da9-2567-cfd3">3</characteristic>
 <characteristic name="Ld" typeId="7e63-7406-c8d0-7e03">10</characteristic>
 <characteristic name="Sv" typeId="d23d-aa50-ddfb-88a0">2+/5+</characteristic>
@@ -35111,7 +35111,7 @@ LIMITATIONS - The Detachment must include a Legion Chaplain Consul. The Detachme
 <characteristic name="S" typeId="7e44-d066-921a-29bd">4</characteristic>
 <characteristic name="T" typeId="a21c-b80a-e1e4-079a">4</characteristic>
 <characteristic name="W" typeId="6ba7-776c-9ed0-b148">1</characteristic>
-<characteristic name="I" typeId="6f24-6315-ebd0-9465">4</characteristic>
+<characteristic name="I" typeId="6f24-6315-ebd0-9465">3</characteristic>
 <characteristic name="A" typeId="e39a-3da9-2567-cfd3">2</characteristic>
 <characteristic name="Ld" typeId="7e63-7406-c8d0-7e03">9</characteristic>
 <characteristic name="Sv" typeId="d23d-aa50-ddfb-88a0">2+/5+</characteristic>
@@ -35388,7 +35388,7 @@ LIMITATIONS - The Detachment must include a Legion Chaplain Consul. The Detachme
 <characteristic name="S" typeId="7e44-d066-921a-29bd">4</characteristic>
 <characteristic name="T" typeId="a21c-b80a-e1e4-079a">4</characteristic>
 <characteristic name="W" typeId="6ba7-776c-9ed0-b148">1</characteristic>
-<characteristic name="I" typeId="6f24-6315-ebd0-9465">4</characteristic>
+<characteristic name="I" typeId="6f24-6315-ebd0-9465">3</characteristic>
 <characteristic name="A" typeId="e39a-3da9-2567-cfd3">2</characteristic>
 <characteristic name="Ld" typeId="7e63-7406-c8d0-7e03">9</characteristic>
 <characteristic name="Sv" typeId="d23d-aa50-ddfb-88a0">3+</characteristic>
@@ -35426,7 +35426,7 @@ LIMITATIONS - The Detachment must include a Legion Chaplain Consul. The Detachme
 <characteristic name="S" typeId="7e44-d066-921a-29bd">4</characteristic>
 <characteristic name="T" typeId="a21c-b80a-e1e4-079a">4</characteristic>
 <characteristic name="W" typeId="6ba7-776c-9ed0-b148">1</characteristic>
-<characteristic name="I" typeId="6f24-6315-ebd0-9465">4</characteristic>
+<characteristic name="I" typeId="6f24-6315-ebd0-9465">3</characteristic>
 <characteristic name="A" typeId="e39a-3da9-2567-cfd3">2</characteristic>
 <characteristic name="Ld" typeId="7e63-7406-c8d0-7e03">9</characteristic>
 <characteristic name="Sv" typeId="d23d-aa50-ddfb-88a0">3+</characteristic>
@@ -35742,7 +35742,7 @@ LIMITATIONS - The Detachment must include a Legion Chaplain Consul. The Detachme
 <characteristic name="S" typeId="7e44-d066-921a-29bd">4</characteristic>
 <characteristic name="T" typeId="a21c-b80a-e1e4-079a">4</characteristic>
 <characteristic name="W" typeId="6ba7-776c-9ed0-b148">1</characteristic>
-<characteristic name="I" typeId="6f24-6315-ebd0-9465">4</characteristic>
+<characteristic name="I" typeId="6f24-6315-ebd0-9465">3</characteristic>
 <characteristic name="A" typeId="e39a-3da9-2567-cfd3">2</characteristic>
 <characteristic name="Ld" typeId="7e63-7406-c8d0-7e03">9</characteristic>
 <characteristic name="Sv" typeId="d23d-aa50-ddfb-88a0">3+</characteristic>
@@ -36240,7 +36240,7 @@ LIMITATIONS - The Detachment must include a Legion Chaplain Consul. The Detachme
 <characteristic name="S" typeId="7e44-d066-921a-29bd">4</characteristic>
 <characteristic name="T" typeId="a21c-b80a-e1e4-079a">4</characteristic>
 <characteristic name="W" typeId="6ba7-776c-9ed0-b148">1</characteristic>
-<characteristic name="I" typeId="6f24-6315-ebd0-9465">4</characteristic>
+<characteristic name="I" typeId="6f24-6315-ebd0-9465">3</characteristic>
 <characteristic name="A" typeId="e39a-3da9-2567-cfd3">2</characteristic>
 <characteristic name="Ld" typeId="7e63-7406-c8d0-7e03">9</characteristic>
 <characteristic name="Sv" typeId="d23d-aa50-ddfb-88a0">3+</characteristic>
@@ -37309,7 +37309,7 @@ LIMITATIONS - The Detachment must include a Legion Chaplain Consul. The Detachme
 <characteristic name="S" typeId="7e44-d066-921a-29bd">4</characteristic>
 <characteristic name="T" typeId="a21c-b80a-e1e4-079a">4</characteristic>
 <characteristic name="W" typeId="6ba7-776c-9ed0-b148">1</characteristic>
-<characteristic name="I" typeId="6f24-6315-ebd0-9465">4</characteristic>
+<characteristic name="I" typeId="6f24-6315-ebd0-9465">3</characteristic>
 <characteristic name="A" typeId="e39a-3da9-2567-cfd3">2</characteristic>
 <characteristic name="Ld" typeId="7e63-7406-c8d0-7e03">9</characteristic>
 <characteristic name="Sv" typeId="d23d-aa50-ddfb-88a0">2+</characteristic>
@@ -37333,7 +37333,7 @@ LIMITATIONS - The Detachment must include a Legion Chaplain Consul. The Detachme
 <characteristic name="S" typeId="7e44-d066-921a-29bd">4</characteristic>
 <characteristic name="T" typeId="a21c-b80a-e1e4-079a">4</characteristic>
 <characteristic name="W" typeId="6ba7-776c-9ed0-b148">1</characteristic>
-<characteristic name="I" typeId="6f24-6315-ebd0-9465">4</characteristic>
+<characteristic name="I" typeId="6f24-6315-ebd0-9465">3</characteristic>
 <characteristic name="A" typeId="e39a-3da9-2567-cfd3">2</characteristic>
 <characteristic name="Ld" typeId="7e63-7406-c8d0-7e03">9</characteristic>
 <characteristic name="Sv" typeId="d23d-aa50-ddfb-88a0">2+</characteristic>
@@ -37645,7 +37645,7 @@ LIMITATIONS - The Detachment must include a Legion Chaplain Consul. The Detachme
 <characteristic name="S" typeId="7e44-d066-921a-29bd">4</characteristic>
 <characteristic name="T" typeId="a21c-b80a-e1e4-079a">4</characteristic>
 <characteristic name="W" typeId="6ba7-776c-9ed0-b148">1</characteristic>
-<characteristic name="I" typeId="6f24-6315-ebd0-9465">4</characteristic>
+<characteristic name="I" typeId="6f24-6315-ebd0-9465">3</characteristic>
 <characteristic name="A" typeId="e39a-3da9-2567-cfd3">2</characteristic>
 <characteristic name="Ld" typeId="7e63-7406-c8d0-7e03">9</characteristic>
 <characteristic name="Sv" typeId="d23d-aa50-ddfb-88a0">2+</characteristic>
@@ -37972,7 +37972,7 @@ LIMITATIONS - The Detachment must include a Legion Chaplain Consul. The Detachme
 <characteristic name="S" typeId="7e44-d066-921a-29bd">4</characteristic>
 <characteristic name="T" typeId="a21c-b80a-e1e4-079a">4</characteristic>
 <characteristic name="W" typeId="6ba7-776c-9ed0-b148">1</characteristic>
-<characteristic name="I" typeId="6f24-6315-ebd0-9465">4</characteristic>
+<characteristic name="I" typeId="6f24-6315-ebd0-9465">3</characteristic>
 <characteristic name="A" typeId="e39a-3da9-2567-cfd3">2</characteristic>
 <characteristic name="Ld" typeId="7e63-7406-c8d0-7e03">9</characteristic>
 <characteristic name="Sv" typeId="d23d-aa50-ddfb-88a0">2+</characteristic>
@@ -38710,7 +38710,7 @@ LIMITATIONS - The Detachment must include a Legion Chaplain Consul. The Detachme
 <characteristic name="S" typeId="7e44-d066-921a-29bd">4</characteristic>
 <characteristic name="T" typeId="a21c-b80a-e1e4-079a">4</characteristic>
 <characteristic name="W" typeId="6ba7-776c-9ed0-b148">1</characteristic>
-<characteristic name="I" typeId="6f24-6315-ebd0-9465">4</characteristic>
+<characteristic name="I" typeId="6f24-6315-ebd0-9465">3</characteristic>
 <characteristic name="A" typeId="e39a-3da9-2567-cfd3">2</characteristic>
 <characteristic name="Ld" typeId="7e63-7406-c8d0-7e03">9</characteristic>
 <characteristic name="Sv" typeId="d23d-aa50-ddfb-88a0">3+</characteristic>
@@ -38748,7 +38748,7 @@ LIMITATIONS - The Detachment must include a Legion Chaplain Consul. The Detachme
 <characteristic name="S" typeId="7e44-d066-921a-29bd">4</characteristic>
 <characteristic name="T" typeId="a21c-b80a-e1e4-079a">4</characteristic>
 <characteristic name="W" typeId="6ba7-776c-9ed0-b148">1</characteristic>
-<characteristic name="I" typeId="6f24-6315-ebd0-9465">4</characteristic>
+<characteristic name="I" typeId="6f24-6315-ebd0-9465">3</characteristic>
 <characteristic name="A" typeId="e39a-3da9-2567-cfd3">2</characteristic>
 <characteristic name="Ld" typeId="7e63-7406-c8d0-7e03">9</characteristic>
 <characteristic name="Sv" typeId="d23d-aa50-ddfb-88a0">3+</characteristic>
@@ -39064,7 +39064,7 @@ LIMITATIONS - The Detachment must include a Legion Chaplain Consul. The Detachme
 <characteristic name="S" typeId="7e44-d066-921a-29bd">4</characteristic>
 <characteristic name="T" typeId="a21c-b80a-e1e4-079a">4</characteristic>
 <characteristic name="W" typeId="6ba7-776c-9ed0-b148">1</characteristic>
-<characteristic name="I" typeId="6f24-6315-ebd0-9465">4</characteristic>
+<characteristic name="I" typeId="6f24-6315-ebd0-9465">3</characteristic>
 <characteristic name="A" typeId="e39a-3da9-2567-cfd3">2</characteristic>
 <characteristic name="Ld" typeId="7e63-7406-c8d0-7e03">9</characteristic>
 <characteristic name="Sv" typeId="d23d-aa50-ddfb-88a0">3+</characteristic>
@@ -39562,7 +39562,7 @@ LIMITATIONS - The Detachment must include a Legion Chaplain Consul. The Detachme
 <characteristic name="S" typeId="7e44-d066-921a-29bd">4</characteristic>
 <characteristic name="T" typeId="a21c-b80a-e1e4-079a">4</characteristic>
 <characteristic name="W" typeId="6ba7-776c-9ed0-b148">1</characteristic>
-<characteristic name="I" typeId="6f24-6315-ebd0-9465">4</characteristic>
+<characteristic name="I" typeId="6f24-6315-ebd0-9465">3</characteristic>
 <characteristic name="A" typeId="e39a-3da9-2567-cfd3">2</characteristic>
 <characteristic name="Ld" typeId="7e63-7406-c8d0-7e03">9</characteristic>
 <characteristic name="Sv" typeId="d23d-aa50-ddfb-88a0">3+</characteristic>
@@ -40631,7 +40631,7 @@ LIMITATIONS - The Detachment must include a Legion Chaplain Consul. The Detachme
 <characteristic name="S" typeId="7e44-d066-921a-29bd">4</characteristic>
 <characteristic name="T" typeId="a21c-b80a-e1e4-079a">4</characteristic>
 <characteristic name="W" typeId="6ba7-776c-9ed0-b148">1</characteristic>
-<characteristic name="I" typeId="6f24-6315-ebd0-9465">4</characteristic>
+<characteristic name="I" typeId="6f24-6315-ebd0-9465">3</characteristic>
 <characteristic name="A" typeId="e39a-3da9-2567-cfd3">2</characteristic>
 <characteristic name="Ld" typeId="7e63-7406-c8d0-7e03">9</characteristic>
 <characteristic name="Sv" typeId="d23d-aa50-ddfb-88a0">2+</characteristic>
@@ -40655,7 +40655,7 @@ LIMITATIONS - The Detachment must include a Legion Chaplain Consul. The Detachme
 <characteristic name="S" typeId="7e44-d066-921a-29bd">4</characteristic>
 <characteristic name="T" typeId="a21c-b80a-e1e4-079a">4</characteristic>
 <characteristic name="W" typeId="6ba7-776c-9ed0-b148">1</characteristic>
-<characteristic name="I" typeId="6f24-6315-ebd0-9465">4</characteristic>
+<characteristic name="I" typeId="6f24-6315-ebd0-9465">3</characteristic>
 <characteristic name="A" typeId="e39a-3da9-2567-cfd3">2</characteristic>
 <characteristic name="Ld" typeId="7e63-7406-c8d0-7e03">9</characteristic>
 <characteristic name="Sv" typeId="d23d-aa50-ddfb-88a0">2+</characteristic>
@@ -40967,7 +40967,7 @@ LIMITATIONS - The Detachment must include a Legion Chaplain Consul. The Detachme
 <characteristic name="S" typeId="7e44-d066-921a-29bd">4</characteristic>
 <characteristic name="T" typeId="a21c-b80a-e1e4-079a">4</characteristic>
 <characteristic name="W" typeId="6ba7-776c-9ed0-b148">1</characteristic>
-<characteristic name="I" typeId="6f24-6315-ebd0-9465">4</characteristic>
+<characteristic name="I" typeId="6f24-6315-ebd0-9465">3</characteristic>
 <characteristic name="A" typeId="e39a-3da9-2567-cfd3">2</characteristic>
 <characteristic name="Ld" typeId="7e63-7406-c8d0-7e03">9</characteristic>
 <characteristic name="Sv" typeId="d23d-aa50-ddfb-88a0">2+</characteristic>
@@ -41294,7 +41294,7 @@ LIMITATIONS - The Detachment must include a Legion Chaplain Consul. The Detachme
 <characteristic name="S" typeId="7e44-d066-921a-29bd">4</characteristic>
 <characteristic name="T" typeId="a21c-b80a-e1e4-079a">4</characteristic>
 <characteristic name="W" typeId="6ba7-776c-9ed0-b148">1</characteristic>
-<characteristic name="I" typeId="6f24-6315-ebd0-9465">4</characteristic>
+<characteristic name="I" typeId="6f24-6315-ebd0-9465">3</characteristic>
 <characteristic name="A" typeId="e39a-3da9-2567-cfd3">2</characteristic>
 <characteristic name="Ld" typeId="7e63-7406-c8d0-7e03">9</characteristic>
 <characteristic name="Sv" typeId="d23d-aa50-ddfb-88a0">2+</characteristic>
@@ -42003,7 +42003,7 @@ LIMITATIONS - The Detachment must include a Legion Chaplain Consul. The Detachme
 <characteristic name="S" typeId="7e44-d066-921a-29bd">4</characteristic>
 <characteristic name="T" typeId="a21c-b80a-e1e4-079a">4</characteristic>
 <characteristic name="W" typeId="6ba7-776c-9ed0-b148">1</characteristic>
-<characteristic name="I" typeId="6f24-6315-ebd0-9465">4</characteristic>
+<characteristic name="I" typeId="6f24-6315-ebd0-9465">3</characteristic>
 <characteristic name="A" typeId="e39a-3da9-2567-cfd3">3</characteristic>
 <characteristic name="Ld" typeId="7e63-7406-c8d0-7e03">10</characteristic>
 <characteristic name="Sv" typeId="d23d-aa50-ddfb-88a0">2+/5+</characteristic>
@@ -42219,7 +42219,7 @@ LIMITATIONS - The Detachment must include a Legion Chaplain Consul. The Detachme
 <characteristic name="S" typeId="7e44-d066-921a-29bd">4</characteristic>
 <characteristic name="T" typeId="a21c-b80a-e1e4-079a">4</characteristic>
 <characteristic name="W" typeId="6ba7-776c-9ed0-b148">1</characteristic>
-<characteristic name="I" typeId="6f24-6315-ebd0-9465">4</characteristic>
+<characteristic name="I" typeId="6f24-6315-ebd0-9465">3</characteristic>
 <characteristic name="A" typeId="e39a-3da9-2567-cfd3">2</characteristic>
 <characteristic name="Ld" typeId="7e63-7406-c8d0-7e03">9</characteristic>
 <characteristic name="Sv" typeId="d23d-aa50-ddfb-88a0">2+/5+</characteristic>
@@ -42465,7 +42465,7 @@ LIMITATIONS - The Detachment must include a Legion Chaplain Consul. The Detachme
 <characteristic name="S" typeId="7e44-d066-921a-29bd">4</characteristic>
 <characteristic name="T" typeId="a21c-b80a-e1e4-079a">4</characteristic>
 <characteristic name="W" typeId="6ba7-776c-9ed0-b148">2</characteristic>
-<characteristic name="I" typeId="6f24-6315-ebd0-9465">4</characteristic>
+<characteristic name="I" typeId="6f24-6315-ebd0-9465">3</characteristic>
 <characteristic name="A" typeId="e39a-3da9-2567-cfd3">3</characteristic>
 <characteristic name="Ld" typeId="7e63-7406-c8d0-7e03">10</characteristic>
 <characteristic name="Sv" typeId="d23d-aa50-ddfb-88a0">2+</characteristic>
@@ -42652,7 +42652,7 @@ LIMITATIONS - The Detachment must include a Legion Chaplain Consul. The Detachme
 <characteristic name="S" typeId="7e44-d066-921a-29bd">4</characteristic>
 <characteristic name="T" typeId="a21c-b80a-e1e4-079a">4</characteristic>
 <characteristic name="W" typeId="6ba7-776c-9ed0-b148">1</characteristic>
-<characteristic name="I" typeId="6f24-6315-ebd0-9465">4</characteristic>
+<characteristic name="I" typeId="6f24-6315-ebd0-9465">3</characteristic>
 <characteristic name="A" typeId="e39a-3da9-2567-cfd3">2</characteristic>
 <characteristic name="Ld" typeId="7e63-7406-c8d0-7e03">10</characteristic>
 <characteristic name="Sv" typeId="d23d-aa50-ddfb-88a0">2+</characteristic>
@@ -42708,7 +42708,7 @@ LIMITATIONS - The Detachment must include a Legion Chaplain Consul. The Detachme
 <characteristic name="S" typeId="7e44-d066-921a-29bd">4</characteristic>
 <characteristic name="T" typeId="a21c-b80a-e1e4-079a">4</characteristic>
 <characteristic name="W" typeId="6ba7-776c-9ed0-b148">1</characteristic>
-<characteristic name="I" typeId="6f24-6315-ebd0-9465">4</characteristic>
+<characteristic name="I" typeId="6f24-6315-ebd0-9465">3</characteristic>
 <characteristic name="A" typeId="e39a-3da9-2567-cfd3">2</characteristic>
 <characteristic name="Ld" typeId="7e63-7406-c8d0-7e03">10</characteristic>
 <characteristic name="Sv" typeId="d23d-aa50-ddfb-88a0">2+</characteristic>
@@ -43101,7 +43101,7 @@ LIMITATIONS - The Detachment must include a Legion Chaplain Consul. The Detachme
 <characteristic name="S" typeId="7e44-d066-921a-29bd">4</characteristic>
 <characteristic name="T" typeId="a21c-b80a-e1e4-079a">4</characteristic>
 <characteristic name="W" typeId="6ba7-776c-9ed0-b148">1</characteristic>
-<characteristic name="I" typeId="6f24-6315-ebd0-9465">4</characteristic>
+<characteristic name="I" typeId="6f24-6315-ebd0-9465">3</characteristic>
 <characteristic name="A" typeId="e39a-3da9-2567-cfd3">2</characteristic>
 <characteristic name="Ld" typeId="7e63-7406-c8d0-7e03">9</characteristic>
 <characteristic name="Sv" typeId="d23d-aa50-ddfb-88a0">2+</characteristic>
@@ -43125,7 +43125,7 @@ LIMITATIONS - The Detachment must include a Legion Chaplain Consul. The Detachme
 <characteristic name="S" typeId="7e44-d066-921a-29bd">4</characteristic>
 <characteristic name="T" typeId="a21c-b80a-e1e4-079a">4</characteristic>
 <characteristic name="W" typeId="6ba7-776c-9ed0-b148">1</characteristic>
-<characteristic name="I" typeId="6f24-6315-ebd0-9465">4</characteristic>
+<characteristic name="I" typeId="6f24-6315-ebd0-9465">3</characteristic>
 <characteristic name="A" typeId="e39a-3da9-2567-cfd3">2</characteristic>
 <characteristic name="Ld" typeId="7e63-7406-c8d0-7e03">9</characteristic>
 <characteristic name="Sv" typeId="d23d-aa50-ddfb-88a0">2+</characteristic>
@@ -43437,7 +43437,7 @@ LIMITATIONS - The Detachment must include a Legion Chaplain Consul. The Detachme
 <characteristic name="S" typeId="7e44-d066-921a-29bd">4</characteristic>
 <characteristic name="T" typeId="a21c-b80a-e1e4-079a">4</characteristic>
 <characteristic name="W" typeId="6ba7-776c-9ed0-b148">1</characteristic>
-<characteristic name="I" typeId="6f24-6315-ebd0-9465">4</characteristic>
+<characteristic name="I" typeId="6f24-6315-ebd0-9465">3</characteristic>
 <characteristic name="A" typeId="e39a-3da9-2567-cfd3">2</characteristic>
 <characteristic name="Ld" typeId="7e63-7406-c8d0-7e03">9</characteristic>
 <characteristic name="Sv" typeId="d23d-aa50-ddfb-88a0">2+</characteristic>
@@ -43764,7 +43764,7 @@ LIMITATIONS - The Detachment must include a Legion Chaplain Consul. The Detachme
 <characteristic name="S" typeId="7e44-d066-921a-29bd">4</characteristic>
 <characteristic name="T" typeId="a21c-b80a-e1e4-079a">4</characteristic>
 <characteristic name="W" typeId="6ba7-776c-9ed0-b148">1</characteristic>
-<characteristic name="I" typeId="6f24-6315-ebd0-9465">4</characteristic>
+<characteristic name="I" typeId="6f24-6315-ebd0-9465">3</characteristic>
 <characteristic name="A" typeId="e39a-3da9-2567-cfd3">2</characteristic>
 <characteristic name="Ld" typeId="7e63-7406-c8d0-7e03">9</characteristic>
 <characteristic name="Sv" typeId="d23d-aa50-ddfb-88a0">2+</characteristic>
@@ -44473,7 +44473,7 @@ LIMITATIONS - The Detachment must include a Legion Chaplain Consul. The Detachme
 <characteristic name="S" typeId="7e44-d066-921a-29bd">4</characteristic>
 <characteristic name="T" typeId="a21c-b80a-e1e4-079a">4</characteristic>
 <characteristic name="W" typeId="6ba7-776c-9ed0-b148">1</characteristic>
-<characteristic name="I" typeId="6f24-6315-ebd0-9465">4</characteristic>
+<characteristic name="I" typeId="6f24-6315-ebd0-9465">3</characteristic>
 <characteristic name="A" typeId="e39a-3da9-2567-cfd3">3</characteristic>
 <characteristic name="Ld" typeId="7e63-7406-c8d0-7e03">10</characteristic>
 <characteristic name="Sv" typeId="d23d-aa50-ddfb-88a0">2+/5+</characteristic>
@@ -44689,7 +44689,7 @@ LIMITATIONS - The Detachment must include a Legion Chaplain Consul. The Detachme
 <characteristic name="S" typeId="7e44-d066-921a-29bd">4</characteristic>
 <characteristic name="T" typeId="a21c-b80a-e1e4-079a">4</characteristic>
 <characteristic name="W" typeId="6ba7-776c-9ed0-b148">1</characteristic>
-<characteristic name="I" typeId="6f24-6315-ebd0-9465">4</characteristic>
+<characteristic name="I" typeId="6f24-6315-ebd0-9465">3</characteristic>
 <characteristic name="A" typeId="e39a-3da9-2567-cfd3">2</characteristic>
 <characteristic name="Ld" typeId="7e63-7406-c8d0-7e03">9</characteristic>
 <characteristic name="Sv" typeId="d23d-aa50-ddfb-88a0">2+/5+</characteristic>
@@ -47225,13 +47225,13 @@ Afterwards the squad may not enter Overwatch, may not make Return Fire or Stand 
 <description>Salamanders models may re-roll To Hit rolls of 1 when attacking with Thunder Hammers, Melta Bombs, Meltaguns, Multi-Meltas and other weapons with the Melta special rule. In addition, Salamanders models may re-roll To Wound rolls of 1 when firing Flame weapons.</description>
 </rule>
 <rule id="935e-d157-995f-15b8" name="Sturdy" hidden="false">
-<description>All Salamanders models with an Initiative characteristic, except Dreadnoughts, suffer -1 Initiative. This modifier applies after all other profile modifications (it is NOT already included in the printed profiles). Salamanders units also subtract 1" from their Fall Back distance, to a minimum of 1". The Initiative penalty applies normally when resolving Pursuit.</description>
+<description>All Salamanders models with an Initiative characteristic, except Dreadnoughts, suffer -1 Initiative. This modifier applies after all other profile modifications (already included in the profiles shown). Salamanders units also subtract 1" from their Fall Back distance, to a minimum of 1". The Initiative penalty applies normally when resolving Pursuit.</description>
 </rule>
 <rule id="53fa-0d97-322f-119f" name="Never Give Up" hidden="false">
 <description>At the end of the final scheduled game turn, the Salamanders player may choose to play one additional complete game turn; both players take one additional turn. After this additional game turn the battle ends automatically. May only be used once per battle and does not extend a mission which has already ended because a specific objective or action was completed.</description>
 </rule>
 <rule id="2044-db5b-97e3-fb5e" name="Salamanders Armoury" hidden="false">
-<description>SALAMANDERS MANTLE (35): one Salamanders Independent Character in the army may purchase one; only one per army (a named Character whose entry includes one prevents any other model from purchasing one). ARTIFICER WEAPONS: Salamanders models purchase the Master-crafted Weapon upgrade for +10 points instead of +15 (normal restrictions apply). ARTIFICER ARMOUR: a Salamanders non-Independent Character with access to the Space Marine Armoury may purchase Artificer Armour for +15 points even if his unit entry would not normally allow it; if his own unit entry offers it for less, use that cost. FIRE-BASED WARFARE: Flamers and Heavy Flamers used by Salamanders models gain +1 Strength (Dragon's Breath flamers; already included in the profiles). Where a Legion Tactical Squad or Legion Veteran Squad may purchase a Flamer it may instead purchase a Heavy Flamer for +10 points; Legion Heavy Support Squads may select Heavy Flamers as a Heavy Weapon option for +10 points per model. INFERNO PISTOL (15): any Salamanders Independent Character or squad Sergeant with access to the Space Marine Armoury. REINFORCED CERAMITE: any Salamanders Vehicle or Dreadnought which may normally purchase Armoured Ceramite may purchase it for +10 points instead (Land Raiders and Spartans pay their normal cost). PROSCRIBED MUNITIONS: a Salamanders Detachment may not select Phosphex weapons or Phosphex ammunition unless a specific unit or Character entry explicitly states otherwise.</description>
+<description>SALAMANDERS MANTLE (35): one Salamanders Independent Character in the army may purchase one; only one per army (a named Character whose entry includes one prevents any other model from purchasing one). ARTIFICER WEAPONS: Salamanders models purchase the Master-crafted Weapon upgrade for +10 points instead of +15 (normal restrictions apply). ARTIFICER ARMOUR: a Salamanders non-Independent Character with access to the Space Marine Armoury may purchase Artificer Armour for +15 points even if his unit entry would not normally allow it; if his own unit entry offers it for less, use that cost. FIRE-BASED WARFARE: Flamers and Heavy Flamers used by Salamanders models gain +1 Strength (Dragon's Breath flamers; already included in the profiles; Hand Flamers are S4). Where a Legion Tactical Squad or Legion Veteran Squad may purchase a Flamer it may instead purchase a Heavy Flamer for +10 points; Legion Heavy Support Squads may select Heavy Flamers as a Heavy Weapon option for +10 points per model. INFERNO PISTOL (15): any Salamanders Independent Character or squad Sergeant with access to the Space Marine Armoury. REINFORCED CERAMITE: any Salamanders Vehicle or Dreadnought which may normally purchase Armoured Ceramite may purchase it for +10 points instead of its normal points cost (Land Raiders and Spartans pay their normal cost). PROSCRIBED MUNITIONS: a Salamanders Detachment may not select Phosphex weapons or Phosphex ammunition unless a specific unit or Character entry explicitly states otherwise.</description>
 </rule>
 <rule id="ab49-cb0a-b079-d063" name="Salamanders Mantle" hidden="false">
 <description>If an unsaved Wound would become a Massive Wound solely because the attack's Strength is at least double the bearer's Toughness, it instead inflicts only one Wound. No protection against weapons or special rules which explicitly inflict Massive Wounds by another method. Only one Salamanders Mantle per army; a named Character whose entry includes one prevents another model from purchasing one.</description>
@@ -47272,7 +47272,7 @@ LIMITATIONS - The Detachment must include a Legion Chaplain Consul. The Detachme
 <description>An Infernus Destroyer Squad may only be joined by a Legion Moritat or another Character specifically stated to be permitted to join Destroyer units.</description>
 </rule>
 <rule id="7af5-b7ab-bd81-aa03" name="Captain of the Pyre Guard" hidden="false">
-<description>Numeon may select one Firedrake Terminator Squad as his personal retinue. One Firedrake in that unit may be upgraded to a Firedrake Master at no additional points cost. The squad does not occupy a separate Elites selection. Command Retinue: instead of a Firedrake Terminator Squad, Numeon may select a Legion Command Squad or Legion Terminator Command Squad.</description>
+<description>Numeon may select one Firedrake Terminator Squad as his personal retinue. The squad does not occupy a separate Elites selection. Command Retinue: instead of a Firedrake Terminator Squad, Numeon may select a Legion Command Squad or Legion Terminator Command Squad.</description>
 </rule>
 <rule id="7390-b515-ba6b-af1b" name="Vulkan's Heir" hidden="false">
 <description>Numeon and any Salamanders unit he has joined may re-roll failed Morale tests.</description>
@@ -47440,7 +47440,7 @@ LIMITATIONS - The Detachment must include a Legion Chaplain Consul. The Detachme
 <profile id="0a22-2074-6348-ef8b" name="Hand Flamer" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
 <characteristics>
 <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">Template</characteristic>
-<characteristic name="S" typeId="6204-806b-a18a-c0be">3</characteristic>
+<characteristic name="S" typeId="6204-806b-a18a-c0be">4</characteristic>
 <characteristic name="AP" typeId="964e-6f66-dcaa-247a">6</characteristic>
 <characteristic name="Type" typeId="54df-9f85-8d55-7440">Pistol</characteristic>
 </characteristics>

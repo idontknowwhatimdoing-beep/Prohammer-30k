@@ -96,7 +96,8 @@ RULES = {
     "Aeonid Thiel": (
         "One Legion Tactical Squad or Legion Veteran Squad may replace its Sergeant with Aeonid Thiel for +80 points. "
         "Thiel remains part of the squad for the entire battle; he is a Character but not an Independent Character. If "
-        "the squad purchases Krak Grenades or Melta Bombs, Thiel receives the same upgrade at the normal squad cost."),
+        "the squad purchases Krak Grenades or Melta Bombs, Thiel receives the same upgrade at the normal squad cost. A "
+        "Legion Tactical Squad led by Thiel may still be divided by Codex Astartes; Thiel joins one of the Combat Squads."),
     "Psychic Powers (Prayto)": ("Titus Prayto is a Psyker (Mastery Level 2) and selects two psychic powers from the normal "
                                 "Psychic Power list, following all normal rules for Psykers and Disturbance in the Warp."),
     "Psychic Savant": ("Once during each Ultramarines player turn, Prayto may re-roll one failed Psychic Test (the second "
@@ -146,6 +147,8 @@ WARGEAR = {
 
 def register():
     register_data(rules=RULES, weapons=WEAPONS, weapon_rules=WEAPON_RULES, wargear=WARGEAR)
+    # Land Raider Achilles as a Dedicated Transport (Fulmentarus Terminators may take any Land Raider pattern)
+    L2.T.setdefault("Land Raider Achilles", uid("transport", "Land Raider Achilles"))
 
 
 # ------------------------------------------------------------------ helpers
@@ -165,8 +168,9 @@ def find_group(e, name):
     raise KeyError(name)
 
 
-TDA_TRANSPORTS = ["Land Raider Phobos", "Land Raider Proteus", "Anvillus Pattern Dreadclaw Drop Pod",
-                  "Legion Spartan Assault Tank"]
+# any Land Raider pattern (Phobos, Proteus, Achilles), a Dreadclaw or a Spartan
+TDA_TRANSPORTS = ["Land Raider Phobos", "Land Raider Proteus", "Land Raider Achilles",
+                  "Anvillus Pattern Dreadclaw Drop Pod", "Legion Spartan Assault Tank"]
 
 
 # ------------------------------------------------------------------ units
@@ -237,6 +241,14 @@ def locutarus():
                  groups=[pistols])
 
 
+def nemesis_armoury(u):
+    """Sergeant's 50-pt Armoury; his Artificer Armour and Phosphex Bombs count towards the cap (author, Q17)."""
+    cap = L2.pa_armoury(uid(u, "sgt"), u, 10, skip=("Artificer Armour",))
+    add_to(cap, "selectionEntryGroups", [take(uid(u, "sgt"), "Sergeant Wargear", [("Artificer Armour", 10),
+                                                                               ("Phosphex Bomb", 10, 3)])])
+    return cap
+
+
 def nemesis():
     u = uid("unit", "Nemesis Destroyer Squad")
     kit = ["Power Armour", "Mortifier Bolter", "Bolt Pistol", "Chainsword", "Rad Grenades"]
@@ -246,9 +258,7 @@ def nemesis():
                      groups=[slot(uid(u, "sgt"), "Replace Chainsword", "Chainsword",
                                   [("Rending Weapon", 5), ("Power Weapon", 10), ("Power Fist", 15),
                                    ("Thunder Hammer", 20)]),
-                             take(uid(u, "sgt"), "Sergeant Wargear", [("Artificer Armour", 10),
-                                                                       ("Phosphex Bomb", 10, 3)]),
-                             L2.pa_armoury(uid(u, "sgt"), u, 10, skip=("Artificer Armour",))])
+                             nemesis_armoury(u)])
     heavy, _ = pool(u, "Nemesis Destroyers: replace Mortifier Bolter (1 per 5 models)", u,
                     [("Heavy Flamer", 10), ("Missile Launcher with Suspensor Web and Rad Missiles", 25)], 0, every=5)
     return entry(u, "Nemesis Destroyer Squad", typ="unit", cost=150 - 4 * 25, cats=[foc(ELITES, "Elites", u)],
@@ -386,6 +396,7 @@ def extend(ctx):
     # new units
     roots = [suzerain(), fulmentarus(), locutarus(), nemesis(), *characters(), guilliman()]
     ctx.add_units(*roots)
+    ctx.add_shared(L2.land_raider("Land Raider Achilles"))
 
     # Invictarus Suzerains as the retinue of a Praetor
     rg = find_group(praetor, "Retinue (no Force Organisation slot)")

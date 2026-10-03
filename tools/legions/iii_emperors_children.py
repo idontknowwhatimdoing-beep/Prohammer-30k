@@ -63,7 +63,7 @@ RULES = {
         "model carrying it. In addition, one Emperor's Children Praetor or Centurion (including a Legion Consul) in the "
         "army may select a Sonic Blaster (+15) or a Doom Siren (+20); this does not count towards the Armoury points "
         "limit. A Character may carry no more than one Sonic Weapon."),
-    "Perfect Cacophony (Armoury)": (
+    "Deafening Cacophony": (
         "A Legion Heavy Support Squad equipped with at least two Sonic Weapons may purchase the Fearless special rule "
         "for +20 points per squad."),
     # Rites of War
@@ -247,6 +247,7 @@ WARGEAR_ = {
     "Digital Lasers": RULES["Digital Lasers"],
     "Sonic Shrieker": RULES["Sonic Shrieker"],
     "The Chirurgeon": "The Chirurgeon grants Fabius Bile a 4+ Invulnerable Save.",
+    "Xyclos Needler": "Fabius Bile's Xyclos Needler. The army book gives no profile for this weapon.",
     "Gilded Panoply": (RULES["Gilded Panoply"], ["Primarch Armour"]),
     "Transfigured Panoply": ("Fulgrim Transfigured's armour: 2+ Armour Save and 4+ Invulnerable Save as shown in his "
                              "profile. The army book gives no further rules for it."),
@@ -551,7 +552,7 @@ def characters():
         extra_groups=ic_extras(LUCIUS)))
     out.append(named_character(
         LR, "Fabius Bile", 125, (5, 4, 4, 4, 3, 4, 2, 9, "3+/4+"),
-        ["Power Armour", "The Chirurgeon", "Rending Weapon", "Frag Grenades"],
+        ["Power Armour", "The Chirurgeon", "Xyclos Needler", "Rending Weapon", "Frag Grenades"],
         ["Enhanced Warriors"], master=False,
         extra_groups=ic_extras(BILE)))
     return out
@@ -677,9 +678,9 @@ def add_sonic_weaponry(ctx):
     sonic_names = ["Sonic Blaster", "Doom Siren", "Blastmaster"]
     sonic = take(u, "Sonic Weapons (replace Bolters; up to four Heavy and Sonic Weapons in total)",
                  [("Sonic Blaster", 15, 4), ("Doom Siren", 20, 4), ("Blastmaster", 35, 4)], max_total=4, hide=off)
-    # Perfect Cacophony (Armoury): at least two Sonic Weapons in the squad
-    pc = upgrade(u, "Perfect Cacophony (Fearless, at least two Sonic Weapons)", 20,
-                 rules_=["Perfect Cacophony (Armoury)", "Fearless"])
+    # Deafening Cacophony: at least two Sonic Weapons in the squad
+    pc = upgrade(u, "Deafening Cacophony (Fearless, at least two Sonic Weapons)", 20,
+                 rules_=["Deafening Cacophony", "Fearless"])
     pcid = pc.get("id")
     off_pc = lambda: cgroup("or", [lacks(tid, u)], [fewer_than_two(u, sonic_names)])
     add_mods(pc, [modifier("set", "hidden", "true", groups=[off_pc()]),

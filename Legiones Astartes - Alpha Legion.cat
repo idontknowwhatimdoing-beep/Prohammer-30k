@@ -90,6 +90,22 @@
 </selectionEntries>
 </selectionEntryGroup>
 <selectionEntryGroup id="10e0-52bc-ef0c-7fe8" name="Mutable Tactics" hidden="false" collective="false" import="true">
+<modifiers>
+<modifier type="add" field="error" value="Choose a Mutable Tactics.">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1176-e065-4b32-576a" type="lessThan" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="caea-4776-71ef-d690" type="lessThan" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="11b5-2cb8-3781-a3e8" type="lessThan" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="65fe-fef6-79b5-fcc4" type="lessThan" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3699-51d2-77f3-3feb" type="lessThan" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d32a-c3b9-3741-e15b" type="lessThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+</modifiers>
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2cec-a732-ad37-d216" type="max" />
 </constraints>
@@ -7933,29 +7949,6 @@
 </conditions>
 </conditionGroup>
 </conditionGroups>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-<modifier type="add" field="error" value="The Coils of the Hydra: Autilon Skorr counts as a Delegatus Consul, so no Centurion may also be upgraded to a Consul (Vigilator excepted).">
-<conditions>
-<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9504-25a6-b90a-c048" type="atLeast" />
-<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8562-a211-eb3f-026a" type="atLeast" />
-</conditions>
-<conditionGroups>
-<conditionGroup type="or">
-<conditions>
-<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="600b-62a4-851a-c853" type="atLeast" />
-<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3565-f048-7842-5939" type="atLeast" />
-<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8f8a-6255-05f3-580a" type="atLeast" />
-<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fd02-8daf-835e-b537" type="atLeast" />
-<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b029-bbbc-d097-e679" type="atLeast" />
-<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="17a7-a2bb-c1c1-fab1" type="atLeast" />
-<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cb2e-a30b-1348-f31f" type="atLeast" />
-<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6e6d-e250-fc00-c13b" type="atLeast" />
-<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="992c-2126-bbe1-db41" type="atLeast" />
-<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a0c2-eb37-42db-2813" type="atLeast" />
-<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="aa3f-f2b2-f321-d88e" type="atLeast" />
-</conditions>
 </conditionGroup>
 </conditionGroups>
 </modifier>
@@ -22690,6 +22683,7 @@ LIMITATIONS - Every Alpha Legion Vehicle must begin the battle in Reserve unless
 <infoLink id="c9d9-ac56-71f0-2122" name="Move Through Cover" hidden="false" targetId="c616-0756-b610-40d6" type="rule" />
 <infoLink id="35a4-5b3e-5693-836e" name="All as Planned" hidden="false" targetId="3bda-57e1-c5dd-f7d4" type="rule" />
 <infoLink id="5ec0-e131-75da-9389" name="Pre-emptive Strike" hidden="false" targetId="12eb-c51f-d39c-0ed6" type="rule" />
+<infoLink id="d4f9-715b-44fa-46c6" name="Kraken Bolts (Headhunters)" hidden="false" targetId="d72b-7c01-2925-e388" type="rule" />
 </infoLinks>
 <categoryLinks>
 <categoryLink id="8847-59e1-4443-74ee" name="Elites" hidden="false" targetId="6b19-97ac-7c40-0bdf" primary="true" />
@@ -24564,7 +24558,6 @@ LIMITATIONS - Every Alpha Legion Vehicle must begin the battle in Reserve unless
 <infoLink id="be5e-7997-7729-f323" name="Move Through Cover" hidden="false" targetId="c616-0756-b610-40d6" type="rule" />
 <infoLink id="04d0-21b8-256e-1be7" name="Scouts" hidden="false" targetId="6bb0-de35-696c-e22a" type="rule" />
 <infoLink id="675b-698f-193c-d2d3" name="Lone Killer (Exodus)" hidden="false" targetId="8877-5a95-f76c-6db6" type="rule" />
-<infoLink id="eccd-9e4f-f1f7-0eb6" name="Deadshot" hidden="false" targetId="b290-49c2-6ae6-7046" type="rule" />
 <infoLink id="a310-6e37-5c29-fb0d" name="Execute the Mandate" hidden="false" targetId="b0b3-6f92-cd52-8113" type="rule" />
 </infoLinks>
 <categoryLinks>
@@ -25425,14 +25418,6 @@ LIMITATIONS - Every Alpha Legion Vehicle must begin the battle in Reserve unless
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
 </costs>
 </entryLink>
-<entryLink id="897e-879e-f703-a61b" name="Venom Spheres" hidden="false" collective="false" import="true" targetId="3c71-3b57-8b97-2b33" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6516-72f0-3d95-4786" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
-</costs>
-</entryLink>
 </entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
@@ -26245,14 +26230,6 @@ LIMITATIONS - Every Alpha Legion Vehicle must begin the battle in Reserve unless
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
 </costs>
 </entryLink>
-<entryLink id="d847-1563-feeb-3462" name="Venom Spheres" hidden="false" collective="false" import="true" targetId="3c71-3b57-8b97-2b33" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="88d3-2289-9807-d604" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
-</costs>
-</entryLink>
 </entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
@@ -26746,14 +26723,6 @@ LIMITATIONS - Every Alpha Legion Vehicle must begin the battle in Reserve unless
 <entryLink id="ad99-d92b-1cfd-0cb2" name="Power Dagger" hidden="false" collective="false" import="true" targetId="45d1-3734-4d47-07e7" type="selectionEntry">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c1a2-d9a9-3562-7bbf" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
-</costs>
-</entryLink>
-<entryLink id="74c4-b8b6-ba5d-268b" name="Venom Spheres" hidden="false" collective="false" import="true" targetId="3c71-3b57-8b97-2b33" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d44b-b631-8ffa-fdff" type="max" />
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
@@ -27285,14 +27254,6 @@ LIMITATIONS - Every Alpha Legion Vehicle must begin the battle in Reserve unless
 <entryLink id="877a-592e-7f9e-0c3d" name="Power Dagger" hidden="false" collective="false" import="true" targetId="45d1-3734-4d47-07e7" type="selectionEntry">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1e1f-42c4-0bcf-72f5" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
-</costs>
-</entryLink>
-<entryLink id="6a0a-6ca3-0846-78b1" name="Venom Spheres" hidden="false" collective="false" import="true" targetId="3c71-3b57-8b97-2b33" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dd2f-4902-1246-5a28" type="max" />
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
@@ -28194,14 +28155,6 @@ LIMITATIONS - Every Alpha Legion Vehicle must begin the battle in Reserve unless
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
 </costs>
 </entryLink>
-<entryLink id="1410-4067-98b9-7f88" name="Venom Spheres" hidden="false" collective="false" import="true" targetId="3c71-3b57-8b97-2b33" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="49bf-f9f0-9b96-1c63" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
-</costs>
-</entryLink>
 </entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
@@ -28524,14 +28477,6 @@ LIMITATIONS - Every Alpha Legion Vehicle must begin the battle in Reserve unless
 <entryLink id="10d7-60c1-a61d-0db0" name="Power Dagger" hidden="false" collective="false" import="true" targetId="45d1-3734-4d47-07e7" type="selectionEntry">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2a76-8eaa-25ab-71e2" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
-</costs>
-</entryLink>
-<entryLink id="52d0-3d3f-8b39-ca1c" name="Venom Spheres" hidden="false" collective="false" import="true" targetId="3c71-3b57-8b97-2b33" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4011-dc92-a551-6a9d" type="max" />
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
@@ -28906,14 +28851,6 @@ LIMITATIONS - Every Alpha Legion Vehicle must begin the battle in Reserve unless
 <entryLink id="d06d-9fb5-8a00-5dd0" name="Power Dagger" hidden="false" collective="false" import="true" targetId="45d1-3734-4d47-07e7" type="selectionEntry">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4739-4473-b8e5-a319" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
-</costs>
-</entryLink>
-<entryLink id="77f0-b3c0-205d-c7c0" name="Venom Spheres" hidden="false" collective="false" import="true" targetId="3c71-3b57-8b97-2b33" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e053-a7a8-d3e4-4b86" type="max" />
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
@@ -29645,14 +29582,6 @@ LIMITATIONS - Every Alpha Legion Vehicle must begin the battle in Reserve unless
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
 </costs>
 </entryLink>
-<entryLink id="09e5-4a7b-02ab-bcfc" name="Venom Spheres" hidden="false" collective="false" import="true" targetId="3c71-3b57-8b97-2b33" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3b3a-c2da-f5e0-c2af" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
-</costs>
-</entryLink>
 </entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
@@ -30146,14 +30075,6 @@ LIMITATIONS - Every Alpha Legion Vehicle must begin the battle in Reserve unless
 <entryLink id="f7dc-046f-badf-c4d2" name="Power Dagger" hidden="false" collective="false" import="true" targetId="45d1-3734-4d47-07e7" type="selectionEntry">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="40fb-ec7e-d93e-c2d9" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
-</costs>
-</entryLink>
-<entryLink id="db75-87ad-00ef-3e84" name="Venom Spheres" hidden="false" collective="false" import="true" targetId="3c71-3b57-8b97-2b33" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fe54-6e69-a25d-c876" type="max" />
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
@@ -30685,14 +30606,6 @@ LIMITATIONS - Every Alpha Legion Vehicle must begin the battle in Reserve unless
 <entryLink id="f652-c451-056a-ef58" name="Power Dagger" hidden="false" collective="false" import="true" targetId="45d1-3734-4d47-07e7" type="selectionEntry">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f614-e857-d947-726b" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
-</costs>
-</entryLink>
-<entryLink id="dae5-1259-fb23-8a8e" name="Venom Spheres" hidden="false" collective="false" import="true" targetId="3c71-3b57-8b97-2b33" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4c78-cda2-ca02-9ee2" type="max" />
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
@@ -31594,14 +31507,6 @@ LIMITATIONS - Every Alpha Legion Vehicle must begin the battle in Reserve unless
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
 </costs>
 </entryLink>
-<entryLink id="4d85-fcfb-1190-f8de" name="Venom Spheres" hidden="false" collective="false" import="true" targetId="3c71-3b57-8b97-2b33" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0216-1479-a2b7-50ce" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
-</costs>
-</entryLink>
 </entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
@@ -31924,14 +31829,6 @@ LIMITATIONS - Every Alpha Legion Vehicle must begin the battle in Reserve unless
 <entryLink id="bda4-5289-1884-a779" name="Power Dagger" hidden="false" collective="false" import="true" targetId="45d1-3734-4d47-07e7" type="selectionEntry">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f3eb-0dd1-68b7-a20e" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
-</costs>
-</entryLink>
-<entryLink id="fdca-c53d-276a-eab9" name="Venom Spheres" hidden="false" collective="false" import="true" targetId="3c71-3b57-8b97-2b33" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c239-8e08-3cd7-aba0" type="max" />
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
@@ -32306,14 +32203,6 @@ LIMITATIONS - Every Alpha Legion Vehicle must begin the battle in Reserve unless
 <entryLink id="d938-e067-ec3a-c400" name="Power Dagger" hidden="false" collective="false" import="true" targetId="45d1-3734-4d47-07e7" type="selectionEntry">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b032-55fc-f0a6-03d1" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
-</costs>
-</entryLink>
-<entryLink id="4cfd-2be7-3d74-b085" name="Venom Spheres" hidden="false" collective="false" import="true" targetId="3c71-3b57-8b97-2b33" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3fc6-e348-c362-5e88" type="max" />
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
@@ -33803,14 +33692,6 @@ LIMITATIONS - Every Alpha Legion Vehicle must begin the battle in Reserve unless
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
 </costs>
 </entryLink>
-<entryLink id="6f4d-882c-e188-6f2a" name="Venom Spheres" hidden="false" collective="false" import="true" targetId="3c71-3b57-8b97-2b33" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="48f6-64d2-1176-6e2b" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
-</costs>
-</entryLink>
 </entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
@@ -34304,14 +34185,6 @@ LIMITATIONS - Every Alpha Legion Vehicle must begin the battle in Reserve unless
 <entryLink id="f916-510e-97ab-e7f9" name="Power Dagger" hidden="false" collective="false" import="true" targetId="45d1-3734-4d47-07e7" type="selectionEntry">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="adca-2009-d1e1-b952" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
-</costs>
-</entryLink>
-<entryLink id="85d1-8ebc-a611-564c" name="Venom Spheres" hidden="false" collective="false" import="true" targetId="3c71-3b57-8b97-2b33" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f9a3-9cb9-1393-fc78" type="max" />
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
@@ -34843,14 +34716,6 @@ LIMITATIONS - Every Alpha Legion Vehicle must begin the battle in Reserve unless
 <entryLink id="2911-1dda-b1f0-4d17" name="Power Dagger" hidden="false" collective="false" import="true" targetId="45d1-3734-4d47-07e7" type="selectionEntry">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="23b4-7996-907e-8a83" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
-</costs>
-</entryLink>
-<entryLink id="4bd0-55e1-1195-d480" name="Venom Spheres" hidden="false" collective="false" import="true" targetId="3c71-3b57-8b97-2b33" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ff3e-6c93-939a-d0ba" type="max" />
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
@@ -35768,14 +35633,6 @@ LIMITATIONS - Every Alpha Legion Vehicle must begin the battle in Reserve unless
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
 </costs>
 </entryLink>
-<entryLink id="7261-bebc-4e4d-29f0" name="Venom Spheres" hidden="false" collective="false" import="true" targetId="3c71-3b57-8b97-2b33" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="46db-da9f-6235-28ad" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
-</costs>
-</entryLink>
 </entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
@@ -36098,14 +35955,6 @@ LIMITATIONS - Every Alpha Legion Vehicle must begin the battle in Reserve unless
 <entryLink id="a00b-c901-1e01-d3d1" name="Power Dagger" hidden="false" collective="false" import="true" targetId="45d1-3734-4d47-07e7" type="selectionEntry">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ba87-f0c2-64c3-6283" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
-</costs>
-</entryLink>
-<entryLink id="0639-0740-0e1e-3aaa" name="Venom Spheres" hidden="false" collective="false" import="true" targetId="3c71-3b57-8b97-2b33" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c008-17ae-1643-69c2" type="max" />
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
@@ -36480,14 +36329,6 @@ LIMITATIONS - Every Alpha Legion Vehicle must begin the battle in Reserve unless
 <entryLink id="f97c-2bb7-ff7f-a505" name="Power Dagger" hidden="false" collective="false" import="true" targetId="45d1-3734-4d47-07e7" type="selectionEntry">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a295-7762-d502-e7a6" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
-</costs>
-</entryLink>
-<entryLink id="0a7f-b5be-46a3-d409" name="Venom Spheres" hidden="false" collective="false" import="true" targetId="3c71-3b57-8b97-2b33" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fa7c-e1dc-c5c5-df5f" type="max" />
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
@@ -37621,14 +37462,6 @@ LIMITATIONS - Every Alpha Legion Vehicle must begin the battle in Reserve unless
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
 </costs>
 </entryLink>
-<entryLink id="b2e9-f63c-c535-999c" name="Venom Spheres" hidden="false" collective="false" import="true" targetId="3c71-3b57-8b97-2b33" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="919e-830f-7aaf-a6fe" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
-</costs>
-</entryLink>
 </entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
@@ -38122,14 +37955,6 @@ LIMITATIONS - Every Alpha Legion Vehicle must begin the battle in Reserve unless
 <entryLink id="ae28-2687-acd7-79d9" name="Power Dagger" hidden="false" collective="false" import="true" targetId="45d1-3734-4d47-07e7" type="selectionEntry">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8c69-741c-11eb-9bb6" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
-</costs>
-</entryLink>
-<entryLink id="a947-631f-bb54-94c5" name="Venom Spheres" hidden="false" collective="false" import="true" targetId="3c71-3b57-8b97-2b33" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3aa8-4a81-4d3b-cef5" type="max" />
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
@@ -38661,14 +38486,6 @@ LIMITATIONS - Every Alpha Legion Vehicle must begin the battle in Reserve unless
 <entryLink id="e7aa-6fd0-6260-00cb" name="Power Dagger" hidden="false" collective="false" import="true" targetId="45d1-3734-4d47-07e7" type="selectionEntry">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b177-7fca-e0c8-8c63" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
-</costs>
-</entryLink>
-<entryLink id="5bab-4f08-4b95-2800" name="Venom Spheres" hidden="false" collective="false" import="true" targetId="3c71-3b57-8b97-2b33" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="34dc-d818-41b1-a092" type="max" />
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
@@ -39556,14 +39373,6 @@ LIMITATIONS - Every Alpha Legion Vehicle must begin the battle in Reserve unless
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
 </costs>
 </entryLink>
-<entryLink id="0edd-3fd0-dcdc-1b55" name="Venom Spheres" hidden="false" collective="false" import="true" targetId="3c71-3b57-8b97-2b33" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5771-f112-7874-fc9e" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
-</costs>
-</entryLink>
 </entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
@@ -40057,14 +39866,6 @@ LIMITATIONS - Every Alpha Legion Vehicle must begin the battle in Reserve unless
 <entryLink id="74da-89a4-3745-bd7f" name="Power Dagger" hidden="false" collective="false" import="true" targetId="45d1-3734-4d47-07e7" type="selectionEntry">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9add-a2ac-55c0-cc81" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
-</costs>
-</entryLink>
-<entryLink id="fcdf-0485-11a5-e706" name="Venom Spheres" hidden="false" collective="false" import="true" targetId="3c71-3b57-8b97-2b33" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="63e2-f923-987f-fdd2" type="max" />
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
@@ -40596,14 +40397,6 @@ LIMITATIONS - Every Alpha Legion Vehicle must begin the battle in Reserve unless
 <entryLink id="d9fa-264a-eb20-d9f5" name="Power Dagger" hidden="false" collective="false" import="true" targetId="45d1-3734-4d47-07e7" type="selectionEntry">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2be4-c37f-310b-88f8" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
-</costs>
-</entryLink>
-<entryLink id="7cab-9053-ef94-d0df" name="Venom Spheres" hidden="false" collective="false" import="true" targetId="3c71-3b57-8b97-2b33" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d626-e24f-450a-9fec" type="max" />
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
@@ -41505,14 +41298,6 @@ LIMITATIONS - Every Alpha Legion Vehicle must begin the battle in Reserve unless
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
 </costs>
 </entryLink>
-<entryLink id="7501-0150-f483-e341" name="Venom Spheres" hidden="false" collective="false" import="true" targetId="3c71-3b57-8b97-2b33" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="68ed-856d-82ea-8920" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
-</costs>
-</entryLink>
 </entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
@@ -41835,14 +41620,6 @@ LIMITATIONS - Every Alpha Legion Vehicle must begin the battle in Reserve unless
 <entryLink id="2b9b-ceaa-fbc2-f714" name="Power Dagger" hidden="false" collective="false" import="true" targetId="45d1-3734-4d47-07e7" type="selectionEntry">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4452-0826-6ccf-6357" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
-</costs>
-</entryLink>
-<entryLink id="987d-0ddd-49ac-447a" name="Venom Spheres" hidden="false" collective="false" import="true" targetId="3c71-3b57-8b97-2b33" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4fa0-3a82-5b0e-8ef0" type="max" />
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
@@ -42217,14 +41994,6 @@ LIMITATIONS - Every Alpha Legion Vehicle must begin the battle in Reserve unless
 <entryLink id="b76c-2379-bb0e-a8fd" name="Power Dagger" hidden="false" collective="false" import="true" targetId="45d1-3734-4d47-07e7" type="selectionEntry">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="48ef-0f5a-9834-0c04" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
-</costs>
-</entryLink>
-<entryLink id="c153-4c87-2e89-28ea" name="Venom Spheres" hidden="false" collective="false" import="true" targetId="3c71-3b57-8b97-2b33" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9200-f5ae-846b-563d" type="max" />
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
@@ -44242,14 +44011,6 @@ LIMITATIONS - Every Alpha Legion Vehicle must begin the battle in Reserve unless
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
 </costs>
 </entryLink>
-<entryLink id="4211-b938-5a20-34da" name="Venom Spheres" hidden="false" collective="false" import="true" targetId="3c71-3b57-8b97-2b33" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c005-ca3b-c9a5-a6cc" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
-</costs>
-</entryLink>
 </entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
@@ -44743,14 +44504,6 @@ LIMITATIONS - Every Alpha Legion Vehicle must begin the battle in Reserve unless
 <entryLink id="c0f7-1173-45a3-9407" name="Power Dagger" hidden="false" collective="false" import="true" targetId="45d1-3734-4d47-07e7" type="selectionEntry">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="34df-2f8b-280d-fc59" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
-</costs>
-</entryLink>
-<entryLink id="a623-ebf2-ce2f-2155" name="Venom Spheres" hidden="false" collective="false" import="true" targetId="3c71-3b57-8b97-2b33" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3b59-b079-9285-5a64" type="max" />
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
@@ -45282,14 +45035,6 @@ LIMITATIONS - Every Alpha Legion Vehicle must begin the battle in Reserve unless
 <entryLink id="cb11-ab11-9add-4743" name="Power Dagger" hidden="false" collective="false" import="true" targetId="45d1-3734-4d47-07e7" type="selectionEntry">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cc25-a2a9-1ada-ae68" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
-</costs>
-</entryLink>
-<entryLink id="0650-8116-a34c-f92a" name="Venom Spheres" hidden="false" collective="false" import="true" targetId="3c71-3b57-8b97-2b33" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="823a-c756-75f7-8132" type="max" />
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
@@ -45975,14 +45720,6 @@ LIMITATIONS - Every Alpha Legion Vehicle must begin the battle in Reserve unless
 <entryLink id="2424-5eb2-4d2b-b0b5" name="Power Dagger" hidden="false" collective="false" import="true" targetId="45d1-3734-4d47-07e7" type="selectionEntry">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8f79-190c-9f14-6096" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
-</costs>
-</entryLink>
-<entryLink id="9ba4-f012-1a5f-cf9f" name="Venom Spheres" hidden="false" collective="false" import="true" targetId="3c71-3b57-8b97-2b33" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a73e-79a6-d87a-d1c8" type="max" />
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
@@ -46814,14 +46551,6 @@ LIMITATIONS - Every Alpha Legion Vehicle must begin the battle in Reserve unless
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
 </costs>
 </entryLink>
-<entryLink id="2504-6eb0-a6bd-7b94" name="Venom Spheres" hidden="false" collective="false" import="true" targetId="3c71-3b57-8b97-2b33" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eea2-e561-849a-4803" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
-</costs>
-</entryLink>
 </entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
@@ -47144,14 +46873,6 @@ LIMITATIONS - Every Alpha Legion Vehicle must begin the battle in Reserve unless
 <entryLink id="7e7f-55ad-1558-3271" name="Power Dagger" hidden="false" collective="false" import="true" targetId="45d1-3734-4d47-07e7" type="selectionEntry">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f745-209f-00db-ad8b" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
-</costs>
-</entryLink>
-<entryLink id="b653-a977-3ff2-75aa" name="Venom Spheres" hidden="false" collective="false" import="true" targetId="3c71-3b57-8b97-2b33" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fd50-5cca-161d-2f7d" type="max" />
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
@@ -47526,14 +47247,6 @@ LIMITATIONS - Every Alpha Legion Vehicle must begin the battle in Reserve unless
 <entryLink id="1c3a-6d10-4589-1ce6" name="Power Dagger" hidden="false" collective="false" import="true" targetId="45d1-3734-4d47-07e7" type="selectionEntry">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="50e0-bc1d-6c73-122d" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
-</costs>
-</entryLink>
-<entryLink id="131d-824d-82b4-7d8b" name="Venom Spheres" hidden="false" collective="false" import="true" targetId="3c71-3b57-8b97-2b33" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9f27-fe05-9066-4a07" type="max" />
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
@@ -50573,13 +50286,13 @@ Afterwards the squad may not enter Overwatch, may not make Return Fire or Stand 
 <description>Dynat may divide his close-combat attacks between his Power Weapon and Thunder Hammer in any combination, including bonus Attacks for charging or two close-combat weapons.</description>
 </rule>
 <rule id="cffc-53a7-6670-f82c" name="Hammerstrike Assault" hidden="false">
-<description>Dynat may grant any unit he joins Teleportation Transponders for +10 points for the whole unit, even if it would normally not have access to them.</description>
+<description>Dynat may grant any unit he joins Teleportation Transponders for +10 points for the whole unit, even if it would normally not have access to them. Dynat's own Teleportation Transponders are included in his cost.</description>
+</rule>
+<rule id="d72b-7c01-2925-e388" name="Kraken Bolts (Headhunters)" hidden="false">
+<description>Headhunters may fire Kraken Bolts (or Banestrike Ammunition) from any Bolter, including the Bolter component of a Combi-weapon. A model that replaces its Bolter with a special weapon loses access to Kraken Bolts.</description>
 </rule>
 <rule id="8877-5a95-f76c-6db6" name="Lone Killer (Exodus)" hidden="false">
 <description>Exodus may never join another unit and no Independent Character may join him. He may not fulfil a compulsory HQ selection and may never be the army's Warlord.</description>
-</rule>
-<rule id="b290-49c2-6ae6-7046" name="Deadshot" hidden="false">
-<description>Special rule of Exodus; no text is given in Forces of the Legions (see the questions file).</description>
 </rule>
 <rule id="b0b3-6f92-cd52-8113" name="Execute the Mandate" hidden="false">
 <description>If the enemy Warlord is slain by an attack made by Exodus, the Alpha Legion player receives an additional 50 Victory Points.</description>

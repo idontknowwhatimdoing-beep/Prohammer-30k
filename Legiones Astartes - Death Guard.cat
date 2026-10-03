@@ -61,6 +61,8 @@
 <condition field="selections" scope="roster" value="2" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a963-97a2-0fad-5d49" type="atLeast" />
 <condition field="selections" scope="roster" value="2" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a9f2-5e7a-219e-8fa5" type="atLeast" />
 <condition field="selections" scope="roster" value="2" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="90a2-e396-d5a3-fdbb" type="atLeast" />
+<condition field="selections" scope="roster" value="2" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7eaa-3fe3-c9e0-60c9" type="atLeast" />
+<condition field="selections" scope="roster" value="2" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9b27-2c22-e59f-6571" type="atLeast" />
 </conditions>
 <conditionGroups>
 <conditionGroup type="and">
@@ -77,8 +79,50 @@
 </conditionGroup>
 <conditionGroup type="and">
 <conditions>
+<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a963-97a2-0fad-5d49" type="atLeast" />
+<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7eaa-3fe3-c9e0-60c9" type="atLeast" />
+</conditions>
+</conditionGroup>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a963-97a2-0fad-5d49" type="atLeast" />
+<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9b27-2c22-e59f-6571" type="atLeast" />
+</conditions>
+</conditionGroup>
+<conditionGroup type="and">
+<conditions>
 <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a9f2-5e7a-219e-8fa5" type="atLeast" />
 <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="90a2-e396-d5a3-fdbb" type="atLeast" />
+</conditions>
+</conditionGroup>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a9f2-5e7a-219e-8fa5" type="atLeast" />
+<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7eaa-3fe3-c9e0-60c9" type="atLeast" />
+</conditions>
+</conditionGroup>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a9f2-5e7a-219e-8fa5" type="atLeast" />
+<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9b27-2c22-e59f-6571" type="atLeast" />
+</conditions>
+</conditionGroup>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="90a2-e396-d5a3-fdbb" type="atLeast" />
+<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7eaa-3fe3-c9e0-60c9" type="atLeast" />
+</conditions>
+</conditionGroup>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="90a2-e396-d5a3-fdbb" type="atLeast" />
+<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9b27-2c22-e59f-6571" type="atLeast" />
+</conditions>
+</conditionGroup>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7eaa-3fe3-c9e0-60c9" type="atLeast" />
+<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9b27-2c22-e59f-6571" type="atLeast" />
 </conditions>
 </conditionGroup>
 </conditionGroups>
@@ -195,6 +239,13 @@
 </modifiers>
 <profiles>
 <profile id="e3e2-ce83-5af0-1894" name="Legion Praetor" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
+<modifiers>
+<modifier type="set" field="a21c-b80a-e1e4-079a" value="5">
+<conditions>
+<condition field="selections" scope="2390-3489-e470-7f7f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d758-197d-08b0-9650" type="atLeast" />
+</conditions>
+</modifier>
+</modifiers>
 <characteristics>
 <characteristic name="Unit Type" typeId="b0cf-47d7-3836-cf93">Infantry (Character)</characteristic>
 <characteristic name="WS" typeId="52b0-fc35-42a9-af3d">6</characteristic>
@@ -1698,21 +1749,7 @@
 </modifier>
 </modifiers>
 </entryLink>
-<entryLink id="4833-4568-3015-99b1" name="Deathshroud Terminator Squad" hidden="false" collective="false" import="true" targetId="b22d-815f-8162-822a" type="selectionEntry">
-<modifiers>
-<modifier type="set" field="hidden" value="true">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="2390-3489-e470-7f7f" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a6a2-abea-01b2-ad81" type="equalTo" />
-<condition field="selections" scope="2390-3489-e470-7f7f" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d900-78c3-2b10-8f9c" type="equalTo" />
-<condition field="selections" scope="2390-3489-e470-7f7f" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0656-5d6b-29bb-1441" type="equalTo" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-</modifiers>
-</entryLink>
+<entryLink id="4833-4568-3015-99b1" name="Deathshroud Terminator Squad" hidden="false" collective="false" import="true" targetId="b22d-815f-8162-822a" type="selectionEntry" />
 </entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
@@ -1795,6 +1832,43 @@
 </entryLinks>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
+</costs>
+</selectionEntry>
+<selectionEntry id="d758-197d-08b0-9650" name="Plague Marine (Sons of the Plague Father)" hidden="false" collective="false" import="true" type="upgrade">
+<modifiers>
+<modifier type="set" field="4854-5d4b-9e8c-2626" value="0">
+<conditions>
+<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="45a2-9b3f-af83-5644" type="lessThan" />
+</conditions>
+</modifier>
+<modifier type="add" field="error" value="Plague Marine: only a model in Power Armour or Artificer Armour (not on a Bike) may be upgraded.">
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="2390-3489-e470-7f7f" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a6a2-abea-01b2-ad81" type="atLeast" />
+<condition field="selections" scope="2390-3489-e470-7f7f" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d900-78c3-2b10-8f9c" type="atLeast" />
+<condition field="selections" scope="2390-3489-e470-7f7f" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0656-5d6b-29bb-1441" type="atLeast" />
+<condition field="selections" scope="2390-3489-e470-7f7f" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d0e-b961-6e12-2457" type="atLeast" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="set" field="hidden" value="true">
+<conditions>
+<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="45a2-9b3f-af83-5644" type="lessThan" />
+</conditions>
+</modifier>
+</modifiers>
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4854-5d4b-9e8c-2626" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="b5d0-2f8b-4cce-0263" name="Sons of the Plague Father" hidden="false" targetId="a378-2b2c-5ff2-53b7" type="rule" />
+<infoLink id="f006-37cc-8168-5fb4" name="Feel No Pain" hidden="false" targetId="fb39-b0e7-e2fd-bd28" type="rule" />
+<infoLink id="c877-0980-a91c-1323" name="Slow and purposeful" hidden="false" targetId="d518-a916-e747-ecc8" type="rule" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="7" />
 </costs>
 </selectionEntry>
 </selectionEntries>
@@ -1906,6 +1980,13 @@
 </modifiers>
 <profiles>
 <profile id="1ef0-7785-5d6a-17ea" name="Legion Centurion" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
+<modifiers>
+<modifier type="set" field="a21c-b80a-e1e4-079a" value="5">
+<conditions>
+<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bb13-a288-8ea8-00e3" type="atLeast" />
+</conditions>
+</modifier>
+</modifiers>
 <characteristics>
 <characteristic name="Unit Type" typeId="b0cf-47d7-3836-cf93">Infantry (Character)</characteristic>
 <characteristic name="WS" typeId="52b0-fc35-42a9-af3d">5</characteristic>
@@ -4633,21 +4714,7 @@
 </modifier>
 </modifiers>
 </entryLink>
-<entryLink id="8164-d609-d497-0e19" name="Deathshroud Terminator Squad" hidden="false" collective="false" import="true" targetId="b22d-815f-8162-822a" type="selectionEntry">
-<modifiers>
-<modifier type="set" field="hidden" value="true">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a6a2-abea-01b2-ad81" type="equalTo" />
-<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d900-78c3-2b10-8f9c" type="equalTo" />
-<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0656-5d6b-29bb-1441" type="equalTo" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-</modifiers>
-</entryLink>
+<entryLink id="8164-d609-d497-0e19" name="Deathshroud Terminator Squad" hidden="false" collective="false" import="true" targetId="b22d-815f-8162-822a" type="selectionEntry" />
 </entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
@@ -4721,6 +4788,43 @@
 </entryLinks>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
+</costs>
+</selectionEntry>
+<selectionEntry id="bb13-a288-8ea8-00e3" name="Plague Marine (Sons of the Plague Father)" hidden="false" collective="false" import="true" type="upgrade">
+<modifiers>
+<modifier type="set" field="dade-0c4c-1903-3235" value="0">
+<conditions>
+<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="45a2-9b3f-af83-5644" type="lessThan" />
+</conditions>
+</modifier>
+<modifier type="add" field="error" value="Plague Marine: only a model in Power Armour or Artificer Armour (not on a Bike) may be upgraded.">
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a6a2-abea-01b2-ad81" type="atLeast" />
+<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d900-78c3-2b10-8f9c" type="atLeast" />
+<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0656-5d6b-29bb-1441" type="atLeast" />
+<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d0e-b961-6e12-2457" type="atLeast" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="set" field="hidden" value="true">
+<conditions>
+<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="45a2-9b3f-af83-5644" type="lessThan" />
+</conditions>
+</modifier>
+</modifiers>
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dade-0c4c-1903-3235" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="3024-5659-9311-f323" name="Sons of the Plague Father" hidden="false" targetId="a378-2b2c-5ff2-53b7" type="rule" />
+<infoLink id="dfcb-1348-65e9-b9be" name="Feel No Pain" hidden="false" targetId="fb39-b0e7-e2fd-bd28" type="rule" />
+<infoLink id="df3c-4913-0192-473c" name="Slow and purposeful" hidden="false" targetId="d518-a916-e747-ecc8" type="rule" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="7" />
 </costs>
 </selectionEntry>
 </selectionEntries>
@@ -5225,9 +5329,9 @@
 </selectionEntryGroup>
 </selectionEntryGroups>
 <entryLinks>
-<entryLink id="2b58-b01f-53de-251a" name="Manreaper" hidden="false" collective="false" import="true" targetId="dfb7-dcb2-a57d-0f0c" type="selectionEntry">
+<entryLink id="f9c3-4681-3ae5-8d7f" name="Manreaper" hidden="false" collective="false" import="true" targetId="dfb7-dcb2-a57d-0f0c" type="selectionEntry">
 <constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fc5f-8396-27f5-5bcb" type="max" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ada5-b6f0-afb0-2d42" type="max" />
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
@@ -5372,12 +5476,12 @@
 <repeat field="selections" scope="9b73-36d5-ba55-fd55" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" repeats="1" roundUp="false" />
 </repeats>
 </modifier>
-<modifier type="set" field="hidden" value="true">
+<modifier type="set" field="503a-3037-bd29-1bd9" value="0">
 <conditions>
 <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="45a2-9b3f-af83-5644" type="lessThan" />
 </conditions>
 </modifier>
-<modifier type="set" field="503a-3037-bd29-1bd9" value="0">
+<modifier type="set" field="hidden" value="true">
 <conditions>
 <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="45a2-9b3f-af83-5644" type="lessThan" />
 </conditions>
@@ -5758,6 +5862,13 @@
 </constraints>
 <profiles>
 <profile id="b116-f94c-a7a9-f752" name="Legion Assault Sergeant" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
+<modifiers>
+<modifier type="set" field="a21c-b80a-e1e4-079a" value="5">
+<conditions>
+<condition field="selections" scope="b702-3a6c-f240-09db" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1bdf-1710-26b2-6e09" type="atLeast" />
+</conditions>
+</modifier>
+</modifiers>
 <characteristics>
 <characteristic name="Unit Type" typeId="b0cf-47d7-3836-cf93">Jump Infantry (Character)</characteristic>
 <characteristic name="WS" typeId="52b0-fc35-42a9-af3d">4</characteristic>
@@ -6004,6 +6115,16 @@
 </entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
+<entryLinks>
+<entryLink id="865a-46ee-9877-482f" name="Manreaper" hidden="false" collective="false" import="true" targetId="dfb7-dcb2-a57d-0f0c" type="selectionEntry">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="82a8-af0e-f841-d1fb" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
+</costs>
+</entryLink>
+</entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
 <entryLinks>
@@ -6067,6 +6188,13 @@
 </constraints>
 <profiles>
 <profile id="4276-354a-25da-59c9" name="Legion Assault Marine" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
+<modifiers>
+<modifier type="set" field="a21c-b80a-e1e4-079a" value="5">
+<conditions>
+<condition field="selections" scope="b702-3a6c-f240-09db" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1bdf-1710-26b2-6e09" type="atLeast" />
+</conditions>
+</modifier>
+</modifiers>
 <characteristics>
 <characteristic name="Unit Type" typeId="b0cf-47d7-3836-cf93">Jump Infantry</characteristic>
 <characteristic name="WS" typeId="52b0-fc35-42a9-af3d">4</characteristic>
@@ -6186,6 +6314,36 @@
 <cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
 </costs>
 </selectionEntry>
+<selectionEntry id="1bdf-1710-26b2-6e09" name="Plague Marines (entire unit, Sons of the Plague Father)" hidden="false" collective="false" import="true" type="upgrade">
+<modifiers>
+<modifier type="increment" field="pts0-0000-0000-0001" value="7">
+<repeats>
+<repeat field="selections" scope="b702-3a6c-f240-09db" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" repeats="1" roundUp="false" />
+</repeats>
+</modifier>
+<modifier type="set" field="8452-768b-f344-d6e8" value="0">
+<conditions>
+<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="45a2-9b3f-af83-5644" type="lessThan" />
+</conditions>
+</modifier>
+<modifier type="set" field="hidden" value="true">
+<conditions>
+<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="45a2-9b3f-af83-5644" type="lessThan" />
+</conditions>
+</modifier>
+</modifiers>
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8452-768b-f344-d6e8" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="4cd6-ab0c-442e-cc25" name="Sons of the Plague Father" hidden="false" targetId="a378-2b2c-5ff2-53b7" type="rule" />
+<infoLink id="37de-85b4-706c-7c79" name="Feel No Pain" hidden="false" targetId="fb39-b0e7-e2fd-bd28" type="rule" />
+<infoLink id="3dda-490d-816e-cdc8" name="Slow and purposeful" hidden="false" targetId="d518-a916-e747-ecc8" type="rule" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
 </selectionEntries>
 <selectionEntryGroups>
 <selectionEntryGroup id="e9f7-4dbd-23dc-4151" name="Assault Weapons (1 per 5 models)" hidden="false" collective="false" import="true">
@@ -6287,6 +6445,13 @@
 </constraints>
 <profiles>
 <profile id="aa86-53f7-11c5-bae5" name="Legion Breacher Sergeant" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
+<modifiers>
+<modifier type="set" field="a21c-b80a-e1e4-079a" value="5">
+<conditions>
+<condition field="selections" scope="c114-92be-ee01-c705" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bdfe-651c-3383-198d" type="atLeast" />
+</conditions>
+</modifier>
+</modifiers>
 <characteristics>
 <characteristic name="Unit Type" typeId="b0cf-47d7-3836-cf93">Infantry (Character)</characteristic>
 <characteristic name="WS" typeId="52b0-fc35-42a9-af3d">4</characteristic>
@@ -6478,6 +6643,16 @@
 </entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
+<entryLinks>
+<entryLink id="d778-9126-b508-7d10" name="Manreaper" hidden="false" collective="false" import="true" targetId="dfb7-dcb2-a57d-0f0c" type="selectionEntry">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2935-2016-8c6c-7dc3" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
+</costs>
+</entryLink>
+</entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
 <entryLinks>
@@ -6541,6 +6716,13 @@
 </constraints>
 <profiles>
 <profile id="285d-fa52-aa68-c9a5" name="Legion Breacher Marine" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
+<modifiers>
+<modifier type="set" field="a21c-b80a-e1e4-079a" value="5">
+<conditions>
+<condition field="selections" scope="c114-92be-ee01-c705" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bdfe-651c-3383-198d" type="atLeast" />
+</conditions>
+</modifier>
+</modifiers>
 <characteristics>
 <characteristic name="Unit Type" typeId="b0cf-47d7-3836-cf93">Infantry</characteristic>
 <characteristic name="WS" typeId="52b0-fc35-42a9-af3d">4</characteristic>
@@ -6633,6 +6815,36 @@
 </constraints>
 </entryLink>
 </entryLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+<selectionEntry id="bdfe-651c-3383-198d" name="Plague Marines (entire unit, Sons of the Plague Father)" hidden="false" collective="false" import="true" type="upgrade">
+<modifiers>
+<modifier type="increment" field="pts0-0000-0000-0001" value="7">
+<repeats>
+<repeat field="selections" scope="c114-92be-ee01-c705" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" repeats="1" roundUp="false" />
+</repeats>
+</modifier>
+<modifier type="set" field="bf75-1bd7-b43e-b56b" value="0">
+<conditions>
+<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="45a2-9b3f-af83-5644" type="lessThan" />
+</conditions>
+</modifier>
+<modifier type="set" field="hidden" value="true">
+<conditions>
+<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="45a2-9b3f-af83-5644" type="lessThan" />
+</conditions>
+</modifier>
+</modifiers>
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bf75-1bd7-b43e-b56b" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="f7e0-2e2c-b971-a134" name="Sons of the Plague Father" hidden="false" targetId="a378-2b2c-5ff2-53b7" type="rule" />
+<infoLink id="bd61-13a5-ff8b-208a" name="Feel No Pain" hidden="false" targetId="fb39-b0e7-e2fd-bd28" type="rule" />
+<infoLink id="54b5-4b9c-222a-72e6" name="Slow and purposeful" hidden="false" targetId="d518-a916-e747-ecc8" type="rule" />
+</infoLinks>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
 </costs>
@@ -7189,6 +7401,16 @@
 </entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
+<entryLinks>
+<entryLink id="7b52-b6be-31b0-8d6f" name="Manreaper" hidden="false" collective="false" import="true" targetId="dfb7-dcb2-a57d-0f0c" type="selectionEntry">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="de6d-61f8-9676-d795" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
+</costs>
+</entryLink>
+</entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
 <entryLinks>
@@ -7836,7 +8058,7 @@ LIMITATIONS - No other Lord of War; no Allied Detachment; no more than one other
 </modifiers>
 <rules>
 <rule id="bf68-aac0-1a34-85b3" name="The Reaping" hidden="false">
-<description>EFFECTS - Superior Firepower: Legion Veteran Squads and Legion Heavy Support Squads may be selected as non-compulsory Troops choices; they may not fulfil compulsory Troops selections unless another rule specifically permits them to do so. Implacable: all Death Guard Infantry units gain Move Through Cover (including models wearing any form of Terminator Armour). Dark Arsenal: any Death Guard Character or Independent Character may purchase Rad Grenades for +10 points (normal Rad Grenade rules).
+<description>EFFECTS - Superior Firepower: Legion Veteran Squads and Legion Heavy Support Squads may be selected as non-compulsory Troops choices; they may not fulfil compulsory Troops selections unless another rule specifically permits them to do so. Implacable: all Death Guard Infantry units gain Move Through Cover (including models wearing any form of Terminator Armour). Dark Arsenal: any Death Guard Character or Independent Character may purchase Rad Grenades for +10 points (this includes Sergeants; a Sergeant's Rad Grenades affect his whole unit until he is removed as a casualty).
 LIMITATIONS - Units in the Detachment may not make Advance Moves. Vehicles in the Detachment may not move Flat Out. Units in the Detachment may not deploy using Deep Strike; units which are required to deploy using Deep Strike may not be selected. The normal Death Guard restriction on Fast Attack choices from Footslogging Killers continues to apply.</description>
 </rule>
 </rules>
@@ -8269,6 +8491,16 @@ LIMITATIONS - Only a Traitor Death Guard Detachment. The Detachment must include
 </entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
+<entryLinks>
+<entryLink id="cec1-baaa-d01c-8044" name="Manreaper" hidden="false" collective="false" import="true" targetId="dfb7-dcb2-a57d-0f0c" type="selectionEntry">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7bf9-65a0-17b8-6e00" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
+</costs>
+</entryLink>
+</entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
 <entryLinks>
@@ -8472,12 +8704,12 @@ LIMITATIONS - Only a Traitor Death Guard Detachment. The Detachment must include
 <repeat field="selections" scope="5234-c493-83a2-9202" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" repeats="1" roundUp="false" />
 </repeats>
 </modifier>
-<modifier type="set" field="hidden" value="true">
+<modifier type="set" field="460e-1d8a-08af-9a95" value="0">
 <conditions>
 <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="45a2-9b3f-af83-5644" type="lessThan" />
 </conditions>
 </modifier>
-<modifier type="set" field="460e-1d8a-08af-9a95" value="0">
+<modifier type="set" field="hidden" value="true">
 <conditions>
 <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="45a2-9b3f-af83-5644" type="lessThan" />
 </conditions>
@@ -9362,9 +9594,9 @@ LIMITATIONS - Only a Traitor Death Guard Detachment. The Detachment must include
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
 </costs>
 </entryLink>
-<entryLink id="ab05-3d9b-99e5-c0a1" name="Manreaper" hidden="false" collective="false" import="true" targetId="dfb7-dcb2-a57d-0f0c" type="selectionEntry">
+<entryLink id="8a8d-5a52-b278-8392" name="Manreaper" hidden="false" collective="false" import="true" targetId="dfb7-dcb2-a57d-0f0c" type="selectionEntry">
 <constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="500c-19a1-8b1d-7cf3" type="max" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3465-ad5e-1e1d-ca4b" type="max" />
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
@@ -10077,6 +10309,16 @@ LIMITATIONS - Only a Traitor Death Guard Detachment. The Detachment must include
 </entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
+<entryLinks>
+<entryLink id="0bde-63f8-e706-30c2" name="Manreaper" hidden="false" collective="false" import="true" targetId="dfb7-dcb2-a57d-0f0c" type="selectionEntry">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6f0a-3dee-3051-19d7" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
+</costs>
+</entryLink>
+</entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
 <entryLinks>
@@ -10249,12 +10491,12 @@ LIMITATIONS - Only a Traitor Death Guard Detachment. The Detachment must include
 <repeat field="selections" scope="dc24-cdef-2339-2629" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" repeats="1" roundUp="false" />
 </repeats>
 </modifier>
-<modifier type="set" field="hidden" value="true">
+<modifier type="set" field="8887-72ed-e022-baca" value="0">
 <conditions>
 <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="45a2-9b3f-af83-5644" type="lessThan" />
 </conditions>
 </modifier>
-<modifier type="set" field="8887-72ed-e022-baca" value="0">
+<modifier type="set" field="hidden" value="true">
 <conditions>
 <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="45a2-9b3f-af83-5644" type="lessThan" />
 </conditions>
@@ -11902,6 +12144,11 @@ LIMITATIONS - Only a Traitor Death Guard Detachment. The Detachment must include
 <cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
 </costs>
 </entryLink>
+<entryLink id="c394-e881-05dd-aaf6" name="Alchem Flamer" hidden="false" collective="false" import="true" targetId="e887-ec43-b1d9-fc95" type="selectionEntry" sortIndex="103">
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
+</costs>
+</entryLink>
 </entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
@@ -11993,6 +12240,11 @@ LIMITATIONS - Only a Traitor Death Guard Detachment. The Detachment must include
 <cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
 </costs>
 </entryLink>
+<entryLink id="0a87-4141-115c-b016" name="Alchem Flamer" hidden="false" collective="false" import="true" targetId="e887-ec43-b1d9-fc95" type="selectionEntry" sortIndex="103">
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
+</costs>
+</entryLink>
 </entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
@@ -12035,6 +12287,11 @@ LIMITATIONS - Only a Traitor Death Guard Detachment. The Detachment must include
 <entryLink id="8872-1c04-579a-e6cd" name="Plasma Blaster" hidden="false" collective="false" import="true" targetId="bb90-ab7a-87fe-54e2" type="selectionEntry" sortIndex="6">
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
+</costs>
+</entryLink>
+<entryLink id="5295-a4e3-186f-b352" name="Alchem Flamer" hidden="false" collective="false" import="true" targetId="e887-ec43-b1d9-fc95" type="selectionEntry" sortIndex="103">
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
 </entryLink>
 </entryLinks>
@@ -12374,6 +12631,11 @@ LIMITATIONS - Only a Traitor Death Guard Detachment. The Detachment must include
 <cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
 </costs>
 </entryLink>
+<entryLink id="031e-486f-f644-c0dd" name="Alchem Flamer" hidden="false" collective="false" import="true" targetId="e887-ec43-b1d9-fc95" type="selectionEntry" sortIndex="103">
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
+</costs>
+</entryLink>
 </entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
@@ -12460,6 +12722,11 @@ LIMITATIONS - Only a Traitor Death Guard Detachment. The Detachment must include
 <cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
 </costs>
 </entryLink>
+<entryLink id="9264-94ef-21de-294b" name="Alchem Flamer" hidden="false" collective="false" import="true" targetId="e887-ec43-b1d9-fc95" type="selectionEntry" sortIndex="103">
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
+</costs>
+</entryLink>
 </entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
@@ -12502,6 +12769,11 @@ LIMITATIONS - Only a Traitor Death Guard Detachment. The Detachment must include
 <entryLink id="412c-0f0e-f785-a800" name="Plasma Blaster" hidden="false" collective="false" import="true" targetId="bb90-ab7a-87fe-54e2" type="selectionEntry" sortIndex="6">
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
+</costs>
+</entryLink>
+<entryLink id="d6e8-a409-9cac-c7b8" name="Alchem Flamer" hidden="false" collective="false" import="true" targetId="e887-ec43-b1d9-fc95" type="selectionEntry" sortIndex="103">
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
 </entryLink>
 </entryLinks>
@@ -13216,6 +13488,16 @@ LIMITATIONS - Only a Traitor Death Guard Detachment. The Detachment must include
 </entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
+<entryLinks>
+<entryLink id="7c96-73a7-92cb-15a2" name="Manreaper" hidden="false" collective="false" import="true" targetId="dfb7-dcb2-a57d-0f0c" type="selectionEntry">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ba31-afbc-af7e-605a" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
+</costs>
+</entryLink>
+</entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
 <entryLinks>
@@ -13395,12 +13677,12 @@ LIMITATIONS - Only a Traitor Death Guard Detachment. The Detachment must include
 <repeat field="selections" scope="b2a1-bc50-ae60-bf88" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" repeats="1" roundUp="false" />
 </repeats>
 </modifier>
-<modifier type="set" field="hidden" value="true">
+<modifier type="set" field="671d-8eea-98dc-1ee1" value="0">
 <conditions>
 <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="45a2-9b3f-af83-5644" type="lessThan" />
 </conditions>
 </modifier>
-<modifier type="set" field="671d-8eea-98dc-1ee1" value="0">
+<modifier type="set" field="hidden" value="true">
 <conditions>
 <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="45a2-9b3f-af83-5644" type="lessThan" />
 </conditions>
@@ -13982,6 +14264,16 @@ LIMITATIONS - Only a Traitor Death Guard Detachment. The Detachment must include
 </entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
+<entryLinks>
+<entryLink id="20c2-bd5b-0602-249d" name="Manreaper" hidden="false" collective="false" import="true" targetId="dfb7-dcb2-a57d-0f0c" type="selectionEntry">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4adc-633a-597f-a028" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
+</costs>
+</entryLink>
+</entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
 <entryLinks>
@@ -14566,6 +14858,16 @@ LIMITATIONS - Only a Traitor Death Guard Detachment. The Detachment must include
 </entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
+<entryLinks>
+<entryLink id="a107-ef8e-f939-e9ca" name="Manreaper" hidden="false" collective="false" import="true" targetId="dfb7-dcb2-a57d-0f0c" type="selectionEntry">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3172-70e8-7508-75e0" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
+</costs>
+</entryLink>
+</entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
 <entryLinks>
@@ -15104,6 +15406,7 @@ LIMITATIONS - Only a Traitor Death Guard Detachment. The Detachment must include
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
 </entryLink>
+<entryLink id="a307-f2b6-8bc1-4aac" name="Alchem Flamer" hidden="false" collective="false" import="true" targetId="e887-ec43-b1d9-fc95" type="selectionEntry" sortIndex="103" />
 </entryLinks>
 </selectionEntryGroup>
 <selectionEntryGroup id="10b2-5957-7a9d-0d1f" name="Additional Weapon (one)" hidden="false" collective="false" import="true">
@@ -15154,6 +15457,11 @@ LIMITATIONS - Only a Traitor Death Guard Detachment. The Detachment must include
 <entryLink id="5109-25c3-74f4-3774" name="Typhoon Missile Launcher" hidden="false" collective="false" import="true" targetId="7aff-01f7-bfbf-842b" type="selectionEntry">
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
+</costs>
+</entryLink>
+<entryLink id="f15e-07ff-bbc4-ef05" name="Alchem Flamer" hidden="false" collective="false" import="true" targetId="e887-ec43-b1d9-fc95" type="selectionEntry">
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
 </entryLink>
 </entryLinks>
@@ -15210,6 +15518,7 @@ LIMITATIONS - Only a Traitor Death Guard Detachment. The Detachment must include
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
 </entryLink>
+<entryLink id="43c1-f9b5-8cf4-2590" name="Alchem Flamer" hidden="false" collective="false" import="true" targetId="e887-ec43-b1d9-fc95" type="selectionEntry" sortIndex="103" />
 </entryLinks>
 </selectionEntryGroup>
 <selectionEntryGroup id="b729-718a-7460-da23" name="Additional Weapon (one)" hidden="false" collective="false" import="true">
@@ -15260,6 +15569,11 @@ LIMITATIONS - Only a Traitor Death Guard Detachment. The Detachment must include
 <entryLink id="46cd-b00f-0f28-bc6a" name="Typhoon Missile Launcher" hidden="false" collective="false" import="true" targetId="7aff-01f7-bfbf-842b" type="selectionEntry">
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
+</costs>
+</entryLink>
+<entryLink id="cb71-632a-b766-01db" name="Alchem Flamer" hidden="false" collective="false" import="true" targetId="e887-ec43-b1d9-fc95" type="selectionEntry">
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
 </entryLink>
 </entryLinks>
@@ -15316,6 +15630,7 @@ LIMITATIONS - Only a Traitor Death Guard Detachment. The Detachment must include
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
 </entryLink>
+<entryLink id="2513-f1b6-e7d8-9406" name="Alchem Flamer" hidden="false" collective="false" import="true" targetId="e887-ec43-b1d9-fc95" type="selectionEntry" sortIndex="103" />
 </entryLinks>
 </selectionEntryGroup>
 <selectionEntryGroup id="118f-19c6-1b66-f53a" name="Additional Weapon (one)" hidden="false" collective="false" import="true">
@@ -15366,6 +15681,11 @@ LIMITATIONS - Only a Traitor Death Guard Detachment. The Detachment must include
 <entryLink id="3ea8-36fd-4397-c962" name="Typhoon Missile Launcher" hidden="false" collective="false" import="true" targetId="7aff-01f7-bfbf-842b" type="selectionEntry">
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
+</costs>
+</entryLink>
+<entryLink id="5f3c-7df1-00ae-661b" name="Alchem Flamer" hidden="false" collective="false" import="true" targetId="e887-ec43-b1d9-fc95" type="selectionEntry">
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
 </entryLink>
 </entryLinks>
@@ -15447,6 +15767,7 @@ LIMITATIONS - Only a Traitor Death Guard Detachment. The Detachment must include
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
 </entryLink>
+<entryLink id="9880-97c9-6dc8-6b00" name="Alchem Flamer" hidden="false" collective="false" import="true" targetId="e887-ec43-b1d9-fc95" type="selectionEntry" sortIndex="103" />
 </entryLinks>
 </selectionEntryGroup>
 <selectionEntryGroup id="ee84-72c9-10ae-0716" name="Upgrades" hidden="false" collective="false" import="true">
@@ -15518,6 +15839,7 @@ LIMITATIONS - Only a Traitor Death Guard Detachment. The Detachment must include
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
 </entryLink>
+<entryLink id="7576-c37a-e549-ed8a" name="Alchem Flamer" hidden="false" collective="false" import="true" targetId="e887-ec43-b1d9-fc95" type="selectionEntry" sortIndex="103" />
 </entryLinks>
 </selectionEntryGroup>
 <selectionEntryGroup id="5d73-1033-ad70-0f9f" name="Upgrades" hidden="false" collective="false" import="true">
@@ -15589,6 +15911,7 @@ LIMITATIONS - Only a Traitor Death Guard Detachment. The Detachment must include
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
 </entryLink>
+<entryLink id="fb56-7914-c52b-d8cc" name="Alchem Flamer" hidden="false" collective="false" import="true" targetId="e887-ec43-b1d9-fc95" type="selectionEntry" sortIndex="103" />
 </entryLinks>
 </selectionEntryGroup>
 <selectionEntryGroup id="78da-ca9f-a95e-a64f" name="Upgrades" hidden="false" collective="false" import="true">
@@ -15902,6 +16225,16 @@ LIMITATIONS - Only a Traitor Death Guard Detachment. The Detachment must include
 </entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
+<entryLinks>
+<entryLink id="d71f-c02d-df1e-f9b3" name="Manreaper" hidden="false" collective="false" import="true" targetId="dfb7-dcb2-a57d-0f0c" type="selectionEntry">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="024c-46bc-d749-ca1c" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
+</costs>
+</entryLink>
+</entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
 <entryLinks>
@@ -16051,12 +16384,12 @@ LIMITATIONS - Only a Traitor Death Guard Detachment. The Detachment must include
 <repeat field="selections" scope="b2c2-59c9-f233-25d2" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" repeats="1" roundUp="false" />
 </repeats>
 </modifier>
-<modifier type="set" field="hidden" value="true">
+<modifier type="set" field="45d4-c78b-dc89-7352" value="0">
 <conditions>
 <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="45a2-9b3f-af83-5644" type="lessThan" />
 </conditions>
 </modifier>
-<modifier type="set" field="45d4-c78b-dc89-7352" value="0">
+<modifier type="set" field="hidden" value="true">
 <conditions>
 <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="45a2-9b3f-af83-5644" type="lessThan" />
 </conditions>
@@ -21316,6 +21649,7 @@ LIMITATIONS - Only a Traitor Death Guard Detachment. The Detachment must include
 <entryLinks>
 <entryLink id="1bca-c219-82b5-ff8a" name="Heavy Bolter" hidden="false" collective="false" import="true" targetId="9151-5044-e482-04c9" type="selectionEntry" sortIndex="1" defaultAmount="1" />
 <entryLink id="0e85-212c-dcd1-41b0" name="Heavy Flamer" hidden="false" collective="false" import="true" targetId="9e6d-afcf-8202-e47c" type="selectionEntry" sortIndex="3" />
+<entryLink id="91b6-542e-ca6b-ea5f" name="Alchem Flamer" hidden="false" collective="false" import="true" targetId="e887-ec43-b1d9-fc95" type="selectionEntry" sortIndex="103" />
 </entryLinks>
 </selectionEntryGroup>
 <selectionEntryGroup id="92c9-be68-6f86-a509" name="Sponsons (one pair)" hidden="false" collective="false" import="true">
@@ -22018,6 +22352,7 @@ LIMITATIONS - Only a Traitor Death Guard Detachment. The Detachment must include
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
 </costs>
 </entryLink>
+<entryLink id="37fb-2c17-5691-5b3a" name="Alchem Flamer" hidden="false" collective="false" import="true" targetId="e887-ec43-b1d9-fc95" type="selectionEntry" sortIndex="101" />
 </entryLinks>
 </selectionEntryGroup>
 <selectionEntryGroup id="43da-2079-337b-11fb" name="Heavy Flamer 2" hidden="false" collective="false" import="true" defaultSelectionEntryId="b70f-8520-f379-6893">
@@ -22032,6 +22367,7 @@ LIMITATIONS - Only a Traitor Death Guard Detachment. The Detachment must include
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
 </costs>
 </entryLink>
+<entryLink id="dab3-4c6b-f767-7621" name="Alchem Flamer" hidden="false" collective="false" import="true" targetId="e887-ec43-b1d9-fc95" type="selectionEntry" sortIndex="101" />
 </entryLinks>
 </selectionEntryGroup>
 <selectionEntryGroup id="4bb4-5740-8699-4507" name="Upgrades" hidden="false" collective="false" import="true">
@@ -22563,9 +22899,9 @@ LIMITATIONS - Only a Traitor Death Guard Detachment. The Detachment must include
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
 </costs>
 </entryLink>
-<entryLink id="3bd9-2c49-3a56-d747" name="Manreaper" hidden="false" collective="false" import="true" targetId="dfb7-dcb2-a57d-0f0c" type="selectionEntry">
+<entryLink id="8979-40d7-1752-b9b7" name="Manreaper" hidden="false" collective="false" import="true" targetId="dfb7-dcb2-a57d-0f0c" type="selectionEntry">
 <constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1e6b-0cf4-7f44-8c88" type="max" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1680-3556-f176-5e76" type="max" />
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
@@ -22864,6 +23200,35 @@ LIMITATIONS - Only a Traitor Death Guard Detachment. The Detachment must include
 </costs>
 </selectionEntry>
 <selectionEntry id="696f-549d-14fb-762b" name="Mortus Poisoner Squad" hidden="false" collective="false" import="true" type="unit">
+<modifiers>
+<modifier type="set-primary" field="category" value="adf0-dc10-89d4-f51e">
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="16f3-4196-2250-3a21" type="atLeast" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="remove" field="category" value="6b19-97ac-7c40-0bdf">
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="16f3-4196-2250-3a21" type="atLeast" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="add" field="category" value="071f-8316-97af-8fd6">
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="16f3-4196-2250-3a21" type="atLeast" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+</modifiers>
 <infoLinks>
 <infoLink id="56a0-1a68-e70e-ed32" name="Legiones Astartes (Death Guard)" hidden="false" targetId="04f5-dc65-b4ee-d6e5" type="rule" />
 <infoLink id="4cea-fa4c-d890-b441" name="Counter-Attack" hidden="false" targetId="cf35-85bb-edae-99d7" type="rule" />
@@ -23221,9 +23586,9 @@ LIMITATIONS - Only a Traitor Death Guard Detachment. The Detachment must include
 </selectionEntryGroup>
 </selectionEntryGroups>
 <entryLinks>
-<entryLink id="3407-103e-40de-8abb" name="Manreaper" hidden="false" collective="false" import="true" targetId="dfb7-dcb2-a57d-0f0c" type="selectionEntry">
+<entryLink id="2fa1-ec5e-c48c-43fd" name="Manreaper" hidden="false" collective="false" import="true" targetId="dfb7-dcb2-a57d-0f0c" type="selectionEntry">
 <constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8096-2fd2-c66f-7d93" type="max" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="29e6-204e-9164-bdd3" type="max" />
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
@@ -23385,12 +23750,12 @@ LIMITATIONS - Only a Traitor Death Guard Detachment. The Detachment must include
 <repeat field="selections" scope="696f-549d-14fb-762b" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" repeats="1" roundUp="false" />
 </repeats>
 </modifier>
-<modifier type="set" field="hidden" value="true">
+<modifier type="set" field="36fc-9f85-a2de-3192" value="0">
 <conditions>
 <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="45a2-9b3f-af83-5644" type="lessThan" />
 </conditions>
 </modifier>
-<modifier type="set" field="36fc-9f85-a2de-3192" value="0">
+<modifier type="set" field="hidden" value="true">
 <conditions>
 <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="45a2-9b3f-af83-5644" type="lessThan" />
 </conditions>
@@ -23429,18 +23794,72 @@ LIMITATIONS - Only a Traitor Death Guard Detachment. The Detachment must include
 </entryLink>
 </entryLinks>
 </selectionEntryGroup>
+<selectionEntryGroup id="ea04-b599-5a96-cb24" name="Legion Destroyer Company: Missile Launcher (up to 2 per 5 models)" hidden="false" collective="false" import="true">
+<modifiers>
+<modifier type="increment" field="60b5-dc3c-1cd0-75ab" value="2">
+<repeats>
+<repeat field="selections" scope="696f-549d-14fb-762b" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" repeats="1" roundUp="false" />
+</repeats>
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="16f3-4196-2250-3a21" type="atLeast" />
+</conditions>
+</modifier>
+<modifier type="set" field="hidden" value="true">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="16f3-4196-2250-3a21" type="lessThan" />
+</conditions>
+</modifier>
+</modifiers>
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="60b5-dc3c-1cd0-75ab" type="max" />
+</constraints>
+<entryLinks>
+<entryLink id="677c-1d22-9208-09dc" name="Missile Launcher with Suspensor Web and Rad Missiles" hidden="false" collective="false" import="true" targetId="b433-2f89-1970-965a" type="selectionEntry">
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
+</costs>
+</entryLink>
+</entryLinks>
+</selectionEntryGroup>
 <selectionEntryGroup id="7e91-8d03-ce65-0f68" name="Dedicated Transport" hidden="false" collective="false" import="true">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="196c-b9fb-2198-ed97" type="max" />
 </constraints>
 <entryLinks>
-<entryLink id="baf8-e450-8447-68a3" name="Legion Drop Pod (Orbital Assault)" hidden="false" collective="false" import="true" targetId="4e1c-55bd-1f6c-9584" type="selectionEntry">
+<entryLink id="bc53-861b-179a-8817" name="Legion Rhino Armoured Carrier" hidden="false" collective="false" import="true" targetId="9572-f669-c5f3-b3d0" type="selectionEntry">
 <modifiers>
-<modifier type="set" field="hidden" value="true">
+<modifier type="add" field="error" value="Too many models for a Legion Rhino Armoured Carrier (capacity 10).">
+<conditionGroups>
+<conditionGroup type="and">
 <conditions>
-<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b68d-b2ba-b013-f6c1" type="lessThan" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9572-f669-c5f3-b3d0" type="atLeast" />
+<condition field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
 </conditions>
+</conditionGroup>
+</conditionGroups>
 </modifier>
+<modifier type="add" field="error" value="A Legion Rhino Armoured Carrier cannot carry models in Terminator Armour.">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9572-f669-c5f3-b3d0" type="atLeast" />
+</conditions>
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a6a2-abea-01b2-ad81" type="atLeast" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d900-78c3-2b10-8f9c" type="atLeast" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0656-5d6b-29bb-1441" type="atLeast" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+</modifiers>
+</entryLink>
+<entryLink id="ddcf-6941-8f42-3309" name="Legion Drop Pod" hidden="false" collective="false" import="true" targetId="4e1c-55bd-1f6c-9584" type="selectionEntry">
+<modifiers>
 <modifier type="add" field="error" value="Too many models for a Legion Drop Pod (capacity 10).">
 <conditionGroups>
 <conditionGroup type="and">
@@ -23471,17 +23890,9 @@ LIMITATIONS - Only a Traitor Death Guard Detachment. The Detachment must include
 </conditionGroups>
 </modifier>
 </modifiers>
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b8dc-1588-5c82-31e2" type="max" />
-</constraints>
 </entryLink>
-<entryLink id="0ef5-45a1-81ee-073d" name="Anvillus Pattern Dreadclaw Drop Pod (Orbital Assault)" hidden="false" collective="false" import="true" targetId="2bad-68df-db1e-95d9" type="selectionEntry">
+<entryLink id="5a70-0651-f460-6435" name="Anvillus Pattern Dreadclaw Drop Pod" hidden="false" collective="false" import="true" targetId="2bad-68df-db1e-95d9" type="selectionEntry">
 <modifiers>
-<modifier type="set" field="hidden" value="true">
-<conditions>
-<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b68d-b2ba-b013-f6c1" type="lessThan" />
-</conditions>
-</modifier>
 <modifier type="add" field="error" value="Too many models for a Anvillus Pattern Dreadclaw Drop Pod (capacity 10).">
 <conditionGroups>
 <conditionGroup type="and">
@@ -23512,17 +23923,9 @@ LIMITATIONS - Only a Traitor Death Guard Detachment. The Detachment must include
 </conditionGroups>
 </modifier>
 </modifiers>
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9040-a1a6-0074-0cbe" type="max" />
-</constraints>
 </entryLink>
-<entryLink id="224a-9298-b02b-d577" name="Land Raider Phobos (Armoured Spearhead)" hidden="false" collective="false" import="true" targetId="368f-8af7-ba1b-d0f6" type="selectionEntry">
+<entryLink id="2070-899f-373c-8314" name="Land Raider Phobos" hidden="false" collective="false" import="true" targetId="368f-8af7-ba1b-d0f6" type="selectionEntry">
 <modifiers>
-<modifier type="set" field="hidden" value="true">
-<conditions>
-<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9128-42be-bd92-cf70" type="lessThan" />
-</conditions>
-</modifier>
 <modifier type="add" field="error" value="Too many models for a Land Raider Phobos (capacity 10).">
 <conditionGroups>
 <conditionGroup type="and">
@@ -23553,9 +23956,6 @@ LIMITATIONS - Only a Traitor Death Guard Detachment. The Detachment must include
 </conditionGroups>
 </modifier>
 </modifiers>
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="87fd-d342-68ff-7254" type="max" />
-</constraints>
 </entryLink>
 </entryLinks>
 </selectionEntryGroup>
@@ -23687,6 +24087,13 @@ LIMITATIONS - Only a Traitor Death Guard Detachment. The Detachment must include
 </constraints>
 <profiles>
 <profile id="2c89-3a70-415d-04af" name="Crysos Morturg" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
+<modifiers>
+<modifier type="set" field="a21c-b80a-e1e4-079a" value="5">
+<conditions>
+<condition field="selections" scope="ea6a-9294-f88d-88a0" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f8ef-9580-2cf6-ee5a" type="atLeast" />
+</conditions>
+</modifier>
+</modifiers>
 <characteristics>
 <characteristic name="Unit Type" typeId="b0cf-47d7-3836-cf93">Infantry (Character)</characteristic>
 <characteristic name="WS" typeId="52b0-fc35-42a9-af3d">5</characteristic>
@@ -23789,6 +24196,45 @@ LIMITATIONS - Only a Traitor Death Guard Detachment. The Detachment must include
 </constraints>
 </entryLink>
 </entryLinks>
+<selectionEntries>
+<selectionEntry id="f8ef-9580-2cf6-ee5a" name="Plague Marine (Sons of the Plague Father)" hidden="false" collective="false" import="true" type="upgrade">
+<modifiers>
+<modifier type="set" field="dd2c-cd5b-5952-c3c0" value="0">
+<conditions>
+<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="45a2-9b3f-af83-5644" type="lessThan" />
+</conditions>
+</modifier>
+<modifier type="add" field="error" value="Plague Marine: only a model in Power Armour or Artificer Armour (not on a Bike) may be upgraded.">
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="ea6a-9294-f88d-88a0" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a6a2-abea-01b2-ad81" type="atLeast" />
+<condition field="selections" scope="ea6a-9294-f88d-88a0" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d900-78c3-2b10-8f9c" type="atLeast" />
+<condition field="selections" scope="ea6a-9294-f88d-88a0" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0656-5d6b-29bb-1441" type="atLeast" />
+<condition field="selections" scope="ea6a-9294-f88d-88a0" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d0e-b961-6e12-2457" type="atLeast" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="set" field="hidden" value="true">
+<conditions>
+<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="45a2-9b3f-af83-5644" type="lessThan" />
+</conditions>
+</modifier>
+</modifiers>
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dd2c-cd5b-5952-c3c0" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="357a-d5ea-4b23-cb35" name="Sons of the Plague Father" hidden="false" targetId="a378-2b2c-5ff2-53b7" type="rule" />
+<infoLink id="5501-7c99-fce2-8466" name="Feel No Pain" hidden="false" targetId="fb39-b0e7-e2fd-bd28" type="rule" />
+<infoLink id="e307-2d04-a6eb-b9b9" name="Slow and purposeful" hidden="false" targetId="d518-a916-e747-ecc8" type="rule" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="7" />
+</costs>
+</selectionEntry>
+</selectionEntries>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="175" />
 </costs>
@@ -23806,6 +24252,13 @@ LIMITATIONS - Only a Traitor Death Guard Detachment. The Detachment must include
 </constraints>
 <profiles>
 <profile id="b0e0-24c0-54f2-4350" name="Durak Rask" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
+<modifiers>
+<modifier type="set" field="a21c-b80a-e1e4-079a" value="5">
+<conditions>
+<condition field="selections" scope="d489-ed59-9b26-6778" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="77bf-93c2-a0c8-20eb" type="atLeast" />
+</conditions>
+</modifier>
+</modifiers>
 <characteristics>
 <characteristic name="Unit Type" typeId="b0cf-47d7-3836-cf93">Infantry (Character)</characteristic>
 <characteristic name="WS" typeId="52b0-fc35-42a9-af3d">5</characteristic>
@@ -23824,7 +24277,7 @@ LIMITATIONS - Only a Traitor Death Guard Detachment. The Detachment must include
 <infoLink id="a640-5fa1-0765-2a06" name="Legiones Astartes (Death Guard)" hidden="false" targetId="04f5-dc65-b4ee-d6e5" type="rule" />
 <infoLink id="c621-c9af-453f-1e54" name="Independent Character" hidden="false" targetId="03f2-ed94-7611-f6a1" type="rule" />
 <infoLink id="d6b3-88ae-7e6a-3253" name="Master of the Legion" hidden="false" targetId="7a4c-8b34-41a7-547b" type="rule" />
-<infoLink id="7a5e-eabb-d1b5-2eff" name="Art of Destruction (Durak Rask)" hidden="false" targetId="1d4d-24b2-3874-d6b7" type="rule" />
+<infoLink id="4ee0-8fb1-1c83-de10" name="Force of Destruction" hidden="false" targetId="ecfe-b9cc-a0a6-8d0c" type="rule" />
 <infoLink id="f8df-fd70-af83-9fe4" name="Command Retinue (Death Guard Captains)" hidden="false" targetId="12cd-3907-00f6-a8ff" type="rule" />
 </infoLinks>
 <categoryLinks>
@@ -23935,6 +24388,43 @@ LIMITATIONS - Only a Traitor Death Guard Detachment. The Detachment must include
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
 </selectionEntry>
+<selectionEntry id="77bf-93c2-a0c8-20eb" name="Plague Marine (Sons of the Plague Father)" hidden="false" collective="false" import="true" type="upgrade">
+<modifiers>
+<modifier type="set" field="f395-4e6f-c293-d84f" value="0">
+<conditions>
+<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="45a2-9b3f-af83-5644" type="lessThan" />
+</conditions>
+</modifier>
+<modifier type="add" field="error" value="Plague Marine: only a model in Power Armour or Artificer Armour (not on a Bike) may be upgraded.">
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="d489-ed59-9b26-6778" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a6a2-abea-01b2-ad81" type="atLeast" />
+<condition field="selections" scope="d489-ed59-9b26-6778" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d900-78c3-2b10-8f9c" type="atLeast" />
+<condition field="selections" scope="d489-ed59-9b26-6778" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0656-5d6b-29bb-1441" type="atLeast" />
+<condition field="selections" scope="d489-ed59-9b26-6778" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d0e-b961-6e12-2457" type="atLeast" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="set" field="hidden" value="true">
+<conditions>
+<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="45a2-9b3f-af83-5644" type="lessThan" />
+</conditions>
+</modifier>
+</modifiers>
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f395-4e6f-c293-d84f" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="c86b-fa23-006e-41f0" name="Sons of the Plague Father" hidden="false" targetId="a378-2b2c-5ff2-53b7" type="rule" />
+<infoLink id="dfc4-1d14-8fa4-20d3" name="Feel No Pain" hidden="false" targetId="fb39-b0e7-e2fd-bd28" type="rule" />
+<infoLink id="9f22-9e3a-c356-4ed2" name="Slow and purposeful" hidden="false" targetId="d518-a916-e747-ecc8" type="rule" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="7" />
+</costs>
+</selectionEntry>
 </selectionEntries>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="165" />
@@ -23953,6 +24443,13 @@ LIMITATIONS - Only a Traitor Death Guard Detachment. The Detachment must include
 </constraints>
 <profiles>
 <profile id="6da2-5c30-aa96-2d4b" name="Ignatius Grulgor" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
+<modifiers>
+<modifier type="set" field="a21c-b80a-e1e4-079a" value="5">
+<conditions>
+<condition field="selections" scope="0086-a340-4721-e31f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ae1b-8555-7b0c-dadd" type="atLeast" />
+</conditions>
+</modifier>
+</modifiers>
 <characteristics>
 <characteristic name="Unit Type" typeId="b0cf-47d7-3836-cf93">Infantry (Character)</characteristic>
 <characteristic name="WS" typeId="52b0-fc35-42a9-af3d">6</characteristic>
@@ -24076,6 +24573,43 @@ LIMITATIONS - Only a Traitor Death Guard Detachment. The Detachment must include
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
 </selectionEntry>
+<selectionEntry id="ae1b-8555-7b0c-dadd" name="Plague Marine (Sons of the Plague Father)" hidden="false" collective="false" import="true" type="upgrade">
+<modifiers>
+<modifier type="set" field="0d2c-058d-0aeb-95d3" value="0">
+<conditions>
+<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="45a2-9b3f-af83-5644" type="lessThan" />
+</conditions>
+</modifier>
+<modifier type="add" field="error" value="Plague Marine: only a model in Power Armour or Artificer Armour (not on a Bike) may be upgraded.">
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="0086-a340-4721-e31f" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a6a2-abea-01b2-ad81" type="atLeast" />
+<condition field="selections" scope="0086-a340-4721-e31f" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d900-78c3-2b10-8f9c" type="atLeast" />
+<condition field="selections" scope="0086-a340-4721-e31f" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0656-5d6b-29bb-1441" type="atLeast" />
+<condition field="selections" scope="0086-a340-4721-e31f" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d0e-b961-6e12-2457" type="atLeast" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="set" field="hidden" value="true">
+<conditions>
+<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="45a2-9b3f-af83-5644" type="lessThan" />
+</conditions>
+</modifier>
+</modifiers>
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0d2c-058d-0aeb-95d3" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="44f1-895c-467e-6f2e" name="Sons of the Plague Father" hidden="false" targetId="a378-2b2c-5ff2-53b7" type="rule" />
+<infoLink id="694d-aef7-bea1-d6d4" name="Feel No Pain" hidden="false" targetId="fb39-b0e7-e2fd-bd28" type="rule" />
+<infoLink id="219d-52c4-4361-9265" name="Slow and purposeful" hidden="false" targetId="d518-a916-e747-ecc8" type="rule" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="7" />
+</costs>
+</selectionEntry>
 </selectionEntries>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="165" />
@@ -24094,6 +24628,13 @@ LIMITATIONS - Only a Traitor Death Guard Detachment. The Detachment must include
 </constraints>
 <profiles>
 <profile id="4faa-8145-a87c-fd5d" name="Nathaniel Garro" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
+<modifiers>
+<modifier type="set" field="a21c-b80a-e1e4-079a" value="5">
+<conditions>
+<condition field="selections" scope="829e-e3a4-981b-ffd5" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8943-7d4e-a228-da3b" type="atLeast" />
+</conditions>
+</modifier>
+</modifiers>
 <characteristics>
 <characteristic name="Unit Type" typeId="b0cf-47d7-3836-cf93">Infantry (Character)</characteristic>
 <characteristic name="WS" typeId="52b0-fc35-42a9-af3d">6</characteristic>
@@ -24198,6 +24739,43 @@ LIMITATIONS - Only a Traitor Death Guard Detachment. The Detachment must include
 </entryLinks>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
+</costs>
+</selectionEntry>
+<selectionEntry id="8943-7d4e-a228-da3b" name="Plague Marine (Sons of the Plague Father)" hidden="false" collective="false" import="true" type="upgrade">
+<modifiers>
+<modifier type="set" field="ef30-ad2f-5f63-e3d5" value="0">
+<conditions>
+<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="45a2-9b3f-af83-5644" type="lessThan" />
+</conditions>
+</modifier>
+<modifier type="add" field="error" value="Plague Marine: only a model in Power Armour or Artificer Armour (not on a Bike) may be upgraded.">
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="829e-e3a4-981b-ffd5" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a6a2-abea-01b2-ad81" type="atLeast" />
+<condition field="selections" scope="829e-e3a4-981b-ffd5" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d900-78c3-2b10-8f9c" type="atLeast" />
+<condition field="selections" scope="829e-e3a4-981b-ffd5" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0656-5d6b-29bb-1441" type="atLeast" />
+<condition field="selections" scope="829e-e3a4-981b-ffd5" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4d0e-b961-6e12-2457" type="atLeast" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="set" field="hidden" value="true">
+<conditions>
+<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="45a2-9b3f-af83-5644" type="lessThan" />
+</conditions>
+</modifier>
+</modifiers>
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ef30-ad2f-5f63-e3d5" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="0ac1-8f9a-2ac8-ad92" name="Sons of the Plague Father" hidden="false" targetId="a378-2b2c-5ff2-53b7" type="rule" />
+<infoLink id="b050-2b1c-1ac5-81c1" name="Feel No Pain" hidden="false" targetId="fb39-b0e7-e2fd-bd28" type="rule" />
+<infoLink id="1c43-d704-5b22-8fa5" name="Slow and purposeful" hidden="false" targetId="d518-a916-e747-ecc8" type="rule" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="7" />
 </costs>
 </selectionEntry>
 </selectionEntries>
@@ -24365,14 +24943,21 @@ LIMITATIONS - Only a Traitor Death Guard Detachment. The Detachment must include
 </profile>
 </profiles>
 <infoLinks>
+<infoLink id="e46f-c738-b631-f51b" name="Primarch" hidden="false" targetId="1574-1fd4-c0ac-5859" type="rule" />
+<infoLink id="98ec-af77-9f29-bdae" name="Supreme Commander" hidden="false" targetId="d94c-8ff7-0b2a-e614" type="rule" />
+<infoLink id="8201-018f-f8e8-c7aa" name="Sire of the Legion" hidden="false" targetId="391f-9b36-2222-6be8" type="rule" />
+<infoLink id="9fc2-3fc1-e90f-627c" name="Primarch Retinue" hidden="false" targetId="a1b7-ef57-af26-8610" type="rule" />
+<infoLink id="2ead-5730-f0b1-5e59" name="Primarchs and Transports" hidden="false" targetId="fcad-e137-cac1-45aa" type="rule" />
+<infoLink id="2d62-c690-3f32-775c" name="The Price of Failure" hidden="false" targetId="aa6d-be24-da94-b4fb" type="rule" />
+<infoLink id="6475-5dca-b7ee-deaa" name="The Clash of Demigods" hidden="false" targetId="188e-8c37-5cdd-9cf1" type="rule" />
 <infoLink id="395a-bf5d-d5b0-0ed1" name="Daemon Primarchs" hidden="false" targetId="448f-6e48-10bd-071d" type="rule" />
 <infoLink id="622d-54f5-e03a-acbc" name="Daemon" hidden="false" targetId="2e04-a925-ec32-e078" type="rule" />
 <infoLink id="b42b-9cc6-33b4-ac70" name="Fear" hidden="false" targetId="a68f-1456-3d88-39b5" type="rule" />
 <infoLink id="3f2c-c892-6fb4-e92a" name="Fearless" hidden="false" targetId="7460-d0b4-32f7-f367" type="rule" />
 <infoLink id="6d01-b12e-1321-cf1f" name="Eternal Warrior" hidden="false" targetId="1a9b-eb8d-626d-19a4" type="rule" />
 <infoLink id="a369-d552-8321-a503" name="Feel No Pain" hidden="false" targetId="fb39-b0e7-e2fd-bd28" type="rule" />
-<infoLink id="b16c-bf0d-8021-594a" name="Poison Resistance" hidden="false" targetId="9156-7a56-5bfb-6e2b" type="rule" />
 <infoLink id="b756-10ec-540c-3d2c" name="Adamantium Will" hidden="false" targetId="3cc6-735d-945d-4fd7" type="rule" />
+<infoLink id="3de4-7089-91c2-0be3" name="Poison Cannot Kill Death" hidden="false" targetId="1d93-6f22-2499-86c9" type="rule" />
 <infoLink id="ba14-f031-7762-5e32" name="Master of the Legion" hidden="false" targetId="7a4c-8b34-41a7-547b" type="rule" />
 <infoLink id="5092-90aa-63a0-e8a3" name="Psyker" hidden="false" targetId="b92c-c0d1-f76c-d5dd" type="rule" />
 <infoLink id="f408-1302-63ab-61a8" name="Burdened Wings" hidden="false" targetId="2bef-80d0-22e5-5d68" type="rule" />
@@ -24508,6 +25093,11 @@ LIMITATIONS - Only a Traitor Death Guard Detachment. The Detachment must include
 <entryLink id="89b5-6b74-def6-daa8" name="Havoc Launcher" hidden="false" collective="false" import="true" targetId="e5ca-0747-ff5e-b3b5" type="selectionEntry">
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
+</costs>
+</entryLink>
+<entryLink id="3239-61fd-9e51-6f28" name="Alchem Flamer" hidden="false" collective="false" import="true" targetId="e887-ec43-b1d9-fc95" type="selectionEntry">
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
 </entryLink>
 </entryLinks>
@@ -24801,6 +25391,16 @@ LIMITATIONS - Only a Traitor Death Guard Detachment. The Detachment must include
 </entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
+<entryLinks>
+<entryLink id="b196-d7ae-9790-42de" name="Manreaper" hidden="false" collective="false" import="true" targetId="dfb7-dcb2-a57d-0f0c" type="selectionEntry">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bd0a-0bd9-1e8c-0624" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
+</costs>
+</entryLink>
+</entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
 <entryLinks>
@@ -25080,12 +25680,12 @@ LIMITATIONS - Only a Traitor Death Guard Detachment. The Detachment must include
 <repeat field="selections" scope="c8be-82af-6040-137b" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" repeats="1" roundUp="false" />
 </repeats>
 </modifier>
-<modifier type="set" field="hidden" value="true">
+<modifier type="set" field="85fd-2ce5-e979-bb81" value="0">
 <conditions>
 <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="45a2-9b3f-af83-5644" type="lessThan" />
 </conditions>
 </modifier>
-<modifier type="set" field="85fd-2ce5-e979-bb81" value="0">
+<modifier type="set" field="hidden" value="true">
 <conditions>
 <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="45a2-9b3f-af83-5644" type="lessThan" />
 </conditions>
@@ -25700,9 +26300,9 @@ LIMITATIONS - Only a Traitor Death Guard Detachment. The Detachment must include
 </selectionEntryGroup>
 </selectionEntryGroups>
 <entryLinks>
-<entryLink id="0b44-c457-7379-8043" name="Manreaper" hidden="false" collective="false" import="true" targetId="dfb7-dcb2-a57d-0f0c" type="selectionEntry">
+<entryLink id="ae7e-2406-acd4-9aa6" name="Manreaper" hidden="false" collective="false" import="true" targetId="dfb7-dcb2-a57d-0f0c" type="selectionEntry">
 <constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9754-e2bf-0c84-8e71" type="max" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ef89-10e4-ec37-018c" type="max" />
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
@@ -26251,9 +26851,9 @@ LIMITATIONS - Only a Traitor Death Guard Detachment. The Detachment must include
 </selectionEntryGroup>
 </selectionEntryGroups>
 <entryLinks>
-<entryLink id="323d-cb39-6392-a6ba" name="Manreaper" hidden="false" collective="false" import="true" targetId="dfb7-dcb2-a57d-0f0c" type="selectionEntry">
+<entryLink id="61fd-34c1-cf5a-202e" name="Manreaper" hidden="false" collective="false" import="true" targetId="dfb7-dcb2-a57d-0f0c" type="selectionEntry">
 <constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f28e-f283-d0c2-e7f5" type="max" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5e3c-4fbb-eab9-8d9b" type="max" />
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
@@ -26835,9 +27435,9 @@ LIMITATIONS - Only a Traitor Death Guard Detachment. The Detachment must include
 </selectionEntryGroup>
 </selectionEntryGroups>
 <entryLinks>
-<entryLink id="8e40-244c-30b7-b2fd" name="Manreaper" hidden="false" collective="false" import="true" targetId="dfb7-dcb2-a57d-0f0c" type="selectionEntry">
+<entryLink id="15af-7ba1-48df-b227" name="Manreaper" hidden="false" collective="false" import="true" targetId="dfb7-dcb2-a57d-0f0c" type="selectionEntry">
 <constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2e7a-525d-30a6-7f5d" type="max" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8e4c-ee43-22ee-b76f" type="max" />
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
@@ -26901,12 +27501,12 @@ LIMITATIONS - Only a Traitor Death Guard Detachment. The Detachment must include
 <repeat field="selections" scope="6e9c-0ec5-5baf-e2d8" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" repeats="1" roundUp="false" />
 </repeats>
 </modifier>
-<modifier type="set" field="hidden" value="true">
+<modifier type="set" field="a3a0-5d23-b008-d097" value="0">
 <conditions>
 <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="45a2-9b3f-af83-5644" type="lessThan" />
 </conditions>
 </modifier>
-<modifier type="set" field="a3a0-5d23-b008-d097" value="0">
+<modifier type="set" field="hidden" value="true">
 <conditions>
 <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="45a2-9b3f-af83-5644" type="lessThan" />
 </conditions>
@@ -27816,9 +28416,9 @@ LIMITATIONS - Only a Traitor Death Guard Detachment. The Detachment must include
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
 </costs>
 </entryLink>
-<entryLink id="e86d-f3c0-e989-b1e2" name="Manreaper" hidden="false" collective="false" import="true" targetId="dfb7-dcb2-a57d-0f0c" type="selectionEntry">
+<entryLink id="85a5-e99c-0996-aee3" name="Manreaper" hidden="false" collective="false" import="true" targetId="dfb7-dcb2-a57d-0f0c" type="selectionEntry">
 <constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a853-2c65-ef37-9c6a" type="max" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2afa-c104-401a-5ab7" type="max" />
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
@@ -28186,9 +28786,9 @@ LIMITATIONS - Only a Traitor Death Guard Detachment. The Detachment must include
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
 </costs>
 </entryLink>
-<entryLink id="61f1-590b-dc2e-7292" name="Manreaper" hidden="false" collective="false" import="true" targetId="dfb7-dcb2-a57d-0f0c" type="selectionEntry">
+<entryLink id="41c1-bce4-e60c-f62e" name="Manreaper" hidden="false" collective="false" import="true" targetId="dfb7-dcb2-a57d-0f0c" type="selectionEntry">
 <constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e061-ac6e-dccf-aa29" type="max" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8acd-b49f-8bda-3d07" type="max" />
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
@@ -28603,9 +29203,9 @@ LIMITATIONS - Only a Traitor Death Guard Detachment. The Detachment must include
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
 </costs>
 </entryLink>
-<entryLink id="6895-8b37-836c-5443" name="Manreaper" hidden="false" collective="false" import="true" targetId="dfb7-dcb2-a57d-0f0c" type="selectionEntry">
+<entryLink id="3dae-679e-7d7d-a623" name="Manreaper" hidden="false" collective="false" import="true" targetId="dfb7-dcb2-a57d-0f0c" type="selectionEntry">
 <constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0cc3-c54b-6ceb-35cd" type="max" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7dee-e65e-c6ae-05bf" type="max" />
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
@@ -29388,9 +29988,9 @@ LIMITATIONS - Only a Traitor Death Guard Detachment. The Detachment must include
 </selectionEntryGroup>
 </selectionEntryGroups>
 <entryLinks>
-<entryLink id="93a4-8d6d-dbe6-914f" name="Manreaper" hidden="false" collective="false" import="true" targetId="dfb7-dcb2-a57d-0f0c" type="selectionEntry">
+<entryLink id="95be-5fc2-5b1f-562b" name="Manreaper" hidden="false" collective="false" import="true" targetId="dfb7-dcb2-a57d-0f0c" type="selectionEntry">
 <constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7231-7b49-9229-9f0e" type="max" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cd17-f801-a192-637f" type="max" />
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
@@ -29939,9 +30539,9 @@ LIMITATIONS - Only a Traitor Death Guard Detachment. The Detachment must include
 </selectionEntryGroup>
 </selectionEntryGroups>
 <entryLinks>
-<entryLink id="d0ad-428b-f981-4438" name="Manreaper" hidden="false" collective="false" import="true" targetId="dfb7-dcb2-a57d-0f0c" type="selectionEntry">
+<entryLink id="fe11-bfa5-f1fc-e22d" name="Manreaper" hidden="false" collective="false" import="true" targetId="dfb7-dcb2-a57d-0f0c" type="selectionEntry">
 <constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e75d-f39b-9516-26e2" type="max" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0246-3fb7-130c-92ca" type="max" />
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
@@ -30523,9 +31123,9 @@ LIMITATIONS - Only a Traitor Death Guard Detachment. The Detachment must include
 </selectionEntryGroup>
 </selectionEntryGroups>
 <entryLinks>
-<entryLink id="65b7-1768-8212-6c3f" name="Manreaper" hidden="false" collective="false" import="true" targetId="dfb7-dcb2-a57d-0f0c" type="selectionEntry">
+<entryLink id="2f9d-c1d4-c4b1-e26a" name="Manreaper" hidden="false" collective="false" import="true" targetId="dfb7-dcb2-a57d-0f0c" type="selectionEntry">
 <constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3faa-9867-5df4-37e2" type="max" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="61fa-e847-c0ec-900c" type="max" />
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
@@ -30589,12 +31189,12 @@ LIMITATIONS - Only a Traitor Death Guard Detachment. The Detachment must include
 <repeat field="selections" scope="5fb6-a52b-4f8b-575d" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" repeats="1" roundUp="false" />
 </repeats>
 </modifier>
-<modifier type="set" field="hidden" value="true">
+<modifier type="set" field="1393-015d-e852-7eef" value="0">
 <conditions>
 <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="45a2-9b3f-af83-5644" type="lessThan" />
 </conditions>
 </modifier>
-<modifier type="set" field="1393-015d-e852-7eef" value="0">
+<modifier type="set" field="hidden" value="true">
 <conditions>
 <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="45a2-9b3f-af83-5644" type="lessThan" />
 </conditions>
@@ -31504,9 +32104,9 @@ LIMITATIONS - Only a Traitor Death Guard Detachment. The Detachment must include
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
 </costs>
 </entryLink>
-<entryLink id="cd79-d529-11c5-779b" name="Manreaper" hidden="false" collective="false" import="true" targetId="dfb7-dcb2-a57d-0f0c" type="selectionEntry">
+<entryLink id="76fd-917d-a3d6-67b2" name="Manreaper" hidden="false" collective="false" import="true" targetId="dfb7-dcb2-a57d-0f0c" type="selectionEntry">
 <constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3329-c05f-826a-e657" type="max" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0e4e-008f-1c7a-19ff" type="max" />
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
@@ -31874,9 +32474,9 @@ LIMITATIONS - Only a Traitor Death Guard Detachment. The Detachment must include
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
 </costs>
 </entryLink>
-<entryLink id="f30a-c76c-c2ef-12a2" name="Manreaper" hidden="false" collective="false" import="true" targetId="dfb7-dcb2-a57d-0f0c" type="selectionEntry">
+<entryLink id="9962-1249-c5b4-61cb" name="Manreaper" hidden="false" collective="false" import="true" targetId="dfb7-dcb2-a57d-0f0c" type="selectionEntry">
 <constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e7e9-bb4f-a818-c3b4" type="max" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c691-622f-4f88-349c" type="max" />
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
@@ -32291,9 +32891,9 @@ LIMITATIONS - Only a Traitor Death Guard Detachment. The Detachment must include
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
 </costs>
 </entryLink>
-<entryLink id="ce5d-fe2b-a5d0-84f1" name="Manreaper" hidden="false" collective="false" import="true" targetId="dfb7-dcb2-a57d-0f0c" type="selectionEntry">
+<entryLink id="7323-fa03-a521-bd29" name="Manreaper" hidden="false" collective="false" import="true" targetId="dfb7-dcb2-a57d-0f0c" type="selectionEntry">
 <constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8e52-5367-548c-b34e" type="max" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="74d8-af0a-7c9d-6c19" type="max" />
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
@@ -34097,9 +34697,9 @@ LIMITATIONS - Only a Traitor Death Guard Detachment. The Detachment must include
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
 </costs>
 </entryLink>
-<entryLink id="454f-d19e-3940-04ba" name="Manreaper" hidden="false" collective="false" import="true" targetId="dfb7-dcb2-a57d-0f0c" type="selectionEntry">
+<entryLink id="329f-9da6-607d-a4fd" name="Manreaper" hidden="false" collective="false" import="true" targetId="dfb7-dcb2-a57d-0f0c" type="selectionEntry">
 <constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2c42-b356-2497-7310" type="max" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b151-b1cb-4b1a-cef5" type="max" />
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
@@ -34467,9 +35067,9 @@ LIMITATIONS - Only a Traitor Death Guard Detachment. The Detachment must include
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
 </costs>
 </entryLink>
-<entryLink id="556f-1310-a1dc-31e4" name="Manreaper" hidden="false" collective="false" import="true" targetId="dfb7-dcb2-a57d-0f0c" type="selectionEntry">
+<entryLink id="6927-4ab2-26e7-f190" name="Manreaper" hidden="false" collective="false" import="true" targetId="dfb7-dcb2-a57d-0f0c" type="selectionEntry">
 <constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c645-9adc-d4a4-e0aa" type="max" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5719-d9fe-a31e-0ad6" type="max" />
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
@@ -34884,9 +35484,9 @@ LIMITATIONS - Only a Traitor Death Guard Detachment. The Detachment must include
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
 </costs>
 </entryLink>
-<entryLink id="8c49-18ef-2df8-7484" name="Manreaper" hidden="false" collective="false" import="true" targetId="dfb7-dcb2-a57d-0f0c" type="selectionEntry">
+<entryLink id="be76-1de6-2eda-3a35" name="Manreaper" hidden="false" collective="false" import="true" targetId="dfb7-dcb2-a57d-0f0c" type="selectionEntry">
 <constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5025-f0d5-3b35-2ad9" type="max" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3654-b08a-69d2-2cfe" type="max" />
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
@@ -35649,9 +36249,9 @@ LIMITATIONS - Only a Traitor Death Guard Detachment. The Detachment must include
 </selectionEntryGroup>
 </selectionEntryGroups>
 <entryLinks>
-<entryLink id="6d8e-238c-2920-303f" name="Manreaper" hidden="false" collective="false" import="true" targetId="dfb7-dcb2-a57d-0f0c" type="selectionEntry">
+<entryLink id="96e9-7f1b-1cbe-05aa" name="Manreaper" hidden="false" collective="false" import="true" targetId="dfb7-dcb2-a57d-0f0c" type="selectionEntry">
 <constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e0f5-43df-9351-6503" type="max" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="47ae-1f53-07b9-46c1" type="max" />
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
@@ -35813,12 +36413,12 @@ LIMITATIONS - Only a Traitor Death Guard Detachment. The Detachment must include
 <repeat field="selections" scope="39ca-c015-76be-e002" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" repeats="1" roundUp="false" />
 </repeats>
 </modifier>
-<modifier type="set" field="hidden" value="true">
+<modifier type="set" field="af03-5d41-d2f6-6358" value="0">
 <conditions>
 <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="45a2-9b3f-af83-5644" type="lessThan" />
 </conditions>
 </modifier>
-<modifier type="set" field="af03-5d41-d2f6-6358" value="0">
+<modifier type="set" field="hidden" value="true">
 <conditions>
 <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="45a2-9b3f-af83-5644" type="lessThan" />
 </conditions>
@@ -35857,18 +36457,72 @@ LIMITATIONS - Only a Traitor Death Guard Detachment. The Detachment must include
 </entryLink>
 </entryLinks>
 </selectionEntryGroup>
+<selectionEntryGroup id="b7fd-4a38-773d-f532" name="Legion Destroyer Company: Missile Launcher (up to 2 per 5 models)" hidden="false" collective="false" import="true">
+<modifiers>
+<modifier type="increment" field="b62a-f422-272f-e5e7" value="2">
+<repeats>
+<repeat field="selections" scope="39ca-c015-76be-e002" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" repeats="1" roundUp="false" />
+</repeats>
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="16f3-4196-2250-3a21" type="atLeast" />
+</conditions>
+</modifier>
+<modifier type="set" field="hidden" value="true">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="16f3-4196-2250-3a21" type="lessThan" />
+</conditions>
+</modifier>
+</modifiers>
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b62a-f422-272f-e5e7" type="max" />
+</constraints>
+<entryLinks>
+<entryLink id="0b81-ed1f-9365-a8f2" name="Missile Launcher with Suspensor Web and Rad Missiles" hidden="false" collective="false" import="true" targetId="b433-2f89-1970-965a" type="selectionEntry">
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
+</costs>
+</entryLink>
+</entryLinks>
+</selectionEntryGroup>
 <selectionEntryGroup id="9e9e-9768-0544-7c8b" name="Dedicated Transport" hidden="false" collective="false" import="true">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0c28-54fd-2c6d-8ad5" type="max" />
 </constraints>
 <entryLinks>
-<entryLink id="83eb-0d75-b8de-7f5d" name="Legion Drop Pod (Orbital Assault)" hidden="false" collective="false" import="true" targetId="4e1c-55bd-1f6c-9584" type="selectionEntry">
+<entryLink id="7691-10c1-9642-06ea" name="Legion Rhino Armoured Carrier" hidden="false" collective="false" import="true" targetId="9572-f669-c5f3-b3d0" type="selectionEntry">
 <modifiers>
-<modifier type="set" field="hidden" value="true">
+<modifier type="add" field="error" value="Too many models for a Legion Rhino Armoured Carrier (capacity 10).">
+<conditionGroups>
+<conditionGroup type="and">
 <conditions>
-<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b68d-b2ba-b013-f6c1" type="lessThan" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9572-f669-c5f3-b3d0" type="atLeast" />
+<condition field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
 </conditions>
+</conditionGroup>
+</conditionGroups>
 </modifier>
+<modifier type="add" field="error" value="A Legion Rhino Armoured Carrier cannot carry models in Terminator Armour.">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9572-f669-c5f3-b3d0" type="atLeast" />
+</conditions>
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a6a2-abea-01b2-ad81" type="atLeast" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d900-78c3-2b10-8f9c" type="atLeast" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0656-5d6b-29bb-1441" type="atLeast" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+</modifiers>
+</entryLink>
+<entryLink id="fa95-baa0-ecfa-9107" name="Legion Drop Pod" hidden="false" collective="false" import="true" targetId="4e1c-55bd-1f6c-9584" type="selectionEntry">
+<modifiers>
 <modifier type="add" field="error" value="Too many models for a Legion Drop Pod (capacity 10).">
 <conditionGroups>
 <conditionGroup type="and">
@@ -35899,17 +36553,9 @@ LIMITATIONS - Only a Traitor Death Guard Detachment. The Detachment must include
 </conditionGroups>
 </modifier>
 </modifiers>
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="38b9-8a6c-50e6-4c00" type="max" />
-</constraints>
 </entryLink>
-<entryLink id="c012-58e9-76e9-8317" name="Anvillus Pattern Dreadclaw Drop Pod (Orbital Assault)" hidden="false" collective="false" import="true" targetId="2bad-68df-db1e-95d9" type="selectionEntry">
+<entryLink id="8412-e4f0-15e7-3ad3" name="Anvillus Pattern Dreadclaw Drop Pod" hidden="false" collective="false" import="true" targetId="2bad-68df-db1e-95d9" type="selectionEntry">
 <modifiers>
-<modifier type="set" field="hidden" value="true">
-<conditions>
-<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b68d-b2ba-b013-f6c1" type="lessThan" />
-</conditions>
-</modifier>
 <modifier type="add" field="error" value="Too many models for a Anvillus Pattern Dreadclaw Drop Pod (capacity 10).">
 <conditionGroups>
 <conditionGroup type="and">
@@ -35940,17 +36586,9 @@ LIMITATIONS - Only a Traitor Death Guard Detachment. The Detachment must include
 </conditionGroups>
 </modifier>
 </modifiers>
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3c89-d3f4-085e-3634" type="max" />
-</constraints>
 </entryLink>
-<entryLink id="1c87-4d4b-2ffe-6175" name="Land Raider Phobos (Armoured Spearhead)" hidden="false" collective="false" import="true" targetId="368f-8af7-ba1b-d0f6" type="selectionEntry">
+<entryLink id="96b5-a5a9-c0d1-dc56" name="Land Raider Phobos" hidden="false" collective="false" import="true" targetId="368f-8af7-ba1b-d0f6" type="selectionEntry">
 <modifiers>
-<modifier type="set" field="hidden" value="true">
-<conditions>
-<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9128-42be-bd92-cf70" type="lessThan" />
-</conditions>
-</modifier>
 <modifier type="add" field="error" value="Too many models for a Land Raider Phobos (capacity 10).">
 <conditionGroups>
 <conditionGroup type="and">
@@ -35981,9 +36619,6 @@ LIMITATIONS - Only a Traitor Death Guard Detachment. The Detachment must include
 </conditionGroups>
 </modifier>
 </modifiers>
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6dfd-e0ba-7a18-88ba" type="max" />
-</constraints>
 </entryLink>
 </entryLinks>
 </selectionEntryGroup>
@@ -36368,9 +37003,9 @@ LIMITATIONS - Only a Traitor Death Guard Detachment. The Detachment must include
 </selectionEntryGroup>
 </selectionEntryGroups>
 <entryLinks>
-<entryLink id="c9e3-0273-7750-7db2" name="Manreaper" hidden="false" collective="false" import="true" targetId="dfb7-dcb2-a57d-0f0c" type="selectionEntry">
+<entryLink id="db4a-9e40-693e-5221" name="Manreaper" hidden="false" collective="false" import="true" targetId="dfb7-dcb2-a57d-0f0c" type="selectionEntry">
 <constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f69f-9838-ec86-a169" type="max" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5ccf-190f-b08a-cb3a" type="max" />
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
@@ -36919,9 +37554,9 @@ LIMITATIONS - Only a Traitor Death Guard Detachment. The Detachment must include
 </selectionEntryGroup>
 </selectionEntryGroups>
 <entryLinks>
-<entryLink id="d126-911d-d325-e8ac" name="Manreaper" hidden="false" collective="false" import="true" targetId="dfb7-dcb2-a57d-0f0c" type="selectionEntry">
+<entryLink id="067b-6f46-0194-aeb2" name="Manreaper" hidden="false" collective="false" import="true" targetId="dfb7-dcb2-a57d-0f0c" type="selectionEntry">
 <constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8c6b-cf3a-4760-d7d4" type="max" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="00ff-7dae-992a-4b6b" type="max" />
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
@@ -37503,9 +38138,9 @@ LIMITATIONS - Only a Traitor Death Guard Detachment. The Detachment must include
 </selectionEntryGroup>
 </selectionEntryGroups>
 <entryLinks>
-<entryLink id="f394-de3f-2a04-f653" name="Manreaper" hidden="false" collective="false" import="true" targetId="dfb7-dcb2-a57d-0f0c" type="selectionEntry">
+<entryLink id="4122-1d53-4869-7150" name="Manreaper" hidden="false" collective="false" import="true" targetId="dfb7-dcb2-a57d-0f0c" type="selectionEntry">
 <constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="66fa-fa8f-7c67-83bf" type="max" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2acc-694d-94b4-8e93" type="max" />
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
@@ -37569,12 +38204,12 @@ LIMITATIONS - Only a Traitor Death Guard Detachment. The Detachment must include
 <repeat field="selections" scope="4b35-0894-6da8-47cb" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" repeats="1" roundUp="false" />
 </repeats>
 </modifier>
-<modifier type="set" field="hidden" value="true">
+<modifier type="set" field="750b-a982-4b90-e275" value="0">
 <conditions>
 <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="45a2-9b3f-af83-5644" type="lessThan" />
 </conditions>
 </modifier>
-<modifier type="set" field="750b-a982-4b90-e275" value="0">
+<modifier type="set" field="hidden" value="true">
 <conditions>
 <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="45a2-9b3f-af83-5644" type="lessThan" />
 </conditions>
@@ -38487,9 +39122,9 @@ LIMITATIONS - Only a Traitor Death Guard Detachment. The Detachment must include
 </selectionEntryGroup>
 </selectionEntryGroups>
 <entryLinks>
-<entryLink id="ac57-5134-ce20-d26a" name="Manreaper" hidden="false" collective="false" import="true" targetId="dfb7-dcb2-a57d-0f0c" type="selectionEntry">
+<entryLink id="ab0a-be6d-95a7-a991" name="Manreaper" hidden="false" collective="false" import="true" targetId="dfb7-dcb2-a57d-0f0c" type="selectionEntry">
 <constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4f86-7e71-34af-8c48" type="max" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4176-bb97-2df6-9fb9" type="max" />
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
@@ -39038,9 +39673,9 @@ LIMITATIONS - Only a Traitor Death Guard Detachment. The Detachment must include
 </selectionEntryGroup>
 </selectionEntryGroups>
 <entryLinks>
-<entryLink id="f7e7-66e5-27dd-5158" name="Manreaper" hidden="false" collective="false" import="true" targetId="dfb7-dcb2-a57d-0f0c" type="selectionEntry">
+<entryLink id="b4af-44a6-f699-84a0" name="Manreaper" hidden="false" collective="false" import="true" targetId="dfb7-dcb2-a57d-0f0c" type="selectionEntry">
 <constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="833a-965f-bb95-f915" type="max" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="70e1-5758-4533-79b8" type="max" />
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
@@ -39622,9 +40257,9 @@ LIMITATIONS - Only a Traitor Death Guard Detachment. The Detachment must include
 </selectionEntryGroup>
 </selectionEntryGroups>
 <entryLinks>
-<entryLink id="2057-ea38-9630-2839" name="Manreaper" hidden="false" collective="false" import="true" targetId="dfb7-dcb2-a57d-0f0c" type="selectionEntry">
+<entryLink id="52e7-8aa1-c69e-2d9d" name="Manreaper" hidden="false" collective="false" import="true" targetId="dfb7-dcb2-a57d-0f0c" type="selectionEntry">
 <constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2b36-cc66-b2b4-dcaa" type="max" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6578-54d4-2ac2-f82d" type="max" />
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
@@ -39688,12 +40323,12 @@ LIMITATIONS - Only a Traitor Death Guard Detachment. The Detachment must include
 <repeat field="selections" scope="ef85-540a-f895-3c75" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" repeats="1" roundUp="false" />
 </repeats>
 </modifier>
-<modifier type="set" field="hidden" value="true">
+<modifier type="set" field="9f4f-c769-6349-41d3" value="0">
 <conditions>
 <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="45a2-9b3f-af83-5644" type="lessThan" />
 </conditions>
 </modifier>
-<modifier type="set" field="9f4f-c769-6349-41d3" value="0">
+<modifier type="set" field="hidden" value="true">
 <conditions>
 <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="45a2-9b3f-af83-5644" type="lessThan" />
 </conditions>
@@ -40606,9 +41241,9 @@ LIMITATIONS - Only a Traitor Death Guard Detachment. The Detachment must include
 </selectionEntryGroup>
 </selectionEntryGroups>
 <entryLinks>
-<entryLink id="0a76-4516-301a-07c9" name="Manreaper" hidden="false" collective="false" import="true" targetId="dfb7-dcb2-a57d-0f0c" type="selectionEntry">
+<entryLink id="d0c5-e860-891f-93cc" name="Manreaper" hidden="false" collective="false" import="true" targetId="dfb7-dcb2-a57d-0f0c" type="selectionEntry">
 <constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="11f7-1482-122e-6c11" type="max" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="77aa-b588-9bf1-1714" type="max" />
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
@@ -41157,9 +41792,9 @@ LIMITATIONS - Only a Traitor Death Guard Detachment. The Detachment must include
 </selectionEntryGroup>
 </selectionEntryGroups>
 <entryLinks>
-<entryLink id="0362-f643-bcb9-a796" name="Manreaper" hidden="false" collective="false" import="true" targetId="dfb7-dcb2-a57d-0f0c" type="selectionEntry">
+<entryLink id="78b1-5d33-a8fc-72b2" name="Manreaper" hidden="false" collective="false" import="true" targetId="dfb7-dcb2-a57d-0f0c" type="selectionEntry">
 <constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="db22-7f39-6b1a-140b" type="max" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c162-2934-c10d-aea0" type="max" />
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
@@ -41741,9 +42376,9 @@ LIMITATIONS - Only a Traitor Death Guard Detachment. The Detachment must include
 </selectionEntryGroup>
 </selectionEntryGroups>
 <entryLinks>
-<entryLink id="83a0-527e-7912-f5c9" name="Manreaper" hidden="false" collective="false" import="true" targetId="dfb7-dcb2-a57d-0f0c" type="selectionEntry">
+<entryLink id="5274-6453-36be-8f57" name="Manreaper" hidden="false" collective="false" import="true" targetId="dfb7-dcb2-a57d-0f0c" type="selectionEntry">
 <constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8ab9-3186-8582-eba8" type="max" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3fc8-0e58-2a0e-2bf4" type="max" />
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
@@ -41807,12 +42442,12 @@ LIMITATIONS - Only a Traitor Death Guard Detachment. The Detachment must include
 <repeat field="selections" scope="04d1-2393-470f-2606" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" repeats="1" roundUp="false" />
 </repeats>
 </modifier>
-<modifier type="set" field="hidden" value="true">
+<modifier type="set" field="22c5-e694-0a08-27d3" value="0">
 <conditions>
 <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="45a2-9b3f-af83-5644" type="lessThan" />
 </conditions>
 </modifier>
-<modifier type="set" field="22c5-e694-0a08-27d3" value="0">
+<modifier type="set" field="hidden" value="true">
 <conditions>
 <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="45a2-9b3f-af83-5644" type="lessThan" />
 </conditions>
@@ -43568,6 +44203,7 @@ LIMITATIONS - Only a Traitor Death Guard Detachment. The Detachment must include
 <selectionEntry id="6499-dee4-12c8-b88c" name="Lantern (Daemon Primarch)" hidden="false" collective="false" import="true" type="upgrade">
 <infoLinks>
 <infoLink id="d466-bede-c8e7-0132" name="Lantern (Daemon Primarch)" hidden="false" targetId="28c5-c88b-1f59-519b" type="profile" />
+<infoLink id="efd1-fe7a-b33f-b832" name="Armourbane" hidden="false" targetId="8985-77c5-69dd-7474" type="rule" />
 <infoLink id="0699-2963-7f23-4fee" name="Master-Crafted" hidden="false" targetId="6434-4809-0604-6506" type="rule" />
 </infoLinks>
 <costs>
@@ -44164,7 +44800,7 @@ LIMITATIONS - Only a Traitor Death Guard Detachment. The Detachment must include
 <selectionEntry id="30c0-716c-6f04-e1a8" name="Daemonic Barbaran Plate" hidden="false" collective="false" import="true" type="upgrade">
 <rules>
 <rule id="507a-577b-6e45-1032" name="Daemonic Barbaran Plate" hidden="false">
-<description>Mortarion, Prince of Decay has a 2+ Armour Save and a 4+ Invulnerable Save (as shown in his profile). The book gives no further rules for this armour.</description>
+<description>Mortarion, Prince of Decay has a 2+ Armour Save and a 4+ Invulnerable Save (as shown in his profile). It has no further rules.</description>
 </rule>
 </rules>
 <costs>
@@ -44568,16 +45204,16 @@ Afterwards the squad may not enter Overwatch, may not make Return Fire or Stand 
 <description>All Death Guard models have Feel No Pain (4+) against wounds caused by Poisoned weapons.</description>
 </rule>
 <rule id="fd53-7d72-95f2-7491" name="Footslogging Killers" hidden="false">
-<description>A Death Guard army may take only 0-1 selection in total from the following units: Land Speeder Squadron, Attack Bike Squadron, Bike Squadron.</description>
+<description>A Death Guard army may take only 0-1 selection in total from the following units: Land Speeder Squadron, Attack Bike Squadron, Bike Squadron. Legion Sky Hunter Jetbike Squadrons and Legion Javelin Attack Speeder Squadrons also count towards this 0-1 limit.</description>
 </rule>
 <rule id="e7cd-126d-2962-6ee2" name="Manreaper" hidden="false">
-<description>A Two-Handed Power Weapon. At the beginning of each Assault phase in which the bearer is engaged in close combat, roll a D3: the bearer gains that many additional Attacks until the end of that Assault phase. If the bearer directs all of his attacks against a single enemy Independent Character or other separately targetable model, he gains only +1 Attack instead. The bearer receives no additional Attack for fighting with a second close-combat weapon. Any Death Guard Sergeant or Character permitted to select weapons from the Space Marine Armoury may purchase a Manreaper for 20 points.</description>
+<description>A Two-Handed Power Weapon. At the beginning of each Assault phase in which the bearer is engaged in close combat, roll a D3: the bearer gains that many additional Attacks until the end of that Assault phase. If the bearer directs all of his attacks against a single enemy Independent Character or other separately targetable model, he gains only +1 Attack instead. The bearer receives no additional Attack for fighting with a second close-combat weapon. Any Death Guard Sergeant or Character permitted to select weapons from the Space Marine Armoury may purchase a Manreaper for 20 points. As an exception, Sergeants that could not normally select weapons from the Armoury may also purchase it.</description>
 </rule>
 <rule id="fdf0-fce4-2aa5-1944" name="Alchem Flamer" hidden="false">
 <description>A Death Guard model equipped with a Flamer or Heavy Flamer may replace it with an Alchem Flamer at no additional cost. A model permitted to select a Combi-flamer may instead select a Combi-Alchem Flamer for +4 points in addition to the normal cost of the Combi-flamer; the Alchem Flamer component follows the normal rules for Combi-weapons.</description>
 </rule>
 <rule id="4a0d-af5e-06fc-c54d" name="The Reaping" hidden="false">
-<description>EFFECTS - Superior Firepower: Legion Veteran Squads and Legion Heavy Support Squads may be selected as non-compulsory Troops choices; they may not fulfil compulsory Troops selections unless another rule specifically permits them to do so. Implacable: all Death Guard Infantry units gain Move Through Cover (including models wearing any form of Terminator Armour). Dark Arsenal: any Death Guard Character or Independent Character may purchase Rad Grenades for +10 points (normal Rad Grenade rules).
+<description>EFFECTS - Superior Firepower: Legion Veteran Squads and Legion Heavy Support Squads may be selected as non-compulsory Troops choices; they may not fulfil compulsory Troops selections unless another rule specifically permits them to do so. Implacable: all Death Guard Infantry units gain Move Through Cover (including models wearing any form of Terminator Armour). Dark Arsenal: any Death Guard Character or Independent Character may purchase Rad Grenades for +10 points (this includes Sergeants; a Sergeant's Rad Grenades affect his whole unit until he is removed as a casualty).
 LIMITATIONS - Units in the Detachment may not make Advance Moves. Vehicles in the Detachment may not move Flat Out. Units in the Detachment may not deploy using Deep Strike; units which are required to deploy using Deep Strike may not be selected. The normal Death Guard restriction on Fast Attack choices from Footslogging Killers continues to apply.</description>
 </rule>
 <rule id="ab10-7acf-bc66-3881" name="Creeping Death" hidden="false">
@@ -44607,7 +45243,7 @@ LIMITATIONS - Only a Traitor Death Guard Detachment. The Detachment must include
 <description>Typhon may select either a Deathshroud Terminator Squad or a Legion Terminator Command Squad as his retinue. The selected squad does not occupy a separate Force Organisation slot.</description>
 </rule>
 <rule id="29eb-7f8e-da47-d9b1" name="Psychic Powers (Morturg)" hidden="false">
-<description>Morturg selects one psychic power from the normal Legion Librarian Psychic Power list. He follows all normal ProHammer rules for Psykers and Mastery Level 1.</description>
+<description>Morturg selects one psychic power from the Telepathy ProHammer Psychic Power list. He follows all normal ProHammer rules for Psykers and Mastery Level 1.</description>
 </rule>
 <rule id="5ea4-2eb5-467c-2b2d" name="Master of Ambush" hidden="false">
 <description>Morturg and one Death Guard Infantry unit he has joined before deployment may deploy using Infiltrate. Morturg must remain joined to that unit when it is deployed.</description>
@@ -44618,7 +45254,7 @@ LIMITATIONS - Only a Traitor Death Guard Detachment. The Detachment must include
 <rule id="b6e4-ba3b-1957-5551" name="Command Retinue (Morturg)" hidden="false">
 <description>Morturg may select one Mortus Poisoner Squad as his retinue. The selected squad does not occupy a separate Force Organisation slot.</description>
 </rule>
-<rule id="1d4d-24b2-3874-d6b7" name="Art of Destruction (Durak Rask)" hidden="false">
+<rule id="ecfe-b9cc-a0a6-8d0c" name="Force of Destruction" hidden="false">
 <description>Durak Rask and any Death Guard Infantry unit he has joined have the Tank Hunters special rule.</description>
 </rule>
 <rule id="12cd-3907-00f6-a8ff" name="Command Retinue (Death Guard Captains)" hidden="false">
@@ -44658,10 +45294,7 @@ LIMITATIONS - Only a Traitor Death Guard Detachment. The Detachment must include
 <description>Mortarion may select one Deathshroud Terminator Squad as his Primarch Retinue. He may not select a Legion Honour Guard Squad or Legion Terminator Command Squad. A Deathshroud Terminator Squad selected in this manner does not occupy an additional Force Organisation selection and otherwise follows the normal Primarch Retinue rules.</description>
 </rule>
 <rule id="5567-61fe-c039-5fbb" name="Daemonic Barbaran Plate" hidden="false">
-<description>Mortarion, Prince of Decay has a 2+ Armour Save and a 4+ Invulnerable Save (as shown in his profile). The book gives no further rules for this armour.</description>
-</rule>
-<rule id="9156-7a56-5bfb-6e2b" name="Poison Resistance" hidden="false">
-<description>Listed in the special rules of Mortarion, Prince of Decay but not defined in the book (see the questions file); presumably he is immune to or highly resistant against Poisoned attacks (compare Poison Cannot Kill Death).</description>
+<description>Mortarion, Prince of Decay has a 2+ Armour Save and a 4+ Invulnerable Save (as shown in his profile). It has no further rules.</description>
 </rule>
 <rule id="2bef-80d0-22e5-5d68" name="Burdened Wings" hidden="false">
 <description>Mortarion may move over intervening models and terrain as though using a Jump Pack, but may never move more than 9" during the Movement phase. Mortarion may never join another unit and no model may join him.</description>
@@ -44685,7 +45318,7 @@ LIMITATIONS - Only a Traitor Death Guard Detachment. The Detachment must include
 <description>Phase: Mortarion's Shooting phase. Range 12". Choose one enemy unit within range and take a Psychic Test. If successful, the target suffers D6 Strength 4 AP4 hits with Poisoned (3+).</description>
 </rule>
 <rule id="a378-2b2c-5ff2-53b7" name="Sons of the Plague Father" hidden="false">
-<description>If Daemon Primarch Mortarion is included in a Death Guard army, a Death Guard Infantry unit composed entirely of models wearing Power Armour or Artificer Armour may be upgraded to Plague Marines for +7 points per model. Models upgraded in this manner gain +1 Toughness, Feel No Pain (5+) and Slow and Purposeful. Models upgraded to Plague Marines may not benefit from Move Through Cover, regardless of its source. Their normal maximum charge distance is reduced from 6" to 5", and they may not benefit from rules which increase their Movement or charge distance. The Relentless component of Slow and Purposeful applies normally.</description>
+<description>If Daemon Primarch Mortarion is included in a Death Guard army, a Death Guard Infantry unit composed entirely of models wearing Power Armour or Artificer Armour may be upgraded to Plague Marines for +7 points per model. Models upgraded in this manner gain +1 Toughness, Feel No Pain (5+) and Slow and Purposeful. Models upgraded to Plague Marines may not benefit from Move Through Cover, regardless of its source. Their normal maximum charge distance is reduced from 6" to 5", and they may not benefit from rules which increase their Movement or charge distance. The Relentless component of Slow and Purposeful applies normally. Jump Infantry, Breacher Siege Squads (Hardened Power Armour) and Independent Characters in Power Armour or Artificer Armour may also be upgraded. An Independent Character may only join a Plague Marine unit if he has been upgraded to a Plague Marine as well.</description>
 </rule>
 <rule id="1da9-4511-31d2-ca8b" name="Only one Mortarion" hidden="false">
 <description>Mortarion, Prince of Decay may only be selected for a Death Guard army. An army may not include both Mortarion, Prince of Decay and Mortarion in his mortal form.</description>
@@ -45777,7 +46410,7 @@ LIMITATIONS - Only a Traitor Death Guard Detachment. The Detachment must include
 <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">18"</characteristic>
 <characteristic name="S" typeId="6204-806b-a18a-c0be">8</characteristic>
 <characteristic name="AP" typeId="964e-6f66-dcaa-247a">2</characteristic>
-<characteristic name="Type" typeId="54df-9f85-8d55-7440">Assault 1, Master-crafted</characteristic>
+<characteristic name="Type" typeId="54df-9f85-8d55-7440">Assault 1, Master-crafted, Armourbane</characteristic>
 </characteristics>
 </profile>
 <profile id="2f49-9c19-8bb2-7bae" name="Assault Grenade Launcher - Krak" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">

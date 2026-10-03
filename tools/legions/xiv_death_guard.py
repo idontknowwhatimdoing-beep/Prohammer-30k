@@ -28,7 +28,8 @@ RULES = {
     "Resilience of Barbarus": "All Death Guard models have Feel No Pain (4+) against wounds caused by Poisoned weapons.",
     "Footslogging Killers": (
         "A Death Guard army may take only 0-1 selection in total from the following units: Land Speeder Squadron, "
-        "Attack Bike Squadron, Bike Squadron."),
+        "Attack Bike Squadron, Bike Squadron. Legion Sky Hunter Jetbike Squadrons and Legion Javelin Attack Speeder "
+        "Squadrons also count towards this 0-1 limit."),
     # Armoury
     "Manreaper": (
         "A Two-Handed Power Weapon. At the beginning of each Assault phase in which the bearer is engaged in close combat, "
@@ -36,7 +37,8 @@ RULES = {
         "directs all of his attacks against a single enemy Independent Character or other separately targetable model, he "
         "gains only +1 Attack instead. The bearer receives no additional Attack for fighting with a second close-combat "
         "weapon. Any Death Guard Sergeant or Character permitted to select weapons from the Space Marine Armoury may "
-        "purchase a Manreaper for 20 points."),
+        "purchase a Manreaper for 20 points. As an exception, Sergeants that could not normally select weapons from the "
+        "Armoury may also purchase it."),
     "Alchem Flamer": (
         "A Death Guard model equipped with a Flamer or Heavy Flamer may replace it with an Alchem Flamer at no additional "
         "cost. A model permitted to select a Combi-flamer may instead select a Combi-Alchem Flamer for +4 points in "
@@ -48,7 +50,8 @@ RULES = {
         "non-compulsory Troops choices; they may not fulfil compulsory Troops selections unless another rule specifically "
         "permits them to do so. Implacable: all Death Guard Infantry units gain Move Through Cover (including models "
         "wearing any form of Terminator Armour). Dark Arsenal: any Death Guard Character or Independent Character may "
-        "purchase Rad Grenades for +10 points (normal Rad Grenade rules).\n"
+        "purchase Rad Grenades for +10 points (this includes Sergeants; a Sergeant's Rad Grenades affect his whole unit "
+        "until he is removed as a casualty).\n"
         "LIMITATIONS - Units in the Detachment may not make Advance Moves. Vehicles in the Detachment may not move Flat "
         "Out. Units in the Detachment may not deploy using Deep Strike; units which are required to deploy using Deep "
         "Strike may not be selected. The normal Death Guard restriction on Fast Attack choices from Footslogging Killers "
@@ -95,7 +98,7 @@ RULES = {
         "Typhon may select either a Deathshroud Terminator Squad or a Legion Terminator Command Squad as his retinue. The "
         "selected squad does not occupy a separate Force Organisation slot."),
     "Psychic Powers (Morturg)": (
-        "Morturg selects one psychic power from the normal Legion Librarian Psychic Power list. He follows all normal "
+        "Morturg selects one psychic power from the Telepathy ProHammer Psychic Power list. He follows all normal "
         "ProHammer rules for Psykers and Mastery Level 1."),
     "Master of Ambush": (
         "Morturg and one Death Guard Infantry unit he has joined before deployment may deploy using Infiltrate. Morturg "
@@ -106,7 +109,7 @@ RULES = {
     "Command Retinue (Morturg)": (
         "Morturg may select one Mortus Poisoner Squad as his retinue. The selected squad does not occupy a separate Force "
         "Organisation slot."),
-    "Art of Destruction (Durak Rask)": (
+    "Force of Destruction": (
         "Durak Rask and any Death Guard Infantry unit he has joined have the Tank Hunters special rule."),
     "Command Retinue (Death Guard Captains)": (
         "The character may select one Legion Command Squad as his retinue. The selected squad does not occupy a separate "
@@ -149,11 +152,8 @@ RULES = {
         "occupy an additional Force Organisation selection and otherwise follows the normal Primarch Retinue rules."),
     # Mortarion, Prince of Decay
     "Daemonic Barbaran Plate": (
-        "Mortarion, Prince of Decay has a 2+ Armour Save and a 4+ Invulnerable Save (as shown in his profile). The book "
-        "gives no further rules for this armour."),
-    "Poison Resistance": (
-        "Listed in the special rules of Mortarion, Prince of Decay but not defined in the book (see the questions file); "
-        "presumably he is immune to or highly resistant against Poisoned attacks (compare Poison Cannot Kill Death)."),
+        "Mortarion, Prince of Decay has a 2+ Armour Save and a 4+ Invulnerable Save (as shown in his profile). It has no "
+        "further rules."),
     "Burdened Wings": (
         "Mortarion may move over intervening models and terrain as though using a Jump Pack, but may never move more than "
         "9\" during the Movement phase. Mortarion may never join another unit and no model may join him."),
@@ -185,7 +185,9 @@ RULES = {
         "Models upgraded in this manner gain +1 Toughness, Feel No Pain (5+) and Slow and Purposeful. Models upgraded to "
         "Plague Marines may not benefit from Move Through Cover, regardless of its source. Their normal maximum charge "
         "distance is reduced from 6\" to 5\", and they may not benefit from rules which increase their Movement or charge "
-        "distance. The Relentless component of Slow and Purposeful applies normally."),
+        "distance. The Relentless component of Slow and Purposeful applies normally. Jump Infantry, Breacher Siege Squads "
+        "(Hardened Power Armour) and Independent Characters in Power Armour or Artificer Armour may also be upgraded. An "
+        "Independent Character may only join a Plague Marine unit if he has been upgraded to a Plague Marine as well."),
     "Only one Mortarion": ("Mortarion, Prince of Decay may only be selected for a Death Guard army. An army may not "
                            "include both Mortarion, Prince of Decay and Mortarion in his mortal form."),
 }
@@ -198,7 +200,7 @@ WEAPONS_ = {
     "Silence": ("-", "User +1", "-", "Power Weapon, Two-Handed, Rampage, Massive Wound (D3) vs non-Primarchs"),
     "Lantern": ('18"', "8", "2", "Assault 1, Armourbane, Master-crafted"),
     "Silence (Daemon Primarch)": ("-", "User +2", "-", "Power Weapon, Two-Handed, Master-crafted"),
-    "Lantern (Daemon Primarch)": ('18"', "8", "2", "Assault 1, Master-crafted"),
+    "Lantern (Daemon Primarch)": ('18"', "8", "2", "Assault 1, Master-crafted, Armourbane"),
 }
 MULTI = {
     "Assault Grenade Launcher": {
@@ -214,7 +216,7 @@ WEAPON_RULES_ = {
     "Silence": ["Silence", "Two-Handed", "Rampage"],
     "Lantern": ["Armourbane", "Master-Crafted"],
     "Silence (Daemon Primarch)": ["Silence (Daemon Primarch)", "Two-Handed", "Master-Crafted"],
-    "Lantern (Daemon Primarch)": ["Master-Crafted"],
+    "Lantern (Daemon Primarch)": ["Armourbane", "Master-Crafted"],
 }
 WARGEAR_ = {
     "Barbaran Plate": ("Counts as Primarch Armour.", ["Primarch Armour"]),
@@ -227,7 +229,8 @@ GRAVE_WARDEN = uid("unit", "Grave Warden Terminator Squad")
 MORTUS = uid("unit", "Mortus Poisoner Squad")
 MORTARION = uid("unit", "Mortarion, the Reaper")
 DAEMON_MORTARION = uid("unit", "Mortarion, Prince of Decay")
-FOOTSLOG = ["Legion Land Speeder Squadron", "Legion Attack Bike Squadron", "Legion Bike Squadron"]
+FOOTSLOG = ["Legion Land Speeder Squadron", "Legion Attack Bike Squadron", "Legion Bike Squadron",
+            "Legion Sky Hunter Jetbike Squadron", "Legion Javelin Attack Speeder Squadron"]
 
 
 def register():
@@ -235,6 +238,9 @@ def register():
     # Combi-Alchem Flamer: Bolter + Alchem Flamer
     WEAPONS["Combi-Alchem Flamer"] = ["Bolter", "Alchem Flamer"]
     WEAPON_RULES["Combi-Alchem Flamer"] = ["Combi-Weapon", "Poisoned"]
+    # Legion Destroyer Company: Mortus Poisoner Squads count like Legion Destroyer Squads
+    L2.TROOP_RITES["Mortus Poisoner Squad"] = ["Legion Destroyer Company"]
+    L2.NORMAL_ROLE["Mortus Poisoner Squad"] = ELITES
 
 
 # ------------------------------------------------------------------ local helpers
@@ -329,14 +335,22 @@ def mortus_poisoners(key="Mortus Poisoner Squad", root=True):
                           take(pid, "Poison-master Wargear", [("Artificer Armour", 10), ("Phosphex Bomb", 10, 3)]),
                           pa_armoury(pid, u, 10, slots=["Bolt Pistol"], skip=("Artificer Armour",))])
     phos, _ = pool(u, "Phosphex Bomb (one Mortus Poisoner per five models)", u, [("Phosphex Bomb", 10)], 0, every=5)
+    # Legion Destroyer Company (Forbidden Arsenal): up to two per five models
+    rad, rad_mx = pool(u, "Legion Destroyer Company: Missile Launcher (up to 2 per 5 models)", u,
+                       [("Missile Launcher with Suspensor Web and Rad Missiles", 25)], 0)
+    no_dc = [cond(rite_id("Legion Destroyer Company"), "force", "lessThan", 1)]
+    add_mods(rad, [modifier("increment", rad_mx, 2, conds=[rite("Legion Destroyer Company")],
+                            repeats=[repeat("model", u, 5)]),
+                   modifier("set", "hidden", "true", conds=no_dc)])
     rl = [LR, "Counter-Attack", "Destroyer Cadre", "Destroyer Cadre (Mortus Poisoners)"] + ([] if root else ["Retinue"])
     return entry(u, "Mortus Poisoner Squad", typ="unit", cost=150 - 4 * 20,
+                 mods=L2.troop_role_mods("Mortus Poisoner Squad") if root else [],
                  cats=[foc(ELITES, "Elites", u)] if root else [],
                  infolinks=rules_links(rl, key=u),
                  entries=[pm, mp, per_model(u, "Krak Grenades (entire squad)", 2, u, ["Krak Grenades"]),
                           per_model(u, "Melta Bombs (entire squad)", 5, u, ["Melta Bombs"])],
-                 # the book lists no Dedicated Transport; only the Rite of War transports are offered
-                 groups=[phos, transports(u, u, [])])
+                 groups=[phos, rad, transports(u, u, ["Legion Rhino Armoured Carrier", "Legion Drop Pod",
+                                                      "Anvillus Pattern Dreadclaw Drop Pod", "Land Raider Phobos"])])
 
 
 # ------------------------------------------------------------------ characters
@@ -368,14 +382,13 @@ def characters():
          "Command Retinue (Morturg)"],
         retinue=retinue_links("morturg", [mortus_poisoners("morturg-poisoners", root=False)]),
         master=False, loyalist=True,
-        # the psychic power is chosen at the table, as for the Legion Librarian (no list in the builder)
         extra_groups=[take(m, "Wargear", [("Krak Grenades", 2), ("Melta Bombs", 5)])]))
     r = uid("unit", "Durak Rask")
     out.append(named_character(
         LR, "Durak Rask", 165, (5, 5, 4, 4, 3, 4, 3, 9, "2+/5+"),
         ["Artificer Armour", "Refractor Field", "Thunder Hammer", "Volkite Serpenta", "Nuncio Vox", "Phosphex Bomb",
          "Frag Grenades"],
-        ["Art of Destruction (Durak Rask)", "Command Retinue (Death Guard Captains)"],
+        ["Force of Destruction", "Command Retinue (Death Guard Captains)"],
         retinue=retinue_links("rask", [command_squad_for("rask", r)]), loyalist=False,
         extra_groups=[take(r, "Wargear", [("Krak Grenades", 2), ("Melta Bombs", 5)])]))
     g = uid("unit", "Ignatius Grulgor")
@@ -407,31 +420,20 @@ def mortarion():
 def daemon_mortarion():
     return primarch("Daemon Primarchs", "Mortarion, Prince of Decay", 650, (7, 6, 7, 8, 8, 4, 5, 10, "2+/4++"),
                     ["Silence (Daemon Primarch)", "Lantern (Daemon Primarch)", "Daemonic Barbaran Plate"],
-                    ["Daemon", "Fear", "Fearless", "Eternal Warrior", "Feel No Pain", "Poison Resistance",
-                     "Adamantium Will", "Master of the Legion", "Psyker", "Burdened Wings", "The Reaper's Miasma",
+                    ["Daemon", "Fear", "Fearless", "Eternal Warrior", "Feel No Pain", "Adamantium Will",
+                     "Poison Cannot Kill Death", "Master of the Legion", "Psyker", "Burdened Wings", "The Reaper's Miasma",
                      "Reluctant Sorcerer", "Miasma of Pestilence", "Curse of Decay", "Nurgle's Rot",
                      "Sons of the Plague Father", "Only one Mortarion"],
-                    other=MORTARION, unit_type="Monstrous Creature (Character)", loyalist=False, core=False)
+                    other=MORTARION, unit_type="Monstrous Creature (Character)", loyalist=False)
 
 
 # ------------------------------------------------------------------ Legion-wide changes
-ARMOURY_WEAPONS = {W(r[0]) for r in ARMOURY if r[5] == "weapon"}
 
 
 def add_manreaper(ctx):
-    """Manreaper (+20): Praetor/Centurion Armoury and every Sergeant/Character 50-pt Armoury that offers weapons."""
-    add_armoury_items(ctx, [("Manreaper", 20)], who=("praetor", "centurion"))
-    seen = set()
-    for e in ctx.all_entries():
-        for g in e.iter("selectionEntryGroup"):
-            if g.get("name") != "Space Marine Armoury (max 50 pts)" or id(g) in seen:
-                continue
-            seen.add(id(g))
-            if not any(lk.get("targetId") in ARMOURY_WEAPONS for lk in g.iter("entryLink")):
-                continue
-            lid = uid("link", g.get("id"), "dg", "Manreaper")
-            add_to(g, "entryLinks", [link(lid, W("Manreaper"), "Manreaper", cost=20,
-                                          constraints=[constraint(uid(lid, "max"), "max", 1, auto=True)])])
+    """Manreaper (+20): Praetor/Centurion Armoury and every Sergeant/Champion 50-pt Armoury, including the wargear-only
+    ones (author: Sergeants that could not normally select weapons may take it as an exception)."""
+    add_armoury_items(ctx, [("Manreaper", 20)])
 
 
 def alchem_variants(roots, bases, new_name, extra):
@@ -468,8 +470,8 @@ def alchem_variants(roots, bases, new_name, extra):
 
 def add_alchem(ctx):
     """Alchem Flamer for Flamers / Heavy Flamers (same cost), Combi-Alchem Flamer for Combi-flamers (+4), on all
-    non-vehicle entries. Model-count modifiers that count a replaced weapon also count its Alchem version."""
-    roots = [e for e in all_unique(ctx) if not _is_vehicle_root(e)]
+    entries (vehicles and Dreadnoughts included). Model-count modifiers that count a replaced weapon also count its Alchem version."""
+    roots = all_unique(ctx)
     alchem_variants(roots, ["Flamer", "Heavy Flamer", "Heavy Flamer with Suspensor Web"], "Alchem Flamer", 0)
     alchem_variants(roots, ["Combi-Flamer"], "Combi-Alchem Flamer", 4)
     mapping = {W("Flamer"): W("Alchem Flamer"), W("Heavy Flamer"): W("Alchem Flamer"),
@@ -518,52 +520,86 @@ def add_dark_arsenal(ctx):
                                                                                 conds=no_rite)])])
 
 
+PM_ARMOUR = ["Power Armour", "Artificer Armour", "Hardened Power Armour"]
+
+
+def _t_mod(p, eid, scope):
+    tval = None
+    for c in p.iter("characteristic"):
+        if c.get("name") == "T":
+            tval = c.text
+    if tval and tval.isdigit():
+        mod = modifier("set", gs.char_id("Unit", "T"), str(int(tval) + 1), conds=[has(eid, scope)])
+        ms = p.find("modifiers")
+        if ms is None:
+            p.insert(0, wrap("modifiers", [mod]))
+        else:
+            ms.append(mod)
+
+
 def add_plague_marines(ctx):
-    """Sons of the Plague Father: Infantry units made only of Power/Artificer Armour models may become Plague Marines
-    (+7 per model) while Mortarion, Prince of Decay is in the army."""
-    pa = {W("Power Armour"), W("Artificer Armour")}
+    """Sons of the Plague Father: Infantry / Jump Infantry units made only of Power, Artificer or Hardened Power Armour
+    models, and Independent Characters in Power / Artificer Armour, may become Plague Marines (+7 per model) while
+    Mortarion, Prince of Decay is in the army."""
+    pa = {W(n) for n in PM_ARMOUR}
     no_daemon = [cond(DAEMON_MORTARION, "roster", "lessThan", 1)]
+    hide = [modifier("set", "hidden", "true", conds=no_daemon)]
+    rl = ["Sons of the Plague Father", "Feel No Pain", "Slow and Purposeful"]
     done = []
     for u in all_unique(ctx):
         if u.get("type") != "unit":
             continue
-        models = [m for m in u.iter("selectionEntry") if m.get("type") == "model"]
-        if not models:
-            continue
-        ok = True
-        for m in models:
-            t = _unit_type(m) or ""
-            links = m.find("entryLinks")
-            if not t.startswith("Infantry") or links is None or not any(lk.get("targetId") in pa for lk in links):
-                ok = False
-                break
-        if not ok:
+        cats = {c.get("targetId") for c in u.iter("categoryLink")}
+        if gs.CAT_PRIMARCH in cats:
             continue
         uid_ = u.get("id")
         eid = uid("dg-plague-marines", uid_)
+        models = [m for m in u.iter("selectionEntry") if m.get("type") == "model"]
+        if models:
+            ok = True
+            for m in models:
+                t = _unit_type(m) or ""
+                links = m.find("entryLinks")
+                if (not t.startswith(("Infantry", "Jump Infantry")) or links is None
+                        or not any(lk.get("targetId") in pa for lk in links)):
+                    ok = False
+                    break
+            if not ok:
+                continue
+            add_to(u, "selectionEntries", [entry(
+                eid, "Plague Marines (entire unit, Sons of the Plague Father)", cost=0,
+                constraints=[constraint(uid(eid, "max"), "max", 1, auto=True)],
+                mods=[modifier("increment", PTS, 7, repeats=[repeat("model", uid_, 1)]),
+                      modifier("set", uid(eid, "max"), 0, conds=no_daemon)] + hide,
+                infolinks=rules_links(rl, key=eid))])
+            for m in models:
+                for p in m.iter("profile"):
+                    if p.get("typeName") == "Unit":
+                        _t_mod(p, eid, uid_)
+            done.append(u.get("name"))
+            continue
+        # single-model characters (Praetor, Centurion, named characters): Infantry (Character) with Power / Artificer
+        # Armour available; not while wearing Terminator Armour or riding a Bike / Jetbike
+        t = _unit_type(u) or ""
+        if not t.startswith(("Infantry", "Jump Infantry")) or "Character" not in t:
+            continue
+        own = u.find("entryLinks")
+        fixed = own is not None and any(lk.get("targetId") in pa for lk in own)
+        chosen = any(lk.get("targetId") in pa for g in u.iter("selectionEntryGroup") for lk in g.iter("entryLink")
+                     if g.get("name") == "Armour")
+        if not (fixed or chosen):
+            continue
+        bad = has_tda(uid_, deep=False) + [has(W("Space Marine Bike"), uid_, deep=False)]
         add_to(u, "selectionEntries", [entry(
-            eid, "Plague Marines (entire unit, Sons of the Plague Father)", cost=0,
+            eid, "Plague Marine (Sons of the Plague Father)", cost=7,
             constraints=[constraint(uid(eid, "max"), "max", 1, auto=True)],
-            mods=[modifier("increment", PTS, 7, repeats=[repeat("model", uid_, 1)]),
-                  modifier("set", "hidden", "true", conds=no_daemon),
-                  modifier("set", uid(eid, "max"), 0, conds=no_daemon)],
-            infolinks=rules_links(["Sons of the Plague Father", "Feel No Pain", "Slow and Purposeful"], key=eid))])
-        # +1 Toughness on the model profiles
-        for m in models:
-            for p in m.iter("profile"):
-                if p.get("typeName") != "Unit":
-                    continue
-                tval = None
-                for c in p.iter("characteristic"):
-                    if c.get("name") == "T":
-                        tval = c.text
-                if tval and tval.isdigit():
-                    ms = p.find("modifiers")
-                    mod = modifier("set", gs.char_id("Unit", "T"), str(int(tval) + 1), conds=[has(eid, uid_)])
-                    if ms is None:
-                        p.insert(0, wrap("modifiers", [mod]))
-                    else:
-                        ms.append(mod)
+            mods=[modifier("set", uid(eid, "max"), 0, conds=no_daemon),
+                  modifier("add", "error", "Plague Marine: only a model in Power Armour or Artificer Armour (not on a "
+                                           "Bike) may be upgraded.", groups=[any_of(*bad)])] + hide,
+            infolinks=rules_links(rl, key=eid))])
+        for p in u.findall("profiles/profile"):
+            if p.get("typeName") == "Unit":
+                _t_mod(p, eid, uid_)
         done.append(u.get("name"))
     return done
 
@@ -582,14 +618,13 @@ def footslogging_error(ctx):
 
 
 def silent_retinue(ctx):
-    """Praetor / Centurion: a Deathshroud Terminator Squad instead of a Terminator Command Squad (if in TDA)."""
+    """Praetor / Centurion: a Deathshroud Terminator Squad as retinue (any armour, author's answer)."""
     ds = ds_retinue()
-    for name, cid in [("Legion Praetor", L.PRAETOR), ("Legion Centurion", L.CENTURION)]:
+    for name in ["Legion Praetor", "Legion Centurion"]:
         for g in ctx.unit(name).iter("selectionEntryGroup"):
             if g.get("name") == "Retinue (no Force Organisation slot)":
                 lid = uid("link", g.get("id"), "dg-deathshroud")
-                add_to(g, "entryLinks", [link(lid, ds.get("id"), ds.get("name"),
-                                              mods=[modifier("set", "hidden", "true", groups=[no_tda(cid)])])])
+                add_to(g, "entryLinks", [link(lid, ds.get("id"), ds.get("name"))])
     if ds not in RETINUE_SHARED:
         RETINUE_SHARED.append(ds)
 

@@ -25,15 +25,22 @@ RULES = {
     "Shadow Masters": ("Legion Reconnaissance Squads selected in a Raven Guard Detachment lose the Support Squad special "
                        "rule and may therefore fulfil compulsory Troops selections normally. Legion Reconnaissance Squads "
                        "and Independent Characters may buy Sniper Rifles for 2 points (instead of 5 points or any other "
-                       "price otherwise applicable)."),
+                       "price otherwise applicable). An Independent Character's Sniper Rifle replaces his Bolter; if he "
+                       "has no Bolter it is bought in addition. Sniper Rifles do not count towards the Armoury points "
+                       "caps."),
     "Limited Vehicles": ("A Raven Guard Detachment may never include more Heavy Support selections than Fast Attack "
                          "selections. Dedicated Transports are ignored when determining this restriction."),
     # armoury
     "Raven's Talons": ("Count as a pair of Rending Weapons: the bearer receives the normal +1 Attack for fighting with "
                        "two close-combat weapons. Any model in a Raven Guard Legion Veteran Squad equipped with a Bolt "
-                       "Pistol and Chainsword may replace both with Raven's Talons for +7 points; a Raven Guard Character "
-                       "already equipped with a Pair of Lightning Claws may upgrade them to Raven's Talons for +5 points. "
-                       "Other units only where their entry permits."),
+                       "Pistol and Chainsword may replace both with Raven's Talons for +7 points. Characters equipped with "
+                       "a Pair of Lightning Claws have no access to Raven's Talons. Other units only where their entry "
+                       "permits."),
+    "Fulcrum Hand Cannon": ("Any Raven Guard Independent Character or squad Sergeant with access to the Space Marine "
+                            "Armoury may replace one or two Bolt Pistols with one or two Fulcrum Hand Cannons for +10 "
+                            "points each; Destroyer Sergeants must replace both. A Raven Guard Moritat may replace "
+                            "either or both of his Bolt Pistols for +10 points each. Fulcrum Hand Cannons do not count "
+                            "towards the Armoury points caps."),
     "Shroud Bombs": ("Count as Defensive Grenades. An enemy unit attempting to charge a unit equipped with Shroud Bombs "
                      "must first pass a Leadership test; if failed, the charge may not be attempted and the unit may not "
                      "declare another charge that turn. Vehicles, models with the Daemon special rule and units "
@@ -59,8 +66,6 @@ RULES = {
     "Unstable Creation": ("Raptors may never fulfil compulsory Troops selections and may not be joined by an Independent "
                           "Character other than Corax or Branne Nev."),
     # characters
-    "Dangerous Weaponry": ("Kaedes Nex's special rule; no further text is given in Forces of the Legions (see the "
-                           "questions file)."),
     "The Raven's Due": (
         "At the beginning of the battle, nominate one enemy Independent Character or unit-upgrade Character. Kaedes Nex "
         "may re-roll failed To Hit rolls against the nominated model in close combat. When Nex fires his Fulcrum Hand "
@@ -70,7 +75,8 @@ RULES = {
     "Executioner's Instinct": ("If Kaedes Nex causes one or more unsaved Wounds upon his nominated target, that model's "
                                "unit must immediately take a Pinning test."),
     "Kaedes Nex": ("Kaedes Nex may replace the Sergeant of one Raven Guard Legion Destroyer Squad (the normal Sergeant is "
-                   "removed). He remains part of the squad, is not an Independent Character and does not occupy a "
+                   "removed; 135 points in place of a Destroyer: +115). He already has a Jump Pack and Krak Grenades and "
+                   "does not pay for the squad-wide upgrades for them. He remains part of the squad, is not an Independent Character and does not occupy a "
                    "separate Force Organisation choice. No Independent Character may join Kaedes Nex's squad."),
     "Master of Descent": ("If Alvarex Maun begins the battle in Reserve embarked aboard a Drop Pod, Dreadclaw or Flyer "
                           "Transport, Maun and that Transport arrive automatically during the first Raven Guard turn. No "
@@ -78,7 +84,7 @@ RULES = {
     "Command Squad (Alvarex Maun)": ("Alvarex Maun may be accompanied by a Legion Command Squad. Maun and the Command "
                                      "Squad count as a single HQ selection."),
     "Agapito Nev": ("Agapito Nev may replace the Dark Fury Strike Leader of one Dark Fury Assault Squad (the normal "
-                    "Strike Leader is removed). He remains part of the squad and possesses all special rules belonging "
+                    "Strike Leader is removed; 140 points in place of a Dark Fury: +106). He remains part of the squad and possesses all special rules belonging "
                     "to the Dark Fury Assault Squad."),
     "Commander of the Talons": ("An army containing Agapito Nev may include up to two Dark Fury Assault Squads rather "
                                 "than the normal 0-1. Agapito's squad may also re-roll failed Morale tests caused by "
@@ -86,12 +92,13 @@ RULES = {
     "First Into the Fray": ("During an Assault phase in which Agapito and his squad charge, the squad may re-roll all "
                             "failed To Hit rolls during the first round of that close combat."),
     "Commander of the Survivors": (
-        "If the army includes Branne Nev, one Raptor Squad may be selected without occupying an Elites choice. That unit "
-        "still counts as an Elites unit for all other purposes and may not fulfil a compulsory selection. Branne Nev may "
-        "join a Raptor Squad despite the restrictions of Unstable Creation."),
+        "If the army includes Branne Nev, one Raptor Squad may be selected without occupying an Elites choice and does "
+        "not count towards the Raptor Squad's 0-1 limit. That unit still counts as an Elites unit for all other "
+        "purposes and may not fulfil a compulsory selection. Branne Nev may join a Raptor Squad despite the restrictions of Unstable Creation."),
     "Hold Fast": "Branne Nev and any Raven Guard unit he has joined may re-roll failed Morale and Pinning tests.",
     "Nykona Sharrowkyn": ("Sharrowkyn may replace the Sergeant of one Raven Guard Legion Seeker Squad or Legion "
-                          "Reconnaissance Squad (the normal Sergeant is removed). He remains part of the squad, is not an "
+                          "Reconnaissance Squad (the normal Sergeant is removed; 125 points in place of a Seeker/Recon Marine: "
+                          "+105 / +111). He remains part of the squad, is not an "
                           "Independent Character and does not occupy a separate Force Organisation choice."),
     "Ghost in the Dark": "While Sharrowkyn's unit is in cover, improve its Cover Save by 1, to a maximum of 3+.",
     "Perfect Ambusher": "When Sharrowkyn shoots at an enemy unit within 12\", he may re-roll failed To Hit rolls.",
@@ -304,20 +311,28 @@ def mor_deythan():
     u = uid("unit", name)
     mid, sid = uid("model", u, "Mor Deythan"), uid("model", u, "Mor Deythan Sergeant")
     kit = ["Power Armour", "Sniper Rifle", "Bolt Pistol", "Close Combat Weapon", "Frag Grenades"]
+    heavy_opts = [("Heavy Bolter", 15), ("Missile Launcher", 20)]
+    # the Sergeant may take a heavy weapon too (inline entries, so they can be counted against the squad's pool)
+    sgt_heavy = [entry(uid(sid, "rg-heavy", n), n, cost=p, links=[gear(uid(sid, "rg-heavy", n), n)])
+                 for n, p in heavy_opts]
     sgt = entry(sid, "Mor Deythan Sergeant", typ="model",
                 constraints=[constraint(uid(sid, "min"), "min", 1), constraint(uid(sid, "max"), "max", 1)],
                 profiles=[unit_profile(u, "Mor Deythan Sergeant", "Infantry (Character)", 4, 5, 4, 4, 1, 4, 2, 9, "3+")],
                 links=[gear(sid, k) for k in kit],
-                groups=[slot(sid, "Replace Sniper Rifle", "Sniper Rifle", COMBIS),
+                groups=[slot(sid, "Replace Sniper Rifle", "Sniper Rifle", COMBIS + [(e, None) for e in sgt_heavy]),
                         pa_armoury(sid, u, 10, slots=["Bolt Pistol", "Close Combat Weapon"])])
     mds = entry(mid, "Mor Deythan", typ="model", cost=24,
                 constraints=[constraint(uid(mid, "min"), "min", 4), constraint(uid(mid, "max"), "max", 9)],
                 profiles=[unit_profile(u, "Mor Deythan", "Infantry", 4, 5, 4, 4, 1, 4, 1, 8, "3+")],
                 links=[gear(mid, k) for k in kit])
-    heavy_opts = [("Heavy Bolter", 15), ("Missile Launcher", 20)]
-    heavy, _ = pool(u, "Heavy Weapons (1 per 5 models, replace Sniper Rifle)", u, heavy_opts, 0, every=5)
+    sh_ids = [e.get("id") for e in sgt_heavy]
+    heavy, hmx = pool(u, "Heavy Weapons (1 per 5 models, replace Sniper Rifle)", u, heavy_opts, 0, every=5)
+    add_mods(heavy, [modifier("decrement", hmx, 1, repeats=[repeat(i, u, 1)]) for i in sh_ids])
     swaps = model_swaps(u, "Mor Deythan: replace Sniper Rifle (any number)", u, [mid], COMBIS,
                         minus=[W(n) for n, _ in heavy_opts])
+    # ... but a Sergeant's heavy weapon does not use up a Mor Deythan's Sniper Rifle
+    sw_mx = next(c.get("id") for c in swaps.find("constraints") if c.get("type") == "max")
+    add_mods(swaps, [modifier("increment", sw_mx, 1, repeats=[repeat(i, u, 1)]) for i in sh_ids])
     return entry(u, name, typ="unit", cost=120 - 4 * 24, cats=[foc(ELITES, "Elites", u)],
                  infolinks=rules_links([LR, "Infiltrate", "Move Through Cover", "Fatal Strike"], key=u),
                  entries=[sgt, mds, per_model(u, "Krak Grenades (entire squad)", 2, u, ["Krak Grenades"]),
@@ -344,7 +359,7 @@ def dark_fury(key="Dark Fury Assault Squad", root=True):
                    links=[gear(fid, k) for k in kit])
     aid = uid("model", u, "Agapito Nev")
     AGAPITO_KEYS.append(aid)
-    agapito = entry(aid, "Agapito Nev (replaces the Strike Leader)", typ="model", cost=140,
+    agapito = entry(aid, "Agapito Nev (replaces the Strike Leader)", typ="model", cost=140 - 34,
                     constraints=[constraint(uid(aid, "max"), "max", 1, auto=True), unique(aid)],
                     profiles=[unit_profile(u, "Agapito Nev", "Jump Infantry (Character)", 6, 5, 4, 4, 2, 5, 4, 10,
                                            "3+/5+")],
@@ -376,24 +391,29 @@ def deliverers():
     u = uid("unit", name)
     did, cid = uid("model", u, "Deliverer"), uid("model", u, "Deliverer Chieftain")
     kit = ["Cataphractii Terminator Armour", "Combi-Bolter", "Power Weapon"]
-    cc = [("Power Fist", 10), ("Chainfist", 15), ("Raven's Talons", 10)]
+    cc = [("Power Fist", 10), ("Chainfist", 15)]
+    talons = ("Raven's Talons", 10)
     heavy_opts = [("Heavy Flamer", 10), ("Reaper Autocannon", 15), ("Multi-Melta", 20)]
     chief = entry(cid, "Deliverer Chieftain", typ="model",
                   constraints=[constraint(uid(cid, "min"), "min", 1), constraint(uid(cid, "max"), "max", 1)],
                   profiles=[unit_profile(u, "Deliverer Chieftain", "Infantry (Character)", 5, 4, 4, 4, 1, 4, 3, 9,
                                          "2+/4+")],
                   links=[gear(cid, k) for k in kit],
-                  groups=[slot(cid, "Replace Power Weapon", "Power Weapon", cc),
-                          slot(cid, "Replace Combi-bolter", "Combi-Bolter", COMBIS),
+                  groups=[slot(cid, "Replace Power Weapon", "Power Weapon", cc + [talons]),
+                          slot(cid, "Replace Combi-bolter", "Combi-Bolter", COMBIS,
+                               zero_if=[has(W("Raven's Talons"), cid)]),
                           tda_armoury(cid)])
     dels = entry(did, "Deliverer", typ="model", cost=43,
                  constraints=[constraint(uid(did, "min"), "min", 4), constraint(uid(did, "max"), "max", 9)],
                  profiles=[unit_profile(u, "Deliverer", "Infantry", 5, 4, 4, 4, 1, 3, 2, 9, "2+/4+")],
                  links=[gear(did, k) for k in kit])
     heavy, _ = pool(u, "Heavy Weapons (1 per 5 models, replace Combi-bolter)", u, heavy_opts, 0, every=5)
-    swaps = [model_swaps(u, "Deliverers: replace Power Weapon (any number)", u, [did], cc),
+    tid = uid(u, "rg-talons")
+    tal = entry(tid, "Pair of Raven's Talons (replaces Power Weapon and Combi-bolter)", cost=talons[1],
+                links=[gear(tid, "Raven's Talons")])
+    swaps = [model_swaps(u, "Deliverers: replace Power Weapon (any number)", u, [did], cc, entries=[tal]),
              model_swaps(u, "Deliverers: replace Combi-bolter (any number)", u, [did], COMBIS,
-                         minus=[W(n) for n, _ in heavy_opts])]
+                         minus=[W(n) for n, _ in heavy_opts] + [tid])]
     return entry(u, name, typ="unit", cost=215 - 4 * 43, cats=[foc(ELITES, "Elites", u)], constraints=[force_limit(u)],
                  infolinks=rules_links([LR, "Stubborn", "Terran Veterans"], key=u),
                  entries=[chief, dels, option(u, "Teleportation Transponders (entire squad)", 15,
@@ -437,7 +457,9 @@ def raptors(key="Raptor Squad", root=True):
                           mods=[modifier("set", "hidden", "true", conds=no_branne),
                                 modifier("set", uid(tog, "max"), 0, conds=no_branne)],
                           infolinks=rules_links(["Commander of the Survivors"], key=tog)))
-        mods = [modifier("add", "category", gs.FOC_PLUS["Elites"], conds=[cond(tog, "self", "atLeast", 1)])]
+        mods = [modifier("add", "category", gs.FOC_PLUS["Elites"], conds=[cond(tog, "self", "atLeast", 1)]),
+                # ... and it does not count towards the 0-1 limit
+                modifier("increment", uid(u, "force-max"), 1, conds=[cond(tog, "force", "atLeast", 1)])]
     e = entry(u, name, typ="unit", cost=160 - 4 * 32, cats=cats, constraints=cons, mods=mods,
               infolinks=rules_links([LR, "Fleet", "Furious Charge", "Move Through Cover", "Rending (close combat only)",
                                      "Unstable Creation"], key=u),
@@ -466,24 +488,31 @@ def characters(ctx):
 def kaedes_nex(ctx):
     dest = ctx.unit("Legion Destroyer Squad")
     nid = uid("model", dest.get("id"), "Kaedes Nex")
-    nex = entry(nid, "Kaedes Nex (replaces the Sergeant)", typ="model", cost=135,
+    # like Sheed Ranko: 135 points in place of a Legion Destroyer (20)
+    nex = entry(nid, "Kaedes Nex (replaces the Sergeant)", typ="model", cost=135 - 20,
                 constraints=[constraint(uid(nid, "max"), "max", 1, auto=True), unique(nid)],
                 profiles=[unit_profile(dest.get("id"), "Kaedes Nex", "Jump Infantry (Character)", 5, 5, 4, 4, 3, 4, 3, 9,
                                        "3+/5+")],
-                infolinks=rules_links(["Kaedes Nex", "Dangerous Weaponry", "The Raven's Due", "Executioner's Instinct"],
-                                      key=nid),
+                infolinks=rules_links(["Kaedes Nex", "The Raven's Due", "Counter-Attack", "Dual Pistols (Destroyers)",
+                                       "Executioner's Instinct"], key=nid),
                 links=[gear(nid, k) for k in ["Power Armour", "Refractor Field", "Two Fulcrum Hand Cannons",
                                               "Rending Weapon", "Jump Pack", "Frag Grenades", "Krak Grenades"]])
     replace_model(dest, "Legion Destroyer Sergeant", nex)
+    # Nex already has a Jump Pack and Krak Grenades: the squad-wide upgrades do not charge for him
+    for n, pts in [("Jump Packs (entire squad)", 15), ("Krak Grenades (entire squad)", 2)]:
+        sw = uid("squadwide", dest.get("id"), n)
+        e = next(x for x in dest.iter("selectionEntry") if x.get("id") == sw)
+        add_mods(e, [modifier("decrement", PTS, pts, conds=[has(nid, dest.get("id"))])])
 
 
 def sharrowkyn(ctx):
     copies = []
-    for n, sgt in [("Legion Seeker Squad", "Legion Seeker Sergeant"),
-                   ("Legion Reconnaissance Squad", "Legion Recon Sergeant")]:
+    # like Sheed Ranko: 125 points in place of a Legion Seeker (20) / Legion Recon Marine (14)
+    for n, sgt, model_pts in [("Legion Seeker Squad", "Legion Seeker Sergeant", 20),
+                              ("Legion Reconnaissance Squad", "Legion Recon Sergeant", 14)]:
         sq = ctx.unit(n)
         sid = uid("model", sq.get("id"), "Nykona Sharrowkyn")
-        e = entry(sid, "Nykona Sharrowkyn (replaces the Sergeant)", typ="model", cost=125,
+        e = entry(sid, "Nykona Sharrowkyn (replaces the Sergeant)", typ="model", cost=125 - model_pts,
                   constraints=[constraint(uid(sid, "max"), "max", 1, auto=True), unique(sid)],
                   profiles=[unit_profile(sq.get("id"), "Nykona Sharrowkyn", "Infantry (Character)", 6, 5, 4, 4, 2, 5, 3,
                                          9, "2+/5+")],
@@ -579,41 +608,92 @@ def praetor_dark_fury(ctx):
                                                            lacks(W("Jump Pack"), pr.get("id"))])])
 
 
-def armoury(ctx):
-    roots = all_entries(ctx)
-    no_tda = lambda u: L.has_tda(u)  # noqa: E731
-    # Fulcrum Hand Cannon: any IC or Sergeant with the Space Marine Armoury may replace a Bolt Pistol
+def cap_constraint(cap):
+    return next(c.get("id") for c in cap.find("constraints") if c.get("field") == PTS)
+
+
+def link_cost(lk):
+    cs = lk.find("costs")
+    return int(float(cs[0].get("value"))) if cs is not None and len(cs) else 0
+
+
+def fulcrum_hand_cannons(roots):
+    """Any IC or Sergeant with the Space Marine Armoury may replace one or two Bolt Pistols with Fulcrum Hand Cannons
+    (+10 each, not counted towards the Armoury cap); Destroyer Sergeants must replace both."""
     seen = set()
     for r in roots:
         for m in model_entries(r):
             if id(m) in seen or not has_armoury(m):
                 continue
             seen.add(id(m))
-            pistol_groups = [g for g in walk_own(m) if g.tag == "selectionEntryGroup"
-                             and g.get("name") == "Replace Bolt Pistol"]
-            for g in pistol_groups:
-                add_to(g, "entryLinks", [link(uid("link", g.get("id"), "rg", "Fulcrum Hand Cannon"),
-                                              W("Fulcrum Hand Cannon"), "Fulcrum Hand Cannon", cost=10)])
-            if not pistol_groups:
-                el_ = m.find("entryLinks")
-                if el_ is not None and any(x.get("targetId") == W("Bolt Pistol") for x in el_):
-                    swap_fixed(m, "Bolt Pistol", "Fulcrum Hand Cannon", 10)
+            parent = {c: p for p in m.iter() for c in p}
+
+            def cap_of(g):
+                x = parent.get(g)
+                while x is not None and x is not m:
+                    if x.tag == "selectionEntryGroup" and x.get("name") in ARMOURY_GROUPS:
+                        return x
+                    x = parent.get(x)
+                return None
+            bp_default = False
+            for g in [g for g in walk_own(m) if g.tag == "selectionEntryGroup"
+                      and (g.get("name") or "").startswith("Replace ")]:
+                gl = g.find("entryLinks")
+                bp = [x for x in (gl if gl is not None else []) if x.get("targetId") == W("Bolt Pistol")]
+                if not bp:
+                    continue
+                if g.get("defaultSelectionEntryId") == bp[0].get("id"):
+                    bp_default = True
+                eid = uid("rg-fulcrum", g.get("id"))
+                add_to(g, "selectionEntries", [entry(eid, "Fulcrum Hand Cannon", cost=link_cost(bp[0]) + 10,
+                                                     links=[gear(eid, "Fulcrum Hand Cannon")],
+                                                     infolinks=rules_links(["Fulcrum Hand Cannon"], key=eid))])
+                cap = cap_of(g)
+                if cap is not None:   # weapons from the Legion Armoury do not count towards the cap
+                    add_mods(cap, [modifier("increment", cap_constraint(cap), 10,
+                                            repeats=[repeat(eid, m.get("id"), 1)])])
+            el_ = m.find("entryLinks")
+            fixed = [x.get("targetId") for x in (el_ if el_ is not None else [])]
+            if not bp_default and W("Bolt Pistol") in fixed:
+                swap_fixed(m, "Bolt Pistol", "Fulcrum Hand Cannon", 10)
+            if W("Two Bolt Pistols") in fixed:      # Destroyer Sergeants: both or none
+                swap_fixed(m, "Two Bolt Pistols", "Two Fulcrum Hand Cannons", 20)
+
+
+def ic_sniper_rifle(ctx):
+    """Shadow Masters: ICs may buy a Sniper Rifle for 2 points (instead of a Bolter, otherwise additionally); it does
+    not count towards the Armoury cap."""
+    for n in ("Legion Praetor", "Legion Centurion"):
+        u = ctx.unit(n)
+        for cap in [g for g in u.iter("selectionEntryGroup") if g.get("name") == "Space Marine Armoury (max 100 pts)"]:
+            for sub in [g for g in cap.iter("selectionEntryGroup") if g.get("name") == "Additional Wargear"]:
+                eid = uid("rg-ic-sniper", sub.get("id"))
+                add_to(sub, "selectionEntries", [entry(
+                    eid, "Sniper Rifle (Shadow Masters)", cost=2,
+                    constraints=[constraint(uid(eid, "max"), "max", 1, auto=True)],
+                    links=[gear(eid, "Sniper Rifle")], infolinks=rules_links(["Shadow Masters"], key=eid))])
+                add_mods(cap, [modifier("increment", cap_constraint(cap), 2, repeats=[repeat(eid, u.get("id"), 1)])])
+
+
+def armoury(ctx):
+    roots = all_entries(ctx)
+    no_tda = lambda u: L.has_tda(u)  # noqa: E731
+    fulcrum_hand_cannons(roots)
     # Moritat: his second Bolt Pistol too
     for e in ctx.unit("Legion Centurion").iter("selectionEntry"):
         if e.get("id") == L.consul_id("Moritat"):
             swap_fixed(e, "Bolt Pistol", "Fulcrum Hand Cannon", 10,
                        title="Fulcrum Hand Cannon (replaces the Moritat's second Bolt Pistol)")
-    # Raven's Talons: Characters with a Pair of Lightning Claws may upgrade them for +5
-    add_weapon_variant(roots, "Pair of Lightning Claws", "Raven's Talons", 5)
+    # Raven's Talons: Characters with a Pair of Lightning Claws have no access (author's answer)
     # Infravisor: Independent Characters and Sergeants with the Armoury
     add_armoury_items(ctx, [("Infravisor", 10)])
-    # Independent Characters: Shroud Bombs, Cameleoline, Teleportation Transponders, Sniper Rifle (Shadow Masters)
+    # Independent Characters: Shroud Bombs, Cameleoline, Teleportation Transponders (count towards the cap)
     ic_wargear(ctx, [
         ("Shroud Bombs", 10, lambda u: []),
         ("Cameleoline", 10, lambda u: no_tda(u)),
         ("Teleportation Transponders", 10, lambda u: [("group", L.no_tda(u))]),
-        ("Sniper Rifle", 2, lambda u: []),
     ])
+    ic_sniper_rifle(ctx)
     # Teleportation Transponders for units entirely in Terminator Armour
     for n in ("Legion Terminator Squad",):
         e = ctx.unit(n)

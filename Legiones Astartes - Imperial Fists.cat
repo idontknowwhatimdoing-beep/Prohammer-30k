@@ -162,6 +162,20 @@
 <condition field="selections" scope="2390-3489-e470-7f7f" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0656-5d6b-29bb-1441" type="equalTo" />
 </conditions>
 </modifier>
+<modifier type="add" field="error" value="A Vigil Pattern Storm Shield may not be combined with a Refractor Field, Combat Shield or Boarding Shield.">
+<conditions>
+<condition field="selections" scope="2390-3489-e470-7f7f" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8640-526e-09ad-fb32" type="atLeast" />
+</conditions>
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="2390-3489-e470-7f7f" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b458-ffe2-cc5c-e913" type="atLeast" />
+<condition field="selections" scope="2390-3489-e470-7f7f" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f57e-a9bf-6089-441a" type="atLeast" />
+<condition field="selections" scope="2390-3489-e470-7f7f" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6d9c-93b7-f35e-12ee" type="atLeast" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
 </modifiers>
 <profiles>
 <profile id="e3e2-ce83-5af0-1894" name="Legion Praetor" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
@@ -1706,6 +1720,9 @@
 <modifiers>
 <modifier type="set" field="hidden" value="true">
 <conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5b10-3757-cfee-0d95" type="atLeast" />
 <conditionGroup type="and">
 <conditions>
 <condition field="selections" scope="2390-3489-e470-7f7f" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a6a2-abea-01b2-ad81" type="equalTo" />
@@ -1714,16 +1731,23 @@
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="be2b-c8e1-3ca7-9df8" type="lessThan" />
 </conditions>
 </conditionGroup>
+</conditions>
+</conditionGroup>
 </conditionGroups>
 </modifier>
 <modifier type="set" field="2d3f-45b6-3d46-69c5" value="0">
 <conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5b10-3757-cfee-0d95" type="atLeast" />
 <conditionGroup type="and">
 <conditions>
 <condition field="selections" scope="2390-3489-e470-7f7f" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a6a2-abea-01b2-ad81" type="equalTo" />
 <condition field="selections" scope="2390-3489-e470-7f7f" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d900-78c3-2b10-8f9c" type="equalTo" />
 <condition field="selections" scope="2390-3489-e470-7f7f" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0656-5d6b-29bb-1441" type="equalTo" />
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="be2b-c8e1-3ca7-9df8" type="lessThan" />
+</conditions>
+</conditionGroup>
 </conditions>
 </conditionGroup>
 </conditionGroups>
@@ -1875,6 +1899,20 @@
 <conditions>
 <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7e81-7178-7650-6f77" type="greaterThan" />
 </conditions>
+</modifier>
+<modifier type="add" field="error" value="A Vigil Pattern Storm Shield may not be combined with a Refractor Field, Combat Shield or Boarding Shield.">
+<conditions>
+<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8640-526e-09ad-fb32" type="atLeast" />
+</conditions>
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b458-ffe2-cc5c-e913" type="atLeast" />
+<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f57e-a9bf-6089-441a" type="atLeast" />
+<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6d9c-93b7-f35e-12ee" type="atLeast" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
 </modifier>
 </modifiers>
 <profiles>
@@ -4620,6 +4658,9 @@
 <modifiers>
 <modifier type="set" field="hidden" value="true">
 <conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5b10-3757-cfee-0d95" type="atLeast" />
 <conditionGroup type="and">
 <conditions>
 <condition field="selections" scope="3d0e-1d24-7ef2-4298" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a6a2-abea-01b2-ad81" type="equalTo" />
@@ -4628,16 +4669,23 @@
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="be2b-c8e1-3ca7-9df8" type="lessThan" />
 </conditions>
 </conditionGroup>
+</conditions>
+</conditionGroup>
 </conditionGroups>
 </modifier>
 <modifier type="set" field="5011-8f37-7134-8f5e" value="0">
 <conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5b10-3757-cfee-0d95" type="atLeast" />
 <conditionGroup type="and">
 <conditions>
 <condition field="selections" scope="3d0e-1d24-7ef2-4298" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a6a2-abea-01b2-ad81" type="equalTo" />
 <condition field="selections" scope="3d0e-1d24-7ef2-4298" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d900-78c3-2b10-8f9c" type="equalTo" />
 <condition field="selections" scope="3d0e-1d24-7ef2-4298" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0656-5d6b-29bb-1441" type="equalTo" />
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="be2b-c8e1-3ca7-9df8" type="lessThan" />
+</conditions>
+</conditionGroup>
 </conditions>
 </conditionGroup>
 </conditionGroups>
@@ -5280,6 +5328,7 @@
 <conditionGroups>
 <conditionGroup type="or">
 <conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5b10-3757-cfee-0d95" type="atLeast" />
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="be2b-c8e1-3ca7-9df8" type="lessThan" />
 </conditions>
 </conditionGroup>
@@ -5289,6 +5338,7 @@
 <conditionGroups>
 <conditionGroup type="or">
 <conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5b10-3757-cfee-0d95" type="atLeast" />
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="be2b-c8e1-3ca7-9df8" type="lessThan" />
 </conditions>
 </conditionGroup>
@@ -5522,6 +5572,11 @@
 </entryLink>
 <entryLink id="628f-ee2f-3e88-824a" name="Legion Drop Pod" hidden="false" collective="false" import="true" targetId="4e1c-55bd-1f6c-9584" type="selectionEntry">
 <modifiers>
+<modifier type="set" field="hidden" value="true">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5b10-3757-cfee-0d95" type="atLeast" />
+</conditions>
+</modifier>
 <modifier type="add" field="error" value="Too many models for a Legion Drop Pod (capacity 10).">
 <conditionGroups>
 <conditionGroup type="and">
@@ -5555,6 +5610,11 @@
 </entryLink>
 <entryLink id="75cd-c92a-2ade-4270" name="Anvillus Pattern Dreadclaw Drop Pod" hidden="false" collective="false" import="true" targetId="2bad-68df-db1e-95d9" type="selectionEntry">
 <modifiers>
+<modifier type="set" field="hidden" value="true">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5b10-3757-cfee-0d95" type="atLeast" />
+</conditions>
+</modifier>
 <modifier type="add" field="error" value="Too many models for a Anvillus Pattern Dreadclaw Drop Pod (capacity 10).">
 <conditionGroups>
 <conditionGroup type="and">
@@ -6496,6 +6556,7 @@
 <conditionGroups>
 <conditionGroup type="or">
 <conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5b10-3757-cfee-0d95" type="atLeast" />
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="be2b-c8e1-3ca7-9df8" type="lessThan" />
 </conditions>
 </conditionGroup>
@@ -6505,6 +6566,7 @@
 <conditionGroups>
 <conditionGroup type="or">
 <conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5b10-3757-cfee-0d95" type="atLeast" />
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="be2b-c8e1-3ca7-9df8" type="lessThan" />
 </conditions>
 </conditionGroup>
@@ -6700,6 +6762,16 @@
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b68d-b2ba-b013-f6c1" type="lessThan" />
 </conditions>
 </modifier>
+<modifier type="set" field="hidden" value="true">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5b10-3757-cfee-0d95" type="atLeast" />
+</conditions>
+</modifier>
+<modifier type="set" field="957b-7808-0d96-98b7" value="0">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5b10-3757-cfee-0d95" type="atLeast" />
+</conditions>
+</modifier>
 <modifier type="add" field="error" value="Too many models for a Legion Drop Pod (capacity 10).">
 <conditionGroups>
 <conditionGroup type="and">
@@ -6739,6 +6811,16 @@
 <modifier type="set" field="hidden" value="true">
 <conditions>
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b68d-b2ba-b013-f6c1" type="lessThan" />
+</conditions>
+</modifier>
+<modifier type="set" field="hidden" value="true">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5b10-3757-cfee-0d95" type="atLeast" />
+</conditions>
+</modifier>
+<modifier type="set" field="ed1e-1848-08e2-184c" value="0">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5b10-3757-cfee-0d95" type="atLeast" />
 </conditions>
 </modifier>
 <modifier type="add" field="error" value="Too many models for a Anvillus Pattern Dreadclaw Drop Pod (capacity 10).">
@@ -7211,6 +7293,7 @@
 <conditionGroups>
 <conditionGroup type="or">
 <conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5b10-3757-cfee-0d95" type="atLeast" />
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="be2b-c8e1-3ca7-9df8" type="lessThan" />
 </conditions>
 </conditionGroup>
@@ -7220,6 +7303,7 @@
 <conditionGroups>
 <conditionGroup type="or">
 <conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5b10-3757-cfee-0d95" type="atLeast" />
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="be2b-c8e1-3ca7-9df8" type="lessThan" />
 </conditions>
 </conditionGroup>
@@ -7321,6 +7405,16 @@
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b68d-b2ba-b013-f6c1" type="lessThan" />
 </conditions>
 </modifier>
+<modifier type="set" field="hidden" value="true">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5b10-3757-cfee-0d95" type="atLeast" />
+</conditions>
+</modifier>
+<modifier type="set" field="589a-01fa-8e72-5272" value="0">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5b10-3757-cfee-0d95" type="atLeast" />
+</conditions>
+</modifier>
 <modifier type="add" field="error" value="Too many models for a Legion Drop Pod (capacity 10).">
 <conditionGroups>
 <conditionGroup type="and">
@@ -7360,6 +7454,16 @@
 <modifier type="set" field="hidden" value="true">
 <conditions>
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b68d-b2ba-b013-f6c1" type="lessThan" />
+</conditions>
+</modifier>
+<modifier type="set" field="hidden" value="true">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5b10-3757-cfee-0d95" type="atLeast" />
+</conditions>
+</modifier>
+<modifier type="set" field="2795-2c7e-4c91-1426" value="0">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5b10-3757-cfee-0d95" type="atLeast" />
 </conditions>
 </modifier>
 <modifier type="add" field="error" value="Too many models for a Anvillus Pattern Dreadclaw Drop Pod (capacity 10).">
@@ -7712,10 +7816,25 @@ LIMITATIONS - No other Lord of War; no Allied Detachment; no more than one other
 </costs>
 </selectionEntry>
 <selectionEntry id="5b10-3757-cfee-0d95" name="The Stone Gauntlet (Imperial Fists)" hidden="false" collective="false" import="true" type="upgrade">
+<modifiers>
+<modifier type="add" field="error" value="The Stone Gauntlet: no unit may take Teleportation Transponders, Drop Pods or Dreadclaw Drop Pods.">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5b10-3757-cfee-0d95" type="atLeast" />
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4e1c-55bd-1f6c-9584" type="atLeast" />
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2bad-68df-db1e-95d9" type="atLeast" />
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="baf7-a5cf-a01e-9c3f" type="atLeast" />
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="27c7-1464-b76b-1eac" type="atLeast" />
+</conditions>
+</conditionGroup>
+</conditions>
+</modifier>
+</modifiers>
 <rules>
 <rule id="25ad-d0ba-6abd-2e4f" name="The Stone Gauntlet" hidden="false">
 <description>EFFECTS - Warders of the Phalanx: Phalanx Warder Squads may be selected as Troops choices and may fulfil compulsory Troops selections; Legion Breacher Siege Squads may also fulfil compulsory Troops selections normally. Shield Wall: an Imperial Fists Infantry unit in which every model is equipped with either a Boarding Shield or a Vigil Pattern Storm Shield may form a Shield Wall. It is active provided the unit did not Advance during its preceding Movement phase, is not Falling Back and did not charge during the current player turn. While active, models in the unit may re-roll failed Invulnerable Saves granted by Boarding Shields or Vigil Pattern Storm Shields (a re-rolled save may never be re-rolled again). Unyielding Line: while its Shield Wall is active, the unit gains Stubborn and may re-roll failed Pinning tests. The Hammer Behind the Shield: models equipped with Boarding Shields gain the Hammer of Wrath special rule (normal ProHammer definition) - a model does not receive an additional attack; instead, one of its normally allowed attacks may be resolved at Initiative 10 during a turn in which it charges.
-LIMITATIONS - The army's compulsory Troops choices must be Legion Breacher Siege Squads or Phalanx Warder Squads. The Detachment must include at least one Independent Character equipped with either a Boarding Shield or a Vigil Pattern Storm Shield. No unit in the Detachment may voluntarily deploy using Deep Strike. The army may include no more than one Fast Attack choice.</description>
+LIMITATIONS - The army's compulsory Troops choices must be Legion Breacher Siege Squads or Phalanx Warder Squads. The Detachment must include at least one Independent Character equipped with either a Boarding Shield or a Vigil Pattern Storm Shield. No unit in the Detachment may voluntarily deploy using Deep Strike (Teleportation Transponders, Drop Pods and Dreadclaw Drop Pods may not be taken). The army may include no more than one Fast Attack choice.</description>
 </rule>
 </rules>
 <costs>
@@ -7739,8 +7858,8 @@ LIMITATIONS - The army's compulsory Troops choices must be Legion Breacher Siege
 </modifiers>
 <rules>
 <rule id="8fee-c2fb-cb3e-518a" name="Hammerfall Strike Force" hidden="false">
-<description>EFFECTS - Landing Force: Phalanx Warder Squads may be selected as Troops choices and may fulfil compulsory Troops selections. Teleport Array: any Imperial Fists Infantry unit may purchase Teleportation Transponders for +15 points per unit and any Imperial Fists Independent Character for +10 points; this overrides the normal restriction to models wearing Terminator Armour. A unit with Teleportation Transponders may deploy using Deep Strike even if the mission would not normally permit it; an Independent Character intending to Deep Strike as part of another unit must purchase them separately. Blinding Luminescence: an Imperial Fists unit arriving by Deep Strike using Teleportation Transponders gains Shrouded from the moment it is placed until the beginning of its next player turn. After it has been placed, every enemy unit with at least one model within 12" of the arriving unit and with line of sight to at least one model in it must immediately take an Initiative test; if failed, that unit suffers the effects of the Blind special rule (Weapon Skill 1, Ballistic Skill 1) until the end of its next player turn. Each enemy unit only makes one such test per arriving Imperial Fists unit.
-LIMITATIONS - The army's Warlord must be equipped with Teleportation Transponders. Every Vehicle in the Detachment must begin the battle in Reserve. The Detachment may not include a Fortification.</description>
+<description>EFFECTS - Landing Force: Phalanx Warder Squads may be selected as Troops choices and may fulfil compulsory Troops selections. Teleport Array: any Imperial Fists Infantry unit may purchase Teleportation Transponders for +15 points per unit and any Imperial Fists Independent Character for +10 points; this overrides the normal restriction to models wearing Terminator Armour. A unit with Teleportation Transponders may deploy using Deep Strike even if the mission would not normally permit it (named characters and Rogal Dorn included); an Independent Character intending to Deep Strike as part of another unit must purchase them separately. Blinding Luminescence: an Imperial Fists unit arriving by Deep Strike using Teleportation Transponders gains Shrouded from the moment it is placed until the beginning of its next player turn. After it has been placed, every enemy unit with at least one model within 12" of the arriving unit and with line of sight to at least one model in it must immediately take an Initiative test; if failed, that unit suffers the effects of the Blind special rule (Weapon Skill 1, Ballistic Skill 1) until the end of its next player turn. Each enemy unit only makes one such test per arriving Imperial Fists unit.
+LIMITATIONS - The army's Warlord must be equipped with Teleportation Transponders. Every Vehicle in the Detachment must begin the battle in Reserve; Tarantula Sentry Gun Batteries may not be taken. The Detachment may not include a Fortification.</description>
 </rule>
 </rules>
 <costs>
@@ -7758,7 +7877,7 @@ LIMITATIONS - The army's Warlord must be equipped with Teleportation Transponder
 </modifiers>
 <rules>
 <rule id="2f25-2d7c-e68c-9af5" name="Templar Assault" hidden="false">
-<description>EFFECTS - Templar Host: Templar Brethren Squads may be selected as Troops choices and may fulfil compulsory Troops selections. Crusading Assault: during an Assault phase in which a Templar Brethren Squad charged after disembarking from a vehicle with the Assault Vehicle special rule during the same player turn, the squad gains Furious Charge and its normal charge distance is increased from 6" to 7" for that Assault phase. Swords of the Legion: during the first round of a close combat in which a Templar Brethren Squad charged, models in that squad may re-roll To Hit rolls of 1 with Rending Weapons, Power Weapons, Relic Blades and other weapons specifically stated to count as swords. Assault Transports: a Templar Brethren Squad may select a Land Raider Phobos or Land Raider Proteus as a Dedicated Transport at its normal points cost; a squad of a size which cannot be carried by either vehicle may instead select a Legion Spartan Assault Tank at its normal points cost. All normal Transport Capacity restrictions apply.
+<description>EFFECTS - Templar Host: Templar Brethren Squads may be selected as Troops choices and may fulfil compulsory Troops selections. Crusading Assault: during an Assault phase in which a Templar Brethren Squad charged after disembarking from a vehicle with the Assault Vehicle special rule during the same player turn, the squad gains Furious Charge and its normal charge distance is increased from 6" to 7" for that Assault phase. Swords of the Legion: during the first round of a close combat in which a Templar Brethren Squad charged, models in that squad may re-roll To Hit rolls of 1 with Rending Weapons, Power Weapons, Relic Blades and other weapons specifically stated to count as swords. Assault Transports: a Templar Brethren Squad may select a Land Raider Phobos or Land Raider Proteus as a Dedicated Transport at its normal points cost; a squad of a size which cannot be carried by either vehicle may instead select a Legion Spartan Assault Tank at its normal points cost (the Templar Brethren Squad may take any Land Raider variant, including the Spartan, in any case). All normal Transport Capacity restrictions apply.
 LIMITATIONS - The army's compulsory Troops choices must be Templar Brethren Squads; while Templar Assault is selected, Templar Brethren Squads ignore their normal 0-1 limitation. The army may include no more than one Fast Attack choice. The army may not include a Fortification. The army's Warlord must be equipped with a Power Weapon, Rending Weapon, Relic Blade or another sword-like close-combat weapon which ignores Armour Saves.</description>
 </rule>
 </rules>
@@ -8297,6 +8416,7 @@ LIMITATIONS - The army's compulsory Troops choices must be Templar Brethren Squa
 <conditionGroups>
 <conditionGroup type="or">
 <conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5b10-3757-cfee-0d95" type="atLeast" />
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="be2b-c8e1-3ca7-9df8" type="lessThan" />
 </conditions>
 </conditionGroup>
@@ -8306,6 +8426,7 @@ LIMITATIONS - The army's compulsory Troops choices must be Templar Brethren Squa
 <conditionGroups>
 <conditionGroup type="or">
 <conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5b10-3757-cfee-0d95" type="atLeast" />
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="be2b-c8e1-3ca7-9df8" type="lessThan" />
 </conditions>
 </conditionGroup>
@@ -8710,6 +8831,11 @@ LIMITATIONS - The army's compulsory Troops choices must be Templar Brethren Squa
 </entryLink>
 <entryLink id="8380-2506-e6de-0d1f" name="Legion Drop Pod" hidden="false" collective="false" import="true" targetId="4e1c-55bd-1f6c-9584" type="selectionEntry">
 <modifiers>
+<modifier type="set" field="hidden" value="true">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5b10-3757-cfee-0d95" type="atLeast" />
+</conditions>
+</modifier>
 <modifier type="add" field="error" value="Too many models for a Legion Drop Pod (capacity 10).">
 <conditionGroups>
 <conditionGroup type="and">
@@ -8743,6 +8869,11 @@ LIMITATIONS - The army's compulsory Troops choices must be Templar Brethren Squa
 </entryLink>
 <entryLink id="30f8-b232-efa6-081a" name="Anvillus Pattern Dreadclaw Drop Pod" hidden="false" collective="false" import="true" targetId="2bad-68df-db1e-95d9" type="selectionEntry">
 <modifiers>
+<modifier type="set" field="hidden" value="true">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5b10-3757-cfee-0d95" type="atLeast" />
+</conditions>
+</modifier>
 <modifier type="add" field="error" value="Too many models for a Anvillus Pattern Dreadclaw Drop Pod (capacity 10).">
 <conditionGroups>
 <conditionGroup type="and">
@@ -9220,6 +9351,26 @@ LIMITATIONS - The army's compulsory Troops choices must be Templar Brethren Squa
 </costs>
 </selectionEntry>
 <selectionEntry id="1eb3-1635-b8ea-7104" name="Teleportation Transponders (entire unit)" hidden="false" collective="false" import="true" type="upgrade">
+<modifiers>
+<modifier type="set" field="hidden" value="true">
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5b10-3757-cfee-0d95" type="atLeast" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="set" field="ec2d-a30b-0ef7-8541" value="0">
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5b10-3757-cfee-0d95" type="atLeast" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+</modifiers>
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ec2d-a30b-0ef7-8541" type="max" />
 </constraints>
@@ -9539,6 +9690,11 @@ LIMITATIONS - The army's compulsory Troops choices must be Templar Brethren Squa
 </entryLink>
 <entryLink id="d4c0-1414-495f-773c" name="Anvillus Pattern Dreadclaw Drop Pod" hidden="false" collective="false" import="true" targetId="2bad-68df-db1e-95d9" type="selectionEntry">
 <modifiers>
+<modifier type="set" field="hidden" value="true">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5b10-3757-cfee-0d95" type="atLeast" />
+</conditions>
+</modifier>
 <modifier type="add" field="error" value="Too many models for a Anvillus Pattern Dreadclaw Drop Pod (capacity 10).">
 <conditionGroups>
 <conditionGroup type="and">
@@ -10019,6 +10175,7 @@ LIMITATIONS - The army's compulsory Troops choices must be Templar Brethren Squa
 <conditionGroups>
 <conditionGroup type="or">
 <conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5b10-3757-cfee-0d95" type="atLeast" />
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="be2b-c8e1-3ca7-9df8" type="lessThan" />
 </conditions>
 </conditionGroup>
@@ -10028,6 +10185,7 @@ LIMITATIONS - The army's compulsory Troops choices must be Templar Brethren Squa
 <conditionGroups>
 <conditionGroup type="or">
 <conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5b10-3757-cfee-0d95" type="atLeast" />
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="be2b-c8e1-3ca7-9df8" type="lessThan" />
 </conditions>
 </conditionGroup>
@@ -10152,6 +10310,11 @@ LIMITATIONS - The army's compulsory Troops choices must be Templar Brethren Squa
 </entryLink>
 <entryLink id="204e-e3c9-c684-1472" name="Legion Drop Pod" hidden="false" collective="false" import="true" targetId="4e1c-55bd-1f6c-9584" type="selectionEntry">
 <modifiers>
+<modifier type="set" field="hidden" value="true">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5b10-3757-cfee-0d95" type="atLeast" />
+</conditions>
+</modifier>
 <modifier type="add" field="error" value="Too many models for a Legion Drop Pod (capacity 10).">
 <conditionGroups>
 <conditionGroup type="and">
@@ -10185,6 +10348,11 @@ LIMITATIONS - The army's compulsory Troops choices must be Templar Brethren Squa
 </entryLink>
 <entryLink id="5eed-08f0-7775-f842" name="Anvillus Pattern Dreadclaw Drop Pod" hidden="false" collective="false" import="true" targetId="2bad-68df-db1e-95d9" type="selectionEntry">
 <modifiers>
+<modifier type="set" field="hidden" value="true">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5b10-3757-cfee-0d95" type="atLeast" />
+</conditions>
+</modifier>
 <modifier type="add" field="error" value="Too many models for a Anvillus Pattern Dreadclaw Drop Pod (capacity 10).">
 <conditionGroups>
 <conditionGroup type="and">
@@ -11467,6 +11635,7 @@ LIMITATIONS - The army's compulsory Troops choices must be Templar Brethren Squa
 <conditionGroups>
 <conditionGroup type="or">
 <conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5b10-3757-cfee-0d95" type="atLeast" />
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="be2b-c8e1-3ca7-9df8" type="lessThan" />
 </conditions>
 </conditionGroup>
@@ -11476,6 +11645,7 @@ LIMITATIONS - The army's compulsory Troops choices must be Templar Brethren Squa
 <conditionGroups>
 <conditionGroup type="or">
 <conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5b10-3757-cfee-0d95" type="atLeast" />
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="be2b-c8e1-3ca7-9df8" type="lessThan" />
 </conditions>
 </conditionGroup>
@@ -11868,12 +12038,30 @@ LIMITATIONS - The army's compulsory Troops choices must be Templar Brethren Squa
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fc5e-7aae-d58f-c4f2" type="max" />
 </constraints>
 <entryLinks>
-<entryLink id="2182-aa68-6523-ce9c" name="Legion Dreadnought Drop Pod" hidden="false" collective="false" import="true" targetId="baf7-a5cf-a01e-9c3f" type="selectionEntry" />
+<entryLink id="2182-aa68-6523-ce9c" name="Legion Dreadnought Drop Pod" hidden="false" collective="false" import="true" targetId="baf7-a5cf-a01e-9c3f" type="selectionEntry">
+<modifiers>
+<modifier type="set" field="hidden" value="true">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5b10-3757-cfee-0d95" type="atLeast" />
+</conditions>
+</modifier>
+</modifiers>
+</entryLink>
 <entryLink id="21b6-3a61-e229-cfb2" name="Legion Drop Pod (Orbital Assault)" hidden="false" collective="false" import="true" targetId="4e1c-55bd-1f6c-9584" type="selectionEntry">
 <modifiers>
 <modifier type="set" field="hidden" value="true">
 <conditions>
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b68d-b2ba-b013-f6c1" type="lessThan" />
+</conditions>
+</modifier>
+<modifier type="set" field="hidden" value="true">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5b10-3757-cfee-0d95" type="atLeast" />
+</conditions>
+</modifier>
+<modifier type="set" field="5bb1-041f-8d76-3af7" value="0">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5b10-3757-cfee-0d95" type="atLeast" />
 </conditions>
 </modifier>
 <modifier type="add" field="error" value="Too many models for a Legion Drop Pod (capacity 10).">
@@ -11915,6 +12103,16 @@ LIMITATIONS - The army's compulsory Troops choices must be Templar Brethren Squa
 <modifier type="set" field="hidden" value="true">
 <conditions>
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b68d-b2ba-b013-f6c1" type="lessThan" />
+</conditions>
+</modifier>
+<modifier type="set" field="hidden" value="true">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5b10-3757-cfee-0d95" type="atLeast" />
+</conditions>
+</modifier>
+<modifier type="set" field="5261-b7f0-8b32-02cd" value="0">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5b10-3757-cfee-0d95" type="atLeast" />
 </conditions>
 </modifier>
 <modifier type="add" field="error" value="Too many models for a Anvillus Pattern Dreadclaw Drop Pod (capacity 10).">
@@ -12298,12 +12496,30 @@ LIMITATIONS - The army's compulsory Troops choices must be Templar Brethren Squa
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1988-3d7a-8602-086b" type="max" />
 </constraints>
 <entryLinks>
-<entryLink id="9027-fe33-6705-a1c2" name="Legion Dreadnought Drop Pod" hidden="false" collective="false" import="true" targetId="baf7-a5cf-a01e-9c3f" type="selectionEntry" />
+<entryLink id="9027-fe33-6705-a1c2" name="Legion Dreadnought Drop Pod" hidden="false" collective="false" import="true" targetId="baf7-a5cf-a01e-9c3f" type="selectionEntry">
+<modifiers>
+<modifier type="set" field="hidden" value="true">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5b10-3757-cfee-0d95" type="atLeast" />
+</conditions>
+</modifier>
+</modifiers>
+</entryLink>
 <entryLink id="bfb4-9e21-430f-2267" name="Legion Drop Pod (Orbital Assault)" hidden="false" collective="false" import="true" targetId="4e1c-55bd-1f6c-9584" type="selectionEntry">
 <modifiers>
 <modifier type="set" field="hidden" value="true">
 <conditions>
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b68d-b2ba-b013-f6c1" type="lessThan" />
+</conditions>
+</modifier>
+<modifier type="set" field="hidden" value="true">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5b10-3757-cfee-0d95" type="atLeast" />
+</conditions>
+</modifier>
+<modifier type="set" field="4be5-2d77-5ab7-9cdf" value="0">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5b10-3757-cfee-0d95" type="atLeast" />
 </conditions>
 </modifier>
 <modifier type="add" field="error" value="Too many models for a Legion Drop Pod (capacity 10).">
@@ -12345,6 +12561,16 @@ LIMITATIONS - The army's compulsory Troops choices must be Templar Brethren Squa
 <modifier type="set" field="hidden" value="true">
 <conditions>
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b68d-b2ba-b013-f6c1" type="lessThan" />
+</conditions>
+</modifier>
+<modifier type="set" field="hidden" value="true">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5b10-3757-cfee-0d95" type="atLeast" />
+</conditions>
+</modifier>
+<modifier type="set" field="89e4-4f5c-2f3e-fe5d" value="0">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5b10-3757-cfee-0d95" type="atLeast" />
 </conditions>
 </modifier>
 <modifier type="add" field="error" value="Too many models for a Anvillus Pattern Dreadclaw Drop Pod (capacity 10).">
@@ -13072,6 +13298,7 @@ LIMITATIONS - The army's compulsory Troops choices must be Templar Brethren Squa
 <conditionGroups>
 <conditionGroup type="or">
 <conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5b10-3757-cfee-0d95" type="atLeast" />
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="be2b-c8e1-3ca7-9df8" type="lessThan" />
 </conditions>
 </conditionGroup>
@@ -13081,6 +13308,7 @@ LIMITATIONS - The army's compulsory Troops choices must be Templar Brethren Squa
 <conditionGroups>
 <conditionGroup type="or">
 <conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5b10-3757-cfee-0d95" type="atLeast" />
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="be2b-c8e1-3ca7-9df8" type="lessThan" />
 </conditions>
 </conditionGroup>
@@ -13271,6 +13499,11 @@ LIMITATIONS - The army's compulsory Troops choices must be Templar Brethren Squa
 </entryLink>
 <entryLink id="4912-f930-63ee-aaa2" name="Legion Drop Pod" hidden="false" collective="false" import="true" targetId="4e1c-55bd-1f6c-9584" type="selectionEntry">
 <modifiers>
+<modifier type="set" field="hidden" value="true">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5b10-3757-cfee-0d95" type="atLeast" />
+</conditions>
+</modifier>
 <modifier type="add" field="error" value="Too many models for a Legion Drop Pod (capacity 10).">
 <conditionGroups>
 <conditionGroup type="and">
@@ -13304,6 +13537,11 @@ LIMITATIONS - The army's compulsory Troops choices must be Templar Brethren Squa
 </entryLink>
 <entryLink id="d120-90fb-648b-6944" name="Anvillus Pattern Dreadclaw Drop Pod" hidden="false" collective="false" import="true" targetId="2bad-68df-db1e-95d9" type="selectionEntry">
 <modifiers>
+<modifier type="set" field="hidden" value="true">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5b10-3757-cfee-0d95" type="atLeast" />
+</conditions>
+</modifier>
 <modifier type="add" field="error" value="Too many models for a Anvillus Pattern Dreadclaw Drop Pod (capacity 10).">
 <conditionGroups>
 <conditionGroup type="and">
@@ -15595,6 +15833,7 @@ LIMITATIONS - The army's compulsory Troops choices must be Templar Brethren Squa
 <conditionGroups>
 <conditionGroup type="or">
 <conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5b10-3757-cfee-0d95" type="atLeast" />
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="be2b-c8e1-3ca7-9df8" type="lessThan" />
 </conditions>
 </conditionGroup>
@@ -15604,6 +15843,7 @@ LIMITATIONS - The army's compulsory Troops choices must be Templar Brethren Squa
 <conditionGroups>
 <conditionGroup type="or">
 <conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5b10-3757-cfee-0d95" type="atLeast" />
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="be2b-c8e1-3ca7-9df8" type="lessThan" />
 </conditions>
 </conditionGroup>
@@ -15730,6 +15970,16 @@ LIMITATIONS - The army's compulsory Troops choices must be Templar Brethren Squa
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b68d-b2ba-b013-f6c1" type="lessThan" />
 </conditions>
 </modifier>
+<modifier type="set" field="hidden" value="true">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5b10-3757-cfee-0d95" type="atLeast" />
+</conditions>
+</modifier>
+<modifier type="set" field="3f3f-5b34-19a0-3bce" value="0">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5b10-3757-cfee-0d95" type="atLeast" />
+</conditions>
+</modifier>
 <modifier type="add" field="error" value="Too many models for a Legion Drop Pod (capacity 10).">
 <conditionGroups>
 <conditionGroup type="and">
@@ -15769,6 +16019,16 @@ LIMITATIONS - The army's compulsory Troops choices must be Templar Brethren Squa
 <modifier type="set" field="hidden" value="true">
 <conditions>
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b68d-b2ba-b013-f6c1" type="lessThan" />
+</conditions>
+</modifier>
+<modifier type="set" field="hidden" value="true">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5b10-3757-cfee-0d95" type="atLeast" />
+</conditions>
+</modifier>
+<modifier type="set" field="157c-7a72-2cd7-dcd7" value="0">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5b10-3757-cfee-0d95" type="atLeast" />
 </conditions>
 </modifier>
 <modifier type="add" field="error" value="Too many models for a Anvillus Pattern Dreadclaw Drop Pod (capacity 10).">
@@ -21610,7 +21870,15 @@ LIMITATIONS - The army's compulsory Troops choices must be Templar Brethren Squa
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1816-496a-9939-3edf" type="max" />
 </constraints>
 <entryLinks>
-<entryLink id="561e-7b06-8e96-da8a" name="Legion Dreadnought Drop Pod" hidden="false" collective="false" import="true" targetId="baf7-a5cf-a01e-9c3f" type="selectionEntry" />
+<entryLink id="561e-7b06-8e96-da8a" name="Legion Dreadnought Drop Pod" hidden="false" collective="false" import="true" targetId="baf7-a5cf-a01e-9c3f" type="selectionEntry">
+<modifiers>
+<modifier type="set" field="hidden" value="true">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5b10-3757-cfee-0d95" type="atLeast" />
+</conditions>
+</modifier>
+</modifiers>
+</entryLink>
 </entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
@@ -21720,6 +21988,13 @@ LIMITATIONS - The army's compulsory Troops choices must be Templar Brethren Squa
 </profiles>
 <selectionEntryGroups>
 <selectionEntryGroup id="6940-848e-07e0-214f" name="Space Marine Armoury (max 50 pts)" hidden="false" collective="false" import="true">
+<modifiers>
+<modifier type="increment" field="df57-5224-7af9-a190" value="10">
+<conditions>
+<condition field="selections" scope="c66f-1d6b-a697-fea4" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fb4f-b267-7556-185d" type="atLeast" />
+</conditions>
+</modifier>
+</modifiers>
 <constraints>
 <constraint field="pts0-0000-0000-0001" scope="self" value="50" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="df57-5224-7af9-a190" type="max" />
 </constraints>
@@ -21948,7 +22223,7 @@ LIMITATIONS - The army's compulsory Troops choices must be Templar Brethren Squa
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2553-ee43-bacb-5b12" type="max" />
 </constraints>
 <costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
+<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
 </entryLink>
 <entryLink id="f940-5db3-5f85-4f52" name="Thunder Hammer" hidden="false" collective="false" import="true" targetId="5dfe-22a3-22b6-fb7c" type="selectionEntry" sortIndex="8">
@@ -22255,6 +22530,7 @@ LIMITATIONS - The army's compulsory Troops choices must be Templar Brethren Squa
 <conditionGroups>
 <conditionGroup type="or">
 <conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5b10-3757-cfee-0d95" type="atLeast" />
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="be2b-c8e1-3ca7-9df8" type="lessThan" />
 </conditions>
 </conditionGroup>
@@ -22264,6 +22540,7 @@ LIMITATIONS - The army's compulsory Troops choices must be Templar Brethren Squa
 <conditionGroups>
 <conditionGroup type="or">
 <conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5b10-3757-cfee-0d95" type="atLeast" />
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="be2b-c8e1-3ca7-9df8" type="lessThan" />
 </conditions>
 </conditionGroup>
@@ -22293,6 +22570,11 @@ LIMITATIONS - The army's compulsory Troops choices must be Templar Brethren Squa
 <repeats>
 <repeat field="selections" scope="8f50-fab2-e27a-e45d" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5792-7325-f04a-6942" repeats="1" roundUp="false" />
 </repeats>
+</modifier>
+<modifier type="decrement" field="82c5-313b-f56a-c4f2" value="1">
+<conditions>
+<condition field="selections" scope="c66f-1d6b-a697-fea4" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fb4f-b267-7556-185d" type="atLeast" />
+</conditions>
 </modifier>
 </modifiers>
 <constraints>
@@ -22366,6 +22648,11 @@ LIMITATIONS - The army's compulsory Troops choices must be Templar Brethren Squa
 </entryLink>
 <entryLink id="7df0-0de6-70f6-6b69" name="Legion Drop Pod" hidden="false" collective="false" import="true" targetId="4e1c-55bd-1f6c-9584" type="selectionEntry">
 <modifiers>
+<modifier type="set" field="hidden" value="true">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5b10-3757-cfee-0d95" type="atLeast" />
+</conditions>
+</modifier>
 <modifier type="add" field="error" value="Too many models for a Legion Drop Pod (capacity 10).">
 <conditionGroups>
 <conditionGroup type="and">
@@ -22399,6 +22686,11 @@ LIMITATIONS - The army's compulsory Troops choices must be Templar Brethren Squa
 </entryLink>
 <entryLink id="c195-3139-660a-8333" name="Anvillus Pattern Dreadclaw Drop Pod" hidden="false" collective="false" import="true" targetId="2bad-68df-db1e-95d9" type="selectionEntry">
 <modifiers>
+<modifier type="set" field="hidden" value="true">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5b10-3757-cfee-0d95" type="atLeast" />
+</conditions>
+</modifier>
 <modifier type="add" field="error" value="Too many models for a Anvillus Pattern Dreadclaw Drop Pod (capacity 10).">
 <conditionGroups>
 <conditionGroup type="and">
@@ -22496,18 +22788,8 @@ LIMITATIONS - The army's compulsory Troops choices must be Templar Brethren Squa
 </modifier>
 </modifiers>
 </entryLink>
-<entryLink id="f612-7c24-6748-cd7a" name="Legion Spartan Assault Tank (Templar Assault)" hidden="false" collective="false" import="true" targetId="2070-31bc-7598-b201" type="selectionEntry">
+<entryLink id="e3ee-efb1-3d61-b3da" name="Legion Spartan Assault Tank" hidden="false" collective="false" import="true" targetId="2070-31bc-7598-b201" type="selectionEntry">
 <modifiers>
-<modifier type="set" field="hidden" value="true">
-<conditions>
-<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ae05-30b7-cd81-a8d0" type="lessThan" />
-</conditions>
-</modifier>
-<modifier type="set" field="eeb3-f762-65c7-3076" value="0">
-<conditions>
-<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ae05-30b7-cd81-a8d0" type="lessThan" />
-</conditions>
-</modifier>
 <modifier type="add" field="error" value="Too many models for a Legion Spartan Assault Tank (capacity 25).">
 <conditionGroups>
 <conditionGroup type="and">
@@ -22538,9 +22820,6 @@ LIMITATIONS - The army's compulsory Troops choices must be Templar Brethren Squa
 </conditionGroups>
 </modifier>
 </modifiers>
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eeb3-f762-65c7-3076" type="max" />
-</constraints>
 </entryLink>
 </entryLinks>
 </selectionEntryGroup>
@@ -22619,21 +22898,21 @@ LIMITATIONS - The army's compulsory Troops choices must be Templar Brethren Squa
 <constraint field="pts0-0000-0000-0001" scope="self" value="50" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1992-f91f-8225-18e9" type="max" />
 </constraints>
 <selectionEntryGroups>
-<selectionEntryGroup id="ef92-9ab3-2658-d6c7" name="Replace Bolter" hidden="false" collective="false" import="true" defaultSelectionEntryId="1c3a-3c6a-b43b-eff0">
+<selectionEntryGroup id="d81b-18f5-d635-7f4e" name="Replace Bolt Pistol" hidden="false" collective="false" import="true" defaultSelectionEntryId="c4cc-b2a5-2c36-cdda">
 <constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9633-d180-5d3e-e7db" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="15a9-0666-862f-2000" type="max" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dd58-781b-a9be-f92e" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a755-b33e-b747-b4cb" type="max" />
 </constraints>
 <selectionEntries>
-<selectionEntry id="6a95-c36d-3a77-2dda" name="Power Weapon" hidden="false" collective="false" import="true" type="upgrade">
+<selectionEntry id="4987-61aa-f58b-2f84" name="Power Weapon" hidden="false" collective="false" import="true" type="upgrade">
 <constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3d52-2cec-6ae0-46c3" type="max" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="def9-9af4-2e72-8c1b" type="max" />
 </constraints>
 <entryLinks>
-<entryLink id="81df-efe9-c2b7-d2cb" name="Power Weapon" hidden="false" collective="false" import="true" targetId="fb4f-b267-7556-185d" type="selectionEntry">
+<entryLink id="25b6-9423-dc8f-d960" name="Power Weapon" hidden="false" collective="false" import="true" targetId="fb4f-b267-7556-185d" type="selectionEntry">
 <constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="511a-e2af-9cd2-a2d9" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="70c1-a308-d4ad-966d" type="max" />
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f623-00b6-eaf2-09d3" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="01ff-6f42-885b-4eb7" type="max" />
 </constraints>
 </entryLink>
 </entryLinks>
@@ -22643,134 +22922,134 @@ LIMITATIONS - The army's compulsory Troops choices must be Templar Brethren Squa
 </selectionEntry>
 </selectionEntries>
 <entryLinks>
-<entryLink id="1c3a-3c6a-b43b-eff0" name="Bolter" hidden="false" collective="false" import="true" targetId="8b6f-ff45-9e8a-0d7e" type="selectionEntry" sortIndex="1" defaultAmount="1">
+<entryLink id="c4cc-b2a5-2c36-cdda" name="Bolt Pistol" hidden="false" collective="false" import="true" targetId="10e2-6917-e765-7495" type="selectionEntry" sortIndex="1" defaultAmount="1">
 <constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a08d-e23f-8517-0b25" type="max" />
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a187-2bec-046a-d044" type="max" />
 </constraints>
 </entryLink>
-<entryLink id="7232-e02b-626d-9739" name="Hand Flamer" hidden="false" collective="false" import="true" targetId="25eb-7e5c-f08a-e9b9" type="selectionEntry" sortIndex="3">
+<entryLink id="dac2-1e05-c38e-f445" name="Hand Flamer" hidden="false" collective="false" import="true" targetId="25eb-7e5c-f08a-e9b9" type="selectionEntry" sortIndex="3">
 <constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6621-ffbd-8efe-c37a" type="max" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f160-d9f3-4930-9ee2" type="max" />
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
 </costs>
 </entryLink>
-<entryLink id="2ec4-81d7-b19e-8b5a" name="Lightning Claw" hidden="false" collective="false" import="true" targetId="0826-0946-b6a1-f42b" type="selectionEntry" sortIndex="4">
+<entryLink id="1618-b770-a166-84c1" name="Lightning Claw" hidden="false" collective="false" import="true" targetId="0826-0946-b6a1-f42b" type="selectionEntry" sortIndex="4">
 <constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e108-30a4-e348-7b49" type="max" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b225-b59a-b244-9abe" type="max" />
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
 </costs>
 </entryLink>
-<entryLink id="6703-0b1c-5b2e-6d32" name="Pair of Lightning Claws" hidden="false" collective="false" import="true" targetId="af2b-d487-5b80-ae9b" type="selectionEntry" sortIndex="5">
+<entryLink id="2234-bdfa-3d80-598f" name="Pair of Lightning Claws" hidden="false" collective="false" import="true" targetId="af2b-d487-5b80-ae9b" type="selectionEntry" sortIndex="5">
 <constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a11c-0937-88e9-0755" type="max" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d396-e404-446a-7f3f" type="max" />
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
 </costs>
 </entryLink>
-<entryLink id="d611-38f1-3368-87a5" name="Plasma Pistol" hidden="false" collective="false" import="true" targetId="523c-5dd4-3402-0e99" type="selectionEntry" sortIndex="6">
+<entryLink id="8d98-48c2-d6f3-8ac4" name="Plasma Pistol" hidden="false" collective="false" import="true" targetId="523c-5dd4-3402-0e99" type="selectionEntry" sortIndex="6">
 <constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="feb9-704e-3431-3db9" type="max" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="38fb-9ef9-d7e2-c476" type="max" />
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
 </costs>
 </entryLink>
-<entryLink id="ed71-4d51-83f7-93ad" name="Power Fist" hidden="false" collective="false" import="true" targetId="0b4d-922b-4629-b7ca" type="selectionEntry" sortIndex="7">
+<entryLink id="5c01-f6e6-1e05-1b82" name="Power Fist" hidden="false" collective="false" import="true" targetId="0b4d-922b-4629-b7ca" type="selectionEntry" sortIndex="7">
 <constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1750-824e-5586-d399" type="max" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="39b8-f2c7-d652-39cf" type="max" />
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
 </costs>
 </entryLink>
-<entryLink id="d314-a5b9-5af9-b7fa" name="Rending Weapon" hidden="false" collective="false" import="true" targetId="ffab-7f00-50f4-91e0" type="selectionEntry" sortIndex="9">
+<entryLink id="1ce0-5ca1-b3ca-5337" name="Rending Weapon" hidden="false" collective="false" import="true" targetId="ffab-7f00-50f4-91e0" type="selectionEntry" sortIndex="9">
 <constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5457-a737-d8f7-05ab" type="max" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aeee-f700-cace-f09a" type="max" />
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
 </costs>
 </entryLink>
-<entryLink id="19e5-e148-0ec8-9703" name="Thunder Hammer" hidden="false" collective="false" import="true" targetId="5dfe-22a3-22b6-fb7c" type="selectionEntry" sortIndex="10">
+<entryLink id="27ad-7b9d-2e27-d320" name="Thunder Hammer" hidden="false" collective="false" import="true" targetId="5dfe-22a3-22b6-fb7c" type="selectionEntry" sortIndex="10">
 <constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eef9-0ab8-7c6d-6bfb" type="max" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7115-5aff-dc7a-a3c7" type="max" />
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
 </costs>
 </entryLink>
-<entryLink id="6533-70e3-eede-2147" name="Volkite Serpenta" hidden="false" collective="false" import="true" targetId="48a3-89aa-47ef-c849" type="selectionEntry" sortIndex="11">
+<entryLink id="c95e-cd66-61c3-79b6" name="Volkite Serpenta" hidden="false" collective="false" import="true" targetId="48a3-89aa-47ef-c849" type="selectionEntry" sortIndex="11">
 <constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7c72-2763-ff38-bf4c" type="max" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="385a-eeeb-066f-48bc" type="max" />
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
 </costs>
 </entryLink>
-<entryLink id="3325-6e85-e04e-12c7" name="Combi-Bolter" hidden="false" collective="false" import="true" targetId="5d48-9963-61d3-1a72" type="selectionEntry" sortIndex="12">
+<entryLink id="5d14-0d53-94fc-7fcf" name="Combi-Bolter" hidden="false" collective="false" import="true" targetId="5d48-9963-61d3-1a72" type="selectionEntry" sortIndex="12">
 <constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d8d4-dd1f-653a-7d32" type="max" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f7e8-c097-481a-09e6" type="max" />
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
 </costs>
 </entryLink>
-<entryLink id="5ddd-5c8d-1787-5c1a" name="Combi-Flamer" hidden="false" collective="false" import="true" targetId="8a4e-3dc8-c0e4-b9cf" type="selectionEntry" sortIndex="13">
+<entryLink id="8b54-0338-f117-4991" name="Combi-Flamer" hidden="false" collective="false" import="true" targetId="8a4e-3dc8-c0e4-b9cf" type="selectionEntry" sortIndex="13">
 <constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bb2e-a638-a0c8-1758" type="max" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="136c-6fa2-686e-5e26" type="max" />
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
 </entryLink>
-<entryLink id="0fd8-69e7-43ab-32c7" name="Combi-Grenade Launcher" hidden="false" collective="false" import="true" targetId="53ca-71d4-e838-5ab2" type="selectionEntry" sortIndex="14">
+<entryLink id="32f8-9b42-1636-cc2f" name="Combi-Grenade Launcher" hidden="false" collective="false" import="true" targetId="53ca-71d4-e838-5ab2" type="selectionEntry" sortIndex="14">
 <constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0b7c-0fbe-872a-d800" type="max" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2d70-07f7-1fb2-2346" type="max" />
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
 </entryLink>
-<entryLink id="bfb5-e093-ae1d-d83e" name="Combi-Meltagun" hidden="false" collective="false" import="true" targetId="b147-b586-15e9-f12b" type="selectionEntry" sortIndex="15">
+<entryLink id="2d67-91a7-7f56-e035" name="Combi-Meltagun" hidden="false" collective="false" import="true" targetId="b147-b586-15e9-f12b" type="selectionEntry" sortIndex="15">
 <constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="45ad-cbc8-4f3f-b318" type="max" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e689-1976-41d6-3171" type="max" />
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
 </costs>
 </entryLink>
-<entryLink id="391e-92e4-20d0-a65e" name="Combi-Plasma Gun" hidden="false" collective="false" import="true" targetId="e700-2c4d-9283-a7b7" type="selectionEntry" sortIndex="16">
+<entryLink id="100f-1ce6-7fd5-7d6c" name="Combi-Plasma Gun" hidden="false" collective="false" import="true" targetId="e700-2c4d-9283-a7b7" type="selectionEntry" sortIndex="16">
 <constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6bf9-03c7-f299-54e8" type="max" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c54b-44b3-10af-87cd" type="max" />
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
 </costs>
 </entryLink>
-<entryLink id="c1e3-fa4e-7f70-d54b" name="Combi-Volkite Charger" hidden="false" collective="false" import="true" targetId="2125-78bc-6ae3-2391" type="selectionEntry" sortIndex="17">
+<entryLink id="0a3f-9a70-2485-0e2e" name="Combi-Volkite Charger" hidden="false" collective="false" import="true" targetId="2125-78bc-6ae3-2391" type="selectionEntry" sortIndex="17">
 <constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8c8b-f053-8707-231c" type="max" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="507e-13cc-320b-13fb" type="max" />
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
 </entryLink>
-<entryLink id="dee9-a3ea-fd86-2d62" name="Storm Bolter" hidden="false" collective="false" import="true" targetId="4c92-8660-bb6b-730f" type="selectionEntry" sortIndex="18">
+<entryLink id="1d31-681d-08fb-3c7f" name="Storm Bolter" hidden="false" collective="false" import="true" targetId="4c92-8660-bb6b-730f" type="selectionEntry" sortIndex="18">
 <constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4fbd-62ab-70eb-435a" type="max" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d742-ff86-918f-286e" type="max" />
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
 </costs>
 </entryLink>
-<entryLink id="8c0d-4ffd-95e4-e099" name="Solarite Power Gauntlet" hidden="false" collective="false" import="true" targetId="3ac8-fcc9-b899-2187" type="selectionEntry" sortIndex="107">
+<entryLink id="b416-a08d-a015-3438" name="Solarite Power Gauntlet" hidden="false" collective="false" import="true" targetId="3ac8-fcc9-b899-2187" type="selectionEntry" sortIndex="107">
 <constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9e2e-14a1-58e6-39a6" type="max" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6cbd-fbd3-8cf4-c2a0" type="max" />
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
@@ -23051,10 +23330,10 @@ LIMITATIONS - The army's compulsory Troops choices must be Templar Brethren Squa
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f90e-4d23-9582-0998" type="max" />
 </constraints>
 </entryLink>
-<entryLink id="e97f-0de3-138f-3bca" name="Bolter" hidden="false" collective="false" import="true" targetId="8b6f-ff45-9e8a-0d7e" type="selectionEntry">
+<entryLink id="5f69-2645-fba9-958f" name="Bolt Pistol" hidden="false" collective="false" import="true" targetId="10e2-6917-e765-7495" type="selectionEntry">
 <constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2bf8-0c6f-1fc6-9c71" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c04f-9b29-66ba-dd01" type="max" />
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7077-5556-3775-cd97" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5e85-7afd-dc98-ff09" type="max" />
 </constraints>
 </entryLink>
 <entryLink id="9002-b038-6bee-2511" name="Power Weapon" hidden="false" collective="false" import="true" targetId="fb4f-b267-7556-185d" type="selectionEntry">
@@ -23143,6 +23422,7 @@ LIMITATIONS - The army's compulsory Troops choices must be Templar Brethren Squa
 <conditionGroups>
 <conditionGroup type="or">
 <conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5b10-3757-cfee-0d95" type="atLeast" />
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="be2b-c8e1-3ca7-9df8" type="lessThan" />
 </conditions>
 </conditionGroup>
@@ -23152,6 +23432,7 @@ LIMITATIONS - The army's compulsory Troops choices must be Templar Brethren Squa
 <conditionGroups>
 <conditionGroup type="or">
 <conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5b10-3757-cfee-0d95" type="atLeast" />
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="be2b-c8e1-3ca7-9df8" type="lessThan" />
 </conditions>
 </conditionGroup>
@@ -23175,29 +23456,29 @@ LIMITATIONS - The army's compulsory Troops choices must be Templar Brethren Squa
 </selectionEntry>
 </selectionEntries>
 <selectionEntryGroups>
-<selectionEntryGroup id="22f4-eac1-df0c-d7bf" name="Special Weapons (1 per 5 models, replace Bolter)" hidden="false" collective="false" import="true">
+<selectionEntryGroup id="a2d4-8516-eaf5-da9d" name="Special Weapons (1 per 5 models, replace Bolt Pistol)" hidden="false" collective="false" import="true">
 <modifiers>
-<modifier type="increment" field="4d3e-8c1a-f0cd-0b75" value="1">
+<modifier type="increment" field="7015-6edd-295f-216f" value="1">
 <repeats>
 <repeat field="selections" scope="545f-5268-82e0-2215" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" repeats="1" roundUp="false" />
 </repeats>
 </modifier>
 </modifiers>
 <constraints>
-<constraint automatic="true" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4d3e-8c1a-f0cd-0b75" type="max" />
+<constraint automatic="true" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7015-6edd-295f-216f" type="max" />
 </constraints>
 <entryLinks>
-<entryLink id="496f-91e5-899d-85b3" name="Flamer" hidden="false" collective="false" import="true" targetId="871b-3cee-4373-04f9" type="selectionEntry">
+<entryLink id="cf46-0aef-c18f-8b3c" name="Flamer" hidden="false" collective="false" import="true" targetId="871b-3cee-4373-04f9" type="selectionEntry">
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
 </costs>
 </entryLink>
-<entryLink id="b08a-58be-4568-6fbb" name="Meltagun" hidden="false" collective="false" import="true" targetId="63e8-bee7-88b7-64c6" type="selectionEntry">
+<entryLink id="8b77-df16-c10e-b79a" name="Meltagun" hidden="false" collective="false" import="true" targetId="63e8-bee7-88b7-64c6" type="selectionEntry">
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
 </entryLink>
-<entryLink id="d606-1b6c-8cbd-4533" name="Plasma Gun" hidden="false" collective="false" import="true" targetId="325e-cf5b-6af4-1818" type="selectionEntry">
+<entryLink id="1078-bddf-c12b-7fdb" name="Plasma Gun" hidden="false" collective="false" import="true" targetId="325e-cf5b-6af4-1818" type="selectionEntry">
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
 </costs>
@@ -23263,6 +23544,11 @@ LIMITATIONS - The army's compulsory Troops choices must be Templar Brethren Squa
 </entryLink>
 <entryLink id="64ee-74b9-d775-40d4" name="Anvillus Pattern Dreadclaw Drop Pod" hidden="false" collective="false" import="true" targetId="2bad-68df-db1e-95d9" type="selectionEntry">
 <modifiers>
+<modifier type="set" field="hidden" value="true">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5b10-3757-cfee-0d95" type="atLeast" />
+</conditions>
+</modifier>
 <modifier type="add" field="error" value="Too many models for a Anvillus Pattern Dreadclaw Drop Pod (capacity 10).">
 <conditionGroups>
 <conditionGroup type="and">
@@ -23360,11 +23646,54 @@ LIMITATIONS - The army's compulsory Troops choices must be Templar Brethren Squa
 </modifier>
 </modifiers>
 </entryLink>
+<entryLink id="88c5-deaa-df9e-2c86" name="Legion Spartan Assault Tank" hidden="false" collective="false" import="true" targetId="2070-31bc-7598-b201" type="selectionEntry">
+<modifiers>
+<modifier type="add" field="error" value="Too many models for a Legion Spartan Assault Tank (capacity 25).">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2070-31bc-7598-b201" type="atLeast" />
+<condition field="selections" scope="parent" value="25" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="add" field="error" value="Terminator Armour counts as two models: too many for a Legion Spartan Assault Tank (capacity 25).">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2070-31bc-7598-b201" type="atLeast" />
+<condition field="selections" scope="parent" value="12" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
+</conditions>
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a6a2-abea-01b2-ad81" type="atLeast" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d900-78c3-2b10-8f9c" type="atLeast" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0656-5d6b-29bb-1441" type="atLeast" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+</modifiers>
+</entryLink>
 <entryLink id="bbcb-efad-0193-d5bd" name="Legion Drop Pod (Orbital Assault)" hidden="false" collective="false" import="true" targetId="4e1c-55bd-1f6c-9584" type="selectionEntry">
 <modifiers>
 <modifier type="set" field="hidden" value="true">
 <conditions>
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b68d-b2ba-b013-f6c1" type="lessThan" />
+</conditions>
+</modifier>
+<modifier type="set" field="hidden" value="true">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5b10-3757-cfee-0d95" type="atLeast" />
+</conditions>
+</modifier>
+<modifier type="set" field="7a60-6040-de7c-f83f" value="0">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5b10-3757-cfee-0d95" type="atLeast" />
 </conditions>
 </modifier>
 <modifier type="add" field="error" value="Too many models for a Legion Drop Pod (capacity 10).">
@@ -23409,6 +23738,18 @@ LIMITATIONS - The army's compulsory Troops choices must be Templar Brethren Squa
 </costs>
 </selectionEntry>
 <selectionEntry id="f688-ef2d-c44b-3cf6" name="0-2 Tarantula Sentry Gun Battery" hidden="false" collective="false" import="true" type="unit">
+<modifiers>
+<modifier type="set" field="hidden" value="true">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="be2b-c8e1-3ca7-9df8" type="atLeast" />
+</conditions>
+</modifier>
+<modifier type="set" field="0708-7063-64f7-363f" value="0">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="be2b-c8e1-3ca7-9df8" type="atLeast" />
+</conditions>
+</modifier>
+</modifiers>
 <infoLinks>
 <infoLink id="7cf9-e8e3-e6de-52a4" name="Immobile" hidden="false" targetId="6612-1e33-fd3f-43a0" type="rule" />
 <infoLink id="9a32-c714-e47e-bffb" name="Automated Targeting" hidden="false" targetId="e49b-387f-07c3-a17c" type="rule" />
@@ -23620,18 +23961,28 @@ LIMITATIONS - The army's compulsory Troops choices must be Templar Brethren Squa
 <modifiers>
 <modifier type="set" field="hidden" value="true">
 <conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5b10-3757-cfee-0d95" type="atLeast" />
 <conditionGroup type="and">
 <conditions>
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="be2b-c8e1-3ca7-9df8" type="lessThan" />
+</conditions>
+</conditionGroup>
 </conditions>
 </conditionGroup>
 </conditionGroups>
 </modifier>
 <modifier type="set" field="e580-4723-8d08-9dd8" value="0">
 <conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5b10-3757-cfee-0d95" type="atLeast" />
 <conditionGroup type="and">
 <conditions>
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="be2b-c8e1-3ca7-9df8" type="lessThan" />
+</conditions>
+</conditionGroup>
 </conditions>
 </conditionGroup>
 </conditionGroups>
@@ -23735,18 +24086,28 @@ LIMITATIONS - The army's compulsory Troops choices must be Templar Brethren Squa
 <modifiers>
 <modifier type="set" field="hidden" value="true">
 <conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5b10-3757-cfee-0d95" type="atLeast" />
 <conditionGroup type="and">
 <conditions>
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="be2b-c8e1-3ca7-9df8" type="lessThan" />
+</conditions>
+</conditionGroup>
 </conditions>
 </conditionGroup>
 </conditionGroups>
 </modifier>
 <modifier type="set" field="5188-172e-2fc1-ca9a" value="0">
 <conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5b10-3757-cfee-0d95" type="atLeast" />
 <conditionGroup type="and">
 <conditions>
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="be2b-c8e1-3ca7-9df8" type="lessThan" />
+</conditions>
+</conditionGroup>
 </conditions>
 </conditionGroup>
 </conditionGroups>
@@ -23849,18 +24210,28 @@ LIMITATIONS - The army's compulsory Troops choices must be Templar Brethren Squa
 <modifiers>
 <modifier type="set" field="hidden" value="true">
 <conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5b10-3757-cfee-0d95" type="atLeast" />
 <conditionGroup type="and">
 <conditions>
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="be2b-c8e1-3ca7-9df8" type="lessThan" />
+</conditions>
+</conditionGroup>
 </conditions>
 </conditionGroup>
 </conditionGroups>
 </modifier>
 <modifier type="set" field="1210-d384-8fe6-c8f8" value="0">
 <conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5b10-3757-cfee-0d95" type="atLeast" />
 <conditionGroup type="and">
 <conditions>
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="be2b-c8e1-3ca7-9df8" type="lessThan" />
+</conditions>
+</conditionGroup>
 </conditions>
 </conditionGroup>
 </conditionGroups>
@@ -23898,6 +24269,7 @@ LIMITATIONS - The army's compulsory Troops choices must be Templar Brethren Squa
 <infoLinks>
 <infoLink id="7de8-25c2-b7cf-0a63" name="Legiones Astartes (Imperial Fists)" hidden="false" targetId="d22d-b684-3fb8-fe84" type="rule" />
 <infoLink id="e457-de7a-ec10-42e0" name="Independent Character" hidden="false" targetId="03f2-ed94-7611-f6a1" type="rule" />
+<infoLink id="0130-266f-e882-9dca" name="Master of the Legion" hidden="false" targetId="7a4c-8b34-41a7-547b" type="rule" />
 <infoLink id="c370-ecc4-9835-1c2d" name="Stubborn" hidden="false" targetId="4221-0014-a08b-6fb4" type="rule" />
 <infoLink id="31eb-91c8-ce8b-6a67" name="Hold the Line" hidden="false" targetId="864b-14b4-a7c3-357c" type="rule" />
 <infoLink id="c4d0-aca4-a481-3353" name="Command Retinue (Diaz)" hidden="false" targetId="23d6-b114-454b-cdc0" type="rule" />
@@ -23905,6 +24277,7 @@ LIMITATIONS - The army's compulsory Troops choices must be Templar Brethren Squa
 <categoryLinks>
 <categoryLink id="3723-78aa-5057-9b9f" name="HQ" hidden="false" targetId="cd54-54be-0cb1-3474" primary="true" />
 <categoryLink id="3a60-3a0c-0063-3505" name="Compulsory HQ Eligible" hidden="false" targetId="e89b-053d-1bdc-4e2e" primary="false" />
+<categoryLink id="0647-078d-b8e8-0e2e" name="Master of the Legion" hidden="false" targetId="cf42-da2a-93a6-6913" primary="false" />
 </categoryLinks>
 <selectionEntryGroups>
 <selectionEntryGroup id="203a-4c1e-d3cb-b336" name="Wargear" hidden="false" collective="false" import="true">
@@ -23972,18 +24345,28 @@ LIMITATIONS - The army's compulsory Troops choices must be Templar Brethren Squa
 <modifiers>
 <modifier type="set" field="hidden" value="true">
 <conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5b10-3757-cfee-0d95" type="atLeast" />
 <conditionGroup type="and">
 <conditions>
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="be2b-c8e1-3ca7-9df8" type="lessThan" />
+</conditions>
+</conditionGroup>
 </conditions>
 </conditionGroup>
 </conditionGroups>
 </modifier>
 <modifier type="set" field="2dca-4c08-15da-a4cb" value="0">
 <conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5b10-3757-cfee-0d95" type="atLeast" />
 <conditionGroup type="and">
 <conditions>
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="be2b-c8e1-3ca7-9df8" type="lessThan" />
+</conditions>
+</conditionGroup>
 </conditions>
 </conditionGroup>
 </conditionGroups>
@@ -24068,6 +24451,26 @@ LIMITATIONS - The army's compulsory Troops choices must be Templar Brethren Squa
 </constraints>
 </entryLink>
 <entryLink id="a924-9d5e-cf71-e933" name="Teleportation Transponders" hidden="false" collective="false" import="true" targetId="5511-9cf7-1895-e481" type="selectionEntry">
+<modifiers>
+<modifier type="set" field="hidden" value="true">
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5b10-3757-cfee-0d95" type="atLeast" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="set" field="7deb-39f3-8e1c-62ac" value="0">
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5b10-3757-cfee-0d95" type="atLeast" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+</modifiers>
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7deb-39f3-8e1c-62ac" type="max" />
 </constraints>
@@ -24093,6 +24496,11 @@ LIMITATIONS - The army's compulsory Troops choices must be Templar Brethren Squa
 <modifier type="add" field="category" value="e89b-053d-1bdc-4e2e">
 <conditions>
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c0b2-49b1-48fd-3fc2" type="atLeast" />
+</conditions>
+</modifier>
+<modifier type="add" field="error" value="Rogal Dorn, the Praetorian of Terra is Loyalist only.">
+<conditions>
+<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="267b-12c2-839b-a93a" type="atLeast" />
 </conditions>
 </modifier>
 </modifiers>
@@ -24172,6 +24580,41 @@ LIMITATIONS - The army's compulsory Troops choices must be Templar Brethren Squa
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a907-dc1b-9391-e20b" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="af48-6aac-a2c7-021d" type="max" />
+</constraints>
+</entryLink>
+<entryLink id="0014-86b1-8aa2-40c7" name="Teleportation Transponders" hidden="false" collective="false" import="true" targetId="5511-9cf7-1895-e481" type="selectionEntry">
+<modifiers>
+<modifier type="set" field="hidden" value="true">
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5b10-3757-cfee-0d95" type="atLeast" />
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="be2b-c8e1-3ca7-9df8" type="lessThan" />
+</conditions>
+</conditionGroup>
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="set" field="12c4-6115-2f22-ff76" value="0">
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5b10-3757-cfee-0d95" type="atLeast" />
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="be2b-c8e1-3ca7-9df8" type="lessThan" />
+</conditions>
+</conditionGroup>
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+</modifiers>
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="12c4-6115-2f22-ff76" type="max" />
 </constraints>
 </entryLink>
 </entryLinks>
@@ -24799,6 +25242,7 @@ LIMITATIONS - The army's compulsory Troops choices must be Templar Brethren Squa
 <conditionGroups>
 <conditionGroup type="or">
 <conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5b10-3757-cfee-0d95" type="atLeast" />
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="be2b-c8e1-3ca7-9df8" type="lessThan" />
 </conditions>
 </conditionGroup>
@@ -24808,6 +25252,7 @@ LIMITATIONS - The army's compulsory Troops choices must be Templar Brethren Squa
 <conditionGroups>
 <conditionGroup type="or">
 <conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5b10-3757-cfee-0d95" type="atLeast" />
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="be2b-c8e1-3ca7-9df8" type="lessThan" />
 </conditions>
 </conditionGroup>
@@ -24938,6 +25383,11 @@ LIMITATIONS - The army's compulsory Troops choices must be Templar Brethren Squa
 </entryLink>
 <entryLink id="8933-1c49-3fa9-fad0" name="Legion Drop Pod" hidden="false" collective="false" import="true" targetId="4e1c-55bd-1f6c-9584" type="selectionEntry">
 <modifiers>
+<modifier type="set" field="hidden" value="true">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5b10-3757-cfee-0d95" type="atLeast" />
+</conditions>
+</modifier>
 <modifier type="add" field="error" value="Too many models for a Legion Drop Pod (capacity 10).">
 <conditionGroups>
 <conditionGroup type="and">
@@ -25007,6 +25457,16 @@ LIMITATIONS - The army's compulsory Troops choices must be Templar Brethren Squa
 <modifier type="set" field="hidden" value="true">
 <conditions>
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b68d-b2ba-b013-f6c1" type="lessThan" />
+</conditions>
+</modifier>
+<modifier type="set" field="hidden" value="true">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5b10-3757-cfee-0d95" type="atLeast" />
+</conditions>
+</modifier>
+<modifier type="set" field="8d93-914c-2f16-5ea1" value="0">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5b10-3757-cfee-0d95" type="atLeast" />
 </conditions>
 </modifier>
 <modifier type="add" field="error" value="Too many models for a Anvillus Pattern Dreadclaw Drop Pod (capacity 10).">
@@ -26478,6 +26938,7 @@ LIMITATIONS - The army's compulsory Troops choices must be Templar Brethren Squa
 <conditionGroups>
 <conditionGroup type="or">
 <conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5b10-3757-cfee-0d95" type="atLeast" />
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="be2b-c8e1-3ca7-9df8" type="lessThan" />
 </conditions>
 </conditionGroup>
@@ -26487,6 +26948,7 @@ LIMITATIONS - The army's compulsory Troops choices must be Templar Brethren Squa
 <conditionGroups>
 <conditionGroup type="or">
 <conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5b10-3757-cfee-0d95" type="atLeast" />
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="be2b-c8e1-3ca7-9df8" type="lessThan" />
 </conditions>
 </conditionGroup>
@@ -26903,6 +27365,11 @@ LIMITATIONS - The army's compulsory Troops choices must be Templar Brethren Squa
 </entryLink>
 <entryLink id="8016-0ba5-24c1-3eb3" name="Legion Drop Pod" hidden="false" collective="false" import="true" targetId="4e1c-55bd-1f6c-9584" type="selectionEntry">
 <modifiers>
+<modifier type="set" field="hidden" value="true">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5b10-3757-cfee-0d95" type="atLeast" />
+</conditions>
+</modifier>
 <modifier type="add" field="error" value="Too many models for a Legion Drop Pod (capacity 10).">
 <conditionGroups>
 <conditionGroup type="and">
@@ -26936,6 +27403,11 @@ LIMITATIONS - The army's compulsory Troops choices must be Templar Brethren Squa
 </entryLink>
 <entryLink id="d766-91c0-aa2b-33a6" name="Anvillus Pattern Dreadclaw Drop Pod" hidden="false" collective="false" import="true" targetId="2bad-68df-db1e-95d9" type="selectionEntry">
 <modifiers>
+<modifier type="set" field="hidden" value="true">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5b10-3757-cfee-0d95" type="atLeast" />
+</conditions>
+</modifier>
 <modifier type="add" field="error" value="Too many models for a Anvillus Pattern Dreadclaw Drop Pod (capacity 10).">
 <conditionGroups>
 <conditionGroup type="and">
@@ -28107,6 +28579,26 @@ LIMITATIONS - The army's compulsory Troops choices must be Templar Brethren Squa
 </costs>
 </selectionEntry>
 <selectionEntry id="bf57-db87-5f60-e803" name="Teleportation Transponders (entire unit)" hidden="false" collective="false" import="true" type="upgrade">
+<modifiers>
+<modifier type="set" field="hidden" value="true">
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5b10-3757-cfee-0d95" type="atLeast" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="set" field="21bd-f7be-b29d-3d03" value="0">
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5b10-3757-cfee-0d95" type="atLeast" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+</modifiers>
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="21bd-f7be-b29d-3d03" type="max" />
 </constraints>
@@ -28425,6 +28917,11 @@ LIMITATIONS - The army's compulsory Troops choices must be Templar Brethren Squa
 </entryLink>
 <entryLink id="3d61-2546-6b46-1f08" name="Anvillus Pattern Dreadclaw Drop Pod" hidden="false" collective="false" import="true" targetId="2bad-68df-db1e-95d9" type="selectionEntry">
 <modifiers>
+<modifier type="set" field="hidden" value="true">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5b10-3757-cfee-0d95" type="atLeast" />
+</conditions>
+</modifier>
 <modifier type="add" field="error" value="Too many models for a Anvillus Pattern Dreadclaw Drop Pod (capacity 10).">
 <conditionGroups>
 <conditionGroup type="and">
@@ -29891,6 +30388,7 @@ LIMITATIONS - The army's compulsory Troops choices must be Templar Brethren Squa
 <conditionGroups>
 <conditionGroup type="or">
 <conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5b10-3757-cfee-0d95" type="atLeast" />
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="be2b-c8e1-3ca7-9df8" type="lessThan" />
 </conditions>
 </conditionGroup>
@@ -29900,6 +30398,7 @@ LIMITATIONS - The army's compulsory Troops choices must be Templar Brethren Squa
 <conditionGroups>
 <conditionGroup type="or">
 <conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5b10-3757-cfee-0d95" type="atLeast" />
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="be2b-c8e1-3ca7-9df8" type="lessThan" />
 </conditions>
 </conditionGroup>
@@ -30316,6 +30815,11 @@ LIMITATIONS - The army's compulsory Troops choices must be Templar Brethren Squa
 </entryLink>
 <entryLink id="93e0-9a9f-0c88-bafa" name="Legion Drop Pod" hidden="false" collective="false" import="true" targetId="4e1c-55bd-1f6c-9584" type="selectionEntry">
 <modifiers>
+<modifier type="set" field="hidden" value="true">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5b10-3757-cfee-0d95" type="atLeast" />
+</conditions>
+</modifier>
 <modifier type="add" field="error" value="Too many models for a Legion Drop Pod (capacity 10).">
 <conditionGroups>
 <conditionGroup type="and">
@@ -30349,6 +30853,11 @@ LIMITATIONS - The army's compulsory Troops choices must be Templar Brethren Squa
 </entryLink>
 <entryLink id="9bf6-c369-b150-1651" name="Anvillus Pattern Dreadclaw Drop Pod" hidden="false" collective="false" import="true" targetId="2bad-68df-db1e-95d9" type="selectionEntry">
 <modifiers>
+<modifier type="set" field="hidden" value="true">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5b10-3757-cfee-0d95" type="atLeast" />
+</conditions>
+</modifier>
 <modifier type="add" field="error" value="Too many models for a Anvillus Pattern Dreadclaw Drop Pod (capacity 10).">
 <conditionGroups>
 <conditionGroup type="and">
@@ -31520,6 +32029,26 @@ LIMITATIONS - The army's compulsory Troops choices must be Templar Brethren Squa
 </costs>
 </selectionEntry>
 <selectionEntry id="34c7-f9bf-f38e-b050" name="Teleportation Transponders (entire unit)" hidden="false" collective="false" import="true" type="upgrade">
+<modifiers>
+<modifier type="set" field="hidden" value="true">
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5b10-3757-cfee-0d95" type="atLeast" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="set" field="71c6-31e7-c1fd-84d7" value="0">
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5b10-3757-cfee-0d95" type="atLeast" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+</modifiers>
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="71c6-31e7-c1fd-84d7" type="max" />
 </constraints>
@@ -31838,6 +32367,11 @@ LIMITATIONS - The army's compulsory Troops choices must be Templar Brethren Squa
 </entryLink>
 <entryLink id="5356-bcd3-5dd6-74e0" name="Anvillus Pattern Dreadclaw Drop Pod" hidden="false" collective="false" import="true" targetId="2bad-68df-db1e-95d9" type="selectionEntry">
 <modifiers>
+<modifier type="set" field="hidden" value="true">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5b10-3757-cfee-0d95" type="atLeast" />
+</conditions>
+</modifier>
 <modifier type="add" field="error" value="Too many models for a Anvillus Pattern Dreadclaw Drop Pod (capacity 10).">
 <conditionGroups>
 <conditionGroup type="and">
@@ -32665,6 +33199,13 @@ LIMITATIONS - The army's compulsory Troops choices must be Templar Brethren Squa
 </profiles>
 <selectionEntryGroups>
 <selectionEntryGroup id="2986-e58c-27d1-919d" name="Space Marine Armoury (max 50 pts)" hidden="false" collective="false" import="true">
+<modifiers>
+<modifier type="increment" field="c5c7-9a94-0694-5d7a" value="10">
+<conditions>
+<condition field="selections" scope="75a1-de5d-84a8-2eba" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fb4f-b267-7556-185d" type="atLeast" />
+</conditions>
+</modifier>
+</modifiers>
 <constraints>
 <constraint field="pts0-0000-0000-0001" scope="self" value="50" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="c5c7-9a94-0694-5d7a" type="max" />
 </constraints>
@@ -32893,7 +33434,7 @@ LIMITATIONS - The army's compulsory Troops choices must be Templar Brethren Squa
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d208-c66c-326c-d981" type="max" />
 </constraints>
 <costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
+<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
 </entryLink>
 <entryLink id="294e-f96f-4ed3-c204" name="Thunder Hammer" hidden="false" collective="false" import="true" targetId="5dfe-22a3-22b6-fb7c" type="selectionEntry" sortIndex="8">
@@ -33200,6 +33741,7 @@ LIMITATIONS - The army's compulsory Troops choices must be Templar Brethren Squa
 <conditionGroups>
 <conditionGroup type="or">
 <conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5b10-3757-cfee-0d95" type="atLeast" />
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="be2b-c8e1-3ca7-9df8" type="lessThan" />
 </conditions>
 </conditionGroup>
@@ -33209,6 +33751,7 @@ LIMITATIONS - The army's compulsory Troops choices must be Templar Brethren Squa
 <conditionGroups>
 <conditionGroup type="or">
 <conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5b10-3757-cfee-0d95" type="atLeast" />
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="be2b-c8e1-3ca7-9df8" type="lessThan" />
 </conditions>
 </conditionGroup>
@@ -33238,6 +33781,11 @@ LIMITATIONS - The army's compulsory Troops choices must be Templar Brethren Squa
 <repeats>
 <repeat field="selections" scope="8f17-d2b7-4ca5-dca4" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3b1f-7533-5988-6a5c" repeats="1" roundUp="false" />
 </repeats>
+</modifier>
+<modifier type="decrement" field="0c9a-f1cc-6241-126e" value="1">
+<conditions>
+<condition field="selections" scope="75a1-de5d-84a8-2eba" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fb4f-b267-7556-185d" type="atLeast" />
+</conditions>
 </modifier>
 </modifiers>
 <constraints>
@@ -33311,6 +33859,11 @@ LIMITATIONS - The army's compulsory Troops choices must be Templar Brethren Squa
 </entryLink>
 <entryLink id="eb84-35b0-48e1-0f2d" name="Legion Drop Pod" hidden="false" collective="false" import="true" targetId="4e1c-55bd-1f6c-9584" type="selectionEntry">
 <modifiers>
+<modifier type="set" field="hidden" value="true">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5b10-3757-cfee-0d95" type="atLeast" />
+</conditions>
+</modifier>
 <modifier type="add" field="error" value="Too many models for a Legion Drop Pod (capacity 10).">
 <conditionGroups>
 <conditionGroup type="and">
@@ -33344,6 +33897,11 @@ LIMITATIONS - The army's compulsory Troops choices must be Templar Brethren Squa
 </entryLink>
 <entryLink id="5be2-a3cc-c0b9-5819" name="Anvillus Pattern Dreadclaw Drop Pod" hidden="false" collective="false" import="true" targetId="2bad-68df-db1e-95d9" type="selectionEntry">
 <modifiers>
+<modifier type="set" field="hidden" value="true">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5b10-3757-cfee-0d95" type="atLeast" />
+</conditions>
+</modifier>
 <modifier type="add" field="error" value="Too many models for a Anvillus Pattern Dreadclaw Drop Pod (capacity 10).">
 <conditionGroups>
 <conditionGroup type="and">
@@ -33441,18 +33999,8 @@ LIMITATIONS - The army's compulsory Troops choices must be Templar Brethren Squa
 </modifier>
 </modifiers>
 </entryLink>
-<entryLink id="4235-2735-29e2-c89e" name="Legion Spartan Assault Tank (Templar Assault)" hidden="false" collective="false" import="true" targetId="2070-31bc-7598-b201" type="selectionEntry">
+<entryLink id="9918-d07d-3175-298a" name="Legion Spartan Assault Tank" hidden="false" collective="false" import="true" targetId="2070-31bc-7598-b201" type="selectionEntry">
 <modifiers>
-<modifier type="set" field="hidden" value="true">
-<conditions>
-<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ae05-30b7-cd81-a8d0" type="lessThan" />
-</conditions>
-</modifier>
-<modifier type="set" field="0d67-7ae4-5597-b010" value="0">
-<conditions>
-<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ae05-30b7-cd81-a8d0" type="lessThan" />
-</conditions>
-</modifier>
 <modifier type="add" field="error" value="Too many models for a Legion Spartan Assault Tank (capacity 25).">
 <conditionGroups>
 <conditionGroup type="and">
@@ -33483,9 +34031,6 @@ LIMITATIONS - The army's compulsory Troops choices must be Templar Brethren Squa
 </conditionGroups>
 </modifier>
 </modifiers>
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0d67-7ae4-5597-b010" type="max" />
-</constraints>
 </entryLink>
 </entryLinks>
 </selectionEntryGroup>
@@ -33740,6 +34285,26 @@ LIMITATIONS - The army's compulsory Troops choices must be Templar Brethren Squa
 </costs>
 </selectionEntry>
 <selectionEntry id="ebb3-0efb-4024-c36d" name="Teleportation Transponders (entire unit)" hidden="false" collective="false" import="true" type="upgrade">
+<modifiers>
+<modifier type="set" field="hidden" value="true">
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5b10-3757-cfee-0d95" type="atLeast" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="set" field="ec55-0d70-04b9-0d4c" value="0">
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5b10-3757-cfee-0d95" type="atLeast" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+</modifiers>
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ec55-0d70-04b9-0d4c" type="max" />
 </constraints>
@@ -33882,21 +34447,21 @@ LIMITATIONS - The army's compulsory Troops choices must be Templar Brethren Squa
 <constraint field="pts0-0000-0000-0001" scope="self" value="50" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="fb4e-91ad-0e5b-e59e" type="max" />
 </constraints>
 <selectionEntryGroups>
-<selectionEntryGroup id="44f7-70fc-ce0e-b537" name="Replace Bolter" hidden="false" collective="false" import="true" defaultSelectionEntryId="575e-04c8-dc87-543c">
+<selectionEntryGroup id="7cb4-7d40-e299-cc6e" name="Replace Bolt Pistol" hidden="false" collective="false" import="true" defaultSelectionEntryId="3ed3-b288-aa2b-63a9">
 <constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="af0d-659f-4627-a7ee" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2a49-efda-bea5-a2d4" type="max" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="96b2-da0c-9f95-8553" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d506-4cfa-01f6-56ab" type="max" />
 </constraints>
 <selectionEntries>
-<selectionEntry id="d555-11e7-06fa-52b7" name="Power Weapon" hidden="false" collective="false" import="true" type="upgrade">
+<selectionEntry id="17ae-d3dd-7cb7-1d4d" name="Power Weapon" hidden="false" collective="false" import="true" type="upgrade">
 <constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ad45-30c1-10a5-1383" type="max" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="350d-5caf-fc1a-b14b" type="max" />
 </constraints>
 <entryLinks>
-<entryLink id="6032-8aaa-cfff-461b" name="Power Weapon" hidden="false" collective="false" import="true" targetId="fb4f-b267-7556-185d" type="selectionEntry">
+<entryLink id="9a2d-3648-b825-329d" name="Power Weapon" hidden="false" collective="false" import="true" targetId="fb4f-b267-7556-185d" type="selectionEntry">
 <constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6a2d-fbac-4c30-ca09" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0559-babf-e5ab-a9d2" type="max" />
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5905-ea81-0620-8814" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a115-d53f-6159-2daa" type="max" />
 </constraints>
 </entryLink>
 </entryLinks>
@@ -33906,134 +34471,134 @@ LIMITATIONS - The army's compulsory Troops choices must be Templar Brethren Squa
 </selectionEntry>
 </selectionEntries>
 <entryLinks>
-<entryLink id="575e-04c8-dc87-543c" name="Bolter" hidden="false" collective="false" import="true" targetId="8b6f-ff45-9e8a-0d7e" type="selectionEntry" sortIndex="1" defaultAmount="1">
+<entryLink id="3ed3-b288-aa2b-63a9" name="Bolt Pistol" hidden="false" collective="false" import="true" targetId="10e2-6917-e765-7495" type="selectionEntry" sortIndex="1" defaultAmount="1">
 <constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e422-a040-d140-a3c7" type="max" />
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9e38-713e-f056-0ddf" type="max" />
 </constraints>
 </entryLink>
-<entryLink id="49c4-6706-6c62-f961" name="Hand Flamer" hidden="false" collective="false" import="true" targetId="25eb-7e5c-f08a-e9b9" type="selectionEntry" sortIndex="3">
+<entryLink id="cf5e-0165-80ef-6223" name="Hand Flamer" hidden="false" collective="false" import="true" targetId="25eb-7e5c-f08a-e9b9" type="selectionEntry" sortIndex="3">
 <constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bbc8-9be2-255d-f592" type="max" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0355-517e-0c86-d7fa" type="max" />
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
 </costs>
 </entryLink>
-<entryLink id="8fcb-387c-9384-759e" name="Lightning Claw" hidden="false" collective="false" import="true" targetId="0826-0946-b6a1-f42b" type="selectionEntry" sortIndex="4">
+<entryLink id="7bb6-893c-aa97-8857" name="Lightning Claw" hidden="false" collective="false" import="true" targetId="0826-0946-b6a1-f42b" type="selectionEntry" sortIndex="4">
 <constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4ab3-7635-4bae-baa0" type="max" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d87c-551a-1972-041a" type="max" />
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
 </costs>
 </entryLink>
-<entryLink id="e4ee-724e-ea30-165d" name="Pair of Lightning Claws" hidden="false" collective="false" import="true" targetId="af2b-d487-5b80-ae9b" type="selectionEntry" sortIndex="5">
+<entryLink id="58ad-8dd4-ca84-b261" name="Pair of Lightning Claws" hidden="false" collective="false" import="true" targetId="af2b-d487-5b80-ae9b" type="selectionEntry" sortIndex="5">
 <constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3351-4712-0afa-48bb" type="max" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="03c5-aa3d-9ab0-5525" type="max" />
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
 </costs>
 </entryLink>
-<entryLink id="6b81-f418-2bdd-d4a1" name="Plasma Pistol" hidden="false" collective="false" import="true" targetId="523c-5dd4-3402-0e99" type="selectionEntry" sortIndex="6">
+<entryLink id="b077-b3c6-be57-db82" name="Plasma Pistol" hidden="false" collective="false" import="true" targetId="523c-5dd4-3402-0e99" type="selectionEntry" sortIndex="6">
 <constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e531-a176-e19a-5c96" type="max" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="97df-e650-9db9-72ac" type="max" />
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
 </costs>
 </entryLink>
-<entryLink id="ed22-98d8-e4ce-33a3" name="Power Fist" hidden="false" collective="false" import="true" targetId="0b4d-922b-4629-b7ca" type="selectionEntry" sortIndex="7">
+<entryLink id="9034-52d5-828a-d0a4" name="Power Fist" hidden="false" collective="false" import="true" targetId="0b4d-922b-4629-b7ca" type="selectionEntry" sortIndex="7">
 <constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c952-571f-894a-9280" type="max" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aa9a-d5ec-5f3a-b1ba" type="max" />
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
 </costs>
 </entryLink>
-<entryLink id="6d44-3ece-94cc-0ab3" name="Rending Weapon" hidden="false" collective="false" import="true" targetId="ffab-7f00-50f4-91e0" type="selectionEntry" sortIndex="9">
+<entryLink id="0861-fe85-3e0d-11be" name="Rending Weapon" hidden="false" collective="false" import="true" targetId="ffab-7f00-50f4-91e0" type="selectionEntry" sortIndex="9">
 <constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d53e-5287-5857-4f51" type="max" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e051-84e5-2356-6cd2" type="max" />
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
 </costs>
 </entryLink>
-<entryLink id="e039-c680-598d-0a97" name="Thunder Hammer" hidden="false" collective="false" import="true" targetId="5dfe-22a3-22b6-fb7c" type="selectionEntry" sortIndex="10">
+<entryLink id="1356-e16d-ba7e-1660" name="Thunder Hammer" hidden="false" collective="false" import="true" targetId="5dfe-22a3-22b6-fb7c" type="selectionEntry" sortIndex="10">
 <constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c513-d883-cfd4-b831" type="max" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aac2-5df1-dc8d-79eb" type="max" />
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
 </costs>
 </entryLink>
-<entryLink id="ecfb-41d5-5903-f1ee" name="Volkite Serpenta" hidden="false" collective="false" import="true" targetId="48a3-89aa-47ef-c849" type="selectionEntry" sortIndex="11">
+<entryLink id="4554-4fb6-ea56-63bf" name="Volkite Serpenta" hidden="false" collective="false" import="true" targetId="48a3-89aa-47ef-c849" type="selectionEntry" sortIndex="11">
 <constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9bde-885b-c9bf-a84c" type="max" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1b7f-ac41-11b8-ebe6" type="max" />
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
 </costs>
 </entryLink>
-<entryLink id="2c2e-79ee-daef-442a" name="Combi-Bolter" hidden="false" collective="false" import="true" targetId="5d48-9963-61d3-1a72" type="selectionEntry" sortIndex="12">
+<entryLink id="2b5a-20b7-3907-d188" name="Combi-Bolter" hidden="false" collective="false" import="true" targetId="5d48-9963-61d3-1a72" type="selectionEntry" sortIndex="12">
 <constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d6d9-8fb4-da30-bdbe" type="max" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1e39-8f46-8047-4491" type="max" />
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
 </costs>
 </entryLink>
-<entryLink id="6697-4e53-2be4-0cc9" name="Combi-Flamer" hidden="false" collective="false" import="true" targetId="8a4e-3dc8-c0e4-b9cf" type="selectionEntry" sortIndex="13">
+<entryLink id="bcb3-91a8-befd-d42c" name="Combi-Flamer" hidden="false" collective="false" import="true" targetId="8a4e-3dc8-c0e4-b9cf" type="selectionEntry" sortIndex="13">
 <constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9577-ad6c-645e-b27d" type="max" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7c49-2d21-80ae-264b" type="max" />
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
 </entryLink>
-<entryLink id="d3e0-ae43-7f0d-5a0f" name="Combi-Grenade Launcher" hidden="false" collective="false" import="true" targetId="53ca-71d4-e838-5ab2" type="selectionEntry" sortIndex="14">
+<entryLink id="02e6-57ed-760f-bc09" name="Combi-Grenade Launcher" hidden="false" collective="false" import="true" targetId="53ca-71d4-e838-5ab2" type="selectionEntry" sortIndex="14">
 <constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="95a7-7575-98ec-2de5" type="max" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a820-a376-9549-5b5e" type="max" />
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
 </entryLink>
-<entryLink id="c873-b0d5-3006-1c04" name="Combi-Meltagun" hidden="false" collective="false" import="true" targetId="b147-b586-15e9-f12b" type="selectionEntry" sortIndex="15">
+<entryLink id="450a-9bb4-f674-4e82" name="Combi-Meltagun" hidden="false" collective="false" import="true" targetId="b147-b586-15e9-f12b" type="selectionEntry" sortIndex="15">
 <constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7073-67bd-0043-b20b" type="max" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b46f-e178-3b69-a8be" type="max" />
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
 </costs>
 </entryLink>
-<entryLink id="5f69-6e6b-6ad8-f203" name="Combi-Plasma Gun" hidden="false" collective="false" import="true" targetId="e700-2c4d-9283-a7b7" type="selectionEntry" sortIndex="16">
+<entryLink id="eb46-df89-ab2f-f129" name="Combi-Plasma Gun" hidden="false" collective="false" import="true" targetId="e700-2c4d-9283-a7b7" type="selectionEntry" sortIndex="16">
 <constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b702-1b8a-1ef4-409d" type="max" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8d94-46a1-b40b-40a2" type="max" />
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
 </costs>
 </entryLink>
-<entryLink id="6556-24f0-5ff5-f1ee" name="Combi-Volkite Charger" hidden="false" collective="false" import="true" targetId="2125-78bc-6ae3-2391" type="selectionEntry" sortIndex="17">
+<entryLink id="2817-0c38-acb7-1ab3" name="Combi-Volkite Charger" hidden="false" collective="false" import="true" targetId="2125-78bc-6ae3-2391" type="selectionEntry" sortIndex="17">
 <constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a8da-630a-39d9-44ef" type="max" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f54c-d448-9285-2de1" type="max" />
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
 </entryLink>
-<entryLink id="5ca0-abc0-c68c-e5f2" name="Storm Bolter" hidden="false" collective="false" import="true" targetId="4c92-8660-bb6b-730f" type="selectionEntry" sortIndex="18">
+<entryLink id="b691-f4e5-b3b3-5512" name="Storm Bolter" hidden="false" collective="false" import="true" targetId="4c92-8660-bb6b-730f" type="selectionEntry" sortIndex="18">
 <constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d4cd-b433-ab6a-c37f" type="max" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d264-1f84-b064-ad83" type="max" />
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
 </costs>
 </entryLink>
-<entryLink id="a9b0-0c96-0e31-005e" name="Solarite Power Gauntlet" hidden="false" collective="false" import="true" targetId="3ac8-fcc9-b899-2187" type="selectionEntry" sortIndex="107">
+<entryLink id="1206-fc93-0d35-ce6c" name="Solarite Power Gauntlet" hidden="false" collective="false" import="true" targetId="3ac8-fcc9-b899-2187" type="selectionEntry" sortIndex="107">
 <constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1d44-15e7-ada8-fcd6" type="max" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="448d-c3a2-3c4e-09b6" type="max" />
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
@@ -34314,10 +34879,10 @@ LIMITATIONS - The army's compulsory Troops choices must be Templar Brethren Squa
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9f87-6fb7-d2be-a172" type="max" />
 </constraints>
 </entryLink>
-<entryLink id="af64-2cd6-4fa1-b3e1" name="Bolter" hidden="false" collective="false" import="true" targetId="8b6f-ff45-9e8a-0d7e" type="selectionEntry">
+<entryLink id="b700-a7de-53b5-a7d0" name="Bolt Pistol" hidden="false" collective="false" import="true" targetId="10e2-6917-e765-7495" type="selectionEntry">
 <constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="025c-763a-740f-418b" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fa7e-9214-62f8-4843" type="max" />
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="337e-ff10-ff75-5ff7" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4ab8-bcad-dbfb-d762" type="max" />
 </constraints>
 </entryLink>
 <entryLink id="f148-69db-5eb2-6215" name="Power Weapon" hidden="false" collective="false" import="true" targetId="fb4f-b267-7556-185d" type="selectionEntry">
@@ -34406,6 +34971,7 @@ LIMITATIONS - The army's compulsory Troops choices must be Templar Brethren Squa
 <conditionGroups>
 <conditionGroup type="or">
 <conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5b10-3757-cfee-0d95" type="atLeast" />
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="be2b-c8e1-3ca7-9df8" type="lessThan" />
 </conditions>
 </conditionGroup>
@@ -34415,6 +34981,7 @@ LIMITATIONS - The army's compulsory Troops choices must be Templar Brethren Squa
 <conditionGroups>
 <conditionGroup type="or">
 <conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5b10-3757-cfee-0d95" type="atLeast" />
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="be2b-c8e1-3ca7-9df8" type="lessThan" />
 </conditions>
 </conditionGroup>
@@ -34438,29 +35005,29 @@ LIMITATIONS - The army's compulsory Troops choices must be Templar Brethren Squa
 </selectionEntry>
 </selectionEntries>
 <selectionEntryGroups>
-<selectionEntryGroup id="ed97-b6a7-a879-cea6" name="Special Weapons (1 per 5 models, replace Bolter)" hidden="false" collective="false" import="true">
+<selectionEntryGroup id="8237-efe9-453a-8336" name="Special Weapons (1 per 5 models, replace Bolt Pistol)" hidden="false" collective="false" import="true">
 <modifiers>
-<modifier type="increment" field="3280-9c75-0ed1-d26d" value="1">
+<modifier type="increment" field="f8bc-394e-9eb2-40a5" value="1">
 <repeats>
 <repeat field="selections" scope="3448-cdc1-04fb-7ace" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" repeats="1" roundUp="false" />
 </repeats>
 </modifier>
 </modifiers>
 <constraints>
-<constraint automatic="true" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3280-9c75-0ed1-d26d" type="max" />
+<constraint automatic="true" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f8bc-394e-9eb2-40a5" type="max" />
 </constraints>
 <entryLinks>
-<entryLink id="289d-051d-ad9d-9510" name="Flamer" hidden="false" collective="false" import="true" targetId="871b-3cee-4373-04f9" type="selectionEntry">
+<entryLink id="bab0-223b-7210-df07" name="Flamer" hidden="false" collective="false" import="true" targetId="871b-3cee-4373-04f9" type="selectionEntry">
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
 </costs>
 </entryLink>
-<entryLink id="018c-c81b-fb62-2305" name="Meltagun" hidden="false" collective="false" import="true" targetId="63e8-bee7-88b7-64c6" type="selectionEntry">
+<entryLink id="3148-7454-709c-def0" name="Meltagun" hidden="false" collective="false" import="true" targetId="63e8-bee7-88b7-64c6" type="selectionEntry">
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
 </entryLink>
-<entryLink id="e0ac-19cf-d1e3-0448" name="Plasma Gun" hidden="false" collective="false" import="true" targetId="325e-cf5b-6af4-1818" type="selectionEntry">
+<entryLink id="f1f6-d529-5025-8c80" name="Plasma Gun" hidden="false" collective="false" import="true" targetId="325e-cf5b-6af4-1818" type="selectionEntry">
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
 </costs>
@@ -34526,6 +35093,11 @@ LIMITATIONS - The army's compulsory Troops choices must be Templar Brethren Squa
 </entryLink>
 <entryLink id="a10d-9a75-fad4-d4ae" name="Anvillus Pattern Dreadclaw Drop Pod" hidden="false" collective="false" import="true" targetId="2bad-68df-db1e-95d9" type="selectionEntry">
 <modifiers>
+<modifier type="set" field="hidden" value="true">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5b10-3757-cfee-0d95" type="atLeast" />
+</conditions>
+</modifier>
 <modifier type="add" field="error" value="Too many models for a Anvillus Pattern Dreadclaw Drop Pod (capacity 10).">
 <conditionGroups>
 <conditionGroup type="and">
@@ -34623,11 +35195,54 @@ LIMITATIONS - The army's compulsory Troops choices must be Templar Brethren Squa
 </modifier>
 </modifiers>
 </entryLink>
+<entryLink id="0d80-6292-ac29-5e08" name="Legion Spartan Assault Tank" hidden="false" collective="false" import="true" targetId="2070-31bc-7598-b201" type="selectionEntry">
+<modifiers>
+<modifier type="add" field="error" value="Too many models for a Legion Spartan Assault Tank (capacity 25).">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2070-31bc-7598-b201" type="atLeast" />
+<condition field="selections" scope="parent" value="25" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="add" field="error" value="Terminator Armour counts as two models: too many for a Legion Spartan Assault Tank (capacity 25).">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2070-31bc-7598-b201" type="atLeast" />
+<condition field="selections" scope="parent" value="12" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
+</conditions>
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a6a2-abea-01b2-ad81" type="atLeast" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d900-78c3-2b10-8f9c" type="atLeast" />
+<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0656-5d6b-29bb-1441" type="atLeast" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+</modifiers>
+</entryLink>
 <entryLink id="5109-24e8-a93f-1fc9" name="Legion Drop Pod (Orbital Assault)" hidden="false" collective="false" import="true" targetId="4e1c-55bd-1f6c-9584" type="selectionEntry">
 <modifiers>
 <modifier type="set" field="hidden" value="true">
 <conditions>
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b68d-b2ba-b013-f6c1" type="lessThan" />
+</conditions>
+</modifier>
+<modifier type="set" field="hidden" value="true">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5b10-3757-cfee-0d95" type="atLeast" />
+</conditions>
+</modifier>
+<modifier type="set" field="5278-ca75-df1b-9b61" value="0">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5b10-3757-cfee-0d95" type="atLeast" />
 </conditions>
 </modifier>
 <modifier type="add" field="error" value="Too many models for a Legion Drop Pod (capacity 10).">
@@ -36099,6 +36714,7 @@ LIMITATIONS - The army's compulsory Troops choices must be Templar Brethren Squa
 <conditionGroups>
 <conditionGroup type="or">
 <conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5b10-3757-cfee-0d95" type="atLeast" />
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="be2b-c8e1-3ca7-9df8" type="lessThan" />
 </conditions>
 </conditionGroup>
@@ -36108,6 +36724,7 @@ LIMITATIONS - The army's compulsory Troops choices must be Templar Brethren Squa
 <conditionGroups>
 <conditionGroup type="or">
 <conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5b10-3757-cfee-0d95" type="atLeast" />
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="be2b-c8e1-3ca7-9df8" type="lessThan" />
 </conditions>
 </conditionGroup>
@@ -36524,6 +37141,11 @@ LIMITATIONS - The army's compulsory Troops choices must be Templar Brethren Squa
 </entryLink>
 <entryLink id="a1f9-42b9-e29c-6a61" name="Legion Drop Pod" hidden="false" collective="false" import="true" targetId="4e1c-55bd-1f6c-9584" type="selectionEntry">
 <modifiers>
+<modifier type="set" field="hidden" value="true">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5b10-3757-cfee-0d95" type="atLeast" />
+</conditions>
+</modifier>
 <modifier type="add" field="error" value="Too many models for a Legion Drop Pod (capacity 10).">
 <conditionGroups>
 <conditionGroup type="and">
@@ -36557,6 +37179,11 @@ LIMITATIONS - The army's compulsory Troops choices must be Templar Brethren Squa
 </entryLink>
 <entryLink id="2a17-6c0a-48ca-8c33" name="Anvillus Pattern Dreadclaw Drop Pod" hidden="false" collective="false" import="true" targetId="2bad-68df-db1e-95d9" type="selectionEntry">
 <modifiers>
+<modifier type="set" field="hidden" value="true">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5b10-3757-cfee-0d95" type="atLeast" />
+</conditions>
+</modifier>
 <modifier type="add" field="error" value="Too many models for a Anvillus Pattern Dreadclaw Drop Pod (capacity 10).">
 <conditionGroups>
 <conditionGroup type="and">
@@ -36874,6 +37501,26 @@ LIMITATIONS - The army's compulsory Troops choices must be Templar Brethren Squa
 </costs>
 </selectionEntry>
 <selectionEntry id="5f54-e87a-ad55-1b43" name="Teleportation Transponders (entire unit)" hidden="false" collective="false" import="true" type="upgrade">
+<modifiers>
+<modifier type="set" field="hidden" value="true">
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5b10-3757-cfee-0d95" type="atLeast" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="set" field="6520-9803-ffee-96e0" value="0">
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5b10-3757-cfee-0d95" type="atLeast" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+</modifiers>
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6520-9803-ffee-96e0" type="max" />
 </constraints>
@@ -38081,6 +38728,26 @@ LIMITATIONS - The army's compulsory Troops choices must be Templar Brethren Squa
 </costs>
 </selectionEntry>
 <selectionEntry id="f408-5723-1388-426c" name="Teleportation Transponders (entire unit)" hidden="false" collective="false" import="true" type="upgrade">
+<modifiers>
+<modifier type="set" field="hidden" value="true">
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5b10-3757-cfee-0d95" type="atLeast" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="set" field="bad8-2463-cfc2-879c" value="0">
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5b10-3757-cfee-0d95" type="atLeast" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+</modifiers>
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bad8-2463-cfc2-879c" type="max" />
 </constraints>
@@ -38399,6 +39066,11 @@ LIMITATIONS - The army's compulsory Troops choices must be Templar Brethren Squa
 </entryLink>
 <entryLink id="3bb4-1279-ebae-4bba" name="Anvillus Pattern Dreadclaw Drop Pod" hidden="false" collective="false" import="true" targetId="2bad-68df-db1e-95d9" type="selectionEntry">
 <modifiers>
+<modifier type="set" field="hidden" value="true">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5b10-3757-cfee-0d95" type="atLeast" />
+</conditions>
+</modifier>
 <modifier type="add" field="error" value="Too many models for a Anvillus Pattern Dreadclaw Drop Pod (capacity 10).">
 <conditionGroups>
 <conditionGroup type="and">
@@ -38832,6 +39504,7 @@ LIMITATIONS - The army's compulsory Troops choices must be Templar Brethren Squa
 <conditionGroups>
 <conditionGroup type="or">
 <conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5b10-3757-cfee-0d95" type="atLeast" />
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="be2b-c8e1-3ca7-9df8" type="lessThan" />
 </conditions>
 </conditionGroup>
@@ -38841,6 +39514,7 @@ LIMITATIONS - The army's compulsory Troops choices must be Templar Brethren Squa
 <conditionGroups>
 <conditionGroup type="or">
 <conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5b10-3757-cfee-0d95" type="atLeast" />
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="be2b-c8e1-3ca7-9df8" type="lessThan" />
 </conditions>
 </conditionGroup>
@@ -38971,6 +39645,11 @@ LIMITATIONS - The army's compulsory Troops choices must be Templar Brethren Squa
 </entryLink>
 <entryLink id="453a-301d-8967-7f2f" name="Legion Drop Pod" hidden="false" collective="false" import="true" targetId="4e1c-55bd-1f6c-9584" type="selectionEntry">
 <modifiers>
+<modifier type="set" field="hidden" value="true">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5b10-3757-cfee-0d95" type="atLeast" />
+</conditions>
+</modifier>
 <modifier type="add" field="error" value="Too many models for a Legion Drop Pod (capacity 10).">
 <conditionGroups>
 <conditionGroup type="and">
@@ -39040,6 +39719,16 @@ LIMITATIONS - The army's compulsory Troops choices must be Templar Brethren Squa
 <modifier type="set" field="hidden" value="true">
 <conditions>
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b68d-b2ba-b013-f6c1" type="lessThan" />
+</conditions>
+</modifier>
+<modifier type="set" field="hidden" value="true">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5b10-3757-cfee-0d95" type="atLeast" />
+</conditions>
+</modifier>
+<modifier type="set" field="5d07-bac7-7037-215f" value="0">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5b10-3757-cfee-0d95" type="atLeast" />
 </conditions>
 </modifier>
 <modifier type="add" field="error" value="Too many models for a Anvillus Pattern Dreadclaw Drop Pod (capacity 10).">
@@ -40183,6 +40872,26 @@ LIMITATIONS - The army's compulsory Troops choices must be Templar Brethren Squa
 </costs>
 </selectionEntry>
 <selectionEntry id="0f7b-b630-f988-fb55" name="Teleportation Transponders (entire unit)" hidden="false" collective="false" import="true" type="upgrade">
+<modifiers>
+<modifier type="set" field="hidden" value="true">
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5b10-3757-cfee-0d95" type="atLeast" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="set" field="26ad-3129-a9ee-26ad" value="0">
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5b10-3757-cfee-0d95" type="atLeast" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+</modifiers>
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="26ad-3129-a9ee-26ad" type="max" />
 </constraints>
@@ -40501,6 +41210,11 @@ LIMITATIONS - The army's compulsory Troops choices must be Templar Brethren Squa
 </entryLink>
 <entryLink id="05d7-e54b-6a9c-bbcb" name="Anvillus Pattern Dreadclaw Drop Pod" hidden="false" collective="false" import="true" targetId="2bad-68df-db1e-95d9" type="selectionEntry">
 <modifiers>
+<modifier type="set" field="hidden" value="true">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5b10-3757-cfee-0d95" type="atLeast" />
+</conditions>
+</modifier>
 <modifier type="add" field="error" value="Too many models for a Anvillus Pattern Dreadclaw Drop Pod (capacity 10).">
 <conditionGroups>
 <conditionGroup type="and">
@@ -40785,6 +41499,26 @@ LIMITATIONS - The army's compulsory Troops choices must be Templar Brethren Squa
 </costs>
 </selectionEntry>
 <selectionEntry id="89a0-8730-85e5-6615" name="Teleportation Transponders (entire unit)" hidden="false" collective="false" import="true" type="upgrade">
+<modifiers>
+<modifier type="set" field="hidden" value="true">
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5b10-3757-cfee-0d95" type="atLeast" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="set" field="32d6-5892-3aa1-224c" value="0">
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5b10-3757-cfee-0d95" type="atLeast" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+</modifiers>
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="32d6-5892-3aa1-224c" type="max" />
 </constraints>
@@ -40923,6 +41657,13 @@ LIMITATIONS - The army's compulsory Troops choices must be Templar Brethren Squa
 </profiles>
 <selectionEntryGroups>
 <selectionEntryGroup id="963a-9d24-5ad7-3da1" name="Space Marine Armoury (max 50 pts)" hidden="false" collective="false" import="true">
+<modifiers>
+<modifier type="increment" field="666a-1aa9-9a42-c9fd" value="10">
+<conditions>
+<condition field="selections" scope="c231-9923-f216-6022" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fb4f-b267-7556-185d" type="atLeast" />
+</conditions>
+</modifier>
+</modifiers>
 <constraints>
 <constraint field="pts0-0000-0000-0001" scope="self" value="50" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="666a-1aa9-9a42-c9fd" type="max" />
 </constraints>
@@ -41151,7 +41892,7 @@ LIMITATIONS - The army's compulsory Troops choices must be Templar Brethren Squa
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fbd0-6071-70e4-8c85" type="max" />
 </constraints>
 <costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
+<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
 </entryLink>
 <entryLink id="3925-e8c4-1d4f-3ba7" name="Thunder Hammer" hidden="false" collective="false" import="true" targetId="5dfe-22a3-22b6-fb7c" type="selectionEntry" sortIndex="8">
@@ -41458,6 +42199,7 @@ LIMITATIONS - The army's compulsory Troops choices must be Templar Brethren Squa
 <conditionGroups>
 <conditionGroup type="or">
 <conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5b10-3757-cfee-0d95" type="atLeast" />
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="be2b-c8e1-3ca7-9df8" type="lessThan" />
 </conditions>
 </conditionGroup>
@@ -41467,6 +42209,7 @@ LIMITATIONS - The army's compulsory Troops choices must be Templar Brethren Squa
 <conditionGroups>
 <conditionGroup type="or">
 <conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5b10-3757-cfee-0d95" type="atLeast" />
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="be2b-c8e1-3ca7-9df8" type="lessThan" />
 </conditions>
 </conditionGroup>
@@ -41496,6 +42239,11 @@ LIMITATIONS - The army's compulsory Troops choices must be Templar Brethren Squa
 <repeats>
 <repeat field="selections" scope="df9f-a88d-2705-db33" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e7c1-31bd-d17a-8ef6" repeats="1" roundUp="false" />
 </repeats>
+</modifier>
+<modifier type="decrement" field="fbc1-a1f4-26be-b4aa" value="1">
+<conditions>
+<condition field="selections" scope="c231-9923-f216-6022" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fb4f-b267-7556-185d" type="atLeast" />
+</conditions>
 </modifier>
 </modifiers>
 <constraints>
@@ -41569,6 +42317,11 @@ LIMITATIONS - The army's compulsory Troops choices must be Templar Brethren Squa
 </entryLink>
 <entryLink id="730f-c88e-976c-0a89" name="Legion Drop Pod" hidden="false" collective="false" import="true" targetId="4e1c-55bd-1f6c-9584" type="selectionEntry">
 <modifiers>
+<modifier type="set" field="hidden" value="true">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5b10-3757-cfee-0d95" type="atLeast" />
+</conditions>
+</modifier>
 <modifier type="add" field="error" value="Too many models for a Legion Drop Pod (capacity 10).">
 <conditionGroups>
 <conditionGroup type="and">
@@ -41602,6 +42355,11 @@ LIMITATIONS - The army's compulsory Troops choices must be Templar Brethren Squa
 </entryLink>
 <entryLink id="8a49-6b84-f47e-e957" name="Anvillus Pattern Dreadclaw Drop Pod" hidden="false" collective="false" import="true" targetId="2bad-68df-db1e-95d9" type="selectionEntry">
 <modifiers>
+<modifier type="set" field="hidden" value="true">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5b10-3757-cfee-0d95" type="atLeast" />
+</conditions>
+</modifier>
 <modifier type="add" field="error" value="Too many models for a Anvillus Pattern Dreadclaw Drop Pod (capacity 10).">
 <conditionGroups>
 <conditionGroup type="and">
@@ -41699,18 +42457,8 @@ LIMITATIONS - The army's compulsory Troops choices must be Templar Brethren Squa
 </modifier>
 </modifiers>
 </entryLink>
-<entryLink id="d97e-f793-1d33-5461" name="Legion Spartan Assault Tank (Templar Assault)" hidden="false" collective="false" import="true" targetId="2070-31bc-7598-b201" type="selectionEntry">
+<entryLink id="d017-729d-518b-52a3" name="Legion Spartan Assault Tank" hidden="false" collective="false" import="true" targetId="2070-31bc-7598-b201" type="selectionEntry">
 <modifiers>
-<modifier type="set" field="hidden" value="true">
-<conditions>
-<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ae05-30b7-cd81-a8d0" type="lessThan" />
-</conditions>
-</modifier>
-<modifier type="set" field="0283-d93b-d5d7-1107" value="0">
-<conditions>
-<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ae05-30b7-cd81-a8d0" type="lessThan" />
-</conditions>
-</modifier>
 <modifier type="add" field="error" value="Too many models for a Legion Spartan Assault Tank (capacity 25).">
 <conditionGroups>
 <conditionGroup type="and">
@@ -41741,9 +42489,6 @@ LIMITATIONS - The army's compulsory Troops choices must be Templar Brethren Squa
 </conditionGroups>
 </modifier>
 </modifiers>
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0283-d93b-d5d7-1107" type="max" />
-</constraints>
 </entryLink>
 </entryLinks>
 </selectionEntryGroup>
@@ -41998,6 +42743,26 @@ LIMITATIONS - The army's compulsory Troops choices must be Templar Brethren Squa
 </costs>
 </selectionEntry>
 <selectionEntry id="eaeb-b4f1-a051-032c" name="Teleportation Transponders (entire unit)" hidden="false" collective="false" import="true" type="upgrade">
+<modifiers>
+<modifier type="set" field="hidden" value="true">
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5b10-3757-cfee-0d95" type="atLeast" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="set" field="aabd-5f37-575e-9f0f" value="0">
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5b10-3757-cfee-0d95" type="atLeast" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+</modifiers>
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aabd-5f37-575e-9f0f" type="max" />
 </constraints>
@@ -43278,6 +44043,7 @@ LIMITATIONS - The army's compulsory Troops choices must be Templar Brethren Squa
 <infoLink id="b0b0-8323-bc93-f1b5" name="The Black Sword" hidden="false" targetId="f77c-a889-8ba0-1eb4" type="rule" />
 <infoLink id="a8ef-aedd-1e73-7d21" name="Two-Handed" hidden="false" targetId="1d3c-a38a-f775-560e" type="rule" />
 <infoLink id="d3f0-cb55-144a-0820" name="Master-Crafted" hidden="false" targetId="6434-4809-0604-6506" type="rule" />
+<infoLink id="12cc-5317-8681-3afc" name="Massive Wound" hidden="false" targetId="600a-263a-03a1-a3b9" type="rule" />
 </infoLinks>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
@@ -43898,7 +44664,7 @@ LIMITATIONS - The army's compulsory Troops choices must be Templar Brethren Squa
 <selectionEntry id="8640-526e-09ad-fb32" name="Vigil Pattern Storm Shield" hidden="false" collective="false" import="true" type="upgrade">
 <rules>
 <rule id="2e63-3acf-ba74-01d2" name="Vigil Pattern Storm Shield" hidden="false">
-<description>An Imperial Fists Independent Character may purchase a Vigil Pattern Storm Shield for +25 points. The bearer may carry no more than one weapon in addition to the shield. Grants a 3+ Invulnerable Save. The shield occupies one hand and the bearer may never receive the bonus Attack for fighting with two close-combat weapons. Other Imperial Fists units may only gain access to it through their own army list entries; it does not make Storm Shields generally available to the Legiones Astartes.</description>
+<description>An Imperial Fists Independent Character may purchase a Vigil Pattern Storm Shield for +25 points. The bearer may carry no more than one weapon in addition to the shield. Grants a 3+ Invulnerable Save. The shield occupies one hand and the bearer may never receive the bonus Attack for fighting with two close-combat weapons. Other Imperial Fists units may only gain access to it through their own army list entries; it does not make Storm Shields generally available to the Legiones Astartes. It counts towards the Armoury points limit and may not be combined with a Refractor Field, Combat Shield or Boarding Shield.</description>
 </rule>
 </rules>
 <costs>
@@ -43908,7 +44674,7 @@ LIMITATIONS - The army's compulsory Troops choices must be Templar Brethren Squa
 <selectionEntry id="27c7-1464-b76b-1eac" name="Teleportation Transponders" hidden="false" collective="false" import="true" type="upgrade">
 <rules>
 <rule id="bb4d-f8b9-639e-5bc3" name="Teleportation Transponders" hidden="false">
-<description>Any Imperial Fists unit composed entirely of models wearing any form of Terminator Armour may purchase Teleportation Transponders for +15 points per unit. An Imperial Fists Independent Character wearing any form of Terminator Armour may purchase them for +10 points (Hammerfall Strike Force: any Imperial Fists Infantry unit +15 per unit, any Imperial Fists Independent Character +10). A model or unit equipped with Teleportation Transponders may deploy using Deep Strike even if the mission would not normally permit Deep Strike. An Independent Character intending to Deep Strike as part of another unit must purchase Teleportation Transponders separately.</description>
+<description>Any Imperial Fists unit composed entirely of models wearing any form of Terminator Armour may purchase Teleportation Transponders for +15 points per unit. An Imperial Fists Independent Character wearing any form of Terminator Armour may purchase them for +10 points (Hammerfall Strike Force: any Imperial Fists Infantry unit +15 per unit, any Imperial Fists Independent Character +10). A model or unit equipped with Teleportation Transponders may deploy using Deep Strike even if the mission would not normally permit Deep Strike. An Independent Character intending to Deep Strike as part of another unit must purchase Teleportation Transponders separately. Units which already have Deep Strike built in (e.g. Jump Infantry) may not purchase them. Under Hammerfall Strike Force named characters and Rogal Dorn may purchase them as well (+10).</description>
 </rule>
 </rules>
 <costs>
@@ -44325,24 +45091,24 @@ Afterwards the squad may not enter Overwatch, may not make Return Fire or Stand 
 <description>In a mission with variable game length, when the battle would normally end, the opposing player may demand that one additional complete game turn be played. After this additional game turn has been completed, the battle ends automatically. No effect if the mission has already ended because a specific objective or action has been completed.</description>
 </rule>
 <rule id="ec20-389c-2318-8b54" name="Solarite Power Gauntlet" hidden="false">
-<description>Any Imperial Fists Character with access to the Space Marine Armoury may purchase a Solarite Power Gauntlet for +30 points. A model already equipped with a Power Fist may exchange it for a Solarite Power Gauntlet for +5 points. Unlike a normal Power Fist, the Solarite Power Gauntlet always strikes at Strength 10 regardless of the bearer's Strength characteristic.</description>
+<description>Any Imperial Fists Character with access to the Space Marine Armoury may purchase a Solarite Power Gauntlet for +30 points; a model already equipped with a Power Fist may exchange it for a Solarite Power Gauntlet, also for +30 points. Unlike a normal Power Fist, the Solarite Power Gauntlet always strikes at Strength 10 regardless of the bearer's Strength characteristic.</description>
 </rule>
 <rule id="56a1-ead9-d4dc-5c33" name="Vigil Pattern Storm Shield" hidden="false">
-<description>An Imperial Fists Independent Character may purchase a Vigil Pattern Storm Shield for +25 points. The bearer may carry no more than one weapon in addition to the shield. Grants a 3+ Invulnerable Save. The shield occupies one hand and the bearer may never receive the bonus Attack for fighting with two close-combat weapons. Other Imperial Fists units may only gain access to it through their own army list entries; it does not make Storm Shields generally available to the Legiones Astartes.</description>
+<description>An Imperial Fists Independent Character may purchase a Vigil Pattern Storm Shield for +25 points. The bearer may carry no more than one weapon in addition to the shield. Grants a 3+ Invulnerable Save. The shield occupies one hand and the bearer may never receive the bonus Attack for fighting with two close-combat weapons. Other Imperial Fists units may only gain access to it through their own army list entries; it does not make Storm Shields generally available to the Legiones Astartes. It counts towards the Armoury points limit and may not be combined with a Refractor Field, Combat Shield or Boarding Shield.</description>
 </rule>
 <rule id="3e76-8810-ef8e-a8ee" name="Teleportation Transponders" hidden="false">
-<description>Any Imperial Fists unit composed entirely of models wearing any form of Terminator Armour may purchase Teleportation Transponders for +15 points per unit. An Imperial Fists Independent Character wearing any form of Terminator Armour may purchase them for +10 points (Hammerfall Strike Force: any Imperial Fists Infantry unit +15 per unit, any Imperial Fists Independent Character +10). A model or unit equipped with Teleportation Transponders may deploy using Deep Strike even if the mission would not normally permit Deep Strike. An Independent Character intending to Deep Strike as part of another unit must purchase Teleportation Transponders separately.</description>
+<description>Any Imperial Fists unit composed entirely of models wearing any form of Terminator Armour may purchase Teleportation Transponders for +15 points per unit. An Imperial Fists Independent Character wearing any form of Terminator Armour may purchase them for +10 points (Hammerfall Strike Force: any Imperial Fists Infantry unit +15 per unit, any Imperial Fists Independent Character +10). A model or unit equipped with Teleportation Transponders may deploy using Deep Strike even if the mission would not normally permit Deep Strike. An Independent Character intending to Deep Strike as part of another unit must purchase Teleportation Transponders separately. Units which already have Deep Strike built in (e.g. Jump Infantry) may not purchase them. Under Hammerfall Strike Force named characters and Rogal Dorn may purchase them as well (+10).</description>
 </rule>
 <rule id="b957-a9d7-90f3-869f" name="The Stone Gauntlet" hidden="false">
 <description>EFFECTS - Warders of the Phalanx: Phalanx Warder Squads may be selected as Troops choices and may fulfil compulsory Troops selections; Legion Breacher Siege Squads may also fulfil compulsory Troops selections normally. Shield Wall: an Imperial Fists Infantry unit in which every model is equipped with either a Boarding Shield or a Vigil Pattern Storm Shield may form a Shield Wall. It is active provided the unit did not Advance during its preceding Movement phase, is not Falling Back and did not charge during the current player turn. While active, models in the unit may re-roll failed Invulnerable Saves granted by Boarding Shields or Vigil Pattern Storm Shields (a re-rolled save may never be re-rolled again). Unyielding Line: while its Shield Wall is active, the unit gains Stubborn and may re-roll failed Pinning tests. The Hammer Behind the Shield: models equipped with Boarding Shields gain the Hammer of Wrath special rule (normal ProHammer definition) - a model does not receive an additional attack; instead, one of its normally allowed attacks may be resolved at Initiative 10 during a turn in which it charges.
-LIMITATIONS - The army's compulsory Troops choices must be Legion Breacher Siege Squads or Phalanx Warder Squads. The Detachment must include at least one Independent Character equipped with either a Boarding Shield or a Vigil Pattern Storm Shield. No unit in the Detachment may voluntarily deploy using Deep Strike. The army may include no more than one Fast Attack choice.</description>
+LIMITATIONS - The army's compulsory Troops choices must be Legion Breacher Siege Squads or Phalanx Warder Squads. The Detachment must include at least one Independent Character equipped with either a Boarding Shield or a Vigil Pattern Storm Shield. No unit in the Detachment may voluntarily deploy using Deep Strike (Teleportation Transponders, Drop Pods and Dreadclaw Drop Pods may not be taken). The army may include no more than one Fast Attack choice.</description>
 </rule>
 <rule id="8bcd-74d8-690c-4f60" name="Hammerfall Strike Force" hidden="false">
-<description>EFFECTS - Landing Force: Phalanx Warder Squads may be selected as Troops choices and may fulfil compulsory Troops selections. Teleport Array: any Imperial Fists Infantry unit may purchase Teleportation Transponders for +15 points per unit and any Imperial Fists Independent Character for +10 points; this overrides the normal restriction to models wearing Terminator Armour. A unit with Teleportation Transponders may deploy using Deep Strike even if the mission would not normally permit it; an Independent Character intending to Deep Strike as part of another unit must purchase them separately. Blinding Luminescence: an Imperial Fists unit arriving by Deep Strike using Teleportation Transponders gains Shrouded from the moment it is placed until the beginning of its next player turn. After it has been placed, every enemy unit with at least one model within 12" of the arriving unit and with line of sight to at least one model in it must immediately take an Initiative test; if failed, that unit suffers the effects of the Blind special rule (Weapon Skill 1, Ballistic Skill 1) until the end of its next player turn. Each enemy unit only makes one such test per arriving Imperial Fists unit.
-LIMITATIONS - The army's Warlord must be equipped with Teleportation Transponders. Every Vehicle in the Detachment must begin the battle in Reserve. The Detachment may not include a Fortification.</description>
+<description>EFFECTS - Landing Force: Phalanx Warder Squads may be selected as Troops choices and may fulfil compulsory Troops selections. Teleport Array: any Imperial Fists Infantry unit may purchase Teleportation Transponders for +15 points per unit and any Imperial Fists Independent Character for +10 points; this overrides the normal restriction to models wearing Terminator Armour. A unit with Teleportation Transponders may deploy using Deep Strike even if the mission would not normally permit it (named characters and Rogal Dorn included); an Independent Character intending to Deep Strike as part of another unit must purchase them separately. Blinding Luminescence: an Imperial Fists unit arriving by Deep Strike using Teleportation Transponders gains Shrouded from the moment it is placed until the beginning of its next player turn. After it has been placed, every enemy unit with at least one model within 12" of the arriving unit and with line of sight to at least one model in it must immediately take an Initiative test; if failed, that unit suffers the effects of the Blind special rule (Weapon Skill 1, Ballistic Skill 1) until the end of its next player turn. Each enemy unit only makes one such test per arriving Imperial Fists unit.
+LIMITATIONS - The army's Warlord must be equipped with Teleportation Transponders. Every Vehicle in the Detachment must begin the battle in Reserve; Tarantula Sentry Gun Batteries may not be taken. The Detachment may not include a Fortification.</description>
 </rule>
 <rule id="166b-328b-22e0-b1ab" name="Templar Assault" hidden="false">
-<description>EFFECTS - Templar Host: Templar Brethren Squads may be selected as Troops choices and may fulfil compulsory Troops selections. Crusading Assault: during an Assault phase in which a Templar Brethren Squad charged after disembarking from a vehicle with the Assault Vehicle special rule during the same player turn, the squad gains Furious Charge and its normal charge distance is increased from 6" to 7" for that Assault phase. Swords of the Legion: during the first round of a close combat in which a Templar Brethren Squad charged, models in that squad may re-roll To Hit rolls of 1 with Rending Weapons, Power Weapons, Relic Blades and other weapons specifically stated to count as swords. Assault Transports: a Templar Brethren Squad may select a Land Raider Phobos or Land Raider Proteus as a Dedicated Transport at its normal points cost; a squad of a size which cannot be carried by either vehicle may instead select a Legion Spartan Assault Tank at its normal points cost. All normal Transport Capacity restrictions apply.
+<description>EFFECTS - Templar Host: Templar Brethren Squads may be selected as Troops choices and may fulfil compulsory Troops selections. Crusading Assault: during an Assault phase in which a Templar Brethren Squad charged after disembarking from a vehicle with the Assault Vehicle special rule during the same player turn, the squad gains Furious Charge and its normal charge distance is increased from 6" to 7" for that Assault phase. Swords of the Legion: during the first round of a close combat in which a Templar Brethren Squad charged, models in that squad may re-roll To Hit rolls of 1 with Rending Weapons, Power Weapons, Relic Blades and other weapons specifically stated to count as swords. Assault Transports: a Templar Brethren Squad may select a Land Raider Phobos or Land Raider Proteus as a Dedicated Transport at its normal points cost; a squad of a size which cannot be carried by either vehicle may instead select a Legion Spartan Assault Tank at its normal points cost (the Templar Brethren Squad may take any Land Raider variant, including the Spartan, in any case). All normal Transport Capacity restrictions apply.
 LIMITATIONS - The army's compulsory Troops choices must be Templar Brethren Squads; while Templar Assault is selected, Templar Brethren Squads ignore their normal 0-1 limitation. The army may include no more than one Fast Attack choice. The army may not include a Fortification. The army's Warlord must be equipped with a Power Weapon, Rending Weapon, Relic Blade or another sword-like close-combat weapon which ignores Armour Saves.</description>
 </rule>
 <rule id="1153-89b9-f8fc-ff39" name="Selected as Troops (Imperial Fists Rites)" hidden="false">
@@ -44365,6 +45131,9 @@ LIMITATIONS - The army's compulsory Troops choices must be Templar Brethren Squa
 </rule>
 <rule id="f77c-a889-8ba0-1eb4" name="The Black Sword" hidden="false">
 <description>The Black Sword is a Two-Handed, Master-crafted Power Weapon which grants Sigismund +2 Strength. Sigismund never requires worse than a 3+ To Hit in close combat. Any natural To Wound roll of 6 made with the Black Sword inflicts a Massive Wound (D3) instead of a normal Wound.</description>
+</rule>
+<rule id="600a-263a-03a1-a3b9" name="Massive Wound" hidden="false">
+<description>A Massive Wound deals D3 wounds to the target model. Against target units with multi-wound models, Massive Wounds may need to be rolled and resolved one at a time to ensure that wounds are allocated to wounded models sequentially. Excess damage from a Massive Wound beyond what is needed to kill a model does not spill over onto other models.</description>
 </rule>
 <rule id="6e90-7f59-376d-f687" name="Kingslayer" hidden="false">
 <description>After deployment but before the first turn begins, nominate one enemy Independent Character. If Sigismund personally slays the nominated character, the Imperial Fists player receives an additional 150 Victory Points and Sigismund becomes Fearless for the remainder of the battle. If the nominated character survives the battle, the opposing player instead receives an additional 150 Victory Points. Only applies in missions using Victory Points.</description>

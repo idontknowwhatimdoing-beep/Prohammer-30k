@@ -40,17 +40,20 @@ RULES = {
         "Any Blood Angels Independent Character may purchase a Death Mask for +10 points. If an enemy unit loses a close "
         "combat in which at least one of its models was in base contact with the bearer, that unit suffers an "
         "additional -1 Leadership when taking the resulting Morale test. The effects of multiple Death Masks are not "
-        "cumulative."),
+        "cumulative. Counts towards the Space Marine Armoury points limit. Named characters may not take it."),
     "Inferno Pistol": (
-        "Any Blood Angels model with access to the Space Marine Armoury may purchase an Inferno Pistol for +15 points. A "
-        "Legion Moritat may replace both of his Bolt Pistols with two Inferno Pistols for +20 points."),
+        "Any Blood Angels model with access to the Space Marine Armoury may replace its Bolt Pistol with an Inferno "
+        "Pistol for +15 points (models in Terminator Armour may not take it). A Legion Moritat may replace both of his "
+        "Bolt Pistols with two Inferno Pistols for +20 points in total."),
     "Perdition": (
         "A natural To Wound roll of 6 made with a Blade of Perdition causes a Massive Wound instead of a normal wound. A "
         "Blade of Perdition counts as a sword-like weapon. Any Blood Angels Character with access to the Space Marine "
-        "Armoury may purchase a Blade of Perdition for +25 points; a model already equipped with a Power Weapon may "
-        "exchange it for a Blade of Perdition for +10 points."),
+        "Armoury may purchase a Blade of Perdition for +25 points; a model already equipped with a Power Weapon "
+        "(including one that is part of its fixed wargear, e.g. a Legion Champion) may exchange it for a Blade of "
+        "Perdition for +10 points."),
     "Over-charged Engines": (
-        "Any Blood Angels Rhino may purchase Over-charged Engines for +15 points. Before moving the Rhino during the "
+        "Any Blood Angels Rhino (including every Rhino-chassis vehicle: Damocles Command Rhino, Predator, Vindicator, "
+        "Whirlwind and Whirlwind Scorpius) may purchase Over-charged Engines for +15 points. Before moving the Rhino during the "
         "Movement phase, the controlling player may declare that it will use its Over-charged Engines and roll a D6: on "
         "a 1 the engines stall and the Rhino may not move that turn; on a 2-3 it moves normally; on a 4-6 it may move as "
         "though it were a Fast Vehicle that turn, to a maximum of 18\". Passengers follow the normal ProHammer rules for "
@@ -60,7 +63,7 @@ RULES = {
         "points. The Contemptor must be equipped with two Dreadnought Close Combat Weapons. During its Movement phase it "
         "may move up to 12\" and may pass over models and terrain in the same manner as Jump Infantry. It remains a "
         "Walker for all other purposes, may charge normally after making this movement and may not deploy using Deep "
-        "Strike. If it ends this movement in Difficult or Dangerous Terrain, roll a D6; on a 1 it suffers a Glancing "
+        "Strike (so it may not take a Dedicated Transport Drop Pod). If it ends this movement in Difficult or Dangerous Terrain, roll a D6; on a 1 it suffers a Glancing "
         "Hit."),
     # Consul
     "Sanguinary High Priest": (
@@ -74,7 +77,9 @@ RULES = {
     # Rites of War
     "The Day of Revelation": (
         "EFFECTS - Host of Angels: Legion Veteran Squads equipped with Jump Packs may be selected as Troops choices and may "
-        "fulfil compulsory Troops selections. Legion Assault Squads remain Troops choices normally. The Day is Revealed: "
+        "fulfil compulsory Troops selections. Legion Assault Squads remain Troops choices normally; "
+        "Legion Tactical Squads and Legion Breacher Siege Squads no longer count towards compulsory Troops (only Jump "
+        "Pack units do). The Day is Revealed: "
         "Blood Angels units composed entirely of Jump Infantry may deploy using Deep Strike even if the mission would not "
         "normally permit it; all Jump Infantry units placed in Reserve using this Rite must enter play using Deep Strike. "
         "On Wings of Fire: at the beginning of the second Blood Angels player turn, all Blood Angels Jump Infantry units "
@@ -175,6 +180,7 @@ RULES = {
                           "+1 Strength."),
     "Command Retinue (Blood Angels)": "The character may select one Legion Command Squad as his retinue.",
     "Feel No Pain (4+)": "The model has the Feel No Pain special rule with a 4+ roll.",
+    "One Use": "This Weapon can only be fired once per game.",
     # Sanguinius
     "Regalia Resplendent": "The Regalia Resplendent counts as Primarch Armour.",
     "Blade Encarmine": ("The Blade Encarmine is a Master-crafted Power Weapon. Attacks made with it are resolved at +1 "
@@ -236,7 +242,7 @@ WEAPON_RULES_ = {
     "Saiphan Shard-Axe": ["Master-Crafted", "Saiphan Shard-Axe"],
     "Blade Encarmine": ["Master-Crafted", "Shred", "Rampage", "Blade Encarmine"],
     "Spear of Telesto": ["Master-Crafted", "Two-Handed", "Lance", "Spear of Telesto"],
-    "Infernus": ["Melta"],
+    "Infernus": ["Melta", "One Use"],
 }
 WARGEAR_ = {
     "Death Mask": RULES["Death Mask"],
@@ -263,6 +269,9 @@ def register():
     WEAPON_RULES["Lament"].append("Lament and Grief")
     WEAPON_RULES["Grief"].append("Lament and Grief")
     WEAPON_RULES["Assault Cannon with Suspensor Web"].append("Suspensor Web")
+    # The Day of Revelation: only Jump Pack units count for the compulsory Troops
+    for n in ("Legion Tactical Squad", "Legion Breacher Siege Squad"):
+        L2.NOT_LINE_UNDER[n].append("The Day of Revelation")
 
 
 # ------------------------------------------------------------------ local helpers
@@ -316,6 +325,10 @@ def character_variant(roots, base, new, cost_exchange, cost_other, skip_names=()
                     links.append(new_l)
                     n += 1
     return n
+
+
+def has_armoury(e):
+    return any((g.get("name") or "").startswith("Space Marine Armoury") for g in e.iter("selectionEntryGroup"))
 
 
 def model(u, name, cost, mn, mx, utype, stats, kit, groups=(), mods=(), rules_=(), auto=False):
@@ -504,7 +517,7 @@ def characters(sg):
         ["Furious Charge", "Command Retinue (Blood Angels)"],
         retinue=retinue_links("amit", [command_squad_for("amit", AMIT)]),
         extra_groups=[take(AMIT, "Wargear", [("Krak Grenades", 2), ("Melta Bombs", 5)])],
-        profile_name="Nassir Amit"))
+        profile_name="Nassir Amit", loyalist=True))
     return out
 
 
@@ -566,21 +579,20 @@ def extend(ctx):
             add_mods(sg_, [modifier("set", uid(sgid, "min"), 0, conds=c), modifier("set", uid(sgid, "max"), 0, conds=c),
                            modifier("set", "hidden", "true", conds=c)])
 
-    # Armoury: Inferno Pistol for every model with the Space Marine Armoury
-    add_armoury_items(ctx, [("Inferno Pistol", 15)])
-    # Death Mask: Independent Characters (Praetor / Centurion)
-    for n in ("Legion Praetor", "Legion Centurion"):
-        e = ctx.unit(n)
-        did = uid("ba", "death-mask", n)
-        add_group(e, group(uid("grp", "ba-wargear", n), "Blood Angels Wargear", entries=[
-            entry(did, "Death Mask", cost=10, links=[gear(did, "Death Mask")],
-                  constraints=[constraint(uid(did, "max"), "max", 1, auto=True)])]))
-    # Over-charged Engines: Blood Angels Rhinos
-    for e in ctx.all_entries():
-        if e.get("name") == "Legion Rhino Armoured Carrier" and e.get("type") == "unit":
-            oid = uid("ba", "overcharged", e.get("id"))
-            add_entry(e, entry(oid, "Over-charged Engines", cost=15, links=[gear(oid, "Over-charged Engines")],
-                               constraints=[constraint(uid(oid, "max"), "max", 1, auto=True)]))
+    # Death Mask: Independent Characters (Praetor / Centurion), counts towards the Armoury cap
+    add_armoury_items(ctx, [("Death Mask", 10)], who=("praetor", "centurion"))
+    # Over-charged Engines: Blood Angels Rhinos and Rhino-chassis vehicles
+    rhinos = {("unit", "Legion Rhino Armoured Carrier"), ("unit", "Damocles Command Rhino"),
+              ("unit", "Legion Whirlwind Scorpius"), ("model", "Legion Predator"), ("model", "Legion Vindicator"),
+              ("model", "Legion Whirlwind")}
+    seen = set()
+    for r in ctx.all_entries():
+        for e in r.iter("selectionEntry"):
+            if (e.get("type"), e.get("name")) in rhinos and e.get("id") not in seen:
+                seen.add(e.get("id"))
+                oid = uid("ba", "overcharged", e.get("id"))
+                add_entry(e, entry(oid, "Over-charged Engines", cost=15, links=[gear(oid, "Over-charged Engines")],
+                                   constraints=[constraint(uid(oid, "max"), "max", 1, auto=True)]))
     # Furioso-pattern Jump Pack: one Contemptor in the army, with two Dreadnought Close Combat Weapons
     cont = ctx.unit("Legion Contemptor Dreadnought")
     cu = cont.get("id")
@@ -591,6 +603,13 @@ def extend(ctx):
                                        constraint(uid(fid, "roster"), "max", 1, scope="roster", deep=True)]))
     add_mods(cont, [modifier("add", "error", "A Furioso-pattern Jump Pack requires two Dreadnought Close Combat "
                                              "Weapons.", conds=[has(fid, cu)], groups=[not_both])])
+    # ... and may not deploy by Deep Strike: no Dreadnought Drop Pod
+    for g in cont.iter("selectionEntryGroup"):
+        if g.get("name") == "Dedicated Transport":
+            mx = [k for k in g.iter("constraint") if k.get("type") == "max"]
+            c = [has(fid, cu)]
+            add_mods(g, [modifier("set", k.get("id"), 0, conds=c) for k in mx[:1]] +
+                     [modifier("set", "hidden", "true", conds=c)])
 
     # Blade of Perdition: Characters with the Armoury (+10 exchanging a basic Power Weapon, +25 otherwise)
     sg = sanguinary_guard()
@@ -600,6 +619,39 @@ def extend(ctx):
     skip = ("Raldoron, the Blooded", "Dominion Zephon", "Aster Crohne", "Nassir Amit, the Flesh Tearer",
             "Sanguinius, the Great Angel", "Azkaellon", "Crimson Exemplar")
     character_variant(ctx.all_entries(), "Power Weapon", "Blade of Perdition", 10, 25, skip_names=skip)
+    armoury_characters, seen_e = [], set()
+    for r in ctx.all_entries():
+        for e in r.iter("selectionEntry"):
+            if id(e) not in seen_e and is_character(e) and e.get("name") not in skip and has_armoury(e):
+                seen_e.add(id(e))
+                armoury_characters.append(e)
+    # ... fixed-kit Power Weapons (e.g. Legion Champion) may be exchanged for +10
+    for e in armoury_characters:
+        links = e.find("entryLinks")
+        for lk in list(links) if links is not None else []:
+            if lk.get("targetId") != W("Power Weapon"):
+                continue
+            oid = uid("ba", "perdition-exchange", lk.get("id"))
+            add_entry(e, entry(oid, "Blade of Perdition (replaces Power Weapon)", cost=10,
+                               links=[gear(oid, "Blade of Perdition")],
+                               constraints=[constraint(uid(oid, "max"), "max", 1, auto=True)]))
+            c = [has(oid, e.get("id"))]
+            add_mods(lk, [modifier("set", k.get("id"), 0, conds=c) for k in lk.iter("constraint")
+                          if k.get("type") in ("min", "max")] + [modifier("set", "hidden", "true", conds=c)])
+    # Inferno Pistol: replaces the Bolt Pistol of any model with Armoury access (+15)
+    done = set()
+    for e in armoury_characters:
+        for g in e.iter("selectionEntryGroup"):
+            links = g.find("entryLinks")
+            if id(g) in done or links is None or g.get("defaultSelectionEntryId") is None:
+                continue
+            done.add(id(g))
+            dflt = [lk for lk in links if lk.get("id") == g.get("defaultSelectionEntryId")]
+            if not dflt or dflt[0].get("targetId") != W("Bolt Pistol"):
+                continue
+            nid = uid(g.get("id"), "ba-inferno")
+            links.append(link(nid, W("Inferno Pistol"), "Inferno Pistol", cost=15,
+                              constraints=[constraint(uid(nid, "max"), "max", 1, auto=True)]))
 
     # Sanguinary Guard as a retinue of a Blood Angels Praetor
     pr = ctx.unit("Legion Praetor")

@@ -2,6 +2,7 @@
 from legions.common import *  # noqa: F401,F403
 from legions.common import (unique, force_limit, allegiance_only, named_character, primarch, primarch_retinue,
                             retinue_links, command_squad_for, add_armoury_items, register_data, LOW)
+from bsx import costs as bsx_costs
 from bsx import PTS, uid, cond, any_of, all_of, modifier, repeat, constraint, rule, entry, link, group
 import gamesystem as gs
 import legiones as L
@@ -24,11 +25,13 @@ RULES = {
         "is possible because the enemy was completely destroyed, it must Consolidate as directly as possible towards the "
         "nearest enemy unit."),
     "World Eaters Armoury": (
-        "Chainaxe (+4): any World Eaters model eligible to carry a Close Combat Weapon may replace it with a Chainaxe. "
-        "Caedere Weapon (+15): any World Eaters Independent Character or squad Sergeant with access to the Space Marine "
-        "Armoury may purchase a Caedere Weapon (Rampager Squads through their own entry)."),
+        "Chainaxe (+4): any World Eaters model eligible to carry a Close Combat Weapon may replace it with a Chainaxe "
+        "(not Servo-automata). Caedere Weapon (+15): any World Eaters Independent Character or squad Sergeant with access "
+        "to the Space Marine Armoury may replace a Chainsword with a Caedere Weapon; it does not count towards the "
+        "Armoury points limit and may not be taken by models in Terminator Armour (Rampager Squads gain access through "
+        "their own entry)."),
     "Caedere Weapon": ("A Caedere Weapon counts as a one-handed close-combat weapon (Strength User +1, Rending). It does "
-                       "not count as a Power Weapon. (Rampager Squad entry: it counts as a Rending Weapon.)"),
+                       "not count as a Power Weapon."),
     # Rites of War
     "Berserker Assault": (
         "EFFECTS - The Red Hand: Rampager Squads may be selected as Troops and may fulfil compulsory Troops; Legion "
@@ -60,7 +63,7 @@ RULES = {
                                             "bonus Attack for fighting with two close-combat weapons."),
     "Nails-Broken": ("If an Inductii Squad is able to declare a charge during the Assault phase, it must do so. If more "
                      "than one enemy unit may legally be charged, the World Eaters player chooses the target normally."),
-    "Devourers": ("Angron may select one Devourer Terminator Squad as his retinue. If selected in this manner, the "
+    "Devourers": ("0-1 Devourer Terminator Squad per Detachment. Angron may select one Devourer Terminator Squad as his retinue. If selected in this manner, the "
                   "Devourers do not occupy a separate Elites choice."),
     "Red Hand Assault Squad": ("If the entire squad takes Jump Packs it becomes Jump Infantry, is renamed a Red Hand "
                                "Destroyer Assault Squad and may not select a Dedicated Transport."),
@@ -93,8 +96,8 @@ RULES = {
         "Ehrlen may select one Legion Command Squad as his retinue (no separate Force Organisation slot). Every model in "
         "it may purchase a Jump Pack for +15 points per model; if so, every model must receive one and the squad may not "
         "select a Dedicated Transport."),
-    "Gladiator Champion": "Any Triarii Breacher Squad joined by Delvarus becomes Stubborn and gains Furious Charge.",
-    "Command Retinue (Delvarus)": ("Delvarus may select one Triarii Breacher Squad as his retinue. It does not occupy a "
+    "Gladiator Champion": "Any Trarii Breacher Squad joined by Delvarus becomes Stubborn and gains Furious Charge.",
+    "Command Retinue (Delvarus)": ("Delvarus may select one Trarii Breacher Squad as his retinue. It does not occupy a "
                                    "separate Force Organisation slot."),
     # Angron
     "Armour of Mars": "The Armour of Mars counts as Primarch Armour (1+ Armour Save, 4+ Invulnerable Save).",
@@ -124,9 +127,10 @@ RULES = {
     "Daemonic Flight": ("Angron may move up to 12\" in the Movement phase, moving over intervening models and terrain. He "
                         "may never join another unit and no model may join him."),
     "Blades of the Red Angel": (
-        "Count as a pair of Master-crafted Power Weapons; Angron receives the normal +1 Attack for two close-combat "
-        "weapons. Against Vehicles they have Armourbane. Against Monstrous Creatures and models with Toughness 6 or more, "
-        "Angron may re-roll failed To Wound rolls."),
+        "The Blades of the Red Angel count as a pair of Master-crafted Power Weapons. Angron receives the normal +1 Attack "
+        "for fighting with two close-combat weapons. Against Vehicles, attacks made with the Blades of the Red Angel have "
+        "Armourbane. Against Monstrous Creatures and models with Toughness 6 or greater, Angron may re-roll failed To "
+        "Wound rolls."),
     "Daemonic Armour": "Angron, the Red Angel has a 2+ Armour Save and a 4+ Invulnerable Save (as shown in his profile).",
     "Blood Calls to Blood": (
         "Angron never begins the battle on the battlefield and does not make normal Reserve rolls. Keep a cumulative "
@@ -183,6 +187,9 @@ def register():
     register_data(rules=RULES, weapons=WEAPONS, weapon_rules=WEAPON_RULES, wargear=WARGEAR)
     for n in ["Legion Tactical Squad", "Legion Breacher Siege Squad"]:
         L2.NOT_LINE_UNDER[n].append("Berserker Assault")
+    # Red Hand Destroyer squads count as Legion Destroyer Squads (Legion Destroyer Company: Troops, compulsory Troops)
+    L2.TROOP_RITES[RED_HAND_NAME] = list(L2.TROOP_RITES["Legion Destroyer Squad"])
+    L2.NORMAL_ROLE[RED_HAND_NAME] = ELITES
 
 
 # ------------------------------------------------------------------ helpers
@@ -231,6 +238,36 @@ def fortification_error():
 
 # ------------------------------------------------------------------ units
 RAMPAGER = uid("unit", "Rampager Squad")
+RED_HAND_NAME = "Red Hand Destroyer Mortalis Squad"
+
+
+def squad_prices_for_champion(champ, champ_id, prices):
+    """The Champion's Armoury slots ('Replace <default>') also offer the squad's own exchanges at the squad price;
+    those do not count towards his 50-point Armoury limit. prices: {default: [(item, pts)]}."""
+    for cap in champ.iter("selectionEntryGroup"):
+        cons = [c for c in cap.iter("constraint") if c.get("field") == PTS]
+        if cap.get("name") != "Space Marine Armoury (max 50 pts)" or not cons:
+            continue
+        cap_mods = []
+        for g in cap.iter("selectionEntryGroup"):
+            name = g.get("name") or ""
+            if not name.startswith("Replace "):
+                continue
+            for item, pts in prices.get(name[len("Replace "):], []):
+                links = g.find("entryLinks")
+                lk = next((x for x in links if x.get("targetId") == W(item)), None)
+                if lk is None:
+                    lid = uid("link", g.get("id"), "squad-price", item)
+                    links.append(link(lid, W(item), item, cost=pts,
+                                      constraints=[constraint(uid(lid, "max"), "max", 1, auto=True)]))
+                else:
+                    c = lk.find("costs")
+                    if c is not None and len(c):
+                        c[0].set("value", str(pts))
+                    else:
+                        lk.append(bsx_costs(pts))
+                cap_mods.append(modifier("increment", cons[0].get("id"), pts, conds=[has(W(item), champ_id)]))
+        add_mods(cap, cap_mods)
 
 
 def rampager(key="Rampager Squad", root=True):
@@ -240,6 +277,8 @@ def rampager(key="Rampager Squad", root=True):
     cid, champ = model(u, "Rampager Champion", 1, 1, 0, (4, 4, 4, 4, 1, 4, 3, 9, "3+"), ["Power Armour"],
                        unit_type="Infantry (Character)",
                        groups=[L2.pa_armoury(uid(key, "champ"), u, 10, slots=["Bolt Pistol", "Chainaxe"])])
+    squad_prices_for_champion(champ, cid, {"Chainaxe": [("Caedere Weapon", 3), ("Power Weapon", 7)],
+                                           "Bolt Pistol": [("Plasma Pistol", 10)]})
     jp_id = uid("squadwide", u, "Jump Packs (entire squad)")
     jp = per_model(u, "Jump Packs (entire squad)", 15, u, ["Jump Pack"])
     cats, mods, cons = [], [], []
@@ -281,7 +320,7 @@ def red_butchers():
 
 
 def red_hand(key="Red Hand Destroyer Mortalis Squad", root=True):
-    name = "Red Hand Destroyer Mortalis Squad"
+    name = RED_HAND_NAME
     u = uid("unit", key)
     kit = ["Power Armour", "Two Bolt Pistols", "Chainaxe", "Frag Grenades", "Rad Grenades"]
     did, dests = model(u, "Red Hand Destroyer", 4, 9, 22, (4, 4, 4, 4, 1, 4, 2, 9, "3+"), kit)
@@ -292,13 +331,19 @@ def red_hand(key="Red Hand Destroyer Mortalis Squad", root=True):
                                    ("Lightning Claw", 15), ("Thunder Hammer", 20)]),
                              take(uid(key, "sgt"), "Sergeant Wargear", [("Artificer Armour", 10),
                                                                          ("Phosphex Bomb", 10, 3)])])
-    weapons, _ = pool(u, "Red Hand Destroyers: replace one Bolt Pistol (1 per 5 models)", u,
-                      [("Volkite Serpenta", 5), ("Hand Flamer", 5), ("Plasma Pistol", 15),
-                       ("Missile Launcher with Suspensor Web and Rad Missiles", 25)], 0, every=5)
+    weapons, wmx = pool(u, "Red Hand Destroyers: replace one Bolt Pistol (1 per 5 models; 2 per 5 in a Destroyer "
+                           "Company)", u,
+                        [("Volkite Serpenta", 5), ("Hand Flamer", 5), ("Plasma Pistol", 15),
+                         ("Missile Launcher with Suspensor Web and Rad Missiles", 25)], 0, every=5)
+    # counts as a Legion Destroyer Squad: Forbidden Arsenal (Legion Destroyer Company) doubles the allowance
+    add_mods(weapons, [modifier("increment", wmx, 1, conds=[rite("Legion Destroyer Company")],
+                                repeats=[repeat("model", u, 5)])])
     bombs, _ = pool(u, "Red Hand Destroyers: Phosphex Bomb (1 per 5 models)", u, [("Phosphex Bomb", 10)], 0, every=5)
     jp_id = uid("squadwide", u, "Jump Packs (entire squad) - Red Hand Destroyer Assault Squad")
     jp = per_model(u, "Jump Packs (entire squad) - Red Hand Destroyer Assault Squad", 15, u, ["Jump Pack"])
     mods = [modifier("set", "name", "Red Hand Destroyer Assault Squad", conds=[has(jp_id, u)])]
+    if root:
+        mods += L2.troop_role_mods(name)
     return entry(u, name, typ="unit", cost=160 - 4 * 22, cats=[foc(ELITES, "Elites", u)] if root else [], mods=mods,
                  infolinks=rules_links([LR, "Counter-Attack", "Dual Pistols (Destroyers)", "Destroyer Cadre",
                                         "Rad Grenades", "Red Hand Assault Squad"], key=u),
@@ -337,7 +382,7 @@ def devourers(key="Devourer Terminator Squad", root=True):
                        unit_type="Infantry (Character)")
     harness, _ = pool(u, "Grenade Harness (one model)", u, [("Grenade Harness", 10)], 1)
     return entry(u, "Devourer Terminator Squad", typ="unit", cost=225 - 4 * 45,
-                 cats=[foc(ELITES, "Elites", u)] if root else [],
+                 cats=[foc(ELITES, "Elites", u)] if root else [], constraints=[force_limit(u)] if root else [],
                  infolinks=rules_links([LR, "Stubborn", "Devourers"], key=u),
                  entries=[chief, dev],
                  groups=[model_swaps(u, "Any model: replace Combi-bolter (any number)", u, [did, cid],
@@ -353,22 +398,21 @@ def devourers(key="Devourer Terminator Squad", root=True):
 
 
 def triarii(key="Triarii Breacher Squad", root=True):
+    # ids keep the old "Triarii" key; the book now spells the unit "Trarii"
     u = uid("unit", key)
     kit = ["Power Armour", "Bolt Pistol", "Chainaxe", "Boarding Shield"]
-    bid, br = model(u, "Triarii Breacher", 4, 9, 27, (4, 4, 4, 4, 1, 4, 2, 9, "3+"), kit)
-    cid, champ = model(u, "Triarii Breacher Champion", 1, 1, 0, (4, 4, 4, 4, 1, 4, 3, 9, "3+"),
+    bid, br = model(u, "Trarii Breacher", 4, 9, 27, (4, 4, 4, 4, 1, 4, 2, 9, "3+"), kit)
+    cid, champ = model(u, "Trarii Breacher Champion", 1, 1, 0, (4, 4, 4, 4, 1, 4, 3, 9, "3+"),
                        ["Power Armour", "Boarding Shield"],
                        unit_type="Infantry (Character)",
                        groups=[L2.pa_armoury(uid(key, "champ"), u, 10, slots=["Bolt Pistol", "Chainaxe"])])
-    return entry(u, "Triarii Breacher Squad", typ="unit", cost=155 - 4 * 27,
+    return entry(u, "Trarii Breacher Squad", typ="unit", cost=155 - 4 * 27,
                  cats=[foc(ELITES, "Elites", u)] if root else [],
-                 infolinks=rules_links([LR], key=u),
+                 infolinks=rules_links([LR, "Hardened Armour"], key=u),
                  entries=[champ, br, per_model(u, "Frag Grenades (entire squad)", 1, u, ["Frag Grenades"]),
                           per_model(u, "Krak Grenades (entire squad)", 2, u, ["Krak Grenades"])],
-                 groups=[squad_swap(u, "All Triarii Breachers: replace Chainaxe", u, bid,
-                                    [("Caedere Weapon", 5), ("Power Weapon", 10)]),
-                         transports(u, u, ["Legion Rhino Armoured Carrier", "Legion Drop Pod",
-                                           "Anvillus Pattern Dreadclaw Drop Pod", "Land Raider Phobos"])])
+                 groups=[squad_swap(u, "All Trarii Breachers: replace Chainaxe", u, bid,
+                                    [("Caedere Weapon", 5), ("Power Weapon", 10)])])
 
 
 # ------------------------------------------------------------------ characters
@@ -407,7 +451,7 @@ def characters():
     out.append(named_character(LR, "Gahlan Surlak", 125, (5, 5, 4, 4, 2, 4, 2, 9, "3+/5+"),
                                ["Power Armour", "Refractor Field", "Narthecium", "Reductor", "Bolt Pistol",
                                 "Chainsword", "Frag Grenades"],
-                               ["Apothecary", "Architect of the Nails", "Legion Support Officer"],
+                               ["Architect of the Nails", "Legion Support Officer"],
                                master=False, compulsory=False,
                                extra_groups=[take(s, "Wargear", [("Krak Grenades", 2)])]))
     # Kargos
@@ -430,13 +474,12 @@ def characters():
                                extra_groups=[take(e, "Wargear", [("Krak Grenades", 2), ("Melta Bombs", 5)])]))
     # Delvarus
     dv = uid("unit", "Delvarus")
-    out.append(named_character(LR, "Delvarus", 120, (5, 4, 4, 4, 2, 5, 3, 9, "3+"),
+    out.append(named_character(LR, "Delvarus", 120, (5, 4, 4, 4, 2, 5, 3, 9, "3+/5+"),
                                ["Power Armour", "Caedere Weapon", "Bolt Pistol", "Boarding Shield", "Frag Grenades"],
                                ["Gladiator Champion", "Command Retinue (Delvarus)"],
                                retinue=retinue_links("delvarus", [triarii("delvarus-triarii", root=False)]),
                                master=False,
                                extra_groups=[take(dv, "Wargear", [("Krak Grenades", 2), ("Melta Bombs", 5)])]))
-    # Surlak's Chainsword may become a Chainaxe (World Eaters Armoury)
     return out
 
 
@@ -446,17 +489,16 @@ def angron():
                     ["Primarch Armour", "The Red Angel", "Butcher's Nails", "Furious Charge", "Sire of the World Eaters",
                      "The Nails Demand Blood", "Primarch Retinue (Angron)"],
                     retinue=primarch_retinue("angron", extra=[devourers("angron-devourers", root=False)]),
-                    other=DAEMON_ANGRON, profile_name="Angron",
+                    other=DAEMON_ANGRON, profile_name="Angron", loyalist=False,
                     extra_groups=[slot(ANGRON, "Replace Gorefather & Gorechild", "Gorefather & Gorechild",
                                        [("Widowmaker", 0)])])
 
 
 def daemon_angron():
-    # the Daemon Primarch's profile does not list Legiones Astartes (World Eaters)
-    return primarch("Daemon Primarchs", "Angron, the Red Angel (Daemon Primarch)", 650,
+    return primarch(LR, "Angron, the Red Angel (Daemon Primarch)", 650,
                     (9, 5, 8, 7, 8, 7, 8, 10, "2+/4+"),
                     ["Blades of the Red Angel", "Daemonic Armour"],
-                    ["Daemon", "Fear", "Fearless", "Fleet", "Furious Charge", "Eternal Warrior",
+                    ["Daemon Primarchs", "Daemon", "Fear", "Fearless", "Fleet", "Furious Charge", "Eternal Warrior",
                      "Adamantium Will", "Master of the Legion", "Daemonic Flight", "Blood Calls to Blood",
                      "The Red Angel Descends", "The Nails Sing", "Only one Angron"],
                     other=ANGRON, unit_type="Monstrous Creature (Character)", loyalist=False, core=False,
@@ -485,6 +527,8 @@ def add_chainaxes(roots, pits_rite=None):
             if id(g) in done:
                 continue
             done.add(id(g))
+            if (g.get("name") or "").startswith("Servo-automata"):
+                continue  # Servo-automata may not take Chainaxes
             links = g.find("entryLinks")
             if links is None:
                 continue
@@ -512,7 +556,7 @@ def add_chainaxes(roots, pits_rite=None):
         has_block = any("replace Chainsword" in (g.get("name") or "") for g in r.iter("selectionEntryGroup"))
         mids = []
         for m in r.iter("selectionEntry"):
-            if m.get("type") != "model":
+            if m.get("type") != "model" or m.get("name") == "Servo-automata":
                 continue
             el_links = m.find("entryLinks")
             if el_links is not None and any(lk.get("targetId") == cs for lk in el_links):
@@ -522,6 +566,83 @@ def add_chainaxes(roots, pits_rite=None):
             add_to(r, "selectionEntryGroups", [model_swaps(uid(r.get("id"), "we-chainaxe"),
                                                            "World Eaters: replace Chainsword with Chainaxe (any number)",
                                                            r.get("id"), mids, opts)])
+
+
+# ------------------------------------------------------------------ Caedere Weapon
+CAEDERE_PTS = 15
+
+
+def _pts_cap(g, parents):
+    """The nearest enclosing group (or g itself) with a points cap: (group, constraint id) or (None, None)."""
+    x = g
+    while x is not None and x.tag.split("}")[-1] != "selectionEntry":
+        if x.tag.split("}")[-1] == "selectionEntryGroup":
+            cs = x.find("constraints")
+            for c in (cs if cs is not None else []):
+                if c.get("field") == PTS:
+                    return x, c.get("id")
+        x = parents.get(x)
+    return None, None
+
+
+def add_caedere(ctx):
+    """Caedere Weapon (+15): Independent Characters (Praetor, Centurion) and squad Sergeants with access to the Space
+    Marine Armoury may replace a Chainsword with it. Not counted towards the Armoury cap; never in Terminator Armour."""
+    cs, cw = W("Chainsword"), W("Caedere Weapon")
+    tda = {W(n) for n in L.TDA}
+    done = set()
+    count = 0
+    for r in ctx.all_entries():
+        parents = {c: p for p in r.iter() for c in p}
+        for e in r.iter("selectionEntry"):
+            if id(e) in done:
+                continue
+            gs_ = e.find("selectionEntryGroups")
+            own_groups = list(gs_) if gs_ is not None else []
+            is_ic = e.get("type") == "unit" and e.get("name") in ("Legion Praetor", "Legion Centurion")
+            # squad Sergeants only (not Command Squad Apothecaries / Standard Bearers with their own Armoury access)
+            is_sgt = "Sergeant" in (e.get("name") or "") and any(
+                g.get("name") == "Space Marine Armoury (max 50 pts)" for g in own_groups)
+            if not (is_ic or is_sgt):
+                continue
+            done.add(id(e))
+            eid = e.get("id")
+            fixed = e.find("entryLinks")
+            if fixed is not None and any(lk.get("targetId") in tda for lk in fixed):
+                continue  # Terminator Sergeants
+            forbid = L.has_tda(eid, deep=False) if is_ic else []
+            # fixed Chainsword on the model -> a replace slot (Chainaxe is added by add_chainaxes)
+            if fixed is not None:
+                for lk in list(fixed):
+                    if lk.get("targetId") == cs:
+                        fixed.remove(lk)
+                        add_to(e, "selectionEntryGroups", [slot(uid(eid, "we-caedere"), "Replace Chainsword",
+                                                                "Chainsword", [])])
+            for g in list(e.iter("selectionEntryGroup")):
+                links = g.find("entryLinks")
+                if links is None or cw in [lk.get("targetId") for lk in links]:
+                    continue
+                cs_links = [lk for lk in links if lk.get("targetId") == cs]
+                if not cs_links:
+                    continue
+                c = cs_links[0].find("costs")
+                base = float(c[0].get("value")) if c is not None and len(c) else 0
+                lid = uid(g.get("id"), "we-caedere")
+                mods = []
+                if forbid:
+                    mods = [modifier("set", "hidden", "true", groups=[any_of(*forbid)]),
+                            modifier("set", uid(lid, "max"), 0, groups=[any_of(*L.has_tda(eid, deep=False))])]
+                new = link(lid, cw, "Caedere Weapon", cost=int(base + CAEDERE_PTS), mods=mods,
+                           constraints=[constraint(uid(lid, "max"), "max", 1, auto=True)])
+                new.set("sortIndex", "91")
+                links.append(new)
+                count += 1
+                # not counted towards the Armoury points cap
+                capg, cap_id = _pts_cap(g, {**parents, **{c_: p for p in e.iter() for c_ in p}})
+                if capg is not None:
+                    add_mods(capg, [modifier("increment", cap_id, int(base + CAEDERE_PTS),
+                                             conds=[L.own(cw, eid)] if is_ic else [has(cw, eid)])])
+    return count
 
 
 # ------------------------------------------------------------------ extend
@@ -534,7 +655,7 @@ def extend(ctx):
 
     # Rites of War
     ctx.add_rite("Berserker Assault", RULES["Berserker Assault"], limit_hs=True,
-                 errors=[("at least one compulsory Troops choice must be a Rampager Squad.",
+                 errors=[("the Detachment must include at least one Rampager Squad as a Troops choice.",
                           [cond(RAMPAGER, "force", "lessThan", 1)]),
                          fortification_error()])
     immobile = [L.TRANSPORTS["Legion Drop Pod"], L2.T["Legion Dreadnought Drop Pod"]]
@@ -544,5 +665,5 @@ def extend(ctx):
                          fortification_error()])
 
     # Armoury: Caedere Weapon for Independent Characters and Sergeants with Armoury access; Chainaxes everywhere
-    add_armoury_items(ctx, [("Caedere Weapon", 15)])
+    add_caedere(ctx)
     add_chainaxes(ctx.all_entries(), pits_rite="Berserker Assault")

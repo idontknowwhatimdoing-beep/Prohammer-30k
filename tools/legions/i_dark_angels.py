@@ -1,6 +1,6 @@
 """I Legion - Dark Angels (Forces of the Legions).
 
-Source: /home/claude/src/legions/I_Dark_Angels.txt. Open points are listed in tools/questions/I - Dark Angels.md.
+Source: /home/claude/src/legions_v3/I_Dark_Angels.txt. Open points are listed in tools/questions/I - Dark Angels.md.
 """
 import copy
 

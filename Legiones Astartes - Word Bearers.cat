@@ -56,7 +56,7 @@
 <sharedSelectionEntries>
 <selectionEntry id="ddfd-5b26-3ecb-564c" name="Legion" hidden="false" collective="false" import="true" type="upgrade">
 <modifiers>
-<modifier type="add" field="error" value="The Dark Shepherds: a Word Bearers Detachment must include at least one Legion Chaplain Consul or Dark Apostle (a Praetor or Centurion with an Accursed Crozius, Erebus, Kor Phaeron or Zardu Layak) as an HQ selection.">
+<modifier type="add" field="error" value="The Dark Shepherds: a Word Bearers Detachment must include at least one Legion Chaplain Consul or Dark Apostle (a model with an Accursed Crozius or a Word Bearers named character) as an HQ selection.">
 <conditionGroups>
 <conditionGroup type="and">
 <conditions>
@@ -65,6 +65,9 @@
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c5f7-3def-ee7f-dd9d" type="lessThan" />
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="18f6-e29a-4529-ae38" type="lessThan" />
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ae2f-73e4-bb01-f406" type="lessThan" />
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="16cc-994a-4bcb-012e" type="lessThan" />
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ec6f-ae94-4022-2afd" type="lessThan" />
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4f56-c287-0276-f98c" type="lessThan" />
 </conditions>
 </conditionGroup>
 </conditionGroups>
@@ -270,6 +273,13 @@
 </categoryLinks>
 <selectionEntryGroups>
 <selectionEntryGroup id="fdea-054a-996f-0cf0" name="Space Marine Armoury (max 100 pts)" hidden="false" collective="false" import="true">
+<modifiers>
+<modifier type="increment" field="f8eb-b9f6-2231-5e9b" value="40">
+<conditions>
+<condition field="selections" scope="2390-3489-e470-7f7f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0a08-dddd-0326-834e" type="atLeast" />
+</conditions>
+</modifier>
+</modifiers>
 <constraints>
 <constraint field="pts0-0000-0000-0001" scope="self" value="100" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="f8eb-b9f6-2231-5e9b" type="max" />
 </constraints>
@@ -1281,6 +1291,14 @@
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
 </entryLink>
+<entryLink id="8398-64fa-d46e-7634" name="Accursed Crozius" hidden="false" collective="false" import="true" targetId="0a08-dddd-0326-834e" type="selectionEntry">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a222-3270-15c7-8328" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="40" />
+</costs>
+</entryLink>
 <entryLink id="16b0-ba6a-9a33-2984" name="Tainted Weapon" hidden="false" collective="false" import="true" targetId="c62a-a91e-e820-45dc" type="selectionEntry" sortIndex="112">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ecfa-26da-0b95-8ba0" type="max" />
@@ -1589,14 +1607,6 @@
 <cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
 </costs>
 </entryLink>
-<entryLink id="ce5a-bb73-133e-4238" name="Accursed Crozius" hidden="false" collective="false" import="true" targetId="0a08-dddd-0326-834e" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2b9c-615c-a172-f0d1" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="40" />
-</costs>
-</entryLink>
 </entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
@@ -1799,6 +1809,22 @@
 <cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
 </costs>
 </selectionEntry>
+<selectionEntry id="5f2b-6600-0837-cb86" name="Hex-Bolts" hidden="false" collective="false" import="true" type="upgrade">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2ae9-9cd4-1846-b7a8" type="max" />
+</constraints>
+<entryLinks>
+<entryLink id="8ff3-98db-b9b6-ab3e" name="Hex-Bolts" hidden="false" collective="false" import="true" targetId="fc40-65fd-779d-c653" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a5f4-5e23-1890-84fc" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e004-259c-36f4-aeb7" type="max" />
+</constraints>
+</entryLink>
+</entryLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
+</costs>
+</selectionEntry>
 </selectionEntries>
 <entryLinks>
 <entryLink id="187b-0e74-8034-50ab" name="Favour of the Pantheon (one Independent Character per army)" hidden="false" collective="false" import="true" targetId="fdad-1502-7979-6a0f" type="selectionEntry">
@@ -1973,6 +1999,12 @@
 <condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c600-caf0-62af-e0a8" type="atLeast" />
 </conditions>
 </modifier>
+<modifier type="add" field="error" value="The Diabolist Consul is Traitor only.">
+<conditions>
+<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c600-caf0-62af-e0a8" type="atLeast" />
+<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="af50-de01-cc93-f43e" type="atLeast" />
+</conditions>
+</modifier>
 <modifier type="add" field="error" value="Daemonic Wings may not be combined with Jump Pack.">
 <conditionGroups>
 <conditionGroup type="and">
@@ -2083,18 +2115,70 @@
 </infoLinks>
 <entryLinks>
 <entryLink id="13ce-a842-fc01-7305" name="Crozius Arcanum" hidden="false" collective="false" import="true" targetId="5a99-71a6-e4fa-99cd" type="selectionEntry">
+<modifiers>
+<modifier type="set" field="hidden" value="true">
+<conditions>
+<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fb65-3f91-c6ef-ad7a" type="atLeast" />
+</conditions>
+</modifier>
+<modifier type="set" field="d46e-4631-30b9-36e3" value="0">
+<conditions>
+<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fb65-3f91-c6ef-ad7a" type="atLeast" />
+</conditions>
+</modifier>
+<modifier type="set" field="2299-927f-215b-5f85" value="0">
+<conditions>
+<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fb65-3f91-c6ef-ad7a" type="atLeast" />
+</conditions>
+</modifier>
+</modifiers>
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d46e-4631-30b9-36e3" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2299-927f-215b-5f85" type="max" />
 </constraints>
 </entryLink>
 <entryLink id="0322-0315-e0a9-2cf3" name="Rosarius" hidden="false" collective="false" import="true" targetId="851b-4884-d9d4-45d6" type="selectionEntry">
+<modifiers>
+<modifier type="set" field="hidden" value="true">
+<conditions>
+<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fb65-3f91-c6ef-ad7a" type="atLeast" />
+</conditions>
+</modifier>
+<modifier type="set" field="8a82-617c-3933-2976" value="0">
+<conditions>
+<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fb65-3f91-c6ef-ad7a" type="atLeast" />
+</conditions>
+</modifier>
+<modifier type="set" field="f7c2-725f-2a46-4b3c" value="0">
+<conditions>
+<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fb65-3f91-c6ef-ad7a" type="atLeast" />
+</conditions>
+</modifier>
+</modifiers>
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8a82-617c-3933-2976" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f7c2-725f-2a46-4b3c" type="max" />
 </constraints>
 </entryLink>
 </entryLinks>
+<selectionEntries>
+<selectionEntry id="fb65-3f91-c6ef-ad7a" name="Accursed Crozius (replaces Crozius Arcanum and Rosarius)" hidden="false" collective="false" import="true" type="upgrade">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="84a9-c362-8e53-f9d7" type="max" />
+</constraints>
+<entryLinks>
+<entryLink id="919f-d9be-6ce5-42ad" name="Accursed Crozius" hidden="false" collective="false" import="true" targetId="0a08-dddd-0326-834e" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="07b7-0e83-31e3-4681" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a753-2a22-7922-88a3" type="max" />
+</constraints>
+</entryLink>
+</entryLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+</selectionEntries>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="35" />
 </costs>
@@ -2530,6 +2614,13 @@
 </costs>
 </selectionEntry>
 <selectionEntry id="c600-caf0-62af-e0a8" name="Diabolist Consul" hidden="false" collective="false" import="true" type="upgrade">
+<modifiers>
+<modifier type="set" field="hidden" value="true">
+<conditions>
+<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="af50-de01-cc93-f43e" type="atLeast" />
+</conditions>
+</modifier>
+</modifiers>
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c0be-0de8-caec-ba55" type="max" />
 </constraints>
@@ -2546,6 +2637,13 @@
 </selectionEntries>
 </selectionEntryGroup>
 <selectionEntryGroup id="bb8f-01c1-93ae-388f" name="Space Marine Armoury (max 100 pts)" hidden="false" collective="false" import="true">
+<modifiers>
+<modifier type="increment" field="1666-551b-6180-8a99" value="40">
+<conditions>
+<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0a08-dddd-0326-834e" type="atLeast" />
+</conditions>
+</modifier>
+</modifiers>
 <constraints>
 <constraint field="pts0-0000-0000-0001" scope="self" value="100" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1666-551b-6180-8a99" type="max" />
 </constraints>
@@ -4079,6 +4177,14 @@
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
 </entryLink>
+<entryLink id="e492-9ede-3fb0-8821" name="Accursed Crozius" hidden="false" collective="false" import="true" targetId="0a08-dddd-0326-834e" type="selectionEntry">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="11b1-0f93-a50b-258e" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="40" />
+</costs>
+</entryLink>
 <entryLink id="01f6-8b43-4e9e-b22a" name="Tainted Weapon" hidden="false" collective="false" import="true" targetId="c62a-a91e-e820-45dc" type="selectionEntry" sortIndex="112">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e6b9-0958-d658-e8e8" type="max" />
@@ -4568,14 +4674,6 @@
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
 </costs>
 </entryLink>
-<entryLink id="0c73-7c8d-81e6-116c" name="Accursed Crozius" hidden="false" collective="false" import="true" targetId="0a08-dddd-0326-834e" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e020-b41b-6e0a-3c63" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="40" />
-</costs>
-</entryLink>
 </entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
@@ -5003,6 +5101,42 @@
 </selectionEntryGroups>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
+</costs>
+</selectionEntry>
+<selectionEntry id="9645-d255-d7a2-27e0" name="Hex-Bolts" hidden="false" collective="false" import="true" type="upgrade">
+<modifiers>
+<modifier type="set" field="hidden" value="true">
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7831-236a-6ac1-af83" type="atLeast" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="set" field="8364-f659-bd01-cad7" value="0">
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7831-236a-6ac1-af83" type="atLeast" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+</modifiers>
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8364-f659-bd01-cad7" type="max" />
+</constraints>
+<entryLinks>
+<entryLink id="3a11-ec1e-f6a1-a9d0" name="Hex-Bolts" hidden="false" collective="false" import="true" targetId="fc40-65fd-779d-c653" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d289-6729-accc-be82" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7b23-40ec-45a3-b41d" type="max" />
+</constraints>
+</entryLink>
+</entryLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
 </costs>
 </selectionEntry>
 </selectionEntries>
@@ -8291,8 +8425,8 @@ LIMITATIONS - No other Lord of War; no Allied Detachment; no more than one other
 <rules>
 <rule id="7f7c-2872-1ed2-4767" name="The Dark Brethren" hidden="false">
 <description>TRAITOR ONLY.
-EFFECTS - Arch-Traitors: all Word Bearers Independent Characters in the Detachment gain Preferred Enemy against models belonging to the Loyalist faction. Signs and Portents: after deployment but before the first turn, select one Word Bearers Troops unit and roll a D6: 1-3 all enemy units gain Preferred Enemy against it for the battle; 4-6 it gains Preferred Enemy against all enemy units for the battle. From Beyond: the Detachment may include an Allied Detachment from Codex: Chaos Daemons, treated as Sworn Brothers with the Word Bearers; this does not prevent the normal Daemonic Covenant. If the army includes a Daemons of the Ruinstorm Covenant Detachment: it may use the normal Daemons of the Ruinstorm Allied Detachment Force Organisation Chart instead of the restricted Covenant chart; the 25% limit is removed and the normal Allied Detachment points restrictions apply; Word Bearers and the Daemons of the Ruinstorm are Sworn Brothers; before deployment each Daemon unit is designated Manifested (deploys and enters play normally) or Summoned (begins in Reserve and uses Daemonic Summoning); the army may still include only one Daemons of the Ruinstorm Allied Detachment. Hell Follows With Them: whenever an enemy Psyker suffers a Wound from Perils of the Warp, it becomes a Massive Wound and inflicts D3 Wounds instead of 1.
-LIMITATIONS - Only a Traitor Word Bearers Detachment. The Detachment must include at least one Diabolist. No more than one Heavy Support choice. The army may not include a Fortification or an Allied Detachment drawn from another Space Marine Legion. Any Allied Detachment other than Chaos Daemons is treated as Desperate Allies.</description>
+EFFECTS - Arch-Traitors: all Word Bearers Independent Characters in the Detachment gain Preferred Enemy against models belonging to the Loyalist faction. Signs and Portents: after deployment but before the first turn, select one Word Bearers Troops unit and roll a D6: 1-3 all enemy units gain Preferred Enemy against it for the battle; 4-6 it gains Preferred Enemy against all enemy units for the battle. From Beyond: the Detachment may include an Allied Detachment from Daemons of the Ruinstorm, treated as Sworn Brothers with the Word Bearers; this does not prevent the normal Daemonic Covenant. If the army includes a Daemons of the Ruinstorm Covenant Detachment: it may use the normal Daemons of the Ruinstorm Allied Detachment Force Organisation Chart instead of the restricted Covenant chart; the 25% limit is removed and the normal Allied Detachment points restrictions apply; Word Bearers and the Daemons of the Ruinstorm are Sworn Brothers; before deployment each Daemon unit is designated Manifested (deploys and enters play normally) or Summoned (begins in Reserve and uses Daemonic Summoning); the army may still include only one Daemons of the Ruinstorm Allied Detachment. Hell Follows With Them: whenever an enemy Psyker suffers a Wound from Perils of the Warp, it becomes a Massive Wound and inflicts D3 Wounds instead of 1.
+LIMITATIONS - Only a Traitor Word Bearers Detachment. The Detachment must include at least one Diabolist. No more than one Heavy Support choice. The army may not include a Fortification or an Allied Detachment drawn from another Space Marine Legion. Any Allied Detachment other than Daemons of the Ruinstorm is treated as Desperate Allies.</description>
 </rule>
 </rules>
 <costs>
@@ -22411,6 +22545,13 @@ LIMITATIONS - Only a Traitor Word Bearers Detachment. All Infantry units must be
 </costs>
 </selectionEntry>
 <selectionEntry id="65c8-f5c8-9906-88d8" name="Covenant Zealot Mob" hidden="false" collective="false" import="true" type="unit">
+<modifiers>
+<modifier type="add" field="error" value="Covenant Zealot Mob is Traitor only.">
+<conditions>
+<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="af50-de01-cc93-f43e" type="atLeast" />
+</conditions>
+</modifier>
+</modifiers>
 <infoLinks>
 <infoLink id="ecd6-df58-d75c-fdf2" name="Expendable" hidden="false" targetId="7eae-a357-f04d-5f36" type="rule" />
 <infoLink id="4cd1-3e80-c11b-d1f0" name="Driven to Slaughter" hidden="false" targetId="0ad1-b4b3-bc44-df3a" type="rule" />
@@ -22541,42 +22682,6 @@ LIMITATIONS - Only a Traitor Word Bearers Detachment. All Infantry units must be
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6098-d2e3-91ce-75ed" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7c25-93d4-400a-e389" type="max" />
-</constraints>
-</entryLink>
-</entryLinks>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
-</costs>
-</selectionEntry>
-<selectionEntry id="fada-5b43-b6a1-4e9b" name="Hex-Bolts (unit)" hidden="false" collective="false" import="true" type="upgrade">
-<modifiers>
-<modifier type="set" field="hidden" value="true">
-<conditionGroups>
-<conditionGroup type="or">
-<conditions>
-<condition field="selections" scope="65c8-f5c8-9906-88d8" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a240-1557-2ee9-dfe9" type="atLeast" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-<modifier type="set" field="29a7-e171-48ca-373b" value="0">
-<conditionGroups>
-<conditionGroup type="or">
-<conditions>
-<condition field="selections" scope="65c8-f5c8-9906-88d8" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a240-1557-2ee9-dfe9" type="atLeast" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-</modifiers>
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="29a7-e171-48ca-373b" type="max" />
-</constraints>
-<entryLinks>
-<entryLink id="f9ad-0a71-9a3a-8783" name="Hex-Bolts" hidden="false" collective="false" import="true" targetId="fc40-65fd-779d-c653" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9428-f2a3-f00d-81a8" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e11e-323f-1269-8436" type="max" />
 </constraints>
 </entryLink>
 </entryLinks>
@@ -23005,7 +23110,7 @@ LIMITATIONS - Only a Traitor Word Bearers Detachment. All Infantry units must be
 <modifiers>
 <modifier type="set" field="hidden" value="true">
 <conditions>
-<condition field="selections" scope="1e03-8cef-8a66-ff56" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
+<condition field="selections" scope="1e03-8cef-8a66-ff56" value="7" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
 </conditions>
 </modifier>
 <modifier type="add" field="error" value="Too many models for a Anvillus Pattern Dreadclaw Drop Pod (capacity 10).">
@@ -24637,6 +24742,12 @@ LIMITATIONS - Only a Traitor Word Bearers Detachment. All Infantry units must be
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ff8a-ab70-7d14-cd7f" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="432c-5fad-ed2d-617b" type="max" />
+</constraints>
+</entryLink>
+<entryLink id="96da-b8ae-dad5-7e76" name="Jump Pack (Daemonic Wings)" hidden="false" collective="false" import="true" targetId="e2bc-cc91-2be6-bc62" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e284-596c-2b44-30fd" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="acba-4146-de53-60a5" type="max" />
 </constraints>
 </entryLink>
 <entryLink id="8240-356b-e7c1-58d3" name="Custodian Spear" hidden="false" collective="false" import="true" targetId="dcdd-30d4-6367-2940" type="selectionEntry">
@@ -34300,7 +34411,7 @@ LIMITATIONS - Only a Traitor Word Bearers Detachment. All Infantry units must be
 <modifiers>
 <modifier type="set" field="hidden" value="true">
 <conditions>
-<condition field="selections" scope="e36d-8098-22b6-51a0" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
+<condition field="selections" scope="e36d-8098-22b6-51a0" value="7" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
 </conditions>
 </modifier>
 <modifier type="add" field="error" value="Too many models for a Anvillus Pattern Dreadclaw Drop Pod (capacity 10).">
@@ -42281,7 +42392,7 @@ LIMITATIONS - Only a Traitor Word Bearers Detachment. All Infantry units must be
 <modifiers>
 <modifier type="set" field="hidden" value="true">
 <conditions>
-<condition field="selections" scope="da5b-a953-df83-5694" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
+<condition field="selections" scope="da5b-a953-df83-5694" value="7" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
 </conditions>
 </modifier>
 <modifier type="add" field="error" value="Too many models for a Anvillus Pattern Dreadclaw Drop Pod (capacity 10).">
@@ -44182,7 +44293,7 @@ LIMITATIONS - Only a Traitor Word Bearers Detachment. All Infantry units must be
 <selectionEntry id="fc40-65fd-779d-c653" name="Hex-Bolts" hidden="false" collective="false" import="true" type="upgrade">
 <rules>
 <rule id="90ce-a0b1-2b54-cad6" name="Hex-Bolts" hidden="false">
-<description>Any Word Bearers Infantry unit equipped with Bolt weapons may purchase Hex-Bolts for +5 points per unit. Bolt Pistols, Bolters, Combi-Bolters, Storm Bolters and the Bolter component of Combi-Weapons carried by models in the unit gain the Soul Blaze special rule. Hex-Bolts may not be combined with Special Issue Ammunition or another ammunition upgrade.</description>
+<description>Any Word Bearers Infantry unit equipped with Bolt weapons (including a Praetor or Centurion; not Covenant Zealot Mobs) may purchase Hex-Bolts for +5 points per unit. Bolt Pistols, Bolters, Combi-Bolters, Storm Bolters and the Bolter component of Combi-Weapons carried by models in the unit gain the Soul Blaze special rule. Hex-Bolts may not be combined with Special Issue Ammunition or another ammunition upgrade.</description>
 </rule>
 </rules>
 <costs>
@@ -44221,6 +44332,16 @@ LIMITATIONS - Only a Traitor Word Bearers Detachment. All Infantry units must be
 <infoLinks>
 <infoLink id="363c-da48-482e-9763" name="Primarch Armour" hidden="false" targetId="c215-947e-967a-20e5" type="rule" />
 </infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+<selectionEntry id="e2bc-cc91-2be6-bc62" name="Jump Pack (Daemonic Wings)" hidden="false" collective="false" import="true" type="upgrade">
+<rules>
+<rule id="30e6-f28b-5e56-1afa" name="Jump Pack (Daemonic Wings)" hidden="false">
+<description>Argel Tal's daemonic wings count as a Jump Pack: the model is Jump Infantry.</description>
+</rule>
+</rules>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
 </costs>
@@ -44606,7 +44727,7 @@ Afterwards the squad may not enter Overwatch, may not make Return Fire or Stand 
 <description>Non-Daemon units with the Legiones Astartes (Word Bearers) special rule may re-roll failed Morale and Pinning tests.</description>
 </rule>
 <rule id="b7e1-4d3c-bb7a-aa3f" name="The Dark Shepherds" hidden="false">
-<description>A Word Bearers Detachment must include at least one Legion Chaplain Consul or Legion-specific Dark Apostle as an HQ selection. A character specifically stated to count as a Dark Apostle (e.g. a Praetor or Centurion with an Accursed Crozius, Erebus, Kor Phaeron, Zardu Layak) also fulfils this requirement.</description>
+<description>A Word Bearers Detachment must include at least one Legion Chaplain Consul or Legion-specific Dark Apostle as an HQ selection. A character specifically stated to count as a Dark Apostle also fulfils this requirement: any model with an Accursed Crozius (Praetor, Centurion, Diabolist or Chaplain) and every Word Bearers named character (Argel Tal, Erebus, Kor Phaeron, Zardu Layak, Hol Beloth, Lorgar).</description>
 </rule>
 <rule id="66e5-7796-1cc2-2014" name="Ritual of Consecration" hidden="false">
 <description>TRAITOR ONLY (no effect in a Loyalist Word Bearers army). When a non-Daemon Word Bearers unit completely destroys an enemy unit during the Assault phase, it may forgo its Consolidation move. If it does so, nominate one friendly Daemonic Covenant unit currently in Reserve: that unit may re-roll its next Reserve roll. Only one Covenant unit may receive this benefit each turn.</description>
@@ -44615,10 +44736,10 @@ Afterwards the squad may not enter Overwatch, may not make Return Fire or Stand 
 <description>A Traitor Word Bearers army may include a Daemons of the Ruinstorm Covenant Detachment, selected from the Daemons of the Ruinstorm Army List. COVENANT DETACHMENT: HQ 0-1, Troops 1-3, Elites 0-1, Fast Attack 0-1, Heavy Support 0-1; an HQ is not compulsory but at least one Troops choice must be selected. It may cost no more than 25% of the army's total points limit and has no minimum points requirement. Units use their normal profiles, options, Dominions and special rules from the Daemons of the Ruinstorm Army List. The Covenant Detachment counts as the army's Allied Detachment and needs no additional permission; the army may not include another Allied Detachment unless a rule specifically states otherwise. Covenant units may not fulfil compulsory selections in the primary Word Bearers Detachment and may not provide the Warlord. Word Bearers and Covenant units are Fellow Warriors; Independent Characters from one Detachment may not join units from the other.
 DAEMONIC SUMMONING: all Covenant units must begin the battle in Reserve; they may not deploy normally, Infiltrate or Outflank. When a Covenant unit becomes available from Reserve, nominate one friendly Summoning Point already on the battlefield (Personal Icons, Icons of Chaos Undivided, Accursed Crozii and any rule stated to act as a Summoning Point). Place the centre model within 6" of the Summoning Point and more than 2" from any enemy model; the unit then enters play using the normal Deep Strike rules (Mishaps resolved normally, all normal Deep Strike restrictions apply). If no eligible Summoning Point or legal position is available, the unit stays in Reserve and must roll again in a later turn. A Summoning Point may be used while its bearer is in close combat, is not consumed and may summon several units during the battle.
 DAEMONOLOGY: Daemonic Covenant is separate from Daemonology (Malefic). Units created by Conjuration psychic powers are not Covenant units and do not use these rules.
-(The Covenant Detachment is a separate Detachment from another army list and is not built in this catalogue.)</description>
+(The Covenant Detachment is a separate Detachment from the Daemons of the Ruinstorm army list and cannot yet be added as a Covenant Detachment in this data set.)</description>
 </rule>
 <rule id="a995-9a6e-b88e-d2a9" name="Accursed Crozius" hidden="false">
-<description>Any Word Bearers Praetor or Centurion (including a Diabolist) may purchase an Accursed Crozius for +40 points. The bearer receives a 4+ Invulnerable Save and counts as possessing a Personal Icon for the purposes of summoning Daemons (Summoning Point). A model with an Accursed Crozius counts as a Dark Apostle for The Dark Shepherds. A model may never possess more than one Accursed Crozius.</description>
+<description>Any Word Bearers Praetor or Centurion (including a Diabolist) may purchase an Accursed Crozius for +40 points. It replaces the model's close combat weapon and does not count towards the Space Marine Armoury points limit. A Chaplain may replace his Crozius and Iron Halo (Rosarius) with an Accursed Crozius for free. The bearer receives a 4+ Invulnerable Save and counts as possessing a Personal Icon for the purposes of summoning Daemons (Summoning Point). A model with an Accursed Crozius counts as a Dark Apostle for The Dark Shepherds. A model may never possess more than one Accursed Crozius.</description>
 </rule>
 <rule id="5d70-aa46-37dd-e6d2" name="Tainted Strike" hidden="false">
 <description>Any unsaved wound inflicted by a Tainted Weapon becomes a Massive Wound and inflicts D3 Wounds instead of 1. A Tainted Weapon is not a Power Weapon and does not ignore Armour Saves. (Any Word Bearers Character eligible to select a Power Weapon may instead select a Tainted Weapon for the same points cost.)</description>
@@ -44627,16 +44748,16 @@ DAEMONOLOGY: Daemonic Covenant is separate from Daemonology (Malefic). Units cre
 <description>Any Word Bearers Praetor, Centurion, Chaplain or Diabolist which is not already a Psyker may purchase Burning Lore for +30 points. The model becomes a Psyker with Mastery Level 1 and selects one psychic power from either the Biomancy or Telepathy discipline. It follows all normal ProHammer rules for Psykers.</description>
 </rule>
 <rule id="7be7-b570-140a-d6a1" name="Hex-Bolts" hidden="false">
-<description>Any Word Bearers Infantry unit equipped with Bolt weapons may purchase Hex-Bolts for +5 points per unit. Bolt Pistols, Bolters, Combi-Bolters, Storm Bolters and the Bolter component of Combi-Weapons carried by models in the unit gain the Soul Blaze special rule. Hex-Bolts may not be combined with Special Issue Ammunition or another ammunition upgrade.</description>
+<description>Any Word Bearers Infantry unit equipped with Bolt weapons (including a Praetor or Centurion; not Covenant Zealot Mobs) may purchase Hex-Bolts for +5 points per unit. Bolt Pistols, Bolters, Combi-Bolters, Storm Bolters and the Bolter component of Combi-Weapons carried by models in the unit gain the Soul Blaze special rule. Hex-Bolts may not be combined with Special Issue Ammunition or another ammunition upgrade.</description>
 </rule>
 <rule id="1941-6e67-6a6a-6efe" name="Icon of Chaos Undivided" hidden="false">
 <description>One model in a Legion Command Squad, Legion Veteran Squad or Legion Terminator Squad may carry an Icon of Chaos Undivided for +30 points. The Icon counts as a Summoning Point for the Daemonic Covenant. Friendly non-Daemon Word Bearers units with at least one model within 6" of the bearer gain the Fearless special rule.</description>
 </rule>
 <rule id="5203-9625-3a07-10ed" name="Favour of the Pantheon" hidden="false">
-<description>One non-named Word Bearers Independent Character in the army may purchase one Favour of the Pantheon. A model may never possess more than one Favour. Daemonic Aura (15): 5+ Invulnerable Save. Daemonic Mutation (15): +1 Attack. Daemonic Strength (10): +1 Strength. Daemonic Wings (20): the model becomes Jump Infantry; may not be combined with a Jump Pack, Bike, Jetbike or Terminator Armour. Daemonic Visage (5): an enemy unit which loses a close combat involving the bearer suffers an additional -1 Leadership on the resulting Morale test. The effects are already included in the model's characteristics or special rules and may not be purchased more than once.</description>
+<description>One non-named Word Bearers Independent Character in the army (Praetor, Centurion, Techmarine, ...) may purchase one Favour of the Pantheon. A model may never possess more than one Favour. Daemonic Aura (15): 5+ Invulnerable Save. Daemonic Mutation (15): +1 Attack. Daemonic Strength (10): +1 Strength. Daemonic Wings (20): the model becomes Jump Infantry; may not be combined with a Jump Pack, Bike, Jetbike or Terminator Armour. Daemonic Visage (5): an enemy unit which loses a close combat involving the bearer suffers an additional -1 Leadership on the resulting Morale test. The effects are already included in the model's characteristics or special rules and may not be purchased more than once.</description>
 </rule>
 <rule id="d27d-ab79-28b8-2b06" name="Diabolist" hidden="false">
-<description>A Word Bearers Centurion may be upgraded to a Diabolist Consul for +35 points. The Diabolist gains the Daemon and Preferred Enemy (Loyalists) special rules. He may not select a Bike, Jetbike, any form of Terminator Armour, Power Fist or Thunder Hammer. The presence of at least one Diabolist allows eligible units in the Detachment to purchase Dark Channelling. A Diabolist remains a Centurion for the purposes of purchasing an Accursed Crozius, and a Diabolist with an Accursed Crozius counts as a Dark Apostle for The Dark Shepherds.</description>
+<description>TRAITOR ONLY. A Word Bearers Centurion may be upgraded to a Diabolist Consul for +35 points. The Diabolist gains the Daemon and Preferred Enemy (Loyalists) special rules. He may not select a Bike, Jetbike, any form of Terminator Armour, Power Fist or Thunder Hammer. The presence of at least one Diabolist allows eligible units in the Detachment to purchase Dark Channelling. A Diabolist remains a Centurion for the purposes of purchasing an Accursed Crozius, and a Diabolist with an Accursed Crozius counts as a Dark Apostle for The Dark Shepherds.</description>
 </rule>
 <rule id="7af0-d673-ec9c-c944" name="Preferred Enemy (Loyalists)" hidden="false">
 <description>This model has the Preferred Enemy special rule against models of the Loyalist faction.</description>
@@ -44646,8 +44767,8 @@ DAEMONOLOGY: Daemonic Covenant is separate from Daemonology (Malefic). Units cre
 </rule>
 <rule id="78e6-dd7d-f7a3-12d5" name="The Dark Brethren" hidden="false">
 <description>TRAITOR ONLY.
-EFFECTS - Arch-Traitors: all Word Bearers Independent Characters in the Detachment gain Preferred Enemy against models belonging to the Loyalist faction. Signs and Portents: after deployment but before the first turn, select one Word Bearers Troops unit and roll a D6: 1-3 all enemy units gain Preferred Enemy against it for the battle; 4-6 it gains Preferred Enemy against all enemy units for the battle. From Beyond: the Detachment may include an Allied Detachment from Codex: Chaos Daemons, treated as Sworn Brothers with the Word Bearers; this does not prevent the normal Daemonic Covenant. If the army includes a Daemons of the Ruinstorm Covenant Detachment: it may use the normal Daemons of the Ruinstorm Allied Detachment Force Organisation Chart instead of the restricted Covenant chart; the 25% limit is removed and the normal Allied Detachment points restrictions apply; Word Bearers and the Daemons of the Ruinstorm are Sworn Brothers; before deployment each Daemon unit is designated Manifested (deploys and enters play normally) or Summoned (begins in Reserve and uses Daemonic Summoning); the army may still include only one Daemons of the Ruinstorm Allied Detachment. Hell Follows With Them: whenever an enemy Psyker suffers a Wound from Perils of the Warp, it becomes a Massive Wound and inflicts D3 Wounds instead of 1.
-LIMITATIONS - Only a Traitor Word Bearers Detachment. The Detachment must include at least one Diabolist. No more than one Heavy Support choice. The army may not include a Fortification or an Allied Detachment drawn from another Space Marine Legion. Any Allied Detachment other than Chaos Daemons is treated as Desperate Allies.</description>
+EFFECTS - Arch-Traitors: all Word Bearers Independent Characters in the Detachment gain Preferred Enemy against models belonging to the Loyalist faction. Signs and Portents: after deployment but before the first turn, select one Word Bearers Troops unit and roll a D6: 1-3 all enemy units gain Preferred Enemy against it for the battle; 4-6 it gains Preferred Enemy against all enemy units for the battle. From Beyond: the Detachment may include an Allied Detachment from Daemons of the Ruinstorm, treated as Sworn Brothers with the Word Bearers; this does not prevent the normal Daemonic Covenant. If the army includes a Daemons of the Ruinstorm Covenant Detachment: it may use the normal Daemons of the Ruinstorm Allied Detachment Force Organisation Chart instead of the restricted Covenant chart; the 25% limit is removed and the normal Allied Detachment points restrictions apply; Word Bearers and the Daemons of the Ruinstorm are Sworn Brothers; before deployment each Daemon unit is designated Manifested (deploys and enters play normally) or Summoned (begins in Reserve and uses Daemonic Summoning); the army may still include only one Daemons of the Ruinstorm Allied Detachment. Hell Follows With Them: whenever an enemy Psyker suffers a Wound from Perils of the Warp, it becomes a Massive Wound and inflicts D3 Wounds instead of 1.
+LIMITATIONS - Only a Traitor Word Bearers Detachment. The Detachment must include at least one Diabolist. No more than one Heavy Support choice. The army may not include a Fortification or an Allied Detachment drawn from another Space Marine Legion. Any Allied Detachment other than Daemons of the Ruinstorm is treated as Desperate Allies.</description>
 </rule>
 <rule id="efe6-3184-9f48-e68e" name="Last of the Serrated Sun" hidden="false">
 <description>TRAITOR ONLY.

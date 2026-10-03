@@ -1532,14 +1532,6 @@
 <cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
 </costs>
 </entryLink>
-<entryLink id="d33d-9c6a-4ac3-0150" name="Albian Power Gladius" hidden="false" collective="false" import="true" targetId="5dde-3104-248b-ad17" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="16d3-2d46-4544-9bca" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
-</costs>
-</entryLink>
 <entryLink id="a07c-2d64-d5c1-c06e" name="Mechadendrites" hidden="false" collective="false" import="true" targetId="3d9d-2d76-0c17-795f" type="selectionEntry">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0235-7bef-43d3-b5f1" type="max" />
@@ -1696,6 +1688,18 @@
 </conditionGroups>
 </modifier>
 </modifiers>
+</entryLink>
+</entryLinks>
+</selectionEntryGroup>
+<selectionEntryGroup id="a554-5b64-0b29-1150" name="Iron Hands Weaponry" hidden="false" collective="false" import="true">
+<entryLinks>
+<entryLink id="fce1-d06f-0c45-6402" name="Albian Power Gladius" hidden="false" collective="false" import="true" targetId="5dde-3104-248b-ad17" type="selectionEntry">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="071d-e059-b36a-8bbd" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
+</costs>
 </entryLink>
 </entryLinks>
 </selectionEntryGroup>
@@ -4439,14 +4443,6 @@
 <cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
 </costs>
 </entryLink>
-<entryLink id="93e9-14fe-f5f2-0cab" name="Albian Power Gladius" hidden="false" collective="false" import="true" targetId="5dde-3104-248b-ad17" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="726e-15da-2ca6-93e4" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
-</costs>
-</entryLink>
 <entryLink id="c2a6-e3c4-bca9-a540" name="Mechadendrites" hidden="false" collective="false" import="true" targetId="3d9d-2d76-0c17-795f" type="selectionEntry">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="509d-3f06-e39a-cacd" type="max" />
@@ -4734,6 +4730,18 @@
 </conditionGroups>
 </modifier>
 </modifiers>
+</entryLink>
+</entryLinks>
+</selectionEntryGroup>
+<selectionEntryGroup id="ca58-7c42-7234-1c13" name="Iron Hands Weaponry" hidden="false" collective="false" import="true">
+<entryLinks>
+<entryLink id="e3cd-8d0d-1254-a343" name="Albian Power Gladius" hidden="false" collective="false" import="true" targetId="5dde-3104-248b-ad17" type="selectionEntry">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="18dd-e6e5-46ab-83cd" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
+</costs>
 </entryLink>
 </entryLinks>
 </selectionEntryGroup>
@@ -5277,14 +5285,6 @@
 <cost name="pts" typeId="pts0-0000-0000-0001" value="2" />
 </costs>
 </entryLink>
-<entryLink id="0f87-9398-4f44-7fc7" name="Bionics" hidden="false" collective="false" import="true" targetId="fe26-aa9a-01b0-3173" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ebb4-fd74-9517-e684" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
-</costs>
-</entryLink>
 <entryLink id="0d91-fd6c-e8b3-224b" name="Master-crafted Weapon" hidden="false" collective="false" import="true" targetId="91ea-aa7a-3afb-8980" type="selectionEntry">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8ab7-4823-13ae-f452" type="max" />
@@ -5341,20 +5341,24 @@
 <cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
 </costs>
 </entryLink>
-<entryLink id="cdd1-8816-91d1-fa00" name="Albian Power Gladius" hidden="false" collective="false" import="true" targetId="5dde-3104-248b-ad17" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="edd3-54bd-4aa8-c84c" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
-</costs>
-</entryLink>
 <entryLink id="4c39-ce2b-1775-e572" name="Mechadendrites" hidden="false" collective="false" import="true" targetId="3d9d-2d76-0c17-795f" type="selectionEntry">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6908-cebe-c6fb-72d2" type="max" />
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
+</costs>
+</entryLink>
+</entryLinks>
+</selectionEntryGroup>
+<selectionEntryGroup id="2cfb-0876-eb73-ba36" name="Iron Hands Weaponry" hidden="false" collective="false" import="true">
+<entryLinks>
+<entryLink id="36bb-4714-e747-6379" name="Albian Power Gladius" hidden="false" collective="false" import="true" targetId="5dde-3104-248b-ad17" type="selectionEntry">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c7b1-7fb8-9667-7f72" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
 </entryLink>
 </entryLinks>
@@ -6207,14 +6211,6 @@
 <cost name="pts" typeId="pts0-0000-0000-0001" value="2" />
 </costs>
 </entryLink>
-<entryLink id="239d-867d-9973-7938" name="Bionics" hidden="false" collective="false" import="true" targetId="fe26-aa9a-01b0-3173" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="94f2-a3f2-51ae-c1da" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
-</costs>
-</entryLink>
 <entryLink id="9971-5430-0443-2d0a" name="Master-crafted Weapon" hidden="false" collective="false" import="true" targetId="91ea-aa7a-3afb-8980" type="selectionEntry">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c698-37f6-4a5f-921d" type="max" />
@@ -6271,20 +6267,24 @@
 <cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
 </costs>
 </entryLink>
-<entryLink id="aab4-e988-b562-6378" name="Albian Power Gladius" hidden="false" collective="false" import="true" targetId="5dde-3104-248b-ad17" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="04b6-cc4a-e94a-9b89" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
-</costs>
-</entryLink>
 <entryLink id="23f9-2d0d-2f9c-47b7" name="Mechadendrites" hidden="false" collective="false" import="true" targetId="3d9d-2d76-0c17-795f" type="selectionEntry">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5130-428b-3f47-02b7" type="max" />
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
+</costs>
+</entryLink>
+</entryLinks>
+</selectionEntryGroup>
+<selectionEntryGroup id="079f-b5fb-9cbb-d8fa" name="Iron Hands Weaponry" hidden="false" collective="false" import="true">
+<entryLinks>
+<entryLink id="01f9-fd49-4ed8-1423" name="Albian Power Gladius" hidden="false" collective="false" import="true" targetId="5dde-3104-248b-ad17" type="selectionEntry">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="da85-ddc3-4ec9-fd5f" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
 </entryLink>
 </entryLinks>
@@ -6728,14 +6728,6 @@
 <cost name="pts" typeId="pts0-0000-0000-0001" value="2" />
 </costs>
 </entryLink>
-<entryLink id="ef97-8718-d336-139d" name="Bionics" hidden="false" collective="false" import="true" targetId="fe26-aa9a-01b0-3173" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cbce-d80c-e9e4-8f1c" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
-</costs>
-</entryLink>
 <entryLink id="6878-56aa-e9ba-7f1f" name="Master-crafted Weapon" hidden="false" collective="false" import="true" targetId="91ea-aa7a-3afb-8980" type="selectionEntry">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5581-9d48-6add-3680" type="max" />
@@ -6792,20 +6784,24 @@
 <cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
 </costs>
 </entryLink>
-<entryLink id="acd8-ce7c-557a-2b38" name="Albian Power Gladius" hidden="false" collective="false" import="true" targetId="5dde-3104-248b-ad17" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a040-03ea-5569-03e8" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
-</costs>
-</entryLink>
 <entryLink id="6a6b-06c0-3308-9429" name="Mechadendrites" hidden="false" collective="false" import="true" targetId="3d9d-2d76-0c17-795f" type="selectionEntry">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6750-9abc-e8b8-3b18" type="max" />
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
+</costs>
+</entryLink>
+</entryLinks>
+</selectionEntryGroup>
+<selectionEntryGroup id="c10f-81ce-7507-5661" name="Iron Hands Weaponry" hidden="false" collective="false" import="true">
+<entryLinks>
+<entryLink id="dcbc-e05a-07be-c48c" name="Albian Power Gladius" hidden="false" collective="false" import="true" targetId="5dde-3104-248b-ad17" type="selectionEntry">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3ead-1289-a619-9f55" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
 </entryLink>
 </entryLinks>
@@ -7517,14 +7513,6 @@
 <cost name="pts" typeId="pts0-0000-0000-0001" value="2" />
 </costs>
 </entryLink>
-<entryLink id="00fc-552e-3369-3555" name="Bionics" hidden="false" collective="false" import="true" targetId="fe26-aa9a-01b0-3173" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9623-d489-52ba-710c" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
-</costs>
-</entryLink>
 <entryLink id="095e-d873-de13-f951" name="Master-crafted Weapon" hidden="false" collective="false" import="true" targetId="91ea-aa7a-3afb-8980" type="selectionEntry">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3221-c2a8-2b6e-353d" type="max" />
@@ -7581,20 +7569,24 @@
 <cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
 </costs>
 </entryLink>
-<entryLink id="a087-0a5a-b40a-f45e" name="Albian Power Gladius" hidden="false" collective="false" import="true" targetId="5dde-3104-248b-ad17" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1b55-8f52-8a7d-776c" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
-</costs>
-</entryLink>
 <entryLink id="e438-b52b-1ccf-e630" name="Mechadendrites" hidden="false" collective="false" import="true" targetId="3d9d-2d76-0c17-795f" type="selectionEntry">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6457-ded2-de99-d70c" type="max" />
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
+</costs>
+</entryLink>
+</entryLinks>
+</selectionEntryGroup>
+<selectionEntryGroup id="4e3d-8ce3-f0b9-21bf" name="Iron Hands Weaponry" hidden="false" collective="false" import="true">
+<entryLinks>
+<entryLink id="3120-7beb-f194-fb6b" name="Albian Power Gladius" hidden="false" collective="false" import="true" targetId="5dde-3104-248b-ad17" type="selectionEntry">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c15f-3c45-3cf9-d4ee" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
 </entryLink>
 </entryLinks>
@@ -9170,14 +9162,6 @@ LIMITATIONS - Only a Loyalist Iron Hands Detachment. The army may not include an
 <cost name="pts" typeId="pts0-0000-0000-0001" value="2" />
 </costs>
 </entryLink>
-<entryLink id="c115-49de-87a7-0d09" name="Bionics" hidden="false" collective="false" import="true" targetId="fe26-aa9a-01b0-3173" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e279-9d80-4cbd-70e2" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
-</costs>
-</entryLink>
 <entryLink id="ba2e-d55d-408a-2f76" name="Master-crafted Weapon" hidden="false" collective="false" import="true" targetId="91ea-aa7a-3afb-8980" type="selectionEntry">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3489-b321-3022-ade0" type="max" />
@@ -9234,20 +9218,24 @@ LIMITATIONS - Only a Loyalist Iron Hands Detachment. The army may not include an
 <cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
 </costs>
 </entryLink>
-<entryLink id="2c33-ab65-9c48-53e1" name="Albian Power Gladius" hidden="false" collective="false" import="true" targetId="5dde-3104-248b-ad17" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="64c2-945c-1b0a-974b" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
-</costs>
-</entryLink>
 <entryLink id="9ea5-3b4f-2350-c4a8" name="Mechadendrites" hidden="false" collective="false" import="true" targetId="3d9d-2d76-0c17-795f" type="selectionEntry">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1723-ffef-b12a-1a2f" type="max" />
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
+</costs>
+</entryLink>
+</entryLinks>
+</selectionEntryGroup>
+<selectionEntryGroup id="44ae-48a2-906f-d7fa" name="Iron Hands Weaponry" hidden="false" collective="false" import="true">
+<entryLinks>
+<entryLink id="6427-2cf0-18e3-d8d9" name="Albian Power Gladius" hidden="false" collective="false" import="true" targetId="5dde-3104-248b-ad17" type="selectionEntry">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="db4d-86e6-b2c6-4bbe" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
 </entryLink>
 </entryLinks>
@@ -10374,14 +10362,6 @@ LIMITATIONS - Only a Loyalist Iron Hands Detachment. The army may not include an
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
 </costs>
 </entryLink>
-<entryLink id="276f-0cab-577c-04c0" name="Bionics" hidden="false" collective="false" import="true" targetId="fe26-aa9a-01b0-3173" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="799c-d5be-affb-bfd8" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
-</costs>
-</entryLink>
 <entryLink id="a058-ef29-ae1b-28ea" name="Master-crafted Weapon" hidden="false" collective="false" import="true" targetId="91ea-aa7a-3afb-8980" type="selectionEntry">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c9b0-58a0-b7fc-4214" type="max" />
@@ -10426,20 +10406,24 @@ LIMITATIONS - Only a Loyalist Iron Hands Detachment. The army may not include an
 <cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
 </costs>
 </entryLink>
-<entryLink id="d1a1-8ed0-3247-b6c0" name="Albian Power Gladius" hidden="false" collective="false" import="true" targetId="5dde-3104-248b-ad17" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c26d-92f9-2d27-08fd" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
-</costs>
-</entryLink>
 <entryLink id="ecc9-30b1-a5c9-02d8" name="Mechadendrites" hidden="false" collective="false" import="true" targetId="3d9d-2d76-0c17-795f" type="selectionEntry">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9847-f354-107a-d956" type="max" />
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
+</costs>
+</entryLink>
+</entryLinks>
+</selectionEntryGroup>
+<selectionEntryGroup id="505f-fd6f-5eec-b493" name="Iron Hands Weaponry" hidden="false" collective="false" import="true">
+<entryLinks>
+<entryLink id="eb48-94df-3043-3c0d" name="Albian Power Gladius" hidden="false" collective="false" import="true" targetId="5dde-3104-248b-ad17" type="selectionEntry">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f023-ce33-4a87-3cf1" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
 </entryLink>
 </entryLinks>
@@ -11123,14 +11107,6 @@ LIMITATIONS - Only a Loyalist Iron Hands Detachment. The army may not include an
 <cost name="pts" typeId="pts0-0000-0000-0001" value="2" />
 </costs>
 </entryLink>
-<entryLink id="2910-ad9a-ea15-ec8f" name="Bionics" hidden="false" collective="false" import="true" targetId="fe26-aa9a-01b0-3173" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a079-18f9-bfc2-567b" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
-</costs>
-</entryLink>
 <entryLink id="74b5-52f7-a9d5-5274" name="Master-crafted Weapon" hidden="false" collective="false" import="true" targetId="91ea-aa7a-3afb-8980" type="selectionEntry">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="148f-f6c6-c76a-73df" type="max" />
@@ -11187,20 +11163,24 @@ LIMITATIONS - Only a Loyalist Iron Hands Detachment. The army may not include an
 <cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
 </costs>
 </entryLink>
-<entryLink id="f276-426e-097c-448d" name="Albian Power Gladius" hidden="false" collective="false" import="true" targetId="5dde-3104-248b-ad17" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5e41-b922-1deb-5d44" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
-</costs>
-</entryLink>
 <entryLink id="5880-892e-d4a3-60bd" name="Mechadendrites" hidden="false" collective="false" import="true" targetId="3d9d-2d76-0c17-795f" type="selectionEntry">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d0ca-a50d-f54f-1455" type="max" />
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
+</costs>
+</entryLink>
+</entryLinks>
+</selectionEntryGroup>
+<selectionEntryGroup id="6fee-b79d-4532-b123" name="Iron Hands Weaponry" hidden="false" collective="false" import="true">
+<entryLinks>
+<entryLink id="61b0-e9db-aa04-9c55" name="Albian Power Gladius" hidden="false" collective="false" import="true" targetId="5dde-3104-248b-ad17" type="selectionEntry">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="097d-96d7-8386-86f7" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
 </entryLink>
 </entryLinks>
@@ -12154,18 +12134,6 @@ LIMITATIONS - Only a Loyalist Iron Hands Detachment. The army may not include an
 </entryLink>
 </entryLinks>
 </selectionEntryGroup>
-<selectionEntryGroup id="4445-651d-f286-4dc1" name="More Machine than Man" hidden="false" collective="false" import="true">
-<entryLinks>
-<entryLink id="93fb-a1d9-6c63-d6af" name="Bionics" hidden="false" collective="false" import="true" targetId="fe26-aa9a-01b0-3173" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aac9-a907-48eb-c5b6" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
-</costs>
-</entryLink>
-</entryLinks>
-</selectionEntryGroup>
 </selectionEntryGroups>
 <entryLinks>
 <entryLink id="b417-1941-eb76-7393" name="Power Armour" hidden="false" collective="false" import="true" targetId="1133-946a-2323-7a81" type="selectionEntry">
@@ -12566,18 +12534,6 @@ LIMITATIONS - Only a Loyalist Iron Hands Detachment. The army may not include an
 </entryLink>
 </entryLinks>
 </selectionEntryGroup>
-<selectionEntryGroup id="073e-6fb3-16e2-324c" name="More Machine than Man" hidden="false" collective="false" import="true">
-<entryLinks>
-<entryLink id="d99c-e75a-a990-b796" name="Bionics" hidden="false" collective="false" import="true" targetId="fe26-aa9a-01b0-3173" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ae98-4936-83cf-51a2" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
-</costs>
-</entryLink>
-</entryLinks>
-</selectionEntryGroup>
 </selectionEntryGroups>
 <entryLinks>
 <entryLink id="cb02-de2f-a151-895c" name="Power Armour" hidden="false" collective="false" import="true" targetId="1133-946a-2323-7a81" type="selectionEntry">
@@ -12975,18 +12931,6 @@ LIMITATIONS - Only a Loyalist Iron Hands Detachment. The army may not include an
 </conditionGroups>
 </modifier>
 </modifiers>
-</entryLink>
-</entryLinks>
-</selectionEntryGroup>
-<selectionEntryGroup id="58d2-16ae-3fc6-57ff" name="More Machine than Man" hidden="false" collective="false" import="true">
-<entryLinks>
-<entryLink id="0869-07cf-7edf-7a38" name="Bionics" hidden="false" collective="false" import="true" targetId="fe26-aa9a-01b0-3173" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="833c-b899-96f8-3a54" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
-</costs>
 </entryLink>
 </entryLinks>
 </selectionEntryGroup>
@@ -14537,14 +14481,6 @@ LIMITATIONS - Only a Loyalist Iron Hands Detachment. The army may not include an
 <cost name="pts" typeId="pts0-0000-0000-0001" value="2" />
 </costs>
 </entryLink>
-<entryLink id="09ee-eccd-a07a-701e" name="Bionics" hidden="false" collective="false" import="true" targetId="fe26-aa9a-01b0-3173" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d377-5c9b-f113-e319" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
-</costs>
-</entryLink>
 <entryLink id="a26d-e60a-8689-2d1b" name="Master-crafted Weapon" hidden="false" collective="false" import="true" targetId="91ea-aa7a-3afb-8980" type="selectionEntry">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4c05-c5a6-6846-0941" type="max" />
@@ -14601,20 +14537,24 @@ LIMITATIONS - Only a Loyalist Iron Hands Detachment. The army may not include an
 <cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
 </costs>
 </entryLink>
-<entryLink id="c701-f552-6aee-8997" name="Albian Power Gladius" hidden="false" collective="false" import="true" targetId="5dde-3104-248b-ad17" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7e99-9a7e-1ac7-b5da" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
-</costs>
-</entryLink>
 <entryLink id="a010-2da6-ff5d-9e5b" name="Mechadendrites" hidden="false" collective="false" import="true" targetId="3d9d-2d76-0c17-795f" type="selectionEntry">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4c89-21d0-7f1b-976f" type="max" />
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
+</costs>
+</entryLink>
+</entryLinks>
+</selectionEntryGroup>
+<selectionEntryGroup id="05af-68c2-8c3b-039f" name="Iron Hands Weaponry" hidden="false" collective="false" import="true">
+<entryLinks>
+<entryLink id="6464-9a21-c060-f62e" name="Albian Power Gladius" hidden="false" collective="false" import="true" targetId="5dde-3104-248b-ad17" type="selectionEntry">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4177-f884-0513-49c6" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
 </entryLink>
 </entryLinks>
@@ -15460,14 +15400,6 @@ LIMITATIONS - Only a Loyalist Iron Hands Detachment. The army may not include an
 <cost name="pts" typeId="pts0-0000-0000-0001" value="2" />
 </costs>
 </entryLink>
-<entryLink id="1a70-917f-8478-1395" name="Bionics" hidden="false" collective="false" import="true" targetId="fe26-aa9a-01b0-3173" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b86c-11dc-cc1c-7f0d" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
-</costs>
-</entryLink>
 <entryLink id="36c0-b600-0ce8-3ac8" name="Master-crafted Weapon" hidden="false" collective="false" import="true" targetId="91ea-aa7a-3afb-8980" type="selectionEntry">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0abb-c8c2-d32b-32bf" type="max" />
@@ -15524,20 +15456,24 @@ LIMITATIONS - Only a Loyalist Iron Hands Detachment. The army may not include an
 <cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
 </costs>
 </entryLink>
-<entryLink id="1392-48a3-adf3-cd6b" name="Albian Power Gladius" hidden="false" collective="false" import="true" targetId="5dde-3104-248b-ad17" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8e7d-75bb-480e-6b41" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
-</costs>
-</entryLink>
 <entryLink id="9eca-e3cd-6c2e-029b" name="Mechadendrites" hidden="false" collective="false" import="true" targetId="3d9d-2d76-0c17-795f" type="selectionEntry">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="83dd-c4b7-d019-f3cd" type="max" />
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
+</costs>
+</entryLink>
+</entryLinks>
+</selectionEntryGroup>
+<selectionEntryGroup id="5637-10a1-732a-cc25" name="Iron Hands Weaponry" hidden="false" collective="false" import="true">
+<entryLinks>
+<entryLink id="a61d-c931-ba7c-043a" name="Albian Power Gladius" hidden="false" collective="false" import="true" targetId="5dde-3104-248b-ad17" type="selectionEntry">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6d89-788e-fef3-76d7" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
 </entryLink>
 </entryLinks>
@@ -16093,14 +16029,6 @@ LIMITATIONS - Only a Loyalist Iron Hands Detachment. The army may not include an
 <cost name="pts" typeId="pts0-0000-0000-0001" value="2" />
 </costs>
 </entryLink>
-<entryLink id="2e08-5acc-8d15-ceb2" name="Bionics" hidden="false" collective="false" import="true" targetId="fe26-aa9a-01b0-3173" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1321-5177-873d-2b91" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
-</costs>
-</entryLink>
 <entryLink id="d43d-e01b-77d8-fc31" name="Master-crafted Weapon" hidden="false" collective="false" import="true" targetId="91ea-aa7a-3afb-8980" type="selectionEntry">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="388b-e489-6f50-0c1f" type="max" />
@@ -16157,20 +16085,24 @@ LIMITATIONS - Only a Loyalist Iron Hands Detachment. The army may not include an
 <cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
 </costs>
 </entryLink>
-<entryLink id="35dc-bb08-d29f-4265" name="Albian Power Gladius" hidden="false" collective="false" import="true" targetId="5dde-3104-248b-ad17" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="edf4-bbab-155a-c779" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
-</costs>
-</entryLink>
 <entryLink id="7e5d-b666-e86f-595b" name="Mechadendrites" hidden="false" collective="false" import="true" targetId="3d9d-2d76-0c17-795f" type="selectionEntry">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cb0c-f012-1d06-133c" type="max" />
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
+</costs>
+</entryLink>
+</entryLinks>
+</selectionEntryGroup>
+<selectionEntryGroup id="3069-8f77-b36b-e4db" name="Iron Hands Weaponry" hidden="false" collective="false" import="true">
+<entryLinks>
+<entryLink id="5cea-0d47-4a7f-5602" name="Albian Power Gladius" hidden="false" collective="false" import="true" targetId="5dde-3104-248b-ad17" type="selectionEntry">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="daa2-3316-2e4e-c60c" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
 </entryLink>
 </entryLinks>
@@ -17657,14 +17589,6 @@ LIMITATIONS - Only a Loyalist Iron Hands Detachment. The army may not include an
 <cost name="pts" typeId="pts0-0000-0000-0001" value="2" />
 </costs>
 </entryLink>
-<entryLink id="daca-464e-590b-43e2" name="Bionics" hidden="false" collective="false" import="true" targetId="fe26-aa9a-01b0-3173" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f447-4bbc-974c-5148" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
-</costs>
-</entryLink>
 <entryLink id="1a6f-2bd3-a6f3-9dac" name="Master-crafted Weapon" hidden="false" collective="false" import="true" targetId="91ea-aa7a-3afb-8980" type="selectionEntry">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f120-bf1d-4e30-8488" type="max" />
@@ -17721,20 +17645,24 @@ LIMITATIONS - Only a Loyalist Iron Hands Detachment. The army may not include an
 <cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
 </costs>
 </entryLink>
-<entryLink id="e3da-3ee7-d89a-90be" name="Albian Power Gladius" hidden="false" collective="false" import="true" targetId="5dde-3104-248b-ad17" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cef8-83a7-9abc-37e4" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
-</costs>
-</entryLink>
 <entryLink id="0d6e-94c6-332f-a521" name="Mechadendrites" hidden="false" collective="false" import="true" targetId="3d9d-2d76-0c17-795f" type="selectionEntry">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f54b-113e-fdd1-cfb0" type="max" />
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
+</costs>
+</entryLink>
+</entryLinks>
+</selectionEntryGroup>
+<selectionEntryGroup id="d178-15d5-d2fe-7909" name="Iron Hands Weaponry" hidden="false" collective="false" import="true">
+<entryLinks>
+<entryLink id="7539-34e3-6ec9-182b" name="Albian Power Gladius" hidden="false" collective="false" import="true" targetId="5dde-3104-248b-ad17" type="selectionEntry">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d8f0-c930-bbb4-ec47" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
 </entryLink>
 </entryLinks>
@@ -25572,14 +25500,6 @@ LIMITATIONS - Only a Loyalist Iron Hands Detachment. The army may not include an
 <cost name="pts" typeId="pts0-0000-0000-0001" value="2" />
 </costs>
 </entryLink>
-<entryLink id="9dbc-fc4d-e1e2-79fb" name="Bionics" hidden="false" collective="false" import="true" targetId="fe26-aa9a-01b0-3173" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ad85-371c-61a8-1c5d" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
-</costs>
-</entryLink>
 <entryLink id="11c0-4e28-f6e1-eb28" name="Master-crafted Weapon" hidden="false" collective="false" import="true" targetId="91ea-aa7a-3afb-8980" type="selectionEntry">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5dff-47ef-15be-d77a" type="max" />
@@ -25636,20 +25556,24 @@ LIMITATIONS - Only a Loyalist Iron Hands Detachment. The army may not include an
 <cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
 </costs>
 </entryLink>
-<entryLink id="5e77-c563-1906-ab18" name="Albian Power Gladius" hidden="false" collective="false" import="true" targetId="5dde-3104-248b-ad17" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="786c-fefc-ae02-b998" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
-</costs>
-</entryLink>
 <entryLink id="82bd-9001-b8f1-3135" name="Mechadendrites" hidden="false" collective="false" import="true" targetId="3d9d-2d76-0c17-795f" type="selectionEntry">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b711-d4d3-b61a-e8f7" type="max" />
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
+</costs>
+</entryLink>
+</entryLinks>
+</selectionEntryGroup>
+<selectionEntryGroup id="80d1-71a2-6524-abeb" name="Iron Hands Weaponry" hidden="false" collective="false" import="true">
+<entryLinks>
+<entryLink id="4a2a-cc01-7ce5-49a6" name="Albian Power Gladius" hidden="false" collective="false" import="true" targetId="5dde-3104-248b-ad17" type="selectionEntry">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4b2a-4bf6-ac5a-c977" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
 </entryLink>
 </entryLinks>
@@ -26068,6 +25992,7 @@ LIMITATIONS - Only a Loyalist Iron Hands Detachment. The army may not include an
 </modifier>
 </modifiers>
 </entryLink>
+<entryLink id="6aa8-6ebc-f691-81a4" name="Land Raider Achilles" hidden="false" collective="false" import="true" targetId="1197-3edb-db94-5cb8" type="selectionEntry" />
 </entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
@@ -26463,6 +26388,7 @@ LIMITATIONS - Only a Loyalist Iron Hands Detachment. The army may not include an
 </modifier>
 </modifiers>
 </entryLink>
+<entryLink id="0f5d-765d-fd64-f952" name="Land Raider Achilles" hidden="false" collective="false" import="true" targetId="1197-3edb-db94-5cb8" type="selectionEntry" />
 <entryLink id="14a2-13cc-bcab-3a24" name="Anvillus Pattern Dreadclaw Drop Pod" hidden="false" collective="false" import="true" targetId="2bad-68df-db1e-95d9" type="selectionEntry">
 <modifiers>
 <modifier type="add" field="error" value="Too many models for a Anvillus Pattern Dreadclaw Drop Pod (capacity 10).">
@@ -26903,6 +26829,7 @@ LIMITATIONS - Only a Loyalist Iron Hands Detachment. The army may not include an
 </modifier>
 </modifiers>
 </entryLink>
+<entryLink id="3a48-19e1-b496-cef1" name="Land Raider Achilles" hidden="false" collective="false" import="true" targetId="1197-3edb-db94-5cb8" type="selectionEntry" />
 <entryLink id="f745-d770-c401-3872" name="Anvillus Pattern Dreadclaw Drop Pod" hidden="false" collective="false" import="true" targetId="2bad-68df-db1e-95d9" type="selectionEntry">
 <modifiers>
 <modifier type="add" field="error" value="Too many models for a Anvillus Pattern Dreadclaw Drop Pod (capacity 10).">
@@ -27008,6 +26935,7 @@ LIMITATIONS - Only a Loyalist Iron Hands Detachment. The army may not include an
 </profile>
 </profiles>
 <infoLinks>
+<infoLink id="ab62-600f-00a4-51e5" name="Legiones Astartes (Iron Hands)" hidden="false" targetId="2e4f-5a71-49e0-3b8c" type="rule" />
 <infoLink id="add0-63e7-424a-c8c3" name="Paired Close-Combat Arms (Venerable Forge Lord)" hidden="false" targetId="b201-bf7b-bf93-baf8" type="rule" />
 <infoLink id="e9d3-4d67-a737-0e59" name="Old &amp; Wise" hidden="false" targetId="6672-4d67-79f6-4d9d" type="rule" />
 <infoLink id="033a-eb34-96ba-0e98" name="Hard to Kill" hidden="false" targetId="206b-8503-b761-98e9" type="rule" />
@@ -27242,6 +27170,11 @@ LIMITATIONS - Only a Loyalist Iron Hands Detachment. The army may not include an
 </selectionEntry>
 <selectionEntry id="04de-80d9-5c19-ba72" name="Shadrak Meduson" hidden="false" collective="false" import="true" type="unit">
 <modifiers>
+<modifier type="add" field="error" value="Shadrak Meduson is Loyalist only.">
+<conditions>
+<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="267b-12c2-839b-a93a" type="atLeast" />
+</conditions>
+</modifier>
 <modifier type="add" field="error" value="Splinter Bolts may not be combined with Special Issue Ammunition.">
 <conditions>
 <condition field="selections" scope="04de-80d9-5c19-ba72" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4f6b-22e6-741e-cdd6" type="atLeast" />
@@ -27483,6 +27416,11 @@ LIMITATIONS - Only a Loyalist Iron Hands Detachment. The army may not include an
 <condition field="pts0-0000-0000-0001" scope="roster" value="1500" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="any" type="lessThan" />
 </conditions>
 </modifier>
+<modifier type="add" field="error" value="Gabriel Santar is Loyalist only.">
+<conditions>
+<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="267b-12c2-839b-a93a" type="atLeast" />
+</conditions>
+</modifier>
 </modifiers>
 <constraints>
 <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a8c6-3b62-201b-6716" type="max" />
@@ -27576,6 +27514,11 @@ LIMITATIONS - Only a Loyalist Iron Hands Detachment. The army may not include an
 <modifier type="add" field="category" value="e89b-053d-1bdc-4e2e">
 <conditions>
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c0b2-49b1-48fd-3fc2" type="atLeast" />
+</conditions>
+</modifier>
+<modifier type="add" field="error" value="Ferrus Manus, the Gorgon is Loyalist only.">
+<conditions>
+<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="267b-12c2-839b-a93a" type="atLeast" />
 </conditions>
 </modifier>
 </modifiers>
@@ -28170,14 +28113,6 @@ LIMITATIONS - Only a Loyalist Iron Hands Detachment. The army may not include an
 <cost name="pts" typeId="pts0-0000-0000-0001" value="2" />
 </costs>
 </entryLink>
-<entryLink id="c754-0805-05a2-c56b" name="Bionics" hidden="false" collective="false" import="true" targetId="fe26-aa9a-01b0-3173" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9962-672d-9f67-71cd" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
-</costs>
-</entryLink>
 <entryLink id="81c4-d603-b31f-a457" name="Master-crafted Weapon" hidden="false" collective="false" import="true" targetId="91ea-aa7a-3afb-8980" type="selectionEntry">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="af18-bd20-9311-c217" type="max" />
@@ -28234,9 +28169,13 @@ LIMITATIONS - Only a Loyalist Iron Hands Detachment. The army may not include an
 <cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
 </costs>
 </entryLink>
-<entryLink id="9aac-8efa-cd89-3e4f" name="Albian Power Gladius" hidden="false" collective="false" import="true" targetId="5dde-3104-248b-ad17" type="selectionEntry">
+</entryLinks>
+</selectionEntryGroup>
+<selectionEntryGroup id="d703-6a0a-655d-906a" name="Iron Hands Weaponry" hidden="false" collective="false" import="true">
+<entryLinks>
+<entryLink id="252f-0241-0f5d-cc44" name="Albian Power Gladius" hidden="false" collective="false" import="true" targetId="5dde-3104-248b-ad17" type="selectionEntry">
 <constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="90a4-c1e8-5b86-15a8" type="max" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9234-2cbd-0be9-7eca" type="max" />
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
@@ -29143,14 +29082,6 @@ LIMITATIONS - Only a Loyalist Iron Hands Detachment. The army may not include an
 <cost name="pts" typeId="pts0-0000-0000-0001" value="2" />
 </costs>
 </entryLink>
-<entryLink id="7c81-c2a1-3702-00b6" name="Bionics" hidden="false" collective="false" import="true" targetId="fe26-aa9a-01b0-3173" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1804-791f-a589-499b" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
-</costs>
-</entryLink>
 <entryLink id="601d-7f92-f348-5fb6" name="Master-crafted Weapon" hidden="false" collective="false" import="true" targetId="91ea-aa7a-3afb-8980" type="selectionEntry">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="86bf-a929-9968-d29f" type="max" />
@@ -29207,9 +29138,13 @@ LIMITATIONS - Only a Loyalist Iron Hands Detachment. The army may not include an
 <cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
 </costs>
 </entryLink>
-<entryLink id="7536-8d30-d370-85fb" name="Albian Power Gladius" hidden="false" collective="false" import="true" targetId="5dde-3104-248b-ad17" type="selectionEntry">
+</entryLinks>
+</selectionEntryGroup>
+<selectionEntryGroup id="4810-8e92-7efa-4194" name="Iron Hands Weaponry" hidden="false" collective="false" import="true">
+<entryLinks>
+<entryLink id="ab5f-ec0b-431c-8b9b" name="Albian Power Gladius" hidden="false" collective="false" import="true" targetId="5dde-3104-248b-ad17" type="selectionEntry">
 <constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3ad1-176f-04bd-91ef" type="max" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b815-929f-cb38-d4b9" type="max" />
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
@@ -29669,14 +29604,6 @@ LIMITATIONS - Only a Loyalist Iron Hands Detachment. The army may not include an
 <cost name="pts" typeId="pts0-0000-0000-0001" value="2" />
 </costs>
 </entryLink>
-<entryLink id="20eb-34e3-ee0a-0a49" name="Bionics" hidden="false" collective="false" import="true" targetId="fe26-aa9a-01b0-3173" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2921-ff1d-78b9-d150" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
-</costs>
-</entryLink>
 <entryLink id="f210-f161-e02f-f369" name="Master-crafted Weapon" hidden="false" collective="false" import="true" targetId="91ea-aa7a-3afb-8980" type="selectionEntry">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b407-f6eb-b7ff-a4a2" type="max" />
@@ -29733,9 +29660,13 @@ LIMITATIONS - Only a Loyalist Iron Hands Detachment. The army may not include an
 <cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
 </costs>
 </entryLink>
-<entryLink id="3339-c061-2bea-8a96" name="Albian Power Gladius" hidden="false" collective="false" import="true" targetId="5dde-3104-248b-ad17" type="selectionEntry">
+</entryLinks>
+</selectionEntryGroup>
+<selectionEntryGroup id="554b-7eb2-43aa-2beb" name="Iron Hands Weaponry" hidden="false" collective="false" import="true">
+<entryLinks>
+<entryLink id="d94b-56c3-f435-7a1f" name="Albian Power Gladius" hidden="false" collective="false" import="true" targetId="5dde-3104-248b-ad17" type="selectionEntry">
 <constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b1e8-bb32-5a9f-386a" type="max" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9158-e9ad-7b80-27f4" type="max" />
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
@@ -30228,14 +30159,6 @@ LIMITATIONS - Only a Loyalist Iron Hands Detachment. The army may not include an
 <cost name="pts" typeId="pts0-0000-0000-0001" value="2" />
 </costs>
 </entryLink>
-<entryLink id="94e7-b5f7-c953-f8ca" name="Bionics" hidden="false" collective="false" import="true" targetId="fe26-aa9a-01b0-3173" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b92f-7d2d-1e79-e05c" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
-</costs>
-</entryLink>
 <entryLink id="e851-064f-4131-5c7d" name="Master-crafted Weapon" hidden="false" collective="false" import="true" targetId="91ea-aa7a-3afb-8980" type="selectionEntry">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a25e-f055-d375-7b18" type="max" />
@@ -30292,9 +30215,13 @@ LIMITATIONS - Only a Loyalist Iron Hands Detachment. The army may not include an
 <cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
 </costs>
 </entryLink>
-<entryLink id="c7fc-6f84-ac38-29d1" name="Albian Power Gladius" hidden="false" collective="false" import="true" targetId="5dde-3104-248b-ad17" type="selectionEntry">
+</entryLinks>
+</selectionEntryGroup>
+<selectionEntryGroup id="46e2-faaa-0bcd-61e7" name="Iron Hands Weaponry" hidden="false" collective="false" import="true">
+<entryLinks>
+<entryLink id="d934-0733-3261-2fcd" name="Albian Power Gladius" hidden="false" collective="false" import="true" targetId="5dde-3104-248b-ad17" type="selectionEntry">
 <constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="69b3-db55-7dc0-9674" type="max" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7b00-ad25-7a06-e9dd" type="max" />
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
@@ -31307,14 +31234,6 @@ LIMITATIONS - Only a Loyalist Iron Hands Detachment. The army may not include an
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
 </costs>
 </entryLink>
-<entryLink id="d032-ff43-d17c-9cb2" name="Bionics" hidden="false" collective="false" import="true" targetId="fe26-aa9a-01b0-3173" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1f9f-2b8b-c5d6-255d" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
-</costs>
-</entryLink>
 <entryLink id="3dee-e127-d00d-abcc" name="Master-crafted Weapon" hidden="false" collective="false" import="true" targetId="91ea-aa7a-3afb-8980" type="selectionEntry">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="684d-97d2-23ef-1caf" type="max" />
@@ -31359,9 +31278,13 @@ LIMITATIONS - Only a Loyalist Iron Hands Detachment. The army may not include an
 <cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
 </costs>
 </entryLink>
-<entryLink id="a3ae-43fc-5a97-fdc5" name="Albian Power Gladius" hidden="false" collective="false" import="true" targetId="5dde-3104-248b-ad17" type="selectionEntry">
+</entryLinks>
+</selectionEntryGroup>
+<selectionEntryGroup id="98a6-f29a-e71c-5145" name="Iron Hands Weaponry" hidden="false" collective="false" import="true">
+<entryLinks>
+<entryLink id="f32e-a64a-577e-235d" name="Albian Power Gladius" hidden="false" collective="false" import="true" targetId="5dde-3104-248b-ad17" type="selectionEntry">
 <constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3229-225c-d45e-be5c" type="max" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bb9c-5b5e-48f6-3281" type="max" />
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
@@ -31662,14 +31585,6 @@ LIMITATIONS - Only a Loyalist Iron Hands Detachment. The army may not include an
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
 </costs>
 </entryLink>
-<entryLink id="8673-0fae-edb4-79ec" name="Bionics" hidden="false" collective="false" import="true" targetId="fe26-aa9a-01b0-3173" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="51bb-8c4c-b047-5f9a" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
-</costs>
-</entryLink>
 <entryLink id="6587-2fc0-f78c-ae92" name="Master-crafted Weapon" hidden="false" collective="false" import="true" targetId="91ea-aa7a-3afb-8980" type="selectionEntry">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a5e1-2c2b-a198-d74f" type="max" />
@@ -31714,9 +31629,13 @@ LIMITATIONS - Only a Loyalist Iron Hands Detachment. The army may not include an
 <cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
 </costs>
 </entryLink>
-<entryLink id="886d-958d-e377-ec13" name="Albian Power Gladius" hidden="false" collective="false" import="true" targetId="5dde-3104-248b-ad17" type="selectionEntry">
+</entryLinks>
+</selectionEntryGroup>
+<selectionEntryGroup id="fe33-99b8-e600-0de7" name="Iron Hands Weaponry" hidden="false" collective="false" import="true">
+<entryLinks>
+<entryLink id="27e2-671f-954c-d740" name="Albian Power Gladius" hidden="false" collective="false" import="true" targetId="5dde-3104-248b-ad17" type="selectionEntry">
 <constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="73e7-308d-eaea-4001" type="max" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e999-9621-cc95-250a" type="max" />
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
@@ -32064,14 +31983,6 @@ LIMITATIONS - Only a Loyalist Iron Hands Detachment. The army may not include an
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
 </costs>
 </entryLink>
-<entryLink id="7a3b-c816-5628-b4fb" name="Bionics" hidden="false" collective="false" import="true" targetId="fe26-aa9a-01b0-3173" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="df5e-6229-fa03-496a" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
-</costs>
-</entryLink>
 <entryLink id="8523-4ce3-7f4d-2b3b" name="Master-crafted Weapon" hidden="false" collective="false" import="true" targetId="91ea-aa7a-3afb-8980" type="selectionEntry">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b015-5537-9b11-37c1" type="max" />
@@ -32116,9 +32027,13 @@ LIMITATIONS - Only a Loyalist Iron Hands Detachment. The army may not include an
 <cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
 </costs>
 </entryLink>
-<entryLink id="d3fe-a0e3-9976-6a4c" name="Albian Power Gladius" hidden="false" collective="false" import="true" targetId="5dde-3104-248b-ad17" type="selectionEntry">
+</entryLinks>
+</selectionEntryGroup>
+<selectionEntryGroup id="f0ec-a80b-96c2-39d0" name="Iron Hands Weaponry" hidden="false" collective="false" import="true">
+<entryLinks>
+<entryLink id="e3fc-7203-2132-9dcc" name="Albian Power Gladius" hidden="false" collective="false" import="true" targetId="5dde-3104-248b-ad17" type="selectionEntry">
 <constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4e38-f29f-76d2-d4d0" type="max" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="26d6-1589-d761-b4ee" type="max" />
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
@@ -32867,14 +32782,6 @@ LIMITATIONS - Only a Loyalist Iron Hands Detachment. The army may not include an
 <cost name="pts" typeId="pts0-0000-0000-0001" value="2" />
 </costs>
 </entryLink>
-<entryLink id="66d0-5524-63af-83d9" name="Bionics" hidden="false" collective="false" import="true" targetId="fe26-aa9a-01b0-3173" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="39d0-2442-968a-6ee8" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
-</costs>
-</entryLink>
 <entryLink id="826c-34c8-bc1a-ec1f" name="Master-crafted Weapon" hidden="false" collective="false" import="true" targetId="91ea-aa7a-3afb-8980" type="selectionEntry">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5e13-dec3-4fd4-8b66" type="max" />
@@ -32931,9 +32838,13 @@ LIMITATIONS - Only a Loyalist Iron Hands Detachment. The army may not include an
 <cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
 </costs>
 </entryLink>
-<entryLink id="b9e1-ab3c-8d30-452d" name="Albian Power Gladius" hidden="false" collective="false" import="true" targetId="5dde-3104-248b-ad17" type="selectionEntry">
+</entryLinks>
+</selectionEntryGroup>
+<selectionEntryGroup id="54bd-f63e-1f48-ce92" name="Iron Hands Weaponry" hidden="false" collective="false" import="true">
+<entryLinks>
+<entryLink id="f7e5-27ac-91c1-f700" name="Albian Power Gladius" hidden="false" collective="false" import="true" targetId="5dde-3104-248b-ad17" type="selectionEntry">
 <constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5d31-253c-2a7f-19e9" type="max" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="092d-ec0e-ebfb-9050" type="max" />
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
@@ -33393,14 +33304,6 @@ LIMITATIONS - Only a Loyalist Iron Hands Detachment. The army may not include an
 <cost name="pts" typeId="pts0-0000-0000-0001" value="2" />
 </costs>
 </entryLink>
-<entryLink id="d2b5-3a2f-ed1f-e3a8" name="Bionics" hidden="false" collective="false" import="true" targetId="fe26-aa9a-01b0-3173" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8ac8-857f-0ee5-5dda" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
-</costs>
-</entryLink>
 <entryLink id="d7b5-7bce-63ed-b041" name="Master-crafted Weapon" hidden="false" collective="false" import="true" targetId="91ea-aa7a-3afb-8980" type="selectionEntry">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="29d0-f9ae-2a53-83fd" type="max" />
@@ -33457,9 +33360,13 @@ LIMITATIONS - Only a Loyalist Iron Hands Detachment. The army may not include an
 <cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
 </costs>
 </entryLink>
-<entryLink id="673a-f44e-129d-1d96" name="Albian Power Gladius" hidden="false" collective="false" import="true" targetId="5dde-3104-248b-ad17" type="selectionEntry">
+</entryLinks>
+</selectionEntryGroup>
+<selectionEntryGroup id="6b86-68d6-d6ad-1576" name="Iron Hands Weaponry" hidden="false" collective="false" import="true">
+<entryLinks>
+<entryLink id="acd1-5517-3aaa-a9ce" name="Albian Power Gladius" hidden="false" collective="false" import="true" targetId="5dde-3104-248b-ad17" type="selectionEntry">
 <constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a2f0-edef-6576-d07f" type="max" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="60fc-d7d3-3cc6-e5ea" type="max" />
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
@@ -33952,14 +33859,6 @@ LIMITATIONS - Only a Loyalist Iron Hands Detachment. The army may not include an
 <cost name="pts" typeId="pts0-0000-0000-0001" value="2" />
 </costs>
 </entryLink>
-<entryLink id="a41c-eeb8-cc77-d5b9" name="Bionics" hidden="false" collective="false" import="true" targetId="fe26-aa9a-01b0-3173" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0f66-2193-38eb-073d" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
-</costs>
-</entryLink>
 <entryLink id="19af-4dfd-8134-95ac" name="Master-crafted Weapon" hidden="false" collective="false" import="true" targetId="91ea-aa7a-3afb-8980" type="selectionEntry">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7401-2da1-9bfd-c611" type="max" />
@@ -34016,9 +33915,13 @@ LIMITATIONS - Only a Loyalist Iron Hands Detachment. The army may not include an
 <cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
 </costs>
 </entryLink>
-<entryLink id="d911-f150-9248-ca7c" name="Albian Power Gladius" hidden="false" collective="false" import="true" targetId="5dde-3104-248b-ad17" type="selectionEntry">
+</entryLinks>
+</selectionEntryGroup>
+<selectionEntryGroup id="9aae-046c-4c60-0e13" name="Iron Hands Weaponry" hidden="false" collective="false" import="true">
+<entryLinks>
+<entryLink id="b692-d38b-a0ad-d237" name="Albian Power Gladius" hidden="false" collective="false" import="true" targetId="5dde-3104-248b-ad17" type="selectionEntry">
 <constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f498-a6c9-d9c8-5eef" type="max" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="062f-db6d-e864-561c" type="max" />
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
@@ -35031,14 +34934,6 @@ LIMITATIONS - Only a Loyalist Iron Hands Detachment. The army may not include an
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
 </costs>
 </entryLink>
-<entryLink id="1b0b-e19b-2831-2e8b" name="Bionics" hidden="false" collective="false" import="true" targetId="fe26-aa9a-01b0-3173" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0089-c5f3-92b6-6d85" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
-</costs>
-</entryLink>
 <entryLink id="2ea3-231c-13a6-eb92" name="Master-crafted Weapon" hidden="false" collective="false" import="true" targetId="91ea-aa7a-3afb-8980" type="selectionEntry">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="24a5-9cf1-a4fe-1689" type="max" />
@@ -35083,9 +34978,13 @@ LIMITATIONS - Only a Loyalist Iron Hands Detachment. The army may not include an
 <cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
 </costs>
 </entryLink>
-<entryLink id="2b3c-0a18-ed3c-e510" name="Albian Power Gladius" hidden="false" collective="false" import="true" targetId="5dde-3104-248b-ad17" type="selectionEntry">
+</entryLinks>
+</selectionEntryGroup>
+<selectionEntryGroup id="a53a-e052-9f8f-e718" name="Iron Hands Weaponry" hidden="false" collective="false" import="true">
+<entryLinks>
+<entryLink id="00b4-e523-ea34-51ca" name="Albian Power Gladius" hidden="false" collective="false" import="true" targetId="5dde-3104-248b-ad17" type="selectionEntry">
 <constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="108a-16c4-901f-f9a7" type="max" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="57a6-63db-f86e-19c4" type="max" />
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
@@ -35386,14 +35285,6 @@ LIMITATIONS - Only a Loyalist Iron Hands Detachment. The army may not include an
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
 </costs>
 </entryLink>
-<entryLink id="698b-5992-7bd4-c110" name="Bionics" hidden="false" collective="false" import="true" targetId="fe26-aa9a-01b0-3173" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b2bc-e9fd-b544-796a" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
-</costs>
-</entryLink>
 <entryLink id="0048-39a1-9cbd-475d" name="Master-crafted Weapon" hidden="false" collective="false" import="true" targetId="91ea-aa7a-3afb-8980" type="selectionEntry">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6152-bfe3-9e45-4a53" type="max" />
@@ -35438,9 +35329,13 @@ LIMITATIONS - Only a Loyalist Iron Hands Detachment. The army may not include an
 <cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
 </costs>
 </entryLink>
-<entryLink id="74aa-0261-306b-8766" name="Albian Power Gladius" hidden="false" collective="false" import="true" targetId="5dde-3104-248b-ad17" type="selectionEntry">
+</entryLinks>
+</selectionEntryGroup>
+<selectionEntryGroup id="f2f8-695c-29a2-d81f" name="Iron Hands Weaponry" hidden="false" collective="false" import="true">
+<entryLinks>
+<entryLink id="9f3b-1f51-5a43-2f76" name="Albian Power Gladius" hidden="false" collective="false" import="true" targetId="5dde-3104-248b-ad17" type="selectionEntry">
 <constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a2d7-42b6-3257-2aa2" type="max" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="31d1-0650-9891-0889" type="max" />
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
@@ -35788,14 +35683,6 @@ LIMITATIONS - Only a Loyalist Iron Hands Detachment. The army may not include an
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
 </costs>
 </entryLink>
-<entryLink id="06f7-0d39-c303-829a" name="Bionics" hidden="false" collective="false" import="true" targetId="fe26-aa9a-01b0-3173" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="954e-89d9-7975-772d" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
-</costs>
-</entryLink>
 <entryLink id="1f12-4c3d-416b-8ec9" name="Master-crafted Weapon" hidden="false" collective="false" import="true" targetId="91ea-aa7a-3afb-8980" type="selectionEntry">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c1c3-4724-7aa1-ed0d" type="max" />
@@ -35840,9 +35727,13 @@ LIMITATIONS - Only a Loyalist Iron Hands Detachment. The army may not include an
 <cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
 </costs>
 </entryLink>
-<entryLink id="d45c-8520-8535-2f08" name="Albian Power Gladius" hidden="false" collective="false" import="true" targetId="5dde-3104-248b-ad17" type="selectionEntry">
+</entryLinks>
+</selectionEntryGroup>
+<selectionEntryGroup id="bc5d-4b2d-f7ed-cc5d" name="Iron Hands Weaponry" hidden="false" collective="false" import="true">
+<entryLinks>
+<entryLink id="45e0-8d32-aae3-6745" name="Albian Power Gladius" hidden="false" collective="false" import="true" targetId="5dde-3104-248b-ad17" type="selectionEntry">
 <constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8423-a3aa-d1c7-9a9b" type="max" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="82eb-3f91-6e89-e945" type="max" />
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
@@ -37273,6 +37164,243 @@ LIMITATIONS - Only a Loyalist Iron Hands Detachment. The army may not include an
 <cost name="pts" typeId="pts0-0000-0000-0001" value="50" />
 </costs>
 </selectionEntry>
+<selectionEntry id="1197-3edb-db94-5cb8" name="Land Raider Achilles" hidden="false" collective="false" import="true" type="unit">
+<modifiers>
+<modifier type="add" field="category" value="cd54-54be-0cb1-3474">
+<conditions>
+<condition field="selections" scope="1197-3edb-db94-5cb8" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="08e9-bcce-2d6c-dd98" type="atLeast" />
+</conditions>
+</modifier>
+<modifier type="add" field="category" value="e89b-053d-1bdc-4e2e">
+<conditions>
+<condition field="selections" scope="1197-3edb-db94-5cb8" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="08e9-bcce-2d6c-dd98" type="atLeast" />
+</conditions>
+</modifier>
+</modifiers>
+<profiles>
+<profile id="9b93-e2d0-581c-a9dc" name="Land Raider Achilles" hidden="false" typeId="c1e2-c3f6-f1e3-c783" typeName="Vehicle">
+<modifiers>
+<modifier type="set" field="e7f5-6a1a-ac58-5b0a" value="5">
+<conditions>
+<condition field="selections" scope="1197-3edb-db94-5cb8" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="08e9-bcce-2d6c-dd98" type="atLeast" />
+</conditions>
+</modifier>
+</modifiers>
+<characteristics>
+<characteristic name="Unit Type" typeId="6095-ae79-f2c4-f05d">Vehicle (Tank, Transport)</characteristic>
+<characteristic name="BS" typeId="e7f5-6a1a-ac58-5b0a">4</characteristic>
+<characteristic name="Front" typeId="f537-badc-bfd2-5234">14</characteristic>
+<characteristic name="Side" typeId="0c3e-a00e-5d47-7352">14</characteristic>
+<characteristic name="Rear" typeId="7074-ea68-65bb-46bb">14</characteristic>
+</characteristics>
+</profile>
+<profile id="28c6-5ab1-888e-b150" name="Land Raider Achilles" hidden="false" typeId="3dca-e183-c6eb-8cea" typeName="Transport">
+<characteristics>
+<characteristic name="Capacity" typeId="43e8-af23-5b9c-f1d8">6 models</characteristic>
+<characteristic name="Access Points" typeId="bd35-f8fa-db6e-e920">Side and front access points</characteristic>
+<characteristic name="Fire Points" typeId="d703-d9d3-280c-8462">-</characteristic>
+</characteristics>
+</profile>
+</profiles>
+<infoLinks>
+<infoLink id="93b2-1048-22a5-5910" name="Power of the Machine Spirit" hidden="false" targetId="37cc-c497-b81f-76d0" type="rule" />
+<infoLink id="445e-6f00-f15b-7020" name="Ferromantic Invulnerability" hidden="false" targetId="af77-666d-d146-cc3f" type="rule" />
+</infoLinks>
+<categoryLinks>
+<categoryLink id="bbed-9713-e116-f261" name="Dedicated Transport" hidden="false" targetId="2c06-cce8-6863-d996" primary="true" />
+</categoryLinks>
+<selectionEntryGroups>
+<selectionEntryGroup id="268f-8b6d-07ff-8dd1" name="Vehicle Upgrades" hidden="false" collective="false" import="true">
+<entryLinks>
+<entryLink id="b11e-0bac-c36d-54dc" name="Hunter-Killer Missile" hidden="false" collective="false" import="true" targetId="9a5d-fd49-68a3-2572" type="selectionEntry">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9c03-e9a1-08d6-3648" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
+</costs>
+</entryLink>
+<entryLink id="7927-b925-971b-2e37" name="Dozer Blade" hidden="false" collective="false" import="true" targetId="7d17-3b7b-1d6e-e0f2" type="selectionEntry">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d807-8e64-830d-4df5" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
+</costs>
+</entryLink>
+<entryLink id="90e5-3e68-f297-9a53" name="Auxiliary Drive" hidden="false" collective="false" import="true" targetId="4f16-c23a-b791-3446" type="selectionEntry">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e86d-cb62-a123-4c85" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
+</costs>
+</entryLink>
+</entryLinks>
+</selectionEntryGroup>
+<selectionEntryGroup id="0ddc-290b-09fa-6f21" name="Pintle-mounted Weapon" hidden="false" collective="false" import="true">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e5dd-661b-bbb4-d0d2" type="max" />
+</constraints>
+<selectionEntries>
+<selectionEntry id="2d11-8511-8289-339d" name="Twin-linked Bolter" hidden="false" collective="false" import="true" type="upgrade">
+<entryLinks>
+<entryLink id="6b3a-1144-80df-2091" name="Twin-linked Bolter" hidden="false" collective="false" import="true" targetId="6392-9914-afef-0ec5" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="78b9-40ac-d527-711b" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7664-161f-0bdf-417b" type="max" />
+</constraints>
+</entryLink>
+</entryLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
+</costs>
+</selectionEntry>
+<selectionEntry id="ace6-377b-9fd6-b5b3" name="Combi-Weapon" hidden="false" collective="false" import="true" type="upgrade">
+<entryLinks>
+<entryLink id="7d44-da8d-3a13-85a5" name="Combi-Weapon" hidden="false" collective="false" import="true" targetId="dd96-2fe2-b2e1-c755" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f687-5530-4c59-3d4f" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ed2a-3c10-8895-9899" type="max" />
+</constraints>
+</entryLink>
+</entryLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
+</costs>
+</selectionEntry>
+<selectionEntry id="815f-d00e-6209-ab46" name="Heavy Bolter" hidden="false" collective="false" import="true" type="upgrade">
+<entryLinks>
+<entryLink id="ac04-2323-6aac-ac4a" name="Heavy Bolter" hidden="false" collective="false" import="true" targetId="9151-5044-e482-04c9" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e798-9ac9-9a66-4346" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b594-ac16-35b3-35b5" type="max" />
+</constraints>
+</entryLink>
+</entryLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
+</costs>
+</selectionEntry>
+<selectionEntry id="cd1f-dcb3-8031-5ca2" name="Heavy Flamer" hidden="false" collective="false" import="true" type="upgrade">
+<entryLinks>
+<entryLink id="1fbf-f6b9-d24a-89df" name="Heavy Flamer" hidden="false" collective="false" import="true" targetId="9e6d-afcf-8202-e47c" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e672-70a9-146b-76aa" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1c12-d20a-c1b0-4337" type="max" />
+</constraints>
+</entryLink>
+</entryLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
+</costs>
+</selectionEntry>
+<selectionEntry id="ca3a-b37f-f7e6-4aff" name="Multi-Melta" hidden="false" collective="false" import="true" type="upgrade">
+<entryLinks>
+<entryLink id="e6fc-4a28-9212-8513" name="Multi-Melta" hidden="false" collective="false" import="true" targetId="48fc-4141-3aee-b13c" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1534-7c9e-84e9-c4aa" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="326b-8086-69d0-9d04" type="max" />
+</constraints>
+</entryLink>
+</entryLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
+</costs>
+</selectionEntry>
+<selectionEntry id="728f-4be1-6585-2527" name="Havoc Launcher" hidden="false" collective="false" import="true" type="upgrade">
+<entryLinks>
+<entryLink id="1fe1-a4b2-b3eb-1e71" name="Havoc Launcher" hidden="false" collective="false" import="true" targetId="e5ca-0747-ff5e-b3b5" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a6c2-0c6e-1308-b037" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="16c5-8bd1-e49e-2c2a" type="max" />
+</constraints>
+</entryLink>
+</entryLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
+</costs>
+</selectionEntry>
+</selectionEntries>
+</selectionEntryGroup>
+</selectionEntryGroups>
+<entryLinks>
+<entryLink id="6245-5039-1fa7-cba1" name="Quad Launcher with Frag and Shatter Shells" hidden="false" collective="false" import="true" targetId="490f-b2c1-8e40-791b" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="426d-014c-9688-8acf" type="min" />
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="47ed-be63-8336-b15e" type="max" />
+</constraints>
+</entryLink>
+<entryLink id="b386-0a56-b518-e63d" name="Twin-linked Multi-Melta" hidden="false" collective="false" import="true" targetId="ae1e-8538-0d19-c91e" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6d3a-3b4c-c35e-b343" type="min" />
+<constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6e0e-1e3c-4527-3463" type="max" />
+</constraints>
+</entryLink>
+<entryLink id="f18d-6a77-b327-4d8e" name="Extra Armour" hidden="false" collective="false" import="true" targetId="aef2-b713-c9fe-42d8" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7a79-fb1c-cd87-ce46" type="min" />
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5774-6c44-5f03-5034" type="max" />
+</constraints>
+</entryLink>
+<entryLink id="a0e9-f23c-e1a5-a6db" name="Armoured Ceramite" hidden="false" collective="false" import="true" targetId="bb4d-c32a-0e96-aae9" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="51bf-82b6-ba9e-b535" type="min" />
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ca33-8f7d-2217-efa5" type="max" />
+</constraints>
+</entryLink>
+<entryLink id="fd90-021d-8741-e30c" name="Searchlight" hidden="false" collective="false" import="true" targetId="3941-9fef-114f-2d9e" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="df18-2f47-4cde-469d" type="min" />
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="37a3-a66c-0a43-89d6" type="max" />
+</constraints>
+</entryLink>
+<entryLink id="19ce-bb75-8edf-998f" name="Smoke Launchers" hidden="false" collective="false" import="true" targetId="4cbd-e91f-c507-7c1b" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b8e9-9c84-fbd7-2fd4" type="min" />
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4d8b-adf6-7db7-281d" type="max" />
+</constraints>
+</entryLink>
+<entryLink id="8fbb-1e17-3408-4595" name="Castrmen Orth (+50, commands this Vehicle)" hidden="false" collective="false" import="true" targetId="08e9-bcce-2d6c-dd98" type="selectionEntry">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e876-b58e-ec81-dea9" type="max" />
+</constraints>
+</entryLink>
+</entryLinks>
+<selectionEntries>
+<selectionEntry id="7eb4-26b7-666f-4754" name="Blessed Autosimulacra" hidden="false" collective="false" import="true" type="upgrade">
+<modifiers>
+<modifier type="set" field="pts0-0000-0000-0001" value="0">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fd2e-31c2-2524-ce36" type="atLeast" />
+</conditions>
+</modifier>
+<modifier type="set" field="name" value="Blessed Autosimulacra (free: The Head of the Gorgon)">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fd2e-31c2-2524-ce36" type="atLeast" />
+</conditions>
+</modifier>
+</modifiers>
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ece9-88d0-3a4a-af70" type="max" />
+</constraints>
+<entryLinks>
+<entryLink id="ba3b-8e40-1e85-2c4f" name="Blessed Autosimulacra" hidden="false" collective="false" import="true" targetId="cabb-bf77-37f3-7a86" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5a9c-daaa-c1d7-4cf7" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b3ac-5e0f-581f-a697" type="max" />
+</constraints>
+</entryLink>
+</entryLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
+</costs>
+</selectionEntry>
+</selectionEntries>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="275" />
+</costs>
+</selectionEntry>
 <selectionEntry id="9a20-595e-12ac-deea" name="Legion Command Squad" hidden="false" collective="false" import="true" type="unit">
 <modifiers>
 <modifier type="add" field="error" value="A model equipped with a Jump Pack may not have a Servo-Arm.">
@@ -37609,14 +37737,6 @@ LIMITATIONS - Only a Loyalist Iron Hands Detachment. The army may not include an
 <cost name="pts" typeId="pts0-0000-0000-0001" value="2" />
 </costs>
 </entryLink>
-<entryLink id="23dd-ce49-4b8d-2d3f" name="Bionics" hidden="false" collective="false" import="true" targetId="fe26-aa9a-01b0-3173" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="29fb-fec4-cf51-05a0" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
-</costs>
-</entryLink>
 <entryLink id="0000-80df-57c8-f024" name="Master-crafted Weapon" hidden="false" collective="false" import="true" targetId="91ea-aa7a-3afb-8980" type="selectionEntry">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d2e7-ba40-842a-3633" type="max" />
@@ -37673,9 +37793,13 @@ LIMITATIONS - Only a Loyalist Iron Hands Detachment. The army may not include an
 <cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
 </costs>
 </entryLink>
-<entryLink id="6114-73a6-4abd-314a" name="Albian Power Gladius" hidden="false" collective="false" import="true" targetId="5dde-3104-248b-ad17" type="selectionEntry">
+</entryLinks>
+</selectionEntryGroup>
+<selectionEntryGroup id="4553-adb6-b79c-946f" name="Iron Hands Weaponry" hidden="false" collective="false" import="true">
+<entryLinks>
+<entryLink id="70bd-f19e-85de-7ded" name="Albian Power Gladius" hidden="false" collective="false" import="true" targetId="5dde-3104-248b-ad17" type="selectionEntry">
 <constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="172f-551c-3dce-217e" type="max" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9e99-9612-fa98-23b2" type="max" />
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
@@ -38135,14 +38259,6 @@ LIMITATIONS - Only a Loyalist Iron Hands Detachment. The army may not include an
 <cost name="pts" typeId="pts0-0000-0000-0001" value="2" />
 </costs>
 </entryLink>
-<entryLink id="07e8-4dad-3cda-4f77" name="Bionics" hidden="false" collective="false" import="true" targetId="fe26-aa9a-01b0-3173" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="20fd-f6da-9af1-261d" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
-</costs>
-</entryLink>
 <entryLink id="1d7e-0365-7b10-4e56" name="Master-crafted Weapon" hidden="false" collective="false" import="true" targetId="91ea-aa7a-3afb-8980" type="selectionEntry">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9af6-edc2-9f17-4e8d" type="max" />
@@ -38199,9 +38315,13 @@ LIMITATIONS - Only a Loyalist Iron Hands Detachment. The army may not include an
 <cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
 </costs>
 </entryLink>
-<entryLink id="9ef2-731f-b85f-c970" name="Albian Power Gladius" hidden="false" collective="false" import="true" targetId="5dde-3104-248b-ad17" type="selectionEntry">
+</entryLinks>
+</selectionEntryGroup>
+<selectionEntryGroup id="0add-9a1e-bf3a-6012" name="Iron Hands Weaponry" hidden="false" collective="false" import="true">
+<entryLinks>
+<entryLink id="bbd7-9bca-98c3-b78c" name="Albian Power Gladius" hidden="false" collective="false" import="true" targetId="5dde-3104-248b-ad17" type="selectionEntry">
 <constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8e91-f9d9-3cbc-4b38" type="max" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4514-83ce-d6ca-632f" type="max" />
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
@@ -38694,14 +38814,6 @@ LIMITATIONS - Only a Loyalist Iron Hands Detachment. The army may not include an
 <cost name="pts" typeId="pts0-0000-0000-0001" value="2" />
 </costs>
 </entryLink>
-<entryLink id="fb9d-3f7e-783f-cf44" name="Bionics" hidden="false" collective="false" import="true" targetId="fe26-aa9a-01b0-3173" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2c14-fd68-85db-3532" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
-</costs>
-</entryLink>
 <entryLink id="b929-6054-58c7-3013" name="Master-crafted Weapon" hidden="false" collective="false" import="true" targetId="91ea-aa7a-3afb-8980" type="selectionEntry">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2a1b-7ab1-f50a-1d67" type="max" />
@@ -38758,9 +38870,13 @@ LIMITATIONS - Only a Loyalist Iron Hands Detachment. The army may not include an
 <cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
 </costs>
 </entryLink>
-<entryLink id="8c8b-df78-906c-de71" name="Albian Power Gladius" hidden="false" collective="false" import="true" targetId="5dde-3104-248b-ad17" type="selectionEntry">
+</entryLinks>
+</selectionEntryGroup>
+<selectionEntryGroup id="593c-e3bd-f7ab-866c" name="Iron Hands Weaponry" hidden="false" collective="false" import="true">
+<entryLinks>
+<entryLink id="bfd6-b4f2-8be5-cfe0" name="Albian Power Gladius" hidden="false" collective="false" import="true" targetId="5dde-3104-248b-ad17" type="selectionEntry">
 <constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="16ff-d855-40a1-fab2" type="max" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a43b-3b74-0fe6-ed54" type="max" />
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
@@ -39773,14 +39889,6 @@ LIMITATIONS - Only a Loyalist Iron Hands Detachment. The army may not include an
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
 </costs>
 </entryLink>
-<entryLink id="0625-3aca-376d-f4be" name="Bionics" hidden="false" collective="false" import="true" targetId="fe26-aa9a-01b0-3173" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="afdd-c082-9582-cfc4" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
-</costs>
-</entryLink>
 <entryLink id="f047-92ed-9eac-e7ed" name="Master-crafted Weapon" hidden="false" collective="false" import="true" targetId="91ea-aa7a-3afb-8980" type="selectionEntry">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a304-a2f0-d225-386b" type="max" />
@@ -39825,9 +39933,13 @@ LIMITATIONS - Only a Loyalist Iron Hands Detachment. The army may not include an
 <cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
 </costs>
 </entryLink>
-<entryLink id="2c64-dd50-333a-5508" name="Albian Power Gladius" hidden="false" collective="false" import="true" targetId="5dde-3104-248b-ad17" type="selectionEntry">
+</entryLinks>
+</selectionEntryGroup>
+<selectionEntryGroup id="b713-86cc-ff50-b58c" name="Iron Hands Weaponry" hidden="false" collective="false" import="true">
+<entryLinks>
+<entryLink id="996c-b1a6-8049-eaf0" name="Albian Power Gladius" hidden="false" collective="false" import="true" targetId="5dde-3104-248b-ad17" type="selectionEntry">
 <constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8a34-59d8-e373-5931" type="max" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="075a-77a4-1a46-3ceb" type="max" />
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
@@ -40128,14 +40240,6 @@ LIMITATIONS - Only a Loyalist Iron Hands Detachment. The army may not include an
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
 </costs>
 </entryLink>
-<entryLink id="eceb-7ac0-19fe-d766" name="Bionics" hidden="false" collective="false" import="true" targetId="fe26-aa9a-01b0-3173" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d927-871e-ff4d-e250" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
-</costs>
-</entryLink>
 <entryLink id="9bc8-2327-01ab-03f1" name="Master-crafted Weapon" hidden="false" collective="false" import="true" targetId="91ea-aa7a-3afb-8980" type="selectionEntry">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b48f-cbf1-6d75-723d" type="max" />
@@ -40180,9 +40284,13 @@ LIMITATIONS - Only a Loyalist Iron Hands Detachment. The army may not include an
 <cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
 </costs>
 </entryLink>
-<entryLink id="29ef-0a06-6644-f6fe" name="Albian Power Gladius" hidden="false" collective="false" import="true" targetId="5dde-3104-248b-ad17" type="selectionEntry">
+</entryLinks>
+</selectionEntryGroup>
+<selectionEntryGroup id="aa13-1a1a-d294-a66b" name="Iron Hands Weaponry" hidden="false" collective="false" import="true">
+<entryLinks>
+<entryLink id="92b4-757e-8e97-8da4" name="Albian Power Gladius" hidden="false" collective="false" import="true" targetId="5dde-3104-248b-ad17" type="selectionEntry">
 <constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c043-4fb2-6499-0812" type="max" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7ae3-400b-a64b-d2fd" type="max" />
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
@@ -40530,14 +40638,6 @@ LIMITATIONS - Only a Loyalist Iron Hands Detachment. The army may not include an
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
 </costs>
 </entryLink>
-<entryLink id="b13c-63d6-5554-407c" name="Bionics" hidden="false" collective="false" import="true" targetId="fe26-aa9a-01b0-3173" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ad58-8970-8cc0-a488" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
-</costs>
-</entryLink>
 <entryLink id="ad29-ea4a-1c14-c432" name="Master-crafted Weapon" hidden="false" collective="false" import="true" targetId="91ea-aa7a-3afb-8980" type="selectionEntry">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="400c-7eb3-c92c-c1ae" type="max" />
@@ -40582,9 +40682,13 @@ LIMITATIONS - Only a Loyalist Iron Hands Detachment. The army may not include an
 <cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
 </costs>
 </entryLink>
-<entryLink id="5fd0-bf9b-02a8-2bee" name="Albian Power Gladius" hidden="false" collective="false" import="true" targetId="5dde-3104-248b-ad17" type="selectionEntry">
+</entryLinks>
+</selectionEntryGroup>
+<selectionEntryGroup id="c774-d1fe-71aa-9464" name="Iron Hands Weaponry" hidden="false" collective="false" import="true">
+<entryLinks>
+<entryLink id="aa85-fd9c-dc28-c20b" name="Albian Power Gladius" hidden="false" collective="false" import="true" targetId="5dde-3104-248b-ad17" type="selectionEntry">
 <constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a93a-465e-07c7-5b8b" type="max" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cdc5-f00b-80ad-6580" type="max" />
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
@@ -41359,6 +41463,7 @@ LIMITATIONS - Only a Loyalist Iron Hands Detachment. The army may not include an
 </modifier>
 </modifiers>
 </entryLink>
+<entryLink id="bb9c-f62e-cf10-a6a9" name="Land Raider Achilles" hidden="false" collective="false" import="true" targetId="1197-3edb-db94-5cb8" type="selectionEntry" />
 <entryLink id="4f03-ad9b-349d-3923" name="Anvillus Pattern Dreadclaw Drop Pod" hidden="false" collective="false" import="true" targetId="2bad-68df-db1e-95d9" type="selectionEntry">
 <modifiers>
 <modifier type="add" field="error" value="Too many models for a Anvillus Pattern Dreadclaw Drop Pod (capacity 10).">
@@ -41571,14 +41676,6 @@ LIMITATIONS - Only a Loyalist Iron Hands Detachment. The army may not include an
 <cost name="pts" typeId="pts0-0000-0000-0001" value="2" />
 </costs>
 </entryLink>
-<entryLink id="d515-f609-4f60-a1c5" name="Bionics" hidden="false" collective="false" import="true" targetId="fe26-aa9a-01b0-3173" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f715-2706-1100-fe70" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
-</costs>
-</entryLink>
 <entryLink id="cdca-f8d2-7c48-541a" name="Master-crafted Weapon" hidden="false" collective="false" import="true" targetId="91ea-aa7a-3afb-8980" type="selectionEntry">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="16c5-2cdd-65b3-05c2" type="max" />
@@ -41635,9 +41732,13 @@ LIMITATIONS - Only a Loyalist Iron Hands Detachment. The army may not include an
 <cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
 </costs>
 </entryLink>
-<entryLink id="e28c-8743-1b94-bb1f" name="Albian Power Gladius" hidden="false" collective="false" import="true" targetId="5dde-3104-248b-ad17" type="selectionEntry">
+</entryLinks>
+</selectionEntryGroup>
+<selectionEntryGroup id="9f52-3406-13e4-3e46" name="Iron Hands Weaponry" hidden="false" collective="false" import="true">
+<entryLinks>
+<entryLink id="bc26-d7b9-d818-3f81" name="Albian Power Gladius" hidden="false" collective="false" import="true" targetId="5dde-3104-248b-ad17" type="selectionEntry">
 <constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1510-2577-6645-ffba" type="max" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5740-b4e0-7b0c-8d63" type="max" />
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
@@ -42570,14 +42671,6 @@ LIMITATIONS - Only a Loyalist Iron Hands Detachment. The army may not include an
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
 </costs>
 </entryLink>
-<entryLink id="dc8f-1a2a-d2a8-7c54" name="Bionics" hidden="false" collective="false" import="true" targetId="fe26-aa9a-01b0-3173" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7210-edde-3b1b-8ce3" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
-</costs>
-</entryLink>
 <entryLink id="e3df-f9dc-036b-d745" name="Master-crafted Weapon" hidden="false" collective="false" import="true" targetId="91ea-aa7a-3afb-8980" type="selectionEntry">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="140d-ccf1-92d5-6af5" type="max" />
@@ -42622,9 +42715,13 @@ LIMITATIONS - Only a Loyalist Iron Hands Detachment. The army may not include an
 <cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
 </costs>
 </entryLink>
-<entryLink id="3c71-9ead-9ca8-3311" name="Albian Power Gladius" hidden="false" collective="false" import="true" targetId="5dde-3104-248b-ad17" type="selectionEntry">
+</entryLinks>
+</selectionEntryGroup>
+<selectionEntryGroup id="80a3-0591-a0f4-2b8a" name="Iron Hands Weaponry" hidden="false" collective="false" import="true">
+<entryLinks>
+<entryLink id="8f76-d7d6-2678-214d" name="Albian Power Gladius" hidden="false" collective="false" import="true" targetId="5dde-3104-248b-ad17" type="selectionEntry">
 <constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a29c-46b9-14e9-0bc8" type="max" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="30b3-7433-235c-ab1f" type="max" />
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
@@ -42925,14 +43022,6 @@ LIMITATIONS - Only a Loyalist Iron Hands Detachment. The army may not include an
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
 </costs>
 </entryLink>
-<entryLink id="7df3-3cfe-6f9e-c780" name="Bionics" hidden="false" collective="false" import="true" targetId="fe26-aa9a-01b0-3173" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="894e-387a-4aaf-bd0d" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
-</costs>
-</entryLink>
 <entryLink id="9fbb-8a7c-c091-4aaa" name="Master-crafted Weapon" hidden="false" collective="false" import="true" targetId="91ea-aa7a-3afb-8980" type="selectionEntry">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7648-bc23-472d-21a1" type="max" />
@@ -42977,9 +43066,13 @@ LIMITATIONS - Only a Loyalist Iron Hands Detachment. The army may not include an
 <cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
 </costs>
 </entryLink>
-<entryLink id="a857-4129-421c-b615" name="Albian Power Gladius" hidden="false" collective="false" import="true" targetId="5dde-3104-248b-ad17" type="selectionEntry">
+</entryLinks>
+</selectionEntryGroup>
+<selectionEntryGroup id="878f-6203-7b9f-b33f" name="Iron Hands Weaponry" hidden="false" collective="false" import="true">
+<entryLinks>
+<entryLink id="f9ce-f3c5-d391-015e" name="Albian Power Gladius" hidden="false" collective="false" import="true" targetId="5dde-3104-248b-ad17" type="selectionEntry">
 <constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="44c9-ef04-dde3-70cb" type="max" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8dbc-4cb1-20b7-2b84" type="max" />
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
@@ -43327,14 +43420,6 @@ LIMITATIONS - Only a Loyalist Iron Hands Detachment. The army may not include an
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
 </costs>
 </entryLink>
-<entryLink id="f3eb-05a5-346e-7a69" name="Bionics" hidden="false" collective="false" import="true" targetId="fe26-aa9a-01b0-3173" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7462-456e-8419-1e23" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
-</costs>
-</entryLink>
 <entryLink id="1e48-2f80-c72c-ce7a" name="Master-crafted Weapon" hidden="false" collective="false" import="true" targetId="91ea-aa7a-3afb-8980" type="selectionEntry">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aa58-b5cd-8e97-e3f1" type="max" />
@@ -43379,9 +43464,13 @@ LIMITATIONS - Only a Loyalist Iron Hands Detachment. The army may not include an
 <cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
 </costs>
 </entryLink>
-<entryLink id="e4c4-2723-ffa9-4859" name="Albian Power Gladius" hidden="false" collective="false" import="true" targetId="5dde-3104-248b-ad17" type="selectionEntry">
+</entryLinks>
+</selectionEntryGroup>
+<selectionEntryGroup id="0e46-962b-7fa8-730e" name="Iron Hands Weaponry" hidden="false" collective="false" import="true">
+<entryLinks>
+<entryLink id="68f4-66fd-ad03-a43a" name="Albian Power Gladius" hidden="false" collective="false" import="true" targetId="5dde-3104-248b-ad17" type="selectionEntry">
 <constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a84d-1aae-031d-dfd0" type="max" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4f51-bd7d-efc2-fad8" type="max" />
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
@@ -44156,6 +44245,7 @@ LIMITATIONS - Only a Loyalist Iron Hands Detachment. The army may not include an
 </modifier>
 </modifiers>
 </entryLink>
+<entryLink id="850f-d164-4c70-da0b" name="Land Raider Achilles" hidden="false" collective="false" import="true" targetId="1197-3edb-db94-5cb8" type="selectionEntry" />
 <entryLink id="bcc5-6df3-5d17-def8" name="Anvillus Pattern Dreadclaw Drop Pod" hidden="false" collective="false" import="true" targetId="2bad-68df-db1e-95d9" type="selectionEntry">
 <modifiers>
 <modifier type="add" field="error" value="Too many models for a Anvillus Pattern Dreadclaw Drop Pod (capacity 10).">
@@ -46452,7 +46542,7 @@ Afterwards the squad may not enter Overwatch, may not make Return Fire or Stand 
 <description>Follows the normal ProHammer rules for Rending, except that the effect is triggered on a natural To Wound roll of 5 or 6 rather than only on a 6. Against Vehicles, Rending is still triggered only by a natural Armour Penetration roll of 6.</description>
 </rule>
 <rule id="a96f-ab37-0399-e29e" name="Albian Power Gladius" hidden="false">
-<description>Any Iron Hands Character with access to the Space Marine Armoury may purchase an Albian Power Gladius for +10 points.</description>
+<description>Any Iron Hands Character with access to the Space Marine Armoury may purchase an Albian Power Gladius for +10 points. It is a weapon and does not count towards the Armoury points limit.</description>
 </rule>
 <rule id="3b65-e1ea-e648-a8ff" name="Iron Father" hidden="false">
 <description>Any Iron Hands Forge Lord Consul may be further upgraded to an Iron Father for +25 points. Wargear: Iron Halo, Bionics. Special rules: Rites of Battle. The Iron Father retains all rules, wargear and options of a normal Forge Lord Consul.</description>

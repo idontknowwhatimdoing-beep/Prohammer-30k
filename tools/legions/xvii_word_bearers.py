@@ -22,8 +22,9 @@ RULES = {
                            "Morale and Pinning tests."),
     "The Dark Shepherds": (
         "A Word Bearers Detachment must include at least one Legion Chaplain Consul or Legion-specific Dark Apostle as an "
-        "HQ selection. A character specifically stated to count as a Dark Apostle (e.g. a Praetor or Centurion with an "
-        "Accursed Crozius, Erebus, Kor Phaeron, Zardu Layak) also fulfils this requirement."),
+        "HQ selection. A character specifically stated to count as a Dark Apostle also fulfils this requirement: any model "
+        "with an Accursed Crozius (Praetor, Centurion, Diabolist or Chaplain) and every Word Bearers named character "
+        "(Argel Tal, Erebus, Kor Phaeron, Zardu Layak, Hol Beloth, Lorgar)."),
     "Ritual of Consecration": (
         "TRAITOR ONLY (no effect in a Loyalist Word Bearers army). When a non-Daemon Word Bearers unit completely destroys "
         "an enemy unit during the Assault phase, it may forgo its Consolidation move. If it does so, nominate one friendly "
@@ -49,11 +50,13 @@ RULES = {
         "consumed and may summon several units during the battle.\n"
         "DAEMONOLOGY: Daemonic Covenant is separate from Daemonology (Malefic). Units created by Conjuration psychic powers "
         "are not Covenant units and do not use these rules.\n"
-        "(The Covenant Detachment is a separate Detachment from another army list and is not built in this catalogue.)"),
+        "(The Covenant Detachment is a separate Detachment from the Daemons of the Ruinstorm army list and cannot yet be "
+        "added as a Covenant Detachment in this data set.)"),
     # Armoury
     "Accursed Crozius": (
         "Any Word Bearers Praetor or Centurion (including a Diabolist) may purchase an Accursed Crozius for +40 points. "
-        "The bearer receives a 4+ Invulnerable Save and counts as possessing a Personal Icon for the purposes of summoning "
+        "It replaces the model's close combat weapon and does not count towards the Space Marine Armoury points limit. "
+        "A Chaplain may replace his Crozius and Iron Halo (Rosarius) with an Accursed Crozius for free. The bearer receives a 4+ Invulnerable Save and counts as possessing a Personal Icon for the purposes of summoning "
         "Daemons (Summoning Point). A model with an Accursed Crozius counts as a Dark Apostle for The Dark Shepherds. A "
         "model may never possess more than one Accursed Crozius."),
     "Tainted Strike": (
@@ -65,7 +68,8 @@ RULES = {
         "for +30 points. The model becomes a Psyker with Mastery Level 1 and selects one psychic power from either the "
         "Biomancy or Telepathy discipline. It follows all normal ProHammer rules for Psykers."),
     "Hex-Bolts": (
-        "Any Word Bearers Infantry unit equipped with Bolt weapons may purchase Hex-Bolts for +5 points per unit. Bolt "
+        "Any Word Bearers Infantry unit equipped with Bolt weapons (including a Praetor or Centurion; not Covenant Zealot "
+        "Mobs) may purchase Hex-Bolts for +5 points per unit. Bolt "
         "Pistols, Bolters, Combi-Bolters, Storm Bolters and the Bolter component of Combi-Weapons carried by models in the "
         "unit gain the Soul Blaze special rule. Hex-Bolts may not be combined with Special Issue Ammunition or another "
         "ammunition upgrade."),
@@ -74,14 +78,15 @@ RULES = {
         "Undivided for +30 points. The Icon counts as a Summoning Point for the Daemonic Covenant. Friendly non-Daemon "
         "Word Bearers units with at least one model within 6\" of the bearer gain the Fearless special rule."),
     "Favour of the Pantheon": (
-        "One non-named Word Bearers Independent Character in the army may purchase one Favour of the Pantheon. A model may "
+        "One non-named Word Bearers Independent Character in the army (Praetor, Centurion, Techmarine, ...) may purchase one "
+        "Favour of the Pantheon. A model may "
         "never possess more than one Favour. Daemonic Aura (15): 5+ Invulnerable Save. Daemonic Mutation (15): +1 Attack. "
         "Daemonic Strength (10): +1 Strength. Daemonic Wings (20): the model becomes Jump Infantry; may not be combined "
         "with a Jump Pack, Bike, Jetbike or Terminator Armour. Daemonic Visage (5): an enemy unit which loses a close "
         "combat involving the bearer suffers an additional -1 Leadership on the resulting Morale test. The effects are "
         "already included in the model's characteristics or special rules and may not be purchased more than once."),
     "Diabolist": (
-        "A Word Bearers Centurion may be upgraded to a Diabolist Consul for +35 points. The Diabolist gains the Daemon and "
+        "TRAITOR ONLY. A Word Bearers Centurion may be upgraded to a Diabolist Consul for +35 points. The Diabolist gains the Daemon and "
         "Preferred Enemy (Loyalists) special rules. He may not select a Bike, Jetbike, any form of Terminator Armour, Power "
         "Fist or Thunder Hammer. The presence of at least one Diabolist allows eligible units in the Detachment to purchase "
         "Dark Channelling. A Diabolist remains a Centurion for the purposes of purchasing an Accursed Crozius, and a "
@@ -102,7 +107,7 @@ RULES = {
         "Enemy against models belonging to the Loyalist faction. Signs and Portents: after deployment but before the first "
         "turn, select one Word Bearers Troops unit and roll a D6: 1-3 all enemy units gain Preferred Enemy against it for "
         "the battle; 4-6 it gains Preferred Enemy against all enemy units for the battle. From Beyond: the Detachment may "
-        "include an Allied Detachment from Codex: Chaos Daemons, treated as Sworn Brothers with the Word Bearers; this "
+        "include an Allied Detachment from Daemons of the Ruinstorm, treated as Sworn Brothers with the Word Bearers; this "
         "does not prevent the normal Daemonic Covenant. If the army includes a Daemons of the Ruinstorm Covenant "
         "Detachment: it may use the normal Daemons of the Ruinstorm Allied Detachment Force Organisation Chart instead of "
         "the restricted Covenant chart; the 25% limit is removed and the normal Allied Detachment points restrictions "
@@ -113,7 +118,8 @@ RULES = {
         "Wounds instead of 1.\n"
         "LIMITATIONS - Only a Traitor Word Bearers Detachment. The Detachment must include at least one Diabolist. No more "
         "than one Heavy Support choice. The army may not include a Fortification or an Allied Detachment drawn from "
-        "another Space Marine Legion. Any Allied Detachment other than Chaos Daemons is treated as Desperate Allies."),
+        "another Space Marine Legion. Any Allied Detachment other than Daemons of the Ruinstorm is treated as Desperate "
+        "Allies."),
     "Last of the Serrated Sun": (
         "TRAITOR ONLY.\nEFFECTS - Company of Monsters: Gal Vorbak Dark Brethren may be selected as Troops choices and may "
         "fulfil compulsory Troops selections; every Gal Vorbak unit in the Detachment must purchase a Legion Drop Pod or "
@@ -289,6 +295,7 @@ WARGEAR_ = {
                                     "counted towards the army's normal limit of one Iron Halo."),
     "Terminus Consolaris": (RULES["Terminus Consolaris"], ["Feel No Pain"]),
     "Armour of the Word": (RULES["Armour of the Word"], ["Primarch Armour"]),
+    "Jump Pack (Daemonic Wings)": ("Argel Tal's daemonic wings count as a Jump Pack: the model is Jump Infantry.", []),
 }
 
 DISCIPLINES = ["Biomancy", "Telepathy"]
@@ -438,10 +445,11 @@ def zealot_mob():
                                      [("Power Weapon", 10), ("Power Fist", 15)])])
     _, zealots = model(u, "Covenant Zealot", 5, 10, 40, "Infantry", (3, 3, 3, 3, 1, 3, 1, 7, "6+"),
                        ["Autopistol", "Close Combat Weapon", "Flak Armour"])
-    return entry(u, "Covenant Zealot Mob", typ="unit", cost=80 - 10 * 5,
-                 cats=[foc(TROOPS, "Troops", u), category_link(gs.CAT_LINE, "Compulsory Troops Eligible", key=u)],
-                 infolinks=rules_links(["Expendable", "Driven to Slaughter"], key=u),
-                 entries=[overseer, zealots])
+    e = entry(u, "Covenant Zealot Mob", typ="unit", cost=80 - 10 * 5,
+              cats=[foc(TROOPS, "Troops", u), category_link(gs.CAT_LINE, "Compulsory Troops Eligible", key=u)],
+              infolinks=rules_links(["Expendable", "Driven to Slaughter"], key=u),
+              entries=[overseer, zealots])
+    return allegiance_only(e, loyalist=False)
 
 
 def gal_vorbak(key="Gal Vorbak Dark Brethren", root=True):
@@ -463,9 +471,11 @@ def gal_vorbak(key="Gal Vorbak Dark Brethren", root=True):
     big = [cond("model", u, "greaterThan", 5)]  # Bulky: count as two models
     links = tr.find("entryLinks")
     for lk in links:
-        if lk.get("targetId") in (T["Land Raider Phobos"], T["Land Raider Proteus"],
-                                  T["Anvillus Pattern Dreadclaw Drop Pod"], T["Legion Drop Pod"]):
+        if lk.get("targetId") in (T["Land Raider Phobos"], T["Land Raider Proteus"], T["Legion Drop Pod"]):
             add_mods(lk, [modifier("set", "hidden", "true", conds=big)])
+        elif lk.get("targetId") == T["Anvillus Pattern Dreadclaw Drop Pod"]:
+            # author: a Dreadclaw has room for two more Gal Vorbak than a Drop Pod (up to 7 models)
+            add_mods(lk, [modifier("set", "hidden", "true", conds=[cond("model", u, "greaterThan", 7)])])
     mods, rl = [], [LR, "Daemon", "Fearless", "Bulky", "Rending", "Rending (Gal Vorbak)"]
     if root:
         ss = lambda: [rite("Last of the Serrated Sun")]  # noqa: E731
@@ -619,7 +629,7 @@ def characters():
     out = []
     out.append(named_character(
         LR, "Argel Tal", 195, (5, 4, 5, 5, 3, 5, 4, 10, "3+/4+"),
-        ["Power Armour", "Custodian Spear", "Bolt Pistol", "Frag Grenades"],
+        ["Power Armour", "Jump Pack (Daemonic Wings)", "Custodian Spear", "Bolt Pistol", "Frag Grenades"],
         ["Daemon", "Fearless", "Lord of the Gal Vorbak"],
         retinue=retinue_links("argel", [gal_vorbak("argel-gv", root=False)]),
         extra_groups=[krak(ARGEL)], unit_type="Jump Infantry (Character)", loyalist=False))
@@ -682,12 +692,53 @@ def lorgar():
 def add_diabolist(ctx):
     cid = add_consul(ctx, "Diabolist", 35, ["Diabolist", "Daemon", "Preferred Enemy", "Preferred Enemy (Loyalists)"],
                      forbids=["Space Marine Bike", *TDA, "Power Fist", "Thunder Hammer"])
+    cen = ctx.unit("Legion Centurion")
+    loyal = lambda: [cond(LOYALIST, "roster", "atLeast", 1)]  # noqa: E731
+    for ce in cen.iter("selectionEntry"):
+        if ce.get("id") == cid:
+            add_mods(ce, [modifier("set", "hidden", "true", conds=loyal())])
+    add_mods(cen, [modifier("add", "error", "The Diabolist Consul is Traitor only.",
+                            conds=[has(cid, cen.get("id"))] + loyal())])
     return cid
+
+
+def add_crozius(ctx):
+    """Accursed Crozius: Praetor/Centurion replace their close combat weapon (+40, outside the 100-pt Armoury cap);
+    a Chaplain may swap his Crozius Arcanum and Rosarius (Iron Halo) for one for free."""
+    ac = W("Accursed Crozius")
+    for n in ("Legion Praetor", "Legion Centurion"):
+        e = ctx.unit(n)
+        u = e.get("id")
+        cap = find_group(e, "Space Marine Armoury (max 100 pts)")
+        cc = None
+        for g in cap.iter("selectionEntryGroup"):
+            if g.get("name") == "Replace Chainsword":
+                cc = g
+        lid = uid("link", cc.get("id"), "wb", "Accursed Crozius")
+        cc.find("entryLinks").append(link(lid, ac, "Accursed Crozius", cost=40,
+                                          constraints=[constraint(uid(lid, "max"), "max", 1, auto=True)]))
+        cap_c = next(c for c in cap.iter("constraint") if c.get("field") == PTS)
+        add_mods(cap, [modifier("increment", cap_c.get("id"), 40, conds=[has(ac, u)])])
+    cen = ctx.unit("Legion Centurion")
+    u = cen.get("id")
+    chap = next(x for x in cen.iter("selectionEntry") if x.get("id") == L.consul_id("Chaplain"))
+    oid = uid("wb", "chaplain", "Accursed Crozius")
+    opt = entry(oid, "Accursed Crozius (replaces Crozius Arcanum and Rosarius)", cost=0,
+                constraints=[constraint(uid(oid, "max"), "max", 1, auto=True)],
+                links=[gear(oid, "Accursed Crozius")])
+    add_to(chap, "selectionEntries", [opt])
+    on = lambda: [has(oid, u)]  # noqa: E731
+    for lk in chap.find("entryLinks"):
+        if lk.get("targetId") in (W("Crozius Arcanum"), W("Rosarius")):
+            mods = [modifier("set", "hidden", "true", conds=on())]
+            for c in lk.iter("constraint"):
+                mods.append(modifier("set", c.get("id"), 0, conds=on()))
+            add_mods(lk, mods)
 
 
 def add_ic_options(ctx):
     """Accursed Crozius (Armoury), Burning Lore, Favour of the Pantheon for the Praetor and Centurion."""
-    add_armoury_items(ctx, [("Accursed Crozius", 40)], who=("praetor", "centurion"))
+    add_crozius(ctx)
     # Favour of the Pantheon: one shared entry, at most one per army
     fid = uid("wb", "favour")
     fg = uid("grp", fid, "favour")
@@ -720,7 +771,10 @@ def add_ic_options(ctx):
                      groups=[discipline_choice(bl)])
         if n == "Legion Centurion":
             add_mods(lore, hide_mods(bl, lambda: [any_of(*[has(c, u) for c in psy])]))
-        add_group(e, group(uid("grp", u, "wb"), "Word Bearers Options", entries=[lore], links=[fl]))
+        hb = option(u + "wb", "Hex-Bolts", 5, item="Hex-Bolts")
+        if n == "Legion Centurion":  # the Vigilator has Special Issue Ammunition
+            add_mods(hb, hide_mods(hb.get("id"), lambda: [any_of(has(L.consul_id("Vigilator"), u))]))
+        add_group(e, group(uid("grp", u, "wb"), "Word Bearers Options", entries=[lore, hb], links=[fl]))
         # Daemonic Wings: not with a Jump Pack, Bike or Terminator Armour
         for x in ["Jump Pack", "Space Marine Bike", *TDA]:
             add_mods(e, [modifier("add", "error", f"Daemonic Wings may not be combined with {x}.",
@@ -730,6 +784,13 @@ def add_ic_options(ctx):
             modifier("set", gs.char_id("Unit", "S"), base_s + 1, conds=[has(uid(fid, "Daemonic Strength"), u)]),
             modifier("set", gs.char_id("Unit", "A"), base_a + 1, conds=[has(uid(fid, "Daemonic Mutation"), u)]),
             unit_type_mod("Jump Infantry (Character)", [has(wings, u)])])
+    # other non-named Independent Characters (Techmarines): Favour as text (profile not changed)
+    for e in entries_named(ctx, ["Legion Techmarine"]):
+        if e.get("type") != "model":
+            continue
+        lid = uid("link", e.get("id"), "wb-favour")
+        add_to(e, "entryLinks", [link(lid, fid, favour.get("name"),
+                                      constraints=[constraint(uid(lid, "max"), "max", 1, auto=True)])])
 
 
 def add_squad_options(ctx):
@@ -738,7 +799,7 @@ def add_squad_options(ctx):
                  "Legion Reconnaissance Squad", "Legion Veteran Squad", "Legion Command Squad",
                  "Legion Honour Guard Squad", "Legion Terminator Squad", "Legion Terminator Command Squad",
                  "Legion Destroyer Squad", "Legion Heavy Support Squad", "Gal Vorbak Dark Brethren",
-                 "Procurator Squad", "Possessed Marine Squad", "Covenant Zealot Mob"]
+                 "Procurator Squad", "Possessed Marine Squad"]
     for e in entries_named(ctx, hex_units):
         u = e.get("id")
         o = option(u + "wb", "Hex-Bolts (unit)", 5, item="Hex-Bolts")
@@ -799,11 +860,11 @@ def extend(ctx):
     no_shepherd = all_of(cond(L.consul_id("Chaplain"), "force", "lessThan", 1),
                          cond(W("Accursed Crozius"), "force", "lessThan", 1),
                          cond(EREBUS, "force", "lessThan", 1), cond(KOR, "force", "lessThan", 1),
-                         cond(ZARDU, "force", "lessThan", 1))
+                         cond(ZARDU, "force", "lessThan", 1), cond(ARGEL, "force", "lessThan", 1),
+                         cond(HOL, "force", "lessThan", 1), cond(LORGAR, "force", "lessThan", 1))
     add_mods(legion, [modifier("add", "error", "The Dark Shepherds: a Word Bearers Detachment must include at least one "
-                                               "Legion Chaplain Consul or Dark Apostle (a Praetor or Centurion with an "
-                                               "Accursed Crozius, Erebus, Kor Phaeron or Zardu Layak) as an HQ "
-                                               "selection.", groups=[no_shepherd])])
+                                               "Legion Chaplain Consul or Dark Apostle (a model with an Accursed "
+                                               "Crozius or a Word Bearers named character) as an HQ selection.", groups=[no_shepherd])])
 
     # Rites of War
     traitor_only = ("only a Traitor Word Bearers Detachment may use this Rite of War.",

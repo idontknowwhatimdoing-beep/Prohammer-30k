@@ -40,15 +40,16 @@ RULES = {
     # Armoury
     "Solarite Power Gauntlet": (
         "Any Imperial Fists Character with access to the Space Marine Armoury may purchase a Solarite Power Gauntlet for "
-        "+30 points. A model already equipped with a Power Fist may exchange it for a Solarite Power Gauntlet for +5 "
-        "points. Unlike a normal Power Fist, the Solarite Power Gauntlet always strikes at Strength 10 regardless of the "
+        "+30 points; a model already equipped with a Power Fist may exchange it for a Solarite Power Gauntlet, also "
+        "for +30 points. Unlike a normal Power Fist, the Solarite Power Gauntlet always strikes at Strength 10 regardless of the "
         "bearer's Strength characteristic."),
     "Vigil Pattern Storm Shield": (
         "An Imperial Fists Independent Character may purchase a Vigil Pattern Storm Shield for +25 points. The bearer may "
         "carry no more than one weapon in addition to the shield. Grants a 3+ Invulnerable Save. The shield occupies one "
         "hand and the bearer may never receive the bonus Attack for fighting with two close-combat weapons. Other "
         "Imperial Fists units may only gain access to it through their own army list entries; it does not make Storm "
-        "Shields generally available to the Legiones Astartes."),
+        "Shields generally available to the Legiones Astartes. It counts towards the Armoury points limit and may not be "
+        "combined with a Refractor Field, Combat Shield or Boarding Shield."),
     "Teleportation Transponders": (
         "Any Imperial Fists unit composed entirely of models wearing any form of Terminator Armour may purchase "
         "Teleportation Transponders for +15 points per unit. An Imperial Fists Independent Character wearing any form of "
@@ -56,7 +57,8 @@ RULES = {
         "+15 per unit, any Imperial Fists Independent Character +10). A model or unit equipped with Teleportation "
         "Transponders may deploy using Deep Strike even if the mission would not normally permit Deep Strike. An "
         "Independent Character intending to Deep Strike as part of another unit must purchase Teleportation "
-        "Transponders separately."),
+        "Transponders separately. Units which already have Deep Strike built in (e.g. Jump Infantry) may not purchase "
+        "them. Under Hammerfall Strike Force named characters and Rogal Dorn may purchase them as well (+10)."),
     # Rites of War
     STONE: (
         "EFFECTS - Warders of the Phalanx: Phalanx Warder Squads may be selected as Troops choices and may fulfil "
@@ -72,14 +74,15 @@ RULES = {
         "Initiative 10 during a turn in which it charges.\n"
         "LIMITATIONS - The army's compulsory Troops choices must be Legion Breacher Siege Squads or Phalanx Warder "
         "Squads. The Detachment must include at least one Independent Character equipped with either a Boarding Shield "
-        "or a Vigil Pattern Storm Shield. No unit in the Detachment may voluntarily deploy using Deep Strike. The army "
+        "or a Vigil Pattern Storm Shield. No unit in the Detachment may voluntarily deploy using Deep Strike (Teleportation "
+        "Transponders, Drop Pods and Dreadclaw Drop Pods may not be taken). The army "
         "may include no more than one Fast Attack choice."),
     HAMMERFALL: (
         "EFFECTS - Landing Force: Phalanx Warder Squads may be selected as Troops choices and may fulfil compulsory "
         "Troops selections. Teleport Array: any Imperial Fists Infantry unit may purchase Teleportation Transponders for "
         "+15 points per unit and any Imperial Fists Independent Character for +10 points; this overrides the normal "
         "restriction to models wearing Terminator Armour. A unit with Teleportation Transponders may deploy using Deep "
-        "Strike even if the mission would not normally permit it; an Independent Character intending to Deep Strike as "
+        "Strike even if the mission would not normally permit it (named characters and Rogal Dorn included); an Independent Character intending to Deep Strike as "
         "part of another unit must purchase them separately. Blinding Luminescence: an Imperial Fists unit arriving by "
         "Deep Strike using Teleportation Transponders gains Shrouded from the moment it is placed until the beginning of "
         "its next player turn. After it has been placed, every enemy unit with at least one model within 12\" of the "
@@ -87,7 +90,8 @@ RULES = {
         "failed, that unit suffers the effects of the Blind special rule (Weapon Skill 1, Ballistic Skill 1) until the "
         "end of its next player turn. Each enemy unit only makes one such test per arriving Imperial Fists unit.\n"
         "LIMITATIONS - The army's Warlord must be equipped with Teleportation Transponders. Every Vehicle in the "
-        "Detachment must begin the battle in Reserve. The Detachment may not include a Fortification."),
+        "Detachment must begin the battle in Reserve; Tarantula Sentry Gun Batteries may not be taken. The Detachment "
+        "may not include a Fortification."),
     TEMPLAR_RITE: (
         "EFFECTS - Templar Host: Templar Brethren Squads may be selected as Troops choices and may fulfil compulsory "
         "Troops selections. Crusading Assault: during an Assault phase in which a Templar Brethren Squad charged after "
@@ -97,7 +101,8 @@ RULES = {
         "squad may re-roll To Hit rolls of 1 with Rending Weapons, Power Weapons, Relic Blades and other weapons "
         "specifically stated to count as swords. Assault Transports: a Templar Brethren Squad may select a Land Raider "
         "Phobos or Land Raider Proteus as a Dedicated Transport at its normal points cost; a squad of a size which "
-        "cannot be carried by either vehicle may instead select a Legion Spartan Assault Tank at its normal points cost. "
+        "cannot be carried by either vehicle may instead select a Legion Spartan Assault Tank at its normal points cost "
+        "(the Templar Brethren Squad may take any Land Raider variant, including the Spartan, in any case). "
         "All normal Transport Capacity restrictions apply.\n"
         "LIMITATIONS - The army's compulsory Troops choices must be Templar Brethren Squads; while Templar Assault is "
         "selected, Templar Brethren Squads ignore their normal 0-1 limitation. The army may include no more than one "
@@ -131,6 +136,11 @@ RULES = {
         "The Black Sword is a Two-Handed, Master-crafted Power Weapon which grants Sigismund +2 Strength. Sigismund never "
         "requires worse than a 3+ To Hit in close combat. Any natural To Wound roll of 6 made with the Black Sword "
         "inflicts a Massive Wound (D3) instead of a normal Wound."),
+    "Massive Wound": (
+        "A Massive Wound deals D3 wounds to the target model. Against target units with multi-wound models, Massive "
+        "Wounds may need to be rolled and resolved one at a time to ensure that wounds are allocated to wounded models "
+        "sequentially. Excess damage from a Massive Wound beyond what is needed to kill a model does not spill over onto "
+        "other models."),
     "Kingslayer": (
         "After deployment but before the first turn begins, nominate one enemy Independent Character. If Sigismund "
         "personally slays the nominated character, the Imperial Fists player receives an additional 150 Victory Points "
@@ -209,7 +219,7 @@ WEAPONS_ = {
 }
 WEAPON_RULES_ = {
     "Solarite Power Gauntlet": ["Solarite Power Gauntlet", "Unwieldy"],
-    "The Black Sword": ["The Black Sword", "Two-Handed", "Master-Crafted"],
+    "The Black Sword": ["The Black Sword", "Two-Handed", "Master-Crafted", "Massive Wound"],
     "The Headsman": ["The Headsman and the Hunter"],
     "The Hunter": ["The Headsman and the Hunter"],
     "Master-crafted Power Fist": ["Master-Crafted", "Unwieldy"],
@@ -328,15 +338,21 @@ def templars(key="Templar Brethren Squad", root=True):
     _, champ = model(u, "Templar Champion", 0, 1, 1, "Infantry (Character)", (5, 4, 4, 4, 1, 4, 2, 9, "3+/6+"), kit,
                      groups=[pa_armoury(cid, u, 10, slots=["Bolt Pistol", "Rending Weapon"], skip=("Combat Shield",))])
     pw = model_swaps(u, "Up to five Templar Brethren: replace Rending Weapon", u, [bid], [("Power Weapon", 10)])
-    add_to(pw, "constraints", [constraint(uid(pw.get("id"), "max5"), "max", 5)])
+    max5 = uid(pw.get("id"), "max5")
+    # the Champion may be one of the five: Power Weapon for +10 (not counted towards his Armoury cap)
+    champ_pw = cond(W("Power Weapon"), cid, "atLeast", 1)
+    add_to(pw, "constraints", [constraint(max5, "max", 5)])
+    add_mods(pw, [modifier("decrement", max5, 1, conds=[champ_pw])])
+    for g in champ.iter("selectionEntryGroup"):
+        if g.get("name") == "Replace Rending Weapon":
+            for lk in g.iter("entryLink"):
+                if lk.get("targetId") == W("Power Weapon"):
+                    lk.find("costs")[0].set("value", "10")
+        if g.get("name") == "Space Marine Armoury (max 50 pts)":
+            cap_id = next(c.get("id") for c in g.find("constraints") if c.get("field") == PTS)
+            add_mods(g, [modifier("increment", cap_id, 10, conds=[champ_pw])])
     tr = transports(u, u, ["Legion Rhino Armoured Carrier", "Legion Drop Pod", "Anvillus Pattern Dreadclaw Drop Pod",
-                           "Land Raider Phobos", "Land Raider Proteus"])
-    sp = uid("link", tr.get("id"), "templar-spartan")
-    no_rite = [cond(rite_id(TEMPLAR_RITE), "force", "lessThan", 1)]
-    add_to(tr, "entryLinks", [link(sp, L2.T["Legion Spartan Assault Tank"], f"Legion Spartan Assault Tank ({TEMPLAR_RITE})",
-                                   mods=[modifier("set", "hidden", "true", conds=no_rite),
-                                         modifier("set", uid(sp, "max"), 0, conds=no_rite)],
-                                   constraints=[constraint(uid(sp, "max"), "max", 1, auto=True)])])
+                           "Land Raider Phobos", "Land Raider Proteus", "Legion Spartan Assault Tank"])
     mods, cons, cats = [], [], []
     if root:
         cats = [foc(ELITES, "Elites", u)]
@@ -360,12 +376,12 @@ def warders(key="Phalanx Warder Squad", root=True):
     u = uid("unit", key)
     kit = ["Power Armour", "Boarding Shield"]
     _, wards = model(u, "Phalanx Warder", 28, 4, 9, "Infantry", (4, 4, 4, 4, 1, 4, 1, 9, "3+/5+"),
-                     kit + ["Bolter", "Power Weapon"])
+                     kit + ["Bolt Pistol", "Power Weapon"])
     sid = uid("model", u, "Warder Sergeant")
     _, sgt = model(u, "Warder Sergeant", 0, 1, 1, "Infantry (Character)", (4, 4, 4, 4, 1, 4, 2, 9, "3+/5+"), kit,
-                   groups=[pa_armoury(sid, u, 10, slots=["Bolter", "Power Weapon"],
+                   groups=[pa_armoury(sid, u, 10, slots=["Bolt Pistol", "Power Weapon"],
                                       skip=("Combat Shield", "Refractor Field"))])
-    specials, _ = pool(u, "Special Weapons (1 per 5 models, replace Bolter)", u,
+    specials, _ = pool(u, "Special Weapons (1 per 5 models, replace Bolt Pistol)", u,
                        [("Flamer", 5), ("Meltagun", 10), ("Plasma Gun", 15)], 0, every=5)
     cats, mods = [], []
     if root:
@@ -380,7 +396,8 @@ def warders(key="Phalanx Warder Squad", root=True):
                  groups=[specials,
                          L.one_each(u, "Squad Equipment (one model each)", [("Legion Vexilla", 10), ("Nuncio Vox", 10)]),
                          transports(u, u, ["Legion Rhino Armoured Carrier", "Anvillus Pattern Dreadclaw Drop Pod",
-                                           "Land Raider Phobos", "Land Raider Proteus"])])
+                                           "Land Raider Phobos", "Land Raider Proteus",
+                                           "Legion Spartan Assault Tank"])])
 
 
 def captain_armoury(mid):
@@ -408,7 +425,8 @@ def huscarls(key):
     return entry(u, "Huscarl Terminator Retinue", typ="unit", cost=250 - 4 * 50,
                  infolinks=rules_links([LR, "Stubborn", "Retinue", "Huscarl Retinue"], key=u),
                  entries=[cap, hus,
-                          option(u, "Teleportation Transponders (entire unit)", 15, item="Teleportation Transponders")],
+                          option(u, "Teleportation Transponders (entire unit)", 15, item="Teleportation Transponders",
+                                 hide=[cond(rite_id(STONE), "force", "atLeast", 1)])],
                  groups=[model_swaps(u, "Huscarls: replace Combi-bolter (any number)", u, [hid],
                                      [("Foeblaster Boltgun", 5), ("Combi-Flamer", 10), ("Combi-Volkite Charger", 10),
                                       ("Combi-Meltagun", 15), ("Combi-Plasma Gun", 15)]),
@@ -425,7 +443,10 @@ def tarantulas():
                  lambda mid: [slot(mid, "Replace Twin-linked Heavy Bolter", "Twin-linked Heavy Bolter",
                                    [("Twin-linked Lascannon", 15)])])
     e.set("name", "0-2 Tarantula Sentry Gun Battery")
-    add_to(e, "constraints", [force_limit(TARANTULA, 2)])
+    fl = force_limit(TARANTULA, 2)
+    add_to(e, "constraints", [fl])
+    add_mods(e, [modifier("set", "hidden", "true", conds=[rite(HAMMERFALL)]),
+                 modifier("set", fl.get("id"), 0, conds=[rite(HAMMERFALL)])])
     return e
 
 
@@ -459,7 +480,7 @@ def characters():
                         extra_groups=[take(POLUX, "Wargear", [("Krak Grenades", 2)])]),
         named_character(LR, "Camba Diaz", 160, (6, 5, 4, 4, 3, 5, 3, 10, "2+/5+"),
                         ["Artificer Armour", "Refractor Field", "Power Weapon", "Bolt Pistol", "Frag Grenades"],
-                        ["Stubborn", "Hold the Line", "Command Retinue (Diaz)"], master=False,
+                        ["Stubborn", "Hold the Line", "Command Retinue (Diaz)"],
                         retinue=retinue_links("diaz", [warders("diaz-warders", root=False),
                                                        command_squad_for("diaz", DIAZ)]),
                         extra_groups=[take(DIAZ, "Wargear", [("Krak Grenades", 2), ("Melta Bombs", 5)])]),
@@ -478,7 +499,7 @@ def dorn():
                     ["Auric Armour", "Storm's Teeth", "Voice of Terra", "Frag Grenades"],
                     ["Primarch Armour", "The Unyielding", "Lord Castellan", "Master of Defence",
                      "This Ground Shall Not Fall", "Primarch Retinue (Rogal Dorn)"],
-                    retinue=ret, profile_name="Rogal Dorn")
+                    retinue=ret, profile_name="Rogal Dorn", loyalist=True)
 
 
 # ------------------------------------------------------------------ Legion-wide options
@@ -489,22 +510,22 @@ def add_teleportation(ctx):
     """Teleportation Transponders: Terminator units (+15) and ICs in Terminator Armour (+10); with Hammerfall Strike
     Force any Infantry unit (+15) and any Independent Character (+10)."""
     no_hf = cond(rite_id(HAMMERFALL), "force", "lessThan", 1)
+    stone = cond(rite_id(STONE), "force", "atLeast", 1)
     ic = entry(IC_TT, "Teleportation Transponders", cost=10, links=[gear(IC_TT, "Teleportation Transponders")])
     ctx.add_shared(ic)
 
     def ic_link(e, hide_conds):
         lid = uid("link", e.get("id"), "vii-tt")
-        mods = []
-        if hide_conds is not None:
-            mods = [modifier("set", "hidden", "true", groups=[all_of(*hide_conds)]),
-                    modifier("set", uid(lid, "max"), 0, groups=[all_of(*hide_conds)])]
+        hide = any_of(stone, all_of(*hide_conds)) if hide_conds is not None else any_of(stone)
+        mods = [modifier("set", "hidden", "true", groups=[hide]),
+                modifier("set", uid(lid, "max"), 0, groups=[hide])]
         add_to(e, "entryLinks", [link(lid, IC_TT, "Teleportation Transponders", mods=mods,
                                       constraints=[constraint(uid(lid, "max"), "max", 1, auto=True)])])
 
     for n in ("Legion Praetor", "Legion Centurion"):
         e = ctx.unit(n)
         ic_link(e, [lacks(W(t), e.get("id")) for t in TDA] + [no_hf])
-    for u in NAMED:
+    for u in NAMED + [DORN]:
         e = next(x for x in ctx.units if x.get("id") == u)
         ic_link(e, None if u == GARRIUS else [no_hf])
 
@@ -521,7 +542,7 @@ def add_teleportation(ctx):
         if any(t is None or not t.startswith("Infantry") for t in types):
             continue
         key = e.get("id") + "vii-tt"
-        hide = None if e.get("name") in tda_units else [no_hf]
+        hide = [stone] if e.get("name") in tda_units else [stone, no_hf]
         add_entry(e, option(key, "Teleportation Transponders (entire unit)", 15, item="Teleportation Transponders",
                             hide=hide))
 
@@ -539,6 +560,38 @@ def add_huscarls_to_praetor(ctx):
                           conds=[cond(hus.get("id"), pid, "atLeast", 1)] + [lacks(W(t), pid) for t in TDA])])
 
 
+DEEP_STRIKE_TRANSPORTS = ["Legion Drop Pod", "Anvillus Pattern Dreadclaw Drop Pod", "Legion Dreadnought Drop Pod"]
+
+
+def stone_no_drop_pods(ctx):
+    """The Stone Gauntlet: no voluntary Deep Strike - Drop Pod / Dreadclaw Dedicated Transports are hidden."""
+    targets = {L2.T[n] for n in DEEP_STRIKE_TRANSPORTS}
+    seen = set()
+    for e in ctx.all_entries():
+        for lk in e.iter("entryLink"):
+            if lk.get("targetId") not in targets or id(lk) in seen:
+                continue
+            seen.add(id(lk))
+            on = [cond(rite_id(STONE), "force", "atLeast", 1)]
+            mods = [modifier("set", "hidden", "true", conds=on)]
+            for c in lk.iter("constraint"):
+                if c.get("type") == "max":
+                    mods.append(modifier("set", c.get("id"), 0, conds=[cond(rite_id(STONE), "force", "atLeast", 1)]))
+            add_mods(lk, mods)
+
+
+def vigil_shield_limits(ctx):
+    """Vigil Pattern Storm Shield may not be combined with other shields / a Refractor Field."""
+    for n in ("Legion Praetor", "Legion Centurion"):
+        e = ctx.unit(n)
+        pid = e.get("id")
+        add_mods(e, [modifier("add", "error", "A Vigil Pattern Storm Shield may not be combined with a Refractor Field, "
+                                              "Combat Shield or Boarding Shield.",
+                              conds=[cond(W("Vigil Pattern Storm Shield"), pid, "atLeast", 1, deep=False)],
+                              groups=[any_of(*[cond(W(x), pid, "atLeast", 1, deep=False)
+                                               for x in ("Refractor Field", "Combat Shield", "Boarding Shield")])])])
+
+
 # ------------------------------------------------------------------ extend
 def extend(ctx):
     ctx.legion_rules([LR, "Disciplined Fire", "Fortification Masters", "Blind to the Risk"])
@@ -551,10 +604,16 @@ def extend(ctx):
     add_armoury_items(ctx, [("Vigil Pattern Storm Shield", 25)], who=("praetor", "centurion"))
     character_variant(ctx.all_entries(), "Power Fist", "Solarite Power Gauntlet", 5, 30)
     add_teleportation(ctx)
+    vigil_shield_limits(ctx)
+    stone_no_drop_pods(ctx)
 
     # Rites of War
     fort = cond(gs.cat("Fortification"), "force", "atLeast", 1)
-    ctx.add_rite(STONE, RULES[STONE], limit_fa=True)
+    ctx.add_rite(STONE, RULES[STONE], limit_fa=True, errors=[
+        ("no unit may take Teleportation Transponders, Drop Pods or Dreadclaw Drop Pods.",
+         [any_of(*[cond(L2.T[n], "force", "atLeast", 1) for n in DEEP_STRIKE_TRANSPORTS] +
+                 [cond(W("Teleportation Transponders"), "force", "atLeast", 1)])]),
+    ])
     ctx.add_rite(HAMMERFALL, RULES[HAMMERFALL], errors=[
         ("the army's Warlord must be equipped with Teleportation Transponders (no Independent Character in the "
          "Detachment has them).", [cond(IC_TT, "force", "lessThan", 1)]),

@@ -8208,28 +8208,16 @@ LIMITATIONS - The army may include no more than one Heavy Support choice. The ar
 </selectionEntry>
 <selectionEntry id="fcd5-676e-3cd4-f773" name="The Bloodied Claws (Space Wolves)" hidden="false" collective="false" import="true" type="upgrade">
 <modifiers>
-<modifier type="add" field="error" value="The Bloodied Claws: at least one compulsory Troops choice must be a Grey Slayer Pack.">
+<modifier type="add" field="error" value="The Bloodied Claws: Grey Slayer Packs must fulfil the compulsory Troops selections (at least two Grey Slayer Packs).">
 <conditions>
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fcd5-676e-3cd4-f773" type="atLeast" />
-<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5cc-e203-039a-d39a" type="lessThan" />
+<condition field="selections" scope="force" value="2" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5cc-e203-039a-d39a" type="lessThan" />
 </conditions>
 </modifier>
 <modifier type="add" field="error" value="The Bloodied Claws: the Detachment may not include Artillery units (Rapier Weapons Batteries).">
 <conditions>
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fcd5-676e-3cd4-f773" type="atLeast" />
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="feeb-7d37-bbdc-aebc" type="atLeast" />
-</conditions>
-</modifier>
-<modifier type="add" field="error" value="The Bloodied Claws: the Detachment may not include Immobile units (Drop Pods, Dreadnought Drop Pods).">
-<conditions>
-<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fcd5-676e-3cd4-f773" type="atLeast" />
-<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4e1c-55bd-1f6c-9584" type="atLeast" />
-</conditions>
-</modifier>
-<modifier type="add" field="error" value="The Bloodied Claws: the Detachment may not include Immobile units (Drop Pods, Dreadnought Drop Pods).">
-<conditions>
-<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fcd5-676e-3cd4-f773" type="atLeast" />
-<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="baf7-a5cf-a01e-9c3f" type="atLeast" />
 </conditions>
 </modifier>
 <modifier type="add" field="error" value="The Bloodied Claws: the Detachment may not include Fortifications.">
@@ -8242,7 +8230,7 @@ LIMITATIONS - The army may include no more than one Heavy Support choice. The ar
 <rules>
 <rule id="c792-5f7d-8b9d-4a6f" name="The Bloodied Claws" hidden="false">
 <description>EFFECTS - Break the Line: Space Wolves units add +1 to their combat-resolution score while at least half of the models in the unit are within the enemy deployment zone (not cumulative with itself). Howl of the Death Wolf: once per battle, at the beginning of a Space Wolves turn, the Warlord may unleash the Howl; until the end of that player turn Space Wolves units may re-roll their Advance roll (the re-rolled result must be accepted) and their normal charge distance is increased from 6" to 7". Unstoppable Violence: during an Assault phase in which a Space Wolves unit charges an enemy unit already engaged by another friendly Space Wolves unit, the charging unit gains Furious Charge for that Assault phase. Bloodied Claws: Grey Slayer Squads and Legion Assault Squads must declare a charge during the Assault phase if an enemy unit is within their legal charge distance (the Space Wolves player chooses which if several).
-LIMITATIONS - No Prey Left Unhunted: Grey Slayer Squads may fulfil compulsory Troops selections; at least one compulsory Troops choice must be a Grey Slayer Squad. No Path of Retreat: units in this Detachment may not voluntarily withdraw from close combat; if a Space Wolves unit wins a close combat and an enemy unit retreats, the Space Wolves must Pursue whenever able. The Breaking of the Line: the Detachment may not include Artillery units, units with Slow and Purposeful, Immobile units or Fortifications, and may not include an Allied Detachment belonging to another Space Marine Legion.</description>
+LIMITATIONS - No Prey Left Unhunted: Grey Slayer Squads must fulfil compulsory Troops selections when using this Rite. No Path of Retreat: units in this Detachment may not voluntarily withdraw from close combat; if a Space Wolves unit wins a close combat and an enemy unit retreats, the Space Wolves must Pursue whenever able. The Breaking of the Line: the Detachment may not include Artillery units, units with Slow and Purposeful, Immobile units or Fortifications, and may not include an Allied Detachment belonging to another Space Marine Legion.</description>
 </rule>
 </rules>
 <costs>
@@ -22117,13 +22105,6 @@ LIMITATIONS - No Prey Left Unhunted: Grey Slayer Squads may fulfil compulsory Tr
 </costs>
 </selectionEntry>
 <selectionEntry id="b5cc-e203-039a-d39a" name="Grey Slayer Pack" hidden="false" collective="false" import="true" type="unit">
-<modifiers>
-<modifier type="add" field="category" value="071f-8316-97af-8fd6">
-<conditions>
-<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fcd5-676e-3cd4-f773" type="atLeast" />
-</conditions>
-</modifier>
-</modifiers>
 <infoLinks>
 <infoLink id="9418-1803-b478-3917" name="Legiones Astartes (Space Wolves)" hidden="false" targetId="2b67-ad00-e6e7-8324" type="rule" />
 <infoLink id="606d-a05c-d032-4e9b" name="True Grit" hidden="false" targetId="bdcb-2f3a-3a2f-6104" type="rule" />
@@ -22131,6 +22112,7 @@ LIMITATIONS - No Prey Left Unhunted: Grey Slayer Squads may fulfil compulsory Tr
 </infoLinks>
 <categoryLinks>
 <categoryLink id="4025-110c-278a-a58e" name="Troops" hidden="false" targetId="adf0-dc10-89d4-f51e" primary="true" />
+<categoryLink id="3eb5-48aa-f238-b931" name="Compulsory Troops Eligible" hidden="false" targetId="071f-8316-97af-8fd6" primary="false" />
 </categoryLinks>
 <selectionEntries>
 <selectionEntry id="7cbe-f970-d559-054b" name="Grey Slayer Huscarl" hidden="false" collective="false" import="true" type="model">
@@ -23053,6 +23035,7 @@ LIMITATIONS - No Prey Left Unhunted: Grey Slayer Squads may fulfil compulsory Tr
 </infoLinks>
 <categoryLinks>
 <categoryLink id="4c0a-19c2-286d-1072" name="Troops" hidden="false" targetId="adf0-dc10-89d4-f51e" primary="true" />
+<categoryLink id="1c87-ef2a-f3c1-c876" name="Compulsory Troops Eligible" hidden="false" targetId="071f-8316-97af-8fd6" primary="false" />
 </categoryLinks>
 <selectionEntries>
 <selectionEntry id="e3d9-a352-b81e-a7ec" name="Stalker Huscarl" hidden="false" collective="false" import="true" type="model">
@@ -25372,6 +25355,41 @@ LIMITATIONS - No Prey Left Unhunted: Grey Slayer Squads may fulfil compulsory Tr
 <repeat field="selections" scope="3e30-5cad-85e0-08ed" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="da4a-963b-57f4-e6a2" repeats="1" roundUp="false" />
 </repeats>
 </modifier>
+<modifier type="decrement" field="624e-74c6-46f0-8514" value="1">
+<repeats>
+<repeat field="selections" scope="3e30-5cad-85e0-08ed" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="871b-3cee-4373-04f9" repeats="1" roundUp="false" />
+</repeats>
+</modifier>
+<modifier type="decrement" field="624e-74c6-46f0-8514" value="1">
+<repeats>
+<repeat field="selections" scope="3e30-5cad-85e0-08ed" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="63e8-bee7-88b7-64c6" repeats="1" roundUp="false" />
+</repeats>
+</modifier>
+<modifier type="decrement" field="624e-74c6-46f0-8514" value="1">
+<repeats>
+<repeat field="selections" scope="3e30-5cad-85e0-08ed" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="325e-cf5b-6af4-1818" repeats="1" roundUp="false" />
+</repeats>
+</modifier>
+<modifier type="decrement" field="624e-74c6-46f0-8514" value="1">
+<repeats>
+<repeat field="selections" scope="3e30-5cad-85e0-08ed" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="523c-5dd4-3402-0e99" repeats="1" roundUp="false" />
+</repeats>
+</modifier>
+<modifier type="decrement" field="624e-74c6-46f0-8514" value="1">
+<repeats>
+<repeat field="selections" scope="3e30-5cad-85e0-08ed" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fb4f-b267-7556-185d" repeats="1" roundUp="false" />
+</repeats>
+</modifier>
+<modifier type="decrement" field="624e-74c6-46f0-8514" value="1">
+<repeats>
+<repeat field="selections" scope="3e30-5cad-85e0-08ed" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9151-5044-e482-04c9" repeats="1" roundUp="false" />
+</repeats>
+</modifier>
+<modifier type="decrement" field="624e-74c6-46f0-8514" value="1">
+<repeats>
+<repeat field="selections" scope="3e30-5cad-85e0-08ed" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b363-b53c-502e-c028" repeats="1" roundUp="false" />
+</repeats>
+</modifier>
 </modifiers>
 <constraints>
 <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="624e-74c6-46f0-8514" type="max" />
@@ -25386,9 +25404,9 @@ LIMITATIONS - No Prey Left Unhunted: Grey Slayer Squads may fulfil compulsory Tr
 </entryLink>
 </entryLinks>
 </selectionEntryGroup>
-<selectionEntryGroup id="9c73-a1a2-c488-0ac8" name="Special Weapons (up to two Wolf Scouts, one each)" hidden="false" collective="false" import="true">
+<selectionEntryGroup id="0664-0943-7ae7-8829" name="Special Weapons (up to two Wolf Scouts, one each; replaces Bolt Pistol)" hidden="false" collective="false" import="true">
 <modifiers>
-<modifier type="decrement" field="5c79-e69b-1633-286b" value="1">
+<modifier type="decrement" field="786a-c125-f36b-450f" value="1">
 <conditionGroups>
 <conditionGroup type="or">
 <conditions>
@@ -25400,37 +25418,37 @@ LIMITATIONS - No Prey Left Unhunted: Grey Slayer Squads may fulfil compulsory Tr
 </modifier>
 </modifiers>
 <constraints>
-<constraint automatic="true" field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5c79-e69b-1633-286b" type="max" />
+<constraint automatic="true" field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="786a-c125-f36b-450f" type="max" />
 </constraints>
 <entryLinks>
-<entryLink id="4d4d-563d-97ae-a1b8" name="Flamer" hidden="false" collective="false" import="true" targetId="871b-3cee-4373-04f9" type="selectionEntry">
+<entryLink id="b80f-4b49-d27a-cfcd" name="Flamer" hidden="false" collective="false" import="true" targetId="871b-3cee-4373-04f9" type="selectionEntry">
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
 </costs>
 </entryLink>
-<entryLink id="46eb-76f8-0338-82fb" name="Meltagun" hidden="false" collective="false" import="true" targetId="63e8-bee7-88b7-64c6" type="selectionEntry">
+<entryLink id="4ba6-ec53-0edc-b1f4" name="Meltagun" hidden="false" collective="false" import="true" targetId="63e8-bee7-88b7-64c6" type="selectionEntry">
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
 </entryLink>
-<entryLink id="ccd4-bec7-16f4-8bbc" name="Plasma Gun" hidden="false" collective="false" import="true" targetId="325e-cf5b-6af4-1818" type="selectionEntry">
+<entryLink id="7cff-2501-9d66-e156" name="Plasma Gun" hidden="false" collective="false" import="true" targetId="325e-cf5b-6af4-1818" type="selectionEntry">
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
 </costs>
 </entryLink>
-<entryLink id="5a75-a494-e001-8271" name="Plasma Pistol" hidden="false" collective="false" import="true" targetId="523c-5dd4-3402-0e99" type="selectionEntry">
+<entryLink id="d51a-1a5b-300d-ac44" name="Plasma Pistol" hidden="false" collective="false" import="true" targetId="523c-5dd4-3402-0e99" type="selectionEntry">
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
 </costs>
 </entryLink>
-<entryLink id="5c12-494c-98fb-e88a" name="Power Weapon" hidden="false" collective="false" import="true" targetId="fb4f-b267-7556-185d" type="selectionEntry">
+<entryLink id="2bc7-2c1e-1760-2376" name="Power Weapon" hidden="false" collective="false" import="true" targetId="fb4f-b267-7556-185d" type="selectionEntry">
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
 </entryLink>
 </entryLinks>
 </selectionEntryGroup>
-<selectionEntryGroup id="e125-9e53-1c21-7836" name="Heavy Weapon (one Wolf Scout, instead of a special weapon)" hidden="false" collective="false" import="true">
+<selectionEntryGroup id="e125-9e53-1c21-7836" name="Heavy Weapon (one Wolf Scout, instead of a special weapon; replaces Bolt Pistol)" hidden="false" collective="false" import="true">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="191d-6c73-8185-c583" type="max" />
 </constraints>
@@ -26549,6 +26567,34 @@ LIMITATIONS - No Prey Left Unhunted: Grey Slayer Squads may fulfil compulsory Tr
 </selectionEntry>
 </selectionEntries>
 <selectionEntryGroups>
+<selectionEntryGroup id="8034-ca43-5a80-d25e" name="Space Wolves Wargear" hidden="false" collective="false" import="true">
+<entryLinks>
+<entryLink id="1d93-ff22-866b-857e" name="Wolf Pelt" hidden="false" collective="false" import="true" targetId="a9ee-8ba6-aa35-f40b" type="selectionEntry">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="321c-bb93-b900-d6f0" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
+</costs>
+</entryLink>
+<entryLink id="12a5-d302-a69b-f002" name="Wolf Tooth Necklace" hidden="false" collective="false" import="true" targetId="f569-b981-b9c9-659e" type="selectionEntry">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6efc-629e-bb15-934e" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
+</costs>
+</entryLink>
+<entryLink id="29eb-8704-61d2-1ea2" name="Wolf Tail Talisman" hidden="false" collective="false" import="true" targetId="3e84-b429-6e8e-b74d" type="selectionEntry">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d883-8eb5-daaa-27c6" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
+</costs>
+</entryLink>
+</entryLinks>
+</selectionEntryGroup>
 <selectionEntryGroup id="d5a5-91cb-7cde-fb6c" name="Retinue (no Force Organisation slot)" hidden="false" collective="false" import="true">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9c46-8185-9487-8585" type="max" />
@@ -26658,6 +26704,30 @@ LIMITATIONS - No Prey Left Unhunted: Grey Slayer Squads may fulfil compulsory Tr
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="2" />
+</costs>
+</entryLink>
+<entryLink id="2948-d226-bee1-c6d3" name="Wolf Pelt" hidden="false" collective="false" import="true" targetId="a9ee-8ba6-aa35-f40b" type="selectionEntry">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2027-4e01-b3e0-8efb" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
+</costs>
+</entryLink>
+<entryLink id="9786-495d-d2e3-b13b" name="Wolf Tooth Necklace" hidden="false" collective="false" import="true" targetId="f569-b981-b9c9-659e" type="selectionEntry">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a5c4-a779-7c9b-592f" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
+</costs>
+</entryLink>
+<entryLink id="dcd9-ee38-08ed-025e" name="Wolf Tail Talisman" hidden="false" collective="false" import="true" targetId="3e84-b429-6e8e-b74d" type="selectionEntry">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2fc5-2477-3fbb-d910" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
 </costs>
 </entryLink>
 </entryLinks>
@@ -26778,6 +26848,30 @@ LIMITATIONS - No Prey Left Unhunted: Grey Slayer Squads may fulfil compulsory Tr
 <cost name="pts" typeId="pts0-0000-0000-0001" value="2" />
 </costs>
 </entryLink>
+<entryLink id="a19b-fc50-329e-7154" name="Wolf Pelt" hidden="false" collective="false" import="true" targetId="a9ee-8ba6-aa35-f40b" type="selectionEntry">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c100-2e13-5c67-40d0" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
+</costs>
+</entryLink>
+<entryLink id="38f6-86c2-ef6a-2b4c" name="Wolf Tooth Necklace" hidden="false" collective="false" import="true" targetId="f569-b981-b9c9-659e" type="selectionEntry">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="535b-3a7d-edd2-6f22" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
+</costs>
+</entryLink>
+<entryLink id="8052-a4c5-e7ec-d3a1" name="Wolf Tail Talisman" hidden="false" collective="false" import="true" targetId="3e84-b429-6e8e-b74d" type="selectionEntry">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d6c6-ec66-b762-a413" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
+</costs>
+</entryLink>
 </entryLinks>
 </selectionEntryGroup>
 <selectionEntryGroup id="d7c2-e6f3-d489-5eee" name="Retinue (no Force Organisation slot)" hidden="false" collective="false" import="true">
@@ -26847,11 +26941,22 @@ LIMITATIONS - No Prey Left Unhunted: Grey Slayer Squads may fulfil compulsory Tr
 <infoLinks>
 <infoLink id="81f9-e660-080d-5b92" name="Old and Wise" hidden="false" targetId="80b7-d216-e585-8238" type="rule" />
 <infoLink id="8943-7c93-2d76-9b67" name="Hard to Kill" hidden="false" targetId="206b-8503-b761-98e9" type="rule" />
+<infoLink id="55bd-6eed-a4d5-6745" name="Legiones Astartes (Space Wolves)" hidden="false" targetId="2b67-ad00-e6e7-8324" type="rule" />
 </infoLinks>
 <categoryLinks>
 <categoryLink id="0f37-595d-1d99-63fa" name="HQ" hidden="false" targetId="cd54-54be-0cb1-3474" primary="true" />
 <categoryLink id="df8d-284d-bd44-3090" name="Compulsory HQ Eligible" hidden="false" targetId="e89b-053d-1bdc-4e2e" primary="false" />
 </categoryLinks>
+<selectionEntryGroups>
+<selectionEntryGroup id="c47b-1257-7918-9973" name="Dedicated Transport" hidden="false" collective="false" import="true">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="13fe-aa38-4d2e-eecc" type="max" />
+</constraints>
+<entryLinks>
+<entryLink id="4614-1c44-f0c2-294c" name="Legion Dreadnought Drop Pod" hidden="false" collective="false" import="true" targetId="baf7-a5cf-a01e-9c3f" type="selectionEntry" />
+</entryLinks>
+</selectionEntryGroup>
+</selectionEntryGroups>
 <entryLinks>
 <entryLink id="d5e1-a686-f4c8-a014" name="Assault Cannon" hidden="false" collective="false" import="true" targetId="ff6d-3278-a1e8-9953" type="selectionEntry">
 <constraints>
@@ -27197,6 +27302,13 @@ LIMITATIONS - No Prey Left Unhunted: Grey Slayer Squads may fulfil compulsory Tr
 </costs>
 </selectionEntry>
 <selectionEntry id="4e1c-55bd-1f6c-9584" name="Legion Drop Pod" hidden="false" collective="false" import="true" type="unit">
+<modifiers>
+<modifier type="add" field="error" value="The Bloodied Claws: the Detachment may not include Immobile units or units with the Slow and Purposeful special rule.">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fcd5-676e-3cd4-f773" type="atLeast" />
+</conditions>
+</modifier>
+</modifiers>
 <profiles>
 <profile id="d66c-c5ac-2784-19b7" name="Legion Drop Pod" hidden="false" typeId="c1e2-c3f6-f1e3-c783" typeName="Vehicle">
 <characteristics>
@@ -35383,6 +35495,13 @@ LIMITATIONS - No Prey Left Unhunted: Grey Slayer Squads may fulfil compulsory Tr
 </costs>
 </selectionEntry>
 <selectionEntry id="baf7-a5cf-a01e-9c3f" name="Legion Dreadnought Drop Pod" hidden="false" collective="false" import="true" type="unit">
+<modifiers>
+<modifier type="add" field="error" value="The Bloodied Claws: the Detachment may not include Immobile units or units with the Slow and Purposeful special rule.">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fcd5-676e-3cd4-f773" type="atLeast" />
+</conditions>
+</modifier>
+</modifiers>
 <profiles>
 <profile id="e6af-e061-7a61-592f" name="Legion Dreadnought Drop Pod" hidden="false" typeId="c1e2-c3f6-f1e3-c783" typeName="Vehicle">
 <characteristics>
@@ -44528,7 +44647,7 @@ LIMITATIONS - No Prey Left Unhunted: Grey Slayer Squads may fulfil compulsory Tr
 <selectionEntry id="b5fd-b109-2cde-4cc6" name="Yimira Stasis Bombs" hidden="false" collective="false" import="true" type="upgrade">
 <rules>
 <rule id="15fa-acdb-6110-3756" name="Yimira Stasis Bombs" hidden="false">
-<description>A Deathsworn Pack counts as being equipped with Defensive Grenades. In addition, when an enemy unit Retreats from a close combat involving a Deathsworn Pack, roll two dice for the D6 portion of its Retreat distance and use the lower result. During the Shooting phase, one Deathsworn may throw a Yimira Stasis Bomb instead of firing another weapon. Yimira Stasis Bombs have no effect against Vehicles.</description>
+<description>A Deathsworn Pack counts as being equipped with Defensive Grenades. In addition, when an enemy unit Retreats from a close combat involving a Deathsworn Pack, roll two dice for the D6 portion of its Retreat distance and use the lower result.</description>
 </rule>
 </rules>
 <costs>
@@ -45005,7 +45124,7 @@ LIMITATIONS - The army may include no more than one Heavy Support choice. The ar
 </rule>
 <rule id="4326-fd26-3e4d-1b99" name="The Bloodied Claws" hidden="false">
 <description>EFFECTS - Break the Line: Space Wolves units add +1 to their combat-resolution score while at least half of the models in the unit are within the enemy deployment zone (not cumulative with itself). Howl of the Death Wolf: once per battle, at the beginning of a Space Wolves turn, the Warlord may unleash the Howl; until the end of that player turn Space Wolves units may re-roll their Advance roll (the re-rolled result must be accepted) and their normal charge distance is increased from 6" to 7". Unstoppable Violence: during an Assault phase in which a Space Wolves unit charges an enemy unit already engaged by another friendly Space Wolves unit, the charging unit gains Furious Charge for that Assault phase. Bloodied Claws: Grey Slayer Squads and Legion Assault Squads must declare a charge during the Assault phase if an enemy unit is within their legal charge distance (the Space Wolves player chooses which if several).
-LIMITATIONS - No Prey Left Unhunted: Grey Slayer Squads may fulfil compulsory Troops selections; at least one compulsory Troops choice must be a Grey Slayer Squad. No Path of Retreat: units in this Detachment may not voluntarily withdraw from close combat; if a Space Wolves unit wins a close combat and an enemy unit retreats, the Space Wolves must Pursue whenever able. The Breaking of the Line: the Detachment may not include Artillery units, units with Slow and Purposeful, Immobile units or Fortifications, and may not include an Allied Detachment belonging to another Space Marine Legion.</description>
+LIMITATIONS - No Prey Left Unhunted: Grey Slayer Squads must fulfil compulsory Troops selections when using this Rite. No Path of Retreat: units in this Detachment may not voluntarily withdraw from close combat; if a Space Wolves unit wins a close combat and an enemy unit retreats, the Space Wolves must Pursue whenever able. The Breaking of the Line: the Detachment may not include Artillery units, units with Slow and Purposeful, Immobile units or Fortifications, and may not include an Allied Detachment belonging to another Space Marine Legion.</description>
 </rule>
 <rule id="bdcb-2f3a-3a2f-6104" name="True Grit" hidden="false">
 <description>A model with True Grit which is equipped with both a Bolter and a Close-combat weapon counts as fighting with two close-combat weapons and receives +1 Attack in close combat. However, that model does not receive the normal +1 Attack for charging.</description>

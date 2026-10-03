@@ -239,6 +239,23 @@
 </categoryLinks>
 <selectionEntryGroups>
 <selectionEntryGroup id="fdea-054a-996f-0cf0" name="Space Marine Armoury (max 100 pts)" hidden="false" collective="false" import="true">
+<modifiers>
+<modifier type="increment" field="f8eb-b9f6-2231-5e9b" value="10">
+<repeats>
+<repeat field="selections" scope="2390-3489-e470-7f7f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7fd2-0ed5-76ac-2a22" repeats="1" roundUp="false" />
+</repeats>
+</modifier>
+<modifier type="increment" field="f8eb-b9f6-2231-5e9b" value="10">
+<repeats>
+<repeat field="selections" scope="2390-3489-e470-7f7f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c9e5-f872-91f6-22fd" repeats="1" roundUp="false" />
+</repeats>
+</modifier>
+<modifier type="increment" field="f8eb-b9f6-2231-5e9b" value="2">
+<repeats>
+<repeat field="selections" scope="2390-3489-e470-7f7f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5579-6861-433f-94bb" repeats="1" roundUp="false" />
+</repeats>
+</modifier>
+</modifiers>
 <constraints>
 <constraint field="pts0-0000-0000-0001" scope="self" value="100" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="f8eb-b9f6-2231-5e9b" type="max" />
 </constraints>
@@ -710,17 +727,25 @@
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
 </entryLink>
-<entryLink id="0626-4522-b997-318a" name="Fulcrum Hand Cannon" hidden="false" collective="false" import="true" targetId="c07f-75e6-1c51-291e" type="selectionEntry">
+</entryLinks>
+<selectionEntries>
+<selectionEntry id="7fd2-0ed5-76ac-2a22" name="Fulcrum Hand Cannon" hidden="false" collective="false" import="true" type="upgrade">
+<infoLinks>
+<infoLink id="ef73-82fe-49ee-9b27" name="Fulcrum Hand Cannon" hidden="false" targetId="3e90-a606-709a-6bfb" type="rule" />
+</infoLinks>
+<entryLinks>
+<entryLink id="65c3-c589-b861-b9eb" name="Fulcrum Hand Cannon" hidden="false" collective="false" import="true" targetId="c07f-75e6-1c51-291e" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d3ab-b882-75c0-0f38" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="687f-8109-d37f-99d8" type="max" />
+</constraints>
+</entryLink>
+</entryLinks>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
-</entryLink>
-<entryLink id="1e36-e4fb-ba36-d2fd" name="Raven's Talons" hidden="false" collective="false" import="true" targetId="0541-8483-4e2a-a236" type="selectionEntry" sortIndex="109">
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="35" />
-</costs>
-</entryLink>
-</entryLinks>
+</selectionEntry>
+</selectionEntries>
 </selectionEntryGroup>
 <selectionEntryGroup id="c758-5dab-2479-3e5b" name="Replace Chainsword" hidden="false" collective="false" import="true" defaultSelectionEntryId="8517-9247-b115-d0f1">
 <modifiers>
@@ -756,48 +781,6 @@
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f64c-ae1b-461e-9ff1" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="90cb-c1c8-e6e9-ac58" type="max" />
 </constraints>
-<selectionEntries>
-<selectionEntry id="d79b-b952-f8ca-407d" name="Bolt Pistol" hidden="false" collective="false" import="true" type="upgrade">
-<modifiers>
-<modifier type="set" field="hidden" value="true">
-<conditionGroups>
-<conditionGroup type="or">
-<conditions>
-<condition field="selections" scope="2390-3489-e470-7f7f" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a6a2-abea-01b2-ad81" type="atLeast" />
-<condition field="selections" scope="2390-3489-e470-7f7f" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d900-78c3-2b10-8f9c" type="atLeast" />
-<condition field="selections" scope="2390-3489-e470-7f7f" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0656-5d6b-29bb-1441" type="atLeast" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-<modifier type="set" field="052e-f3b6-e611-f572" value="0">
-<conditionGroups>
-<conditionGroup type="or">
-<conditions>
-<condition field="selections" scope="2390-3489-e470-7f7f" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a6a2-abea-01b2-ad81" type="atLeast" />
-<condition field="selections" scope="2390-3489-e470-7f7f" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d900-78c3-2b10-8f9c" type="atLeast" />
-<condition field="selections" scope="2390-3489-e470-7f7f" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0656-5d6b-29bb-1441" type="atLeast" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-</modifiers>
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="052e-f3b6-e611-f572" type="max" />
-</constraints>
-<entryLinks>
-<entryLink id="aff4-0394-3c6e-0a85" name="Bolt Pistol" hidden="false" collective="false" import="true" targetId="10e2-6917-e765-7495" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5b11-2c78-2adb-bb82" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5836-e077-ade5-d8f2" type="max" />
-</constraints>
-</entryLink>
-</entryLinks>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="1" />
-</costs>
-</selectionEntry>
-</selectionEntries>
 <entryLinks>
 <entryLink id="8517-9247-b115-d0f1" name="Chainsword" hidden="false" collective="false" import="true" targetId="3f81-4517-73f5-ceb7" type="selectionEntry" sortIndex="1" defaultAmount="1">
 <constraints>
@@ -1253,6 +1236,64 @@
 </costs>
 </entryLink>
 </entryLinks>
+<selectionEntries>
+<selectionEntry id="c9e5-f872-91f6-22fd" name="Fulcrum Hand Cannon" hidden="false" collective="false" import="true" type="upgrade">
+<infoLinks>
+<infoLink id="afc1-6f2b-0272-9cbe" name="Fulcrum Hand Cannon" hidden="false" targetId="3e90-a606-709a-6bfb" type="rule" />
+</infoLinks>
+<entryLinks>
+<entryLink id="e671-44b5-6375-3d2a" name="Fulcrum Hand Cannon" hidden="false" collective="false" import="true" targetId="c07f-75e6-1c51-291e" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="565f-3f6a-80f7-3685" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0ec2-7a6f-dbd9-415c" type="max" />
+</constraints>
+</entryLink>
+</entryLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="11" />
+</costs>
+</selectionEntry>
+<selectionEntry id="d79b-b952-f8ca-407d" name="Bolt Pistol" hidden="false" collective="false" import="true" type="upgrade">
+<modifiers>
+<modifier type="set" field="hidden" value="true">
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="2390-3489-e470-7f7f" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a6a2-abea-01b2-ad81" type="atLeast" />
+<condition field="selections" scope="2390-3489-e470-7f7f" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d900-78c3-2b10-8f9c" type="atLeast" />
+<condition field="selections" scope="2390-3489-e470-7f7f" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0656-5d6b-29bb-1441" type="atLeast" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="set" field="052e-f3b6-e611-f572" value="0">
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="2390-3489-e470-7f7f" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a6a2-abea-01b2-ad81" type="atLeast" />
+<condition field="selections" scope="2390-3489-e470-7f7f" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d900-78c3-2b10-8f9c" type="atLeast" />
+<condition field="selections" scope="2390-3489-e470-7f7f" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0656-5d6b-29bb-1441" type="atLeast" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+</modifiers>
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="052e-f3b6-e611-f572" type="max" />
+</constraints>
+<entryLinks>
+<entryLink id="aff4-0394-3c6e-0a85" name="Bolt Pistol" hidden="false" collective="false" import="true" targetId="10e2-6917-e765-7495" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5b11-2c78-2adb-bb82" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5836-e077-ade5-d8f2" type="max" />
+</constraints>
+</entryLink>
+</entryLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="1" />
+</costs>
+</selectionEntry>
+</selectionEntries>
 </selectionEntryGroup>
 <selectionEntryGroup id="13dc-9da7-73e4-bb0e" name="Additional Wargear" hidden="false" collective="false" import="true">
 <entryLinks>
@@ -1640,15 +1681,28 @@
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
 </entryLink>
-<entryLink id="a936-f93d-f26f-06bb" name="Sniper Rifle" hidden="false" collective="false" import="true" targetId="2b77-b821-eadf-91fa" type="selectionEntry">
+</entryLinks>
+<selectionEntries>
+<selectionEntry id="5579-6861-433f-94bb" name="Sniper Rifle (Shadow Masters)" hidden="false" collective="false" import="true" type="upgrade">
 <constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="03b5-a739-f251-6721" type="max" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4e9e-d96a-7f28-54cc" type="max" />
 </constraints>
+<infoLinks>
+<infoLink id="8e6c-8984-fdd6-ad6f" name="Shadow Masters" hidden="false" targetId="a3a0-dbff-422b-34d3" type="rule" />
+</infoLinks>
+<entryLinks>
+<entryLink id="db3a-27a5-3a21-0339" name="Sniper Rifle" hidden="false" collective="false" import="true" targetId="2b77-b821-eadf-91fa" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a791-c157-0249-f8aa" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5144-7a3c-564b-7c2d" type="max" />
+</constraints>
+</entryLink>
+</entryLinks>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="2" />
 </costs>
-</entryLink>
-</entryLinks>
+</selectionEntry>
+</selectionEntries>
 </selectionEntryGroup>
 </selectionEntryGroups>
 </selectionEntryGroup>
@@ -2495,6 +2549,23 @@
 </selectionEntries>
 </selectionEntryGroup>
 <selectionEntryGroup id="bb8f-01c1-93ae-388f" name="Space Marine Armoury (max 100 pts)" hidden="false" collective="false" import="true">
+<modifiers>
+<modifier type="increment" field="1666-551b-6180-8a99" value="10">
+<repeats>
+<repeat field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4513-0987-765e-3ff3" repeats="1" roundUp="false" />
+</repeats>
+</modifier>
+<modifier type="increment" field="1666-551b-6180-8a99" value="10">
+<repeats>
+<repeat field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="40be-b4a9-c05a-8f31" repeats="1" roundUp="false" />
+</repeats>
+</modifier>
+<modifier type="increment" field="1666-551b-6180-8a99" value="2">
+<repeats>
+<repeat field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="291e-b438-f40d-9efc" repeats="1" roundUp="false" />
+</repeats>
+</modifier>
+</modifiers>
 <constraints>
 <constraint field="pts0-0000-0000-0001" scope="self" value="100" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1666-551b-6180-8a99" type="max" />
 </constraints>
@@ -3196,17 +3267,25 @@
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
 </entryLink>
-<entryLink id="33b0-a3e8-11d2-e075" name="Fulcrum Hand Cannon" hidden="false" collective="false" import="true" targetId="c07f-75e6-1c51-291e" type="selectionEntry">
+</entryLinks>
+<selectionEntries>
+<selectionEntry id="4513-0987-765e-3ff3" name="Fulcrum Hand Cannon" hidden="false" collective="false" import="true" type="upgrade">
+<infoLinks>
+<infoLink id="ee40-a54a-1a91-ec9f" name="Fulcrum Hand Cannon" hidden="false" targetId="3e90-a606-709a-6bfb" type="rule" />
+</infoLinks>
+<entryLinks>
+<entryLink id="54ca-5f4b-8a02-fa64" name="Fulcrum Hand Cannon" hidden="false" collective="false" import="true" targetId="c07f-75e6-1c51-291e" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3965-4184-1123-d776" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d20a-1066-7464-155d" type="max" />
+</constraints>
+</entryLink>
+</entryLinks>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
-</entryLink>
-<entryLink id="9954-3c3a-4f22-cbe6" name="Raven's Talons" hidden="false" collective="false" import="true" targetId="0541-8483-4e2a-a236" type="selectionEntry" sortIndex="109">
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="35" />
-</costs>
-</entryLink>
-</entryLinks>
+</selectionEntry>
+</selectionEntries>
 </selectionEntryGroup>
 <selectionEntryGroup id="eaf5-2586-59d4-b6b5" name="Replace Chainsword" hidden="false" collective="false" import="true" defaultSelectionEntryId="6eda-6d25-869b-3f1b">
 <modifiers>
@@ -3254,48 +3333,6 @@
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="723e-acd3-c875-c5bd" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="86d9-208d-1a14-0ffc" type="max" />
 </constraints>
-<selectionEntries>
-<selectionEntry id="900d-5e1c-ad06-1853" name="Bolt Pistol" hidden="false" collective="false" import="true" type="upgrade">
-<modifiers>
-<modifier type="set" field="hidden" value="true">
-<conditionGroups>
-<conditionGroup type="or">
-<conditions>
-<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a6a2-abea-01b2-ad81" type="atLeast" />
-<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d900-78c3-2b10-8f9c" type="atLeast" />
-<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0656-5d6b-29bb-1441" type="atLeast" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-<modifier type="set" field="c224-2e03-1ef7-1833" value="0">
-<conditionGroups>
-<conditionGroup type="or">
-<conditions>
-<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a6a2-abea-01b2-ad81" type="atLeast" />
-<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d900-78c3-2b10-8f9c" type="atLeast" />
-<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0656-5d6b-29bb-1441" type="atLeast" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-</modifiers>
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c224-2e03-1ef7-1833" type="max" />
-</constraints>
-<entryLinks>
-<entryLink id="1ff4-2f1c-1dbf-64d7" name="Bolt Pistol" hidden="false" collective="false" import="true" targetId="10e2-6917-e765-7495" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3a28-04c1-1f2e-afc4" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="998d-e389-1940-e4e2" type="max" />
-</constraints>
-</entryLink>
-</entryLinks>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="1" />
-</costs>
-</selectionEntry>
-</selectionEntries>
 <entryLinks>
 <entryLink id="6eda-6d25-869b-3f1b" name="Chainsword" hidden="false" collective="false" import="true" targetId="3f81-4517-73f5-ceb7" type="selectionEntry" sortIndex="1" defaultAmount="1">
 <constraints>
@@ -3959,6 +3996,64 @@
 </costs>
 </entryLink>
 </entryLinks>
+<selectionEntries>
+<selectionEntry id="40be-b4a9-c05a-8f31" name="Fulcrum Hand Cannon" hidden="false" collective="false" import="true" type="upgrade">
+<infoLinks>
+<infoLink id="d766-d404-7f3c-0c1d" name="Fulcrum Hand Cannon" hidden="false" targetId="3e90-a606-709a-6bfb" type="rule" />
+</infoLinks>
+<entryLinks>
+<entryLink id="4e72-0e0e-fbc9-f26e" name="Fulcrum Hand Cannon" hidden="false" collective="false" import="true" targetId="c07f-75e6-1c51-291e" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3080-42a0-ed49-85a4" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8c39-b453-99a8-cd67" type="max" />
+</constraints>
+</entryLink>
+</entryLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="11" />
+</costs>
+</selectionEntry>
+<selectionEntry id="900d-5e1c-ad06-1853" name="Bolt Pistol" hidden="false" collective="false" import="true" type="upgrade">
+<modifiers>
+<modifier type="set" field="hidden" value="true">
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a6a2-abea-01b2-ad81" type="atLeast" />
+<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d900-78c3-2b10-8f9c" type="atLeast" />
+<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0656-5d6b-29bb-1441" type="atLeast" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="set" field="c224-2e03-1ef7-1833" value="0">
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a6a2-abea-01b2-ad81" type="atLeast" />
+<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d900-78c3-2b10-8f9c" type="atLeast" />
+<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0656-5d6b-29bb-1441" type="atLeast" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+</modifiers>
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c224-2e03-1ef7-1833" type="max" />
+</constraints>
+<entryLinks>
+<entryLink id="1ff4-2f1c-1dbf-64d7" name="Bolt Pistol" hidden="false" collective="false" import="true" targetId="10e2-6917-e765-7495" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3a28-04c1-1f2e-afc4" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="998d-e389-1940-e4e2" type="max" />
+</constraints>
+</entryLink>
+</entryLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="1" />
+</costs>
+</selectionEntry>
+</selectionEntries>
 </selectionEntryGroup>
 <selectionEntryGroup id="143a-d12c-f97a-70c8" name="Additional Wargear" hidden="false" collective="false" import="true">
 <entryLinks>
@@ -4527,15 +4622,28 @@
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
 </entryLink>
-<entryLink id="ae84-22d0-1f7d-1dcb" name="Sniper Rifle" hidden="false" collective="false" import="true" targetId="2b77-b821-eadf-91fa" type="selectionEntry">
+</entryLinks>
+<selectionEntries>
+<selectionEntry id="291e-b438-f40d-9efc" name="Sniper Rifle (Shadow Masters)" hidden="false" collective="false" import="true" type="upgrade">
 <constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9d3a-ecef-1e48-2a7b" type="max" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a654-c8b9-3729-b4ee" type="max" />
 </constraints>
+<infoLinks>
+<infoLink id="5de1-d1a1-cfd4-2be7" name="Shadow Masters" hidden="false" targetId="a3a0-dbff-422b-34d3" type="rule" />
+</infoLinks>
+<entryLinks>
+<entryLink id="6be0-82f0-e194-9f11" name="Sniper Rifle" hidden="false" collective="false" import="true" targetId="2b77-b821-eadf-91fa" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="652d-c107-a75d-c53e" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c8fa-8165-8035-0686" type="max" />
+</constraints>
+</entryLink>
+</entryLinks>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="2" />
 </costs>
-</entryLink>
-</entryLinks>
+</selectionEntry>
+</selectionEntries>
 </selectionEntryGroup>
 </selectionEntryGroups>
 </selectionEntryGroup>
@@ -4918,6 +5026,13 @@
 </profiles>
 <selectionEntryGroups>
 <selectionEntryGroup id="7203-c899-e5b6-4526" name="Space Marine Armoury (max 50 pts)" hidden="false" collective="false" import="true">
+<modifiers>
+<modifier type="increment" field="6075-c152-abb2-4a59" value="10">
+<repeats>
+<repeat field="selections" scope="6781-421a-190b-55fc" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c1f7-1901-29ba-b024" repeats="1" roundUp="false" />
+</repeats>
+</modifier>
+</modifiers>
 <constraints>
 <constraint field="pts0-0000-0000-0001" scope="self" value="50" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="6075-c152-abb2-4a59" type="max" />
 </constraints>
@@ -5059,11 +5174,6 @@
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
-</costs>
-</entryLink>
-<entryLink id="5841-ace1-042e-89f5" name="Raven's Talons" hidden="false" collective="false" import="true" targetId="0541-8483-4e2a-a236" type="selectionEntry" sortIndex="105">
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="35" />
 </costs>
 </entryLink>
 </entryLinks>
@@ -5216,12 +5326,25 @@
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
 </costs>
 </entryLink>
-<entryLink id="e253-c4ba-9c0d-f73b" name="Fulcrum Hand Cannon" hidden="false" collective="false" import="true" targetId="c07f-75e6-1c51-291e" type="selectionEntry">
+</entryLinks>
+<selectionEntries>
+<selectionEntry id="c1f7-1901-29ba-b024" name="Fulcrum Hand Cannon" hidden="false" collective="false" import="true" type="upgrade">
+<infoLinks>
+<infoLink id="747f-e3a1-264c-ce55" name="Fulcrum Hand Cannon" hidden="false" targetId="3e90-a606-709a-6bfb" type="rule" />
+</infoLinks>
+<entryLinks>
+<entryLink id="d34c-8287-9755-c7f4" name="Fulcrum Hand Cannon" hidden="false" collective="false" import="true" targetId="c07f-75e6-1c51-291e" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="60aa-3588-23a2-8bf7" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="38a7-48d8-6947-3a57" type="max" />
+</constraints>
+</entryLink>
+</entryLinks>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
-</entryLink>
-</entryLinks>
+</selectionEntry>
+</selectionEntries>
 </selectionEntryGroup>
 <selectionEntryGroup id="828f-b712-f34f-3930" name="Additional Wargear" hidden="false" collective="false" import="true">
 <entryLinks>
@@ -5870,17 +5993,25 @@
 <cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
 </costs>
 </entryLink>
-<entryLink id="14a9-5661-695b-9a32" name="Fulcrum Hand Cannon" hidden="false" collective="false" import="true" targetId="c07f-75e6-1c51-291e" type="selectionEntry">
+</entryLinks>
+<selectionEntries>
+<selectionEntry id="0622-06e2-3cc6-8b44" name="Fulcrum Hand Cannon" hidden="false" collective="false" import="true" type="upgrade">
+<infoLinks>
+<infoLink id="f705-2c32-0a2f-202f" name="Fulcrum Hand Cannon" hidden="false" targetId="3e90-a606-709a-6bfb" type="rule" />
+</infoLinks>
+<entryLinks>
+<entryLink id="3089-ee8c-4199-c4f1" name="Fulcrum Hand Cannon" hidden="false" collective="false" import="true" targetId="c07f-75e6-1c51-291e" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="40b7-1c2f-14f5-d179" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cc7b-c827-9544-2126" type="max" />
+</constraints>
+</entryLink>
+</entryLinks>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
-</entryLink>
-<entryLink id="5254-f5b5-7d95-5aa4" name="Raven's Talons" hidden="false" collective="false" import="true" targetId="0541-8483-4e2a-a236" type="selectionEntry" sortIndex="106">
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
-</costs>
-</entryLink>
-</entryLinks>
+</selectionEntry>
+</selectionEntries>
 </selectionEntryGroup>
 <selectionEntryGroup id="179c-4c69-979b-044c" name="Replace Chainsword" hidden="false" collective="false" import="true" defaultSelectionEntryId="80b0-bbd9-884d-1223">
 <modifiers>
@@ -6426,12 +6557,25 @@
 <cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
 </costs>
 </entryLink>
-<entryLink id="e548-0b21-6b82-021f" name="Fulcrum Hand Cannon" hidden="false" collective="false" import="true" targetId="c07f-75e6-1c51-291e" type="selectionEntry">
+</entryLinks>
+<selectionEntries>
+<selectionEntry id="d5bf-2ba9-ca4c-8a1b" name="Fulcrum Hand Cannon" hidden="false" collective="false" import="true" type="upgrade">
+<infoLinks>
+<infoLink id="4d41-862d-e458-c00b" name="Fulcrum Hand Cannon" hidden="false" targetId="3e90-a606-709a-6bfb" type="rule" />
+</infoLinks>
+<entryLinks>
+<entryLink id="b828-0cb0-72a8-f39a" name="Fulcrum Hand Cannon" hidden="false" collective="false" import="true" targetId="c07f-75e6-1c51-291e" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f63b-7cc9-e794-159c" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2b29-df37-59cf-55c6" type="max" />
+</constraints>
+</entryLink>
+</entryLinks>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
-</entryLink>
-</entryLinks>
+</selectionEntry>
+</selectionEntries>
 </selectionEntryGroup>
 <selectionEntryGroup id="5199-dfab-5cfa-cfbb" name="Sergeant Wargear" hidden="false" collective="false" import="true">
 <entryLinks>
@@ -7092,12 +7236,25 @@
 <cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
 </costs>
 </entryLink>
-<entryLink id="f5a2-f6a4-2bc6-97e1" name="Fulcrum Hand Cannon" hidden="false" collective="false" import="true" targetId="c07f-75e6-1c51-291e" type="selectionEntry">
+</entryLinks>
+<selectionEntries>
+<selectionEntry id="8450-406e-ff1e-24f3" name="Fulcrum Hand Cannon" hidden="false" collective="false" import="true" type="upgrade">
+<infoLinks>
+<infoLink id="e618-3683-cc31-201c" name="Fulcrum Hand Cannon" hidden="false" targetId="3e90-a606-709a-6bfb" type="rule" />
+</infoLinks>
+<entryLinks>
+<entryLink id="6621-a027-df41-f449" name="Fulcrum Hand Cannon" hidden="false" collective="false" import="true" targetId="c07f-75e6-1c51-291e" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c24d-a972-fca6-6594" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b7a3-d171-ce6b-0356" type="max" />
+</constraints>
+</entryLink>
+</entryLinks>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
-</entryLink>
-</entryLinks>
+</selectionEntry>
+</selectionEntries>
 </selectionEntryGroup>
 <selectionEntryGroup id="7f79-4804-2233-10c4" name="Sergeant Wargear" hidden="false" collective="false" import="true">
 <entryLinks>
@@ -7482,7 +7639,7 @@
 </entryLink>
 </entryLinks>
 <costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="125" />
+<cost name="pts" typeId="pts0-0000-0000-0001" value="111" />
 </costs>
 </selectionEntry>
 </selectionEntries>
@@ -9889,11 +10046,6 @@ LIMITATIONS - Loyalist Raven Guard Detachments only. No units with the Immobile 
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
 </costs>
 </entryLink>
-<entryLink id="0453-7869-e0e4-44a4" name="Raven's Talons" hidden="false" collective="false" import="true" targetId="0541-8483-4e2a-a236" type="selectionEntry">
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="35" />
-</costs>
-</entryLink>
 <entryLink id="3099-5913-3c19-7faf" name="Infravisor" hidden="false" collective="false" import="true" targetId="fc77-ebca-c9c6-5b19" type="selectionEntry">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2885-be9b-1007-817f" type="max" />
@@ -10602,6 +10754,23 @@ LIMITATIONS - Loyalist Raven Guard Detachments only. No units with the Immobile 
 </constraints>
 </entryLink>
 <entryLink id="3c55-77c3-4329-c41f" name="Two Bolt Pistols" hidden="false" collective="false" import="true" targetId="4968-a012-f7d5-e533" type="selectionEntry">
+<modifiers>
+<modifier type="set" field="f459-c5bc-4f56-3f76" value="0">
+<conditions>
+<condition field="selections" scope="0480-b80d-75e6-09f1" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="56c7-9a0c-fda1-ca85" type="atLeast" />
+</conditions>
+</modifier>
+<modifier type="set" field="b5db-0fd3-6075-8ca6" value="0">
+<conditions>
+<condition field="selections" scope="0480-b80d-75e6-09f1" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="56c7-9a0c-fda1-ca85" type="atLeast" />
+</conditions>
+</modifier>
+<modifier type="set" field="hidden" value="true">
+<conditions>
+<condition field="selections" scope="0480-b80d-75e6-09f1" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="56c7-9a0c-fda1-ca85" type="atLeast" />
+</conditions>
+</modifier>
+</modifiers>
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f459-c5bc-4f56-3f76" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b5db-0fd3-6075-8ca6" type="max" />
@@ -10620,6 +10789,24 @@ LIMITATIONS - Loyalist Raven Guard Detachments only. No units with the Immobile 
 </constraints>
 </entryLink>
 </entryLinks>
+<selectionEntries>
+<selectionEntry id="56c7-9a0c-fda1-ca85" name="Two Fulcrum Hand Cannons (replaces Two Bolt Pistols)" hidden="false" collective="false" import="true" type="upgrade">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9a9a-2555-d135-069a" type="max" />
+</constraints>
+<entryLinks>
+<entryLink id="7e52-8295-7319-877c" name="Two Fulcrum Hand Cannons" hidden="false" collective="false" import="true" targetId="0e54-010b-fddc-2731" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4b99-c8ec-c336-a005" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e3ef-9c07-e68c-a6a1" type="max" />
+</constraints>
+</entryLink>
+</entryLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
+</costs>
+</selectionEntry>
+</selectionEntries>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
 </costs>
@@ -10711,6 +10898,11 @@ LIMITATIONS - Loyalist Raven Guard Detachments only. No units with the Immobile 
 <repeat field="selections" scope="dc24-cdef-2339-2629" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" repeats="1" roundUp="false" />
 </repeats>
 </modifier>
+<modifier type="decrement" field="pts0-0000-0000-0001" value="15">
+<conditions>
+<condition field="selections" scope="dc24-cdef-2339-2629" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ff7f-a445-0abb-e8ea" type="atLeast" />
+</conditions>
+</modifier>
 </modifiers>
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="be25-5641-691d-e566" type="max" />
@@ -10733,6 +10925,11 @@ LIMITATIONS - Loyalist Raven Guard Detachments only. No units with the Immobile 
 <repeats>
 <repeat field="selections" scope="dc24-cdef-2339-2629" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" repeats="1" roundUp="false" />
 </repeats>
+</modifier>
+<modifier type="decrement" field="pts0-0000-0000-0001" value="2">
+<conditions>
+<condition field="selections" scope="dc24-cdef-2339-2629" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ff7f-a445-0abb-e8ea" type="atLeast" />
+</conditions>
 </modifier>
 </modifiers>
 <constraints>
@@ -10773,8 +10970,9 @@ LIMITATIONS - Loyalist Raven Guard Detachments only. No units with the Immobile 
 </profiles>
 <infoLinks>
 <infoLink id="1715-4cb0-4d58-e42a" name="Kaedes Nex" hidden="false" targetId="7a29-2248-9f4b-b9d8" type="rule" />
-<infoLink id="92a7-c127-5771-cc70" name="Dangerous Weaponry" hidden="false" targetId="dc2e-bdbc-6062-82df" type="rule" />
 <infoLink id="bc65-f2cc-c34e-04d5" name="The Raven's Due" hidden="false" targetId="e2b1-6168-2e62-2011" type="rule" />
+<infoLink id="948c-b827-ffca-c6df" name="Counter-Attack" hidden="false" targetId="cf35-85bb-edae-99d7" type="rule" />
+<infoLink id="d0a6-a014-dd30-b80b" name="Dual Pistols (Destroyers)" hidden="false" targetId="0c89-1896-022c-cfd4" type="rule" />
 <infoLink id="8edd-f22e-68a4-e358" name="Executioner's Instinct" hidden="false" targetId="df91-4251-2b43-8d7a" type="rule" />
 </infoLinks>
 <entryLinks>
@@ -10822,7 +11020,7 @@ LIMITATIONS - Loyalist Raven Guard Detachments only. No units with the Immobile 
 </entryLink>
 </entryLinks>
 <costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="135" />
+<cost name="pts" typeId="pts0-0000-0000-0001" value="115" />
 </costs>
 </selectionEntry>
 </selectionEntries>
@@ -13503,12 +13701,25 @@ LIMITATIONS - Loyalist Raven Guard Detachments only. No units with the Immobile 
 <cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
 </costs>
 </entryLink>
-<entryLink id="8f4b-7c11-03fd-1915" name="Fulcrum Hand Cannon" hidden="false" collective="false" import="true" targetId="c07f-75e6-1c51-291e" type="selectionEntry">
+</entryLinks>
+<selectionEntries>
+<selectionEntry id="1b1f-3eb8-23b4-26f5" name="Fulcrum Hand Cannon" hidden="false" collective="false" import="true" type="upgrade">
+<infoLinks>
+<infoLink id="0a35-2906-ef8f-1860" name="Fulcrum Hand Cannon" hidden="false" targetId="3e90-a606-709a-6bfb" type="rule" />
+</infoLinks>
+<entryLinks>
+<entryLink id="255d-21de-e06c-574d" name="Fulcrum Hand Cannon" hidden="false" collective="false" import="true" targetId="c07f-75e6-1c51-291e" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b79a-978d-56cb-5268" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b97e-01ba-7d1f-5224" type="max" />
+</constraints>
+</entryLink>
+</entryLinks>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
-</entryLink>
-</entryLinks>
+</selectionEntry>
+</selectionEntries>
 </selectionEntryGroup>
 <selectionEntryGroup id="1857-7a36-d5eb-e30e" name="Sergeant Wargear" hidden="false" collective="false" import="true">
 <entryLinks>
@@ -13896,7 +14107,7 @@ LIMITATIONS - Loyalist Raven Guard Detachments only. No units with the Immobile 
 </entryLink>
 </entryLinks>
 <costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="125" />
+<cost name="pts" typeId="pts0-0000-0000-0001" value="105" />
 </costs>
 </selectionEntry>
 </selectionEntries>
@@ -14229,6 +14440,22 @@ LIMITATIONS - Loyalist Raven Guard Detachments only. No units with the Immobile 
 <cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
 </costs>
 </selectionEntry>
+<selectionEntry id="410d-14aa-fff7-58fc" name="Fulcrum Hand Cannon" hidden="false" collective="false" import="true" type="upgrade">
+<infoLinks>
+<infoLink id="0e56-968a-d8f4-3a3e" name="Fulcrum Hand Cannon" hidden="false" targetId="3e90-a606-709a-6bfb" type="rule" />
+</infoLinks>
+<entryLinks>
+<entryLink id="b189-d70a-c728-0332" name="Fulcrum Hand Cannon" hidden="false" collective="false" import="true" targetId="c07f-75e6-1c51-291e" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="593d-93ea-3fbe-02bd" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d5a6-51f4-4929-0f04" type="max" />
+</constraints>
+</entryLink>
+</entryLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
+</costs>
+</selectionEntry>
 </selectionEntries>
 <entryLinks>
 <entryLink id="69b1-0c0a-23c8-3a7a" name="Bolt Pistol" hidden="false" collective="false" import="true" targetId="10e2-6917-e765-7495" type="selectionEntry" sortIndex="1" defaultAmount="1" />
@@ -14245,11 +14472,6 @@ LIMITATIONS - Loyalist Raven Guard Detachments only. No units with the Immobile 
 <entryLink id="8aca-3608-fbb8-4ac5" name="Plasma Pistol" hidden="false" collective="false" import="true" targetId="523c-5dd4-3402-0e99" type="selectionEntry" sortIndex="6">
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
-</costs>
-</entryLink>
-<entryLink id="d140-49d0-c945-53d2" name="Fulcrum Hand Cannon" hidden="false" collective="false" import="true" targetId="c07f-75e6-1c51-291e" type="selectionEntry">
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
 </entryLink>
 </entryLinks>
@@ -14793,6 +15015,22 @@ LIMITATIONS - Loyalist Raven Guard Detachments only. No units with the Immobile 
 <cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
 </costs>
 </selectionEntry>
+<selectionEntry id="6ee7-795c-90d4-34e9" name="Fulcrum Hand Cannon" hidden="false" collective="false" import="true" type="upgrade">
+<infoLinks>
+<infoLink id="6833-ed6f-3cea-38d0" name="Fulcrum Hand Cannon" hidden="false" targetId="3e90-a606-709a-6bfb" type="rule" />
+</infoLinks>
+<entryLinks>
+<entryLink id="e8da-c601-d88f-d20f" name="Fulcrum Hand Cannon" hidden="false" collective="false" import="true" targetId="c07f-75e6-1c51-291e" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ed97-f4e5-460b-0306" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="833b-4e81-64f6-16cf" type="max" />
+</constraints>
+</entryLink>
+</entryLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
+</costs>
+</selectionEntry>
 </selectionEntries>
 <entryLinks>
 <entryLink id="ddfa-8dce-3e90-5454" name="Bolt Pistol" hidden="false" collective="false" import="true" targetId="10e2-6917-e765-7495" type="selectionEntry" sortIndex="1" defaultAmount="1" />
@@ -14809,11 +15047,6 @@ LIMITATIONS - Loyalist Raven Guard Detachments only. No units with the Immobile 
 <entryLink id="58b9-2d6c-b556-b951" name="Plasma Pistol" hidden="false" collective="false" import="true" targetId="523c-5dd4-3402-0e99" type="selectionEntry" sortIndex="6">
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
-</costs>
-</entryLink>
-<entryLink id="8ed3-cf64-cbe3-6c37" name="Fulcrum Hand Cannon" hidden="false" collective="false" import="true" targetId="c07f-75e6-1c51-291e" type="selectionEntry">
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
 </entryLink>
 </entryLinks>
@@ -16141,12 +16374,25 @@ LIMITATIONS - Loyalist Raven Guard Detachments only. No units with the Immobile 
 <cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
 </costs>
 </entryLink>
-<entryLink id="4d56-1c70-8646-5fba" name="Fulcrum Hand Cannon" hidden="false" collective="false" import="true" targetId="c07f-75e6-1c51-291e" type="selectionEntry">
+</entryLinks>
+<selectionEntries>
+<selectionEntry id="3e12-1179-8557-66f0" name="Fulcrum Hand Cannon" hidden="false" collective="false" import="true" type="upgrade">
+<infoLinks>
+<infoLink id="6496-b1b2-b168-9c61" name="Fulcrum Hand Cannon" hidden="false" targetId="3e90-a606-709a-6bfb" type="rule" />
+</infoLinks>
+<entryLinks>
+<entryLink id="fef4-e373-2786-7684" name="Fulcrum Hand Cannon" hidden="false" collective="false" import="true" targetId="c07f-75e6-1c51-291e" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3da8-8cf0-f59a-956c" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e315-28ab-5d0c-4a43" type="max" />
+</constraints>
+</entryLink>
+</entryLinks>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
-</entryLink>
-</entryLinks>
+</selectionEntry>
+</selectionEntries>
 </selectionEntryGroup>
 <selectionEntryGroup id="1fa0-0d71-efda-bfe5" name="Sergeant Wargear" hidden="false" collective="false" import="true">
 <entryLinks>
@@ -22563,24 +22809,52 @@ LIMITATIONS - Loyalist Raven Guard Detachments only. No units with the Immobile 
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8d8b-7709-2e5d-796d" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3dd8-3945-b865-c0b8" type="max" />
 </constraints>
+<selectionEntries>
+<selectionEntry id="d0d3-8dd4-0816-64d8" name="Heavy Bolter" hidden="false" collective="false" import="true" type="upgrade" sortIndex="2">
+<entryLinks>
+<entryLink id="7b97-aca4-2bbd-f4c7" name="Heavy Bolter" hidden="false" collective="false" import="true" targetId="9151-5044-e482-04c9" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="92bc-8ab7-72da-3c07" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="65ff-22b3-16e3-7bb0" type="max" />
+</constraints>
+</entryLink>
+</entryLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
+</costs>
+</selectionEntry>
+<selectionEntry id="cfca-9d69-d51f-9e8d" name="Missile Launcher" hidden="false" collective="false" import="true" type="upgrade" sortIndex="3">
+<entryLinks>
+<entryLink id="e9d1-22fb-fdb8-8f6b" name="Missile Launcher" hidden="false" collective="false" import="true" targetId="b363-b53c-502e-c028" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7aa3-aa5a-bf7e-3d8b" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="18f2-911e-97cc-5b9e" type="max" />
+</constraints>
+</entryLink>
+</entryLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
+</costs>
+</selectionEntry>
+</selectionEntries>
 <entryLinks>
 <entryLink id="4c34-b4f7-5b73-1dd2" name="Sniper Rifle" hidden="false" collective="false" import="true" targetId="2b77-b821-eadf-91fa" type="selectionEntry" sortIndex="1" defaultAmount="1" />
-<entryLink id="9b83-b34d-0102-8ae1" name="Combi-Flamer" hidden="false" collective="false" import="true" targetId="8a4e-3dc8-c0e4-b9cf" type="selectionEntry" sortIndex="3">
+<entryLink id="9b83-b34d-0102-8ae1" name="Combi-Flamer" hidden="false" collective="false" import="true" targetId="8a4e-3dc8-c0e4-b9cf" type="selectionEntry" sortIndex="5">
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
 </entryLink>
-<entryLink id="aff6-88f9-2a66-b138" name="Combi-Meltagun" hidden="false" collective="false" import="true" targetId="b147-b586-15e9-f12b" type="selectionEntry" sortIndex="4">
+<entryLink id="aff6-88f9-2a66-b138" name="Combi-Meltagun" hidden="false" collective="false" import="true" targetId="b147-b586-15e9-f12b" type="selectionEntry" sortIndex="6">
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
 </costs>
 </entryLink>
-<entryLink id="3ccf-3783-ce33-ca13" name="Combi-Plasma Gun" hidden="false" collective="false" import="true" targetId="e700-2c4d-9283-a7b7" type="selectionEntry" sortIndex="5">
+<entryLink id="3ccf-3783-ce33-ca13" name="Combi-Plasma Gun" hidden="false" collective="false" import="true" targetId="e700-2c4d-9283-a7b7" type="selectionEntry" sortIndex="7">
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
 </costs>
 </entryLink>
-<entryLink id="c91c-3164-34b6-5b8d" name="Combi-Volkite Charger" hidden="false" collective="false" import="true" targetId="2125-78bc-6ae3-2391" type="selectionEntry" sortIndex="6">
+<entryLink id="c91c-3164-34b6-5b8d" name="Combi-Volkite Charger" hidden="false" collective="false" import="true" targetId="2125-78bc-6ae3-2391" type="selectionEntry" sortIndex="8">
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
@@ -22588,6 +22862,13 @@ LIMITATIONS - Loyalist Raven Guard Detachments only. No units with the Immobile 
 </entryLinks>
 </selectionEntryGroup>
 <selectionEntryGroup id="d704-198a-a8cf-3148" name="Space Marine Armoury (max 50 pts)" hidden="false" collective="false" import="true">
+<modifiers>
+<modifier type="increment" field="5b7b-47c7-11b5-005b" value="10">
+<repeats>
+<repeat field="selections" scope="1538-ee99-1ca0-c667" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4528-0603-5bf1-9ec3" repeats="1" roundUp="false" />
+</repeats>
+</modifier>
+</modifiers>
 <constraints>
 <constraint field="pts0-0000-0000-0001" scope="self" value="50" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="5b7b-47c7-11b5-005b" type="max" />
 </constraints>
@@ -22731,17 +23012,25 @@ LIMITATIONS - Loyalist Raven Guard Detachments only. No units with the Immobile 
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
 </costs>
 </entryLink>
-<entryLink id="5049-fc25-aa29-c74d" name="Fulcrum Hand Cannon" hidden="false" collective="false" import="true" targetId="c07f-75e6-1c51-291e" type="selectionEntry">
+</entryLinks>
+<selectionEntries>
+<selectionEntry id="4528-0603-5bf1-9ec3" name="Fulcrum Hand Cannon" hidden="false" collective="false" import="true" type="upgrade">
+<infoLinks>
+<infoLink id="6db6-c522-f414-07ef" name="Fulcrum Hand Cannon" hidden="false" targetId="3e90-a606-709a-6bfb" type="rule" />
+</infoLinks>
+<entryLinks>
+<entryLink id="fa4b-eb46-b435-62e7" name="Fulcrum Hand Cannon" hidden="false" collective="false" import="true" targetId="c07f-75e6-1c51-291e" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ad1d-22a5-c8c6-214f" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="49f7-c2f4-058f-a8f6" type="max" />
+</constraints>
+</entryLink>
+</entryLinks>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
-</entryLink>
-<entryLink id="074b-3df0-bd71-8e2a" name="Raven's Talons" hidden="false" collective="false" import="true" targetId="0541-8483-4e2a-a236" type="selectionEntry" sortIndex="105">
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="35" />
-</costs>
-</entryLink>
-</entryLinks>
+</selectionEntry>
+</selectionEntries>
 </selectionEntryGroup>
 <selectionEntryGroup id="e40c-a608-3147-f60d" name="Replace Close Combat Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="00ea-e97c-6191-c047">
 <modifiers>
@@ -23165,6 +23454,16 @@ LIMITATIONS - Loyalist Raven Guard Detachments only. No units with the Immobile 
 <repeat field="selections" scope="83b8-a2e4-9de6-7107" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b363-b53c-502e-c028" repeats="1" roundUp="false" />
 </repeats>
 </modifier>
+<modifier type="increment" field="f432-9988-bdc6-94dc" value="1">
+<repeats>
+<repeat field="selections" scope="83b8-a2e4-9de6-7107" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d0d3-8dd4-0816-64d8" repeats="1" roundUp="false" />
+</repeats>
+</modifier>
+<modifier type="increment" field="f432-9988-bdc6-94dc" value="1">
+<repeats>
+<repeat field="selections" scope="83b8-a2e4-9de6-7107" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cfca-9d69-d51f-9e8d" repeats="1" roundUp="false" />
+</repeats>
+</modifier>
 </modifiers>
 <constraints>
 <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f432-9988-bdc6-94dc" type="max" />
@@ -23197,6 +23496,16 @@ LIMITATIONS - Loyalist Raven Guard Detachments only. No units with the Immobile 
 <modifier type="increment" field="9080-7394-f6ed-6ff2" value="1">
 <repeats>
 <repeat field="selections" scope="83b8-a2e4-9de6-7107" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" repeats="1" roundUp="false" />
+</repeats>
+</modifier>
+<modifier type="decrement" field="9080-7394-f6ed-6ff2" value="1">
+<repeats>
+<repeat field="selections" scope="83b8-a2e4-9de6-7107" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d0d3-8dd4-0816-64d8" repeats="1" roundUp="false" />
+</repeats>
+</modifier>
+<modifier type="decrement" field="9080-7394-f6ed-6ff2" value="1">
+<repeats>
+<repeat field="selections" scope="83b8-a2e4-9de6-7107" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cfca-9d69-d51f-9e8d" repeats="1" roundUp="false" />
 </repeats>
 </modifier>
 </modifiers>
@@ -23287,6 +23596,13 @@ LIMITATIONS - Loyalist Raven Guard Detachments only. No units with the Immobile 
 </profiles>
 <selectionEntryGroups>
 <selectionEntryGroup id="0327-9a01-b0de-e06b" name="Space Marine Armoury (max 50 pts)" hidden="false" collective="false" import="true">
+<modifiers>
+<modifier type="increment" field="1c6f-c21c-d1db-7c13" value="10">
+<repeats>
+<repeat field="selections" scope="a31e-b9c0-b906-7799" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="006b-32c9-0aba-dee3" repeats="1" roundUp="false" />
+</repeats>
+</modifier>
+</modifiers>
 <constraints>
 <constraint field="pts0-0000-0000-0001" scope="self" value="50" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1c6f-c21c-d1db-7c13" type="max" />
 </constraints>
@@ -23296,21 +23612,6 @@ LIMITATIONS - Loyalist Raven Guard Detachments only. No units with the Immobile 
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="65ea-c1ca-585c-8e88" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3159-df14-609e-3980" type="max" />
 </constraints>
-<selectionEntries>
-<selectionEntry id="8e6c-391b-bfbd-6f8e" name="Raven's Talons" hidden="false" collective="false" import="true" type="upgrade">
-<entryLinks>
-<entryLink id="7658-279f-73eb-94ca" name="Raven's Talons" hidden="false" collective="false" import="true" targetId="0541-8483-4e2a-a236" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d1b3-0a33-ad78-6eda" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1563-2e43-c90f-ea46" type="max" />
-</constraints>
-</entryLink>
-</entryLinks>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="35" />
-</costs>
-</selectionEntry>
-</selectionEntries>
 <entryLinks>
 <entryLink id="6d20-f0bf-765d-d8d2" name="Bolt Pistol" hidden="false" collective="false" import="true" targetId="10e2-6917-e765-7495" type="selectionEntry" sortIndex="1" defaultAmount="1">
 <constraints>
@@ -23445,12 +23746,25 @@ LIMITATIONS - Loyalist Raven Guard Detachments only. No units with the Immobile 
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
 </costs>
 </entryLink>
-<entryLink id="0889-5fa1-4e11-6c62" name="Fulcrum Hand Cannon" hidden="false" collective="false" import="true" targetId="c07f-75e6-1c51-291e" type="selectionEntry">
+</entryLinks>
+<selectionEntries>
+<selectionEntry id="006b-32c9-0aba-dee3" name="Fulcrum Hand Cannon" hidden="false" collective="false" import="true" type="upgrade">
+<infoLinks>
+<infoLink id="3221-e66a-f8cf-5ce0" name="Fulcrum Hand Cannon" hidden="false" targetId="3e90-a606-709a-6bfb" type="rule" />
+</infoLinks>
+<entryLinks>
+<entryLink id="6eaa-20b0-be66-57a9" name="Fulcrum Hand Cannon" hidden="false" collective="false" import="true" targetId="c07f-75e6-1c51-291e" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1034-c37b-5a0b-b43b" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b294-ceb3-a35d-ab8c" type="max" />
+</constraints>
+</entryLink>
+</entryLinks>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
-</entryLink>
-</entryLinks>
+</selectionEntry>
+</selectionEntries>
 </selectionEntryGroup>
 <selectionEntryGroup id="840d-c557-cef8-56f2" name="Additional Wargear" hidden="false" collective="false" import="true">
 <entryLinks>
@@ -23810,7 +24124,7 @@ LIMITATIONS - Loyalist Raven Guard Detachments only. No units with the Immobile 
 </entryLink>
 </entryLinks>
 <costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="140" />
+<cost name="pts" typeId="pts0-0000-0000-0001" value="106" />
 </costs>
 </selectionEntry>
 </selectionEntries>
@@ -23878,6 +24192,35 @@ LIMITATIONS - Loyalist Raven Guard Detachments only. No units with the Immobile 
 </entryLinks>
 </selectionEntryGroup>
 <selectionEntryGroup id="1ba8-ad29-d8ad-c725" name="Replace Combi-bolter" hidden="false" collective="false" import="true" defaultSelectionEntryId="9ac9-08d1-2eb0-c4de">
+<modifiers>
+<modifier type="set" field="cb9a-5656-5ea3-b8e3" value="0">
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="2441-7a7b-2dcf-6ecd" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0541-8483-4e2a-a236" type="atLeast" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="set" field="b057-828b-ae6b-d010" value="0">
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="2441-7a7b-2dcf-6ecd" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0541-8483-4e2a-a236" type="atLeast" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="set" field="hidden" value="true">
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="2441-7a7b-2dcf-6ecd" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0541-8483-4e2a-a236" type="atLeast" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+</modifiers>
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cb9a-5656-5ea3-b8e3" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b057-828b-ae6b-d010" type="max" />
@@ -24073,11 +24416,6 @@ LIMITATIONS - Loyalist Raven Guard Detachments only. No units with the Immobile 
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
 </costs>
 </entryLink>
-<entryLink id="02f4-eda1-359c-6291" name="Raven's Talons" hidden="false" collective="false" import="true" targetId="0541-8483-4e2a-a236" type="selectionEntry">
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="35" />
-</costs>
-</entryLink>
 <entryLink id="cfa2-2d7f-8e38-b596" name="Infravisor" hidden="false" collective="false" import="true" targetId="fc77-ebca-c9c6-5b19" type="selectionEntry">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a60e-32a5-5bf2-c7e1" type="max" />
@@ -24175,6 +24513,21 @@ LIMITATIONS - Loyalist Raven Guard Detachments only. No units with the Immobile 
 <constraints>
 <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fca8-75d6-7a42-c0e4" type="max" />
 </constraints>
+<selectionEntries>
+<selectionEntry id="504f-b4b8-4ba8-3cbe" name="Pair of Raven's Talons (replaces Power Weapon and Combi-bolter)" hidden="false" collective="false" import="true" type="upgrade">
+<entryLinks>
+<entryLink id="1e07-f20e-d991-bb11" name="Raven's Talons" hidden="false" collective="false" import="true" targetId="0541-8483-4e2a-a236" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a542-28b8-406a-aec5" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="26d0-a853-ab37-0494" type="max" />
+</constraints>
+</entryLink>
+</entryLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
+</costs>
+</selectionEntry>
+</selectionEntries>
 <entryLinks>
 <entryLink id="9cae-0111-c7a3-6140" name="Power Fist" hidden="false" collective="false" import="true" targetId="0b4d-922b-4629-b7ca" type="selectionEntry">
 <costs>
@@ -24184,11 +24537,6 @@ LIMITATIONS - Loyalist Raven Guard Detachments only. No units with the Immobile 
 <entryLink id="8db3-e3a4-c219-aeb5" name="Chainfist" hidden="false" collective="false" import="true" targetId="a078-deea-084f-38e2" type="selectionEntry">
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
-</costs>
-</entryLink>
-<entryLink id="1229-bf18-56e0-8384" name="Raven's Talons" hidden="false" collective="false" import="true" targetId="0541-8483-4e2a-a236" type="selectionEntry">
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
 </entryLink>
 </entryLinks>
@@ -24213,6 +24561,11 @@ LIMITATIONS - Loyalist Raven Guard Detachments only. No units with the Immobile 
 <modifier type="decrement" field="e439-678c-a013-aacb" value="1">
 <repeats>
 <repeat field="selections" scope="cb43-2255-2607-fa89" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="48fc-4141-3aee-b13c" repeats="1" roundUp="false" />
+</repeats>
+</modifier>
+<modifier type="decrement" field="e439-678c-a013-aacb" value="1">
+<repeats>
+<repeat field="selections" scope="cb43-2255-2607-fa89" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="504f-b4b8-4ba8-3cbe" repeats="1" roundUp="false" />
 </repeats>
 </modifier>
 </modifiers>
@@ -24422,6 +24775,11 @@ LIMITATIONS - Loyalist Raven Guard Detachments only. No units with the Immobile 
 <condition field="selections" scope="self" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3423-31db-99a4-83c8" type="atLeast" />
 </conditions>
 </modifier>
+<modifier type="increment" field="d894-636b-a008-9caf" value="1">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3423-31db-99a4-83c8" type="atLeast" />
+</conditions>
+</modifier>
 <modifier type="add" field="error" value="Raptor Squad is Loyalist only.">
 <conditions>
 <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="267b-12c2-839b-a93a" type="atLeast" />
@@ -24466,6 +24824,13 @@ LIMITATIONS - Loyalist Raven Guard Detachments only. No units with the Immobile 
 </profiles>
 <selectionEntryGroups>
 <selectionEntryGroup id="13ad-bf86-485a-89f9" name="Space Marine Armoury (max 50 pts)" hidden="false" collective="false" import="true">
+<modifiers>
+<modifier type="increment" field="bb64-4eb5-2027-4920" value="10">
+<repeats>
+<repeat field="selections" scope="8479-45d8-100a-fc73" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b06d-20bc-da5d-8472" repeats="1" roundUp="false" />
+</repeats>
+</modifier>
+</modifiers>
 <constraints>
 <constraint field="pts0-0000-0000-0001" scope="self" value="50" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="bb64-4eb5-2027-4920" type="max" />
 </constraints>
@@ -24609,17 +24974,25 @@ LIMITATIONS - Loyalist Raven Guard Detachments only. No units with the Immobile 
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
 </costs>
 </entryLink>
-<entryLink id="d164-c78d-c954-61c4" name="Fulcrum Hand Cannon" hidden="false" collective="false" import="true" targetId="c07f-75e6-1c51-291e" type="selectionEntry">
+</entryLinks>
+<selectionEntries>
+<selectionEntry id="b06d-20bc-da5d-8472" name="Fulcrum Hand Cannon" hidden="false" collective="false" import="true" type="upgrade">
+<infoLinks>
+<infoLink id="9c2b-83e7-724f-e624" name="Fulcrum Hand Cannon" hidden="false" targetId="3e90-a606-709a-6bfb" type="rule" />
+</infoLinks>
+<entryLinks>
+<entryLink id="2365-2b87-f9ca-fd91" name="Fulcrum Hand Cannon" hidden="false" collective="false" import="true" targetId="c07f-75e6-1c51-291e" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="39a3-eed8-f084-67d4" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a114-8bee-352e-7795" type="max" />
+</constraints>
+</entryLink>
+</entryLinks>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
-</entryLink>
-<entryLink id="70f0-911b-e0cc-d00f" name="Raven's Talons" hidden="false" collective="false" import="true" targetId="0541-8483-4e2a-a236" type="selectionEntry" sortIndex="105">
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="35" />
-</costs>
-</entryLink>
-</entryLinks>
+</selectionEntry>
+</selectionEntries>
 </selectionEntryGroup>
 <selectionEntryGroup id="e2b7-4b3f-a7c2-f8df" name="Replace Close Combat Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="b1ef-0240-1484-979d">
 <modifiers>
@@ -25718,12 +26091,25 @@ LIMITATIONS - Loyalist Raven Guard Detachments only. No units with the Immobile 
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
 </entryLink>
-<entryLink id="306a-064d-b68c-1935" name="Fulcrum Hand Cannon" hidden="false" collective="false" import="true" targetId="c07f-75e6-1c51-291e" type="selectionEntry">
+</entryLinks>
+<selectionEntries>
+<selectionEntry id="c4a1-b1ff-12e8-717b" name="Fulcrum Hand Cannon" hidden="false" collective="false" import="true" type="upgrade">
+<infoLinks>
+<infoLink id="fd82-d342-7355-4686" name="Fulcrum Hand Cannon" hidden="false" targetId="3e90-a606-709a-6bfb" type="rule" />
+</infoLinks>
+<entryLinks>
+<entryLink id="3a32-b246-bae0-1872" name="Fulcrum Hand Cannon" hidden="false" collective="false" import="true" targetId="c07f-75e6-1c51-291e" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2307-bb8f-7f24-90f2" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0066-3769-a4d8-6379" type="max" />
+</constraints>
+</entryLink>
+</entryLinks>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
-</entryLink>
-</entryLinks>
+</selectionEntry>
+</selectionEntries>
 </selectionEntryGroup>
 <selectionEntryGroup id="bb85-84ca-0eee-48e6" name="Space Marine Armoury (max 50 pts)" hidden="false" collective="false" import="true">
 <constraints>
@@ -26349,6 +26735,13 @@ LIMITATIONS - Loyalist Raven Guard Detachments only. No units with the Immobile 
 </profiles>
 <selectionEntryGroups>
 <selectionEntryGroup id="1b80-e8cf-0868-3cf3" name="Space Marine Armoury (max 50 pts)" hidden="false" collective="false" import="true">
+<modifiers>
+<modifier type="increment" field="61dd-d141-bf9d-347c" value="10">
+<repeats>
+<repeat field="selections" scope="3cf5-f3f1-ca4f-75c8" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="71a3-54e4-05c3-6745" repeats="1" roundUp="false" />
+</repeats>
+</modifier>
+</modifiers>
 <constraints>
 <constraint field="pts0-0000-0000-0001" scope="self" value="50" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="61dd-d141-bf9d-347c" type="max" />
 </constraints>
@@ -26358,24 +26751,6 @@ LIMITATIONS - Loyalist Raven Guard Detachments only. No units with the Immobile 
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="964f-1222-bd55-0e1f" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="833b-d63f-56e9-cc39" type="max" />
 </constraints>
-<selectionEntries>
-<selectionEntry id="ceba-d512-b999-aaba" name="Power Weapon" hidden="false" collective="false" import="true" type="upgrade">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3091-6f67-ac1a-059c" type="max" />
-</constraints>
-<entryLinks>
-<entryLink id="ce05-aed6-748c-ed49" name="Power Weapon" hidden="false" collective="false" import="true" targetId="fb4f-b267-7556-185d" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a0c2-1c40-dcde-8e49" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e62f-5b90-42f6-36a3" type="max" />
-</constraints>
-</entryLink>
-</entryLinks>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
-</costs>
-</selectionEntry>
-</selectionEntries>
 <entryLinks>
 <entryLink id="8e0b-fe0c-fcdf-c8f2" name="Bolt Pistol" hidden="false" collective="false" import="true" targetId="10e2-6917-e765-7495" type="selectionEntry" sortIndex="1" defaultAmount="1">
 <constraints>
@@ -26502,17 +26877,41 @@ LIMITATIONS - Loyalist Raven Guard Detachments only. No units with the Immobile 
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
 </costs>
 </entryLink>
-<entryLink id="2134-e585-8b12-7a87" name="Fulcrum Hand Cannon" hidden="false" collective="false" import="true" targetId="c07f-75e6-1c51-291e" type="selectionEntry">
+</entryLinks>
+<selectionEntries>
+<selectionEntry id="71a3-54e4-05c3-6745" name="Fulcrum Hand Cannon" hidden="false" collective="false" import="true" type="upgrade">
+<infoLinks>
+<infoLink id="903a-a1db-def0-b573" name="Fulcrum Hand Cannon" hidden="false" targetId="3e90-a606-709a-6bfb" type="rule" />
+</infoLinks>
+<entryLinks>
+<entryLink id="13cf-a605-113c-16c0" name="Fulcrum Hand Cannon" hidden="false" collective="false" import="true" targetId="c07f-75e6-1c51-291e" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a003-c791-c50b-df67" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cd2c-e3a2-f8ec-597d" type="max" />
+</constraints>
+</entryLink>
+</entryLinks>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
-</entryLink>
-<entryLink id="83d4-cd53-1fc2-2290" name="Raven's Talons" hidden="false" collective="false" import="true" targetId="0541-8483-4e2a-a236" type="selectionEntry" sortIndex="105">
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="35" />
-</costs>
+</selectionEntry>
+<selectionEntry id="ceba-d512-b999-aaba" name="Power Weapon" hidden="false" collective="false" import="true" type="upgrade">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3091-6f67-ac1a-059c" type="max" />
+</constraints>
+<entryLinks>
+<entryLink id="ce05-aed6-748c-ed49" name="Power Weapon" hidden="false" collective="false" import="true" targetId="fb4f-b267-7556-185d" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a0c2-1c40-dcde-8e49" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e62f-5b90-42f6-36a3" type="max" />
+</constraints>
 </entryLink>
 </entryLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
+</costs>
+</selectionEntry>
+</selectionEntries>
 </selectionEntryGroup>
 <selectionEntryGroup id="c0c9-c4e0-9bae-8aeb" name="Additional Wargear" hidden="false" collective="false" import="true">
 <entryLinks>
@@ -26689,6 +27088,13 @@ LIMITATIONS - Loyalist Raven Guard Detachments only. No units with the Immobile 
 </entryLinks>
 </selectionEntryGroup>
 <selectionEntryGroup id="6026-2cf5-5b19-9665" name="Space Marine Armoury (max 50 pts)" hidden="false" collective="false" import="true">
+<modifiers>
+<modifier type="increment" field="e852-a307-63d0-208f" value="10">
+<repeats>
+<repeat field="selections" scope="db3e-5ee6-6e99-e906" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2369-03b4-2d78-e95c" repeats="1" roundUp="false" />
+</repeats>
+</modifier>
+</modifiers>
 <constraints>
 <constraint field="pts0-0000-0000-0001" scope="self" value="50" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="e852-a307-63d0-208f" type="max" />
 </constraints>
@@ -26832,17 +27238,25 @@ LIMITATIONS - Loyalist Raven Guard Detachments only. No units with the Immobile 
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
 </costs>
 </entryLink>
-<entryLink id="f065-5e9a-fd3b-3442" name="Fulcrum Hand Cannon" hidden="false" collective="false" import="true" targetId="c07f-75e6-1c51-291e" type="selectionEntry">
+</entryLinks>
+<selectionEntries>
+<selectionEntry id="2369-03b4-2d78-e95c" name="Fulcrum Hand Cannon" hidden="false" collective="false" import="true" type="upgrade">
+<infoLinks>
+<infoLink id="5158-bc13-0aee-34e9" name="Fulcrum Hand Cannon" hidden="false" targetId="3e90-a606-709a-6bfb" type="rule" />
+</infoLinks>
+<entryLinks>
+<entryLink id="4f10-986e-c95b-04ab" name="Fulcrum Hand Cannon" hidden="false" collective="false" import="true" targetId="c07f-75e6-1c51-291e" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="400e-7bc4-311a-edbb" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2be6-be84-2646-98ba" type="max" />
+</constraints>
+</entryLink>
+</entryLinks>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
-</entryLink>
-<entryLink id="1dbe-176c-bd53-cace" name="Raven's Talons" hidden="false" collective="false" import="true" targetId="0541-8483-4e2a-a236" type="selectionEntry" sortIndex="105">
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="35" />
-</costs>
-</entryLink>
-</entryLinks>
+</selectionEntry>
+</selectionEntries>
 </selectionEntryGroup>
 <selectionEntryGroup id="d41f-9a71-df9b-06ac" name="Replace Chainsword" hidden="false" collective="false" import="true" defaultSelectionEntryId="9054-fd3a-7fc9-2f7a">
 <modifiers>
@@ -27230,6 +27644,13 @@ LIMITATIONS - Loyalist Raven Guard Detachments only. No units with the Immobile 
 </entryLinks>
 </selectionEntryGroup>
 <selectionEntryGroup id="350b-959c-7010-8cfb" name="Space Marine Armoury (max 50 pts)" hidden="false" collective="false" import="true">
+<modifiers>
+<modifier type="increment" field="3b28-a3d0-09f0-8d13" value="10">
+<repeats>
+<repeat field="selections" scope="85db-1131-a1ec-9829" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e24d-41d5-c232-904f" repeats="1" roundUp="false" />
+</repeats>
+</modifier>
+</modifiers>
 <constraints>
 <constraint field="pts0-0000-0000-0001" scope="self" value="50" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="3b28-a3d0-09f0-8d13" type="max" />
 </constraints>
@@ -27373,17 +27794,25 @@ LIMITATIONS - Loyalist Raven Guard Detachments only. No units with the Immobile 
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
 </costs>
 </entryLink>
-<entryLink id="86de-6a87-26fa-b4a5" name="Fulcrum Hand Cannon" hidden="false" collective="false" import="true" targetId="c07f-75e6-1c51-291e" type="selectionEntry">
+</entryLinks>
+<selectionEntries>
+<selectionEntry id="e24d-41d5-c232-904f" name="Fulcrum Hand Cannon" hidden="false" collective="false" import="true" type="upgrade">
+<infoLinks>
+<infoLink id="0557-ecc9-12bb-36f7" name="Fulcrum Hand Cannon" hidden="false" targetId="3e90-a606-709a-6bfb" type="rule" />
+</infoLinks>
+<entryLinks>
+<entryLink id="353e-7df9-5548-0106" name="Fulcrum Hand Cannon" hidden="false" collective="false" import="true" targetId="c07f-75e6-1c51-291e" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="120c-9ef9-1e72-07a1" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8aa8-3856-d2b0-c7df" type="max" />
+</constraints>
+</entryLink>
+</entryLinks>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
-</entryLink>
-<entryLink id="b307-67ff-ad1e-996d" name="Raven's Talons" hidden="false" collective="false" import="true" targetId="0541-8483-4e2a-a236" type="selectionEntry" sortIndex="105">
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="35" />
-</costs>
-</entryLink>
-</entryLinks>
+</selectionEntry>
+</selectionEntries>
 </selectionEntryGroup>
 <selectionEntryGroup id="e111-f89d-c731-4ba8" name="Replace Chainsword" hidden="false" collective="false" import="true" defaultSelectionEntryId="6914-756f-5a3a-dbe6">
 <modifiers>
@@ -28559,11 +28988,6 @@ LIMITATIONS - Loyalist Raven Guard Detachments only. No units with the Immobile 
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
 </costs>
 </entryLink>
-<entryLink id="42c2-0950-1e36-774c" name="Raven's Talons" hidden="false" collective="false" import="true" targetId="0541-8483-4e2a-a236" type="selectionEntry">
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="35" />
-</costs>
-</entryLink>
 <entryLink id="c99e-bac3-6b1d-fa9a" name="Infravisor" hidden="false" collective="false" import="true" targetId="fc77-ebca-c9c6-5b19" type="selectionEntry">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="99a3-a97e-1d5b-a479" type="max" />
@@ -28889,11 +29313,6 @@ LIMITATIONS - Loyalist Raven Guard Detachments only. No units with the Immobile 
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
-</costs>
-</entryLink>
-<entryLink id="87c2-025c-7780-ccb1" name="Raven's Talons" hidden="false" collective="false" import="true" targetId="0541-8483-4e2a-a236" type="selectionEntry">
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="35" />
 </costs>
 </entryLink>
 <entryLink id="7618-4305-9bdc-29d8" name="Infravisor" hidden="false" collective="false" import="true" targetId="fc77-ebca-c9c6-5b19" type="selectionEntry">
@@ -29268,11 +29687,6 @@ LIMITATIONS - Loyalist Raven Guard Detachments only. No units with the Immobile 
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
-</costs>
-</entryLink>
-<entryLink id="cf5f-982a-140a-1c19" name="Raven's Talons" hidden="false" collective="false" import="true" targetId="0541-8483-4e2a-a236" type="selectionEntry">
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="35" />
 </costs>
 </entryLink>
 <entryLink id="7260-f49c-8910-6911" name="Infravisor" hidden="false" collective="false" import="true" targetId="fc77-ebca-c9c6-5b19" type="selectionEntry">
@@ -29746,6 +30160,13 @@ LIMITATIONS - Loyalist Raven Guard Detachments only. No units with the Immobile 
 </profiles>
 <selectionEntryGroups>
 <selectionEntryGroup id="3ce0-b139-e92e-a579" name="Space Marine Armoury (max 50 pts)" hidden="false" collective="false" import="true">
+<modifiers>
+<modifier type="increment" field="c812-dc79-37e6-28df" value="10">
+<repeats>
+<repeat field="selections" scope="ca69-cfaf-d960-caae" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d253-c557-b83c-c6a9" repeats="1" roundUp="false" />
+</repeats>
+</modifier>
+</modifiers>
 <constraints>
 <constraint field="pts0-0000-0000-0001" scope="self" value="50" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="c812-dc79-37e6-28df" type="max" />
 </constraints>
@@ -29755,24 +30176,6 @@ LIMITATIONS - Loyalist Raven Guard Detachments only. No units with the Immobile 
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f6d2-b7e2-8b0e-9981" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="95f9-5067-cfa9-ffc1" type="max" />
 </constraints>
-<selectionEntries>
-<selectionEntry id="58d2-436e-13b4-fa12" name="Power Weapon" hidden="false" collective="false" import="true" type="upgrade">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1185-45b3-7162-09f0" type="max" />
-</constraints>
-<entryLinks>
-<entryLink id="9eb4-24f1-e138-8991" name="Power Weapon" hidden="false" collective="false" import="true" targetId="fb4f-b267-7556-185d" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a717-aeae-11fe-937b" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6e92-622a-0d53-948f" type="max" />
-</constraints>
-</entryLink>
-</entryLinks>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
-</costs>
-</selectionEntry>
-</selectionEntries>
 <entryLinks>
 <entryLink id="d4ce-ff23-066f-2ba9" name="Bolt Pistol" hidden="false" collective="false" import="true" targetId="10e2-6917-e765-7495" type="selectionEntry" sortIndex="1" defaultAmount="1">
 <constraints>
@@ -29899,17 +30302,41 @@ LIMITATIONS - Loyalist Raven Guard Detachments only. No units with the Immobile 
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
 </costs>
 </entryLink>
-<entryLink id="c08e-dab3-ecfa-67f7" name="Fulcrum Hand Cannon" hidden="false" collective="false" import="true" targetId="c07f-75e6-1c51-291e" type="selectionEntry">
+</entryLinks>
+<selectionEntries>
+<selectionEntry id="d253-c557-b83c-c6a9" name="Fulcrum Hand Cannon" hidden="false" collective="false" import="true" type="upgrade">
+<infoLinks>
+<infoLink id="030e-9669-a80c-2cbf" name="Fulcrum Hand Cannon" hidden="false" targetId="3e90-a606-709a-6bfb" type="rule" />
+</infoLinks>
+<entryLinks>
+<entryLink id="1f4a-876a-a3e5-e62c" name="Fulcrum Hand Cannon" hidden="false" collective="false" import="true" targetId="c07f-75e6-1c51-291e" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4bdf-6edf-22f0-e234" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b8cf-9065-72d7-2026" type="max" />
+</constraints>
+</entryLink>
+</entryLinks>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
-</entryLink>
-<entryLink id="54c3-7bc5-1e73-b090" name="Raven's Talons" hidden="false" collective="false" import="true" targetId="0541-8483-4e2a-a236" type="selectionEntry" sortIndex="105">
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="35" />
-</costs>
+</selectionEntry>
+<selectionEntry id="58d2-436e-13b4-fa12" name="Power Weapon" hidden="false" collective="false" import="true" type="upgrade">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1185-45b3-7162-09f0" type="max" />
+</constraints>
+<entryLinks>
+<entryLink id="9eb4-24f1-e138-8991" name="Power Weapon" hidden="false" collective="false" import="true" targetId="fb4f-b267-7556-185d" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a717-aeae-11fe-937b" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6e92-622a-0d53-948f" type="max" />
+</constraints>
 </entryLink>
 </entryLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
+</costs>
+</selectionEntry>
+</selectionEntries>
 </selectionEntryGroup>
 <selectionEntryGroup id="ea44-c506-13af-aab6" name="Additional Wargear" hidden="false" collective="false" import="true">
 <entryLinks>
@@ -30086,6 +30513,13 @@ LIMITATIONS - Loyalist Raven Guard Detachments only. No units with the Immobile 
 </entryLinks>
 </selectionEntryGroup>
 <selectionEntryGroup id="2b1a-9b52-4108-800e" name="Space Marine Armoury (max 50 pts)" hidden="false" collective="false" import="true">
+<modifiers>
+<modifier type="increment" field="a9d6-dd9a-f611-1b2b" value="10">
+<repeats>
+<repeat field="selections" scope="26a3-d98b-ece4-37aa" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed0c-0f35-eb20-2b1e" repeats="1" roundUp="false" />
+</repeats>
+</modifier>
+</modifiers>
 <constraints>
 <constraint field="pts0-0000-0000-0001" scope="self" value="50" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a9d6-dd9a-f611-1b2b" type="max" />
 </constraints>
@@ -30229,17 +30663,25 @@ LIMITATIONS - Loyalist Raven Guard Detachments only. No units with the Immobile 
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
 </costs>
 </entryLink>
-<entryLink id="3964-3e10-c8b0-e6cb" name="Fulcrum Hand Cannon" hidden="false" collective="false" import="true" targetId="c07f-75e6-1c51-291e" type="selectionEntry">
+</entryLinks>
+<selectionEntries>
+<selectionEntry id="ed0c-0f35-eb20-2b1e" name="Fulcrum Hand Cannon" hidden="false" collective="false" import="true" type="upgrade">
+<infoLinks>
+<infoLink id="3a99-4353-6c21-2b1b" name="Fulcrum Hand Cannon" hidden="false" targetId="3e90-a606-709a-6bfb" type="rule" />
+</infoLinks>
+<entryLinks>
+<entryLink id="7781-7948-7ce6-d6f2" name="Fulcrum Hand Cannon" hidden="false" collective="false" import="true" targetId="c07f-75e6-1c51-291e" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5466-2b68-5ef1-cf63" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="316f-a272-cf7d-7d3f" type="max" />
+</constraints>
+</entryLink>
+</entryLinks>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
-</entryLink>
-<entryLink id="00e2-12ab-649e-3a52" name="Raven's Talons" hidden="false" collective="false" import="true" targetId="0541-8483-4e2a-a236" type="selectionEntry" sortIndex="105">
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="35" />
-</costs>
-</entryLink>
-</entryLinks>
+</selectionEntry>
+</selectionEntries>
 </selectionEntryGroup>
 <selectionEntryGroup id="be43-9311-487a-e713" name="Replace Chainsword" hidden="false" collective="false" import="true" defaultSelectionEntryId="e40a-2671-3622-019e">
 <modifiers>
@@ -30627,6 +31069,13 @@ LIMITATIONS - Loyalist Raven Guard Detachments only. No units with the Immobile 
 </entryLinks>
 </selectionEntryGroup>
 <selectionEntryGroup id="9c23-6b8a-83ed-0aee" name="Space Marine Armoury (max 50 pts)" hidden="false" collective="false" import="true">
+<modifiers>
+<modifier type="increment" field="2ae0-57b8-298d-3b7e" value="10">
+<repeats>
+<repeat field="selections" scope="de57-92a7-dc01-ee51" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b46e-4d37-2f9e-3954" repeats="1" roundUp="false" />
+</repeats>
+</modifier>
+</modifiers>
 <constraints>
 <constraint field="pts0-0000-0000-0001" scope="self" value="50" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2ae0-57b8-298d-3b7e" type="max" />
 </constraints>
@@ -30770,17 +31219,25 @@ LIMITATIONS - Loyalist Raven Guard Detachments only. No units with the Immobile 
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
 </costs>
 </entryLink>
-<entryLink id="9b3b-8af2-a258-8bfe" name="Fulcrum Hand Cannon" hidden="false" collective="false" import="true" targetId="c07f-75e6-1c51-291e" type="selectionEntry">
+</entryLinks>
+<selectionEntries>
+<selectionEntry id="b46e-4d37-2f9e-3954" name="Fulcrum Hand Cannon" hidden="false" collective="false" import="true" type="upgrade">
+<infoLinks>
+<infoLink id="77ce-f187-9cb2-66ff" name="Fulcrum Hand Cannon" hidden="false" targetId="3e90-a606-709a-6bfb" type="rule" />
+</infoLinks>
+<entryLinks>
+<entryLink id="deb5-3b0d-412b-c0a8" name="Fulcrum Hand Cannon" hidden="false" collective="false" import="true" targetId="c07f-75e6-1c51-291e" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c7a2-71e2-65c9-7e16" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b6c5-056d-da5c-21d1" type="max" />
+</constraints>
+</entryLink>
+</entryLinks>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
-</entryLink>
-<entryLink id="814e-bcd9-190d-f0c8" name="Raven's Talons" hidden="false" collective="false" import="true" targetId="0541-8483-4e2a-a236" type="selectionEntry" sortIndex="105">
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="35" />
-</costs>
-</entryLink>
-</entryLinks>
+</selectionEntry>
+</selectionEntries>
 </selectionEntryGroup>
 <selectionEntryGroup id="3813-c2ec-2bde-c2c1" name="Replace Chainsword" hidden="false" collective="false" import="true" defaultSelectionEntryId="2f81-712e-1844-5d15">
 <modifiers>
@@ -31956,11 +32413,6 @@ LIMITATIONS - Loyalist Raven Guard Detachments only. No units with the Immobile 
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
 </costs>
 </entryLink>
-<entryLink id="ebcc-cd0d-290a-0215" name="Raven's Talons" hidden="false" collective="false" import="true" targetId="0541-8483-4e2a-a236" type="selectionEntry">
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="35" />
-</costs>
-</entryLink>
 <entryLink id="5159-eb50-f70a-76c2" name="Infravisor" hidden="false" collective="false" import="true" targetId="fc77-ebca-c9c6-5b19" type="selectionEntry">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c140-fc79-6c41-00b2" type="max" />
@@ -32286,11 +32738,6 @@ LIMITATIONS - Loyalist Raven Guard Detachments only. No units with the Immobile 
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
-</costs>
-</entryLink>
-<entryLink id="8abd-d579-b51b-b620" name="Raven's Talons" hidden="false" collective="false" import="true" targetId="0541-8483-4e2a-a236" type="selectionEntry">
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="35" />
 </costs>
 </entryLink>
 <entryLink id="00e1-a7be-6f8c-29b4" name="Infravisor" hidden="false" collective="false" import="true" targetId="fc77-ebca-c9c6-5b19" type="selectionEntry">
@@ -32665,11 +33112,6 @@ LIMITATIONS - Loyalist Raven Guard Detachments only. No units with the Immobile 
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
-</costs>
-</entryLink>
-<entryLink id="c328-7ac5-81ec-9d1f" name="Raven's Talons" hidden="false" collective="false" import="true" targetId="0541-8483-4e2a-a236" type="selectionEntry">
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="35" />
 </costs>
 </entryLink>
 <entryLink id="d0cd-05f5-68da-12e5" name="Infravisor" hidden="false" collective="false" import="true" targetId="fc77-ebca-c9c6-5b19" type="selectionEntry">
@@ -33856,6 +34298,13 @@ LIMITATIONS - Loyalist Raven Guard Detachments only. No units with the Immobile 
 </profiles>
 <selectionEntryGroups>
 <selectionEntryGroup id="fbea-73a0-d4cb-bf05" name="Space Marine Armoury (max 50 pts)" hidden="false" collective="false" import="true">
+<modifiers>
+<modifier type="increment" field="264c-3dc3-950e-a9b1" value="10">
+<repeats>
+<repeat field="selections" scope="f4d0-b1fc-727f-8fea" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9192-54e6-3a95-5f76" repeats="1" roundUp="false" />
+</repeats>
+</modifier>
+</modifiers>
 <constraints>
 <constraint field="pts0-0000-0000-0001" scope="self" value="50" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="264c-3dc3-950e-a9b1" type="max" />
 </constraints>
@@ -33865,21 +34314,6 @@ LIMITATIONS - Loyalist Raven Guard Detachments only. No units with the Immobile 
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="256c-3c57-2f66-feba" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a20a-32a2-7264-b5d9" type="max" />
 </constraints>
-<selectionEntries>
-<selectionEntry id="cef7-879a-1cb7-b7e8" name="Raven's Talons" hidden="false" collective="false" import="true" type="upgrade">
-<entryLinks>
-<entryLink id="716c-40e6-c0e1-a46f" name="Raven's Talons" hidden="false" collective="false" import="true" targetId="0541-8483-4e2a-a236" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="94d7-3da3-e497-262d" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8dcd-3e39-08cb-8300" type="max" />
-</constraints>
-</entryLink>
-</entryLinks>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="35" />
-</costs>
-</selectionEntry>
-</selectionEntries>
 <entryLinks>
 <entryLink id="c9ae-7093-0a7a-8b69" name="Bolt Pistol" hidden="false" collective="false" import="true" targetId="10e2-6917-e765-7495" type="selectionEntry" sortIndex="1" defaultAmount="1">
 <constraints>
@@ -34014,12 +34448,25 @@ LIMITATIONS - Loyalist Raven Guard Detachments only. No units with the Immobile 
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
 </costs>
 </entryLink>
-<entryLink id="25f5-daba-b5f9-5af0" name="Fulcrum Hand Cannon" hidden="false" collective="false" import="true" targetId="c07f-75e6-1c51-291e" type="selectionEntry">
+</entryLinks>
+<selectionEntries>
+<selectionEntry id="9192-54e6-3a95-5f76" name="Fulcrum Hand Cannon" hidden="false" collective="false" import="true" type="upgrade">
+<infoLinks>
+<infoLink id="ecd1-1f8a-1712-dc81" name="Fulcrum Hand Cannon" hidden="false" targetId="3e90-a606-709a-6bfb" type="rule" />
+</infoLinks>
+<entryLinks>
+<entryLink id="166e-e631-b6b1-5cd5" name="Fulcrum Hand Cannon" hidden="false" collective="false" import="true" targetId="c07f-75e6-1c51-291e" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a7e4-662f-276c-4fcb" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4d9e-3824-6df1-3bce" type="max" />
+</constraints>
+</entryLink>
+</entryLinks>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
-</entryLink>
-</entryLinks>
+</selectionEntry>
+</selectionEntries>
 </selectionEntryGroup>
 <selectionEntryGroup id="19e4-a3e1-cde5-f9da" name="Additional Wargear" hidden="false" collective="false" import="true">
 <entryLinks>
@@ -34379,7 +34826,7 @@ LIMITATIONS - Loyalist Raven Guard Detachments only. No units with the Immobile 
 </entryLink>
 </entryLinks>
 <costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="140" />
+<cost name="pts" typeId="pts0-0000-0000-0001" value="106" />
 </costs>
 </selectionEntry>
 </selectionEntries>
@@ -34486,6 +34933,13 @@ LIMITATIONS - Loyalist Raven Guard Detachments only. No units with the Immobile 
 </profiles>
 <selectionEntryGroups>
 <selectionEntryGroup id="2389-bfb6-934b-9359" name="Space Marine Armoury (max 50 pts)" hidden="false" collective="false" import="true">
+<modifiers>
+<modifier type="increment" field="3f2d-230e-df69-f260" value="10">
+<repeats>
+<repeat field="selections" scope="1379-8482-065d-e67c" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2f61-9540-53a4-778c" repeats="1" roundUp="false" />
+</repeats>
+</modifier>
+</modifiers>
 <constraints>
 <constraint field="pts0-0000-0000-0001" scope="self" value="50" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="3f2d-230e-df69-f260" type="max" />
 </constraints>
@@ -34495,24 +34949,6 @@ LIMITATIONS - Loyalist Raven Guard Detachments only. No units with the Immobile 
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3345-d5f9-a356-d702" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ad84-045a-0352-d182" type="max" />
 </constraints>
-<selectionEntries>
-<selectionEntry id="32f2-04af-2a23-aad7" name="Power Weapon" hidden="false" collective="false" import="true" type="upgrade">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8c71-583a-59bc-f39d" type="max" />
-</constraints>
-<entryLinks>
-<entryLink id="9f09-6503-fecf-ea74" name="Power Weapon" hidden="false" collective="false" import="true" targetId="fb4f-b267-7556-185d" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9790-7fbf-3273-d6ae" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="61b9-53a5-9076-83ba" type="max" />
-</constraints>
-</entryLink>
-</entryLinks>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
-</costs>
-</selectionEntry>
-</selectionEntries>
 <entryLinks>
 <entryLink id="d075-ea4b-d234-a33d" name="Bolt Pistol" hidden="false" collective="false" import="true" targetId="10e2-6917-e765-7495" type="selectionEntry" sortIndex="1" defaultAmount="1">
 <constraints>
@@ -34639,17 +35075,41 @@ LIMITATIONS - Loyalist Raven Guard Detachments only. No units with the Immobile 
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
 </costs>
 </entryLink>
-<entryLink id="994a-6226-c774-4afe" name="Fulcrum Hand Cannon" hidden="false" collective="false" import="true" targetId="c07f-75e6-1c51-291e" type="selectionEntry">
+</entryLinks>
+<selectionEntries>
+<selectionEntry id="2f61-9540-53a4-778c" name="Fulcrum Hand Cannon" hidden="false" collective="false" import="true" type="upgrade">
+<infoLinks>
+<infoLink id="a436-3714-f7b0-b2b9" name="Fulcrum Hand Cannon" hidden="false" targetId="3e90-a606-709a-6bfb" type="rule" />
+</infoLinks>
+<entryLinks>
+<entryLink id="4b11-9246-3428-34a5" name="Fulcrum Hand Cannon" hidden="false" collective="false" import="true" targetId="c07f-75e6-1c51-291e" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="376e-62af-70b2-85ce" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b2ad-f25a-b7d2-3808" type="max" />
+</constraints>
+</entryLink>
+</entryLinks>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
-</entryLink>
-<entryLink id="fff7-7f1b-d99c-b2e8" name="Raven's Talons" hidden="false" collective="false" import="true" targetId="0541-8483-4e2a-a236" type="selectionEntry" sortIndex="105">
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="35" />
-</costs>
+</selectionEntry>
+<selectionEntry id="32f2-04af-2a23-aad7" name="Power Weapon" hidden="false" collective="false" import="true" type="upgrade">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8c71-583a-59bc-f39d" type="max" />
+</constraints>
+<entryLinks>
+<entryLink id="9f09-6503-fecf-ea74" name="Power Weapon" hidden="false" collective="false" import="true" targetId="fb4f-b267-7556-185d" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9790-7fbf-3273-d6ae" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="61b9-53a5-9076-83ba" type="max" />
+</constraints>
 </entryLink>
 </entryLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
+</costs>
+</selectionEntry>
+</selectionEntries>
 </selectionEntryGroup>
 <selectionEntryGroup id="7970-1494-c8cf-39e2" name="Additional Wargear" hidden="false" collective="false" import="true">
 <entryLinks>
@@ -34826,6 +35286,13 @@ LIMITATIONS - Loyalist Raven Guard Detachments only. No units with the Immobile 
 </entryLinks>
 </selectionEntryGroup>
 <selectionEntryGroup id="5746-63de-244e-d86a" name="Space Marine Armoury (max 50 pts)" hidden="false" collective="false" import="true">
+<modifiers>
+<modifier type="increment" field="1ed6-f7fd-b70d-e772" value="10">
+<repeats>
+<repeat field="selections" scope="bb9c-0a19-e34b-a0b2" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ef36-ef9d-22b4-e828" repeats="1" roundUp="false" />
+</repeats>
+</modifier>
+</modifiers>
 <constraints>
 <constraint field="pts0-0000-0000-0001" scope="self" value="50" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1ed6-f7fd-b70d-e772" type="max" />
 </constraints>
@@ -34969,17 +35436,25 @@ LIMITATIONS - Loyalist Raven Guard Detachments only. No units with the Immobile 
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
 </costs>
 </entryLink>
-<entryLink id="f8bf-8541-a3e3-0039" name="Fulcrum Hand Cannon" hidden="false" collective="false" import="true" targetId="c07f-75e6-1c51-291e" type="selectionEntry">
+</entryLinks>
+<selectionEntries>
+<selectionEntry id="ef36-ef9d-22b4-e828" name="Fulcrum Hand Cannon" hidden="false" collective="false" import="true" type="upgrade">
+<infoLinks>
+<infoLink id="455c-5efb-ab9e-e42a" name="Fulcrum Hand Cannon" hidden="false" targetId="3e90-a606-709a-6bfb" type="rule" />
+</infoLinks>
+<entryLinks>
+<entryLink id="ddab-f9bb-09fb-087c" name="Fulcrum Hand Cannon" hidden="false" collective="false" import="true" targetId="c07f-75e6-1c51-291e" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3956-a8c7-e9f5-18e5" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8e6b-b195-9eaf-33cd" type="max" />
+</constraints>
+</entryLink>
+</entryLinks>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
-</entryLink>
-<entryLink id="c645-d8fe-4245-341b" name="Raven's Talons" hidden="false" collective="false" import="true" targetId="0541-8483-4e2a-a236" type="selectionEntry" sortIndex="105">
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="35" />
-</costs>
-</entryLink>
-</entryLinks>
+</selectionEntry>
+</selectionEntries>
 </selectionEntryGroup>
 <selectionEntryGroup id="ea33-8523-7d14-f409" name="Replace Chainsword" hidden="false" collective="false" import="true" defaultSelectionEntryId="7ff1-630f-485f-8c5b">
 <modifiers>
@@ -35367,6 +35842,13 @@ LIMITATIONS - Loyalist Raven Guard Detachments only. No units with the Immobile 
 </entryLinks>
 </selectionEntryGroup>
 <selectionEntryGroup id="e89a-4413-36d9-25ce" name="Space Marine Armoury (max 50 pts)" hidden="false" collective="false" import="true">
+<modifiers>
+<modifier type="increment" field="93bf-f02d-5360-839c" value="10">
+<repeats>
+<repeat field="selections" scope="16c0-51eb-728c-f101" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d864-e024-9401-c0e1" repeats="1" roundUp="false" />
+</repeats>
+</modifier>
+</modifiers>
 <constraints>
 <constraint field="pts0-0000-0000-0001" scope="self" value="50" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="93bf-f02d-5360-839c" type="max" />
 </constraints>
@@ -35510,17 +35992,25 @@ LIMITATIONS - Loyalist Raven Guard Detachments only. No units with the Immobile 
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
 </costs>
 </entryLink>
-<entryLink id="dd65-24af-0d67-90c1" name="Fulcrum Hand Cannon" hidden="false" collective="false" import="true" targetId="c07f-75e6-1c51-291e" type="selectionEntry">
+</entryLinks>
+<selectionEntries>
+<selectionEntry id="d864-e024-9401-c0e1" name="Fulcrum Hand Cannon" hidden="false" collective="false" import="true" type="upgrade">
+<infoLinks>
+<infoLink id="4545-e8d6-af32-dd84" name="Fulcrum Hand Cannon" hidden="false" targetId="3e90-a606-709a-6bfb" type="rule" />
+</infoLinks>
+<entryLinks>
+<entryLink id="e1dd-90bd-e496-c147" name="Fulcrum Hand Cannon" hidden="false" collective="false" import="true" targetId="c07f-75e6-1c51-291e" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8a4b-3c14-473a-bc12" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e09e-5f95-8e93-bc42" type="max" />
+</constraints>
+</entryLink>
+</entryLinks>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
-</entryLink>
-<entryLink id="59f0-dff3-25f5-73a4" name="Raven's Talons" hidden="false" collective="false" import="true" targetId="0541-8483-4e2a-a236" type="selectionEntry" sortIndex="105">
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="35" />
-</costs>
-</entryLink>
-</entryLinks>
+</selectionEntry>
+</selectionEntries>
 </selectionEntryGroup>
 <selectionEntryGroup id="fe4e-ac2b-7903-e1d6" name="Replace Chainsword" hidden="false" collective="false" import="true" defaultSelectionEntryId="e475-a4a5-509a-15ce">
 <modifiers>
@@ -36427,6 +36917,13 @@ LIMITATIONS - Loyalist Raven Guard Detachments only. No units with the Immobile 
 </profiles>
 <selectionEntryGroups>
 <selectionEntryGroup id="13d0-34c5-08d1-279e" name="Space Marine Armoury (max 50 pts)" hidden="false" collective="false" import="true">
+<modifiers>
+<modifier type="increment" field="b309-82ef-a606-c723" value="10">
+<repeats>
+<repeat field="selections" scope="93e5-2c8c-128c-4aa3" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6855-403c-ba1f-647d" repeats="1" roundUp="false" />
+</repeats>
+</modifier>
+</modifiers>
 <constraints>
 <constraint field="pts0-0000-0000-0001" scope="self" value="50" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="b309-82ef-a606-c723" type="max" />
 </constraints>
@@ -36436,24 +36933,6 @@ LIMITATIONS - Loyalist Raven Guard Detachments only. No units with the Immobile 
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9bad-dc60-0ae3-5afb" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1a34-ae7f-9f99-98b8" type="max" />
 </constraints>
-<selectionEntries>
-<selectionEntry id="bcda-d898-e929-798e" name="Power Weapon" hidden="false" collective="false" import="true" type="upgrade">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cf16-4ee5-87e5-518f" type="max" />
-</constraints>
-<entryLinks>
-<entryLink id="79d7-10f6-08a9-d415" name="Power Weapon" hidden="false" collective="false" import="true" targetId="fb4f-b267-7556-185d" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5068-c241-f376-8585" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9992-22c1-769b-dbda" type="max" />
-</constraints>
-</entryLink>
-</entryLinks>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
-</costs>
-</selectionEntry>
-</selectionEntries>
 <entryLinks>
 <entryLink id="3c0d-e1f7-094a-b928" name="Bolt Pistol" hidden="false" collective="false" import="true" targetId="10e2-6917-e765-7495" type="selectionEntry" sortIndex="1" defaultAmount="1">
 <constraints>
@@ -36580,17 +37059,41 @@ LIMITATIONS - Loyalist Raven Guard Detachments only. No units with the Immobile 
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
 </costs>
 </entryLink>
-<entryLink id="e3f6-1b7f-3bc9-3393" name="Fulcrum Hand Cannon" hidden="false" collective="false" import="true" targetId="c07f-75e6-1c51-291e" type="selectionEntry">
+</entryLinks>
+<selectionEntries>
+<selectionEntry id="6855-403c-ba1f-647d" name="Fulcrum Hand Cannon" hidden="false" collective="false" import="true" type="upgrade">
+<infoLinks>
+<infoLink id="06b5-373d-57ff-c54f" name="Fulcrum Hand Cannon" hidden="false" targetId="3e90-a606-709a-6bfb" type="rule" />
+</infoLinks>
+<entryLinks>
+<entryLink id="2f6c-7d86-550f-89f7" name="Fulcrum Hand Cannon" hidden="false" collective="false" import="true" targetId="c07f-75e6-1c51-291e" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aeea-7f46-1925-6872" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7159-cb6f-5e6d-fb35" type="max" />
+</constraints>
+</entryLink>
+</entryLinks>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
-</entryLink>
-<entryLink id="bcd6-870e-6a31-6a06" name="Raven's Talons" hidden="false" collective="false" import="true" targetId="0541-8483-4e2a-a236" type="selectionEntry" sortIndex="105">
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="35" />
-</costs>
+</selectionEntry>
+<selectionEntry id="bcda-d898-e929-798e" name="Power Weapon" hidden="false" collective="false" import="true" type="upgrade">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cf16-4ee5-87e5-518f" type="max" />
+</constraints>
+<entryLinks>
+<entryLink id="79d7-10f6-08a9-d415" name="Power Weapon" hidden="false" collective="false" import="true" targetId="fb4f-b267-7556-185d" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5068-c241-f376-8585" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9992-22c1-769b-dbda" type="max" />
+</constraints>
 </entryLink>
 </entryLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
+</costs>
+</selectionEntry>
+</selectionEntries>
 </selectionEntryGroup>
 <selectionEntryGroup id="18cf-004f-1d1c-2f1f" name="Additional Wargear" hidden="false" collective="false" import="true">
 <entryLinks>
@@ -36767,6 +37270,13 @@ LIMITATIONS - Loyalist Raven Guard Detachments only. No units with the Immobile 
 </entryLinks>
 </selectionEntryGroup>
 <selectionEntryGroup id="3d43-7643-a1f0-75b0" name="Space Marine Armoury (max 50 pts)" hidden="false" collective="false" import="true">
+<modifiers>
+<modifier type="increment" field="ff92-1358-7459-b3c3" value="10">
+<repeats>
+<repeat field="selections" scope="fce5-c604-5cee-cfe2" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1c61-036f-b0c8-793f" repeats="1" roundUp="false" />
+</repeats>
+</modifier>
+</modifiers>
 <constraints>
 <constraint field="pts0-0000-0000-0001" scope="self" value="50" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="ff92-1358-7459-b3c3" type="max" />
 </constraints>
@@ -36910,17 +37420,25 @@ LIMITATIONS - Loyalist Raven Guard Detachments only. No units with the Immobile 
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
 </costs>
 </entryLink>
-<entryLink id="d738-7de8-b4c5-29b4" name="Fulcrum Hand Cannon" hidden="false" collective="false" import="true" targetId="c07f-75e6-1c51-291e" type="selectionEntry">
+</entryLinks>
+<selectionEntries>
+<selectionEntry id="1c61-036f-b0c8-793f" name="Fulcrum Hand Cannon" hidden="false" collective="false" import="true" type="upgrade">
+<infoLinks>
+<infoLink id="c069-7b8d-3108-af60" name="Fulcrum Hand Cannon" hidden="false" targetId="3e90-a606-709a-6bfb" type="rule" />
+</infoLinks>
+<entryLinks>
+<entryLink id="2fdb-b870-41d7-4fa9" name="Fulcrum Hand Cannon" hidden="false" collective="false" import="true" targetId="c07f-75e6-1c51-291e" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5071-357e-4722-42c3" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b45a-8073-8f3e-6c4c" type="max" />
+</constraints>
+</entryLink>
+</entryLinks>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
-</entryLink>
-<entryLink id="1845-4190-cdef-e1ae" name="Raven's Talons" hidden="false" collective="false" import="true" targetId="0541-8483-4e2a-a236" type="selectionEntry" sortIndex="105">
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="35" />
-</costs>
-</entryLink>
-</entryLinks>
+</selectionEntry>
+</selectionEntries>
 </selectionEntryGroup>
 <selectionEntryGroup id="de78-e1c1-4e00-8400" name="Replace Chainsword" hidden="false" collective="false" import="true" defaultSelectionEntryId="42ea-a3b2-a486-3e77">
 <modifiers>
@@ -37308,6 +37826,13 @@ LIMITATIONS - Loyalist Raven Guard Detachments only. No units with the Immobile 
 </entryLinks>
 </selectionEntryGroup>
 <selectionEntryGroup id="6292-829d-8534-71d4" name="Space Marine Armoury (max 50 pts)" hidden="false" collective="false" import="true">
+<modifiers>
+<modifier type="increment" field="556a-eef1-8aa0-2696" value="10">
+<repeats>
+<repeat field="selections" scope="9ccc-cb84-cc0f-f681" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7798-25d7-d055-d523" repeats="1" roundUp="false" />
+</repeats>
+</modifier>
+</modifiers>
 <constraints>
 <constraint field="pts0-0000-0000-0001" scope="self" value="50" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="556a-eef1-8aa0-2696" type="max" />
 </constraints>
@@ -37451,17 +37976,25 @@ LIMITATIONS - Loyalist Raven Guard Detachments only. No units with the Immobile 
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
 </costs>
 </entryLink>
-<entryLink id="377c-cff4-ba05-6161" name="Fulcrum Hand Cannon" hidden="false" collective="false" import="true" targetId="c07f-75e6-1c51-291e" type="selectionEntry">
+</entryLinks>
+<selectionEntries>
+<selectionEntry id="7798-25d7-d055-d523" name="Fulcrum Hand Cannon" hidden="false" collective="false" import="true" type="upgrade">
+<infoLinks>
+<infoLink id="13de-8e39-f7dc-514e" name="Fulcrum Hand Cannon" hidden="false" targetId="3e90-a606-709a-6bfb" type="rule" />
+</infoLinks>
+<entryLinks>
+<entryLink id="dc15-9463-4ab9-920a" name="Fulcrum Hand Cannon" hidden="false" collective="false" import="true" targetId="c07f-75e6-1c51-291e" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fc0a-bf24-307c-d3d1" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2f63-e0af-1b12-5c6b" type="max" />
+</constraints>
+</entryLink>
+</entryLinks>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
-</entryLink>
-<entryLink id="8fa1-fe29-a285-b2af" name="Raven's Talons" hidden="false" collective="false" import="true" targetId="0541-8483-4e2a-a236" type="selectionEntry" sortIndex="105">
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="35" />
-</costs>
-</entryLink>
-</entryLinks>
+</selectionEntry>
+</selectionEntries>
 </selectionEntryGroup>
 <selectionEntryGroup id="0454-bc5a-94d7-99db" name="Replace Chainsword" hidden="false" collective="false" import="true" defaultSelectionEntryId="65cd-94b3-9d43-9d5e">
 <modifiers>
@@ -38357,12 +38890,25 @@ LIMITATIONS - Loyalist Raven Guard Detachments only. No units with the Immobile 
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
 </entryLink>
-<entryLink id="c52a-e6d8-851c-d4ed" name="Fulcrum Hand Cannon" hidden="false" collective="false" import="true" targetId="c07f-75e6-1c51-291e" type="selectionEntry">
+</entryLinks>
+<selectionEntries>
+<selectionEntry id="db61-c394-bc8e-0e62" name="Fulcrum Hand Cannon" hidden="false" collective="false" import="true" type="upgrade">
+<infoLinks>
+<infoLink id="1bcf-632c-1317-3d21" name="Fulcrum Hand Cannon" hidden="false" targetId="3e90-a606-709a-6bfb" type="rule" />
+</infoLinks>
+<entryLinks>
+<entryLink id="a1be-2079-4804-0b28" name="Fulcrum Hand Cannon" hidden="false" collective="false" import="true" targetId="c07f-75e6-1c51-291e" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c619-53c6-c6e0-1d90" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3f44-076b-fc41-5039" type="max" />
+</constraints>
+</entryLink>
+</entryLinks>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
-</entryLink>
-</entryLinks>
+</selectionEntry>
+</selectionEntries>
 </selectionEntryGroup>
 <selectionEntryGroup id="ae40-c725-f202-8ba2" name="Space Marine Armoury (max 50 pts)" hidden="false" collective="false" import="true">
 <constraints>
@@ -39257,11 +39803,6 @@ LIMITATIONS - Loyalist Raven Guard Detachments only. No units with the Immobile 
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
 </costs>
 </entryLink>
-<entryLink id="5a35-57c0-1443-3229" name="Raven's Talons" hidden="false" collective="false" import="true" targetId="0541-8483-4e2a-a236" type="selectionEntry">
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="35" />
-</costs>
-</entryLink>
 <entryLink id="ca80-2215-2bdb-0ca7" name="Infravisor" hidden="false" collective="false" import="true" targetId="fc77-ebca-c9c6-5b19" type="selectionEntry">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="73f9-3e2e-4c8a-6caf" type="max" />
@@ -39587,11 +40128,6 @@ LIMITATIONS - Loyalist Raven Guard Detachments only. No units with the Immobile 
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
-</costs>
-</entryLink>
-<entryLink id="11c5-2966-8810-968e" name="Raven's Talons" hidden="false" collective="false" import="true" targetId="0541-8483-4e2a-a236" type="selectionEntry">
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="35" />
 </costs>
 </entryLink>
 <entryLink id="413d-28d3-80f3-cb51" name="Infravisor" hidden="false" collective="false" import="true" targetId="fc77-ebca-c9c6-5b19" type="selectionEntry">
@@ -39966,11 +40502,6 @@ LIMITATIONS - Loyalist Raven Guard Detachments only. No units with the Immobile 
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
-</costs>
-</entryLink>
-<entryLink id="2438-60e6-52e9-fab8" name="Raven's Talons" hidden="false" collective="false" import="true" targetId="0541-8483-4e2a-a236" type="selectionEntry">
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="35" />
 </costs>
 </entryLink>
 <entryLink id="3bd8-1711-2392-eb7e" name="Infravisor" hidden="false" collective="false" import="true" targetId="fc77-ebca-c9c6-5b19" type="selectionEntry">
@@ -40392,6 +40923,13 @@ LIMITATIONS - Loyalist Raven Guard Detachments only. No units with the Immobile 
 </profiles>
 <selectionEntryGroups>
 <selectionEntryGroup id="0b76-e854-392b-956a" name="Space Marine Armoury (max 50 pts)" hidden="false" collective="false" import="true">
+<modifiers>
+<modifier type="increment" field="5ff7-85f6-4a53-7f67" value="10">
+<repeats>
+<repeat field="selections" scope="8116-4c51-de91-25d5" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3eb3-6666-7352-3027" repeats="1" roundUp="false" />
+</repeats>
+</modifier>
+</modifiers>
 <constraints>
 <constraint field="pts0-0000-0000-0001" scope="self" value="50" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="5ff7-85f6-4a53-7f67" type="max" />
 </constraints>
@@ -40401,21 +40939,6 @@ LIMITATIONS - Loyalist Raven Guard Detachments only. No units with the Immobile 
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8046-1cb0-c6de-7649" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c73d-ccf8-978d-2265" type="max" />
 </constraints>
-<selectionEntries>
-<selectionEntry id="d069-618d-f2cf-aefa" name="Raven's Talons" hidden="false" collective="false" import="true" type="upgrade">
-<entryLinks>
-<entryLink id="0e6c-9040-bbdf-0510" name="Raven's Talons" hidden="false" collective="false" import="true" targetId="0541-8483-4e2a-a236" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="999b-669d-d685-33f2" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b338-6efe-7b58-eb5a" type="max" />
-</constraints>
-</entryLink>
-</entryLinks>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="35" />
-</costs>
-</selectionEntry>
-</selectionEntries>
 <entryLinks>
 <entryLink id="47bc-aeef-772a-e74a" name="Bolt Pistol" hidden="false" collective="false" import="true" targetId="10e2-6917-e765-7495" type="selectionEntry" sortIndex="1" defaultAmount="1">
 <constraints>
@@ -40550,12 +41073,25 @@ LIMITATIONS - Loyalist Raven Guard Detachments only. No units with the Immobile 
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
 </costs>
 </entryLink>
-<entryLink id="e54a-5d2a-d872-5d7e" name="Fulcrum Hand Cannon" hidden="false" collective="false" import="true" targetId="c07f-75e6-1c51-291e" type="selectionEntry">
+</entryLinks>
+<selectionEntries>
+<selectionEntry id="3eb3-6666-7352-3027" name="Fulcrum Hand Cannon" hidden="false" collective="false" import="true" type="upgrade">
+<infoLinks>
+<infoLink id="c94e-7e6d-b303-0f6e" name="Fulcrum Hand Cannon" hidden="false" targetId="3e90-a606-709a-6bfb" type="rule" />
+</infoLinks>
+<entryLinks>
+<entryLink id="b287-9ce6-6709-3c0e" name="Fulcrum Hand Cannon" hidden="false" collective="false" import="true" targetId="c07f-75e6-1c51-291e" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5e41-d94b-e81c-bb1b" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="13d7-4463-0b75-7d48" type="max" />
+</constraints>
+</entryLink>
+</entryLinks>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
-</entryLink>
-</entryLinks>
+</selectionEntry>
+</selectionEntries>
 </selectionEntryGroup>
 <selectionEntryGroup id="b583-7058-3f4e-0aae" name="Additional Wargear" hidden="false" collective="false" import="true">
 <entryLinks>
@@ -40915,7 +41451,7 @@ LIMITATIONS - Loyalist Raven Guard Detachments only. No units with the Immobile 
 </entryLink>
 </entryLinks>
 <costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="140" />
+<cost name="pts" typeId="pts0-0000-0000-0001" value="106" />
 </costs>
 </selectionEntry>
 </selectionEntries>
@@ -40963,6 +41499,13 @@ LIMITATIONS - Loyalist Raven Guard Detachments only. No units with the Immobile 
 </profiles>
 <selectionEntryGroups>
 <selectionEntryGroup id="9dba-a54b-ffa0-f042" name="Space Marine Armoury (max 50 pts)" hidden="false" collective="false" import="true">
+<modifiers>
+<modifier type="increment" field="bafd-fd13-1d38-c505" value="10">
+<repeats>
+<repeat field="selections" scope="1d03-a670-149d-5cae" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1709-0a7e-8572-197c" repeats="1" roundUp="false" />
+</repeats>
+</modifier>
+</modifiers>
 <constraints>
 <constraint field="pts0-0000-0000-0001" scope="self" value="50" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="bafd-fd13-1d38-c505" type="max" />
 </constraints>
@@ -41106,17 +41649,25 @@ LIMITATIONS - Loyalist Raven Guard Detachments only. No units with the Immobile 
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
 </costs>
 </entryLink>
-<entryLink id="a20b-5e9b-eb05-980c" name="Fulcrum Hand Cannon" hidden="false" collective="false" import="true" targetId="c07f-75e6-1c51-291e" type="selectionEntry">
+</entryLinks>
+<selectionEntries>
+<selectionEntry id="1709-0a7e-8572-197c" name="Fulcrum Hand Cannon" hidden="false" collective="false" import="true" type="upgrade">
+<infoLinks>
+<infoLink id="da1b-4a1f-604f-4f5b" name="Fulcrum Hand Cannon" hidden="false" targetId="3e90-a606-709a-6bfb" type="rule" />
+</infoLinks>
+<entryLinks>
+<entryLink id="0706-b4a0-da2c-7b6d" name="Fulcrum Hand Cannon" hidden="false" collective="false" import="true" targetId="c07f-75e6-1c51-291e" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a323-2add-5f37-95dd" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3b19-f377-60c5-706b" type="max" />
+</constraints>
+</entryLink>
+</entryLinks>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
-</entryLink>
-<entryLink id="8402-fcd1-8f3c-9477" name="Raven's Talons" hidden="false" collective="false" import="true" targetId="0541-8483-4e2a-a236" type="selectionEntry" sortIndex="105">
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="35" />
-</costs>
-</entryLink>
-</entryLinks>
+</selectionEntry>
+</selectionEntries>
 </selectionEntryGroup>
 <selectionEntryGroup id="2cb2-cafe-a4c9-d7b4" name="Replace Close Combat Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="21ce-5ec7-c0dc-ed3f">
 <modifiers>
@@ -43768,13 +44319,16 @@ Afterwards the squad may not enter Overwatch, may not make Return Fire or Stand 
 <description>At the beginning of each Raven Guard turn, if at least one friendly Legion Reconnaissance Squad or Mor Deythan Squad has a surviving model on the battlefield and is not Falling Back, add +1 to all Raven Guard Reserve rolls made during that turn. This bonus is not cumulative.</description>
 </rule>
 <rule id="a3a0-dbff-422b-34d3" name="Shadow Masters" hidden="false">
-<description>Legion Reconnaissance Squads selected in a Raven Guard Detachment lose the Support Squad special rule and may therefore fulfil compulsory Troops selections normally. Legion Reconnaissance Squads and Independent Characters may buy Sniper Rifles for 2 points (instead of 5 points or any other price otherwise applicable).</description>
+<description>Legion Reconnaissance Squads selected in a Raven Guard Detachment lose the Support Squad special rule and may therefore fulfil compulsory Troops selections normally. Legion Reconnaissance Squads and Independent Characters may buy Sniper Rifles for 2 points (instead of 5 points or any other price otherwise applicable). An Independent Character's Sniper Rifle replaces his Bolter; if he has no Bolter it is bought in addition. Sniper Rifles do not count towards the Armoury points caps.</description>
 </rule>
 <rule id="e0f7-0453-7038-307a" name="Limited Vehicles" hidden="false">
 <description>A Raven Guard Detachment may never include more Heavy Support selections than Fast Attack selections. Dedicated Transports are ignored when determining this restriction.</description>
 </rule>
 <rule id="ddb6-c125-3575-8ff6" name="Raven's Talons" hidden="false">
-<description>Count as a pair of Rending Weapons: the bearer receives the normal +1 Attack for fighting with two close-combat weapons. Any model in a Raven Guard Legion Veteran Squad equipped with a Bolt Pistol and Chainsword may replace both with Raven's Talons for +7 points; a Raven Guard Character already equipped with a Pair of Lightning Claws may upgrade them to Raven's Talons for +5 points. Other units only where their entry permits.</description>
+<description>Count as a pair of Rending Weapons: the bearer receives the normal +1 Attack for fighting with two close-combat weapons. Any model in a Raven Guard Legion Veteran Squad equipped with a Bolt Pistol and Chainsword may replace both with Raven's Talons for +7 points. Characters equipped with a Pair of Lightning Claws have no access to Raven's Talons. Other units only where their entry permits.</description>
+</rule>
+<rule id="3e90-a606-709a-6bfb" name="Fulcrum Hand Cannon" hidden="false">
+<description>Any Raven Guard Independent Character or squad Sergeant with access to the Space Marine Armoury may replace one or two Bolt Pistols with one or two Fulcrum Hand Cannons for +10 points each; Destroyer Sergeants must replace both. A Raven Guard Moritat may replace either or both of his Bolt Pistols for +10 points each. Fulcrum Hand Cannons do not count towards the Armoury points caps.</description>
 </rule>
 <rule id="3bd9-ad80-02d8-2f20" name="Shroud Bombs" hidden="false">
 <description>Count as Defensive Grenades. An enemy unit attempting to charge a unit equipped with Shroud Bombs must first pass a Leadership test; if failed, the charge may not be attempted and the unit may not declare another charge that turn. Vehicles, models with the Daemon special rule and units containing a model with Night Vision are unaffected.</description>
@@ -43800,9 +44354,6 @@ Afterwards the squad may not enter Overwatch, may not make Return Fire or Stand 
 <rule id="6228-49ea-7cec-0c41" name="Unstable Creation" hidden="false">
 <description>Raptors may never fulfil compulsory Troops selections and may not be joined by an Independent Character other than Corax or Branne Nev.</description>
 </rule>
-<rule id="dc2e-bdbc-6062-82df" name="Dangerous Weaponry" hidden="false">
-<description>Kaedes Nex's special rule; no further text is given in Forces of the Legions (see the questions file).</description>
-</rule>
 <rule id="e2b1-6168-2e62-2011" name="The Raven's Due" hidden="false">
 <description>At the beginning of the battle, nominate one enemy Independent Character or unit-upgrade Character. Kaedes Nex may re-roll failed To Hit rolls against the nominated model in close combat. When Nex fires his Fulcrum Hand Cannons at a unit containing the nominated model, he may re-roll failed To Hit rolls. Unsaved Wounds caused by Nex's shooting may be allocated to the nominated model before other casualties, provided that model is within range and line of sight.</description>
 </rule>
@@ -43810,7 +44361,7 @@ Afterwards the squad may not enter Overwatch, may not make Return Fire or Stand 
 <description>If Kaedes Nex causes one or more unsaved Wounds upon his nominated target, that model's unit must immediately take a Pinning test.</description>
 </rule>
 <rule id="7a29-2248-9f4b-b9d8" name="Kaedes Nex" hidden="false">
-<description>Kaedes Nex may replace the Sergeant of one Raven Guard Legion Destroyer Squad (the normal Sergeant is removed). He remains part of the squad, is not an Independent Character and does not occupy a separate Force Organisation choice. No Independent Character may join Kaedes Nex's squad.</description>
+<description>Kaedes Nex may replace the Sergeant of one Raven Guard Legion Destroyer Squad (the normal Sergeant is removed; 135 points in place of a Destroyer: +115). He already has a Jump Pack and Krak Grenades and does not pay for the squad-wide upgrades for them. He remains part of the squad, is not an Independent Character and does not occupy a separate Force Organisation choice. No Independent Character may join Kaedes Nex's squad.</description>
 </rule>
 <rule id="4bae-af4f-7c99-2158" name="Master of Descent" hidden="false">
 <description>If Alvarex Maun begins the battle in Reserve embarked aboard a Drop Pod, Dreadclaw or Flyer Transport, Maun and that Transport arrive automatically during the first Raven Guard turn. No Reserve roll is required.</description>
@@ -43819,7 +44370,7 @@ Afterwards the squad may not enter Overwatch, may not make Return Fire or Stand 
 <description>Alvarex Maun may be accompanied by a Legion Command Squad. Maun and the Command Squad count as a single HQ selection.</description>
 </rule>
 <rule id="5a35-a8d9-df3a-4d11" name="Agapito Nev" hidden="false">
-<description>Agapito Nev may replace the Dark Fury Strike Leader of one Dark Fury Assault Squad (the normal Strike Leader is removed). He remains part of the squad and possesses all special rules belonging to the Dark Fury Assault Squad.</description>
+<description>Agapito Nev may replace the Dark Fury Strike Leader of one Dark Fury Assault Squad (the normal Strike Leader is removed; 140 points in place of a Dark Fury: +106). He remains part of the squad and possesses all special rules belonging to the Dark Fury Assault Squad.</description>
 </rule>
 <rule id="4c1b-7acf-4103-7171" name="Commander of the Talons" hidden="false">
 <description>An army containing Agapito Nev may include up to two Dark Fury Assault Squads rather than the normal 0-1. Agapito's squad may also re-roll failed Morale tests caused by shooting casualties.</description>
@@ -43828,13 +44379,13 @@ Afterwards the squad may not enter Overwatch, may not make Return Fire or Stand 
 <description>During an Assault phase in which Agapito and his squad charge, the squad may re-roll all failed To Hit rolls during the first round of that close combat.</description>
 </rule>
 <rule id="81b9-7caf-90ec-d68c" name="Commander of the Survivors" hidden="false">
-<description>If the army includes Branne Nev, one Raptor Squad may be selected without occupying an Elites choice. That unit still counts as an Elites unit for all other purposes and may not fulfil a compulsory selection. Branne Nev may join a Raptor Squad despite the restrictions of Unstable Creation.</description>
+<description>If the army includes Branne Nev, one Raptor Squad may be selected without occupying an Elites choice and does not count towards the Raptor Squad's 0-1 limit. That unit still counts as an Elites unit for all other purposes and may not fulfil a compulsory selection. Branne Nev may join a Raptor Squad despite the restrictions of Unstable Creation.</description>
 </rule>
 <rule id="601a-72ee-bf85-76b3" name="Hold Fast" hidden="false">
 <description>Branne Nev and any Raven Guard unit he has joined may re-roll failed Morale and Pinning tests.</description>
 </rule>
 <rule id="3851-6ba6-5012-02bc" name="Nykona Sharrowkyn" hidden="false">
-<description>Sharrowkyn may replace the Sergeant of one Raven Guard Legion Seeker Squad or Legion Reconnaissance Squad (the normal Sergeant is removed). He remains part of the squad, is not an Independent Character and does not occupy a separate Force Organisation choice.</description>
+<description>Sharrowkyn may replace the Sergeant of one Raven Guard Legion Seeker Squad or Legion Reconnaissance Squad (the normal Sergeant is removed; 125 points in place of a Seeker/Recon Marine: +105 / +111). He remains part of the squad, is not an Independent Character and does not occupy a separate Force Organisation choice.</description>
 </rule>
 <rule id="0df0-ffed-da21-3993" name="Ghost in the Dark" hidden="false">
 <description>While Sharrowkyn's unit is in cover, improve its Cover Save by 1, to a maximum of 3+.</description>

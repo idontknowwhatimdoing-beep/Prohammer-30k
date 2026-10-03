@@ -86,10 +86,13 @@ RULES = {
     "Weapon Mastery": ("Dynat may divide his close-combat attacks between his Power Weapon and Thunder Hammer in any "
                        "combination, including bonus Attacks for charging or two close-combat weapons."),
     "Hammerstrike Assault": ("Dynat may grant any unit he joins Teleportation Transponders for +10 points for the whole "
-                             "unit, even if it would normally not have access to them."),
+                             "unit, even if it would normally not have access to them. Dynat's own Teleportation "
+                             "Transponders are included in his cost."),
+    "Kraken Bolts (Headhunters)": (
+        "Headhunters may fire Kraken Bolts (or Banestrike Ammunition) from any Bolter, including the Bolter component of "
+        "a Combi-weapon. A model that replaces its Bolter with a special weapon loses access to Kraken Bolts."),
     "Lone Killer (Exodus)": ("Exodus may never join another unit and no Independent Character may join him. He may not "
                              "fulfil a compulsory HQ selection and may never be the army's Warlord."),
-    "Deadshot": "Special rule of Exodus; no text is given in Forces of the Legions (see the questions file).",
     "Execute the Mandate": ("If the enemy Warlord is slain by an attack made by Exodus, the Alpha Legion player receives "
                             "an additional 50 Victory Points."),
     "Delegatus (Autilon Skorr)": "Autilon Skorr counts as a Legion Delegatus Consul for all rules and restrictions.",
@@ -368,7 +371,8 @@ def headhunters():
             modifier("add", "category", gs.FOC_PLUS["Elites"], conds=[cond(tog, "self", "atLeast", 1)])]
     return entry(u, name, typ="unit", cost=160 - 4 * 32, cats=[foc(ELITES, "Elites", u)], mods=mods,
                  constraints=[force_limit(u)],
-                 infolinks=rules_links([LR, "Infiltrate", "Move Through Cover", "All as Planned", "Pre-emptive Strike"],
+                 infolinks=rules_links([LR, "Infiltrate", "Move Through Cover", "All as Planned", "Pre-emptive Strike",
+                                         "Kraken Bolts (Headhunters)"],
                                        key=u),
                  entries=[prime, hhs, toggle], groups=[*swaps, specials])
 
@@ -469,7 +473,7 @@ def characters(ctx):
     ex = named_character(LR, "Exodus", 110, (5, 6, 4, 4, 3, 5, 2, 9, "3+"),
                          ["Power Armour", "The Instrument", "Bolt Pistol", "Combat Blade", "Cameleoline",
                           "Frag Grenades", "Krak Grenades"],
-                         ["Infiltrate", "Move Through Cover", "Scout", "Lone Killer (Exodus)", "Deadshot",
+                         ["Infiltrate", "Move Through Cover", "Scout", "Lone Killer (Exodus)",
                           "Execute the Mandate"],
                          master=False, compulsory=False,
                          extra_groups=[take(x, "Options", [("Melta Bombs", 5), ("Power Dagger", 5),
@@ -554,8 +558,32 @@ def veteran_changes(ctx):
     add_to(vet, "selectionEntries", [banestrike_squad(u, u, not_eligible)])
 
 
+def sergeant_venom_spheres(ctx):
+    """Venom Spheres (+5): only true squad Sergeants (author's answer), not Champions or other upgrade characters."""
+    seen = set()
+    for root in all_entries(ctx):
+        for m in root.iter("selectionEntry"):
+            if m.get("type") != "model" or "Sergeant" not in m.get("name", ""):
+                continue
+            for g in m.iter("selectionEntryGroup"):
+                if g.get("name") != "Space Marine Armoury (max 50 pts)" or id(g) in seen:
+                    continue
+                seen.add(id(g))
+                links = g.find("entryLinks")
+                if links is None:
+                    links = el("entryLinks")
+                    g.append(links)
+                lid = uid("link", g.get("id"), "legion", "Venom Spheres")
+                links.append(link(lid, W("Venom Spheres"), "Venom Spheres", cost=5,
+                                  constraints=[constraint(uid(lid, "max"), "max", 1, auto=True)]))
+    return len(seen)
+
+
 def armoury(ctx):
-    add_armoury_items(ctx, [("Power Dagger", 5), ("Venom Spheres", 5)])
+    add_armoury_items(ctx, [("Power Dagger", 5), ("Venom Spheres", 5)], who=("praetor", "centurion"))
+    add_armoury_items(ctx, [("Power Dagger", 5)], who=("sergeants",))
+    n = sergeant_venom_spheres(ctx)
+    assert n, "no Sergeant armoury found for Venom Spheres"
     ic_wargear(ctx, [
         ("Banestrike Ammunition", 5, lambda u: [("group", all_of(*[lacks(W(n), u) for n in BOLTERS]))]),
         ("Teleportation Transponders", 10, lambda u: [("group", L.no_tda(u))]),
@@ -587,20 +615,14 @@ def rites(ctx):
                                                 "(Vigilator Consuls do not count).",
                                 conds=[cond(coils, "force", "atLeast", 1)],
                                 groups=[consul_limit_group(exclude=("Vigilator",))])])
-    # Autilon Skorr counts as a Delegatus Consul: with him, no Centurion may be a (non-Vigilator) Consul
-    skorr = uid("unit", "Autilon Skorr")
-    others = [cond(L.consul_id(c), "force", "atLeast", 1) for c in L.CONSULS if c != "Vigilator"]
-    add_mods(rites_e, [modifier("add", "error", "The Coils of the Hydra: Autilon Skorr counts as a Delegatus Consul, so "
-                                                "no Centurion may also be upgraded to a Consul (Vigilator excepted).",
-                                conds=[cond(coils, "force", "atLeast", 1), cond(skorr, "force", "atLeast", 1)],
-                                groups=[any_of(*others)])])
+    # Autilon Skorr does not count towards this Coils of the Hydra Consul limit (author's answer)
     ctx.add_rite("Headhunter Leviathal", RULES["Headhunter Leviathal"])
 
 
 def extend(ctx):
     ctx.legion_rules([LR, "Mutable Tactics", "Siege Specialists", "Martial Hubris", "Infiltration Network"])
     add_to(ctx.unit("Legion"), "selectionEntryGroups",
-           [required_choice("al-mutable", "Mutable Tactics", MUTABLE, required=False)])
+           [required_choice("al-mutable", "Mutable Tactics", MUTABLE)])
     seeker_changes(ctx)
     veteran_changes(ctx)
     chars = characters(ctx)     # after the Seeker changes (Ingo Pech's Seeker Squad is a copy)
