@@ -116,9 +116,38 @@
 <categoryEntry id="8418-f4f1-1a4a-b4cb" name="Force Org: -1 Heavy Support" hidden="false" />
 <categoryEntry id="59af-414a-8f3d-7862" name="Force Org: -1 Lords of War" hidden="false" />
 <categoryEntry id="cd12-f107-c732-426e" name="Force Org: -1 Fortification" hidden="false" />
+<categoryEntry id="1ac0-5a10-6fb8-54d9" name="Detachment: Primary" hidden="false" />
+<categoryEntry id="59d2-df4e-9331-c623" name="Detachment: Allied" hidden="false" />
+<categoryEntry id="052b-1879-f558-ec1e" name="Legio Custodes unit" hidden="false" />
+<categoryEntry id="640e-bd77-4dc7-426b" name="Companions of the Ten Thousand" hidden="false" />
+<categoryEntry id="e8b8-a1ed-f923-f5f0" name="Army: Dark Angels" hidden="false" />
+<categoryEntry id="2496-8d2f-d197-38e3" name="Army: Emperor's Children" hidden="false" />
+<categoryEntry id="39c6-3c01-fa18-06c9" name="Army: White Scars" hidden="false" />
+<categoryEntry id="556d-c3d0-04d2-7d84" name="Army: Space Wolves" hidden="false" />
+<categoryEntry id="5cb1-5da1-21e6-9aac" name="Army: Imperial Fists" hidden="false" />
+<categoryEntry id="9b96-a14e-c426-a89a" name="Army: Night Lords" hidden="false" />
+<categoryEntry id="b004-0491-54da-3417" name="Army: Blood Angels" hidden="false" />
+<categoryEntry id="bfa3-1f35-6e19-77f7" name="Army: Iron Hands" hidden="false" />
+<categoryEntry id="e523-9c36-14b9-fd3f" name="Army: World Eaters" hidden="false" />
+<categoryEntry id="968b-599f-dde4-3171" name="Army: Ultramarines" hidden="false" />
+<categoryEntry id="a2a5-786f-15c2-08f4" name="Army: Death Guard" hidden="false" />
+<categoryEntry id="29b3-86ab-6a94-52ed" name="Army: Thousand Sons" hidden="false" />
+<categoryEntry id="be81-4d72-9377-1017" name="Army: Sons of Horus" hidden="false" />
+<categoryEntry id="7b0f-b389-621b-1516" name="Army: Word Bearers" hidden="false" />
+<categoryEntry id="8fe7-c47e-3efd-6a7b" name="Army: Salamanders" hidden="false" />
+<categoryEntry id="b501-c616-2ef4-3e00" name="Army: Raven Guard" hidden="false" />
+<categoryEntry id="c945-f4d0-8682-31df" name="Army: Alpha Legion" hidden="false" />
+<categoryEntry id="2994-739c-d442-50f6" name="Army: Mechanicum" hidden="false" />
+<categoryEntry id="6e7a-38a2-1474-b8b5" name="Army: Exercitus Imperialis" hidden="false" />
+<categoryEntry id="c6af-4f7d-9492-fe1d" name="Army: Questoris Households" hidden="false" />
+<categoryEntry id="6365-0d47-9db3-920e" name="Army: Solar Auxilia" hidden="false" />
+<categoryEntry id="3cdb-3527-d761-7a58" name="Army: Daemons of the Ruinstorm" hidden="false" />
+<categoryEntry id="a1f3-eeb6-6d44-3d9d" name="Army: The Lost and the Damned" hidden="false" />
+<categoryEntry id="abf9-f7bd-7785-b044" name="Army: Iron Warriors" hidden="false" />
+<categoryEntry id="5584-3d43-1093-5cc2" name="Army: Talons of the Emperor" hidden="false" />
 </categoryEntries>
 <forceEntries>
-<forceEntry id="ecf1-4754-7376-85d6" name="Standard Force Organisation Chart" hidden="false">
+<forceEntry id="ecf1-4754-7376-85d6" name="Primary Detachment" hidden="false">
 <categoryLinks>
 <categoryLink id="ed7d-8849-1ace-6b66" name="Configuration" hidden="false" targetId="ba14-d0f1-f942-df54" primary="false" />
 <categoryLink id="3df7-98fa-df96-2a7b" name="HQ" hidden="false" targetId="cd54-54be-0cb1-3474" primary="false">
@@ -284,6 +313,176 @@
 </modifiers>
 <constraints>
 <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="70c8-c864-7fe1-307b" type="max" />
+</constraints>
+</categoryLink>
+</categoryLinks>
+</forceEntry>
+<forceEntry id="3604-ccf4-4a04-bc94" name="Allied Detachment" hidden="false">
+<categoryLinks>
+<categoryLink id="9248-e16d-48e0-4cbd" name="Configuration" hidden="false" targetId="ba14-d0f1-f942-df54" primary="false" />
+<categoryLink id="5491-0574-af3b-4dc3" name="HQ" hidden="false" targetId="cd54-54be-0cb1-3474" primary="false">
+<modifiers>
+<modifier type="increment" field="debe-0569-1c15-e960" value="1">
+<repeats>
+<repeat field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2142-52ae-4dcb-bfb1" repeats="1" roundUp="false" />
+</repeats>
+</modifier>
+<modifier type="decrement" field="debe-0569-1c15-e960" value="1">
+<repeats>
+<repeat field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b629-8ee5-33e0-9831" repeats="1" roundUp="false" />
+</repeats>
+</modifier>
+</modifiers>
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="101f-a4cf-76f6-3093" type="min" />
+<constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="debe-0569-1c15-e960" type="max" />
+</constraints>
+</categoryLink>
+<categoryLink id="b045-9bf4-9a3a-2f3f" name="Troops" hidden="false" targetId="adf0-dc10-89d4-f51e" primary="false">
+<modifiers>
+<modifier type="increment" field="cb53-0e18-ba83-3ac3" value="1">
+<repeats>
+<repeat field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2870-2a95-cac6-2507" repeats="1" roundUp="false" />
+</repeats>
+</modifier>
+<modifier type="decrement" field="cb53-0e18-ba83-3ac3" value="1">
+<repeats>
+<repeat field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8584-717d-d0c8-5cee" repeats="1" roundUp="false" />
+</repeats>
+</modifier>
+</modifiers>
+<constraints>
+<constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="db41-846f-527a-ad35" type="min" />
+<constraint field="selections" scope="parent" value="6" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cb53-0e18-ba83-3ac3" type="max" />
+</constraints>
+</categoryLink>
+<categoryLink id="23a5-471a-29ad-3924" name="Elites" hidden="false" targetId="6b19-97ac-7c40-0bdf" primary="false">
+<modifiers>
+<modifier type="increment" field="3f03-fa87-7ecb-1eb5" value="1">
+<repeats>
+<repeat field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0538-e2e9-8195-37a5" repeats="1" roundUp="false" />
+</repeats>
+</modifier>
+<modifier type="decrement" field="3f03-fa87-7ecb-1eb5" value="1">
+<repeats>
+<repeat field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d75e-69ed-4c76-871a" repeats="1" roundUp="false" />
+</repeats>
+</modifier>
+</modifiers>
+<constraints>
+<constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7d05-cf34-2430-3c79" type="min" />
+<constraint field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3f03-fa87-7ecb-1eb5" type="max" />
+</constraints>
+</categoryLink>
+<categoryLink id="ed0d-2b8d-3a1b-70ba" name="Fast Attack" hidden="false" targetId="5e5f-f512-de8c-9505" primary="false">
+<modifiers>
+<modifier type="set" field="edde-851f-d5b9-48b9" value="1">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8ed0-3d67-f51e-f8e3" type="atLeast" />
+</conditions>
+</modifier>
+<modifier type="increment" field="edde-851f-d5b9-48b9" value="1">
+<repeats>
+<repeat field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f74f-7be9-3cd6-9617" repeats="1" roundUp="false" />
+</repeats>
+</modifier>
+<modifier type="decrement" field="edde-851f-d5b9-48b9" value="1">
+<repeats>
+<repeat field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e489-2c4a-d6ff-4b13" repeats="1" roundUp="false" />
+</repeats>
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8ed0-3d67-f51e-f8e3" type="lessThan" />
+</conditions>
+</modifier>
+</modifiers>
+<constraints>
+<constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4f19-7b63-abb0-049e" type="min" />
+<constraint field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="edde-851f-d5b9-48b9" type="max" />
+</constraints>
+</categoryLink>
+<categoryLink id="3e12-4083-1316-303b" name="Heavy Support" hidden="false" targetId="a78f-9734-db0c-b938" primary="false">
+<modifiers>
+<modifier type="set" field="8be6-76f8-687f-43ed" value="1">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="006c-5d7a-c1ea-e594" type="atLeast" />
+</conditions>
+</modifier>
+<modifier type="increment" field="8be6-76f8-687f-43ed" value="1">
+<repeats>
+<repeat field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3ac4-d8d3-a5bd-f6c3" repeats="1" roundUp="false" />
+</repeats>
+</modifier>
+<modifier type="decrement" field="8be6-76f8-687f-43ed" value="1">
+<repeats>
+<repeat field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8418-f4f1-1a4a-b4cb" repeats="1" roundUp="false" />
+</repeats>
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="006c-5d7a-c1ea-e594" type="lessThan" />
+</conditions>
+</modifier>
+</modifiers>
+<constraints>
+<constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="27b3-c50a-ced1-7281" type="min" />
+<constraint field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8be6-76f8-687f-43ed" type="max" />
+</constraints>
+</categoryLink>
+<categoryLink id="d743-4591-e20a-a920" name="Lords of War" hidden="false" targetId="dbd2-622e-16d4-78fe" primary="false">
+<modifiers>
+<modifier type="increment" field="56c3-daea-438c-3b1a" value="1">
+<repeats>
+<repeat field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="825d-e6be-9d0b-357e" repeats="1" roundUp="false" />
+</repeats>
+</modifier>
+<modifier type="decrement" field="56c3-daea-438c-3b1a" value="1">
+<repeats>
+<repeat field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="59af-414a-8f3d-7862" repeats="1" roundUp="false" />
+</repeats>
+</modifier>
+</modifiers>
+<constraints>
+<constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="206b-ac0d-ed03-0f78" type="min" />
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="56c3-daea-438c-3b1a" type="max" />
+</constraints>
+</categoryLink>
+<categoryLink id="1d06-76a4-91aa-7e83" name="Fortification" hidden="false" targetId="1f6e-6456-710f-fbe7" primary="false">
+<modifiers>
+<modifier type="increment" field="3e95-9053-a47f-f66d" value="1">
+<repeats>
+<repeat field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="867b-1263-582d-a6cb" repeats="1" roundUp="false" />
+</repeats>
+</modifier>
+<modifier type="decrement" field="3e95-9053-a47f-f66d" value="1">
+<repeats>
+<repeat field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd12-f107-c732-426e" repeats="1" roundUp="false" />
+</repeats>
+</modifier>
+</modifiers>
+<constraints>
+<constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f4cb-59dd-16c7-4708" type="min" />
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3e95-9053-a47f-f66d" type="max" />
+</constraints>
+</categoryLink>
+<categoryLink id="d6b3-a644-547a-8ed0" name="Dedicated Transport" hidden="false" targetId="2c06-cce8-6863-d996" primary="false" />
+<categoryLink id="cbbc-2e0f-6942-6f4f" name="Compulsory HQ Eligible" hidden="false" targetId="e89b-053d-1bdc-4e2e" primary="false">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8c30-e384-31eb-c6fa" type="min" />
+</constraints>
+</categoryLink>
+<categoryLink id="d30b-56ab-8df0-4f9f" name="Compulsory Troops Eligible" hidden="false" targetId="071f-8316-97af-8fd6" primary="false">
+<constraints>
+<constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="62ce-dc4d-823b-a426" type="min" />
+</constraints>
+</categoryLink>
+<categoryLink id="c5f3-762c-d2dd-0f37" name="Master of the Legion" hidden="false" targetId="cf42-da2a-93a6-6913" primary="false">
+<modifiers>
+<modifier type="increment" field="a78e-1cc9-295d-4f9d" value="1">
+<repeats>
+<repeat field="pts0-0000-0000-0001" scope="roster" value="1000" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="any" repeats="1" roundUp="false" />
+</repeats>
+</modifier>
+</modifiers>
+<constraints>
+<constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a78e-1cc9-295d-4f9d" type="max" />
 </constraints>
 </categoryLink>
 </categoryLinks>
@@ -540,6 +739,29 @@ Feel No Pain (for 6th/7th edition codexes): As above, except the wound is ignore
 </rule>
 <rule id="b92c-c0d1-f76c-d5dd" name="Psyker" hidden="false">
 <description>The model is a Psyker of the Mastery Level shown and uses the ProHammer Classic psychic rules.</description>
+</rule>
+<rule id="1c48-878a-5341-3129" name="Multiple Detachments" hidden="false">
+<description>If both players agree before the game, players may use multiple detachments: one detachment must be designated as the first and primary detachment; each detachment may only take units from a single codex book unless a special rule stipulates otherwise; a second detachment may use a different codex book, thus allowing for that player's army to represent forces that are allied together for the battle. A second detachment of the same codex may be taken without prior permission, however all TROOP slots in the first detachment must first be filled. Each Detachment fulfils its own compulsory selections; an Allied Detachment may not fulfil the compulsory selections of the Primary Detachment.
+In New Recruit: add one force 'Primary Detachment' and one further force per Allied Detachment ('Allied Detachment', or a special allied chart of an army list) to the same roster.</description>
+</rule>
+<rule id="f0ff-5e4e-f6f7-99d4" name="Allies Matrix" hidden="false">
+<description>Allies Matrix - At the Height of the Heresy (Games in the Age of Darkness). A - Allies and Brothers, C - Conditional Alliance, S - Sworn Enemies. Apply the chart separately to every pair of detachments in the army. An alliance never overrides army-building restrictions, allegiance requirements or the specific wording of a unit, ability or item of wargear.</description>
+</rule>
+<rule id="68db-ef33-7e2e-ba86" name="Allies and Brothers" hidden="false">
+<description>These forces cooperate freely on the battlefield. Units from both detachments count as friendly units when determining eligible targets for beneficial abilities, wargear and psychic powers.
+Non-faction-specific effects may benefit allied units, including applicable Signum and Nuncio-vox effects. All normal targeting, range and usage restrictions still apply.
+Independent Characters may join allied units, and units may embark in allied transports, subject to the normal joining, capacity and transport restrictions.
+This relationship does not grant or transfer Legion traits, army-specific rules, Rites of War or other faction-specific bonuses. An effect restricted to a particular Legion, faction, unit or detachment retains that restriction.</description>
+</rule>
+<rule id="6893-eef7-4f4f-9a20" name="Conditional Alliance" hidden="false">
+<description>These forces fight alongside one another but operate independently. Units from both detachments count as friendly units for movement and combat and cannot deliberately attack one another.
+Neither detachment may benefit from abilities, wargear, psychic powers or other bonuses provided by the other detachment. This includes beneficial auras, Leadership effects and shared equipment effects.
+Independent Characters cannot join units from the other detachment, and units cannot embark in the other detachment’s transports.
+Each detachment retains its own rules and bonuses, applying them only within that detachment.</description>
+</rule>
+<rule id="7349-6d24-c1d6-2ef4" name="Sworn Enemies" hidden="false">
+<description>These forces cannot be included together in the same army. Neither may be selected as an allied detachment of the other.
+This prohibition also applies when a third faction is present: a permitted alliance with another detachment does not allow Sworn Enemies to fight together.</description>
 </rule>
 </sharedRules>
 </gameSystem>

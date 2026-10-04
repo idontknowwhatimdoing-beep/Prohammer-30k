@@ -102,8 +102,52 @@ EXTRA_CORE_RULES = [
 
 def core_rules():
     data = json.load(open(os.path.join(HERE, "data", "core_usr.json"), encoding="utf8"))
-    out = [(d["name"], d["text"]) for d in data] + EXTRA_CORE_RULES
+    import allies
+    out = [(d["name"], d["text"]) for d in data] + EXTRA_CORE_RULES + allies.EXTRA_RULES
     return [rule(core_rule_id(n), n, t) for n, t in out]
+
+
+def foc_links(variant=None):
+    """Category links of the Standard Force Organisation Chart. variant None keeps the ids of the first releases."""
+    def k(*p):
+        return uid(*p) if variant is None else uid(*p, variant)
+    key = "foc" if variant is None else "foc-" + variant
+    links = [category_link(CAT_CONFIG, "Configuration", key=key)]
+    limits = {"Fast Attack": CAT_LIMIT_FA, "Heavy Support": CAT_LIMIT_HS}
+    for name, mn, mx in FOC:
+        cl = category_link(cat(name), name, key=key)
+        mods = []
+        if name in limits:
+            mods.append(modifier("set", k("foc-max", name), 1, conds=[cond(limits[name], "force", "atLeast", 1)]))
+        # +1 / -1 per selection carrying the category (a Rite's 0-1 limit already caps FA/HS, so -1 only without it)
+        mods.append(modifier("increment", k("foc-max", name), 1,
+                             repeats=[repeat(FOC_PLUS[name], "force", 1, deep=True)]))
+        minus_conds = [cond(limits[name], "force", "lessThan", 1)] if name in limits else None
+        mods.append(modifier("decrement", k("foc-max", name), 1, conds=minus_conds,
+                             repeats=[repeat(FOC_MINUS[name], "force", 1, deep=True)]))
+        cl.append(wrap("modifiers", mods))
+        cl.append(wrap("constraints", [
+            constraint(k("foc-min", name), "min", mn),
+            constraint(k("foc-max", name), "max", mx)]))
+        links.append(cl)
+    links.append(category_link(CAT_TRANSPORT, "Dedicated Transport", key=key))
+
+    commander = category_link(CAT_COMMANDER, "Compulsory HQ Eligible", key=key)
+    commander.append(wrap("constraints", [constraint(k("foc-min", "commander"), "min", 1)]))
+    links.append(commander)
+
+    line = category_link(CAT_LINE, "Compulsory Troops Eligible", key=key)
+    line.append(wrap("constraints", [constraint(k("foc-min", "line"), "min", 2)]))
+    links.append(line)
+
+    # Master of the Legion: one per FULL 1,000 points in the army.
+    master = category_link(CAT_MASTER, "Master of the Legion", key=key)
+    mcid = k("foc-max", "master")
+    master.append(wrap("modifiers", [modifier(
+        "increment", mcid, 1, repeats=[repeat("any", "roster", 1000, field=PTS, deep=False)])]))
+    master.append(wrap("constraints", [constraint(mcid, "max", 0)]))
+    links.append(master)
+    return links
 
 
 def build():
@@ -129,49 +173,15 @@ def build():
 
     cats = [el("categoryEntry", {"id": cat(n), "name": n, "hidden": "false"}) for n, _, _ in FOC]
     cats += [el("categoryEntry", {"id": cid, "name": n, "hidden": "false"}) for n, cid in EXTRA_CATS]
+    import allies
+    cats += [el("categoryEntry", {"id": cid, "name": n, "hidden": "false"}) for n, cid in allies.army_categories()]
     root.append(wrap("categoryEntries", cats))
 
-    # Standard Force Organisation Chart (Legiones Astartes army list / ProHammer Classic)
-    links = [category_link(CAT_CONFIG, "Configuration", key="foc")]
-    limits = {"Fast Attack": CAT_LIMIT_FA, "Heavy Support": CAT_LIMIT_HS}
-    for name, mn, mx in FOC:
-        cl = category_link(cat(name), name, key="foc")
-        mods = []
-        if name in limits:
-            mods.append(modifier("set", uid("foc-max", name), 1, conds=[cond(limits[name], "force", "atLeast", 1)]))
-        # +1 / -1 per selection carrying the category (a Rite's 0-1 limit already caps FA/HS, so -1 only without it)
-        mods.append(modifier("increment", uid("foc-max", name), 1,
-                             repeats=[repeat(FOC_PLUS[name], "force", 1, deep=True)]))
-        minus_conds = [cond(limits[name], "force", "lessThan", 1)] if name in limits else None
-        mods.append(modifier("decrement", uid("foc-max", name), 1, conds=minus_conds,
-                             repeats=[repeat(FOC_MINUS[name], "force", 1, deep=True)]))
-        if mods:
-            cl.append(wrap("modifiers", mods))
-        cl.append(wrap("constraints", [
-            constraint(uid("foc-min", name), "min", mn),
-            constraint(uid("foc-max", name), "max", mx)]))
-        links.append(cl)
-    links.append(category_link(CAT_TRANSPORT, "Dedicated Transport", key="foc"))
-
-    commander = category_link(CAT_COMMANDER, "Compulsory HQ Eligible", key="foc")
-    commander.append(wrap("constraints", [constraint(uid("foc-min", "commander"), "min", 1)]))
-    links.append(commander)
-
-    line = category_link(CAT_LINE, "Compulsory Troops Eligible", key="foc")
-    line.append(wrap("constraints", [constraint(uid("foc-min", "line"), "min", 2)]))
-    links.append(line)
-
-    # Master of the Legion: one per FULL 1,000 points in the army.
-    master = category_link(CAT_MASTER, "Master of the Legion", key="foc")
-    mcid = uid("foc-max", "master")
-    master.append(wrap("modifiers", [modifier(
-        "increment", mcid, 1, repeats=[repeat("any", "roster", 1000, field=PTS, deep=False)])]))
-    master.append(wrap("constraints", [constraint(mcid, "max", 0)]))
-    links.append(master)
-
-    force = el("forceEntry", {"id": uid("force", "standard"),
-                              "name": "Standard Force Organisation Chart", "hidden": "false"},
-               [wrap("categoryLinks", links)])
-    root.append(wrap("forceEntries", [force]))
+    # Primary Detachment (the Standard Force Organisation Chart; id kept from the first releases) and the Allied
+    # Detachment (the same chart, its own ids) - see allies.py
+    import allies
+    primary = el("forceEntry", {"id": uid("force", "standard"), "name": "Primary Detachment", "hidden": "false"},
+                 [wrap("categoryLinks", foc_links())])
+    root.append(wrap("forceEntries", [primary, allies.allied_force_entry(foc_links("allied"))]))
     root.append(wrap("sharedRules", core_rules()))
     return root

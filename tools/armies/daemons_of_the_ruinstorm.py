@@ -609,6 +609,7 @@ RUINSTORM_POWERS = {
 }
 
 DOM = {}          # dominion name -> config option id (set in build)
+COVENANT_FORCE = None
 LORD_CAT = None   # category of the Ruinstorm Daemon Lord (barred from the Allied Detachment)
 
 
@@ -993,7 +994,7 @@ def named_characters():
 def allied_force():
     links = [category_link(gs.CAT_CONFIG, "Configuration", key=k("allied"))]
     for name, mn, mx in [("HQ", 1, 1), ("Troops", 1, 2), ("Elites", 0, 1), ("Fast Attack", 0, 1),
-                         ("Heavy Support", 0, 1)]:
+                         ("Heavy Support", 0, 1), ("Lords of War", 0, 0), ("Fortification", 0, 0)]:
         cl = category_link(gs.cat(name), name, key=k("allied"))
         cl.append(wrap("constraints", [constraint(k("allied", "min", name), "min", mn),
                                        constraint(k("allied", "max", name), "max", mx)]))
@@ -1007,6 +1008,22 @@ def allied_force():
     links.append(cl)
     return el("forceEntry", {"id": k("force", "allied"), "name": "Ruinstorm Allied Detachment", "hidden": "false"},
               [wrap("categoryLinks", links)])
+
+
+def covenant_force():
+    """Word Bearers: Daemons of the Ruinstorm Covenant Detachment (Forces of the Legions, Daemonic Covenant)."""
+    key = k("covenant")
+    links = [category_link(gs.CAT_CONFIG, "Configuration", key=key)]
+    for name, mn, mx in [("HQ", 0, 1), ("Troops", 1, 3), ("Elites", 0, 1), ("Fast Attack", 0, 1),
+                         ("Heavy Support", 0, 1), ("Lords of War", 0, 0), ("Fortification", 0, 0)]:
+        cl = category_link(gs.cat(name), name, key=key)
+        cons = [constraint(k("covenant", "max", name), "max", mx)]
+        if mn:
+            cons.insert(0, constraint(k("covenant", "min", name), "min", mn))
+        cl.append(wrap("constraints", cons))
+        links.append(cl)
+    return el("forceEntry", {"id": COVENANT_FORCE, "name": "Daemons of the Ruinstorm Covenant Detachment (Word Bearers)",
+                             "hidden": "false"}, [wrap("categoryLinks", links)])
 
 
 def traitor_only():
@@ -1023,13 +1040,28 @@ def traitor_only():
         g.set("defaultSelectionEntryId", L.TRAITOR)
     add_mods(e, [error_if("A Daemons of the Ruinstorm Detachment (including a Ruinstorm Allied Detachment) may only be "
                           "included in a Traitor army.", [cond(L.LOYALIST, "roster", "atLeast", 1)])])
+    # Covenant Detachment: only in a (Traitor) Word Bearers army; it is that army's only Allied Detachment
+    import allies
+    in_cov = cond(COVENANT_FORCE, "force", "instanceOf", 0, deep=False)
+    add_mods(e, [
+        modifier("add", "error", "A Daemons of the Ruinstorm Covenant Detachment may only be included in a Traitor Word "
+                                 "Bearers army.",
+                 conds=[in_cov, cond(allies.army_cat("Legiones Astartes - Word Bearers"), "roster", "lessThan", 1)]),
+        modifier("add", "error", "The Covenant Detachment counts as the army's Allied Detachment: a Word Bearers army may "
+                                 "not include another Allied Detachment unless a rule specifically states otherwise.",
+                 conds=[in_cov, cond(allies.CAT_ALLIED, "roster", "atLeast", 2)]),
+        modifier("add", "error", "A Word Bearers army may include only one Daemons of the Ruinstorm Allied Detachment.",
+                 conds=[cond(allies.army_cat("Legiones Astartes - Word Bearers"), "roster", "atLeast", 1),
+                        cond(allies.CAT_ALLIED, "roster", "atLeast", 1),
+                        cond(allies.army_cat("Daemons of the Ruinstorm"), "roster", "atLeast", 2)])])
     return e
 
 
 # ================================================================== build
 def build():
-    global LORD_CAT, KABANDHA
+    global LORD_CAT, KABANDHA, COVENANT_FORCE
     start(ARMY)
+    COVENANT_FORCE = k("force", "covenant")
     register_data(rules=RULES, weapons=WEAPONS, multi_profile=MULTI, weapon_rules=WEAPON_RULES, wargear=WARGEAR)
     PSY.POWERS.update(RUINSTORM_POWERS)
     LORD_CAT = k("cat", "Ruinstorm Daemon Lord")
@@ -1056,7 +1088,7 @@ def build():
         greater_daemon_beasts(), behemoth(),
         arch_daemon(), *named_characters(),
     ]
-    root = catalogue(ARMY, units, [retinue], force_entries=[allied_force()])
+    root = catalogue(ARMY, units, [retinue], force_entries=[allied_force(), covenant_force()])
     # the Daemon Lord category (used by the Allied Detachment to bar the Daemon Lord)
     cats = wrap("categoryEntries", [el("categoryEntry", {"id": LORD_CAT, "name": "Ruinstorm Daemon Lord",
                                                          "hidden": "false"})])

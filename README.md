@@ -36,6 +36,15 @@ Open points that still need the author's decision are collected per army in `too
 - Rites of War: needs a Master of the Legion; changes which units are Troops and which count as compulsory Troops; 0-1 Fast Attack / Heavy Support limits; extra transport and wargear options; checks for Tactical Company, Recon Company, Sky Hunter Phalanx and Fury of the Ancients limitations
 - Armoury points caps (100 pts for Praetor / Centurion, 50 pts for Sergeants and squad characters)
 
+## Allied Detachments
+
+Add a force **Primary Detachment** for your main army, then one more force per Allied Detachment to the same roster
+(**Allied Detachment**, or an army list's own chart: Ruinstorm Allied Detachment, Daemons of the Ruinstorm Covenant
+Detachment, Agents of the Sigillite). Each detachment picks its own army list and fills its own compulsory slots.
+The builder checks the Allies Matrix of *Games in the Age of Darkness* (Sworn Enemies may not share an army), one
+Primary Detachment, no Loyalist + Traitor mix, Primarchs only in the Primary, and Rites of War / army rules that forbid
+allies. Each army's Allegiance entry shows its row of the matrix.
+
 ## Editing the data
 
 The `.gst` / `.cat` files are generated from `tools/` (Legion modules in `tools/legions/`, other armies in

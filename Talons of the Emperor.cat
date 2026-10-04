@@ -66,6 +66,70 @@
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8e90-9671-1bc6-603f" type="atLeast" />
 </conditions>
 </modifier>
+<modifier type="add" field="category" value="1ac0-5a10-6fb8-54d9">
+<conditions>
+<condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ecf1-4754-7376-85d6" type="instanceOf" />
+</conditions>
+</modifier>
+<modifier type="add" field="category" value="59d2-df4e-9331-c623">
+<conditionGroups>
+<condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3604-ccf4-4a04-bc94" type="instanceOf" />
+</conditionGroups>
+</modifier>
+<modifier type="add" field="error" value="An army has exactly one Primary Detachment.">
+<conditions>
+<condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ecf1-4754-7376-85d6" type="instanceOf" />
+<condition field="selections" scope="roster" value="2" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="atLeast" />
+</conditions>
+</modifier>
+<modifier type="add" field="error" value="An Allied Detachment needs a Primary Detachment in the same army (add a 'Primary Detachment' force first).">
+<conditions>
+<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+<conditionGroups>
+<condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3604-ccf4-4a04-bc94" type="instanceOf" />
+</conditionGroups>
+</modifier>
+<modifier type="add" field="error" value="Loyalist and Traitor Detachments may not be part of the same army (an alliance never overrides allegiance requirements).">
+<conditions>
+<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="af50-de01-cc93-f43e" type="atLeast" />
+<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="267b-12c2-839b-a93a" type="atLeast" />
+</conditions>
+</modifier>
+<modifier type="add" field="error" value="A second Detachment from the same army list may only be taken once all Troops slots of the Primary Detachment are filled.">
+<conditions>
+<condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ecf1-4754-7376-85d6" type="instanceOf" />
+<condition field="selections" scope="roster" value="2" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5584-3d43-1093-5cc2" type="atLeast" />
+<condition field="selections" scope="force" value="6" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="adf0-dc10-89d4-f51e" type="lessThan" />
+</conditions>
+</modifier>
+<modifier type="add" field="error" value="A Primarch may only be selected as part of the army's Primary Detachment, never an Allied Detachment.">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ef4e-f5b8-029c-6e3f" type="atLeast" />
+</conditions>
+<conditionGroups>
+<condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3604-ccf4-4a04-bc94" type="instanceOf" />
+</conditionGroups>
+</modifier>
+<modifier type="add" field="error" value="The Emperor's Talons: an army whose Primary Detachment contains Legio Custodes units may not include an Allied Detachment (except an Exercitus Imperialis Allied Contingent with Companions of the Ten Thousand).">
+<conditions>
+<condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ecf1-4754-7376-85d6" type="instanceOf" />
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="052b-1879-f558-ec1e" type="atLeast" />
+</conditions>
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="roster" value="2" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="59d2-df4e-9331-c623" type="atLeast" />
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="59d2-df4e-9331-c623" type="atLeast" />
+<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="640e-bd77-4dc7-426b" type="lessThan" />
+</conditions>
+</conditionGroup>
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
 </modifiers>
 <constraints>
 <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="9cc7-271d-cd0c-ee34" type="min" />
@@ -79,6 +143,7 @@
 </infoLinks>
 <categoryLinks>
 <categoryLink id="816e-ac90-8793-d76b" name="Configuration" hidden="false" targetId="ba14-d0f1-f942-df54" primary="true" />
+<categoryLink id="75ed-6486-745f-f643" name="Army: Talons of the Emperor" hidden="false" targetId="5584-3d43-1093-5cc2" primary="false" />
 </categoryLinks>
 <selectionEntryGroups>
 <selectionEntryGroup id="60c9-40ed-16e7-2eb5" name="Allegiance" hidden="false" collective="false" import="true" defaultSelectionEntryId="af50-de01-cc93-f43e">
@@ -109,6 +174,11 @@
 </selectionEntries>
 </selectionEntryGroup>
 </selectionEntryGroups>
+<rules>
+<rule id="a2ca-842f-f02f-3962" name="Allies Matrix: Talons of the Emperor" hidden="false">
+<description>Talons of the Emperor has no row in the Allies Matrix (Games in the Age of Darkness); no alliance restrictions are checked for it. Apply the chart separately to every pair of detachments in the army. An alliance never overrides army-building restrictions, allegiance requirements or the specific wording of a unit, ability or item of wargear.</description>
+</rule>
+</rules>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
 </costs>
@@ -125,6 +195,7 @@
 <categoryLinks>
 <categoryLink id="b6d3-20a5-86d7-6937" name="HQ" hidden="false" targetId="cd54-54be-0cb1-3474" primary="true" />
 <categoryLink id="9890-d7d5-601d-058c" name="Compulsory HQ Eligible" hidden="false" targetId="e89b-053d-1bdc-4e2e" primary="false" />
+<categoryLink id="6a16-297f-f287-0431" name="Legio Custodes unit" hidden="false" targetId="052b-1879-f558-ec1e" primary="false" />
 </categoryLinks>
 <selectionEntries>
 <selectionEntry id="f45b-2595-2752-c654" name="Talon Master" hidden="false" collective="false" import="true" type="model">
@@ -347,6 +418,7 @@
 <categoryLinks>
 <categoryLink id="6878-a244-fd1d-c5d6" name="HQ" hidden="false" targetId="cd54-54be-0cb1-3474" primary="true" />
 <categoryLink id="9031-f4b1-4dac-e0f1" name="Compulsory HQ Eligible" hidden="false" targetId="e89b-053d-1bdc-4e2e" primary="false" />
+<categoryLink id="1ad2-ec0d-7e0e-89f1" name="Legio Custodes unit" hidden="false" targetId="052b-1879-f558-ec1e" primary="false" />
 </categoryLinks>
 <selectionEntries>
 <selectionEntry id="7955-34d3-e70d-9a9d" name="Shield-Captain" hidden="false" collective="false" import="true" type="model">
@@ -573,6 +645,7 @@
 <categoryLinks>
 <categoryLink id="a203-5a17-b2aa-8e92" name="HQ" hidden="false" targetId="cd54-54be-0cb1-3474" primary="true" />
 <categoryLink id="4464-eaa1-710e-59b5" name="Compulsory HQ Eligible" hidden="false" targetId="e89b-053d-1bdc-4e2e" primary="false" />
+<categoryLink id="c6be-f71e-f41f-112d" name="Legio Custodes unit" hidden="false" targetId="052b-1879-f558-ec1e" primary="false" />
 </categoryLinks>
 <selectionEntries>
 <selectionEntry id="5c30-132c-f440-83c6" name="Constantin Valdor" hidden="false" collective="false" import="true" type="model">
@@ -1592,6 +1665,7 @@
 <categoryLinks>
 <categoryLink id="4847-5b0f-b0d2-8c1f" name="Troops" hidden="false" targetId="adf0-dc10-89d4-f51e" primary="true" />
 <categoryLink id="b0dd-d07f-f683-bc52" name="Compulsory Troops Eligible" hidden="false" targetId="071f-8316-97af-8fd6" primary="false" />
+<categoryLink id="e7e0-6301-1a42-d294" name="Legio Custodes unit" hidden="false" targetId="052b-1879-f558-ec1e" primary="false" />
 </categoryLinks>
 <selectionEntries>
 <selectionEntry id="4c71-ab68-6e33-34bd" name="Custodian Guard" hidden="false" collective="false" import="true" type="model">
@@ -1810,6 +1884,7 @@
 <categoryLinks>
 <categoryLink id="b5e9-b199-be7d-48c1" name="Troops" hidden="false" targetId="adf0-dc10-89d4-f51e" primary="true" />
 <categoryLink id="b9f4-1f5d-6a95-0aea" name="Compulsory Troops Eligible" hidden="false" targetId="071f-8316-97af-8fd6" primary="false" />
+<categoryLink id="b6b3-4358-8dc8-b40b" name="Legio Custodes unit" hidden="false" targetId="052b-1879-f558-ec1e" primary="false" />
 </categoryLinks>
 <selectionEntries>
 <selectionEntry id="541a-9eb4-1890-0dab" name="Sentinel Guard" hidden="false" collective="false" import="true" type="model">
@@ -2802,6 +2877,7 @@
 </infoLinks>
 <categoryLinks>
 <categoryLink id="167b-d960-47e3-1ab8" name="Elites" hidden="false" targetId="6b19-97ac-7c40-0bdf" primary="true" />
+<categoryLink id="ca33-ce0f-4bdf-d997" name="Legio Custodes unit" hidden="false" targetId="052b-1879-f558-ec1e" primary="false" />
 </categoryLinks>
 <selectionEntries>
 <selectionEntry id="7508-ecd6-f15c-2455" name="Hetaeron Guard" hidden="false" collective="false" import="true" type="model">
@@ -3094,6 +3170,7 @@
 </infoLinks>
 <categoryLinks>
 <categoryLink id="6dbe-f030-0a87-b562" name="Elites" hidden="false" targetId="6b19-97ac-7c40-0bdf" primary="true" />
+<categoryLink id="991d-82ee-96d2-2cbb" name="Legio Custodes unit" hidden="false" targetId="052b-1879-f558-ec1e" primary="false" />
 </categoryLinks>
 <selectionEntries>
 <selectionEntry id="987c-5610-a08a-4608" name="Aquilon Terminator" hidden="false" collective="false" import="true" type="model">
@@ -4689,6 +4766,7 @@
 </infoLinks>
 <categoryLinks>
 <categoryLink id="ca24-1a7e-de44-4fd3" name="Fast Attack" hidden="false" targetId="5e5f-f512-de8c-9505" primary="true" />
+<categoryLink id="0422-eb43-d963-8ca8" name="Legio Custodes unit" hidden="false" targetId="052b-1879-f558-ec1e" primary="false" />
 </categoryLinks>
 <selectionEntries>
 <selectionEntry id="2555-d1ae-ea3d-5af9" name="Agamatus Custodian" hidden="false" collective="false" import="true" type="model">
@@ -5029,6 +5107,7 @@
 </infoLinks>
 <categoryLinks>
 <categoryLink id="9873-37c3-6dd7-5499" name="Fast Attack" hidden="false" targetId="5e5f-f512-de8c-9505" primary="true" />
+<categoryLink id="9b50-f55c-cc5c-cc19" name="Legio Custodes unit" hidden="false" targetId="052b-1879-f558-ec1e" primary="false" />
 </categoryLinks>
 <selectionEntries>
 <selectionEntry id="dc05-dd36-89b4-0ca9" name="Custodian Venatari" hidden="false" collective="false" import="true" type="model">
@@ -6140,6 +6219,7 @@
 </infoLinks>
 <categoryLinks>
 <categoryLink id="39eb-4f53-960c-7cf9" name="Heavy Support" hidden="false" targetId="a78f-9734-db0c-b938" primary="true" />
+<categoryLink id="bb85-6dc0-2535-fc6e" name="Legio Custodes unit" hidden="false" targetId="052b-1879-f558-ec1e" primary="false" />
 </categoryLinks>
 <selectionEntries>
 <selectionEntry id="cedb-2119-b5b2-82f8" name="Sagittarum Guard" hidden="false" collective="false" import="true" type="model">

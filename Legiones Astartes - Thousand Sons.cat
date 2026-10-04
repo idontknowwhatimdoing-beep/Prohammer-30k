@@ -117,6 +117,103 @@
 </costs>
 </selectionEntry>
 <selectionEntry id="47ae-c94f-98e8-ca99" name="Allegiance" hidden="false" collective="false" import="true" type="upgrade">
+<modifiers>
+<modifier type="add" field="category" value="1ac0-5a10-6fb8-54d9">
+<conditions>
+<condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ecf1-4754-7376-85d6" type="instanceOf" />
+</conditions>
+</modifier>
+<modifier type="add" field="category" value="59d2-df4e-9331-c623">
+<conditionGroups>
+<condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3604-ccf4-4a04-bc94" type="instanceOf" />
+</conditionGroups>
+</modifier>
+<modifier type="add" field="error" value="An army has exactly one Primary Detachment.">
+<conditions>
+<condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ecf1-4754-7376-85d6" type="instanceOf" />
+<condition field="selections" scope="roster" value="2" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="atLeast" />
+</conditions>
+</modifier>
+<modifier type="add" field="error" value="An Allied Detachment needs a Primary Detachment in the same army (add a 'Primary Detachment' force first).">
+<conditions>
+<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+<conditionGroups>
+<condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3604-ccf4-4a04-bc94" type="instanceOf" />
+</conditionGroups>
+</modifier>
+<modifier type="add" field="error" value="Loyalist and Traitor Detachments may not be part of the same army (an alliance never overrides allegiance requirements).">
+<conditions>
+<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="af50-de01-cc93-f43e" type="atLeast" />
+<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="267b-12c2-839b-a93a" type="atLeast" />
+</conditions>
+</modifier>
+<modifier type="add" field="error" value="A second Detachment from the same army list may only be taken once all Troops slots of the Primary Detachment are filled.">
+<conditions>
+<condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ecf1-4754-7376-85d6" type="instanceOf" />
+<condition field="selections" scope="roster" value="2" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="29b3-86ab-6a94-52ed" type="atLeast" />
+<condition field="selections" scope="force" value="6" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="adf0-dc10-89d4-f51e" type="lessThan" />
+</conditions>
+</modifier>
+<modifier type="add" field="error" value="A Primarch may only be selected as part of the army's Primary Detachment, never an Allied Detachment.">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ef4e-f5b8-029c-6e3f" type="atLeast" />
+</conditions>
+<conditionGroups>
+<condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3604-ccf4-4a04-bc94" type="instanceOf" />
+</conditionGroups>
+</modifier>
+<modifier type="add" field="error" value="Sworn Enemies (Allies Matrix): Thousand Sons and Blood Angels may not be part of the same army.">
+<conditions>
+<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b004-0491-54da-3417" type="atLeast" />
+</conditions>
+</modifier>
+<modifier type="add" field="error" value="Sworn Enemies (Allies Matrix): Thousand Sons and Dark Angels may not be part of the same army.">
+<conditions>
+<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e8b8-a1ed-f923-f5f0" type="atLeast" />
+</conditions>
+</modifier>
+<modifier type="add" field="error" value="Sworn Enemies (Allies Matrix): Thousand Sons and Death Guard may not be part of the same army.">
+<conditions>
+<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a2a5-786f-15c2-08f4" type="atLeast" />
+</conditions>
+</modifier>
+<modifier type="add" field="error" value="Sworn Enemies (Allies Matrix): Thousand Sons and Imperial Fists may not be part of the same army.">
+<conditions>
+<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5cb1-5da1-21e6-9aac" type="atLeast" />
+</conditions>
+</modifier>
+<modifier type="add" field="error" value="Sworn Enemies (Allies Matrix): Thousand Sons and Iron Hands may not be part of the same army.">
+<conditions>
+<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bfa3-1f35-6e19-77f7" type="atLeast" />
+</conditions>
+</modifier>
+<modifier type="add" field="error" value="Sworn Enemies (Allies Matrix): Thousand Sons and Raven Guard may not be part of the same army.">
+<conditions>
+<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b501-c616-2ef4-3e00" type="atLeast" />
+</conditions>
+</modifier>
+<modifier type="add" field="error" value="Sworn Enemies (Allies Matrix): Thousand Sons and Salamanders may not be part of the same army.">
+<conditions>
+<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8fe7-c47e-3efd-6a7b" type="atLeast" />
+</conditions>
+</modifier>
+<modifier type="add" field="error" value="Sworn Enemies (Allies Matrix): Thousand Sons and Space Wolves may not be part of the same army.">
+<conditions>
+<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="556d-c3d0-04d2-7d84" type="atLeast" />
+</conditions>
+</modifier>
+<modifier type="add" field="error" value="Sworn Enemies (Allies Matrix): Thousand Sons and Ultramarines may not be part of the same army.">
+<conditions>
+<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="968b-599f-dde4-3171" type="atLeast" />
+</conditions>
+</modifier>
+<modifier type="add" field="error" value="Sworn Enemies (Allies Matrix): Thousand Sons and White Scars may not be part of the same army.">
+<conditions>
+<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="39c6-3c01-fa18-06c9" type="atLeast" />
+</conditions>
+</modifier>
+</modifiers>
 <constraints>
 <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="9cc7-271d-cd0c-ee34" type="min" />
 <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="49e1-f908-136c-22bb" type="max" />
@@ -125,9 +222,13 @@
 <rule id="3c67-4893-3aa1-a1e4" name="Allegiance" hidden="false">
 <description>The army's Allegiance determines which characters, units, wargear, Rites of War and other options may be selected. A Legion is not inherently restricted to a particular Allegiance.</description>
 </rule>
+<rule id="fc99-c192-1312-1d61" name="Allies Matrix: Thousand Sons" hidden="false">
+<description>Allies Matrix - At the Height of the Heresy. Allies and Brothers: Emperor's Children, Exercitus Imperialis, Mechanicum, Night Lords, Questoris Households, Solar Auxilia, Sons of Horus, Thousand Sons, Word Bearers, World Eaters. Conditional Alliance: Alpha Legion, Blackshields (The Lost and the Damned), Daemons of the Ruinstorm. Sworn Enemies: Blood Angels, Dark Angels, Death Guard, Imperial Fists, Iron Hands, Raven Guard, Salamanders, Space Wolves, Ultramarines, White Scars. Apply the chart separately to every pair of detachments in the army. An alliance never overrides army-building restrictions, allegiance requirements or the specific wording of a unit, ability or item of wargear.</description>
+</rule>
 </rules>
 <categoryLinks>
 <categoryLink id="f411-bfe2-f14a-d517" name="Configuration" hidden="false" targetId="ba14-d0f1-f942-df54" primary="true" />
+<categoryLink id="ef03-32fd-dfc7-93fb" name="Army: Thousand Sons" hidden="false" targetId="29b3-86ab-6a94-52ed" primary="false" />
 </categoryLinks>
 <selectionEntryGroups>
 <selectionEntryGroup id="562f-5db7-8fe0-6b07" name="Allegiance" hidden="false" collective="false" import="true">
@@ -12540,6 +12641,12 @@ LIMITATIONS - Strength of the Legion: the army must include at least three Legio
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c0b2-49b1-48fd-3fc2" type="atLeast" />
 </conditions>
 </modifier>
+<modifier type="add" field="error" value="Primarch's Chosen: the army may not include an Allied Detachment.">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c0b2-49b1-48fd-3fc2" type="atLeast" />
+<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="59d2-df4e-9331-c623" type="atLeast" />
+</conditions>
+</modifier>
 </modifiers>
 <rules>
 <rule id="897d-cc15-b37c-bf88" name="Primarch's Chosen" hidden="false">
@@ -12589,6 +12696,12 @@ LIMITATIONS - Every Troops choice must be taken at its maximum unit size. No mor
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1f6e-6456-710f-fbe7" type="atLeast" />
 </conditions>
 </modifier>
+<modifier type="add" field="error" value="The Guard of the Crimson King (Thousand Sons): the army may not include an Allied Detachment.">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1060-0ef5-0483-9b95" type="atLeast" />
+<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="59d2-df4e-9331-c623" type="atLeast" />
+</conditions>
+</modifier>
 </modifiers>
 <rules>
 <rule id="0dca-3ca1-66cf-d8d3" name="The Guard of the Crimson King" hidden="false">
@@ -12611,6 +12724,12 @@ LIMITATIONS - The Warlord must be Magnus, Ahzek Ahriman or a Thousand Sons Praet
 <conditions>
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3e79-b065-20af-161f" type="atLeast" />
 <condition field="selections" scope="force" value="2" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c52-2dbc-9a97-85a9" type="lessThan" />
+</conditions>
+</modifier>
+<modifier type="add" field="error" value="The Fellowships of Prospero (Thousand Sons): the army may not include an Allied Detachment.">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3e79-b065-20af-161f" type="atLeast" />
+<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="59d2-df4e-9331-c623" type="atLeast" />
 </conditions>
 </modifier>
 </modifiers>

@@ -115,6 +115,80 @@
 <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5e19-89bd-fe5b-28eb" type="instanceOf" />
 </conditions>
 </modifier>
+<modifier type="add" field="category" value="1ac0-5a10-6fb8-54d9">
+<conditions>
+<condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ecf1-4754-7376-85d6" type="instanceOf" />
+</conditions>
+</modifier>
+<modifier type="add" field="category" value="59d2-df4e-9331-c623">
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3604-ccf4-4a04-bc94" type="instanceOf" />
+<condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5e19-89bd-fe5b-28eb" type="instanceOf" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="add" field="error" value="An army has exactly one Primary Detachment.">
+<conditions>
+<condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ecf1-4754-7376-85d6" type="instanceOf" />
+<condition field="selections" scope="roster" value="2" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="atLeast" />
+</conditions>
+</modifier>
+<modifier type="add" field="error" value="An Allied Detachment needs a Primary Detachment in the same army (add a 'Primary Detachment' force first).">
+<conditions>
+<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3604-ccf4-4a04-bc94" type="instanceOf" />
+<condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5e19-89bd-fe5b-28eb" type="instanceOf" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="add" field="error" value="Loyalist and Traitor Detachments may not be part of the same army (an alliance never overrides allegiance requirements).">
+<conditions>
+<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="af50-de01-cc93-f43e" type="atLeast" />
+<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="267b-12c2-839b-a93a" type="atLeast" />
+</conditions>
+</modifier>
+<modifier type="add" field="error" value="A second Detachment from the same army list may only be taken once all Troops slots of the Primary Detachment are filled.">
+<conditions>
+<condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ecf1-4754-7376-85d6" type="instanceOf" />
+<condition field="selections" scope="roster" value="2" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a1f3-eeb6-6d44-3d9d" type="atLeast" />
+<condition field="selections" scope="force" value="6" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="adf0-dc10-89d4-f51e" type="lessThan" />
+</conditions>
+</modifier>
+<modifier type="add" field="error" value="A Primarch may only be selected as part of the army's Primary Detachment, never an Allied Detachment.">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ef4e-f5b8-029c-6e3f" type="atLeast" />
+</conditions>
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3604-ccf4-4a04-bc94" type="instanceOf" />
+<condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5e19-89bd-fe5b-28eb" type="instanceOf" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="add" field="error" value="Shunned and Distrusted: a Blackshields force using the Chymeriae Oath may not include an Allied Detachment.">
+<conditions>
+<condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ecf1-4754-7376-85d6" type="instanceOf" />
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c792-4ad1-7c4e-dcb5" type="atLeast" />
+<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="59d2-df4e-9331-c623" type="atLeast" />
+</conditions>
+</modifier>
+<modifier type="add" field="error" value="Unlikely Allies: a force using The Alien Brotherhood Oath may only include an Allied Detachment chosen from an Eldar army list.">
+<conditions>
+<condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ecf1-4754-7376-85d6" type="instanceOf" />
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="59a3-8abf-0e0f-91fb" type="atLeast" />
+<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="59d2-df4e-9331-c623" type="atLeast" />
+</conditions>
+</modifier>
 </modifiers>
 <constraints>
 <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="9cc7-271d-cd0c-ee34" type="min" />
@@ -122,6 +196,7 @@
 </constraints>
 <categoryLinks>
 <categoryLink id="816e-ac90-8793-d76b" name="Configuration" hidden="false" targetId="ba14-d0f1-f942-df54" primary="true" />
+<categoryLink id="b508-2afe-12bd-2ca2" name="Army: The Lost and the Damned" hidden="false" targetId="a1f3-eeb6-6d44-3d9d" primary="false" />
 </categoryLinks>
 <selectionEntryGroups>
 <selectionEntryGroup id="60c9-40ed-16e7-2eb5" name="Allegiance" hidden="false" collective="false" import="true">
@@ -149,6 +224,11 @@
 </selectionEntries>
 </selectionEntryGroup>
 </selectionEntryGroups>
+<rules>
+<rule id="0324-dbbd-d563-6baf" name="Allies Matrix: The Lost and the Damned" hidden="false">
+<description>Allies Matrix - At the Height of the Heresy. Allies and Brothers: Blackshields (The Lost and the Damned). Conditional Alliance: Alpha Legion, Blood Angels, Daemons of the Ruinstorm, Dark Angels, Death Guard, Emperor's Children, Exercitus Imperialis, Imperial Fists, Iron Hands, Mechanicum, Night Lords, Questoris Households, Raven Guard, Salamanders, Solar Auxilia, Sons of Horus, Space Wolves, Thousand Sons, Ultramarines, White Scars, Word Bearers, World Eaters. Sworn Enemies: -. Apply the chart separately to every pair of detachments in the army. An alliance never overrides army-building restrictions, allegiance requirements or the specific wording of a unit, ability or item of wargear.</description>
+</rule>
+</rules>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
 </costs>
@@ -10662,6 +10742,12 @@ LIMITATIONS - Strength of the Legion: the army must include at least three Legio
 <conditions>
 <condition field="pts0-0000-0000-0001" scope="roster" value="1500" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="any" type="lessThan" />
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c0b2-49b1-48fd-3fc2" type="atLeast" />
+</conditions>
+</modifier>
+<modifier type="add" field="error" value="Primarch's Chosen: the army may not include an Allied Detachment.">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c0b2-49b1-48fd-3fc2" type="atLeast" />
+<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="59d2-df4e-9331-c623" type="atLeast" />
 </conditions>
 </modifier>
 </modifiers>
@@ -24707,6 +24793,7 @@ LIMITATIONS - No other Lord of War; no Allied Detachment; no more than one other
 <categoryLinks>
 <categoryLink id="a92e-df68-3d46-8458" name="HQ" hidden="false" targetId="cd54-54be-0cb1-3474" primary="true" />
 <categoryLink id="eabe-1689-4eb5-6297" name="Agents of the Sigillite HQ" hidden="false" targetId="b46d-5293-9915-fcf4" primary="false" />
+<categoryLink id="ac16-5ad2-b213-f216" name="Detachment: Allied" hidden="false" targetId="59d2-df4e-9331-c623" primary="false" />
 </categoryLinks>
 <selectionEntries>
 <selectionEntry id="0d96-3eda-5f5c-8a6f" name="Master-crafted Weapon" hidden="false" collective="false" import="true" type="upgrade">
@@ -25126,6 +25213,7 @@ LIMITATIONS - No other Lord of War; no Allied Detachment; no more than one other
 <categoryLink id="d213-a9ae-47b9-be1e" name="HQ" hidden="false" targetId="cd54-54be-0cb1-3474" primary="true" />
 <categoryLink id="3d1f-911f-1ff1-748a" name="Agents of the Sigillite HQ" hidden="false" targetId="b46d-5293-9915-fcf4" primary="false" />
 <categoryLink id="85f2-9ae0-2dd0-49a6" name="Knight-Errant" hidden="false" targetId="24bf-3cab-9974-8f52" primary="false" />
+<categoryLink id="4ae2-5253-4468-2512" name="Detachment: Allied" hidden="false" targetId="59d2-df4e-9331-c623" primary="false" />
 </categoryLinks>
 <entryLinks>
 <entryLink id="4985-04cd-80cd-529d" name="Artificer Armour" hidden="false" collective="false" import="true" targetId="2c2c-d091-28f2-2343" type="selectionEntry">
@@ -25249,6 +25337,7 @@ LIMITATIONS - No other Lord of War; no Allied Detachment; no more than one other
 <categoryLink id="a009-862f-1e7f-d2b4" name="HQ" hidden="false" targetId="cd54-54be-0cb1-3474" primary="true" />
 <categoryLink id="5a2e-0809-5802-ff18" name="Agents of the Sigillite HQ" hidden="false" targetId="b46d-5293-9915-fcf4" primary="false" />
 <categoryLink id="bcfe-5e6a-eb90-9570" name="Knight-Errant" hidden="false" targetId="24bf-3cab-9974-8f52" primary="false" />
+<categoryLink id="7e8c-d755-d692-1462" name="Detachment: Allied" hidden="false" targetId="59d2-df4e-9331-c623" primary="false" />
 </categoryLinks>
 <entryLinks>
 <entryLink id="51f5-2357-340a-f0c4" name="Power Armour" hidden="false" collective="false" import="true" targetId="1133-946a-2323-7a81" type="selectionEntry">
@@ -25390,6 +25479,7 @@ LIMITATIONS - No other Lord of War; no Allied Detachment; no more than one other
 <categoryLink id="7b61-4109-3779-cdb6" name="HQ" hidden="false" targetId="cd54-54be-0cb1-3474" primary="true" />
 <categoryLink id="1684-0e05-bede-2e04" name="Agents of the Sigillite HQ" hidden="false" targetId="b46d-5293-9915-fcf4" primary="false" />
 <categoryLink id="cbff-b985-c93d-7613" name="Knight-Errant" hidden="false" targetId="24bf-3cab-9974-8f52" primary="false" />
+<categoryLink id="741c-f82a-11b8-c642" name="Detachment: Allied" hidden="false" targetId="59d2-df4e-9331-c623" primary="false" />
 </categoryLinks>
 <entryLinks>
 <entryLink id="06a2-68a6-e77b-4249" name="Power Armour" hidden="false" collective="false" import="true" targetId="1133-946a-2323-7a81" type="selectionEntry">
@@ -25531,6 +25621,7 @@ LIMITATIONS - No other Lord of War; no Allied Detachment; no more than one other
 <categoryLink id="9de0-febd-cd4a-9ea0" name="HQ" hidden="false" targetId="cd54-54be-0cb1-3474" primary="true" />
 <categoryLink id="b311-89a7-bedd-01a4" name="Agents of the Sigillite HQ" hidden="false" targetId="b46d-5293-9915-fcf4" primary="false" />
 <categoryLink id="fd45-f67d-068d-4de8" name="Knight-Errant" hidden="false" targetId="24bf-3cab-9974-8f52" primary="false" />
+<categoryLink id="c5e4-1eb5-b4ff-e210" name="Detachment: Allied" hidden="false" targetId="59d2-df4e-9331-c623" primary="false" />
 </categoryLinks>
 <entryLinks>
 <entryLink id="4bba-82bb-f465-c41e" name="Power Armour" hidden="false" collective="false" import="true" targetId="1133-946a-2323-7a81" type="selectionEntry">
@@ -25666,6 +25757,7 @@ LIMITATIONS - No other Lord of War; no Allied Detachment; no more than one other
 <categoryLink id="c359-c12c-527b-f052" name="HQ" hidden="false" targetId="cd54-54be-0cb1-3474" primary="true" />
 <categoryLink id="2e51-00db-5b21-1a98" name="Agents of the Sigillite HQ" hidden="false" targetId="b46d-5293-9915-fcf4" primary="false" />
 <categoryLink id="250b-3b7f-815b-75fe" name="Knight-Errant" hidden="false" targetId="24bf-3cab-9974-8f52" primary="false" />
+<categoryLink id="c54e-d4bb-3bbc-dae8" name="Detachment: Allied" hidden="false" targetId="59d2-df4e-9331-c623" primary="false" />
 </categoryLinks>
 <selectionEntryGroups>
 <selectionEntryGroup id="d6ed-e1de-a480-a7c7" name="Psychic Powers" hidden="false" collective="false" import="true">

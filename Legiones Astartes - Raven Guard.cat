@@ -142,6 +142,98 @@
 </costs>
 </selectionEntry>
 <selectionEntry id="47ae-c94f-98e8-ca99" name="Allegiance" hidden="false" collective="false" import="true" type="upgrade">
+<modifiers>
+<modifier type="add" field="category" value="1ac0-5a10-6fb8-54d9">
+<conditions>
+<condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ecf1-4754-7376-85d6" type="instanceOf" />
+</conditions>
+</modifier>
+<modifier type="add" field="category" value="59d2-df4e-9331-c623">
+<conditionGroups>
+<condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3604-ccf4-4a04-bc94" type="instanceOf" />
+</conditionGroups>
+</modifier>
+<modifier type="add" field="error" value="An army has exactly one Primary Detachment.">
+<conditions>
+<condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ecf1-4754-7376-85d6" type="instanceOf" />
+<condition field="selections" scope="roster" value="2" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="atLeast" />
+</conditions>
+</modifier>
+<modifier type="add" field="error" value="An Allied Detachment needs a Primary Detachment in the same army (add a 'Primary Detachment' force first).">
+<conditions>
+<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+<conditionGroups>
+<condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3604-ccf4-4a04-bc94" type="instanceOf" />
+</conditionGroups>
+</modifier>
+<modifier type="add" field="error" value="Loyalist and Traitor Detachments may not be part of the same army (an alliance never overrides allegiance requirements).">
+<conditions>
+<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="af50-de01-cc93-f43e" type="atLeast" />
+<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="267b-12c2-839b-a93a" type="atLeast" />
+</conditions>
+</modifier>
+<modifier type="add" field="error" value="A second Detachment from the same army list may only be taken once all Troops slots of the Primary Detachment are filled.">
+<conditions>
+<condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ecf1-4754-7376-85d6" type="instanceOf" />
+<condition field="selections" scope="roster" value="2" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b501-c616-2ef4-3e00" type="atLeast" />
+<condition field="selections" scope="force" value="6" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="adf0-dc10-89d4-f51e" type="lessThan" />
+</conditions>
+</modifier>
+<modifier type="add" field="error" value="A Primarch may only be selected as part of the army's Primary Detachment, never an Allied Detachment.">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ef4e-f5b8-029c-6e3f" type="atLeast" />
+</conditions>
+<conditionGroups>
+<condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3604-ccf4-4a04-bc94" type="instanceOf" />
+</conditionGroups>
+</modifier>
+<modifier type="add" field="error" value="Sworn Enemies (Allies Matrix): Raven Guard and Alpha Legion may not be part of the same army.">
+<conditions>
+<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c945-f4d0-8682-31df" type="atLeast" />
+</conditions>
+</modifier>
+<modifier type="add" field="error" value="Sworn Enemies (Allies Matrix): Raven Guard and Daemons of the Ruinstorm may not be part of the same army.">
+<conditions>
+<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3cdb-3527-d761-7a58" type="atLeast" />
+</conditions>
+</modifier>
+<modifier type="add" field="error" value="Sworn Enemies (Allies Matrix): Raven Guard and Death Guard may not be part of the same army.">
+<conditions>
+<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a2a5-786f-15c2-08f4" type="atLeast" />
+</conditions>
+</modifier>
+<modifier type="add" field="error" value="Sworn Enemies (Allies Matrix): Raven Guard and Emperor's Children may not be part of the same army.">
+<conditions>
+<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2496-8d2f-d197-38e3" type="atLeast" />
+</conditions>
+</modifier>
+<modifier type="add" field="error" value="Sworn Enemies (Allies Matrix): Raven Guard and Night Lords may not be part of the same army.">
+<conditions>
+<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9b96-a14e-c426-a89a" type="atLeast" />
+</conditions>
+</modifier>
+<modifier type="add" field="error" value="Sworn Enemies (Allies Matrix): Raven Guard and Sons of Horus may not be part of the same army.">
+<conditions>
+<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="be81-4d72-9377-1017" type="atLeast" />
+</conditions>
+</modifier>
+<modifier type="add" field="error" value="Sworn Enemies (Allies Matrix): Raven Guard and Thousand Sons may not be part of the same army.">
+<conditions>
+<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="29b3-86ab-6a94-52ed" type="atLeast" />
+</conditions>
+</modifier>
+<modifier type="add" field="error" value="Sworn Enemies (Allies Matrix): Raven Guard and Word Bearers may not be part of the same army.">
+<conditions>
+<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7b0f-b389-621b-1516" type="atLeast" />
+</conditions>
+</modifier>
+<modifier type="add" field="error" value="Sworn Enemies (Allies Matrix): Raven Guard and World Eaters may not be part of the same army.">
+<conditions>
+<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e523-9c36-14b9-fd3f" type="atLeast" />
+</conditions>
+</modifier>
+</modifiers>
 <constraints>
 <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="9cc7-271d-cd0c-ee34" type="min" />
 <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="49e1-f908-136c-22bb" type="max" />
@@ -150,9 +242,13 @@
 <rule id="3c67-4893-3aa1-a1e4" name="Allegiance" hidden="false">
 <description>The army's Allegiance determines which characters, units, wargear, Rites of War and other options may be selected. A Legion is not inherently restricted to a particular Allegiance.</description>
 </rule>
+<rule id="7619-9fd8-1cae-8eef" name="Allies Matrix: Raven Guard" hidden="false">
+<description>Allies Matrix - At the Height of the Heresy. Allies and Brothers: Blood Angels, Dark Angels, Exercitus Imperialis, Imperial Fists, Iron Hands, Mechanicum, Questoris Households, Raven Guard, Salamanders, Solar Auxilia, Space Wolves, Ultramarines, White Scars. Conditional Alliance: Blackshields (The Lost and the Damned). Sworn Enemies: Alpha Legion, Daemons of the Ruinstorm, Death Guard, Emperor's Children, Night Lords, Sons of Horus, Thousand Sons, Word Bearers, World Eaters. Apply the chart separately to every pair of detachments in the army. An alliance never overrides army-building restrictions, allegiance requirements or the specific wording of a unit, ability or item of wargear.</description>
+</rule>
 </rules>
 <categoryLinks>
 <categoryLink id="f411-bfe2-f14a-d517" name="Configuration" hidden="false" targetId="ba14-d0f1-f942-df54" primary="true" />
+<categoryLink id="d9cd-bb37-f9de-93c7" name="Army: Raven Guard" hidden="false" targetId="b501-c616-2ef4-3e00" primary="false" />
 </categoryLinks>
 <selectionEntryGroups>
 <selectionEntryGroup id="562f-5db7-8fe0-6b07" name="Allegiance" hidden="false" collective="false" import="true">
@@ -9252,6 +9348,12 @@ LIMITATIONS - Strength of the Legion: the army must include at least three Legio
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c0b2-49b1-48fd-3fc2" type="atLeast" />
 </conditions>
 </modifier>
+<modifier type="add" field="error" value="Primarch's Chosen: the army may not include an Allied Detachment.">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c0b2-49b1-48fd-3fc2" type="atLeast" />
+<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="59d2-df4e-9331-c623" type="atLeast" />
+</conditions>
+</modifier>
 </modifiers>
 <rules>
 <rule id="897d-cc15-b37c-bf88" name="Primarch's Chosen" hidden="false">
@@ -9265,6 +9367,36 @@ LIMITATIONS - No other Lord of War; no Allied Detachment; no more than one other
 </costs>
 </selectionEntry>
 <selectionEntry id="9cc7-3aa4-2c47-553c" name="Decapitation Strike (Raven Guard)" hidden="false" collective="false" import="true" type="upgrade">
+<modifiers>
+<modifier type="add" field="error" value="Decapitation Strike (Raven Guard): the army may not include an Allied Detachment drawn from another Space Marine Legion.">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9cc7-3aa4-2c47-553c" type="atLeast" />
+</conditions>
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e8b8-a1ed-f923-f5f0" type="atLeast" />
+<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2496-8d2f-d197-38e3" type="atLeast" />
+<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="39c6-3c01-fa18-06c9" type="atLeast" />
+<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="556d-c3d0-04d2-7d84" type="atLeast" />
+<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5cb1-5da1-21e6-9aac" type="atLeast" />
+<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9b96-a14e-c426-a89a" type="atLeast" />
+<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b004-0491-54da-3417" type="atLeast" />
+<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bfa3-1f35-6e19-77f7" type="atLeast" />
+<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e523-9c36-14b9-fd3f" type="atLeast" />
+<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="968b-599f-dde4-3171" type="atLeast" />
+<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a2a5-786f-15c2-08f4" type="atLeast" />
+<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="29b3-86ab-6a94-52ed" type="atLeast" />
+<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="be81-4d72-9377-1017" type="atLeast" />
+<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7b0f-b389-621b-1516" type="atLeast" />
+<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8fe7-c47e-3efd-6a7b" type="atLeast" />
+<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c945-f4d0-8682-31df" type="atLeast" />
+<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="abf9-f7bd-7785-b044" type="atLeast" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+</modifiers>
 <rules>
 <rule id="5426-2997-8ba3-9018" name="Decapitation Strike" hidden="false">
 <description>EFFECTS - For Whom the Bell Tolls: all Raven Guard units gain Preferred Enemy (Independent Characters); an enemy unit containing one or more Independent Characters counts as a Preferred Enemy until all of them have been slain or left the unit. Predatory Strike: once per battle, the Raven Guard player may re-roll a roll to determine deployment order, choice of deployment zone or which player takes the first turn (the entire result; the second must be accepted). Fury From Above: Raven Guard Legion Heavy Support Squads must select a Legion Drop Pod or Anvillus Dreadclaw Drop Pod as a Dedicated Transport at its normal cost (normal Transport Capacity and deployment restrictions apply).

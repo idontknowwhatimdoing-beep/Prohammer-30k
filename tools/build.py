@@ -93,6 +93,11 @@ def build_one(kind, name):
         module = importlib.import_module(army_modules()[name])
         root = module.build()
         out = root.get("name") + ".cat"
+    import allies
+    fe = root.find("forceEntries")
+    special = [f.get("id") for f in (fe if fe is not None else [])
+               if f.get("name") != "Officio Assassinorum Execution Force"]
+    allies.apply(root, special)
     path = os.path.join(ROOT, out)
     bsx.write(root, path)
     gst = ET.parse(os.path.join(ROOT, "Prohammer 30k.gst")).getroot()

@@ -47,12 +47,70 @@
 </entryLinks>
 <sharedSelectionEntries>
 <selectionEntry id="47ae-c94f-98e8-ca99" name="Allegiance" hidden="false" collective="false" import="true" type="upgrade">
+<modifiers>
+<modifier type="add" field="category" value="1ac0-5a10-6fb8-54d9">
+<conditions>
+<condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ecf1-4754-7376-85d6" type="instanceOf" />
+</conditions>
+</modifier>
+<modifier type="add" field="category" value="59d2-df4e-9331-c623">
+<conditionGroups>
+<condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3604-ccf4-4a04-bc94" type="instanceOf" />
+</conditionGroups>
+</modifier>
+<modifier type="add" field="error" value="An army has exactly one Primary Detachment.">
+<conditions>
+<condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ecf1-4754-7376-85d6" type="instanceOf" />
+<condition field="selections" scope="roster" value="2" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="atLeast" />
+</conditions>
+</modifier>
+<modifier type="add" field="error" value="An Allied Detachment needs a Primary Detachment in the same army (add a 'Primary Detachment' force first).">
+<conditions>
+<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+<conditionGroups>
+<condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3604-ccf4-4a04-bc94" type="instanceOf" />
+</conditionGroups>
+</modifier>
+<modifier type="add" field="error" value="Loyalist and Traitor Detachments may not be part of the same army (an alliance never overrides allegiance requirements).">
+<conditions>
+<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="af50-de01-cc93-f43e" type="atLeast" />
+<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="267b-12c2-839b-a93a" type="atLeast" />
+</conditions>
+</modifier>
+<modifier type="add" field="error" value="A second Detachment from the same army list may only be taken once all Troops slots of the Primary Detachment are filled.">
+<conditions>
+<condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ecf1-4754-7376-85d6" type="instanceOf" />
+<condition field="selections" scope="roster" value="2" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6e7a-38a2-1474-b8b5" type="atLeast" />
+<condition field="selections" scope="force" value="6" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="adf0-dc10-89d4-f51e" type="lessThan" />
+</conditions>
+</modifier>
+<modifier type="add" field="error" value="A Primarch may only be selected as part of the army's Primary Detachment, never an Allied Detachment.">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ef4e-f5b8-029c-6e3f" type="atLeast" />
+</conditions>
+<conditionGroups>
+<condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3604-ccf4-4a04-bc94" type="instanceOf" />
+</conditionGroups>
+</modifier>
+<modifier type="add" field="error" value="Sworn Enemies (Allies Matrix): Exercitus Imperialis and Daemons of the Ruinstorm may not be part of the same army.">
+<conditions>
+<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3cdb-3527-d761-7a58" type="atLeast" />
+</conditions>
+</modifier>
+<modifier type="add" field="category" value="640e-bd77-4dc7-426b">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a0ae-a124-b5fe-36f2" type="atLeast" />
+</conditions>
+</modifier>
+</modifiers>
 <constraints>
 <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="9cc7-271d-cd0c-ee34" type="min" />
 <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="49e1-f908-136c-22bb" type="max" />
 </constraints>
 <categoryLinks>
 <categoryLink id="816e-ac90-8793-d76b" name="Configuration" hidden="false" targetId="ba14-d0f1-f942-df54" primary="true" />
+<categoryLink id="fdfd-3c48-4d16-245d" name="Army: Exercitus Imperialis" hidden="false" targetId="6e7a-38a2-1474-b8b5" primary="false" />
 </categoryLinks>
 <selectionEntryGroups>
 <selectionEntryGroup id="60c9-40ed-16e7-2eb5" name="Allegiance" hidden="false" collective="false" import="true">
@@ -80,6 +138,11 @@
 </selectionEntries>
 </selectionEntryGroup>
 </selectionEntryGroups>
+<rules>
+<rule id="90d4-5f94-0a98-07a5" name="Allies Matrix: Exercitus Imperialis" hidden="false">
+<description>Allies Matrix - At the Height of the Heresy. Allies and Brothers: Alpha Legion, Blood Angels, Dark Angels, Death Guard, Emperor's Children, Exercitus Imperialis, Imperial Fists, Iron Hands, Mechanicum, Night Lords, Questoris Households, Raven Guard, Salamanders, Solar Auxilia, Sons of Horus, Space Wolves, Thousand Sons, Ultramarines, White Scars, Word Bearers, World Eaters. Conditional Alliance: Blackshields (The Lost and the Damned). Sworn Enemies: Daemons of the Ruinstorm. Apply the chart separately to every pair of detachments in the army. An alliance never overrides army-building restrictions, allegiance requirements or the specific wording of a unit, ability or item of wargear.</description>
+</rule>
+</rules>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
 </costs>
