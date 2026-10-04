@@ -728,12 +728,27 @@ def eldar_rule(n):
     return f"{n} (Eldar Psychic Power)"
 
 
+ELDAR_POWER_TEXT = {  # The Lost and the Damned, Eldritch Tutelage table (Power / Type & timing / Range / Effect)
+    "Doom": ("Non-shooting debuff; start of your turn", '24"',
+             "Target one non-vehicle enemy unit. Wound rolls against it may be re-rolled, in shooting and melee, until "
+             "the start of your next turn. No line of sight required."),
+    "Guide": ("Non-shooting buff; start of your turn", '6"',
+              "Choose one friendly unit. It re-rolls failed shooting hit rolls that turn; barrage weapons may re-roll "
+              "scatter instead. No line of sight required."),
+    "Mind War": ("Psychic shooting attack; Shooting phase", '18"',
+                 "Choose one unengaged enemy model in line of sight, excluding embarked models. Both models roll D6 + "
+                 "their own Leadership. The target suffers one wound per point the Psyker wins by, with no armour "
+                 "saves."),
+    "Eldritch Storm": ("Psychic shooting attack; Shooting phase", '18"',
+                       "S3, AP-, Large Blast, Pinning. Vehicles touched suffer 2D6 + 3 armour penetration and turn to "
+                       "face the scatter die's direction. On a Hit, the player chooses their facing."),
+}
 for _n in ELDAR_POWERS:
+    _t, _r, _e = ELDAR_POWER_TEXT[_n]
     RULES[eldar_rule(_n)] = (
-        f"{_n} - an Eldar psychic power, available through Eldritch Tutelage (The Alien Brotherhood): a single "
-        "Blackshield Librarian in the army may select it in place of one of his normal psychic powers. He uses the power "
-        "according to its normal rules from the Eldar army list (not printed in The Lost and the Damned) and gains no "
-        "other Eldar special rules, equipment or psychic abilities.")
+        f"{_n} ({_t}; range {_r}): {_e}\nEldritch Tutelage (The Alien Brotherhood): a single Blackshield Librarian in "
+        "the army may select it in place of one of his normal psychic powers. He gains no other Eldar special rules, "
+        "equipment or psychic abilities.")
 
 
 def add_eldritch_tutelage(roots):

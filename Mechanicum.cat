@@ -107,6 +107,13 @@
 <condition field="selections" scope="force" value="6" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="adf0-dc10-89d4-f51e" type="lessThan" />
 </conditions>
 </modifier>
+<modifier type="add" field="error" value="An Allied Detachment may only make up 25% of the army's points.">
+<conditions>
+<condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3604-ccf4-4a04-bc94" type="instanceOf" />
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+<condition field="pts0-0000-0000-0001" scope="force" value="25" percentValue="true" shared="true" includeChildSelections="true" includeChildForces="false" childId="any" type="greaterThan" />
+</conditions>
+</modifier>
 <modifier type="add" field="error" value="A Primarch may only be selected as part of the army's Primary Detachment, never an Allied Detachment.">
 <conditions>
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ef4e-f5b8-029c-6e3f" type="atLeast" />
@@ -155,7 +162,7 @@
 </selectionEntryGroups>
 <rules>
 <rule id="a7d3-ab81-220a-7430" name="Allies Matrix: Mechanicum" hidden="false">
-<description>Allies Matrix - At the Height of the Heresy. Allies and Brothers: Alpha Legion, Blood Angels, Dark Angels, Death Guard, Emperor's Children, Exercitus Imperialis, Imperial Fists, Iron Hands, Mechanicum, Night Lords, Questoris Households, Raven Guard, Salamanders, Solar Auxilia, Sons of Horus, Space Wolves, Thousand Sons, Ultramarines, White Scars, Word Bearers, World Eaters. Conditional Alliance: Blackshields (The Lost and the Damned). Sworn Enemies: Daemons of the Ruinstorm. Apply the chart separately to every pair of detachments in the army. An alliance never overrides army-building restrictions, allegiance requirements or the specific wording of a unit, ability or item of wargear.</description>
+<description>Allies Matrix - At the Height of the Heresy. Allies and Brothers: Alpha Legion, Blood Angels, Dark Angels, Death Guard, Emperor's Children, Exercitus Imperialis, Imperial Fists, Iron Hands, Iron Warriors, Mechanicum, Night Lords, Questoris Households, Raven Guard, Salamanders, Solar Auxilia, Sons of Horus, Space Wolves, Thousand Sons, Ultramarines, White Scars, Word Bearers, World Eaters. Conditional Alliance: Blackshields (The Lost and the Damned), Talons of the Emperor. Sworn Enemies: Daemons of the Ruinstorm. Apply the chart separately to every pair of detachments in the army. An alliance never overrides army-building restrictions, allegiance requirements or the specific wording of a unit, ability or item of wargear. A Legion fielded with the other allegiance (e.g. Loyalist Sons of Horus) swaps sides: Sworn Enemies that only come from the two sides of the Heresy become allies, and all detachments of an army must share one allegiance.</description>
 </rule>
 </rules>
 <costs>
@@ -15644,7 +15651,7 @@
 <characteristic name="T" typeId="a21c-b80a-e1e4-079a">6</characteristic>
 <characteristic name="W" typeId="6ba7-776c-9ed0-b148">3</characteristic>
 <characteristic name="I" typeId="6f24-6315-ebd0-9465">4</characteristic>
-<characteristic name="A" typeId="e39a-3da9-2567-cfd3">2(3)</characteristic>
+<characteristic name="A" typeId="e39a-3da9-2567-cfd3">2 (3)</characteristic>
 <characteristic name="Ld" typeId="7e63-7406-c8d0-7e03">7</characteristic>
 <characteristic name="Sv" typeId="d23d-aa50-ddfb-88a0">4+</characteristic>
 </characteristics>
@@ -15705,7 +15712,7 @@
 <characteristic name="T" typeId="a21c-b80a-e1e4-079a">6</characteristic>
 <characteristic name="W" typeId="6ba7-776c-9ed0-b148">3</characteristic>
 <characteristic name="I" typeId="6f24-6315-ebd0-9465">4</characteristic>
-<characteristic name="A" typeId="e39a-3da9-2567-cfd3">2(3)</characteristic>
+<characteristic name="A" typeId="e39a-3da9-2567-cfd3">2 (3)</characteristic>
 <characteristic name="Ld" typeId="7e63-7406-c8d0-7e03">7</characteristic>
 <characteristic name="Sv" typeId="d23d-aa50-ddfb-88a0">4+</characteristic>
 </characteristics>
@@ -15766,7 +15773,7 @@
 <characteristic name="T" typeId="a21c-b80a-e1e4-079a">6</characteristic>
 <characteristic name="W" typeId="6ba7-776c-9ed0-b148">3</characteristic>
 <characteristic name="I" typeId="6f24-6315-ebd0-9465">4</characteristic>
-<characteristic name="A" typeId="e39a-3da9-2567-cfd3">2(3)</characteristic>
+<characteristic name="A" typeId="e39a-3da9-2567-cfd3">2 (3)</characteristic>
 <characteristic name="Ld" typeId="7e63-7406-c8d0-7e03">7</characteristic>
 <characteristic name="Sv" typeId="d23d-aa50-ddfb-88a0">4+</characteristic>
 </characteristics>
@@ -15827,7 +15834,7 @@
 <characteristic name="T" typeId="a21c-b80a-e1e4-079a">6</characteristic>
 <characteristic name="W" typeId="6ba7-776c-9ed0-b148">3</characteristic>
 <characteristic name="I" typeId="6f24-6315-ebd0-9465">4</characteristic>
-<characteristic name="A" typeId="e39a-3da9-2567-cfd3">2(3)</characteristic>
+<characteristic name="A" typeId="e39a-3da9-2567-cfd3">2 (3)</characteristic>
 <characteristic name="Ld" typeId="7e63-7406-c8d0-7e03">7</characteristic>
 <characteristic name="Sv" typeId="d23d-aa50-ddfb-88a0">4+</characteristic>
 </characteristics>
@@ -15888,7 +15895,7 @@
 <characteristic name="T" typeId="a21c-b80a-e1e4-079a">6</characteristic>
 <characteristic name="W" typeId="6ba7-776c-9ed0-b148">3</characteristic>
 <characteristic name="I" typeId="6f24-6315-ebd0-9465">4</characteristic>
-<characteristic name="A" typeId="e39a-3da9-2567-cfd3">2(3)</characteristic>
+<characteristic name="A" typeId="e39a-3da9-2567-cfd3">2 (3)</characteristic>
 <characteristic name="Ld" typeId="7e63-7406-c8d0-7e03">7</characteristic>
 <characteristic name="Sv" typeId="d23d-aa50-ddfb-88a0">4+</characteristic>
 </characteristics>
@@ -15949,7 +15956,7 @@
 <characteristic name="T" typeId="a21c-b80a-e1e4-079a">6</characteristic>
 <characteristic name="W" typeId="6ba7-776c-9ed0-b148">3</characteristic>
 <characteristic name="I" typeId="6f24-6315-ebd0-9465">4</characteristic>
-<characteristic name="A" typeId="e39a-3da9-2567-cfd3">2(3)</characteristic>
+<characteristic name="A" typeId="e39a-3da9-2567-cfd3">2 (3)</characteristic>
 <characteristic name="Ld" typeId="7e63-7406-c8d0-7e03">7</characteristic>
 <characteristic name="Sv" typeId="d23d-aa50-ddfb-88a0">4+</characteristic>
 </characteristics>
@@ -29629,7 +29636,7 @@
 </profile>
 <profile id="3b18-8504-5e78-b0ba" name="Earthshaker Cannon" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
 <characteristics>
-<characteristic name="Range" typeId="4b89-f4f0-2a22-1135">36-120"</characteristic>
+<characteristic name="Range" typeId="4b89-f4f0-2a22-1135">36-240"</characteristic>
 <characteristic name="S" typeId="6204-806b-a18a-c0be">9</characteristic>
 <characteristic name="AP" typeId="964e-6f66-dcaa-247a">3</characteristic>
 <characteristic name="Type" typeId="54df-9f85-8d55-7440">Ordnance 1, Barrage, Large Blast</characteristic>
@@ -29791,8 +29798,8 @@
 <characteristics>
 <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">-</characteristic>
 <characteristic name="S" typeId="6204-806b-a18a-c0be">User +2</characteristic>
-<characteristic name="AP" typeId="964e-6f66-dcaa-247a">Power Weapon</characteristic>
-<characteristic name="Type" typeId="54df-9f85-8d55-7440">Melee, Shred, Specialist Weapon</characteristic>
+<characteristic name="AP" typeId="964e-6f66-dcaa-247a">-</characteristic>
+<characteristic name="Type" typeId="54df-9f85-8d55-7440">Melee, Power Weapon, Shred, Specialist Weapon</characteristic>
 </characteristics>
 </profile>
 <profile id="ef29-18e9-0c7d-7d5d" name="Warp-spitter" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
@@ -30135,8 +30142,8 @@
 <characteristics>
 <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">-</characteristic>
 <characteristic name="S" typeId="6204-806b-a18a-c0be">6</characteristic>
-<characteristic name="AP" typeId="964e-6f66-dcaa-247a">Power Weapon</characteristic>
-<characteristic name="Type" typeId="54df-9f85-8d55-7440">Melee, Instant Death, Prisoned</characteristic>
+<characteristic name="AP" typeId="964e-6f66-dcaa-247a">-</characteristic>
+<characteristic name="Type" typeId="54df-9f85-8d55-7440">Melee, Power Weapon, Instant Death, Prisoned</characteristic>
 </characteristics>
 </profile>
 <profile id="bfcd-74ca-8c96-63d6" name="Hellex Plasma Mortar - Stationary" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">

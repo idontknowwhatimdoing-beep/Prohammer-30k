@@ -137,13 +137,13 @@
 <categoryEntry id="8fe7-c47e-3efd-6a7b" name="Army: Salamanders" hidden="false" />
 <categoryEntry id="b501-c616-2ef4-3e00" name="Army: Raven Guard" hidden="false" />
 <categoryEntry id="c945-f4d0-8682-31df" name="Army: Alpha Legion" hidden="false" />
+<categoryEntry id="abf9-f7bd-7785-b044" name="Army: Iron Warriors" hidden="false" />
 <categoryEntry id="2994-739c-d442-50f6" name="Army: Mechanicum" hidden="false" />
 <categoryEntry id="6e7a-38a2-1474-b8b5" name="Army: Exercitus Imperialis" hidden="false" />
 <categoryEntry id="c6af-4f7d-9492-fe1d" name="Army: Questoris Households" hidden="false" />
 <categoryEntry id="6365-0d47-9db3-920e" name="Army: Solar Auxilia" hidden="false" />
 <categoryEntry id="3cdb-3527-d761-7a58" name="Army: Daemons of the Ruinstorm" hidden="false" />
 <categoryEntry id="a1f3-eeb6-6d44-3d9d" name="Army: The Lost and the Damned" hidden="false" />
-<categoryEntry id="abf9-f7bd-7785-b044" name="Army: Iron Warriors" hidden="false" />
 <categoryEntry id="5584-3d43-1093-5cc2" name="Army: Talons of the Emperor" hidden="false" />
 </categoryEntries>
 <forceEntries>
@@ -335,7 +335,7 @@
 </modifiers>
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="101f-a4cf-76f6-3093" type="min" />
-<constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="debe-0569-1c15-e960" type="max" />
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="debe-0569-1c15-e960" type="max" />
 </constraints>
 </categoryLink>
 <categoryLink id="b045-9bf4-9a3a-2f3f" name="Troops" hidden="false" targetId="adf0-dc10-89d4-f51e" primary="false">
@@ -352,8 +352,8 @@
 </modifier>
 </modifiers>
 <constraints>
-<constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="db41-846f-527a-ad35" type="min" />
-<constraint field="selections" scope="parent" value="6" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cb53-0e18-ba83-3ac3" type="max" />
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="db41-846f-527a-ad35" type="min" />
+<constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cb53-0e18-ba83-3ac3" type="max" />
 </constraints>
 </categoryLink>
 <categoryLink id="23a5-471a-29ad-3924" name="Elites" hidden="false" targetId="6b19-97ac-7c40-0bdf" primary="false">
@@ -371,7 +371,7 @@
 </modifiers>
 <constraints>
 <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7d05-cf34-2430-3c79" type="min" />
-<constraint field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3f03-fa87-7ecb-1eb5" type="max" />
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3f03-fa87-7ecb-1eb5" type="max" />
 </constraints>
 </categoryLink>
 <categoryLink id="ed0d-2b8d-3a1b-70ba" name="Fast Attack" hidden="false" targetId="5e5f-f512-de8c-9505" primary="false">
@@ -397,7 +397,7 @@
 </modifiers>
 <constraints>
 <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4f19-7b63-abb0-049e" type="min" />
-<constraint field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="edde-851f-d5b9-48b9" type="max" />
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="edde-851f-d5b9-48b9" type="max" />
 </constraints>
 </categoryLink>
 <categoryLink id="3e12-4083-1316-303b" name="Heavy Support" hidden="false" targetId="a78f-9734-db0c-b938" primary="false">
@@ -423,7 +423,7 @@
 </modifiers>
 <constraints>
 <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="27b3-c50a-ced1-7281" type="min" />
-<constraint field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8be6-76f8-687f-43ed" type="max" />
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8be6-76f8-687f-43ed" type="max" />
 </constraints>
 </categoryLink>
 <categoryLink id="d743-4591-e20a-a920" name="Lords of War" hidden="false" targetId="dbd2-622e-16d4-78fe" primary="false">
@@ -441,7 +441,7 @@
 </modifiers>
 <constraints>
 <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="206b-ac0d-ed03-0f78" type="min" />
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="56c3-daea-438c-3b1a" type="max" />
+<constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="56c3-daea-438c-3b1a" type="max" />
 </constraints>
 </categoryLink>
 <categoryLink id="1d06-76a4-91aa-7e83" name="Fortification" hidden="false" targetId="1f6e-6456-710f-fbe7" primary="false">
@@ -459,7 +459,7 @@
 </modifiers>
 <constraints>
 <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f4cb-59dd-16c7-4708" type="min" />
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3e95-9053-a47f-f66d" type="max" />
+<constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3e95-9053-a47f-f66d" type="max" />
 </constraints>
 </categoryLink>
 <categoryLink id="d6b3-a644-547a-8ed0" name="Dedicated Transport" hidden="false" targetId="2c06-cce8-6863-d996" primary="false" />
@@ -470,7 +470,7 @@
 </categoryLink>
 <categoryLink id="d30b-56ab-8df0-4f9f" name="Compulsory Troops Eligible" hidden="false" targetId="071f-8316-97af-8fd6" primary="false">
 <constraints>
-<constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="62ce-dc4d-823b-a426" type="min" />
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="62ce-dc4d-823b-a426" type="min" />
 </constraints>
 </categoryLink>
 <categoryLink id="c5f3-762c-d2dd-0f37" name="Master of the Legion" hidden="false" targetId="cf42-da2a-93a6-6913" primary="false">

@@ -107,14 +107,21 @@ def core_rules():
     return [rule(core_rule_id(n), n, t) for n, t in out]
 
 
-def foc_links(variant=None):
-    """Category links of the Standard Force Organisation Chart. variant None keeps the ids of the first releases."""
+ALLIED_FOC = [  # Games in the Age of Darkness: Allied Detachment Force Org Chart (unless an army book says otherwise)
+    ("HQ", 1, 1), ("Troops", 1, 2), ("Elites", 0, 1), ("Fast Attack", 0, 1),
+    ("Heavy Support", 0, 1), ("Lords of War", 0, 0), ("Fortification", 0, 0),
+]
+
+
+def foc_links(variant=None, chart=None, line_min=2):
+    """Category links of a Force Organisation Chart (default: the Standard chart). variant None keeps the ids of the
+    first releases."""
     def k(*p):
         return uid(*p) if variant is None else uid(*p, variant)
     key = "foc" if variant is None else "foc-" + variant
     links = [category_link(CAT_CONFIG, "Configuration", key=key)]
     limits = {"Fast Attack": CAT_LIMIT_FA, "Heavy Support": CAT_LIMIT_HS}
-    for name, mn, mx in FOC:
+    for name, mn, mx in (chart or FOC):
         cl = category_link(cat(name), name, key=key)
         mods = []
         if name in limits:
@@ -137,7 +144,7 @@ def foc_links(variant=None):
     links.append(commander)
 
     line = category_link(CAT_LINE, "Compulsory Troops Eligible", key=key)
-    line.append(wrap("constraints", [constraint(k("foc-min", "line"), "min", 2)]))
+    line.append(wrap("constraints", [constraint(k("foc-min", "line"), "min", line_min)]))
     links.append(line)
 
     # Master of the Legion: one per FULL 1,000 points in the army.
@@ -182,6 +189,6 @@ def build():
     import allies
     primary = el("forceEntry", {"id": uid("force", "standard"), "name": "Primary Detachment", "hidden": "false"},
                  [wrap("categoryLinks", foc_links())])
-    root.append(wrap("forceEntries", [primary, allies.allied_force_entry(foc_links("allied"))]))
+    root.append(wrap("forceEntries", [primary, allies.allied_force_entry(foc_links("allied", ALLIED_FOC, 1))]))
     root.append(wrap("sharedRules", core_rules()))
     return root

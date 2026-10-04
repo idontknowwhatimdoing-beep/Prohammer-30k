@@ -227,7 +227,7 @@ RULES = {
     "Cor'bax (Aetheric Dominion)": (
         "Cor'bax may only be selected in a Ruinstorm Detachment using the Creeping Scourge Aetheric Dominion. He possesses "
         "all Core Dominion Rules of Creeping Scourge, always counts as a Favoured Archetype, possesses the Miasma of "
-        "Feebleness Dominion Emanation (renamed from Miasma of Decay) and the Crushing Limbs General Emanation at no additional cost and does not receive the "
+        "Feebleness Dominion Emanation and the Crushing Limbs General Emanation at no additional cost and does not receive the "
         "Pestilent Monolith Greater Manifestation. Cor'bax is selected as a Lord of War and is Unique."),
     "Psyker (Madail the Undivided)": (
         "Psyker (Mastery Level 3). Madail knows the Telepathy powers Psychic Shriek, Hallucination and Invisibility "

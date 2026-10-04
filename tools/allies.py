@@ -18,7 +18,7 @@ Allied Detachments.
 import re
 
 import gamesystem as gs
-from bsx import uid, el, wrap, cond, any_of, all_of, modifier, rule, category_link
+from bsx import PTS, uid, el, wrap, cond, any_of, all_of, modifier, rule, category_link
 from legiones2 import add_mods, add_to, RITE_ENTRY
 import allies_matrix as AM
 
@@ -37,15 +37,24 @@ LEGIONS = {  # matrix abbreviation -> Legion
     "DA": "Dark Angels", "EC": "Emperor's Children", "WS": "White Scars", "SW": "Space Wolves",
     "IF": "Imperial Fists", "NL": "Night Lords", "BA": "Blood Angels", "IH": "Iron Hands", "WE": "World Eaters",
     "UM": "Ultramarines", "DG": "Death Guard", "TS": "Thousand Sons", "SOH": "Sons of Horus", "WB": "Word Bearers",
-    "S": "Salamanders", "RG": "Raven Guard", "AL": "Alpha Legion"}
+    "S": "Salamanders", "RG": "Raven Guard", "AL": "Alpha Legion", "IW": "Iron Warriors"}
 ARMIES = {"ME": "Mechanicum", "EX": "Exercitus Imperialis", "Q": "Questoris Households", "SA": "Solar Auxilia",
-          "D": "Daemons of the Ruinstorm", "BS": "The Lost and the Damned"}
+          "D": "Daemons of the Ruinstorm", "BS": "The Lost and the Damned", "T": "Talons of the Emperor"}
 # catalogue name -> matrix abbreviation (None: not in the matrix)
 CATALOGUES = {"Legiones Astartes - " + n: a for a, n in LEGIONS.items()}
 CATALOGUES.update({n: a for a, n in ARMIES.items()})
-CATALOGUES["Legiones Astartes - Iron Warriors"] = None
-CATALOGUES["Talons of the Emperor"] = None
 SHORT = {**LEGIONS, **ARMIES, "BS": "Blackshields (The Lost and the Damned)"}
+# The side each army stands on in the matrix ("At the Height of the Heresy"). Author: a Legion fielded with the other
+# allegiance swaps sides - enmities that only come from the Heresy's two sides no longer apply (Loyalist Sons of Horus
+# may ally with Ultramarines). In a valid army every detachment has the same allegiance, so a Sworn Enemies pair whose
+# canonical sides differ is either fine (one of them swapped sides) or already an allegiance error: only pairs on the
+# same canonical side (or with an army without a side) are checked as Sworn Enemies.
+TRAITOR_SIDE = {"EC", "IW", "NL", "WE", "DG", "TS", "SOH", "WB", "AL", "D"}
+LOYAL_SIDE = {"DA", "WS", "SW", "IF", "BA", "IH", "UM", "S", "RG", "T"}
+
+
+def side(abbr):
+    return "T" if abbr in TRAITOR_SIDE else "L" if abbr in LOYAL_SIDE else None
 
 
 def short_name(catalogue):
@@ -72,6 +81,11 @@ def relations():
     out = {}
     for (a, b), v in m.items():
         w = m.get((b, a), "")
+        # the Talons row (added last) disagrees with the Talons column in a few cells: the other army's row wins
+        if a == "T" and b != "T":
+            v = w or v
+        elif b == "T" and a != "T":
+            w = v or w
         both = {v, w} - {""}
         out[(a, b)] = "S" if "S" in both else "C" if "C" in both else "A" if "A" in both else ""
     return out
@@ -107,6 +121,13 @@ def allied_force_entry(foc_links):
 # ------------------------------------------------------------------ catalogues
 def in_force(fid):
     return cond(fid, "force", "instanceOf", 0, deep=False)
+
+
+def pct_cond(pct=25):
+    """This force's points are more than pct % of the army's points."""
+    c = cond("any", "force", "greaterThan", pct, field=gs.PTS if hasattr(gs, "PTS") else PTS, deep=True)
+    c.set("percentValue", "true")
+    return c
 
 
 def roster_has(cid, n=1):
@@ -169,6 +190,9 @@ def apply(root, special_allied=()):
                                  "the Primary Detachment are filled.",
                  conds=[in_force(PRIMARY_FORCE), roster_has(mark, 2),
                         cond(gs.cat("Troops"), "force", "lessThan", 6)]),
+        # Games in the Age of Darkness: the Allied Detachment may only ever make up 25% of the army's points
+        modifier("add", "error", "An Allied Detachment may only make up 25% of the army's points.",
+                 conds=[in_force(ALLIED_FORCE), not_primary, pct_cond()]),
         # Primarchs: Primary Detachment only (Forces of the Legions, Fielding a Primarch)
         modifier("add", "error", "A Primarch may only be selected as part of the army's Primary Detachment, never an "
                                  "Allied Detachment.",
@@ -178,8 +202,10 @@ def apply(root, special_allied=()):
     rel = relations()
     if me:
         for (a, b), v in sorted(rel.items()):
-            if a != me or v != "S":
+            if a != me or v != "S" or b == me:
                 continue
+            if side(a) and side(b) and side(a) != side(b):
+                continue  # opposite sides: an allegiance error, or allowed because one side swapped
             for cat_name, abbr in CATALOGUES.items():
                 if abbr == b:
                     who = SHORT[b] if b != me else short_name(name)
@@ -286,5 +312,8 @@ def matrix_rule(name):
         for k_ in ("A", "C", "S"):
             title = AM.LEGEND[k_][0]
             parts.append(f"{title}: " + (", ".join(sorted(groups[k_])) or "-"))
-        text = ("Allies Matrix - At the Height of the Heresy. " + ". ".join(parts) + ". " + AM.GENERAL)
+        text = ("Allies Matrix - At the Height of the Heresy. " + ". ".join(parts) + ". " + AM.GENERAL +
+                " A Legion fielded with the other allegiance (e.g. Loyalist Sons of Horus) swaps sides: Sworn "
+                "Enemies that only come from the two sides of the Heresy become allies, and all detachments of an army "
+                "must share one allegiance.")
     return rule(uid("allies-rule", name), "Allies Matrix: " + short_name(name), text)

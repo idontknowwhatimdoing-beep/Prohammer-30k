@@ -55,7 +55,8 @@ def main():
         exp = 0
         if me:
             for p in pairs:
-                if me in p:
+                if me in p and p[0] != p[1] and not (allies.side(p[0]) and allies.side(p[1]) and
+                                                     allies.side(p[0]) != allies.side(p[1])):
                     exp += sum(1 for c, ab in allies.CATALOGUES.items() if ab == (p[1] if p[0] == me else p[0]))
         sworn_expected += exp
         sworn_found += found
@@ -66,7 +67,7 @@ def main():
                      m.get("value").split(":")[0] not in ("Sworn Enemies",))
         rite_errors += n_rite
         print(f"{name}: marker ok, {found} Sworn-Enemy errors, {n_rite} allied-restriction errors")
-    print(f"\nSworn-Enemy pairs (symmetric union): {len(pairs)}; errors {sworn_found} (expected {sworn_expected})")
+    print(f"\nSworn-Enemy pairs: {len(pairs)}; same-side errors {sworn_found} (expected {sworn_expected})")
     if problems:
         print("\nPROBLEMS:\n" + "\n".join(problems))
         sys.exit(1)

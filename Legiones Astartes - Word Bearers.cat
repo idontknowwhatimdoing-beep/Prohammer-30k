@@ -150,20 +150,17 @@
 <condition field="selections" scope="force" value="6" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="adf0-dc10-89d4-f51e" type="lessThan" />
 </conditions>
 </modifier>
+<modifier type="add" field="error" value="An Allied Detachment may only make up 25% of the army's points.">
+<conditions>
+<condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3604-ccf4-4a04-bc94" type="instanceOf" />
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+<condition field="pts0-0000-0000-0001" scope="force" value="25" percentValue="true" shared="true" includeChildSelections="true" includeChildForces="false" childId="any" type="greaterThan" />
+</conditions>
+</modifier>
 <modifier type="add" field="error" value="A Primarch may only be selected as part of the army's Primary Detachment, never an Allied Detachment.">
 <conditions>
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ef4e-f5b8-029c-6e3f" type="atLeast" />
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
-</conditions>
-</modifier>
-<modifier type="add" field="error" value="Sworn Enemies (Allies Matrix): Word Bearers and Blood Angels may not be part of the same army.">
-<conditions>
-<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b004-0491-54da-3417" type="atLeast" />
-</conditions>
-</modifier>
-<modifier type="add" field="error" value="Sworn Enemies (Allies Matrix): Word Bearers and Dark Angels may not be part of the same army.">
-<conditions>
-<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e8b8-a1ed-f923-f5f0" type="atLeast" />
 </conditions>
 </modifier>
 <modifier type="add" field="error" value="Sworn Enemies (Allies Matrix): Word Bearers and Death Guard may not be part of the same army.">
@@ -171,44 +168,9 @@
 <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a2a5-786f-15c2-08f4" type="atLeast" />
 </conditions>
 </modifier>
-<modifier type="add" field="error" value="Sworn Enemies (Allies Matrix): Word Bearers and Imperial Fists may not be part of the same army.">
-<conditions>
-<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5cb1-5da1-21e6-9aac" type="atLeast" />
-</conditions>
-</modifier>
-<modifier type="add" field="error" value="Sworn Enemies (Allies Matrix): Word Bearers and Iron Hands may not be part of the same army.">
-<conditions>
-<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bfa3-1f35-6e19-77f7" type="atLeast" />
-</conditions>
-</modifier>
-<modifier type="add" field="error" value="Sworn Enemies (Allies Matrix): Word Bearers and Raven Guard may not be part of the same army.">
-<conditions>
-<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b501-c616-2ef4-3e00" type="atLeast" />
-</conditions>
-</modifier>
-<modifier type="add" field="error" value="Sworn Enemies (Allies Matrix): Word Bearers and Salamanders may not be part of the same army.">
-<conditions>
-<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8fe7-c47e-3efd-6a7b" type="atLeast" />
-</conditions>
-</modifier>
 <modifier type="add" field="error" value="Sworn Enemies (Allies Matrix): Word Bearers and Sons of Horus may not be part of the same army.">
 <conditions>
 <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="be81-4d72-9377-1017" type="atLeast" />
-</conditions>
-</modifier>
-<modifier type="add" field="error" value="Sworn Enemies (Allies Matrix): Word Bearers and Space Wolves may not be part of the same army.">
-<conditions>
-<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="556d-c3d0-04d2-7d84" type="atLeast" />
-</conditions>
-</modifier>
-<modifier type="add" field="error" value="Sworn Enemies (Allies Matrix): Word Bearers and Ultramarines may not be part of the same army.">
-<conditions>
-<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="968b-599f-dde4-3171" type="atLeast" />
-</conditions>
-</modifier>
-<modifier type="add" field="error" value="Sworn Enemies (Allies Matrix): Word Bearers and White Scars may not be part of the same army.">
-<conditions>
-<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="39c6-3c01-fa18-06c9" type="atLeast" />
 </conditions>
 </modifier>
 </modifiers>
@@ -221,7 +183,7 @@
 <description>The army's Allegiance determines which characters, units, wargear, Rites of War and other options may be selected. A Legion is not inherently restricted to a particular Allegiance.</description>
 </rule>
 <rule id="551e-8128-a741-b3c2" name="Allies Matrix: Word Bearers" hidden="false">
-<description>Allies Matrix - At the Height of the Heresy. Allies and Brothers: Daemons of the Ruinstorm, Emperor's Children, Exercitus Imperialis, Mechanicum, Night Lords, Questoris Households, Solar Auxilia, Thousand Sons, Word Bearers, World Eaters. Conditional Alliance: Alpha Legion, Blackshields (The Lost and the Damned). Sworn Enemies: Blood Angels, Dark Angels, Death Guard, Imperial Fists, Iron Hands, Raven Guard, Salamanders, Sons of Horus, Space Wolves, Ultramarines, White Scars. Apply the chart separately to every pair of detachments in the army. An alliance never overrides army-building restrictions, allegiance requirements or the specific wording of a unit, ability or item of wargear.</description>
+<description>Allies Matrix - At the Height of the Heresy. Allies and Brothers: Daemons of the Ruinstorm, Emperor's Children, Exercitus Imperialis, Iron Warriors, Mechanicum, Night Lords, Questoris Households, Solar Auxilia, Thousand Sons, Word Bearers, World Eaters. Conditional Alliance: Alpha Legion, Blackshields (The Lost and the Damned). Sworn Enemies: Blood Angels, Dark Angels, Death Guard, Imperial Fists, Iron Hands, Raven Guard, Salamanders, Sons of Horus, Space Wolves, Talons of the Emperor, Ultramarines, White Scars. Apply the chart separately to every pair of detachments in the army. An alliance never overrides army-building restrictions, allegiance requirements or the specific wording of a unit, ability or item of wargear. A Legion fielded with the other allegiance (e.g. Loyalist Sons of Horus) swaps sides: Sworn Enemies that only come from the two sides of the Heresy become allies, and all detachments of an army must share one allegiance.</description>
 </rule>
 </rules>
 <categoryLinks>
@@ -9626,7 +9588,7 @@ LIMITATIONS - Only a Traitor Word Bearers Detachment. The Detachment must includ
 <rules>
 <rule id="ea04-e0a5-8c11-7226" name="Last of the Serrated Sun" hidden="false">
 <description>TRAITOR ONLY.
-EFFECTS - Company of Monsters: Gal Vorbak Dark Brethren may be selected as Troops choices and may fulfil compulsory Troops selections; every Gal Vorbak unit in the Detachment must purchase a Legion Drop Pod or Dreadclaw Drop Pod as a Dedicated Transport. Drop Elite: any Word Bearers Infantry unit which may normally purchase a Rhino as a Dedicated Transport may instead purchase a Legion Drop Pod at its normal points cost. Burning Sun: whenever a Legion Drop Pod or Dreadclaw Drop Pod of this Detachment arrives by Deep Strike, every enemy unit with at least one model within 12" of its final position must take a Pinning test (one test per arriving Drop Pod).
+EFFECTS - Company of Monsters: Gal Vorbak Dark Brethren may be selected as Troops choices and may fulfil compulsory Troops selections; every Gal Vorbak unit in the Detachment must purchase a Legion Drop Pod or Dreadclaw Drop Pod as a Dedicated Transport; if their unit size is more than 5 models they may purchase Teleportation Transponders for +25 points per unit. Drop Elite: any Word Bearers Infantry unit which may normally purchase a Rhino as a Dedicated Transport may instead purchase a Legion Drop Pod at its normal points cost. Burning Sun: whenever a Legion Drop Pod or Dreadclaw Drop Pod of this Detachment arrives by Deep Strike, every enemy unit with at least one model within 12" of its final position must take a Pinning test (one test per arriving Drop Pod).
 LIMITATIONS - Only a Traitor Word Bearers Detachment. All Infantry units must begin the battle in Reserve and enter play using a Deep Striking Drop Pod, Teleportation Transponders or embarked aboard a Transport with the Flyer type. The army may not include Immobile units. The army may not include a Fortification or an Allied Detachment.</description>
 </rule>
 </rules>
@@ -23886,12 +23848,20 @@ LIMITATIONS - Only a Traitor Word Bearers Detachment. All Infantry units must be
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="914c-2563-ee5e-1404" type="atLeast" />
 </conditions>
 </modifier>
-<modifier type="add" field="error" value="Last of the Serrated Sun: every Gal Vorbak unit must purchase a Legion Drop Pod or Dreadclaw Drop Pod as a Dedicated Transport.">
+<modifier type="add" field="error" value="Last of the Serrated Sun: every Gal Vorbak unit must purchase a Legion Drop Pod or Dreadclaw Drop Pod as a Dedicated Transport (units of more than 5 models: or Teleportation Transponders).">
 <conditions>
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="914c-2563-ee5e-1404" type="atLeast" />
 <condition field="selections" scope="1e03-8cef-8a66-ff56" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4e1c-55bd-1f6c-9584" type="lessThan" />
 <condition field="selections" scope="1e03-8cef-8a66-ff56" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2bad-68df-db1e-95d9" type="lessThan" />
 </conditions>
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="1e03-8cef-8a66-ff56" value="6" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="lessThan" />
+<condition field="selections" scope="1e03-8cef-8a66-ff56" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3671-d044-efed-e74b" type="lessThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
 </modifier>
 <modifier type="add" field="error" value="Gal Vorbak Dark Brethren is Traitor only.">
 <conditions>
@@ -24107,6 +24077,31 @@ LIMITATIONS - Only a Traitor Word Bearers Detachment. All Infantry units must be
 </entryLinks>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+<selectionEntry id="3671-d044-efed-e74b" name="Teleportation Transponders (Last of the Serrated Sun, units of 6+)" hidden="false" collective="false" import="true" type="upgrade">
+<modifiers>
+<modifier type="set" field="hidden" value="true">
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="914c-2563-ee5e-1404" type="lessThan" />
+<condition field="selections" scope="1e03-8cef-8a66-ff56" value="6" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="lessThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+</modifiers>
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="26eb-4201-243d-fcd8" type="max" />
+</constraints>
+<rules>
+<rule id="e8cc-02da-48d5-e390" name="Teleportation Transponders (Last of the Serrated Sun)" hidden="false">
+<description>If their unit size is more than 5 models, Gal Vorbak may purchase Teleportation Transponders for +25 points per unit instead of a Legion Drop Pod or Dreadclaw Drop Pod.</description>
+</rule>
+</rules>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
 </costs>
 </selectionEntry>
 <selectionEntry id="b1e3-ca8e-2398-30ab" name="Hex-Bolts (unit)" hidden="false" collective="false" import="true" type="upgrade">
@@ -46533,7 +46528,7 @@ LIMITATIONS - Only a Traitor Word Bearers Detachment. The Detachment must includ
 </rule>
 <rule id="efe6-3184-9f48-e68e" name="Last of the Serrated Sun" hidden="false">
 <description>TRAITOR ONLY.
-EFFECTS - Company of Monsters: Gal Vorbak Dark Brethren may be selected as Troops choices and may fulfil compulsory Troops selections; every Gal Vorbak unit in the Detachment must purchase a Legion Drop Pod or Dreadclaw Drop Pod as a Dedicated Transport. Drop Elite: any Word Bearers Infantry unit which may normally purchase a Rhino as a Dedicated Transport may instead purchase a Legion Drop Pod at its normal points cost. Burning Sun: whenever a Legion Drop Pod or Dreadclaw Drop Pod of this Detachment arrives by Deep Strike, every enemy unit with at least one model within 12" of its final position must take a Pinning test (one test per arriving Drop Pod).
+EFFECTS - Company of Monsters: Gal Vorbak Dark Brethren may be selected as Troops choices and may fulfil compulsory Troops selections; every Gal Vorbak unit in the Detachment must purchase a Legion Drop Pod or Dreadclaw Drop Pod as a Dedicated Transport; if their unit size is more than 5 models they may purchase Teleportation Transponders for +25 points per unit. Drop Elite: any Word Bearers Infantry unit which may normally purchase a Rhino as a Dedicated Transport may instead purchase a Legion Drop Pod at its normal points cost. Burning Sun: whenever a Legion Drop Pod or Dreadclaw Drop Pod of this Detachment arrives by Deep Strike, every enemy unit with at least one model within 12" of its final position must take a Pinning test (one test per arriving Drop Pod).
 LIMITATIONS - Only a Traitor Word Bearers Detachment. All Infantry units must begin the battle in Reserve and enter play using a Deep Striking Drop Pod, Teleportation Transponders or embarked aboard a Transport with the Flyer type. The army may not include Immobile units. The army may not include a Fortification or an Allied Detachment.</description>
 </rule>
 <rule id="0c92-de98-c8f7-f281" name="Selected as Troops (Last of the Serrated Sun)" hidden="false">

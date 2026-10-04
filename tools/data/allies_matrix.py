@@ -4,30 +4,32 @@ Copied verbatim from the Google Doc. Rows and columns use the document's abbrevi
 document leaves empty.
 """
 MATRIX_TABLE = """
-|  | DA | EC | WS | SW | IF | NL | BA | IH | WE | UM | DG | TS | SoH | WB | S | RG | AL | ME | Ex | Q | SA | D | BS |
-| DA | A | S | A | C | A | S | A | A | S | A | S | S | S | S | A | A | S | A | A | A | A | S | C |
-| EC | S | A | S | S | S | A | S | S | A |  | A | A | A | A | S | S | C | A | A | A | A | A | C |
-| WS | A | S | A | A | A | S | A | A | S | A | S | S | S | S | A | A | S | A | A | A | A | S | C |
-| SW | S | S | A | A | A | S | A | A | S | A | S | S | S | S | A | A | S | A | A | A | A | S | C |
-| IF | A | S | A | A | A | S | A | A | S | A | S | S | S | S | A | A | S | A | A | A | A | S | C |
-| NL | S | A | S | S | S | A | S | S | A | S | A | A | A | A | S |  | C | A | A | A | A | A | C |
-| BA | A | S | A | A | A | S | A | A | S | A | S | S | S | S | A | A | S | A | A | A | A | S | C |
-| IH | A | S | A | A | A | S | A | A | S | A | S | S | S | S | A | A | S | A | A | A | A | S | C |
-| WE | S | A | S | S | S | A | S | S | A | S | A | A | A | A | S | S | C | A | A | A | A | A | C |
-| UM | A | S | A | A | A | S | A | A | S | A | S | S | S | S | A | A | S | A | A | A | A | S | C |
-| DG | S | A | S | S | S | A | S | S | A | S | A | S | A | S | S | S | C | A | A | A | A | C | C |
-| TS | S | A | S | S | S | A | S | S | A | S | S | A | A | A | S | S | C | A | A | A | A | C | C |
-| SoH | S | A | S | S | S | A | S | S | A | S | A | A | A | S | S | S | A | A | A | A | A | A | C |
-| WB | S | A | S | S | S | A | S | S | A | S | S | A | S | A | S | S | C | A | A | A | A | A | C |
-| S | A | S | A | A | A | S | A | A | S | A | S | S | S | S | A | A | S | A | A | A | A | S | C |
-| RG | A | S | A | A | A | S | A | A | S | A | S | S | S | S | A | A | S | A | A | A | A | S | C |
-| AL | S | C | S | S | S | C | S | S | C | S | C | C | A | C | S | S | A | A | A | A | A | A | C |
-| ME | A | A | A | A | A | A | A | A | A | A | A | A | A | A | A | A | A | A | A | A | A | S | C |
-| EX | A | A | A | A | A | A | A | A | A | A | A | A | A | A | A | A | A | A | A | A | A | S | C |
-| Q | A | A | A | A | A | A | A | A | A | A | A | A | A | A | A | A | A | A | A | A | A | S | C |
-| SA | A | A | A | A | A | A | A | A | A | A | A | A | A | A | A | A | A | A | A | A | A | S | C |
-| D | S | A | S | S | S | A | S | S | A | S | C | C | A | A | S | S | A | S | S | S | S | A | C |
-| BS | C | C | C | C | C | C | C | C | C | C | C | C | C | C | C | C | C | C | C | C | C | C | A |
+|  | DA | EC | IW | WS | SW | IF | NL | BA | IH | WE | UM | DG | TS | SoH | WB | S | RG | AL | ME | Ex | Q | SA | D | BS | T |
+| DA | A | S | S | A | C | A | S | A | A | S | A | S | S | S | S | A | A | S | A | A | A | A | S | C | C |
+| EC | S | A | A | S | S | S | A | S | S | A | S | A | A | A | A | S | S | C | A | A | A | A | A | C | S |
+| IW | S | A | S | S | S | S | A | S | S | A | S | A | A | A | A | S | S | C | A | A | A | A | C | C | S |
+| WS | A | S | S | A | A | A | S | A | A | S | A | S | S | S | S | A | A | S | A | A | A | A | S | C | C |
+| SW | C | S | S | A | A | A | S | A | A | S | A | S | S | S | S | A | A | S | A | A | A | A | S | C | C |
+| IF | A | S | S | A | A | A | S | A | A | S | A | S | S | S | S | A | A | S | A | A | A | A | S | C | C |
+| NL | S | A | A | S | S | S | A | S | S | A | S | A | A | A | A | S | S | C | A | A | A | A | A | C | S |
+| BA | A | S | S | A | A | A | S | A | A | S | A | S | S | S | S | A | A | S | A | A | A | A | S | C | C |
+| IH | A | S | S | A | A | A | S | A | A | S | A | S | S | S | S | A | A | S | A | A | A | A | S | C | C |
+| WE | S | A | A | S | S | S | A | S | S | A | S | A | A | A | A | S | S | C | A | A | A | A | A | C | S |
+| UM | A | S | S | A | A | A | S | A | A | S | A | S | S | S | S | A | A | S | A | A | A | A | S | C | C |
+| DG | S | A | A | S | S | S | A | S | S | A | S | A | S | A | S | S | S | C | A | A | A | A | C | C | S |
+| TS | S | A | A | S | S | S | A | S | S | A | S | S | A | A | A | S | S | C | A | A | A | A | C | C | S |
+| SoH | S | A | A | S | S | S | A | S | S | A | S | A | A | A | S | S | S | A | A | A | A | A | A | C | S |
+| WB | S | A | A | S | S | S | A | S | S | A | S | S | A | S | A | S | S | C | A | A | A | A | A | C | S |
+| S | A | S | S | A | A | A | S | A | A | S | A | S | S | S | S | A | A | S | A | A | A | A | S | C | C |
+| RG | A | S | S | A | A | A | S | A | A | S | A | S | S | S | S | A | A | S | A | A | A | A | S | C | C |
+| AL | S | C | C | S | S | S | C | S | S | C | S | C | C | A | C | S | S | A | A | A | A | A | A | C | S |
+| ME | A | A | A | A | A | A | A | A | A | A | A | A | A | A | A | A | A | A | A | A | A | A | S | C | C |
+| EX | A | A | A | A | A | A | A | A | A | A | A | A | A | A | A | A | A | A | A | A | A | A | S | C | C |
+| Q | A | A | A | A | A | A | A | A | A | A | A | A | A | A | A | A | A | A | A | A | A | A | S | C | C |
+| SA | A | A | A | A | A | A | A | A | A | A | A | A | A | A | A | A | A | A | A | A | A | A | S | C | C |
+| D | S | A | C | S | S | S | A | S | S | A | S | C | C | A | A | S | S | A | S | S | S | S | A | C | S |
+| BS | C | C | C | C | C | C | C | C | C | C | C | C | C | C | C | C | C | C | C | C | C | C | C | A | S |
+| T | C | S | S | C | C | C | S | C | C | S | C | S | S | C | C | S | C | S | C | C | C | C | S | S | C |
 """
 
 LEGEND = {

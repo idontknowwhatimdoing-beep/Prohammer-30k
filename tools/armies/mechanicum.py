@@ -762,7 +762,7 @@ WEAPONS.update({
     "Two Lascannons": ('48"', "9", "2", "Heavy 1"),
     "Two Irradiation Engines": ("Template", "4", "3", "Heavy 1, Torrent, Fleshbane, Rad-phage"),
     "Dual Melta Cannon": ('24"', "8", "1", "Heavy 1, Blast, Melta, Twin-linked"),
-    "Earthshaker Cannon": ('36-120"', "9", "3", "Ordnance 1, Barrage, Large Blast"),
+    "Earthshaker Cannon": ('36-240"', "9", "3", "Ordnance 1, Barrage, Large Blast"),
     "Medusa Cannon": ('36"', "10", "2", "Ordnance 1, Barrage, Large Blast"),
     "Mars-Colossus Bombard": ('12-72"', "7", "3", "Ordnance 2, Barrage, Large Blast, Concussive, Pinning"),
     "Dual Earthshaker Cannon": ('24-240"', "9", "3", "Ordnance 1, Barrage, Massive Blast, Twin-linked"),
@@ -784,7 +784,7 @@ WEAPONS.update({
     "Two Cynis Pattern Plasma Ejectors": ('18"', "8", "2", "Heavy 1, Blast, Gets Hot, Plasma Wave"),
     "Two Lightning-Blaster Sentinels": ('18"', "7", "5", "Heavy 3, Shred, Rending"),
     # Dark Mechanicum
-    "Possessed Power Claw": ("-", "User +2", "Power Weapon", "Melee, Shred, Specialist Weapon"),
+    "Possessed Power Claw": ("-", "User +2", "-", "Melee, Power Weapon, Shred, Specialist Weapon"),
     "Warp-spitter": ('18"', "5", "4", "Assault 2, Rending"),
     "Abominant Claws": ("-", "User +1", "-", "Melee, Rending"),
     "Industrial Stubber": ('18"', "4", "6", "Assault 2"),
@@ -836,8 +836,8 @@ MULTI = {
         "Galvanic Caster - Ignis": ('18"', "2", "5", "Assault 2, Blind, Ignores Cover")},
     "Hammershot Ammunition": {"Galvanic Caster - Hammershot": ('30"', "4", "3", "Assault 1")},
     "Volkite Incinerator": {"Volkite Incinerator - Beam": ('10"', "5", "5", "Assault 2, Rending"),
-                            "Volkite Incinerator - Point-Blank Blast": ("-", "6", "Power Weapon",
-                                                                       "Melee, Instant Death, Prisoned")},
+                            "Volkite Incinerator - Point-Blank Blast": ("-", "6", "-",
+                                                                       "Melee, Power Weapon, Instant Death, Prisoned")},
     "Hellex Plasma Mortar": {"Hellex Plasma Mortar - Stationary": ('12-48"', "8", "2",
                                                                    "Ordnance 1, Barrage, Large Blast, Plasma Wave"),
                              "Hellex Plasma Mortar - Moved": ('12-24"', "8", "2",
@@ -2010,7 +2010,7 @@ def tarantula():
 def vorax():
     return automata_unit(
         "Vorax Class Battle-Automata Maniple", FA, "Fast Attack", "Vorax", 65, 6,
-        lambda u: unit_profile(u, "Vorax", "Monstrous Creature", 4, 4, 6, 6, 3, 4, "2(3)", 7, "4+"),
+        lambda u: unit_profile(u, "Vorax", "Monstrous Creature", 4, 4, 6, 6, 3, 4, "2 (3)", 7, "4+"),
         ["Lightning Gun", "Two Rotor Cannons", "Battle-Automata Power Blades", "Infravisor"],
         ["Cybernetica Cortex", "Programmed Behaviour", "Fleet", "Scout", "Paired"],
         groups_fn=lambda mk: [slot(mk, "Replace Lightning Gun", "Lightning Gun", [("Irad Cleanser", 10)])],

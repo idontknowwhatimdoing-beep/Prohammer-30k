@@ -41,8 +41,7 @@ RULES = {
                        "Strength. After the first round, the weapon is resolved at the bearer's normal Strength."),
     "Phoenix Spear": (
         "Any Emperor's Children Independent Character or unit Character able to select a Power Weapon may instead select "
-        "a Phoenix Spear instead for 20 points. A model already equipped with a Power Weapon as part of its basic "
-        "wargear may exchange it for a Phoenix Spear for 20 points. Named characters may not exchange their weapons for "
+        "a Phoenix Spear for 20 points. Named characters may not exchange their weapons for "
         "a Phoenix Spear."),
     "Digital Lasers": ("An Emperor's Children Independent Character may purchase Digital Lasers for +15 points. A model "
                        "equipped with Digital Lasers adds +1 to its Attacks characteristic. Digital Lasers may not be "

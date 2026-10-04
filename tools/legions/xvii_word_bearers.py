@@ -123,7 +123,8 @@ RULES = {
     "Last of the Serrated Sun": (
         "TRAITOR ONLY.\nEFFECTS - Company of Monsters: Gal Vorbak Dark Brethren may be selected as Troops choices and may "
         "fulfil compulsory Troops selections; every Gal Vorbak unit in the Detachment must purchase a Legion Drop Pod or "
-        "Dreadclaw Drop Pod as a Dedicated Transport. Drop Elite: any Word Bearers Infantry unit which may normally "
+        "Dreadclaw Drop Pod as a Dedicated Transport; if their unit size is more than 5 models they may purchase "
+        "Teleportation Transponders for +25 points per unit. Drop Elite: any Word Bearers Infantry unit which may normally "
         "purchase a Rhino as a Dedicated Transport may instead purchase a Legion Drop Pod at its normal points cost. "
         "Burning Sun: whenever a Legion Drop Pod or Dreadclaw Drop Pod of this Detachment arrives by Deep Strike, every "
         "enemy unit with at least one model within 12\" of its final position must take a Pinning test (one test per "
@@ -485,13 +486,26 @@ def gal_vorbak(key="Gal Vorbak Dark Brethren", root=True):
                                          conds=[cond(rite_id("Last of the Serrated Sun"), "force", "lessThan", 1)]),
                                 modifier("set", "hidden", "true", conds=big)],
                           constraints=[constraint(uid(lid, "max"), "max", 1, auto=True)]))
+        tp = uid(u, "serrated", "Teleportation Transponders")
+        transponders = entry(tp, "Teleportation Transponders (Last of the Serrated Sun, units of 6+)", cost=25,
+                             rules=[rule(uid(tp, "r"), "Teleportation Transponders (Last of the Serrated Sun)",
+                                         "If their unit size is more than 5 models, Gal Vorbak may purchase Teleportation "
+                                         "Transponders for +25 points per unit instead of a Legion Drop Pod or Dreadclaw "
+                                         "Drop Pod.")],
+                             constraints=[constraint(uid(tp, "max"), "max", 1, auto=True)],
+                             mods=[modifier("set", "hidden", "true", groups=[any_of(
+                                 cond(rite_id("Last of the Serrated Sun"), "force", "lessThan", 1),
+                                 cond("model", u, "lessThan", 6))])])
         mods = troops_mods(ss) + [modifier("remove", "category", ELITES, conds=ss()),
                                   modifier("add", "error", "Last of the Serrated Sun: every Gal Vorbak unit must purchase "
                                                            "a Legion Drop Pod or Dreadclaw Drop Pod as a Dedicated "
-                                                           "Transport.",
+                                                           "Transport (units of more than 5 models: or Teleportation "
+                                                           "Transponders).",
                                            conds=ss() + [cond(T["Legion Drop Pod"], u, "lessThan", 1),
                                                          cond(T["Anvillus Pattern Dreadclaw Drop Pod"], u, "lessThan",
-                                                              1)])]
+                                                              1)],
+                                           groups=[any_of(cond("model", u, "lessThan", 6),
+                                                          cond(tp, u, "lessThan", 1))])]
         rl.append("Selected as Troops (Last of the Serrated Sun)")
     else:
         rl.append("Retinue")
@@ -499,7 +513,8 @@ def gal_vorbak(key="Gal Vorbak Dark Brethren", root=True):
               cats=[foc(ELITES, "Elites", u)] if root else [],
               infolinks=rules_links(rl, key=u),
               entries=[martyr, brethren, per_model(u, "Krak Grenades (entire squad)", 2, u, ["Krak Grenades"]),
-                       per_model(u, "Melta Bombs (entire squad)", 5, u, ["Melta Bombs"])],
+                       per_model(u, "Melta Bombs (entire squad)", 5, u, ["Melta Bombs"])] + (
+                  [transponders] if root else []),
               groups=[bolter, ccw, tr])
     return allegiance_only(e, loyalist=False)
 

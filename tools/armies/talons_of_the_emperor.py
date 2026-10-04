@@ -91,7 +91,7 @@ RULES = {
         "Initiative. In addition, Valdor gains a Teleportation Transponder at no additional cost and one friendly unit "
         "with the Legio Custodes special rule may also receive Teleportation Transponders at no additional cost."),
     "Grav-backwash": (
-        "If the Pallas Grav-Attack moved during its previous Movement phase, enemy models suffer -1 to their To Hit rolls "
+        "If this Vehicle moved during its previous Movement phase, enemy models suffer -1 to their To Hit rolls "
         "when attacking it in close combat, to a maximum required roll of 6+."),
     "Auramite Pinions": "A model equipped with Auramite Pinions has a 4+ Invulnerable Save in close combat.",
     "Unyielding Sentinel": ("Whenever the Telemon suffers a Penetrating Hit, roll two dice when determining the result on "
@@ -1457,7 +1457,7 @@ def build():
                ["Ex Oblivio", "Independent Character", "Mistress of the Silent Sisterhood"], KNIGHT_ABYSSAL),
         knight("Sisters of Silence Oblivion Knight-Centura", "Oblivion Knight-Centura", 60,
                (5, 4, 3, 3, 3, 5, 3, 9, "3+"), ["Ex Oblivio", "Independent Character"], KNIGHT_CENTURA),
-        vigil_command(), krole(),
+        krole(),
         # Troops
         custodian_guard(), sentinel_guard(), vigilator(), prosecutor(), witchseeker(),
         # Elites

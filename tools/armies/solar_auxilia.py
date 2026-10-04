@@ -288,7 +288,9 @@ RULES = {
         "marker over the Cyclops and resolve its payload against all models beneath it; the Cyclops is then destroyed. "
         "If a Cyclops is destroyed by any other means, roll a D6: on a 6 it immediately Detonates."),
     # ---------------------------------------------------------------- Dramatis Personae
-    "Warlord (Ireton MaSade)": "Ireton MaSade must be the army's Warlord. This does not override Disciplined Command. Loyalist only.",
+    "Warlord (Ireton MaSade)": "Ireton MaSade must be the army's Warlord. This does not override Disciplined Command: "
+                               "MaSade counts as a Legate Commander (also for any limit on Legate Commanders). Loyalist "
+                               "only.",
     "Master of the Battlefield": (
         "After both armies have deployed, but before the first turn begins, MaSade may redeploy D3 friendly Solar "
         "Auxilia units from his Detachment anywhere they could normally have deployed, or place them into Reserve. A "
@@ -1046,9 +1048,9 @@ def ireton_masade():
              mods=[hide_if(has(L.TRAITOR, "roster")),
                    modifier("add", "error", "Ireton MaSade is Loyalist only.", conds=[has(L.TRAITOR, "roster")]),
                    modifier("add", "warning", "Ireton MaSade must be the army's Warlord, but he does not override "
-                                              "Disciplined Command (Lord Marshal - Legate Commander - Strategos - Tank "
-                                              "Commander).",
-                            groups=[any_of(has(IDS["legate"], "roster"), has(IDS["tcs"], "roster"))])])
+                                              "Disciplined Command: he counts as a Legate Commander, so a Lord Marshal "
+                                              "in the army outranks him.",
+                            conds=[has(IDS["lord_marshal"], "roster")])])
     return e
 
 
@@ -1771,4 +1773,26 @@ def build():
         life_ward_retinue(), cohort_attaches(),
         dracosan(), arvus(), hades(),
     ]
-    return catalogue(ARMY, units, shared)
+    root = catalogue(ARMY, units, shared)
+    mechanicum_liaison_units(root)
+    return root
+
+
+def mechanicum_liaison_units(root):
+    """Mechanicum Liaison (author): a Detachment with a Mechanicum Liaison Adept may include Thallax Cohorts and Castellax
+    Battle-automata Maniples, in their Mechanicum slots (Troops). The units are linked from the Mechanicum catalogue
+    (catalogueLink), so they stay exactly as in the Mechanicum list."""
+    mech = "Mechanicum"
+    liaison = uid("model", IDS["attaches"], "Mechanicum Liaison Adept")
+    root.insert(0, wrap("catalogueLinks", [el("catalogueLink", {
+        "id": k("catlink", mech), "name": mech, "targetId": uid(mech, "catalogue"), "type": "catalogue",
+        "importRootEntries": "false"})]))
+    links = []
+    for n in ("Thallax Cohort", "Castellax Class Battle-Automata Maniple"):
+        lid = k("link", "liaison", n)
+        links.append(link(lid, uid(mech, "unit", n), f"{n} (Mechanicum Liaison)",
+                          mods=[modifier("set", "hidden", "true", conds=[cond(liaison, "force", "lessThan", 1)]),
+                                modifier("add", "error", f"{n}: only a Solar Auxilia Detachment containing a Mechanicum "
+                                                         "Liaison Adept may include it.",
+                                         conds=[cond(liaison, "force", "lessThan", 1)])]))
+    root.find("entryLinks").extend(links)

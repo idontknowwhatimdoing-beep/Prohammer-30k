@@ -60,7 +60,7 @@ def check(roots):
                     errors.append(f"duplicate id {i} ({e.tag.split('}')[-1]} {e.get('name')}) in {fname}")
                 seen.add(i)
                 ids.setdefault(i, fname)
-    for fname, r in roots[1:]:
+    for fname, r in roots[-1:]:
         for e in r.iter():
             for attr in ("targetId", "typeId", "childId", "defaultSelectionEntryId"):
                 v = e.get(attr)
@@ -102,7 +102,17 @@ def build_one(kind, name):
     bsx.write(root, path)
     gst = ET.parse(os.path.join(ROOT, "Prohammer 30k.gst")).getroot()
     cat = ET.parse(path).getroot()
-    errors = check([("Prohammer 30k.gst", gst), (out, cat)])
+    # ids of catalogues this one links to (catalogueLinks) count as known
+    linked = []
+    names = {}
+    for f in glob.glob(os.path.join(ROOT, "*.cat")):
+        if os.path.abspath(f) != os.path.abspath(path):
+            r = ET.parse(f).getroot()
+            names[r.get("id")] = (os.path.basename(f), r)
+    for cl in cat.iter():
+        if cl.tag.endswith("catalogueLink") and cl.get("targetId") in names:
+            linked.append(names[cl.get("targetId")])
+    errors = check([("Prohammer 30k.gst", gst)] + linked + [(out, cat)])
     n = sum(1 for _ in cat.iter())
     print(f"{out}: {n} elements, {os.path.getsize(path) // 1024} KB")
     for e in errors[:40]:

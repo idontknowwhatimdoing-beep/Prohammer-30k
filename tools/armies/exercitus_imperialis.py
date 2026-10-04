@@ -1356,6 +1356,17 @@ def rogue_psyker():
     if pw.find("constraints") is None:
         pw.insert(list(pw).index(pw.find("modifiers")) + 1, el("constraints"))
     pw.find("constraints").append(constraint(uid(pid, "max3"), "max", 3))
+    # author: all powers from one discipline (Telepathy or Malefic Daemonology)
+    import psychic_powers as _PSY
+    ids = {e.get("id") for e in pw.iter("selectionEntry")}
+    tele = [i for i in (uid("psy-power", k("rp", "powers"), n) for n in _PSY.in_discipline("Telepathy")) if i in ids]
+    mal = [i for i in (uid("psy-power", k("rp", "powers"), n) for n in _PSY.in_discipline("Daemonology (Malefic)"))
+           if i in ids]
+    assert tele and mal, (len(tele), len(mal))
+    add_mods(pw, [modifier("add", "error", "A Rogue Psyker selects all his powers from one discipline: Telepathy or "
+                                           "Malefic Daemonology.",
+                           groups=[all_of(any_of(*[cond(i, u, "atLeast", 1) for i in tele]),
+                                          any_of(*[cond(i, u, "atLeast", 1) for i in mal]))])])
     e = unit("0-1 Rogue Psyker", 35, HQ, "HQ", key=u, compulsory=False,
              profiles=[unit_profile(u, "Rogue Psyker", "Infantry (Character)", 2, 2, 3, 3, 2, 3, 1, 8, "-"),
                        unit_profile(u, "Rogue Alpha (Alpha Psyker)", "Infantry (Character)", 3, 3, 3, 4, 3, 4, 2, 9,

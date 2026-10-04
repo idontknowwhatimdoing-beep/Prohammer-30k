@@ -177,55 +177,17 @@
 <condition field="selections" scope="force" value="6" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="adf0-dc10-89d4-f51e" type="lessThan" />
 </conditions>
 </modifier>
+<modifier type="add" field="error" value="An Allied Detachment may only make up 25% of the army's points.">
+<conditions>
+<condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3604-ccf4-4a04-bc94" type="instanceOf" />
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+<condition field="pts0-0000-0000-0001" scope="force" value="25" percentValue="true" shared="true" includeChildSelections="true" includeChildForces="false" childId="any" type="greaterThan" />
+</conditions>
+</modifier>
 <modifier type="add" field="error" value="A Primarch may only be selected as part of the army's Primary Detachment, never an Allied Detachment.">
 <conditions>
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ef4e-f5b8-029c-6e3f" type="atLeast" />
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
-</conditions>
-</modifier>
-<modifier type="add" field="error" value="Sworn Enemies (Allies Matrix): Raven Guard and Alpha Legion may not be part of the same army.">
-<conditions>
-<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c945-f4d0-8682-31df" type="atLeast" />
-</conditions>
-</modifier>
-<modifier type="add" field="error" value="Sworn Enemies (Allies Matrix): Raven Guard and Daemons of the Ruinstorm may not be part of the same army.">
-<conditions>
-<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3cdb-3527-d761-7a58" type="atLeast" />
-</conditions>
-</modifier>
-<modifier type="add" field="error" value="Sworn Enemies (Allies Matrix): Raven Guard and Death Guard may not be part of the same army.">
-<conditions>
-<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a2a5-786f-15c2-08f4" type="atLeast" />
-</conditions>
-</modifier>
-<modifier type="add" field="error" value="Sworn Enemies (Allies Matrix): Raven Guard and Emperor's Children may not be part of the same army.">
-<conditions>
-<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2496-8d2f-d197-38e3" type="atLeast" />
-</conditions>
-</modifier>
-<modifier type="add" field="error" value="Sworn Enemies (Allies Matrix): Raven Guard and Night Lords may not be part of the same army.">
-<conditions>
-<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9b96-a14e-c426-a89a" type="atLeast" />
-</conditions>
-</modifier>
-<modifier type="add" field="error" value="Sworn Enemies (Allies Matrix): Raven Guard and Sons of Horus may not be part of the same army.">
-<conditions>
-<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="be81-4d72-9377-1017" type="atLeast" />
-</conditions>
-</modifier>
-<modifier type="add" field="error" value="Sworn Enemies (Allies Matrix): Raven Guard and Thousand Sons may not be part of the same army.">
-<conditions>
-<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="29b3-86ab-6a94-52ed" type="atLeast" />
-</conditions>
-</modifier>
-<modifier type="add" field="error" value="Sworn Enemies (Allies Matrix): Raven Guard and Word Bearers may not be part of the same army.">
-<conditions>
-<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7b0f-b389-621b-1516" type="atLeast" />
-</conditions>
-</modifier>
-<modifier type="add" field="error" value="Sworn Enemies (Allies Matrix): Raven Guard and World Eaters may not be part of the same army.">
-<conditions>
-<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e523-9c36-14b9-fd3f" type="atLeast" />
 </conditions>
 </modifier>
 </modifiers>
@@ -238,7 +200,7 @@
 <description>The army's Allegiance determines which characters, units, wargear, Rites of War and other options may be selected. A Legion is not inherently restricted to a particular Allegiance.</description>
 </rule>
 <rule id="7619-9fd8-1cae-8eef" name="Allies Matrix: Raven Guard" hidden="false">
-<description>Allies Matrix - At the Height of the Heresy. Allies and Brothers: Blood Angels, Dark Angels, Exercitus Imperialis, Imperial Fists, Iron Hands, Mechanicum, Questoris Households, Raven Guard, Salamanders, Solar Auxilia, Space Wolves, Ultramarines, White Scars. Conditional Alliance: Blackshields (The Lost and the Damned). Sworn Enemies: Alpha Legion, Daemons of the Ruinstorm, Death Guard, Emperor's Children, Night Lords, Sons of Horus, Thousand Sons, Word Bearers, World Eaters. Apply the chart separately to every pair of detachments in the army. An alliance never overrides army-building restrictions, allegiance requirements or the specific wording of a unit, ability or item of wargear.</description>
+<description>Allies Matrix - At the Height of the Heresy. Allies and Brothers: Blood Angels, Dark Angels, Exercitus Imperialis, Imperial Fists, Iron Hands, Mechanicum, Questoris Households, Raven Guard, Salamanders, Solar Auxilia, Space Wolves, Ultramarines, White Scars. Conditional Alliance: Blackshields (The Lost and the Damned), Talons of the Emperor. Sworn Enemies: Alpha Legion, Daemons of the Ruinstorm, Death Guard, Emperor's Children, Iron Warriors, Night Lords, Sons of Horus, Thousand Sons, Word Bearers, World Eaters. Apply the chart separately to every pair of detachments in the army. An alliance never overrides army-building restrictions, allegiance requirements or the specific wording of a unit, ability or item of wargear. A Legion fielded with the other allegiance (e.g. Loyalist Sons of Horus) swaps sides: Sworn Enemies that only come from the two sides of the Heresy become allies, and all detachments of an army must share one allegiance.</description>
 </rule>
 </rules>
 <categoryLinks>

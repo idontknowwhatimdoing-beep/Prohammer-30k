@@ -132,55 +132,17 @@
 <condition field="selections" scope="force" value="6" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="adf0-dc10-89d4-f51e" type="lessThan" />
 </conditions>
 </modifier>
+<modifier type="add" field="error" value="An Allied Detachment may only make up 25% of the army's points.">
+<conditions>
+<condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3604-ccf4-4a04-bc94" type="instanceOf" />
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+<condition field="pts0-0000-0000-0001" scope="force" value="25" percentValue="true" shared="true" includeChildSelections="true" includeChildForces="false" childId="any" type="greaterThan" />
+</conditions>
+</modifier>
 <modifier type="add" field="error" value="A Primarch may only be selected as part of the army's Primary Detachment, never an Allied Detachment.">
 <conditions>
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ef4e-f5b8-029c-6e3f" type="atLeast" />
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
-</conditions>
-</modifier>
-<modifier type="add" field="error" value="Sworn Enemies (Allies Matrix): World Eaters and Blood Angels may not be part of the same army.">
-<conditions>
-<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b004-0491-54da-3417" type="atLeast" />
-</conditions>
-</modifier>
-<modifier type="add" field="error" value="Sworn Enemies (Allies Matrix): World Eaters and Dark Angels may not be part of the same army.">
-<conditions>
-<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e8b8-a1ed-f923-f5f0" type="atLeast" />
-</conditions>
-</modifier>
-<modifier type="add" field="error" value="Sworn Enemies (Allies Matrix): World Eaters and Imperial Fists may not be part of the same army.">
-<conditions>
-<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5cb1-5da1-21e6-9aac" type="atLeast" />
-</conditions>
-</modifier>
-<modifier type="add" field="error" value="Sworn Enemies (Allies Matrix): World Eaters and Iron Hands may not be part of the same army.">
-<conditions>
-<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bfa3-1f35-6e19-77f7" type="atLeast" />
-</conditions>
-</modifier>
-<modifier type="add" field="error" value="Sworn Enemies (Allies Matrix): World Eaters and Raven Guard may not be part of the same army.">
-<conditions>
-<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b501-c616-2ef4-3e00" type="atLeast" />
-</conditions>
-</modifier>
-<modifier type="add" field="error" value="Sworn Enemies (Allies Matrix): World Eaters and Salamanders may not be part of the same army.">
-<conditions>
-<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8fe7-c47e-3efd-6a7b" type="atLeast" />
-</conditions>
-</modifier>
-<modifier type="add" field="error" value="Sworn Enemies (Allies Matrix): World Eaters and Space Wolves may not be part of the same army.">
-<conditions>
-<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="556d-c3d0-04d2-7d84" type="atLeast" />
-</conditions>
-</modifier>
-<modifier type="add" field="error" value="Sworn Enemies (Allies Matrix): World Eaters and Ultramarines may not be part of the same army.">
-<conditions>
-<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="968b-599f-dde4-3171" type="atLeast" />
-</conditions>
-</modifier>
-<modifier type="add" field="error" value="Sworn Enemies (Allies Matrix): World Eaters and White Scars may not be part of the same army.">
-<conditions>
-<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="39c6-3c01-fa18-06c9" type="atLeast" />
 </conditions>
 </modifier>
 </modifiers>
@@ -193,7 +155,7 @@
 <description>The army's Allegiance determines which characters, units, wargear, Rites of War and other options may be selected. A Legion is not inherently restricted to a particular Allegiance.</description>
 </rule>
 <rule id="c58d-17b3-c7c4-41a2" name="Allies Matrix: World Eaters" hidden="false">
-<description>Allies Matrix - At the Height of the Heresy. Allies and Brothers: Daemons of the Ruinstorm, Death Guard, Emperor's Children, Exercitus Imperialis, Mechanicum, Night Lords, Questoris Households, Solar Auxilia, Sons of Horus, Thousand Sons, Word Bearers, World Eaters. Conditional Alliance: Alpha Legion, Blackshields (The Lost and the Damned). Sworn Enemies: Blood Angels, Dark Angels, Imperial Fists, Iron Hands, Raven Guard, Salamanders, Space Wolves, Ultramarines, White Scars. Apply the chart separately to every pair of detachments in the army. An alliance never overrides army-building restrictions, allegiance requirements or the specific wording of a unit, ability or item of wargear.</description>
+<description>Allies Matrix - At the Height of the Heresy. Allies and Brothers: Daemons of the Ruinstorm, Death Guard, Emperor's Children, Exercitus Imperialis, Iron Warriors, Mechanicum, Night Lords, Questoris Households, Solar Auxilia, Sons of Horus, Thousand Sons, Word Bearers, World Eaters. Conditional Alliance: Alpha Legion, Blackshields (The Lost and the Damned). Sworn Enemies: Blood Angels, Dark Angels, Imperial Fists, Iron Hands, Raven Guard, Salamanders, Space Wolves, Talons of the Emperor, Ultramarines, White Scars. Apply the chart separately to every pair of detachments in the army. An alliance never overrides army-building restrictions, allegiance requirements or the specific wording of a unit, ability or item of wargear. A Legion fielded with the other allegiance (e.g. Loyalist Sons of Horus) swaps sides: Sworn Enemies that only come from the two sides of the Heresy become allies, and all detachments of an army must share one allegiance.</description>
 </rule>
 </rules>
 <categoryLinks>

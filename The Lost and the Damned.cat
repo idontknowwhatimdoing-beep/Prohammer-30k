@@ -149,10 +149,22 @@
 <condition field="selections" scope="force" value="6" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="adf0-dc10-89d4-f51e" type="lessThan" />
 </conditions>
 </modifier>
+<modifier type="add" field="error" value="An Allied Detachment may only make up 25% of the army's points.">
+<conditions>
+<condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3604-ccf4-4a04-bc94" type="instanceOf" />
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+<condition field="pts0-0000-0000-0001" scope="force" value="25" percentValue="true" shared="true" includeChildSelections="true" includeChildForces="false" childId="any" type="greaterThan" />
+</conditions>
+</modifier>
 <modifier type="add" field="error" value="A Primarch may only be selected as part of the army's Primary Detachment, never an Allied Detachment.">
 <conditions>
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ef4e-f5b8-029c-6e3f" type="atLeast" />
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
+<modifier type="add" field="error" value="Sworn Enemies (Allies Matrix): Blackshields (The Lost and the Damned) and Talons of the Emperor may not be part of the same army.">
+<conditions>
+<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5584-3d43-1093-5cc2" type="atLeast" />
 </conditions>
 </modifier>
 <modifier type="add" field="error" value="Shunned and Distrusted: a Blackshields force using the Chymeriae Oath may not include an Allied Detachment.">
@@ -206,7 +218,7 @@
 </selectionEntryGroups>
 <rules>
 <rule id="0324-dbbd-d563-6baf" name="Allies Matrix: The Lost and the Damned" hidden="false">
-<description>Allies Matrix - At the Height of the Heresy. Allies and Brothers: Blackshields (The Lost and the Damned). Conditional Alliance: Alpha Legion, Blood Angels, Daemons of the Ruinstorm, Dark Angels, Death Guard, Emperor's Children, Exercitus Imperialis, Imperial Fists, Iron Hands, Mechanicum, Night Lords, Questoris Households, Raven Guard, Salamanders, Solar Auxilia, Sons of Horus, Space Wolves, Thousand Sons, Ultramarines, White Scars, Word Bearers, World Eaters. Sworn Enemies: -. Apply the chart separately to every pair of detachments in the army. An alliance never overrides army-building restrictions, allegiance requirements or the specific wording of a unit, ability or item of wargear.</description>
+<description>Allies Matrix - At the Height of the Heresy. Allies and Brothers: Blackshields (The Lost and the Damned). Conditional Alliance: Alpha Legion, Blood Angels, Daemons of the Ruinstorm, Dark Angels, Death Guard, Emperor's Children, Exercitus Imperialis, Imperial Fists, Iron Hands, Iron Warriors, Mechanicum, Night Lords, Questoris Households, Raven Guard, Salamanders, Solar Auxilia, Sons of Horus, Space Wolves, Thousand Sons, Ultramarines, White Scars, Word Bearers, World Eaters. Sworn Enemies: Talons of the Emperor. Apply the chart separately to every pair of detachments in the army. An alliance never overrides army-building restrictions, allegiance requirements or the specific wording of a unit, ability or item of wargear. A Legion fielded with the other allegiance (e.g. Loyalist Sons of Horus) swaps sides: Sworn Enemies that only come from the two sides of the Heresy become allies, and all detachments of an army must share one allegiance.</description>
 </rule>
 </rules>
 <costs>
@@ -39614,16 +39626,20 @@ V - Vetus Inimicitia: secretly nominate one enemy Independent Character; +2 VP i
 <description>Rubio is a Psychic Mastery Level 3 Psyker who generates his Psychic Powers from the Sanctic Daemonology discipline. He may choose his powers rather than determining them randomly, and may never generate powers from Malefic Daemonology. Psychic Hood: whenever an enemy Psyker successfully passes a Psychic Test, Rubio may attempt to nullify the power using his Psychic Hood according to the normal rules.</description>
 </rule>
 <rule id="5ff1-0cca-ecb1-aba4" name="Doom (Eldar Psychic Power)" hidden="false">
-<description>Doom - an Eldar psychic power, available through Eldritch Tutelage (The Alien Brotherhood): a single Blackshield Librarian in the army may select it in place of one of his normal psychic powers. He uses the power according to its normal rules from the Eldar army list (not printed in The Lost and the Damned) and gains no other Eldar special rules, equipment or psychic abilities.</description>
+<description>Doom (Non-shooting debuff; start of your turn; range 24"): Target one non-vehicle enemy unit. Wound rolls against it may be re-rolled, in shooting and melee, until the start of your next turn. No line of sight required.
+Eldritch Tutelage (The Alien Brotherhood): a single Blackshield Librarian in the army may select it in place of one of his normal psychic powers. He gains no other Eldar special rules, equipment or psychic abilities.</description>
 </rule>
 <rule id="a7b0-6998-17b7-03eb" name="Guide (Eldar Psychic Power)" hidden="false">
-<description>Guide - an Eldar psychic power, available through Eldritch Tutelage (The Alien Brotherhood): a single Blackshield Librarian in the army may select it in place of one of his normal psychic powers. He uses the power according to its normal rules from the Eldar army list (not printed in The Lost and the Damned) and gains no other Eldar special rules, equipment or psychic abilities.</description>
+<description>Guide (Non-shooting buff; start of your turn; range 6"): Choose one friendly unit. It re-rolls failed shooting hit rolls that turn; barrage weapons may re-roll scatter instead. No line of sight required.
+Eldritch Tutelage (The Alien Brotherhood): a single Blackshield Librarian in the army may select it in place of one of his normal psychic powers. He gains no other Eldar special rules, equipment or psychic abilities.</description>
 </rule>
 <rule id="e80a-63a8-c8fc-7f74" name="Mind War (Eldar Psychic Power)" hidden="false">
-<description>Mind War - an Eldar psychic power, available through Eldritch Tutelage (The Alien Brotherhood): a single Blackshield Librarian in the army may select it in place of one of his normal psychic powers. He uses the power according to its normal rules from the Eldar army list (not printed in The Lost and the Damned) and gains no other Eldar special rules, equipment or psychic abilities.</description>
+<description>Mind War (Psychic shooting attack; Shooting phase; range 18"): Choose one unengaged enemy model in line of sight, excluding embarked models. Both models roll D6 + their own Leadership. The target suffers one wound per point the Psyker wins by, with no armour saves.
+Eldritch Tutelage (The Alien Brotherhood): a single Blackshield Librarian in the army may select it in place of one of his normal psychic powers. He gains no other Eldar special rules, equipment or psychic abilities.</description>
 </rule>
 <rule id="9d1f-a10a-33e4-0b5d" name="Eldritch Storm (Eldar Psychic Power)" hidden="false">
-<description>Eldritch Storm - an Eldar psychic power, available through Eldritch Tutelage (The Alien Brotherhood): a single Blackshield Librarian in the army may select it in place of one of his normal psychic powers. He uses the power according to its normal rules from the Eldar army list (not printed in The Lost and the Damned) and gains no other Eldar special rules, equipment or psychic abilities.</description>
+<description>Eldritch Storm (Psychic shooting attack; Shooting phase; range 18"): S3, AP-, Large Blast, Pinning. Vehicles touched suffer 2D6 + 3 armour penetration and turn to face the scatter die's direction. On a Hit, the player chooses their facing.
+Eldritch Tutelage (The Alien Brotherhood): a single Blackshield Librarian in the army may select it in place of one of his normal psychic powers. He gains no other Eldar special rules, equipment or psychic abilities.</description>
 </rule>
 <rule id="2df7-351e-d581-ff63" name="Psychic Power Type: Blessing" hidden="false">
 <description>Blessings target a friendly unit and confer some benefit. Invoked at any time during the psyker's Movement phase unless otherwise noted. Duration: until the start of the psyker's own next turn. Blessings with the same effects stack if they are differently named powers; exact copies (same name) cannot be stacked on the same unit. Characteristics cannot be modified above 10 or below 1. If a psyker with an active blessing is removed from play, its blessings are immediately cancelled.</description>

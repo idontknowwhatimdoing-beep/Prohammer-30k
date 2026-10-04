@@ -198,35 +198,22 @@
 <condition field="selections" scope="force" value="6" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="adf0-dc10-89d4-f51e" type="lessThan" />
 </conditions>
 </modifier>
+<modifier type="add" field="error" value="An Allied Detachment may only make up 25% of the army's points.">
+<conditions>
+<condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3604-ccf4-4a04-bc94" type="instanceOf" />
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+<condition field="pts0-0000-0000-0001" scope="force" value="25" percentValue="true" shared="true" includeChildSelections="true" includeChildForces="false" childId="any" type="greaterThan" />
+</conditions>
+</modifier>
 <modifier type="add" field="error" value="A Primarch may only be selected as part of the army's Primary Detachment, never an Allied Detachment.">
 <conditions>
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ef4e-f5b8-029c-6e3f" type="atLeast" />
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
 </conditions>
 </modifier>
-<modifier type="add" field="error" value="Sworn Enemies (Allies Matrix): Daemons of the Ruinstorm and Blood Angels may not be part of the same army.">
-<conditions>
-<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b004-0491-54da-3417" type="atLeast" />
-</conditions>
-</modifier>
-<modifier type="add" field="error" value="Sworn Enemies (Allies Matrix): Daemons of the Ruinstorm and Dark Angels may not be part of the same army.">
-<conditions>
-<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e8b8-a1ed-f923-f5f0" type="atLeast" />
-</conditions>
-</modifier>
 <modifier type="add" field="error" value="Sworn Enemies (Allies Matrix): Daemons of the Ruinstorm and Exercitus Imperialis may not be part of the same army.">
 <conditions>
 <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6e7a-38a2-1474-b8b5" type="atLeast" />
-</conditions>
-</modifier>
-<modifier type="add" field="error" value="Sworn Enemies (Allies Matrix): Daemons of the Ruinstorm and Imperial Fists may not be part of the same army.">
-<conditions>
-<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5cb1-5da1-21e6-9aac" type="atLeast" />
-</conditions>
-</modifier>
-<modifier type="add" field="error" value="Sworn Enemies (Allies Matrix): Daemons of the Ruinstorm and Iron Hands may not be part of the same army.">
-<conditions>
-<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bfa3-1f35-6e19-77f7" type="atLeast" />
 </conditions>
 </modifier>
 <modifier type="add" field="error" value="Sworn Enemies (Allies Matrix): Daemons of the Ruinstorm and Mechanicum may not be part of the same army.">
@@ -239,34 +226,9 @@
 <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c6af-4f7d-9492-fe1d" type="atLeast" />
 </conditions>
 </modifier>
-<modifier type="add" field="error" value="Sworn Enemies (Allies Matrix): Daemons of the Ruinstorm and Raven Guard may not be part of the same army.">
-<conditions>
-<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b501-c616-2ef4-3e00" type="atLeast" />
-</conditions>
-</modifier>
-<modifier type="add" field="error" value="Sworn Enemies (Allies Matrix): Daemons of the Ruinstorm and Salamanders may not be part of the same army.">
-<conditions>
-<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8fe7-c47e-3efd-6a7b" type="atLeast" />
-</conditions>
-</modifier>
 <modifier type="add" field="error" value="Sworn Enemies (Allies Matrix): Daemons of the Ruinstorm and Solar Auxilia may not be part of the same army.">
 <conditions>
 <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6365-0d47-9db3-920e" type="atLeast" />
-</conditions>
-</modifier>
-<modifier type="add" field="error" value="Sworn Enemies (Allies Matrix): Daemons of the Ruinstorm and Space Wolves may not be part of the same army.">
-<conditions>
-<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="556d-c3d0-04d2-7d84" type="atLeast" />
-</conditions>
-</modifier>
-<modifier type="add" field="error" value="Sworn Enemies (Allies Matrix): Daemons of the Ruinstorm and Ultramarines may not be part of the same army.">
-<conditions>
-<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="968b-599f-dde4-3171" type="atLeast" />
-</conditions>
-</modifier>
-<modifier type="add" field="error" value="Sworn Enemies (Allies Matrix): Daemons of the Ruinstorm and White Scars may not be part of the same army.">
-<conditions>
-<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="39c6-3c01-fa18-06c9" type="atLeast" />
 </conditions>
 </modifier>
 </modifiers>
@@ -306,7 +268,7 @@
 </selectionEntryGroups>
 <rules>
 <rule id="5d81-3046-bc6f-0e6b" name="Allies Matrix: Daemons of the Ruinstorm" hidden="false">
-<description>Allies Matrix - At the Height of the Heresy. Allies and Brothers: Alpha Legion, Daemons of the Ruinstorm, Emperor's Children, Night Lords, Sons of Horus, Word Bearers, World Eaters. Conditional Alliance: Blackshields (The Lost and the Damned), Death Guard, Thousand Sons. Sworn Enemies: Blood Angels, Dark Angels, Exercitus Imperialis, Imperial Fists, Iron Hands, Mechanicum, Questoris Households, Raven Guard, Salamanders, Solar Auxilia, Space Wolves, Ultramarines, White Scars. Apply the chart separately to every pair of detachments in the army. An alliance never overrides army-building restrictions, allegiance requirements or the specific wording of a unit, ability or item of wargear.</description>
+<description>Allies Matrix - At the Height of the Heresy. Allies and Brothers: Alpha Legion, Daemons of the Ruinstorm, Emperor's Children, Night Lords, Sons of Horus, Word Bearers, World Eaters. Conditional Alliance: Blackshields (The Lost and the Damned), Death Guard, Iron Warriors, Thousand Sons. Sworn Enemies: Blood Angels, Dark Angels, Exercitus Imperialis, Imperial Fists, Iron Hands, Mechanicum, Questoris Households, Raven Guard, Salamanders, Solar Auxilia, Space Wolves, Talons of the Emperor, Ultramarines, White Scars. Apply the chart separately to every pair of detachments in the army. An alliance never overrides army-building restrictions, allegiance requirements or the specific wording of a unit, ability or item of wargear. A Legion fielded with the other allegiance (e.g. Loyalist Sons of Horus) swaps sides: Sworn Enemies that only come from the two sides of the Heresy become allies, and all detachments of an army must share one allegiance.</description>
 </rule>
 </rules>
 <costs>
@@ -13046,7 +13008,7 @@
 <description>Cor'bax automatically passes Dangerous Terrain tests. When Cor'bax charges he inflicts D3 Hammer of Wrath attacks instead of one. When Cor'bax is destroyed, before removing the model centre the Large Blast marker over his base: every non-Daemon model touched suffers a Strength 4 AP4 hit with Poison (4+); models with the Daemon rule are unaffected. Then remove Cor'bax.</description>
 </rule>
 <rule id="9640-6aeb-902c-09bc" name="Cor'bax (Aetheric Dominion)" hidden="false">
-<description>Cor'bax may only be selected in a Ruinstorm Detachment using the Creeping Scourge Aetheric Dominion. He possesses all Core Dominion Rules of Creeping Scourge, always counts as a Favoured Archetype, possesses the Miasma of Feebleness Dominion Emanation (renamed from Miasma of Decay) and the Crushing Limbs General Emanation at no additional cost and does not receive the Pestilent Monolith Greater Manifestation. Cor'bax is selected as a Lord of War and is Unique.</description>
+<description>Cor'bax may only be selected in a Ruinstorm Detachment using the Creeping Scourge Aetheric Dominion. He possesses all Core Dominion Rules of Creeping Scourge, always counts as a Favoured Archetype, possesses the Miasma of Feebleness Dominion Emanation and the Crushing Limbs General Emanation at no additional cost and does not receive the Pestilent Monolith Greater Manifestation. Cor'bax is selected as a Lord of War and is Unique.</description>
 </rule>
 <rule id="4dc2-5010-26e8-19dc" name="Psyker (Madail the Undivided)" hidden="false">
 <description>Psyker (Mastery Level 3). Madail knows the Telepathy powers Psychic Shriek, Hallucination and Invisibility (ProHammer Classic) and may not exchange them or select powers from another Psychic Discipline.</description>

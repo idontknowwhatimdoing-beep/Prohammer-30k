@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <catalogue id="f68e-2c73-7910-c1fe" name="Solar Auxilia" revision="1" battleScribeVersion="2.03" authorName="idontknowwhatimdoing-beep" authorUrl="https://github.com/idontknowwhatimdoing-beep/Prohammer-30k" library="false" gameSystemId="p30k-0000-0000-0001" gameSystemRevision="1" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogueLinks>
+<catalogueLink id="9064-1812-27a4-9c27" name="Mechanicum" targetId="68d2-fb71-996c-4786" type="catalogue" importRootEntries="false" />
+</catalogueLinks>
 <publications>
 <publication id="0968-cf9c-8bb2-e252" name="Solar Auxilia" shortName="Solar Auxilia" />
 </publications>
@@ -31,6 +34,34 @@
 <entryLink id="b040-3fc8-9abb-a2e5" name="Auxilia Malcador Infernus" hidden="false" collective="false" import="true" targetId="9764-37c3-0b20-4af2" type="selectionEntry" />
 <entryLink id="c508-585e-dc62-568d" name="Auxilia Valdor Tank Hunter" hidden="false" collective="false" import="true" targetId="6af1-cb90-f8ea-3415" type="selectionEntry" />
 <entryLink id="b04c-a7bb-4be8-c546" name="0-1 Cyclops Remote Demolitions Unit" hidden="false" collective="false" import="true" targetId="bb5e-e7c1-8978-9a59" type="selectionEntry" />
+<entryLink id="ca69-fc79-27f7-0b66" name="Thallax Cohort (Mechanicum Liaison)" hidden="false" collective="false" import="true" targetId="9c87-cfff-783e-6bb3" type="selectionEntry">
+<modifiers>
+<modifier type="set" field="hidden" value="true">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9d8b-c484-aaee-f2ac" type="lessThan" />
+</conditions>
+</modifier>
+<modifier type="add" field="error" value="Thallax Cohort: only a Solar Auxilia Detachment containing a Mechanicum Liaison Adept may include it.">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9d8b-c484-aaee-f2ac" type="lessThan" />
+</conditions>
+</modifier>
+</modifiers>
+</entryLink>
+<entryLink id="18c8-883d-8d1f-0e4c" name="Castellax Class Battle-Automata Maniple (Mechanicum Liaison)" hidden="false" collective="false" import="true" targetId="e136-f0e1-72ab-778f" type="selectionEntry">
+<modifiers>
+<modifier type="set" field="hidden" value="true">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9d8b-c484-aaee-f2ac" type="lessThan" />
+</conditions>
+</modifier>
+<modifier type="add" field="error" value="Castellax Class Battle-Automata Maniple: only a Solar Auxilia Detachment containing a Mechanicum Liaison Adept may include it.">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9d8b-c484-aaee-f2ac" type="lessThan" />
+</conditions>
+</modifier>
+</modifiers>
+</entryLink>
 </entryLinks>
 <sharedSelectionEntries>
 <selectionEntry id="47ae-c94f-98e8-ca99" name="Allegiance" hidden="false" collective="false" import="true" type="upgrade">
@@ -67,6 +98,13 @@
 <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ecf1-4754-7376-85d6" type="instanceOf" />
 <condition field="selections" scope="roster" value="2" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6365-0d47-9db3-920e" type="atLeast" />
 <condition field="selections" scope="force" value="6" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="adf0-dc10-89d4-f51e" type="lessThan" />
+</conditions>
+</modifier>
+<modifier type="add" field="error" value="An Allied Detachment may only make up 25% of the army's points.">
+<conditions>
+<condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3604-ccf4-4a04-bc94" type="instanceOf" />
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+<condition field="pts0-0000-0000-0001" scope="force" value="25" percentValue="true" shared="true" includeChildSelections="true" includeChildForces="false" childId="any" type="greaterThan" />
 </conditions>
 </modifier>
 <modifier type="add" field="error" value="A Primarch may only be selected as part of the army's Primary Detachment, never an Allied Detachment.">
@@ -117,7 +155,7 @@
 </selectionEntryGroups>
 <rules>
 <rule id="b9ee-71b8-46fa-538e" name="Allies Matrix: Solar Auxilia" hidden="false">
-<description>Allies Matrix - At the Height of the Heresy. Allies and Brothers: Alpha Legion, Blood Angels, Dark Angels, Death Guard, Emperor's Children, Exercitus Imperialis, Imperial Fists, Iron Hands, Mechanicum, Night Lords, Questoris Households, Raven Guard, Salamanders, Solar Auxilia, Sons of Horus, Space Wolves, Thousand Sons, Ultramarines, White Scars, Word Bearers, World Eaters. Conditional Alliance: Blackshields (The Lost and the Damned). Sworn Enemies: Daemons of the Ruinstorm. Apply the chart separately to every pair of detachments in the army. An alliance never overrides army-building restrictions, allegiance requirements or the specific wording of a unit, ability or item of wargear.</description>
+<description>Allies Matrix - At the Height of the Heresy. Allies and Brothers: Alpha Legion, Blood Angels, Dark Angels, Death Guard, Emperor's Children, Exercitus Imperialis, Imperial Fists, Iron Hands, Iron Warriors, Mechanicum, Night Lords, Questoris Households, Raven Guard, Salamanders, Solar Auxilia, Sons of Horus, Space Wolves, Thousand Sons, Ultramarines, White Scars, Word Bearers, World Eaters. Conditional Alliance: Blackshields (The Lost and the Damned), Talons of the Emperor. Sworn Enemies: Daemons of the Ruinstorm. Apply the chart separately to every pair of detachments in the army. An alliance never overrides army-building restrictions, allegiance requirements or the specific wording of a unit, ability or item of wargear. A Legion fielded with the other allegiance (e.g. Loyalist Sons of Horus) swaps sides: Sworn Enemies that only come from the two sides of the Heresy become allies, and all detachments of an army must share one allegiance.</description>
 </rule>
 </rules>
 <costs>
@@ -1477,15 +1515,10 @@
 <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="267b-12c2-839b-a93a" type="atLeast" />
 </conditions>
 </modifier>
-<modifier type="add" field="warning" value="Ireton MaSade must be the army's Warlord, but he does not override Disciplined Command (Lord Marshal - Legate Commander - Strategos - Tank Commander).">
-<conditionGroups>
-<conditionGroup type="or">
+<modifier type="add" field="warning" value="Ireton MaSade must be the army's Warlord, but he does not override Disciplined Command: he counts as a Legate Commander, so a Lord Marshal in the army outranks him.">
 <conditions>
-<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fcf5-a033-f50b-c02b" type="atLeast" />
-<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2eb9-0ad1-d09f-d9de" type="atLeast" />
+<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d028-9e72-79f1-4f5c" type="atLeast" />
 </conditions>
-</conditionGroup>
-</conditionGroups>
 </modifier>
 </modifiers>
 <constraints>
@@ -16566,7 +16599,7 @@
 <description>A Cyclops may voluntarily Detonate during its controlling player's Assault phase; if engaged in close combat it may instead Detonate during either player's Assault phase at Initiative 10. Centre the appropriate Blast marker over the Cyclops and resolve its payload against all models beneath it; the Cyclops is then destroyed. If a Cyclops is destroyed by any other means, roll a D6: on a 6 it immediately Detonates.</description>
 </rule>
 <rule id="bbca-45d6-efa1-a994" name="Warlord (Ireton MaSade)" hidden="false">
-<description>Ireton MaSade must be the army's Warlord. This does not override Disciplined Command. Loyalist only.</description>
+<description>Ireton MaSade must be the army's Warlord. This does not override Disciplined Command: MaSade counts as a Legate Commander (also for any limit on Legate Commanders). Loyalist only.</description>
 </rule>
 <rule id="a9e0-c934-2f7d-b446" name="Master of the Battlefield" hidden="false">
 <description>After both armies have deployed, but before the first turn begins, MaSade may redeploy D3 friendly Solar Auxilia units from his Detachment anywhere they could normally have deployed, or place them into Reserve. A unit already in Reserve may instead be deployed normally, provided a legal deployment position exists.</description>

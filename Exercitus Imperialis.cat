@@ -82,6 +82,13 @@
 <condition field="selections" scope="force" value="6" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="adf0-dc10-89d4-f51e" type="lessThan" />
 </conditions>
 </modifier>
+<modifier type="add" field="error" value="An Allied Detachment may only make up 25% of the army's points.">
+<conditions>
+<condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3604-ccf4-4a04-bc94" type="instanceOf" />
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+<condition field="pts0-0000-0000-0001" scope="force" value="25" percentValue="true" shared="true" includeChildSelections="true" includeChildForces="false" childId="any" type="greaterThan" />
+</conditions>
+</modifier>
 <modifier type="add" field="error" value="A Primarch may only be selected as part of the army's Primary Detachment, never an Allied Detachment.">
 <conditions>
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ef4e-f5b8-029c-6e3f" type="atLeast" />
@@ -135,7 +142,7 @@
 </selectionEntryGroups>
 <rules>
 <rule id="90d4-5f94-0a98-07a5" name="Allies Matrix: Exercitus Imperialis" hidden="false">
-<description>Allies Matrix - At the Height of the Heresy. Allies and Brothers: Alpha Legion, Blood Angels, Dark Angels, Death Guard, Emperor's Children, Exercitus Imperialis, Imperial Fists, Iron Hands, Mechanicum, Night Lords, Questoris Households, Raven Guard, Salamanders, Solar Auxilia, Sons of Horus, Space Wolves, Thousand Sons, Ultramarines, White Scars, Word Bearers, World Eaters. Conditional Alliance: Blackshields (The Lost and the Damned). Sworn Enemies: Daemons of the Ruinstorm. Apply the chart separately to every pair of detachments in the army. An alliance never overrides army-building restrictions, allegiance requirements or the specific wording of a unit, ability or item of wargear.</description>
+<description>Allies Matrix - At the Height of the Heresy. Allies and Brothers: Alpha Legion, Blood Angels, Dark Angels, Death Guard, Emperor's Children, Exercitus Imperialis, Imperial Fists, Iron Hands, Iron Warriors, Mechanicum, Night Lords, Questoris Households, Raven Guard, Salamanders, Solar Auxilia, Sons of Horus, Space Wolves, Thousand Sons, Ultramarines, White Scars, Word Bearers, World Eaters. Conditional Alliance: Blackshields (The Lost and the Damned), Talons of the Emperor. Sworn Enemies: Daemons of the Ruinstorm. Apply the chart separately to every pair of detachments in the army. An alliance never overrides army-building restrictions, allegiance requirements or the specific wording of a unit, ability or item of wargear. A Legion fielded with the other allegiance (e.g. Loyalist Sons of Horus) swaps sides: Sworn Enemies that only come from the two sides of the Heresy become allies, and all detachments of an army must share one allegiance.</description>
 </rule>
 </rules>
 <costs>
@@ -6502,6 +6509,36 @@
 <conditions>
 <condition field="selections" scope="e004-21e2-a06e-8ce9" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="21fe-ebbd-bd18-dfb6" type="lessThan" />
 </conditions>
+</modifier>
+<modifier type="add" field="error" value="A Rogue Psyker selects all his powers from one discipline: Telepathy or Malefic Daemonology.">
+<conditionGroups>
+<conditionGroup type="and">
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="e004-21e2-a06e-8ce9" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ad81-0305-8366-c048" type="atLeast" />
+<condition field="selections" scope="e004-21e2-a06e-8ce9" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3336-9579-841a-6e4a" type="atLeast" />
+<condition field="selections" scope="e004-21e2-a06e-8ce9" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fc9e-db53-7ac2-120d" type="atLeast" />
+<condition field="selections" scope="e004-21e2-a06e-8ce9" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2cff-efc7-22d8-22fe" type="atLeast" />
+<condition field="selections" scope="e004-21e2-a06e-8ce9" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0269-f81b-146c-8f63" type="atLeast" />
+<condition field="selections" scope="e004-21e2-a06e-8ce9" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4986-f8a5-904c-fdd4" type="atLeast" />
+<condition field="selections" scope="e004-21e2-a06e-8ce9" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3337-56c6-a5bc-022e" type="atLeast" />
+</conditions>
+</conditionGroup>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="e004-21e2-a06e-8ce9" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e650-d5ff-d101-8173" type="atLeast" />
+<condition field="selections" scope="e004-21e2-a06e-8ce9" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="41c8-ac52-da36-20f2" type="atLeast" />
+<condition field="selections" scope="e004-21e2-a06e-8ce9" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3d66-af4d-23c7-6185" type="atLeast" />
+<condition field="selections" scope="e004-21e2-a06e-8ce9" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ebde-0b04-0967-78f5" type="atLeast" />
+<condition field="selections" scope="e004-21e2-a06e-8ce9" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9807-d3cb-12f1-76e0" type="atLeast" />
+<condition field="selections" scope="e004-21e2-a06e-8ce9" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b092-d02b-9b93-e314" type="atLeast" />
+<condition field="selections" scope="e004-21e2-a06e-8ce9" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a504-f382-2865-ba36" type="atLeast" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</conditionGroup>
+</conditionGroups>
 </modifier>
 </modifiers>
 <constraints>
