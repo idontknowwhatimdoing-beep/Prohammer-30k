@@ -6852,80 +6852,44 @@
 </characteristics>
 </profile>
 </profiles>
-<entryLinks>
-<entryLink id="be77-797c-3775-533c" name="Flak Armour" hidden="false" collective="false" import="true" targetId="94bc-cb3c-a985-cb5e" type="selectionEntry">
+<rules>
+<rule id="dc14-da03-a214-4ae7" name="Flak Armour (Possessed Auxiliaries)" hidden="false">
 <modifiers>
 <modifier type="set" field="hidden" value="true">
 <conditions>
 <condition field="selections" scope="9e52-cd71-6e58-bbeb" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="11a0-4bc5-e1b1-6144" type="atLeast" />
 </conditions>
 </modifier>
-<modifier type="set" field="21b8-eb6c-0d28-2d89" value="0">
+</modifiers>
+<description>Possessed Auxiliaries wear Flak Armour (5+ armour save).</description>
+</rule>
+<rule id="9ebc-47a3-4ba7-8fa9" name="Power Armour and Bolter (Possessed Legionaries)" hidden="false">
+<modifiers>
+<modifier type="set" field="hidden" value="true">
 <conditions>
-<condition field="selections" scope="9e52-cd71-6e58-bbeb" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="11a0-4bc5-e1b1-6144" type="atLeast" />
-</conditions>
-</modifier>
-<modifier type="set" field="b182-439e-ae54-2540" value="0">
-<conditions>
-<condition field="selections" scope="9e52-cd71-6e58-bbeb" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="11a0-4bc5-e1b1-6144" type="atLeast" />
+<condition field="selections" scope="9e52-cd71-6e58-bbeb" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="11a0-4bc5-e1b1-6144" type="equalTo" />
 </conditions>
 </modifier>
 </modifiers>
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="21b8-eb6c-0d28-2d89" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b182-439e-ae54-2540" type="max" />
-</constraints>
-</entryLink>
+<description>Possessed Legionaries wear Power Armour (3+ armour save) and carry a Bolter and a Close Combat Weapon.</description>
+</rule>
+</rules>
+<infoLinks>
+<infoLink id="f1f6-87b3-3bf3-5b23" name="Bolter" hidden="false" targetId="6be1-05a3-5aef-9186" type="profile">
+<modifiers>
+<modifier type="set" field="hidden" value="true">
+<conditions>
+<condition field="selections" scope="9e52-cd71-6e58-bbeb" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="11a0-4bc5-e1b1-6144" type="equalTo" />
+</conditions>
+</modifier>
+</modifiers>
+</infoLink>
+</infoLinks>
+<entryLinks>
 <entryLink id="d0eb-e613-6894-8375" name="Close Combat Weapon" hidden="false" collective="false" import="true" targetId="7b6a-5697-5a6a-2d74" type="selectionEntry">
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8c8e-4aa9-7124-d61f" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8dee-88fe-2c97-d0b8" type="max" />
-</constraints>
-</entryLink>
-<entryLink id="bc36-95fe-34d3-3693" name="Bolter" hidden="false" collective="false" import="true" targetId="8b6f-ff45-9e8a-0d7e" type="selectionEntry">
-<modifiers>
-<modifier type="set" field="hidden" value="true">
-<conditions>
-<condition field="selections" scope="9e52-cd71-6e58-bbeb" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="11a0-4bc5-e1b1-6144" type="equalTo" />
-</conditions>
-</modifier>
-<modifier type="set" field="2350-990e-4051-ba87" value="0">
-<conditions>
-<condition field="selections" scope="9e52-cd71-6e58-bbeb" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="11a0-4bc5-e1b1-6144" type="equalTo" />
-</conditions>
-</modifier>
-<modifier type="set" field="5900-3f2b-1eeb-73f3" value="0">
-<conditions>
-<condition field="selections" scope="9e52-cd71-6e58-bbeb" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="11a0-4bc5-e1b1-6144" type="equalTo" />
-</conditions>
-</modifier>
-</modifiers>
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2350-990e-4051-ba87" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5900-3f2b-1eeb-73f3" type="max" />
-</constraints>
-</entryLink>
-<entryLink id="a598-60e3-7c5b-f878" name="Power Armour" hidden="false" collective="false" import="true" targetId="1133-946a-2323-7a81" type="selectionEntry">
-<modifiers>
-<modifier type="set" field="hidden" value="true">
-<conditions>
-<condition field="selections" scope="9e52-cd71-6e58-bbeb" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="11a0-4bc5-e1b1-6144" type="equalTo" />
-</conditions>
-</modifier>
-<modifier type="set" field="e74a-6077-1c95-3e02" value="0">
-<conditions>
-<condition field="selections" scope="9e52-cd71-6e58-bbeb" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="11a0-4bc5-e1b1-6144" type="equalTo" />
-</conditions>
-</modifier>
-<modifier type="set" field="cea8-c990-2aba-4d01" value="0">
-<conditions>
-<condition field="selections" scope="9e52-cd71-6e58-bbeb" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="11a0-4bc5-e1b1-6144" type="equalTo" />
-</conditions>
-</modifier>
-</modifiers>
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e74a-6077-1c95-3e02" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cea8-c990-2aba-4d01" type="max" />
 </constraints>
 </entryLink>
 </entryLinks>

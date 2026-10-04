@@ -6,7 +6,7 @@ Questions: tools/questions/Daemons of the Ruinstorm.md
 from armies.common import *  # noqa: F401,F403
 from armies.common import (k, unit, model, upgrade, unique, config, allegiance, error_if, catalogue, start,
                            register_data, LOW, COMMANDER, LINE)
-from bsx import PTS, uid, el, wrap, cond, any_of, all_of, modifier, repeat, constraint, rule, entry, link, group
+from bsx import info_link, PTS, uid, el, wrap, cond, any_of, all_of, modifier, repeat, constraint, rule, entry, link, group
 import gamesystem as gs
 import legiones as L
 from legiones import W, has, lacks, gear, rules_links, unit_profile, psychic_powers
@@ -841,6 +841,8 @@ def possessed():
     not_up = lacks(upg, u)
     # one model type for the whole unit (author): Possessed Auxiliaries, or - with the upgrade - Possessed Legionaries
     leg = aux
+    BOLTER_PROFILE = uid("prof-weapon", "Bolter")
+
     def show_if_up(e, show_up):
         off = not_up if show_up else up
         mods = [modifier("set", "hidden", "true", conds=[off])]
@@ -856,8 +858,14 @@ def possessed():
                         modifier("increment", PTS, 5, conds=[up])],
                   constraints=[constraint(uid(aux, "min"), "min", 10), constraint(uid(aux, "max"), "max", 20)],
                   profiles=[aux_prof, leg_prof],
-                  links=[show_if_up(gear(aux, "Flak Armour"), False), gear(aux, "Close Combat Weapon"),
-                         show_if_up(gear(aux, "Bolter"), True), show_if_up(gear(aux, "Power Armour"), True)])
+                  rules=[show_if_up(rule(uid(aux, "flak"), "Flak Armour (Possessed Auxiliaries)",
+                                         "Possessed Auxiliaries wear Flak Armour (5+ armour save)."), False),
+                         show_if_up(rule(uid(aux, "pa"), "Power Armour and Bolter (Possessed Legionaries)",
+                                         "Possessed Legionaries wear Power Armour (3+ armour save) and carry a Bolter "
+                                         "and a Close Combat Weapon."), True)],
+                  infolinks=[show_if_up(info_link(BOLTER_PROFILE, "Bolter", "profile", key=uid(aux, "bolter")),
+                                        True)],
+                  links=[gear(aux, "Close Combat Weapon")])
     leg_m = None
     upgrade_e = entry(upg, "Upgrade to Possessed Legionaries (+5 pts per model)",
                       constraints=[constraint(uid(upg, "max"), "max", 1, auto=True)],
