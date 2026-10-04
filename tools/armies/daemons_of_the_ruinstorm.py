@@ -839,25 +839,31 @@ def possessed():
     upg = uid(u, "upgrade", "Possessed Legionaries")
     up = has(upg, u)
     not_up = lacks(upg, u)
-    amin, amax, lmin, lmax = uid(aux, "min"), uid(aux, "max"), uid(leg, "min"), uid(leg, "max")
+    # one model type for the whole unit (author): Possessed Auxiliaries, or - with the upgrade - Possessed Legionaries
+    leg = aux
+    def show_if_up(e, show_up):
+        off = not_up if show_up else up
+        mods = [modifier("set", "hidden", "true", conds=[off])]
+        cs = e.find("constraints")
+        for c in (cs if cs is not None else []):
+            mods.append(modifier("set", c.get("id"), 0, conds=[off]))
+        add_mods(e, mods)
+        return e
+    aux_prof = show_if_up(unit_profile(u, "Possessed Auxiliary", "Infantry", 3, 3, 3, 3, 1, 2, 1, 9, "5+"), False)
+    leg_prof = show_if_up(unit_profile(u, "Possessed Legionary", "Infantry", 4, 4, 4, 4, 1, 3, 2, 9, "3+"), True)
     aux_m = entry(aux, "Possessed Auxiliary", typ="model", cost=5,
-                  mods=[modifier("set", amin, 0, conds=[up]), modifier("set", amax, 0, conds=[up]),
-                        modifier("set", "hidden", "true", conds=[up])],
-                  constraints=[constraint(amin, "min", 10), constraint(amax, "max", 20)],
-                  profiles=[unit_profile(u, "Possessed Auxiliary", "Infantry", 3, 3, 3, 3, 1, 2, 1, 9, "5+")],
-                  links=[gear(aux, "Close Combat Weapon"), gear(aux, "Flak Armour")])
-    leg_m = entry(leg, "Possessed Legionary", typ="model", cost=10, hidden=True,
-                  mods=[modifier("set", lmin, 10, conds=[up]), modifier("set", lmax, 20, conds=[up]),
-                        modifier("set", "hidden", "false", conds=[up])],
-                  constraints=[constraint(lmin, "min", 0), constraint(lmax, "max", 0)],
-                  profiles=[unit_profile(u, "Possessed Legionary", "Infantry", 4, 4, 4, 4, 1, 3, 2, 9, "3+")],
-                  links=[gear(leg, "Close Combat Weapon"), gear(leg, "Bolter"), gear(leg, "Power Armour")])
+                  mods=[modifier("set", "name", "Possessed Legionary", conds=[up]),
+                        modifier("increment", PTS, 5, conds=[up])],
+                  constraints=[constraint(uid(aux, "min"), "min", 10), constraint(uid(aux, "max"), "max", 20)],
+                  profiles=[aux_prof, leg_prof],
+                  links=[show_if_up(gear(aux, "Flak Armour"), False), gear(aux, "Close Combat Weapon"),
+                         show_if_up(gear(aux, "Bolter"), True), show_if_up(gear(aux, "Power Armour"), True)])
+    leg_m = None
     upgrade_e = entry(upg, "Upgrade to Possessed Legionaries (+5 pts per model)",
                       constraints=[constraint(uid(upg, "max"), "max", 1, auto=True)],
                       rules=[rule(uid(upg, "rule"), "Possessed Legionaries",
-                                  "The entire unit is upgraded to Possessed Legionaries for +5 points per model: remove "
-                                  "the Possessed Auxiliaries and add the same number of Possessed Legionaries (10 points "
-                                  "each).")])
+                                  "The entire unit is upgraded to Possessed Legionaries for +5 points per model (every "
+                                  "model uses the Possessed Legionary profile and wargear).")])
     hide_aux = [modifier("set", "hidden", "true", conds=[up])]
     hide_leg = [modifier("set", "hidden", "true", conds=[not_up])]
     sidearm = choice(u, "Possessed Auxiliaries: Lasguns or Laspistols (entire unit)",
@@ -880,7 +886,7 @@ def possessed():
     ccw = take(u, "One Possessed Legionary may replace its Close Combat Weapon",
                [("Power Weapon", 10), ("Power Fist", 15), ("Lightning Claw", 15), ("Thunder Hammer", 20)],
                max_total=1, hide=[not_up])
-    return unit(name, 0, TROOPS, "Troops", models=[aux_m, leg_m], rules_=["Slaves to Darkness", "Support Unit"],
+    return unit(name, 0, TROOPS, "Troops", models=[aux_m], rules_=["Slaves to Darkness", "Support Unit"],
                 entries=[upgrade_e], groups=[sidearm, aux_pool, leg_pool, pistols, ccw], key=u, compulsory=False)
 
 

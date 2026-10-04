@@ -6793,17 +6793,12 @@
 <selectionEntries>
 <selectionEntry id="c64b-3187-f3e3-349f" name="Possessed Auxiliary" hidden="false" collective="false" import="true" type="model">
 <modifiers>
-<modifier type="set" field="dd04-6bd2-e2f9-ac5d" value="0">
+<modifier type="set" field="name" value="Possessed Legionary">
 <conditions>
 <condition field="selections" scope="9e52-cd71-6e58-bbeb" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="11a0-4bc5-e1b1-6144" type="atLeast" />
 </conditions>
 </modifier>
-<modifier type="set" field="c973-b0c4-db41-5f5e" value="0">
-<conditions>
-<condition field="selections" scope="9e52-cd71-6e58-bbeb" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="11a0-4bc5-e1b1-6144" type="atLeast" />
-</conditions>
-</modifier>
-<modifier type="set" field="hidden" value="true">
+<modifier type="increment" field="pts0-0000-0000-0001" value="5">
 <conditions>
 <condition field="selections" scope="9e52-cd71-6e58-bbeb" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="11a0-4bc5-e1b1-6144" type="atLeast" />
 </conditions>
@@ -6815,6 +6810,13 @@
 </constraints>
 <profiles>
 <profile id="125a-9d46-311a-be8a" name="Possessed Auxiliary" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
+<modifiers>
+<modifier type="set" field="hidden" value="true">
+<conditions>
+<condition field="selections" scope="9e52-cd71-6e58-bbeb" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="11a0-4bc5-e1b1-6144" type="atLeast" />
+</conditions>
+</modifier>
+</modifiers>
 <characteristics>
 <characteristic name="Unit Type" typeId="b0cf-47d7-3836-cf93">Infantry</characteristic>
 <characteristic name="WS" typeId="52b0-fc35-42a9-af3d">3</characteristic>
@@ -6828,49 +6830,14 @@
 <characteristic name="Sv" typeId="d23d-aa50-ddfb-88a0">5+</characteristic>
 </characteristics>
 </profile>
-</profiles>
-<entryLinks>
-<entryLink id="d0eb-e613-6894-8375" name="Close Combat Weapon" hidden="false" collective="false" import="true" targetId="7b6a-5697-5a6a-2d74" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8c8e-4aa9-7124-d61f" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8dee-88fe-2c97-d0b8" type="max" />
-</constraints>
-</entryLink>
-<entryLink id="be77-797c-3775-533c" name="Flak Armour" hidden="false" collective="false" import="true" targetId="94bc-cb3c-a985-cb5e" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="21b8-eb6c-0d28-2d89" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b182-439e-ae54-2540" type="max" />
-</constraints>
-</entryLink>
-</entryLinks>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
-</costs>
-</selectionEntry>
-<selectionEntry id="be02-eb72-0337-9973" name="Possessed Legionary" hidden="true" collective="false" import="true" type="model">
+<profile id="c634-5774-32fc-8df0" name="Possessed Legionary" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
 <modifiers>
-<modifier type="set" field="5c7b-8fa5-7876-55b6" value="10">
+<modifier type="set" field="hidden" value="true">
 <conditions>
-<condition field="selections" scope="9e52-cd71-6e58-bbeb" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="11a0-4bc5-e1b1-6144" type="atLeast" />
-</conditions>
-</modifier>
-<modifier type="set" field="2519-4903-a071-2d24" value="20">
-<conditions>
-<condition field="selections" scope="9e52-cd71-6e58-bbeb" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="11a0-4bc5-e1b1-6144" type="atLeast" />
-</conditions>
-</modifier>
-<modifier type="set" field="hidden" value="false">
-<conditions>
-<condition field="selections" scope="9e52-cd71-6e58-bbeb" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="11a0-4bc5-e1b1-6144" type="atLeast" />
+<condition field="selections" scope="9e52-cd71-6e58-bbeb" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="11a0-4bc5-e1b1-6144" type="equalTo" />
 </conditions>
 </modifier>
 </modifiers>
-<constraints>
-<constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5c7b-8fa5-7876-55b6" type="min" />
-<constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2519-4903-a071-2d24" type="max" />
-</constraints>
-<profiles>
-<profile id="c634-5774-32fc-8df0" name="Possessed Legionary" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
 <characteristics>
 <characteristic name="Unit Type" typeId="b0cf-47d7-3836-cf93">Infantry</characteristic>
 <characteristic name="WS" typeId="52b0-fc35-42a9-af3d">4</characteristic>
@@ -6886,27 +6853,84 @@
 </profile>
 </profiles>
 <entryLinks>
-<entryLink id="5b21-54db-e725-9905" name="Close Combat Weapon" hidden="false" collective="false" import="true" targetId="7b6a-5697-5a6a-2d74" type="selectionEntry">
+<entryLink id="be77-797c-3775-533c" name="Flak Armour" hidden="false" collective="false" import="true" targetId="94bc-cb3c-a985-cb5e" type="selectionEntry">
+<modifiers>
+<modifier type="set" field="hidden" value="true">
+<conditions>
+<condition field="selections" scope="9e52-cd71-6e58-bbeb" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="11a0-4bc5-e1b1-6144" type="atLeast" />
+</conditions>
+</modifier>
+<modifier type="set" field="21b8-eb6c-0d28-2d89" value="0">
+<conditions>
+<condition field="selections" scope="9e52-cd71-6e58-bbeb" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="11a0-4bc5-e1b1-6144" type="atLeast" />
+</conditions>
+</modifier>
+<modifier type="set" field="b182-439e-ae54-2540" value="0">
+<conditions>
+<condition field="selections" scope="9e52-cd71-6e58-bbeb" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="11a0-4bc5-e1b1-6144" type="atLeast" />
+</conditions>
+</modifier>
+</modifiers>
 <constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2322-cea8-5444-d52d" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4dd7-63bc-cc47-1937" type="max" />
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="21b8-eb6c-0d28-2d89" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b182-439e-ae54-2540" type="max" />
 </constraints>
 </entryLink>
-<entryLink id="23b0-d218-43bd-2ce2" name="Bolter" hidden="false" collective="false" import="true" targetId="8b6f-ff45-9e8a-0d7e" type="selectionEntry">
+<entryLink id="d0eb-e613-6894-8375" name="Close Combat Weapon" hidden="false" collective="false" import="true" targetId="7b6a-5697-5a6a-2d74" type="selectionEntry">
 <constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1098-8300-4464-040d" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c478-d975-8028-6938" type="max" />
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8c8e-4aa9-7124-d61f" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8dee-88fe-2c97-d0b8" type="max" />
 </constraints>
 </entryLink>
-<entryLink id="77b5-3a43-ac43-4d75" name="Power Armour" hidden="false" collective="false" import="true" targetId="1133-946a-2323-7a81" type="selectionEntry">
+<entryLink id="bc36-95fe-34d3-3693" name="Bolter" hidden="false" collective="false" import="true" targetId="8b6f-ff45-9e8a-0d7e" type="selectionEntry">
+<modifiers>
+<modifier type="set" field="hidden" value="true">
+<conditions>
+<condition field="selections" scope="9e52-cd71-6e58-bbeb" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="11a0-4bc5-e1b1-6144" type="equalTo" />
+</conditions>
+</modifier>
+<modifier type="set" field="2350-990e-4051-ba87" value="0">
+<conditions>
+<condition field="selections" scope="9e52-cd71-6e58-bbeb" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="11a0-4bc5-e1b1-6144" type="equalTo" />
+</conditions>
+</modifier>
+<modifier type="set" field="5900-3f2b-1eeb-73f3" value="0">
+<conditions>
+<condition field="selections" scope="9e52-cd71-6e58-bbeb" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="11a0-4bc5-e1b1-6144" type="equalTo" />
+</conditions>
+</modifier>
+</modifiers>
 <constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6508-e77c-b21d-6300" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9765-b0eb-ad6b-b74e" type="max" />
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2350-990e-4051-ba87" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5900-3f2b-1eeb-73f3" type="max" />
+</constraints>
+</entryLink>
+<entryLink id="a598-60e3-7c5b-f878" name="Power Armour" hidden="false" collective="false" import="true" targetId="1133-946a-2323-7a81" type="selectionEntry">
+<modifiers>
+<modifier type="set" field="hidden" value="true">
+<conditions>
+<condition field="selections" scope="9e52-cd71-6e58-bbeb" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="11a0-4bc5-e1b1-6144" type="equalTo" />
+</conditions>
+</modifier>
+<modifier type="set" field="e74a-6077-1c95-3e02" value="0">
+<conditions>
+<condition field="selections" scope="9e52-cd71-6e58-bbeb" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="11a0-4bc5-e1b1-6144" type="equalTo" />
+</conditions>
+</modifier>
+<modifier type="set" field="cea8-c990-2aba-4d01" value="0">
+<conditions>
+<condition field="selections" scope="9e52-cd71-6e58-bbeb" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="11a0-4bc5-e1b1-6144" type="equalTo" />
+</conditions>
+</modifier>
+</modifiers>
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e74a-6077-1c95-3e02" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cea8-c990-2aba-4d01" type="max" />
 </constraints>
 </entryLink>
 </entryLinks>
 <costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
+<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
 </costs>
 </selectionEntry>
 <selectionEntry id="11a0-4bc5-e1b1-6144" name="Upgrade to Possessed Legionaries (+5 pts per model)" hidden="false" collective="false" import="true" type="upgrade">
@@ -6915,7 +6939,7 @@
 </constraints>
 <rules>
 <rule id="fb11-23e0-f392-bbc1" name="Possessed Legionaries" hidden="false">
-<description>The entire unit is upgraded to Possessed Legionaries for +5 points per model: remove the Possessed Auxiliaries and add the same number of Possessed Legionaries (10 points each).</description>
+<description>The entire unit is upgraded to Possessed Legionaries for +5 points per model (every model uses the Possessed Legionary profile and wargear).</description>
 </rule>
 </rules>
 <costs>
@@ -7034,7 +7058,7 @@
 </modifier>
 <modifier type="increment" field="5bcb-4d38-81d1-58f0" value="1">
 <repeats>
-<repeat field="selections" scope="9e52-cd71-6e58-bbeb" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="be02-eb72-0337-9973" repeats="1" roundUp="false" />
+<repeat field="selections" scope="9e52-cd71-6e58-bbeb" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c64b-3187-f3e3-349f" repeats="1" roundUp="false" />
 </repeats>
 </modifier>
 </modifiers>
@@ -7063,7 +7087,7 @@
 <modifiers>
 <modifier type="increment" field="df62-42dc-b563-b3a2" value="1">
 <repeats>
-<repeat field="selections" scope="9e52-cd71-6e58-bbeb" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="be02-eb72-0337-9973" repeats="1" roundUp="false" />
+<repeat field="selections" scope="9e52-cd71-6e58-bbeb" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c64b-3187-f3e3-349f" repeats="1" roundUp="false" />
 </repeats>
 </modifier>
 <modifier type="decrement" field="df62-42dc-b563-b3a2" value="1">
