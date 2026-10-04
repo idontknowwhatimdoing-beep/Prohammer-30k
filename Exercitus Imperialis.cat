@@ -30755,6 +30755,7 @@
 <modifier type="add" field="error" value="Lotara Sarrin is a Master of the Fleet: only one Master of the Fleet may be included.">
 <conditions>
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="476a-d346-7e8c-f69c" type="atLeast" />
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="45fe-e496-eb69-a038" type="atLeast" />
 </conditions>
 </modifier>
 </modifiers>
@@ -31671,6 +31672,12 @@
 <modifier type="add" field="error" value="Lotara Sarrin is Traitor only.">
 <conditions>
 <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="af50-de01-cc93-f43e" type="atLeast" />
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="476a-d346-7e8c-f69c" type="atLeast" />
+</conditions>
+</modifier>
+<modifier type="set" field="hidden" value="true">
+<conditions>
+<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="af50-de01-cc93-f43e" type="atLeast" />
 </conditions>
 </modifier>
 </modifiers>
@@ -31731,6 +31738,12 @@
 <selectionEntry id="faab-bc0b-22ec-4c98" name="Ilya Ravallion" hidden="false" collective="false" import="true" type="upgrade">
 <modifiers>
 <modifier type="add" field="error" value="Ilya Ravallion is Loyalist only.">
+<conditions>
+<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="267b-12c2-839b-a93a" type="atLeast" />
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="faab-bc0b-22ec-4c98" type="atLeast" />
+</conditions>
+</modifier>
+<modifier type="set" field="hidden" value="true">
 <conditions>
 <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="267b-12c2-839b-a93a" type="atLeast" />
 </conditions>

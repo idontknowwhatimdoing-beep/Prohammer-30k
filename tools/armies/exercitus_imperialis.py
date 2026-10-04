@@ -997,7 +997,8 @@ def advisor(name, cost, prof, kit, rules_, limit=1, scope="force", groups=(), en
     if loyalist is not None:
         other = L.TRAITOR if loyalist else L.LOYALIST
         m.append(modifier("add", "error", f"{name} is {'Loyalist' if loyalist else 'Traitor'} only.",
-                          conds=[cond(other, "roster", "atLeast", 1)]))
+                          conds=[cond(other, "roster", "atLeast", 1), cond(eid, "force", "atLeast", 1)]))
+        m.append(modifier("set", "hidden", "true", conds=[cond(other, "roster", "atLeast", 1)]))
     SHARED.append(entry(eid, display or name, cost=cost, mods=m,
                         constraints=[constraint(uid(eid, "lim"), "max", limit, scope=scope, deep=True)],
                         profiles=[prof(eid)], links=[gear(eid, x) for x in kit],
@@ -1068,7 +1069,8 @@ def build_advisors():
     # Lotara counts as a Master of the Fleet (0-1)
     add_mods([x for x in SHARED if x.get("id") == ADVISOR["Master of the Fleet"]][0], [
         modifier("add", "error", "Lotara Sarrin is a Master of the Fleet: only one Master of the Fleet may be included.",
-                 conds=[cond(ADVISOR["Lotara Sarrin"], "force", "atLeast", 1)])])
+                 conds=[cond(ADVISOR["Lotara Sarrin"], "force", "atLeast", 1),
+                        cond(ADVISOR["Master of the Fleet"], "force", "atLeast", 1)])])
 
 
 def advisor_links(key, names, title="Attached Advisors", show=(), extra=()):
