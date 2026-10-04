@@ -1339,6 +1339,22 @@ def heavy_vehicles():
 
 
 # ------------------------------------------------------------ Rites of War
+RITE_NO_MASTER = [None]
+
+
+def rite_master_error(rites):
+    """'A Rite of War requires Master of the Legion' - only while one of the (core or Legion) Rites is chosen."""
+    opts = [e for e in rites.iter("selectionEntry") if e is not rites]
+    if not opts:
+        return
+    chosen = any_of(*[cond(e.get("id"), "self", "atLeast", 1) for e in opts])
+    no_master = all_of(*[_negate(c) for c in [cond(gs.CAT_MASTER, "force", "atLeast", 1),
+                                               cond(L.consul_id("Delegatus"), "force", "atLeast", 1)]])
+    add_mods(rites, [modifier("add", "error", "A Rite of War requires a model with Master of the Legion (Legion "
+                                              "Praetor or Delegatus Consul) in the Detachment.",
+                              groups=[all_of(no_master, chosen)])])
+
+
 def rites_entry():
     master = [cond(gs.CAT_MASTER, "force", "atLeast", 1), cond(L.consul_id("Delegatus"), "force", "atLeast", 1)]
     no_master = all_of(*[_negate(c) for c in master])
@@ -1382,18 +1398,20 @@ def rites_entry():
             cs.append(cond(rid, "force", "atLeast", 1))
         ents.append(entry(rid, name, rules=[rule(uid("rite-rule", name), name, text)], mods=mods))
     gid = uid("grp", "rites")
-    root_mods = [modifier("add", "error", "A Rite of War requires a model with Master of the Legion (Legion Praetor or "
-                                          "Delegatus Consul) in the Detachment.", groups=[no_master])]
+    # the Master of the Legion error is added once all (Legion) Rites are in the group: rite_master_error()
+    root_mods = []
+
     for n in fa_limit:
         root_mods.append(modifier("add", "category", gs.CAT_LIMIT_FA, conds=[cond(rite_id(n), "self", "atLeast", 1)]))
     for n in hs_limit:
         root_mods.append(modifier("add", "category", gs.CAT_LIMIT_HS, conds=[cond(rite_id(n), "self", "atLeast", 1)]))
     return entry(RITE_ENTRY, "Rite of War", cats=[category_link(gs.CAT_CONFIG, "Configuration", primary=True,
                                                                key="rite")],
-                 constraints=[constraint(uid(RITE_ENTRY, "max"), "max", 1, scope="force", deep=True)], mods=root_mods,
-                 groups=[group(gid, "Rite of War", entries=ents, constraints=[
-                     constraint(uid(gid, "min"), "min", 1, auto=True), constraint(uid(gid, "max"), "max", 1,
-                                                                                  auto=True)])])
+                 # always present in Configuration (author: Rites should show up); choosing one is optional
+                 constraints=[constraint(uid(RITE_ENTRY, "min"), "min", 1, scope="force", deep=True),
+                              constraint(uid(RITE_ENTRY, "max"), "max", 1, scope="force", deep=True)], mods=root_mods,
+                 groups=[group(gid, "Rite of War (optional)", entries=ents, constraints=[
+                     constraint(uid(gid, "max"), "max", 1, auto=True)])])
 
 
 def dedupe_kit(root):

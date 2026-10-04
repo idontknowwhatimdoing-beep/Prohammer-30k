@@ -241,6 +241,8 @@ def apply(root, special_allied=()):
     # Rites of War that forbid Allied Detachments
     rites = find_entry(root, RITE_ENTRY)
     if rites is not None:
+        import legiones2
+        legiones2.rite_master_error(rites)
         legions_other = [c for c, a in CATALOGUES.items() if c.startswith("Legiones Astartes") and c != name]
         for opt in rites.iter("selectionEntry"):
             if opt is rites:

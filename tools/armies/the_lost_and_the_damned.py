@@ -1229,6 +1229,7 @@ def build():
     for e in legion_roots:
         if e.get("id") == L2.RITE_ENTRY:
             add_mods(e, [modifier("set", "hidden", "true"), modifier("set", uid(L2.RITE_ENTRY, "max"), 0),
+                         modifier("set", uid(L2.RITE_ENTRY, "min"), 0),
                          modifier("add", "error", "A Blackshields force may not use a Rite of War.")])
     # Chaplains are forbidden by Orphans of War and The Alien Brotherhood
     for e in cent.iter("selectionEntry"):

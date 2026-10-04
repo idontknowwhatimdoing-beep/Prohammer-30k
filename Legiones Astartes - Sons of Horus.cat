@@ -9218,16 +9218,6 @@
 </selectionEntry>
 <selectionEntry id="3d4e-b3da-650c-c129" name="Rite of War" hidden="false" collective="false" import="true" type="upgrade">
 <modifiers>
-<modifier type="add" field="error" value="A Rite of War requires a model with Master of the Legion (Legion Praetor or Delegatus Consul) in the Detachment.">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cf42-da2a-93a6-6913" type="lessThan" />
-<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fd02-8daf-835e-b537" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
 <modifier type="add" field="category" value="8ed0-3d67-f51e-f8e3">
 <conditions>
 <condition field="selections" scope="self" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8e04-f495-3357-96cf" type="atLeast" />
@@ -9258,17 +9248,49 @@
 <condition field="selections" scope="self" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8cf8-1ffd-f610-ea86" type="atLeast" />
 </conditions>
 </modifier>
+<modifier type="add" field="error" value="A Rite of War requires a model with Master of the Legion (Legion Praetor or Delegatus Consul) in the Detachment.">
+<conditionGroups>
+<conditionGroup type="and">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cf42-da2a-93a6-6913" type="lessThan" />
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fd02-8daf-835e-b537" type="lessThan" />
+</conditions>
+</conditionGroup>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="self" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="16af-3c6d-4886-1450" type="atLeast" />
+<condition field="selections" scope="self" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b68d-b2ba-b013-f6c1" type="atLeast" />
+<condition field="selections" scope="self" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9128-42be-bd92-cf70" type="atLeast" />
+<condition field="selections" scope="self" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8e04-f495-3357-96cf" type="atLeast" />
+<condition field="selections" scope="self" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fbc4-fa75-14de-b9b2" type="atLeast" />
+<condition field="selections" scope="self" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5fbb-22a1-85cd-be0b" type="atLeast" />
+<condition field="selections" scope="self" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cf9e-0c8a-1d16-7758" type="atLeast" />
+<condition field="selections" scope="self" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="16f3-4196-2250-3a21" type="atLeast" />
+<condition field="selections" scope="self" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7be5-b0e5-9507-5292" type="atLeast" />
+<condition field="selections" scope="self" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8cf8-1ffd-f610-ea86" type="atLeast" />
+<condition field="selections" scope="self" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7b54-113c-504b-2b8a" type="atLeast" />
+<condition field="selections" scope="self" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c0b2-49b1-48fd-3fc2" type="atLeast" />
+<condition field="selections" scope="self" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="423c-0c85-463f-d9b3" type="atLeast" />
+<condition field="selections" scope="self" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7235-8bca-8a37-4014" type="atLeast" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</conditionGroup>
+</conditionGroups>
+</modifier>
 </modifiers>
 <constraints>
+<constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1d54-2a09-7717-cd3b" type="min" />
 <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a935-a7ad-1cff-518e" type="max" />
 </constraints>
 <categoryLinks>
 <categoryLink id="b75a-28fa-50b2-5e06" name="Configuration" hidden="false" targetId="ba14-d0f1-f942-df54" primary="true" />
 </categoryLinks>
 <selectionEntryGroups>
-<selectionEntryGroup id="ebeb-39d8-31ef-0b99" name="Rite of War" hidden="false" collective="false" import="true">
+<selectionEntryGroup id="ebeb-39d8-31ef-0b99" name="Rite of War (optional)" hidden="false" collective="false" import="true">
 <constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8a65-1dcd-925c-a530" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="56a4-7441-f72d-ec3d" type="max" />
 </constraints>
 <selectionEntries>
