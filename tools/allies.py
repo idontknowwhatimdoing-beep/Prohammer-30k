@@ -33,6 +33,8 @@ CAT_ALLIED = gs.cat("Detachment: Allied")
 CAT_CUSTODES = gs.cat("Legio Custodes unit")
 CAT_COMPANIONS = gs.cat("Companions of the Ten Thousand")
 CAT_ALLIED_UNIT = gs.cat("Allied Detachment unit")
+CAT_NO_CAP = gs.cat("No allied points limit")  # allied charts of army books without the 25% limit
+NO_CAP_FORCES = {"Ruinstorm Allied Detachment"}
 
 LEGIONS = {  # matrix abbreviation -> Legion
     "DA": "Dark Angels", "EC": "Emperor's Children", "WS": "White Scars", "SW": "Space Wolves",
@@ -70,7 +72,8 @@ def army_categories():
     """[(name, id)] for the game system."""
     out = [("Detachment: Primary", CAT_PRIMARY), ("Detachment: Allied", CAT_ALLIED),
            ("Legio Custodes unit", CAT_CUSTODES), ("Companions of the Ten Thousand", CAT_COMPANIONS),
-           ("Allied Detachment unit", CAT_ALLIED_UNIT)]
+           ("Allied Detachment unit", CAT_ALLIED_UNIT), ("No allied points limit", CAT_NO_CAP)]
+    out += [("Allied Detachment units: " + short_name(c), allied_units_cat(c)) for c in CATALOGUES]
     out += [("Army: " + short_name(c), army_cat(c)) for c in CATALOGUES]
     return out
 
@@ -125,10 +128,15 @@ def in_force(fid):
     return cond(fid, "force", "instanceOf", 0, deep=False)
 
 
-def pct_cond(pct=25):
-    """The points of the Allied Detachments' units are more than pct % of the army's points. (New Recruit takes a
-    percentage of the scope's total: units of Allied Detachments carry CAT_ALLIED_UNIT, counted across the roster.)"""
-    c = cond(CAT_ALLIED_UNIT, "roster", "greaterThan", pct, field=PTS, deep=True)
+def allied_units_cat(catalogue):
+    return gs.cat("Allied Detachment units: " + short_name(catalogue))
+
+
+def pct_cond(catalogue, pct=25):
+    """The points of this army list's Allied Detachment units are more than pct % of the army's points. (New Recruit
+    takes a percentage of the scope's total: units of an Allied Detachment carry a category per army list, counted
+    across the roster - so the limit applies per Allied Detachment.)"""
+    c = cond(allied_units_cat(catalogue), "roster", "greaterThan", pct, field=PTS, deep=True)
     c.set("percentValue", "true")
     return c
 
@@ -195,7 +203,7 @@ def apply(root, special_allied=()):
                         cond(gs.cat("Troops"), "force", "lessThan", 6)]),
         # Games in the Age of Darkness: the Allied Detachment may only ever make up 25% of the army's points
         modifier("add", "error", "An Allied Detachment may only make up 25% of the army's points.",
-                 conds=[in_force(ALLIED_FORCE), not_primary, pct_cond()]),
+                 conds=[not_primary, cond(CAT_NO_CAP, "force", "lessThan", 1), pct_cond(name)]),
         # Primarchs: Primary Detachment only (Forces of the Legions, Fielding a Primarch)
         modifier("add", "error", "A Primarch may only be selected as part of the army's Primary Detachment, never an "
                                  "Allied Detachment.",
@@ -221,7 +229,12 @@ def apply(root, special_allied=()):
     root_ids = {l.get("targetId") for l in root.find("entryLinks")}
     for u in shared_units(root):
         if u.get("id") in root_ids:
-            add_mods(u, [modifier("add", "category", CAT_ALLIED_UNIT, conds=[not_primary])])
+            add_mods(u, [modifier("add", "category", CAT_ALLIED_UNIT, conds=[not_primary]),
+                         modifier("add", "category", allied_units_cat(name), conds=[not_primary])])
+    fe = root.find("forceEntries")
+    for f in (fe if fe is not None else []):
+        if f.get("name") in NO_CAP_FORCES:
+            add_mods(alleg, [modifier("add", "category", CAT_NO_CAP, conds=[in_force(f.get("id"))])])
     add_mods(alleg, mods)
     add_to(alleg, "rules", [matrix_rule(name)])
 

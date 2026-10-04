@@ -107,19 +107,19 @@ RULES = {
         "Enemy against models belonging to the Loyalist faction. Signs and Portents: after deployment but before the first "
         "turn, select one Word Bearers Troops unit and roll a D6: 1-3 all enemy units gain Preferred Enemy against it for "
         "the battle; 4-6 it gains Preferred Enemy against all enemy units for the battle. From Beyond: the Detachment may "
-        "include an Allied Detachment from Daemons of the Ruinstorm, treated as Sworn Brothers with the Word Bearers; this "
+        "include an Allied Detachment from Daemons of the Ruinstorm, treated as Allies and Brothers with the Word Bearers; this "
         "does not prevent the normal Daemonic Covenant. If the army includes a Daemons of the Ruinstorm Covenant "
         "Detachment: it may use the normal Daemons of the Ruinstorm Allied Detachment Force Organisation Chart instead of "
         "the restricted Covenant chart; the 25% limit is removed and the normal Allied Detachment points restrictions "
-        "apply; Word Bearers and the Daemons of the Ruinstorm are Sworn Brothers; before deployment each Daemon unit is "
+        "apply; Word Bearers and the Daemons of the Ruinstorm are Allies and Brothers; before deployment each Daemon unit is "
         "designated Manifested (deploys and enters play normally) or Summoned (begins in Reserve and uses Daemonic "
         "Summoning); the army may still include only one Daemons of the Ruinstorm Allied Detachment. Hell Follows With "
         "Them: whenever an enemy Psyker suffers a Wound from Perils of the Warp, it becomes a Massive Wound and inflicts D3 "
         "Wounds instead of 1.\n"
         "LIMITATIONS - Only a Traitor Word Bearers Detachment. The Detachment must include at least one Diabolist. No more "
         "than one Heavy Support choice. The army may not include a Fortification or an Allied Detachment drawn from "
-        "another Space Marine Legion. Any Allied Detachment other than Daemons of the Ruinstorm is treated as Desperate "
-        "Allies."),
+        "another Space Marine Legion. Any Allied Detachment other than Daemons of the Ruinstorm is treated as a "
+        "Conditional Alliance."),
     "Last of the Serrated Sun": (
         "TRAITOR ONLY.\nEFFECTS - Company of Monsters: Gal Vorbak Dark Brethren may be selected as Troops choices and may "
         "fulfil compulsory Troops selections; every Gal Vorbak unit in the Detachment must purchase a Legion Drop Pod or "

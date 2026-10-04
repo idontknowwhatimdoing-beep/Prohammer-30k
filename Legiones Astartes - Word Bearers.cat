@@ -152,9 +152,9 @@
 </modifier>
 <modifier type="add" field="error" value="An Allied Detachment may only make up 25% of the army's points.">
 <conditions>
-<condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3604-ccf4-4a04-bc94" type="instanceOf" />
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
-<condition field="pts0-0000-0000-0001" scope="roster" value="25" percentValue="true" shared="true" includeChildSelections="true" includeChildForces="false" childId="3224-4c76-76b7-ae18" type="greaterThan" />
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2f70-55c2-4737-69f8" type="lessThan" />
+<condition field="pts0-0000-0000-0001" scope="roster" value="25" percentValue="true" shared="true" includeChildSelections="true" includeChildForces="false" childId="8428-c83d-c8f9-de23" type="greaterThan" />
 </conditions>
 </modifier>
 <modifier type="add" field="error" value="A Primarch may only be selected as part of the army's Primary Detachment, never an Allied Detachment.">
@@ -290,6 +290,11 @@
 </conditionGroups>
 </modifier>
 <modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
+<modifier type="add" field="category" value="8428-c83d-c8f9-de23">
 <conditions>
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
 </conditions>
@@ -2273,6 +2278,11 @@
 </conditionGroups>
 </modifier>
 <modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
+<modifier type="add" field="category" value="8428-c83d-c8f9-de23">
 <conditions>
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
 </conditions>
@@ -6328,6 +6338,11 @@
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
 </conditions>
 </modifier>
+<modifier type="add" field="category" value="8428-c83d-c8f9-de23">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
 </modifiers>
 <infoLinks>
 <infoLink id="757b-1f73-f566-b381" name="Legiones Astartes" hidden="false" targetId="0ed8-99c2-6b0e-f182" type="rule" />
@@ -7313,6 +7328,11 @@
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
 </conditions>
 </modifier>
+<modifier type="add" field="category" value="8428-c83d-c8f9-de23">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
 </modifiers>
 <infoLinks>
 <infoLink id="af65-887a-db9a-6a49" name="Legiones Astartes" hidden="false" targetId="0ed8-99c2-6b0e-f182" type="rule" />
@@ -7893,6 +7913,11 @@
 </conditionGroups>
 </modifier>
 <modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
+<modifier type="add" field="category" value="8428-c83d-c8f9-de23">
 <conditions>
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
 </conditions>
@@ -8563,6 +8588,11 @@
 </conditions>
 </modifier>
 <modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
+<modifier type="add" field="category" value="8428-c83d-c8f9-de23">
 <conditions>
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
 </conditions>
@@ -9586,8 +9616,8 @@ LIMITATIONS - No other Lord of War; no Allied Detachment; no more than one other
 <rules>
 <rule id="7f7c-2872-1ed2-4767" name="The Dark Brethren" hidden="false">
 <description>TRAITOR ONLY.
-EFFECTS - Arch-Traitors: all Word Bearers Independent Characters in the Detachment gain Preferred Enemy against models belonging to the Loyalist faction. Signs and Portents: after deployment but before the first turn, select one Word Bearers Troops unit and roll a D6: 1-3 all enemy units gain Preferred Enemy against it for the battle; 4-6 it gains Preferred Enemy against all enemy units for the battle. From Beyond: the Detachment may include an Allied Detachment from Daemons of the Ruinstorm, treated as Sworn Brothers with the Word Bearers; this does not prevent the normal Daemonic Covenant. If the army includes a Daemons of the Ruinstorm Covenant Detachment: it may use the normal Daemons of the Ruinstorm Allied Detachment Force Organisation Chart instead of the restricted Covenant chart; the 25% limit is removed and the normal Allied Detachment points restrictions apply; Word Bearers and the Daemons of the Ruinstorm are Sworn Brothers; before deployment each Daemon unit is designated Manifested (deploys and enters play normally) or Summoned (begins in Reserve and uses Daemonic Summoning); the army may still include only one Daemons of the Ruinstorm Allied Detachment. Hell Follows With Them: whenever an enemy Psyker suffers a Wound from Perils of the Warp, it becomes a Massive Wound and inflicts D3 Wounds instead of 1.
-LIMITATIONS - Only a Traitor Word Bearers Detachment. The Detachment must include at least one Diabolist. No more than one Heavy Support choice. The army may not include a Fortification or an Allied Detachment drawn from another Space Marine Legion. Any Allied Detachment other than Daemons of the Ruinstorm is treated as Desperate Allies.</description>
+EFFECTS - Arch-Traitors: all Word Bearers Independent Characters in the Detachment gain Preferred Enemy against models belonging to the Loyalist faction. Signs and Portents: after deployment but before the first turn, select one Word Bearers Troops unit and roll a D6: 1-3 all enemy units gain Preferred Enemy against it for the battle; 4-6 it gains Preferred Enemy against all enemy units for the battle. From Beyond: the Detachment may include an Allied Detachment from Daemons of the Ruinstorm, treated as Allies and Brothers with the Word Bearers; this does not prevent the normal Daemonic Covenant. If the army includes a Daemons of the Ruinstorm Covenant Detachment: it may use the normal Daemons of the Ruinstorm Allied Detachment Force Organisation Chart instead of the restricted Covenant chart; the 25% limit is removed and the normal Allied Detachment points restrictions apply; Word Bearers and the Daemons of the Ruinstorm are Allies and Brothers; before deployment each Daemon unit is designated Manifested (deploys and enters play normally) or Summoned (begins in Reserve and uses Daemonic Summoning); the army may still include only one Daemons of the Ruinstorm Allied Detachment. Hell Follows With Them: whenever an enemy Psyker suffers a Wound from Perils of the Warp, it becomes a Massive Wound and inflicts D3 Wounds instead of 1.
+LIMITATIONS - Only a Traitor Word Bearers Detachment. The Detachment must include at least one Diabolist. No more than one Heavy Support choice. The army may not include a Fortification or an Allied Detachment drawn from another Space Marine Legion. Any Allied Detachment other than Daemons of the Ruinstorm is treated as a Conditional Alliance.</description>
 </rule>
 </rules>
 <costs>
@@ -9646,6 +9676,11 @@ LIMITATIONS - Only a Traitor Word Bearers Detachment. All Infantry units must be
 </conditions>
 </modifier>
 <modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
+<modifier type="add" field="category" value="8428-c83d-c8f9-de23">
 <conditions>
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
 </conditions>
@@ -9766,6 +9801,11 @@ LIMITATIONS - Only a Traitor Word Bearers Detachment. All Infantry units must be
 </conditionGroups>
 </modifier>
 <modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
+<modifier type="add" field="category" value="8428-c83d-c8f9-de23">
 <conditions>
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
 </conditions>
@@ -10779,6 +10819,11 @@ LIMITATIONS - Only a Traitor Word Bearers Detachment. All Infantry units must be
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
 </conditions>
 </modifier>
+<modifier type="add" field="category" value="8428-c83d-c8f9-de23">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
 </modifiers>
 <infoLinks>
 <infoLink id="6470-e66d-dfb3-c243" name="Legiones Astartes" hidden="false" targetId="0ed8-99c2-6b0e-f182" type="rule" />
@@ -11646,6 +11691,11 @@ LIMITATIONS - Only a Traitor Word Bearers Detachment. All Infantry units must be
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
 </conditions>
 </modifier>
+<modifier type="add" field="category" value="8428-c83d-c8f9-de23">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
 </modifiers>
 <infoLinks>
 <infoLink id="a238-4d10-861f-5c2e" name="Legiones Astartes" hidden="false" targetId="0ed8-99c2-6b0e-f182" type="rule" />
@@ -12266,6 +12316,11 @@ LIMITATIONS - Only a Traitor Word Bearers Detachment. All Infantry units must be
 <selectionEntry id="a634-eaa0-f122-089d" name="Techmarine Covenant" hidden="false" collective="false" import="true" type="unit">
 <modifiers>
 <modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
+<modifier type="add" field="category" value="8428-c83d-c8f9-de23">
 <conditions>
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
 </conditions>
@@ -13625,6 +13680,11 @@ LIMITATIONS - Only a Traitor Word Bearers Detachment. All Infantry units must be
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
 </conditions>
 </modifier>
+<modifier type="add" field="category" value="8428-c83d-c8f9-de23">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
 </modifiers>
 <profiles>
 <profile id="d99b-794f-ad40-c96a" name="Legion Dreadnought" hidden="false" typeId="678c-90d8-478c-5dc2" typeName="Walker">
@@ -14100,6 +14160,11 @@ LIMITATIONS - Only a Traitor Word Bearers Detachment. All Infantry units must be
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
 </conditions>
 </modifier>
+<modifier type="add" field="category" value="8428-c83d-c8f9-de23">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
 </modifiers>
 <profiles>
 <profile id="a741-923b-d2ad-69ea" name="Legion Contemptor Dreadnought" hidden="false" typeId="678c-90d8-478c-5dc2" typeName="Walker">
@@ -14508,6 +14573,11 @@ LIMITATIONS - Only a Traitor Word Bearers Detachment. All Infantry units must be
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
 </conditions>
 </modifier>
+<modifier type="add" field="category" value="8428-c83d-c8f9-de23">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
 </modifiers>
 <infoLinks>
 <infoLink id="a7b1-ff6e-0ce1-48d7" name="Rapier Battery" hidden="false" targetId="2e91-032a-74e4-5900" type="rule" />
@@ -14814,6 +14884,11 @@ LIMITATIONS - Only a Traitor Word Bearers Detachment. All Infantry units must be
 <selectionEntry id="b2a1-bc50-ae60-bf88" name="Legion Seeker Squad" hidden="false" collective="false" import="true" type="unit">
 <modifiers>
 <modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
+<modifier type="add" field="category" value="8428-c83d-c8f9-de23">
 <conditions>
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
 </conditions>
@@ -15467,6 +15542,11 @@ LIMITATIONS - Only a Traitor Word Bearers Detachment. All Infantry units must be
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
 </conditions>
 </modifier>
+<modifier type="add" field="category" value="8428-c83d-c8f9-de23">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
 </modifiers>
 <infoLinks>
 <infoLink id="ce2b-0fd2-7777-7ba6" name="Legiones Astartes" hidden="false" targetId="0ed8-99c2-6b0e-f182" type="rule" />
@@ -16025,6 +16105,11 @@ LIMITATIONS - Only a Traitor Word Bearers Detachment. All Infantry units must be
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
 </conditions>
 </modifier>
+<modifier type="add" field="category" value="8428-c83d-c8f9-de23">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
 </modifiers>
 <infoLinks>
 <infoLink id="2a85-514c-5a7b-33c6" name="Legiones Astartes" hidden="false" targetId="0ed8-99c2-6b0e-f182" type="rule" />
@@ -16471,6 +16556,11 @@ LIMITATIONS - Only a Traitor Word Bearers Detachment. All Infantry units must be
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
 </conditions>
 </modifier>
+<modifier type="add" field="category" value="8428-c83d-c8f9-de23">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
 </modifiers>
 <infoLinks>
 <infoLink id="5ce4-6766-8417-060f" name="Legiones Astartes" hidden="false" targetId="0ed8-99c2-6b0e-f182" type="rule" />
@@ -16770,6 +16860,11 @@ LIMITATIONS - Only a Traitor Word Bearers Detachment. All Infantry units must be
 <selectionEntry id="a963-97a2-0fad-5d49" name="Legion Land Speeder Squadron" hidden="false" collective="false" import="true" type="unit">
 <modifiers>
 <modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
+<modifier type="add" field="category" value="8428-c83d-c8f9-de23">
 <conditions>
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
 </conditions>
@@ -17113,6 +17208,11 @@ LIMITATIONS - Only a Traitor Word Bearers Detachment. All Infantry units must be
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
 </conditions>
 </modifier>
+<modifier type="add" field="category" value="8428-c83d-c8f9-de23">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
 </modifiers>
 <infoLinks>
 <infoLink id="7bbe-7d64-c624-20e1" name="Deep Strike" hidden="false" targetId="4ea4-ba7e-f203-0c20" type="rule" />
@@ -17345,6 +17445,11 @@ LIMITATIONS - Only a Traitor Word Bearers Detachment. All Infantry units must be
 <selectionEntry id="b2c2-59c9-f233-25d2" name="Legion Heavy Support Squad" hidden="false" collective="false" import="true" type="unit">
 <modifiers>
 <modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
+<modifier type="add" field="category" value="8428-c83d-c8f9-de23">
 <conditions>
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
 </conditions>
@@ -18024,6 +18129,11 @@ LIMITATIONS - Only a Traitor Word Bearers Detachment. All Infantry units must be
 </conditions>
 </modifier>
 <modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
+<modifier type="add" field="category" value="8428-c83d-c8f9-de23">
 <conditions>
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
 </conditions>
@@ -18753,6 +18863,11 @@ LIMITATIONS - Only a Traitor Word Bearers Detachment. All Infantry units must be
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
 </conditions>
 </modifier>
+<modifier type="add" field="category" value="8428-c83d-c8f9-de23">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
 </modifiers>
 <categoryLinks>
 <categoryLink id="dc2e-0906-8764-39dd" name="Heavy Support" hidden="false" targetId="a78f-9734-db0c-b938" primary="true" />
@@ -19355,6 +19470,11 @@ LIMITATIONS - Only a Traitor Word Bearers Detachment. All Infantry units must be
 </conditionGroups>
 </modifier>
 <modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
+<modifier type="add" field="category" value="8428-c83d-c8f9-de23">
 <conditions>
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
 </conditions>
@@ -20798,6 +20918,11 @@ LIMITATIONS - Only a Traitor Word Bearers Detachment. All Infantry units must be
 </conditionGroups>
 </modifier>
 <modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
+<modifier type="add" field="category" value="8428-c83d-c8f9-de23">
 <conditions>
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
 </conditions>
@@ -22631,6 +22756,11 @@ LIMITATIONS - Only a Traitor Word Bearers Detachment. All Infantry units must be
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
 </conditions>
 </modifier>
+<modifier type="add" field="category" value="8428-c83d-c8f9-de23">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
 </modifiers>
 <profiles>
 <profile id="83c3-0fc7-fa23-1283" name="Whirlwind Scorpius" hidden="false" typeId="c1e2-c3f6-f1e3-c783" typeName="Vehicle">
@@ -22797,6 +22927,11 @@ LIMITATIONS - Only a Traitor Word Bearers Detachment. All Infantry units must be
 <selectionEntry id="7621-6444-8430-0644" name="Legion Spartan Assault Tank" hidden="false" collective="false" import="true" type="unit">
 <modifiers>
 <modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
+<modifier type="add" field="category" value="8428-c83d-c8f9-de23">
 <conditions>
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
 </conditions>
@@ -23041,6 +23176,11 @@ LIMITATIONS - Only a Traitor Word Bearers Detachment. All Infantry units must be
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
 </conditions>
 </modifier>
+<modifier type="add" field="category" value="8428-c83d-c8f9-de23">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
 </modifiers>
 <profiles>
 <profile id="7455-7e39-60c0-0ea3" name="Legion Sicaran" hidden="false" typeId="c1e2-c3f6-f1e3-c783" typeName="Vehicle">
@@ -23246,6 +23386,11 @@ LIMITATIONS - Only a Traitor Word Bearers Detachment. All Infantry units must be
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
 </conditions>
 </modifier>
+<modifier type="add" field="category" value="8428-c83d-c8f9-de23">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
 </modifiers>
 <profiles>
 <profile id="0ed2-dda3-1b97-c705" name="Deredeo Dreadnought" hidden="false" typeId="678c-90d8-478c-5dc2" typeName="Walker">
@@ -23356,6 +23501,11 @@ LIMITATIONS - Only a Traitor Word Bearers Detachment. All Infantry units must be
 <selectionEntry id="badc-5092-78d3-6ea3" name="Sicaran Venator Tank Destroyer" hidden="false" collective="false" import="true" type="unit">
 <modifiers>
 <modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
+<modifier type="add" field="category" value="8428-c83d-c8f9-de23">
 <conditions>
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
 </conditions>
@@ -23558,6 +23708,11 @@ LIMITATIONS - Only a Traitor Word Bearers Detachment. All Infantry units must be
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
 </conditions>
 </modifier>
+<modifier type="add" field="category" value="8428-c83d-c8f9-de23">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
 </modifiers>
 <profiles>
 <profile id="1730-11e2-314f-f68e" name="Achilles-Alpha" hidden="false" typeId="c1e2-c3f6-f1e3-c783" typeName="Vehicle">
@@ -23654,6 +23809,11 @@ LIMITATIONS - Only a Traitor Word Bearers Detachment. All Infantry units must be
 <selectionEntry id="57fc-48f3-8f1d-3f82" name="Leviathan Siege Dreadnought" hidden="false" collective="false" import="true" type="unit">
 <modifiers>
 <modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
+<modifier type="add" field="category" value="8428-c83d-c8f9-de23">
 <conditions>
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
 </conditions>
@@ -23885,6 +24045,11 @@ LIMITATIONS - Only a Traitor Word Bearers Detachment. All Infantry units must be
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
 </conditions>
 </modifier>
+<modifier type="add" field="category" value="8428-c83d-c8f9-de23">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
 </modifiers>
 <infoLinks>
 <infoLink id="ecd6-df58-d75c-fdf2" name="Expendable" hidden="false" targetId="7eae-a357-f04d-5f36" type="rule" />
@@ -24066,6 +24231,11 @@ LIMITATIONS - Only a Traitor Word Bearers Detachment. All Infantry units must be
 </conditions>
 </modifier>
 <modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
+<modifier type="add" field="category" value="8428-c83d-c8f9-de23">
 <conditions>
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
 </conditions>
@@ -24670,6 +24840,11 @@ LIMITATIONS - Only a Traitor Word Bearers Detachment. All Infantry units must be
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
 </conditions>
 </modifier>
+<modifier type="add" field="category" value="8428-c83d-c8f9-de23">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
 </modifiers>
 <infoLinks>
 <infoLink id="2f12-f9d9-3175-e0c3" name="Legiones Astartes (Word Bearers)" hidden="false" targetId="8f86-7748-b8fa-b426" type="rule" />
@@ -24946,6 +25121,11 @@ LIMITATIONS - Only a Traitor Word Bearers Detachment. All Infantry units must be
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
 </conditions>
 </modifier>
+<modifier type="add" field="category" value="8428-c83d-c8f9-de23">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
 </modifiers>
 <constraints>
 <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="b75b-8995-daa7-d9b9" type="max" />
@@ -25127,6 +25307,11 @@ LIMITATIONS - Only a Traitor Word Bearers Detachment. All Infantry units must be
 </conditions>
 </modifier>
 <modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
+<modifier type="add" field="category" value="8428-c83d-c8f9-de23">
 <conditions>
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
 </conditions>
@@ -25635,6 +25820,11 @@ LIMITATIONS - Only a Traitor Word Bearers Detachment. All Infantry units must be
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
 </conditions>
 </modifier>
+<modifier type="add" field="category" value="8428-c83d-c8f9-de23">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
 </modifiers>
 <constraints>
 <constraint field="selections" scope="force" value="2" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="da08-32ed-608c-70eb" type="max" />
@@ -26071,6 +26261,11 @@ LIMITATIONS - Only a Traitor Word Bearers Detachment. All Infantry units must be
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
 </conditions>
 </modifier>
+<modifier type="add" field="category" value="8428-c83d-c8f9-de23">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
 </modifiers>
 <constraints>
 <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="6eb1-869b-095a-b906" type="max" />
@@ -26178,6 +26373,11 @@ LIMITATIONS - Only a Traitor Word Bearers Detachment. All Infantry units must be
 </conditions>
 </modifier>
 <modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
+<modifier type="add" field="category" value="8428-c83d-c8f9-de23">
 <conditions>
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
 </conditions>
@@ -26479,6 +26679,11 @@ LIMITATIONS - Only a Traitor Word Bearers Detachment. All Infantry units must be
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
 </conditions>
 </modifier>
+<modifier type="add" field="category" value="8428-c83d-c8f9-de23">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
 </modifiers>
 <constraints>
 <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="715b-4616-3395-ccf0" type="max" />
@@ -26746,6 +26951,11 @@ LIMITATIONS - Only a Traitor Word Bearers Detachment. All Infantry units must be
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
 </conditions>
 </modifier>
+<modifier type="add" field="category" value="8428-c83d-c8f9-de23">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
 </modifiers>
 <constraints>
 <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="35c7-1cfa-3a2a-0b33" type="max" />
@@ -27006,6 +27216,11 @@ LIMITATIONS - Only a Traitor Word Bearers Detachment. All Infantry units must be
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
 </conditions>
 </modifier>
+<modifier type="add" field="category" value="8428-c83d-c8f9-de23">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
 </modifiers>
 <constraints>
 <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="c176-d09b-b05b-c3c2" type="max" />
@@ -27142,6 +27357,11 @@ LIMITATIONS - Only a Traitor Word Bearers Detachment. All Infantry units must be
 </conditions>
 </modifier>
 <modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
+<modifier type="add" field="category" value="8428-c83d-c8f9-de23">
 <conditions>
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
 </conditions>
@@ -46775,8 +46995,8 @@ DAEMONOLOGY: Daemonic Covenant is separate from Daemonology (Malefic). Units cre
 </rule>
 <rule id="78e6-dd7d-f7a3-12d5" name="The Dark Brethren" hidden="false">
 <description>TRAITOR ONLY.
-EFFECTS - Arch-Traitors: all Word Bearers Independent Characters in the Detachment gain Preferred Enemy against models belonging to the Loyalist faction. Signs and Portents: after deployment but before the first turn, select one Word Bearers Troops unit and roll a D6: 1-3 all enemy units gain Preferred Enemy against it for the battle; 4-6 it gains Preferred Enemy against all enemy units for the battle. From Beyond: the Detachment may include an Allied Detachment from Daemons of the Ruinstorm, treated as Sworn Brothers with the Word Bearers; this does not prevent the normal Daemonic Covenant. If the army includes a Daemons of the Ruinstorm Covenant Detachment: it may use the normal Daemons of the Ruinstorm Allied Detachment Force Organisation Chart instead of the restricted Covenant chart; the 25% limit is removed and the normal Allied Detachment points restrictions apply; Word Bearers and the Daemons of the Ruinstorm are Sworn Brothers; before deployment each Daemon unit is designated Manifested (deploys and enters play normally) or Summoned (begins in Reserve and uses Daemonic Summoning); the army may still include only one Daemons of the Ruinstorm Allied Detachment. Hell Follows With Them: whenever an enemy Psyker suffers a Wound from Perils of the Warp, it becomes a Massive Wound and inflicts D3 Wounds instead of 1.
-LIMITATIONS - Only a Traitor Word Bearers Detachment. The Detachment must include at least one Diabolist. No more than one Heavy Support choice. The army may not include a Fortification or an Allied Detachment drawn from another Space Marine Legion. Any Allied Detachment other than Daemons of the Ruinstorm is treated as Desperate Allies.</description>
+EFFECTS - Arch-Traitors: all Word Bearers Independent Characters in the Detachment gain Preferred Enemy against models belonging to the Loyalist faction. Signs and Portents: after deployment but before the first turn, select one Word Bearers Troops unit and roll a D6: 1-3 all enemy units gain Preferred Enemy against it for the battle; 4-6 it gains Preferred Enemy against all enemy units for the battle. From Beyond: the Detachment may include an Allied Detachment from Daemons of the Ruinstorm, treated as Allies and Brothers with the Word Bearers; this does not prevent the normal Daemonic Covenant. If the army includes a Daemons of the Ruinstorm Covenant Detachment: it may use the normal Daemons of the Ruinstorm Allied Detachment Force Organisation Chart instead of the restricted Covenant chart; the 25% limit is removed and the normal Allied Detachment points restrictions apply; Word Bearers and the Daemons of the Ruinstorm are Allies and Brothers; before deployment each Daemon unit is designated Manifested (deploys and enters play normally) or Summoned (begins in Reserve and uses Daemonic Summoning); the army may still include only one Daemons of the Ruinstorm Allied Detachment. Hell Follows With Them: whenever an enemy Psyker suffers a Wound from Perils of the Warp, it becomes a Massive Wound and inflicts D3 Wounds instead of 1.
+LIMITATIONS - Only a Traitor Word Bearers Detachment. The Detachment must include at least one Diabolist. No more than one Heavy Support choice. The army may not include a Fortification or an Allied Detachment drawn from another Space Marine Legion. Any Allied Detachment other than Daemons of the Ruinstorm is treated as a Conditional Alliance.</description>
 </rule>
 <rule id="efe6-3184-9f48-e68e" name="Last of the Serrated Sun" hidden="false">
 <description>TRAITOR ONLY.

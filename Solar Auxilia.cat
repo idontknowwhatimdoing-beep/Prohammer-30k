@@ -102,9 +102,9 @@
 </modifier>
 <modifier type="add" field="error" value="An Allied Detachment may only make up 25% of the army's points.">
 <conditions>
-<condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3604-ccf4-4a04-bc94" type="instanceOf" />
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
-<condition field="pts0-0000-0000-0001" scope="roster" value="25" percentValue="true" shared="true" includeChildSelections="true" includeChildForces="false" childId="3224-4c76-76b7-ae18" type="greaterThan" />
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2f70-55c2-4737-69f8" type="lessThan" />
+<condition field="pts0-0000-0000-0001" scope="roster" value="25" percentValue="true" shared="true" includeChildSelections="true" includeChildForces="false" childId="afa0-a95f-4814-a40d" type="greaterThan" />
 </conditions>
 </modifier>
 <modifier type="add" field="error" value="A Primarch may only be selected as part of the army's Primary Detachment, never an Allied Detachment.">
@@ -569,6 +569,11 @@
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
 </conditions>
 </modifier>
+<modifier type="add" field="category" value="afa0-a95f-4814-a40d">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
 </modifiers>
 <profiles>
 <profile id="8711-0d83-99e0-a12e" name="Legate Commander" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
@@ -622,6 +627,13 @@
 </categoryLinks>
 <selectionEntries>
 <selectionEntry id="d028-9e72-79f1-4f5c" name="Upgrade to Lord Marshal" hidden="false" collective="false" import="true" type="upgrade">
+<modifiers>
+<modifier type="set" field="hidden" value="true">
+<conditions>
+<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="eac0-0d77-ed06-56ee" type="atLeast" />
+</conditions>
+</modifier>
+</modifiers>
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a0db-ca12-dfab-9012" type="max" />
 <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="fc19-b2aa-67cd-755f" type="max" />
@@ -918,6 +930,11 @@
 </conditionGroups>
 </modifier>
 <modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
+<modifier type="add" field="category" value="afa0-a95f-4814-a40d">
 <conditions>
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
 </conditions>
@@ -1366,6 +1383,11 @@
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
 </conditions>
 </modifier>
+<modifier type="add" field="category" value="afa0-a95f-4814-a40d">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
 </modifiers>
 <infoLinks>
 <infoLink id="bcf7-173b-9537-5af4" name="Support Officer" hidden="false" targetId="ede8-9c45-fce5-8cd7" type="rule" />
@@ -1530,12 +1552,17 @@
 <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="267b-12c2-839b-a93a" type="atLeast" />
 </conditions>
 </modifier>
-<modifier type="add" field="warning" value="Ireton MaSade must be the army's Warlord, but he does not override Disciplined Command: he counts as a Legate Commander, so a Lord Marshal in the army outranks him.">
+<modifier type="add" field="error" value="Ireton MaSade must be the army's Warlord: an army with MaSade may not include a Lord Marshal (either one or the other).">
 <conditions>
 <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d028-9e72-79f1-4f5c" type="atLeast" />
 </conditions>
 </modifier>
 <modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
+<modifier type="add" field="category" value="afa0-a95f-4814-a40d">
 <conditions>
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
 </conditions>
@@ -1636,6 +1663,11 @@
 <selectionEntry id="765d-977d-8afb-35f4" name="Auxilia Medicae Detachment" hidden="false" collective="false" import="true" type="unit">
 <modifiers>
 <modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
+<modifier type="add" field="category" value="afa0-a95f-4814-a40d">
 <conditions>
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
 </conditions>
@@ -1741,6 +1773,11 @@
 </conditions>
 </modifier>
 <modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
+<modifier type="add" field="category" value="afa0-a95f-4814-a40d">
 <conditions>
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
 </conditions>
@@ -1999,6 +2036,11 @@
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
 </conditions>
 </modifier>
+<modifier type="add" field="category" value="afa0-a95f-4814-a40d">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
 </modifiers>
 <infoLinks>
 <infoLink id="c4a2-0067-5c78-d3be" name="Hammer of Wrath" hidden="false" targetId="9444-2cf7-4763-1e55" type="rule" />
@@ -2060,6 +2102,11 @@
 <selectionEntry id="af56-7d8a-0a7b-fbd0" name="Enginseer Auxilia" hidden="false" collective="false" import="true" type="unit">
 <modifiers>
 <modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
+<modifier type="add" field="category" value="afa0-a95f-4814-a40d">
 <conditions>
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
 </conditions>
@@ -2369,6 +2416,11 @@
 </conditionGroups>
 </modifier>
 <modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
+<modifier type="add" field="category" value="afa0-a95f-4814-a40d">
 <conditions>
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
 </conditions>
@@ -3083,6 +3135,11 @@
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
 </conditions>
 </modifier>
+<modifier type="add" field="category" value="afa0-a95f-4814-a40d">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
 </modifiers>
 <infoLinks>
 <infoLink id="1ab4-580d-7e35-b730" name="Disciplined Fire" hidden="false" targetId="1502-70be-b878-b60c" type="rule" />
@@ -3433,6 +3490,11 @@
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
 </conditions>
 </modifier>
+<modifier type="add" field="category" value="afa0-a95f-4814-a40d">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
 </modifiers>
 <constraints>
 <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a126-da64-da8a-eee1" type="max" />
@@ -3532,6 +3594,11 @@
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
 </conditions>
 </modifier>
+<modifier type="add" field="category" value="afa0-a95f-4814-a40d">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
 </modifiers>
 <infoLinks>
 <infoLink id="82a5-401f-b56b-1ae0" name="Auxilia Infantry Tercio" hidden="false" targetId="a6e1-c8f3-7e2f-5051" type="rule" />
@@ -3609,6 +3676,11 @@
 </conditions>
 </modifier>
 <modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
+<modifier type="add" field="category" value="afa0-a95f-4814-a40d">
 <conditions>
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
 </conditions>
@@ -4093,6 +4165,11 @@
 </conditions>
 </modifier>
 <modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
+<modifier type="add" field="category" value="afa0-a95f-4814-a40d">
 <conditions>
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
 </conditions>
@@ -5942,6 +6019,11 @@
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
 </conditions>
 </modifier>
+<modifier type="add" field="category" value="afa0-a95f-4814-a40d">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
 </modifiers>
 <infoLinks>
 <infoLink id="af5f-511b-f817-b47b" name="Scouts" hidden="false" targetId="6bb0-de35-696c-e22a" type="rule" />
@@ -6707,6 +6789,11 @@
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
 </conditions>
 </modifier>
+<modifier type="add" field="category" value="afa0-a95f-4814-a40d">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
 </modifiers>
 <infoLinks>
 <infoLink id="fc9b-0ea1-ce60-99cb" name="Disciplined Fire" hidden="false" targetId="1502-70be-b878-b60c" type="rule" />
@@ -7000,6 +7087,11 @@
 </conditions>
 </modifier>
 <modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
+<modifier type="add" field="category" value="afa0-a95f-4814-a40d">
 <conditions>
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
 </conditions>
@@ -7339,6 +7431,11 @@
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
 </conditions>
 </modifier>
+<modifier type="add" field="category" value="afa0-a95f-4814-a40d">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
 </modifiers>
 <infoLinks>
 <infoLink id="7ae7-becb-76b9-0d4b" name="Disciplined Fire" hidden="false" targetId="1502-70be-b878-b60c" type="rule" />
@@ -7640,6 +7737,11 @@
 </conditions>
 </modifier>
 <modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
+<modifier type="add" field="category" value="afa0-a95f-4814-a40d">
 <conditions>
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
 </conditions>
@@ -9008,6 +9110,11 @@
 </conditions>
 </modifier>
 <modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
+<modifier type="add" field="category" value="afa0-a95f-4814-a40d">
 <conditions>
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
 </conditions>
@@ -10599,6 +10706,11 @@
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
 </conditions>
 </modifier>
+<modifier type="add" field="category" value="afa0-a95f-4814-a40d">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
 </modifiers>
 <profiles>
 <profile id="4162-dfd1-bb81-119f" name="Malcador Heavy Tank" hidden="false" typeId="c1e2-c3f6-f1e3-c783" typeName="Vehicle">
@@ -10835,6 +10947,11 @@
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
 </conditions>
 </modifier>
+<modifier type="add" field="category" value="afa0-a95f-4814-a40d">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
 </modifiers>
 <profiles>
 <profile id="343b-3fd5-6557-4b50" name="Malcador Infernus" hidden="false" typeId="c1e2-c3f6-f1e3-c783" typeName="Vehicle">
@@ -11023,6 +11140,11 @@
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
 </conditions>
 </modifier>
+<modifier type="add" field="category" value="afa0-a95f-4814-a40d">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
 </modifiers>
 <profiles>
 <profile id="8db3-ac5a-21fa-1df7" name="Valdor Tank Hunter" hidden="false" typeId="c1e2-c3f6-f1e3-c783" typeName="Vehicle">
@@ -11151,6 +11273,11 @@
 <selectionEntry id="bb5e-e7c1-8978-9a59" name="0-1 Cyclops Remote Demolitions Unit" hidden="false" collective="false" import="true" type="unit">
 <modifiers>
 <modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
+<modifier type="add" field="category" value="afa0-a95f-4814-a40d">
 <conditions>
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
 </conditions>
@@ -16739,7 +16866,7 @@
 <description>A Cyclops may voluntarily Detonate during its controlling player's Assault phase; if engaged in close combat it may instead Detonate during either player's Assault phase at Initiative 10. Centre the appropriate Blast marker over the Cyclops and resolve its payload against all models beneath it; the Cyclops is then destroyed. If a Cyclops is destroyed by any other means, roll a D6: on a 6 it immediately Detonates.</description>
 </rule>
 <rule id="bbca-45d6-efa1-a994" name="Warlord (Ireton MaSade)" hidden="false">
-<description>Ireton MaSade must be the army's Warlord. This does not override Disciplined Command: MaSade counts as a Legate Commander (also for any limit on Legate Commanders). Loyalist only.</description>
+<description>Ireton MaSade must be the army's Warlord. This does not override Disciplined Command: MaSade counts as a Legate Commander. An army may include either MaSade or a Lord Marshal, not both. Loyalist only.</description>
 </rule>
 <rule id="a9e0-c934-2f7d-b446" name="Master of the Battlefield" hidden="false">
 <description>After both armies have deployed, but before the first turn begins, MaSade may redeploy D3 friendly Solar Auxilia units from his Detachment anywhere they could normally have deployed, or place them into Reserve. A unit already in Reserve may instead be deployed normally, provided a legal deployment position exists.</description>

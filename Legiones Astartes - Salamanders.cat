@@ -147,9 +147,9 @@
 </modifier>
 <modifier type="add" field="error" value="An Allied Detachment may only make up 25% of the army's points.">
 <conditions>
-<condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3604-ccf4-4a04-bc94" type="instanceOf" />
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
-<condition field="pts0-0000-0000-0001" scope="roster" value="25" percentValue="true" shared="true" includeChildSelections="true" includeChildForces="false" childId="3224-4c76-76b7-ae18" type="greaterThan" />
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2f70-55c2-4737-69f8" type="lessThan" />
+<condition field="pts0-0000-0000-0001" scope="roster" value="25" percentValue="true" shared="true" includeChildSelections="true" includeChildForces="false" childId="bef2-8514-9cde-4c6e" type="greaterThan" />
 </conditions>
 </modifier>
 <modifier type="add" field="error" value="A Primarch may only be selected as part of the army's Primary Detachment, never an Allied Detachment.">
@@ -237,6 +237,11 @@
 </conditionGroups>
 </modifier>
 <modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
+<modifier type="add" field="category" value="bef2-8514-9cde-4c6e">
 <conditions>
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
 </conditions>
@@ -1973,6 +1978,11 @@
 </conditions>
 </modifier>
 <modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
+<modifier type="add" field="category" value="bef2-8514-9cde-4c6e">
 <conditions>
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
 </conditions>
@@ -5591,6 +5601,11 @@
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
 </conditions>
 </modifier>
+<modifier type="add" field="category" value="bef2-8514-9cde-4c6e">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
 </modifiers>
 <infoLinks>
 <infoLink id="757b-1f73-f566-b381" name="Legiones Astartes" hidden="false" targetId="0ed8-99c2-6b0e-f182" type="rule" />
@@ -6508,6 +6523,11 @@
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
 </conditions>
 </modifier>
+<modifier type="add" field="category" value="bef2-8514-9cde-4c6e">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
 </modifiers>
 <infoLinks>
 <infoLink id="af65-887a-db9a-6a49" name="Legiones Astartes" hidden="false" targetId="0ed8-99c2-6b0e-f182" type="rule" />
@@ -7015,6 +7035,11 @@
 </conditionGroups>
 </modifier>
 <modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
+<modifier type="add" field="category" value="bef2-8514-9cde-4c6e">
 <conditions>
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
 </conditions>
@@ -7620,6 +7645,11 @@
 </conditions>
 </modifier>
 <modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
+<modifier type="add" field="category" value="bef2-8514-9cde-4c6e">
 <conditions>
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
 </conditions>
@@ -9664,6 +9694,11 @@ LIMITATIONS - The Detachment must include a Legion Chaplain Consul. The Detachme
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
 </conditions>
 </modifier>
+<modifier type="add" field="category" value="bef2-8514-9cde-4c6e">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
 </modifiers>
 <constraints>
 <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a032-4373-7bf9-c1c0" type="max" />
@@ -9780,6 +9815,11 @@ LIMITATIONS - The Detachment must include a Legion Chaplain Consul. The Detachme
 </conditionGroups>
 </modifier>
 <modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
+<modifier type="add" field="category" value="bef2-8514-9cde-4c6e">
 <conditions>
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
 </conditions>
@@ -10712,6 +10752,11 @@ LIMITATIONS - The Detachment must include a Legion Chaplain Consul. The Detachme
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
 </conditions>
 </modifier>
+<modifier type="add" field="category" value="bef2-8514-9cde-4c6e">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
 </modifiers>
 <infoLinks>
 <infoLink id="6470-e66d-dfb3-c243" name="Legiones Astartes" hidden="false" targetId="0ed8-99c2-6b0e-f182" type="rule" />
@@ -11481,6 +11526,11 @@ LIMITATIONS - The Detachment must include a Legion Chaplain Consul. The Detachme
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
 </conditions>
 </modifier>
+<modifier type="add" field="category" value="bef2-8514-9cde-4c6e">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
 </modifiers>
 <infoLinks>
 <infoLink id="a238-4d10-861f-5c2e" name="Legiones Astartes" hidden="false" targetId="0ed8-99c2-6b0e-f182" type="rule" />
@@ -12069,6 +12119,11 @@ LIMITATIONS - The Detachment must include a Legion Chaplain Consul. The Detachme
 <selectionEntry id="a634-eaa0-f122-089d" name="Techmarine Covenant" hidden="false" collective="false" import="true" type="unit">
 <modifiers>
 <modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
+<modifier type="add" field="category" value="bef2-8514-9cde-4c6e">
 <conditions>
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
 </conditions>
@@ -13322,6 +13377,11 @@ LIMITATIONS - The Detachment must include a Legion Chaplain Consul. The Detachme
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
 </conditions>
 </modifier>
+<modifier type="add" field="category" value="bef2-8514-9cde-4c6e">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
 </modifiers>
 <profiles>
 <profile id="d99b-794f-ad40-c96a" name="Legion Dreadnought" hidden="false" typeId="678c-90d8-478c-5dc2" typeName="Walker">
@@ -13822,6 +13882,11 @@ LIMITATIONS - The Detachment must include a Legion Chaplain Consul. The Detachme
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
 </conditions>
 </modifier>
+<modifier type="add" field="category" value="bef2-8514-9cde-4c6e">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
 </modifiers>
 <profiles>
 <profile id="a741-923b-d2ad-69ea" name="Legion Contemptor Dreadnought" hidden="false" typeId="678c-90d8-478c-5dc2" typeName="Walker">
@@ -14235,6 +14300,11 @@ LIMITATIONS - The Detachment must include a Legion Chaplain Consul. The Detachme
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
 </conditions>
 </modifier>
+<modifier type="add" field="category" value="bef2-8514-9cde-4c6e">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
 </modifiers>
 <infoLinks>
 <infoLink id="a7b1-ff6e-0ce1-48d7" name="Rapier Battery" hidden="false" targetId="2e91-032a-74e4-5900" type="rule" />
@@ -14543,6 +14613,11 @@ LIMITATIONS - The Detachment must include a Legion Chaplain Consul. The Detachme
 <selectionEntry id="b2a1-bc50-ae60-bf88" name="Legion Seeker Squad" hidden="false" collective="false" import="true" type="unit">
 <modifiers>
 <modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
+<modifier type="add" field="category" value="bef2-8514-9cde-4c6e">
 <conditions>
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
 </conditions>
@@ -15196,6 +15271,11 @@ LIMITATIONS - The Detachment must include a Legion Chaplain Consul. The Detachme
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
 </conditions>
 </modifier>
+<modifier type="add" field="category" value="bef2-8514-9cde-4c6e">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
 </modifiers>
 <infoLinks>
 <infoLink id="ce2b-0fd2-7777-7ba6" name="Legiones Astartes" hidden="false" targetId="0ed8-99c2-6b0e-f182" type="rule" />
@@ -15757,6 +15837,11 @@ LIMITATIONS - The Detachment must include a Legion Chaplain Consul. The Detachme
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
 </conditions>
 </modifier>
+<modifier type="add" field="category" value="bef2-8514-9cde-4c6e">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
 </modifiers>
 <infoLinks>
 <infoLink id="2a85-514c-5a7b-33c6" name="Legiones Astartes" hidden="false" targetId="0ed8-99c2-6b0e-f182" type="rule" />
@@ -16206,6 +16291,11 @@ LIMITATIONS - The Detachment must include a Legion Chaplain Consul. The Detachme
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
 </conditions>
 </modifier>
+<modifier type="add" field="category" value="bef2-8514-9cde-4c6e">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
 </modifiers>
 <infoLinks>
 <infoLink id="5ce4-6766-8417-060f" name="Legiones Astartes" hidden="false" targetId="0ed8-99c2-6b0e-f182" type="rule" />
@@ -16505,6 +16595,11 @@ LIMITATIONS - The Detachment must include a Legion Chaplain Consul. The Detachme
 <selectionEntry id="a963-97a2-0fad-5d49" name="Legion Land Speeder Squadron" hidden="false" collective="false" import="true" type="unit">
 <modifiers>
 <modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
+<modifier type="add" field="category" value="bef2-8514-9cde-4c6e">
 <conditions>
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
 </conditions>
@@ -16848,6 +16943,11 @@ LIMITATIONS - The Detachment must include a Legion Chaplain Consul. The Detachme
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
 </conditions>
 </modifier>
+<modifier type="add" field="category" value="bef2-8514-9cde-4c6e">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
 </modifiers>
 <infoLinks>
 <infoLink id="7bbe-7d64-c624-20e1" name="Deep Strike" hidden="false" targetId="4ea4-ba7e-f203-0c20" type="rule" />
@@ -17080,6 +17180,11 @@ LIMITATIONS - The Detachment must include a Legion Chaplain Consul. The Detachme
 <selectionEntry id="b2c2-59c9-f233-25d2" name="Legion Heavy Support Squad" hidden="false" collective="false" import="true" type="unit">
 <modifiers>
 <modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
+<modifier type="add" field="category" value="bef2-8514-9cde-4c6e">
 <conditions>
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
 </conditions>
@@ -17695,6 +17800,11 @@ LIMITATIONS - The Detachment must include a Legion Chaplain Consul. The Detachme
 </conditions>
 </modifier>
 <modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
+<modifier type="add" field="category" value="bef2-8514-9cde-4c6e">
 <conditions>
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
 </conditions>
@@ -18424,6 +18534,11 @@ LIMITATIONS - The Detachment must include a Legion Chaplain Consul. The Detachme
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
 </conditions>
 </modifier>
+<modifier type="add" field="category" value="bef2-8514-9cde-4c6e">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
 </modifiers>
 <categoryLinks>
 <categoryLink id="dc2e-0906-8764-39dd" name="Heavy Support" hidden="false" targetId="a78f-9734-db0c-b938" primary="true" />
@@ -19026,6 +19141,11 @@ LIMITATIONS - The Detachment must include a Legion Chaplain Consul. The Detachme
 </conditionGroups>
 </modifier>
 <modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
+<modifier type="add" field="category" value="bef2-8514-9cde-4c6e">
 <conditions>
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
 </conditions>
@@ -20469,6 +20589,11 @@ LIMITATIONS - The Detachment must include a Legion Chaplain Consul. The Detachme
 </conditionGroups>
 </modifier>
 <modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
+<modifier type="add" field="category" value="bef2-8514-9cde-4c6e">
 <conditions>
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
 </conditions>
@@ -22302,6 +22427,11 @@ LIMITATIONS - The Detachment must include a Legion Chaplain Consul. The Detachme
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
 </conditions>
 </modifier>
+<modifier type="add" field="category" value="bef2-8514-9cde-4c6e">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
 </modifiers>
 <profiles>
 <profile id="83c3-0fc7-fa23-1283" name="Whirlwind Scorpius" hidden="false" typeId="c1e2-c3f6-f1e3-c783" typeName="Vehicle">
@@ -22468,6 +22598,11 @@ LIMITATIONS - The Detachment must include a Legion Chaplain Consul. The Detachme
 <selectionEntry id="7621-6444-8430-0644" name="Legion Spartan Assault Tank" hidden="false" collective="false" import="true" type="unit">
 <modifiers>
 <modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
+<modifier type="add" field="category" value="bef2-8514-9cde-4c6e">
 <conditions>
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
 </conditions>
@@ -22712,6 +22847,11 @@ LIMITATIONS - The Detachment must include a Legion Chaplain Consul. The Detachme
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
 </conditions>
 </modifier>
+<modifier type="add" field="category" value="bef2-8514-9cde-4c6e">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
 </modifiers>
 <profiles>
 <profile id="7455-7e39-60c0-0ea3" name="Legion Sicaran" hidden="false" typeId="c1e2-c3f6-f1e3-c783" typeName="Vehicle">
@@ -22917,6 +23057,11 @@ LIMITATIONS - The Detachment must include a Legion Chaplain Consul. The Detachme
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
 </conditions>
 </modifier>
+<modifier type="add" field="category" value="bef2-8514-9cde-4c6e">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
 </modifiers>
 <profiles>
 <profile id="0ed2-dda3-1b97-c705" name="Deredeo Dreadnought" hidden="false" typeId="678c-90d8-478c-5dc2" typeName="Walker">
@@ -23027,6 +23172,11 @@ LIMITATIONS - The Detachment must include a Legion Chaplain Consul. The Detachme
 <selectionEntry id="badc-5092-78d3-6ea3" name="Sicaran Venator Tank Destroyer" hidden="false" collective="false" import="true" type="unit">
 <modifiers>
 <modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
+<modifier type="add" field="category" value="bef2-8514-9cde-4c6e">
 <conditions>
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
 </conditions>
@@ -23229,6 +23379,11 @@ LIMITATIONS - The Detachment must include a Legion Chaplain Consul. The Detachme
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
 </conditions>
 </modifier>
+<modifier type="add" field="category" value="bef2-8514-9cde-4c6e">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
 </modifiers>
 <profiles>
 <profile id="1730-11e2-314f-f68e" name="Achilles-Alpha" hidden="false" typeId="c1e2-c3f6-f1e3-c783" typeName="Vehicle">
@@ -23326,6 +23481,11 @@ LIMITATIONS - The Detachment must include a Legion Chaplain Consul. The Detachme
 <selectionEntry id="57fc-48f3-8f1d-3f82" name="Leviathan Siege Dreadnought" hidden="false" collective="false" import="true" type="unit">
 <modifiers>
 <modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
+<modifier type="add" field="category" value="bef2-8514-9cde-4c6e">
 <conditions>
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
 </conditions>
@@ -23549,6 +23709,11 @@ LIMITATIONS - The Detachment must include a Legion Chaplain Consul. The Detachme
 <selectionEntry id="207f-aaa5-a5e8-817c" name="Firedrake Terminator Squad" hidden="false" collective="false" import="true" type="unit">
 <modifiers>
 <modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
+<modifier type="add" field="category" value="bef2-8514-9cde-4c6e">
 <conditions>
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
 </conditions>
@@ -24035,6 +24200,11 @@ LIMITATIONS - The Detachment must include a Legion Chaplain Consul. The Detachme
 </conditions>
 </modifier>
 <modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
+<modifier type="add" field="category" value="bef2-8514-9cde-4c6e">
 <conditions>
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
 </conditions>
@@ -24693,6 +24863,11 @@ LIMITATIONS - The Detachment must include a Legion Chaplain Consul. The Detachme
 </conditions>
 </modifier>
 <modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
+<modifier type="add" field="category" value="bef2-8514-9cde-4c6e">
 <conditions>
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
 </conditions>
@@ -25370,6 +25545,11 @@ LIMITATIONS - The Detachment must include a Legion Chaplain Consul. The Detachme
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
 </conditions>
 </modifier>
+<modifier type="add" field="category" value="bef2-8514-9cde-4c6e">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
 </modifiers>
 <infoLinks>
 <infoLink id="f2db-5d93-bece-71d1" name="Legiones Astartes (Salamanders)" hidden="false" targetId="a333-f53d-9e71-4040" type="rule" />
@@ -26034,6 +26214,11 @@ LIMITATIONS - The Detachment must include a Legion Chaplain Consul. The Detachme
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
 </conditions>
 </modifier>
+<modifier type="add" field="category" value="bef2-8514-9cde-4c6e">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
 </modifiers>
 <infoLinks>
 <infoLink id="2385-c9e0-8cfa-5d1b" name="Legiones Astartes (Salamanders)" hidden="false" targetId="a333-f53d-9e71-4040" type="rule" />
@@ -26485,6 +26670,11 @@ LIMITATIONS - The Detachment must include a Legion Chaplain Consul. The Detachme
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
 </conditions>
 </modifier>
+<modifier type="add" field="category" value="bef2-8514-9cde-4c6e">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
 </modifiers>
 <constraints>
 <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="11d2-7d1a-6aa3-4c3f" type="max" />
@@ -26595,6 +26785,11 @@ LIMITATIONS - The Detachment must include a Legion Chaplain Consul. The Detachme
 <selectionEntry id="3c48-d740-e520-285d" name="Lord Chaplain Nomus Rhy'tan" hidden="false" collective="false" import="true" type="unit">
 <modifiers>
 <modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
+<modifier type="add" field="category" value="bef2-8514-9cde-4c6e">
 <conditions>
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
 </conditions>
@@ -26721,6 +26916,11 @@ LIMITATIONS - The Detachment must include a Legion Chaplain Consul. The Detachme
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
 </conditions>
 </modifier>
+<modifier type="add" field="category" value="bef2-8514-9cde-4c6e">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
 </modifiers>
 <constraints>
 <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="16b1-c51d-b2f3-d970" type="max" />
@@ -26842,6 +27042,11 @@ LIMITATIONS - The Detachment must include a Legion Chaplain Consul. The Detachme
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
 </conditions>
 </modifier>
+<modifier type="add" field="category" value="bef2-8514-9cde-4c6e">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
 </modifiers>
 <constraints>
 <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="684d-5a85-18d2-65ed" type="max" />
@@ -26953,6 +27158,11 @@ LIMITATIONS - The Detachment must include a Legion Chaplain Consul. The Detachme
 </conditions>
 </modifier>
 <modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
+<modifier type="add" field="category" value="bef2-8514-9cde-4c6e">
 <conditions>
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
 </conditions>
@@ -27109,6 +27319,11 @@ LIMITATIONS - The Detachment must include a Legion Chaplain Consul. The Detachme
 </conditions>
 </modifier>
 <modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
+<modifier type="add" field="category" value="bef2-8514-9cde-4c6e">
 <conditions>
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
 </conditions>

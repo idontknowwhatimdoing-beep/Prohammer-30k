@@ -121,6 +121,32 @@
 <categoryEntry id="052b-1879-f558-ec1e" name="Legio Custodes unit" hidden="false" />
 <categoryEntry id="640e-bd77-4dc7-426b" name="Companions of the Ten Thousand" hidden="false" />
 <categoryEntry id="3224-4c76-76b7-ae18" name="Allied Detachment unit" hidden="false" />
+<categoryEntry id="2f70-55c2-4737-69f8" name="No allied points limit" hidden="false" />
+<categoryEntry id="ed52-3174-a3c8-d7e9" name="Allied Detachment units: Dark Angels" hidden="false" />
+<categoryEntry id="3077-6789-fbe0-edfc" name="Allied Detachment units: Emperor's Children" hidden="false" />
+<categoryEntry id="ee03-ae72-0b55-5fa3" name="Allied Detachment units: White Scars" hidden="false" />
+<categoryEntry id="cbae-53ac-6117-736d" name="Allied Detachment units: Space Wolves" hidden="false" />
+<categoryEntry id="aa45-82f2-ea9a-c7a0" name="Allied Detachment units: Imperial Fists" hidden="false" />
+<categoryEntry id="ed7f-01a1-fd53-9371" name="Allied Detachment units: Night Lords" hidden="false" />
+<categoryEntry id="8afe-f031-754b-3845" name="Allied Detachment units: Blood Angels" hidden="false" />
+<categoryEntry id="a871-6a74-081c-741d" name="Allied Detachment units: Iron Hands" hidden="false" />
+<categoryEntry id="9558-a7e0-f0e6-d69c" name="Allied Detachment units: World Eaters" hidden="false" />
+<categoryEntry id="cc49-a17b-5ca3-29ee" name="Allied Detachment units: Ultramarines" hidden="false" />
+<categoryEntry id="cca3-1c83-d6c5-7f94" name="Allied Detachment units: Death Guard" hidden="false" />
+<categoryEntry id="89c3-243c-1b7d-b66d" name="Allied Detachment units: Thousand Sons" hidden="false" />
+<categoryEntry id="a8b9-cbb1-7553-d484" name="Allied Detachment units: Sons of Horus" hidden="false" />
+<categoryEntry id="8428-c83d-c8f9-de23" name="Allied Detachment units: Word Bearers" hidden="false" />
+<categoryEntry id="bef2-8514-9cde-4c6e" name="Allied Detachment units: Salamanders" hidden="false" />
+<categoryEntry id="2d58-a963-c122-e18f" name="Allied Detachment units: Raven Guard" hidden="false" />
+<categoryEntry id="36ab-e357-078b-ea08" name="Allied Detachment units: Alpha Legion" hidden="false" />
+<categoryEntry id="c6ef-b535-812d-96c8" name="Allied Detachment units: Iron Warriors" hidden="false" />
+<categoryEntry id="8ee7-c7c2-da46-271f" name="Allied Detachment units: Mechanicum" hidden="false" />
+<categoryEntry id="bc8d-6905-792a-97e5" name="Allied Detachment units: Exercitus Imperialis" hidden="false" />
+<categoryEntry id="5202-4f8b-d3ec-31c3" name="Allied Detachment units: Questoris Households" hidden="false" />
+<categoryEntry id="afa0-a95f-4814-a40d" name="Allied Detachment units: Solar Auxilia" hidden="false" />
+<categoryEntry id="074e-dbc3-8480-4e74" name="Allied Detachment units: Daemons of the Ruinstorm" hidden="false" />
+<categoryEntry id="c8c5-3369-dfca-9131" name="Allied Detachment units: The Lost and the Damned" hidden="false" />
+<categoryEntry id="ab6a-cb96-684e-27dd" name="Allied Detachment units: Talons of the Emperor" hidden="false" />
 <categoryEntry id="e8b8-a1ed-f923-f5f0" name="Army: Dark Angels" hidden="false" />
 <categoryEntry id="2496-8d2f-d197-38e3" name="Army: Emperor's Children" hidden="false" />
 <categoryEntry id="39c6-3c01-fa18-06c9" name="Army: White Scars" hidden="false" />

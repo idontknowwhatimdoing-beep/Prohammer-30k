@@ -289,8 +289,8 @@ RULES = {
         "If a Cyclops is destroyed by any other means, roll a D6: on a 6 it immediately Detonates."),
     # ---------------------------------------------------------------- Dramatis Personae
     "Warlord (Ireton MaSade)": "Ireton MaSade must be the army's Warlord. This does not override Disciplined Command: "
-                               "MaSade counts as a Legate Commander (also for any limit on Legate Commanders). Loyalist "
-                               "only.",
+                               "MaSade counts as a Legate Commander. An army may include either MaSade or a Lord Marshal, "
+                               "not both. Loyalist only.",
     "Master of the Battlefield": (
         "After both armies have deployed, but before the first turn begins, MaSade may redeploy D3 friendly Solar "
         "Auxilia units from his Detachment anywhere they could normally have deployed, or place them into Reserve. A "
@@ -872,7 +872,8 @@ def legate_commander():
     add_mods(prof, [modifier("set", "name", "Lord Marshal", conds=[cond(lm, u, "atLeast", 1)])])
     lm_entry = entry(lm, "Upgrade to Lord Marshal", cost=35,
                      constraints=[constraint(uid(lm, "max"), "max", 1, auto=True), unique(lm, 1, "roster")],
-                     infolinks=rules_links(["Lord Marshal", "Household Retinue"], key=lm))
+                     infolinks=rules_links(["Lord Marshal", "Household Retinue"], key=lm),
+                     mods=[hide_if(has(IDS["masade"], "roster"))])
     lm_only = [("Relic Blade", W("Relic Blade")), ("Grav-wave Generator", W("Grav-wave Generator")),
                ("Displacer Matrix", W("Displacer Matrix"))]
     # deep=False: only the Legate's own wargear, not an attached Household Champion's Relic Blade (Cohort Attaches)
@@ -1047,9 +1048,8 @@ def ireton_masade():
              constraints=[unique(u, 1, "roster")],
              mods=[hide_if(has(L.TRAITOR, "roster")),
                    modifier("add", "error", "Ireton MaSade is Loyalist only.", conds=[has(L.TRAITOR, "roster")]),
-                   modifier("add", "warning", "Ireton MaSade must be the army's Warlord, but he does not override "
-                                              "Disciplined Command: he counts as a Legate Commander, so a Lord Marshal "
-                                              "in the army outranks him.",
+                   modifier("add", "error", "Ireton MaSade must be the army's Warlord: an army with MaSade may not "
+                                            "include a Lord Marshal (either one or the other).",
                             conds=[has(IDS["lord_marshal"], "roster")])])
     return e
 

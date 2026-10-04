@@ -7,7 +7,7 @@ MATRIX_TABLE = """
 |  | DA | EC | IW | WS | SW | IF | NL | BA | IH | WE | UM | DG | TS | SoH | WB | S | RG | AL | ME | Ex | Q | SA | D | BS | T |
 | DA | A | S | S | A | C | A | S | A | A | S | A | S | S | S | S | A | A | S | A | A | A | A | S | C | C |
 | EC | S | A | A | S | S | S | A | S | S | A | S | A | A | A | A | S | S | C | A | A | A | A | A | C | S |
-| IW | S | A | S | S | S | S | A | S | S | A | S | A | A | A | A | S | S | C | A | A | A | A | C | C | S |
+| IW | S | A | A | S | S | S | A | S | S | A | S | A | A | A | A | S | S | C | A | A | A | A | C | C | S |
 | WS | A | S | S | A | A | A | S | A | A | S | A | S | S | S | S | A | A | S | A | A | A | A | S | C | C |
 | SW | C | S | S | A | A | A | S | A | A | S | A | S | S | S | S | A | A | S | A | A | A | A | S | C | C |
 | IF | A | S | S | A | A | A | S | A | A | S | A | S | S | S | S | A | A | S | A | A | A | A | S | C | C |
@@ -29,7 +29,7 @@ MATRIX_TABLE = """
 | SA | A | A | A | A | A | A | A | A | A | A | A | A | A | A | A | A | A | A | A | A | A | A | S | C | C |
 | D | S | A | C | S | S | S | A | S | S | A | S | C | C | A | A | S | S | A | S | S | S | S | A | C | S |
 | BS | C | C | C | C | C | C | C | C | C | C | C | C | C | C | C | C | C | C | C | C | C | C | C | A | S |
-| T | C | S | S | C | C | C | S | C | C | S | C | S | S | C | C | S | C | S | C | C | C | C | S | S | C |
+| T | C | S | S | C | C | C | S | C | C | S | C | S | S | S | S | C | C | S | C | C | C | C | S | S | C |
 """
 
 LEGEND = {
