@@ -115,13 +115,15 @@
 <conditionGroup type="or">
 <conditions>
 <condition field="selections" scope="roster" value="2" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="59d2-df4e-9331-c623" type="atLeast" />
+</conditions>
+<conditionGroups>
 <conditionGroup type="and">
 <conditions>
 <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="59d2-df4e-9331-c623" type="atLeast" />
 <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="640e-bd77-4dc7-426b" type="lessThan" />
 </conditions>
 </conditionGroup>
-</conditions>
+</conditionGroups>
 </conditionGroup>
 </conditionGroups>
 </modifier>
@@ -5222,7 +5224,7 @@
 <modifier type="add" field="error" value="A Pursuer Cadre has one Cyber-Jackal for every Pursuer plus one (added in Pursuer and Cyber-Jackal pairs).">
 <conditionGroups>
 <conditionGroup type="or">
-<conditions>
+<conditionGroups>
 <conditionGroup type="and">
 <conditions>
 <condition field="selections" scope="3621-8fcf-ee9c-a412" value="2" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1272-de64-3ada-7e8a" type="equalTo" />
@@ -5247,7 +5249,7 @@
 <condition field="selections" scope="3621-8fcf-ee9c-a412" value="6" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2236-8c94-d70e-da5a" type="notEqualTo" />
 </conditions>
 </conditionGroup>
-</conditions>
+</conditionGroups>
 </conditionGroup>
 </conditionGroups>
 </modifier>

@@ -1814,6 +1814,8 @@
 <conditionGroup type="or">
 <conditions>
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5b10-3757-cfee-0d95" type="atLeast" />
+</conditions>
+<conditionGroups>
 <conditionGroup type="and">
 <conditions>
 <condition field="selections" scope="2390-3489-e470-7f7f" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a6a2-abea-01b2-ad81" type="equalTo" />
@@ -1822,7 +1824,7 @@
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="be2b-c8e1-3ca7-9df8" type="lessThan" />
 </conditions>
 </conditionGroup>
-</conditions>
+</conditionGroups>
 </conditionGroup>
 </conditionGroups>
 </modifier>
@@ -1831,6 +1833,8 @@
 <conditionGroup type="or">
 <conditions>
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5b10-3757-cfee-0d95" type="atLeast" />
+</conditions>
+<conditionGroups>
 <conditionGroup type="and">
 <conditions>
 <condition field="selections" scope="2390-3489-e470-7f7f" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a6a2-abea-01b2-ad81" type="equalTo" />
@@ -1839,7 +1843,7 @@
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="be2b-c8e1-3ca7-9df8" type="lessThan" />
 </conditions>
 </conditionGroup>
-</conditions>
+</conditionGroups>
 </conditionGroup>
 </conditionGroups>
 </modifier>
@@ -5488,6 +5492,8 @@
 <conditionGroup type="or">
 <conditions>
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5b10-3757-cfee-0d95" type="atLeast" />
+</conditions>
+<conditionGroups>
 <conditionGroup type="and">
 <conditions>
 <condition field="selections" scope="3d0e-1d24-7ef2-4298" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a6a2-abea-01b2-ad81" type="equalTo" />
@@ -5496,7 +5502,7 @@
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="be2b-c8e1-3ca7-9df8" type="lessThan" />
 </conditions>
 </conditionGroup>
-</conditions>
+</conditionGroups>
 </conditionGroup>
 </conditionGroups>
 </modifier>
@@ -5505,6 +5511,8 @@
 <conditionGroup type="or">
 <conditions>
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5b10-3757-cfee-0d95" type="atLeast" />
+</conditions>
+<conditionGroups>
 <conditionGroup type="and">
 <conditions>
 <condition field="selections" scope="3d0e-1d24-7ef2-4298" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a6a2-abea-01b2-ad81" type="equalTo" />
@@ -5513,7 +5521,7 @@
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="be2b-c8e1-3ca7-9df8" type="lessThan" />
 </conditions>
 </conditionGroup>
-</conditions>
+</conditionGroups>
 </conditionGroup>
 </conditionGroups>
 </modifier>
@@ -24797,12 +24805,14 @@ LIMITATIONS - The army's compulsory Troops choices must be Templar Brethren Squa
 <conditionGroup type="or">
 <conditions>
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5b10-3757-cfee-0d95" type="atLeast" />
+</conditions>
+<conditionGroups>
 <conditionGroup type="and">
 <conditions>
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="be2b-c8e1-3ca7-9df8" type="lessThan" />
 </conditions>
 </conditionGroup>
-</conditions>
+</conditionGroups>
 </conditionGroup>
 </conditionGroups>
 </modifier>
@@ -24811,12 +24821,14 @@ LIMITATIONS - The army's compulsory Troops choices must be Templar Brethren Squa
 <conditionGroup type="or">
 <conditions>
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5b10-3757-cfee-0d95" type="atLeast" />
+</conditions>
+<conditionGroups>
 <conditionGroup type="and">
 <conditions>
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="be2b-c8e1-3ca7-9df8" type="lessThan" />
 </conditions>
 </conditionGroup>
-</conditions>
+</conditionGroups>
 </conditionGroup>
 </conditionGroups>
 </modifier>
@@ -24922,12 +24934,14 @@ LIMITATIONS - The army's compulsory Troops choices must be Templar Brethren Squa
 <conditionGroup type="or">
 <conditions>
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5b10-3757-cfee-0d95" type="atLeast" />
+</conditions>
+<conditionGroups>
 <conditionGroup type="and">
 <conditions>
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="be2b-c8e1-3ca7-9df8" type="lessThan" />
 </conditions>
 </conditionGroup>
-</conditions>
+</conditionGroups>
 </conditionGroup>
 </conditionGroups>
 </modifier>
@@ -24936,12 +24950,14 @@ LIMITATIONS - The army's compulsory Troops choices must be Templar Brethren Squa
 <conditionGroup type="or">
 <conditions>
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5b10-3757-cfee-0d95" type="atLeast" />
+</conditions>
+<conditionGroups>
 <conditionGroup type="and">
 <conditions>
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="be2b-c8e1-3ca7-9df8" type="lessThan" />
 </conditions>
 </conditionGroup>
-</conditions>
+</conditionGroups>
 </conditionGroup>
 </conditionGroups>
 </modifier>
@@ -25046,12 +25062,14 @@ LIMITATIONS - The army's compulsory Troops choices must be Templar Brethren Squa
 <conditionGroup type="or">
 <conditions>
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5b10-3757-cfee-0d95" type="atLeast" />
+</conditions>
+<conditionGroups>
 <conditionGroup type="and">
 <conditions>
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="be2b-c8e1-3ca7-9df8" type="lessThan" />
 </conditions>
 </conditionGroup>
-</conditions>
+</conditionGroups>
 </conditionGroup>
 </conditionGroups>
 </modifier>
@@ -25060,12 +25078,14 @@ LIMITATIONS - The army's compulsory Troops choices must be Templar Brethren Squa
 <conditionGroup type="or">
 <conditions>
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5b10-3757-cfee-0d95" type="atLeast" />
+</conditions>
+<conditionGroups>
 <conditionGroup type="and">
 <conditions>
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="be2b-c8e1-3ca7-9df8" type="lessThan" />
 </conditions>
 </conditionGroup>
-</conditions>
+</conditionGroups>
 </conditionGroup>
 </conditionGroups>
 </modifier>
@@ -25181,12 +25201,14 @@ LIMITATIONS - The army's compulsory Troops choices must be Templar Brethren Squa
 <conditionGroup type="or">
 <conditions>
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5b10-3757-cfee-0d95" type="atLeast" />
+</conditions>
+<conditionGroups>
 <conditionGroup type="and">
 <conditions>
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="be2b-c8e1-3ca7-9df8" type="lessThan" />
 </conditions>
 </conditionGroup>
-</conditions>
+</conditionGroups>
 </conditionGroup>
 </conditionGroups>
 </modifier>
@@ -25195,12 +25217,14 @@ LIMITATIONS - The army's compulsory Troops choices must be Templar Brethren Squa
 <conditionGroup type="or">
 <conditions>
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5b10-3757-cfee-0d95" type="atLeast" />
+</conditions>
+<conditionGroups>
 <conditionGroup type="and">
 <conditions>
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="be2b-c8e1-3ca7-9df8" type="lessThan" />
 </conditions>
 </conditionGroup>
-</conditions>
+</conditionGroups>
 </conditionGroup>
 </conditionGroups>
 </modifier>
@@ -25422,12 +25446,14 @@ LIMITATIONS - The army's compulsory Troops choices must be Templar Brethren Squa
 <conditionGroup type="or">
 <conditions>
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5b10-3757-cfee-0d95" type="atLeast" />
+</conditions>
+<conditionGroups>
 <conditionGroup type="and">
 <conditions>
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="be2b-c8e1-3ca7-9df8" type="lessThan" />
 </conditions>
 </conditionGroup>
-</conditions>
+</conditionGroups>
 </conditionGroup>
 </conditionGroups>
 </modifier>
@@ -25436,12 +25462,14 @@ LIMITATIONS - The army's compulsory Troops choices must be Templar Brethren Squa
 <conditionGroup type="or">
 <conditions>
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5b10-3757-cfee-0d95" type="atLeast" />
+</conditions>
+<conditionGroups>
 <conditionGroup type="and">
 <conditions>
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="be2b-c8e1-3ca7-9df8" type="lessThan" />
 </conditions>
 </conditionGroup>
-</conditions>
+</conditionGroups>
 </conditionGroup>
 </conditionGroups>
 </modifier>

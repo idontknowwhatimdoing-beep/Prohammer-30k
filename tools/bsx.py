@@ -39,12 +39,22 @@ def cond(child, scope="parent", typ="atLeast", value=1, field="selections", deep
         "includeChildForces": "false", "childId": child, "type": typ})
 
 
+def _group(typ, items):
+    """A condition group; nested groups go into conditionGroups (New Recruit ignores them inside conditions)."""
+    conds = [c for c in items if c.tag == "condition"]
+    groups = [c for c in items if c.tag == "conditionGroup"]
+    kids = [wrap("conditions", conds)]
+    if groups:
+        kids.append(wrap("conditionGroups", groups))
+    return el("conditionGroup", {"type": typ}, kids)
+
+
 def any_of(*conds):
-    return el("conditionGroup", {"type": "or"}, [wrap("conditions", conds)])
+    return _group("or", conds)
 
 
 def all_of(*conds):
-    return el("conditionGroup", {"type": "and"}, [wrap("conditions", conds)])
+    return _group("and", conds)
 
 
 def modifier(typ, field, value, conds=None, groups=None, repeats=None):
