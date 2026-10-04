@@ -69,7 +69,8 @@ RULES = {
         "WARGEAR: models have access to the normal Space Marine Armoury and the Blackshield-specific wargear of this "
         "supplement, but not to Legion-specific wargear of any of the eighteen Legions unless an Oath of Moment or "
         "another rule of this supplement permits it.\n"
-        "OATHS OF MOMENT: the force must select exactly one Oath of Moment, which applies to the entire force."),
+        "OATHS OF MOMENT: the force must select exactly one Oath of Moment, which applies to the entire force.\n"
+        "RITES OF WAR: a Blackshields force may not use a Rite of War (author's ruling)."),
     "Blackshield Armoury": (
         "Blackshield Characters with access to the Space Marine Armoury may also select equipment from the Blackshield "
         "Armoury, in addition to the normal Space Marine Armoury. Items listed as Xenos Wargear may only be selected in a "
@@ -118,7 +119,8 @@ RULES = {
         "Transport may be given the Deep Strike special rule and placed in Reserve. If one of these units suffers a Deep "
         "Strike Mishap, resolve the Mishap normally and then remove D3 models from the unit as casualties."),
     "Unsanctioned Weaponry": ("Models in an Outlanders force may purchase weapons and equipment marked Xenos in the "
-                              "Blackshield Armoury. Blackshield Characters may also purchase Rad Grenades."),
+                              "Blackshield Armoury. Blackshield Characters may also purchase Rad Grenades (Rad Grenades "
+                              "are only available to an Outlanders force)."),
     "The Shadow of Oblivion": (
         "At the beginning of the battle, record the number of units with the Legiones Astartes (Blackshields) special "
         "rule. Once at least half of them have been destroyed or are Broken, this rule takes effect for the remainder of "
@@ -165,7 +167,8 @@ RULES = {
     # Reaver Lord
     "Lord of the Blackshields": (
         "A Blackshields force may include no more than one Reaver Lord. If it includes a Reaver Lord, he must be selected "
-        "as the army's Warlord."),
+        "as the army's Warlord. The Reaver Lord is the force's Master of the Legion; a Detachment may include a Reaver "
+        "Lord or a Delegatus Consul, not both (author's ruling)."),
     "Reaver Retinue": (
         "For each Reaver Lord, one Legion Veteran Squad may be selected as his Reaver Retinue. It does not occupy a "
         "separate Force Organisation slot and the Reaver Lord must begin the battle attached to it. The squad may select "
@@ -276,7 +279,9 @@ RULES = {
         "If a Psyker suffers one or more unsaved Wounds from Psyk-out Ammunition during a Shooting phase, it must take a "
         "Leadership test after all attacks from the firing unit have been resolved; if failed it suffers Perils of the "
         "Warp. A Psyker may only be forced to take one such test from each firing unit per Shooting phase. Psyk-out "
-        "Ammunition may be used by Bolters (Sigillite Boltguns) and the bolter component of Combi-weapons."),
+        "Ammunition may be used by Bolters (Sigillite Boltguns) and the bolter component of Combi-weapons; when firing it, "
+        "use the Psyk-out Ammunition profile (24\", S4, AP5, Rapid Fire, Psi-shock). Psyk-out ammunition contains "
+        "psycho-reactive compounds intended to disrupt the concentration and neural activity of enemy psykers."),
     "Mass Psi-shock": ("Every Psyker model hit by the Blast suffers Perils of the Warp in addition to any other damage. "
                        "Non-Psykers suffer only the normal effects of the weapon."),
     "Stasis Anomaly": ("If a unit is hit by a Stasis Grenade, all of its models count as Initiative 1 until the end of the "
@@ -289,7 +294,8 @@ RULES = {
         "during the battle."),
     "Sanctic Adept": (
         "The Cell Specialist is a Psyker with Psychic Mastery 1 and must select his Psychic Power from Sanctic "
-        "Daemonology (never Malefic Daemonology or any other discipline). He is equipped with a Force Weapon and may "
+        "Daemonology (never Malefic Daemonology or any other discipline). He is equipped with a Force Weapon (replacing "
+        "his Close Combat Weapon) and may "
         "purchase a Psychic Hood for +20 points. The remaining members of the Cell may purchase Psyk-out Ammunition (+5 "
         "points per model) and Psyk-out Grenades (+5 points per model). The Cell may not include a Null Operative."),
     "Null Operative": (
@@ -299,16 +305,19 @@ RULES = {
         "and has no effect on the unit. The remaining members of the Cell may purchase Null-amp Collars (+5 points per "
         "model) and Psyk-out Grenades (+5 points per model). The Cell may never be joined by a Psyker."),
     "Sigillite Exhorter": (
-        "The Cell Specialist is equipped with a Power Weapon. While he remains alive, the entire Cell may re-roll failed "
+        "The Cell Specialist is equipped with a Power Weapon (replacing his Close Combat Weapon). While he remains alive, "
+        "the entire Cell may re-roll failed "
         "Morale and Pinning tests, and during the first round of any close combat in which the Cell charged, all models "
         "in the Cell may re-roll failed To Hit rolls. The remaining members may replace their Close Combat Weapons with "
         "Power Weapons for +10 points per model."),
     "Vigilator (Sigillite)": (
-        "The Cell Specialist gains Infiltrate and Stealth and is equipped with a Stalker Bolter. The entire Cell gains "
+        "The Cell Specialist gains Infiltrate and Stealth and is equipped with a Stalker Bolter (replacing his Close Combat "
+        "Weapon). The entire Cell gains "
         "Infiltrate. The remaining members may replace their Bolters with Stalker Bolters (+10 points per model) and may "
         "purchase Cameleoline (+5 points per model)."),
     "Champion (Sigillite)": (
-        "The Cell Specialist gains Weapon Skill 6 and is equipped with a Master-crafted Power Weapon. While he remains "
+        "The Cell Specialist gains Weapon Skill 6 and is equipped with a Master-crafted Power Weapon (replacing his Close "
+        "Combat Weapon). While he remains "
         "alive, any model in the Cell may replace its Close Combat Weapon with a Rending Weapon (+5 points) or a Power "
         "Weapon (+10 points). When in base-to-base contact with an enemy Independent Character, he may re-roll failed "
         "To Hit rolls against that Character."),
@@ -496,8 +505,6 @@ WARGEAR_ = {
         "re-roll the dice for its table edge). During the turn the unit enters play from Reserve, an enemy unit "
         "attempting Reaction Fire or an Interceptor attack against it must first pass a Leadership test or may not fire "
         "at it with that Reaction or Interceptor attack.", ["Outflank"]),
-    "Iron Halo (Agent of the Sigillite)": ("Grants a 4+ Invulnerable Save. Carried by an Agent of the Sigillite; it does "
-                                           "not count towards the army limit on Iron Halos (see questions)."),
     "Aquila Imperator": RULES["Aquila Imperator"],
 }
 
@@ -713,6 +720,48 @@ def blackshield_unit(root):
     apply_ashes(root)
 
 
+ELDAR_POWERS = ["Doom", "Guide", "Mind War", "Eldritch Storm"]
+CAT_ELDAR_POWER = None    # set in build()
+
+
+def eldar_rule(n):
+    return f"{n} (Eldar Psychic Power)"
+
+
+for _n in ELDAR_POWERS:
+    RULES[eldar_rule(_n)] = (
+        f"{_n} - an Eldar psychic power, available through Eldritch Tutelage (The Alien Brotherhood): a single "
+        "Blackshield Librarian in the army may select it in place of one of his normal psychic powers. He uses the power "
+        "according to its normal rules from the Eldar army list (not printed in The Lost and the Damned) and gains no "
+        "other Eldar special rules, equipment or psychic abilities.")
+
+
+def add_eldritch_tutelage(roots):
+    """Eldritch Tutelage: the Librarian's Psychic Powers group also offers the four Eldar powers (The Alien Brotherhood
+    only, one Eldar power in the whole army). They take the place of a normal power (same power count)."""
+    for r in roots:
+        for e in r.iter("selectionEntry"):
+            if e.get("id") != L.consul_id("Librarian"):
+                continue
+            g = L.powers_group(e)
+            if g is None:
+                continue
+            off = lacks(OATH["The Alien Brotherhood"], "force")
+            ents = []
+            for n in ELDAR_POWERS:
+                eid = uid("psy-power", g.get("id"), "eldar", n)
+                ents.append(entry(eid, f"{n} (Eldar - Eldritch Tutelage)",
+                                  cats=[category_link(CAT_ELDAR_POWER, "Eldar Psychic Power", key=eid)],
+                                  mods=[modifier("set", "hidden", "true", conds=[off]),
+                                        modifier("set", uid(eid, "max"), 0, conds=[off]),
+                                        error_if("Eldritch Tutelage: only a single Blackshield Librarian in the army "
+                                                 "may take one Eldar psychic power.",
+                                                 [cond(CAT_ELDAR_POWER, "roster", "greaterThan", 1)])],
+                                  constraints=[constraint(uid(eid, "max"), "max", 1, auto=True)],
+                                  infolinks=rules_links([eldar_rule(n), "Eldritch Tutelage"], key=eid)))
+            add_to(g, "selectionEntries", ents)
+
+
 # ------------------------------------------------------------------------------------------- Blackshield units
 def reaver_lord():
     u = k("unit", "Reaver Lord")
@@ -740,7 +789,10 @@ def reaver_lord():
             add_mods(arm, [modifier("increment", cap_id, p, repeats=[repeat(W(n), u, 1)])])
             add_mods(bs, [modifier("decrement", bs_cap, p, repeats=[repeat(W(n), u, 1)])])
     bs.set("name", "Blackshield Armoury and Weapons (max 50 pts; Blackshield Weapons are chosen in the weapon slots)")
-    mc = upgrade(k("reaver"), "Master-crafted Weapon (Spoils of War)", 10, links=["Master-crafted Weapon"])
+    mc = upgrade(k("reaver"), "Master-crafted Weapon (Spoils of War; counts towards the 75 pts)", 10,
+                 links=["Master-crafted Weapon"])
+    # the Master-craft counts towards the 75-point Space Marine Armoury allowance (author's answer)
+    add_mods(arm, [modifier("decrement", cap_id, 10, conds=[has(mc.get("id"), u)])])
     # retinue: Reaver Retinue (Legion Veteran Squad) or a Legion Command Squad / Terminator Command Squad
     before = len(L2.RETINUE_SHARED)
     rg = L2.retinue_group(k("reaver"), u, False)
@@ -759,7 +811,10 @@ def reaver_lord():
                      "Lord of the Blackshields", "Reaver Retinue", "Spoils of War", "Master of the Legion",
                      "Blackshield Armoury", "Blackshield Weapons"],
              groups=[arm, *L.ic_armour_mobility(k("reaver"), u, False), bs, rg], entries=[mc],
-             mods=[L.tda_pistol_error(u)], constraints=[unique(u)],
+             mods=[L.tda_pistol_error(u),
+                   error_if("A Detachment may include a Reaver Lord or a Delegatus Consul, not both.",
+                            [has(L.consul_id("Delegatus"), "force")])],
+             constraints=[unique(u)],
              extra_cats=[(gs.CAT_MASTER, "Master of the Legion")])
     return e, retinues
 
@@ -911,7 +966,7 @@ def preceptor():
     armour = slot(pk, "Armour", "Artificer Armour", [("Terminator Armour", 15)])
     return sig_unit(name, 125, HQ, "HQ", hq=True, key=u,
                     profiles=[unit_profile(u, name, "Infantry (Character)", 5, 5, 4, 4, 3, 5, 3, 10, "2+/4+")],
-                    kit=["Iron Halo (Agent of the Sigillite)", "Frag Grenades", "Krak Grenades",
+                    kit=["Iron Halo", "Frag Grenades", "Krak Grenades",
                          "Special Issue Ammunition", "Sigillite Rosette"],
                     rules_=["Independent Character", "Agent of the Sigillite", "Special Issue Ammunition (Sigillite)",
                             "Agents of the Sigillite Detachment", "Orders of the Sigillite", "Mission Equipment"],
@@ -964,7 +1019,7 @@ def strike_force():
 
 
 DISCIPLINES = [("Sanctic Adept", 30, ["Force Weapon"], ["Sanctic Adept", "Psyker"]),
-               ("Null Operative", 25, [], ["Null Operative"]),
+               ("Null Operative", 25, ["Close Combat Weapon"], ["Null Operative"]),
                ("Sigillite Exhorter (Confessor)", 20, ["Power Weapon"], ["Sigillite Exhorter"]),
                ("Vigilator", 20, ["M.40 Stalker Bolter"], ["Vigilator (Sigillite)", "Infiltrate", "Stealth"]),
                ("Champion (Blade Champion)", 25, ["Power Weapon", "Master-crafted Weapon"], ["Champion (Sigillite)"])]
@@ -993,9 +1048,10 @@ def operative_cell():
                      rules=[rule(uid(eid, "r"), nm, text)] if text else [])
     spec = model(u, "Cell Specialist", 1, 1, 0,
                  unit_profile(u, "Cell Specialist", "Infantry (Character)", 5, 5, 4, 4, 2, 5, 3, 9, "3+"),
-                 kit=["Power Armour", "Bolter", "Bolt Pistol", "Close Combat Weapon", "Frag Grenades", "Krak Grenades",
+                 kit=["Power Armour", "Bolter", "Bolt Pistol", "Frag Grenades", "Krak Grenades",
                       "Special Issue Ammunition"],
-                 groups=[disc],
+                 groups=[disc, L.psychic_powers(k("cell-adept"), u, 1, ["Daemonology (Sanctic)"],
+                                                hide=[lacks(did["Sanctic Adept"], u)])],
                  entries=[gated("hood", "Psychic Hood (Sanctic Adept)", 20, ["Psychic Hood"], ["Sanctic Adept"])])
     op = model(u, "Sigillite Operative", 4, 4, 0,
                unit_profile(u, "Sigillite Operative", "Infantry", 5, 5, 4, 4, 1, 4, 2, 9, "3+"),
@@ -1053,9 +1109,10 @@ def assassin():
                     rules_=["Assassin Operative (Agents of the Sigillite)"])
 
 
-def knight(name, cost, stats, kit, rules_):
+def knight(name, cost, stats, kit, rules_, powers=0):
     u = k("unit", name.split(" — ")[0])
-    return sig_unit(name, cost, HQ, "HQ", hq=True, ke=True, key=u,
+    groups = [L.psychic_powers(k("psy", u), u, powers, ["Daemonology (Sanctic)"])] if powers else []
+    return sig_unit(name, cost, HQ, "HQ", hq=True, ke=True, key=u, groups=groups,
                     profiles=[unit_profile(u, name.split(" — ")[0], "Infantry (Character)", *stats)],
                     kit=kit, constraints=[unique(u)],
                     rules_=["Independent Character", "Agent of the Sigillite", "Knight-Errant", *rules_,
@@ -1070,18 +1127,18 @@ def knights():
                ["Artificer Armour", "Aquila Imperator", "Libertas", *std],
                ["The Straight Arrow", "Unbroken Will", "Fearless", "Eternal Warrior"]),
         knight("Garviel Loken — The Legion of One", 175, (7, 5, 4, 4, 3, 5, 4, 10, "3+/4+"),
-               ["Power Armour", "Iron Halo (Agent of the Sigillite)", "Power Weapon", "Master-crafted Weapon", *sia,
+               ["Power Armour", "Iron Halo", "Power Weapon", "Master-crafted Weapon", *sia,
                 *std], ["The Legion of One", "Fury Unbound", "Fearless", "Special Issue Ammunition (Sigillite)"]),
         knight("Iacton Qruze — The Half-Heard", 170, (6, 5, 4, 4, 4, 5, 3, 10, "3+/4+"),
-               ["Power Armour", "Iron Halo (Agent of the Sigillite)", "Power Weapon", *sia, *std, "Teleport Homer"],
+               ["Power Armour", "Iron Halo", "Power Weapon", *sia, *std, "Teleport Homer"],
                ["The Half-Heard", "Protect the Innocent, Uphold the Lore", "Stubborn",
                 "Special Issue Ammunition (Sigillite)"]),
         knight("Macer Varren — The Emperor's Warhound", 155, (6, 5, 4, 4, 3, 5, 3, 10, "3+/4+"),
-               ["Power Armour", "Iron Halo (Agent of the Sigillite)", "Power Weapon", *sia, *std],
+               ["Power Armour", "Iron Halo", "Power Weapon", *sia, *std],
                ["Furious Charge", "Warrior Born", "The Emperor's Warhound", "Special Issue Ammunition (Sigillite)"]),
         knight("Tylos Rubio — The Errant Librarian", 180, (5, 5, 4, 4, 3, 5, 3, 10, "3+/5+"),
                ["Power Armour", "Refractor Field", "Force Weapon", *sia, "Psychic Hood", *std],
-               ["Psyker", "Acute Senses", "The Errant Librarian", "Special Issue Ammunition (Sigillite)"]),
+               ["Psyker", "Acute Senses", "The Errant Librarian", "Special Issue Ammunition (Sigillite)"], powers=3),
     ]
 
 
@@ -1102,7 +1159,7 @@ def sig_force():
 
 # ------------------------------------------------------------------------------------------------------ build
 def build():
-    global SIG_FORCE, CAT_SIG_HQ, CAT_KE, OATH, CHYM_ATTR_CFG
+    global SIG_FORCE, CAT_SIG_HQ, CAT_KE, OATH, CHYM_ATTR_CFG, CAT_ELDAR_POWER
     # keep the Legiones Astartes data: a Blackshields force is chosen from the Legiones Astartes Army List
     snap = [copy.deepcopy(d) for d in (ARMY_RULES, WEAPON_PROFILES, WEAPONS, WEAPON_RULES, WARGEAR)]
     start(ARMY)
@@ -1113,6 +1170,7 @@ def build():
     SIG_FORCE = k("force", "Agents of the Sigillite")
     CAT_SIG_HQ = k("cat", "Agents of the Sigillite HQ")
     CAT_KE = k("cat", "Knight-Errant")
+    CAT_ELDAR_POWER = k("cat", "Eldar Psychic Power")
     hide_sig = hide_if(in_force(SIG_FORCE))
 
     # ---------------------------------------------------------------- configuration
@@ -1150,6 +1208,12 @@ def build():
     praetor_only = {uid("unit", f"praetor-{x}") for x in ("hg", "cs", "tcs")}
     more_shared = [e for e in more_shared if e.get("id") not in praetor_only]
     legion_roots = base[1:] + more          # no Praetors in a Blackshields force
+    # no Rite of War in a Blackshields force (author's answer): the entry stays (other entries refer to it) but is
+    # hidden and may not be selected
+    for e in legion_roots:
+        if e.get("id") == L2.RITE_ENTRY:
+            add_mods(e, [modifier("set", "hidden", "true"), modifier("set", uid(L2.RITE_ENTRY, "max"), 0),
+                         modifier("add", "error", "A Blackshields force may not use a Rite of War.")])
     # Chaplains are forbidden by Orphans of War and The Alien Brotherhood
     for e in cent.iter("selectionEntry"):
         if e.get("id") == L.consul_id("Chaplain"):
@@ -1164,6 +1228,7 @@ def build():
         blackshield_unit(e)
     # Reaver Lord: no "Space Marine Armoury" injection (built explicitly), but Ashes of the Armoury applies
     apply_ashes(reaver)
+    add_eldritch_tutelage(legion_roots + more_shared + reaver_retinues)
     bs_units = [reaver, marauder_squad(), chymeriae_squad()]
     for e in bs_units + legion_roots:
         add_mods(e, [hide_if(in_force(SIG_FORCE))])
@@ -1176,7 +1241,8 @@ def build():
     root = catalogue(ARMY, units, shared, force_entries=[sig_force()])
     root.insert(1, wrap("categoryEntries", [
         el("categoryEntry", {"id": CAT_SIG_HQ, "name": "Agents of the Sigillite HQ", "hidden": "false"}),
-        el("categoryEntry", {"id": CAT_KE, "name": "Knight-Errant", "hidden": "false"})]))
+        el("categoryEntry", {"id": CAT_KE, "name": "Knight-Errant", "hidden": "false"}),
+        el("categoryEntry", {"id": CAT_ELDAR_POWER, "name": "Eldar Psychic Power", "hidden": "false"})]))
 
     # No Praetors in a Blackshields force: conditions that look for a Praetor (e.g. the Delegatus Consul, hidden
     # when a Praetor commands) look for the Reaver Lord, the force's senior commander, instead.
@@ -1202,6 +1268,11 @@ def build():
             modifier("set", "hidden", "true", conds=[lacks(OATH["The Alien Brotherhood"], "force")]),
             modifier("add", "error", f"{n} is a Xenos Weapon: only a force using The Alien Brotherhood Oath may take it.",
                      conds=[lacks(OATH["The Alien Brotherhood"], "force")])])
+    # Rad Grenades: Outlanders only (Unsanctioned Weaponry; author's answer)
+    add_mods(item("Rad Grenades (Blackshield)"), [
+        modifier("set", "hidden", "true", conds=[lacks(OATH["Outlanders"], "force")]),
+        modifier("add", "error", "Rad Grenades may only be purchased by Blackshield Characters of an Outlanders force.",
+                 conds=[lacks(OATH["Outlanders"], "force")])])
     for n in ("Shadow Field", "Deathlock Teleporter"):
         add_to(item(n), "constraints", [unique(W(n))])
     for n, _ in MISSION:

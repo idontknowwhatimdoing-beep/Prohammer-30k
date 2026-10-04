@@ -2338,6 +2338,7 @@
 <infoLinks>
 <infoLink id="a1e6-507c-4a18-56bd" name="Crush (Telekinesis)" hidden="false" targetId="1654-f41b-864b-1ba4" type="rule" />
 <infoLink id="b3aa-ac8e-4aca-12b2" name="Psychic Power Type: Witchfire - Focused" hidden="false" targetId="728a-56b9-f9e8-53a2" type="rule" />
+<infoLink id="6bec-e6b8-d934-11ac" name="Crush (Telekinesis)" hidden="false" targetId="3ea2-5e92-c35b-1084" type="profile" />
 </infoLinks>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
@@ -2686,18 +2687,6 @@
 <infoLink id="d72e-9191-1adf-efe0" name="Dark Flame (Daemonology (Malefic))" hidden="false" targetId="6eb6-8caf-e509-20f1" type="rule" />
 <infoLink id="83d3-2453-c2b3-cbd6" name="Psychic Power Type: Witchfire" hidden="false" targetId="d57f-7eaf-5589-f80d" type="rule" />
 <infoLink id="ab18-69ac-7210-260c" name="Dark Flame (Daemonology (Malefic))" hidden="false" targetId="052f-aed2-8ef8-a7e6" type="profile" />
-</infoLinks>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
-</costs>
-</selectionEntry>
-<selectionEntry id="da24-4f13-4257-e70b" name="Possession (Daemonology (Malefic))" hidden="false" collective="false" import="true" type="upgrade">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="379d-b5e3-2388-6599" type="max" />
-</constraints>
-<infoLinks>
-<infoLink id="1dc3-979e-054b-4bbe" name="Possession (Daemonology (Malefic))" hidden="false" targetId="0507-b55d-f00f-4254" type="rule" />
-<infoLink id="051e-07b2-a761-ceac" name="Psychic Power Type: Conjuration" hidden="false" targetId="c913-19fd-3d6e-40c8" type="rule" />
 </infoLinks>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
@@ -6796,7 +6785,7 @@
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="96f2-844e-de7c-96b5" type="max" />
 </constraints>
 <costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
+<cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
 </costs>
 </entryLink>
 </entryLinks>
@@ -9124,7 +9113,7 @@ LIMITATIONS - Only a Traitor Emperor's Children Detachment. The army must includ
 </entryLink>
 <entryLink id="a510-d36b-8811-f1a5" name="Phoenix Spear" hidden="false" collective="false" import="true" targetId="649b-4d99-b503-5a77" type="selectionEntry" sortIndex="105">
 <costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
+<cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
 </costs>
 </entryLink>
 </entryLinks>
@@ -10279,7 +10268,7 @@ LIMITATIONS - Only a Traitor Emperor's Children Detachment. The army must includ
 </entryLink>
 <entryLink id="d407-828c-a98f-ea14" name="Phoenix Spear" hidden="false" collective="false" import="true" targetId="649b-4d99-b503-5a77" type="selectionEntry" sortIndex="101">
 <costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
+<cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
 </costs>
 </entryLink>
 </entryLinks>
@@ -11005,7 +10994,7 @@ LIMITATIONS - Only a Traitor Emperor's Children Detachment. The army must includ
 </entryLink>
 <entryLink id="9219-3160-644f-a23f" name="Phoenix Spear" hidden="false" collective="false" import="true" targetId="649b-4d99-b503-5a77" type="selectionEntry" sortIndex="104">
 <costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
+<cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
 </costs>
 </entryLink>
 </entryLinks>
@@ -11792,7 +11781,7 @@ LIMITATIONS - Only a Traitor Emperor's Children Detachment. The army must includ
 </entryLink>
 <entryLink id="c896-8be4-c1e9-d180" name="Phoenix Spear" hidden="false" collective="false" import="true" targetId="649b-4d99-b503-5a77" type="selectionEntry" sortIndex="101">
 <costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
+<cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
 </costs>
 </entryLink>
 </entryLinks>
@@ -12192,7 +12181,7 @@ LIMITATIONS - Only a Traitor Emperor's Children Detachment. The army must includ
 </entryLink>
 <entryLink id="7918-2be2-06b1-8225" name="Phoenix Spear" hidden="false" collective="false" import="true" targetId="649b-4d99-b503-5a77" type="selectionEntry" sortIndex="101">
 <costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
+<cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
 </costs>
 </entryLink>
 </entryLinks>
@@ -12592,7 +12581,7 @@ LIMITATIONS - Only a Traitor Emperor's Children Detachment. The army must includ
 </entryLink>
 <entryLink id="65be-a4ff-cced-60f4" name="Phoenix Spear" hidden="false" collective="false" import="true" targetId="649b-4d99-b503-5a77" type="selectionEntry" sortIndex="101">
 <costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
+<cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
 </costs>
 </entryLink>
 </entryLinks>
@@ -14140,7 +14129,7 @@ LIMITATIONS - Only a Traitor Emperor's Children Detachment. The army must includ
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e38a-3096-c52f-55df" type="max" />
 </constraints>
 <costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
+<cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
 </costs>
 </entryLink>
 </entryLinks>
@@ -14928,7 +14917,7 @@ LIMITATIONS - Only a Traitor Emperor's Children Detachment. The army must includ
 </entryLink>
 <entryLink id="36b5-2fb6-1cfe-7adc" name="Phoenix Spear" hidden="false" collective="false" import="true" targetId="649b-4d99-b503-5a77" type="selectionEntry" sortIndex="104">
 <costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
+<cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
 </costs>
 </entryLink>
 </entryLinks>
@@ -15482,7 +15471,7 @@ LIMITATIONS - Only a Traitor Emperor's Children Detachment. The army must includ
 </entryLink>
 <entryLink id="29f5-dcee-866a-e91d" name="Phoenix Spear" hidden="false" collective="false" import="true" targetId="649b-4d99-b503-5a77" type="selectionEntry" sortIndex="104">
 <costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
+<cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
 </costs>
 </entryLink>
 </entryLinks>
@@ -24676,7 +24665,7 @@ LIMITATIONS - Only a Traitor Emperor's Children Detachment. The army must includ
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="66a5-89ca-5507-f6e6" type="max" />
 </constraints>
 <costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
+<cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
 </costs>
 </entryLink>
 </entryLinks>
@@ -26160,7 +26149,7 @@ LIMITATIONS - Only a Traitor Emperor's Children Detachment. The army must includ
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d4df-b8bd-00dd-6f2a" type="max" />
 </constraints>
 </entryLink>
-<entryLink id="a3de-2854-dc7b-3cb4" name="Xyclos Needler" hidden="false" collective="false" import="true" targetId="c110-2b51-802f-a3f7" type="selectionEntry">
+<entryLink id="a3de-2854-dc7b-3cb4" name="Xyclos Needler" hidden="false" collective="false" import="true" targetId="0d35-49ef-36ef-f6aa" type="selectionEntry">
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b88f-dda4-b51e-554a" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="45a6-459b-e8fa-ebe3" type="max" />
@@ -26700,7 +26689,7 @@ LIMITATIONS - Only a Traitor Emperor's Children Detachment. The army must includ
 </entryLink>
 <entryLink id="5c01-cb12-3f08-b585" name="Phoenix Spear" hidden="false" collective="false" import="true" targetId="649b-4d99-b503-5a77" type="selectionEntry" sortIndex="101">
 <costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
+<cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
 </costs>
 </entryLink>
 </entryLinks>
@@ -27695,7 +27684,7 @@ LIMITATIONS - Only a Traitor Emperor's Children Detachment. The army must includ
 <entryLink id="37b7-fcd1-2212-f6ad" name="Power Weapon" hidden="false" collective="false" import="true" targetId="fb4f-b267-7556-185d" type="selectionEntry" sortIndex="1" defaultAmount="1" />
 <entryLink id="b845-3764-c2c8-5332" name="Phoenix Spear" hidden="false" collective="false" import="true" targetId="649b-4d99-b503-5a77" type="selectionEntry" sortIndex="3">
 <costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
+<cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
 </costs>
 </entryLink>
 </entryLinks>
@@ -29529,7 +29518,7 @@ LIMITATIONS - Only a Traitor Emperor's Children Detachment. The army must includ
 </entryLink>
 <entryLink id="b0e3-d726-1690-f395" name="Phoenix Spear" hidden="false" collective="false" import="true" targetId="649b-4d99-b503-5a77" type="selectionEntry" sortIndex="101">
 <costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
+<cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
 </costs>
 </entryLink>
 </entryLinks>
@@ -29849,7 +29838,7 @@ LIMITATIONS - Only a Traitor Emperor's Children Detachment. The army must includ
 </entryLink>
 <entryLink id="b01c-5f0d-b503-11d3" name="Phoenix Spear" hidden="false" collective="false" import="true" targetId="649b-4d99-b503-5a77" type="selectionEntry" sortIndex="101">
 <costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
+<cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
 </costs>
 </entryLink>
 </entryLinks>
@@ -30189,7 +30178,7 @@ LIMITATIONS - Only a Traitor Emperor's Children Detachment. The army must includ
 </entryLink>
 <entryLink id="8661-2ad1-f0de-d74e" name="Phoenix Spear" hidden="false" collective="false" import="true" targetId="649b-4d99-b503-5a77" type="selectionEntry" sortIndex="101">
 <costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
+<cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
 </costs>
 </entryLink>
 </entryLinks>
@@ -31170,7 +31159,7 @@ LIMITATIONS - Only a Traitor Emperor's Children Detachment. The army must includ
 <entryLink id="bcc8-0776-3356-8191" name="Power Weapon" hidden="false" collective="false" import="true" targetId="fb4f-b267-7556-185d" type="selectionEntry" sortIndex="1" defaultAmount="1" />
 <entryLink id="0b26-d843-6f01-9050" name="Phoenix Spear" hidden="false" collective="false" import="true" targetId="649b-4d99-b503-5a77" type="selectionEntry" sortIndex="3">
 <costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
+<cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
 </costs>
 </entryLink>
 </entryLinks>
@@ -33004,7 +32993,7 @@ LIMITATIONS - Only a Traitor Emperor's Children Detachment. The army must includ
 </entryLink>
 <entryLink id="86f3-64ba-9364-162f" name="Phoenix Spear" hidden="false" collective="false" import="true" targetId="649b-4d99-b503-5a77" type="selectionEntry" sortIndex="101">
 <costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
+<cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
 </costs>
 </entryLink>
 </entryLinks>
@@ -33324,7 +33313,7 @@ LIMITATIONS - Only a Traitor Emperor's Children Detachment. The army must includ
 </entryLink>
 <entryLink id="2411-bc9f-6e0e-3c8e" name="Phoenix Spear" hidden="false" collective="false" import="true" targetId="649b-4d99-b503-5a77" type="selectionEntry" sortIndex="101">
 <costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
+<cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
 </costs>
 </entryLink>
 </entryLinks>
@@ -33664,7 +33653,7 @@ LIMITATIONS - Only a Traitor Emperor's Children Detachment. The army must includ
 </entryLink>
 <entryLink id="3b64-bdaa-28e9-b97e" name="Phoenix Spear" hidden="false" collective="false" import="true" targetId="649b-4d99-b503-5a77" type="selectionEntry" sortIndex="101">
 <costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
+<cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
 </costs>
 </entryLink>
 </entryLinks>
@@ -35101,7 +35090,7 @@ LIMITATIONS - Only a Traitor Emperor's Children Detachment. The army must includ
 </entryLink>
 <entryLink id="e293-a7d0-dd3a-3451" name="Phoenix Spear" hidden="false" collective="false" import="true" targetId="649b-4d99-b503-5a77" type="selectionEntry" sortIndex="101">
 <costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
+<cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
 </costs>
 </entryLink>
 </entryLinks>
@@ -36145,7 +36134,7 @@ LIMITATIONS - Only a Traitor Emperor's Children Detachment. The army must includ
 <entryLink id="ace4-3cdc-6608-3a67" name="Power Weapon" hidden="false" collective="false" import="true" targetId="fb4f-b267-7556-185d" type="selectionEntry" sortIndex="1" defaultAmount="1" />
 <entryLink id="515b-40bd-1de7-0ec6" name="Phoenix Spear" hidden="false" collective="false" import="true" targetId="649b-4d99-b503-5a77" type="selectionEntry" sortIndex="3">
 <costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
+<cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
 </costs>
 </entryLink>
 </entryLinks>
@@ -37839,7 +37828,7 @@ LIMITATIONS - Only a Traitor Emperor's Children Detachment. The army must includ
 </entryLink>
 <entryLink id="f0b7-6ae0-e0fd-cf21" name="Phoenix Spear" hidden="false" collective="false" import="true" targetId="649b-4d99-b503-5a77" type="selectionEntry" sortIndex="101">
 <costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
+<cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
 </costs>
 </entryLink>
 </entryLinks>
@@ -38664,7 +38653,7 @@ LIMITATIONS - Only a Traitor Emperor's Children Detachment. The army must includ
 </entryLink>
 <entryLink id="1b77-3f34-09ad-95fc" name="Phoenix Spear" hidden="false" collective="false" import="true" targetId="649b-4d99-b503-5a77" type="selectionEntry" sortIndex="101">
 <costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
+<cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
 </costs>
 </entryLink>
 </entryLinks>
@@ -38984,7 +38973,7 @@ LIMITATIONS - Only a Traitor Emperor's Children Detachment. The army must includ
 </entryLink>
 <entryLink id="7e4a-41da-af97-10dd" name="Phoenix Spear" hidden="false" collective="false" import="true" targetId="649b-4d99-b503-5a77" type="selectionEntry" sortIndex="101">
 <costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
+<cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
 </costs>
 </entryLink>
 </entryLinks>
@@ -39324,7 +39313,7 @@ LIMITATIONS - Only a Traitor Emperor's Children Detachment. The army must includ
 </entryLink>
 <entryLink id="bca8-68e3-ee3b-5cce" name="Phoenix Spear" hidden="false" collective="false" import="true" targetId="649b-4d99-b503-5a77" type="selectionEntry" sortIndex="101">
 <costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
+<cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
 </costs>
 </entryLink>
 </entryLinks>
@@ -41531,6 +41520,16 @@ LIMITATIONS - Only a Traitor Emperor's Children Detachment. The army must includ
 <cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
 </costs>
 </selectionEntry>
+<selectionEntry id="0d35-49ef-36ef-f6aa" name="Xyclos Needler" hidden="false" collective="false" import="true" type="upgrade">
+<infoLinks>
+<infoLink id="aedf-fa52-8715-7386" name="Xyclos Needler" hidden="false" targetId="fb7d-c308-a24c-a1c2" type="profile" />
+<infoLink id="d3a4-40c3-4bd6-e770" name="Rending" hidden="false" targetId="59e9-d133-77f2-ca5a" type="rule" />
+<infoLink id="deb7-3c7a-869d-ed29" name="Poison" hidden="false" targetId="29ee-5cb0-4f04-feef" type="rule" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
 <selectionEntry id="e78b-cbf1-79a4-5542" name="Sonic Blaster" hidden="false" collective="false" import="true" type="upgrade">
 <infoLinks>
 <infoLink id="8870-dcea-b1e8-cab2" name="Sonic Blaster - Assault" hidden="false" targetId="28a5-502b-3ca0-2844" type="profile" />
@@ -42131,16 +42130,6 @@ LIMITATIONS - Only a Traitor Emperor's Children Detachment. The army must includ
 <cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
 </costs>
 </selectionEntry>
-<selectionEntry id="c110-2b51-802f-a3f7" name="Xyclos Needler" hidden="false" collective="false" import="true" type="upgrade">
-<rules>
-<rule id="443a-9b5f-d07b-a093" name="Xyclos Needler" hidden="false">
-<description>Fabius Bile's Xyclos Needler. The army book gives no profile for this weapon.</description>
-</rule>
-</rules>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
-</costs>
-</selectionEntry>
 <selectionEntry id="4e05-68f4-bc88-3f8c" name="Gilded Panoply" hidden="false" collective="false" import="true" type="upgrade">
 <rules>
 <rule id="916b-074b-90d4-237e" name="Gilded Panoply" hidden="false">
@@ -42557,7 +42546,7 @@ Afterwards the squad may not enter Overwatch, may not make Return Fire or Stand 
 <description>During the first round of each close combat, attacks made with a Phoenix Spear are resolved at +1 Strength. After the first round, the weapon is resolved at the bearer's normal Strength.</description>
 </rule>
 <rule id="a42c-65d3-2388-52c2" name="Phoenix Spear" hidden="false">
-<description>Any Emperor's Children Independent Character or unit Character able to select a Power Weapon may instead select a Phoenix Spear instead for the cost of that Power Weapon +5 points. A model already equipped with a Power Weapon as part of its basic wargear may exchange it for a Phoenix Spear for +5 points. Named characters may not exchange their weapons for a Phoenix Spear.</description>
+<description>Any Emperor's Children Independent Character or unit Character able to select a Power Weapon may instead select a Phoenix Spear instead for 20 points. A model already equipped with a Power Weapon as part of its basic wargear may exchange it for a Phoenix Spear for 20 points. Named characters may not exchange their weapons for a Phoenix Spear.</description>
 </rule>
 <rule id="1ee6-7dad-c83d-06e9" name="Digital Lasers" hidden="false">
 <description>An Emperor's Children Independent Character may purchase Digital Lasers for +15 points. A model equipped with Digital Lasers adds +1 to its Attacks characteristic. Digital Lasers may not be combined with Terminator Honours. They count towards the Armoury points limit; named Independent Characters may also purchase them.</description>
@@ -42891,6 +42880,9 @@ LIMITATIONS - Only a Traitor Emperor's Children Detachment. The army must includ
 </rule>
 <rule id="778a-fc7e-2570-301d" name="Strands of Fate (Psychic Power)" hidden="false">
 <description>Malediction. Choose one enemy non-Vehicle unit within 18" and line of sight. Until the beginning of Magnus' next turn, that unit must pass a Leadership Test each time it attempts to move during the Movement phase, shoot during the Shooting phase or declare a Charge. If the test is failed, the attempted action is lost and the unit may not attempt that type of action again during that phase. A separate Leadership Test is required for each different action attempted.</description>
+</rule>
+<rule id="b613-f30b-a728-cc39" name="Strands of Fate (Shard of the Crimson King)" hidden="false">
+<description>Malediction. Range 18". Choose one enemy non-Vehicle unit within range and line of sight. Until the beginning of Magnus' next turn, the affected unit must pass a Leadership Test each time it wishes to: Move; Shoot; Charge. If the test is failed, that action is lost for that phase.</description>
 </rule>
 <rule id="c5fb-6297-1376-4e29" name="Fury of the Salamander (Psychic Power)" hidden="false">
 <description>Witchfire - Beam. Range 18", S5, AP1, Assault 1, Elemental Horror. Elemental Horror: if an enemy unit suffers one or more unsaved Wounds from Fury of the Salamander, it must immediately take a Morale test regardless of how many casualties were caused, with a Leadership penalty equal to the number of unsaved Wounds caused by Fury of the Salamander. (Counts as a Pyromancy power for Salamanders Librarians in a Detachment using The Awakening Fire.)</description>
@@ -44001,6 +43993,14 @@ LIMITATIONS - Only a Traitor Emperor's Children Detachment. The army must includ
 <characteristic name="Type" typeId="54df-9f85-8d55-7440">Power Weapon, Two-Handed, Armourbane</characteristic>
 </characteristics>
 </profile>
+<profile id="fb7d-c308-a24c-a1c2" name="Xyclos Needler" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+<characteristics>
+<characteristic name="Range" typeId="4b89-f4f0-2a22-1135">12"</characteristic>
+<characteristic name="S" typeId="6204-806b-a18a-c0be">-</characteristic>
+<characteristic name="AP" typeId="964e-6f66-dcaa-247a">4</characteristic>
+<characteristic name="Type" typeId="54df-9f85-8d55-7440">Pistol, Rending, Poisoned (3+)</characteristic>
+</characteristics>
+</profile>
 <profile id="28a5-502b-3ca0-2844" name="Sonic Blaster - Assault" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
 <characteristics>
 <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">24"</characteristic>
@@ -44103,6 +44103,14 @@ LIMITATIONS - Only a Traitor Emperor's Children Detachment. The army must includ
 <characteristic name="S" typeId="6204-806b-a18a-c0be">6</characteristic>
 <characteristic name="AP" typeId="964e-6f66-dcaa-247a">-</characteristic>
 <characteristic name="Type" typeId="54df-9f85-8d55-7440">Witchfire - Beam, Assault 1, Strikedown</characteristic>
+</characteristics>
+</profile>
+<profile id="3ea2-5e92-c35b-1084" name="Crush (Telekinesis)" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+<characteristics>
+<characteristic name="Range" typeId="4b89-f4f0-2a22-1135">18"</characteristic>
+<characteristic name="S" typeId="6204-806b-a18a-c0be">2D6</characteristic>
+<characteristic name="AP" typeId="964e-6f66-dcaa-247a">D6</characteristic>
+<characteristic name="Type" typeId="54df-9f85-8d55-7440">Witchfire - Focused</characteristic>
 </characteristics>
 </profile>
 <profile id="7464-e6d6-4e12-687d" name="Shockwave (Telekinesis)" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">

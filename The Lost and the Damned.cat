@@ -6,6 +6,7 @@
 <categoryEntries>
 <categoryEntry id="b46d-5293-9915-fcf4" name="Agents of the Sigillite HQ" hidden="false" />
 <categoryEntry id="24bf-3cab-9974-8f52" name="Knight-Errant" hidden="false" />
+<categoryEntry id="a13d-9785-bac3-9130" name="Eldar Psychic Power" hidden="false" />
 </categoryEntries>
 <forceEntries>
 <forceEntry id="5e19-89bd-fe5b-28eb" name="Agents of the Sigillite Allied Detachment" hidden="false">
@@ -383,6 +384,15 @@
 </conditionGroup>
 </conditionGroups>
 </modifier>
+<modifier type="add" field="error" value="A Detachment may include a Reaver Lord or a Delegatus Consul, not both.">
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fd02-8daf-835e-b537" type="atLeast" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
 <modifier type="decrement" field="pts0-0000-0000-0001" value="2">
 <conditions>
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c46-2124-b530-96cd" type="atLeast" />
@@ -430,15 +440,15 @@
 <categoryLink id="b28d-9225-1271-921a" name="Master of the Legion" hidden="false" targetId="cf42-da2a-93a6-6913" primary="false" />
 </categoryLinks>
 <selectionEntries>
-<selectionEntry id="9973-119a-6db0-40c0" name="Master-crafted Weapon (Spoils of War)" hidden="false" collective="false" import="true" type="upgrade">
+<selectionEntry id="2421-2118-84d5-d5c5" name="Master-crafted Weapon (Spoils of War; counts towards the 75 pts)" hidden="false" collective="false" import="true" type="upgrade">
 <constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f392-2584-0025-1329" type="max" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1fce-9993-7f35-032b" type="max" />
 </constraints>
 <entryLinks>
-<entryLink id="461d-a2e8-4c4a-f53b" name="Master-crafted Weapon" hidden="false" collective="false" import="true" targetId="91ea-aa7a-3afb-8980" type="selectionEntry">
+<entryLink id="c2eb-8a9e-132c-c106" name="Master-crafted Weapon" hidden="false" collective="false" import="true" targetId="91ea-aa7a-3afb-8980" type="selectionEntry">
 <constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="155a-29b2-547c-e660" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="007b-c0c5-3a07-1995" type="max" />
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6733-f528-e619-dc34" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f860-d929-22a0-6d74" type="max" />
 </constraints>
 </entryLink>
 </entryLinks>
@@ -504,6 +514,11 @@
 <repeats>
 <repeat field="selections" scope="77e4-db99-cc2a-3696" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7bd8-4dfb-dbcd-4d5c" repeats="1" roundUp="false" />
 </repeats>
+</modifier>
+<modifier type="decrement" field="d14d-3919-60ea-7bd0" value="10">
+<conditions>
+<condition field="selections" scope="77e4-db99-cc2a-3696" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2421-2118-84d5-d5c5" type="atLeast" />
+</conditions>
 </modifier>
 </modifiers>
 <constraints>
@@ -4180,6 +4195,7 @@
 <infoLinks>
 <infoLink id="a1e6-507c-4a18-56bd" name="Crush (Telekinesis)" hidden="false" targetId="1654-f41b-864b-1ba4" type="rule" />
 <infoLink id="b3aa-ac8e-4aca-12b2" name="Psychic Power Type: Witchfire - Focused" hidden="false" targetId="728a-56b9-f9e8-53a2" type="rule" />
+<infoLink id="6bec-e6b8-d934-11ac" name="Crush (Telekinesis)" hidden="false" targetId="3ea2-5e92-c35b-1084" type="profile" />
 </infoLinks>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
@@ -4327,6 +4343,150 @@
 <infoLink id="62e7-0843-3cfa-a020" name="Shrouding (Telepathy)" hidden="false" targetId="57fe-3119-47a7-1431" type="rule" />
 <infoLink id="55f5-8776-bf05-6885" name="Psychic Power Type: Blessing" hidden="false" targetId="2df7-351e-d581-ff63" type="rule" />
 </infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+<selectionEntry id="7d85-1651-d637-d3c0" name="Doom (Eldar - Eldritch Tutelage)" hidden="false" collective="false" import="true" type="upgrade">
+<modifiers>
+<modifier type="set" field="hidden" value="true">
+<conditions>
+<condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="59a3-8abf-0e0f-91fb" type="equalTo" />
+</conditions>
+</modifier>
+<modifier type="set" field="f8fc-d764-9ba2-460b" value="0">
+<conditions>
+<condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="59a3-8abf-0e0f-91fb" type="equalTo" />
+</conditions>
+</modifier>
+<modifier type="add" field="error" value="Eldritch Tutelage: only a single Blackshield Librarian in the army may take one Eldar psychic power.">
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a13d-9785-bac3-9130" type="greaterThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+</modifiers>
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f8fc-d764-9ba2-460b" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="7a24-564e-bef2-3e2d" name="Doom (Eldar Psychic Power)" hidden="false" targetId="5ff1-0cca-ecb1-aba4" type="rule" />
+<infoLink id="e46c-de61-2362-a171" name="Eldritch Tutelage" hidden="false" targetId="31c0-e21e-f425-42eb" type="rule" />
+</infoLinks>
+<categoryLinks>
+<categoryLink id="2f86-4568-10e4-bda4" name="Eldar Psychic Power" hidden="false" targetId="a13d-9785-bac3-9130" primary="false" />
+</categoryLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+<selectionEntry id="83ea-459c-bdea-66df" name="Guide (Eldar - Eldritch Tutelage)" hidden="false" collective="false" import="true" type="upgrade">
+<modifiers>
+<modifier type="set" field="hidden" value="true">
+<conditions>
+<condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="59a3-8abf-0e0f-91fb" type="equalTo" />
+</conditions>
+</modifier>
+<modifier type="set" field="2332-9f13-f0ee-6654" value="0">
+<conditions>
+<condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="59a3-8abf-0e0f-91fb" type="equalTo" />
+</conditions>
+</modifier>
+<modifier type="add" field="error" value="Eldritch Tutelage: only a single Blackshield Librarian in the army may take one Eldar psychic power.">
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a13d-9785-bac3-9130" type="greaterThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+</modifiers>
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2332-9f13-f0ee-6654" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="36c6-19b6-153e-0086" name="Guide (Eldar Psychic Power)" hidden="false" targetId="a7b0-6998-17b7-03eb" type="rule" />
+<infoLink id="cd97-c91e-acdb-abde" name="Eldritch Tutelage" hidden="false" targetId="31c0-e21e-f425-42eb" type="rule" />
+</infoLinks>
+<categoryLinks>
+<categoryLink id="fad0-c176-6fda-90f5" name="Eldar Psychic Power" hidden="false" targetId="a13d-9785-bac3-9130" primary="false" />
+</categoryLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+<selectionEntry id="12bd-27bd-dbcd-261d" name="Mind War (Eldar - Eldritch Tutelage)" hidden="false" collective="false" import="true" type="upgrade">
+<modifiers>
+<modifier type="set" field="hidden" value="true">
+<conditions>
+<condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="59a3-8abf-0e0f-91fb" type="equalTo" />
+</conditions>
+</modifier>
+<modifier type="set" field="1515-3b99-0980-0d30" value="0">
+<conditions>
+<condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="59a3-8abf-0e0f-91fb" type="equalTo" />
+</conditions>
+</modifier>
+<modifier type="add" field="error" value="Eldritch Tutelage: only a single Blackshield Librarian in the army may take one Eldar psychic power.">
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a13d-9785-bac3-9130" type="greaterThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+</modifiers>
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1515-3b99-0980-0d30" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="40ed-b349-2d81-8878" name="Mind War (Eldar Psychic Power)" hidden="false" targetId="e80a-63a8-c8fc-7f74" type="rule" />
+<infoLink id="2298-4c0d-9c35-f059" name="Eldritch Tutelage" hidden="false" targetId="31c0-e21e-f425-42eb" type="rule" />
+</infoLinks>
+<categoryLinks>
+<categoryLink id="3cfb-470c-929c-a89b" name="Eldar Psychic Power" hidden="false" targetId="a13d-9785-bac3-9130" primary="false" />
+</categoryLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+<selectionEntry id="77d8-2829-e8ec-242b" name="Eldritch Storm (Eldar - Eldritch Tutelage)" hidden="false" collective="false" import="true" type="upgrade">
+<modifiers>
+<modifier type="set" field="hidden" value="true">
+<conditions>
+<condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="59a3-8abf-0e0f-91fb" type="equalTo" />
+</conditions>
+</modifier>
+<modifier type="set" field="3e50-2cf0-d6a8-f400" value="0">
+<conditions>
+<condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="59a3-8abf-0e0f-91fb" type="equalTo" />
+</conditions>
+</modifier>
+<modifier type="add" field="error" value="Eldritch Tutelage: only a single Blackshield Librarian in the army may take one Eldar psychic power.">
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a13d-9785-bac3-9130" type="greaterThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+</modifiers>
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3e50-2cf0-d6a8-f400" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="c03d-aedf-451d-378d" name="Eldritch Storm (Eldar Psychic Power)" hidden="false" targetId="9d1f-a10a-33e4-0b5d" type="rule" />
+<infoLink id="88ff-c977-4671-cfbe" name="Eldritch Tutelage" hidden="false" targetId="31c0-e21e-f425-42eb" type="rule" />
+</infoLinks>
+<categoryLinks>
+<categoryLink id="0e1d-bd85-67b8-e72d" name="Eldar Psychic Power" hidden="false" targetId="a13d-9785-bac3-9130" primary="false" />
+</categoryLinks>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
 </costs>
@@ -4528,18 +4688,6 @@
 <infoLink id="d72e-9191-1adf-efe0" name="Dark Flame (Daemonology (Malefic))" hidden="false" targetId="6eb6-8caf-e509-20f1" type="rule" />
 <infoLink id="83d3-2453-c2b3-cbd6" name="Psychic Power Type: Witchfire" hidden="false" targetId="d57f-7eaf-5589-f80d" type="rule" />
 <infoLink id="ab18-69ac-7210-260c" name="Dark Flame (Daemonology (Malefic))" hidden="false" targetId="052f-aed2-8ef8-a7e6" type="profile" />
-</infoLinks>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
-</costs>
-</selectionEntry>
-<selectionEntry id="da24-4f13-4257-e70b" name="Possession (Daemonology (Malefic))" hidden="false" collective="false" import="true" type="upgrade">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="379d-b5e3-2388-6599" type="max" />
-</constraints>
-<infoLinks>
-<infoLink id="1dc3-979e-054b-4bbe" name="Possession (Daemonology (Malefic))" hidden="false" targetId="0507-b55d-f00f-4254" type="rule" />
-<infoLink id="051e-07b2-a761-ceac" name="Psychic Power Type: Conjuration" hidden="false" targetId="c913-19fd-3d6e-40c8" type="rule" />
 </infoLinks>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
@@ -10281,6 +10429,9 @@
 <condition field="selections" scope="self" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8cf8-1ffd-f610-ea86" type="atLeast" />
 </conditions>
 </modifier>
+<modifier type="set" field="hidden" value="true" />
+<modifier type="set" field="a935-a7ad-1cff-518e" value="0" />
+<modifier type="add" field="error" value="A Blackshields force may not use a Rite of War." />
 <modifier type="set" field="hidden" value="true">
 <conditions>
 <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5e19-89bd-fe5b-28eb" type="instanceOf" />
@@ -24836,10 +24987,10 @@ LIMITATIONS - No other Lord of War; no Allied Detachment; no more than one other
 </selectionEntryGroup>
 </selectionEntryGroups>
 <entryLinks>
-<entryLink id="981f-7208-0a62-d56f" name="Iron Halo (Agent of the Sigillite)" hidden="false" collective="false" import="true" targetId="0651-d384-0a42-db0d" type="selectionEntry">
+<entryLink id="ffd0-ab7d-d352-5a46" name="Iron Halo" hidden="false" collective="false" import="true" targetId="33a9-e5ba-d380-edde" type="selectionEntry">
 <constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aafb-669b-3022-ae8c" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ee6d-fdb7-9245-f4d1" type="max" />
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="568c-ef23-376f-7676" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="17e1-5770-384c-e9fe" type="max" />
 </constraints>
 </entryLink>
 <entryLink id="102e-017a-3847-be2b" name="Frag Grenades" hidden="false" collective="false" import="true" targetId="f696-7971-36b0-27b5" type="selectionEntry">
@@ -25082,10 +25233,10 @@ LIMITATIONS - No other Lord of War; no Allied Detachment; no more than one other
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="085d-a822-182c-094c" type="max" />
 </constraints>
 </entryLink>
-<entryLink id="86f2-53cb-a021-b956" name="Iron Halo (Agent of the Sigillite)" hidden="false" collective="false" import="true" targetId="0651-d384-0a42-db0d" type="selectionEntry">
+<entryLink id="18df-8222-aee7-7c30" name="Iron Halo" hidden="false" collective="false" import="true" targetId="33a9-e5ba-d380-edde" type="selectionEntry">
 <constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7d3d-d3a8-9367-9990" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b108-0037-ee0c-0767" type="max" />
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1d0b-a794-d10d-b40a" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="28b3-11a0-8e7b-aa4c" type="max" />
 </constraints>
 </entryLink>
 <entryLink id="cc6b-71e6-04c4-b001" name="Power Weapon" hidden="false" collective="false" import="true" targetId="fb4f-b267-7556-185d" type="selectionEntry">
@@ -25223,10 +25374,10 @@ LIMITATIONS - No other Lord of War; no Allied Detachment; no more than one other
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="62f3-40f9-0b96-a384" type="max" />
 </constraints>
 </entryLink>
-<entryLink id="625e-105d-cfa7-45e9" name="Iron Halo (Agent of the Sigillite)" hidden="false" collective="false" import="true" targetId="0651-d384-0a42-db0d" type="selectionEntry">
+<entryLink id="0109-dbed-46c4-e749" name="Iron Halo" hidden="false" collective="false" import="true" targetId="33a9-e5ba-d380-edde" type="selectionEntry">
 <constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1013-eaa4-27fe-f527" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cacb-f7e3-8a49-75ab" type="max" />
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fa00-e1d1-7716-6dcb" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f11e-76eb-780d-a275" type="max" />
 </constraints>
 </entryLink>
 <entryLink id="2736-2b3d-7320-f912" name="Power Weapon" hidden="false" collective="false" import="true" targetId="fb4f-b267-7556-185d" type="selectionEntry">
@@ -25364,10 +25515,10 @@ LIMITATIONS - No other Lord of War; no Allied Detachment; no more than one other
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="78ad-516c-0b7c-1321" type="max" />
 </constraints>
 </entryLink>
-<entryLink id="c167-a35a-e6c5-33a6" name="Iron Halo (Agent of the Sigillite)" hidden="false" collective="false" import="true" targetId="0651-d384-0a42-db0d" type="selectionEntry">
+<entryLink id="ea3a-9f6d-ec1a-3b95" name="Iron Halo" hidden="false" collective="false" import="true" targetId="33a9-e5ba-d380-edde" type="selectionEntry">
 <constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="28d1-a94e-2097-2124" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5841-8d5e-9bd5-8cb3" type="max" />
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e77e-0d3b-c93a-2894" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5d50-cec5-4b87-da9c" type="max" />
 </constraints>
 </entryLink>
 <entryLink id="2bdc-58c2-1009-5dc7" name="Power Weapon" hidden="false" collective="false" import="true" targetId="fb4f-b267-7556-185d" type="selectionEntry">
@@ -25492,6 +25643,108 @@ LIMITATIONS - No other Lord of War; no Allied Detachment; no more than one other
 <categoryLink id="2e51-00db-5b21-1a98" name="Agents of the Sigillite HQ" hidden="false" targetId="b46d-5293-9915-fcf4" primary="false" />
 <categoryLink id="250b-3b7f-815b-75fe" name="Knight-Errant" hidden="false" targetId="24bf-3cab-9974-8f52" primary="false" />
 </categoryLinks>
+<selectionEntryGroups>
+<selectionEntryGroup id="d6ed-e1de-a480-a7c7" name="Psychic Powers" hidden="false" collective="false" import="true">
+<modifiers>
+<modifier type="add" field="error" value="Choose 3 psychic powers.">
+<conditions>
+<condition field="selections" scope="c5c7-4ec7-f2df-8808" value="3" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d6ed-e1de-a480-a7c7" type="lessThan" />
+</conditions>
+</modifier>
+</modifiers>
+<constraints>
+<constraint field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f6bf-d424-3761-de61" type="max" />
+</constraints>
+<selectionEntries>
+<selectionEntry id="4207-8c2f-8b47-1489" name="Banishment (Daemonology (Sanctic))" hidden="false" collective="false" import="true" type="upgrade">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5083-58a7-76b7-c86c" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="643c-c9f3-3e81-5dbe" name="Banishment (Daemonology (Sanctic))" hidden="false" targetId="d45c-c394-609a-3f60" type="rule" />
+<infoLink id="7f3d-4bbd-610b-f113" name="Psychic Power Type: Malediction" hidden="false" targetId="e2e5-b205-e6b0-3644" type="rule" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+<selectionEntry id="112c-4d8e-e4d8-be3a" name="Gate of Infinity (Daemonology (Sanctic))" hidden="false" collective="false" import="true" type="upgrade">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2ae7-2c74-10e9-5305" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="45aa-d47b-e4f9-f08a" name="Gate of Infinity (Daemonology (Sanctic))" hidden="false" targetId="0228-9ef8-ec1a-8b2a" type="rule" />
+<infoLink id="d385-e34a-a328-bada" name="Psychic Power Type: Blessing" hidden="false" targetId="2df7-351e-d581-ff63" type="rule" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+<selectionEntry id="09cc-4166-1c4b-4424" name="Hammerhand (Daemonology (Sanctic))" hidden="false" collective="false" import="true" type="upgrade">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c655-9f68-299e-40e6" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="d61c-e16a-4030-7069" name="Hammerhand (Daemonology (Sanctic))" hidden="false" targetId="a83e-9861-9b28-f50b" type="rule" />
+<infoLink id="85c9-f99c-5bde-5e94" name="Psychic Power Type: Blessing" hidden="false" targetId="2df7-351e-d581-ff63" type="rule" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+<selectionEntry id="78ce-1119-83b5-202e" name="Sanctuary (Daemonology (Sanctic))" hidden="false" collective="false" import="true" type="upgrade">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3cec-8842-7b45-174d" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="07e0-434e-2f22-b715" name="Sanctuary (Daemonology (Sanctic))" hidden="false" targetId="e178-e8da-a0ab-cbbc" type="rule" />
+<infoLink id="aed6-3572-71da-73e8" name="Psychic Power Type: Blessing" hidden="false" targetId="2df7-351e-d581-ff63" type="rule" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+<selectionEntry id="a225-7126-fddc-d91c" name="Purge Soul (Daemonology (Sanctic))" hidden="false" collective="false" import="true" type="upgrade">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b518-b9cf-a02e-ff1a" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="f8a8-0d05-85b5-02aa" name="Purge Soul (Daemonology (Sanctic))" hidden="false" targetId="c1b2-4222-7138-0701" type="rule" />
+<infoLink id="5181-5f64-2798-7104" name="Psychic Power Type: Witchfire - Focused" hidden="false" targetId="728a-56b9-f9e8-53a2" type="rule" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+<selectionEntry id="d6b7-039d-505a-f852" name="Cleansing Flame (Daemonology (Sanctic))" hidden="false" collective="false" import="true" type="upgrade">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5fc3-f6ef-e0a8-d3d9" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="2ead-4f4b-77bf-028a" name="Cleansing Flame (Daemonology (Sanctic))" hidden="false" targetId="618c-99c4-745b-820e" type="rule" />
+<infoLink id="ff88-f547-c268-57d8" name="Psychic Power Type: Witchfire - Nova" hidden="false" targetId="e76f-abfe-254a-2d7d" type="rule" />
+<infoLink id="7d2d-5f96-4352-d0b2" name="Cleansing Flame (Daemonology (Sanctic))" hidden="false" targetId="ae1c-b16b-7a30-912a" type="profile" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+<selectionEntry id="c8fa-e6d0-445d-1f11" name="Vortex of Doom (Daemonology (Sanctic))" hidden="false" collective="false" import="true" type="upgrade">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0df2-1aea-ee8b-6578" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="b345-7475-5f7b-866d" name="Vortex of Doom (Daemonology (Sanctic))" hidden="false" targetId="9391-3293-b113-1723" type="rule" />
+<infoLink id="2bc5-b82d-e6b5-28a7" name="Psychic Power Type: Witchfire" hidden="false" targetId="d57f-7eaf-5589-f80d" type="rule" />
+<infoLink id="2c1e-6619-16f7-ab74" name="Vortex of Doom (Daemonology (Sanctic))" hidden="false" targetId="7757-8114-68b2-772b" type="profile" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+</selectionEntries>
+</selectionEntryGroup>
+</selectionEntryGroups>
 <entryLinks>
 <entryLink id="66ba-e64a-b155-0bdc" name="Power Armour" hidden="false" collective="false" import="true" targetId="1133-946a-2323-7a81" type="selectionEntry">
 <constraints>
@@ -26105,6 +26358,14 @@ LIMITATIONS - No other Lord of War; no Allied Detachment; no more than one other
 <infoLinks>
 <infoLink id="a5d3-4776-a27f-c336" name="Null Operative" hidden="false" targetId="9eef-f9ac-e5ec-4e26" type="rule" />
 </infoLinks>
+<entryLinks>
+<entryLink id="8f42-8383-d102-9018" name="Close Combat Weapon" hidden="false" collective="false" import="true" targetId="7b6a-5697-5a6a-2d74" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b911-7bf6-b687-034a" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4190-1151-a36f-67fe" type="max" />
+</constraints>
+</entryLink>
+</entryLinks>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
 </costs>
@@ -26176,6 +26437,125 @@ LIMITATIONS - No other Lord of War; no Allied Detachment; no more than one other
 </selectionEntry>
 </selectionEntries>
 </selectionEntryGroup>
+<selectionEntryGroup id="1973-87a8-30db-0902" name="Psychic Powers" hidden="false" collective="false" import="true">
+<modifiers>
+<modifier type="add" field="error" value="Choose 1 psychic power.">
+<conditions>
+<condition field="selections" scope="33fb-8f8c-5972-d8b8" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3207-18c2-9380-14be" type="notEqualTo" />
+<condition field="selections" scope="33fb-8f8c-5972-d8b8" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1973-87a8-30db-0902" type="lessThan" />
+</conditions>
+</modifier>
+<modifier type="set" field="f02f-5f5b-03e2-31da" value="0">
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="33fb-8f8c-5972-d8b8" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3207-18c2-9380-14be" type="equalTo" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="set" field="hidden" value="true">
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="33fb-8f8c-5972-d8b8" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3207-18c2-9380-14be" type="equalTo" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+</modifiers>
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f02f-5f5b-03e2-31da" type="max" />
+</constraints>
+<selectionEntries>
+<selectionEntry id="44c3-d379-382c-7353" name="Banishment (Daemonology (Sanctic))" hidden="false" collective="false" import="true" type="upgrade">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="87a6-3693-cf65-28c4" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="7dbf-6f18-9a5f-a704" name="Banishment (Daemonology (Sanctic))" hidden="false" targetId="d45c-c394-609a-3f60" type="rule" />
+<infoLink id="9e6b-10dc-fb11-d013" name="Psychic Power Type: Malediction" hidden="false" targetId="e2e5-b205-e6b0-3644" type="rule" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+<selectionEntry id="f8b7-3316-12dd-00bc" name="Gate of Infinity (Daemonology (Sanctic))" hidden="false" collective="false" import="true" type="upgrade">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cbee-1c5b-52bb-95fe" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="59ac-cb89-dc7f-6005" name="Gate of Infinity (Daemonology (Sanctic))" hidden="false" targetId="0228-9ef8-ec1a-8b2a" type="rule" />
+<infoLink id="b15e-c8ea-f36c-2dc1" name="Psychic Power Type: Blessing" hidden="false" targetId="2df7-351e-d581-ff63" type="rule" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+<selectionEntry id="16c4-a6cb-5e5b-118a" name="Hammerhand (Daemonology (Sanctic))" hidden="false" collective="false" import="true" type="upgrade">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7db9-c18d-9320-6b19" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="6cea-2f8a-c71e-630a" name="Hammerhand (Daemonology (Sanctic))" hidden="false" targetId="a83e-9861-9b28-f50b" type="rule" />
+<infoLink id="996e-3769-eeac-87d1" name="Psychic Power Type: Blessing" hidden="false" targetId="2df7-351e-d581-ff63" type="rule" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+<selectionEntry id="5c6b-57f8-68b7-b9ef" name="Sanctuary (Daemonology (Sanctic))" hidden="false" collective="false" import="true" type="upgrade">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c0dd-6a85-961d-baa1" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="75ae-fb74-6e1a-1a29" name="Sanctuary (Daemonology (Sanctic))" hidden="false" targetId="e178-e8da-a0ab-cbbc" type="rule" />
+<infoLink id="39a3-535d-ac4a-23bc" name="Psychic Power Type: Blessing" hidden="false" targetId="2df7-351e-d581-ff63" type="rule" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+<selectionEntry id="d199-7378-98a2-e8bd" name="Purge Soul (Daemonology (Sanctic))" hidden="false" collective="false" import="true" type="upgrade">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="45a3-f791-f76c-10f0" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="de7c-ae0b-72f6-1102" name="Purge Soul (Daemonology (Sanctic))" hidden="false" targetId="c1b2-4222-7138-0701" type="rule" />
+<infoLink id="f2db-fadf-a4df-06b2" name="Psychic Power Type: Witchfire - Focused" hidden="false" targetId="728a-56b9-f9e8-53a2" type="rule" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+<selectionEntry id="4dad-3727-5e44-a31c" name="Cleansing Flame (Daemonology (Sanctic))" hidden="false" collective="false" import="true" type="upgrade">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e634-7ce0-39a4-c5dc" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="4b2f-5078-2d28-a2c9" name="Cleansing Flame (Daemonology (Sanctic))" hidden="false" targetId="618c-99c4-745b-820e" type="rule" />
+<infoLink id="295d-418a-1522-6510" name="Psychic Power Type: Witchfire - Nova" hidden="false" targetId="e76f-abfe-254a-2d7d" type="rule" />
+<infoLink id="fa38-1f31-fe1d-b96e" name="Cleansing Flame (Daemonology (Sanctic))" hidden="false" targetId="ae1c-b16b-7a30-912a" type="profile" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+<selectionEntry id="646c-1fbe-5c15-c0b4" name="Vortex of Doom (Daemonology (Sanctic))" hidden="false" collective="false" import="true" type="upgrade">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5ff8-9d60-2777-cd85" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="1a74-7259-9e3b-c214" name="Vortex of Doom (Daemonology (Sanctic))" hidden="false" targetId="9391-3293-b113-1723" type="rule" />
+<infoLink id="b416-213e-68a5-5122" name="Psychic Power Type: Witchfire" hidden="false" targetId="d57f-7eaf-5589-f80d" type="rule" />
+<infoLink id="abe5-cd46-78a0-35ab" name="Vortex of Doom (Daemonology (Sanctic))" hidden="false" targetId="7757-8114-68b2-772b" type="profile" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+</selectionEntries>
+</selectionEntryGroup>
 </selectionEntryGroups>
 <entryLinks>
 <entryLink id="fd32-3fb1-44f2-1f05" name="Power Armour" hidden="false" collective="false" import="true" targetId="1133-946a-2323-7a81" type="selectionEntry">
@@ -26194,12 +26574,6 @@ LIMITATIONS - No other Lord of War; no Allied Detachment; no more than one other
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8638-0809-94f7-5854" type="min" />
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2be2-ff04-6ad2-f68b" type="max" />
-</constraints>
-</entryLink>
-<entryLink id="fd20-21f5-09b1-96cc" name="Close Combat Weapon" hidden="false" collective="false" import="true" targetId="7b6a-5697-5a6a-2d74" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="58c2-5610-53f3-3db3" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ec1d-7183-5cb2-2d96" type="max" />
 </constraints>
 </entryLink>
 <entryLink id="f686-3788-e9e2-8cde" name="Frag Grenades" hidden="false" collective="false" import="true" targetId="f696-7971-36b0-27b5" type="selectionEntry">
@@ -38220,6 +38594,18 @@ LIMITATIONS - No other Lord of War; no Allied Detachment; no more than one other
 </costs>
 </selectionEntry>
 <selectionEntry id="1fc8-fb0d-456a-4730" name="Rad Grenades (Blackshield)" hidden="false" collective="false" import="true" type="upgrade">
+<modifiers>
+<modifier type="set" field="hidden" value="true">
+<conditions>
+<condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b7bb-0e4f-797e-2673" type="equalTo" />
+</conditions>
+</modifier>
+<modifier type="add" field="error" value="Rad Grenades may only be purchased by Blackshield Characters of an Outlanders force.">
+<conditions>
+<condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b7bb-0e4f-797e-2673" type="equalTo" />
+</conditions>
+</modifier>
+</modifiers>
 <rules>
 <rule id="43f8-277d-d4ce-ff27" name="Rad Grenades (Blackshield)" hidden="false">
 <description>While the bearer is engaged in close combat, enemy models engaged in the same combat count their Toughness as 1 lower when resolving To Wound rolls made by the bearer and his unit (not below Toughness 1). The effects of multiple Rad Grenades do not stack.</description>
@@ -38518,16 +38904,6 @@ LIMITATIONS - No other Lord of War; no Allied Detachment; no more than one other
 <constraints>
 <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="7217-f00c-ca12-b93c" type="max" />
 </constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
-</costs>
-</selectionEntry>
-<selectionEntry id="0651-d384-0a42-db0d" name="Iron Halo (Agent of the Sigillite)" hidden="false" collective="false" import="true" type="upgrade">
-<rules>
-<rule id="4579-9e1c-5d0b-aad1" name="Iron Halo (Agent of the Sigillite)" hidden="false">
-<description>Grants a 4+ Invulnerable Save. Carried by an Agent of the Sigillite; it does not count towards the army limit on Iron Halos (see questions).</description>
-</rule>
-</rules>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
 </costs>
@@ -38909,7 +39285,8 @@ LEGION-SPECIFIC UNITS: each Legion-specific unit entry is limited to 0-1 per arm
 BLACKSHIELD COMMANDERS: a Blackshields force may not include Praetors. It may select a Reaver Lord as its senior commander. Centurions, Librarians and other generic Legiones Astartes Characters may still be selected unless prohibited by the chosen Oath of Moment.
 ALLEGIANCE: declare the force Loyalist or Traitor for army selection, scenarios and Allied Detachments.
 WARGEAR: models have access to the normal Space Marine Armoury and the Blackshield-specific wargear of this supplement, but not to Legion-specific wargear of any of the eighteen Legions unless an Oath of Moment or another rule of this supplement permits it.
-OATHS OF MOMENT: the force must select exactly one Oath of Moment, which applies to the entire force.</description>
+OATHS OF MOMENT: the force must select exactly one Oath of Moment, which applies to the entire force.
+RITES OF WAR: a Blackshields force may not use a Rite of War (author's ruling).</description>
 </rule>
 <rule id="0393-f6ab-a83e-b993" name="Blackshield Armoury" hidden="false">
 <description>Blackshield Characters with access to the Space Marine Armoury may also select equipment from the Blackshield Armoury, in addition to the normal Space Marine Armoury. Items listed as Xenos Wargear may only be selected in a force whose Oath of Moment grants access to Xenos Wargear. Unless stated otherwise, no model may select the same item more than once.</description>
@@ -38941,7 +39318,7 @@ Xenos Weapons may only be selected by a force whose Oath of Moment grants access
 <description>Before deployment, up to half of the Blackshield Infantry units in the army which do not have a Dedicated Transport may be given the Deep Strike special rule and placed in Reserve. If one of these units suffers a Deep Strike Mishap, resolve the Mishap normally and then remove D3 models from the unit as casualties.</description>
 </rule>
 <rule id="b3ae-7537-bd77-5e8b" name="Unsanctioned Weaponry" hidden="false">
-<description>Models in an Outlanders force may purchase weapons and equipment marked Xenos in the Blackshield Armoury. Blackshield Characters may also purchase Rad Grenades.</description>
+<description>Models in an Outlanders force may purchase weapons and equipment marked Xenos in the Blackshield Armoury. Blackshield Characters may also purchase Rad Grenades (Rad Grenades are only available to an Outlanders force).</description>
 </rule>
 <rule id="525f-9d21-40a8-4731" name="The Shadow of Oblivion" hidden="false">
 <description>At the beginning of the battle, record the number of units with the Legiones Astartes (Blackshields) special rule. Once at least half of them have been destroyed or are Broken, this rule takes effect for the remainder of the battle: at the start of each subsequent Blackshield turn, every remaining Blackshield unit must pass a Leadership test or be removed from play (counts as destroyed).</description>
@@ -38986,7 +39363,7 @@ Xenos Weapons may only be selected by a force whose Oath of Moment grants access
 <description>A Blackshield unit which has expended all of its Ammunition counters gains +1 Leadership while charging or while engaged in close combat.</description>
 </rule>
 <rule id="666c-1b1c-9352-3d2e" name="Lord of the Blackshields" hidden="false">
-<description>A Blackshields force may include no more than one Reaver Lord. If it includes a Reaver Lord, he must be selected as the army's Warlord.</description>
+<description>A Blackshields force may include no more than one Reaver Lord. If it includes a Reaver Lord, he must be selected as the army's Warlord. The Reaver Lord is the force's Master of the Legion; a Detachment may include a Reaver Lord or a Delegatus Consul, not both (author's ruling).</description>
 </rule>
 <rule id="0ed3-b651-4b99-698c" name="Reaver Retinue" hidden="false">
 <description>For each Reaver Lord, one Legion Veteran Squad may be selected as his Reaver Retinue. It does not occupy a separate Force Organisation slot and the Reaver Lord must begin the battle attached to it. The squad may select equipment normally available to a Legion Veteran Squad and may also select Blackshield Weapons where permitted. Alternatively, the Reaver Lord may be accompanied by a Legion Command Squad or Legion Terminator Command Squad normally.</description>
@@ -39074,7 +39451,7 @@ V - Vetus Inimicitia: secretly nominate one enemy Independent Character; +2 VP i
 <description>If a unit containing one or more Psykers is hit by a Psyk-out Grenade, randomly determine one Psyker in that unit; it suffers Perils of the Warp in addition to any other damage.</description>
 </rule>
 <rule id="8295-34f6-6367-d8f7" name="Psi-shock (Ammunition)" hidden="false">
-<description>If a Psyker suffers one or more unsaved Wounds from Psyk-out Ammunition during a Shooting phase, it must take a Leadership test after all attacks from the firing unit have been resolved; if failed it suffers Perils of the Warp. A Psyker may only be forced to take one such test from each firing unit per Shooting phase. Psyk-out Ammunition may be used by Bolters (Sigillite Boltguns) and the bolter component of Combi-weapons.</description>
+<description>If a Psyker suffers one or more unsaved Wounds from Psyk-out Ammunition during a Shooting phase, it must take a Leadership test after all attacks from the firing unit have been resolved; if failed it suffers Perils of the Warp. A Psyker may only be forced to take one such test from each firing unit per Shooting phase. Psyk-out Ammunition may be used by Bolters (Sigillite Boltguns) and the bolter component of Combi-weapons; when firing it, use the Psyk-out Ammunition profile (24", S4, AP5, Rapid Fire, Psi-shock). Psyk-out ammunition contains psycho-reactive compounds intended to disrupt the concentration and neural activity of enemy psykers.</description>
 </rule>
 <rule id="1475-18fa-d524-329c" name="Mass Psi-shock" hidden="false">
 <description>Every Psyker model hit by the Blast suffers Perils of the Warp in addition to any other damage. Non-Psykers suffer only the normal effects of the weapon.</description>
@@ -39089,19 +39466,19 @@ V - Vetus Inimicitia: secretly nominate one enemy Independent Character; +2 VP i
 <description>When the unit is selected, the Cell Specialist must choose one Operative Discipline. It determines the Specialist's abilities and grants additional options or special rules to the Cell, and may not be changed during the battle.</description>
 </rule>
 <rule id="50c1-af36-3baf-e2ed" name="Sanctic Adept" hidden="false">
-<description>The Cell Specialist is a Psyker with Psychic Mastery 1 and must select his Psychic Power from Sanctic Daemonology (never Malefic Daemonology or any other discipline). He is equipped with a Force Weapon and may purchase a Psychic Hood for +20 points. The remaining members of the Cell may purchase Psyk-out Ammunition (+5 points per model) and Psyk-out Grenades (+5 points per model). The Cell may not include a Null Operative.</description>
+<description>The Cell Specialist is a Psyker with Psychic Mastery 1 and must select his Psychic Power from Sanctic Daemonology (never Malefic Daemonology or any other discipline). He is equipped with a Force Weapon (replacing his Close Combat Weapon) and may purchase a Psychic Hood for +20 points. The remaining members of the Cell may purchase Psyk-out Ammunition (+5 points per model) and Psyk-out Grenades (+5 points per model). The Cell may not include a Null Operative.</description>
 </rule>
 <rule id="9eef-f9ac-e5ec-4e26" name="Null Operative" hidden="false">
 <description>The Cell Specialist possesses the Pariah gene or powerful nullification technology; he is not a Psyker. Enemy Psykers within 12" of him suffer -1 Leadership when taking Psychic Tests. Any Psychic Power which directly targets the Specialist or his unit must first pass a Nullification roll of 4+; on a 1-3 the power is nullified and has no effect on the unit. The remaining members of the Cell may purchase Null-amp Collars (+5 points per model) and Psyk-out Grenades (+5 points per model). The Cell may never be joined by a Psyker.</description>
 </rule>
 <rule id="44db-c6b4-23f4-04df" name="Sigillite Exhorter" hidden="false">
-<description>The Cell Specialist is equipped with a Power Weapon. While he remains alive, the entire Cell may re-roll failed Morale and Pinning tests, and during the first round of any close combat in which the Cell charged, all models in the Cell may re-roll failed To Hit rolls. The remaining members may replace their Close Combat Weapons with Power Weapons for +10 points per model.</description>
+<description>The Cell Specialist is equipped with a Power Weapon (replacing his Close Combat Weapon). While he remains alive, the entire Cell may re-roll failed Morale and Pinning tests, and during the first round of any close combat in which the Cell charged, all models in the Cell may re-roll failed To Hit rolls. The remaining members may replace their Close Combat Weapons with Power Weapons for +10 points per model.</description>
 </rule>
 <rule id="3daf-5d46-7db8-48a5" name="Vigilator (Sigillite)" hidden="false">
-<description>The Cell Specialist gains Infiltrate and Stealth and is equipped with a Stalker Bolter. The entire Cell gains Infiltrate. The remaining members may replace their Bolters with Stalker Bolters (+10 points per model) and may purchase Cameleoline (+5 points per model).</description>
+<description>The Cell Specialist gains Infiltrate and Stealth and is equipped with a Stalker Bolter (replacing his Close Combat Weapon). The entire Cell gains Infiltrate. The remaining members may replace their Bolters with Stalker Bolters (+10 points per model) and may purchase Cameleoline (+5 points per model).</description>
 </rule>
 <rule id="fc7d-f768-bf44-ae1f" name="Champion (Sigillite)" hidden="false">
-<description>The Cell Specialist gains Weapon Skill 6 and is equipped with a Master-crafted Power Weapon. While he remains alive, any model in the Cell may replace its Close Combat Weapon with a Rending Weapon (+5 points) or a Power Weapon (+10 points). When in base-to-base contact with an enemy Independent Character, he may re-roll failed To Hit rolls against that Character.</description>
+<description>The Cell Specialist gains Weapon Skill 6 and is equipped with a Master-crafted Power Weapon (replacing his Close Combat Weapon). While he remains alive, any model in the Cell may replace its Close Combat Weapon with a Rending Weapon (+5 points) or a Power Weapon (+10 points). When in base-to-base contact with an enemy Independent Character, he may re-roll failed To Hit rolls against that Character.</description>
 </rule>
 <rule id="6757-e2bc-28bc-576d" name="Assassin Operative (Agents of the Sigillite)" hidden="false">
 <description>Instead of a Sigillite Operative Cell, the Detachment's optional Elites choice may be a single Officio Assassinorum Assassin, selected from the appropriate entry of the Talons of the Emperor army list using all of its points costs, wargear and special rules. Only one Assassin may be included. For the Orders of the Sigillite it counts as a member of the Detachment, but it gains no other Agents of the Sigillite rules and no access to the Agents of the Sigillite Armoury. All normal Officio Assassinorum restrictions (including Assassin Operative and One Assassin) apply. An Assassin may not be the army's Warlord.</description>
@@ -39138,6 +39515,18 @@ V - Vetus Inimicitia: secretly nominate one enemy Independent Character; +2 VP i
 </rule>
 <rule id="7a10-f60a-2c4f-4d26" name="The Errant Librarian" hidden="false">
 <description>Rubio is a Psychic Mastery Level 3 Psyker who generates his Psychic Powers from the Sanctic Daemonology discipline. He may choose his powers rather than determining them randomly, and may never generate powers from Malefic Daemonology. Psychic Hood: whenever an enemy Psyker successfully passes a Psychic Test, Rubio may attempt to nullify the power using his Psychic Hood according to the normal rules.</description>
+</rule>
+<rule id="5ff1-0cca-ecb1-aba4" name="Doom (Eldar Psychic Power)" hidden="false">
+<description>Doom - an Eldar psychic power, available through Eldritch Tutelage (The Alien Brotherhood): a single Blackshield Librarian in the army may select it in place of one of his normal psychic powers. He uses the power according to its normal rules from the Eldar army list (not printed in The Lost and the Damned) and gains no other Eldar special rules, equipment or psychic abilities.</description>
+</rule>
+<rule id="a7b0-6998-17b7-03eb" name="Guide (Eldar Psychic Power)" hidden="false">
+<description>Guide - an Eldar psychic power, available through Eldritch Tutelage (The Alien Brotherhood): a single Blackshield Librarian in the army may select it in place of one of his normal psychic powers. He uses the power according to its normal rules from the Eldar army list (not printed in The Lost and the Damned) and gains no other Eldar special rules, equipment or psychic abilities.</description>
+</rule>
+<rule id="e80a-63a8-c8fc-7f74" name="Mind War (Eldar Psychic Power)" hidden="false">
+<description>Mind War - an Eldar psychic power, available through Eldritch Tutelage (The Alien Brotherhood): a single Blackshield Librarian in the army may select it in place of one of his normal psychic powers. He uses the power according to its normal rules from the Eldar army list (not printed in The Lost and the Damned) and gains no other Eldar special rules, equipment or psychic abilities.</description>
+</rule>
+<rule id="9d1f-a10a-33e4-0b5d" name="Eldritch Storm (Eldar Psychic Power)" hidden="false">
+<description>Eldritch Storm - an Eldar psychic power, available through Eldritch Tutelage (The Alien Brotherhood): a single Blackshield Librarian in the army may select it in place of one of his normal psychic powers. He uses the power according to its normal rules from the Eldar army list (not printed in The Lost and the Damned) and gains no other Eldar special rules, equipment or psychic abilities.</description>
 </rule>
 <rule id="2df7-351e-d581-ff63" name="Psychic Power Type: Blessing" hidden="false">
 <description>Blessings target a friendly unit and confer some benefit. Invoked at any time during the psyker's Movement phase unless otherwise noted. Duration: until the start of the psyker's own next turn. Blessings with the same effects stack if they are differently named powers; exact copies (same name) cannot be stacked on the same unit. Characteristics cannot be modified above 10 or below 1. If a psyker with an active blessing is removed from play, its blessings are immediately cancelled.</description>
@@ -39348,6 +39737,9 @@ V - Vetus Inimicitia: secretly nominate one enemy Independent Character; +2 VP i
 </rule>
 <rule id="778a-fc7e-2570-301d" name="Strands of Fate (Psychic Power)" hidden="false">
 <description>Malediction. Choose one enemy non-Vehicle unit within 18" and line of sight. Until the beginning of Magnus' next turn, that unit must pass a Leadership Test each time it attempts to move during the Movement phase, shoot during the Shooting phase or declare a Charge. If the test is failed, the attempted action is lost and the unit may not attempt that type of action again during that phase. A separate Leadership Test is required for each different action attempted.</description>
+</rule>
+<rule id="b613-f30b-a728-cc39" name="Strands of Fate (Shard of the Crimson King)" hidden="false">
+<description>Malediction. Range 18". Choose one enemy non-Vehicle unit within range and line of sight. Until the beginning of Magnus' next turn, the affected unit must pass a Leadership Test each time it wishes to: Move; Shoot; Charge. If the test is failed, that action is lost for that phase.</description>
 </rule>
 <rule id="c5fb-6297-1376-4e29" name="Fury of the Salamander (Psychic Power)" hidden="false">
 <description>Witchfire - Beam. Range 18", S5, AP1, Assault 1, Elemental Horror. Elemental Horror: if an enemy unit suffers one or more unsaved Wounds from Fury of the Salamander, it must immediately take a Morale test regardless of how many casualties were caused, with a Leadership penalty equal to the number of unsaved Wounds caused by Fury of the Salamander. (Counts as a Pyromancy power for Salamanders Librarians in a Detachment using The Awakening Fire.)</description>
@@ -40728,6 +41120,14 @@ V - Vetus Inimicitia: secretly nominate one enemy Independent Character; +2 VP i
 <characteristic name="S" typeId="6204-806b-a18a-c0be">6</characteristic>
 <characteristic name="AP" typeId="964e-6f66-dcaa-247a">-</characteristic>
 <characteristic name="Type" typeId="54df-9f85-8d55-7440">Witchfire - Beam, Assault 1, Strikedown</characteristic>
+</characteristics>
+</profile>
+<profile id="3ea2-5e92-c35b-1084" name="Crush (Telekinesis)" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+<characteristics>
+<characteristic name="Range" typeId="4b89-f4f0-2a22-1135">18"</characteristic>
+<characteristic name="S" typeId="6204-806b-a18a-c0be">2D6</characteristic>
+<characteristic name="AP" typeId="964e-6f66-dcaa-247a">D6</characteristic>
+<characteristic name="Type" typeId="54df-9f85-8d55-7440">Witchfire - Focused</characteristic>
 </characteristics>
 </profile>
 <profile id="7464-e6d6-4e12-687d" name="Shockwave (Telekinesis)" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">

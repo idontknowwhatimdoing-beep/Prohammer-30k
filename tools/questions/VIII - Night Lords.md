@@ -1,5 +1,5 @@
 # VIII - Night Lords - questions for the author
 
-Source: `/home/claude/src/legions_v3/VIII_Night_Lords.txt` (line numbers in brackets). Module: `tools/legions/viii_night_lords.py`.
+Source: `/home/claude/src/legions_v4/VIII_Night_Lords.txt` (line numbers in brackets). Module: `tools/legions/viii_night_lords.py`.
 
-1. **Nostraman Chainblade / Chainglaive and Power Weapons** [35-43, 452-453] - The book still says "A Nostraman Chainblade is a Two-Handed Rending Weapon which grants +1 Strength" and "The Nostraman Chainglaive does not count as a Power Weapon." Following your answers, I built the Chainblade (Contekar) as a Power Weapon (ignores Armour Saves) with Rending and Two-Handed. The Chainglaive is still *not* a Power Weapon, and it counts towards the Armoury points caps in the same way a Power Weapon does (+10). Question: Is that right? If so, could you add "counts as a Power Weapon" to the Chainblade text at line 453?
+1. **Nostraman Chainglaive price and Chainblade text** [35-36, 452-453] - The heading now says "NOSTRAMAN CHAINGLAIVE — 25 POINTS", but L36 still says "may purchase a Nostraman Chainglaive for +10 points". Following your answer I built it at +25 points, as a Power Weapon (Rending, Two-Handed). The Nostraman Chainblade (Contekar) text at L453 still reads only "a Two-Handed Rending Weapon which grants +1 Strength"; it stays built as a Power Weapon, following your earlier answer. Question: Should L36 be changed to +25, and should L453 also say "counts as a Power Weapon"?

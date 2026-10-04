@@ -1,6 +1,6 @@
 """Daemons of the Ruinstorm (Age of Darkness army list for ProHammer Classic).
 
-Source: /home/claude/src/Daemons_of_the_Ruinstorm.txt
+Source: /home/claude/src/v4/Daemons_of_the_Ruinstorm.txt
 Questions: tools/questions/Daemons of the Ruinstorm.md
 """
 from armies.common import *  # noqa: F401,F403
@@ -8,7 +8,9 @@ from armies.common import (k, unit, model, upgrade, unique, config, allegiance, 
                            register_data, LOW, COMMANDER, LINE)
 from bsx import PTS, uid, el, wrap, cond, any_of, all_of, modifier, repeat, constraint, rule, entry, link, group
 import gamesystem as gs
-from legiones import W, has, lacks, gear, rules_links, unit_profile
+import legiones as L
+from legiones import W, has, lacks, gear, rules_links, unit_profile, psychic_powers
+import psychic_powers as PSY
 from legiones2 import take, pool, choice, add_mods, add_to, model_swaps, TROOPS, ELITES, FA, HQ, HS
 
 ARMY = "Daemons of the Ruinstorm"
@@ -113,6 +115,8 @@ RULES = {
         "using the Emanation Cost Class). Daemon Swarms and Ruinstorm Possessed may not select Daemonic Weapons. Weapon "
         "names are descriptive only. Monstrous Creatures already treat their normal close combat attacks as Power Weapon "
         "attacks, so a Monstrous cost class model may not select a Warp Blade."),
+    "Armour Save -1": ("Warp Maul: the armour save of a model wounded by this weapon is worsened by 1 (e.g. a 3+ "
+                       "save becomes 4+)."),
     "Crushing": ("Attacks made with this weapon are always resolved at Initiative 1. This applies even if the bearer is "
                  "a Monstrous Creature."),
     # ------------------------------------------------------- warp portals
@@ -163,20 +167,18 @@ RULES = {
     "Lord of the Ruinstorm": (
         "If the Primary Detachment contains a Ruinstorm Daemon Lord, that model must be selected as the army's Warlord, "
         "unless another rule specifically requires a different model to be the Warlord. A Ruinstorm Daemon Lord may not "
-        "be selected as part of a Ruinstorm Allied Detachment."),
+        "be selected as part of a Ruinstorm Allied Detachment. Ka'Bandha (Lord of Murder) takes precedence: an army "
+        "including Ka'Bandha may not include a Ruinstorm Daemon Lord (author's ruling)."),
     "Shepherd of Malign Intent": (
         "Before deployment, nominate one enemy category: Infantry, Jump Infantry, Bikes and Cavalry, or Monstrous "
         "Creatures. The Daemon Chosen and any Daemon unit it joins may re-roll natural To Hit rolls of 1 in close combat "
         "against models of the nominated type."),
-    "Vanguard of Hell": (
-        "During Battle Round 1, a unit of Daemon Brutes in Reserve is eligible to make the special 4+ Reserve roll "
-        "described under The Veil Thins. If successful, it may enter play through an active Warp Portal despite having "
-        "Manifestation Value 2."),
     "Daemon Brute Retinue": (
         "A single unit of Ruinstorm Daemon Brutes may be taken as a Retinue for a Ruinstorm Daemon Lord. It does not occupy "
         "an Elites choice, is selected and paid for normally, forms a single unit with the Daemon Lord at the start of the "
         "battle and may not voluntarily leave the Daemon Lord. A Daemon Lord with the Winged Daemonic Form may not select a "
-        "Daemon Brute Retinue. The Retinue purchases its Emanations separately from the Lord."),
+        "Daemon Brute Retinue. The Retinue purchases its Emanations separately from the Lord. The unit uses the highest "
+        "Manifestation Value in it (3)."),
     "Slaves to Darkness": (
         "Ruinstorm Possessed are mortal vessels: they do not have the Daemon or Daemonic Instability rules, do not possess "
         "an Aetheric Dominion and cannot select Emanations, do not use Manifestation or Warp Portals and deploy normally. "
@@ -224,8 +226,8 @@ RULES = {
         "unaffected. Then remove Cor'bax."),
     "Cor'bax (Aetheric Dominion)": (
         "Cor'bax may only be selected in a Ruinstorm Detachment using the Creeping Scourge Aetheric Dominion. He possesses "
-        "all Core Dominion Rules of Creeping Scourge, always counts as a Favoured Archetype, possesses the Miasma of Decay "
-        "Dominion Emanation and the Crushing Limbs General Emanation at no additional cost and does not receive the "
+        "all Core Dominion Rules of Creeping Scourge, always counts as a Favoured Archetype, possesses the Miasma of "
+        "Feebleness Dominion Emanation (renamed from Miasma of Decay) and the Crushing Limbs General Emanation at no additional cost and does not receive the "
         "Pestilent Monolith Greater Manifestation. Cor'bax is selected as a Lord of War and is Unique."),
     "Psyker (Madail the Undivided)": (
         "Psyker (Mastery Level 3). Madail knows the Telepathy powers Psychic Shriek, Hallucination and Invisibility "
@@ -235,7 +237,9 @@ RULES = {
         "Rules of that Dominion, always counts as a Favoured Archetype, does not receive its Greater Manifestation and "
         "possesses the Horned Crown General Emanation at no additional cost. Madail is selected as a Lord of War and is "
         "Unique."),
-    "Lord of Murder": "If Ka'Bandha is included in the army's Primary Detachment, it must be the army's Warlord.",
+    "Lord of Murder": ("If Ka'Bandha is included in the army's Primary Detachment, it must be the army's Warlord. "
+                      "Ka'Bandha takes precedence over a Ruinstorm Daemon Lord: an army including Ka'Bandha may not "
+                      "include a Ruinstorm Daemon Lord (author's ruling)."),
     "Miasma of Rage": (
         "Ka'Bandha and all friendly Crimson Fury Daemon units within 12\" gain Rage (6th-7th Edition). A model which "
         "already possesses Rage also gains the Rampage special rule while it remains within 12\" of Ka'Bandha."),
@@ -264,11 +268,11 @@ RULES = {
         "Decay made manifest. CORE DOMINION RULES: Unnatural Resilience, Miasma of Decay. FAVOURED ARCHETYPES: Lesser "
         "Daemons, Daemon Swarms, Daemon Brutes, Daemon Behemoths (plus all Daemon Characters and Daemon Lords). GREATER "
         "MANIFESTATION: Pestilent Monolith (Greater Daemons and Daemon Behemoths). DOMINION EMANATIONS: Corpulent Horror, "
-        "Pestilent Touch, Miasma of Decay."),
+        "Pestilent Touch, Miasma of Feebleness."),
     "Unnatural Resilience": ("Models with this Dominion have Feel No Pain (6+). If a model already possesses a better Feel "
                              "No Pain save, use the better value."),
-    "Miasma of Decay (Dominion Rule)": ("Enemy models in base contact with one or more models with this Dominion suffer "
-                                        "-1 Initiative, to a minimum of 1."),
+    "Miasma of Decay": ("Enemy models in base contact with one or more models with this Dominion suffer -1 Initiative, "
+                        "to a minimum of 1."),
     "Maddening Swarms": (
         "Impossible change, fractured possibility and sorcerous power. CORE DOMINION RULES: Born of Sorcery, Flickering "
         "Reality. FAVOURED ARCHETYPES: Lesser Daemons, Daemon Swarms, Daemon Beasts (and Greater Daemon Beasts), Greater "
@@ -371,9 +375,9 @@ RULES = {
     "Pestilent Touch": ("Creeping Scourge Dominion Emanation. The model's normal close combat attacks gain Poisoned (4+). "
                         "This does not confer Poisoned upon attacks made with another special melee weapon unless "
                         "specifically stated otherwise."),
-    "Miasma of Decay (Emanation)": ("Creeping Scourge Dominion Emanation. Enemy models in base contact with a model "
-                                    "possessing this Emanation suffer -1 Weapon Skill, to a minimum of 1. This effect is "
-                                    "not cumulative with itself."),
+    "Miasma of Feebleness": ("Creeping Scourge Dominion Emanation. Enemy models in base contact with a model possessing "
+                             "this Emanation suffer -1 Weapon Skill, to a minimum of 1. This effect is not cumulative "
+                             "with itself."),
     "Sorcerous Conduit": (
         "Maddening Swarms Dominion Emanation. Daemon Characters and Monstrous Creatures only. The model becomes a Psyker "
         "with Mastery Level 1 and may select one power from the Ruinstorm Psychic Powers. If the model is already a Psyker, "
@@ -448,9 +452,6 @@ WEAPONS = {
     "Noxious Maw": ("-", "User", "-", "Melee, Power Weapon, Instant Death on natural 5-6 To Hit vs Infantry/Jump "
                                       "Infantry/Bikes/Cavalry"),
     "Blade of the Undivided": ("-", "User", "-", "Melee, Force Weapon, Rending"),
-    # Ruinstorm Psychic Powers with a weapon profile
-    "Aetheric Bolt": ('18"', "6", "3", "Witchfire, Assault 2"),
-    "Unmaking Gaze": ('12"', "7", "2", "Focused Witchfire, Assault 1"),
 }
 MULTI = {
     "Grenade Launcher": {"Grenade Launcher - Frag": ('24"', "3", "6", "Assault 1, Blast"),
@@ -462,7 +463,7 @@ MULTI = {
 }
 WEAPON_RULES = {
     "Daemonic Blade": ["Rending"], "Great Warp Blade": ["Two-Handed"], "Daemonic Axe": ["Two-Handed"],
-    "Warp Maul": ["Concussive"], "Piercing Talons": ["Rending"], "Crushing Claw": ["Crushing"],
+    "Warp Maul": ["Armour Save -1", "Concussive"], "Piercing Talons": ["Rending"], "Crushing Claw": ["Crushing"],
     "Aetheric Lash": ["Rending"], "Corrosive Vomit": ["Poison"], "Plasma Gun": ["Gets Hot"], "Meltagun": ["Melta"],
     "Power Fist": ["Unwieldy"], "Thunder Hammer": ["Unwieldy", "Concussive"],
     "Blades of Samus": ["Rending", "Armourbane"], "Sword of Six Thousand Miseries": ["Rending"],
@@ -470,6 +471,7 @@ WEAPON_RULES = {
 }
 WARGEAR = {
     "Power Armour": "A model wearing Power Armour has a 3+ Armour Save.",
+    "Flak Armour": "A model wearing Flak Armour has a 5+ Armour Save.",
     # Daemonic Forms
     "Winged": ("Daemonic Form. If the model is Infantry its Unit Type becomes Jump Infantry; if it is a Monstrous "
                "Creature its Unit Type becomes Flying Monster. The model gains all rules associated with its new Unit "
@@ -477,26 +479,6 @@ WARGEAR = {
                "not select a Daemon Brute Retinue."),
     "Mounted": ("Daemonic Form. The model's Unit Type becomes Cavalry and it gains all rules associated with Cavalry."),
     "Beast Form": ("Daemonic Form. The model's Unit Type becomes Beast and it gains all rules associated with Beasts."),
-    # Psychic powers
-    "Aetheric Bolt": "Ruinstorm Psychic Power - Witchfire, 18\". Resolve the profile shown.",
-    "Unmaking Gaze": ("Ruinstorm Psychic Power - Focused Witchfire, 12\". If successfully invoked, resolve a single "
-                      "ranged attack with the profile shown; as a Focused Witchfire the normal rules for determining which "
-                      "model in the target unit is affected apply."),
-    "Veil of Unreality": ("Ruinstorm Psychic Power - Blessing, friendly Daemon unit within 12\". Until the start of the "
-                          "Psyker's next turn, enemy models suffer -1 Ballistic Skill when firing at the affected unit "
-                          "from more than 12\" away (never below 1). No effect on attacks which do not use Ballistic "
-                          "Skill."),
-    "Warp Mutation": ("Ruinstorm Psychic Power - Blessing, friendly Daemon unit within 12\". Choose: Predatory Mutation "
-                      "(+1 Strength) or Quicksilver Mutation (+1 Initiative) until the start of the Psyker's next turn. "
-                      "The same characteristic may not be increased more than once by Warp Mutation."),
-    "Delirium of the Immaterium": ("Ruinstorm Psychic Power - Malediction, enemy unit within 18\". Until the start of the "
-                                   "Psyker's next turn the unit suffers -1 Weapon Skill and -1 Ballistic Skill (neither "
-                                   "below 1)."),
-    "Impossible Geometry": ("Ruinstorm Psychic Power - Blessing, friendly Daemon unit within 12\". Until the start of the "
-                            "Psyker's next turn the unit ignores Movement penalties for Difficult Terrain and moves "
-                            "through it as open ground, but still takes Dangerous Terrain tests; it may not move through "
-                            "impassable terrain, enemy models or locations it could not normally occupy. Grants no "
-                            "additional Movement and does not allow a charge otherwise impossible."),
     # Named character wargear texts
     "Blades of Samus": "Attacks made with the Blades of Samus count as Power Weapon attacks and have Rending and Armourbane.",
     "Sword of Six Thousand Miseries": ("Attacks made with the Sword of Six Thousand Miseries count as attacks made with a "
@@ -535,7 +517,7 @@ DOMINIONS = ["Crimson Fury", "Creeping Scourge", "Maddening Swarms", "Lurid Onsl
              "Suffocating Dread"]
 DOMINION_RULES = {
     "Crimson Fury": ["Fury Incarnate", "Unending Slaughter", "Furious Charge"],
-    "Creeping Scourge": ["Unnatural Resilience", "Miasma of Decay (Dominion Rule)", "Feel No Pain (6+)"],
+    "Creeping Scourge": ["Unnatural Resilience", "Miasma of Decay", "Feel No Pain (6+)"],
     "Maddening Swarms": ["Born of Sorcery", "Flickering Reality"],
     "Lurid Onslaught": ["Preternatural Grace", "Unnatural Swiftness", "Fleet"],
     "Mirror of Hatred": ["Spite Incarnate", "Refusal of the Warp", "Hatred"],
@@ -544,7 +526,7 @@ DOMINION_RULES = {
 DOMINION_EMANATIONS = {
     "Crimson Fury": [("Blood Frenzy", (3, 5, 10)), ("Reaping Blows", (4, 6, 10)), ("Brass-bound Rage", (2, 4, 8))],
     "Creeping Scourge": [("Corpulent Horror", (6, 12, 25)), ("Pestilent Touch", (3, 5, 8)),
-                         ("Miasma of Decay (Emanation)", (2, 5, 10))],
+                         ("Miasma of Feebleness", (2, 5, 10))],
     "Maddening Swarms": [("Sorcerous Conduit", (None, 15, 25)), ("Iridescent Form", (5, 10, 20)),
                          ("Fate-touched", (2, 4, 8))],
     "Lurid Onslaught": [("Quicksilver Grace", (3, 6, 10)), ("Transfixing Presence", (3, 6, 12)),
@@ -591,8 +573,40 @@ RANGED = [
     ("Bone Shard Harpoons", (6, 10, 15)),
     ("Rift Barb", (5, 8, 10)),
 ]
-PSYCHIC_POWERS = ["Aetheric Bolt", "Unmaking Gaze", "Veil of Unreality", "Warp Mutation", "Delirium of the Immaterium",
-                  "Impossible Geometry"]
+RUINSTORM_DISC = "Ruinstorm"
+# Ruinstorm Psychic Powers (L4374-4481), same entry shape as tools/data/psychic_powers.py; added to PSY.POWERS in build()
+RUINSTORM_POWERS = {
+    "Aetheric Bolt": dict(discipline=RUINSTORM_DISC, type="Witchfire", profile=('18"', "6", "3", "Witchfire, Assault 2"),
+                          text="Ruinstorm Psychic Power. Witchfire - range 18\", S6, AP3, Assault 2."),
+    "Unmaking Gaze": dict(discipline=RUINSTORM_DISC, type="Witchfire - Focused",
+                          profile=('12"', "7", "2", "Focused Witchfire, Assault 1"),
+                          text=("Ruinstorm Psychic Power. Focused Witchfire - range 12\". If successfully invoked, resolve "
+                                "a single ranged attack against the target unit with the profile 12\", S7, AP2, Assault 1. "
+                                "As a Focused Witchfire, the normal rules for determining which model in the target unit "
+                                "is affected apply.")),
+    "Veil of Unreality": dict(discipline=RUINSTORM_DISC, type="Blessing", profile=None,
+                              text=("Ruinstorm Psychic Power. Blessing - friendly Daemon unit within 12\". Until the start "
+                                    "of the Psyker's next turn, enemy models suffer -1 Ballistic Skill when firing at the "
+                                    "affected unit from more than 12\" away; Ballistic Skill may never be reduced below 1 "
+                                    "by this power. No effect upon attacks which do not use Ballistic Skill.")),
+    "Warp Mutation": dict(discipline=RUINSTORM_DISC, type="Blessing", profile=None,
+                          text=("Ruinstorm Psychic Power. Blessing - friendly Daemon unit within 12\". When successfully "
+                                "invoked choose: Predatory Mutation (the unit gains +1 Strength) or Quicksilver Mutation "
+                                "(the unit gains +1 Initiative), until the start of the Psyker's next turn. The same "
+                                "characteristic may not be increased more than once by Warp Mutation.")),
+    "Delirium of the Immaterium": dict(discipline=RUINSTORM_DISC, type="Malediction", profile=None,
+                                       text=("Ruinstorm Psychic Power. Malediction - enemy unit within 18\". Until the "
+                                             "start of the Psyker's next turn the unit suffers -1 Weapon Skill and -1 "
+                                             "Ballistic Skill; neither may be reduced below 1.")),
+    "Impossible Geometry": dict(discipline=RUINSTORM_DISC, type="Blessing", profile=None,
+                                text=("Ruinstorm Psychic Power. Blessing - friendly Daemon unit within 12\". Until the "
+                                      "start of the Psyker's next turn the unit ignores penalties to Movement caused by "
+                                      "Difficult Terrain and may move through it as though it were open ground, but must "
+                                      "still take Dangerous Terrain tests where normally required. Models may not move "
+                                      "through impassable terrain, enemy models or other locations they could not "
+                                      "normally occupy. Grants no additional Movement and does not allow a charge that "
+                                      "would otherwise be impossible.")),
+}
 
 DOM = {}          # dominion name -> config option id (set in build)
 LORD_CAT = None   # category of the Ruinstorm Daemon Lord (barred from the Allied Detachment)
@@ -653,16 +667,9 @@ def emanations(key, unit_id, cls, n, archetype, multi, character=False, conduit=
 
 
 def psychic_group(key, unit_id, conduit_id):
-    """One Ruinstorm Psychic Power, only (and then required) with Sorcerous Conduit."""
-    gid = uid("grp", key, "psychic")
-    mn, mx = uid(gid, "min"), uid(gid, "max")
-    links = [link(uid("link", gid, p), W(p), p, constraints=[constraint(uid("link", gid, p, "max"), "max", 1, auto=True)])
-             for p in PSYCHIC_POWERS]
-    on = has(conduit_id, unit_id)
-    return group(gid, "Ruinstorm Psychic Power (Sorcerous Conduit)", hidden=True, links=links,
-                 mods=[modifier("set", "hidden", "false", conds=[on]), modifier("set", mn, 1, conds=[on]),
-                       modifier("set", mx, 1, conds=[on])],
-                 constraints=[constraint(mn, "min", 0), constraint(mx, "max", 0)])
+    """One Ruinstorm Psychic Power (one per unit, like a Brotherhood of Psykers), only with Sorcerous Conduit."""
+    return psychic_powers(uid(key, "conduit"), unit_id, 1, [RUINSTORM_DISC], hide=[lacks(conduit_id, unit_id)],
+                          title="Psychic Powers (Sorcerous Conduit: one Ruinstorm Psychic Power)")
 
 
 def melee_choice(key, unit_id, cls, multi):
@@ -758,11 +765,14 @@ def brutes(root=True):
     if root:
         return squad_daemon("Ruinstorm Daemon Brutes", ELITES, "Elites", "Ruinstorm Daemon Brute", 3, 6, 45,
                             (5, 3, 5, 5, 3, 4, 3, 8, "5++"), "Infantry", 2, GREATER, 2, "Daemon Brutes",
-                            rules_=["Bulky", "Vanguard of Hell", "Daemon Brute Retinue"])
+                            rules_=["Bulky", "Daemon Brute Retinue"])
     return squad_daemon("Ruinstorm Daemon Brute Retinue", None, None, "Ruinstorm Daemon Brute", 1, 3, 45,
                         (5, 3, 5, 5, 3, 4, 3, 8, "5++"), "Infantry", 2, GREATER, 2, "Daemon Brutes",
-                        rules_=["Bulky", "Vanguard of Hell", "Daemon Brute Retinue"], key=k("unit", "brute-retinue"),
+                        rules_=["Bulky", "Daemon Brute Retinue"], key=k("unit", "brute-retinue"),
                         root=False)
+
+
+KABANDHA = None  # id of Ka'Bandha's unit (set in build)
 
 
 def daemon_lord(retinue):
@@ -780,6 +790,9 @@ def daemon_lord(retinue):
                       rules_=["Lord of the Ruinstorm", "The Army's Warlord", "Daemon Brute Retinue", "Daemonic Forms"],
                       extra_groups=[ret_group],
                       constraints=[unique(u, 1, "force")],
+                      mods=[modifier("set", "hidden", "true", conds=[cond(KABANDHA, "roster", "atLeast", 1)]),
+                            error_if("Ka'Bandha takes over as Warlord: an army including Ka'Bandha may not include a "
+                                     "Ruinstorm Daemon Lord.", [cond(KABANDHA, "roster", "atLeast", 1)])],
                       extra_cats=[(LORD_CAT, "Ruinstorm Daemon Lord")])
     # Winged form (hidden while a Retinue is taken)
     tg = take(u, "Daemonic Form", [("Winged", 35)], max_total=1, hide=[with_ret])
@@ -831,7 +844,7 @@ def possessed():
                         modifier("set", "hidden", "true", conds=[up])],
                   constraints=[constraint(amin, "min", 10), constraint(amax, "max", 20)],
                   profiles=[unit_profile(u, "Possessed Auxiliary", "Infantry", 3, 3, 3, 3, 1, 2, 1, 9, "5+")],
-                  links=[gear(aux, "Close Combat Weapon")])
+                  links=[gear(aux, "Close Combat Weapon"), gear(aux, "Flak Armour")])
     leg_m = entry(leg, "Possessed Legionary", typ="model", cost=10, hidden=True,
                   mods=[modifier("set", lmin, 10, conds=[up]), modifier("set", lmax, 20, conds=[up]),
                         modifier("set", "hidden", "false", conds=[up])],
@@ -915,7 +928,8 @@ def arch_daemon():
                          forms=[("Winged", 60)], gm="Arch-Daemon", mods=low_mods(), compulsory=False)
 
 
-def named(name, short, cost, stats, unit_type, weapon, rules_, dominion=None, mods=()):
+def named(name, short, cost, stats, unit_type, weapon, rules_, dominion=None, mods=(), powers=None):
+    """powers: (count, [disciplines], [fixed powers]) for a psyker."""
     u = k("unit", name)
     prof = unit_profile(u, short, unit_type, *stats)
     m = model(u, short, 1, 1, 0, prof, kit=[weapon])
@@ -927,8 +941,12 @@ def named(name, short, cost, stats, unit_type, weapon, rules_, dominion=None, mo
     rl = ["Daemon", "Daemonic Instability", "Manifestation Value 3", *rules_]
     if dominion:
         rl += [dominion] + [r for r in DOMINION_RULES[dominion]]
+    groups = []
+    if powers:
+        n, discs, fixed = powers
+        groups.append(psychic_powers(u, u, n, discs, fixed=fixed))
     return unit(name, cost, LOW, "Lords of War", models=[m], rules_=rl, mods=mods, constraints=[unique(u)], key=u,
-                compulsory=False)
+                compulsory=False, groups=groups)
 
 
 def named_characters():
@@ -940,12 +958,13 @@ def named_characters():
         named("Kyriss the Perverse", "Kyriss the Perverse", 400, (9, 5, 6, 6, 6, 9, 7, 10, "3+/4++"),
               "Monstrous Creature (Character, Unique)", "Sword of Six Thousand Miseries",
               ["Deep Strike", "Psyker", "Psyker (Kyriss the Perverse)", "Kyriss (Aetheric Dominion)",
-               "Quicksilver Grace", "Hit & Run", "Transfixing Presence"], dominion="Lurid Onslaught"),
+               "Quicksilver Grace", "Hit & Run", "Transfixing Presence"], dominion="Lurid Onslaught",
+              powers=(0, [], ["Dominate", "Hallucination"])),
         named("Cor'bax Utterblight Unbound", "Cor'bax Utterblight", 425, (6, 3, 7, 8, 8, 3, 5, 10, "4++"),
               "Monstrous Creature (Character, Unique)", "Noxious Maw",
               ["Eternal Warrior", "Feel No Pain (5+)", "Hammer of Wrath", "Psyker", "Psyker (Cor'bax Utterblight)",
-               "Noisome Tide of Flesh", "Cor'bax (Aetheric Dominion)", "Miasma of Decay (Emanation)", "Crushing Limbs"],
-              dominion="Creeping Scourge"),
+               "Noisome Tide of Flesh", "Cor'bax (Aetheric Dominion)", "Miasma of Feebleness", "Crushing Limbs"],
+              dominion="Creeping Scourge", powers=(2, ["Biomancy"], [])),
     ]
     # Madail: any Dominion
     u = k("unit", "Madail the Undivided")
@@ -955,7 +974,8 @@ def named_characters():
                     rules_=["Daemon", "Daemonic Instability", "Manifestation Value 3", "Deep Strike", "Eternal Warrior",
                             "Adamantium Will", "Psyker", "Psyker (Madail the Undivided)", "The Undivided",
                             "Aetheric Dominion", "Horned Crown"],
-                    mods=low_mods(), constraints=[unique(u)]))
+                    mods=low_mods(), constraints=[unique(u)],
+                    groups=[psychic_powers(u, u, 0, [], fixed=["Psychic Shriek", "Hallucination", "Invisibility"])]))
     # Ka'Bandha
     lord = k("unit", "Ruinstorm Daemon Lord")
     out.append(named("Ka'Bandha, Daemon General of Signus", "Ka'Bandha", 550, (9, 5, 8, 7, 8, 6, 7, 10, "3+/4++"),
@@ -964,9 +984,8 @@ def named_characters():
                       "Lord of Murder", "Miasma of Rage", "Scythe of Hatred", "Eternal Rivalry",
                       "Preferred Enemy (Sanguinius)", "Ka'Bandha (Aetheric Dominion)", "Molten Blood", "Horned Crown"],
                      dominion="Crimson Fury",
-                     mods=[error_if("Ka'Bandha (Lord of Murder) and a Ruinstorm Daemon Lord (Lord of the Ruinstorm) "
-                                    "must both be the Warlord if they are in the Primary Detachment.",
-                                    [cond(lord, "force", "atLeast", 1)])]))
+                     mods=[error_if("Ka'Bandha takes over as Warlord: an army including Ka'Bandha may not include a "
+                                    "Ruinstorm Daemon Lord.", [cond(lord, "roster", "atLeast", 1)])]))
     return out
 
 
@@ -990,12 +1009,31 @@ def allied_force():
               [wrap("categoryLinks", links)])
 
 
+def traitor_only():
+    """Allegiance (Traitor only). Daemons of the Ruinstorm - also as a Ruinstorm Allied Detachment - may only be part of
+    a Traitor army: an error while the army (another catalogue's Detachment) has the Loyalist Allegiance."""
+    e = allegiance(loyalist_ok=True, traitor_ok=True)
+    # keep the (shared) Loyalist id in this catalogue so the check below resolves, but never selectable here
+    for x in e.iter("selectionEntry"):
+        if x.get("id") == L.LOYALIST:
+            x.set("hidden", "true")
+            for c in x.iter("constraint"):
+                c.set("value", "0")
+    for g in e.iter("selectionEntryGroup"):
+        g.set("defaultSelectionEntryId", L.TRAITOR)
+    add_mods(e, [error_if("A Daemons of the Ruinstorm Detachment (including a Ruinstorm Allied Detachment) may only be "
+                          "included in a Traitor army.", [cond(L.LOYALIST, "roster", "atLeast", 1)])])
+    return e
+
+
 # ================================================================== build
 def build():
-    global LORD_CAT
+    global LORD_CAT, KABANDHA
     start(ARMY)
     register_data(rules=RULES, weapons=WEAPONS, multi_profile=MULTI, weapon_rules=WEAPON_RULES, wargear=WARGEAR)
+    PSY.POWERS.update(RUINSTORM_POWERS)
     LORD_CAT = k("cat", "Ruinstorm Daemon Lord")
+    KABANDHA = k("unit", "Ka'Bandha, Daemon General of Signus")
 
     dom_entry, ids = config("dominion", "Aetheric Dominion",
                             [(d, [d] + DOMINION_RULES[d]) for d in DOMINIONS])
@@ -1009,7 +1047,7 @@ def build():
 
     retinue = brutes(root=False)
     units = [
-        allegiance(loyalist_ok=False, traitor_ok=True),
+        traitor_only(),
         dom_entry,
         daemon_lord(retinue), greater_daemon(), daemon_chosen(),
         brutes(),

@@ -35,7 +35,8 @@ RULES = {
     # Armoury
     "Frost Weapon": (
         "Any Space Wolves Character with access to the Space Marine Armoury may purchase a Frost Weapon for +20 points. A "
-        "model already equipped with a Power Weapon may exchange it for a Frost Weapon for +5 points. May be represented "
+        "model already equipped with a Power Weapon may exchange it for a Frost Weapon for +5 points. A model may take a "
+        "Frost Weapon or a Power Weapon, not both. May be represented "
         "by a sword, axe, claw or similar Fenrisian weapon; its appearance has no rules effect."),
     "Great Frost Blade": (
         "A Space Wolves Independent Character with access to the Space Marine Armoury may purchase a Great Frost Blade for "
@@ -337,10 +338,34 @@ def add_links(grp, key, items, hide=None):
                           constraints=[constraint(uid(lid, "max"), "max", 1, auto=True)]))
 
 
+_EXCL_DONE = set()
+
+
+def _exclusive_power_weapon(lk):
+    """Power Weapon link: max 0 while the same model has a Frost Weapon."""
+    if id(lk) in _EXCL_DONE:
+        return
+    _EXCL_DONE.add(id(lk))
+    cs = lk.find("constraints")
+    mx = [c for c in cs if c.get("type") == "max"] if cs is not None else []
+    if mx:
+        cid = mx[0].get("id")
+    else:
+        cid = uid(lk.get("id"), "sw-frost-pw-max")
+        add_to(lk, "constraints", [constraint(cid, "max", 1, auto=True)])
+        cs = lk.find("constraints")
+    mods = lk.find("modifiers")
+    if mods is None:
+        mods = el("modifiers")
+        lk.insert(list(lk).index(cs), mods)
+    mods.append(modifier("set", cid, 0, conds=[has(W("Frost Weapon"), "parent")]))
+
+
 def frost_variants(roots):
     """Frost Weapon: wherever a Character model may choose a Power Weapon, it may choose a Frost Weapon instead
     (+5 where the Power Weapon is a free default/basic wargear, +20 otherwise). A Character with a fixed Power Weapon
-    gets a 'Replace Power Weapon' choice (Frost Weapon +5)."""
+    gets a 'Replace Power Weapon' choice (Frost Weapon +5). Author: a model picks a Frost Weapon or a Power Weapon,
+    never both (each option's max becomes 0 while the model has the other)."""
     base_id = W("Power Weapon")
     done = set()
     n = 0
@@ -370,10 +395,10 @@ def frost_variants(roots):
                     cs = lk.find("costs")
                     cost = float(cs[0].get("value")) if cs is not None and len(cs) else 0
                     nid = uid(lk.get("id"), "variant", "Frost Weapon")
-                    cons = []
-                    if any(c.get("type") == "max" for c in lk.iter("constraint")):
-                        cons = [constraint(uid(nid, "max"), "max", 1, auto=True)]
-                    new_l = link(nid, W("Frost Weapon"), "Frost Weapon", cost=5 if cost == 0 else 20, constraints=cons)
+                    cons = [constraint(uid(nid, "max"), "max", 1, auto=True)]
+                    new_l = link(nid, W("Frost Weapon"), "Frost Weapon", cost=5 if cost == 0 else 20, constraints=cons,
+                                 mods=[modifier("set", uid(nid, "max"), 0, conds=[has(base_id, "parent")])])
+                    _exclusive_power_weapon(lk)
                     if g.get("defaultSelectionEntryId") is not None:
                         new_l.set("sortIndex", str(int(lk.get("sortIndex") or 1) + 100))
                     links.append(new_l)
@@ -748,12 +773,12 @@ def consuls(ctx):
     lib = PSY.LIBRARIAN
     master = entry(mor, "Master of Runes (Mastery Level 2)", cost=25,
                    constraints=[constraint(uid(mor, "max"), "max", 1, auto=True)],
-                   infolinks=rules_links(["Master of Runes"], key=mor),
-                   groups=[required_choice(mor, "Additional Psychic Power Discipline", [(d, []) for d in lib])])
-    # Mystic Winds of Fenris is always known; a Master of Runes selects one more power from the Discipline picked
+                   infolinks=rules_links(["Master of Runes"], key=mor))
+    # Mystic Winds of Fenris is always known; a Master of Runes selects one more power directly from the allowed
+    # Disciplines (offered only while the Master of Runes upgrade is taken)
     powers = psychic_powers(uid("sw-rune-priest", "powers"), L.CENTURION, 0, lib, fixed=["Mystic Winds of Fenris"],
                             more=[(1, has(mor, L.CENTURION))],
-                            filters={d: [choice_id(mor, "Additional Psychic Power Discipline", d)] for d in lib})
+                            filters={d: [mor] for d in lib})
     rp = add_consul(ctx, "Rune Priest", 25, ["Psyker", "Legion Support Officer", "Rune Priest"],
                     kit=["Runic Force Weapon", "Wolf Tail Talisman"], options=[master], groups_=[powers],
                     support_officer=True)

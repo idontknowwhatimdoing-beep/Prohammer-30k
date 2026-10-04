@@ -849,16 +849,19 @@ def blessings(ctx):
 
 
 BASIC_MELEE = ("Chainsword", "Close Combat Weapon", "Chainaxe")
+NOT_IC_OR_SERGEANT = {"Legion Apothecary", "Legion Standard Bearer"}
 
 
 def add_culling_blade(roots):
-    """Cthonian Culling Blade (+10): replaces a basic weapon such as a Chainsword, for Independent Characters and
+    """Cthonian Culling Blade (+10): replaces a basic close combat weapon (Chainsword, Chainaxe, ...), for Independent Characters and
     Sergeants with access to the Space Marine Armoury that are not in Terminator Armour."""
     tda_ids = {W(n) for n in TDA}
     basic = {W(b) for b in BASIC_MELEE}
     blade = W("Cthonian Culling Blade")
     n = 0
     for e in character_entries(roots):
+        if e.get("name") in NOT_IC_OR_SERGEANT:
+            continue  # only Independent Characters and squad Sergeants
         groups = char_groups(e)
         if not any((g.get("name") or "").startswith("Space Marine Armoury") for g in groups):
             continue
@@ -872,8 +875,15 @@ def add_culling_blade(roots):
                 continue
             if blade in {lk.get("targetId") for lk in links}:
                 continue
+            # author: it only replaces a close combat weapon (Chainsword, Chainaxe, ...), not a pistol or bolter
             base = next((lk for lk in links if lk.get("targetId") in basic), None)
             if base is None:
+                continue
+            default = g.get("defaultSelectionEntryId")
+            if default is not None:
+                if base.get("id") != default:
+                    continue
+            elif (g.get("name") or "") not in {"Replace " + b for b in BASIC_MELEE}:
                 continue
             nid = uid(base.get("id"), "variant", "Cthonian Culling Blade")
             mods = None

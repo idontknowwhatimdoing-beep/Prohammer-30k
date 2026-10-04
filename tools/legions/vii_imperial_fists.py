@@ -48,8 +48,9 @@ RULES = {
         "carry no more than one weapon in addition to the shield. Grants a 3+ Invulnerable Save. The shield occupies one "
         "hand and the bearer may never receive the bonus Attack for fighting with two close-combat weapons. Other "
         "Imperial Fists units may only gain access to it through their own army list entries; it does not make Storm "
-        "Shields generally available to the Legiones Astartes. It counts towards the Armoury points limit and may not be "
-        "combined with a Refractor Field, Combat Shield or Boarding Shield."),
+        "Shields generally available to the Legiones Astartes. The shield takes the place of the bearer's Bolt Pistol. "
+        "It counts towards the Armoury points limit and may not be combined with a Refractor Field, Combat Shield or "
+        "Boarding Shield (an Iron Halo is allowed)."),
     "Teleportation Transponders": (
         "Any Imperial Fists unit composed entirely of models wearing any form of Terminator Armour may purchase "
         "Teleportation Transponders for +15 points per unit. An Imperial Fists Independent Character wearing any form of "
@@ -592,6 +593,25 @@ def vigil_shield_limits(ctx):
                                                for x in ("Refractor Field", "Combat Shield", "Boarding Shield")])])])
 
 
+def vigil_replaces_pistol(ctx):
+    """The Vigil Pattern Storm Shield takes the place of the Bolt Pistol (author's answer): it is an option of the
+    Praetor's/Centurion's 'Replace Bolt Pistol' slot inside the 100-pt Armoury (so it counts towards the cap)."""
+    for n in ("Legion Praetor", "Legion Centurion"):
+        done = False
+        for g in ctx.unit(n).iter("selectionEntryGroup"):
+            if g.get("name") != "Space Marine Armoury (max 100 pts)":
+                continue
+            for sub in g.iter("selectionEntryGroup"):
+                if sub.get("name") != "Replace Bolt Pistol":
+                    continue
+                links = sub.find("entryLinks")
+                lid = uid("link", sub.get("id"), "legion", "Vigil Pattern Storm Shield")
+                links.append(link(lid, W("Vigil Pattern Storm Shield"), "Vigil Pattern Storm Shield", cost=25,
+                                  constraints=[constraint(uid(lid, "max"), "max", 1, auto=True)]))
+                done = True
+        assert done, n
+
+
 # ------------------------------------------------------------------ extend
 def extend(ctx):
     ctx.legion_rules([LR, "Disciplined Fire", "Fortification Masters", "Blind to the Risk"])
@@ -601,7 +621,7 @@ def extend(ctx):
     ctx.finish()  # new retinues become shared entries before the Legion-wide changes below
 
     # Armoury
-    add_armoury_items(ctx, [("Vigil Pattern Storm Shield", 25)], who=("praetor", "centurion"))
+    vigil_replaces_pistol(ctx)
     character_variant(ctx.all_entries(), "Power Fist", "Solarite Power Gauntlet", 5, 30)
     add_teleportation(ctx)
     vigil_shield_limits(ctx)

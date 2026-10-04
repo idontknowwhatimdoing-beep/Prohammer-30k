@@ -2406,6 +2406,7 @@
 <infoLinks>
 <infoLink id="a1e6-507c-4a18-56bd" name="Crush (Telekinesis)" hidden="false" targetId="1654-f41b-864b-1ba4" type="rule" />
 <infoLink id="b3aa-ac8e-4aca-12b2" name="Psychic Power Type: Witchfire - Focused" hidden="false" targetId="728a-56b9-f9e8-53a2" type="rule" />
+<infoLink id="6bec-e6b8-d934-11ac" name="Crush (Telekinesis)" hidden="false" targetId="3ea2-5e92-c35b-1084" type="profile" />
 </infoLinks>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
@@ -2789,18 +2790,6 @@
 <infoLink id="d72e-9191-1adf-efe0" name="Dark Flame (Daemonology (Malefic))" hidden="false" targetId="6eb6-8caf-e509-20f1" type="rule" />
 <infoLink id="83d3-2453-c2b3-cbd6" name="Psychic Power Type: Witchfire" hidden="false" targetId="d57f-7eaf-5589-f80d" type="rule" />
 <infoLink id="ab18-69ac-7210-260c" name="Dark Flame (Daemonology (Malefic))" hidden="false" targetId="052f-aed2-8ef8-a7e6" type="profile" />
-</infoLinks>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
-</costs>
-</selectionEntry>
-<selectionEntry id="da24-4f13-4257-e70b" name="Possession (Daemonology (Malefic))" hidden="false" collective="false" import="true" type="upgrade">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="379d-b5e3-2388-6599" type="max" />
-</constraints>
-<infoLinks>
-<infoLink id="1dc3-979e-054b-4bbe" name="Possession (Daemonology (Malefic))" hidden="false" targetId="0507-b55d-f00f-4254" type="rule" />
-<infoLink id="051e-07b2-a761-ceac" name="Psychic Power Type: Conjuration" hidden="false" targetId="c913-19fd-3d6e-40c8" type="rule" />
 </infoLinks>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
@@ -45072,10 +45061,10 @@ Afterwards the squad may not enter Overwatch, may not make Return Fire or Stand 
 <description>A Raven Guard Detachment may never include more Heavy Support selections than Fast Attack selections. Dedicated Transports are ignored when determining this restriction.</description>
 </rule>
 <rule id="ddb6-c125-3575-8ff6" name="Raven's Talons" hidden="false">
-<description>Count as a pair of Rending Weapons: the bearer receives the normal +1 Attack for fighting with two close-combat weapons. Any model in a Raven Guard Legion Veteran Squad equipped with a Bolt Pistol and Chainsword may replace both with Raven's Talons for +7 points. Characters equipped with a Pair of Lightning Claws have no access to Raven's Talons. Other units only where their entry permits.</description>
+<description>Count as a pair of Rending Weapons: the bearer receives the normal +1 Attack for fighting with two close-combat weapons. Any model in a Raven Guard Legion Veteran Squad equipped with a Bolt Pistol and Chainsword may replace both with Raven's Talons for +7 points. Other units only where their entry permits.</description>
 </rule>
 <rule id="3e90-a606-709a-6bfb" name="Fulcrum Hand Cannon" hidden="false">
-<description>Any Raven Guard Independent Character or squad Sergeant with access to the Space Marine Armoury may replace one or two Bolt Pistols with one or two Fulcrum Hand Cannons for +10 points each; Destroyer Sergeants must replace both. A Raven Guard Moritat may replace either or both of his Bolt Pistols for +10 points each. Fulcrum Hand Cannons do not count towards the Armoury points caps.</description>
+<description>Any Raven Guard Independent Character or squad Sergeant with access to the Space Marine Armoury may replace one or two Bolt Pistols with one or two Fulcrum Hand Cannons for +10 points each; Destroyer Sergeants need not take them, but if they do they must replace both. A Raven Guard Moritat may replace either or both of his Bolt Pistols for +10 points each. Fulcrum Hand Cannons do not count towards the Armoury points caps.</description>
 </rule>
 <rule id="3bd9-ad80-02d8-2f20" name="Shroud Bombs" hidden="false">
 <description>Count as Defensive Grenades. An enemy unit attempting to charge a unit equipped with Shroud Bombs must first pass a Leadership test; if failed, the charge may not be attempted and the unit may not declare another charge that turn. Vehicles, models with the Daemon special rule and units containing a model with Night Vision are unaffected.</description>
@@ -45378,6 +45367,9 @@ LIMITATIONS - Loyalist Raven Guard Detachments only. No units with the Immobile 
 </rule>
 <rule id="778a-fc7e-2570-301d" name="Strands of Fate (Psychic Power)" hidden="false">
 <description>Malediction. Choose one enemy non-Vehicle unit within 18" and line of sight. Until the beginning of Magnus' next turn, that unit must pass a Leadership Test each time it attempts to move during the Movement phase, shoot during the Shooting phase or declare a Charge. If the test is failed, the attempted action is lost and the unit may not attempt that type of action again during that phase. A separate Leadership Test is required for each different action attempted.</description>
+</rule>
+<rule id="b613-f30b-a728-cc39" name="Strands of Fate (Shard of the Crimson King)" hidden="false">
+<description>Malediction. Range 18". Choose one enemy non-Vehicle unit within range and line of sight. Until the beginning of Magnus' next turn, the affected unit must pass a Leadership Test each time it wishes to: Move; Shoot; Charge. If the test is failed, that action is lost for that phase.</description>
 </rule>
 <rule id="c5fb-6297-1376-4e29" name="Fury of the Salamander (Psychic Power)" hidden="false">
 <description>Witchfire - Beam. Range 18", S5, AP1, Assault 1, Elemental Horror. Elemental Horror: if an enemy unit suffers one or more unsaved Wounds from Fury of the Salamander, it must immediately take a Morale test regardless of how many casualties were caused, with a Leadership penalty equal to the number of unsaved Wounds caused by Fury of the Salamander. (Counts as a Pyromancy power for Salamanders Librarians in a Detachment using The Awakening Fire.)</description>
@@ -46542,6 +46534,14 @@ LIMITATIONS - Loyalist Raven Guard Detachments only. No units with the Immobile 
 <characteristic name="S" typeId="6204-806b-a18a-c0be">6</characteristic>
 <characteristic name="AP" typeId="964e-6f66-dcaa-247a">-</characteristic>
 <characteristic name="Type" typeId="54df-9f85-8d55-7440">Witchfire - Beam, Assault 1, Strikedown</characteristic>
+</characteristics>
+</profile>
+<profile id="3ea2-5e92-c35b-1084" name="Crush (Telekinesis)" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+<characteristics>
+<characteristic name="Range" typeId="4b89-f4f0-2a22-1135">18"</characteristic>
+<characteristic name="S" typeId="6204-806b-a18a-c0be">2D6</characteristic>
+<characteristic name="AP" typeId="964e-6f66-dcaa-247a">D6</characteristic>
+<characteristic name="Type" typeId="54df-9f85-8d55-7440">Witchfire - Focused</characteristic>
 </characteristics>
 </profile>
 <profile id="7464-e6d6-4e12-687d" name="Shockwave (Telekinesis)" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">

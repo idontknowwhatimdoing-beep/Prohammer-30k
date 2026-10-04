@@ -335,13 +335,7 @@ def mortus_poisoners(key="Mortus Poisoner Squad", root=True):
                           take(pid, "Poison-master Wargear", [("Artificer Armour", 10), ("Phosphex Bomb", 10, 3)]),
                           pa_armoury(pid, u, 10, slots=["Bolt Pistol"], skip=("Artificer Armour",))])
     phos, _ = pool(u, "Phosphex Bomb (one Mortus Poisoner per five models)", u, [("Phosphex Bomb", 10)], 0, every=5)
-    # Legion Destroyer Company (Forbidden Arsenal): up to two per five models
-    rad, rad_mx = pool(u, "Legion Destroyer Company: Missile Launcher (up to 2 per 5 models)", u,
-                       [("Missile Launcher with Suspensor Web and Rad Missiles", 25)], 0)
-    no_dc = [cond(rite_id("Legion Destroyer Company"), "force", "lessThan", 1)]
-    add_mods(rad, [modifier("increment", rad_mx, 2, conds=[rite("Legion Destroyer Company")],
-                            repeats=[repeat("model", u, 5)]),
-                   modifier("set", "hidden", "true", conds=no_dc)])
+    # Author: no Forbidden Arsenal Missile Launchers for Mortus Poisoners (they could not take one before)
     rl = [LR, "Counter-Attack", "Destroyer Cadre", "Destroyer Cadre (Mortus Poisoners)"] + ([] if root else ["Retinue"])
     return entry(u, "Mortus Poisoner Squad", typ="unit", cost=150 - 4 * 20,
                  mods=L2.troop_role_mods("Mortus Poisoner Squad") if root else [],
@@ -349,8 +343,9 @@ def mortus_poisoners(key="Mortus Poisoner Squad", root=True):
                  infolinks=rules_links(rl, key=u),
                  entries=[pm, mp, per_model(u, "Krak Grenades (entire squad)", 2, u, ["Krak Grenades"]),
                           per_model(u, "Melta Bombs (entire squad)", 5, u, ["Melta Bombs"])],
-                 groups=[phos, rad, transports(u, u, ["Legion Rhino Armoured Carrier", "Legion Drop Pod",
-                                                      "Anvillus Pattern Dreadclaw Drop Pod", "Land Raider Phobos"])])
+                 groups=[phos, transports(u, u, ["Legion Rhino Armoured Carrier", "Legion Drop Pod",
+                                                 "Anvillus Pattern Dreadclaw Drop Pod", "Land Raider Phobos",
+                                                 "Land Raider Proteus"])])
 
 
 # ------------------------------------------------------------------ characters

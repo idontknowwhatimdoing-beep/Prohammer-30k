@@ -24,7 +24,7 @@ RULES = {
                        "selection; the Standard Force Organisation Chart then allows 4 Fast Attack / 1 Heavy Support. "
                        "(Toggle the option on the Legion entry on or off.)"),
     # armoury
-    "Nostraman Chainglaive": "The Nostraman Chainglaive does not count as a Power Weapon.",
+    "Nostraman Chainglaive": "The Nostraman Chainglaive counts as a Power Weapon (attacks ignore Armour Saves).",
     "Stealth Adept": (
         "A Night Lords Independent Character may purchase Stealth Adept for +5 points; any Night Lords Infantry or Jump "
         "Infantry unit for +1 point per model (every model must purchase it). Models with Stealth Adept gain Stealth. "
@@ -128,7 +128,7 @@ HORROR_CULT_RITE = (
     "withdraw from close combat.")
 
 WEAPONS = {
-    "Nostraman Chainglaive": ("-", "User +1", "-", "Rending, Two-Handed"),
+    "Nostraman Chainglaive": ("-", "User +1", "-", "Power Weapon, Rending, Two-Handed"),
     "Nostraman Chainblade": ("-", "User +1", "-", "Power Weapon, Rending, Two-Handed"),
     "Escaton Power Claw": ("-", "x2", "-", "Power Fist, re-roll failed To Wound rolls"),
     "Night's Whisper": ("-", "6", "-", "Power Weapon, Two-Handed, Master-crafted"),
@@ -589,7 +589,7 @@ def extend(ctx):
         forbid_when(sa, cgroup("or", [has(W("Space Marine Bike"), i)]))
         add_to(e, "selectionEntries", [sa])
     # Chainglaive / Trophies for Independent Characters and Sergeants
-    add_legion_armoury(ctx, [("Nostraman Chainglaive", 10)])
+    add_legion_armoury(ctx, [("Nostraman Chainglaive", 25)])
     # (squads already equipped with Trophies of Judgement do not offer them to their Sergeant again)
     add_legion_armoury(ctx, [("Trophies of Judgement", 10)], skip_units=("Terror Squad", "Night Raptor Squad"))
     for g, grp in GATES:

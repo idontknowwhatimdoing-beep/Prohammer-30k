@@ -2225,6 +2225,7 @@
 <infoLinks>
 <infoLink id="a1e6-507c-4a18-56bd" name="Crush (Telekinesis)" hidden="false" targetId="1654-f41b-864b-1ba4" type="rule" />
 <infoLink id="b3aa-ac8e-4aca-12b2" name="Psychic Power Type: Witchfire - Focused" hidden="false" targetId="728a-56b9-f9e8-53a2" type="rule" />
+<infoLink id="6bec-e6b8-d934-11ac" name="Crush (Telekinesis)" hidden="false" targetId="3ea2-5e92-c35b-1084" type="profile" />
 </infoLinks>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
@@ -2573,18 +2574,6 @@
 <infoLink id="d72e-9191-1adf-efe0" name="Dark Flame (Daemonology (Malefic))" hidden="false" targetId="6eb6-8caf-e509-20f1" type="rule" />
 <infoLink id="83d3-2453-c2b3-cbd6" name="Psychic Power Type: Witchfire" hidden="false" targetId="d57f-7eaf-5589-f80d" type="rule" />
 <infoLink id="ab18-69ac-7210-260c" name="Dark Flame (Daemonology (Malefic))" hidden="false" targetId="052f-aed2-8ef8-a7e6" type="profile" />
-</infoLinks>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
-</costs>
-</selectionEntry>
-<selectionEntry id="da24-4f13-4257-e70b" name="Possession (Daemonology (Malefic))" hidden="false" collective="false" import="true" type="upgrade">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="379d-b5e3-2388-6599" type="max" />
-</constraints>
-<infoLinks>
-<infoLink id="1dc3-979e-054b-4bbe" name="Possession (Daemonology (Malefic))" hidden="false" targetId="0507-b55d-f00f-4254" type="rule" />
-<infoLink id="051e-07b2-a761-ceac" name="Psychic Power Type: Conjuration" hidden="false" targetId="c913-19fd-3d6e-40c8" type="rule" />
 </infoLinks>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
@@ -24139,6 +24128,13 @@ LIMITATIONS - No units with Slow and Purposeful. No Immobile units (e.g. Drop Po
 </costs>
 </selectionEntry>
 <selectionEntry id="5dcb-c6d4-2c89-a7fd" name="Devourer Terminator Squad" hidden="false" collective="false" import="true" type="unit">
+<modifiers>
+<modifier type="decrement" field="be4e-de67-e953-db35" value="1">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f42f-9f2b-daaa-0964" type="atLeast" />
+</conditions>
+</modifier>
+</modifiers>
 <constraints>
 <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="be4e-de67-e953-db35" type="max" />
 </constraints>
@@ -24514,6 +24510,13 @@ LIMITATIONS - No units with Slow and Purposeful. No Immobile units (e.g. Drop Po
 </profiles>
 <selectionEntryGroups>
 <selectionEntryGroup id="393f-9584-7211-2d4c" name="Space Marine Armoury (max 50 pts)" hidden="false" collective="false" import="true">
+<modifiers>
+<modifier type="increment" field="6b64-b360-426b-1272" value="5">
+<conditions>
+<condition field="selections" scope="ec18-94b6-5073-8eb0" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0f74-edec-f682-9a91" type="atLeast" />
+</conditions>
+</modifier>
+</modifiers>
 <constraints>
 <constraint field="pts0-0000-0000-0001" scope="self" value="50" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="6b64-b360-426b-1272" type="max" />
 </constraints>
@@ -24807,6 +24810,14 @@ LIMITATIONS - No units with Slow and Purposeful. No Immobile units (e.g. Drop Po
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
 </costs>
 </entryLink>
+<entryLink id="015e-8f65-d60c-6bd3" name="Caedere Weapon" hidden="false" collective="false" import="true" targetId="0f74-edec-f682-9a91" type="selectionEntry">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="622c-bd49-1692-91d4" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
+</costs>
+</entryLink>
 </entryLinks>
 </selectionEntryGroup>
 <selectionEntryGroup id="da9c-c78e-c61f-ae91" name="Additional Wargear" hidden="false" collective="false" import="true">
@@ -24939,10 +24950,10 @@ LIMITATIONS - No units with Slow and Purposeful. No Immobile units (e.g. Drop Po
 </selectionEntryGroup>
 </selectionEntryGroups>
 <entryLinks>
-<entryLink id="2b72-f7b5-28b3-287e" name="Power Armour" hidden="false" collective="false" import="true" targetId="1133-946a-2323-7a81" type="selectionEntry">
+<entryLink id="ff08-42c2-4aca-94b1" name="Hardened Power Armour" hidden="false" collective="false" import="true" targetId="672c-13f3-9b38-f472" type="selectionEntry">
 <constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d680-4336-88fa-b298" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0e58-8454-83b2-aa12" type="max" />
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e887-0897-0f86-edec" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7dcb-6d48-f48d-3a48" type="max" />
 </constraints>
 </entryLink>
 <entryLink id="b12e-82b8-1e3d-27fb" name="Boarding Shield" hidden="false" collective="false" import="true" targetId="6d9c-93b7-f35e-12ee" type="selectionEntry">
@@ -24978,10 +24989,10 @@ LIMITATIONS - No units with Slow and Purposeful. No Immobile units (e.g. Drop Po
 </profile>
 </profiles>
 <entryLinks>
-<entryLink id="4ac4-56a5-4c03-4276" name="Power Armour" hidden="false" collective="false" import="true" targetId="1133-946a-2323-7a81" type="selectionEntry">
+<entryLink id="0b82-0a68-6597-a2e2" name="Hardened Power Armour" hidden="false" collective="false" import="true" targetId="672c-13f3-9b38-f472" type="selectionEntry">
 <constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fa12-2362-c225-931a" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6822-ea45-f620-1764" type="max" />
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="126f-5f86-42df-5bd3" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eaf8-9f3b-5aa5-733b" type="max" />
 </constraints>
 </entryLink>
 <entryLink id="31b2-ea7a-583d-3989" name="Bolt Pistol" hidden="false" collective="false" import="true" targetId="10e2-6917-e765-7495" type="selectionEntry">
@@ -41160,6 +41171,13 @@ LIMITATIONS - No units with Slow and Purposeful. No Immobile units (e.g. Drop Po
 </profiles>
 <selectionEntryGroups>
 <selectionEntryGroup id="fd17-4f15-a00e-764a" name="Space Marine Armoury (max 50 pts)" hidden="false" collective="false" import="true">
+<modifiers>
+<modifier type="increment" field="9d41-1530-ec8a-7453" value="5">
+<conditions>
+<condition field="selections" scope="9d99-4b90-bbeb-6aab" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0f74-edec-f682-9a91" type="atLeast" />
+</conditions>
+</modifier>
+</modifiers>
 <constraints>
 <constraint field="pts0-0000-0000-0001" scope="self" value="50" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="9d41-1530-ec8a-7453" type="max" />
 </constraints>
@@ -41453,6 +41471,14 @@ LIMITATIONS - No units with Slow and Purposeful. No Immobile units (e.g. Drop Po
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
 </costs>
 </entryLink>
+<entryLink id="59aa-3f64-884e-e859" name="Caedere Weapon" hidden="false" collective="false" import="true" targetId="0f74-edec-f682-9a91" type="selectionEntry">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="deef-67f3-1c13-7f11" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
+</costs>
+</entryLink>
 </entryLinks>
 </selectionEntryGroup>
 <selectionEntryGroup id="197d-8eac-6bc8-adc2" name="Additional Wargear" hidden="false" collective="false" import="true">
@@ -41585,10 +41611,10 @@ LIMITATIONS - No units with Slow and Purposeful. No Immobile units (e.g. Drop Po
 </selectionEntryGroup>
 </selectionEntryGroups>
 <entryLinks>
-<entryLink id="23cf-f4a5-30fd-ceb2" name="Power Armour" hidden="false" collective="false" import="true" targetId="1133-946a-2323-7a81" type="selectionEntry">
+<entryLink id="1128-4be9-bc26-4a1b" name="Hardened Power Armour" hidden="false" collective="false" import="true" targetId="672c-13f3-9b38-f472" type="selectionEntry">
 <constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ac1d-2751-57d0-f4bd" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7974-6d6a-47c9-a336" type="max" />
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b9d4-9608-74e1-9b2e" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cae0-3dda-34cb-9c2f" type="max" />
 </constraints>
 </entryLink>
 <entryLink id="a8c5-b1c7-60f8-ba0c" name="Boarding Shield" hidden="false" collective="false" import="true" targetId="6d9c-93b7-f35e-12ee" type="selectionEntry">
@@ -41624,10 +41650,10 @@ LIMITATIONS - No units with Slow and Purposeful. No Immobile units (e.g. Drop Po
 </profile>
 </profiles>
 <entryLinks>
-<entryLink id="5fb4-58e1-d117-7d73" name="Power Armour" hidden="false" collective="false" import="true" targetId="1133-946a-2323-7a81" type="selectionEntry">
+<entryLink id="adad-5043-4ef3-5ed6" name="Hardened Power Armour" hidden="false" collective="false" import="true" targetId="672c-13f3-9b38-f472" type="selectionEntry">
 <constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b085-6374-a514-86c3" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6cbb-0f44-3c9b-c38e" type="max" />
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="654e-2cfe-2ff2-7aa5" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0f2e-d33e-5ebc-4778" type="max" />
 </constraints>
 </entryLink>
 <entryLink id="15c9-c63c-a445-a0d0" name="Bolt Pistol" hidden="false" collective="false" import="true" targetId="10e2-6917-e765-7495" type="selectionEntry">
@@ -46586,6 +46612,9 @@ LIMITATIONS - No units with Slow and Purposeful. No Immobile units (e.g. Drop Po
 <rule id="778a-fc7e-2570-301d" name="Strands of Fate (Psychic Power)" hidden="false">
 <description>Malediction. Choose one enemy non-Vehicle unit within 18" and line of sight. Until the beginning of Magnus' next turn, that unit must pass a Leadership Test each time it attempts to move during the Movement phase, shoot during the Shooting phase or declare a Charge. If the test is failed, the attempted action is lost and the unit may not attempt that type of action again during that phase. A separate Leadership Test is required for each different action attempted.</description>
 </rule>
+<rule id="b613-f30b-a728-cc39" name="Strands of Fate (Shard of the Crimson King)" hidden="false">
+<description>Malediction. Range 18". Choose one enemy non-Vehicle unit within range and line of sight. Until the beginning of Magnus' next turn, the affected unit must pass a Leadership Test each time it wishes to: Move; Shoot; Charge. If the test is failed, that action is lost for that phase.</description>
+</rule>
 <rule id="c5fb-6297-1376-4e29" name="Fury of the Salamander (Psychic Power)" hidden="false">
 <description>Witchfire - Beam. Range 18", S5, AP1, Assault 1, Elemental Horror. Elemental Horror: if an enemy unit suffers one or more unsaved Wounds from Fury of the Salamander, it must immediately take a Morale test regardless of how many casualties were caused, with a Leadership penalty equal to the number of unsaved Wounds caused by Fury of the Salamander. (Counts as a Pyromancy power for Salamanders Librarians in a Detachment using The Awakening Fire.)</description>
 </rule>
@@ -47757,6 +47786,14 @@ LIMITATIONS - No units with Slow and Purposeful. No Immobile units (e.g. Drop Po
 <characteristic name="S" typeId="6204-806b-a18a-c0be">6</characteristic>
 <characteristic name="AP" typeId="964e-6f66-dcaa-247a">-</characteristic>
 <characteristic name="Type" typeId="54df-9f85-8d55-7440">Witchfire - Beam, Assault 1, Strikedown</characteristic>
+</characteristics>
+</profile>
+<profile id="3ea2-5e92-c35b-1084" name="Crush (Telekinesis)" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+<characteristics>
+<characteristic name="Range" typeId="4b89-f4f0-2a22-1135">18"</characteristic>
+<characteristic name="S" typeId="6204-806b-a18a-c0be">2D6</characteristic>
+<characteristic name="AP" typeId="964e-6f66-dcaa-247a">D6</characteristic>
+<characteristic name="Type" typeId="54df-9f85-8d55-7440">Witchfire - Focused</characteristic>
 </characteristics>
 </profile>
 <profile id="7464-e6d6-4e12-687d" name="Shockwave (Telekinesis)" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">

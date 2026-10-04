@@ -4,7 +4,7 @@ One place for every power a psyker can select or knows. Used by legiones.psychic
 "Psychic Powers" selection group whose entries carry these rule texts (and weapon profiles for shooting powers).
 
 Sources: core.txt "PSYCHIC DISCIPLINES" (line ~2374) and "POWER TYPES" (line ~2294); Legion powers from
-legions_v3/<Legion>.txt (line numbers in the comments).
+legions_v4/<Legion>.txt (line numbers in the comments).
 
 POWERS: {power name: dict(discipline=..., type=..., text=..., profile=(range, S, AP, type) or None)}
   discipline: a core discipline name, or None for a Legion-specific power (known by a named psyker / unit).
@@ -71,8 +71,10 @@ POWER_TYPES = {
 }
 
 
-def _p(discipline, typ, text, profile=None):
-    return dict(discipline=discipline, type=typ, text=text, profile=profile)
+def _p(discipline, typ, text, profile=None, name=None, rule=None):
+    """name: displayed power name when it differs from the key (two versions of one power);
+    rule: rule / profile name when it differs from the default '<name> (<discipline>)'."""
+    return dict(discipline=discipline, type=typ, text=text, profile=profile, name=name, rule=rule)
 
 
 B, D, P, TK, TP = "Biomancy", "Divination", "Pyromancy", "Telekinesis", "Telepathy"
@@ -166,7 +168,8 @@ POWERS = {
     "Assail": _p(TK, "Witchfire - Beam", "Beam. Range 18\", S6, AP -, Assault 1, Strikedown.",
                  ('18"', "6", "-", "Witchfire - Beam, Assault 1, Strikedown")),
     "Crush": _p(TK, "Witchfire - Focused", "Focused Witchfire - range 18\". Roll 2D6: the target suffers a hit with "
-                "Strength equal to the roll. Roll another D6 for the AP value."),
+                "Strength equal to the roll. Roll another D6 for the AP value.",
+                ('18"', "2D6", "D6", "Witchfire - Focused")),
     "Objuration Mechanicum": _p(TK, "Malediction", "Malediction - enemy unit within 24\". All of the target unit's "
                                 "ranged weapon attacks have the Gets Hot special rule. Vehicles suffer an immediate hit "
                                 "with the Haywire effect."),
@@ -256,6 +259,12 @@ POWERS = {
                           "a Charge. If the test is failed, the attempted action is lost and the unit may not attempt "
                           "that type of action again during that phase. A separate Leadership Test is required for each "
                           "different action attempted."),
+    # Magnus, Shard of the Crimson King (XV_Thousand_Sons.txt 2101-2110): his own Strands of Fate text
+    "Strands of Fate (Shard)": _p(None, "Malediction", "Malediction. Range 18\". Choose one enemy non-Vehicle unit "
+                                  "within range and line of sight. Until the beginning of Magnus' next turn, the "
+                                  "affected unit must pass a Leadership Test each time it wishes to: Move; Shoot; "
+                                  "Charge. If the test is failed, that action is lost for that phase.",
+                                  name="Strands of Fate", rule="Strands of Fate (Shard of the Crimson King)"),
     # XVIII Salamanders (XVIII_Salamanders.txt 216-232): The Awakening Fire, Xiaphas Jurr
     "Fury of the Salamander": _p(None, "Witchfire - Beam", "Witchfire - Beam. Range 18\", S5, AP1, Assault 1, Elemental "
                                  "Horror. Elemental Horror: if an enemy unit suffers one or more unsaved Wounds from Fury "

@@ -164,13 +164,18 @@ _PSY_REGISTERED = []
 
 def power_rule(name):
     """Rule (and profile) name of a psychic power, e.g. 'Smite (Biomancy)' / 'Unseen Bolt (Psychic Power)'."""
-    d = PSY.POWERS[name]["discipline"]
+    p = PSY.POWERS[name]
+    if p.get("rule"):
+        return p["rule"]
+    d = p["discipline"]
     return f"{name} ({d})" if d else f"{name} (Psychic Power)"
 
 
 def power_label(name):
-    d = PSY.POWERS[name]["discipline"]
-    return f"{name} ({d})" if d else name
+    p = PSY.POWERS[name]
+    shown = p.get("name") or name
+    d = p["discipline"]
+    return f"{shown} ({d})" if d else shown
 
 
 def power_type_rule(t):
@@ -213,7 +218,7 @@ def negate(c):
 
 
 def psychic_powers(key, owner, count=0, disciplines=(), fixed=(), filters=None, filter_scope=None, more=(), hide=(),
-                   extra=(), min_disciplines_text=None, title=PSY_GROUP):
+                   extra=(), min_disciplines_text=None, exclude=(), title=PSY_GROUP):
     """A psyker's 'Psychic Powers' selection group.
 
     key:         unique key of this psyker (power entry ids derive from it)
@@ -227,6 +232,7 @@ def psychic_powers(key, owner, count=0, disciplines=(), fixed=(), filters=None, 
     hide:        [conditions] - the whole group is hidden (and empty) while any is true (e.g. another Consul chosen)
     extra:       [(power, [conditions])] - an extra selectable power, offered only while any condition is true
     min_disciplines_text: error text when all selected powers come from a single discipline (e.g. Magnus)
+    exclude:     powers of `disciplines` this psyker may not select (e.g. Possession below Mastery Level 2)
     Too few powers is an error (New Recruit does not pick powers for the player); too many is blocked by the max."""
     register_psychic()
     gid = uid("grp", key, "psychic-powers")
@@ -235,7 +241,7 @@ def psychic_powers(key, owner, count=0, disciplines=(), fixed=(), filters=None, 
     chosen = []
     for d in disciplines:
         for n in PSY.in_discipline(d):
-            if n in fixed:
+            if n in fixed or n in exclude:
                 continue
             eid = uid("psy-power", key, n)
             mods = []
@@ -568,7 +574,8 @@ def consul_group(unit_id):
            mods=[hide_if(has(PRAETOR, "force"))]),
         ce("Esoterist", 25, ["Psyker", "Legion Support Officer", "Forbidden Lore"], kit=["Force Weapon"],
            groups_=[psychic_powers(consul_id("Esoterist"), unit_id, 1,
-                                   ["Daemonology (Sanctic)", "Daemonology (Malefic)"])]),
+                                   ["Daemonology (Sanctic)", "Daemonology (Malefic)"],
+                                   exclude=["Possession"])]),  # Mastery Level 2 or greater only
         ce("Forge Lord", 70, ["Battlesmith", "Lord of the Armoury"], kit=["Artificer Armour", "Servo-Arm"],
            options=[cortex]),
         ce("Herald", 40, ["Legion Support Officer", "Fallen Honour"], groups_=[banner]),

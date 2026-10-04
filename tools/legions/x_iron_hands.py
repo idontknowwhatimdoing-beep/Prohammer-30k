@@ -462,7 +462,8 @@ def terminator_unit(key, name, model_name, leader_name, per, base_cost, stats, l
         groups.insert(0, model_swaps(u, f"{model_name}s: replace Storm Bolter (any number)", u, [tid], GORGON_RANGED,
                                      minus=minus_ranged))
         groups.insert(1, model_swaps(u, f"{model_name}s: replace Power Weapon (any number)", u, [tid], cc))
-    groups.append(transports(u, u, LAND_RAIDERS + ["Anvillus Pattern Dreadclaw Drop Pod", "Legion Spartan Assault Tank"],
+    # Author: Gorgons/Morlocks may take Phobos or Proteus, not the Achilles
+    groups.append(transports(u, u, ["Land Raider Phobos", "Land Raider Proteus", "Anvillus Pattern Dreadclaw Drop Pod", "Legion Spartan Assault Tank"],
                              orbital=False))
     cons = [force_limit(u, 1)] if (limit and root) else []
     return entry(u, name, typ="unit", cost=base_cost - 4 * per, cats=[foc(cat, "Elites", u)] if root else [],

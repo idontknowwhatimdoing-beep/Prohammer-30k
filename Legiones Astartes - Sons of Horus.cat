@@ -815,38 +815,6 @@
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
 </entryLink>
-<entryLink id="cff4-6672-0e62-c8a2" name="Cthonian Culling Blade" hidden="false" collective="false" import="true" targetId="dc92-6d42-88fd-6251" type="selectionEntry">
-<modifiers>
-<modifier type="set" field="hidden" value="true">
-<conditionGroups>
-<conditionGroup type="or">
-<conditions>
-<condition field="selections" scope="2390-3489-e470-7f7f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a6a2-abea-01b2-ad81" type="atLeast" />
-<condition field="selections" scope="2390-3489-e470-7f7f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d900-78c3-2b10-8f9c" type="atLeast" />
-<condition field="selections" scope="2390-3489-e470-7f7f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0656-5d6b-29bb-1441" type="atLeast" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-<modifier type="set" field="9cdc-aa15-6572-92ae" value="0">
-<conditionGroups>
-<conditionGroup type="or">
-<conditions>
-<condition field="selections" scope="2390-3489-e470-7f7f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a6a2-abea-01b2-ad81" type="atLeast" />
-<condition field="selections" scope="2390-3489-e470-7f7f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d900-78c3-2b10-8f9c" type="atLeast" />
-<condition field="selections" scope="2390-3489-e470-7f7f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0656-5d6b-29bb-1441" type="atLeast" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-</modifiers>
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9cdc-aa15-6572-92ae" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
-</costs>
-</entryLink>
 </entryLinks>
 </selectionEntryGroup>
 <selectionEntryGroup id="c758-5dab-2479-3e5b" name="Replace Chainsword" hidden="false" collective="false" import="true" defaultSelectionEntryId="8517-9247-b115-d0f1">
@@ -2597,6 +2565,7 @@
 <infoLinks>
 <infoLink id="a1e6-507c-4a18-56bd" name="Crush (Telekinesis)" hidden="false" targetId="1654-f41b-864b-1ba4" type="rule" />
 <infoLink id="b3aa-ac8e-4aca-12b2" name="Psychic Power Type: Witchfire - Focused" hidden="false" targetId="728a-56b9-f9e8-53a2" type="rule" />
+<infoLink id="6bec-e6b8-d934-11ac" name="Crush (Telekinesis)" hidden="false" targetId="3ea2-5e92-c35b-1084" type="profile" />
 </infoLinks>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
@@ -2945,18 +2914,6 @@
 <infoLink id="d72e-9191-1adf-efe0" name="Dark Flame (Daemonology (Malefic))" hidden="false" targetId="6eb6-8caf-e509-20f1" type="rule" />
 <infoLink id="83d3-2453-c2b3-cbd6" name="Psychic Power Type: Witchfire" hidden="false" targetId="d57f-7eaf-5589-f80d" type="rule" />
 <infoLink id="ab18-69ac-7210-260c" name="Dark Flame (Daemonology (Malefic))" hidden="false" targetId="052f-aed2-8ef8-a7e6" type="profile" />
-</infoLinks>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
-</costs>
-</selectionEntry>
-<selectionEntry id="da24-4f13-4257-e70b" name="Possession (Daemonology (Malefic))" hidden="false" collective="false" import="true" type="upgrade">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="379d-b5e3-2388-6599" type="max" />
-</constraints>
-<infoLinks>
-<infoLink id="1dc3-979e-054b-4bbe" name="Possession (Daemonology (Malefic))" hidden="false" targetId="0507-b55d-f00f-4254" type="rule" />
-<infoLink id="051e-07b2-a761-ceac" name="Psychic Power Type: Conjuration" hidden="false" targetId="c913-19fd-3d6e-40c8" type="rule" />
 </infoLinks>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
@@ -4148,38 +4105,6 @@
 <entryLink id="ace6-c4ea-1f68-2055" name="Volkite Charger" hidden="false" collective="false" import="true" targetId="f7ae-d359-d2ff-f5af" type="selectionEntry" sortIndex="26">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8b4f-402e-0618-87e4" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
-</costs>
-</entryLink>
-<entryLink id="41ab-6115-2b58-0792" name="Cthonian Culling Blade" hidden="false" collective="false" import="true" targetId="dc92-6d42-88fd-6251" type="selectionEntry">
-<modifiers>
-<modifier type="set" field="hidden" value="true">
-<conditionGroups>
-<conditionGroup type="or">
-<conditions>
-<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a6a2-abea-01b2-ad81" type="atLeast" />
-<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d900-78c3-2b10-8f9c" type="atLeast" />
-<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0656-5d6b-29bb-1441" type="atLeast" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-<modifier type="set" field="c16e-244f-6f21-2c23" value="0">
-<conditionGroups>
-<conditionGroup type="or">
-<conditions>
-<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a6a2-abea-01b2-ad81" type="atLeast" />
-<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d900-78c3-2b10-8f9c" type="atLeast" />
-<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0656-5d6b-29bb-1441" type="atLeast" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-</modifiers>
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c16e-244f-6f21-2c23" type="max" />
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
@@ -8523,14 +8448,6 @@
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
-</costs>
-</entryLink>
-<entryLink id="635c-914a-fb82-89b1" name="Cthonian Culling Blade" hidden="false" collective="false" import="true" targetId="dc92-6d42-88fd-6251" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3e54-6c71-3103-0377" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
 </entryLink>
 <entryLink id="ed89-5594-334b-35c1" name="Chainaxe" hidden="false" collective="false" import="true" targetId="83c9-472f-b7f4-4e0b" type="selectionEntry">
@@ -17827,14 +17744,6 @@ LIMITATIONS - The Detachment must include a Legion Centurion upgraded to a Maste
 <entryLink id="0a87-5483-065e-f875" name="Combi-Plasma Gun" hidden="false" collective="false" import="true" targetId="e700-2c4d-9283-a7b7" type="selectionEntry" sortIndex="8">
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
-</costs>
-</entryLink>
-<entryLink id="6a71-bba4-dc6d-b02c" name="Cthonian Culling Blade" hidden="false" collective="false" import="true" targetId="dc92-6d42-88fd-6251" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="55e7-f7d3-7b18-df27" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
 </entryLink>
 <entryLink id="cdf4-7119-4ccf-d673" name="Chainaxe" hidden="false" collective="false" import="true" targetId="83c9-472f-b7f4-4e0b" type="selectionEntry">
@@ -30086,14 +29995,6 @@ LIMITATIONS - The Detachment must include a Legion Centurion upgraded to a Maste
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
 </costs>
 </entryLink>
-<entryLink id="dc0a-a226-a44d-e65f" name="Cthonian Culling Blade" hidden="false" collective="false" import="true" targetId="dc92-6d42-88fd-6251" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c16c-704e-71bc-ca91" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
-</costs>
-</entryLink>
 <entryLink id="33ae-18b3-cf0e-5053" name="Chainaxe" hidden="false" collective="false" import="true" targetId="83c9-472f-b7f4-4e0b" type="selectionEntry">
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="4" />
@@ -30630,14 +30531,6 @@ LIMITATIONS - The Detachment must include a Legion Centurion upgraded to a Maste
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
-</costs>
-</entryLink>
-<entryLink id="ac1d-b5e2-1041-5f12" name="Cthonian Culling Blade" hidden="false" collective="false" import="true" targetId="dc92-6d42-88fd-6251" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0e74-b12f-b924-7df3" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
 </entryLink>
 <entryLink id="2b41-ef22-f7c2-5f55" name="Chainaxe" hidden="false" collective="false" import="true" targetId="83c9-472f-b7f4-4e0b" type="selectionEntry">
@@ -33765,14 +33658,6 @@ LIMITATIONS - The Detachment must include a Legion Centurion upgraded to a Maste
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
 </costs>
 </entryLink>
-<entryLink id="b7a2-2e04-81b2-267d" name="Cthonian Culling Blade" hidden="false" collective="false" import="true" targetId="dc92-6d42-88fd-6251" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4e63-0574-da96-112c" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
-</costs>
-</entryLink>
 <entryLink id="a10a-b19b-d710-d1b2" name="Chainaxe" hidden="false" collective="false" import="true" targetId="83c9-472f-b7f4-4e0b" type="selectionEntry">
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="4" />
@@ -34309,14 +34194,6 @@ LIMITATIONS - The Detachment must include a Legion Centurion upgraded to a Maste
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
-</costs>
-</entryLink>
-<entryLink id="48bb-6527-835f-29e6" name="Cthonian Culling Blade" hidden="false" collective="false" import="true" targetId="dc92-6d42-88fd-6251" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f5a8-0fd1-bc4a-01ff" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
 </entryLink>
 <entryLink id="8a49-eebb-11e9-7121" name="Chainaxe" hidden="false" collective="false" import="true" targetId="83c9-472f-b7f4-4e0b" type="selectionEntry">
@@ -40427,14 +40304,6 @@ LIMITATIONS - The Detachment must include a Legion Centurion upgraded to a Maste
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
 </costs>
 </entryLink>
-<entryLink id="7ee7-1538-5aea-9066" name="Cthonian Culling Blade" hidden="false" collective="false" import="true" targetId="dc92-6d42-88fd-6251" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="40b4-f2c0-c92c-c66b" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
-</costs>
-</entryLink>
 <entryLink id="e3fe-be7e-3866-ff0b" name="Chainaxe" hidden="false" collective="false" import="true" targetId="83c9-472f-b7f4-4e0b" type="selectionEntry">
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="4" />
@@ -40971,14 +40840,6 @@ LIMITATIONS - The Detachment must include a Legion Centurion upgraded to a Maste
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
-</costs>
-</entryLink>
-<entryLink id="4305-9158-6bde-7629" name="Cthonian Culling Blade" hidden="false" collective="false" import="true" targetId="dc92-6d42-88fd-6251" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c0be-d8bc-112c-d622" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
 </entryLink>
 <entryLink id="b6b1-e580-1826-b9fc" name="Chainaxe" hidden="false" collective="false" import="true" targetId="83c9-472f-b7f4-4e0b" type="selectionEntry">
@@ -43273,14 +43134,6 @@ LIMITATIONS - The Detachment must include a Legion Centurion upgraded to a Maste
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
 </costs>
 </entryLink>
-<entryLink id="40e1-7588-d243-f2db" name="Cthonian Culling Blade" hidden="false" collective="false" import="true" targetId="dc92-6d42-88fd-6251" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5aa6-2e4b-845f-4d0b" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
-</costs>
-</entryLink>
 <entryLink id="aa49-8978-419f-cc13" name="Chainaxe" hidden="false" collective="false" import="true" targetId="83c9-472f-b7f4-4e0b" type="selectionEntry">
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="4" />
@@ -43817,14 +43670,6 @@ LIMITATIONS - The Detachment must include a Legion Centurion upgraded to a Maste
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
-</costs>
-</entryLink>
-<entryLink id="60e2-b59e-9080-222b" name="Cthonian Culling Blade" hidden="false" collective="false" import="true" targetId="dc92-6d42-88fd-6251" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="85da-971a-81a0-86fc" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
 </entryLink>
 <entryLink id="d7d7-a9fa-b44a-1883" name="Chainaxe" hidden="false" collective="false" import="true" targetId="83c9-472f-b7f4-4e0b" type="selectionEntry">
@@ -60997,6 +60842,9 @@ LIMITATIONS - The Detachment must include a Legion Centurion upgraded to a Maste
 <rule id="778a-fc7e-2570-301d" name="Strands of Fate (Psychic Power)" hidden="false">
 <description>Malediction. Choose one enemy non-Vehicle unit within 18" and line of sight. Until the beginning of Magnus' next turn, that unit must pass a Leadership Test each time it attempts to move during the Movement phase, shoot during the Shooting phase or declare a Charge. If the test is failed, the attempted action is lost and the unit may not attempt that type of action again during that phase. A separate Leadership Test is required for each different action attempted.</description>
 </rule>
+<rule id="b613-f30b-a728-cc39" name="Strands of Fate (Shard of the Crimson King)" hidden="false">
+<description>Malediction. Range 18". Choose one enemy non-Vehicle unit within range and line of sight. Until the beginning of Magnus' next turn, the affected unit must pass a Leadership Test each time it wishes to: Move; Shoot; Charge. If the test is failed, that action is lost for that phase.</description>
+</rule>
 <rule id="c5fb-6297-1376-4e29" name="Fury of the Salamander (Psychic Power)" hidden="false">
 <description>Witchfire - Beam. Range 18", S5, AP1, Assault 1, Elemental Horror. Elemental Horror: if an enemy unit suffers one or more unsaved Wounds from Fury of the Salamander, it must immediately take a Morale test regardless of how many casualties were caused, with a Leadership penalty equal to the number of unsaved Wounds caused by Fury of the Salamander. (Counts as a Pyromancy power for Salamanders Librarians in a Detachment using The Awakening Fire.)</description>
 </rule>
@@ -62312,6 +62160,14 @@ LIMITATIONS - The Detachment must include a Legion Centurion upgraded to a Maste
 <characteristic name="S" typeId="6204-806b-a18a-c0be">6</characteristic>
 <characteristic name="AP" typeId="964e-6f66-dcaa-247a">-</characteristic>
 <characteristic name="Type" typeId="54df-9f85-8d55-7440">Witchfire - Beam, Assault 1, Strikedown</characteristic>
+</characteristics>
+</profile>
+<profile id="3ea2-5e92-c35b-1084" name="Crush (Telekinesis)" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+<characteristics>
+<characteristic name="Range" typeId="4b89-f4f0-2a22-1135">18"</characteristic>
+<characteristic name="S" typeId="6204-806b-a18a-c0be">2D6</characteristic>
+<characteristic name="AP" typeId="964e-6f66-dcaa-247a">D6</characteristic>
+<characteristic name="Type" typeId="54df-9f85-8d55-7440">Witchfire - Focused</characteristic>
 </characteristics>
 </profile>
 <profile id="7464-e6d6-4e12-687d" name="Shockwave (Telekinesis)" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">

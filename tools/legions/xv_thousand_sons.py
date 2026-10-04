@@ -859,7 +859,7 @@ def magnus_shard():
                                         "Beyond the Perils of the Warp", "The Warp Breathes",
                                         "The Crimson King Shattered"], key=u),
                  links=[gear(u, "Aetheric Blade")],
-                 groups=[psychic_powers(u, u, 6, DISCIPLINES, fixed=["Infernal Phoenix", "Strands of Fate"])])
+                 groups=[psychic_powers(u, u, 6, DISCIPLINES, fixed=["Infernal Phoenix", "Strands of Fate (Shard)"])])
     return allegiance_only(e, loyalist=False)
 
 
@@ -966,6 +966,8 @@ def add_ts_links_to_power_weapons(roots):
 
 CULT_TYPES = ("Infantry", "Jump Infantry", "Bike", "Jetbike")
 NO_CULT = {"Legion", "Allegiance", "Rite of War"}
+# Author: the Rapier Weapons Battery (Artillery carriers + Infantry crew) also picks a Cult
+CULT_EXTRA = {"Legion Rapier Weapons Battery"}
 
 
 def cult_units(entries):
@@ -983,7 +985,7 @@ def cult_units(entries):
                 ch = p.find("characteristics")
                 if ch is not None and len(ch):
                     types.append((ch[0].text or "").strip())
-        if types and all(t.split(" (")[0] in CULT_TYPES for t in types):
+        if e.get("name") in CULT_EXTRA or (types and all(t.split(" (")[0] in CULT_TYPES for t in types)):
             out.append(e)
     return out
 
@@ -1053,9 +1055,25 @@ def _extend(units_by_name, units, shared):
                            item="Teleportation Transponders")
             add_mods(tp, [modifier("set", PTS, 0, conds=[rite("The Guard of the Crimson King")])])
             add_to(e, "selectionEntries", [tp])
-    # The Prosperine Cults: every Thousand Sons Infantry / Jump Infantry / Bike / Jetbike unit picks a Cult
+    # The Prosperine Cults: every Thousand Sons Infantry / Jump Infantry / Bike / Jetbike unit (and the Rapier
+    # Weapons Battery) picks a Cult
     for e in cult_units(base_units + list(RETINUE_SHARED)):
         add_to(e, "selectionEntryGroups", [cult_choice(e.get("id"))])
+    # Sorcerers of Prospero: a Thousand Sons Techmarine (Independent Character) is a Psyker (Mastery Level 1) and
+    # selects one power from the Discipline of his unit's Prosperine Cult
+    for e in base_units + list(RETINUE_SHARED):
+        if not any(g.get("name") == "Prosperine Cult" for g in e.findall("selectionEntryGroups/selectionEntryGroup")):
+            continue
+        for m in e.iter("selectionEntry"):
+            if m.get("type") != "model" or m.get("name") != "Legion Techmarine":
+                continue
+            mid = m.get("id")
+            add_to(m, "selectionEntryGroups", [psychic_powers(mid, mid, 1, DISCIPLINES,
+                                                               filters=cult_disciplines(e.get("id")),
+                                                               filter_scope=e.get("id"), hide=[not_ts()])])
+            add_to(m, "infoLinks", [info_link(L.rule_ref("Sorcerers of Prospero")[0],
+                                              "Psyker (Mastery Level 1) - Sorcerers of Prospero", key=mid + "sop",
+                                              mods=[modifier("set", "hidden", "true", conds=[not_ts()])])])
 
     # Rites of War
     rites = units_by_name["Rite of War"]

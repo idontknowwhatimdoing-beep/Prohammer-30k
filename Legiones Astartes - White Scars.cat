@@ -2299,6 +2299,7 @@
 <infoLinks>
 <infoLink id="a1e6-507c-4a18-56bd" name="Crush (Telekinesis)" hidden="false" targetId="1654-f41b-864b-1ba4" type="rule" />
 <infoLink id="b3aa-ac8e-4aca-12b2" name="Psychic Power Type: Witchfire - Focused" hidden="false" targetId="728a-56b9-f9e8-53a2" type="rule" />
+<infoLink id="6bec-e6b8-d934-11ac" name="Crush (Telekinesis)" hidden="false" targetId="3ea2-5e92-c35b-1084" type="profile" />
 </infoLinks>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
@@ -2647,18 +2648,6 @@
 <infoLink id="d72e-9191-1adf-efe0" name="Dark Flame (Daemonology (Malefic))" hidden="false" targetId="6eb6-8caf-e509-20f1" type="rule" />
 <infoLink id="83d3-2453-c2b3-cbd6" name="Psychic Power Type: Witchfire" hidden="false" targetId="d57f-7eaf-5589-f80d" type="rule" />
 <infoLink id="ab18-69ac-7210-260c" name="Dark Flame (Daemonology (Malefic))" hidden="false" targetId="052f-aed2-8ef8-a7e6" type="profile" />
-</infoLinks>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
-</costs>
-</selectionEntry>
-<selectionEntry id="da24-4f13-4257-e70b" name="Possession (Daemonology (Malefic))" hidden="false" collective="false" import="true" type="upgrade">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="379d-b5e3-2388-6599" type="max" />
-</constraints>
-<infoLinks>
-<infoLink id="1dc3-979e-054b-4bbe" name="Possession (Daemonology (Malefic))" hidden="false" targetId="0507-b55d-f00f-4254" type="rule" />
-<infoLink id="051e-07b2-a761-ceac" name="Psychic Power Type: Conjuration" hidden="false" targetId="c913-19fd-3d6e-40c8" type="rule" />
 </infoLinks>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
@@ -3169,61 +3158,6 @@
 <infoLinks>
 <infoLink id="830c-1ee8-9f08-8de3" name="Epistolary (Stormseer)" hidden="false" targetId="63d2-6507-b5cd-9152" type="rule" />
 </infoLinks>
-<selectionEntryGroups>
-<selectionEntryGroup id="829f-97c4-18d1-ec39" name="Additional Psychic Power Discipline" hidden="false" collective="false" import="true">
-<modifiers>
-<modifier type="add" field="error" value="Choose a Additional Psychic Power Discipline.">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="755d-15bd-6a96-180c" type="lessThan" />
-<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8d94-912d-bbc3-221f" type="lessThan" />
-<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cbb9-c506-b7d8-80be" type="lessThan" />
-<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="df5d-9b22-4c52-ed53" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-</modifiers>
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7849-1b81-8680-4b9c" type="max" />
-</constraints>
-<selectionEntries>
-<selectionEntry id="755d-15bd-6a96-180c" name="Divination" hidden="false" collective="false" import="true" type="upgrade">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="193c-46d1-1558-c016" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
-</costs>
-</selectionEntry>
-<selectionEntry id="8d94-912d-bbc3-221f" name="Biomancy" hidden="false" collective="false" import="true" type="upgrade">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bca9-aeb0-ff06-b2d3" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
-</costs>
-</selectionEntry>
-<selectionEntry id="cbb9-c506-b7d8-80be" name="Telepathy" hidden="false" collective="false" import="true" type="upgrade">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8e18-a159-0099-7d62" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
-</costs>
-</selectionEntry>
-<selectionEntry id="df5d-9b22-4c52-ed53" name="Pyromancy" hidden="false" collective="false" import="true" type="upgrade">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e9b5-186c-f83f-7fb5" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
-</costs>
-</selectionEntry>
-</selectionEntries>
-</selectionEntryGroup>
-</selectionEntryGroups>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
 </costs>
@@ -3268,7 +3202,7 @@
 <conditionGroups>
 <conditionGroup type="and">
 <conditions>
-<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="755d-15bd-6a96-180c" type="lessThan" />
+<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1151-4b3c-73f5-530b" type="lessThan" />
 </conditions>
 </conditionGroup>
 </conditionGroups>
@@ -3277,7 +3211,7 @@
 <conditionGroups>
 <conditionGroup type="and">
 <conditions>
-<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="755d-15bd-6a96-180c" type="lessThan" />
+<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1151-4b3c-73f5-530b" type="lessThan" />
 </conditions>
 </conditionGroup>
 </conditionGroups>
@@ -3300,7 +3234,7 @@
 <conditionGroups>
 <conditionGroup type="and">
 <conditions>
-<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="755d-15bd-6a96-180c" type="lessThan" />
+<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1151-4b3c-73f5-530b" type="lessThan" />
 </conditions>
 </conditionGroup>
 </conditionGroups>
@@ -3309,7 +3243,7 @@
 <conditionGroups>
 <conditionGroup type="and">
 <conditions>
-<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="755d-15bd-6a96-180c" type="lessThan" />
+<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1151-4b3c-73f5-530b" type="lessThan" />
 </conditions>
 </conditionGroup>
 </conditionGroups>
@@ -3332,7 +3266,7 @@
 <conditionGroups>
 <conditionGroup type="and">
 <conditions>
-<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="755d-15bd-6a96-180c" type="lessThan" />
+<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1151-4b3c-73f5-530b" type="lessThan" />
 </conditions>
 </conditionGroup>
 </conditionGroups>
@@ -3341,7 +3275,7 @@
 <conditionGroups>
 <conditionGroup type="and">
 <conditions>
-<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="755d-15bd-6a96-180c" type="lessThan" />
+<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1151-4b3c-73f5-530b" type="lessThan" />
 </conditions>
 </conditionGroup>
 </conditionGroups>
@@ -3364,7 +3298,7 @@
 <conditionGroups>
 <conditionGroup type="and">
 <conditions>
-<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="755d-15bd-6a96-180c" type="lessThan" />
+<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1151-4b3c-73f5-530b" type="lessThan" />
 </conditions>
 </conditionGroup>
 </conditionGroups>
@@ -3373,7 +3307,7 @@
 <conditionGroups>
 <conditionGroup type="and">
 <conditions>
-<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="755d-15bd-6a96-180c" type="lessThan" />
+<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1151-4b3c-73f5-530b" type="lessThan" />
 </conditions>
 </conditionGroup>
 </conditionGroups>
@@ -3396,7 +3330,7 @@
 <conditionGroups>
 <conditionGroup type="and">
 <conditions>
-<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="755d-15bd-6a96-180c" type="lessThan" />
+<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1151-4b3c-73f5-530b" type="lessThan" />
 </conditions>
 </conditionGroup>
 </conditionGroups>
@@ -3405,7 +3339,7 @@
 <conditionGroups>
 <conditionGroup type="and">
 <conditions>
-<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="755d-15bd-6a96-180c" type="lessThan" />
+<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1151-4b3c-73f5-530b" type="lessThan" />
 </conditions>
 </conditionGroup>
 </conditionGroups>
@@ -3428,7 +3362,7 @@
 <conditionGroups>
 <conditionGroup type="and">
 <conditions>
-<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="755d-15bd-6a96-180c" type="lessThan" />
+<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1151-4b3c-73f5-530b" type="lessThan" />
 </conditions>
 </conditionGroup>
 </conditionGroups>
@@ -3437,7 +3371,7 @@
 <conditionGroups>
 <conditionGroup type="and">
 <conditions>
-<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="755d-15bd-6a96-180c" type="lessThan" />
+<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1151-4b3c-73f5-530b" type="lessThan" />
 </conditions>
 </conditionGroup>
 </conditionGroups>
@@ -3460,7 +3394,7 @@
 <conditionGroups>
 <conditionGroup type="and">
 <conditions>
-<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="755d-15bd-6a96-180c" type="lessThan" />
+<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1151-4b3c-73f5-530b" type="lessThan" />
 </conditions>
 </conditionGroup>
 </conditionGroups>
@@ -3469,7 +3403,7 @@
 <conditionGroups>
 <conditionGroup type="and">
 <conditions>
-<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="755d-15bd-6a96-180c" type="lessThan" />
+<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1151-4b3c-73f5-530b" type="lessThan" />
 </conditions>
 </conditionGroup>
 </conditionGroups>
@@ -3492,7 +3426,7 @@
 <conditionGroups>
 <conditionGroup type="and">
 <conditions>
-<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8d94-912d-bbc3-221f" type="lessThan" />
+<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1151-4b3c-73f5-530b" type="lessThan" />
 </conditions>
 </conditionGroup>
 </conditionGroups>
@@ -3501,7 +3435,7 @@
 <conditionGroups>
 <conditionGroup type="and">
 <conditions>
-<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8d94-912d-bbc3-221f" type="lessThan" />
+<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1151-4b3c-73f5-530b" type="lessThan" />
 </conditions>
 </conditionGroup>
 </conditionGroups>
@@ -3525,7 +3459,7 @@
 <conditionGroups>
 <conditionGroup type="and">
 <conditions>
-<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8d94-912d-bbc3-221f" type="lessThan" />
+<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1151-4b3c-73f5-530b" type="lessThan" />
 </conditions>
 </conditionGroup>
 </conditionGroups>
@@ -3534,7 +3468,7 @@
 <conditionGroups>
 <conditionGroup type="and">
 <conditions>
-<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8d94-912d-bbc3-221f" type="lessThan" />
+<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1151-4b3c-73f5-530b" type="lessThan" />
 </conditions>
 </conditionGroup>
 </conditionGroups>
@@ -3557,7 +3491,7 @@
 <conditionGroups>
 <conditionGroup type="and">
 <conditions>
-<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8d94-912d-bbc3-221f" type="lessThan" />
+<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1151-4b3c-73f5-530b" type="lessThan" />
 </conditions>
 </conditionGroup>
 </conditionGroups>
@@ -3566,7 +3500,7 @@
 <conditionGroups>
 <conditionGroup type="and">
 <conditions>
-<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8d94-912d-bbc3-221f" type="lessThan" />
+<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1151-4b3c-73f5-530b" type="lessThan" />
 </conditions>
 </conditionGroup>
 </conditionGroups>
@@ -3589,7 +3523,7 @@
 <conditionGroups>
 <conditionGroup type="and">
 <conditions>
-<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8d94-912d-bbc3-221f" type="lessThan" />
+<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1151-4b3c-73f5-530b" type="lessThan" />
 </conditions>
 </conditionGroup>
 </conditionGroups>
@@ -3598,7 +3532,7 @@
 <conditionGroups>
 <conditionGroup type="and">
 <conditions>
-<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8d94-912d-bbc3-221f" type="lessThan" />
+<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1151-4b3c-73f5-530b" type="lessThan" />
 </conditions>
 </conditionGroup>
 </conditionGroups>
@@ -3622,7 +3556,7 @@
 <conditionGroups>
 <conditionGroup type="and">
 <conditions>
-<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8d94-912d-bbc3-221f" type="lessThan" />
+<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1151-4b3c-73f5-530b" type="lessThan" />
 </conditions>
 </conditionGroup>
 </conditionGroups>
@@ -3631,7 +3565,7 @@
 <conditionGroups>
 <conditionGroup type="and">
 <conditions>
-<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8d94-912d-bbc3-221f" type="lessThan" />
+<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1151-4b3c-73f5-530b" type="lessThan" />
 </conditions>
 </conditionGroup>
 </conditionGroups>
@@ -3654,7 +3588,7 @@
 <conditionGroups>
 <conditionGroup type="and">
 <conditions>
-<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8d94-912d-bbc3-221f" type="lessThan" />
+<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1151-4b3c-73f5-530b" type="lessThan" />
 </conditions>
 </conditionGroup>
 </conditionGroups>
@@ -3663,7 +3597,7 @@
 <conditionGroups>
 <conditionGroup type="and">
 <conditions>
-<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8d94-912d-bbc3-221f" type="lessThan" />
+<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1151-4b3c-73f5-530b" type="lessThan" />
 </conditions>
 </conditionGroup>
 </conditionGroups>
@@ -3686,7 +3620,7 @@
 <conditionGroups>
 <conditionGroup type="and">
 <conditions>
-<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8d94-912d-bbc3-221f" type="lessThan" />
+<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1151-4b3c-73f5-530b" type="lessThan" />
 </conditions>
 </conditionGroup>
 </conditionGroups>
@@ -3695,7 +3629,7 @@
 <conditionGroups>
 <conditionGroup type="and">
 <conditions>
-<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8d94-912d-bbc3-221f" type="lessThan" />
+<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1151-4b3c-73f5-530b" type="lessThan" />
 </conditions>
 </conditionGroup>
 </conditionGroups>
@@ -3718,7 +3652,7 @@
 <conditionGroups>
 <conditionGroup type="and">
 <conditions>
-<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cbb9-c506-b7d8-80be" type="lessThan" />
+<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1151-4b3c-73f5-530b" type="lessThan" />
 </conditions>
 </conditionGroup>
 </conditionGroups>
@@ -3727,7 +3661,7 @@
 <conditionGroups>
 <conditionGroup type="and">
 <conditions>
-<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cbb9-c506-b7d8-80be" type="lessThan" />
+<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1151-4b3c-73f5-530b" type="lessThan" />
 </conditions>
 </conditionGroup>
 </conditionGroups>
@@ -3750,7 +3684,7 @@
 <conditionGroups>
 <conditionGroup type="and">
 <conditions>
-<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cbb9-c506-b7d8-80be" type="lessThan" />
+<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1151-4b3c-73f5-530b" type="lessThan" />
 </conditions>
 </conditionGroup>
 </conditionGroups>
@@ -3759,7 +3693,7 @@
 <conditionGroups>
 <conditionGroup type="and">
 <conditions>
-<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cbb9-c506-b7d8-80be" type="lessThan" />
+<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1151-4b3c-73f5-530b" type="lessThan" />
 </conditions>
 </conditionGroup>
 </conditionGroups>
@@ -3782,7 +3716,7 @@
 <conditionGroups>
 <conditionGroup type="and">
 <conditions>
-<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cbb9-c506-b7d8-80be" type="lessThan" />
+<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1151-4b3c-73f5-530b" type="lessThan" />
 </conditions>
 </conditionGroup>
 </conditionGroups>
@@ -3791,7 +3725,7 @@
 <conditionGroups>
 <conditionGroup type="and">
 <conditions>
-<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cbb9-c506-b7d8-80be" type="lessThan" />
+<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1151-4b3c-73f5-530b" type="lessThan" />
 </conditions>
 </conditionGroup>
 </conditionGroups>
@@ -3814,7 +3748,7 @@
 <conditionGroups>
 <conditionGroup type="and">
 <conditions>
-<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cbb9-c506-b7d8-80be" type="lessThan" />
+<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1151-4b3c-73f5-530b" type="lessThan" />
 </conditions>
 </conditionGroup>
 </conditionGroups>
@@ -3823,7 +3757,7 @@
 <conditionGroups>
 <conditionGroup type="and">
 <conditions>
-<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cbb9-c506-b7d8-80be" type="lessThan" />
+<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1151-4b3c-73f5-530b" type="lessThan" />
 </conditions>
 </conditionGroup>
 </conditionGroups>
@@ -3846,7 +3780,7 @@
 <conditionGroups>
 <conditionGroup type="and">
 <conditions>
-<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cbb9-c506-b7d8-80be" type="lessThan" />
+<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1151-4b3c-73f5-530b" type="lessThan" />
 </conditions>
 </conditionGroup>
 </conditionGroups>
@@ -3855,7 +3789,7 @@
 <conditionGroups>
 <conditionGroup type="and">
 <conditions>
-<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cbb9-c506-b7d8-80be" type="lessThan" />
+<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1151-4b3c-73f5-530b" type="lessThan" />
 </conditions>
 </conditionGroup>
 </conditionGroups>
@@ -3878,7 +3812,7 @@
 <conditionGroups>
 <conditionGroup type="and">
 <conditions>
-<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cbb9-c506-b7d8-80be" type="lessThan" />
+<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1151-4b3c-73f5-530b" type="lessThan" />
 </conditions>
 </conditionGroup>
 </conditionGroups>
@@ -3887,7 +3821,7 @@
 <conditionGroups>
 <conditionGroup type="and">
 <conditions>
-<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cbb9-c506-b7d8-80be" type="lessThan" />
+<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1151-4b3c-73f5-530b" type="lessThan" />
 </conditions>
 </conditionGroup>
 </conditionGroups>
@@ -3910,7 +3844,7 @@
 <conditionGroups>
 <conditionGroup type="and">
 <conditions>
-<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cbb9-c506-b7d8-80be" type="lessThan" />
+<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1151-4b3c-73f5-530b" type="lessThan" />
 </conditions>
 </conditionGroup>
 </conditionGroups>
@@ -3919,7 +3853,7 @@
 <conditionGroups>
 <conditionGroup type="and">
 <conditions>
-<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cbb9-c506-b7d8-80be" type="lessThan" />
+<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1151-4b3c-73f5-530b" type="lessThan" />
 </conditions>
 </conditionGroup>
 </conditionGroups>
@@ -3942,7 +3876,7 @@
 <conditionGroups>
 <conditionGroup type="and">
 <conditions>
-<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="df5d-9b22-4c52-ed53" type="lessThan" />
+<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1151-4b3c-73f5-530b" type="lessThan" />
 </conditions>
 </conditionGroup>
 </conditionGroups>
@@ -3951,7 +3885,7 @@
 <conditionGroups>
 <conditionGroup type="and">
 <conditions>
-<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="df5d-9b22-4c52-ed53" type="lessThan" />
+<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1151-4b3c-73f5-530b" type="lessThan" />
 </conditions>
 </conditionGroup>
 </conditionGroups>
@@ -3975,7 +3909,7 @@
 <conditionGroups>
 <conditionGroup type="and">
 <conditions>
-<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="df5d-9b22-4c52-ed53" type="lessThan" />
+<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1151-4b3c-73f5-530b" type="lessThan" />
 </conditions>
 </conditionGroup>
 </conditionGroups>
@@ -3984,7 +3918,7 @@
 <conditionGroups>
 <conditionGroup type="and">
 <conditions>
-<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="df5d-9b22-4c52-ed53" type="lessThan" />
+<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1151-4b3c-73f5-530b" type="lessThan" />
 </conditions>
 </conditionGroup>
 </conditionGroups>
@@ -4007,7 +3941,7 @@
 <conditionGroups>
 <conditionGroup type="and">
 <conditions>
-<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="df5d-9b22-4c52-ed53" type="lessThan" />
+<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1151-4b3c-73f5-530b" type="lessThan" />
 </conditions>
 </conditionGroup>
 </conditionGroups>
@@ -4016,7 +3950,7 @@
 <conditionGroups>
 <conditionGroup type="and">
 <conditions>
-<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="df5d-9b22-4c52-ed53" type="lessThan" />
+<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1151-4b3c-73f5-530b" type="lessThan" />
 </conditions>
 </conditionGroup>
 </conditionGroups>
@@ -4040,7 +3974,7 @@
 <conditionGroups>
 <conditionGroup type="and">
 <conditions>
-<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="df5d-9b22-4c52-ed53" type="lessThan" />
+<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1151-4b3c-73f5-530b" type="lessThan" />
 </conditions>
 </conditionGroup>
 </conditionGroups>
@@ -4049,7 +3983,7 @@
 <conditionGroups>
 <conditionGroup type="and">
 <conditions>
-<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="df5d-9b22-4c52-ed53" type="lessThan" />
+<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1151-4b3c-73f5-530b" type="lessThan" />
 </conditions>
 </conditionGroup>
 </conditionGroups>
@@ -4072,7 +4006,7 @@
 <conditionGroups>
 <conditionGroup type="and">
 <conditions>
-<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="df5d-9b22-4c52-ed53" type="lessThan" />
+<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1151-4b3c-73f5-530b" type="lessThan" />
 </conditions>
 </conditionGroup>
 </conditionGroups>
@@ -4081,7 +4015,7 @@
 <conditionGroups>
 <conditionGroup type="and">
 <conditions>
-<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="df5d-9b22-4c52-ed53" type="lessThan" />
+<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1151-4b3c-73f5-530b" type="lessThan" />
 </conditions>
 </conditionGroup>
 </conditionGroups>
@@ -4105,7 +4039,7 @@
 <conditionGroups>
 <conditionGroup type="and">
 <conditions>
-<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="df5d-9b22-4c52-ed53" type="lessThan" />
+<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1151-4b3c-73f5-530b" type="lessThan" />
 </conditions>
 </conditionGroup>
 </conditionGroups>
@@ -4114,7 +4048,7 @@
 <conditionGroups>
 <conditionGroup type="and">
 <conditions>
-<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="df5d-9b22-4c52-ed53" type="lessThan" />
+<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1151-4b3c-73f5-530b" type="lessThan" />
 </conditions>
 </conditionGroup>
 </conditionGroups>
@@ -4138,7 +4072,7 @@
 <conditionGroups>
 <conditionGroup type="and">
 <conditions>
-<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="df5d-9b22-4c52-ed53" type="lessThan" />
+<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1151-4b3c-73f5-530b" type="lessThan" />
 </conditions>
 </conditionGroup>
 </conditionGroups>
@@ -4147,7 +4081,7 @@
 <conditionGroups>
 <conditionGroup type="and">
 <conditions>
-<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="df5d-9b22-4c52-ed53" type="lessThan" />
+<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1151-4b3c-73f5-530b" type="lessThan" />
 </conditions>
 </conditionGroup>
 </conditionGroups>
@@ -24918,59 +24852,6 @@ LIMITATIONS - No unit may voluntarily begin the battle in Reserve; units require
 </selectionEntry>
 </selectionEntries>
 </selectionEntryGroup>
-<selectionEntryGroup id="3f7b-7fa0-5925-f221" name="Psychic Discipline (one additional power)" hidden="false" collective="false" import="true">
-<modifiers>
-<modifier type="add" field="error" value="Choose a Psychic Discipline (one additional power).">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b4b1-a9b5-649f-0cba" type="lessThan" />
-<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0771-7a3c-0f59-65f0" type="lessThan" />
-<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0c95-ceaa-12f4-75b3" type="lessThan" />
-<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="11eb-7b9b-c525-3bc5" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-</modifiers>
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="975d-d10e-4e18-5d65" type="max" />
-</constraints>
-<selectionEntries>
-<selectionEntry id="b4b1-a9b5-649f-0cba" name="Biomancy" hidden="false" collective="false" import="true" type="upgrade">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="106a-d3a8-48a7-487d" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
-</costs>
-</selectionEntry>
-<selectionEntry id="0771-7a3c-0f59-65f0" name="Divination" hidden="false" collective="false" import="true" type="upgrade">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8fc3-c8bb-b87a-c5aa" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
-</costs>
-</selectionEntry>
-<selectionEntry id="0c95-ceaa-12f4-75b3" name="Pyromancy" hidden="false" collective="false" import="true" type="upgrade">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="60f0-b884-30b3-1050" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
-</costs>
-</selectionEntry>
-<selectionEntry id="11eb-7b9b-c525-3bc5" name="Telepathy" hidden="false" collective="false" import="true" type="upgrade">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fdfb-2108-29bb-aee3" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
-</costs>
-</selectionEntry>
-</selectionEntries>
-</selectionEntryGroup>
 <selectionEntryGroup id="41af-c437-7c5f-6c5c" name="Psychic Powers" hidden="false" collective="false" import="true">
 <modifiers>
 <modifier type="add" field="error" value="Choose 1 psychic power (in addition to the powers always known).">
@@ -24998,26 +24879,6 @@ LIMITATIONS - No unit may voluntarily begin the battle in Reserve; units require
 </costs>
 </selectionEntry>
 <selectionEntry id="f9b6-c1ed-9b10-69c0" name="Smite (Biomancy)" hidden="false" collective="false" import="true" type="upgrade">
-<modifiers>
-<modifier type="set" field="hidden" value="true">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="c7ce-c9ef-6a9b-a0e0" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b4b1-a9b5-649f-0cba" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-<modifier type="set" field="abfa-e432-cf92-51ee" value="0">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="c7ce-c9ef-6a9b-a0e0" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b4b1-a9b5-649f-0cba" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-</modifiers>
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="abfa-e432-cf92-51ee" type="max" />
 </constraints>
@@ -25031,26 +24892,6 @@ LIMITATIONS - No unit may voluntarily begin the battle in Reserve; units require
 </costs>
 </selectionEntry>
 <selectionEntry id="ad85-6af3-2efe-b36b" name="Iron Arm (Biomancy)" hidden="false" collective="false" import="true" type="upgrade">
-<modifiers>
-<modifier type="set" field="hidden" value="true">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="c7ce-c9ef-6a9b-a0e0" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b4b1-a9b5-649f-0cba" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-<modifier type="set" field="64f1-a604-3a29-9e90" value="0">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="c7ce-c9ef-6a9b-a0e0" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b4b1-a9b5-649f-0cba" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-</modifiers>
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="64f1-a604-3a29-9e90" type="max" />
 </constraints>
@@ -25063,26 +24904,6 @@ LIMITATIONS - No unit may voluntarily begin the battle in Reserve; units require
 </costs>
 </selectionEntry>
 <selectionEntry id="42ca-17d2-740b-0bb0" name="Enfeeble (Biomancy)" hidden="false" collective="false" import="true" type="upgrade">
-<modifiers>
-<modifier type="set" field="hidden" value="true">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="c7ce-c9ef-6a9b-a0e0" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b4b1-a9b5-649f-0cba" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-<modifier type="set" field="b64e-0783-6572-cabe" value="0">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="c7ce-c9ef-6a9b-a0e0" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b4b1-a9b5-649f-0cba" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-</modifiers>
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b64e-0783-6572-cabe" type="max" />
 </constraints>
@@ -25095,26 +24916,6 @@ LIMITATIONS - No unit may voluntarily begin the battle in Reserve; units require
 </costs>
 </selectionEntry>
 <selectionEntry id="e107-b891-e50f-bc44" name="Life Leech (Biomancy)" hidden="false" collective="false" import="true" type="upgrade">
-<modifiers>
-<modifier type="set" field="hidden" value="true">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="c7ce-c9ef-6a9b-a0e0" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b4b1-a9b5-649f-0cba" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-<modifier type="set" field="a4e4-19a6-b9c5-8cb5" value="0">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="c7ce-c9ef-6a9b-a0e0" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b4b1-a9b5-649f-0cba" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-</modifiers>
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a4e4-19a6-b9c5-8cb5" type="max" />
 </constraints>
@@ -25128,26 +24929,6 @@ LIMITATIONS - No unit may voluntarily begin the battle in Reserve; units require
 </costs>
 </selectionEntry>
 <selectionEntry id="1726-35c2-8113-cd85" name="Warp Speed (Biomancy)" hidden="false" collective="false" import="true" type="upgrade">
-<modifiers>
-<modifier type="set" field="hidden" value="true">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="c7ce-c9ef-6a9b-a0e0" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b4b1-a9b5-649f-0cba" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-<modifier type="set" field="3eed-1afc-2998-e7c8" value="0">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="c7ce-c9ef-6a9b-a0e0" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b4b1-a9b5-649f-0cba" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-</modifiers>
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3eed-1afc-2998-e7c8" type="max" />
 </constraints>
@@ -25160,26 +24941,6 @@ LIMITATIONS - No unit may voluntarily begin the battle in Reserve; units require
 </costs>
 </selectionEntry>
 <selectionEntry id="675a-13f6-2d62-1c53" name="Endurance (Biomancy)" hidden="false" collective="false" import="true" type="upgrade">
-<modifiers>
-<modifier type="set" field="hidden" value="true">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="c7ce-c9ef-6a9b-a0e0" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b4b1-a9b5-649f-0cba" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-<modifier type="set" field="616c-6bde-a746-55c1" value="0">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="c7ce-c9ef-6a9b-a0e0" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b4b1-a9b5-649f-0cba" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-</modifiers>
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="616c-6bde-a746-55c1" type="max" />
 </constraints>
@@ -25192,26 +24953,6 @@ LIMITATIONS - No unit may voluntarily begin the battle in Reserve; units require
 </costs>
 </selectionEntry>
 <selectionEntry id="aa77-cee5-4434-8774" name="Haemorrhage (Biomancy)" hidden="false" collective="false" import="true" type="upgrade">
-<modifiers>
-<modifier type="set" field="hidden" value="true">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="c7ce-c9ef-6a9b-a0e0" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b4b1-a9b5-649f-0cba" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-<modifier type="set" field="bb1d-bfb9-adde-c026" value="0">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="c7ce-c9ef-6a9b-a0e0" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b4b1-a9b5-649f-0cba" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-</modifiers>
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bb1d-bfb9-adde-c026" type="max" />
 </constraints>
@@ -25224,26 +24965,6 @@ LIMITATIONS - No unit may voluntarily begin the battle in Reserve; units require
 </costs>
 </selectionEntry>
 <selectionEntry id="c301-2a1e-380c-27fd" name="Prescience (Divination)" hidden="false" collective="false" import="true" type="upgrade">
-<modifiers>
-<modifier type="set" field="hidden" value="true">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="c7ce-c9ef-6a9b-a0e0" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0771-7a3c-0f59-65f0" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-<modifier type="set" field="b40d-dd2f-1909-8249" value="0">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="c7ce-c9ef-6a9b-a0e0" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0771-7a3c-0f59-65f0" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-</modifiers>
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b40d-dd2f-1909-8249" type="max" />
 </constraints>
@@ -25256,26 +24977,6 @@ LIMITATIONS - No unit may voluntarily begin the battle in Reserve; units require
 </costs>
 </selectionEntry>
 <selectionEntry id="ec61-ef00-720b-8975" name="Foreboding (Divination)" hidden="false" collective="false" import="true" type="upgrade">
-<modifiers>
-<modifier type="set" field="hidden" value="true">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="c7ce-c9ef-6a9b-a0e0" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0771-7a3c-0f59-65f0" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-<modifier type="set" field="1783-0789-439d-1a67" value="0">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="c7ce-c9ef-6a9b-a0e0" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0771-7a3c-0f59-65f0" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-</modifiers>
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1783-0789-439d-1a67" type="max" />
 </constraints>
@@ -25288,26 +24989,6 @@ LIMITATIONS - No unit may voluntarily begin the battle in Reserve; units require
 </costs>
 </selectionEntry>
 <selectionEntry id="13bb-89aa-b055-48df" name="Forewarning (Divination)" hidden="false" collective="false" import="true" type="upgrade">
-<modifiers>
-<modifier type="set" field="hidden" value="true">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="c7ce-c9ef-6a9b-a0e0" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0771-7a3c-0f59-65f0" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-<modifier type="set" field="c606-9618-4516-ce7a" value="0">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="c7ce-c9ef-6a9b-a0e0" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0771-7a3c-0f59-65f0" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-</modifiers>
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c606-9618-4516-ce7a" type="max" />
 </constraints>
@@ -25320,26 +25001,6 @@ LIMITATIONS - No unit may voluntarily begin the battle in Reserve; units require
 </costs>
 </selectionEntry>
 <selectionEntry id="ec59-4eab-9662-9d98" name="Perfect Timing (Divination)" hidden="false" collective="false" import="true" type="upgrade">
-<modifiers>
-<modifier type="set" field="hidden" value="true">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="c7ce-c9ef-6a9b-a0e0" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0771-7a3c-0f59-65f0" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-<modifier type="set" field="1b5d-63d3-4ca2-a065" value="0">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="c7ce-c9ef-6a9b-a0e0" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0771-7a3c-0f59-65f0" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-</modifiers>
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1b5d-63d3-4ca2-a065" type="max" />
 </constraints>
@@ -25352,26 +25013,6 @@ LIMITATIONS - No unit may voluntarily begin the battle in Reserve; units require
 </costs>
 </selectionEntry>
 <selectionEntry id="86b4-03a5-233a-16fa" name="Precognition (Divination)" hidden="false" collective="false" import="true" type="upgrade">
-<modifiers>
-<modifier type="set" field="hidden" value="true">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="c7ce-c9ef-6a9b-a0e0" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0771-7a3c-0f59-65f0" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-<modifier type="set" field="840c-ceef-3279-e81e" value="0">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="c7ce-c9ef-6a9b-a0e0" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0771-7a3c-0f59-65f0" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-</modifiers>
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="840c-ceef-3279-e81e" type="max" />
 </constraints>
@@ -25384,26 +25025,6 @@ LIMITATIONS - No unit may voluntarily begin the battle in Reserve; units require
 </costs>
 </selectionEntry>
 <selectionEntry id="cfe1-edfa-7d01-6b4a" name="Misfortune (Divination)" hidden="false" collective="false" import="true" type="upgrade">
-<modifiers>
-<modifier type="set" field="hidden" value="true">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="c7ce-c9ef-6a9b-a0e0" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0771-7a3c-0f59-65f0" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-<modifier type="set" field="7984-4d7b-6e9c-0c7a" value="0">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="c7ce-c9ef-6a9b-a0e0" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0771-7a3c-0f59-65f0" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-</modifiers>
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7984-4d7b-6e9c-0c7a" type="max" />
 </constraints>
@@ -25416,26 +25037,6 @@ LIMITATIONS - No unit may voluntarily begin the battle in Reserve; units require
 </costs>
 </selectionEntry>
 <selectionEntry id="c9b0-95e0-321d-cbe2" name="Scrier's Gaze (Divination)" hidden="false" collective="false" import="true" type="upgrade">
-<modifiers>
-<modifier type="set" field="hidden" value="true">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="c7ce-c9ef-6a9b-a0e0" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0771-7a3c-0f59-65f0" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-<modifier type="set" field="b426-5f50-600e-0720" value="0">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="c7ce-c9ef-6a9b-a0e0" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0771-7a3c-0f59-65f0" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-</modifiers>
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b426-5f50-600e-0720" type="max" />
 </constraints>
@@ -25448,26 +25049,6 @@ LIMITATIONS - No unit may voluntarily begin the battle in Reserve; units require
 </costs>
 </selectionEntry>
 <selectionEntry id="75d8-85bf-3378-3ee0" name="Flame Breath (Pyromancy)" hidden="false" collective="false" import="true" type="upgrade">
-<modifiers>
-<modifier type="set" field="hidden" value="true">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="c7ce-c9ef-6a9b-a0e0" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0c95-ceaa-12f4-75b3" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-<modifier type="set" field="61a7-2d08-4014-f157" value="0">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="c7ce-c9ef-6a9b-a0e0" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0c95-ceaa-12f4-75b3" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-</modifiers>
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="61a7-2d08-4014-f157" type="max" />
 </constraints>
@@ -25481,26 +25062,6 @@ LIMITATIONS - No unit may voluntarily begin the battle in Reserve; units require
 </costs>
 </selectionEntry>
 <selectionEntry id="ad49-86ca-367f-310e" name="Fiery Form (Pyromancy)" hidden="false" collective="false" import="true" type="upgrade">
-<modifiers>
-<modifier type="set" field="hidden" value="true">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="c7ce-c9ef-6a9b-a0e0" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0c95-ceaa-12f4-75b3" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-<modifier type="set" field="e5e0-2332-9974-f644" value="0">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="c7ce-c9ef-6a9b-a0e0" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0c95-ceaa-12f4-75b3" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-</modifiers>
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e5e0-2332-9974-f644" type="max" />
 </constraints>
@@ -25513,26 +25074,6 @@ LIMITATIONS - No unit may voluntarily begin the battle in Reserve; units require
 </costs>
 </selectionEntry>
 <selectionEntry id="c570-3eb2-b83c-debf" name="Molten Beam (Pyromancy)" hidden="false" collective="false" import="true" type="upgrade">
-<modifiers>
-<modifier type="set" field="hidden" value="true">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="c7ce-c9ef-6a9b-a0e0" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0c95-ceaa-12f4-75b3" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-<modifier type="set" field="904e-2896-7a46-396e" value="0">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="c7ce-c9ef-6a9b-a0e0" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0c95-ceaa-12f4-75b3" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-</modifiers>
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="904e-2896-7a46-396e" type="max" />
 </constraints>
@@ -25546,26 +25087,6 @@ LIMITATIONS - No unit may voluntarily begin the battle in Reserve; units require
 </costs>
 </selectionEntry>
 <selectionEntry id="87ad-f91a-9196-a458" name="Fire Shield (Pyromancy)" hidden="false" collective="false" import="true" type="upgrade">
-<modifiers>
-<modifier type="set" field="hidden" value="true">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="c7ce-c9ef-6a9b-a0e0" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0c95-ceaa-12f4-75b3" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-<modifier type="set" field="2f66-6b78-be11-7fbb" value="0">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="c7ce-c9ef-6a9b-a0e0" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0c95-ceaa-12f4-75b3" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-</modifiers>
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2f66-6b78-be11-7fbb" type="max" />
 </constraints>
@@ -25578,26 +25099,6 @@ LIMITATIONS - No unit may voluntarily begin the battle in Reserve; units require
 </costs>
 </selectionEntry>
 <selectionEntry id="afdc-82ae-7743-6d78" name="Sunburst (Pyromancy)" hidden="false" collective="false" import="true" type="upgrade">
-<modifiers>
-<modifier type="set" field="hidden" value="true">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="c7ce-c9ef-6a9b-a0e0" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0c95-ceaa-12f4-75b3" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-<modifier type="set" field="d21b-47c9-0a3c-a0b1" value="0">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="c7ce-c9ef-6a9b-a0e0" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0c95-ceaa-12f4-75b3" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-</modifiers>
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d21b-47c9-0a3c-a0b1" type="max" />
 </constraints>
@@ -25611,26 +25112,6 @@ LIMITATIONS - No unit may voluntarily begin the battle in Reserve; units require
 </costs>
 </selectionEntry>
 <selectionEntry id="9f21-d461-c3e5-017f" name="Inferno (Pyromancy)" hidden="false" collective="false" import="true" type="upgrade">
-<modifiers>
-<modifier type="set" field="hidden" value="true">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="c7ce-c9ef-6a9b-a0e0" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0c95-ceaa-12f4-75b3" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-<modifier type="set" field="ce3a-69d1-24ad-c0d0" value="0">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="c7ce-c9ef-6a9b-a0e0" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0c95-ceaa-12f4-75b3" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-</modifiers>
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ce3a-69d1-24ad-c0d0" type="max" />
 </constraints>
@@ -25644,26 +25125,6 @@ LIMITATIONS - No unit may voluntarily begin the battle in Reserve; units require
 </costs>
 </selectionEntry>
 <selectionEntry id="b835-8c53-a253-281d" name="Spontaneous Combustion (Pyromancy)" hidden="false" collective="false" import="true" type="upgrade">
-<modifiers>
-<modifier type="set" field="hidden" value="true">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="c7ce-c9ef-6a9b-a0e0" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0c95-ceaa-12f4-75b3" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-<modifier type="set" field="2521-88a3-f3ad-f03c" value="0">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="c7ce-c9ef-6a9b-a0e0" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0c95-ceaa-12f4-75b3" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-</modifiers>
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2521-88a3-f3ad-f03c" type="max" />
 </constraints>
@@ -25676,26 +25137,6 @@ LIMITATIONS - No unit may voluntarily begin the battle in Reserve; units require
 </costs>
 </selectionEntry>
 <selectionEntry id="9a5a-e3a0-c0c7-c3a6" name="Psychic Shriek (Telepathy)" hidden="false" collective="false" import="true" type="upgrade">
-<modifiers>
-<modifier type="set" field="hidden" value="true">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="c7ce-c9ef-6a9b-a0e0" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="11eb-7b9b-c525-3bc5" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-<modifier type="set" field="f436-8556-8736-3b99" value="0">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="c7ce-c9ef-6a9b-a0e0" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="11eb-7b9b-c525-3bc5" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-</modifiers>
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f436-8556-8736-3b99" type="max" />
 </constraints>
@@ -25708,26 +25149,6 @@ LIMITATIONS - No unit may voluntarily begin the battle in Reserve; units require
 </costs>
 </selectionEntry>
 <selectionEntry id="e9db-90e0-5691-39fe" name="Dominate (Telepathy)" hidden="false" collective="false" import="true" type="upgrade">
-<modifiers>
-<modifier type="set" field="hidden" value="true">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="c7ce-c9ef-6a9b-a0e0" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="11eb-7b9b-c525-3bc5" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-<modifier type="set" field="3d51-9198-e8da-c4ba" value="0">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="c7ce-c9ef-6a9b-a0e0" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="11eb-7b9b-c525-3bc5" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-</modifiers>
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3d51-9198-e8da-c4ba" type="max" />
 </constraints>
@@ -25740,26 +25161,6 @@ LIMITATIONS - No unit may voluntarily begin the battle in Reserve; units require
 </costs>
 </selectionEntry>
 <selectionEntry id="2b2d-115a-0ea9-9089" name="Mental Fortitude (Telepathy)" hidden="false" collective="false" import="true" type="upgrade">
-<modifiers>
-<modifier type="set" field="hidden" value="true">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="c7ce-c9ef-6a9b-a0e0" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="11eb-7b9b-c525-3bc5" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-<modifier type="set" field="f04a-6c40-f489-a14c" value="0">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="c7ce-c9ef-6a9b-a0e0" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="11eb-7b9b-c525-3bc5" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-</modifiers>
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f04a-6c40-f489-a14c" type="max" />
 </constraints>
@@ -25772,26 +25173,6 @@ LIMITATIONS - No unit may voluntarily begin the battle in Reserve; units require
 </costs>
 </selectionEntry>
 <selectionEntry id="55fb-884a-727b-7a3e" name="Terrify (Telepathy)" hidden="false" collective="false" import="true" type="upgrade">
-<modifiers>
-<modifier type="set" field="hidden" value="true">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="c7ce-c9ef-6a9b-a0e0" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="11eb-7b9b-c525-3bc5" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-<modifier type="set" field="f27c-33e2-1ed8-c0ee" value="0">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="c7ce-c9ef-6a9b-a0e0" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="11eb-7b9b-c525-3bc5" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-</modifiers>
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f27c-33e2-1ed8-c0ee" type="max" />
 </constraints>
@@ -25804,26 +25185,6 @@ LIMITATIONS - No unit may voluntarily begin the battle in Reserve; units require
 </costs>
 </selectionEntry>
 <selectionEntry id="b30d-d69a-8c9f-ef80" name="Hallucination (Telepathy)" hidden="false" collective="false" import="true" type="upgrade">
-<modifiers>
-<modifier type="set" field="hidden" value="true">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="c7ce-c9ef-6a9b-a0e0" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="11eb-7b9b-c525-3bc5" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-<modifier type="set" field="fc31-5e7a-9dd6-4b25" value="0">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="c7ce-c9ef-6a9b-a0e0" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="11eb-7b9b-c525-3bc5" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-</modifiers>
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fc31-5e7a-9dd6-4b25" type="max" />
 </constraints>
@@ -25836,26 +25197,6 @@ LIMITATIONS - No unit may voluntarily begin the battle in Reserve; units require
 </costs>
 </selectionEntry>
 <selectionEntry id="fbb9-c17a-b145-5756" name="Invisibility (Telepathy)" hidden="false" collective="false" import="true" type="upgrade">
-<modifiers>
-<modifier type="set" field="hidden" value="true">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="c7ce-c9ef-6a9b-a0e0" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="11eb-7b9b-c525-3bc5" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-<modifier type="set" field="bb7c-bb80-d720-e993" value="0">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="c7ce-c9ef-6a9b-a0e0" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="11eb-7b9b-c525-3bc5" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-</modifiers>
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bb7c-bb80-d720-e993" type="max" />
 </constraints>
@@ -25868,26 +25209,6 @@ LIMITATIONS - No unit may voluntarily begin the battle in Reserve; units require
 </costs>
 </selectionEntry>
 <selectionEntry id="6ea3-0587-f84b-1f1a" name="Shrouding (Telepathy)" hidden="false" collective="false" import="true" type="upgrade">
-<modifiers>
-<modifier type="set" field="hidden" value="true">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="c7ce-c9ef-6a9b-a0e0" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="11eb-7b9b-c525-3bc5" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-<modifier type="set" field="7567-39e1-3b8d-abb4" value="0">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="c7ce-c9ef-6a9b-a0e0" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="11eb-7b9b-c525-3bc5" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-</modifiers>
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7567-39e1-3b8d-abb4" type="max" />
 </constraints>
@@ -48752,6 +48073,9 @@ LIMITATIONS - No unit may voluntarily begin the battle in Reserve; units require
 <rule id="778a-fc7e-2570-301d" name="Strands of Fate (Psychic Power)" hidden="false">
 <description>Malediction. Choose one enemy non-Vehicle unit within 18" and line of sight. Until the beginning of Magnus' next turn, that unit must pass a Leadership Test each time it attempts to move during the Movement phase, shoot during the Shooting phase or declare a Charge. If the test is failed, the attempted action is lost and the unit may not attempt that type of action again during that phase. A separate Leadership Test is required for each different action attempted.</description>
 </rule>
+<rule id="b613-f30b-a728-cc39" name="Strands of Fate (Shard of the Crimson King)" hidden="false">
+<description>Malediction. Range 18". Choose one enemy non-Vehicle unit within range and line of sight. Until the beginning of Magnus' next turn, the affected unit must pass a Leadership Test each time it wishes to: Move; Shoot; Charge. If the test is failed, that action is lost for that phase.</description>
+</rule>
 <rule id="c5fb-6297-1376-4e29" name="Fury of the Salamander (Psychic Power)" hidden="false">
 <description>Witchfire - Beam. Range 18", S5, AP1, Assault 1, Elemental Horror. Elemental Horror: if an enemy unit suffers one or more unsaved Wounds from Fury of the Salamander, it must immediately take a Morale test regardless of how many casualties were caused, with a Leadership penalty equal to the number of unsaved Wounds caused by Fury of the Salamander. (Counts as a Pyromancy power for Salamanders Librarians in a Detachment using The Awakening Fire.)</description>
 </rule>
@@ -49955,6 +49279,14 @@ LIMITATIONS - No unit may voluntarily begin the battle in Reserve; units require
 <characteristic name="S" typeId="6204-806b-a18a-c0be">6</characteristic>
 <characteristic name="AP" typeId="964e-6f66-dcaa-247a">-</characteristic>
 <characteristic name="Type" typeId="54df-9f85-8d55-7440">Witchfire - Beam, Assault 1, Strikedown</characteristic>
+</characteristics>
+</profile>
+<profile id="3ea2-5e92-c35b-1084" name="Crush (Telekinesis)" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+<characteristics>
+<characteristic name="Range" typeId="4b89-f4f0-2a22-1135">18"</characteristic>
+<characteristic name="S" typeId="6204-806b-a18a-c0be">2D6</characteristic>
+<characteristic name="AP" typeId="964e-6f66-dcaa-247a">D6</characteristic>
+<characteristic name="Type" typeId="54df-9f85-8d55-7440">Witchfire - Focused</characteristic>
 </characteristics>
 </profile>
 <profile id="7464-e6d6-4e12-687d" name="Shockwave (Telekinesis)" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">

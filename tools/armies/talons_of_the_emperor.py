@@ -46,16 +46,16 @@ RULES = {
         "Emperor's Talons and may be included alongside the Legio Custodes exactly as described in the Paragons of "
         "Humanity Provenance. For The Emperor's Talons and any other rule limiting Allied Detachments it is ignored. It "
         "does not cause the Exercitus Imperialis units to gain any Legio Custodes or Talons of the Emperor special rules."),
-    "Company-Cadres": (
-        "Where a Sisters of Silence HQ possesses the Company-Cadre special rule, the number and type of additional "
-        "Sisters of Silence units which must accompany it are described by that rule. Units selected as part of a "
-        "Company-Cadre still occupy their normal Force Organisation selections unless stated otherwise. A Company-Cadre "
-        "requirement is in addition to the normal compulsory requirements of the Detachment."),
     "Dedicated Transports (Talons)": (
         "Dedicated Transports purchased as part of a unit's entry do not occupy a separate Force Organisation slot and "
         "operate as separate units once deployed. Transport Capacity restrictions must always be observed. The Coronus "
         "Grav-Carrier is restricted to the Legio Custodes units named in its entry, the Anathema Psykana Rhino and "
         "Kharon Pattern Acquisitor to the Sisters of Silence units whose entries list them."),
+    "Massive Wound": (
+        "MASSIVE WOUNDS deals D3 wounds to the target model. Against target units with multi-wound models, massive "
+        "wounds may need to be rolled and resolved one at a time to ensure that wounds are allocated to wounded models "
+        "sequentially. Excess damage from a massive wound beyond what is needed to kill a model does not spill over "
+        "onto other models."),
     # ------------------------------------------------------------ Custodes
     "Legio Custodes": (
         "All models with the Legio Custodes special rule have Bulky, Fearless, Crusader and Counter-Attack. Custodes "
@@ -90,9 +90,7 @@ RULES = {
         "If Constantin Valdor is the army's Warlord, the controlling player may re-roll any attempt to Seize the "
         "Initiative. In addition, Valdor gains a Teleportation Transponder at no additional cost and one friendly unit "
         "with the Legio Custodes special rule may also receive Teleportation Transponders at no additional cost."),
-    "Grav-backwash": "Unless the vehicle has been Immobilised, enemy models suffer -1 To Hit when attacking it in close "
-                     "combat.",
-    "Grav-backwash (Pallas)": (
+    "Grav-backwash": (
         "If the Pallas Grav-Attack moved during its previous Movement phase, enemy models suffer -1 to their To Hit rolls "
         "when attacking it in close combat, to a maximum required roll of 6+."),
     "Auramite Pinions": "A model equipped with Auramite Pinions has a 4+ Invulnerable Save in close combat.",
@@ -116,8 +114,8 @@ RULES = {
         "tests they are required to take. Once per battle, at the beginning of any friendly turn, Krole may declare a "
         "Silent Hunt: until the beginning of the next friendly turn, all friendly Sisters of Silence units within 12\" "
         "gain Hatred against all enemy models. In addition her Anathema Psykana and Ex Oblivio powers extend to 12\"."),
-    "Command Cadre": ("A Vigil Command Cadre does not use up an HQ choice if the army includes a Knight-Centura, "
-                      "Knight-Abyssal or Jenetia Krole."),
+    "Command Cadre": ("A Vigil Command Cadre may be taken as a retinue for a Knight-Centura, Knight-Abyssal or Jenetia "
+                      "Krole and does not use up an HQ choice in this way."),
     "Gunfighters": ("A model with this special rule may fire both of its Pistol weapons during the Shooting phase. Both "
                     "weapons must be fired at the same enemy unit."),
     "Firebrand Jump Packs": ("If the entire squad is equipped with Jump Packs, its Unit Type becomes Jump Infantry. A "
@@ -245,19 +243,6 @@ RULES = {
         "up to two other enemy units; all Assassins may re-roll To Hit rolls of 1 against them; if all are destroyed by "
         "the end of the battle the Execution Force gains +1 Victory Point. WARLORD: nominate one Assassin as Warlord; it "
         "does not generate or select a Warlord Trait but counts as the Warlord for Victory Points."),
-    # ------------------------------------------------------- Infernus
-    "Cult Operative": (
-        "An Infernus Abomination follows the normal rules for Independent Characters, except: it may never join another "
-        "unit; no Independent Character may join it; it always fights as a unit of a single model; it may not capture or "
-        "contest objectives; it may never be selected as the army's Warlord."),
-    "Traitor (Infernus Abomination)": (
-        "An Infernus Abomination may only be included in an army with the Traitor Allegiance. It may be selected as an "
-        "Elites choice in any Traitor army. It does not benefit from Legion special rules, army-wide special rules, "
-        "Doctrines, Provenances or similar abilities unless a rule specifically states that it affects an Infernus "
-        "Abomination or Cults Abominatio model."),
-    "Osmeotic Regeneration": (
-        "At the end of each friendly Player Turn, roll a D6 for each unsaved Wound inflicted by the Infernus Abomination "
-        "during that Player Turn. For each 5+, it regains one lost Wound (never above its starting Wounds)."),
 }
 
 # ==================================================================== weapons
@@ -287,7 +272,8 @@ WEAPONS = {
     "Iliastus Accelerator Culverin": ('36"', "7", "2", "Heavy 5, Rending, Heliothermic Detonation"),
     "Twin-linked Iliastus Accelerator Cannon": ('60"', "7", "2", "Heavy 3, Twin-Linked, Rending, Rapid Tracking, "
                                                                  "Heliothermic Detonation"),
-    "Dreadnought Close Combat Weapon": ("-", "x2", "-", "Power Weapon"),
+    "Dreadnought Close Combat Weapon": ("-", "x2", "-", "Power Weapon; a second Dreadnought Close Combat Weapon "
+                                                        "gives +1 Attack"),
     # Sisters of Silence
     "Bolt Pistol": ('12"', "4", "5", "Pistol"),
     "Boltgun": ('24"', "4", "5", "Rapid Fire"),
@@ -329,7 +315,6 @@ WEAPONS = {
     "Poison Globes": ('8"', "1", "3", "Assault 1, Blast, Poisoned (3+), Pinning, One Shot"),
     "Hookfang": ("-", "User", "-", "Poisoned (3+), Rending, Venum"),
     "Sympatic Dataspikes": ("-", "User", "-", "Rending, Concussive, +2 Attacks"),
-    "Boneshard Spitter": ('6"', "1", "-", "Assault 2D6, Fleshbane"),
 }
 
 MULTI = {
@@ -409,12 +394,6 @@ MULTI = {
     "Needlespine Blaster": {"Needlespine Blaster - Bolt Pistol": ('12"', "4", "5", "Pistol"),
                             "Needlespine Launcher": ('12"', "6", "4", "Assault 3, Rending (5+), Phage, One Shot")},
     "Paired Laspistols": {"Laspistol": ('12"', "3", "-", "Pistol")},
-    "Transmutative Armaments": {
-        "Transmutative Armaments - Hammerblade": ("-", "8", "-", "Two-handed, ignores Armour Saves; 6s To Wound inflict "
-                                                                 "a Massive Wound"),
-        "Transmutative Armaments - Spinelash": ("-", "5", "-", "Two-handed, +2 Initiative; 6s To Wound ignore Armour "
-                                                               "Saves"),
-        "Transmutative Armaments - Talon-Rakes": ("-", "User", "-", "Shred, Rending, Rampage")},
 }
 
 WEAPON_RULES = {
@@ -454,8 +433,13 @@ WEAPON_RULES = {
     "Claws and Fangs": ["Rending"], "Needlespine Blaster": ["Rending", "Modified Rending"],
     "Nemesii Blade": ["Shred"], "Toxin Ejector": ["Poisoned"], "Poison Globes": ["Poisoned", "Pinning"],
     "Hookfang": ["Poisoned", "Rending"], "Sympatic Dataspikes": ["Rending", "Concussive"],
-    "Boneshard Spitter": ["Fleshbane"], "Transmutative Armaments": ["Shred", "Rending", "Rampage", "Two-Handed"],
 }
+for _w in ["Adrathic Destructor", "Twin-linked Adrathic Destructor", "Adrathic Devastator", "Twin-linked Adrathic Devastator",
+           "Adrasite Spear", "Paragon Spear", "Meridian Power Blades", "The Apollonian Spear",
+           "Achillus Dreadspear with inbuilt Corvae Las-Pulser", "Telemon Caestus with inbuilt Proteus Plasma Projector",
+           "Iliastus Accelerator Culverin", "Twin-linked Iliastus Accelerator Cannon"]:
+    WEAPON_RULES.setdefault(_w, [])
+    WEAPON_RULES[_w] = WEAPON_RULES[_w] + ["Massive Wound"]
 
 WARGEAR = {
     # Custodes
@@ -544,14 +528,19 @@ WARGEAR = {
         "Archaeotech Repeater."),
     "Flare Shield": ("Ranged attacks which strike the vehicle's Front Armour suffer -1 Strength; Blast and Template "
                      "weapons instead suffer -2 Strength. No effect against close combat attacks."),
-    "Machine Spirit": ("The vehicle has the Power of the Machine Spirit special rule.", ["Power of the Machine Spirit"]),
+    "Machine Spirit": ("Power of the Machine Spirit: A vehicle moving less than flat out speed and not using smoke "
+                       "launchers can fire one additional main weapon at full Ballistic Skill.",
+                       ["Power of the Machine Spirit"]),
     "Armoured Ceramite": ("Melta Bombs and weapons with the Melta special rule do not roll an additional D6 for Armour "
                           "Penetration against a vehicle with Armoured Ceramite."),
     "Extra Armour": ("", ["Extra Armour"]),
     "Searchlight": ("", ["Searchlight"]),
     "Smoke Launchers": ("", ["Smoke Launchers"]),
     "Dozer Blade": ("", ["Dozer Blade"]),
-    "Plasma Grenades": "As described in the ProHammer rules.",
+    "Plasma Grenades": (
+        "ASSAULT/FRAG/PLASMA GRENADES: Any model equipped with assault, frag, or plasma grenades (or other equipment "
+        "that provides a similar effect) that charged into the melee combat this turn ignores the initiative penalty for "
+        "charging through cover (the models attack at its normal initiative value)."),
     "Frag Grenades": "As described in the ProHammer rules.",
     "Krak Grenades": "As described in the ProHammer rules.",
     "Melta Bombs": "As described in the ProHammer rules.",
@@ -569,10 +558,6 @@ WARGEAR = {
     "Master-Crafted Weapon": ("One weapon carried by the model is upgraded to Master-Crafted.", ["Master-Crafted"]),
     "Null Rod": ("Counts as a Power Weapon. The bearer and any unit she has joined cannot be affected by Psychic Powers. "
                  "Models in the unit may not use Psychic Powers themselves."),
-    "Etherium": (
-        "Any enemy unit wishing to shoot at or charge the bearer must first pass a Leadership test (a Psyker attempting "
-        "to target the bearer with a Psychic Power must also pass it). If failed, that unit may not target the bearer "
-        "that phase, but may choose another eligible target."),
     "Execution Blade": "Strength +1, Two-handed, Rending (5+).",
     "Charnabal Sabre": "Counts as a close combat weapon with the Rending special rule.",
     "Proteus Neuro-Lash": (
@@ -638,12 +623,10 @@ WARGEAR = {
     "Paired Laspistols": "The Vanus may fire both Laspistols during the Shooting phase at the same enemy unit.",
     "Sympatic Dataspikes": "Close combat weapons with Rending and Concussive. The Vanus receives +2 Attacks when fighting "
                            "with them.",
-    "Wraithskin": "Confers a 4+ Armour Save and a 4+ Invulnerable Save.",
-    "Transmutative Armaments": (
-        "At the beginning of each Assault phase, before attacks, choose one form for all close combat attacks that phase. "
-        "HAMMERBLADE: Strength 8, ignores Armour Saves, Two-handed; unmodified 6 To Wound inflicts a Massive Wound. "
-        "SPINELASH: Strength 5 at +2 Initiative, Two-handed; unmodified 6 To Wound ignores Armour Saves. TALON-RAKES: "
-        "Shred, Rending and Rampage."),
+    "Etherium": (
+        "Any enemy unit wishing to shoot at or charge the Culexus Assassin must first pass a Leadership test. A Psyker "
+        "attempting to target the Culexus with a Psychic Power must also pass this test. If the test is failed, that "
+        "unit or Psyker may not target the Culexus during that phase, but may choose another eligible target."),
 }
 
 # ================================================================ helpers
@@ -658,6 +641,9 @@ KROLE = k("unit", "Jenetia Krole")
 KNIGHT_ABYSSAL = k("unit", "Sisters of Silence Knight-Abyssal")
 KNIGHT_CENTURA = k("unit", "Sisters of Silence Oblivion Knight-Centura")
 SHADOW_TT = k("shared", "shadow-tt")
+VALDOR_WL = k("upgrade", "Constantin Valdor is the army's Warlord")
+NOT_VALDOR_WL = [cond(VALDOR_WL, "roster", "lessThan", 1)]
+TWO_HANDED = ["Guardian Spear", "Adrasite Spear", "Pyrithite Spear", "Paragon Spear"]
 
 
 def gear_n(key, name, n):
@@ -698,9 +684,25 @@ def block_group(g, conds):
     return g
 
 
+def forbid_item(g, name, conds):
+    """Set the max of the option `name` inside group g to 0 while any condition is true (error if taken)."""
+    for lk in g.iter("entryLink"):
+        if lk.get("name") == name:
+            mx = uid(lk.get("id"), "max")
+            if not any(c.get("id") == mx for c in lk.iter("constraint")):
+                add_to(lk, "constraints", [constraint(mx, "max", 1, auto=True)])
+            add_mods(lk, [modifier("set", mx, 0, groups=[any_of(*conds)])])
+    return g
+
+
+def no_two_handed_shield(g, mid):
+    """A Praesidium Shield may not be used with a Two-handed weapon (author's answer Q12)."""
+    return forbid_item(g, "Praesidium Shield", [has(W(n), mid) for n in TWO_HANDED])
+
+
 def custodes_tt(u):
     """Teleportation Transponders for the whole unit (+5/model) or free via The Shadow of the Throne."""
-    no_valdor = [cond(VALDOR, "roster", "lessThan", 1)]
+    no_valdor = NOT_VALDOR_WL
     lid = uid("link", u, "shadow-tt")
     return [per_model(u, "Teleportation Transponders (entire squad)", 5, u, ["Teleportation Transponder"]),
             link(lid, SHADOW_TT, "Teleportation Transponders (The Shadow of the Throne, free)",
@@ -751,8 +753,9 @@ def army_config():
                  cats=[category_link(gs.CAT_CONFIG, "Configuration", primary=True, key=eid)],
                  constraints=[constraint(uid(eid, "min"), "min", 1, scope="force", deep=True),
                               constraint(uid(eid, "max"), "max", 1, scope="force", deep=True)],
+                 mods=[modifier("set", uid(eid, "min"), 0, conds=[cond(CAT_OPERATIVE, "force", "atLeast", 1)])],
                  infolinks=rules_links(["Talons of the Emperor", "The Emperor's Talons", "Companions of the Ten Thousand",
-                                        "Company-Cadres", "Dedicated Transports (Talons)"], key=eid),
+                                        "Dedicated Transports (Talons)"], key=eid),
                  groups=[g])
 
 
@@ -775,8 +778,9 @@ def talon_master():
               groups=[slot(mid, "Replace Guardian Spear", "Guardian Spear", SPEAR_SWAPS + [("Paragon Spear", 25)]),
                       slot(mid, "Armour", "Custodian Armour", [("Aquilon Terminator Armour", 20)]),
                       tda_weapons,
-                      take(mid, "Wargear", [("Melta Bombs", 5), ("Arae-Shrikes", 10), ("Teleportation Transponder", 5),
-                                            ("Iron Halo", 15), ("Praesidium Shield", 15)])])
+                      no_two_handed_shield(
+                          take(mid, "Wargear", [("Melta Bombs", 5), ("Arae-Shrikes", 10), ("Teleportation Transponder", 5),
+                                                ("Iron Halo", 15), ("Praesidium Shield", 15)]), mid)])
     return unit(name, 150, HQ, "HQ", models=[m], rules_=CUSTODES + ["Independent Character"], key=u)
 
 
@@ -795,8 +799,9 @@ def shield_captain():
                            SPEAR_SWAPS + [("Meridian Power Blades", 35), ("Paragon Spear", 25)]),
                       take(mid, "Wargear", [("Melta Bombs", 5), ("Arae-Shrikes", 15),
                                             ("Teleportation Transponder", 10)]),
-                      take(mid, "Shield (one)", [("Praesidium Shield", 15), ("Advanced Praesidium Shield", 25)],
-                           max_total=1)],
+                      no_two_handed_shield(take(mid, "Shield (one)", [("Praesidium Shield", 15),
+                                                                     ("Advanced Praesidium Shield", 25)], max_total=1),
+                                           mid)],
               entries=[trib])
     return unit(name, 220, HQ, "HQ", models=[m], rules_=CUSTODES + ["Independent Character"], key=u)
 
@@ -808,7 +813,11 @@ def valdor():
     m = model(u, name, 1, 1, 0, unit_profile(u, name, "Infantry (Character)", 7, 5, 5, 4, 5, 6, 5, 10, "2+"),
               kit=["Custodian Armour", "The Apollonian Spear", "Iron Halo", "Arae-Shrikes", "Krak Grenades",
                    "Plasma Grenades"],
-              groups=[take(mid, "The Shadow of the Throne", [("Teleportation Transponder", 0)])])
+              groups=[take(mid, "The Shadow of the Throne (Valdor is the Warlord)", [("Teleportation Transponder", 0)],
+                           max_total=1, hide=NOT_VALDOR_WL)],
+              entries=[entry(VALDOR_WL, "Constantin Valdor is the army's Warlord",
+                             constraints=[constraint(uid(VALDOR_WL, "max"), "max", 1, auto=True)],
+                             infolinks=rules_links(["The Shadow of the Throne"], key=VALDOR_WL))])
     return unit(name, 325, HQ, "HQ", models=[m], key=u, constraints=[unique(u)],
                 rules_=CUSTODES + ["Independent Character", "Eternal Warrior", "The Shadow of the Throne",
                                    "Molecular Severance"])
@@ -830,6 +839,23 @@ def arae(u):
     return take(u, "One model may take", [("Arae-Shrikes", 15)])
 
 
+def hetaeron_shields(u, mid):
+    """Shields for models without a Vexilla; a Praesidium Shield only for models that gave up their (Two-handed)
+    Guardian Spear for a one-handed weapon."""
+    vex = uid(u, "kit", "Magisterium Vexilla and Sentinel Warblade")
+    g = model_swaps(u, "Any model without a Magisterium Vexilla: shield", u, [mid],
+                    [("Praesidium Shield", 15), ("Advanced Praesidium Shield", 25)], minus=[vex])
+    one_handed = [W(n) for n in ("Sentinel Warblade", "Solarite Power Talon", "Pair of Solarite Power Talons",
+                                 "Solarite Power Gauntlet", "Meridian Power Blades")]
+    for lk in g.iter("entryLink"):
+        if lk.get("name") == "Praesidium Shield":
+            mx = uid(lk.get("id"), "one-handed")
+            add_to(lk, "constraints", [constraint(mx, "max", 0)])
+            add_mods(lk, [modifier("increment", mx, 1, repeats=[repeat(x, u, 1)]) for x in one_handed] +
+                     [modifier("decrement", mx, 1, repeats=[repeat(vex, u, 1)])])
+    return g
+
+
 def hetaeron():
     def groups(u, mid):
         vex = kit_entry(u, "Magisterium Vexilla and Sentinel Warblade", ["Magisterium Vexilla", "Sentinel Warblade"])
@@ -837,9 +863,7 @@ def hetaeron():
                             [("Sentinel Warblade", 0), ("Solarite Power Talon", 15),
                              ("Pair of Solarite Power Talons", 20), ("Solarite Power Gauntlet", 20),
                              ("Meridian Power Blades", 45)], entries=[vex]),
-                model_swaps(u, "Any model without a Magisterium Vexilla: shield", u, [mid],
-                            [("Praesidium Shield", 15), ("Advanced Praesidium Shield", 25)],
-                            minus=[uid(u, "kit", "Magisterium Vexilla and Sentinel Warblade")]),
+                hetaeron_shields(u, mid),
                 arae(u)]
 
     def entries(u, mid):
@@ -866,12 +890,13 @@ def aquilon():
 
 def custodian_guard():
     def groups(u, mid):
-        p, _ = pool(u, "For every three models, one may replace Guardian Spear", u,
+        p, _ = pool(u, "For every three models, one may replace Guardian Spear (Vexilla bearer included)", u,
                     [("Adrasite Spear", 10), ("Pyrithite Spear", 15)], 0, every=3)
         vex = kit_entry(u, "Magisterium Vexilla and Sentinel Warblade", ["Magisterium Vexilla", "Sentinel Warblade"],
                         cost=10)
-        vg = group(uid("grp", u, "vexilla"), "One Custodian Guard may replace his Guardian Spear", entries=[vex])
-        return [p, vg, arae(u)]
+        # the Vexilla bearer counts towards the one-per-three limit (author's answer Q15)
+        add_to(p, "selectionEntries", [vex])
+        return [p, arae(u)]
 
     def entries(u, mid):
         return [per_model(u, "Melta Bombs (entire squad)", 5, u, ["Melta Bombs"]), *custodes_tt(u)]
@@ -1009,7 +1034,7 @@ def pallas():
                            [("Twin-linked Adrathic Devastator", 20)]),
                       take(mid, "Vehicle Upgrades", [("Searchlight", 1), ("Extra Armour", 5)])])
     return unit(name, 0, FA, "Fast Attack", models=numbered(m, 3, 1), key=u,
-                rules_=["Power of the Machine Spirit", "Deep Strike", "Outflank", "Grav-backwash (Pallas)"])
+                rules_=["Power of the Machine Spirit", "Deep Strike", "Outflank", "Grav-backwash"])
 
 
 def coronus():
@@ -1047,20 +1072,23 @@ def knight(name, model_name, cost, stats, rules_, key):
                       take(mid, "Wargear", [("Krak Grenades", 2), ("Melta Bombs", 5), ("Augury Scanner", 5),
                                             ("Null Rod", 15)]),
                       take(mid, "One weapon may be", [("Master-Crafted Weapon", 10)])])
-    return unit(name, cost, HQ, "HQ", models=[m], key=u, rules_=SISTERS + rules_)
+    return unit(name, cost, HQ, "HQ", models=[m], key=u, rules_=SISTERS + rules_, groups=[vigil_retinue(u)])
 
 
-def vigil_command():
+VIGIL_RETINUE = k("unit", "Sisters of Silence Vigil Command Cadre", "retinue")
+
+
+def vigil_command(retinue=False):
     name = "Sisters of Silence Vigil Command Cadre"
-    u = k("unit", name)
+    u = VIGIL_RETINUE if retinue else k("unit", name)
     vs, qs, sj = (uid("model", u, n) for n in ("Vigil Sister", "Questora", "Silent Judge"))
     kit = ["Vratine Armour", "Boltgun", "Bolt Pistol", "Frag Grenades", "Psyk-out Grenades"]
     models = [model(u, "Vigil Sister", 3, 6, 15, unit_profile(u, "Vigil Sister", "Infantry", 4, 4, 3, 3, 1, 4, 1, 8,
                                                                 "3+"), kit=kit),
-              model(u, "Questora", 0, 2, 25, unit_profile(u, "Questora", "Infantry", 4, 4, 3, 3, 1, 4, 2, 9, "3+"),
-                    kit=kit),
-              model(u, "Silent Judge", 0, 1, 35, unit_profile(u, "Silent Judge", "Infantry", 5, 4, 3, 3, 2, 5, 2, 9,
-                                                                "3+"), kit=kit, rules_=["Ex Oblivio"])]
+              model(u, "Questora", 0, 2, 25, unit_profile(u, "Questora", "Infantry (Character)", 4, 4, 3, 3, 1, 4, 2, 9,
+                                                          "3+"), kit=kit),
+              model(u, "Silent Judge", 0, 1, 35, unit_profile(u, "Silent Judge", "Infantry (Character)", 5, 4, 3, 3, 2, 5,
+                                                              2, 9, "3+"), kit=kit, rules_=["Ex Oblivio"])]
     # Questora / Silent Judge are upgraded Vigil Sisters: each one lowers the Vigil Sisters needed for the minimum 3
     add_mods(models[0], [modifier("decrement", uid(vs, "min"), 1, repeats=[repeat(x, u, 1)]) for x in (qs, sj)])
     melee = [("Execution Blade", 5), ("Power Weapon", 10), ("Power Stake", 10), ("Proteus Neuro-Lash", 15)]
@@ -1071,11 +1099,20 @@ def vigil_command():
               model_swaps(u, "Any model: replace Bolt Pistol", u, [vs, qs, sj], PISTOLS),
               take(u, "One model may take", [("Augury Scanner", 5)]),
               model_takes(u, "Every model may take", u, [vs, qs, sj], [("Krak Grenades", 2)])]
-    hq_free = [cond(x, "force", "atLeast", 1) for x in (KNIGHT_ABYSSAL, KNIGHT_CENTURA, KROLE)]
-    mods = [modifier("add", "category", gs.FOC_PLUS["HQ"], groups=[any_of(*hq_free)]),
-            size_error(u, [vs, qs, sj], 3, 6, "A Vigil Command Cadre contains 3-6 models (up to two Questora and one "
-                                               "Silent Judge).")]
-    return unit(name, 0, HQ, "HQ", models=models, key=u, rules_=SISTERS + ["Command Cadre"], groups=groups, mods=mods)
+    mods = [size_error(u, [vs, qs, sj], 3, 6, "A Vigil Command Cadre contains 3-6 models (up to two Questora and one "
+                                              "Silent Judge).")]
+    e = unit(name, 0, HQ, "HQ", models=models, key=u, rules_=SISTERS + ["Command Cadre"], groups=groups, mods=mods)
+    if retinue:
+        # taken as a retinue of a Knight-Centura, Knight-Abyssal or Jenetia Krole: no HQ choice used
+        e.remove(e.find("categoryLinks"))
+    return e
+
+
+def vigil_retinue(key):
+    gid = uid("grp", key, "retinue")
+    return group(gid, "Retinue (no HQ choice used)",
+                 links=[link(uid("link", gid, "vigil"), VIGIL_RETINUE, "Sisters of Silence Vigil Command Cadre")],
+                 constraints=[constraint(uid(gid, "max"), "max", 1, auto=True)])
 
 
 def krole():
@@ -1084,7 +1121,7 @@ def krole():
     m = model(u, name, 1, 1, 0, unit_profile(u, name, "Infantry (Character)", 7, 5, 3, 3, 4, 6, 4, 10, "2+"),
               kit=["Artificer Armour", "Enhanced Voidsheen Cloak", "Master-Crafted Relic Blade", "Bolt Pistol",
                    "Psyk-out Grenades", "Frag Grenades", "Krak Grenades", "Melta Bombs"])
-    return unit(name, 160, HQ, "HQ", models=[m], key=u, constraints=[unique(u)],
+    return unit(name, 160, HQ, "HQ", models=[m], key=u, constraints=[unique(u)], groups=[vigil_retinue(u)],
                 rules_=SISTERS + ["Ex Oblivio", "Independent Character", "Eternal Warrior",
                                   "Mistress of the Black Ships"])
 
@@ -1094,7 +1131,7 @@ def cadre(name, cost, slot_cat, sister, prime, per, mn, mx, sister_stats, prime_
     """Sisters of Silence squad: <mn> Sisters + 1 Prime, up to <mx> Sisters."""
     u = k("unit", name)
     sid, pid = uid("model", u, sister), uid("model", u, prime)
-    pm = model(u, prime, 1, 1, 0, unit_profile(u, prime, "Infantry", *prime_stats),
+    pm = model(u, prime, 1, 1, 0, unit_profile(u, prime, "Infantry (Character)", *prime_stats),
                kit=prime_kit if prime_kit is not None else kit, rules_=prime_rules)
     sm = model(u, sister, mn, mx, per, unit_profile(u, sister, sister_stats[0], *sister_stats[1:]), kit=kit)
     groups = groups_fn(u, sid, pid)
@@ -1266,7 +1303,7 @@ def pursuer():
     u = k("unit", name)
     pid, sid, jid = (uid("model", u, n) for n in ("Pursuer Prime", "Pursuer", "Cyber-Jackal"))
     kit = ["Vratine Armour", "Bolt Pistol", "Close Combat Weapon", "Psyk-out Grenades"]
-    prime = model(u, "Pursuer Prime", 1, 1, 0, unit_profile(u, "Pursuer Prime", "Infantry", 4, 4, 3, 3, 1, 4, 2, 9,
+    prime = model(u, "Pursuer Prime", 1, 1, 0, unit_profile(u, "Pursuer Prime", "Infantry (Character)", 4, 4, 3, 3, 1, 4, 2, 9,
                                                              "3+"),
                   kit=["Vratine Armour", "Psyk-out Grenades"], rules_=SISTERS,
                   groups=prime_groups(pid, ("Replace Close Combat Weapon", "Close Combat Weapon",
@@ -1293,7 +1330,7 @@ def subjugator():
     pid, sid = uid("model", u, "Subjugator Prime"), uid("model", u, "Subjugator")
     kit = ["Vratine Armour", "Erinyes Pattern Jetbike", "Bolt Pistol", "Close Combat Weapon", "Psyk-out Grenades"]
     prime = model(u, "Subjugator Prime", 1, 1, 0,
-                  unit_profile(u, "Subjugator Prime", "Jetbike", 4, 4, 3, "3(4)", 1, 4, 2, 9, "3+"),
+                  unit_profile(u, "Subjugator Prime", "Jetbike (Character)", 4, 4, 3, "3(4)", 1, 4, 2, 9, "3+"),
                   kit=["Vratine Armour", "Erinyes Pattern Jetbike", "Psyk-out Grenades"],
                   groups=prime_groups(pid, ("Replace Close Combat Weapon", "Close Combat Weapon",
                                             [("Charnabal Sabre", 5), ("Power Weapon", 10), ("Power Stake", 10),
@@ -1350,7 +1387,6 @@ TEMPLES = [  # name, extra cost, wargear, rules
     ("Vanus", 55, ["Paired Laspistols", "Sympatic Dataspikes"], ["Autonomic Servo-Limbs", "Infocyte"]),
 ]
 CAT_OPERATIVE = k("cat", "Execution Force Operative")
-CAT_XF = k("cat", "Execution Force")
 
 
 def assassin_profile(key, name):
@@ -1385,17 +1421,10 @@ def operatives():
         e = entry(u, name, typ="unit", cost=50 + extra,
                   cats=[category_link(CAT_OPERATIVE, "Execution Force Operative", primary=True, key=u)],
                   constraints=[unique(u, 1, "force")],
-                  infolinks=rules_links(ASSASSIN_RULES + rls + ["Modified Rending"], key=u), entries=[m])
+                  infolinks=rules_links(ASSASSIN_RULES + rls + ["Modified Rending", "Execution Force"], key=u),
+                  entries=[m])
         out.append(e)
     return out
-
-
-def execution_force_cfg():
-    eid = k("cfg", "Execution Force")
-    return entry(eid, "Officio Assassinorum Execution Force",
-                 cats=[category_link(CAT_XF, "Execution Force", primary=True, key=eid)],
-                 constraints=[constraint(uid(eid, "max"), "max", 1, scope="force", deep=True)],
-                 infolinks=rules_links(["Execution Force"], key=eid))
 
 
 def execution_force_entry():
@@ -1412,20 +1441,7 @@ def execution_force_entry():
             c.append(wrap("constraints", cons))
         return c
     return el("forceEntry", {"id": fid, "name": "Officio Assassinorum Execution Force", "hidden": "false"},
-              [wrap("categoryLinks", [cl(gs.CAT_CONFIG, "Configuration"), cl(CAT_XF, "Execution Force", 1, 1),
-                                      cl(CAT_OPERATIVE, "Execution Force Operative", 7, 7)])])
-
-
-def infernus():
-    name = "Infernus Abomination"
-    u = k("unit", name)
-    m = model(u, name, 1, 1, 0, unit_profile(u, name, "Infantry", 5, 4, 4, 4, 3, 5, 4, 10, "4+/4++"),
-              kit=["Wraithskin", "Boneshard Spitter", "Transmutative Armaments"])
-    return unit(name, 140, ELITES, "Elites", models=[m], key=u,
-                mods=[error_if("An Infernus Abomination may only be included in an army with the Traitor Allegiance.",
-                               [cond(L.TRAITOR, "roster", "lessThan", 1)])],
-                rules_=["Cult Operative", "Traitor (Infernus Abomination)", "Fear", "Infiltrate", "Scouts",
-                        "Move Through Cover", "Adamantium Will", "Osmeotic Regeneration"])
+              [wrap("categoryLinks", [cl(CAT_OPERATIVE, "Execution Force Operative", 7, 7)])])
 
 
 # ================================================================== build
@@ -1433,7 +1449,7 @@ def build():
     start(ARMY)
     register_data(rules=RULES, weapons=WEAPONS, multi_profile=MULTI, weapon_rules=WEAPON_RULES, wargear=WARGEAR)
     units = [
-        army_config(), execution_force_cfg(),
+        army_config(),
         # HQ
         talon_master(), shield_captain(), valdor(),
         knight("Sisters of Silence Knight-Abyssal", "Knight-Abyssal", 100, (6, 5, 3, 3, 4, 6, 4, 10, "3+"),
@@ -1445,7 +1461,7 @@ def build():
         custodian_guard(), sentinel_guard(), vigilator(), prosecutor(), witchseeker(),
         # Elites
         hetaeron(), aquilon(), achillus(), galatus(), firebrand(), raptor_guard(), excruciatus(),
-        imperial_assassin(), infernus(),
+        imperial_assassin(),
         # Fast Attack
         agamatus(), pallas(), venatari(), pursuer(), subjugator(), seeker(),
         # Heavy Support
@@ -1453,12 +1469,11 @@ def build():
         # Execution Force
         *operatives(),
     ]
-    shared = [coronus(), rhino(), kharon(), shadow_tt_entry()]
+    shared = [coronus(), rhino(), kharon(), shadow_tt_entry(), vigil_command(retinue=True)]
     root = catalogue(ARMY, units, shared, force_entries=[execution_force_entry()])
     # the catalogue's own categories (Execution Force)
     cats = wrap("categoryEntries", [el("categoryEntry", {"id": CAT_OPERATIVE, "name": "Execution Force Operative",
-                                                         "hidden": "false"}),
-                                    el("categoryEntry", {"id": CAT_XF, "name": "Execution Force", "hidden": "false"})])
+                                                         "hidden": "false"})])
     root.insert(1, cats)
     # Custodes carry several Iron Halos: drop the Legiones Astartes 'one Iron Halo per army' limit
     for e in root.iter("selectionEntry"):

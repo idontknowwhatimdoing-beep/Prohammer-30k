@@ -41,9 +41,9 @@ RULES = {
                        "Strength. After the first round, the weapon is resolved at the bearer's normal Strength."),
     "Phoenix Spear": (
         "Any Emperor's Children Independent Character or unit Character able to select a Power Weapon may instead select "
-        "a Phoenix Spear instead for the cost of that Power Weapon +5 points. A model already equipped with a Power Weapon "
-        "as part of its basic wargear may exchange it for a Phoenix Spear for +5 points. Named characters may not "
-        "exchange their weapons for a Phoenix Spear."),
+        "a Phoenix Spear instead for 20 points. A model already equipped with a Power Weapon as part of its basic "
+        "wargear may exchange it for a Phoenix Spear for 20 points. Named characters may not exchange their weapons for "
+        "a Phoenix Spear."),
     "Digital Lasers": ("An Emperor's Children Independent Character may purchase Digital Lasers for +15 points. A model "
                        "equipped with Digital Lasers adds +1 to its Attacks characteristic. Digital Lasers may not be "
                        "combined with Terminator Honours. They count towards the Armoury points limit; named "
@@ -228,6 +228,7 @@ WEAPONS_ = {
     "Firebrand": ('15"', "5", "5", "Assault 2, Rending, Master-crafted"),
     "Blade of the Laer (Transfigured)": ("-", "User", "-", "Power Weapon, Master-crafted, re-roll To Wound rolls of 1"),
     "Daemon Spear": ("-", "User +2", "-", "Power Weapon, Two-Handed, Armourbane"),
+    "Xyclos Needler": ('12"', "-", "4", "Pistol, Rending, Poisoned (3+)"),
 }
 MULTI = {
     "Sonic Blaster": {"Sonic Blaster - Assault": ('24"', "4", "5", "Assault 2"),
@@ -242,12 +243,12 @@ WEAPON_RULES_ = {
     "Firebrand": ["Rending", "Master-Crafted"],
     "Blade of the Laer (Transfigured)": ["Blade of the Laer (Transfigured)", "Master-Crafted"],
     "Daemon Spear": ["Daemon Spear", "Two-Handed", "Armourbane"],
+    "Xyclos Needler": ["Rending", "Poison"],
 }
 WARGEAR_ = {
     "Digital Lasers": RULES["Digital Lasers"],
     "Sonic Shrieker": RULES["Sonic Shrieker"],
     "The Chirurgeon": "The Chirurgeon grants Fabius Bile a 4+ Invulnerable Save.",
-    "Xyclos Needler": "Fabius Bile's Xyclos Needler. The army book gives no profile for this weapon.",
     "Gilded Panoply": (RULES["Gilded Panoply"], ["Primarch Armour"]),
     "Transfigured Panoply": ("Fulgrim Transfigured's armour: 2+ Armour Save and 4+ Invulnerable Save as shown in his "
                              "profile. The army book gives no further rules for it."),
@@ -315,9 +316,9 @@ def hide_unless(eid, conds_hide):
 
 
 def phoenix_spear_variant(roots, skip_names=()):
-    """Phoenix Spear: next to every Power Weapon option of a Character model (Power Weapon cost +5; +5 where the
-    Power Weapon is its basic wargear, i.e. a free default). Fixed Power Weapons of Character models become a 'Replace Power Weapon'
-    choice offering the spear for +5."""
+    """Phoenix Spear: next to every Power Weapon option of a Character model, always for 20 points (author's answer),
+    also where the Power Weapon is its basic wargear. Fixed Power Weapons of Character models become a
+    'Replace Power Weapon' choice offering the spear for 20."""
     base_id = W("Power Weapon")
     done = set()
     n = 0
@@ -333,7 +334,7 @@ def phoenix_spear_variant(roots, skip_names=()):
                     if lk.get("targetId") == base_id:
                         own.remove(lk)
                         add_to(e, "selectionEntryGroups", [slot(uid(e.get("id"), "ec-spear"), "Replace Power Weapon",
-                                                                "Power Weapon", [("Phoenix Spear", 5)])])
+                                                                "Power Weapon", [("Phoenix Spear", 20)])])
                         n += 1
             for g in list(e.iter("selectionEntryGroup")):
                 if id(g) in done:
@@ -347,13 +348,11 @@ def phoenix_spear_variant(roots, skip_names=()):
                 for lk in list(links):
                     if lk.get("targetId") != base_id:
                         continue
-                    cs = lk.find("costs")
-                    cost = float(cs[0].get("value")) if cs is not None and len(cs) else 0
                     nid = uid(lk.get("id"), "variant", "Phoenix Spear")
                     cons = []
                     if any(c.get("type") == "max" for c in lk.iter("constraint")):
                         cons = [constraint(uid(nid, "max"), "max", 1, auto=True)]
-                    new_l = link(nid, W("Phoenix Spear"), "Phoenix Spear", cost=int(cost) + 5,
+                    new_l = link(nid, W("Phoenix Spear"), "Phoenix Spear", cost=20,
                                  constraints=cons)
                     if g.get("defaultSelectionEntryId") is not None:
                         new_l.set("sortIndex", str(int(lk.get("sortIndex") or 1) + 100))

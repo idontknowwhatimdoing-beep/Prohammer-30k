@@ -383,6 +383,9 @@ def devourers(key="Devourer Terminator Squad", root=True):
     harness, _ = pool(u, "Grenade Harness (one model)", u, [("Grenade Harness", 10)], 1)
     return entry(u, "Devourer Terminator Squad", typ="unit", cost=225 - 4 * 45,
                  cats=[foc(ELITES, "Elites", u)] if root else [], constraints=[force_limit(u)] if root else [],
+                 # Author: a Devourer squad taken as Angron's retinue is the Detachment's one allowed squad
+                 mods=[modifier("decrement", uid(u, "force-max"), 1,
+                                conds=[cond(uid("unit", "angron-devourers"), "force", "atLeast", 1)])] if root else [],
                  infolinks=rules_links([LR, "Stubborn", "Devourers"], key=u),
                  entries=[chief, dev],
                  groups=[model_swaps(u, "Any model: replace Combi-bolter (any number)", u, [did, cid],
@@ -400,12 +403,14 @@ def devourers(key="Devourer Terminator Squad", root=True):
 def triarii(key="Triarii Breacher Squad", root=True):
     # ids keep the old "Triarii" key; the book now spells the unit "Trarii"
     u = uid("unit", key)
-    kit = ["Power Armour", "Bolt Pistol", "Chainaxe", "Boarding Shield"]
+    kit = ["Hardened Power Armour", "Bolt Pistol", "Chainaxe", "Boarding Shield"]
     bid, br = model(u, "Trarii Breacher", 4, 9, 27, (4, 4, 4, 4, 1, 4, 2, 9, "3+"), kit)
     cid, champ = model(u, "Trarii Breacher Champion", 1, 1, 0, (4, 4, 4, 4, 1, 4, 3, 9, "3+"),
-                       ["Power Armour", "Boarding Shield"],
+                       ["Hardened Power Armour", "Boarding Shield"],
                        unit_type="Infantry (Character)",
                        groups=[L2.pa_armoury(uid(key, "champ"), u, 10, slots=["Bolt Pistol", "Chainaxe"])])
+    # Author: the Champion may exchange his Chainaxe for a Caedere Weapon for +5, like the squad
+    squad_prices_for_champion(champ, cid, {"Chainaxe": [("Caedere Weapon", 5)]})
     return entry(u, "Trarii Breacher Squad", typ="unit", cost=155 - 4 * 27,
                  cats=[foc(ELITES, "Elites", u)] if root else [],
                  infolinks=rules_links([LR, "Hardened Armour"], key=u),

@@ -1,4 +1,5 @@
 """XX Legion - Alpha Legion (Forces of the Legions)."""
+import copy
 from itertools import combinations
 
 from legions.common import *  # noqa: F401,F403
@@ -133,6 +134,12 @@ RULES = {
         "as his Primarch Retinue (no additional Force Organisation selection). The retinue deploys normally without him; "
         "he may use I Am Alpharius to replace one of its models and then joins it. A Lernaean Terminator Squad selected "
         "this way does not count against the 0-1 limit on Lernaean Terminator Squads."),
+    "The Rewards of Treachery": (
+        "This unit is normally available only to another Space Marine Legion. It may be selected through The Rewards of "
+        "Treachery (The Coils of the Hydra) or Ingo Pech's Master of Deceit: one such unit per Detachment, selected as an "
+        "Elites choice and paid for normally. It keeps its profile, wargear, options and unit-specific special rules, but "
+        "has Legiones Astartes (Alpha Legion) instead of its own Legion's version (it benefits from the Alpha Legion's "
+        "rules, including Mutable Tactics, not from its original Legion's core rules)."),
     # Rites of War
     "The Coils of the Hydra": (
         "EFFECTS - Subterfuge: before determining who takes the first turn, choose +1 to the roll for the first turn or "
@@ -619,7 +626,183 @@ def rites(ctx):
     ctx.add_rite("Headhunter Leviathal", RULES["Headhunter Leviathal"])
 
 
+# ------------------------------------------------------------------ The Rewards of Treachery
+# Author's answer: these other-Legion units may be selected through The Rewards of Treachery (Coils of the Hydra) or
+# Ingo Pech's Master of Deceit. They are built by running the owning Legion's module on a private copy of the base army
+# list, then copied (with fresh ids) into this catalogue as Elites choices with Legiones Astartes (Alpha Legion).
+TREACHERY_UNITS = {
+    "iii_emperors_children": ["Palatine Blade Squad", "Phoenix Terminator Squad", "Kakophoni Squad", "Sun Killer Squad"],
+    "iv_iron_warriors": ["Tyrant Siege Terminator Squad", "Iron Havoc Squad"],
+    "v_white_scars": ["Golden Keshig Squadron", "Ebon Keshig", "Dark Sons of Death", "Falcon's Claws"],
+    "vii_imperial_fists": ["Templar Brethren Squad", "Phalanx Warder Squad", "Huscarl Terminator Retinue"],
+    "viii_night_lords": ["Terror Squad", "Night Raptor Squad", "Contekar Terminator Elite"],
+    "ix_blood_angels": ["Dawnbreaker Cohort", "Crimson Paladin Squad", "Angel's Tears Squad"],
+    "x_iron_hands": ["Medusan Immortal Squad", "Gorgon Terminator Squad"],
+    "xii_world_eaters": ["Rampager Squad", "Red Hand Destroyer Mortalis Squad", "World Eaters Inductii Squad"],
+    "xiii_ultramarines": ["Invictarus Suzerain Squad", "Fulmentarus Terminator Squad", "Locutarus Storm Squad"],
+    "xiv_death_guard": ["Grave Warden Terminator Squad", "Mortus Poisoner Squad"],
+    "xvi_sons_of_horus": ["Justaerin Terminator Squad", "Reaver Attack Squad", "Chieftain Squad"],
+    "xvii_word_bearers": ["Ashen Circle", "Procurator Squad", "Possessed Marine Squad"],
+    "xviii_salamanders": ["Firedrake Terminator Squad", "Pyroclast Squad", "Salamanders Infernus Destroyer Squad",
+                          "Adherent Squad", "Sanctifier Squad"],
+    "xix_raven_guard": ["Mor Deythan Squad", "Dark Fury Assault Squad", "Deliverer Terminator Squad"],
+}
+TREACHERY_SUFFIX = " (Rewards of Treachery)"
+UNAVAILABLE = uid("al-treachery", "unavailable")
+FOC_CATS = {gs.cat(n) for n, _, _ in gs.FOC} | {gs.CAT_LINE}
+REF_ATTRS = ("targetId", "childId", "defaultSelectionEntryId")
+_SNAPSHOT = {}
+
+
+def _norm(name):
+    return name.replace("’", "'").strip().lower()
+
+
+def _ids(roots):
+    return {x.get("id") for r in roots for x in r.iter() if x.get("id")}
+
+
+def snapshot_base(ctx):
+    """Untouched copy of the base army list (taken before this module changes anything) for the donor modules."""
+    _SNAPSHOT["units"] = copy.deepcopy(ctx.units)
+    _SNAPSHOT["shared"] = copy.deepcopy(ctx.shared)
+    _SNAPSHOT["retinues"] = copy.deepcopy(list(RETINUE_SHARED))
+    _SNAPSHOT["ids"] = _ids(_SNAPSHOT["units"] + _SNAPSHOT["shared"] + _SNAPSHOT["retinues"])
+
+
+def _run_donor(modname):
+    """Run another Legion's module on a private copy of the base list and return (module, its Context). The shared
+    data dicts keep this catalogue's values for every name that already existed (the donor's new names are added)."""
+    import importlib
+    from legions.common import Context
+    mod = importlib.import_module("legions." + modname)
+    dicts = [ARMY_RULES, WEAPON_PROFILES, WEAPONS, WEAPON_RULES, WARGEAR]
+    before = [dict(d) for d in dicts]
+    keep_ret = list(RETINUE_SHARED)
+    keep_legion = L.CURRENT_LEGION
+    try:
+        if hasattr(mod, "register"):
+            mod.register()
+        L.CURRENT_LEGION = mod.LEGION
+        RETINUE_SHARED[:] = copy.deepcopy(_SNAPSHOT["retinues"])
+        dctx = Context(mod.LEGION, copy.deepcopy(_SNAPSHOT["units"]), copy.deepcopy(_SNAPSHOT["shared"]))
+        mod.extend(dctx)
+        dctx.finish()
+    finally:
+        RETINUE_SHARED[:] = keep_ret
+        L.CURRENT_LEGION = keep_legion
+        for d, b in zip(dicts, before):
+            d.update(b)
+    return mod, dctx
+
+
+def _treachery_unit(u, donor_lr, all_ids):
+    """Make a copied donor unit a Rewards of Treachery Elites choice with Legiones Astartes (Alpha Legion)."""
+    u.set("name", u.get("name") + TREACHERY_SUFFIX)
+    cl = u.find("categoryLinks")
+    if cl is None:
+        cl = el("categoryLinks")
+        u.append(cl)
+    for c in list(cl):
+        if c.get("targetId") in FOC_CATS:
+            cl.remove(c)
+    cl.append(foc(ELITES, "Elites", uid("al-treachery", u.get("id"))))
+    mods = u.find("modifiers")
+    for m in list(mods if mods is not None else []):
+        if m.get("field") == "category" and (m.get("type") in ("set-primary", "unset-primary")
+                                             or m.get("value") in FOC_CATS):
+            mods.remove(m)
+    old_lr, new_lr = uid("rule", donor_lr), uid("rule", LR)
+    for il in u.iter("infoLink"):
+        if il.get("targetId") == old_lr:
+            il.set("targetId", new_lr)
+            il.set("name", LR)
+    add_to(u, "infoLinks", rules_links(["The Rewards of Treachery"], key=uid("al-treachery", u.get("id"))))
+    coils, pech = rite_id("The Coils of the Hydra"), uid("unit", "Ingo Pech")
+    off = all_of(cond(coils, "force", "lessThan", 1), cond(pech, "roster", "lessThan", 1))
+    me = u.get("id")
+    others = [cond(i, "force", "atLeast", 1) for i in all_ids if i != me]
+    add_mods(u, [
+        modifier("set", "hidden", "true", groups=[off]),
+        modifier("add", "error", "The Rewards of Treachery: this unit needs The Coils of the Hydra Rite of War or Ingo "
+                                 "Pech (Master of Deceit).", conds=[cond(me, "force", "atLeast", 1)], groups=[off]),
+        modifier("add", "error", "The Rewards of Treachery: a Detachment may include only one unit normally available "
+                                 "to another Legion.", conds=[cond(me, "force", "atLeast", 1)],
+                 groups=[any_of(cond(me, "force", "atLeast", 2), *others)]),
+    ])
+
+
+def rewards_of_treachery(ctx):
+    have = _ids(ctx.units + ctx.shared + list(RETINUE_SHARED))
+    picked_roots, picked_shared = [], []
+    for modname, names in TREACHERY_UNITS.items():
+        mod, dctx = _run_donor(modname)
+        base = _SNAPSHOT["ids"]
+        new_roots = [e for e in dctx.units + dctx.shared if e.get("id") not in base]
+        by_id = {e.get("id"): e for e in new_roots}
+        shared_ids = {e.get("id") for e in dctx.shared if e.get("id") not in base}
+        donor_new = _ids(dctx.units + dctx.shared) - base     # every id the donor module created
+        wanted = {_norm(n): n for n in names}
+        found = {}
+        for e in new_roots:
+            k = _norm(e.get("name", ""))
+            if k in wanted and k not in found:
+                found[k] = e
+        missing = [wanted[k] for k in wanted if k not in found]
+        assert not missing, f"Rewards of Treachery: {modname} has no unit {missing}"
+        # the units plus every donor shared entry (transports, retinues, ...) they use
+        chosen = [copy.deepcopy(found[k]) for k in wanted]
+        extra, todo = [], list(chosen)
+        inside = _ids(chosen)
+        while todo:
+            x = todo.pop()
+            for r in x.iter():
+                for a in REF_ATTRS:
+                    t = r.get(a)
+                    if t in shared_ids and t not in inside:
+                        s = copy.deepcopy(by_id[t])
+                        extra.append(s)
+                        todo.append(s)
+                        inside |= _ids([s])
+        # fresh ids; references to donor-only things outside the copy (its rites, characters, Legion choices...)
+        # point at an entry that is never selected, so those conditions count 0
+        remap = {i: uid("al-treachery", modname, i) for i in inside}
+        for x in chosen + extra:
+            drop = []
+            for r in x.iter():
+                if r.get("id") in remap:
+                    r.set("id", remap[r.get("id")])
+                for a in REF_ATTRS + ("scope", "field"):
+                    t = r.get(a)
+                    if t in remap:
+                        r.set(a, remap[t])
+                    elif t in donor_new and t not in have:
+                        if a == "field":
+                            drop.append(r)
+                        elif a == "scope":
+                            r.set(a, "force")
+                        else:
+                            r.set(a, UNAVAILABLE)
+            for parent in list(x.iter()):
+                for c in list(parent):
+                    if any(c is d for d in drop):
+                        parent.remove(c)
+        for c in chosen:
+            picked_roots.append((c, mod.LR))
+        for s in extra:
+            if s.get("id") not in have:
+                picked_shared.append(s)
+                have.add(s.get("id"))
+    all_ids = [c.get("id") for c, _ in picked_roots]
+    for c, donor_lr in picked_roots:
+        _treachery_unit(c, donor_lr, all_ids)
+    ctx.add_units(*[c for c, _ in picked_roots])
+    ctx.add_shared(entry(UNAVAILABLE, "Not available (another Legion's option)", hidden=True,
+                         constraints=[constraint(uid(UNAVAILABLE, "max"), "max", 0)]), *picked_shared)
+
+
 def extend(ctx):
+    snapshot_base(ctx)
     ctx.legion_rules([LR, "Mutable Tactics", "Siege Specialists", "Martial Hubris", "Infiltration Network"])
     add_to(ctx.unit("Legion"), "selectionEntryGroups",
            [required_choice("al-mutable", "Mutable Tactics", MUTABLE)])
@@ -634,3 +817,4 @@ def extend(ctx):
     one_per_army(sabs, "The Legion Saboteur")
     rites(ctx)
     armoury(ctx)
+    rewards_of_treachery(ctx)

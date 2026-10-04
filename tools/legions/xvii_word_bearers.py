@@ -56,7 +56,7 @@ RULES = {
     "Accursed Crozius": (
         "Any Word Bearers Praetor or Centurion (including a Diabolist) may purchase an Accursed Crozius for +40 points. "
         "It replaces the model's close combat weapon and does not count towards the Space Marine Armoury points limit. "
-        "A Chaplain may replace his Crozius and Iron Halo (Rosarius) with an Accursed Crozius for free. The bearer receives a 4+ Invulnerable Save and counts as possessing a Personal Icon for the purposes of summoning "
+        "A Chaplain may replace his Crozius and Rosarius with an Accursed Crozius for free. The bearer receives a 4+ Invulnerable Save and counts as possessing a Personal Icon for the purposes of summoning "
         "Daemons (Summoning Point). A model with an Accursed Crozius counts as a Dark Apostle for The Dark Shepherds. A "
         "model may never possess more than one Accursed Crozius."),
     "Tainted Strike": (
@@ -409,14 +409,9 @@ def krak(key, melta=True):
     return take(key, "Wargear", items)
 
 
-def discipline_choice(key):
-    return required_choice(key, "Burning Lore Discipline (one power)", [(d, []) for d in DISCIPLINES])
-
-
 def burning_lore_powers(key, owner):
-    """Burning Lore: one power from the Discipline picked with discipline_choice(key)."""
-    return psychic_powers(key, owner, 1, DISCIPLINES,
-                          filters={d: [choice_id(key, "Burning Lore Discipline (one power)", d)] for d in DISCIPLINES})
+    """Burning Lore: one power picked directly from the allowed Disciplines (no separate Discipline choice)."""
+    return psychic_powers(key, owner, 1, DISCIPLINES)
 
 
 # ------------------------------------------------------------------ ids
@@ -477,11 +472,10 @@ def gal_vorbak(key="Gal Vorbak Dark Brethren", root=True):
     big = [cond("model", u, "greaterThan", 5)]  # Bulky: count as two models
     links = tr.find("entryLinks")
     for lk in links:
-        if lk.get("targetId") in (T["Land Raider Phobos"], T["Land Raider Proteus"], T["Legion Drop Pod"]):
+        # author: Drop Pod, Dreadclaw and Land Raiders carry at most 5 Gal Vorbak; only a Spartan carries more
+        if lk.get("targetId") in (T["Land Raider Phobos"], T["Land Raider Proteus"], T["Legion Drop Pod"],
+                                  T["Anvillus Pattern Dreadclaw Drop Pod"]):
             add_mods(lk, [modifier("set", "hidden", "true", conds=big)])
-        elif lk.get("targetId") == T["Anvillus Pattern Dreadclaw Drop Pod"]:
-            # author: a Dreadclaw has room for two more Gal Vorbak than a Drop Pod (up to 7 models)
-            add_mods(lk, [modifier("set", "hidden", "true", conds=[cond("model", u, "greaterThan", 7)])])
     mods, rl = [], [LR, "Daemon", "Fearless", "Bulky", "Rending", "Rending (Gal Vorbak)"]
     if root:
         ss = lambda: [rite("Last of the Serrated Sun")]  # noqa: E731
@@ -644,14 +638,14 @@ def characters():
         ["Artificer Armour", "Master-crafted Accursed Crozius", "Bolt Pistol", "Anathame Dagger", "Frag Grenades"],
         ["Psyker", "High Chaplain", "Burning Lore", "Burning Lore (Named Character)", "Command Retinue (Word Bearers)"],
         retinue=retinue_links("erebus", [command_squad_for("erebus", EREBUS)]),
-        extra_groups=[krak(EREBUS), discipline_choice(EREBUS), burning_lore_powers(EREBUS, EREBUS)], loyalist=False, profile_name="Erebus"))
+        extra_groups=[krak(EREBUS), burning_lore_powers(EREBUS, EREBUS)], loyalist=False, profile_name="Erebus"))
     out.append(named_character(
         LR, "Kor Phaeron, the Black Cardinal", 165, (4, 4, 4, 3, 4, 3, 2, 10, "2+/4+"),
         ["Terminus Consolaris", "Pair of Lightning Claws", "Hand Flamer"],
         ["Psyker", "Feel No Pain", "Burning Lore", "Burning Lore (Named Character)", "Black Cardinal",
          "Jealous Command", "Command Retinue (Word Bearers)"],
         retinue=retinue_links("kor", [L2.terminator_command_squad("kor")]),
-        extra_groups=[discipline_choice(KOR), burning_lore_powers(KOR, KOR)], loyalist=False, profile_name="Kor Phaeron"))
+        extra_groups=[burning_lore_powers(KOR, KOR)], loyalist=False, profile_name="Kor Phaeron"))
     out.append(named_character(
         LR, "Zardu Layak", 175, (5, 5, 4, 5, 2, 5, 2, 10, "2+/5+"),
         ["Artificer Armour", "Refractor Field", "Master-crafted Force Weapon", "Bolt Pistol", "Legion Standard",
@@ -712,7 +706,7 @@ def add_diabolist(ctx):
 
 def add_crozius(ctx):
     """Accursed Crozius: Praetor/Centurion replace their close combat weapon (+40, outside the 100-pt Armoury cap);
-    a Chaplain may swap his Crozius Arcanum and Rosarius (Iron Halo) for one for free."""
+    a Chaplain may swap his Crozius Arcanum and Rosarius for one for free."""
     ac = W("Accursed Crozius")
     for n in ("Legion Praetor", "Legion Centurion"):
         e = ctx.unit(n)
@@ -776,7 +770,7 @@ def add_ic_options(ctx):
         lore = entry(bl, "Burning Lore (Psyker, Mastery Level 1)", cost=30,
                      constraints=[constraint(uid(bl, "max"), "max", 1, auto=True)],
                      infolinks=rules_links(["Burning Lore", "Psyker"], key=bl),
-                     groups=[discipline_choice(bl), burning_lore_powers(bl, u)])
+                     groups=[burning_lore_powers(bl, u)])
         if n == "Legion Centurion":
             add_mods(lore, hide_mods(bl, lambda: [any_of(*[has(c, u) for c in psy])]))
         hb = option(u + "wb", "Hex-Bolts", 5, item="Hex-Bolts")

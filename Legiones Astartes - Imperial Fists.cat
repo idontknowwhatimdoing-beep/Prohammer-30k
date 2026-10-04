@@ -677,6 +677,14 @@
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
 </entryLink>
+<entryLink id="e063-9db3-61e1-a016" name="Vigil Pattern Storm Shield" hidden="false" collective="false" import="true" targetId="8640-526e-09ad-fb32" type="selectionEntry">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a479-16d1-1e1c-41ec" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
+</costs>
+</entryLink>
 <entryLink id="4ac0-9f74-93ff-e6cb" name="Solarite Power Gauntlet" hidden="false" collective="false" import="true" targetId="3ac8-fcc9-b899-2187" type="selectionEntry" sortIndex="111">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="68fd-20be-f347-d912" type="max" />
@@ -1525,14 +1533,6 @@
 <cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
 </costs>
 </entryLink>
-<entryLink id="4b90-2ebd-0fda-66e8" name="Vigil Pattern Storm Shield" hidden="false" collective="false" import="true" targetId="8640-526e-09ad-fb32" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1f2d-bab8-8ce5-4350" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
-</costs>
-</entryLink>
 </entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
@@ -2298,6 +2298,7 @@
 <infoLinks>
 <infoLink id="a1e6-507c-4a18-56bd" name="Crush (Telekinesis)" hidden="false" targetId="1654-f41b-864b-1ba4" type="rule" />
 <infoLink id="b3aa-ac8e-4aca-12b2" name="Psychic Power Type: Witchfire - Focused" hidden="false" targetId="728a-56b9-f9e8-53a2" type="rule" />
+<infoLink id="6bec-e6b8-d934-11ac" name="Crush (Telekinesis)" hidden="false" targetId="3ea2-5e92-c35b-1084" type="profile" />
 </infoLinks>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
@@ -2646,18 +2647,6 @@
 <infoLink id="d72e-9191-1adf-efe0" name="Dark Flame (Daemonology (Malefic))" hidden="false" targetId="6eb6-8caf-e509-20f1" type="rule" />
 <infoLink id="83d3-2453-c2b3-cbd6" name="Psychic Power Type: Witchfire" hidden="false" targetId="d57f-7eaf-5589-f80d" type="rule" />
 <infoLink id="ab18-69ac-7210-260c" name="Dark Flame (Daemonology (Malefic))" hidden="false" targetId="052f-aed2-8ef8-a7e6" type="profile" />
-</infoLinks>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
-</costs>
-</selectionEntry>
-<selectionEntry id="da24-4f13-4257-e70b" name="Possession (Daemonology (Malefic))" hidden="false" collective="false" import="true" type="upgrade">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="379d-b5e3-2388-6599" type="max" />
-</constraints>
-<infoLinks>
-<infoLink id="1dc3-979e-054b-4bbe" name="Possession (Daemonology (Malefic))" hidden="false" targetId="0507-b55d-f00f-4254" type="rule" />
-<infoLink id="051e-07b2-a761-ceac" name="Psychic Power Type: Conjuration" hidden="false" targetId="c913-19fd-3d6e-40c8" type="rule" />
 </infoLinks>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
@@ -3852,6 +3841,14 @@
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
+</costs>
+</entryLink>
+<entryLink id="dcac-aa67-416c-1ae4" name="Vigil Pattern Storm Shield" hidden="false" collective="false" import="true" targetId="8640-526e-09ad-fb32" type="selectionEntry">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6717-2233-1fd3-6fcf" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
 </costs>
 </entryLink>
 <entryLink id="16cf-ec2c-b94d-c89a" name="Solarite Power Gauntlet" hidden="false" collective="false" import="true" targetId="3ac8-fcc9-b899-2187" type="selectionEntry" sortIndex="111">
@@ -5101,14 +5098,6 @@
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
-</costs>
-</entryLink>
-<entryLink id="ae72-ddf7-fb39-e8cf" name="Vigil Pattern Storm Shield" hidden="false" collective="false" import="true" targetId="8640-526e-09ad-fb32" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c228-c5a3-415b-7643" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
 </costs>
 </entryLink>
 </entryLinks>
@@ -45411,7 +45400,7 @@ LIMITATIONS - The army's compulsory Troops choices must be Templar Brethren Squa
 <selectionEntry id="8640-526e-09ad-fb32" name="Vigil Pattern Storm Shield" hidden="false" collective="false" import="true" type="upgrade">
 <rules>
 <rule id="2e63-3acf-ba74-01d2" name="Vigil Pattern Storm Shield" hidden="false">
-<description>An Imperial Fists Independent Character may purchase a Vigil Pattern Storm Shield for +25 points. The bearer may carry no more than one weapon in addition to the shield. Grants a 3+ Invulnerable Save. The shield occupies one hand and the bearer may never receive the bonus Attack for fighting with two close-combat weapons. Other Imperial Fists units may only gain access to it through their own army list entries; it does not make Storm Shields generally available to the Legiones Astartes. It counts towards the Armoury points limit and may not be combined with a Refractor Field, Combat Shield or Boarding Shield.</description>
+<description>An Imperial Fists Independent Character may purchase a Vigil Pattern Storm Shield for +25 points. The bearer may carry no more than one weapon in addition to the shield. Grants a 3+ Invulnerable Save. The shield occupies one hand and the bearer may never receive the bonus Attack for fighting with two close-combat weapons. Other Imperial Fists units may only gain access to it through their own army list entries; it does not make Storm Shields generally available to the Legiones Astartes. The shield takes the place of the bearer's Bolt Pistol. It counts towards the Armoury points limit and may not be combined with a Refractor Field, Combat Shield or Boarding Shield (an Iron Halo is allowed).</description>
 </rule>
 </rules>
 <costs>
@@ -45841,7 +45830,7 @@ Afterwards the squad may not enter Overwatch, may not make Return Fire or Stand 
 <description>Any Imperial Fists Character with access to the Space Marine Armoury may purchase a Solarite Power Gauntlet for +30 points; a model already equipped with a Power Fist may exchange it for a Solarite Power Gauntlet, also for +30 points. Unlike a normal Power Fist, the Solarite Power Gauntlet always strikes at Strength 10 regardless of the bearer's Strength characteristic.</description>
 </rule>
 <rule id="56a1-ead9-d4dc-5c33" name="Vigil Pattern Storm Shield" hidden="false">
-<description>An Imperial Fists Independent Character may purchase a Vigil Pattern Storm Shield for +25 points. The bearer may carry no more than one weapon in addition to the shield. Grants a 3+ Invulnerable Save. The shield occupies one hand and the bearer may never receive the bonus Attack for fighting with two close-combat weapons. Other Imperial Fists units may only gain access to it through their own army list entries; it does not make Storm Shields generally available to the Legiones Astartes. It counts towards the Armoury points limit and may not be combined with a Refractor Field, Combat Shield or Boarding Shield.</description>
+<description>An Imperial Fists Independent Character may purchase a Vigil Pattern Storm Shield for +25 points. The bearer may carry no more than one weapon in addition to the shield. Grants a 3+ Invulnerable Save. The shield occupies one hand and the bearer may never receive the bonus Attack for fighting with two close-combat weapons. Other Imperial Fists units may only gain access to it through their own army list entries; it does not make Storm Shields generally available to the Legiones Astartes. The shield takes the place of the bearer's Bolt Pistol. It counts towards the Armoury points limit and may not be combined with a Refractor Field, Combat Shield or Boarding Shield (an Iron Halo is allowed).</description>
 </rule>
 <rule id="3e76-8810-ef8e-a8ee" name="Teleportation Transponders" hidden="false">
 <description>Any Imperial Fists unit composed entirely of models wearing any form of Terminator Armour may purchase Teleportation Transponders for +15 points per unit. An Imperial Fists Independent Character wearing any form of Terminator Armour may purchase them for +10 points (Hammerfall Strike Force: any Imperial Fists Infantry unit +15 per unit, any Imperial Fists Independent Character +10). A model or unit equipped with Teleportation Transponders may deploy using Deep Strike even if the mission would not normally permit Deep Strike. An Independent Character intending to Deep Strike as part of another unit must purchase Teleportation Transponders separately. Units which already have Deep Strike built in (e.g. Jump Infantry) may not purchase them. Under Hammerfall Strike Force named characters and Rogal Dorn may purchase them as well (+10).</description>
@@ -46145,6 +46134,9 @@ LIMITATIONS - The army's compulsory Troops choices must be Templar Brethren Squa
 </rule>
 <rule id="778a-fc7e-2570-301d" name="Strands of Fate (Psychic Power)" hidden="false">
 <description>Malediction. Choose one enemy non-Vehicle unit within 18" and line of sight. Until the beginning of Magnus' next turn, that unit must pass a Leadership Test each time it attempts to move during the Movement phase, shoot during the Shooting phase or declare a Charge. If the test is failed, the attempted action is lost and the unit may not attempt that type of action again during that phase. A separate Leadership Test is required for each different action attempted.</description>
+</rule>
+<rule id="b613-f30b-a728-cc39" name="Strands of Fate (Shard of the Crimson King)" hidden="false">
+<description>Malediction. Range 18". Choose one enemy non-Vehicle unit within range and line of sight. Until the beginning of Magnus' next turn, the affected unit must pass a Leadership Test each time it wishes to: Move; Shoot; Charge. If the test is failed, that action is lost for that phase.</description>
 </rule>
 <rule id="c5fb-6297-1376-4e29" name="Fury of the Salamander (Psychic Power)" hidden="false">
 <description>Witchfire - Beam. Range 18", S5, AP1, Assault 1, Elemental Horror. Elemental Horror: if an enemy unit suffers one or more unsaved Wounds from Fury of the Salamander, it must immediately take a Morale test regardless of how many casualties were caused, with a Leadership penalty equal to the number of unsaved Wounds caused by Fury of the Salamander. (Counts as a Pyromancy power for Salamanders Librarians in a Detachment using The Awakening Fire.)</description>
@@ -47325,6 +47317,14 @@ LIMITATIONS - The army's compulsory Troops choices must be Templar Brethren Squa
 <characteristic name="S" typeId="6204-806b-a18a-c0be">6</characteristic>
 <characteristic name="AP" typeId="964e-6f66-dcaa-247a">-</characteristic>
 <characteristic name="Type" typeId="54df-9f85-8d55-7440">Witchfire - Beam, Assault 1, Strikedown</characteristic>
+</characteristics>
+</profile>
+<profile id="3ea2-5e92-c35b-1084" name="Crush (Telekinesis)" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+<characteristics>
+<characteristic name="Range" typeId="4b89-f4f0-2a22-1135">18"</characteristic>
+<characteristic name="S" typeId="6204-806b-a18a-c0be">2D6</characteristic>
+<characteristic name="AP" typeId="964e-6f66-dcaa-247a">D6</characteristic>
+<characteristic name="Type" typeId="54df-9f85-8d55-7440">Witchfire - Focused</characteristic>
 </characteristics>
 </profile>
 <profile id="7464-e6d6-4e12-687d" name="Shockwave (Telekinesis)" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">

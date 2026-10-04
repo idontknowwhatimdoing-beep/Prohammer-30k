@@ -1525,7 +1525,7 @@
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6f2f-a5d4-9be8-b38b" type="max" />
 </constraints>
 <costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
+<cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
 </costs>
 </entryLink>
 <entryLink id="3482-da33-a4aa-7926" name="Trophies of Judgement" hidden="false" collective="false" import="true" targetId="51e4-aa76-a175-a3bf" type="selectionEntry">
@@ -2317,6 +2317,7 @@
 <infoLinks>
 <infoLink id="a1e6-507c-4a18-56bd" name="Crush (Telekinesis)" hidden="false" targetId="1654-f41b-864b-1ba4" type="rule" />
 <infoLink id="b3aa-ac8e-4aca-12b2" name="Psychic Power Type: Witchfire - Focused" hidden="false" targetId="728a-56b9-f9e8-53a2" type="rule" />
+<infoLink id="6bec-e6b8-d934-11ac" name="Crush (Telekinesis)" hidden="false" targetId="3ea2-5e92-c35b-1084" type="profile" />
 </infoLinks>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
@@ -2665,18 +2666,6 @@
 <infoLink id="d72e-9191-1adf-efe0" name="Dark Flame (Daemonology (Malefic))" hidden="false" targetId="6eb6-8caf-e509-20f1" type="rule" />
 <infoLink id="83d3-2453-c2b3-cbd6" name="Psychic Power Type: Witchfire" hidden="false" targetId="d57f-7eaf-5589-f80d" type="rule" />
 <infoLink id="ab18-69ac-7210-260c" name="Dark Flame (Daemonology (Malefic))" hidden="false" targetId="052f-aed2-8ef8-a7e6" type="profile" />
-</infoLinks>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
-</costs>
-</selectionEntry>
-<selectionEntry id="da24-4f13-4257-e70b" name="Possession (Daemonology (Malefic))" hidden="false" collective="false" import="true" type="upgrade">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="379d-b5e3-2388-6599" type="max" />
-</constraints>
-<infoLinks>
-<infoLink id="1dc3-979e-054b-4bbe" name="Possession (Daemonology (Malefic))" hidden="false" targetId="0507-b55d-f00f-4254" type="rule" />
-<infoLink id="051e-07b2-a761-ceac" name="Psychic Power Type: Conjuration" hidden="false" targetId="c913-19fd-3d6e-40c8" type="rule" />
 </infoLinks>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
@@ -5111,7 +5100,7 @@
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f1ac-0b17-f2cf-1415" type="max" />
 </constraints>
 <costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
+<cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
 </costs>
 </entryLink>
 <entryLink id="c71e-785b-950b-8fe7" name="Trophies of Judgement" hidden="false" collective="false" import="true" targetId="51e4-aa76-a175-a3bf" type="selectionEntry">
@@ -6019,7 +6008,7 @@
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c45e-2144-c443-0bea" type="max" />
 </constraints>
 <costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
+<cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
 </costs>
 </entryLink>
 <entryLink id="57b4-ea9f-5afe-42b1" name="Trophies of Judgement" hidden="false" collective="false" import="true" targetId="51e4-aa76-a175-a3bf" type="selectionEntry">
@@ -6813,7 +6802,7 @@
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9736-8d1e-30ab-25a7" type="max" />
 </constraints>
 <costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
+<cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
 </costs>
 </entryLink>
 <entryLink id="85c2-ce3f-8d8c-6248" name="Trophies of Judgement" hidden="false" collective="false" import="true" targetId="51e4-aa76-a175-a3bf" type="selectionEntry">
@@ -7329,7 +7318,7 @@
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d531-6347-caa3-aeae" type="max" />
 </constraints>
 <costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
+<cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
 </costs>
 </entryLink>
 <entryLink id="97ff-f024-7543-2b6f" name="Trophies of Judgement" hidden="false" collective="false" import="true" targetId="51e4-aa76-a175-a3bf" type="selectionEntry">
@@ -8077,7 +8066,7 @@
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8e0d-dc02-2b9c-8f9b" type="max" />
 </constraints>
 <costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
+<cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
 </costs>
 </entryLink>
 <entryLink id="d105-9f36-65a2-0876" name="Trophies of Judgement" hidden="false" collective="false" import="true" targetId="51e4-aa76-a175-a3bf" type="selectionEntry">
@@ -9168,7 +9157,7 @@ LIMITATIONS - Traitor Night Lords Detachment only. No Fortification. Night Lords
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0e35-30a1-fb74-3abe" type="max" />
 </constraints>
 <costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
+<cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
 </costs>
 </entryLink>
 <entryLink id="5c3d-83b9-8ab5-ba98" name="Trophies of Judgement" hidden="false" collective="false" import="true" targetId="51e4-aa76-a175-a3bf" type="selectionEntry">
@@ -10269,7 +10258,7 @@ LIMITATIONS - Traitor Night Lords Detachment only. No Fortification. Night Lords
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0fc8-ecb6-ab9d-cffc" type="max" />
 </constraints>
 <costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
+<cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
 </costs>
 </entryLink>
 <entryLink id="a27f-2ea7-607f-d537" name="Trophies of Judgement" hidden="false" collective="false" import="true" targetId="51e4-aa76-a175-a3bf" type="selectionEntry">
@@ -10988,7 +10977,7 @@ LIMITATIONS - Traitor Night Lords Detachment only. No Fortification. Night Lords
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b230-647a-4c55-b68f" type="max" />
 </constraints>
 <costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
+<cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
 </costs>
 </entryLink>
 <entryLink id="7196-2e87-a9d5-8fa8" name="Trophies of Judgement" hidden="false" collective="false" import="true" targetId="51e4-aa76-a175-a3bf" type="selectionEntry">
@@ -14097,7 +14086,7 @@ LIMITATIONS - Traitor Night Lords Detachment only. No Fortification. Night Lords
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="51cc-5bbe-092b-f614" type="max" />
 </constraints>
 <costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
+<cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
 </costs>
 </entryLink>
 <entryLink id="3874-6f05-cf78-bcf4" name="Trophies of Judgement" hidden="false" collective="false" import="true" targetId="51e4-aa76-a175-a3bf" type="selectionEntry">
@@ -14861,7 +14850,7 @@ LIMITATIONS - Traitor Night Lords Detachment only. No Fortification. Night Lords
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2944-15b9-e2e0-eb09" type="max" />
 </constraints>
 <costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
+<cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
 </costs>
 </entryLink>
 <entryLink id="d5f6-30e9-9ced-502a" name="Trophies of Judgement" hidden="false" collective="false" import="true" targetId="51e4-aa76-a175-a3bf" type="selectionEntry">
@@ -15428,7 +15417,7 @@ LIMITATIONS - Traitor Night Lords Detachment only. No Fortification. Night Lords
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="67d4-1343-de62-0d38" type="max" />
 </constraints>
 <costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
+<cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
 </costs>
 </entryLink>
 <entryLink id="a522-befa-d5b8-2a75" name="Trophies of Judgement" hidden="false" collective="false" import="true" targetId="51e4-aa76-a175-a3bf" type="selectionEntry">
@@ -16720,7 +16709,7 @@ LIMITATIONS - Traitor Night Lords Detachment only. No Fortification. Night Lords
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="98c4-f64d-9838-609e" type="max" />
 </constraints>
 <costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
+<cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
 </costs>
 </entryLink>
 <entryLink id="831e-04f9-4591-e641" name="Trophies of Judgement" hidden="false" collective="false" import="true" targetId="51e4-aa76-a175-a3bf" type="selectionEntry">
@@ -23583,7 +23572,7 @@ LIMITATIONS - Traitor Night Lords Detachment only. No Fortification. Night Lords
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5ae3-baaf-46ee-81e6" type="max" />
 </constraints>
 <costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
+<cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
 </costs>
 </entryLink>
 </entryLinks>
@@ -24950,7 +24939,7 @@ LIMITATIONS - Traitor Night Lords Detachment only. No Fortification. Night Lords
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4e37-4673-be00-e12d" type="max" />
 </constraints>
 <costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
+<cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
 </costs>
 </entryLink>
 </entryLinks>
@@ -27031,7 +27020,7 @@ LIMITATIONS - Traitor Night Lords Detachment only. No Fortification. Night Lords
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a53f-e9d3-6077-5534" type="max" />
 </constraints>
 <costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
+<cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
 </costs>
 </entryLink>
 <entryLink id="33b1-4e52-a0ec-442f" name="Trophies of Judgement" hidden="false" collective="false" import="true" targetId="51e4-aa76-a175-a3bf" type="selectionEntry">
@@ -27913,7 +27902,7 @@ LIMITATIONS - Traitor Night Lords Detachment only. No Fortification. Night Lords
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fa54-d963-6010-dab2" type="max" />
 </constraints>
 <costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
+<cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
 </costs>
 </entryLink>
 <entryLink id="0d50-23bc-4eac-dcb8" name="Trophies of Judgement" hidden="false" collective="false" import="true" targetId="51e4-aa76-a175-a3bf" type="selectionEntry">
@@ -28419,7 +28408,7 @@ LIMITATIONS - Traitor Night Lords Detachment only. No Fortification. Night Lords
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="555d-9a4b-d4fd-1d72" type="max" />
 </constraints>
 <costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
+<cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
 </costs>
 </entryLink>
 <entryLink id="db14-26f9-3b85-c233" name="Trophies of Judgement" hidden="false" collective="false" import="true" targetId="51e4-aa76-a175-a3bf" type="selectionEntry">
@@ -28958,7 +28947,7 @@ LIMITATIONS - Traitor Night Lords Detachment only. No Fortification. Night Lords
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e8f5-b83a-b473-0de4" type="max" />
 </constraints>
 <costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
+<cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
 </costs>
 </entryLink>
 <entryLink id="8178-1149-6e16-e503" name="Trophies of Judgement" hidden="false" collective="false" import="true" targetId="51e4-aa76-a175-a3bf" type="selectionEntry">
@@ -29942,7 +29931,7 @@ LIMITATIONS - Traitor Night Lords Detachment only. No Fortification. Night Lords
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fd08-f0ee-95a6-dc6c" type="max" />
 </constraints>
 <costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
+<cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
 </costs>
 </entryLink>
 <entryLink id="d0a8-7456-2549-ecd7" name="Trophies of Judgement" hidden="false" collective="false" import="true" targetId="51e4-aa76-a175-a3bf" type="selectionEntry">
@@ -30277,7 +30266,7 @@ LIMITATIONS - Traitor Night Lords Detachment only. No Fortification. Night Lords
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1107-419c-4199-02c8" type="max" />
 </constraints>
 <costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
+<cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
 </costs>
 </entryLink>
 <entryLink id="55ef-0f7b-09d6-1e28" name="Trophies of Judgement" hidden="false" collective="false" import="true" targetId="51e4-aa76-a175-a3bf" type="selectionEntry">
@@ -30659,7 +30648,7 @@ LIMITATIONS - Traitor Night Lords Detachment only. No Fortification. Night Lords
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3e18-4357-3377-7cf9" type="max" />
 </constraints>
 <costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
+<cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
 </costs>
 </entryLink>
 <entryLink id="8eea-ec79-e366-3a00" name="Trophies of Judgement" hidden="false" collective="false" import="true" targetId="51e4-aa76-a175-a3bf" type="selectionEntry">
@@ -31432,7 +31421,7 @@ LIMITATIONS - Traitor Night Lords Detachment only. No Fortification. Night Lords
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1b17-286a-c37d-b04c" type="max" />
 </constraints>
 <costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
+<cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
 </costs>
 </entryLink>
 <entryLink id="f90d-48d2-47b5-b334" name="Trophies of Judgement" hidden="false" collective="false" import="true" targetId="51e4-aa76-a175-a3bf" type="selectionEntry">
@@ -31938,7 +31927,7 @@ LIMITATIONS - Traitor Night Lords Detachment only. No Fortification. Night Lords
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e279-f3da-49c8-f5ec" type="max" />
 </constraints>
 <costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
+<cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
 </costs>
 </entryLink>
 <entryLink id="aa51-c3a2-4ef8-174e" name="Trophies of Judgement" hidden="false" collective="false" import="true" targetId="51e4-aa76-a175-a3bf" type="selectionEntry">
@@ -32477,7 +32466,7 @@ LIMITATIONS - Traitor Night Lords Detachment only. No Fortification. Night Lords
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="664a-af14-1411-3a25" type="max" />
 </constraints>
 <costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
+<cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
 </costs>
 </entryLink>
 <entryLink id="f219-ffa8-a32f-7f22" name="Trophies of Judgement" hidden="false" collective="false" import="true" targetId="51e4-aa76-a175-a3bf" type="selectionEntry">
@@ -33461,7 +33450,7 @@ LIMITATIONS - Traitor Night Lords Detachment only. No Fortification. Night Lords
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e295-a50f-43b7-cfad" type="max" />
 </constraints>
 <costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
+<cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
 </costs>
 </entryLink>
 <entryLink id="b86e-d7f8-8419-3620" name="Trophies of Judgement" hidden="false" collective="false" import="true" targetId="51e4-aa76-a175-a3bf" type="selectionEntry">
@@ -33796,7 +33785,7 @@ LIMITATIONS - Traitor Night Lords Detachment only. No Fortification. Night Lords
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="62a1-8ef9-1a19-dc91" type="max" />
 </constraints>
 <costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
+<cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
 </costs>
 </entryLink>
 <entryLink id="e787-91a6-08f4-295b" name="Trophies of Judgement" hidden="false" collective="false" import="true" targetId="51e4-aa76-a175-a3bf" type="selectionEntry">
@@ -34178,7 +34167,7 @@ LIMITATIONS - Traitor Night Lords Detachment only. No Fortification. Night Lords
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="124a-b780-466e-8d90" type="max" />
 </constraints>
 <costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
+<cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
 </costs>
 </entryLink>
 <entryLink id="188f-f663-c991-985d" name="Trophies of Judgement" hidden="false" collective="false" import="true" targetId="51e4-aa76-a175-a3bf" type="selectionEntry">
@@ -35892,7 +35881,7 @@ LIMITATIONS - Traitor Night Lords Detachment only. No Fortification. Night Lords
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0a31-de3d-a9c0-ab1c" type="max" />
 </constraints>
 <costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
+<cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
 </costs>
 </entryLink>
 <entryLink id="f760-a30a-094c-5db4" name="Trophies of Judgement" hidden="false" collective="false" import="true" targetId="51e4-aa76-a175-a3bf" type="selectionEntry">
@@ -36398,7 +36387,7 @@ LIMITATIONS - Traitor Night Lords Detachment only. No Fortification. Night Lords
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4f3f-3f77-4abc-708b" type="max" />
 </constraints>
 <costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
+<cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
 </costs>
 </entryLink>
 <entryLink id="40f1-3699-106e-e9f1" name="Trophies of Judgement" hidden="false" collective="false" import="true" targetId="51e4-aa76-a175-a3bf" type="selectionEntry">
@@ -36937,7 +36926,7 @@ LIMITATIONS - Traitor Night Lords Detachment only. No Fortification. Night Lords
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bb36-2c72-e210-ae99" type="max" />
 </constraints>
 <costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
+<cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
 </costs>
 </entryLink>
 <entryLink id="3a80-a988-5f96-e815" name="Trophies of Judgement" hidden="false" collective="false" import="true" targetId="51e4-aa76-a175-a3bf" type="selectionEntry">
@@ -37921,7 +37910,7 @@ LIMITATIONS - Traitor Night Lords Detachment only. No Fortification. Night Lords
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2276-0ebb-4456-4ae7" type="max" />
 </constraints>
 <costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
+<cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
 </costs>
 </entryLink>
 <entryLink id="ab22-1d1e-28be-e805" name="Trophies of Judgement" hidden="false" collective="false" import="true" targetId="51e4-aa76-a175-a3bf" type="selectionEntry">
@@ -38256,7 +38245,7 @@ LIMITATIONS - Traitor Night Lords Detachment only. No Fortification. Night Lords
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="84c0-df4f-dcd4-4565" type="max" />
 </constraints>
 <costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
+<cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
 </costs>
 </entryLink>
 <entryLink id="3089-41d3-df56-214d" name="Trophies of Judgement" hidden="false" collective="false" import="true" targetId="51e4-aa76-a175-a3bf" type="selectionEntry">
@@ -38638,7 +38627,7 @@ LIMITATIONS - Traitor Night Lords Detachment only. No Fortification. Night Lords
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1b6b-21ae-71b6-6d47" type="max" />
 </constraints>
 <costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
+<cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
 </costs>
 </entryLink>
 <entryLink id="7eb8-bd19-e229-c2c0" name="Trophies of Judgement" hidden="false" collective="false" import="true" targetId="51e4-aa76-a175-a3bf" type="selectionEntry">
@@ -39777,7 +39766,7 @@ LIMITATIONS - Traitor Night Lords Detachment only. No Fortification. Night Lords
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bdd4-1be7-e969-a752" type="max" />
 </constraints>
 <costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
+<cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
 </costs>
 </entryLink>
 <entryLink id="25d8-c2f5-63e1-e57b" name="Trophies of Judgement" hidden="false" collective="false" import="true" targetId="51e4-aa76-a175-a3bf" type="selectionEntry">
@@ -40283,7 +40272,7 @@ LIMITATIONS - Traitor Night Lords Detachment only. No Fortification. Night Lords
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="84f9-6d02-05f2-2e5a" type="max" />
 </constraints>
 <costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
+<cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
 </costs>
 </entryLink>
 <entryLink id="0906-e35e-d0e9-ced6" name="Trophies of Judgement" hidden="false" collective="false" import="true" targetId="51e4-aa76-a175-a3bf" type="selectionEntry">
@@ -40822,7 +40811,7 @@ LIMITATIONS - Traitor Night Lords Detachment only. No Fortification. Night Lords
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="47b5-68ec-d231-2b91" type="max" />
 </constraints>
 <costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
+<cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
 </costs>
 </entryLink>
 <entryLink id="a386-f37c-e14e-44f2" name="Trophies of Judgement" hidden="false" collective="false" import="true" targetId="51e4-aa76-a175-a3bf" type="selectionEntry">
@@ -42151,7 +42140,7 @@ LIMITATIONS - Traitor Night Lords Detachment only. No Fortification. Night Lords
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ddde-fae6-8262-6406" type="max" />
 </constraints>
 <costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
+<cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
 </costs>
 </entryLink>
 <entryLink id="8b69-e3be-83d0-b7a5" name="Trophies of Judgement" hidden="false" collective="false" import="true" targetId="51e4-aa76-a175-a3bf" type="selectionEntry">
@@ -42657,7 +42646,7 @@ LIMITATIONS - Traitor Night Lords Detachment only. No Fortification. Night Lords
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4cec-d2f5-03a4-35cd" type="max" />
 </constraints>
 <costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
+<cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
 </costs>
 </entryLink>
 <entryLink id="b9b3-fd9e-8d00-7fe8" name="Trophies of Judgement" hidden="false" collective="false" import="true" targetId="51e4-aa76-a175-a3bf" type="selectionEntry">
@@ -43196,7 +43185,7 @@ LIMITATIONS - Traitor Night Lords Detachment only. No Fortification. Night Lords
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="859d-9e97-6165-b9e5" type="max" />
 </constraints>
 <costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
+<cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
 </costs>
 </entryLink>
 <entryLink id="a31f-67c7-5675-498a" name="Trophies of Judgement" hidden="false" collective="false" import="true" targetId="51e4-aa76-a175-a3bf" type="selectionEntry">
@@ -44043,7 +44032,7 @@ LIMITATIONS - Traitor Night Lords Detachment only. No Fortification. Night Lords
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b324-897b-4e02-0237" type="max" />
 </constraints>
 <costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
+<cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
 </costs>
 </entryLink>
 <entryLink id="7b43-2f0d-d62d-b9a3" name="Trophies of Judgement" hidden="false" collective="false" import="true" targetId="51e4-aa76-a175-a3bf" type="selectionEntry">
@@ -45412,7 +45401,7 @@ LIMITATIONS - Traitor Night Lords Detachment only. No Fortification. Night Lords
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8284-5d23-4471-94c5" type="max" />
 </constraints>
 <costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
+<cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
 </costs>
 </entryLink>
 </entryLinks>
@@ -46229,7 +46218,7 @@ LIMITATIONS - Traitor Night Lords Detachment only. No Fortification. Night Lords
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8990-de0c-a5f6-4cb3" type="max" />
 </constraints>
 <costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
+<cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
 </costs>
 </entryLink>
 <entryLink id="d917-f15d-5058-05b1" name="Trophies of Judgement" hidden="false" collective="false" import="true" targetId="51e4-aa76-a175-a3bf" type="selectionEntry">
@@ -46564,7 +46553,7 @@ LIMITATIONS - Traitor Night Lords Detachment only. No Fortification. Night Lords
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0f1a-7e12-218e-63f5" type="max" />
 </constraints>
 <costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
+<cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
 </costs>
 </entryLink>
 <entryLink id="51ab-893e-9543-a669" name="Trophies of Judgement" hidden="false" collective="false" import="true" targetId="51e4-aa76-a175-a3bf" type="selectionEntry">
@@ -46946,7 +46935,7 @@ LIMITATIONS - Traitor Night Lords Detachment only. No Fortification. Night Lords
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b4db-56b6-ab05-66f7" type="max" />
 </constraints>
 <costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
+<cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
 </costs>
 </entryLink>
 <entryLink id="2738-ca53-fd8f-e4c2" name="Trophies of Judgement" hidden="false" collective="false" import="true" targetId="51e4-aa76-a175-a3bf" type="selectionEntry">
@@ -48614,7 +48603,7 @@ LIMITATIONS - Traitor Night Lords Detachment only. No Fortification. Night Lords
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0c94-1164-62d9-2575" type="max" />
 </constraints>
 <costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
+<cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
 </costs>
 </entryLink>
 </entryLinks>
@@ -49456,7 +49445,7 @@ LIMITATIONS - Traitor Night Lords Detachment only. No Fortification. Night Lords
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5e7e-185d-a912-7016" type="max" />
 </constraints>
 <costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
+<cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
 </costs>
 </entryLink>
 </entryLinks>
@@ -52141,7 +52130,7 @@ Afterwards the squad may not enter Overwatch, may not make Return Fire or Stand 
 <description>A Night Lords army may exchange two Heavy Support selections for one additional Fast Attack selection; the Standard Force Organisation Chart then allows 4 Fast Attack / 1 Heavy Support. (Toggle the option on the Legion entry on or off.)</description>
 </rule>
 <rule id="3875-e379-dc58-9290" name="Nostraman Chainglaive" hidden="false">
-<description>The Nostraman Chainglaive does not count as a Power Weapon.</description>
+<description>The Nostraman Chainglaive counts as a Power Weapon (attacks ignore Armour Saves).</description>
 </rule>
 <rule id="f5e6-232a-4e21-2b18" name="Stealth Adept" hidden="false">
 <description>A Night Lords Independent Character may purchase Stealth Adept for +5 points; any Night Lords Infantry or Jump Infantry unit for +1 point per model (every model must purchase it). Models with Stealth Adept gain Stealth. Bikes, Jetbikes, any Terminator Armour, Dreadnoughts and Vehicles may not purchase it. An Independent Character joining a unit with Stealth Adept must also have it, otherwise the unit does not benefit while he remains attached.</description>
@@ -52439,6 +52428,9 @@ Afterwards the squad may not enter Overwatch, may not make Return Fire or Stand 
 </rule>
 <rule id="778a-fc7e-2570-301d" name="Strands of Fate (Psychic Power)" hidden="false">
 <description>Malediction. Choose one enemy non-Vehicle unit within 18" and line of sight. Until the beginning of Magnus' next turn, that unit must pass a Leadership Test each time it attempts to move during the Movement phase, shoot during the Shooting phase or declare a Charge. If the test is failed, the attempted action is lost and the unit may not attempt that type of action again during that phase. A separate Leadership Test is required for each different action attempted.</description>
+</rule>
+<rule id="b613-f30b-a728-cc39" name="Strands of Fate (Shard of the Crimson King)" hidden="false">
+<description>Malediction. Range 18". Choose one enemy non-Vehicle unit within range and line of sight. Until the beginning of Magnus' next turn, the affected unit must pass a Leadership Test each time it wishes to: Move; Shoot; Charge. If the test is failed, that action is lost for that phase.</description>
 </rule>
 <rule id="c5fb-6297-1376-4e29" name="Fury of the Salamander (Psychic Power)" hidden="false">
 <description>Witchfire - Beam. Range 18", S5, AP1, Assault 1, Elemental Horror. Elemental Horror: if an enemy unit suffers one or more unsaved Wounds from Fury of the Salamander, it must immediately take a Morale test regardless of how many casualties were caused, with a Leadership penalty equal to the number of unsaved Wounds caused by Fury of the Salamander. (Counts as a Pyromancy power for Salamanders Librarians in a Detachment using The Awakening Fire.)</description>
@@ -53474,7 +53466,7 @@ Afterwards the squad may not enter Overwatch, may not make Return Fire or Stand 
 <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">-</characteristic>
 <characteristic name="S" typeId="6204-806b-a18a-c0be">User +1</characteristic>
 <characteristic name="AP" typeId="964e-6f66-dcaa-247a">-</characteristic>
-<characteristic name="Type" typeId="54df-9f85-8d55-7440">Rending, Two-Handed</characteristic>
+<characteristic name="Type" typeId="54df-9f85-8d55-7440">Power Weapon, Rending, Two-Handed</characteristic>
 </characteristics>
 </profile>
 <profile id="c3af-c631-39a3-cad8" name="Nostraman Chainblade" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
@@ -53619,6 +53611,14 @@ Afterwards the squad may not enter Overwatch, may not make Return Fire or Stand 
 <characteristic name="S" typeId="6204-806b-a18a-c0be">6</characteristic>
 <characteristic name="AP" typeId="964e-6f66-dcaa-247a">-</characteristic>
 <characteristic name="Type" typeId="54df-9f85-8d55-7440">Witchfire - Beam, Assault 1, Strikedown</characteristic>
+</characteristics>
+</profile>
+<profile id="3ea2-5e92-c35b-1084" name="Crush (Telekinesis)" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+<characteristics>
+<characteristic name="Range" typeId="4b89-f4f0-2a22-1135">18"</characteristic>
+<characteristic name="S" typeId="6204-806b-a18a-c0be">2D6</characteristic>
+<characteristic name="AP" typeId="964e-6f66-dcaa-247a">D6</characteristic>
+<characteristic name="Type" typeId="54df-9f85-8d55-7440">Witchfire - Focused</characteristic>
 </characteristics>
 </profile>
 <profile id="7464-e6d6-4e12-687d" name="Shockwave (Telekinesis)" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">

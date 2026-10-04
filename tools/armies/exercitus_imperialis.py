@@ -5,15 +5,31 @@ Structure (see tools/questions/Exercitus Imperialis.md):
   paid on the configuration entry instead of on the Force Commander; incompatible pairs, Allegiance limits and the
   Force Commander requirement are errors).
 - Provenance-dependent unit options are hidden until the Provenance is chosen in the same Detachment.
-- Attached Advisors (Navigator, Memorator, Discipline Masters, Psyker Attaches ...) and the Field Officers are shared
-  entries linked from the units they may join, so their 0-1 / 0-n limits count across the whole Detachment.
-- Units that "do not occupy a Force Organisation slot" and are not attached (Remembrancer Circle) use the HQ slot plus
-  the game system's "Force Org: +1 HQ" category, so they never use up an HQ choice.
+- Attached Advisors (Navigator, Memorator, Psyker Attaches ...) and the Field Officers are shared entries linked from
+  the units they may join, so their 0-1 / 0-n limits count across the whole Detachment; any number may join a unit.
+- Units that "do not occupy a Force Organisation slot" and are bought on their own (Discipline Master Cadre,
+  Remembrancer Circle) use the HQ slot plus the game system's "Force Org: +1 HQ" category, so they never use up an HQ
+  choice.
+- Characters' Armoury sections (Senior Officer, Junior Officer, Advisor, Militia Sergeant, Ogryn Bone 'ead, Enginseer)
+  are one group per model with the section's points allowance as a limit; vehicles use the General Vehicle Upgrades,
+  Sentinel and Land Speeder sections.
 """
 from armies.common import *
 from armies.common import _negate
+from legiones import psychic_powers, power_entry
 
 ARMY = "Exercitus Imperialis"
+
+# Army-specific psychic power (same entry shape as tools/data/psychic_powers.py)
+RAISE_THE_DEAD = dict(
+    discipline=None, type="Psychic Power", profile=None,
+    text="Necromancer Demagogue (Undying Horde). Instead of using another psychic power that turn, the Force Commander "
+         "may attempt to Raise the Dead. Select one destroyed Zombie Levy Squad which is still eligible to return through "
+         "The Dead Rise Again. If the Psychic Test is passed, the unit immediately returns to play and expends one of its "
+         "remaining returns. Place the returned unit wholly within 6\" of the Force Commander and more than 1\" from any "
+         "enemy model. A unit returned in this manner may not charge during the turn in which it is raised. If the unit "
+         "cannot legally be placed, it is instead placed into Reserves and enters using Outflank.")
+L.PSY.POWERS.setdefault("Raise the Dead", RAISE_THE_DEAD)
 
 # ====================================================================== RULES
 PROV_TEXT = {
@@ -190,17 +206,17 @@ RULES = {
                      "Shield for +5 points.",
     "Attached Advisor": "A model with this special rule does not occupy a Force Organisation slot and may not be used to "
                         "fulfil a compulsory HQ choice. Before deployment it must be assigned to an eligible friendly unit "
-                        "as described in its unit entry; it then becomes part of that unit and may not leave it. Unless "
-                        "specifically stated otherwise, only one model with the Attached Advisor special rule may be "
-                        "assigned to each unit.",
+                        "as described in its unit entry; it then becomes part of that unit and may not leave it.",
     "Instil Order": "While a Discipline Master is attached to a unit, the Leadership of every model in that unit is "
                     "increased by 1, to a maximum of 8. Whenever the unit fails a Leadership, Morale or Pinning test the "
                     "controlling player may re-roll it; if he does, the unit immediately suffers D3 Wounds with no Armour "
                     "Saves (not allocated to the Discipline Master, Independent Characters or Medicae Orderlies). The "
                     "second result must be accepted.",
-    "Discipline Master Cadre": "0-1 Discipline Master Cadre of 1-5 Discipline Masters. The Cadre does not occupy a Force "
-                               "Organisation slot and may not fulfil a compulsory HQ choice. Each Discipline Master must "
-                               "be assigned to a different friendly Infantry unit before deployment and may not leave it.",
+    "Discipline Master Cadre": "0-1 Discipline Master Cadre of 1-5 Discipline Masters (20 points per model). The Cadre "
+                               "does not occupy a Force Organisation slot and may not fulfil a compulsory HQ choice. Each "
+                               "Discipline Master operates independently and must be assigned to a friendly Infantry unit "
+                               "before deployment. Only one Discipline Master may be assigned to each unit. Once assigned, "
+                               "a Discipline Master may not leave that unit during the battle.",
     "Warp Sight": "Whenever an enemy unit enters play by Deep Strike within 4D6\" of the Navigator, the Navigator and his "
                   "unit may immediately make a normal shooting attack against it (after it is placed, before it may "
                   "act), counting as stationary. Once per enemy turn. The Navigator must be assigned to the Force "
@@ -234,8 +250,9 @@ RULES = {
                "has no additional psychic disciplines and may never exchange Divination for another discipline.",
     "Rogue Psyker": "Traitor only: may only be included in an army that has selected the Cult Horde Provenance. Occupies "
                     "an HQ choice but may not fulfil a compulsory HQ choice and does not benefit from Provenances of War. "
-                    "A Rogue Psyker may use one psychic power per turn and must purchase at least one Rogue Psyker "
-                    "psychic power (+20 points each).",
+                    "A Rogue Psyker may use one psychic power per turn. He selects powers from either Telepathy of "
+                    "Malefic Daemonology. He must purchase at least one Rogue Psyker psychic power (+20 points per "
+                    "power).",
     "Alpha Psyker": "An Alpha Psyker (Rogue Alpha profile) may use up to two psychic powers per turn, although the same "
                     "power may not be used more than once in the same turn.",
     "Amuse Me, Jester!": "The Company Jester must be assigned to a single friendly Troops choice (not a Command Squad, HQ "
@@ -415,6 +432,30 @@ RULES = {
     "Siege Shells (Medusa)": "A Medusa siege gun with Siege Shells may fire them instead of its normal ammunition: 2D6+10 "
                              "armour penetration against bunkers and fortifications; models sheltering inside a building "
                              "struck are affected on a 4+ instead of 6.",
+    "Exercitus Imperialis Armoury": (
+        "A model may only select equipment from an Armoury section where its unit entry or a special rule permits it; "
+        "permission granted to a character does not extend to the other models in its unit. ALLOWANCES (maximum "
+        "expenditure per model): Senior Officer 100, Junior Officer 50, Advisor 25, Militia Sergeant 25, Ogryn Bone 'ead "
+        "25, Enginseer 50; Terminator Weapons: see that section; General Vehicle Upgrades, Sentinel and Land Speeder: no "
+        "limit. A character's allowance includes all additional weapons, armour, grenades and personal equipment "
+        "purchased for that model, including equipment from another Armoury section or an individual Provenance option. "
+        "Starting equipment, whole-squad upgrades, Provenance selection costs, character rank upgrades and psychic powers "
+        "do not count; an Orbital Bombardment is an army asset and does not count. SELECTING: unless stated otherwise a "
+        "ranged weapon replaces one existing pistol or basic ranged weapon and a close combat weapon replaces one existing "
+        "close combat weapon; one ranged and one close combat exchange per model; where a unit entry permits two pistols "
+        "to be upgraded both may be upgraded, paying for each (two pistols do not grant Gunfighters); each item once per "
+        "model; equipment in a model's starting wargear or supplied by a whole-squad upgrade may not be purchased again; "
+        "heavy and special weapons follow their unit entries; a specific unit-entry or Provenance price takes precedence "
+        "and the same item is never paid for twice. A Senior Officer may carry no more than two weapons, only one of "
+        "which may be two-handed (grenades and equipment do not count; an Enginseer's Servo-arm does not occupy a "
+        "carried-weapon slot). ARMOUR: a model may wear only one type of armour; carapace replaces flak; Terminator "
+        "Armour replaces the previous armour, includes no weapons and may not be combined with a Cavalry Mount, Jump Pack "
+        "or Grav-chute. A model with more than one Invulnerable Save uses the best; Refractor Fields and Iron Halos do not "
+        "add together; Cyber-augmetics and Cyber-familiars apply their improvements to a maximum of 3+. An army may "
+        "include no more than one Iron Halo (including Iron Halos in starting equipment)."),
+    "Pair of Lightning Claws (Armoury)": "A Pair of Lightning Claws occupies both carried-weapon slots: a model with one may not "
+                               "retain a pistol or basic ranged weapon and may not purchase an additional single "
+                               "Lightning Claw.",
 }
 for _n, (_c, _t) in PROV_TEXT.items():
     RULES[f"Provenance: {_n}"] = f"+{_c} points. {_t}"
@@ -530,6 +571,7 @@ WEAPON_RULES = {
     "Powered Mining Pick": ["Rending", "Two-Handed"], "Charnabal Sabre": ["Rending"], "Thudd Gun": ["Shell Shock"],
     "Gorgon Mortar Battery": ["Pinning"], "Melta Torpedo": ["Armourbane", "Orbital Bombardment"],
     "Lance Strike": ["Orbital Bombardment"], "Barrage Bomb": ["Orbital Bombardment"],
+    "Pair of Lightning Claws": ["Pair of Lightning Claws (Armoury)"],
 }
 WARGEAR = {
     "Sub-flak Armour": "6+ Armour Save.",
@@ -606,8 +648,8 @@ WARGEAR = {
                            "are affected on a 4+.",
     "Void-Hardened Armour": "The model may re-roll failed Armour Saves caused by Blast or Template weapons. A unit with "
                             "Void-Hardened Armour may not Run or make Sweeping Advances.",
-    "Boarding Shield": "Rules referred to the Exercitus Imperialis Armoury but not printed there (see the questions "
-                       "file): treated as +1 Armour Save in close combat until clarified.",
+    "Boarding Shield": "A Boarding Shield grants a 5+ Invulnerable Save. A Boarding Shield occupies one hand. A model "
+                       "carrying one does not receive the bonus Attack for fighting with two weapons.",
     "Razorwire Section": "One section of Razorwire terrain (see Razorwire Sections).",
     "Administratum Data-Slate": "The Locus Scribii himself does not fire twice when Prepared Fire is used.",
     "Surveyor's Auspex": "See Surveyed Ground.",
@@ -616,50 +658,57 @@ WARGEAR = {
 }
 
 # ============================================================== armoury lists
-# The book names armoury sections but prints no list/costs - see questions file (Q3). Costs below are proposals.
+# Exercitus Imperialis Armoury (v4 source lines 7130-8000). Items: (name, pts) or (name, pts, show, hide) where
+# show/hide are Provenance names or zero-argument callables returning conditions (see gate_mods).
+_LAS = ("Laspistol or Autopistol", 0)
 ARMOURY = {
     "senior": dict(
-        ranged=[("Bolt Pistol", 2), ("Hellpistol", 2), ("Needle Pistol", 5), ("Hand Flamer", 5), ("Blast Pistol", 8),
-                ("Plasma Pistol", 10), ("Boltgun", 2), ("Hellgun", 2), ("Shotgun", 0), ("Combi-bolter", 3),
-                ("Storm Bolter", 5), ("Volkite Charger", 10), ("Phased Plasma-fusil", 10)],
-        ccw=[("Augmented Weapon", 3), ("Charnabal Sabre", 5), ("Power Weapon", 10), ("Lightning Claw", 15),
-             ("Power Fist", 15), ("Thunder Hammer", 20)],
-        gear=[("Carapace Armour", 5), ("Iron Halo", 15), ("Melta Bombs", 5), ("Demolition Charge", 5),
-              ("Cyber-familiar", 10), ("Digital Lasers", 10), ("Vox-caster", 5), ("Nuncio-vox", 10), ("Infravisor", 3),
-              ("Cameleoline", 5), ("Targeter", 2)]),
+        title="Senior Officer", cap=100,
+        ranged=[_LAS, ("Bolt Pistol", 2), ("Hellpistol", 2), ("Hand Flamer", 5), ("Blast Pistol", 8),
+                ("Needle Pistol", 5), ("Plasma Pistol", 10), ("Lasgun or Autogun", 0), ("Shotgun", 0), ("Boltgun", 2),
+                ("Storm Bolter", 5), ("Combi-bolter", 5)],
+        ccw=[("Charnabal Sabre", 5), ("Power Weapon", 10), ("Power Fist", 15),
+             ("Tainted Weapon", 5, ["Cult Horde", "Tainted Flesh"])],
+        gear=[("Carapace Armour", 5), ("Iron Halo", 15), ("Cyber-familiar", 10), ("Digital Lasers", 5), ("Targeter", 1),
+              ("Infravisor", 5), ("Melta Bombs", 5), ("Terminator Armour", 25, ["Clanholds of the Deep Worlds"])]),
     "junior": dict(
-        ranged=[("Bolt Pistol", 2), ("Hellpistol", 2), ("Needle Pistol", 5), ("Hand Flamer", 5), ("Blast Pistol", 8),
-                ("Plasma Pistol", 10), ("Boltgun", 2), ("Shotgun", 0), ("Combi-bolter", 3)],
-        ccw=[("Augmented Weapon", 3), ("Charnabal Sabre", 5), ("Power Weapon", 10), ("Lightning Claw", 15),
-             ("Power Fist", 15)],
-        gear=[("Refractor Field", 10), ("Melta Bombs", 5), ("Demolition Charge", 5), ("Cyber-familiar", 10),
-              ("Digital Lasers", 10), ("Infravisor", 3), ("Targeter", 2)]),
-    "sergeant": dict(
-        ranged=[("Bolt Pistol", 2), ("Hellpistol", 2), ("Hand Flamer", 5), ("Plasma Pistol", 10), ("Boltgun", 2),
-                ("Shotgun", 0)],
-        ccw=[("Charnabal Sabre", 3), ("Power Weapon", 10), ("Power Fist", 15)],
-        gear=[("Melta Bombs", 5), ("Demolition Charge", 5), ("Refractor Field", 10), ("Infravisor", 3)]),
+        title="Junior Officer", cap=50,
+        ranged=[_LAS, ("Bolt Pistol", 2), ("Hellpistol", 2), ("Hand Flamer", 5), ("Plasma Pistol", 10),
+                ("Lasgun or Autogun", 0), ("Shotgun", 0), ("Boltgun", 2)],
+        ccw=[("Power Weapon", 10), ("Power Fist", 15)],
+        gear=[("Carapace Armour", 5), ("Refractor Field", 10), ("Targeter", 1), ("Infravisor", 5), ("Melta Bombs", 5)]),
     "advisor": dict(
-        ranged=[("Bolt Pistol", 2), ("Hellpistol", 2), ("Needle Pistol", 5), ("Plasma Pistol", 10)],
-        ccw=[("Charnabal Sabre", 3), ("Power Weapon", 10)],
-        gear=[("Carapace Armour", 5), ("Refractor Field", 10), ("Melta Bombs", 5), ("Cyber-familiar", 10)]),
+        title="Advisor", cap=25,
+        ranged=[_LAS, ("Bolt Pistol", 2), ("Hellpistol", 2), ("Hand Flamer", 5), ("Plasma Pistol", 10),
+                ("Boltgun", 2)],
+        ccw=[("Power Weapon", 10), ("Power Fist", 15)],
+        gear=[("Carapace Armour", 5), ("Refractor Field", 10), ("Targeter", 1), ("Infravisor", 5), ("Melta Bombs", 5)]),
+    "sergeant": dict(
+        title="Militia Sergeant", cap=25,
+        ranged=[_LAS, ("Bolt Pistol", 2), ("Hellpistol", 2), ("Hand Flamer", 5), ("Plasma Pistol", 10),
+                ("Lasgun or Autogun", 0), ("Shotgun", 0), ("Boltgun", 2)],
+        ccw=[("Power Weapon", 10), ("Power Fist", 15)],
+        gear=[("Melta Bombs", 5), ("Refractor Field", 10), ("Frag Grenades", 1), ("Krak Grenades", 2)]),
     "bonehead": dict(
-        ranged=[], ccw=[],
-        gear=[("Krak Grenades", 3), ("Melta Bombs", 5), ("Vox-caster", 5), ("Refractor Field", 10)]),
+        title="Ogryn Bone 'ead", cap=25,
+        ranged=[("Ogryn Close Combat Weapon", 0)],
+        ccw=[("Power Weapon", 15), ("Power Fist", 25)],
+        gear=[("Refractor Field", 15), ("Krak Grenades", 2), ("Melta Bombs", 5)]),
     "enginseer": dict(
-        ranged=[("Bolt Pistol", 2), ("Needle Pistol", 5), ("Plasma Pistol", 10)],
-        ccw=[("Lascutter", 5), ("Power Fist", 5), ("Thunder Hammer", 10)],
-        gear=[("Melta Bombs", 5), ("Refractor Field", 10), ("Cyber-familiar", 10), ("Digital Lasers", 10),
-              ("Infravisor", 3), ("Nuncio-vox", 10)]),
+        title="Enginseer", cap=50,
+        ranged=[("Bolt Pistol", 2), ("Hellpistol", 2), ("Hand Flamer", 5), ("Plasma Pistol", 10), ("Boltgun", 2)],
+        ccw=[("Power Fist", 10)],
+        gear=[("Refractor Field", 10), ("Cyber-familiar", 10), ("Digital Lasers", 5), ("Targeter", 1),
+              ("Infravisor", 5), ("Melta Bombs", 5)]),
 }
-VEHICLE_UPGRADES = [("Hunter-Killer Missile", 10), ("Dozer Blade", 5), ("Extra Armour", 10), ("Searchlight", 1),
-                    ("Smoke Launchers", 5), ("Improved Comms", 15)]
+# Terminator Weapons section (per model): one ranged and one close combat exchange
+TERMINATOR_RANGED = [("Boltgun", 2), ("Combi-bolter", 5), ("Storm Bolter", 5)]
+TERMINATOR_CCW = [("Power Weapon", 10), ("Power Fist", 15), ("Chainfist", 20), ("Lightning Claw", 15),
+                  ("Pair of Lightning Claws", 25), ("Thunder Hammer", 20)]
 SENTINEL_UPGRADES = [("Hunter-Killer Missile", 10), ("Extra Armour", 10), ("Smoke Launchers", 5),
-                     ("Armoured Crew Compartment", 10)]
-SPEEDER_UPGRADES = [("Hunter-Killer Missile", 10), ("Extra Armour", 10), ("Smoke Launchers", 5)]
-SUPERHEAVY_UPGRADES = [("Hunter-Killer Missile", 10), ("Searchlight", 1), ("Smoke Launchers", 5), ("Improved Comms", 15)]
-TERMINATOR_WEAPONS = [("Storm Bolter", 3), ("Power Weapon", 5), ("Lightning Claw", 10), ("Power Fist", 10),
-                      ("Chainfist", 15), ("Thunder Hammer", 15), ("Heavy Flamer", 10)]
+                     ("Armoured Crew Compartment", 10), ("Improved Comms", 15)]
+SPEEDER_UPGRADES = [("Hunter-Killer Missile", 10), ("Extra Armour", 10), ("Smoke Launchers", 5),
+                    ("Armoured Crew Compartment", 10), ("Improved Comms", 15)]
 
 SPECIAL_5 = [("Flamer", 6), ("Grenade Launcher", 8), ("Heavy Stubber", 10), ("Meltagun", 10), ("Plasma Gun", 10)]
 SPECIAL_4 = [("Flamer", 6), ("Grenade Launcher", 8), ("Meltagun", 10), ("Plasma Gun", 10)]
@@ -720,23 +769,105 @@ def grp(key, title, entries=(), links=(), max_=None, min_=None, mods=(), show=()
     return group(gid, title, entries=list(entries), links=list(links), constraints=cons, mods=m, default=default)
 
 
-def armoury(key, section, ranged_default=None, ccw_default="Close Combat Weapon", gear_skip=(), extra_gear=(),
-            title=None):
-    """Weapon replacement slots and additional wargear from one Armoury section (costs: see questions file)."""
+def _item(x):
+    """(name, pts[, show[, hide]]) -> (name, pts, show, hide)."""
+    return (x[0], x[1], x[2] if len(x) > 2 else (), x[3] if len(x) > 3 else ())
+
+
+def item_link(gid, x, limit=False):
+    name, pts, show, hide = _item(x)
+    lid = uid("link", gid, name)
+    lm = uid(lid, "max")
+    cons = [constraint(lm, "max", 1, auto=True)] if (limit or show or hide) else []
+    if name == "Iron Halo":   # no more than one Iron Halo per army
+        cons.append(constraint(uid(lid, "army"), "max", 1, scope="roster", deep=True))
+    return link(lid, W(name), name, cost=pts or None, mods=gate_mods(lm, show, hide), constraints=cons)
+
+
+def xslot(key, title, default, options, zero_if=()):
+    """Exactly-one replacement slot whose options may be gated (show/hide). zero_if: conditions under which the slot
+    may be left empty (e.g. a Pair of Lightning Claws taking both weapon slots)."""
+    gid = uid("slot", key, title)
+    dl = uid("link", gid, default)
+    links = [link(dl, W(default), default)] + [item_link(gid, x) for x in options if _item(x)[0] != default]
+    mn, mx = uid(gid, "min"), uid(gid, "max")
+    mods = [modifier("set", mn, 0, groups=[any_of(*[c() for c in zero_if])])] if zero_if else []
+    return group(gid, title, default=dl, links=links, mods=mods,
+                 constraints=[constraint(mn, "min", 1, auto=True), constraint(mx, "max", 1, auto=True)])
+
+
+def xgear(key, title, items):
+    """Optional items, each at most once (none of them may be part of the model's starting wargear)."""
+    gid = uid("grp", key, title)
+    return group(gid, title, links=[item_link(gid, x, limit=True) for x in items])
+
+
+def armoury(key, section, ranged_default=None, ccw_default="Close Combat Weapon", kit=(), skip=(), extra_ccw=(),
+            extra_entries=(), extra_groups=(), hide_items=None, ranged_hide=(), title=None, owner=None):
+    """One Armoury section for one model: a ranged weapon exchange, a close combat weapon exchange and additional
+    wargear, with the section's points allowance as a limit on the whole group.
+    kit:        the model's starting wargear (never offered again)
+    skip:       items of the section this model may not take (a unit-specific price or restriction applies)
+    extra_ccw:  more close combat options (e.g. Terminator weapons while in Terminator Armour)
+    extra_entries / extra_groups: individual Provenance options that count towards the allowance
+    hide_items: {item: [condition callables]} - hide an item while any condition holds (whole-squad upgrade taken)
+    ranged_hide: condition callables hiding every ranged exchange (e.g. Zombie Levy)"""
     a = ARMOURY[section]
+    hide_items = hide_items or {}
     out = []
+
+    def items(lst):
+        res = []
+        for x in lst:
+            n, p, show, hide = _item(x)
+            if n in skip or n in kit:
+                continue
+            res.append((n, p, show, list(hide) + list(hide_items.get(n, []))))
+        return res
+
     if ranged_default and a["ranged"]:
-        out.append(slot(key, f"Replace {ranged_default}", ranged_default,
-                        [x for x in a["ranged"] if x[0] != ranged_default]))
-    if ccw_default and a["ccw"]:
-        out.append(slot(key, f"Replace {ccw_default}", ccw_default, [x for x in a["ccw"] if x[0] != ccw_default]))
-    gear_ = [x for x in a["gear"] if x[0] not in gear_skip] + list(extra_gear)
+        opts = [(n, p, s, list(h) + list(ranged_hide)) for n, p, s, h in items(a["ranged"]) if n != ranged_default]
+        if ranged_default == "Laspistol":
+            opts = [("Autopistol", 0, (), list(ranged_hide))] + [x for x in opts if x[0] != "Laspistol or Autopistol"]
+        zero = [lambda: cond(W("Pair of Lightning Claws"), owner, "atLeast", 1)] if owner and extra_ccw else ()
+        out.append(xslot(key, f"Replace {ranged_default}", ranged_default, opts, zero_if=zero))
+    if ccw_default and (a["ccw"] or extra_ccw):
+        out.append(xslot(key, f"Replace {ccw_default}", ccw_default,
+                         [x for x in items(a["ccw"]) + [_item(x) for x in extra_ccw] if x[0] != ccw_default]))
+    gear_ = items(a["gear"])
     if gear_:
-        out.append(take(key, "Additional Wargear", gear_))
-    sect = {"senior": "Senior Officer", "junior": "Junior Officer", "sergeant": "Militia Sergeant",
-            "advisor": "Advisor", "bonehead": "Ogryn Bone 'ead", "enginseer": "Enginseer"}[section]
+        out.append(xgear(key, "Additional Wargear", gear_))
+    out += list(extra_groups)
     gid = k("armoury", key)
-    return group(gid, title or f"Exercitus Imperialis Armoury ({sect})", groups=out)
+    cap = a["cap"]
+    return group(gid, title or f"Exercitus Imperialis Armoury: {a['title']} (max {cap} pts)", groups=out,
+                 entries=list(extra_entries),
+                 constraints=[constraint(uid(gid, "maxpts"), "max", cap, scope="self", field=PTS, deep=True)])
+
+
+def vehicle_upgrades(key, kit=(), tank=False, open_topped=False, superheavy=False, battle_armour=False,
+                     comms_hide=()):
+    """General Vehicle Upgrades section (no points allowance)."""
+    items = [("Hunter-Killer Missile", 10)]
+    if tank and not battle_armour:
+        items.append(("Dozer Blade", 5))
+    if not superheavy:
+        items.append(("Extra Armour", 10))
+    items += [("Smoke Launchers", 5), ("Searchlight", 1), ("Improved Comms", 15, (), list(comms_hide))]
+    if open_topped and not battle_armour:
+        items.append(("Armoured Crew Compartment", 10))
+    items = [x for x in items if x[0] not in kit]
+    gid = uid("grp", key, "Vehicle Upgrades")
+    groups = []
+    if tank and not battle_armour:
+        pg = uid(gid, "pintle")
+        ents = [entry(uid(pg, n), f"Pintle-mounted {n}", cost=c, links=[gear(uid(pg, n), n)],
+                      constraints=[constraint(uid(pg, n, "max"), "max", 1, auto=True)])
+                for n, c in [("Storm Bolter", 5), ("Heavy Stubber", 10)]]
+        groups.append(group(pg, "Pintle weapon (Tanks only, one)", entries=ents,
+                            constraints=[constraint(uid(pg, "max"), "max", 1, auto=True)]))
+    return group(gid, "Vehicle Upgrades (Exercitus Imperialis Armoury)",
+                 links=[item_link(gid, x, limit=True) for x in items], groups=groups)
 
 
 def error_if_conds(text, conds):
@@ -799,24 +930,21 @@ def build_transports():
         lambda t: [slot(t, "Replace turret-mounted Multi-laser", "Multi-Laser", [("Heavy Bolter", 0),
                                                                                  ("Heavy Flamer", 0)]),
                    slot(t, "Replace hull-mounted Heavy Bolter", "Heavy Bolter", [("Heavy Flamer", 0)]),
-                   take(t, "Vehicle Upgrades", [x for x in VEHICLE_UPGRADES if x[0] not in ("Searchlight",
-                                                                                           "Smoke Launchers")])],
+                   vehicle_upgrades(t, kit=["Searchlight", "Smoke Launchers"], tank=True)],
         lambda t: transport_profile(t, "Chimera", "12 models (each Ogryn Brute counts as two; no Terminator Armour)",
                                     "Rear hull", "Up to six passengers may fire the hull-mounted lasguns; one "
                                                  "passenger may fire from the top hatch"))
     dedicated_transport(
         "Imperial Rhino", 40, lambda t: vehicle_profile(t, "Imperial Rhino", "Vehicle (Tank)", 3, 11, 11, 10),
         ["Storm Bolter", "Searchlight", "Smoke Launchers"], ["Easy to Repair", "Fire Points (Top Hatch)"],
-        lambda t: [take(t, "Vehicle Upgrades", [x for x in VEHICLE_UPGRADES if x[0] not in ("Searchlight",
-                                                                                           "Smoke Launchers")])],
+        lambda t: [vehicle_upgrades(t, kit=["Searchlight", "Smoke Launchers"], tank=True)],
         lambda t: transport_profile(t, "Imperial Rhino", "10 models (no Ogryn Brutes, no Terminator Armour)",
                                     "One on each side, one at the rear", "Up to two passengers from the top hatch"))
     dedicated_transport(
         "Centaur Light Carrier", 40,
         lambda t: vehicle_profile(t, "Centaur Light Carrier", "Vehicle (Fast, Open-topped)", 3, 11, 10, 10),
         ["Heavy Stubber", "Searchlight", "Smoke Launchers"], ["Artillery Tractor"],
-        lambda t: [take(t, "Vehicle Upgrades", [x for x in VEHICLE_UPGRADES if x[0] not in ("Searchlight",
-                                                                                           "Smoke Launchers")])],
+        lambda t: [vehicle_upgrades(t, kit=["Searchlight", "Smoke Launchers"], open_topped=True)],
         lambda t: transport_profile(t, "Centaur Light Carrier", "5 models (no Terminator Armour)", "Open-topped",
                                     "Open-topped"))
     dedicated_transport(
@@ -829,8 +957,7 @@ def build_transports():
 def land_raider_parts():
     return (["Twin-linked Lascannon", "Twin-linked Lascannon", "Twin-linked Heavy Bolter", "Searchlight",
              "Smoke Launchers"], ["Power of the Machine Spirit", "Assault Vehicle"],
-            lambda t: [take(t, "Vehicle Upgrades", [x for x in VEHICLE_UPGRADES if x[0] not in ("Searchlight",
-                                                                                               "Smoke Launchers")])],
+            lambda t: [vehicle_upgrades(t, kit=["Searchlight", "Smoke Launchers"], tank=True)],
             lambda t: transport_profile(t, "Land Raider", "10 models (no Ogryn Brutes)", "One at the front, one on each "
                                                                                          "side", "-"))
 
@@ -839,7 +966,7 @@ def gorgon_parts():
     def groups(t):
         mortar = uid(t, "sponsons")
         return [slot(t, "Replace both Twin-linked Autocannons", "Twin-linked Autocannon",
-                     [("Twin-linked Multi-Laser", 0), ("Twin-linked Lascannon", 10)]),
+                     [("Twin-linked Multi-Laser", 0), ("Twin-linked Lascannon", 20)]),
                 group(mortar, "Replace Gorgon Mortar Battery with sponsons", entries=[
                     entry(uid(mortar, "e"), "Sponsons instead of Gorgon Mortar Battery", constraints=[
                         constraint(uid(mortar, "e", "max"), "max", 1, auto=True)], groups=[
@@ -847,8 +974,7 @@ def gorgon_parts():
                              [("Heavy Flamer", 0), ("Autocannon", 10), ("Multi-Laser", 10), ("Lascannon", 20)]),
                         slot(uid(mortar, "rear"), "Rearward sponson pair", "Heavy Bolter",
                              [("Heavy Flamer", 0), ("Autocannon", 10), ("Multi-Laser", 10), ("Lascannon", 20)])])]),
-                take(t, "Vehicle Upgrades", [x for x in SUPERHEAVY_UPGRADES if x[0] not in ("Searchlight",
-                                                                                            "Smoke Launchers")])]
+                vehicle_upgrades(t, kit=["Searchlight", "Smoke Launchers"], superheavy=True)]
     return (lambda t: vehicle_profile(t, "Auxilia Gorgon", "Super-heavy Vehicle (3 Structure Points)", 3, 14, 14, 10),
             ["Twin-linked Autocannon", "Twin-linked Autocannon", "Gorgon Mortar Battery", "Searchlight",
              "Smoke Launchers"], ["Super-heavy Tank", "Heavily Armoured Prow", "Reduced Blast", "Gorgon Transport"],
@@ -893,7 +1019,8 @@ def build_advisors():
             ["Attached Advisor", "Warp Sight"])
     advisor("Master of the Fleet", 30, lambda e: adv_profile(e, "Master of the Fleet", 3, 4, 3, 3, 1, 3, 1, 8, "5+"),
             ["Flak Armour"] + std, ["Attached Advisor", "Master of the Fleet"],
-            groups=[armoury(k("adv", "motf"), "advisor", "Laspistol or Autopistol"), orbital("motf")])
+            groups=[armoury(k("adv", "motf"), "advisor", "Laspistol or Autopistol",
+                            kit=["Flak Armour", "Close Combat Weapon"]), orbital("motf")])
     advisor("Memorator", 15, lambda e: adv_profile(e, "Memorator", 2, 2, 3, 3, 1, 3, 1, 7, "6+"), std,
             ["Attached Advisor", "Witness to Valour"])
     advisor("Company Cook", 20, lambda e: adv_profile(e, "Company Cook", 3, 3, 3, 3, 1, 3, 1, 8, "5+"),
@@ -909,12 +1036,15 @@ def build_advisors():
             std + ["Flak Armour", "Administratum Data-Slate"], ["Attached Advisor", "Prepared Fire"])
     advisor("Cartographica Adept", 15, lambda e: adv_profile(e, "Cartographica Adept", 2, 3, 3, 3, 1, 3, 1, 7, "5+"),
             std + ["Flak Armour", "Surveyor's Auspex"], ["Attached Advisor", "Surveyed Ground"], limit=2)
+    cl, pr = k("advisor", "Psyker Attache: Cult Leader"), k("advisor", "Psyker Attache: Prophet")
     advisor("Psyker Attache: Cult Leader", 20,
             lambda e: adv_profile(e, "Cult Leader (ML1)", 3, 3, 3, 3, 1, 3, 1, 8, "5+"), std + ["Flak Armour"],
-            ["Attached Advisor", "Psyker Attache", "Psyker", "Cult Leader"], limit=4)
+            ["Attached Advisor", "Psyker Attache", "Psyker", "Cult Leader"], limit=4,
+            groups=[psychic_powers(uid(cl, "psy"), cl, 1, ["Telepathy"])])
     advisor("Psyker Attache: Prophet", 15,
             lambda e: adv_profile(e, "Prophet (ML1)", 2, 2, 3, 3, 1, 3, 1, 7, "5+"), std + ["Flak Armour"],
-            ["Attached Advisor", "Psyker Attache", "Psyker", "Prophet"], limit=4)
+            ["Attached Advisor", "Psyker Attache", "Psyker", "Prophet"], limit=4,
+            groups=[psychic_powers(uid(pr, "psy"), pr, 1, ["Divination"])])
     # 0-4 in total: error when Cult Leaders + Prophets > 4
     for n in ("Psyker Attache: Cult Leader", "Psyker Attache: Prophet"):
         e = [x for x in SHARED if x.get("id") == ADVISOR[n]][0]
@@ -923,13 +1053,6 @@ def build_advisors():
                                 cond(ADVISOR["Psyker Attache: Prophet"], "force", "greaterThan", 4 - a)])
                 for a in range(0, 5)]
         add_mods(e, mods)
-    dm_key = k("adv", "dm")
-    advisor("Discipline Master", 20, lambda e: adv_profile(e, "Discipline Master", 4, 3, 3, 3, 2, 3, 2, 8, "5+"),
-            ["Flak Armour", "Laspistol or Autopistol", "Close Combat Weapon", "Frag Grenades"],
-            ["Provenance", "Attached Advisor", "Discipline Master Cadre", "Instil Order"], limit=5,
-            groups=[armoury(dm_key, "advisor", "Laspistol or Autopistol")],
-            entries=[opt(dm_key, "Jump Pack (Airborne Command)", 10, ["Jump Pack"], show=["Drop Assault Regiments"])],
-            display="Discipline Master (Discipline Master Cadre, 0-5)")
     advisor("Lotara Sarrin", 55, lambda e: adv_profile(e, "Lotara Sarrin", 3, 4, 3, 3, 2, 3, 2, 9, "5+"),
             ["Flak Armour", "Laspistol", "Close Combat Weapon", "Nuncio-vox"],
             ["Attached Advisor", "Master of the Fleet", "Flag-Captain of the Conqueror"], scope="roster", loyalist=False)
@@ -947,32 +1070,30 @@ def build_advisors():
                  conds=[cond(ADVISOR["Lotara Sarrin"], "force", "atLeast", 1)])])
 
 
-def advisor_links(key, names, title="Attached Advisor (one per unit)", show=(), extra=()):
-    """Group of links to shared advisors. Max one Attached Advisor per unit."""
+def advisor_links(key, names, title="Attached Advisors", show=(), extra=()):
+    """Group of links to shared advisors (any number of Attached Advisors may join a unit; each advisor's own 0-1 /
+    0-n limit counts across the Detachment)."""
     gid = k("grp", key, "advisors", title)
     links = [link(uid("link", gid, n), ADVISOR[n], n) for n in names]
-    mods = gate_mods(uid(gid, "max"), show) if show else []
-    return group(gid, title, links=links, constraints=[constraint(uid(gid, "max"), "max", 1, auto=True)], mods=mods)
+    mods = gate_mods(None, show) if show else []
+    return group(gid, title, links=links, mods=mods)
 
 
 FC_ADVISORS = ["Navigator", "Master of the Fleet", "Memorator", "Company Cook", "Personal Aide", "Scribe Historicus",
                "Lotara Sarrin", "Ilya Ravallion"]
-PCC_ADVISORS = ["Navigator", "Master of the Fleet", "Memorator", "Company Cook", "Lotara Sarrin", "Ilya Ravallion",
-                "Discipline Master"]
+PCC_ADVISORS = ["Navigator", "Master of the Fleet", "Memorator", "Company Cook", "Lotara Sarrin", "Ilya Ravallion"]
 TROOP_ADVISORS = ["Psyker Attache: Cult Leader", "Psyker Attache: Prophet", "Company Jester", "Locus Scribii",
-                  "Cartographica Adept", "Discipline Master"]
+                  "Cartographica Adept"]
 
 
 def infantry_advisors(key, troops=True, troop_show=()):
-    """Advisor links for an Infantry unit: Troops advisors (when selected as Troops) and Discipline Masters."""
+    """Advisor links for a Troops unit (Psyker Attaches, Jester, Locus Scribii, Cartographica Adepts). Discipline
+    Masters are bought as their own Cadre and assigned freely."""
     if troops and not troop_show:
         return [advisor_links(key, TROOP_ADVISORS)]
     if troops:
-        # Troops-only advisors appear when the unit is selected as Troops; Discipline Master always
-        return [advisor_links(key, ["Discipline Master"], title="Attached Advisor (one per unit)"),
-                advisor_links(key, TROOP_ADVISORS[:-1], title="Attached Advisor (Troops only, one per unit)",
-                              show=troop_show)]
-    return [advisor_links(key, ["Discipline Master"])]
+        return [advisor_links(key, TROOP_ADVISORS, title="Attached Advisors (Troops only)", show=troop_show)]
+    return []
 
 
 # ============================================================== provenance options on units
@@ -1006,6 +1127,18 @@ def provenance_options(key, u, kinds=(), ogryn=False, ic=False, skip=()):
                              "carried by the squad. If one squad of a type buys it, every eligible squad of that type in "
                              "the army must."))
     return ents
+
+
+def mining_weapons(key, u, model_ids):
+    """Clanhold Mining and Industrial Weapons: any model in a unit equipped with Mining Equipment may replace its close
+    combat weapon with a Powered Mining Pick (+5) or a Lascutter (+10)."""
+    me = k("opt", uid(u, "p"), "Mining Equipment (Clanholds of the Deep Worlds)")
+    title = "Mining weapons: replace close combat weapon (Mining Equipment, any model)"
+    g = model_swaps(uid(key, "mining"), title, u, model_ids, [("Powered Mining Pick", 5), ("Lascutter", 10)])
+    off = [cond(me, u, "lessThan", 1)]
+    add_mods(g, [modifier("set", "hidden", "true", conds=off),
+                 modifier("set", uid(g.get("id"), "max"), 0, conds=off)])
+    return g
 
 
 def grav_option(key, u):
@@ -1045,53 +1178,90 @@ FC_IDS = []
 
 
 def fc_options(key, u, named=False):
-    """Force Commander options granted by Provenances (shared with the named Lords Commander)."""
-    ents = [
-        opt(key, "Naval Officer (Imperial Navy Battalion)", 10, ["Void-Hardened Armour"], rules_=["Naval Officer"],
-            show=["Imperial Navy Battalion"]),
+    """Force Commander options granted by Provenances (shared with the named Lords Commander).
+    Returns (personal, other): personal options are individual Provenance purchases that count towards the Force
+    Commander's Senior Officer allowance; Terminator Armour and the Tainted Weapon are Senior Officer Armoury items for
+    the Force Commander and individual options for the named Lords."""
+    no_tda = [lambda: cond(W("Terminator Armour"), u, "atLeast", 1)]
+    personal = [
         opt(key, "Boarding Shield (Naval Officer)", 5, ["Boarding Shield"],
             show=[lambda: cond(k("opt", key, "Naval Officer (Imperial Navy Battalion)"), u, "atLeast", 1)]),
         opt(key, "Mounted (Horse Lords)", 10, ["Cavalry Mount"], rules_=["Fleet of Hoof"], show=["Horse Lords"],
-            hide=[lambda: cond(k("opt", key, "Jump Pack (Drop Assault Regiments)"), u, "atLeast", 1)]),
-        opt(key, "Jump Pack (Drop Assault Regiments)", 15, ["Jump Pack"], show=["Drop Assault Regiments"]),
-        opt(key, "Terminator Armour (Clanholds of the Deep Worlds)", 25, ["Terminator Armour"],
-            show=["Clanholds of the Deep Worlds"]),
-        opt(key, "Tainted Weapon (Cult Demagogue / Tainted Flesh)", 5, ["Tainted Weapon"],
-            show=["Cult Horde", "Tainted Flesh"],
-            text="Replaces the close combat weapon (Cult Demagogue: exchange for +5 points; Tainted Flesh: purchased "
-                 "from the Armoury)."),
+            hide=[lambda: cond(k("opt", key, "Jump Pack (Drop Assault Regiments)"), u, "atLeast", 1)] + no_tda),
+        opt(key, "Jump Pack (Drop Assault Regiments)", 15, ["Jump Pack"], show=["Drop Assault Regiments"],
+            hide=no_tda),
     ]
-    ents += provenance_options(key, u, ic=True)
-    return ents
+    if named:
+        personal += [
+            opt(key, "Terminator Armour (Clanholds of the Deep Worlds)", 25, ["Terminator Armour"],
+                show=["Clanholds of the Deep Worlds"],
+                hide=[lambda: cond(W("Cavalry Mount"), u, "atLeast", 1), lambda: cond(W("Jump Pack"), u, "atLeast", 1)]),
+            opt(key, "Tainted Weapon (Cult Demagogue / Tainted Flesh)", 5, ["Tainted Weapon"],
+                show=["Cult Horde", "Tainted Flesh"], text="Replaces the close combat weapon.")]
+    other = [opt(key, "Naval Officer (Imperial Navy Battalion)", 10, ["Void-Hardened Armour"], rules_=["Naval Officer"],
+                 show=["Imperial Navy Battalion"])]
+    for e in provenance_options(key, u, ic=True):
+        (personal if e.get("name").startswith("Blade and Fury") else other).append(e)
+    return personal, other
+
+
+def necromancer_powers(key, u):
+    """Undying Horde: the Force Commander (Necromancer Demagogue) is a Psyker (ML1) with one Biomancy power and knows
+    Raise the Dead."""
+    no_uh = cond(P["Undying Horde"], "force", "lessThan", 1)
+    grp = psychic_powers(uid(key, "necro"), u, 1, ["Biomancy"], hide=[no_uh],
+                         title="Psychic Powers (Necromancer Demagogue, Undying Horde)")
+    rtd = power_entry(uid(key, "necro"), "Raise the Dead")
+    mn = uid(rtd.get("id"), "min")
+    add_to(rtd, "constraints", [constraint(mn, "min", 0)])
+    add_mods(rtd, [modifier("set", mn, 1, conds=[pc("Undying Horde")]),
+                   modifier("set", "hidden", "true", conds=[cond(P["Undying Horde"], "force", "lessThan", 1)]),
+                   modifier("set", uid(rtd.get("id"), "max"), 0,
+                            conds=[cond(P["Undying Horde"], "force", "lessThan", 1)])])
+    return grp, rtd
 
 
 def force_commander():
     u = k("unit", "Force Commander")
     FC_IDS.append(u)
     key = k("fc")
+    personal, other = fc_options(key, u)
+    tda = lambda: cond(W("Terminator Armour"), u, "atLeast", 1)
+    tda_ccw = [(n, p, [tda]) for n, p in TERMINATOR_CCW if n not in ("Power Weapon", "Power Fist")]
+    kit = ["Flak Armour", "Refractor Field", "Frag Grenades", "Krak Grenades"]
+    arm = armoury(key, "senior", "Laspistol or Autopistol", kit=kit, extra_ccw=tda_ccw, extra_entries=personal,
+                  owner=u,
+                  hide_items={"Carapace Armour": [tda],
+                              "Terminator Armour": [lambda: cond(W("Carapace Armour"), u, "atLeast", 1),
+                                                    lambda: cond(W("Cavalry Mount"), u, "atLeast", 1),
+                                                    lambda: cond(W("Jump Pack"), u, "atLeast", 1)]})
+    psy, rtd = necromancer_powers(key, u)
     return unit("0-1 Force Commander", 50, HQ, "HQ", key=u,
                 profiles=[unit_profile(u, "Force Commander", "Infantry (Character)", 4, 4, 3, 3, 3, 3, 2, 8, "5+")],
-                kit=["Flak Armour", "Refractor Field", "Laspistol or Autopistol", "Close Combat Weapon",
-                     "Frag Grenades", "Krak Grenades"],
+                kit=kit,
                 rules_=["Independent Character", "Provenance", "Muster of Worlds", "Commanding Officer",
-                        "Cult Demagogue", "Necromancer Demagogue"],
+                        "Cult Demagogue", "Necromancer Demagogue", "Exercitus Imperialis Armoury"],
                 constraints=[unique(u, 1, "force")],
-                entries=[upgrade(key, "Planetary Overlord", 20, rules_=["Planetary Overlord"])] + fc_options(key, u),
-                groups=[armoury(key, "senior", "Laspistol or Autopistol"), advisor_links(key, FC_ADVISORS)])
+                entries=[upgrade(key, "Planetary Overlord", 20, rules_=["Planetary Overlord"])] + other + [rtd],
+                groups=[arm, psy, advisor_links(key, FC_ADVISORS)])
 
 
 def named_lord(name, cost, ld, kit, rules_, loyalist):
     u = k("unit", name)
     FC_IDS.append(u)
+    key = k("lord", name)
+    personal, other = fc_options(key, u, named=True)
+    psy, rtd = necromancer_powers(key, u)
     e = unit(name, cost, HQ, "HQ", key=u,
              profiles=[unit_profile(u, name, "Infantry (Character)", 4, 4, 3, 3, 3, 3, 2, ld, "4+/5+")],
              kit=kit, rules_=["Independent Character", "Provenance", "Commanding Officer", "Planetary Overlord",
-                              "Lord Commander", "Muster of Worlds"] + rules_,
-             constraints=[unique(u)], entries=fc_options(k("lord", name), u),
-             groups=[advisor_links(k("lord", name), FC_ADVISORS)])
-    other = L.TRAITOR if loyalist else L.LOYALIST
+                              "Lord Commander", "Muster of Worlds"] + rules_ +
+                             ([] if loyalist else ["Necromancer Demagogue"]),
+             constraints=[unique(u)], entries=other + personal + ([] if loyalist else [rtd]),
+             groups=([] if loyalist else [psy]) + [advisor_links(key, FC_ADVISORS)])
+    other_side = L.TRAITOR if loyalist else L.LOYALIST
     add_mods(e, [modifier("add", "error", f"{name} is {'Loyalist' if loyalist else 'Traitor'} only.",
-                          conds=[cond(other, "roster", "atLeast", 1)])])
+                          conds=[cond(other_side, "roster", "atLeast", 1)])])
     return e
 
 
@@ -1107,10 +1277,13 @@ def fc_count_errors(units_by_id):
 def platoon_command_cadre(key, in_platoon=False):
     u = key
     sk = uid(u, "cmd")
+    pc_kit = ["Flak Armour", "Frag Grenades", "Krak Grenades"]
+    cara = k("opt", uid(u, "p"), "Carapace Armour (entire squad)")
     commander = model(u, "Platoon Commander", 1, 1, 0,
                       unit_profile(u, "Platoon Commander", "Infantry (Character)", 4, 4, 3, 3, 2, 3, 2, 8, "5+"),
-                      kit=["Flak Armour", "Close Combat Weapon", "Frag Grenades", "Krak Grenades"],
-                      groups=[armoury(sk, "junior", "Laspistol or Autopistol")])
+                      kit=pc_kit,
+                      groups=[armoury(sk, "junior", "Laspistol or Autopistol", kit=pc_kit,
+                                      hide_items={"Carapace Armour": [lambda: cond(cara, u, "atLeast", 1)]})])
     vox = model(u, "Vox Operator", 1, 1, 0, unit_profile(u, "Vox Operator", "Infantry", 3, 3, 3, 3, 1, 3, 1, 6, "5+"),
                 kit=["Flak Armour", "Close Combat Weapon", "Frag Grenades", "Krak Grenades", "Laspistol or Autopistol",
                      "Nuncio-vox"])
@@ -1145,15 +1318,14 @@ def platoon_command_cadre(key, in_platoon=False):
         ("Imperial Rhino", ["Survivors of the Dark Age"], [models_over(u, 10)]),
         ("Imperialis Militia Land Raider", ["Survivors of the Dark Age"], [models_over(u, 10)])],
         mech_required=True, grav=grav_id)
-    groups = [bg_weapons, advisor_links(uid(u, "a"), PCC_ADVISORS)]
-    if not in_platoon:
-        groups.append(tr)
-    else:
-        groups.append(tr)
+    groups = [bg_weapons, advisor_links(uid(u, "a"), PCC_ADVISORS), tr,
+              mining_weapons(u, u, [uid("model", u, n) for n in ("Platoon Commander", "Vox Operator",
+                                                                 "Platoon Standard Bearer", "Militia Bodyguard")])]
     entries = [commander, vox, std, bg,
                opt(uid(u, "p"), "Carapace Armour (entire squad)", 10, ["Carapace Armour"]),
                mounted, jump, grav, sniper] + prov
-    return dict(models=entries, groups=groups, rules_=["Provenance", "Commanding Officer"], cost=40 - 15)
+    return dict(models=entries, groups=groups, rules_=["Provenance", "Commanding Officer",
+                                                       "Exercitus Imperialis Armoury"], cost=40 - 15)
 
 
 def pcc_root():
@@ -1167,23 +1339,45 @@ def rogue_psyker():
     u = k("unit", "Rogue Psyker")
     key = k("rp")
     alpha = upgrade(key, "Alpha Psyker", 25, rules_=["Alpha Psyker"])
-    powers = k("rp", "powers")
-    pw = entry(powers, "Rogue Psyker psychic power", cost=20,
-               constraints=[constraint(uid(powers, "min"), "min", 1), constraint(uid(powers, "max"), "max", 3)],
-               rules=[rule(uid(powers, "r"), "Rogue Psyker psychic powers",
-                           "Each purchased power is one Rogue Psyker psychic power (+20 points each, at least one). "
-                           "The list of Rogue Psyker powers is not printed in the army book - see the questions file.")])
+    pw = psychic_powers(k("rp", "powers"), u, 0, ["Telepathy", "Daemonology (Malefic)"],
+                        title="Rogue Psyker psychic powers (+20 points each, at least one, up to three)")
+    for e in pw.iter("selectionEntry"):
+        e.find("costs/cost").set("value", "20")
+    pid = pw.get("id")
+    add_mods(pw, [modifier("add", "error", "A Rogue Psyker must purchase at least one Rogue Psyker psychic power.",
+                           conds=[cond(pid, u, "lessThan", 1)])])
+    if pw.find("constraints") is None:
+        pw.insert(list(pw).index(pw.find("modifiers")) + 1, el("constraints"))
+    pw.find("constraints").append(constraint(uid(pid, "max3"), "max", 3))
     e = unit("0-1 Rogue Psyker", 35, HQ, "HQ", key=u, compulsory=False,
              profiles=[unit_profile(u, "Rogue Psyker", "Infantry (Character)", 2, 2, 3, 3, 2, 3, 1, 8, "-"),
                        unit_profile(u, "Rogue Alpha (Alpha Psyker)", "Infantry (Character)", 3, 3, 3, 4, 3, 4, 2, 9,
                                     "-")],
-             kit=["Laspistol", "Close Combat Weapon"],
+             kit=[],
              rules_=["Independent Character", "Psyker", "Rogue Psyker"], constraints=[unique(u, 1, "force")],
-             entries=[alpha, pw], groups=[armoury(key, "advisor", "Laspistol")],
+             entries=[alpha], groups=[pw, armoury(key, "advisor", "Laspistol", kit=["Close Combat Weapon"],
+                                                  skip=["Carapace Armour"])],
              mods=[modifier("add", "error", "A Rogue Psyker may only be included in an army with the Cult Horde "
                                             "Provenance (Traitor only).",
                             conds=[cond(P["Cult Horde"], "force", "lessThan", 1)])])
     return e
+
+
+def discipline_masters():
+    """0-1 Discipline Master Cadre: 1-5 Discipline Masters, each equipped separately; bought on its own and assigned
+    to friendly Infantry units before deployment (does not occupy a Force Organisation slot)."""
+    u = k("unit", "Discipline Master Cadre")
+    mid = uid("model", u, "Discipline Master")
+    kit = ["Flak Armour", "Frag Grenades"]
+    jp = opt(mid, "Jump Pack (Drop Assault Regiments: Airborne Command)", 10, ["Jump Pack"],
+             show=["Drop Assault Regiments"])
+    m = model(u, "Discipline Master", 1, 5, 20,
+              unit_profile(u, "Discipline Master", "Infantry (Character)", 4, 3, 3, 3, 2, 3, 2, 8, "5+"), kit=kit,
+              groups=[armoury(mid, "advisor", "Laspistol or Autopistol", kit=kit, extra_entries=[jp])])
+    return unit("0-1 Discipline Master Cadre", 0, HQ, "HQ", key=u, compulsory=False, models=numbered(m, 5, 1),
+                rules_=["Provenance", "Attached Advisor", "Discipline Master Cadre", "Instil Order",
+                        "Exercitus Imperialis Armoury"],
+                constraints=[unique(u, 1, "force")], extra_cats=[(gs.FOC_PLUS["HQ"], "Force Org: +1 HQ")])
 
 
 def remembrancer_circle():
@@ -1220,10 +1414,10 @@ def ogryns():
     hid = uid("model", u, "Ogryn Bone 'ead")
     prof_b = unit_profile(u, "Ogryn Brute", "Infantry", 4, 3, 5, 4, 3, 3, 2, 8, "5+")
     kit = ["Flak Armour", "Ripper Gun", "Close Combat Weapon", "Frag Grenades"]
+    head_kit = ["Flak Armour", "Frag Grenades"]
     head = model(u, "Ogryn Bone 'ead", 0, 1, 35,
-                 unit_profile(u, "Ogryn Bone 'ead", "Infantry (Character)", 4, 3, 5, 4, 3, 3, 3, 9, "5+"), kit=kit,
-                 groups=[slot(hid, "Replace Ripper Gun", "Ripper Gun", [("Ogryn Close Combat Weapon", 0)]),
-                         armoury(hid, "bonehead")],
+                 unit_profile(u, "Ogryn Bone 'ead", "Infantry (Character)", 4, 3, 5, 4, 3, 3, 3, 9, "5+"), kit=head_kit,
+                 groups=[armoury(hid, "bonehead", "Ripper Gun", kit=head_kit)],
                  mods=[modifier("decrement", PTS, 10, conds=[pc("Ogryn Workdivision")])])
     brute = model(u, "Ogryn Brute", 3, 10, 25, prof_b, kit=kit,
                   mods=[modifier("decrement", uid(bid, "min"), 1, conds=[cond(hid, u, "atLeast", 1)]),
@@ -1275,8 +1469,9 @@ def enginseer():
     adept = entry(eid, "Enginseer Adept", typ="model", cost=45,
                   constraints=[constraint(uid(eid, "min"), "min", 1), constraint(uid(eid, "max"), "max", 2)],
                   profiles=[unit_profile(u, "Enginseer Adept", "Infantry (Character)", 3, 3, 3, 3, 1, 3, 1, 8, "3+")],
-                  links=[gear(eid, x) for x in ["Power Armour", "Laspistol", "Power Weapon", "Servo-arm"]],
-                  groups=[servitors(eid), armoury(uid(eid, "a"), "enginseer", "Laspistol", "Power Weapon")])
+                  links=[gear(eid, x) for x in ["Power Armour", "Servo-arm"]],
+                  groups=[servitors(eid), armoury(uid(eid, "a"), "enginseer", "Laspistol", "Power Weapon",
+                                                  kit=["Power Armour", "Servo-arm"])])
     tr = transports(uid(u, "t"), u, [("Chimera", (), ())])
     return unit("0-2 Enginseer Auxilia (one Elites choice)", 0, ELITES, "Elites", key=u,
                 models=numbered(adept, 2, 1), rules_=["Independent Character", "Blessing of the Machine God",
@@ -1301,8 +1496,7 @@ def battle_armour():
     return unit("Imperial Battle Armour", 70, ELITES, "Elites", key=u,
                 profiles=[walker_profile(u, "Imperial Battle Armour", 3, 3, "6(10)", 12, 12, 10, 3, 2)],
                 kit=["Dreadnought Close Combat Weapon", "Twin-linked Bolter", "Searchlight", "Smoke Launchers"],
-                groups=[arm, hf, ml, take(u, "Vehicle Upgrades", [x for x in VEHICLE_UPGRADES
-                                                                 if x[0] not in ("Searchlight", "Smoke Launchers")])],
+                groups=[arm, hf, ml, vehicle_upgrades(u, kit=["Searchlight", "Smoke Launchers"], battle_armour=True)],
                 mods=[err], rules_=[])
 
 
@@ -1311,9 +1505,9 @@ def elite_squad(name, cost, sgt_name, sgt_prof, mname, mprof, mcost, base, extra
     u = k("unit", name)
     sid, mid = uid("model", u, sgt_name), uid("model", u, mname)
     ranged = kit[1]
+    sgt_kit = [x for x in kit_sgt if x not in (ranged, "Close Combat Weapon")]
     sgt = model(u, sgt_name, 1, 1, 0, unit_profile(u, sgt_name, "Infantry (Character)", *sgt_prof),
-                kit=[x for x in kit_sgt if x != ranged],
-                groups=[armoury(sid, "sergeant", ranged)])
+                kit=sgt_kit, groups=[armoury(sid, "sergeant", ranged, kit=sgt_kit)])
     men = model(u, mname, base, base + extra, mcost, unit_profile(u, mname, "Infantry", *mprof), kit=kit)
     tda = opt(uid(u, "p"), "Terminator Armour (Clanholds: Heavy Panoplies, one squad)", 15, ["Terminator Armour"],
               per_unit=u, rules_=["Terminator Panoply"], show=["Clanholds of the Deep Worlds"],
@@ -1326,12 +1520,23 @@ def elite_squad(name, cost, sgt_name, sgt_prof, mname, mprof, mcost, base, extra
     pa = opt(uid(u, "p"), "Power Armour (Heavy Panoplies / Paragon Panoply)", 5, ["Power Armour"], per_unit=u,
              show=["Clanholds of the Deep Worlds", "Paragons of Humanity"], hide=[lambda: cond(tda_id, u, "atLeast", 1)])
     grav, grav_id = grav_option(uid(u, "p"), u)
-    tdm_swaps = model_swaps(uid(u, "tda"), "Terminator weapons (any model in Terminator Armour)", u, [sid, mid],
-                            TERMINATOR_WEAPONS)
-    add_mods(tdm_swaps, [modifier("set", "hidden", "true", conds=[cond(tda_id, u, "lessThan", 1)])])
+    # Terminator Weapons section: one ranged and one close combat exchange per model in Terminator Armour; a Pair of
+    # Lightning Claws takes both weapon slots; with Paragon Panoply the 5-point Power Weapon exchange is used instead
+    pid, pair = model_pair_claws(uid(u, "tdac"), "Pair of Lightning Claws (takes both weapon slots)", u, [sid, mid], 25)
+    paragon = [modifier("set", "hidden", "true", conds=[pc("Paragons of Humanity")])]
+    tda_r = model_swaps(uid(u, "tda"), "Terminator Weapons: ranged exchange (any model in Terminator Armour)", u,
+                        [sid, mid], TERMINATOR_RANGED, minus=[pid])
+    tda_c = model_swaps(uid(u, "tdac"), "Terminator Weapons: close combat exchange (any model in Terminator Armour)", u,
+                        [sid, mid], [(n, p, paragon) if n == "Power Weapon" else (n, p) for n, p in TERMINATOR_CCW
+                                     if n != "Pair of Lightning Claws"], entries=[pair])
+    for g in (tda_r, tda_c):
+        off = [cond(tda_id, u, "lessThan", 1)]
+        add_mods(g, [modifier("set", "hidden", "true", conds=off)])
+    add_mods(pair, [modifier("set", uid(pid, "max"), 0, conds=[cond(tda_id, u, "lessThan", 1)])])
     pw = model_swaps(uid(u, "pw"), "Paragon Panoply: replace close combat weapon with Power Weapon (any model)", u,
                      [sid, mid], [("Power Weapon", 5)])
     add_mods(pw, [modifier("set", "hidden", "true", conds=[cond(P["Paragons of Humanity"], "force", "lessThan", 1)])])
+    mining = mining_weapons(u, u, [sid, mid])
     big = lambda: cond("model", u, "greaterThan", 5)
     errs = [modifier("add", "error", f"A {name} in Terminator Armour or an Exemplar Guard may contain no more than five "
                                      "models.", groups=[and_group([big()], [any_of(cond(tda_id, u, "atLeast", 1),
@@ -1342,7 +1547,7 @@ def elite_squad(name, cost, sgt_name, sgt_prof, mname, mprof, mcost, base, extra
         ("Centaur Light Carrier", (), [models_not(u, 5), lambda: cond(tda_id, u, "atLeast", 1)]),
         ("Imperial Rhino", ["Survivors of the Dark Age"], [models_over(u, 10)]),
         ("Imperialis Militia Land Raider", lr_show, [models_over(u, 10)])], mech_required=True, grav=grav_id)
-    return u, sid, mid, sgt, men, [tda, exemplar, pa, grav], [tdm_swaps, pw, tr], errs
+    return u, sid, mid, sgt, men, [tda, exemplar, pa, grav], [tda_r, tda_c, pw, mining, tr], errs
 
 
 def veterans():
@@ -1397,17 +1602,25 @@ def combat_engineers():
     kit = ["Flak Armour", "Shotgun", "Close Combat Weapon", "Frag Grenades", "Krak Grenades"]
     sgt = model(u, "Engineer Sergeant", 1, 1, 0,
                 unit_profile(u, "Engineer Sergeant", "Infantry (Character)", 3, 3, 3, 3, 1, 3, 2, 8, "5+"),
-                kit=[x for x in kit if x != "Shotgun"], groups=[armoury(sid, "sergeant", "Shotgun")])
+                kit=[x for x in kit if x not in ("Shotgun", "Close Combat Weapon")],
+                groups=[armoury(sid, "sergeant", "Shotgun", kit=kit,
+                                hide_items={"Melta Bombs": [lambda: cond(k("opt", uid(u, "o"),
+                                                                           "Melta Bombs (entire squad)"),
+                                                                         u, "atLeast", 1)]})])
     men = model(u, "Combat Engineer", 4, 9, 8, unit_profile(u, "Combat Engineer", "Infantry", 3, 3, 3, 3, 1, 3, 1, 7,
                                                             "5+"), kit=kit)
     specials, _ = pool(u, "Special Weapons (up to two Combat Engineers)", u,
-                       [("Flamer", 6), ("Grenade Launcher", 8), ("Meltagun", 10)], 2)
+                       [("Flamer", 6), ("Grenade Launcher", 8), ("Meltagun", 10), ("Mining Laser", 15)], 2)
+    # Mining Laser (Clanholds of the Deep Worlds): up to one, occupies one of the two special-weapon selections
+    no_ch = [cond(P["Clanholds of the Deep Worlds"], "force", "lessThan", 1)]
+    for lk in specials.iter("entryLink"):
+        if lk.get("name") == "Mining Laser":
+            lm = uid(lk.get("id"), "max")
+            add_mods(lk, [modifier("set", "hidden", "true", conds=no_ch), modifier("set", lm, 0, conds=no_ch)])
+            add_to(lk, "constraints", [constraint(lm, "max", 1, auto=True)])
+            lk.set("name", "Mining Laser (Clanholds of the Deep Worlds, one)")
     charges = take(u, "Demolition Charges (up to two Combat Engineers)", [("Demolition Charge", 5, 2)])
-    industrial = take(u, "Heavy Industrial Weapons (Clanholds of the Deep Worlds)", [("Mining Laser", 15, 1),
-                                                                                    ("Powered Mining Pick", 5, 2),
-                                                                                    ("Lascutter", 10, 1)])
-    add_mods(industrial, [modifier("set", "hidden", "true",
-                                   conds=[cond(P["Clanholds of the Deep Worlds"], "force", "lessThan", 1)])])
+    industrial = mining_weapons(u, u, [sid, mid])
     grav, grav_id = grav_option(uid(u, "p"), u)
     tog, tmods, troops_on = troops_toggle("ce", u, ["Clanholds of the Deep Worlds", "Engineer Corps"], ELITES,
                                           limit=2, limit_unless="Clanholds of the Deep Worlds")
@@ -1433,8 +1646,9 @@ def infantry_squad(u, platoon=False):
     mech = lambda: pc("Mechanised Regiments")
     sgt = model(u, "Sergeant", 1, 1, 0, unit_profile(u, "Sergeant", "Infantry (Character)", 3, 3, 3, 3, 1, 3, 2, 7,
                                                      "5+"),
-                kit=["Flak Armour", "Close Combat Weapon", "Frag Grenades"],
-                groups=[armoury(sid, "sergeant", "Laspistol or Autopistol")])
+                kit=["Flak Armour", "Frag Grenades"],
+                groups=[armoury(sid, "sergeant", "Laspistol or Autopistol", kit=["Flak Armour", "Frag Grenades"],
+                                hide_items={"Krak Grenades": [lambda: cond(k("opt", uid(u, "o"), "Krak Grenades (entire squad)"), u, "atLeast", 1)]})])
     men = model(u, "Militia Auxiliary", 19, 19, 0,
                 unit_profile(u, "Militia Auxiliary", "Infantry", 3, 3, 3, 3, 1, 3, 1, 6, "5+"),
                 kit=["Flak Armour", "Close Combat Weapon", "Frag Grenades"],
@@ -1456,15 +1670,7 @@ def infantry_squad(u, platoon=False):
     return dict(models=[sgt, men], cost=80, mods=mods,
                 entries=[opt(uid(u, "o"), "Krak Grenades (entire squad)", 2, ["Krak Grenades"], per_unit=u),
                          sniper, grav] + prov,
-                groups=[weapons, special, hwt, eq, tr] + infantry_advisors(uid(u, "a")))
-
-
-def infantry_squad_root():
-    u = k("unit", "Imperialis Militia Infantry Squad")
-    d = infantry_squad(u)
-    return unit("Imperialis Militia Infantry Squad", d["cost"], TROOPS, "Troops", key=u, models=d["models"],
-                entries=d["entries"], groups=d["groups"], mods=d["mods"] + [survivors_not_line()],
-                rules_=["Provenance"])
+                groups=[weapons, special, hwt, eq, tr, mining_weapons(u, u, [sid, mid])] + infantry_advisors(uid(u, "a")))
 
 
 def infantry_platoon():
@@ -1493,7 +1699,9 @@ def levy():
     undying = lambda: pc("Undying Horde")
     sgt = model(u, "Custodian", 1, 1, 0, unit_profile(u, "Custodian", "Infantry (Character)", 3, 3, 3, 3, 1, 3, 2, 7,
                                                       "5+"),
-                kit=["Flak Armour", "Close Combat Weapon"], groups=[armoury(sid, "sergeant", "Laspistol or Autopistol")])
+                kit=["Flak Armour"],
+                groups=[armoury(sid, "sergeant", "Laspistol or Autopistol", kit=["Flak Armour"], ranged_hide=[undying],
+                                hide_items={"Frag Grenades": [lambda: cond(k("opt", uid(u, "o"), "Frag Grenades (entire squad)"), u, "atLeast", 1)]})])
     men = model(u, "Levy Auxiliary", 19, 49, 2, unit_profile(u, "Levy Auxiliary", "Infantry", 2, 2, 3, 3, 1, 3, 1, 6,
                                                              "6+"), kit=["Sub-flak Armour"])
     hive = k("hive", u)
@@ -1533,7 +1741,8 @@ def grenadiers():
     kit = ["Carapace Armour", "Close Combat Weapon", "Frag Grenades", "Krak Grenades"]
     sgt = model(u, "Grenadier Sergeant", 1, 1, 0,
                 unit_profile(u, "Grenadier Sergeant", "Infantry (Character)", 3, 4, 3, 3, 1, 3, 2, 8, "4+"),
-                kit=kit, groups=[armoury(sid, "sergeant", "Hellpistol")])
+                kit=[x for x in kit if x != "Close Combat Weapon"],
+                groups=[armoury(sid, "sergeant", "Hellpistol", kit=kit)])
     men = model(u, "Grenadier", 9, 17, 10, unit_profile(u, "Grenadier", "Infantry", 3, 4, 3, 3, 1, 3, 1, 7, "4+"),
                 kit=kit + ["Targeter"],
                 mods=[modifier("set", uid(mid, "max"), 9, conds=[pc("Mechanised Regiments")])])
@@ -1585,11 +1794,10 @@ def fire_support():
                  mods=[modifier("set", uid(tid, "max"), 5, conds=[pc("Mechanised Regiments")])])
     swaps = model_swaps(u, "Heavy Weapon Teams: replace Heavy Stubber (any team)", u, [tid], [
         ("Mortar", 5), ("Twin-linked Heavy Stubber", 5), ("Heavy Bolter", 10), ("Multi-Laser", 10),
-        ("Heavy Flamer", 10), ("Missile Launcher", 10), ("Autocannon", 10), ("Lascannon", 15)])
-    industrial = model_swaps(uid(u, "ind"), "Heavy Industrial Weapons (Clanholds of the Deep Worlds)", u, [tid],
-                             [("Mining Laser", 15)])
-    add_mods(industrial, [modifier("set", "hidden", "true",
-                                   conds=[cond(P["Clanholds of the Deep Worlds"], "force", "lessThan", 1)])])
+        ("Heavy Flamer", 10), ("Missile Launcher", 10), ("Autocannon", 10), ("Lascannon", 15),
+        # Clanhold Mining and Industrial Weapons: occupies the team's normal heavy-weapon selection
+        ("Mining Laser", 15, [modifier("set", "hidden", "true",
+                                       conds=[cond(P["Clanholds of the Deep Worlds"], "force", "lessThan", 1)])])])
     extra_cost = [modifier("increment", PTS, 15, conds=[cond(tid, u, "atLeast", n)]) for n in range(6, 11)]
     grav, grav_id = grav_option(uid(u, "p"), u)
     prov = provenance_options(uid(u, "p"), u, kinds=("cameleoline", "void"))
@@ -1597,7 +1805,7 @@ def fire_support():
     return unit(name, 65, TROOPS, "Troops", key=u, models=[team], compulsory=False,
                 rules_=["Provenance", "Support Squad"], mods=extra_cost,
                 entries=[opt(uid(u, "o"), "Vox-caster (one Militia Auxiliary)", 5, ["Vox-caster"]), grav] + prov,
-                groups=[swaps, industrial, tr] + infantry_advisors(uid(u, "a")))
+                groups=[swaps, tr] + infantry_advisors(uid(u, "a")))
 
 
 def recon():
@@ -1607,8 +1815,8 @@ def recon():
     kit = ["Flak Armour", "Lasgun or Autogun", "Close Combat Weapon", "Frag Grenades", "Krak Grenades"]
     sgt = model(u, "Recon Sergeant", 1, 1, 0,
                 unit_profile(u, "Recon Sergeant", "Infantry (Character)", 3, 4, 3, 3, 1, 3, 1, 8, "5+"),
-                kit=[x for x in kit if x != "Lasgun or Autogun"],
-                groups=[armoury(sid, "sergeant", "Lasgun or Autogun"),
+                kit=[x for x in kit if x not in ("Lasgun or Autogun", "Close Combat Weapon")],
+                groups=[armoury(sid, "sergeant", "Lasgun or Autogun", kit=kit, skip=["Melta Bombs"]),
                         take(sid, "Recon Sergeant: one of", [("Melta Bombs", 5), ("Demolition Charge", 5)],
                              max_total=1)])
     men = model(u, "Recon Auxiliary", 4, 4, 0, unit_profile(u, "Recon Auxiliary", "Infantry", 3, 4, 3, 3, 1, 3, 1, 7,
@@ -1635,7 +1843,8 @@ def beastmen():
     kit = ["Sub-flak Armour", "Close Combat Weapon", "Frag Grenades"]
     sgt = model(u, "Beastman Chieftain", 1, 1, 0,
                 unit_profile(u, "Beastman Chieftain", "Infantry (Character)", 4, 2, 3, 3, 1, 3, 2, 7, "6+"),
-                kit=kit, groups=[armoury(sid, "sergeant", "Laspistol or Autopistol")])
+                kit=[x for x in kit if x != "Close Combat Weapon"],
+                groups=[armoury(sid, "sergeant", "Laspistol or Autopistol", kit=kit)])
     men = model(u, "Beastman Auxiliary", 9, 29, 6,
                 unit_profile(u, "Beastman Auxiliary", "Infantry", 4, 2, 3, 3, 1, 3, 1, 6, "6+"), kit=kit)
     weapons = choice(u, "Beastman Auxiliaries: weapons (entire herd)", [
@@ -1661,7 +1870,9 @@ def clones():
     kit = ["Flak Armour", "Lasgun", "Close Combat Weapon", "Frag Grenades"]
     sgt = model(u, "Clone Prime", 1, 1, 0,
                 unit_profile(u, "Clone Prime", "Infantry (Character)", 3, 3, 3, 3, 1, 3, 2, 8, "5+"),
-                kit=[x for x in kit if x != "Lasgun"], groups=[armoury(sid, "sergeant", "Lasgun")])
+                kit=[x for x in kit if x not in ("Lasgun", "Close Combat Weapon")],
+                groups=[armoury(sid, "sergeant", "Lasgun", kit=kit,
+                                hide_items={"Krak Grenades": [lambda: cond(k("opt", uid(u, "o"), "Krak Grenades (entire cohort)"), u, "atLeast", 1)]})])
     men = model(u, "Clone Auxiliary", 9, 19, 7, unit_profile(u, "Clone Auxiliary", "Infantry", 3, 3, 3, 3, 1, 3, 1, 7,
                                                              "5+"), kit=kit)
     specials, _ = pool(u, "Special Weapons (one per ten models)", u, SPECIAL_4, 0, every=10)
@@ -1690,7 +1901,7 @@ def sentinels():
                                                                          ("Missile Launcher", 5), ("Lascannon", 15),
                                                                          ("Multi-Melta", 15)]),
                       take(mid, "Combat Blades", [("Combat Blades", 5)]),
-                      take(mid, "Vehicle Upgrades (Sentinel)", SENTINEL_UPGRADES)],
+                      xgear(mid, "Vehicle Upgrades (Armoury: Sentinel)", SENTINEL_UPGRADES)],
               entries=[opt(mid, "Drop Sentinel: Deep Strike (Drop Assault Regiments)", 5, rules_=["Deep Strike"],
                            show=["Drop Assault Regiments"])])
     return unit(name, 0, FA, "Fast Attack", key=u, models=numbered(m, 3, 1), rules_=["Scouts", "Vehicle Squadron"])
@@ -1705,8 +1916,7 @@ def land_speeders():
               kit=["Heavy Bolter", "Searchlight"],
               groups=[slot(mid, "Replace Heavy Bolter", "Heavy Bolter", [("Heavy Flamer", 0), ("Multi-Laser", 5),
                                                                          ("Autocannon", 10), ("Multi-Melta", 15)]),
-                      take(mid, "Armoured Crew Compartment", [("Armoured Crew Compartment", 10)]),
-                      take(mid, "Vehicle Upgrades (Land Speeder)", SPEEDER_UPGRADES)])
+                      xgear(mid, "Vehicle Upgrades (Armoury: Land Speeder)", SPEEDER_UPGRADES)])
     return unit(name, 0, FA, "Fast Attack", key=u, models=numbered(m, 3, 1), rules_=["Vehicle Squadron"])
 
 
@@ -1717,10 +1927,16 @@ def cavalry():
     kit = ["Flak Armour", "Laspistol or Autopistol", "Close Combat Weapon", "Cavalry Mount"]
     hl = lambda: pc("Horse Lords")
     vet = k("opt", uid(u, "o"), "Upgrade Sergeant to Veteran Sergeant")
+    lance_on = [lambda n=n: cond(uid("choice", u, "Hunting Lances (entire squadron)", n), u, "atLeast", 1)
+                for n in ("Hunting Lances replace pistols", "Hunting Lances replace close combat weapons")]
     sgt = model(u, "Sergeant", 1, 1, 0,
                 unit_profile(u, "Sergeant", "Cavalry (Character)", 3, 3, 3, 3, 1, 3, 1, 7, "5+"),
-                kit=[x for x in kit if x != "Laspistol or Autopistol"],
-                groups=[armoury(sid, "sergeant", "Laspistol or Autopistol")])
+                kit=[x for x in kit if x not in ("Laspistol or Autopistol", "Close Combat Weapon")],
+                groups=[armoury(sid, "sergeant", "Laspistol or Autopistol", kit=kit,
+                                hide_items=dict({n: lance_on for n in ("Lasgun or Autogun", "Shotgun", "Boltgun",
+                                                                         "Power Weapon", "Power Fist")},
+                                                **{"Krak Grenades": [lambda: cond(k("opt", uid(u, "o"), "Krak Grenades (entire squadron)"), u, "atLeast", 1)],
+                                                   "Melta Bombs": [lambda: cond(k("opt", uid(u, "o"), "Melta Bombs (entire squadron)"), u, "atLeast", 1)]}))])
     add_to(sgt, "profiles", [unit_profile(u, "Veteran Sergeant", "Cavalry (Character)", 3, 3, 3, 3, 1, 3, 2, 8, "5+")])
     men = model(u, "Cavalry Auxiliary", 4, 9, 8, unit_profile(u, "Cavalry Auxiliary", "Cavalry", 3, 3, 3, 3, 1, 3, 1,
                                                               7, "5+"), kit=kit,
@@ -1780,8 +1996,7 @@ def salamander():
     return unit(name, 100, FA, "Fast Attack", key=u,
                 profiles=[vehicle_profile(u, name, "Vehicle (Fast, Open-topped)", 3, 12, 10, 10)],
                 kit=["Autocannon", "Heavy Bolter", "Searchlight", "Smoke Launchers"],
-                groups=[take(u, "Vehicle Upgrades", [x for x in VEHICLE_UPGRADES
-                                                     if x[0] not in ("Searchlight", "Smoke Launchers")])])
+                groups=[vehicle_upgrades(u, kit=["Searchlight", "Smoke Launchers"], open_topped=True)])
 
 
 def jump_assault():
@@ -1792,7 +2007,9 @@ def jump_assault():
     sgt = model(u, "Assault Sergeant", 1, 1, 0,
                 unit_profile(u, "Assault Sergeant", "Jump Infantry (Character)", 3, 3, 3, 3, 1, 3, 2, 8, "5+"),
                 kit=["Frag Grenades", "Flak Armour", "Jump Pack", "Laspistol or Autopistol"],
-                groups=[armoury(sid, "sergeant", "Laspistol or Autopistol", ccw_default=None)])
+                groups=[armoury(sid, "sergeant", "Laspistol or Autopistol", ccw_default=None, skip=["Bolt Pistol"],
+                                kit=["Frag Grenades", "Flak Armour", "Jump Pack"],
+                                hide_items={"Krak Grenades": [lambda: cond(k("opt", uid(u, "o"), "Krak Grenades (entire squad)"), u, "atLeast", 1)], "Melta Bombs": [lambda: cond(k("opt", uid(u, "o"), "Melta Bombs (entire squad)"), u, "atLeast", 1)]})])
     men = model(u, "Jump Auxiliary", 4, 9, 10, unit_profile(u, "Jump Auxiliary", "Jump Infantry", 3, 3, 3, 3, 1, 3, 1,
                                                             7, "5+"),
                 kit=["Two Laspistols or Autopistols", "Frag Grenades", "Flak Armour", "Jump Pack"])
@@ -1825,6 +2042,11 @@ def mutant_spawn():
 
 
 TANK_CMD = None
+
+
+def tank_cmd_conds(key, scope):
+    """Improved Comms supplied by the Command Tank rule may not be purchased again."""
+    return [lambda: cond(k("tankcmd", key), scope, "atLeast", 1), lambda: cond(k("kourion", key), scope, "atLeast", 1)]
 
 
 def tank_commander_group(key, mid, battle_tank=False):
@@ -1897,7 +2119,7 @@ def leman_russ():
                   groups=[slot(mid, "Replace hull-mounted Heavy Bolter", "Heavy Bolter",
                                [("Heavy Flamer", 0), ("Multi-Laser", 0), ("Lascannon", 10)]),
                           choice(mid, "Side Sponsons (one pair)", spons),
-                          take(mid, "Vehicle Upgrades", VEHICLE_UPGRADES),
+                          vehicle_upgrades(mid, tank=True, comms_hide=tank_cmd_conds(mid, mid)),
                           tank_commander_group(mid, mid, battle_tank=n == "Leman Russ Battle Tank")])
         models += [m] if "Vanquisher" in n else numbered(m, 3, 0)
     return unit(name, 0, HS, "Heavy Support", key=u, models=models, rules_=["Vehicle Squadron"],
@@ -1960,7 +2182,7 @@ def artillery_battery():
         if n == "Griffon":
             extra.append(take(mid, "Siege Shells", [("Griffon Siege Shells", 5)]))
         m = model(u, n, 0, 3, c, vehicle_profile(u, n, "Vehicle (Tank, Open-topped)", 3, 12, 10, 10),
-                  kit=[gun, "Heavy Bolter"], groups=extra + [take(mid, "Vehicle Upgrades", VEHICLE_UPGRADES)],
+                  kit=[gun, "Heavy Bolter"], groups=extra + [vehicle_upgrades(mid, tank=True, open_topped=True)],
                   mods=[modifier("set", "hidden", "true", groups=[any_of(*others)]),
                         modifier("set", uid(mid, "max"), 0, groups=[any_of(*others)])])
         models += numbered(m, 3, 0)
@@ -2021,8 +2243,8 @@ def malcador():
                             ("Two Heavy Flamers", 0, False, ["Heavy Flamer", "Heavy Flamer"], []),
                             ("Two Lascannons", 20, False, ["Lascannon", "Lascannon"], [])]),
                         take(u, "Siege Armour", [("Siege Armour", 10)]),
-                        take(u, "Vehicle Upgrades", [x for x in VEHICLE_UPGRADES
-                                                     if x[0] not in ("Searchlight", "Smoke Launchers")]),
+                        vehicle_upgrades(u, kit=["Searchlight", "Smoke Launchers"], tank=True, superheavy=True,
+                                         comms_hide=tank_cmd_conds(u, u)),
                         tank_commander_group(u, u)])
 
 
@@ -2127,6 +2349,7 @@ def merge_duplicate_links(root):
 
 def build():
     start(ARMY)
+    L._PSY_REGISTERED.clear()   # psychic power rules are re-registered into the (emptied) shared tables
     register_data(rules=RULES, weapons=WEAPONS, multi_profile=MULTI, weapon_rules=WEAPON_RULES, wargear=WARGEAR)
     TRANSPORT.clear(), ADVISOR.clear(), SHARED.clear(), FC_IDS.clear(), P.clear()
     TC_IDS.clear(), KOURION_IDS.clear(), AIKA_IDS.clear()
@@ -2159,9 +2382,9 @@ def build():
     config = provenances_config()
 
     units = [allegiance(), config,
-             fc, *lords, pcc_root(), rogue_psyker(), remembrancer_circle(),
+             fc, *lords, pcc_root(), discipline_masters(), rogue_psyker(), remembrancer_circle(),
              medicae(), ogryns(), enginseer(), battle_armour(), vet, gene, combat_engineers(),
-             infantry_platoon(), infantry_squad_root(), levy(), grenadiers(), fire_support(), recon(), beastmen(),
+             infantry_platoon(), levy(), grenadiers(), fire_support(), recon(), beastmen(),
              clones(),
              sentinels(), land_speeders(), cavalry(), cyclops(), salamander(), jump_assault(),
              mutant_spawn(), leman_russ(), rapiers(), land_raider_hs(), artillery_battery(), ordnance_battery(),

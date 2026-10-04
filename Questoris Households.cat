@@ -3,65 +3,6 @@
 <publications>
 <publication id="0d22-ba04-3764-5b30" name="Questoris Households" shortName="Questoris Households" />
 </publications>
-<forceEntries>
-<forceEntry id="5233-baaa-36e4-5674" name="Questoris Knight Crusade Force Organisation Chart" hidden="false">
-<categoryLinks>
-<categoryLink id="46ab-b688-00df-db6f" name="Configuration" hidden="false" targetId="ba14-d0f1-f942-df54" primary="false" />
-<categoryLink id="e746-7135-8c41-1d01" name="HQ" hidden="false" targetId="cd54-54be-0cb1-3474" primary="false">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="29c5-df0b-41b6-2d7e" type="min" />
-<constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8ef3-64cd-f276-2458" type="max" />
-</constraints>
-</categoryLink>
-<categoryLink id="7a47-7cac-5162-08e9" name="Troops" hidden="false" targetId="adf0-dc10-89d4-f51e" primary="false">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0144-6c93-c4bd-d1f0" type="min" />
-<constraint field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f6de-681e-886c-928c" type="max" />
-</constraints>
-</categoryLink>
-<categoryLink id="0b3a-1daf-80b7-61c2" name="Elites" hidden="false" targetId="6b19-97ac-7c40-0bdf" primary="false">
-<constraints>
-<constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aad8-2c5a-fd75-6a1a" type="min" />
-<constraint field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0752-f1c7-e111-c606" type="max" />
-</constraints>
-</categoryLink>
-<categoryLink id="87b2-c336-5880-f8ef" name="Fast Attack" hidden="false" targetId="5e5f-f512-de8c-9505" primary="false">
-<constraints>
-<constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c9b1-bde1-a03d-96ea" type="min" />
-<constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b4fa-cb95-9620-e10a" type="max" />
-</constraints>
-</categoryLink>
-<categoryLink id="7c97-7969-adfb-300b" name="Heavy Support" hidden="false" targetId="a78f-9734-db0c-b938" primary="false">
-<constraints>
-<constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9115-eeda-700d-dc9d" type="min" />
-<constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3243-7d59-aaf7-1396" type="max" />
-</constraints>
-</categoryLink>
-<categoryLink id="115a-e110-33ed-41ef" name="Lords of War" hidden="false" targetId="dbd2-622e-16d4-78fe" primary="false">
-<constraints>
-<constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f008-1da2-653f-6f7d" type="min" />
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b491-b3be-2468-805c" type="max" />
-</constraints>
-</categoryLink>
-<categoryLink id="f7d0-b9e5-576f-2363" name="Fortification" hidden="false" targetId="1f6e-6456-710f-fbe7" primary="false">
-<constraints>
-<constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3d28-77e8-dcac-54e0" type="min" />
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7280-7181-e04c-192e" type="max" />
-</constraints>
-</categoryLink>
-<categoryLink id="7a26-4503-7625-9326" name="Compulsory HQ Eligible" hidden="false" targetId="e89b-053d-1bdc-4e2e" primary="false">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="298e-a028-9aee-0c0b" type="min" />
-</constraints>
-</categoryLink>
-<categoryLink id="3451-2943-5b04-baaa" name="Compulsory Troops Eligible" hidden="false" targetId="071f-8316-97af-8fd6" primary="false">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8c67-4063-a5c6-5eaa" type="min" />
-</constraints>
-</categoryLink>
-</categoryLinks>
-</forceEntry>
-</forceEntries>
 <entryLinks>
 <entryLink id="57dd-6851-bf83-428f" name="Allegiance" hidden="false" collective="false" import="true" targetId="47ae-c94f-98e8-ca99" type="selectionEntry" />
 <entryLink id="31df-1d5f-8726-0aae" name="Seneschal" hidden="false" collective="false" import="true" targetId="91d7-f007-37f6-04d8" type="selectionEntry" />
@@ -13411,6 +13352,7 @@
 <selectionEntry id="e2d3-88ad-ed9f-65de" name="Twin Icarus Autocannon" hidden="false" collective="false" import="true" type="upgrade">
 <infoLinks>
 <infoLink id="edb8-65ab-2064-503b" name="Twin Icarus Autocannon" hidden="false" targetId="a485-7a2c-2c9e-b3f4" type="profile" />
+<infoLink id="03fe-2806-a96d-29da" name="Twin-Linked" hidden="false" targetId="7bab-62d5-9d5b-5bba" type="rule" />
 <infoLink id="bba5-5936-e094-a5b0" name="Skyfire" hidden="false" targetId="23da-552a-140c-cd37" type="rule" />
 <infoLink id="1e56-f135-7f21-c66f" name="Interceptor" hidden="false" targetId="485c-e46b-69d7-a48e" type="rule" />
 </infoLinks>
@@ -13588,6 +13530,7 @@
 <selectionEntry id="a288-2964-2583-2b6c" name="Volkite Culverin" hidden="false" collective="false" import="true" type="upgrade">
 <infoLinks>
 <infoLink id="8734-bf71-148b-dffe" name="Volkite Culverin" hidden="false" targetId="6c8c-6ac8-6585-7d20" type="profile" />
+<infoLink id="6100-2a27-d5ed-7986" name="Rending" hidden="false" targetId="59e9-d133-77f2-ca5a" type="rule" />
 </infoLinks>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
@@ -13756,7 +13699,7 @@
 </sharedSelectionEntries>
 <sharedRules>
 <rule id="31b4-a746-bffc-8320" name="Questoris Knight Household" hidden="false">
-<description>A Questoris Knight Household is chosen with the Questoris Knight Crusade Force Organisation Chart (HQ 1-2, Troops 1-5, Elites 0-3, Fast Attack 0-2, Heavy Support 0-2; compulsory: 1 HQ and 1 Troops). Every Knight must be given a Household Rank, which decides its Force Organisation slot and may modify its points, characteristics, shield save and special rules (applied after choosing the Knight armour and its normal equipment). Unless stated otherwise any Knight armour may be piloted by any Household Rank, and the rank does not change the weapons or equipment available to the armour. Any extra requirement of a rank, armour, unit entry or special rule must also be obeyed.</description>
+<description>A Questoris Knight Household is chosen with the normal ProHammer Force Organisation Chart (author's ruling: the normal Force Organisation applies; the book's Questoris Knight Crusade chart of HQ 1-2, Troops 1-5, Elites 0-3, Fast Attack 0-2, Heavy Support 0-2 is not used). Every Knight must be given a Household Rank, which decides its Force Organisation slot and may modify its points, characteristics, shield save and special rules (applied after choosing the Knight armour and its normal equipment). Unless stated otherwise any Knight armour may be piloted by any Household Rank, and the rank does not change the weapons or equipment available to the armour. Any extra requirement of a rank, armour, unit entry or special rule must also be obeyed.</description>
 </rule>
 <rule id="7dea-752c-5af7-9e7a" name="The Household" hidden="false">
 <description>All Knights of the same Questoris Knight Household Detachment are members of the same Household. Rules that affect friendly Household Knights only affect Knights of the same Detachment unless stated otherwise. Household Ranks and special rules of one Detachment do not affect Knights of another Detachment; each Detachment must fulfil its own compulsory selections.</description>
@@ -13765,13 +13708,13 @@
 <description>Knights are Vehicles and use the normal Vehicle and Walker rules of ProHammer Classic except where modified. Hull Points are not used - Knights use the Structure Points listed in their entry. All Knights are Super-heavy Walkers unless stated otherwise. Knights use normal Line of Sight and weapon firing arcs and do not use the minimum range or targeting restrictions of Titans; they may fire at nearby enemy units normally unless a weapon has its own minimum range or another rule states otherwise. Rules written for later editions of Warhammer 40,000 do not apply unless reproduced in this army list.</description>
 </rule>
 <rule id="bb2c-29c2-797f-23bb" name="Lords of War (Questoris Households)" hidden="false">
-<description>Lords of War are not part of the Questoris Knight Crusade Force Organisation Chart and may only be included where the mission permits it or both players agree; no army may contain more than one Lord of War. A Questoris Knight Household may select an eligible engine from the Collegia Titanica army list as its Lord of War. Such a Titan gains no Household Rank and uses all rules, weapons and wargear of the Collegia Titanica army list.</description>
+<description>Lords of War may only be included where the mission permits it or both players agree; no army may contain more than one Lord of War. A Questoris Knight Household may select an eligible engine from the Collegia Titanica army list as its Lord of War. Such a Titan gains no Household Rank and uses all rules, weapons and wargear of the Collegia Titanica army list.</description>
 </rule>
 <rule id="1156-9bb5-a1bb-279c" name="Fortifications (Questoris Households)" hidden="false">
-<description>Fortifications are not part of the Questoris Knight Crusade Force Organisation Chart, may only be included where the mission permits it or both players agree, and no army may contain more than one Fortification.</description>
+<description>Fortifications may only be included where the mission permits it or both players agree, and no army may contain more than one Fortification.</description>
 </rule>
 <rule id="cbdd-fbcf-7a7f-1dfb" name="The Army's Warlord (Questoris Households)" hidden="false">
-<description>One eligible HQ Knight is nominated as the army's Warlord. If the army contains a Knight Seneschal it will normally be the Warlord; otherwise another eligible HQ Knight may be chosen. The Warlord selects a Warlord Trait according to the ProHammer Classic rules (random Warlord Traits from older publications are not used).</description>
+<description>One eligible HQ Knight is nominated as the army's Warlord. If the army contains a Knight Seneschal it must be the Warlord; otherwise another eligible HQ Knight may be chosen. The Warlord selects a Warlord Trait according to the ProHammer Classic rules (random Warlord Traits from older publications are not used).</description>
 </rule>
 <rule id="3a4c-accb-6ea5-e00d" name="Allied Forces (Questoris Households)" hidden="false">
 <description>A Questoris Knight Household may use Allied Detachments according to the normal ProHammer rules. An Allied Detachment may not fulfil the compulsory selections of the Primary Detachment. Household Rank rules only affect Knights of the Questoris Knight Household Detachment; Allied rules do not automatically affect Knights and Household rules do not affect allied units; allied units never gain Ion Shields, Household Ranks or other Knight-specific rules. The Allegiance of an Allied Detachment must be compatible with the Household's Allegiance unless a scenario or campaign rule states otherwise.</description>
@@ -13976,7 +13919,7 @@
 <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">48"</characteristic>
 <characteristic name="S" typeId="6204-806b-a18a-c0be">7</characteristic>
 <characteristic name="AP" typeId="964e-6f66-dcaa-247a">4</characteristic>
-<characteristic name="Type" typeId="54df-9f85-8d55-7440">Heavy 2, Skyfire, Interceptor</characteristic>
+<characteristic name="Type" typeId="54df-9f85-8d55-7440">Heavy 2, Twin-linked, Skyfire, Interceptor</characteristic>
 </characteristics>
 </profile>
 <profile id="608d-25ee-2234-e04d" name="Stormspear Rocket Pod" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
@@ -14128,7 +14071,7 @@
 <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">45"</characteristic>
 <characteristic name="S" typeId="6204-806b-a18a-c0be">6</characteristic>
 <characteristic name="AP" typeId="964e-6f66-dcaa-247a">5</characteristic>
-<characteristic name="Type" typeId="54df-9f85-8d55-7440">Heavy 4</characteristic>
+<characteristic name="Type" typeId="54df-9f85-8d55-7440">Heavy 4, Rending</characteristic>
 </characteristics>
 </profile>
 <profile id="ab08-5231-6797-e17d" name="Reaper Chainsword" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
@@ -14136,7 +14079,7 @@
 <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">-</characteristic>
 <characteristic name="S" typeId="6204-806b-a18a-c0be">10</characteristic>
 <characteristic name="AP" typeId="964e-6f66-dcaa-247a">-</characteristic>
-<characteristic name="Type" typeId="54df-9f85-8d55-7440">Melee, Power Weapon, Titan Killer</characteristic>
+<characteristic name="Type" typeId="54df-9f85-8d55-7440">Melee, Power Weapon (ignores armour saves), Titan Killer</characteristic>
 </characteristics>
 </profile>
 <profile id="8588-02b0-dc47-2f34" name="Thunderstrike Gauntlet" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
@@ -14144,7 +14087,7 @@
 <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">-</characteristic>
 <characteristic name="S" typeId="6204-806b-a18a-c0be">10</characteristic>
 <characteristic name="AP" typeId="964e-6f66-dcaa-247a">-</characteristic>
-<characteristic name="Type" typeId="54df-9f85-8d55-7440">Melee, Power Weapon, Titan Killer, Colossal, Hurl</characteristic>
+<characteristic name="Type" typeId="54df-9f85-8d55-7440">Melee, Power Weapon (ignores armour saves), Titan Killer, Colossal, Hurl</characteristic>
 </characteristics>
 </profile>
 <profile id="5a7f-91c1-3038-127a" name="Tempest Warblade" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
@@ -14152,7 +14095,7 @@
 <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">-</characteristic>
 <characteristic name="S" typeId="6204-806b-a18a-c0be">10</characteristic>
 <characteristic name="AP" typeId="964e-6f66-dcaa-247a">-</characteristic>
-<characteristic name="Type" typeId="54df-9f85-8d55-7440">Melee, Power Weapon, Sunder, Tempest Attack</characteristic>
+<characteristic name="Type" typeId="54df-9f85-8d55-7440">Melee, Power Weapon (ignores armour saves), Sunder, Tempest Attack</characteristic>
 </characteristics>
 </profile>
 <profile id="27f7-7d28-24dd-3bbd" name="Cerastus Shock Lance" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
@@ -14160,7 +14103,7 @@
 <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">-</characteristic>
 <characteristic name="S" typeId="6204-806b-a18a-c0be">10</characteristic>
 <characteristic name="AP" typeId="964e-6f66-dcaa-247a">-</characteristic>
-<characteristic name="Type" typeId="54df-9f85-8d55-7440">Melee, Power Weapon, Titan Killer, Swift Strike</characteristic>
+<characteristic name="Type" typeId="54df-9f85-8d55-7440">Melee, Power Weapon (ignores armour saves), Titan Killer, Swift Strike</characteristic>
 </characteristics>
 </profile>
 <profile id="914d-7d0a-41bc-bb77" name="Cerastus Shock Lance - Shock Blast" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
@@ -14176,7 +14119,7 @@
 <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">-</characteristic>
 <characteristic name="S" typeId="6204-806b-a18a-c0be">10</characteristic>
 <characteristic name="AP" typeId="964e-6f66-dcaa-247a">-</characteristic>
-<characteristic name="Type" typeId="54df-9f85-8d55-7440">Melee, Power Weapon, Titan Killer, Wrecker</characteristic>
+<characteristic name="Type" typeId="54df-9f85-8d55-7440">Melee, Power Weapon (ignores armour saves), Titan Killer, Wrecker</characteristic>
 </characteristics>
 </profile>
 <profile id="b527-cf24-d32c-09e6" name="Atrapos Lascutter - Beam" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
@@ -14192,7 +14135,7 @@
 <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">-</characteristic>
 <characteristic name="S" typeId="6204-806b-a18a-c0be">10</characteristic>
 <characteristic name="AP" typeId="964e-6f66-dcaa-247a">-</characteristic>
-<characteristic name="Type" typeId="54df-9f85-8d55-7440">Melee, Power Weapon, Titan Killer, Wrecker</characteristic>
+<characteristic name="Type" typeId="54df-9f85-8d55-7440">Melee, Power Weapon (ignores armour saves), Titan Killer, Wrecker</characteristic>
 </characteristics>
 </profile>
 <profile id="c401-cdc1-7ad3-defb" name="Twin-linked Rad-cleanser" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
@@ -14208,7 +14151,7 @@
 <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">-</characteristic>
 <characteristic name="S" typeId="6204-806b-a18a-c0be">10</characteristic>
 <characteristic name="AP" typeId="964e-6f66-dcaa-247a">-</characteristic>
-<characteristic name="Type" typeId="54df-9f85-8d55-7440">Melee, Power Weapon, Titan Killer, Machine Destroyer</characteristic>
+<characteristic name="Type" typeId="54df-9f85-8d55-7440">Melee, Power Weapon (ignores armour saves), Titan Killer, Machine Destroyer</characteristic>
 </characteristics>
 </profile>
 <profile id="588d-0ad6-a548-c9e5" name="Twin-linked Heavy Bolter" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">

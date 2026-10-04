@@ -154,7 +154,10 @@ RULES = {
         "Character for the entire battle. Where relevant for army selection, Life Wards are considered part of the HQ "
         "choice of the Character to which they are assigned. While attached to a unit belonging to a Tercio, a Life "
         "Ward is considered part of that Tercio for the purposes of Hold the Line. Only one Life Ward in the "
-        "Detachment may select a Power Fist or an Inferno Pistol."),
+        "Detachment may select a Power Fist or an Inferno Pistol. A Retinue is selected for, and assigned as a whole to, "
+        "one Character - the Legate Commander (Lord Marshal) or a Solar Auxilia special character (Ireton MaSade, Aevos "
+        "Jovan); it may not be split between Characters, and the Strategos is not eligible. Cohort Attaches may also "
+        "be selected for a Life Ward Retinue."),
     "Cohort Attaches": (
         "A Solar Auxilia Detachment containing a Legate Commander, Auxilia Tactical Command Section or Solar Auxilia "
         "Life Ward Retinue may include up to three Cohort Attaches. They do not occupy Force Organisation slots and "
@@ -285,7 +288,7 @@ RULES = {
         "marker over the Cyclops and resolve its payload against all models beneath it; the Cyclops is then destroyed. "
         "If a Cyclops is destroyed by any other means, roll a D6: on a 6 it immediately Detonates."),
     # ---------------------------------------------------------------- Dramatis Personae
-    "Warlord (Ireton MaSade)": "Ireton MaSade must be the army's Warlord. Loyalist only.",
+    "Warlord (Ireton MaSade)": "Ireton MaSade must be the army's Warlord. This does not override Disciplined Command. Loyalist only.",
     "Master of the Battlefield": (
         "After both armies have deployed, but before the first turn begins, MaSade may redeploy D3 friendly Solar "
         "Auxilia units from his Detachment anywhere they could normally have deployed, or place them into Reserve. A "
@@ -384,7 +387,8 @@ RULES = {
         "also gain Stubborn while within 12\".\n"
         "RESTRICTIONS - No Lykis Maelstrom Sections, no Hades Breaching Drills, no Tarantula Sentry Gun Batteries. No "
         "more than one Vehicle Squadron selected from Fast Attack and no more than one Vehicle Squadron selected from "
-        "Heavy Support."),
+        "Heavy Support (single-vehicle units such as the Malcador or Valdor, and Tarantula Batteries, count as Vehicle "
+        "Squadrons for this limit)."),
     "Armoured Cohort": (
         "REQUIREMENTS - An Auxilia Tank Commander must be the army's Warlord, regardless of the normal requirements of "
         "Disciplined Command.\n"
@@ -960,19 +964,28 @@ def life_ward_retinue():
                                                       "4+"),
                kit=["Void Armour", "Laspistol", "Close Combat Weapon", "Frag Grenades", "Krak Grenades"])
     opts = [("Blast Pistol", 2), ("Volkite Serpenta", 2), ("Rending Weapon", 5), ("Needle Pistol", 5),
-            ("Hand Flamer", 5), ("Power Weapon", 10), ("Plasma Pistol", 10), ("Power Fist", 15),
-            ("Inferno Pistol", 15)]
-    groups = [model_swaps(u, "Life Wards: replace Laspistol (any number)", u, [mid], opts),
-              model_swaps(u, "Life Wards: replace Close Combat Weapon (any number)", u, [mid], opts),
+            ("Hand Flamer", 5), ("Power Weapon", 10), ("Plasma Pistol", 10)]
+    # *Power Fist / Inferno Pistol: only one Life Ward in the Detachment (L870) - own entries, counted force-wide
+    star_ids = IDS.setdefault("lw_star", [])
+
+    def stars(title):
+        out = []
+        for n in ["Power Fist", "Inferno Pistol"]:
+            eid = uid(u, "star", title, n)
+            star_ids.append(eid)
+            out.append(entry(eid, f"{n}*", cost=15, links=[gear(eid, n)]))
+        return out
+    t1, t2 = "Life Wards: replace Laspistol (any number)", "Life Wards: replace Close Combat Weapon (any number)"
+    groups = [model_swaps(u, t1, u, [mid], opts, entries=stars(t1)),
+              model_swaps(u, t2, u, [mid], opts, entries=stars(t2)),
               model_swaps(u, "Life Wards: one of the following each (any number)", u, [mid],
                           [("Shotgun", 2), ("Laslock", 2), ("Sniper Rifle", 5), ("Volkite Charger", 5), ("Flamer", 5),
                            ("Rotor Cannon", 5), ("Nuncio-vox", 10), ("Augury Scanner", 15)]),
               model_takes(u, "Life Wards: wargear (any number)", u, [mid],
-                          [("Melta Bombs", 5), ("Infravisor", 5), ("Refractor Field", 10), ("Grim Endurance", 10)])]
-    pf, ip = W("Power Fist"), W("Inferno Pistol")
+                          [("Melta Bombs", 5), ("Infravisor", 5), ("Refractor Field", 10), ("Grim Endurance", 10)]),
+              attache_links(u)]
     err = modifier("add", "error", "Only one Life Ward in the Detachment may select a Power Fist or Inferno Pistol.",
-                   groups=[or_groups(any_of(cond(pf, "self", "atLeast", 2), cond(ip, "self", "atLeast", 2)),
-                                     all_of(cond(pf, "self", "atLeast", 1), cond(ip, "self", "atLeast", 1)))])
+                   groups=[sum_ge2(list(star_ids))])
     return entry(u, "Solar Auxilia Life Ward Retinue", typ="unit", mods=[err],
                  infolinks=rules_links([*CORE_RULES, "Hold the Line", "Retinue", "Life Ward Retinue"], key=u),
                  entries=[lw], groups=groups)
@@ -989,9 +1002,9 @@ def cohort_attaches():
                      profiles=[unit_profile(u, name, "Infantry (Character)", *stats, sv)],
                      links=[gear(mid, x) for x in kit], infolinks=rules_links(rls, key=mid), groups=list(groups))
     champ_id = uid("model", u, "Household Champion")
-    psy = flat_choice(uid("model", u, "Astropath Primus"), "Psychic Discipline (one power)",
-                      [(n, 0, [], []) for n in ["Biomancy", "Divination", "Pyromancy", "Telekinesis", "Telepathy"]],
-                      required=True)
+    ast_id = uid("model", u, "Astropath Primus")
+    # Psyker - Mastery Level 1: one power from Biomancy, Divination, Pyromancy, Telekinesis or Telepathy (L984)
+    psy = L.psychic_powers(ast_id, ast_id, 1, L.PSY.LIBRARIAN)
     models = [
         att("Cohort Chirurgeon", 35, (3, 4, 3, 3, 2, 3, 1, 8), base_kit + ["Narthecium"],
             [*CORE_RULES, "Master Chirurgeon"]),
@@ -1030,7 +1043,11 @@ def ireton_masade():
              groups=[retinue_links(u, "masade")],
              constraints=[unique(u, 1, "roster")],
              mods=[hide_if(has(L.TRAITOR, "roster")),
-                   modifier("add", "error", "Ireton MaSade is Loyalist only.", conds=[has(L.TRAITOR, "roster")])])
+                   modifier("add", "error", "Ireton MaSade is Loyalist only.", conds=[has(L.TRAITOR, "roster")]),
+                   modifier("add", "warning", "Ireton MaSade must be the army's Warlord, but he does not override "
+                                              "Disciplined Command (Lord Marshal - Legate Commander - Strategos - Tank "
+                                              "Commander).",
+                            groups=[any_of(has(IDS["legate"], "roster"), has(IDS["tcs"], "roster"))])])
     return e
 
 
@@ -1113,12 +1130,23 @@ def eidis_section(u, tercio):
     prime_opts = [("Blast Pistol", 2), ("Rending Weapon", 5), ("Needle Pistol", 5), ("Boarding Shield", 5),
                   ("Hand Flamer", 10), ("Plasma Pistol", 10), ("Power Weapon", 10), ("Power Fist", 15)]
     weapons = [("Lascutter", 5), ("Plasma Gun", 15), ("Meltagun", 15)]
+    bc_id = uid(u, "breaching-free")
+    # Void & Siege - Breaching Formations (L5064): one Section in the Detachment; only the Prime gets it (author)
+    free_bc = gate(entry(bc_id, "Breaching Charge for free (Void & Siege Cohort, one Section in the Detachment)",
+                         constraints=[constraint(uid(bc_id, "max"), "max", 1, auto=True)],
+                         links=[gear(bc_id, "Breaching Charge")]),
+                   "Void & Siege Cohort", uid(bc_id, "max"))
+    add_mods(free_bc, [modifier("add", "error", "The Prime may carry only one Breaching Charge (paid or free).",
+                                conds=[cond(W("Breaching Charge"), pid, "atLeast", 2)])])
+    IDS.setdefault("eidis_bc", []).append(bc_id)
     prime = model(u, "Prime", 1, 1, 0, unit_profile(u, "Prime", "Infantry (Character)", 4, 4, 3, 3, 1, 3, 2, 9, "4+"),
                   kit=["Reinforced Void Armour", "Frag Grenades", "Krak Grenades"],
                   groups=[*sgt_slots(pid, prime_opts),
-                          slot(pid, "Replace Volkite Charger (same weapon as the Section, optional)",
+                          slot(pid, "Replace Volkite Charger (optional, need not match the Section)",
                                "Volkite Charger", weapons),
-                          take(pid, "Prime Wargear", [("Breaching Charge", 10)])])
+                          take(pid, "Prime Wargear", [("Breaching Charge", 10)], max_total=1,
+                               hide=[cond(bc_id, pid, "atLeast", 1)])],
+                  entries=[free_bc])
     emin, emax = uid(eng, "min"), uid(eng, "max")
     engineers = entry(eng, "Engineer", typ="model",
                       mods=[modifier("decrement", emin, 1, repeats=[repeat(up, u, 1)]),
@@ -1131,12 +1159,6 @@ def eidis_section(u, tercio):
     upgraded = model(u, "Eidii (upgraded Engineer)", 0, 4, 10,
                      unit_profile(u, "Eidii (upgraded Engineer)", "Infantry", 3, 4, 3, 3, 1, 3, 1, 8, "4+"),
                      kit=rva_kit + ["Volkite Charger", "Laspistol"])
-    bc_id = uid(u, "breaching-free")
-    free_bc = gate(entry(bc_id, "Breaching Charges for free (Void & Siege Cohort, one Section)",
-                         constraints=[constraint(uid(bc_id, "max"), "max", 1, auto=True)],
-                         links=[gear(bc_id, "Breaching Charge")]),
-                   "Void & Siege Cohort", uid(bc_id, "max"))
-    IDS.setdefault("eidis_bc", []).append(bc_id)
     groups = [
         type_choice(u, "Engineers: replace Auxilia Lasrifles (all Engineers)", u, [eng],
                     [(n, p, [n]) for n, p in weapons]),
@@ -1147,8 +1169,7 @@ def eidis_section(u, tercio):
         transport_group(u, ["Hades Breaching Drill"]),
     ]
     rules_ = [*CORE_RULES, "Move Through Cover"] + (["Support Section"] if tercio else [])
-    ents = [prime, engineers, eidii, upgraded, per_model(u, "Melta Bombs (entire Section)", 5, u, ["Melta Bombs"]),
-            free_bc]
+    ents = [prime, engineers, eidii, upgraded, per_model(u, "Melta Bombs (entire Section)", 5, u, ["Melta Bombs"])]
     mods = [rolling_army(["Hades Breaching Drill"])]
     if tercio:
         return entry(u, "Eidis Engineer Section (Pioneer Section)", typ="unit", mods=mods,
@@ -1273,28 +1294,24 @@ def achmiris_section(u, variant):
         ("Achmiris Daggers", 0, ["Achmiris Dagger"], [])])
     swapped = [has(uid("choice", u, swap_title, n), u) for n in
                ["Auxilia Lasrifles with Collimators and Blast-chargers", "Achmiris Daggers"]]
-    ammo = []
-    for n in ["AT Rounds", "Volkite Rounds"]:
-        pm = per_model(u, f"{n} (all models)", 5, u, [n])
-        add_mods(pm, [modifier("set", "hidden", "true", groups=[any_of(*swapped)]),
-                      modifier("set", uid(uid("squadwide", u, f"{n} (all models)"), "max"), 0,
-                               groups=[any_of(*swapped)])])
-        ammo.append(pm)
+    # L2820-2824: whole-Section upgrade, every model buys it, only one of the two (author)
+    ammo = choice(u, "Special Ammunition (entire Section, one; only with Sniper Rifles)",
+                  [(n, 5, True, [n], []) for n in ["AT Rounds", "Volkite Rounds"]], unit_id=u, hide=swapped)
     rls = [*CORE_RULES, "Move Through Cover", "Infiltrate", "Focus Fire"]
     if variant == "tercio":
         rls.append("Hold the Line")
     if variant == "retinue":
         rls += ["Retinue", "Preferred Enemy (Infantry)"]
-    ents = [sgt, ach, *ammo, upgrade(u, "Camo Swags (entire Section)", 25, links=["Camo Swags"])]
+    ents = [sgt, ach, upgrade(u, "Camo Swags (entire Section)", 25, links=["Camo Swags"])]
     mods = []
     if variant == "fa":
-        return unit("Achmiris Recon Section", 90 - 4 * 15, FA, "Fast Attack", key=u, entries=ents, groups=[swap],
+        return unit("Achmiris Recon Section", 90 - 4 * 15, FA, "Fast Attack", key=u, entries=ents, groups=[swap, ammo],
                     rules_=rls)
     cons = [unique(u, 1, "force")] if variant == "retinue" else []
     name = {"tercio": "Achmiris Recon Section (Veiled Ranks)",
             "retinue": "Achmiris Recon Section (Veiled Bodyguard)"}[variant]
     return entry(u, name, typ="unit", cost=90 - 4 * 15, mods=mods, constraints=cons,
-                 infolinks=rules_links(rls, key=u), entries=ents, groups=[swap])
+                 infolinks=rules_links(rls, key=u), entries=ents, groups=[swap, ammo])
 
 
 def infantry_tercio():
@@ -1639,9 +1656,10 @@ def doctrine_config():
             doc_error("Infantry Cohort", "the Detachment must contain at least two Auxilia Infantry Tercios.",
                       conds=[cond(i["tercio"], "force", "lessThan", 2)]),
             doc_error("Infantry Cohort", "no more than one Vehicle Squadron selected from Fast Attack.",
-                      groups=[sum_ge2([i["lr_strike"], i["sentinels"]])]),
+                      groups=[sum_ge2([i["lr_strike"], i["sentinels"], i["tarantula"]])]),
             doc_error("Infantry Cohort", "no more than one Vehicle Squadron selected from Heavy Support.",
-                      groups=[sum_ge2([i["lr_assault"], i["artillery"]])]),
+                      groups=[sum_ge2([i["lr_assault"], i["artillery"], i["malcador"], i["infernus"],
+                                              i["valdor"]])]),
         ],
         "Armoured Cohort": [
             doc_error("Armoured Cohort", "at least two Auxilia Leman Russ Strike Squadrons must be selected.",
@@ -1686,6 +1704,7 @@ def doctrine_config():
 def build():
     start(ARMY)
     register_data(rules=RULES, weapons=WEAPONS_, multi_profile=MULTI, weapon_rules=WEAPON_RULES, wargear=WARGEAR_)
+    L._PSY_REGISTERED.clear()  # start() emptied the rule tables: let psychic_powers() register the powers again
     dk = k("cfg", "doctrine")
     DOC.update({n: uid(dk, n) for n in DOCTRINES})
     T.update({n: k("transport", n) for n in ["Dracosan Armoured Transport", "Auxilia Arvus Lighter",

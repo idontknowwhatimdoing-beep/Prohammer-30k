@@ -1769,41 +1769,6 @@
 <infoLink id="5dbf-aea8-d24c-9cf4" name="Psyker" hidden="false" targetId="b92c-c0d1-f76c-d5dd" type="rule" />
 </infoLinks>
 <selectionEntryGroups>
-<selectionEntryGroup id="e9cb-a837-4b6c-22b0" name="Burning Lore Discipline (one power)" hidden="false" collective="false" import="true">
-<modifiers>
-<modifier type="add" field="error" value="Choose a Burning Lore Discipline (one power).">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5e17-8a37-a800-edf1" type="lessThan" />
-<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b82b-650c-aa9a-eb20" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-</modifiers>
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6a77-9df2-5610-1a31" type="max" />
-</constraints>
-<selectionEntries>
-<selectionEntry id="5e17-8a37-a800-edf1" name="Biomancy" hidden="false" collective="false" import="true" type="upgrade">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a7bd-e7dd-74af-4e45" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
-</costs>
-</selectionEntry>
-<selectionEntry id="b82b-650c-aa9a-eb20" name="Telepathy" hidden="false" collective="false" import="true" type="upgrade">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="44ad-4a0b-7bc8-e5c2" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
-</costs>
-</selectionEntry>
-</selectionEntries>
-</selectionEntryGroup>
 <selectionEntryGroup id="ee40-59e6-73f4-347e" name="Psychic Powers" hidden="false" collective="false" import="true">
 <modifiers>
 <modifier type="add" field="error" value="Choose 1 psychic power.">
@@ -1817,26 +1782,6 @@
 </constraints>
 <selectionEntries>
 <selectionEntry id="2762-66a1-83ec-b626" name="Smite (Biomancy)" hidden="false" collective="false" import="true" type="upgrade">
-<modifiers>
-<modifier type="set" field="hidden" value="true">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="2390-3489-e470-7f7f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5e17-8a37-a800-edf1" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-<modifier type="set" field="a932-e376-eb66-9761" value="0">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="2390-3489-e470-7f7f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5e17-8a37-a800-edf1" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-</modifiers>
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a932-e376-eb66-9761" type="max" />
 </constraints>
@@ -1850,26 +1795,6 @@
 </costs>
 </selectionEntry>
 <selectionEntry id="97b0-7d9d-0641-ea26" name="Iron Arm (Biomancy)" hidden="false" collective="false" import="true" type="upgrade">
-<modifiers>
-<modifier type="set" field="hidden" value="true">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="2390-3489-e470-7f7f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5e17-8a37-a800-edf1" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-<modifier type="set" field="ec57-a4f5-574b-948e" value="0">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="2390-3489-e470-7f7f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5e17-8a37-a800-edf1" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-</modifiers>
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ec57-a4f5-574b-948e" type="max" />
 </constraints>
@@ -1882,26 +1807,6 @@
 </costs>
 </selectionEntry>
 <selectionEntry id="da7e-c347-3cb6-f38f" name="Enfeeble (Biomancy)" hidden="false" collective="false" import="true" type="upgrade">
-<modifiers>
-<modifier type="set" field="hidden" value="true">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="2390-3489-e470-7f7f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5e17-8a37-a800-edf1" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-<modifier type="set" field="27aa-7438-7ce2-b601" value="0">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="2390-3489-e470-7f7f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5e17-8a37-a800-edf1" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-</modifiers>
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="27aa-7438-7ce2-b601" type="max" />
 </constraints>
@@ -1914,26 +1819,6 @@
 </costs>
 </selectionEntry>
 <selectionEntry id="317c-5306-922a-05c1" name="Life Leech (Biomancy)" hidden="false" collective="false" import="true" type="upgrade">
-<modifiers>
-<modifier type="set" field="hidden" value="true">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="2390-3489-e470-7f7f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5e17-8a37-a800-edf1" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-<modifier type="set" field="3693-698a-2afe-a69f" value="0">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="2390-3489-e470-7f7f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5e17-8a37-a800-edf1" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-</modifiers>
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3693-698a-2afe-a69f" type="max" />
 </constraints>
@@ -1947,26 +1832,6 @@
 </costs>
 </selectionEntry>
 <selectionEntry id="122e-49d4-9bfe-1374" name="Warp Speed (Biomancy)" hidden="false" collective="false" import="true" type="upgrade">
-<modifiers>
-<modifier type="set" field="hidden" value="true">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="2390-3489-e470-7f7f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5e17-8a37-a800-edf1" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-<modifier type="set" field="b387-9f91-5aa9-27f5" value="0">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="2390-3489-e470-7f7f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5e17-8a37-a800-edf1" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-</modifiers>
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b387-9f91-5aa9-27f5" type="max" />
 </constraints>
@@ -1979,26 +1844,6 @@
 </costs>
 </selectionEntry>
 <selectionEntry id="f7a4-ed46-cd47-4ac6" name="Endurance (Biomancy)" hidden="false" collective="false" import="true" type="upgrade">
-<modifiers>
-<modifier type="set" field="hidden" value="true">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="2390-3489-e470-7f7f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5e17-8a37-a800-edf1" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-<modifier type="set" field="92fe-82e3-9208-4dfd" value="0">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="2390-3489-e470-7f7f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5e17-8a37-a800-edf1" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-</modifiers>
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="92fe-82e3-9208-4dfd" type="max" />
 </constraints>
@@ -2011,26 +1856,6 @@
 </costs>
 </selectionEntry>
 <selectionEntry id="81f9-4725-947e-9a68" name="Haemorrhage (Biomancy)" hidden="false" collective="false" import="true" type="upgrade">
-<modifiers>
-<modifier type="set" field="hidden" value="true">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="2390-3489-e470-7f7f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5e17-8a37-a800-edf1" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-<modifier type="set" field="4b42-8c7e-246d-7f44" value="0">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="2390-3489-e470-7f7f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5e17-8a37-a800-edf1" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-</modifiers>
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4b42-8c7e-246d-7f44" type="max" />
 </constraints>
@@ -2043,26 +1868,6 @@
 </costs>
 </selectionEntry>
 <selectionEntry id="fde0-d4d1-20c9-0851" name="Psychic Shriek (Telepathy)" hidden="false" collective="false" import="true" type="upgrade">
-<modifiers>
-<modifier type="set" field="hidden" value="true">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="2390-3489-e470-7f7f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b82b-650c-aa9a-eb20" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-<modifier type="set" field="580e-c5af-99e8-5f91" value="0">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="2390-3489-e470-7f7f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b82b-650c-aa9a-eb20" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-</modifiers>
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="580e-c5af-99e8-5f91" type="max" />
 </constraints>
@@ -2075,26 +1880,6 @@
 </costs>
 </selectionEntry>
 <selectionEntry id="4295-f1d3-862a-8f91" name="Dominate (Telepathy)" hidden="false" collective="false" import="true" type="upgrade">
-<modifiers>
-<modifier type="set" field="hidden" value="true">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="2390-3489-e470-7f7f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b82b-650c-aa9a-eb20" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-<modifier type="set" field="535b-77db-1237-1a0f" value="0">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="2390-3489-e470-7f7f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b82b-650c-aa9a-eb20" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-</modifiers>
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="535b-77db-1237-1a0f" type="max" />
 </constraints>
@@ -2107,26 +1892,6 @@
 </costs>
 </selectionEntry>
 <selectionEntry id="9cea-db1d-7a81-a34a" name="Mental Fortitude (Telepathy)" hidden="false" collective="false" import="true" type="upgrade">
-<modifiers>
-<modifier type="set" field="hidden" value="true">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="2390-3489-e470-7f7f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b82b-650c-aa9a-eb20" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-<modifier type="set" field="7261-900f-9d6f-3218" value="0">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="2390-3489-e470-7f7f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b82b-650c-aa9a-eb20" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-</modifiers>
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7261-900f-9d6f-3218" type="max" />
 </constraints>
@@ -2139,26 +1904,6 @@
 </costs>
 </selectionEntry>
 <selectionEntry id="3a96-7f20-fc2b-c800" name="Terrify (Telepathy)" hidden="false" collective="false" import="true" type="upgrade">
-<modifiers>
-<modifier type="set" field="hidden" value="true">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="2390-3489-e470-7f7f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b82b-650c-aa9a-eb20" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-<modifier type="set" field="2b41-e9ad-dbea-23d6" value="0">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="2390-3489-e470-7f7f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b82b-650c-aa9a-eb20" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-</modifiers>
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2b41-e9ad-dbea-23d6" type="max" />
 </constraints>
@@ -2171,26 +1916,6 @@
 </costs>
 </selectionEntry>
 <selectionEntry id="3eba-cefa-5caa-2bb3" name="Hallucination (Telepathy)" hidden="false" collective="false" import="true" type="upgrade">
-<modifiers>
-<modifier type="set" field="hidden" value="true">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="2390-3489-e470-7f7f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b82b-650c-aa9a-eb20" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-<modifier type="set" field="497f-d87b-fbcd-286b" value="0">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="2390-3489-e470-7f7f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b82b-650c-aa9a-eb20" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-</modifiers>
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="497f-d87b-fbcd-286b" type="max" />
 </constraints>
@@ -2203,26 +1928,6 @@
 </costs>
 </selectionEntry>
 <selectionEntry id="cae3-f051-2ceb-b692" name="Invisibility (Telepathy)" hidden="false" collective="false" import="true" type="upgrade">
-<modifiers>
-<modifier type="set" field="hidden" value="true">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="2390-3489-e470-7f7f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b82b-650c-aa9a-eb20" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-<modifier type="set" field="3f71-176b-7e54-b2ef" value="0">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="2390-3489-e470-7f7f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b82b-650c-aa9a-eb20" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-</modifiers>
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3f71-176b-7e54-b2ef" type="max" />
 </constraints>
@@ -2235,26 +1940,6 @@
 </costs>
 </selectionEntry>
 <selectionEntry id="77e0-98c2-e586-5acc" name="Shrouding (Telepathy)" hidden="false" collective="false" import="true" type="upgrade">
-<modifiers>
-<modifier type="set" field="hidden" value="true">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="2390-3489-e470-7f7f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b82b-650c-aa9a-eb20" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-<modifier type="set" field="0f22-cd67-f085-911b" value="0">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="2390-3489-e470-7f7f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b82b-650c-aa9a-eb20" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-</modifiers>
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0f22-cd67-f085-911b" type="max" />
 </constraints>
@@ -2972,6 +2657,7 @@
 <infoLinks>
 <infoLink id="a1e6-507c-4a18-56bd" name="Crush (Telekinesis)" hidden="false" targetId="1654-f41b-864b-1ba4" type="rule" />
 <infoLink id="b3aa-ac8e-4aca-12b2" name="Psychic Power Type: Witchfire - Focused" hidden="false" targetId="728a-56b9-f9e8-53a2" type="rule" />
+<infoLink id="6bec-e6b8-d934-11ac" name="Crush (Telekinesis)" hidden="false" targetId="3ea2-5e92-c35b-1084" type="profile" />
 </infoLinks>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
@@ -3320,18 +3006,6 @@
 <infoLink id="d72e-9191-1adf-efe0" name="Dark Flame (Daemonology (Malefic))" hidden="false" targetId="6eb6-8caf-e509-20f1" type="rule" />
 <infoLink id="83d3-2453-c2b3-cbd6" name="Psychic Power Type: Witchfire" hidden="false" targetId="d57f-7eaf-5589-f80d" type="rule" />
 <infoLink id="ab18-69ac-7210-260c" name="Dark Flame (Daemonology (Malefic))" hidden="false" targetId="052f-aed2-8ef8-a7e6" type="profile" />
-</infoLinks>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
-</costs>
-</selectionEntry>
-<selectionEntry id="da24-4f13-4257-e70b" name="Possession (Daemonology (Malefic))" hidden="false" collective="false" import="true" type="upgrade">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="379d-b5e3-2388-6599" type="max" />
-</constraints>
-<infoLinks>
-<infoLink id="1dc3-979e-054b-4bbe" name="Possession (Daemonology (Malefic))" hidden="false" targetId="0507-b55d-f00f-4254" type="rule" />
-<infoLink id="051e-07b2-a761-ceac" name="Psychic Power Type: Conjuration" hidden="false" targetId="c913-19fd-3d6e-40c8" type="rule" />
 </infoLinks>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
@@ -6274,41 +5948,6 @@
 <infoLink id="1044-2802-c2f8-f3ec" name="Psyker" hidden="false" targetId="b92c-c0d1-f76c-d5dd" type="rule" />
 </infoLinks>
 <selectionEntryGroups>
-<selectionEntryGroup id="b87a-0345-6dfd-d74a" name="Burning Lore Discipline (one power)" hidden="false" collective="false" import="true">
-<modifiers>
-<modifier type="add" field="error" value="Choose a Burning Lore Discipline (one power).">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="80de-798e-ac85-92e3" type="lessThan" />
-<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3953-0e96-e218-4664" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-</modifiers>
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="047d-71de-9bbd-ce04" type="max" />
-</constraints>
-<selectionEntries>
-<selectionEntry id="80de-798e-ac85-92e3" name="Biomancy" hidden="false" collective="false" import="true" type="upgrade">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="192f-f10e-f855-de79" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
-</costs>
-</selectionEntry>
-<selectionEntry id="3953-0e96-e218-4664" name="Telepathy" hidden="false" collective="false" import="true" type="upgrade">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="34f9-c0a4-56aa-ef55" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
-</costs>
-</selectionEntry>
-</selectionEntries>
-</selectionEntryGroup>
 <selectionEntryGroup id="14dc-680c-ca5e-01a7" name="Psychic Powers" hidden="false" collective="false" import="true">
 <modifiers>
 <modifier type="add" field="error" value="Choose 1 psychic power.">
@@ -6322,26 +5961,6 @@
 </constraints>
 <selectionEntries>
 <selectionEntry id="d407-6ada-49b8-cffd" name="Smite (Biomancy)" hidden="false" collective="false" import="true" type="upgrade">
-<modifiers>
-<modifier type="set" field="hidden" value="true">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="80de-798e-ac85-92e3" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-<modifier type="set" field="0720-1938-0776-9819" value="0">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="80de-798e-ac85-92e3" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-</modifiers>
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0720-1938-0776-9819" type="max" />
 </constraints>
@@ -6355,26 +5974,6 @@
 </costs>
 </selectionEntry>
 <selectionEntry id="cde3-7a8c-b55c-07e8" name="Iron Arm (Biomancy)" hidden="false" collective="false" import="true" type="upgrade">
-<modifiers>
-<modifier type="set" field="hidden" value="true">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="80de-798e-ac85-92e3" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-<modifier type="set" field="c555-1644-b56a-4094" value="0">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="80de-798e-ac85-92e3" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-</modifiers>
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c555-1644-b56a-4094" type="max" />
 </constraints>
@@ -6387,26 +5986,6 @@
 </costs>
 </selectionEntry>
 <selectionEntry id="95e5-9669-8b2e-21fa" name="Enfeeble (Biomancy)" hidden="false" collective="false" import="true" type="upgrade">
-<modifiers>
-<modifier type="set" field="hidden" value="true">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="80de-798e-ac85-92e3" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-<modifier type="set" field="6550-de2b-cb3d-45df" value="0">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="80de-798e-ac85-92e3" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-</modifiers>
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6550-de2b-cb3d-45df" type="max" />
 </constraints>
@@ -6419,26 +5998,6 @@
 </costs>
 </selectionEntry>
 <selectionEntry id="f242-8ee3-f229-2f7d" name="Life Leech (Biomancy)" hidden="false" collective="false" import="true" type="upgrade">
-<modifiers>
-<modifier type="set" field="hidden" value="true">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="80de-798e-ac85-92e3" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-<modifier type="set" field="3977-f545-7b52-b9c3" value="0">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="80de-798e-ac85-92e3" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-</modifiers>
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3977-f545-7b52-b9c3" type="max" />
 </constraints>
@@ -6452,26 +6011,6 @@
 </costs>
 </selectionEntry>
 <selectionEntry id="952f-1bf8-7a3f-3a2b" name="Warp Speed (Biomancy)" hidden="false" collective="false" import="true" type="upgrade">
-<modifiers>
-<modifier type="set" field="hidden" value="true">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="80de-798e-ac85-92e3" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-<modifier type="set" field="fb1d-a565-39f8-6a36" value="0">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="80de-798e-ac85-92e3" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-</modifiers>
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fb1d-a565-39f8-6a36" type="max" />
 </constraints>
@@ -6484,26 +6023,6 @@
 </costs>
 </selectionEntry>
 <selectionEntry id="ff60-2ca0-9ec4-25ad" name="Endurance (Biomancy)" hidden="false" collective="false" import="true" type="upgrade">
-<modifiers>
-<modifier type="set" field="hidden" value="true">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="80de-798e-ac85-92e3" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-<modifier type="set" field="af0a-444d-b076-11fd" value="0">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="80de-798e-ac85-92e3" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-</modifiers>
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="af0a-444d-b076-11fd" type="max" />
 </constraints>
@@ -6516,26 +6035,6 @@
 </costs>
 </selectionEntry>
 <selectionEntry id="65a4-8064-a44a-aa5a" name="Haemorrhage (Biomancy)" hidden="false" collective="false" import="true" type="upgrade">
-<modifiers>
-<modifier type="set" field="hidden" value="true">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="80de-798e-ac85-92e3" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-<modifier type="set" field="4c77-d60e-deb3-0cab" value="0">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="80de-798e-ac85-92e3" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-</modifiers>
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4c77-d60e-deb3-0cab" type="max" />
 </constraints>
@@ -6548,26 +6047,6 @@
 </costs>
 </selectionEntry>
 <selectionEntry id="a526-eeb6-425d-f6e0" name="Psychic Shriek (Telepathy)" hidden="false" collective="false" import="true" type="upgrade">
-<modifiers>
-<modifier type="set" field="hidden" value="true">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3953-0e96-e218-4664" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-<modifier type="set" field="697d-085a-b941-fcae" value="0">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3953-0e96-e218-4664" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-</modifiers>
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="697d-085a-b941-fcae" type="max" />
 </constraints>
@@ -6580,26 +6059,6 @@
 </costs>
 </selectionEntry>
 <selectionEntry id="4ec1-fe8e-044e-a7da" name="Dominate (Telepathy)" hidden="false" collective="false" import="true" type="upgrade">
-<modifiers>
-<modifier type="set" field="hidden" value="true">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3953-0e96-e218-4664" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-<modifier type="set" field="9287-db8d-a6aa-3cd2" value="0">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3953-0e96-e218-4664" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-</modifiers>
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9287-db8d-a6aa-3cd2" type="max" />
 </constraints>
@@ -6612,26 +6071,6 @@
 </costs>
 </selectionEntry>
 <selectionEntry id="234e-070e-f22b-92ce" name="Mental Fortitude (Telepathy)" hidden="false" collective="false" import="true" type="upgrade">
-<modifiers>
-<modifier type="set" field="hidden" value="true">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3953-0e96-e218-4664" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-<modifier type="set" field="e235-97ad-928b-26b0" value="0">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3953-0e96-e218-4664" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-</modifiers>
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e235-97ad-928b-26b0" type="max" />
 </constraints>
@@ -6644,26 +6083,6 @@
 </costs>
 </selectionEntry>
 <selectionEntry id="1a6c-c115-9a42-bdcb" name="Terrify (Telepathy)" hidden="false" collective="false" import="true" type="upgrade">
-<modifiers>
-<modifier type="set" field="hidden" value="true">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3953-0e96-e218-4664" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-<modifier type="set" field="2d1c-2520-3cdb-5e38" value="0">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3953-0e96-e218-4664" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-</modifiers>
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2d1c-2520-3cdb-5e38" type="max" />
 </constraints>
@@ -6676,26 +6095,6 @@
 </costs>
 </selectionEntry>
 <selectionEntry id="15e9-5215-35a0-0862" name="Hallucination (Telepathy)" hidden="false" collective="false" import="true" type="upgrade">
-<modifiers>
-<modifier type="set" field="hidden" value="true">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3953-0e96-e218-4664" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-<modifier type="set" field="dc65-7722-c37e-5362" value="0">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3953-0e96-e218-4664" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-</modifiers>
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dc65-7722-c37e-5362" type="max" />
 </constraints>
@@ -6708,26 +6107,6 @@
 </costs>
 </selectionEntry>
 <selectionEntry id="8881-d7d1-c937-186d" name="Invisibility (Telepathy)" hidden="false" collective="false" import="true" type="upgrade">
-<modifiers>
-<modifier type="set" field="hidden" value="true">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3953-0e96-e218-4664" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-<modifier type="set" field="fa5b-ea7b-27fa-9e3f" value="0">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3953-0e96-e218-4664" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-</modifiers>
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fa5b-ea7b-27fa-9e3f" type="max" />
 </constraints>
@@ -6740,26 +6119,6 @@
 </costs>
 </selectionEntry>
 <selectionEntry id="3c50-2fd0-e10e-6b47" name="Shrouding (Telepathy)" hidden="false" collective="false" import="true" type="upgrade">
-<modifiers>
-<modifier type="set" field="hidden" value="true">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3953-0e96-e218-4664" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-<modifier type="set" field="ea2a-a6bd-f0e1-34ab" value="0">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3953-0e96-e218-4664" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-</modifiers>
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ea2a-a6bd-f0e1-34ab" type="max" />
 </constraints>
@@ -24785,7 +24144,7 @@ LIMITATIONS - Only a Traitor Word Bearers Detachment. All Infantry units must be
 <modifiers>
 <modifier type="set" field="hidden" value="true">
 <conditions>
-<condition field="selections" scope="1e03-8cef-8a66-ff56" value="7" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
+<condition field="selections" scope="1e03-8cef-8a66-ff56" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
 </conditions>
 </modifier>
 <modifier type="add" field="error" value="Too many models for a Anvillus Pattern Dreadclaw Drop Pod (capacity 10).">
@@ -26511,41 +25870,6 @@ LIMITATIONS - Only a Traitor Word Bearers Detachment. All Infantry units must be
 </entryLink>
 </entryLinks>
 </selectionEntryGroup>
-<selectionEntryGroup id="696c-fdbe-2ba7-b6b4" name="Burning Lore Discipline (one power)" hidden="false" collective="false" import="true">
-<modifiers>
-<modifier type="add" field="error" value="Choose a Burning Lore Discipline (one power).">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1169-8ad4-eab7-20c4" type="lessThan" />
-<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="beaa-9755-6f9b-8225" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-</modifiers>
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="46cf-0146-81c7-7da0" type="max" />
-</constraints>
-<selectionEntries>
-<selectionEntry id="1169-8ad4-eab7-20c4" name="Biomancy" hidden="false" collective="false" import="true" type="upgrade">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1d30-b1ef-9920-077b" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
-</costs>
-</selectionEntry>
-<selectionEntry id="beaa-9755-6f9b-8225" name="Telepathy" hidden="false" collective="false" import="true" type="upgrade">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7d6f-bae2-a5a8-2ca8" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
-</costs>
-</selectionEntry>
-</selectionEntries>
-</selectionEntryGroup>
 <selectionEntryGroup id="f2f0-1a6c-656f-f531" name="Psychic Powers" hidden="false" collective="false" import="true">
 <modifiers>
 <modifier type="add" field="error" value="Choose 1 psychic power.">
@@ -26559,26 +25883,6 @@ LIMITATIONS - Only a Traitor Word Bearers Detachment. All Infantry units must be
 </constraints>
 <selectionEntries>
 <selectionEntry id="cf51-1265-e6c8-407f" name="Smite (Biomancy)" hidden="false" collective="false" import="true" type="upgrade">
-<modifiers>
-<modifier type="set" field="hidden" value="true">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="c5f7-3def-ee7f-dd9d" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1169-8ad4-eab7-20c4" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-<modifier type="set" field="1829-7ec2-807b-ea8c" value="0">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="c5f7-3def-ee7f-dd9d" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1169-8ad4-eab7-20c4" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-</modifiers>
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1829-7ec2-807b-ea8c" type="max" />
 </constraints>
@@ -26592,26 +25896,6 @@ LIMITATIONS - Only a Traitor Word Bearers Detachment. All Infantry units must be
 </costs>
 </selectionEntry>
 <selectionEntry id="3cca-1a36-be56-14af" name="Iron Arm (Biomancy)" hidden="false" collective="false" import="true" type="upgrade">
-<modifiers>
-<modifier type="set" field="hidden" value="true">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="c5f7-3def-ee7f-dd9d" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1169-8ad4-eab7-20c4" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-<modifier type="set" field="9d94-0aa7-5f66-4875" value="0">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="c5f7-3def-ee7f-dd9d" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1169-8ad4-eab7-20c4" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-</modifiers>
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9d94-0aa7-5f66-4875" type="max" />
 </constraints>
@@ -26624,26 +25908,6 @@ LIMITATIONS - Only a Traitor Word Bearers Detachment. All Infantry units must be
 </costs>
 </selectionEntry>
 <selectionEntry id="edff-3de4-af33-a609" name="Enfeeble (Biomancy)" hidden="false" collective="false" import="true" type="upgrade">
-<modifiers>
-<modifier type="set" field="hidden" value="true">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="c5f7-3def-ee7f-dd9d" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1169-8ad4-eab7-20c4" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-<modifier type="set" field="d7aa-65c3-5da3-4681" value="0">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="c5f7-3def-ee7f-dd9d" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1169-8ad4-eab7-20c4" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-</modifiers>
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d7aa-65c3-5da3-4681" type="max" />
 </constraints>
@@ -26656,26 +25920,6 @@ LIMITATIONS - Only a Traitor Word Bearers Detachment. All Infantry units must be
 </costs>
 </selectionEntry>
 <selectionEntry id="ac04-b046-7eda-7e67" name="Life Leech (Biomancy)" hidden="false" collective="false" import="true" type="upgrade">
-<modifiers>
-<modifier type="set" field="hidden" value="true">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="c5f7-3def-ee7f-dd9d" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1169-8ad4-eab7-20c4" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-<modifier type="set" field="cc80-705b-5dca-b998" value="0">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="c5f7-3def-ee7f-dd9d" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1169-8ad4-eab7-20c4" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-</modifiers>
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cc80-705b-5dca-b998" type="max" />
 </constraints>
@@ -26689,26 +25933,6 @@ LIMITATIONS - Only a Traitor Word Bearers Detachment. All Infantry units must be
 </costs>
 </selectionEntry>
 <selectionEntry id="b44d-cd44-557c-8163" name="Warp Speed (Biomancy)" hidden="false" collective="false" import="true" type="upgrade">
-<modifiers>
-<modifier type="set" field="hidden" value="true">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="c5f7-3def-ee7f-dd9d" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1169-8ad4-eab7-20c4" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-<modifier type="set" field="7b3e-48b7-0125-1221" value="0">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="c5f7-3def-ee7f-dd9d" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1169-8ad4-eab7-20c4" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-</modifiers>
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7b3e-48b7-0125-1221" type="max" />
 </constraints>
@@ -26721,26 +25945,6 @@ LIMITATIONS - Only a Traitor Word Bearers Detachment. All Infantry units must be
 </costs>
 </selectionEntry>
 <selectionEntry id="2d23-a3c3-edbe-15a4" name="Endurance (Biomancy)" hidden="false" collective="false" import="true" type="upgrade">
-<modifiers>
-<modifier type="set" field="hidden" value="true">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="c5f7-3def-ee7f-dd9d" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1169-8ad4-eab7-20c4" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-<modifier type="set" field="0d1a-5143-ce44-8259" value="0">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="c5f7-3def-ee7f-dd9d" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1169-8ad4-eab7-20c4" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-</modifiers>
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0d1a-5143-ce44-8259" type="max" />
 </constraints>
@@ -26753,26 +25957,6 @@ LIMITATIONS - Only a Traitor Word Bearers Detachment. All Infantry units must be
 </costs>
 </selectionEntry>
 <selectionEntry id="80e5-9110-d6d9-a8f7" name="Haemorrhage (Biomancy)" hidden="false" collective="false" import="true" type="upgrade">
-<modifiers>
-<modifier type="set" field="hidden" value="true">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="c5f7-3def-ee7f-dd9d" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1169-8ad4-eab7-20c4" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-<modifier type="set" field="5ffc-de5d-f714-08a5" value="0">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="c5f7-3def-ee7f-dd9d" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1169-8ad4-eab7-20c4" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-</modifiers>
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5ffc-de5d-f714-08a5" type="max" />
 </constraints>
@@ -26785,26 +25969,6 @@ LIMITATIONS - Only a Traitor Word Bearers Detachment. All Infantry units must be
 </costs>
 </selectionEntry>
 <selectionEntry id="620c-4115-b251-2489" name="Psychic Shriek (Telepathy)" hidden="false" collective="false" import="true" type="upgrade">
-<modifiers>
-<modifier type="set" field="hidden" value="true">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="c5f7-3def-ee7f-dd9d" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="beaa-9755-6f9b-8225" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-<modifier type="set" field="8e24-6226-6c96-3cd7" value="0">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="c5f7-3def-ee7f-dd9d" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="beaa-9755-6f9b-8225" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-</modifiers>
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8e24-6226-6c96-3cd7" type="max" />
 </constraints>
@@ -26817,26 +25981,6 @@ LIMITATIONS - Only a Traitor Word Bearers Detachment. All Infantry units must be
 </costs>
 </selectionEntry>
 <selectionEntry id="7c9d-b799-5040-9fda" name="Dominate (Telepathy)" hidden="false" collective="false" import="true" type="upgrade">
-<modifiers>
-<modifier type="set" field="hidden" value="true">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="c5f7-3def-ee7f-dd9d" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="beaa-9755-6f9b-8225" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-<modifier type="set" field="8203-1818-d2c6-f482" value="0">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="c5f7-3def-ee7f-dd9d" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="beaa-9755-6f9b-8225" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-</modifiers>
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8203-1818-d2c6-f482" type="max" />
 </constraints>
@@ -26849,26 +25993,6 @@ LIMITATIONS - Only a Traitor Word Bearers Detachment. All Infantry units must be
 </costs>
 </selectionEntry>
 <selectionEntry id="dc07-39df-d410-02bc" name="Mental Fortitude (Telepathy)" hidden="false" collective="false" import="true" type="upgrade">
-<modifiers>
-<modifier type="set" field="hidden" value="true">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="c5f7-3def-ee7f-dd9d" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="beaa-9755-6f9b-8225" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-<modifier type="set" field="b969-bbe9-5a03-093f" value="0">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="c5f7-3def-ee7f-dd9d" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="beaa-9755-6f9b-8225" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-</modifiers>
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b969-bbe9-5a03-093f" type="max" />
 </constraints>
@@ -26881,26 +26005,6 @@ LIMITATIONS - Only a Traitor Word Bearers Detachment. All Infantry units must be
 </costs>
 </selectionEntry>
 <selectionEntry id="ce6e-088a-bb1a-bb0c" name="Terrify (Telepathy)" hidden="false" collective="false" import="true" type="upgrade">
-<modifiers>
-<modifier type="set" field="hidden" value="true">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="c5f7-3def-ee7f-dd9d" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="beaa-9755-6f9b-8225" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-<modifier type="set" field="29a8-29e7-75d8-754f" value="0">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="c5f7-3def-ee7f-dd9d" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="beaa-9755-6f9b-8225" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-</modifiers>
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="29a8-29e7-75d8-754f" type="max" />
 </constraints>
@@ -26913,26 +26017,6 @@ LIMITATIONS - Only a Traitor Word Bearers Detachment. All Infantry units must be
 </costs>
 </selectionEntry>
 <selectionEntry id="eac3-1849-6b2f-667c" name="Hallucination (Telepathy)" hidden="false" collective="false" import="true" type="upgrade">
-<modifiers>
-<modifier type="set" field="hidden" value="true">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="c5f7-3def-ee7f-dd9d" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="beaa-9755-6f9b-8225" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-<modifier type="set" field="5a0c-b01f-7446-79a3" value="0">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="c5f7-3def-ee7f-dd9d" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="beaa-9755-6f9b-8225" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-</modifiers>
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5a0c-b01f-7446-79a3" type="max" />
 </constraints>
@@ -26945,26 +26029,6 @@ LIMITATIONS - Only a Traitor Word Bearers Detachment. All Infantry units must be
 </costs>
 </selectionEntry>
 <selectionEntry id="ad18-decb-fe4c-e7f8" name="Invisibility (Telepathy)" hidden="false" collective="false" import="true" type="upgrade">
-<modifiers>
-<modifier type="set" field="hidden" value="true">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="c5f7-3def-ee7f-dd9d" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="beaa-9755-6f9b-8225" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-<modifier type="set" field="d371-9550-1e78-4db4" value="0">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="c5f7-3def-ee7f-dd9d" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="beaa-9755-6f9b-8225" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-</modifiers>
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d371-9550-1e78-4db4" type="max" />
 </constraints>
@@ -26977,26 +26041,6 @@ LIMITATIONS - Only a Traitor Word Bearers Detachment. All Infantry units must be
 </costs>
 </selectionEntry>
 <selectionEntry id="9cd4-79be-dc62-b715" name="Shrouding (Telepathy)" hidden="false" collective="false" import="true" type="upgrade">
-<modifiers>
-<modifier type="set" field="hidden" value="true">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="c5f7-3def-ee7f-dd9d" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="beaa-9755-6f9b-8225" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-<modifier type="set" field="938b-fbd5-c033-1c81" value="0">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="c5f7-3def-ee7f-dd9d" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="beaa-9755-6f9b-8225" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-</modifiers>
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="938b-fbd5-c033-1c81" type="max" />
 </constraints>
@@ -27100,41 +26144,6 @@ LIMITATIONS - Only a Traitor Word Bearers Detachment. All Infantry units must be
 <categoryLink id="4848-035b-495b-8918" name="Master of the Legion" hidden="false" targetId="cf42-da2a-93a6-6913" primary="false" />
 </categoryLinks>
 <selectionEntryGroups>
-<selectionEntryGroup id="e272-c3d8-83ba-2909" name="Burning Lore Discipline (one power)" hidden="false" collective="false" import="true">
-<modifiers>
-<modifier type="add" field="error" value="Choose a Burning Lore Discipline (one power).">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0071-0d5e-2f0d-ca51" type="lessThan" />
-<condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0718-f2d2-4099-d1c8" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-</modifiers>
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="08b0-1660-260b-7731" type="max" />
-</constraints>
-<selectionEntries>
-<selectionEntry id="0071-0d5e-2f0d-ca51" name="Biomancy" hidden="false" collective="false" import="true" type="upgrade">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="808e-5a78-ea20-8254" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
-</costs>
-</selectionEntry>
-<selectionEntry id="0718-f2d2-4099-d1c8" name="Telepathy" hidden="false" collective="false" import="true" type="upgrade">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a0c7-6577-870c-db8e" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
-</costs>
-</selectionEntry>
-</selectionEntries>
-</selectionEntryGroup>
 <selectionEntryGroup id="2f21-0568-d900-6bb9" name="Psychic Powers" hidden="false" collective="false" import="true">
 <modifiers>
 <modifier type="add" field="error" value="Choose 1 psychic power.">
@@ -27148,26 +26157,6 @@ LIMITATIONS - Only a Traitor Word Bearers Detachment. All Infantry units must be
 </constraints>
 <selectionEntries>
 <selectionEntry id="5805-11c0-2859-8aec" name="Smite (Biomancy)" hidden="false" collective="false" import="true" type="upgrade">
-<modifiers>
-<modifier type="set" field="hidden" value="true">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="18f6-e29a-4529-ae38" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0071-0d5e-2f0d-ca51" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-<modifier type="set" field="1323-d0a9-033d-6f9f" value="0">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="18f6-e29a-4529-ae38" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0071-0d5e-2f0d-ca51" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-</modifiers>
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1323-d0a9-033d-6f9f" type="max" />
 </constraints>
@@ -27181,26 +26170,6 @@ LIMITATIONS - Only a Traitor Word Bearers Detachment. All Infantry units must be
 </costs>
 </selectionEntry>
 <selectionEntry id="b46d-0106-2eb8-b066" name="Iron Arm (Biomancy)" hidden="false" collective="false" import="true" type="upgrade">
-<modifiers>
-<modifier type="set" field="hidden" value="true">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="18f6-e29a-4529-ae38" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0071-0d5e-2f0d-ca51" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-<modifier type="set" field="71ef-730a-1338-30c8" value="0">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="18f6-e29a-4529-ae38" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0071-0d5e-2f0d-ca51" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-</modifiers>
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="71ef-730a-1338-30c8" type="max" />
 </constraints>
@@ -27213,26 +26182,6 @@ LIMITATIONS - Only a Traitor Word Bearers Detachment. All Infantry units must be
 </costs>
 </selectionEntry>
 <selectionEntry id="9836-f2ee-bd08-ea17" name="Enfeeble (Biomancy)" hidden="false" collective="false" import="true" type="upgrade">
-<modifiers>
-<modifier type="set" field="hidden" value="true">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="18f6-e29a-4529-ae38" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0071-0d5e-2f0d-ca51" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-<modifier type="set" field="4635-2bd1-f173-0320" value="0">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="18f6-e29a-4529-ae38" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0071-0d5e-2f0d-ca51" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-</modifiers>
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4635-2bd1-f173-0320" type="max" />
 </constraints>
@@ -27245,26 +26194,6 @@ LIMITATIONS - Only a Traitor Word Bearers Detachment. All Infantry units must be
 </costs>
 </selectionEntry>
 <selectionEntry id="dd92-e25d-bc3d-478f" name="Life Leech (Biomancy)" hidden="false" collective="false" import="true" type="upgrade">
-<modifiers>
-<modifier type="set" field="hidden" value="true">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="18f6-e29a-4529-ae38" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0071-0d5e-2f0d-ca51" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-<modifier type="set" field="0a4b-9ecd-06bb-674d" value="0">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="18f6-e29a-4529-ae38" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0071-0d5e-2f0d-ca51" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-</modifiers>
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0a4b-9ecd-06bb-674d" type="max" />
 </constraints>
@@ -27278,26 +26207,6 @@ LIMITATIONS - Only a Traitor Word Bearers Detachment. All Infantry units must be
 </costs>
 </selectionEntry>
 <selectionEntry id="57fb-acb7-98db-3d9a" name="Warp Speed (Biomancy)" hidden="false" collective="false" import="true" type="upgrade">
-<modifiers>
-<modifier type="set" field="hidden" value="true">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="18f6-e29a-4529-ae38" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0071-0d5e-2f0d-ca51" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-<modifier type="set" field="dfa9-1f33-19ac-b64f" value="0">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="18f6-e29a-4529-ae38" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0071-0d5e-2f0d-ca51" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-</modifiers>
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dfa9-1f33-19ac-b64f" type="max" />
 </constraints>
@@ -27310,26 +26219,6 @@ LIMITATIONS - Only a Traitor Word Bearers Detachment. All Infantry units must be
 </costs>
 </selectionEntry>
 <selectionEntry id="5084-524e-b522-e561" name="Endurance (Biomancy)" hidden="false" collective="false" import="true" type="upgrade">
-<modifiers>
-<modifier type="set" field="hidden" value="true">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="18f6-e29a-4529-ae38" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0071-0d5e-2f0d-ca51" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-<modifier type="set" field="0bff-828f-e98a-3fd9" value="0">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="18f6-e29a-4529-ae38" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0071-0d5e-2f0d-ca51" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-</modifiers>
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0bff-828f-e98a-3fd9" type="max" />
 </constraints>
@@ -27342,26 +26231,6 @@ LIMITATIONS - Only a Traitor Word Bearers Detachment. All Infantry units must be
 </costs>
 </selectionEntry>
 <selectionEntry id="adcc-02a3-1627-46bb" name="Haemorrhage (Biomancy)" hidden="false" collective="false" import="true" type="upgrade">
-<modifiers>
-<modifier type="set" field="hidden" value="true">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="18f6-e29a-4529-ae38" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0071-0d5e-2f0d-ca51" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-<modifier type="set" field="fd46-8e08-0d7c-9dc9" value="0">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="18f6-e29a-4529-ae38" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0071-0d5e-2f0d-ca51" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-</modifiers>
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fd46-8e08-0d7c-9dc9" type="max" />
 </constraints>
@@ -27374,26 +26243,6 @@ LIMITATIONS - Only a Traitor Word Bearers Detachment. All Infantry units must be
 </costs>
 </selectionEntry>
 <selectionEntry id="e843-a595-db4d-1dce" name="Psychic Shriek (Telepathy)" hidden="false" collective="false" import="true" type="upgrade">
-<modifiers>
-<modifier type="set" field="hidden" value="true">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="18f6-e29a-4529-ae38" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0718-f2d2-4099-d1c8" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-<modifier type="set" field="0ea6-77dc-7962-619f" value="0">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="18f6-e29a-4529-ae38" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0718-f2d2-4099-d1c8" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-</modifiers>
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0ea6-77dc-7962-619f" type="max" />
 </constraints>
@@ -27406,26 +26255,6 @@ LIMITATIONS - Only a Traitor Word Bearers Detachment. All Infantry units must be
 </costs>
 </selectionEntry>
 <selectionEntry id="55df-45ca-f05f-fc89" name="Dominate (Telepathy)" hidden="false" collective="false" import="true" type="upgrade">
-<modifiers>
-<modifier type="set" field="hidden" value="true">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="18f6-e29a-4529-ae38" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0718-f2d2-4099-d1c8" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-<modifier type="set" field="9505-6cc7-d50a-7d20" value="0">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="18f6-e29a-4529-ae38" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0718-f2d2-4099-d1c8" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-</modifiers>
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9505-6cc7-d50a-7d20" type="max" />
 </constraints>
@@ -27438,26 +26267,6 @@ LIMITATIONS - Only a Traitor Word Bearers Detachment. All Infantry units must be
 </costs>
 </selectionEntry>
 <selectionEntry id="9b52-09ff-0cfb-6751" name="Mental Fortitude (Telepathy)" hidden="false" collective="false" import="true" type="upgrade">
-<modifiers>
-<modifier type="set" field="hidden" value="true">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="18f6-e29a-4529-ae38" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0718-f2d2-4099-d1c8" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-<modifier type="set" field="fcfb-ff44-1265-2b44" value="0">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="18f6-e29a-4529-ae38" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0718-f2d2-4099-d1c8" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-</modifiers>
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fcfb-ff44-1265-2b44" type="max" />
 </constraints>
@@ -27470,26 +26279,6 @@ LIMITATIONS - Only a Traitor Word Bearers Detachment. All Infantry units must be
 </costs>
 </selectionEntry>
 <selectionEntry id="e1bc-615d-8195-2aaf" name="Terrify (Telepathy)" hidden="false" collective="false" import="true" type="upgrade">
-<modifiers>
-<modifier type="set" field="hidden" value="true">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="18f6-e29a-4529-ae38" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0718-f2d2-4099-d1c8" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-<modifier type="set" field="a9c5-f4c4-6a4e-3bb8" value="0">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="18f6-e29a-4529-ae38" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0718-f2d2-4099-d1c8" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-</modifiers>
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a9c5-f4c4-6a4e-3bb8" type="max" />
 </constraints>
@@ -27502,26 +26291,6 @@ LIMITATIONS - Only a Traitor Word Bearers Detachment. All Infantry units must be
 </costs>
 </selectionEntry>
 <selectionEntry id="c3c4-b409-07c9-f313" name="Hallucination (Telepathy)" hidden="false" collective="false" import="true" type="upgrade">
-<modifiers>
-<modifier type="set" field="hidden" value="true">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="18f6-e29a-4529-ae38" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0718-f2d2-4099-d1c8" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-<modifier type="set" field="5b6e-c761-d617-478c" value="0">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="18f6-e29a-4529-ae38" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0718-f2d2-4099-d1c8" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-</modifiers>
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5b6e-c761-d617-478c" type="max" />
 </constraints>
@@ -27534,26 +26303,6 @@ LIMITATIONS - Only a Traitor Word Bearers Detachment. All Infantry units must be
 </costs>
 </selectionEntry>
 <selectionEntry id="ca8c-cf8b-a680-81a4" name="Invisibility (Telepathy)" hidden="false" collective="false" import="true" type="upgrade">
-<modifiers>
-<modifier type="set" field="hidden" value="true">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="18f6-e29a-4529-ae38" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0718-f2d2-4099-d1c8" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-<modifier type="set" field="886b-a1df-4584-8a68" value="0">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="18f6-e29a-4529-ae38" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0718-f2d2-4099-d1c8" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-</modifiers>
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="886b-a1df-4584-8a68" type="max" />
 </constraints>
@@ -27566,26 +26315,6 @@ LIMITATIONS - Only a Traitor Word Bearers Detachment. All Infantry units must be
 </costs>
 </selectionEntry>
 <selectionEntry id="ba8d-3d89-2897-ba17" name="Shrouding (Telepathy)" hidden="false" collective="false" import="true" type="upgrade">
-<modifiers>
-<modifier type="set" field="hidden" value="true">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="18f6-e29a-4529-ae38" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0718-f2d2-4099-d1c8" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-<modifier type="set" field="4113-90b2-b45e-8412" value="0">
-<conditionGroups>
-<conditionGroup type="and">
-<conditions>
-<condition field="selections" scope="18f6-e29a-4529-ae38" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0718-f2d2-4099-d1c8" type="lessThan" />
-</conditions>
-</conditionGroup>
-</conditionGroups>
-</modifier>
-</modifiers>
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4113-90b2-b45e-8412" type="max" />
 </constraints>
@@ -28206,6 +26935,7 @@ LIMITATIONS - Only a Traitor Word Bearers Detachment. All Infantry units must be
 <infoLinks>
 <infoLink id="fff3-538b-5612-b331" name="Crush (Telekinesis)" hidden="false" targetId="1654-f41b-864b-1ba4" type="rule" />
 <infoLink id="db72-5059-064c-c447" name="Psychic Power Type: Witchfire - Focused" hidden="false" targetId="728a-56b9-f9e8-53a2" type="rule" />
+<infoLink id="d6c4-8dde-2471-3dda" name="Crush (Telekinesis)" hidden="false" targetId="3ea2-5e92-c35b-1084" type="profile" />
 </infoLinks>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
@@ -37301,7 +36031,7 @@ LIMITATIONS - Only a Traitor Word Bearers Detachment. All Infantry units must be
 <modifiers>
 <modifier type="set" field="hidden" value="true">
 <conditions>
-<condition field="selections" scope="e36d-8098-22b6-51a0" value="7" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
+<condition field="selections" scope="e36d-8098-22b6-51a0" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
 </conditions>
 </modifier>
 <modifier type="add" field="error" value="Too many models for a Anvillus Pattern Dreadclaw Drop Pod (capacity 10).">
@@ -45282,7 +44012,7 @@ LIMITATIONS - Only a Traitor Word Bearers Detachment. All Infantry units must be
 <modifiers>
 <modifier type="set" field="hidden" value="true">
 <conditions>
-<condition field="selections" scope="da5b-a953-df83-5694" value="7" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
+<condition field="selections" scope="da5b-a953-df83-5694" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan" />
 </conditions>
 </modifier>
 <modifier type="add" field="error" value="Too many models for a Anvillus Pattern Dreadclaw Drop Pod (capacity 10).">
@@ -47629,7 +46359,7 @@ DAEMONOLOGY: Daemonic Covenant is separate from Daemonology (Malefic). Units cre
 (The Covenant Detachment is a separate Detachment from the Daemons of the Ruinstorm army list and cannot yet be added as a Covenant Detachment in this data set.)</description>
 </rule>
 <rule id="a995-9a6e-b88e-d2a9" name="Accursed Crozius" hidden="false">
-<description>Any Word Bearers Praetor or Centurion (including a Diabolist) may purchase an Accursed Crozius for +40 points. It replaces the model's close combat weapon and does not count towards the Space Marine Armoury points limit. A Chaplain may replace his Crozius and Iron Halo (Rosarius) with an Accursed Crozius for free. The bearer receives a 4+ Invulnerable Save and counts as possessing a Personal Icon for the purposes of summoning Daemons (Summoning Point). A model with an Accursed Crozius counts as a Dark Apostle for The Dark Shepherds. A model may never possess more than one Accursed Crozius.</description>
+<description>Any Word Bearers Praetor or Centurion (including a Diabolist) may purchase an Accursed Crozius for +40 points. It replaces the model's close combat weapon and does not count towards the Space Marine Armoury points limit. A Chaplain may replace his Crozius and Rosarius with an Accursed Crozius for free. The bearer receives a 4+ Invulnerable Save and counts as possessing a Personal Icon for the purposes of summoning Daemons (Summoning Point). A model with an Accursed Crozius counts as a Dark Apostle for The Dark Shepherds. A model may never possess more than one Accursed Crozius.</description>
 </rule>
 <rule id="5d70-aa46-37dd-e6d2" name="Tainted Strike" hidden="false">
 <description>Any unsaved wound inflicted by a Tainted Weapon becomes a Massive Wound and inflicts D3 Wounds instead of 1. A Tainted Weapon is not a Power Weapon and does not ignore Armour Saves. (Any Word Bearers Character eligible to select a Power Weapon may instead select a Tainted Weapon for the same points cost.)</description>
@@ -48003,6 +46733,9 @@ LIMITATIONS - Only a Traitor Word Bearers Detachment. All Infantry units must be
 </rule>
 <rule id="778a-fc7e-2570-301d" name="Strands of Fate (Psychic Power)" hidden="false">
 <description>Malediction. Choose one enemy non-Vehicle unit within 18" and line of sight. Until the beginning of Magnus' next turn, that unit must pass a Leadership Test each time it attempts to move during the Movement phase, shoot during the Shooting phase or declare a Charge. If the test is failed, the attempted action is lost and the unit may not attempt that type of action again during that phase. A separate Leadership Test is required for each different action attempted.</description>
+</rule>
+<rule id="b613-f30b-a728-cc39" name="Strands of Fate (Shard of the Crimson King)" hidden="false">
+<description>Malediction. Range 18". Choose one enemy non-Vehicle unit within range and line of sight. Until the beginning of Magnus' next turn, the affected unit must pass a Leadership Test each time it wishes to: Move; Shoot; Charge. If the test is failed, that action is lost for that phase.</description>
 </rule>
 <rule id="c5fb-6297-1376-4e29" name="Fury of the Salamander (Psychic Power)" hidden="false">
 <description>Witchfire - Beam. Range 18", S5, AP1, Assault 1, Elemental Horror. Elemental Horror: if an enemy unit suffers one or more unsaved Wounds from Fury of the Salamander, it must immediately take a Morale test regardless of how many casualties were caused, with a Leadership penalty equal to the number of unsaved Wounds caused by Fury of the Salamander. (Counts as a Pyromancy power for Salamanders Librarians in a Detachment using The Awakening Fire.)</description>
@@ -49207,6 +47940,14 @@ LIMITATIONS - Only a Traitor Word Bearers Detachment. All Infantry units must be
 <characteristic name="S" typeId="6204-806b-a18a-c0be">6</characteristic>
 <characteristic name="AP" typeId="964e-6f66-dcaa-247a">-</characteristic>
 <characteristic name="Type" typeId="54df-9f85-8d55-7440">Witchfire - Beam, Assault 1, Strikedown</characteristic>
+</characteristics>
+</profile>
+<profile id="3ea2-5e92-c35b-1084" name="Crush (Telekinesis)" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+<characteristics>
+<characteristic name="Range" typeId="4b89-f4f0-2a22-1135">18"</characteristic>
+<characteristic name="S" typeId="6204-806b-a18a-c0be">2D6</characteristic>
+<characteristic name="AP" typeId="964e-6f66-dcaa-247a">D6</characteristic>
+<characteristic name="Type" typeId="54df-9f85-8d55-7440">Witchfire - Focused</characteristic>
 </characteristics>
 </profile>
 <profile id="7464-e6d6-4e12-687d" name="Shockwave (Telekinesis)" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">

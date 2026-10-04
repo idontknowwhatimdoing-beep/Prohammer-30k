@@ -50,7 +50,8 @@ RULES = {
         "Dominus or Archmagos (an army led by an Archmagos may select one Order for which it qualifies). Only one Order "
         "may normally be selected for a Detachment. The Order may alter the army's composition, wargear and special "
         "rules; its Restrictions must be obeyed. An Adjutant Specialisation does not affect which Order may be "
-        "selected."),
+        "selected. Kelbor-Hal, Zagreus Kane, Calleb Decima, Lukas Chrom and Anacharis Scoria fulfil the Archmagos / "
+        "Magos Dominus requirement."),
     "Cybernetic Command": (
         "A unit which requires a Cortex Controller or other command source must obey all restrictions imposed by its "
         "special rules. The presence of a Mechanicum Character does not satisfy such a requirement unless that model "
@@ -724,8 +725,8 @@ WEAPONS.update({
     "Mauler Bolt Cannon": ('24"', "6", "4", "Heavy 3"),
     "Twin-linked Mauler Bolt Cannon": ('24"', "6", "4", "Heavy 3, Twin-linked"),
     "Shock Chargers": ("-", "User +1", "-", "Melee, Concussive"),
-    "Two Battle-Automata Power Blades": ("-", "User", "-", "Melee, Specialist Weapon"),
     "Battle-Automata Power Blades": ("-", "User", "-", "Melee, Rending, Paired"),
+    "Plasma Caster": ('36"', "7", "2", "Heavy 2, Blast, Gets Hot"),
     "Volkite Sentinel": ('15"', "5", "5", "Assault 2, Rending"),
     "Twin-linked Volkite Charger": ('15"', "5", "5", "Assault 2, Rending, Twin-linked"),
     "Two Heavy Flamers": ("Template", "5", "4", "Assault 1"),
@@ -865,18 +866,23 @@ WARGEAR = {
                         "by 1\"."),
     "Artificer Armour": "2+ Armour Save.",
     "Flak Armour": "5+ Armour Save.",
-    "Carapace Armour": "4+ Armour Save.",
+    "Carapace Armour": ("4+ Armour Save. When purchased as an upgrade to Flak Armour it replaces that armour. A "
+                        "Tech-Thrall Covenant buys it for 20 points for the entire unit, whatever its size."),
     "Refractor Field": "5+ Invulnerable Save.",
     "Conversion Field": "4+ Invulnerable Save.",
     "Mechanicum Protectiva": "4+ Invulnerable Save. This save may be improved by a Cyber-familiar.",
     "Augmetic Ward": "6+ Invulnerable Save.",
-    "Force Shield": "4+ Invulnerable Save (as shown in the Electro-Priest profile).",
+    "Force Shield": ("4+ Invulnerable Save. When the Electro-Priests' unit completely destroys an enemy unit in close "
+                     "combat, Siphoned Vigour improves this Invulnerable Save to 3+ for the rest of the battle."),
     "Mag-inverter Shield": ("5+ Invulnerable Save. A model carrying it may not claim the +1 Attack for fighting with two "
                             "close combat weapons."),
     "Kyropatris Field Generator": ("If a unit contains at least five models with Kyropatris Field Generators, its models "
                                    "may re-roll Armour Saves of 1. With at least ten, reduce the Strength of shooting "
                                    "attacks against the unit by 1 (minimum 1)."),
-    "Purity Seals": "No rules given in the army book.",
+    "Purity Seals": ("When a unit containing one or more models with Purity Seals rolls its Fall Back distance, roll one "
+                     "additional D6 and discard one die of the controlling player's choice before adding the remaining "
+                     "dice together (e.g. 3D6, keep two). Multiple sets in the same unit provide only one additional "
+                     "die. This does not alter Morale, Pinning, Regroup or Pursuit rolls."),
     "Lorica Thallax": ("4+ Armour Save and Feel No Pain (6+). A model with Lorica Thallax may not make Pursuit moves. "
                        "Restricted to Thallax and units whose entry permits it."),
     "Atomantic Shielding": "5+ Invulnerable Save against shooting attacks, 6+ against close-combat attacks.",
@@ -936,7 +942,10 @@ WARGEAR = {
     "Smoke Launchers": ("Once per battle, after moving, Penetrating Hits from shooting against the vehicle count as "
                         "Glancing Hits until the beginning of its next turn."),
     "Blessed Autosimulacra": ("At the beginning of the controlling player's turn roll a D6 for a damaged vehicle: on a 6 "
-                              "remove one Engine Damaged, Weapon Destroyed or Immobilised result (one per turn)."),
+                              "remove one Engine Damaged, Weapon Destroyed or Immobilised result (one per turn). "
+                              "Vultarax: when it has lost one or more Wounds, roll a D6 at the beginning of the "
+                              "controlling player's turn; on a 6 it regains one lost Wound (up to its starting Wounds); "
+                              "it does not roll on the vehicle-damage repair list."),
     "Armoured Ceramite": "Melta weapons roll only one D6 for Armour Penetration against this vehicle, regardless of range.",
     "Flare Shield": ("Against shooting attacks which strike the vehicle's Front Armour, reduce the Strength of Blast and "
                      "Template weapons by 2 and of all other ranged attacks by 1. No effect in close combat."),
@@ -1336,9 +1345,16 @@ def magos(name, cost, stats, kit, pistol_swaps, melee_swaps, one_of, add_weapons
     psy = opt(u, "Dark Invocation: Psyker (Mastery Level 1)", 30, rules_=["Dark Invocation", "Psyker"],
               show=[o("Daemon Engine Horde")])
     ents.append(psy)
+    ml1 = oid(u, "Dark Invocation: Psyker (Mastery Level 1)")
+    more = []
     if name == "Archmagos":
         ents.append(opt(u, "Dark Invocation: Mastery Level 2", 30, rules_=["Dark Invocation"],
-                        show=[cond(oid(u, "Dark Invocation: Psyker (Mastery Level 1)"), u, "atLeast", 1)]))
+                        show=[cond(ml1, u, "atLeast", 1)]))
+        more = [(1, cond(oid(u, "Dark Invocation: Mastery Level 2"), u, "atLeast", 1))]
+    # Possession: Mastery Level 2 or greater only
+    groups.append(L.psychic_powers(uid(u, "dark-invocation"), u, 1, ["Daemonology (Malefic)"], more=more,
+                                   hide=[cond(ml1, u, "lessThan", 1)], exclude=["Possession"],
+                                   extra=[("Possession", [copy_cond(more[0][1])])] if more else ()))
     e2, g2, m2 = order_extras(u, name, False, abeyant=ab_id)
     mods = m2 + [
         err("Legio Cybernetica: the Warlord must be equipped with a Cortex Controller.", o("Legio Cybernetica"),
@@ -1533,8 +1549,8 @@ def protector_squad():
                                      ("Volkite Charger", 5)]),
                         model_takes(u, "Protectors: may take (any model)", u, [mid],
                                     [("Power Weapon", 10), ("Refractor Field", 12)]),
-                        take(u, "Up to two Protectors may take", [("Servo-Arm", 10, 2), ("Mechanicum Axe", 10, 2)],
-                             max_total=2),
+                        take(u, "Up to two Protectors may take (Servo-Arm and/or Mechanicum Axe)",
+                             [("Servo-Arm", 10, 2), ("Mechanicum Axe", 10, 2)]),
                         transport(u, ["Mechanicum Rhino Armoured Carrier", "Triaros Armoured Conveyor"], 10)] + g2,
                 mods=m2)
 
@@ -1658,7 +1674,8 @@ def weapons_platform():
     crew = uid("model", u, "Artillery Servitor")
     cmin, cmax = uid(crew, "min"), uid(crew, "max")
     p = entry(plat, "Weapons Platform", typ="model", cost=27,
-              constraints=[constraint(uid(plat, "min"), "min", 1), constraint(uid(plat, "max"), "max", 3)])
+              constraints=[constraint(uid(plat, "min"), "min", 1), constraint(uid(plat, "max"), "max", 3)],
+              profiles=[unit_profile(plat, "Weapons Platform", "Artillery", "-", "-", "-", 7, 2, "-", "-", "-", "3+")])
     c = entry(crew, "Artillery Servitor", typ="model", cost=0,
               mods=[modifier("increment", cmin, 3, repeats=[repeat(plat, u, 1)]),
                     modifier("increment", cmax, 3, repeats=[repeat(plat, u, 1)])],
@@ -1667,7 +1684,8 @@ def weapons_platform():
               links=[gear(crew, x) for x in ["Laspistol", "Close Combat Weapon"]])
     gid = uid("grp", u, "weapon")
     ents = []
-    for w, pts in [("Twin-linked Heavy Bolter", 20), ("Twin-linked Lascannon", 40), ("Graviton Cannon", 50)]:
+    for w, pts in [("Twin-linked Heavy Bolter", 20), ("Twin-linked Lascannon", 40), ("Photon Thruster", 40),
+                   ("Plasma Caster", 40), ("Graviton Cannon", 50)]:
         eid = uid("choice", u, "weapon", w)
         ents.append(entry(eid, w, mods=[modifier("increment", PTS, pts, repeats=[repeat(plat, u, 1)])],
                           constraints=[constraint(uid(eid, "max"), "max", 1, auto=True)], links=[gear(eid, w)]))
@@ -1786,12 +1804,18 @@ def skitarii_cohort():
                unit_profile(u, "Skitarii Primus", "Infantry (Character)", 4, 3, 3, 4, 1, 3, 2, 8, "4+"),
                kit=["War Plate", "Radium Carabiner", "Purity Seals"],
                groups=[slot(pk, "Replace Radium Carabiner", "Radium Carabiner",
-                            [("Galvanic Rifle", 5), ("Volkite Charger", 5), ("Arc Rifle", 10), ("Graviton Gun", 15)]),
-                       take(pk, "Melee weapon (one)", [("Taser Goad", 5), ("Corposant Stave", 5), ("Arc Maul", 10),
-                                                       ("Power Fist", 15)], max_total=1),
-                       take(pk, "Wargear", [("Auspex", 5), ("Omnispex", 5), ("Infravisor", 5)]),
+                            [("Radium Pistol", 0), ("Bolt Pistol", 1), ("Galvanic Rifle", 5), ("Volkite Charger", 5),
+                             ("Volkite Serpenta", 5), ("Phosphor Blast Pistol", 5), ("Arc Rifle", 10),
+                             ("Arc Pistol", 10), ("Graviton Gun", 15)]),
+                       take(pk, "Melee weapon (one)", [("Power Weapon", 10), ("Taser Goad", 10),
+                                                       ("Corposant Stave", 10), ("Arc Maul", 15), ("Power Fist", 15)],
+                            max_total=1),
+                       take(pk, "Wargear", [("Power Armour", 10), ("Refractor Field", 10), ("Auspex", 5),
+                                            ("Omnispex", 5), ("Infravisor", 5), ("Melta Bombs", 5),
+                                            ("Shattersphere Grenades", 5)]),
                        show_any(take(pk, "Rad-Alchemy (Genetor)", [("Rad Grenades", 10)]),
-                                o("Genetor - Magos Biologis"))])
+                                o("Genetor - Magos Biologis"))],
+               entries=[master_crafted(pk)])
     sid = sk.get("id")
     add_mods(sk, specials_decrement(sid, uid(sid, "min"), uid(sid, "max"), [pr.get("id")], u))
     pg, _ = pool(u, "Plasma Guns (up to two Skitarii, replace Radium Carabiner)", u, [("Plasma Gun", 15)], 2)
@@ -1876,7 +1900,7 @@ def castellax():
                               slot(mk, "Bolter 1", "Bolter", [("Flamer", 5)]),
                               slot(mk, "Bolter 2", "Bolter", [("Flamer", 5)]),
                               slot(mk, "Replace Shock Chargers", "Shock Chargers",
-                                   [("Two Battle-Automata Power Blades", 10), ("Siege Wrecker", 20)])],
+                                   [("Battle-Automata Power Blades", 10), ("Siege Wrecker", 20)])],
         whole=[("Searchlight", 1), ("Frag Grenades", 5), ("Infravisor", 5), ("Enhanced Targeting Array", 15)],
         compulsory=False,
         extra_mods=[modifier("add", "category", LINE, conds=[o("Legio Cybernetica"), cond("model", u, "atLeast", 2)])])
@@ -2539,7 +2563,7 @@ def army_config():
     g = group(gid, "Order of High Techno-Arcana / Dark Techno-Arcana (optional)", entries=ents,
               mods=[modifier("increment", uid(gid, "max"), 1, conds=[in_f(ZK)])],
               constraints=[constraint(uid(gid, "max"), "max", 1)])
-    magi = [none_f(x) for x in [AM, MD, KH, ZK, CDI]]
+    magi = [none_f(x) for x in [AM, MD, KH, ZK, CDI, CHROM, SCORIA]]
     errs = []
     for n in ORDERS + DARK:
         errs.append(err(f"{n}: requires an Archmagos or Magos Dominus in the Detachment.", o(n), *magi))

@@ -33,13 +33,12 @@ RULES = {
     # armoury
     "Raven's Talons": ("Count as a pair of Rending Weapons: the bearer receives the normal +1 Attack for fighting with "
                        "two close-combat weapons. Any model in a Raven Guard Legion Veteran Squad equipped with a Bolt "
-                       "Pistol and Chainsword may replace both with Raven's Talons for +7 points. Characters equipped with "
-                       "a Pair of Lightning Claws have no access to Raven's Talons. Other units only where their entry "
-                       "permits."),
+                       "Pistol and Chainsword may replace both with Raven's Talons for +7 points. Other units only where "
+                       "their entry permits."),
     "Fulcrum Hand Cannon": ("Any Raven Guard Independent Character or squad Sergeant with access to the Space Marine "
                             "Armoury may replace one or two Bolt Pistols with one or two Fulcrum Hand Cannons for +10 "
-                            "points each; Destroyer Sergeants must replace both. A Raven Guard Moritat may replace "
-                            "either or both of his Bolt Pistols for +10 points each. Fulcrum Hand Cannons do not count "
+                            "points each; Destroyer Sergeants need not take them, but if they do they must replace "
+                            "both. A Raven Guard Moritat may replace either or both of his Bolt Pistols for +10 points each. Fulcrum Hand Cannons do not count "
                             "towards the Armoury points caps."),
     "Shroud Bombs": ("Count as Defensive Grenades. An enemy unit attempting to charge a unit equipped with Shroud Bombs "
                      "must first pass a Leadership test; if failed, the charge may not be attempted and the unit may not "
@@ -619,7 +618,7 @@ def link_cost(lk):
 
 def fulcrum_hand_cannons(roots):
     """Any IC or Sergeant with the Space Marine Armoury may replace one or two Bolt Pistols with Fulcrum Hand Cannons
-    (+10 each, not counted towards the Armoury cap); Destroyer Sergeants must replace both."""
+    (+10 each, not counted towards the Armoury cap); Destroyer Sergeants: optional, but both or none (author)."""
     seen = set()
     for r in roots:
         for m in model_entries(r):

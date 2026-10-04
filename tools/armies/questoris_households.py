@@ -6,7 +6,6 @@ Knight armour. The armour carries its profile (with the rank's characteristic mo
 wargear and options.
 """
 from armies.common import *
-from bsx import el
 
 ARMY = "Questoris Households"
 
@@ -14,8 +13,9 @@ ARMY = "Questoris Households"
 RULES = {
     # --- army construction
     "Questoris Knight Household": (
-        "A Questoris Knight Household is chosen with the Questoris Knight Crusade Force Organisation Chart "
-        "(HQ 1-2, Troops 1-5, Elites 0-3, Fast Attack 0-2, Heavy Support 0-2; compulsory: 1 HQ and 1 Troops). "
+        "A Questoris Knight Household is chosen with the normal ProHammer Force Organisation Chart (author's "
+        "ruling: the normal Force Organisation applies; the book's Questoris Knight Crusade chart of HQ 1-2, Troops "
+        "1-5, Elites 0-3, Fast Attack 0-2, Heavy Support 0-2 is not used). "
         "Every Knight must be given a Household Rank, which decides its Force Organisation slot and may modify its "
         "points, characteristics, shield save and special rules (applied after choosing the Knight armour and its "
         "normal equipment). Unless stated otherwise any Knight armour may be piloted by any Household Rank, and the "
@@ -34,17 +34,17 @@ RULES = {
         "unless a weapon has its own minimum range or another rule states otherwise. Rules written for later "
         "editions of Warhammer 40,000 do not apply unless reproduced in this army list."),
     "Lords of War (Questoris Households)": (
-        "Lords of War are not part of the Questoris Knight Crusade Force Organisation Chart and may only be included "
+        "Lords of War may only be included "
         "where the mission permits it or both players agree; no army may contain more than one Lord of War. A "
         "Questoris Knight Household may select an eligible engine from the Collegia Titanica army list as its Lord "
         "of War. Such a Titan gains no Household Rank and uses all rules, weapons and wargear of the Collegia "
         "Titanica army list."),
     "Fortifications (Questoris Households)": (
-        "Fortifications are not part of the Questoris Knight Crusade Force Organisation Chart, may only be included "
+        "Fortifications may only be included "
         "where the mission permits it or both players agree, and no army may contain more than one Fortification."),
     "The Army's Warlord (Questoris Households)": (
-        "One eligible HQ Knight is nominated as the army's Warlord. If the army contains a Knight Seneschal it will "
-        "normally be the Warlord; otherwise another eligible HQ Knight may be chosen. The Warlord selects a Warlord "
+        "One eligible HQ Knight is nominated as the army's Warlord. If the army contains a Knight Seneschal it must "
+        "be the Warlord; otherwise another eligible HQ Knight may be chosen. The Warlord selects a Warlord "
         "Trait according to the ProHammer Classic rules (random Warlord Traits from older publications are not used)."),
     "Allied Forces (Questoris Households)": (
         "A Questoris Knight Household may use Allied Detachments according to the normal ProHammer rules. An Allied "
@@ -282,7 +282,7 @@ WEAPONS = {
     "Thermal Cannon": ('36"', "9", "1", "Heavy 1, Large Blast, Melta"),
     "Questoris-avenger Gatling Cannon": ('36"', "6", "3", "Heavy 12, Rending"),
     "Ironstorm Missile Pod": ('72"', "5", "4", "Ordnance 1, Large Blast"),
-    "Twin Icarus Autocannon": ('48"', "7", "4", "Heavy 2, Skyfire, Interceptor"),
+    "Twin Icarus Autocannon": ('48"', "7", "4", "Heavy 2, Twin-linked, Skyfire, Interceptor"),
     "Stormspear Rocket Pod": ('48"', "8", "3", "Heavy 3"),
     "Heavy Stubber": ('36"', "4", "6", "Heavy 3"),
     "Heavy Flamer": ("Template", "5", "4", "Assault 1"),
@@ -304,25 +304,26 @@ WEAPONS = {
     "Irad-cleanser": ("Template", "2", "5", "Assault 1, Fleshbane, Rad-phage"),
     "Karacnos Mortar Battery": ('60"', "5", "4",
                                 "Heavy 3, Blast, Barrage, Fleshbane, Rad-phage, Ignores Cover, Pinning"),
-    "Volkite Culverin": ('45"', "6", "5", "Heavy 4"),
-    # Knight melee weapons (the book gives Strength and special rules only)
-    "Reaper Chainsword": (MELEE, "10", "-", "Melee, Power Weapon, Titan Killer"),
-    "Thunderstrike Gauntlet": (MELEE, "10", "-", "Melee, Power Weapon, Titan Killer, Colossal, Hurl"),
-    "Tempest Warblade": (MELEE, "10", "-", "Melee, Power Weapon, Sunder, Tempest Attack"),
+    "Volkite Culverin": ('45"', "6", "5", "Heavy 4, Rending"),
+    # Knight melee weapons (the book gives Strength and special rules only; author: they ignore armour saves in
+    # melee like all power weapons)
+    "Reaper Chainsword": (MELEE, "10", "-", "Melee, Power Weapon (ignores armour saves), Titan Killer"),
+    "Thunderstrike Gauntlet": (MELEE, "10", "-", "Melee, Power Weapon (ignores armour saves), Titan Killer, Colossal, Hurl"),
+    "Tempest Warblade": (MELEE, "10", "-", "Melee, Power Weapon (ignores armour saves), Sunder, Tempest Attack"),
 }
 
 MULTI = {
     "Cerastus Shock Lance": {
-        "Cerastus Shock Lance": (MELEE, "10", "-", "Melee, Power Weapon, Titan Killer, Swift Strike"),
+        "Cerastus Shock Lance": (MELEE, "10", "-", "Melee, Power Weapon (ignores armour saves), Titan Killer, Swift Strike"),
         "Cerastus Shock Lance - Shock Blast": ('18"', "7", "2", "Heavy 6, Concussive")},
     "Atrapos Lascutter": {
-        "Atrapos Lascutter": (MELEE, "10", "-", "Melee, Power Weapon, Titan Killer, Wrecker"),
+        "Atrapos Lascutter": (MELEE, "10", "-", "Melee, Power Weapon (ignores armour saves), Titan Killer, Wrecker"),
         "Atrapos Lascutter - Beam": ('8"', "10", "2", "Heavy 1, Titan Killer")},
     "Hekaton Siege Claw with Twin-linked Rad-cleanser": {
-        "Hekaton Siege Claw": (MELEE, "10", "-", "Melee, Power Weapon, Titan Killer, Wrecker"),
+        "Hekaton Siege Claw": (MELEE, "10", "-", "Melee, Power Weapon (ignores armour saves), Titan Killer, Wrecker"),
         "Twin-linked Rad-cleanser": ("Template", "2", "5", "Assault 1, Twin-linked, Fleshbane, Rad-phage")},
     "Reaper Chainfist with Twin-linked Heavy Bolter": {
-        "Reaper Chainfist": (MELEE, "10", "-", "Melee, Power Weapon, Titan Killer, Machine Destroyer"),
+        "Reaper Chainfist": (MELEE, "10", "-", "Melee, Power Weapon (ignores armour saves), Titan Killer, Machine Destroyer"),
         "Twin-linked Heavy Bolter": ('36"', "5", "4", "Heavy 3, Twin-linked")},
     "Twin-linked Conversion Beam Cannon": {
         "Conversion Beam Cannon - Short": ('Up to 18"', "10", "3", "Ordnance 1, Blast, Twin-linked"),
@@ -336,7 +337,7 @@ MULTI = {
 WEAPON_RULES = {
     "Thermal Cannon": ["Melta"],
     "Questoris-avenger Gatling Cannon": ["Rending"],
-    "Twin Icarus Autocannon": ["Skyfire", "Interceptor"],
+    "Twin Icarus Autocannon": ["Twin-Linked", "Skyfire", "Interceptor"],
     "Meltagun": ["Melta"],
     "Lightning Cannon": ["Rending", "Shred"],
     "Volkite Chieorovile": ["Deflagrate"],
@@ -348,6 +349,7 @@ WEAPON_RULES = {
     "Ironstorm Missile Battery": ["Massive Blast"],
     "Helios Missile Defence System": ["Skyfire", "Interceptor"],
     "Irad-cleanser": ["Fleshbane", "Rad-phage"],
+    "Volkite Culverin": ["Rending"],
     "Karacnos Mortar Battery": ["Fleshbane", "Rad-phage", "Ignores Cover", "Pinning"],
     "Reaper Chainsword": ["Titan Killer"],
     "Thunderstrike Gauntlet": ["Titan Killer", "Colossal", "Hurl"],
@@ -637,25 +639,6 @@ def atrapos_limits(units):
         add_to(e, "constraints", [constraint(cid, "max", 0, scope="roster", deep=True)])
 
 
-def force_org():
-    """Questoris Knight Crusade Force Organisation Chart."""
-    fid = k("force", "Questoris Knight Crusade")
-    chart = [("HQ", 1, 2), ("Troops", 1, 5), ("Elites", 0, 3), ("Fast Attack", 0, 2), ("Heavy Support", 0, 2),
-             ("Lords of War", 0, 1), ("Fortification", 0, 1)]
-    links_ = [category_link(gs.CAT_CONFIG, "Configuration", key=fid)]
-    for n, mn, mx in chart:
-        cl = category_link(gs.cat(n), n, key=fid)
-        cl.append(wrap("constraints", [constraint(uid(fid, "min", n), "min", mn),
-                                       constraint(uid(fid, "max", n), "max", mx)]))
-        links_.append(cl)
-    for cid, n, mn in [(COMMANDER, "Compulsory HQ Eligible", 1), (LINE, "Compulsory Troops Eligible", 1)]:
-        cl = category_link(cid, n, key=fid)
-        cl.append(wrap("constraints", [constraint(uid(fid, "min", n), "min", mn)]))
-        links_.append(cl)
-    return el("forceEntry", {"id": fid, "name": "Questoris Knight Crusade Force Organisation Chart",
-                             "hidden": "false"}, [wrap("categoryLinks", links_)])
-
-
 ARMY_RULE_NAMES = ["Questoris Knight Household", "The Household", "Knights and ProHammer Vehicle Rules",
                    "Alternative Force Organisation (Questoris Households)", "Lords of War (Questoris Households)",
                    "Fortifications (Questoris Households)", "The Army's Warlord (Questoris Households)",
@@ -670,4 +653,4 @@ def build():
     alg.insert(list(alg).index(cl), wrap("infoLinks", rules_links(ARMY_RULE_NAMES, key=k("army-rules"))))
     knights = [rank_unit(r, None) for r in RANKS]
     atrapos_limits(knights)
-    return catalogue(ARMY, [alg] + knights, [], force_entries=[force_org()])
+    return catalogue(ARMY, [alg] + knights, [])
