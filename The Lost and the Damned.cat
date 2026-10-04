@@ -2212,6 +2212,11 @@
 </selectionEntry>
 <selectionEntry id="561d-0326-3677-545f" name="Blackshield Marauder Squad" hidden="false" collective="false" import="true" type="unit">
 <modifiers>
+<modifier type="decrement" field="pts0-0000-0000-0001" value="2">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c46-2124-b530-96cd" type="atLeast" />
+</conditions>
+</modifier>
 <modifier type="set" field="hidden" value="true">
 <conditions>
 <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5e19-89bd-fe5b-28eb" type="instanceOf" />
@@ -2463,6 +2468,13 @@
 </costs>
 </selectionEntry>
 <selectionEntry id="a422-4d6a-bd29-c2bd" name="Marauder" hidden="false" collective="false" import="true" type="model">
+<modifiers>
+<modifier type="decrement" field="pts0-0000-0000-0001" value="2">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c46-2124-b530-96cd" type="atLeast" />
+</conditions>
+</modifier>
+</modifiers>
 <constraints>
 <constraint field="selections" scope="parent" value="19" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c370-35e3-ecef-4e7c" type="max" />
 <constraint field="selections" scope="parent" value="4" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5e4b-4383-b3c0-fe3e" type="min" />
@@ -2847,6 +2859,11 @@
 </conditions>
 </conditionGroup>
 </conditionGroups>
+</modifier>
+<modifier type="decrement" field="pts0-0000-0000-0001" value="2">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c46-2124-b530-96cd" type="atLeast" />
+</conditions>
 </modifier>
 <modifier type="set" field="hidden" value="true">
 <conditions>
@@ -3458,6 +3475,13 @@
 </costs>
 </selectionEntry>
 <selectionEntry id="c792-4ad1-7c4e-dcb5" name="Chymeriae" hidden="false" collective="false" import="true" type="model">
+<modifiers>
+<modifier type="decrement" field="pts0-0000-0000-0001" value="2">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c46-2124-b530-96cd" type="atLeast" />
+</conditions>
+</modifier>
+</modifiers>
 <constraints>
 <constraint field="selections" scope="parent" value="9" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="abb6-6b51-443f-15a4" type="max" />
 <constraint field="selections" scope="parent" value="4" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="84c7-e127-017f-f69d" type="min" />
@@ -25874,22 +25898,23 @@ LIMITATIONS - No other Lord of War; no Allied Detachment; no more than one other
 </constraints>
 <entryLinks>
 <entryLink id="f40b-b05a-0ca1-2c54" name="Close Combat Weapon" hidden="false" collective="false" import="true" targetId="7b6a-5697-5a6a-2d74" type="selectionEntry" sortIndex="1" defaultAmount="1" />
-<entryLink id="7c01-2fd7-3e09-fcc4" name="Power Weapon" hidden="false" collective="false" import="true" targetId="fb4f-b267-7556-185d" type="selectionEntry" sortIndex="3">
+<entryLink id="20d8-8279-ea9f-b6ae" name="Chainsword" hidden="false" collective="false" import="true" targetId="3f81-4517-73f5-ceb7" type="selectionEntry" sortIndex="3" />
+<entryLink id="7c01-2fd7-3e09-fcc4" name="Power Weapon" hidden="false" collective="false" import="true" targetId="fb4f-b267-7556-185d" type="selectionEntry" sortIndex="4">
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
 </entryLink>
-<entryLink id="2dd5-e28c-4b4c-4c13" name="Power Fist" hidden="false" collective="false" import="true" targetId="0b4d-922b-4629-b7ca" type="selectionEntry" sortIndex="4">
+<entryLink id="2dd5-e28c-4b4c-4c13" name="Power Fist" hidden="false" collective="false" import="true" targetId="0b4d-922b-4629-b7ca" type="selectionEntry" sortIndex="5">
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
 </costs>
 </entryLink>
-<entryLink id="fdd9-998a-025a-01fa" name="Lightning Claw" hidden="false" collective="false" import="true" targetId="0826-0946-b6a1-f42b" type="selectionEntry" sortIndex="5">
+<entryLink id="fdd9-998a-025a-01fa" name="Lightning Claw" hidden="false" collective="false" import="true" targetId="0826-0946-b6a1-f42b" type="selectionEntry" sortIndex="6">
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
 </costs>
 </entryLink>
-<entryLink id="39ba-9b26-144f-56a5" name="Relic Blade" hidden="false" collective="false" import="true" targetId="9027-4ece-2d41-b6f5" type="selectionEntry" sortIndex="6">
+<entryLink id="39ba-9b26-144f-56a5" name="Relic Blade" hidden="false" collective="false" import="true" targetId="9027-4ece-2d41-b6f5" type="selectionEntry" sortIndex="7">
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
 </costs>
@@ -39535,7 +39560,7 @@ V - Vetus Inimicitia: secretly nominate one enemy Independent Character; +2 VP i
 <description>Maledictions weaken and hinder opposing units. Invoked during the psyker's Movement phase unless otherwise noted. Duration: until the start of the psyker's own next turn. Maledictions with the same effects stack if they are differently named powers; exact copies (same name) cannot be stacked on the same unit. Characteristics cannot be modified above 10 or below 1. If a psyker with an active malediction is removed from play, its maledictions are immediately cancelled.</description>
 </rule>
 <rule id="c913-19fd-3d6e-40c8" name="Psychic Power Type: Conjuration" hidden="false">
-<description>Conjurations summon outside forces onto the battlefield. Invoked at the start of the psyker's Movement phase unless otherwise noted. A unit using a conjuration may not perform any other actions that turn (no movement, shooting, other psychic powers, charging, etc.). Any doubles rolled on the psychic test inflict Perils of the Warp, whether or not the conjuration succeeded. Can only summon daemons matching the psyker's Chaos mark. Each psyker may only successfully cast a selected conjuration once per game. Summoned psykers may not select conjuration powers. Summoned units arrive following the Deep Strike rules; the centre model must be placed within the power's range.</description>
+<description>Conjurations summon outside forces onto the battlefield. Invoked at the start of the psyker's Movement phase unless otherwise noted. A unit using a conjuration may not perform any other actions that turn (no movement, shooting, other psychic powers, charging, etc.). Any doubles rolled on the psychic test inflict Perils of the Warp, whether or not the conjuration succeeded. Can only summon daemons matching the psyker's Chaos mark; a psyker without a Chaos mark (e.g. a Legiones Astartes Esoterist or Zardu Layak) may summon any of the daemons listed in the power. Summoned units are not bought or recorded in the roster. Each psyker may only successfully cast a selected conjuration once per game. Summoned psykers may not select conjuration powers. Summoned units arrive following the Deep Strike rules; the centre model must be placed within the power's range.</description>
 </rule>
 <rule id="d57f-7eaf-5589-f80d" name="Psychic Power Type: Witchfire" hidden="false">
 <description>Witchfire powers are ranged attacks and count as a shooting attack for the model (it may not make other ranged attacks unless normally allowed more than one). Invoked during the psyker's Shooting phase. Treated as Assault weapons unless otherwise specified. After invoking the power the psyker must still roll To Hit, with line of sight and range as normal; a witchfire power with no weapon/attack profile does not roll To Hit unless otherwise specified. A psyker may only invoke one witchfire power per turn, unless the model may shoot more than one weapon AND knows two or more different witchfire powers. Psychic powers which count as a shooting attack are witchfire powers.</description>

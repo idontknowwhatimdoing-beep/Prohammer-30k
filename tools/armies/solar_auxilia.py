@@ -873,8 +873,9 @@ def legate_commander():
                      infolinks=rules_links(["Lord Marshal", "Household Retinue"], key=lm))
     lm_only = [("Relic Blade", W("Relic Blade")), ("Grav-wave Generator", W("Grav-wave Generator")),
                ("Displacer Matrix", W("Displacer Matrix"))]
-    errs = [modifier("add", "error", f"{n} is Lord Marshal only.", groups=[all_of(has(i, u), lacks(lm, u))])
-            for n, i in lm_only]
+    # deep=False: only the Legate's own wargear, not an attached Household Champion's Relic Blade (Cohort Attaches)
+    errs = [modifier("add", "error", f"{n} is Lord Marshal only.",
+                     groups=[all_of(has(i, u, deep=False), lacks(lm, u))]) for n, i in lm_only]
     veiled = gate(group(uid("grp", u, "veiled"), "Veiled Bodyguard (Reconnaissance Cohort)",
                         links=[link(uid("link", u, "veiled"), IDS["ach_ret"], "Achmiris Recon Section (Veiled Bodyguard)")],
                         constraints=[constraint(uid("grp", u, "veiled", "max"), "max", 1, auto=True)]),
@@ -1297,16 +1298,21 @@ def achmiris_section(u, variant):
     # L2820-2824: whole-Section upgrade, every model buys it, only one of the two (author)
     ammo = choice(u, "Special Ammunition (entire Section, one; only with Sniper Rifles)",
                   [(n, 5, True, [n], []) for n in ["AT Rounds", "Volkite Rounds"]], unit_id=u, hide=swapped)
+    ammo_ids = [uid("choice", u, "Special Ammunition (entire Section, one; only with Sniper Rifles)", n)
+                for n in ["AT Rounds", "Volkite Rounds"]]
+    ammo_err = modifier("add", "error", "Special Ammunition may only be purchased if the Section retains its "
+                                        "Sniper Rifles.",
+                        groups=[any_of(*swapped), any_of(*[has(a, u) for a in ammo_ids])])
     rls = [*CORE_RULES, "Move Through Cover", "Infiltrate", "Focus Fire"]
     if variant == "tercio":
         rls.append("Hold the Line")
     if variant == "retinue":
         rls += ["Retinue", "Preferred Enemy (Infantry)"]
     ents = [sgt, ach, upgrade(u, "Camo Swags (entire Section)", 25, links=["Camo Swags"])]
-    mods = []
+    mods = [ammo_err]
     if variant == "fa":
         return unit("Achmiris Recon Section", 90 - 4 * 15, FA, "Fast Attack", key=u, entries=ents, groups=[swap, ammo],
-                    rules_=rls)
+                    rules_=rls, mods=mods)
     cons = [unique(u, 1, "force")] if variant == "retinue" else []
     name = {"tercio": "Achmiris Recon Section (Veiled Ranks)",
             "retinue": "Achmiris Recon Section (Veiled Bodyguard)"}[variant]

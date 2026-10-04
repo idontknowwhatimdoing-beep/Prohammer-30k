@@ -1004,6 +1004,44 @@
 <cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
 </costs>
 </selectionEntry>
+<selectionEntry id="772a-1226-44fe-4727" name="Ordinator Bombardment (Ordinator Warlord)" hidden="false" collective="false" import="true" type="upgrade">
+<modifiers>
+<modifier type="set" field="hidden" value="true">
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9b27-8a70-4797-6a73" type="lessThan" />
+<condition field="selections" scope="f6e6-cf97-1bf0-dc22" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1550-365e-78dc-ca2a" type="lessThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="set" field="ac9d-64b3-6233-d17f" value="0">
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9b27-8a70-4797-6a73" type="lessThan" />
+<condition field="selections" scope="f6e6-cf97-1bf0-dc22" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1550-365e-78dc-ca2a" type="lessThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+</modifiers>
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ac9d-64b3-6233-d17f" type="max" />
+</constraints>
+<entryLinks>
+<entryLink id="caad-918a-143c-e679" name="Ordinator Bombardment (Ordinator Order)" hidden="false" collective="false" import="true" targetId="bfa8-2827-32b7-7943" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8e18-e097-9e03-a654" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9561-ca92-83a1-5ffc" type="max" />
+</constraints>
+</entryLink>
+</entryLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
 <selectionEntry id="03e9-8a12-418e-1c77" name="Dark Invocation: Psyker (Mastery Level 1)" hidden="false" collective="false" import="true" type="upgrade">
 <modifiers>
 <modifier type="set" field="hidden" value="true">
@@ -1482,7 +1520,7 @@
 </entryLink>
 <entryLink id="895d-05d0-2b50-2caa" name="Volkite Charger" hidden="false" collective="false" import="true" targetId="f7ae-d359-d2ff-f5af" type="selectionEntry">
 <costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
+<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
 </costs>
 </entryLink>
 <entryLink id="db9e-5b88-3ca1-ba05" name="Meltagun" hidden="false" collective="false" import="true" targetId="63e8-bee7-88b7-64c6" type="selectionEntry">
@@ -1916,6 +1954,44 @@
 <cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
 </costs>
 </selectionEntry>
+<selectionEntry id="0f95-445d-d1ec-6cba" name="Ordinator Bombardment (Ordinator Warlord)" hidden="false" collective="false" import="true" type="upgrade">
+<modifiers>
+<modifier type="set" field="hidden" value="true">
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9b27-8a70-4797-6a73" type="lessThan" />
+<condition field="selections" scope="db47-551b-dbdf-292e" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1550-365e-78dc-ca2a" type="lessThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="set" field="b8a9-51f2-097f-2d88" value="0">
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9b27-8a70-4797-6a73" type="lessThan" />
+<condition field="selections" scope="db47-551b-dbdf-292e" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1550-365e-78dc-ca2a" type="lessThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+</modifiers>
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b8a9-51f2-097f-2d88" type="max" />
+</constraints>
+<entryLinks>
+<entryLink id="af1b-219d-1ab3-d1df" name="Ordinator Bombardment (Ordinator Order)" hidden="false" collective="false" import="true" targetId="bfa8-2827-32b7-7943" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fd3e-2936-7190-69b9" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="459e-283f-8448-dc1c" type="max" />
+</constraints>
+</entryLink>
+</entryLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
 <selectionEntry id="7687-ab5b-4cc3-03af" name="Dark Invocation: Psyker (Mastery Level 1)" hidden="false" collective="false" import="true" type="upgrade">
 <modifiers>
 <modifier type="set" field="hidden" value="true">
@@ -2324,7 +2400,7 @@
 </entryLink>
 <entryLink id="1741-a167-1ea1-df15" name="Volkite Charger" hidden="false" collective="false" import="true" targetId="f7ae-d359-d2ff-f5af" type="selectionEntry">
 <costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
+<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
 </costs>
 </entryLink>
 <entryLink id="3ac2-08da-9eb4-a9ea" name="Meltagun" hidden="false" collective="false" import="true" targetId="63e8-bee7-88b7-64c6" type="selectionEntry">
@@ -5222,6 +5298,84 @@
 <categoryLink id="fb53-c90b-ad8e-2914" name="HQ" hidden="false" targetId="cd54-54be-0cb1-3474" primary="true" />
 <categoryLink id="c15c-251c-86be-07c7" name="Compulsory HQ Eligible" hidden="false" targetId="e89b-053d-1bdc-4e2e" primary="false" />
 </categoryLinks>
+<selectionEntries>
+<selectionEntry id="c9ae-a849-7e8c-a3e8" name="Reductor War Munitions (Ordo Reductor Warlord)" hidden="false" collective="false" import="true" type="upgrade">
+<modifiers>
+<modifier type="set" field="hidden" value="true">
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="58f8-4097-28f2-963b" type="lessThan" />
+<condition field="selections" scope="e3b5-c9cf-8ab8-033c" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1550-365e-78dc-ca2a" type="lessThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="set" field="785f-e651-9017-d79e" value="0">
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="58f8-4097-28f2-963b" type="lessThan" />
+<condition field="selections" scope="e3b5-c9cf-8ab8-033c" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1550-365e-78dc-ca2a" type="lessThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+</modifiers>
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="785f-e651-9017-d79e" type="max" />
+</constraints>
+<entryLinks>
+<entryLink id="1e3b-b3ae-a71c-9389" name="Ordo Reductor War Munitions" hidden="false" collective="false" import="true" targetId="c34b-03b6-6f87-33b8" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="92f2-52a3-354b-2036" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4e38-f038-73db-113d" type="max" />
+</constraints>
+</entryLink>
+</entryLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+<selectionEntry id="b048-ef96-8b8a-9fec" name="Ordinator Bombardment (Ordinator Warlord)" hidden="false" collective="false" import="true" type="upgrade">
+<modifiers>
+<modifier type="set" field="hidden" value="true">
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9b27-8a70-4797-6a73" type="lessThan" />
+<condition field="selections" scope="e3b5-c9cf-8ab8-033c" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1550-365e-78dc-ca2a" type="lessThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="set" field="3719-aeea-2a0d-d007" value="0">
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9b27-8a70-4797-6a73" type="lessThan" />
+<condition field="selections" scope="e3b5-c9cf-8ab8-033c" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1550-365e-78dc-ca2a" type="lessThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+</modifiers>
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3719-aeea-2a0d-d007" type="max" />
+</constraints>
+<entryLinks>
+<entryLink id="a238-e030-a5cc-54a9" name="Ordinator Bombardment (Ordinator Order)" hidden="false" collective="false" import="true" targetId="bfa8-2827-32b7-7943" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d675-656e-dc46-fea6" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="74ed-31b7-48db-6d5d" type="max" />
+</constraints>
+</entryLink>
+</entryLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+</selectionEntries>
 <entryLinks>
 <entryLink id="58e7-13a8-d7be-2ccc" name="Artificer Armour" hidden="false" collective="false" import="true" targetId="2c2c-d091-28f2-2343" type="selectionEntry">
 <constraints>
@@ -5395,6 +5549,82 @@
 </entryLinks>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="40" />
+</costs>
+</selectionEntry>
+<selectionEntry id="d754-6dd9-727b-7b17" name="Reductor War Munitions (Ordo Reductor Warlord)" hidden="false" collective="false" import="true" type="upgrade">
+<modifiers>
+<modifier type="set" field="hidden" value="true">
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="58f8-4097-28f2-963b" type="lessThan" />
+<condition field="selections" scope="f4d4-62b9-2ab9-2207" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1550-365e-78dc-ca2a" type="lessThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="set" field="b026-fd26-b0b5-120b" value="0">
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="58f8-4097-28f2-963b" type="lessThan" />
+<condition field="selections" scope="f4d4-62b9-2ab9-2207" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1550-365e-78dc-ca2a" type="lessThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+</modifiers>
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b026-fd26-b0b5-120b" type="max" />
+</constraints>
+<entryLinks>
+<entryLink id="847a-68a3-bee8-7d8c" name="Ordo Reductor War Munitions" hidden="false" collective="false" import="true" targetId="c34b-03b6-6f87-33b8" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f739-a9ac-5876-32f3" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d447-1a4c-e116-393e" type="max" />
+</constraints>
+</entryLink>
+</entryLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+<selectionEntry id="ef6c-73f5-c5e2-b467" name="Ordinator Bombardment (Ordinator Warlord)" hidden="false" collective="false" import="true" type="upgrade">
+<modifiers>
+<modifier type="set" field="hidden" value="true">
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9b27-8a70-4797-6a73" type="lessThan" />
+<condition field="selections" scope="f4d4-62b9-2ab9-2207" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1550-365e-78dc-ca2a" type="lessThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="set" field="1acd-2991-8aaf-dc53" value="0">
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9b27-8a70-4797-6a73" type="lessThan" />
+<condition field="selections" scope="f4d4-62b9-2ab9-2207" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1550-365e-78dc-ca2a" type="lessThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+</modifiers>
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1acd-2991-8aaf-dc53" type="max" />
+</constraints>
+<entryLinks>
+<entryLink id="819b-a39e-5b83-7b27" name="Ordinator Bombardment (Ordinator Order)" hidden="false" collective="false" import="true" targetId="bfa8-2827-32b7-7943" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f895-2aa3-0da5-76f3" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ad5a-a23d-1292-b883" type="max" />
+</constraints>
+</entryLink>
+</entryLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
 </costs>
 </selectionEntry>
 </selectionEntries>
@@ -5636,6 +5866,84 @@
 <categoryLink id="4cdc-6361-e5a0-358c" name="HQ" hidden="false" targetId="cd54-54be-0cb1-3474" primary="true" />
 <categoryLink id="d980-31f5-600a-7a95" name="Compulsory HQ Eligible" hidden="false" targetId="e89b-053d-1bdc-4e2e" primary="false" />
 </categoryLinks>
+<selectionEntries>
+<selectionEntry id="43f8-b241-8e1f-20f8" name="Reductor War Munitions (Ordo Reductor Warlord)" hidden="false" collective="false" import="true" type="upgrade">
+<modifiers>
+<modifier type="set" field="hidden" value="true">
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="58f8-4097-28f2-963b" type="lessThan" />
+<condition field="selections" scope="906e-cf83-f327-ce11" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1550-365e-78dc-ca2a" type="lessThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="set" field="af17-c1e1-0272-8a59" value="0">
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="58f8-4097-28f2-963b" type="lessThan" />
+<condition field="selections" scope="906e-cf83-f327-ce11" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1550-365e-78dc-ca2a" type="lessThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+</modifiers>
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="af17-c1e1-0272-8a59" type="max" />
+</constraints>
+<entryLinks>
+<entryLink id="7fda-25fb-c42c-98ec" name="Ordo Reductor War Munitions" hidden="false" collective="false" import="true" targetId="c34b-03b6-6f87-33b8" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b475-5ad3-6cf7-688a" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0c93-e5e4-33c1-8cad" type="max" />
+</constraints>
+</entryLink>
+</entryLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+<selectionEntry id="c7e3-b7dc-cd19-21f0" name="Ordinator Bombardment (Ordinator Warlord)" hidden="false" collective="false" import="true" type="upgrade">
+<modifiers>
+<modifier type="set" field="hidden" value="true">
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9b27-8a70-4797-6a73" type="lessThan" />
+<condition field="selections" scope="906e-cf83-f327-ce11" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1550-365e-78dc-ca2a" type="lessThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="set" field="0096-93da-a12a-336d" value="0">
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9b27-8a70-4797-6a73" type="lessThan" />
+<condition field="selections" scope="906e-cf83-f327-ce11" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1550-365e-78dc-ca2a" type="lessThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+</modifiers>
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0096-93da-a12a-336d" type="max" />
+</constraints>
+<entryLinks>
+<entryLink id="6ff1-9c80-85b5-fe63" name="Ordinator Bombardment (Ordinator Order)" hidden="false" collective="false" import="true" targetId="bfa8-2827-32b7-7943" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9fd8-37f5-3af6-8a65" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="02d1-a1b9-7086-66d8" type="max" />
+</constraints>
+</entryLink>
+</entryLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+</selectionEntries>
 <selectionEntryGroups>
 <selectionEntryGroup id="ca89-c26d-1eae-e72d" name="Forbidden Edict (Dark Mechanicum)" hidden="false" collective="false" import="true">
 <modifiers>
@@ -5840,6 +6148,84 @@
 <categoryLink id="3954-eea6-9b0d-ec95" name="HQ" hidden="false" targetId="cd54-54be-0cb1-3474" primary="true" />
 <categoryLink id="c663-5d87-c391-536c" name="Compulsory HQ Eligible" hidden="false" targetId="e89b-053d-1bdc-4e2e" primary="false" />
 </categoryLinks>
+<selectionEntries>
+<selectionEntry id="f59d-4cb8-412d-a416" name="Reductor War Munitions (Ordo Reductor Warlord)" hidden="false" collective="false" import="true" type="upgrade">
+<modifiers>
+<modifier type="set" field="hidden" value="true">
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="58f8-4097-28f2-963b" type="lessThan" />
+<condition field="selections" scope="708c-dda8-9016-d3d6" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1550-365e-78dc-ca2a" type="lessThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="set" field="eb2a-744d-61e0-ff3b" value="0">
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="58f8-4097-28f2-963b" type="lessThan" />
+<condition field="selections" scope="708c-dda8-9016-d3d6" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1550-365e-78dc-ca2a" type="lessThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+</modifiers>
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eb2a-744d-61e0-ff3b" type="max" />
+</constraints>
+<entryLinks>
+<entryLink id="8c16-c3de-ae0f-b01f" name="Ordo Reductor War Munitions" hidden="false" collective="false" import="true" targetId="c34b-03b6-6f87-33b8" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3407-a5d0-4905-3bad" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6bda-8838-474a-8125" type="max" />
+</constraints>
+</entryLink>
+</entryLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+<selectionEntry id="5771-f4c9-66e8-9b1e" name="Ordinator Bombardment (Ordinator Warlord)" hidden="false" collective="false" import="true" type="upgrade">
+<modifiers>
+<modifier type="set" field="hidden" value="true">
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9b27-8a70-4797-6a73" type="lessThan" />
+<condition field="selections" scope="708c-dda8-9016-d3d6" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1550-365e-78dc-ca2a" type="lessThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="set" field="bd45-e0fb-7b10-394d" value="0">
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9b27-8a70-4797-6a73" type="lessThan" />
+<condition field="selections" scope="708c-dda8-9016-d3d6" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1550-365e-78dc-ca2a" type="lessThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+</modifiers>
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bd45-e0fb-7b10-394d" type="max" />
+</constraints>
+<entryLinks>
+<entryLink id="66b2-6346-a386-85f7" name="Ordinator Bombardment (Ordinator Order)" hidden="false" collective="false" import="true" targetId="bfa8-2827-32b7-7943" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6bc9-46e9-097e-76ee" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2cec-448b-811f-323c" type="max" />
+</constraints>
+</entryLink>
+</entryLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+</selectionEntries>
 <entryLinks>
 <entryLink id="c896-924a-1003-666a" name="Artificer Armour" hidden="false" collective="false" import="true" targetId="2c2c-d091-28f2-2343" type="selectionEntry">
 <constraints>
@@ -6010,6 +6396,84 @@
 <categoryLink id="eadd-0562-0014-d7fd" name="HQ" hidden="false" targetId="cd54-54be-0cb1-3474" primary="true" />
 <categoryLink id="be06-ad33-1326-e1fc" name="Compulsory HQ Eligible" hidden="false" targetId="e89b-053d-1bdc-4e2e" primary="false" />
 </categoryLinks>
+<selectionEntries>
+<selectionEntry id="8fd6-b71e-8b0c-9f50" name="Reductor War Munitions (Ordo Reductor Warlord)" hidden="false" collective="false" import="true" type="upgrade">
+<modifiers>
+<modifier type="set" field="hidden" value="true">
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="58f8-4097-28f2-963b" type="lessThan" />
+<condition field="selections" scope="9637-72c1-07ed-b1c0" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1550-365e-78dc-ca2a" type="lessThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="set" field="dd27-6f70-8dba-f672" value="0">
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="58f8-4097-28f2-963b" type="lessThan" />
+<condition field="selections" scope="9637-72c1-07ed-b1c0" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1550-365e-78dc-ca2a" type="lessThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+</modifiers>
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dd27-6f70-8dba-f672" type="max" />
+</constraints>
+<entryLinks>
+<entryLink id="d696-5cde-882b-08b4" name="Ordo Reductor War Munitions" hidden="false" collective="false" import="true" targetId="c34b-03b6-6f87-33b8" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d0e9-82d6-438b-c13d" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7da6-3f45-2f1b-be84" type="max" />
+</constraints>
+</entryLink>
+</entryLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+<selectionEntry id="fb4d-e3ab-12f3-aff2" name="Ordinator Bombardment (Ordinator Warlord)" hidden="false" collective="false" import="true" type="upgrade">
+<modifiers>
+<modifier type="set" field="hidden" value="true">
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9b27-8a70-4797-6a73" type="lessThan" />
+<condition field="selections" scope="9637-72c1-07ed-b1c0" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1550-365e-78dc-ca2a" type="lessThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="set" field="88ef-0efd-b368-78b9" value="0">
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9b27-8a70-4797-6a73" type="lessThan" />
+<condition field="selections" scope="9637-72c1-07ed-b1c0" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1550-365e-78dc-ca2a" type="lessThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+</modifiers>
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="88ef-0efd-b368-78b9" type="max" />
+</constraints>
+<entryLinks>
+<entryLink id="8dd2-00d3-b376-e2fb" name="Ordinator Bombardment (Ordinator Order)" hidden="false" collective="false" import="true" targetId="bfa8-2827-32b7-7943" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3fd6-28bb-f554-225c" type="min" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4288-b15a-4465-716e" type="max" />
+</constraints>
+</entryLink>
+</entryLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+</selectionEntries>
 <entryLinks>
 <entryLink id="e2ac-5b74-acc3-12c4" name="Artificer Armour" hidden="false" collective="false" import="true" targetId="2c2c-d091-28f2-2343" type="selectionEntry">
 <constraints>
@@ -25644,6 +26108,7 @@
 <infoLink id="2d8f-b5de-aeab-be4c" name="Shattersphere Grenades" hidden="false" targetId="9afb-644f-db84-6c60" type="profile" />
 <infoLink id="5cec-8b82-024a-694f" name="Pinning" hidden="false" targetId="059c-226b-a63a-13ec" type="rule" />
 <infoLink id="34c5-3e11-f64d-4f72" name="Rad Poisoning" hidden="false" targetId="ee93-bf4b-2d33-5b75" type="rule" />
+<infoLink id="0e7a-dcb2-aeb6-cd87" name="Shattersphere Grenades" hidden="false" targetId="1456-38c4-8052-9e3b" type="rule" />
 </infoLinks>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
@@ -27447,7 +27912,7 @@
 <selectionEntry id="70c9-be37-9743-5b89" name="Void-Hardened Armour" hidden="false" collective="false" import="true" type="upgrade">
 <rules>
 <rule id="291e-f434-011f-5b5a" name="Void-Hardened Armour" hidden="false">
-<description>Armour Save unchanged; failed Armour Saves against Blast or Template weapons may be re-rolled; Advance distance -1"; Charge and Pursuit distances -1".</description>
+<description>Armour Save unchanged; failed Armour Saves against Blast or Template weapons may be re-rolled; Advance distance -1"; Charge and Pursuit distances -1". An attack which allows no Armour Save receives no benefit from this rule.</description>
 </rule>
 </rules>
 <costs>
@@ -27568,6 +28033,9 @@
 </rule>
 <rule id="7b12-7001-d786-5293" name="Binaric Stratagems" hidden="false">
 <description>At the beginning of each friendly turn, nominate one friendly Secutarii unit within 12" of the Axiarch. Until the beginning of the controlling player's next turn it gains one of: Tank Hunters, Move Through Cover or Counter-Attack. A unit may only benefit from one Binaric Stratagem at a time. (Replaced by Binaric Command Network with the Secutarii Order.)</description>
+</rule>
+<rule id="1456-38c4-8052-9e3b" name="Shattersphere Grenades" hidden="false">
+<description>A model equipped with Shattersphere Grenades may fire one during the Shooting phase using the Shattersphere Grenade profile (an exception to the normal ProHammer restriction on using grenades as shooting weapons). A model which fires a Shattersphere Grenade may not fire another weapon during the same Shooting phase.</description>
 </rule>
 <rule id="ee93-bf4b-2d33-5b75" name="Rad Poisoning" hidden="false">
 <description>When resolving a shooting attack with Rad Poisoning, each unmodified To Wound roll of 6 inflicts two Wounds instead of one, each allocated and saved separately. No effect against Vehicles.</description>
@@ -27951,7 +28419,7 @@
 <description>Maledictions weaken and hinder opposing units. Invoked during the psyker's Movement phase unless otherwise noted. Duration: until the start of the psyker's own next turn. Maledictions with the same effects stack if they are differently named powers; exact copies (same name) cannot be stacked on the same unit. Characteristics cannot be modified above 10 or below 1. If a psyker with an active malediction is removed from play, its maledictions are immediately cancelled.</description>
 </rule>
 <rule id="c913-19fd-3d6e-40c8" name="Psychic Power Type: Conjuration" hidden="false">
-<description>Conjurations summon outside forces onto the battlefield. Invoked at the start of the psyker's Movement phase unless otherwise noted. A unit using a conjuration may not perform any other actions that turn (no movement, shooting, other psychic powers, charging, etc.). Any doubles rolled on the psychic test inflict Perils of the Warp, whether or not the conjuration succeeded. Can only summon daemons matching the psyker's Chaos mark. Each psyker may only successfully cast a selected conjuration once per game. Summoned psykers may not select conjuration powers. Summoned units arrive following the Deep Strike rules; the centre model must be placed within the power's range.</description>
+<description>Conjurations summon outside forces onto the battlefield. Invoked at the start of the psyker's Movement phase unless otherwise noted. A unit using a conjuration may not perform any other actions that turn (no movement, shooting, other psychic powers, charging, etc.). Any doubles rolled on the psychic test inflict Perils of the Warp, whether or not the conjuration succeeded. Can only summon daemons matching the psyker's Chaos mark; a psyker without a Chaos mark (e.g. a Legiones Astartes Esoterist or Zardu Layak) may summon any of the daemons listed in the power. Summoned units are not bought or recorded in the roster. Each psyker may only successfully cast a selected conjuration once per game. Summoned psykers may not select conjuration powers. Summoned units arrive following the Deep Strike rules; the centre model must be placed within the power's range.</description>
 </rule>
 <rule id="d57f-7eaf-5589-f80d" name="Psychic Power Type: Witchfire" hidden="false">
 <description>Witchfire powers are ranged attacks and count as a shooting attack for the model (it may not make other ranged attacks unless normally allowed more than one). Invoked during the psyker's Shooting phase. Treated as Assault weapons unless otherwise specified. After invoking the power the psyker must still roll To Hit, with line of sight and range as normal; a witchfire power with no weapon/attack profile does not roll To Hit unless otherwise specified. A psyker may only invoke one witchfire power per turn, unless the model may shoot more than one weapon AND knows two or more different witchfire powers. Psychic powers which count as a shooting attack are witchfire powers.</description>
@@ -28887,7 +29355,7 @@
 <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">-</characteristic>
 <characteristic name="S" typeId="6204-806b-a18a-c0be">User</characteristic>
 <characteristic name="AP" typeId="964e-6f66-dcaa-247a">-</characteristic>
-<characteristic name="Type" typeId="54df-9f85-8d55-7440">Power Weapon, re-roll failed To Wound rolls, Specialist Weapon</characteristic>
+<characteristic name="Type" typeId="54df-9f85-8d55-7440">Power Weapon, re-roll failed To Wound rolls, Specialist Weapon, +1 Attack</characteristic>
 </characteristics>
 </profile>
 <profile id="84a2-b55d-7958-3a79" name="Two Power Fists" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">

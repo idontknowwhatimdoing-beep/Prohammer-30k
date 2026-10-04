@@ -1,31 +1,23 @@
 # Talons of the Emperor: questions for the author
 
-Source: `/home/claude/src/v4/Talons_of_the_Emperor.txt` (line numbers refer to that file).
+Source: `/home/claude/src/Talons_of_the_Emperor_v2.txt` (line numbers refer to that file).
 Module: `tools/armies/talons_of_the_emperor.py`.
 
-All earlier questions (1-31) are settled and have been applied. Only new questions follow.
+All earlier questions (1-31) are settled and have been applied. Only open questions follow.
 
-## New questions
+## Open questions
 
-1. **Vigil Command Cadre: retinue only, or also a normal HQ?** L4342: "A Vigil Command Cadre may be taken as a retinue for a a Knight-Centura, Knight-Abyssal or Jenetia Krole and does not use up an HQ choice in this way". The entry still says "Force Organisation: HQ" (L4233-4234).
+1. **Vigil Command Cadre: retinue only, or also a normal HQ?** L1399: "A Vigil Command Cadre may be taken as a retinue for a a Knight-Centura, Knight-Abyssal or Jenetia Krole and does not use up an HQ choice in this way". The entry still says "Force Organisation: HQ" (L1348-1349).
    *Built:* the Knight-Abyssal, Knight-Centura and Jenetia Krole each have a 0-1 "Retinue (no HQ choice used)" option for a Vigil Command Cadre. The Cadre can also still be taken as a normal HQ choice, which uses an HQ slot.
    *Question:* Should the stand-alone HQ version be removed, so the Cadre can only be taken as a retinue?
 
-2. **Which models are Characters?** You said to use "Infantry (Character)" for the Primes (Q31). The book still prints "Infantry" for the unit types (e.g. L4242, L4685, L5036). The named Assassins are also printed as "Infantry" (L7297, L7411, ...).
+2. **Which models are Characters?** You said to use "Infantry (Character)" for the Primes (Q31) and to add it where you forgot it. The book still prints "Infantry" for the squads with Primes (e.g. L1455-1456, L1504-1505, L1630-1631) and for the Vigil Command Cadre (L1354-1355). The seven named Assassins are printed as "Infantry" (L2176-2177, L2207-2208, L2240-2241, ...), while the generic Imperial Assassin is "Infantry (Character)" (L2110-2111).
    *Built:* every Prime is "Infantry (Character)". The Subjugator Prime is "Jetbike (Character)". The Silent Judges and the Questora upgrades in the Vigil Command Cadre are also Characters. All Assassins are "Infantry (Character)". The Questora in the Excruciatus Cadre are its ordinary models, so they stay "Infantry".
    *Question:* Is that right?
 
-3. **Dreadnoughts and the Legio Custodes rule.** You answered "fixed" to Q7, but the current book still lists only Fleet / Move Through Cover / Counter-Attack (L1766-1769, L1820-1823). The Telemon has Move Through Cover / Unyielding Sentinel / Indomitable Charge (L3037-3040).
-   *Built:* exactly as printed, without the Legio Custodes rule.
-   *Question:* Should the Contemptors and the Telemon have the Legio Custodes rule?
-
-4. **Grav-backwash wording.** Your Grav-backwash text (L2384) names "the Pallas Grav-Attack", but the Coronus Grav-Carrier (L2341) and the Caladius Grav-Tank (L3264) also have Grav-backwash.
+3. **Grav-backwash wording.** Your Grav-backwash text (L777, L833) names "the Pallas Grav-Attack", but the Coronus Grav-Carrier (L760) and the Caladius Grav-Tank (L1005) also have Grav-backwash.
    *Built:* one Grav-backwash rule with your exact text, shared by all three vehicles.
    *Question:* Should the text say "this vehicle" instead of "the Pallas Grav-Attack"?
-
-5. **Dreadnought Close Combat Weapon profile.** L1759: "Two Dreadnought Close Combat Weapons with inbuilt Lastrum Storm Bolters". The book gives no profile.
-   *Built:* (- / x2 / - / Power Weapon; a second Dreadnought Close Combat Weapon gives +1 Attack), as you answered in Q8.
-   *Question:* Is "x2 Strength, Power Weapon" the right profile?
 
 ## How earlier answers were built (for checking)
 
@@ -35,6 +27,8 @@ All earlier questions (1-31) are settled and have been applied. Only new questio
 - The Shadow of the Throne: Valdor has a free "Constantin Valdor is the army's Warlord" tick box. Only when it is ticked can Valdor take his free Teleportation Transponder, and one unit that can buy Transponders can take them for free.
 - Praesidium Shield with Two-handed weapons: Talon Masters and Shield-Captains get an error if they take a Praesidium Shield while carrying a Guardian, Adrasite, Pyrithite or Paragon Spear. In a Hetaeron Guard Squad, the number of Praesidium Shields may not exceed the number of models that swapped their spear for a one-handed weapon (Vexilla bearers excluded). Advanced Praesidium Shields are not restricted.
 - Custodian Guard: the Vexilla bearer counts towards the "one per three models" limit. He cannot also take an Adrasite or Pyrithite Spear.
+- Dreadnoughts (Q7, "fixed"): Contemptor-Achillus, Contemptor-Galatus and Telemon are "Vehicle (Walker)" with exactly the special rules the book prints (L606-609, L638-641, L967-970), without the Legio Custodes rule.
+- Dreadnought Close Combat Weapon (Q8): the ProHammer core rule (counts as a Power Weapon, doubles Strength up to 10); a second one gives +1 Attack.
 - Massive Wound, Plasma Grenades and Machine Spirit (Power of the Machine Spirit) use your rule texts. Massive Wound is linked from every weapon that can inflict one.
 
 ## Shown as rule text only (not enforced by the builder)

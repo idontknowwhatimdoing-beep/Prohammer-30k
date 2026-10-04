@@ -341,31 +341,22 @@ def add_links(grp, key, items, hide=None):
 _EXCL_DONE = set()
 
 
-def _exclusive_power_weapon(lk):
-    """Power Weapon link: max 0 while the same model has a Frost Weapon."""
-    if id(lk) in _EXCL_DONE:
+def _exclusive_power_weapon(e):
+    """Author: a model takes a Frost Weapon or a Power Weapon, never both. Shown as an error on the model (a
+    max-0 modifier would also hide the Frost Weapon in single-choice groups whose default is the Power Weapon)."""
+    if id(e) in _EXCL_DONE:
         return
-    _EXCL_DONE.add(id(lk))
-    cs = lk.find("constraints")
-    mx = [c for c in cs if c.get("type") == "max"] if cs is not None else []
-    if mx:
-        cid = mx[0].get("id")
-    else:
-        cid = uid(lk.get("id"), "sw-frost-pw-max")
-        add_to(lk, "constraints", [constraint(cid, "max", 1, auto=True)])
-        cs = lk.find("constraints")
-    mods = lk.find("modifiers")
-    if mods is None:
-        mods = el("modifiers")
-        lk.insert(list(lk).index(cs), mods)
-    mods.append(modifier("set", cid, 0, conds=[has(W("Frost Weapon"), "parent")]))
+    _EXCL_DONE.add(id(e))
+    add_mods(e, [modifier("add", "error", f"{e.get('name')}: a model may take a Frost Weapon or a Power Weapon, "
+                                          "not both.",
+                          groups=[all_of(has(W("Power Weapon"), "self"), has(W("Frost Weapon"), "self"))])])
 
 
 def frost_variants(roots):
     """Frost Weapon: wherever a Character model may choose a Power Weapon, it may choose a Frost Weapon instead
     (+5 where the Power Weapon is a free default/basic wargear, +20 otherwise). A Character with a fixed Power Weapon
     gets a 'Replace Power Weapon' choice (Frost Weapon +5). Author: a model picks a Frost Weapon or a Power Weapon,
-    never both (each option's max becomes 0 while the model has the other)."""
+    never both (an error on the model if it has both)."""
     base_id = W("Power Weapon")
     done = set()
     n = 0
@@ -396,9 +387,8 @@ def frost_variants(roots):
                     cost = float(cs[0].get("value")) if cs is not None and len(cs) else 0
                     nid = uid(lk.get("id"), "variant", "Frost Weapon")
                     cons = [constraint(uid(nid, "max"), "max", 1, auto=True)]
-                    new_l = link(nid, W("Frost Weapon"), "Frost Weapon", cost=5 if cost == 0 else 20, constraints=cons,
-                                 mods=[modifier("set", uid(nid, "max"), 0, conds=[has(base_id, "parent")])])
-                    _exclusive_power_weapon(lk)
+                    new_l = link(nid, W("Frost Weapon"), "Frost Weapon", cost=5 if cost == 0 else 20, constraints=cons)
+                    _exclusive_power_weapon(e)
                     if g.get("defaultSelectionEntryId") is not None:
                         new_l.set("sortIndex", str(int(lk.get("sortIndex") or 1) + 100))
                     links.append(new_l)

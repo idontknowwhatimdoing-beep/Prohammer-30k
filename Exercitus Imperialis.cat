@@ -4738,6 +4738,24 @@
 </conditionGroup>
 </conditionGroups>
 </modifier>
+<modifier type="set" field="hidden" value="true">
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="ee0d-f632-b2c7-11c3" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1426-8725-4289-66f9" type="atLeast" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="set" field="d15f-ad17-fa87-23ab" value="0">
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="ee0d-f632-b2c7-11c3" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1426-8725-4289-66f9" type="atLeast" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
 <modifier type="increment" field="pts0-0000-0000-0001" value="5">
 <repeats>
 <repeat field="selections" scope="ee0d-f632-b2c7-11c3" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" repeats="1" roundUp="false" />
@@ -6551,18 +6569,6 @@
 <cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
 </costs>
 </selectionEntry>
-<selectionEntry id="ebde-0b04-0967-78f5" name="Possession (Daemonology (Malefic))" hidden="false" collective="false" import="true" type="upgrade">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eb1e-b3dd-f832-a7f1" type="max" />
-</constraints>
-<infoLinks>
-<infoLink id="55a5-ebfe-686c-33b7" name="Possession (Daemonology (Malefic))" hidden="false" targetId="0507-b55d-f00f-4254" type="rule" />
-<infoLink id="39e8-7cab-1290-0586" name="Psychic Power Type: Conjuration" hidden="false" targetId="c913-19fd-3d6e-40c8" type="rule" />
-</infoLinks>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
-</costs>
-</selectionEntry>
 <selectionEntry id="9807-d3cb-12f1-76e0" name="Sacrifice (Daemonology (Malefic))" hidden="false" collective="false" import="true" type="upgrade">
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1a58-e40b-ffdb-9aed" type="max" />
@@ -6595,6 +6601,38 @@
 <infoLink id="07fa-b6c9-9f0d-c16f" name="Infernal Gaze (Daemonology (Malefic))" hidden="false" targetId="2b77-f966-c88d-4c0d" type="rule" />
 <infoLink id="c4fe-1886-9dee-23cb" name="Psychic Power Type: Witchfire - Beam" hidden="false" targetId="6ffa-5b76-2c20-0597" type="rule" />
 <infoLink id="a021-9edf-cece-7cbb" name="Infernal Gaze (Daemonology (Malefic))" hidden="false" targetId="940f-1cf6-44ef-80d6" type="profile" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
+</costs>
+</selectionEntry>
+<selectionEntry id="ebde-0b04-0967-78f5" name="Possession (Daemonology (Malefic))" hidden="false" collective="false" import="true" type="upgrade">
+<modifiers>
+<modifier type="set" field="hidden" value="true">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="e004-21e2-a06e-8ce9" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f20d-b4d3-4eda-0df2" type="lessThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="set" field="eb1e-b3dd-f832-a7f1" value="0">
+<conditionGroups>
+<conditionGroup type="and">
+<conditions>
+<condition field="selections" scope="e004-21e2-a06e-8ce9" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f20d-b4d3-4eda-0df2" type="lessThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+</modifiers>
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eb1e-b3dd-f832-a7f1" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="55a5-ebfe-686c-33b7" name="Possession (Daemonology (Malefic))" hidden="false" targetId="0507-b55d-f00f-4254" type="rule" />
+<infoLink id="39e8-7cab-1290-0586" name="Psychic Power Type: Conjuration" hidden="false" targetId="c913-19fd-3d6e-40c8" type="rule" />
 </infoLinks>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
@@ -7524,7 +7562,11 @@
 <entryLink id="c52d-ae9e-5c17-8721" name="Psyker Attache: Prophet" hidden="false" collective="false" import="true" targetId="cef8-7aec-65b7-4afc" type="selectionEntry" />
 <entryLink id="26da-87b1-6771-b16d" name="Company Jester" hidden="false" collective="false" import="true" targetId="5a13-5304-f846-b0c9" type="selectionEntry" />
 <entryLink id="7127-d47f-3f5a-203d" name="Locus Scribii" hidden="false" collective="false" import="true" targetId="5284-9e29-96a3-c958" type="selectionEntry" />
-<entryLink id="9443-df8a-061c-1dae" name="Cartographica Adept" hidden="false" collective="false" import="true" targetId="9784-cd0a-8a08-d072" type="selectionEntry" />
+<entryLink id="9443-df8a-061c-1dae" name="Cartographica Adept" hidden="false" collective="false" import="true" targetId="9784-cd0a-8a08-d072" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="06e0-4624-3b1a-1da0" type="max" />
+</constraints>
+</entryLink>
 </entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
@@ -11637,7 +11679,11 @@
 <entryLink id="cf44-e6cd-af66-ccc5" name="Psyker Attache: Prophet" hidden="false" collective="false" import="true" targetId="cef8-7aec-65b7-4afc" type="selectionEntry" />
 <entryLink id="1692-a86e-0b36-ace7" name="Company Jester" hidden="false" collective="false" import="true" targetId="5a13-5304-f846-b0c9" type="selectionEntry" />
 <entryLink id="f9cb-c5bf-8903-c0d6" name="Locus Scribii" hidden="false" collective="false" import="true" targetId="5284-9e29-96a3-c958" type="selectionEntry" />
-<entryLink id="562d-fc8b-a830-8ff1" name="Cartographica Adept" hidden="false" collective="false" import="true" targetId="9784-cd0a-8a08-d072" type="selectionEntry" />
+<entryLink id="562d-fc8b-a830-8ff1" name="Cartographica Adept" hidden="false" collective="false" import="true" targetId="9784-cd0a-8a08-d072" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="68ca-49b3-074e-d7f2" type="max" />
+</constraints>
+</entryLink>
 </entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
@@ -12116,6 +12162,24 @@
 <conditionGroup type="and">
 <conditions>
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5297-e0b6-9d60-b05c" type="lessThan" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="set" field="hidden" value="true">
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="106f-3023-7e59-a363" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1f2a-652a-a8b2-15c2" type="atLeast" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+<modifier type="set" field="0939-862a-4d07-f00c" value="0">
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="106f-3023-7e59-a363" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1f2a-652a-a8b2-15c2" type="atLeast" />
 </conditions>
 </conditionGroup>
 </conditionGroups>
@@ -13585,7 +13649,11 @@
 <entryLink id="a042-f41a-f90a-ec07" name="Psyker Attache: Prophet" hidden="false" collective="false" import="true" targetId="cef8-7aec-65b7-4afc" type="selectionEntry" />
 <entryLink id="a06d-d75a-326f-e55a" name="Company Jester" hidden="false" collective="false" import="true" targetId="5a13-5304-f846-b0c9" type="selectionEntry" />
 <entryLink id="fab8-e7c0-f937-5aef" name="Locus Scribii" hidden="false" collective="false" import="true" targetId="5284-9e29-96a3-c958" type="selectionEntry" />
-<entryLink id="91b3-3124-e8c0-3193" name="Cartographica Adept" hidden="false" collective="false" import="true" targetId="9784-cd0a-8a08-d072" type="selectionEntry" />
+<entryLink id="91b3-3124-e8c0-3193" name="Cartographica Adept" hidden="false" collective="false" import="true" targetId="9784-cd0a-8a08-d072" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="747c-d29d-3efc-7983" type="max" />
+</constraints>
+</entryLink>
 </entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
@@ -14377,7 +14445,11 @@
 <entryLink id="ae49-dfe7-5abe-c441" name="Psyker Attache: Prophet" hidden="false" collective="false" import="true" targetId="cef8-7aec-65b7-4afc" type="selectionEntry" />
 <entryLink id="2250-35b2-a0f7-df0b" name="Company Jester" hidden="false" collective="false" import="true" targetId="5a13-5304-f846-b0c9" type="selectionEntry" />
 <entryLink id="1786-dacc-2a26-792c" name="Locus Scribii" hidden="false" collective="false" import="true" targetId="5284-9e29-96a3-c958" type="selectionEntry" />
-<entryLink id="18f5-071a-1a00-1e04" name="Cartographica Adept" hidden="false" collective="false" import="true" targetId="9784-cd0a-8a08-d072" type="selectionEntry" />
+<entryLink id="18f5-071a-1a00-1e04" name="Cartographica Adept" hidden="false" collective="false" import="true" targetId="9784-cd0a-8a08-d072" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dbed-efbb-e088-8723" type="max" />
+</constraints>
+</entryLink>
 </entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
@@ -15169,7 +15241,11 @@
 <entryLink id="0e32-23b0-8fa3-b51a" name="Psyker Attache: Prophet" hidden="false" collective="false" import="true" targetId="cef8-7aec-65b7-4afc" type="selectionEntry" />
 <entryLink id="1136-f5c4-9ee1-fb66" name="Company Jester" hidden="false" collective="false" import="true" targetId="5a13-5304-f846-b0c9" type="selectionEntry" />
 <entryLink id="0d1e-aba2-bf34-5454" name="Locus Scribii" hidden="false" collective="false" import="true" targetId="5284-9e29-96a3-c958" type="selectionEntry" />
-<entryLink id="e524-e9b3-0f71-be3c" name="Cartographica Adept" hidden="false" collective="false" import="true" targetId="9784-cd0a-8a08-d072" type="selectionEntry" />
+<entryLink id="e524-e9b3-0f71-be3c" name="Cartographica Adept" hidden="false" collective="false" import="true" targetId="9784-cd0a-8a08-d072" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="109a-7b06-070b-bdda" type="max" />
+</constraints>
+</entryLink>
 </entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
@@ -15961,7 +16037,11 @@
 <entryLink id="9194-049f-f739-0842" name="Psyker Attache: Prophet" hidden="false" collective="false" import="true" targetId="cef8-7aec-65b7-4afc" type="selectionEntry" />
 <entryLink id="f069-cea5-67cd-781a" name="Company Jester" hidden="false" collective="false" import="true" targetId="5a13-5304-f846-b0c9" type="selectionEntry" />
 <entryLink id="43dc-834d-2551-4bd3" name="Locus Scribii" hidden="false" collective="false" import="true" targetId="5284-9e29-96a3-c958" type="selectionEntry" />
-<entryLink id="25ea-09a0-f520-2b08" name="Cartographica Adept" hidden="false" collective="false" import="true" targetId="9784-cd0a-8a08-d072" type="selectionEntry" />
+<entryLink id="25ea-09a0-f520-2b08" name="Cartographica Adept" hidden="false" collective="false" import="true" targetId="9784-cd0a-8a08-d072" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c58a-03f1-3d83-9090" type="max" />
+</constraints>
+</entryLink>
 </entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
@@ -16753,7 +16833,11 @@
 <entryLink id="bfc7-1ae7-073f-a116" name="Psyker Attache: Prophet" hidden="false" collective="false" import="true" targetId="cef8-7aec-65b7-4afc" type="selectionEntry" />
 <entryLink id="9817-c40d-cd14-1097" name="Company Jester" hidden="false" collective="false" import="true" targetId="5a13-5304-f846-b0c9" type="selectionEntry" />
 <entryLink id="fd11-042d-22fb-73b4" name="Locus Scribii" hidden="false" collective="false" import="true" targetId="5284-9e29-96a3-c958" type="selectionEntry" />
-<entryLink id="d5a7-34c9-29c8-3594" name="Cartographica Adept" hidden="false" collective="false" import="true" targetId="9784-cd0a-8a08-d072" type="selectionEntry" />
+<entryLink id="d5a7-34c9-29c8-3594" name="Cartographica Adept" hidden="false" collective="false" import="true" targetId="9784-cd0a-8a08-d072" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7c18-e3c4-cf74-5493" type="max" />
+</constraints>
+</entryLink>
 </entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
@@ -17422,7 +17506,11 @@
 <entryLink id="8830-42bb-873f-eb08" name="Psyker Attache: Prophet" hidden="false" collective="false" import="true" targetId="cef8-7aec-65b7-4afc" type="selectionEntry" />
 <entryLink id="a96c-090a-3aa1-7ba5" name="Company Jester" hidden="false" collective="false" import="true" targetId="5a13-5304-f846-b0c9" type="selectionEntry" />
 <entryLink id="fca3-da4b-7775-b78e" name="Locus Scribii" hidden="false" collective="false" import="true" targetId="5284-9e29-96a3-c958" type="selectionEntry" />
-<entryLink id="4f5d-8445-dcf0-c948" name="Cartographica Adept" hidden="false" collective="false" import="true" targetId="9784-cd0a-8a08-d072" type="selectionEntry" />
+<entryLink id="4f5d-8445-dcf0-c948" name="Cartographica Adept" hidden="false" collective="false" import="true" targetId="9784-cd0a-8a08-d072" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="91e0-97e7-aff1-352e" type="max" />
+</constraints>
+</entryLink>
 </entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
@@ -18286,7 +18374,11 @@
 <entryLink id="d786-9c33-414e-e4ce" name="Psyker Attache: Prophet" hidden="false" collective="false" import="true" targetId="cef8-7aec-65b7-4afc" type="selectionEntry" />
 <entryLink id="ee65-60e1-f615-8fe0" name="Company Jester" hidden="false" collective="false" import="true" targetId="5a13-5304-f846-b0c9" type="selectionEntry" />
 <entryLink id="703e-7e96-c1b8-4f80" name="Locus Scribii" hidden="false" collective="false" import="true" targetId="5284-9e29-96a3-c958" type="selectionEntry" />
-<entryLink id="8076-3c8d-c0b6-d885" name="Cartographica Adept" hidden="false" collective="false" import="true" targetId="9784-cd0a-8a08-d072" type="selectionEntry" />
+<entryLink id="8076-3c8d-c0b6-d885" name="Cartographica Adept" hidden="false" collective="false" import="true" targetId="9784-cd0a-8a08-d072" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0204-eb65-601a-1d49" type="max" />
+</constraints>
+</entryLink>
 </entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
@@ -18767,7 +18859,11 @@
 <entryLink id="494b-36c8-2cf4-0cf5" name="Psyker Attache: Prophet" hidden="false" collective="false" import="true" targetId="cef8-7aec-65b7-4afc" type="selectionEntry" />
 <entryLink id="9f6d-8dfe-f2e9-06ee" name="Company Jester" hidden="false" collective="false" import="true" targetId="5a13-5304-f846-b0c9" type="selectionEntry" />
 <entryLink id="d307-8dd5-7952-e59c" name="Locus Scribii" hidden="false" collective="false" import="true" targetId="5284-9e29-96a3-c958" type="selectionEntry" />
-<entryLink id="5778-2fcb-3c46-e83b" name="Cartographica Adept" hidden="false" collective="false" import="true" targetId="9784-cd0a-8a08-d072" type="selectionEntry" />
+<entryLink id="5778-2fcb-3c46-e83b" name="Cartographica Adept" hidden="false" collective="false" import="true" targetId="9784-cd0a-8a08-d072" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="38b5-dbb6-3977-9232" type="max" />
+</constraints>
+</entryLink>
 </entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
@@ -19325,7 +19421,11 @@
 <entryLink id="3670-fe4e-5560-6484" name="Psyker Attache: Prophet" hidden="false" collective="false" import="true" targetId="cef8-7aec-65b7-4afc" type="selectionEntry" />
 <entryLink id="736b-85ca-968b-11e5" name="Company Jester" hidden="false" collective="false" import="true" targetId="5a13-5304-f846-b0c9" type="selectionEntry" />
 <entryLink id="62e4-ce1d-97dc-fbea" name="Locus Scribii" hidden="false" collective="false" import="true" targetId="5284-9e29-96a3-c958" type="selectionEntry" />
-<entryLink id="b67f-76f6-6e2c-873f" name="Cartographica Adept" hidden="false" collective="false" import="true" targetId="9784-cd0a-8a08-d072" type="selectionEntry" />
+<entryLink id="b67f-76f6-6e2c-873f" name="Cartographica Adept" hidden="false" collective="false" import="true" targetId="9784-cd0a-8a08-d072" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1dba-59d4-6fe4-83c4" type="max" />
+</constraints>
+</entryLink>
 </entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
@@ -19819,7 +19919,11 @@
 <entryLink id="7002-2e00-d398-eb41" name="Psyker Attache: Prophet" hidden="false" collective="false" import="true" targetId="cef8-7aec-65b7-4afc" type="selectionEntry" />
 <entryLink id="43ca-f89c-19ab-8470" name="Company Jester" hidden="false" collective="false" import="true" targetId="5a13-5304-f846-b0c9" type="selectionEntry" />
 <entryLink id="8605-bb6a-6f11-f90c" name="Locus Scribii" hidden="false" collective="false" import="true" targetId="5284-9e29-96a3-c958" type="selectionEntry" />
-<entryLink id="606f-741c-4ab4-175d" name="Cartographica Adept" hidden="false" collective="false" import="true" targetId="9784-cd0a-8a08-d072" type="selectionEntry" />
+<entryLink id="606f-741c-4ab4-175d" name="Cartographica Adept" hidden="false" collective="false" import="true" targetId="9784-cd0a-8a08-d072" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e81b-3bf3-9472-c19d" type="max" />
+</constraints>
+</entryLink>
 </entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
@@ -20314,7 +20418,11 @@
 <entryLink id="8c4f-08cf-6508-9914" name="Psyker Attache: Prophet" hidden="false" collective="false" import="true" targetId="cef8-7aec-65b7-4afc" type="selectionEntry" />
 <entryLink id="090a-b3e2-f9ae-31c2" name="Company Jester" hidden="false" collective="false" import="true" targetId="5a13-5304-f846-b0c9" type="selectionEntry" />
 <entryLink id="274d-9e32-9477-14ba" name="Locus Scribii" hidden="false" collective="false" import="true" targetId="5284-9e29-96a3-c958" type="selectionEntry" />
-<entryLink id="77c0-d80b-cba3-a867" name="Cartographica Adept" hidden="false" collective="false" import="true" targetId="9784-cd0a-8a08-d072" type="selectionEntry" />
+<entryLink id="77c0-d80b-cba3-a867" name="Cartographica Adept" hidden="false" collective="false" import="true" targetId="9784-cd0a-8a08-d072" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9033-af8d-6cf8-b5c8" type="max" />
+</constraints>
+</entryLink>
 </entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
@@ -28957,13 +29065,14 @@
 <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="3d22-6b9e-0b28-5f46" type="max" />
 </constraints>
 <profiles>
-<profile id="ac03-23c0-c61e-bbe6" name="Malcador Heavy Tank" hidden="false" typeId="c1e2-c3f6-f1e3-c783" typeName="Vehicle">
+<profile id="3f95-9860-723a-68c2" name="Malcador Heavy Tank" hidden="false" typeId="3784-9225-99aa-24c2" typeName="Super-heavy Vehicle">
 <characteristics>
-<characteristic name="Unit Type" typeId="6095-ae79-f2c4-f05d">Super-heavy Vehicle (Tank), 2 Structure Points</characteristic>
-<characteristic name="BS" typeId="e7f5-6a1a-ac58-5b0a">3</characteristic>
-<characteristic name="Front" typeId="f537-badc-bfd2-5234">13</characteristic>
-<characteristic name="Side" typeId="0c3e-a00e-5d47-7352">13</characteristic>
-<characteristic name="Rear" typeId="7074-ea68-65bb-46bb">12</characteristic>
+<characteristic name="Unit Type" typeId="8ca0-e92f-512f-e034">Super-heavy Vehicle (Tank)</characteristic>
+<characteristic name="BS" typeId="c687-dadd-0947-7886">3</characteristic>
+<characteristic name="Front" typeId="bd1d-dd4c-79f8-009d">13</characteristic>
+<characteristic name="Side" typeId="0be6-c3fc-546e-76c1">13</characteristic>
+<characteristic name="Rear" typeId="0554-1731-f72d-eeac">12</characteristic>
+<characteristic name="Structure Points" typeId="ed01-1dd6-46f1-c631">2</characteristic>
 </characteristics>
 </profile>
 </profiles>
@@ -29286,13 +29395,14 @@
 </selectionEntry>
 <selectionEntry id="1a4b-7686-6221-0848" name="Auxilia Gorgon Heavy Transporter" hidden="false" collective="false" import="true" type="unit">
 <profiles>
-<profile id="fa66-83ad-25ca-f098" name="Auxilia Gorgon" hidden="false" typeId="c1e2-c3f6-f1e3-c783" typeName="Vehicle">
+<profile id="f83a-6697-47c9-68e5" name="Auxilia Gorgon" hidden="false" typeId="3784-9225-99aa-24c2" typeName="Super-heavy Vehicle">
 <characteristics>
-<characteristic name="Unit Type" typeId="6095-ae79-f2c4-f05d">Super-heavy Vehicle (3 Structure Points)</characteristic>
-<characteristic name="BS" typeId="e7f5-6a1a-ac58-5b0a">3</characteristic>
-<characteristic name="Front" typeId="f537-badc-bfd2-5234">14</characteristic>
-<characteristic name="Side" typeId="0c3e-a00e-5d47-7352">14</characteristic>
-<characteristic name="Rear" typeId="7074-ea68-65bb-46bb">10</characteristic>
+<characteristic name="Unit Type" typeId="8ca0-e92f-512f-e034">Super-heavy Vehicle</characteristic>
+<characteristic name="BS" typeId="c687-dadd-0947-7886">3</characteristic>
+<characteristic name="Front" typeId="bd1d-dd4c-79f8-009d">14</characteristic>
+<characteristic name="Side" typeId="0be6-c3fc-546e-76c1">14</characteristic>
+<characteristic name="Rear" typeId="0554-1731-f72d-eeac">10</characteristic>
+<characteristic name="Structure Points" typeId="ed01-1dd6-46f1-c631">3</characteristic>
 </characteristics>
 </profile>
 <profile id="210e-986b-5599-ca3c" name="Auxilia Gorgon" hidden="false" typeId="3dca-e183-c6eb-8cea" typeName="Transport">
@@ -29304,7 +29414,7 @@
 </profile>
 </profiles>
 <infoLinks>
-<infoLink id="36a1-5dc1-8dd6-0a30" name="Super-heavy Tank" hidden="false" targetId="a709-0f1d-ed50-159c" type="rule" />
+<infoLink id="08f9-1b1d-48cb-fdbc" name="Super-heavy Vehicle" hidden="false" targetId="e90b-20ed-9b1b-f090" type="rule" />
 <infoLink id="24f2-c9ae-0bb3-5d1a" name="Heavily Armoured Prow" hidden="false" targetId="f0b9-d8b3-80f4-818b" type="rule" />
 <infoLink id="c6e2-af63-c55a-811c" name="Reduced Blast" hidden="false" targetId="4e40-cece-6d50-e700" type="rule" />
 <infoLink id="2238-eef2-684a-32cd" name="Gorgon Transport" hidden="false" targetId="019e-1aed-c4d1-a1db" type="rule" />
@@ -29945,13 +30055,14 @@
 </selectionEntry>
 <selectionEntry id="f886-9e78-92f1-ad30" name="Auxilia Gorgon Heavy Transporter" hidden="false" collective="false" import="true" type="unit">
 <profiles>
-<profile id="aa66-25d5-1438-9029" name="Auxilia Gorgon" hidden="false" typeId="c1e2-c3f6-f1e3-c783" typeName="Vehicle">
+<profile id="2d3c-9656-3260-22cd" name="Auxilia Gorgon" hidden="false" typeId="3784-9225-99aa-24c2" typeName="Super-heavy Vehicle">
 <characteristics>
-<characteristic name="Unit Type" typeId="6095-ae79-f2c4-f05d">Super-heavy Vehicle (3 Structure Points)</characteristic>
-<characteristic name="BS" typeId="e7f5-6a1a-ac58-5b0a">3</characteristic>
-<characteristic name="Front" typeId="f537-badc-bfd2-5234">14</characteristic>
-<characteristic name="Side" typeId="0c3e-a00e-5d47-7352">14</characteristic>
-<characteristic name="Rear" typeId="7074-ea68-65bb-46bb">10</characteristic>
+<characteristic name="Unit Type" typeId="8ca0-e92f-512f-e034">Super-heavy Vehicle</characteristic>
+<characteristic name="BS" typeId="c687-dadd-0947-7886">3</characteristic>
+<characteristic name="Front" typeId="bd1d-dd4c-79f8-009d">14</characteristic>
+<characteristic name="Side" typeId="0be6-c3fc-546e-76c1">14</characteristic>
+<characteristic name="Rear" typeId="0554-1731-f72d-eeac">10</characteristic>
+<characteristic name="Structure Points" typeId="ed01-1dd6-46f1-c631">3</characteristic>
 </characteristics>
 </profile>
 <profile id="9f3e-870b-8c0c-23d2" name="Auxilia Gorgon" hidden="false" typeId="3dca-e183-c6eb-8cea" typeName="Transport">
@@ -29963,7 +30074,7 @@
 </profile>
 </profiles>
 <infoLinks>
-<infoLink id="dd4e-79ca-2d91-bc36" name="Super-heavy Tank" hidden="false" targetId="a709-0f1d-ed50-159c" type="rule" />
+<infoLink id="470c-235d-0bb3-1519" name="Super-heavy Vehicle" hidden="false" targetId="e90b-20ed-9b1b-f090" type="rule" />
 <infoLink id="578d-cb64-9db2-ec87" name="Heavily Armoured Prow" hidden="false" targetId="f0b9-d8b3-80f4-818b" type="rule" />
 <infoLink id="164f-2d9d-2e2b-ff93" name="Reduced Blast" hidden="false" targetId="4e40-cece-6d50-e700" type="rule" />
 <infoLink id="f9e0-88d2-a85a-1344" name="Gorgon Transport" hidden="false" targetId="019e-1aed-c4d1-a1db" type="rule" />
@@ -32654,6 +32765,9 @@
 <rule id="a709-0f1d-ed50-159c" name="Super-heavy Tank" hidden="false">
 <description>Follows the Super-heavy Vehicle (Tank) rules of ProHammer Classic.</description>
 </rule>
+<rule id="e90b-20ed-9b1b-f090" name="Super-heavy Vehicle" hidden="false">
+<description>Follows the Super-heavy Vehicle rules of ProHammer Classic (the Gorgon is not a Tank).</description>
+</rule>
 <rule id="98a6-ae9e-e09e-a096" name="Infantry Platoon" hidden="false">
 <description>An Imperialis Militia Infantry Platoon (1 Platoon Command Cadre and 2-5 Imperialis Militia Infantry Squads) occupies a single Troops choice. Each unit deploys and operates independently. A Platoon Command Cadre selected as part of a Platoon does not occupy an HQ choice.</description>
 </rule>
@@ -32814,7 +32928,7 @@
 <description>Maledictions weaken and hinder opposing units. Invoked during the psyker's Movement phase unless otherwise noted. Duration: until the start of the psyker's own next turn. Maledictions with the same effects stack if they are differently named powers; exact copies (same name) cannot be stacked on the same unit. Characteristics cannot be modified above 10 or below 1. If a psyker with an active malediction is removed from play, its maledictions are immediately cancelled.</description>
 </rule>
 <rule id="c913-19fd-3d6e-40c8" name="Psychic Power Type: Conjuration" hidden="false">
-<description>Conjurations summon outside forces onto the battlefield. Invoked at the start of the psyker's Movement phase unless otherwise noted. A unit using a conjuration may not perform any other actions that turn (no movement, shooting, other psychic powers, charging, etc.). Any doubles rolled on the psychic test inflict Perils of the Warp, whether or not the conjuration succeeded. Can only summon daemons matching the psyker's Chaos mark. Each psyker may only successfully cast a selected conjuration once per game. Summoned psykers may not select conjuration powers. Summoned units arrive following the Deep Strike rules; the centre model must be placed within the power's range.</description>
+<description>Conjurations summon outside forces onto the battlefield. Invoked at the start of the psyker's Movement phase unless otherwise noted. A unit using a conjuration may not perform any other actions that turn (no movement, shooting, other psychic powers, charging, etc.). Any doubles rolled on the psychic test inflict Perils of the Warp, whether or not the conjuration succeeded. Can only summon daemons matching the psyker's Chaos mark; a psyker without a Chaos mark (e.g. a Legiones Astartes Esoterist or Zardu Layak) may summon any of the daemons listed in the power. Summoned units are not bought or recorded in the roster. Each psyker may only successfully cast a selected conjuration once per game. Summoned psykers may not select conjuration powers. Summoned units arrive following the Deep Strike rules; the centre model must be placed within the power's range.</description>
 </rule>
 <rule id="d57f-7eaf-5589-f80d" name="Psychic Power Type: Witchfire" hidden="false">
 <description>Witchfire powers are ranged attacks and count as a shooting attack for the model (it may not make other ranged attacks unless normally allowed more than one). Invoked during the psyker's Shooting phase. Treated as Assault weapons unless otherwise specified. After invoking the power the psyker must still roll To Hit, with line of sight and range as normal; a witchfire power with no weapon/attack profile does not roll To Hit unless otherwise specified. A psyker may only invoke one witchfire power per turn, unless the model may shoot more than one weapon AND knows two or more different witchfire powers. Psychic powers which count as a shooting attack are witchfire powers.</description>

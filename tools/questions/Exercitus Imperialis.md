@@ -1,7 +1,7 @@
 # Exercitus Imperialis - questions for the author
 
 Catalogue: `Exercitus Imperialis.cat`, module `tools/armies/exercitus_imperialis.py`.
-Line numbers refer to the current book text `v4/Exercitus_Imperialis.txt`.
+Line numbers refer to the current book text `Exercitus_Imperialis_v2.txt`.
 
 ## How the catalogue is structured
 
@@ -23,7 +23,7 @@ Line numbers refer to the current book text `v4/Exercitus_Imperialis.txt`.
   - Reconnaissance Squads can with Frontier Marksmen.
   - With Survivors of the Dark Age, only Grenadier Squads can.
   - Inducted Levy Squads cannot with Warrior Elite, Survivors of the Dark Age or Paragons of Humanity.
-- **Attached Advisors are shared entries.** They are linked from the units they may join. Any number of Advisors may join one unit; each Advisor's own 0-1 / 0-n limit counts across the Detachment.
+- **Attached Advisors are shared entries.** They are linked from the units they may join. Any number of Advisors may join one unit (but no more than one Cartographica Adept per unit, l.1041); each Advisor's own 0-1 / 0-n limit counts across the Detachment.
   - Force Commander and named Lords: Navigator, Master of the Fleet, Memorator, Company Cook, Personal Aide, Scribe Historicus, Lotara Sarrin, Ilya Ravallion.
   - Platoon Command Cadre: the same list without the Personal Aide and Scribe Historicus.
   - Troops units: Psyker Attaché (Cult Leader or Prophet, 0-4 in total), Jester, Locus Scribii, Cartographica Adept (0-2).
@@ -34,19 +34,20 @@ Line numbers refer to the current book text `v4/Exercitus_Imperialis.txt`.
 
 ## Questions
 
-1. **Ilya Ravallion** (l.6624-6674) is an Attached Advisor with no host listed. I linked her from the Force Commander and Platoon Command Cadre. Where should she be able to join? (Your earlier reply had no answer text.)
-2. **Stormhammer / Super-heavy Command Tank** (l.6271): Tyana Kourion can be put in a Stormhammer, which is not in the book. Deferred until the Lords of War are done, as agreed. Kourion is currently only offered on the Leman Russ and the Malcador, for both sides.
-3. **Rogue Psyker powers: maximum and mixing.** "must purchase at least one Rogue Psyker psychic power for +20 points per power" (l.1872); "He selects powers from either Telepathy of Malefic Daemonology" (l.1883). I built: at least 1 and at most 3 powers, +20 each, and powers from both disciplines may be mixed. Is there a maximum (3?), and must all powers come from one of the two disciplines?
-4. **Necromancer Demagogue for the named Traitor Lords.** Fayle and Egwu "count as a Force Commander for all rules". I gave them the Undying Horde psyker option (1 Biomancy power and Raise the Dead) as well. Is that right?
-5. **Which purchases count towards the Force Commander's allowance?** "Equipment purchased through another Armoury section or an individual Provenance option counts towards the same allowance" (l.7158). Inside his 100-point limit I put the Mounted (+10), Jump Pack (+15), Boarding Shield (+5) and Blade and Fury (+10) options. I left the Naval Officer upgrade (+10) outside, as a rank upgrade. Is that right?
-6. **Discipline Masters: one per unit?** You said the Cadre is bought and then assigned freely, and that is how it is built now. The book still says "Only one Discipline Master may be assigned to each unit" (l.1376). Should that sentence stay? It is shown as text only.
+1. **Ilya Ravallion** (l.2894-2924) is an Attached Advisor with no host listed. I linked her from the Force Commander and Platoon Command Cadre. Where should she be able to join? (Your earlier reply had no answer text.)
+2. **Stormhammer / Super-heavy Command Tank** (l.2759): Tyana Kourion can be put in a Stormhammer, which is not in the book. Deferred until the Lords of War are done, as agreed. Kourion is currently only offered on the Leman Russ and the Malcador, for both sides.
+3. **Rogue Psyker powers: maximum and mixing.** "must purchase at least one Rogue Psyker psychic power for +20 points per power" (l.919); "He selects powers from either Telepathy of Malefic Daemonology" (l.926). I built: at least 1 and at most 3 powers, +20 each, and powers from both disciplines may be mixed. Is there a maximum (3?), and must all powers come from one of the two disciplines?
+4. **Necromancer Demagogue for the named Traitor Lords.** Fayle and Egwu "count as a Force Commander for all rules and army construction purposes" (l.2689, 2727); Necromancer Demagogue (l.542-544) applies to "the Force Commander". I gave them the Undying Horde psyker option (1 Biomancy power and Raise the Dead) as well. Is that right?
+5. **Which purchases count towards the Force Commander's allowance?** "Equipment purchased through another Armoury section or an individual Provenance option counts towards the same allowance" (l.3103). Inside his 100-point limit I put the Mounted (+10), Jump Pack (+15), Boarding Shield (+5) and Blade and Fury (+10) options. I left the Naval Officer upgrade (+10) outside, as a rank upgrade. Is that right?
+6. **Discipline Masters: one per unit?** You said the Cadre is bought and then assigned freely, and that is how it is built now. The book still says "Only one Discipline Master may be assigned to each unit" (l.726). Should that sentence stay? It is shown as text only.
+7. **Aika 73 and the Militia Tank Commander on the same tank?** "One Leman Russ Battle Tank in the army may be upgraded to Aika 73 for +30 points ... The vehicle gains: Ballistic Skill 4, Extra Armour, Veteran Crew" (l.2762). The book does not say whether Aika 73 can also carry the Militia Tank Commander (l.1046) or Tyana Kourion. I built the three as one exclusive "Tank Commander" choice per tank (only one of them). Is that right, or may Aika 73 also take a Tank Commander / Kourion?
 
 ## Settled questions kept as notes (built as accepted)
 
-- **Engineer Corps.** "One Combat Engineer Squad selected as Troops may be used to fulfil a compulsory Troops choice" (l.977). This is not enforced: both toggled squads count as compulsory. It is text only.
-- **Survivors and Hive Platoons.** Advanced Weapons must be bought by every squad of a type if one buys it (l.624-). This is not enforced. Street-born (no Advanced Weapons) is enforced only for Grenadiers.
+- **Engineer Corps.** "One Combat Engineer Squad selected as Troops may be used to fulfil a compulsory Troops choice" (l.590). This is not enforced: both toggled squads count as compulsory. It is text only.
+- **Survivors and Hive Platoons.** Advanced Weapons must be bought by every squad of a type if one buys it (l.316). This is not enforced. Street-born (no Advanced Weapons) is enforced only for Grenadiers.
 - **Malcador and Gorgon weapon swaps.** The replacements are shown as extra choices, and the standard autocannons stay listed in the profile. Treat a chosen replacement as replacing them.
-- **Medicae Detachment.** Each Orderly is assigned to a unit (l.2322). This is only shown as text, because the Detachment is an Elites unit.
+- **Medicae Detachment.** Each Orderly is assigned to a unit (l.1083). This is only shown as text, because the Detachment is an Elites unit.
 - **Cyber-Augmetics on Mutant Spawn.** Mutant Spawn has no Provenance rule, so it gets no Provenance options.
 
 ## Rules shown as text only (not enforced)

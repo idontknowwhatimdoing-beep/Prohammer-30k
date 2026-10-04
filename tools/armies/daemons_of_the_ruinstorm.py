@@ -1,6 +1,6 @@
 """Daemons of the Ruinstorm (Age of Darkness army list for ProHammer Classic).
 
-Source: /home/claude/src/v4/Daemons_of_the_Ruinstorm.txt
+Source: /home/claude/src/Daemons_of_the_Ruinstorm_v2.txt
 Questions: tools/questions/Daemons of the Ruinstorm.md
 """
 from armies.common import *  # noqa: F401,F403
@@ -574,7 +574,7 @@ RANGED = [
     ("Rift Barb", (5, 8, 10)),
 ]
 RUINSTORM_DISC = "Ruinstorm"
-# Ruinstorm Psychic Powers (L4374-4481), same entry shape as tools/data/psychic_powers.py; added to PSY.POWERS in build()
+# Ruinstorm Psychic Powers (L1201-1272), same entry shape as tools/data/psychic_powers.py; added to PSY.POWERS in build()
 RUINSTORM_POWERS = {
     "Aetheric Bolt": dict(discipline=RUINSTORM_DISC, type="Witchfire", profile=('18"', "6", "3", "Witchfire, Assault 2"),
                           text="Ruinstorm Psychic Power. Witchfire - range 18\", S6, AP3, Assault 2."),

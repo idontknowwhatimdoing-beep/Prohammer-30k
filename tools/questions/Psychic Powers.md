@@ -19,3 +19,8 @@ psykers with a single extra power (Burning Lore, Stormseer Epistolary, Master of
    Sons Techmarine Covenant is a Psyker (Mastery Level 1) and selects one power from the Discipline of the Covenant's
    Prosperine Cult. The Cult is chosen once for the whole Covenant (up to three Techmarines). *Question:* OK, or should
    each Techmarine (an Independent Character) choose his own Cult?
+
+2. **Possession for the Rogue Psyker (Exercitus Imperialis).** C L2463: Possession "MAY ONLY BE USED BY A PSYKER WITH
+   MASTERY LEVEL 2 OR GREATER"; the Rogue Psyker has no Mastery Level (one power per turn; an Alpha Psyker two).
+   *Built:* like the Esoterist, Possession is hidden unless the Rogue Psyker is upgraded to an Alpha Psyker. *Question:*
+   OK, or may every Rogue Psyker (or none) select Possession?

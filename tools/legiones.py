@@ -81,6 +81,20 @@ def vehicle_profile(key, name, ut, bs, f, s, r):
     return profile(uid("prof-veh", key, name), name, gs.VEHICLE, "Vehicle", chars)
 
 
+def sh_vehicle_profile(key, name, ut, bs, f, s, r, sp):
+    """Super-heavy vehicle: Structure Points in their own column."""
+    chars = [(gs.char_id("Super-heavy Vehicle", c), c, v)
+             for c, v in zip(gs.SH_VEHICLE_CHARS, [ut, bs, f, s, r, sp])]
+    return profile(uid("prof-shveh", key, name), name, gs.SH_VEHICLE, "Super-heavy Vehicle", chars)
+
+
+def sh_walker_profile(key, name, ws, bs, s, f, si, r, i, a, sp, ut="Super-heavy Walker"):
+    """Knights, Titans and other super-heavy walkers: Structure Points in their own column."""
+    chars = [(gs.char_id("Super-heavy Walker", c), c, v)
+             for c, v in zip(gs.SH_WALKER_CHARS, [ut, ws, bs, s, f, si, r, i, a, sp])]
+    return profile(uid("prof-shwalker", key, name), name, gs.SH_WALKER, "Super-heavy Walker", chars)
+
+
 def transport_profile(key, name, cap, access, fire):
     chars = [(gs.char_id("Transport", c), c, v) for c, v in zip(gs.TRANSPORT_CHARS, [cap, access, fire])]
     return profile(uid("prof-tr", key, name), name, gs.TRANSPORT, "Transport", chars)

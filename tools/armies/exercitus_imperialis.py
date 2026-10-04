@@ -346,6 +346,7 @@ RULES = {
     "Special Selection (Mutant Spawn)": "Mutant Spawn may only be selected by an army with the Tainted Flesh Provenance.",
     "Vehicle Squadron": "The vehicles form a squadron and follow the Vehicle Squadron rules of ProHammer Classic.",
     "Super-heavy Tank": "Follows the Super-heavy Vehicle (Tank) rules of ProHammer Classic.",
+    "Super-heavy Vehicle": "Follows the Super-heavy Vehicle rules of ProHammer Classic (the Gorgon is not a Tank).",
     "Infantry Platoon": "An Imperialis Militia Infantry Platoon (1 Platoon Command Cadre and 2-5 Imperialis Militia "
                         "Infantry Squads) occupies a single Troops choice. Each unit deploys and operates independently. "
                         "A Platoon Command Cadre selected as part of a Platoon does not occupy an HQ choice.",
@@ -658,7 +659,7 @@ WARGEAR = {
 }
 
 # ============================================================== armoury lists
-# Exercitus Imperialis Armoury (v4 source lines 7130-8000). Items: (name, pts) or (name, pts, show, hide) where
+# Exercitus Imperialis Armoury (Exercitus_Imperialis_v2.txt lines 3084-3448). Items: (name, pts) or (name, pts, show, hide) where
 # show/hide are Provenance names or zero-argument callables returning conditions (see gate_mods).
 _LAS = ("Laspistol or Autopistol", 0)
 ARMOURY = {
@@ -975,9 +976,9 @@ def gorgon_parts():
                         slot(uid(mortar, "rear"), "Rearward sponson pair", "Heavy Bolter",
                              [("Heavy Flamer", 0), ("Autocannon", 10), ("Multi-Laser", 10), ("Lascannon", 20)])])]),
                 vehicle_upgrades(t, kit=["Searchlight", "Smoke Launchers"], superheavy=True)]
-    return (lambda t: vehicle_profile(t, "Auxilia Gorgon", "Super-heavy Vehicle (3 Structure Points)", 3, 14, 14, 10),
+    return (lambda t: sh_vehicle_profile(t, "Auxilia Gorgon", "Super-heavy Vehicle", 3, 14, 14, 10, 3),
             ["Twin-linked Autocannon", "Twin-linked Autocannon", "Gorgon Mortar Battery", "Searchlight",
-             "Smoke Launchers"], ["Super-heavy Tank", "Heavily Armoured Prow", "Reduced Blast", "Gorgon Transport"],
+             "Smoke Launchers"], ["Super-heavy Vehicle", "Heavily Armoured Prow", "Reduced Blast", "Gorgon Transport"],
             groups,
             lambda t: transport_profile(t, "Auxilia Gorgon", "40 models", "Front assault ramp (up to two units may "
                                                                           "embark/disembark per turn)", "None"))
@@ -1074,7 +1075,10 @@ def advisor_links(key, names, title="Attached Advisors", show=(), extra=()):
     """Group of links to shared advisors (any number of Attached Advisors may join a unit; each advisor's own 0-1 /
     0-n limit counts across the Detachment)."""
     gid = k("grp", key, "advisors", title)
-    links = [link(uid("link", gid, n), ADVISOR[n], n) for n in names]
+    # "No unit may contain more than one Cartographica Adept"
+    links = [link(uid("link", gid, n), ADVISOR[n], n,
+                  constraints=[constraint(uid("link", gid, n, "max"), "max", 1)] if n == "Cartographica Adept" else [])
+             for n in names]
     mods = gate_mods(None, show) if show else []
     return group(gid, title, links=links, mods=mods)
 
@@ -1308,7 +1312,8 @@ def platoon_command_cadre(key, in_platoon=False):
                   show=["Horse Lords"], hide=[lambda: cond(k("opt", uid(u, "p"), "Jump Packs (Drop Assault Regiments)"),
                                                            u, "atLeast", 1)])
     jump = opt(uid(u, "p"), "Jump Packs (Drop Assault Regiments)", 5, ["Jump Pack"], per_unit=u,
-               show=["Drop Assault Regiments"])
+               show=["Drop Assault Regiments"],
+               hide=[lambda: cond(k("opt", uid(u, "p"), "Mounted (Horse Lords)"), u, "atLeast", 1)])
     sniper = opt(uid(u, "p"), "One Bodyguard: Sniper Rifle (Frontier Marksmen)", 5, ["Sniper Rifle"],
                  show=["Frontier Marksmen"])
     prov = provenance_options(uid(u, "p"), u, kinds=("cameleoline", "mining", "void", "advanced"))
@@ -1339,7 +1344,9 @@ def rogue_psyker():
     u = k("unit", "Rogue Psyker")
     key = k("rp")
     alpha = upgrade(key, "Alpha Psyker", 25, rules_=["Alpha Psyker"])
-    pw = psychic_powers(k("rp", "powers"), u, 0, ["Telepathy", "Daemonology (Malefic)"],
+    # Possession: Mastery Level 2 or greater only - offered only to an Alpha Psyker (two powers per turn)
+    pw = psychic_powers(k("rp", "powers"), u, 0, ["Telepathy", "Daemonology (Malefic)"], exclude=["Possession"],
+                        extra=[("Possession", [cond(uid(key, "upgrade", "Alpha Psyker"), u, "atLeast", 1)])],
                         title="Rogue Psyker psychic powers (+20 points each, at least one, up to three)")
     for e in pw.iter("selectionEntry"):
         e.find("costs/cost").set("value", "20")
@@ -2229,8 +2236,8 @@ def malcador():
     name = "0-1 Auxilia Malcador Heavy Tank"
     u = k("unit", name)
     return unit(name, 235, HS, "Heavy Support", key=u, constraints=[unique(u, 1, "force")],
-                profiles=[vehicle_profile(u, "Malcador Heavy Tank", "Super-heavy Vehicle (Tank), 2 Structure Points",
-                                          3, 13, 13, 12)],
+                profiles=[sh_vehicle_profile(u, "Malcador Heavy Tank", "Super-heavy Vehicle (Tank)",
+                                             3, 13, 13, 12, 2)],
                 kit=["Battle Cannon", "Autocannon", "Autocannon", "Autocannon", "Searchlight", "Smoke Launchers"],
                 rules_=["Super-heavy Tank", "High-speed Drive"],
                 groups=[slot(u, "Replace traverse-mounted Battle Cannon", "Battle Cannon",

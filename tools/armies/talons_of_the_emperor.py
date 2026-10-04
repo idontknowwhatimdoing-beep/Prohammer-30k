@@ -272,8 +272,8 @@ WEAPONS = {
     "Iliastus Accelerator Culverin": ('36"', "7", "2", "Heavy 5, Rending, Heliothermic Detonation"),
     "Twin-linked Iliastus Accelerator Cannon": ('60"', "7", "2", "Heavy 3, Twin-Linked, Rending, Rapid Tracking, "
                                                                  "Heliothermic Detonation"),
-    "Dreadnought Close Combat Weapon": ("-", "x2", "-", "Power Weapon; a second Dreadnought Close Combat Weapon "
-                                                        "gives +1 Attack"),
+    "Dreadnought Close Combat Weapon": ("-", "x2 (max 10)", "-", "Power Weapon; a second Dreadnought Close Combat "
+                                                                 "Weapon gives +1 Attack"),
     # Sisters of Silence
     "Bolt Pistol": ('12"', "4", "5", "Pistol"),
     "Boltgun": ('24"', "4", "5", "Rapid Fire"),

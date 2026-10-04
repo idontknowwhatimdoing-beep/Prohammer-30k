@@ -52,6 +52,30 @@
 <characteristicType id="54df-9f85-8d55-7440" name="Type" />
 </characteristicTypes>
 </profileType>
+<profileType id="335c-a701-0509-5f5d" name="Super-heavy Walker">
+<characteristicTypes>
+<characteristicType id="6f93-01c1-2d25-0b63" name="Unit Type" />
+<characteristicType id="c97b-5749-6461-19a3" name="WS" />
+<characteristicType id="7a81-83e0-37a7-38f9" name="BS" />
+<characteristicType id="884b-6a04-c7b9-23e7" name="S" />
+<characteristicType id="1389-a3de-6f47-9793" name="Front" />
+<characteristicType id="d2b2-91ef-3fd8-99f8" name="Side" />
+<characteristicType id="b70c-f158-51ac-37dd" name="Rear" />
+<characteristicType id="3ac3-96a5-b250-4481" name="I" />
+<characteristicType id="1e19-e4ce-cc1c-deab" name="A" />
+<characteristicType id="c33f-8a49-afe7-407a" name="Structure Points" />
+</characteristicTypes>
+</profileType>
+<profileType id="3784-9225-99aa-24c2" name="Super-heavy Vehicle">
+<characteristicTypes>
+<characteristicType id="8ca0-e92f-512f-e034" name="Unit Type" />
+<characteristicType id="c687-dadd-0947-7886" name="BS" />
+<characteristicType id="bd1d-dd4c-79f8-009d" name="Front" />
+<characteristicType id="0be6-c3fc-546e-76c1" name="Side" />
+<characteristicType id="0554-1731-f72d-eeac" name="Rear" />
+<characteristicType id="ed01-1dd6-46f1-c631" name="Structure Points" />
+</characteristicTypes>
+</profileType>
 <profileType id="3dca-e183-c6eb-8cea" name="Transport">
 <characteristicTypes>
 <characteristicType id="43e8-af23-5b9c-f1d8" name="Capacity" />

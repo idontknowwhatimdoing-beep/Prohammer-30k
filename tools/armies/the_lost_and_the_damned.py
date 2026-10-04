@@ -987,7 +987,8 @@ def strike_force():
                   unit_profile(u, "Strike Prime", "Infantry (Character)", 5, 5, 4, 4, 2, 4, 3, 9, "3+"),
                   kit=["Power Armour", "Bolt Pistol", "Frag Grenades", "Krak Grenades", "Special Issue Ammunition"],
                   groups=[slot(pk, "Replace Close Combat Weapon", "Close Combat Weapon",
-                               [("Power Weapon", 10), ("Power Fist", 15), ("Lightning Claw", 15), ("Relic Blade", 20)]),
+                               [("Chainsword", 0), ("Power Weapon", 10), ("Power Fist", 15), ("Lightning Claw", 15),
+                                ("Relic Blade", 20)]),
                           take(pk, "Strike Prime Wargear", [("Melta Bombs", 5), ("Refractor Field", 15)])])
     op = model(u, "Sigillite Strike Operative", 4, 9, 25,
                unit_profile(u, "Sigillite Strike Operative", "Infantry", 5, 5, 4, 4, 1, 4, 2, 9, "3+"),
@@ -1230,6 +1231,9 @@ def build():
     apply_ashes(reaver)
     add_eldritch_tutelage(legion_roots + more_shared + reaver_retinues)
     bs_units = [reaver, marauder_squad(), chymeriae_squad()]
+    # Ashes of the Armoury also applies to the Blackshield-specific units (author's answer)
+    for e in bs_units[1:]:
+        apply_ashes(e)
     for e in bs_units + legion_roots:
         add_mods(e, [hide_if(in_force(SIG_FORCE))])
 

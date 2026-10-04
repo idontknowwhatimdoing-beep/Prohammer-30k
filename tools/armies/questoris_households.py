@@ -401,7 +401,8 @@ WARGEAR = {
 # ---------------------------------------------------------------- ranks
 # name, slot cat, slot name, cost modifier, 0-1?, WS/BS modifier, Front modifier, rules, compulsory
 RANKS = [
-    ("Seneschal", HQ, "HQ", 50, True, 1, 0, ["Master Knight", "Ideal Mission Commander"]),
+    ("Seneschal", HQ, "HQ", 50, True, 1, 0, ["Master Knight", "Ideal Mission Commander",
+                                                   "The Army's Warlord (Questoris Households)"]),
     ("Lord Scion", HQ, "HQ", 25, True, 1, 0, ["Veteran Knight"]),
     ("Scion Martial", TROOPS, "Troops", 0, False, 0, 0, ["Martial Knight", "Household Banner"]),
     ("Scion Aspirant", TROOPS, "Troops", -35, False, -1, 0, ["Aspirant", "Household Banner", "Young Blood"]),
@@ -578,8 +579,7 @@ def armour_model(rank, mod_wsbs, mod_front, unit_id, a):
     name, cost, stats, sp, kit, rules_, opts = a
     ws, bs, s, f, si, r, i, att = stats
     mid = uid("model", unit_id, name)
-    prof = walker_profile(mid, name, ws + mod_wsbs, bs + mod_wsbs, s, f + mod_front, si, r, i, att,
-                          ut=f"{UT}; Structure Points {sp}")
+    prof = sh_walker_profile(mid, name, ws + mod_wsbs, bs + mod_wsbs, s, f + mod_front, si, r, i, att, sp, ut=UT)
     links_ = []
     for item, real, n in kit:
         links_.append(gear(mid, item) if real is None else gear_n(mid, real, n))

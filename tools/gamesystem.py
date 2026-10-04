@@ -24,11 +24,18 @@ WEAPON = uid("pt", "Weapon")
 WEAPON_CHARS = ["Range", "S", "AP", "Type"]
 WALKER = uid("pt", "Walker")
 WALKER_CHARS = ["Unit Type", "WS", "BS", "S", "Front", "Side", "Rear", "I", "A"]
+# Knights, super-heavy vehicles and Titans: Structure Points in their own column
+SH_WALKER = uid("pt", "Super-heavy Walker")
+SH_WALKER_CHARS = ["Unit Type", "WS", "BS", "S", "Front", "Side", "Rear", "I", "A", "Structure Points"]
+SH_VEHICLE = uid("pt", "Super-heavy Vehicle")
+SH_VEHICLE_CHARS = ["Unit Type", "BS", "Front", "Side", "Rear", "Structure Points"]
 TRANSPORT = uid("pt", "Transport")
 TRANSPORT_CHARS = ["Capacity", "Access Points", "Fire Points"]
 
 PROFILE_TYPES = {"Unit": (UNIT, UNIT_CHARS), "Vehicle": (VEHICLE, VEHICLE_CHARS),
                  "Walker": (WALKER, WALKER_CHARS), "Weapon": (WEAPON, WEAPON_CHARS),
+                 "Super-heavy Walker": (SH_WALKER, SH_WALKER_CHARS),
+                 "Super-heavy Vehicle": (SH_VEHICLE, SH_VEHICLE_CHARS),
                  "Transport": (TRANSPORT, TRANSPORT_CHARS)}
 
 

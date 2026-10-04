@@ -9975,7 +9975,7 @@
 <profile id="8684-f26e-d4e4-42c7" name="Dreadnought Close Combat Weapon" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
 <characteristics>
 <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">-</characteristic>
-<characteristic name="S" typeId="6204-806b-a18a-c0be">x2</characteristic>
+<characteristic name="S" typeId="6204-806b-a18a-c0be">x2 (max 10)</characteristic>
 <characteristic name="AP" typeId="964e-6f66-dcaa-247a">-</characteristic>
 <characteristic name="Type" typeId="54df-9f85-8d55-7440">Power Weapon; a second Dreadnought Close Combat Weapon gives +1 Attack</characteristic>
 </characteristics>

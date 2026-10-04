@@ -9,6 +9,8 @@ Module: `tools/armies/solar_auxilia.py`.
 
 2. **Ireton MaSade vs Disciplined Command (L3762, L4076-4082).** "MaSade must be the army's Warlord." The author answered that this does NOT override Disciplined Command (precedence Lord Marshal - Legate Commander - Strategos - Auxilia Tank Commander); MaSade himself is not named in that precedence. Built: rule text plus a warning on MaSade when the army also contains a Legate Commander or an Auxilia Tactical Command Section (Strategos). Question: what is the consequence - may an army with MaSade not include a Legate Commander / Lord Marshal / Strategos (should that be an error), or where does MaSade rank in the precedence?
 
+3. **Life Ward asterisk options (L892-896).** "\*Only one Life Ward in the Detachment may select an option marked with an asterisk" (Power Fist\*, Inferno Pistol\*). New Recruit cannot tell which Life Ward took which weapon, so built: an error when the Detachment contains two or more asterisk selections in total. This also flags a single Life Ward that takes both a Power Fist and an Inferno Pistol. Question: may that one Life Ward take both asterisk options (then the error is too strict), or is it one asterisk option per Detachment (as built)?
+
 ## Rules shown as text only (not enforced)
 
 - Warlord precedence (Disciplined Command), Doctrine Warlord requirements, MaSade "must be Warlord".

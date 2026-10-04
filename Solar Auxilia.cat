@@ -447,7 +447,7 @@
 <conditionGroups>
 <conditionGroup type="and">
 <conditions>
-<condition field="selections" scope="fcf5-a033-f50b-c02b" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9027-4ece-2d41-b6f5" type="atLeast" />
+<condition field="selections" scope="fcf5-a033-f50b-c02b" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9027-4ece-2d41-b6f5" type="atLeast" />
 <condition field="selections" scope="fcf5-a033-f50b-c02b" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d028-9e72-79f1-4f5c" type="equalTo" />
 </conditions>
 </conditionGroup>
@@ -457,7 +457,7 @@
 <conditionGroups>
 <conditionGroup type="and">
 <conditions>
-<condition field="selections" scope="fcf5-a033-f50b-c02b" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="35c2-08f0-d400-5561" type="atLeast" />
+<condition field="selections" scope="fcf5-a033-f50b-c02b" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="35c2-08f0-d400-5561" type="atLeast" />
 <condition field="selections" scope="fcf5-a033-f50b-c02b" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d028-9e72-79f1-4f5c" type="equalTo" />
 </conditions>
 </conditionGroup>
@@ -467,7 +467,7 @@
 <conditionGroups>
 <conditionGroup type="and">
 <conditions>
-<condition field="selections" scope="fcf5-a033-f50b-c02b" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="74de-c332-a42e-105f" type="atLeast" />
+<condition field="selections" scope="fcf5-a033-f50b-c02b" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="74de-c332-a42e-105f" type="atLeast" />
 <condition field="selections" scope="fcf5-a033-f50b-c02b" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d028-9e72-79f1-4f5c" type="equalTo" />
 </conditions>
 </conditionGroup>
@@ -6509,6 +6509,22 @@
 </selectionEntry>
 <selectionEntry id="cb1a-6fdb-b36e-a36f" name="Achmiris Recon Section" hidden="false" collective="false" import="true" type="unit">
 <modifiers>
+<modifier type="add" field="error" value="Special Ammunition may only be purchased if the Section retains its Sniper Rifles.">
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="cb1a-6fdb-b36e-a36f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f45f-9159-802a-c3e6" type="atLeast" />
+<condition field="selections" scope="cb1a-6fdb-b36e-a36f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="98ad-f916-2ea0-5074" type="atLeast" />
+</conditions>
+</conditionGroup>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="cb1a-6fdb-b36e-a36f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bda3-9aa3-4324-b0fc" type="atLeast" />
+<condition field="selections" scope="cb1a-6fdb-b36e-a36f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ccc8-417f-f147-adbf" type="atLeast" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
 <modifier type="add" field="error" value="Void &amp; Siege Cohort: no more than one Achmiris Recon Section may be selected.">
 <conditions>
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7d47-aa43-dfe2-4ae5" type="atLeast" />
@@ -12182,6 +12198,24 @@
 </costs>
 </selectionEntry>
 <selectionEntry id="d363-f99d-d3df-9b23" name="Achmiris Recon Section (Veiled Ranks)" hidden="false" collective="false" import="true" type="unit">
+<modifiers>
+<modifier type="add" field="error" value="Special Ammunition may only be purchased if the Section retains its Sniper Rifles.">
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="d363-f99d-d3df-9b23" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8660-2df3-aa18-1ac5" type="atLeast" />
+<condition field="selections" scope="d363-f99d-d3df-9b23" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c811-63f8-e2ab-e557" type="atLeast" />
+</conditions>
+</conditionGroup>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="d363-f99d-d3df-9b23" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fa64-ccc0-e17d-9ca6" type="atLeast" />
+<condition field="selections" scope="d363-f99d-d3df-9b23" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4fa4-23af-657a-ccd2" type="atLeast" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+</modifiers>
 <infoLinks>
 <infoLink id="eed1-143f-2fea-a821" name="Disciplined Fire" hidden="false" targetId="1502-70be-b878-b60c" type="rule" />
 <infoLink id="30fa-91fd-c703-f626" name="Close Formation Fighting" hidden="false" targetId="41fb-8bde-c0f8-f1d2" type="rule" />
@@ -12449,6 +12483,24 @@
 </costs>
 </selectionEntry>
 <selectionEntry id="75eb-ec0c-af7b-943d" name="Achmiris Recon Section (Veiled Bodyguard)" hidden="false" collective="false" import="true" type="unit">
+<modifiers>
+<modifier type="add" field="error" value="Special Ammunition may only be purchased if the Section retains its Sniper Rifles.">
+<conditionGroups>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="75eb-ec0c-af7b-943d" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1915-71bd-f987-8f5e" type="atLeast" />
+<condition field="selections" scope="75eb-ec0c-af7b-943d" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1933-7503-17f1-d58b" type="atLeast" />
+</conditions>
+</conditionGroup>
+<conditionGroup type="or">
+<conditions>
+<condition field="selections" scope="75eb-ec0c-af7b-943d" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1260-77bb-b044-5233" type="atLeast" />
+<condition field="selections" scope="75eb-ec0c-af7b-943d" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b924-9fff-5771-8ebf" type="atLeast" />
+</conditions>
+</conditionGroup>
+</conditionGroups>
+</modifier>
+</modifiers>
 <constraints>
 <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="6624-89ac-717a-dd92" type="max" />
 </constraints>
@@ -16603,7 +16655,7 @@ RESTRICTIONS - No more than one Lykis Maelstrom Section and no more than one Ach
 <description>Maledictions weaken and hinder opposing units. Invoked during the psyker's Movement phase unless otherwise noted. Duration: until the start of the psyker's own next turn. Maledictions with the same effects stack if they are differently named powers; exact copies (same name) cannot be stacked on the same unit. Characteristics cannot be modified above 10 or below 1. If a psyker with an active malediction is removed from play, its maledictions are immediately cancelled.</description>
 </rule>
 <rule id="c913-19fd-3d6e-40c8" name="Psychic Power Type: Conjuration" hidden="false">
-<description>Conjurations summon outside forces onto the battlefield. Invoked at the start of the psyker's Movement phase unless otherwise noted. A unit using a conjuration may not perform any other actions that turn (no movement, shooting, other psychic powers, charging, etc.). Any doubles rolled on the psychic test inflict Perils of the Warp, whether or not the conjuration succeeded. Can only summon daemons matching the psyker's Chaos mark. Each psyker may only successfully cast a selected conjuration once per game. Summoned psykers may not select conjuration powers. Summoned units arrive following the Deep Strike rules; the centre model must be placed within the power's range.</description>
+<description>Conjurations summon outside forces onto the battlefield. Invoked at the start of the psyker's Movement phase unless otherwise noted. A unit using a conjuration may not perform any other actions that turn (no movement, shooting, other psychic powers, charging, etc.). Any doubles rolled on the psychic test inflict Perils of the Warp, whether or not the conjuration succeeded. Can only summon daemons matching the psyker's Chaos mark; a psyker without a Chaos mark (e.g. a Legiones Astartes Esoterist or Zardu Layak) may summon any of the daemons listed in the power. Summoned units are not bought or recorded in the roster. Each psyker may only successfully cast a selected conjuration once per game. Summoned psykers may not select conjuration powers. Summoned units arrive following the Deep Strike rules; the centre model must be placed within the power's range.</description>
 </rule>
 <rule id="d57f-7eaf-5589-f80d" name="Psychic Power Type: Witchfire" hidden="false">
 <description>Witchfire powers are ranged attacks and count as a shooting attack for the model (it may not make other ranged attacks unless normally allowed more than one). Invoked during the psyker's Shooting phase. Treated as Assault weapons unless otherwise specified. After invoking the power the psyker must still roll To Hit, with line of sight and range as normal; a witchfire power with no weapon/attack profile does not roll To Hit unless otherwise specified. A psyker may only invoke one witchfire power per turn, unless the model may shoot more than one weapon AND knows two or more different witchfire powers. Psychic powers which count as a shooting attack are witchfire powers.</description>

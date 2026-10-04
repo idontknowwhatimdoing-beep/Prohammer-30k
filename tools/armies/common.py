@@ -33,6 +33,8 @@ FORT = gs.cat("Fortification")
 COMMANDER = gs.CAT_COMMANDER          # counts towards the compulsory HQ choice
 LINE = gs.CAT_LINE                    # counts towards the two compulsory Troops choices
 vehicle_profile = L.vehicle_profile
+sh_vehicle_profile = L.sh_vehicle_profile
+sh_walker_profile = L.sh_walker_profile
 
 ARMY_KEY = None
 

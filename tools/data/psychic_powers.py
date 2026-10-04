@@ -36,7 +36,9 @@ POWER_TYPES = {
         "Conjurations summon outside forces onto the battlefield. Invoked at the start of the psyker's Movement phase "
         "unless otherwise noted. A unit using a conjuration may not perform any other actions that turn (no movement, "
         "shooting, other psychic powers, charging, etc.). Any doubles rolled on the psychic test inflict Perils of the "
-        "Warp, whether or not the conjuration succeeded. Can only summon daemons matching the psyker's Chaos mark. Each "
+        "Warp, whether or not the conjuration succeeded. Can only summon daemons matching the psyker's Chaos mark; a psyker without a Chaos mark (e.g. a Legiones "
+        "Astartes Esoterist or Zardu Layak) may summon any of the daemons listed in the power. Summoned units are not "
+        "bought or recorded in the roster. Each "
         "psyker may only successfully cast a selected conjuration once per game. Summoned psykers may not select "
         "conjuration powers. Summoned units arrive following the Deep Strike rules; the centre model must be placed "
         "within the power's range."),

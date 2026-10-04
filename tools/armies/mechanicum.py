@@ -140,6 +140,10 @@ RULES = {
         "the beginning of the controlling player's next turn it gains one of: Tank Hunters, Move Through Cover or "
         "Counter-Attack. A unit may only benefit from one Binaric Stratagem at a time. (Replaced by Binaric Command "
         "Network with the Secutarii Order.)"),
+    "Shattersphere Grenades": (
+        "A model equipped with Shattersphere Grenades may fire one during the Shooting phase using the Shattersphere "
+        "Grenade profile (an exception to the normal ProHammer restriction on using grenades as shooting weapons). A "
+        "model which fires a Shattersphere Grenade may not fire another weapon during the same Shooting phase."),
     "Rad Poisoning": (
         "When resolving a shooting attack with Rad Poisoning, each unmodified To Wound roll of 6 inflicts two Wounds "
         "instead of one, each allocated and saved separately. No effect against Vehicles."),
@@ -730,7 +734,7 @@ WEAPONS.update({
     "Volkite Sentinel": ('15"', "5", "5", "Assault 2, Rending"),
     "Twin-linked Volkite Charger": ('15"', "5", "5", "Assault 2, Rending, Twin-linked"),
     "Two Heavy Flamers": ("Template", "5", "4", "Assault 1"),
-    "Two Lightning Claws": ("-", "User", "-", "Power Weapon, re-roll failed To Wound rolls, Specialist Weapon"),
+    "Two Lightning Claws": ("-", "User", "-", "Power Weapon, re-roll failed To Wound rolls, Specialist Weapon, +1 Attack"),
     "Two Power Fists": ("-", "x2", "-", "Power Weapon, Unwieldy, Specialist Weapon"),
     "Twin-linked Multilaser": ('36"', "6", "6", "Heavy 3, Twin-linked"),
     "Two Twin-linked Rotor Cannons": ('30"', "3", "6", "Salvo 3/4, Twin-linked"),
@@ -1309,7 +1313,8 @@ def volatile_any(u, model_ids):
 
 WARGEAR.update({
     "Void-Hardened Armour": ("Armour Save unchanged; failed Armour Saves against Blast or Template weapons may be "
-                             "re-rolled; Advance distance -1\"; Charge and Pursuit distances -1\"."),
+                             "re-rolled; Advance distance -1\"; Charge and Pursuit distances -1\". An attack which "
+                             "allows no Armour Save receives no benefit from this rule."),
     "Exploration Party": ("The unit gains Scout (Explorator Order; up to one Troops choice; not Vehicles or "
                           "Cybernetica Cortex models).", ["Scouts"]),
     "Perfected Specimens": "The unit may purchase two different Controlled Augmentations instead of one.",
@@ -1318,6 +1323,14 @@ WARGEAR.update({
 
 # ======================================================================= HQ
 CHAR_NAMED = [KH, ZK, CDI]          # count as an Archmagos
+
+
+def order_warlord_gear(u):
+    """Free equipment an Order gives its Warlord (Ordo Reductor: Reductor War Munitions; Ordinator: Bombardment)."""
+    return [opt(u, "Reductor War Munitions (Ordo Reductor Warlord)", 0, gear_=["Ordo Reductor War Munitions"],
+                need=[o("Ordo Reductor"), is_wl(u)]),
+            opt(u, "Ordinator Bombardment (Ordinator Warlord)", 0,
+                gear_=["Ordinator Bombardment (Ordinator Order)"], need=[o("Ordinator"), is_wl(u)])]
 
 
 def magos(name, cost, stats, kit, pistol_swaps, melee_swaps, one_of, add_weapons, wargear, occ, rules_, extra=()):
@@ -1330,7 +1343,7 @@ def magos(name, cost, stats, kit, pistol_swaps, melee_swaps, one_of, add_weapons
     wg = take(u, "Wargear", wargear + [("Cyber-occularis", 15, occ)])
     link_mods(wg, "Rad Furnace", [modifier("set", PTS, 20, groups=[all_of(o("Genetor - Magos Biologis"), is_wl(u))])])
     myr = take(u, "Myrmidax Warlord: additional ranged weapon", [
-        ("Rotor Cannon", 5), ("Volkite Charger", 10), ("Meltagun", 10), ("Graviton Gun", 15), ("Irad Cleanser", 20),
+        ("Rotor Cannon", 5), ("Volkite Charger", 5), ("Meltagun", 10), ("Graviton Gun", 15), ("Irad Cleanser", 20),
         ("Phased Plasma-Fusil", 20), ("Photon Thruster", 25)], max_total=1)
     show_all(myr, o("Myrmidax"), is_wl(u))
     groups = [slot(u, "Replace " + kit[1], kit[1], pistol_swaps),
@@ -1338,8 +1351,7 @@ def magos(name, cost, stats, kit, pistol_swaps, melee_swaps, one_of, add_weapons
               take(u, "May take one of", one_of, max_total=1),
               take(u, "One additional weapon", add_weapons, max_total=1), wg, myr]
     ents = [abeyant, mc,
-            opt(u, "Reductor War Munitions (Ordo Reductor Warlord)", 0, gear_=["Ordo Reductor War Munitions"],
-                need=[o("Ordo Reductor"), is_wl(u)]),
+            *order_warlord_gear(u),
             *extra]
     # Dark Invocation (Daemon Engine Horde)
     psy = opt(u, "Dark Invocation: Psyker (Mastery Level 1)", 30, rules_=["Dark Invocation", "Psyker"],
@@ -2451,7 +2463,8 @@ def named(n, cost, stats, kit, rules_, alleg, groups=(), entries=(), mods=(), wl
         ms.append(err(f"{n} must be the army's Warlord.", cond(WARLORD, u, "lessThan", 1)))
     return unit(n, cost, HQ, "HQ", profiles=[unit_profile(u, n, "Infantry (Character)", *stats)], kit=kit,
                 rules_=["Independent Character", "Iron and Machine", "Battlesmith", "Cybertheurgist"] + rules_,
-                groups=list(groups), entries=list(entries), mods=ms, constraints=[unique(u, 1, "roster")],
+                groups=list(groups), entries=list(entries) + order_warlord_gear(u), mods=ms,
+                constraints=[unique(u, 1, "roster")],
                 links_extra=[warlord_link(u, hide_orders=[], fixed=wl_fixed,
                                           extra_hide=[] if wl_fixed else [in_r(KH), in_r(ZK)])])
 
@@ -2688,7 +2701,9 @@ def _weapon_rules():
 def build():
     start(ARMY)
     register_data(rules=RULES, weapons=WEAPONS, multi_profile=MULTI, wargear=WARGEAR)
-    register_data(weapon_rules=_weapon_rules())
+    wr = _weapon_rules()
+    wr["Shattersphere Grenades"] = wr.get("Shattersphere Grenades", []) + ["Shattersphere Grenades"]
+    register_data(weapon_rules=wr)
     units = [allegiance(), army_config(),
              archmagos(), magos_dominus(), adjutant(), tech_priest_auxilia(), skitarii_marshal(), secutarii_axiarch(),
              lukas_chrom(), scoria(), kelbor_hal(), zagreus_kane(), calleb_decima(),

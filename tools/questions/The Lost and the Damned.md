@@ -27,6 +27,17 @@ Sigillite are Loyalist only (L1569).
    powers are pickable in the Librarian's Psychic Powers (The Alien Brotherhood only, they take the place of a normal
    power, one Eldar power per army); their text only says to use the Eldar army list rules. Question: please give the
    rules (type, range, effect) of Doom, Guide, Mind War and Eldritch Storm.
+2. **Force Organisation slots of the Blackshield units (L1210, L1416).** The Blackshield Marauder Squad and the
+   Chymeriae Squad entries give no Force Organisation slot. Built: Marauder Squad = Troops (counts towards the
+   compulsory Troops), Chymeriae Squad = Elites. Question: which slots should they use?
+3. **Agents of the Sigillite weapon costs (L1850-1872, L2036, L2220).** The Specialist Ranged Weapons table has no
+   points costs, and the only melee weapon listed is the Aether-shock Maul (15). The Preceptor "may replace his Bolt
+   pistol, Bolter and/or Power Weapon with weapons available to him from the Agents of the Sigillite Armoury, paying the
+   points costs listed there". Built: Bolt pistol -> Hand Flamer / Volkite Serpenta +5, Plasma Pistol +15; Bolter ->
+   Combi-weapons / Storm Bolter / Flamer / Volkite Charger +5, M.40 Stalker Bolter / Meltagun / Plasma Gun / Heavy Bolter
+   +10, Autocannon / Missile Launcher / Multi-Melta +15 (costs of the Strike Force Squad options); Power Weapon ->
+   Chainsword free, Power Fist / Lightning Claw / Aether-shock Maul +15, Relic Blade +20. Question: confirm these costs
+   and whether melee weapons other than the Aether-shock Maul are allowed.
 
 ## Shown as text only (not enforced)
 
@@ -42,4 +53,5 @@ Sigillite are Loyalist only (L1569).
 - Orders of the Sigillite; Agent of the Sigillite / Knight-Errant joining rules.
 - "Only Blackshield Characters, Veteran Sergeants and models with Armoury access" for individual Blackshield weapons
   beyond the slots built; "no model may select the same item twice" is enforced only inside each armoury group.
+- Desperate Warriors: the "minimum 1 point per model" is not checked (no model costs less than 3 points).
 - All weapon special rules (Overpressure, Deathlock, Lethal Exposure, Psi-shock, Stasis Anomaly ...).
