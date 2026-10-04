@@ -103,7 +103,7 @@
 <conditions>
 <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3604-ccf4-4a04-bc94" type="instanceOf" />
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
-<condition field="pts0-0000-0000-0001" scope="force" value="25" percentValue="true" shared="true" includeChildSelections="true" includeChildForces="false" childId="any" type="greaterThan" />
+<condition field="pts0-0000-0000-0001" scope="roster" value="25" percentValue="true" shared="true" includeChildSelections="true" includeChildForces="false" childId="3224-4c76-76b7-ae18" type="greaterThan" />
 </conditions>
 </modifier>
 <modifier type="add" field="error" value="A Primarch may only be selected as part of the army's Primary Detachment, never an Allied Detachment.">
@@ -196,6 +196,13 @@
 </costs>
 </selectionEntry>
 <selectionEntry id="0f25-c216-09c0-2d74" name="Legio Custodes Talon Master" hidden="false" collective="false" import="true" type="unit">
+<modifiers>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
+</modifiers>
 <infoLinks>
 <infoLink id="5adb-d854-e62c-119f" name="Legio Custodes" hidden="false" targetId="df2b-1101-446b-9913" type="rule" />
 <infoLink id="a034-7314-e9bd-aa81" name="Bulky" hidden="false" targetId="ccf7-2e91-4ee4-138e" type="rule" />
@@ -419,6 +426,13 @@
 </costs>
 </selectionEntry>
 <selectionEntry id="ebde-a9b8-0dcf-7e7c" name="Legio Custodes Shield-Captain" hidden="false" collective="false" import="true" type="unit">
+<modifiers>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
+</modifiers>
 <infoLinks>
 <infoLink id="c252-8a81-a4c5-31c9" name="Legio Custodes" hidden="false" targetId="df2b-1101-446b-9913" type="rule" />
 <infoLink id="bb44-c463-b588-e076" name="Bulky" hidden="false" targetId="ccf7-2e91-4ee4-138e" type="rule" />
@@ -640,6 +654,13 @@
 </costs>
 </selectionEntry>
 <selectionEntry id="6267-7d91-6d18-0cd1" name="Constantin Valdor" hidden="false" collective="false" import="true" type="unit">
+<modifiers>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
+</modifiers>
 <constraints>
 <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="9dcd-bc0a-d172-c04c" type="max" />
 </constraints>
@@ -772,6 +793,13 @@
 </costs>
 </selectionEntry>
 <selectionEntry id="b0f7-c032-eb5a-9688" name="Sisters of Silence Knight-Abyssal" hidden="false" collective="false" import="true" type="unit">
+<modifiers>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
+</modifiers>
 <infoLinks>
 <infoLink id="aae8-1638-af10-5303" name="Anathema Psykana" hidden="false" targetId="a366-522d-8ea5-a740" type="rule" />
 <infoLink id="e891-ba35-997e-d44c" name="Adamantium Will" hidden="false" targetId="3cc6-735d-945d-4fd7" type="rule" />
@@ -971,6 +999,13 @@
 </costs>
 </selectionEntry>
 <selectionEntry id="dde2-8cdb-378f-d672" name="Sisters of Silence Oblivion Knight-Centura" hidden="false" collective="false" import="true" type="unit">
+<modifiers>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
+</modifiers>
 <infoLinks>
 <infoLink id="38b5-46f4-ed09-2174" name="Anathema Psykana" hidden="false" targetId="a366-522d-8ea5-a740" type="rule" />
 <infoLink id="8a02-3ccc-584c-93d5" name="Adamantium Will" hidden="false" targetId="3cc6-735d-945d-4fd7" type="rule" />
@@ -1169,6 +1204,13 @@
 </costs>
 </selectionEntry>
 <selectionEntry id="60e7-82b1-46df-89a9" name="Jenetia Krole" hidden="false" collective="false" import="true" type="unit">
+<modifiers>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
+</modifiers>
 <constraints>
 <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="430d-e08c-6a19-c5e8" type="max" />
 </constraints>
@@ -1278,6 +1320,13 @@
 </costs>
 </selectionEntry>
 <selectionEntry id="82ee-7e0d-dc64-0552" name="Legio Custodes Custodian Guard Squad" hidden="false" collective="false" import="true" type="unit">
+<modifiers>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
+</modifiers>
 <infoLinks>
 <infoLink id="926b-4f73-a9cf-197b" name="Legio Custodes" hidden="false" targetId="df2b-1101-446b-9913" type="rule" />
 <infoLink id="4cf4-fbae-ee67-b7a4" name="Bulky" hidden="false" targetId="ccf7-2e91-4ee4-138e" type="rule" />
@@ -1497,6 +1546,13 @@
 </costs>
 </selectionEntry>
 <selectionEntry id="61f0-bfe8-2df0-6a05" name="Legio Custodes Sentinel Guard Squad" hidden="false" collective="false" import="true" type="unit">
+<modifiers>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
+</modifiers>
 <infoLinks>
 <infoLink id="13c5-ef9e-a63e-7f6e" name="Legio Custodes" hidden="false" targetId="df2b-1101-446b-9913" type="rule" />
 <infoLink id="e450-01c7-b793-827d" name="Bulky" hidden="false" targetId="ccf7-2e91-4ee4-138e" type="rule" />
@@ -1707,6 +1763,13 @@
 </costs>
 </selectionEntry>
 <selectionEntry id="94e3-fa27-4a3a-1463" name="Sisters of Silence Vigilator Cadre" hidden="false" collective="false" import="true" type="unit">
+<modifiers>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
+</modifiers>
 <infoLinks>
 <infoLink id="7898-dbcd-30d9-ac72" name="Anathema Psykana" hidden="false" targetId="a366-522d-8ea5-a740" type="rule" />
 <infoLink id="242d-3eb6-bfc0-0324" name="Adamantium Will" hidden="false" targetId="3cc6-735d-945d-4fd7" type="rule" />
@@ -1960,6 +2023,13 @@
 </costs>
 </selectionEntry>
 <selectionEntry id="2760-9c5a-0bf3-d3a4" name="Sisters of Silence Prosecutor Cadre" hidden="false" collective="false" import="true" type="unit">
+<modifiers>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
+</modifiers>
 <infoLinks>
 <infoLink id="6759-76e2-ab06-edd9" name="Anathema Psykana" hidden="false" targetId="a366-522d-8ea5-a740" type="rule" />
 <infoLink id="c3cd-fdbe-0edb-446d" name="Adamantium Will" hidden="false" targetId="3cc6-735d-945d-4fd7" type="rule" />
@@ -2216,6 +2286,13 @@
 </costs>
 </selectionEntry>
 <selectionEntry id="a98b-b398-c0a0-a29b" name="Sisters of Silence Witchseeker Cadre" hidden="false" collective="false" import="true" type="unit">
+<modifiers>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
+</modifiers>
 <infoLinks>
 <infoLink id="e571-0f42-c88d-ce2a" name="Anathema Psykana" hidden="false" targetId="a366-522d-8ea5-a740" type="rule" />
 <infoLink id="44ba-872e-3e12-6317" name="Adamantium Will" hidden="false" targetId="3cc6-735d-945d-4fd7" type="rule" />
@@ -2491,6 +2568,13 @@
 </costs>
 </selectionEntry>
 <selectionEntry id="13fa-c7bf-0a7c-a00b" name="Legio Custodes Hetaeron Guard Squad" hidden="false" collective="false" import="true" type="unit">
+<modifiers>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
+</modifiers>
 <infoLinks>
 <infoLink id="b438-69bc-962d-a46f" name="Legio Custodes" hidden="false" targetId="df2b-1101-446b-9913" type="rule" />
 <infoLink id="bd2f-a133-75d0-af9a" name="Bulky" hidden="false" targetId="ccf7-2e91-4ee4-138e" type="rule" />
@@ -2784,6 +2868,13 @@
 </costs>
 </selectionEntry>
 <selectionEntry id="8267-bb74-9cb1-c761" name="Legio Custodes Aquilon Terminator Squad" hidden="false" collective="false" import="true" type="unit">
+<modifiers>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
+</modifiers>
 <infoLinks>
 <infoLink id="ede5-6ec6-d101-d701" name="Legio Custodes" hidden="false" targetId="df2b-1101-446b-9913" type="rule" />
 <infoLink id="c14f-5270-43d6-1e87" name="Bulky" hidden="false" targetId="ccf7-2e91-4ee4-138e" type="rule" />
@@ -2964,6 +3055,13 @@
 </costs>
 </selectionEntry>
 <selectionEntry id="5a83-d702-1d6a-04d3" name="Legio Custodes Contemptor-Achillus Dreadnought" hidden="false" collective="false" import="true" type="unit">
+<modifiers>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
+</modifiers>
 <infoLinks>
 <infoLink id="f820-8485-9754-c685" name="Fleet" hidden="false" targetId="f476-21af-6ce0-b8da" type="rule" />
 <infoLink id="b8c2-5e80-b3c5-e2a1" name="Move Through Cover" hidden="false" targetId="c616-0756-b610-40d6" type="rule" />
@@ -3068,6 +3166,13 @@
 </costs>
 </selectionEntry>
 <selectionEntry id="2375-2b39-d5b6-ddf9" name="Legio Custodes Contemptor-Galatus Dreadnought" hidden="false" collective="false" import="true" type="unit">
+<modifiers>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
+</modifiers>
 <infoLinks>
 <infoLink id="fd56-34a1-a7c1-2d60" name="Fleet" hidden="false" targetId="f476-21af-6ce0-b8da" type="rule" />
 <infoLink id="8d26-a258-b298-7aac" name="Move Through Cover" hidden="false" targetId="c616-0756-b610-40d6" type="rule" />
@@ -3145,6 +3250,13 @@
 </costs>
 </selectionEntry>
 <selectionEntry id="15c6-6f61-c8c4-c305" name="Sisters of Silence Firebrand Destroyer Cadre" hidden="false" collective="false" import="true" type="unit">
+<modifiers>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
+</modifiers>
 <infoLinks>
 <infoLink id="85f5-4bb4-cd99-de63" name="Anathema Psykana" hidden="false" targetId="a366-522d-8ea5-a740" type="rule" />
 <infoLink id="fb25-cb2f-c169-0158" name="Adamantium Will" hidden="false" targetId="3cc6-735d-945d-4fd7" type="rule" />
@@ -3434,6 +3546,13 @@
 </costs>
 </selectionEntry>
 <selectionEntry id="f5d1-fd6e-5a01-8a0c" name="Sisters of Silence Raptor Guard" hidden="false" collective="false" import="true" type="unit">
+<modifiers>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
+</modifiers>
 <infoLinks>
 <infoLink id="514a-609f-2a3a-a6d1" name="Anathema Psykana" hidden="false" targetId="a366-522d-8ea5-a740" type="rule" />
 <infoLink id="5375-c80b-cc70-9ad6" name="Adamantium Will" hidden="false" targetId="3cc6-735d-945d-4fd7" type="rule" />
@@ -3759,6 +3878,13 @@
 </costs>
 </selectionEntry>
 <selectionEntry id="2389-4deb-6c6b-4dbf" name="Sisters of Silence Excruciatus Cadre" hidden="false" collective="false" import="true" type="unit">
+<modifiers>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
+</modifiers>
 <infoLinks>
 <infoLink id="95ca-0169-ea5e-59bf" name="Anathema Psykana" hidden="false" targetId="a366-522d-8ea5-a740" type="rule" />
 <infoLink id="ca3a-f541-b64a-87f5" name="Adamantium Will" hidden="false" targetId="3cc6-735d-945d-4fd7" type="rule" />
@@ -4080,6 +4206,13 @@
 </costs>
 </selectionEntry>
 <selectionEntry id="5800-7107-abc9-8701" name="0-1 Imperial Assassin" hidden="false" collective="false" import="true" type="unit">
+<modifiers>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
+</modifiers>
 <constraints>
 <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="aeea-9a5c-d634-b1ad" type="max" />
 </constraints>
@@ -4379,6 +4512,13 @@
 </costs>
 </selectionEntry>
 <selectionEntry id="872b-4606-6ea1-b6e0" name="Legio Custodes Agamatus Jetbike Squadron" hidden="false" collective="false" import="true" type="unit">
+<modifiers>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
+</modifiers>
 <infoLinks>
 <infoLink id="3e16-c824-e253-e115" name="Legio Custodes" hidden="false" targetId="df2b-1101-446b-9913" type="rule" />
 <infoLink id="5084-6c98-0f35-00ad" name="Bulky" hidden="false" targetId="ccf7-2e91-4ee4-138e" type="rule" />
@@ -4510,6 +4650,13 @@
 </costs>
 </selectionEntry>
 <selectionEntry id="9416-562f-f97e-08d6" name="Legio Custodes Pallas Grav-Attack Squadron" hidden="false" collective="false" import="true" type="unit">
+<modifiers>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
+</modifiers>
 <infoLinks>
 <infoLink id="f30d-7bb3-8328-3f79" name="Power of the Machine Spirit" hidden="false" targetId="37cc-c497-b81f-76d0" type="rule" />
 <infoLink id="0cac-f3ae-f61e-1505" name="Deep Strike" hidden="false" targetId="4ea4-ba7e-f203-0c20" type="rule" />
@@ -4718,6 +4865,13 @@
 </costs>
 </selectionEntry>
 <selectionEntry id="62b2-57f7-3961-2c81" name="Legio Custodes Custodian Venatari Squad" hidden="false" collective="false" import="true" type="unit">
+<modifiers>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
+</modifiers>
 <infoLinks>
 <infoLink id="b001-8fa9-82dc-979c" name="Legio Custodes" hidden="false" targetId="df2b-1101-446b-9913" type="rule" />
 <infoLink id="fb24-56e3-5f4c-7401" name="Bulky" hidden="false" targetId="ccf7-2e91-4ee4-138e" type="rule" />
@@ -4878,6 +5032,11 @@
 </conditionGroups>
 </conditionGroup>
 </conditionGroups>
+</modifier>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
 </modifier>
 </modifiers>
 <infoLinks>
@@ -5208,6 +5367,13 @@
 </costs>
 </selectionEntry>
 <selectionEntry id="5a19-4d57-96fe-5ce4" name="Sisters of Silence Subjugator Jetbike Cadre" hidden="false" collective="false" import="true" type="unit">
+<modifiers>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
+</modifiers>
 <infoLinks>
 <infoLink id="08a0-cdcf-47ae-e57a" name="Anathema Psykana" hidden="false" targetId="a366-522d-8ea5-a740" type="rule" />
 <infoLink id="76ec-db33-8794-e48d" name="Adamantium Will" hidden="false" targetId="3cc6-735d-945d-4fd7" type="rule" />
@@ -5508,6 +5674,13 @@
 </costs>
 </selectionEntry>
 <selectionEntry id="e8ce-6bb7-f9f4-69c9" name="Sisters of Silence Seeker Cadre" hidden="false" collective="false" import="true" type="unit">
+<modifiers>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
+</modifiers>
 <infoLinks>
 <infoLink id="8cfa-f3ce-cd49-c9f7" name="Anathema Psykana" hidden="false" targetId="a366-522d-8ea5-a740" type="rule" />
 <infoLink id="dbc2-e702-cf22-f06f" name="Adamantium Will" hidden="false" targetId="3cc6-735d-945d-4fd7" type="rule" />
@@ -5833,6 +6006,13 @@
 </costs>
 </selectionEntry>
 <selectionEntry id="9ec0-a16b-c7e6-9381" name="Legio Custodes Sagittarum Guard Squad" hidden="false" collective="false" import="true" type="unit">
+<modifiers>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
+</modifiers>
 <infoLinks>
 <infoLink id="ca34-d191-962c-72d4" name="Legio Custodes" hidden="false" targetId="df2b-1101-446b-9913" type="rule" />
 <infoLink id="8777-48c1-832a-5702" name="Bulky" hidden="false" targetId="ccf7-2e91-4ee4-138e" type="rule" />
@@ -6022,6 +6202,13 @@
 </costs>
 </selectionEntry>
 <selectionEntry id="cc0d-389a-06c5-f5e5" name="Legio Custodes Telemon Heavy Dreadnought" hidden="false" collective="false" import="true" type="unit">
+<modifiers>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
+</modifiers>
 <infoLinks>
 <infoLink id="1330-660f-222b-7d3c" name="Move Through Cover" hidden="false" targetId="c616-0756-b610-40d6" type="rule" />
 <infoLink id="fbd8-8137-5d5a-85d6" name="Unyielding Sentinel" hidden="false" targetId="6339-ab5d-5312-b9ba" type="rule" />
@@ -6173,6 +6360,13 @@
 </costs>
 </selectionEntry>
 <selectionEntry id="2c98-9cf1-7f2f-0f9a" name="Legio Custodes Caladius Grav-Tank" hidden="false" collective="false" import="true" type="unit">
+<modifiers>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
+</modifiers>
 <infoLinks>
 <infoLink id="1ef0-a9ce-441c-8ce8" name="Deep Strike" hidden="false" targetId="4ea4-ba7e-f203-0c20" type="rule" />
 <infoLink id="7a4c-5203-fdc0-8250" name="Outflank" hidden="false" targetId="614c-b3d0-05dd-61ef" type="rule" />
@@ -6270,6 +6464,13 @@
 </costs>
 </selectionEntry>
 <selectionEntry id="b3e4-0b92-9f5b-9963" name="Sisters of Silence Expurgator Cadre" hidden="false" collective="false" import="true" type="unit">
+<modifiers>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
+</modifiers>
 <infoLinks>
 <infoLink id="ee09-07d8-a01e-9d79" name="Anathema Psykana" hidden="false" targetId="a366-522d-8ea5-a740" type="rule" />
 <infoLink id="8568-c130-62c6-7126" name="Adamantium Will" hidden="false" targetId="3cc6-735d-945d-4fd7" type="rule" />
@@ -6683,6 +6884,13 @@
 </costs>
 </selectionEntry>
 <selectionEntry id="a485-35db-1307-83de" name="Officio Assassinorum Vindicare Assassin" hidden="false" collective="false" import="true" type="unit">
+<modifiers>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
+</modifiers>
 <constraints>
 <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a682-77d4-56b1-a658" type="max" />
 </constraints>
@@ -6756,6 +6964,13 @@
 </costs>
 </selectionEntry>
 <selectionEntry id="5399-abe0-8361-dab5" name="Officio Assassinorum Callidus Assassin" hidden="false" collective="false" import="true" type="unit">
+<modifiers>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
+</modifiers>
 <constraints>
 <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="30ba-a7be-8f46-b339" type="max" />
 </constraints>
@@ -6830,6 +7045,13 @@
 </costs>
 </selectionEntry>
 <selectionEntry id="dec8-5fab-dbeb-1e8c" name="Officio Assassinorum Eversor Assassin" hidden="false" collective="false" import="true" type="unit">
+<modifiers>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
+</modifiers>
 <constraints>
 <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="06c6-a7a9-5adc-0d32" type="max" />
 </constraints>
@@ -6910,6 +7132,13 @@
 </costs>
 </selectionEntry>
 <selectionEntry id="6236-2bf9-793f-0d5c" name="Officio Assassinorum Culexus Assassin" hidden="false" collective="false" import="true" type="unit">
+<modifiers>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
+</modifiers>
 <constraints>
 <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="5c8a-320c-532c-b9b9" type="max" />
 </constraints>
@@ -6980,6 +7209,13 @@
 </costs>
 </selectionEntry>
 <selectionEntry id="ead6-92ea-461d-962c" name="Officio Assassinorum Adamus Assassin" hidden="false" collective="false" import="true" type="unit">
+<modifiers>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
+</modifiers>
 <constraints>
 <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="0860-45ab-f36d-d18b" type="max" />
 </constraints>
@@ -7047,6 +7283,13 @@
 </costs>
 </selectionEntry>
 <selectionEntry id="8e93-51d8-b0bd-e568" name="Officio Assassinorum Venenum Assassin" hidden="false" collective="false" import="true" type="unit">
+<modifiers>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
+</modifiers>
 <constraints>
 <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1c9d-e321-4d93-2fb3" type="max" />
 </constraints>
@@ -7114,6 +7357,13 @@
 </costs>
 </selectionEntry>
 <selectionEntry id="c719-3617-f51c-eed9" name="Officio Assassinorum Vanus Infocyte Assassin" hidden="false" collective="false" import="true" type="unit">
+<modifiers>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
+</modifiers>
 <constraints>
 <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="03d4-15b4-1f05-1a9a" type="max" />
 </constraints>

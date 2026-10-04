@@ -266,7 +266,7 @@
 <conditions>
 <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3604-ccf4-4a04-bc94" type="instanceOf" />
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
-<condition field="pts0-0000-0000-0001" scope="force" value="25" percentValue="true" shared="true" includeChildSelections="true" includeChildForces="false" childId="any" type="greaterThan" />
+<condition field="pts0-0000-0000-0001" scope="roster" value="25" percentValue="true" shared="true" includeChildSelections="true" includeChildForces="false" childId="3224-4c76-76b7-ae18" type="greaterThan" />
 </conditions>
 </modifier>
 <modifier type="add" field="error" value="A Primarch may only be selected as part of the army's Primary Detachment, never an Allied Detachment.">
@@ -339,6 +339,11 @@
 <modifier type="add" field="error" value="Only one Iron Halo per army (Praetors and Centurions).">
 <conditions>
 <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7e81-7178-7650-6f77" type="greaterThan" />
+</conditions>
+</modifier>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
 </conditions>
 </modifier>
 </modifiers>
@@ -2091,6 +2096,11 @@
 <modifier type="add" field="error" value="Only one Iron Halo per army (Praetors and Centurions).">
 <conditions>
 <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7e81-7178-7650-6f77" type="greaterThan" />
+</conditions>
+</modifier>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
 </conditions>
 </modifier>
 </modifiers>
@@ -5714,6 +5724,11 @@
 </conditionGroup>
 </conditionGroups>
 </modifier>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
 </modifiers>
 <infoLinks>
 <infoLink id="757b-1f73-f566-b381" name="Legiones Astartes" hidden="false" targetId="0ed8-99c2-6b0e-f182" type="rule" />
@@ -6624,6 +6639,11 @@
 </conditionGroup>
 </conditionGroups>
 </modifier>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
 </modifiers>
 <infoLinks>
 <infoLink id="af65-887a-db9a-6a49" name="Legiones Astartes" hidden="false" targetId="0ed8-99c2-6b0e-f182" type="rule" />
@@ -7140,6 +7160,11 @@
 </conditions>
 </conditionGroup>
 </conditionGroups>
+</modifier>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
 </modifier>
 </modifiers>
 <infoLinks>
@@ -7749,6 +7774,11 @@
 <modifier type="add" field="category" value="071f-8316-97af-8fd6">
 <conditions>
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cf9e-0c8a-1d16-7758" type="atLeast" />
+</conditions>
+</modifier>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
 </conditions>
 </modifier>
 </modifiers>
@@ -9090,6 +9120,11 @@ LIMITATIONS - Every Alpha Legion Vehicle must begin the battle in Reserve unless
 <condition field="pts0-0000-0000-0001" scope="roster" value="1000" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="any" type="lessThan" />
 </conditions>
 </modifier>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
 </modifiers>
 <constraints>
 <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a032-4373-7bf9-c1c0" type="max" />
@@ -9204,6 +9239,11 @@ LIMITATIONS - Every Alpha Legion Vehicle must begin the battle in Reserve unless
 </conditions>
 </conditionGroup>
 </conditionGroups>
+</modifier>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
 </modifier>
 </modifiers>
 <infoLinks>
@@ -10206,6 +10246,11 @@ LIMITATIONS - Every Alpha Legion Vehicle must begin the battle in Reserve unless
 </conditionGroup>
 </conditionGroups>
 </modifier>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
 </modifiers>
 <infoLinks>
 <infoLink id="6470-e66d-dfb3-c243" name="Legiones Astartes" hidden="false" targetId="0ed8-99c2-6b0e-f182" type="rule" />
@@ -11002,6 +11047,11 @@ LIMITATIONS - Every Alpha Legion Vehicle must begin the battle in Reserve unless
 </conditionGroup>
 </conditionGroups>
 </modifier>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
 </modifiers>
 <infoLinks>
 <infoLink id="a238-4d10-861f-5c2e" name="Legiones Astartes" hidden="false" targetId="0ed8-99c2-6b0e-f182" type="rule" />
@@ -11597,6 +11647,13 @@ LIMITATIONS - Every Alpha Legion Vehicle must begin the battle in Reserve unless
 </costs>
 </selectionEntry>
 <selectionEntry id="a634-eaa0-f122-089d" name="Techmarine Covenant" hidden="false" collective="false" import="true" type="unit">
+<modifiers>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
+</modifiers>
 <categoryLinks>
 <categoryLink id="15da-3886-de62-4286" name="Elites" hidden="false" targetId="6b19-97ac-7c40-0bdf" primary="true" />
 </categoryLinks>
@@ -12820,6 +12877,11 @@ LIMITATIONS - Every Alpha Legion Vehicle must begin the battle in Reserve unless
 </conditionGroup>
 </conditionGroups>
 </modifier>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
 </modifiers>
 <profiles>
 <profile id="d99b-794f-ad40-c96a" name="Legion Dreadnought" hidden="false" typeId="678c-90d8-478c-5dc2" typeName="Walker">
@@ -13290,6 +13352,11 @@ LIMITATIONS - Every Alpha Legion Vehicle must begin the battle in Reserve unless
 </conditionGroup>
 </conditionGroups>
 </modifier>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
 </modifiers>
 <profiles>
 <profile id="a741-923b-d2ad-69ea" name="Legion Contemptor Dreadnought" hidden="false" typeId="678c-90d8-478c-5dc2" typeName="Walker">
@@ -13692,6 +13759,13 @@ LIMITATIONS - Every Alpha Legion Vehicle must begin the battle in Reserve unless
 </costs>
 </selectionEntry>
 <selectionEntry id="feeb-7d37-bbdc-aebc" name="Legion Rapier Weapons Battery" hidden="false" collective="false" import="true" type="unit">
+<modifiers>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
+</modifiers>
 <infoLinks>
 <infoLink id="a7b1-ff6e-0ce1-48d7" name="Rapier Battery" hidden="false" targetId="2e91-032a-74e4-5900" type="rule" />
 <infoLink id="613b-61ea-81e8-7968" name="Shell Shock" hidden="false" targetId="3a95-f5b8-2ff0-9a59" type="rule" />
@@ -13995,6 +14069,13 @@ LIMITATIONS - Every Alpha Legion Vehicle must begin the battle in Reserve unless
 </costs>
 </selectionEntry>
 <selectionEntry id="b2a1-bc50-ae60-bf88" name="Legion Seeker Squad" hidden="false" collective="false" import="true" type="unit">
+<modifiers>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
+</modifiers>
 <infoLinks>
 <infoLink id="7958-89bc-704d-0e5e" name="Legiones Astartes" hidden="false" targetId="0ed8-99c2-6b0e-f182" type="rule" />
 <infoLink id="fae8-abc9-7178-10af" name="Infiltrate" hidden="false" targetId="ad57-6634-e426-3e1c" type="rule" />
@@ -14882,6 +14963,13 @@ LIMITATIONS - Every Alpha Legion Vehicle must begin the battle in Reserve unless
 </costs>
 </selectionEntry>
 <selectionEntry id="90a2-e396-d5a3-fdbb" name="Legion Bike Squadron" hidden="false" collective="false" import="true" type="unit">
+<modifiers>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
+</modifiers>
 <infoLinks>
 <infoLink id="ce2b-0fd2-7777-7ba6" name="Legiones Astartes" hidden="false" targetId="0ed8-99c2-6b0e-f182" type="rule" />
 </infoLinks>
@@ -15447,6 +15535,11 @@ LIMITATIONS - Every Alpha Legion Vehicle must begin the battle in Reserve unless
 </conditionGroup>
 </conditionGroups>
 </modifier>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
 </modifiers>
 <infoLinks>
 <infoLink id="2a85-514c-5a7b-33c6" name="Legiones Astartes" hidden="false" targetId="0ed8-99c2-6b0e-f182" type="rule" />
@@ -15900,6 +15993,13 @@ LIMITATIONS - Every Alpha Legion Vehicle must begin the battle in Reserve unless
 </costs>
 </selectionEntry>
 <selectionEntry id="a9f2-5e7a-219e-8fa5" name="Legion Attack Bike Squadron" hidden="false" collective="false" import="true" type="unit">
+<modifiers>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
+</modifiers>
 <infoLinks>
 <infoLink id="5ce4-6766-8417-060f" name="Legiones Astartes" hidden="false" targetId="0ed8-99c2-6b0e-f182" type="rule" />
 </infoLinks>
@@ -16196,6 +16296,13 @@ LIMITATIONS - Every Alpha Legion Vehicle must begin the battle in Reserve unless
 </costs>
 </selectionEntry>
 <selectionEntry id="a963-97a2-0fad-5d49" name="Legion Land Speeder Squadron" hidden="false" collective="false" import="true" type="unit">
+<modifiers>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
+</modifiers>
 <infoLinks>
 <infoLink id="f000-84d9-3d94-3412" name="Deep Strike" hidden="false" targetId="4ea4-ba7e-f203-0c20" type="rule" />
 <infoLink id="1288-7298-c19e-d140" name="Armoured Crew" hidden="false" targetId="0359-9bad-9708-41de" type="rule" />
@@ -16528,6 +16635,13 @@ LIMITATIONS - Every Alpha Legion Vehicle must begin the battle in Reserve unless
 </costs>
 </selectionEntry>
 <selectionEntry id="9b27-2c22-e59f-6571" name="Legion Javelin Attack Speeder Squadron" hidden="false" collective="false" import="true" type="unit">
+<modifiers>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
+</modifiers>
 <infoLinks>
 <infoLink id="7bbe-7d64-c624-20e1" name="Deep Strike" hidden="false" targetId="4ea4-ba7e-f203-0c20" type="rule" />
 <infoLink id="3705-10e9-78be-b49a" name="Outflank" hidden="false" targetId="614c-b3d0-05dd-61ef" type="rule" />
@@ -16757,6 +16871,13 @@ LIMITATIONS - Every Alpha Legion Vehicle must begin the battle in Reserve unless
 </costs>
 </selectionEntry>
 <selectionEntry id="b2c2-59c9-f233-25d2" name="Legion Heavy Support Squad" hidden="false" collective="false" import="true" type="unit">
+<modifiers>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
+</modifiers>
 <infoLinks>
 <infoLink id="9f80-1895-ef58-0a5b" name="Legiones Astartes" hidden="false" targetId="0ed8-99c2-6b0e-f182" type="rule" />
 </infoLinks>
@@ -17369,6 +17490,11 @@ LIMITATIONS - Every Alpha Legion Vehicle must begin the battle in Reserve unless
 <modifier type="add" field="category" value="071f-8316-97af-8fd6">
 <conditions>
 <condition field="selections" scope="self" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1225-46ba-f0bd-1c17" type="atLeast" />
+</conditions>
+</modifier>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
 </conditions>
 </modifier>
 </modifiers>
@@ -18090,6 +18216,13 @@ LIMITATIONS - Every Alpha Legion Vehicle must begin the battle in Reserve unless
 </costs>
 </selectionEntry>
 <selectionEntry id="f3a6-209a-702e-ca9f" name="Legion Vindicator Siege Tank Squadron" hidden="false" collective="false" import="true" type="unit">
+<modifiers>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
+</modifiers>
 <categoryLinks>
 <categoryLink id="dc2e-0906-8764-39dd" name="Heavy Support" hidden="false" targetId="a78f-9734-db0c-b938" primary="true" />
 </categoryLinks>
@@ -18689,6 +18822,11 @@ LIMITATIONS - Every Alpha Legion Vehicle must begin the battle in Reserve unless
 </conditions>
 </conditionGroup>
 </conditionGroups>
+</modifier>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
 </modifier>
 </modifiers>
 <categoryLinks>
@@ -20127,6 +20265,11 @@ LIMITATIONS - Every Alpha Legion Vehicle must begin the battle in Reserve unless
 </conditions>
 </conditionGroup>
 </conditionGroups>
+</modifier>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
 </modifier>
 </modifiers>
 <constraints>
@@ -21951,6 +22094,13 @@ LIMITATIONS - Every Alpha Legion Vehicle must begin the battle in Reserve unless
 </costs>
 </selectionEntry>
 <selectionEntry id="2d69-0c3d-8639-1edd" name="Legion Whirlwind Scorpius" hidden="false" collective="false" import="true" type="unit">
+<modifiers>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
+</modifiers>
 <profiles>
 <profile id="83c3-0fc7-fa23-1283" name="Whirlwind Scorpius" hidden="false" typeId="c1e2-c3f6-f1e3-c783" typeName="Vehicle">
 <characteristics>
@@ -22114,6 +22264,13 @@ LIMITATIONS - Every Alpha Legion Vehicle must begin the battle in Reserve unless
 </costs>
 </selectionEntry>
 <selectionEntry id="7621-6444-8430-0644" name="Legion Spartan Assault Tank" hidden="false" collective="false" import="true" type="unit">
+<modifiers>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
+</modifiers>
 <profiles>
 <profile id="6196-c120-bfac-cf65" name="Legion Spartan Assault Tank" hidden="false" typeId="c1e2-c3f6-f1e3-c783" typeName="Vehicle">
 <characteristics>
@@ -22347,6 +22504,13 @@ LIMITATIONS - Every Alpha Legion Vehicle must begin the battle in Reserve unless
 </costs>
 </selectionEntry>
 <selectionEntry id="15de-d365-e376-f10f" name="Legion Sicaran Battle Tank" hidden="false" collective="false" import="true" type="unit">
+<modifiers>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
+</modifiers>
 <profiles>
 <profile id="7455-7e39-60c0-0ea3" name="Legion Sicaran" hidden="false" typeId="c1e2-c3f6-f1e3-c783" typeName="Vehicle">
 <characteristics>
@@ -22545,6 +22709,13 @@ LIMITATIONS - Every Alpha Legion Vehicle must begin the battle in Reserve unless
 </costs>
 </selectionEntry>
 <selectionEntry id="b322-2df0-e4ad-b2e8" name="Deredeo Pattern Dreadnought" hidden="false" collective="false" import="true" type="unit">
+<modifiers>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
+</modifiers>
 <profiles>
 <profile id="0ed2-dda3-1b97-c705" name="Deredeo Dreadnought" hidden="false" typeId="678c-90d8-478c-5dc2" typeName="Walker">
 <characteristics>
@@ -22652,6 +22823,13 @@ LIMITATIONS - Every Alpha Legion Vehicle must begin the battle in Reserve unless
 </costs>
 </selectionEntry>
 <selectionEntry id="badc-5092-78d3-6ea3" name="Sicaran Venator Tank Destroyer" hidden="false" collective="false" import="true" type="unit">
+<modifiers>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
+</modifiers>
 <profiles>
 <profile id="d2d3-464b-d7da-640f" name="Sicaran Venator" hidden="false" typeId="c1e2-c3f6-f1e3-c783" typeName="Vehicle">
 <characteristics>
@@ -22843,6 +23021,13 @@ LIMITATIONS - Every Alpha Legion Vehicle must begin the battle in Reserve unless
 </costs>
 </selectionEntry>
 <selectionEntry id="67c3-71b4-0dbe-eff5" name="Achilles-Alpha Pattern Land Raider" hidden="false" collective="false" import="true" type="unit">
+<modifiers>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
+</modifiers>
 <profiles>
 <profile id="1730-11e2-314f-f68e" name="Achilles-Alpha" hidden="false" typeId="c1e2-c3f6-f1e3-c783" typeName="Vehicle">
 <characteristics>
@@ -22936,6 +23121,13 @@ LIMITATIONS - Every Alpha Legion Vehicle must begin the battle in Reserve unless
 </costs>
 </selectionEntry>
 <selectionEntry id="57fc-48f3-8f1d-3f82" name="Leviathan Siege Dreadnought" hidden="false" collective="false" import="true" type="unit">
+<modifiers>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
+</modifiers>
 <profiles>
 <profile id="1997-41c5-3062-7f2e" name="Leviathan Siege Dreadnought" hidden="false" typeId="678c-90d8-478c-5dc2" typeName="Walker">
 <modifiers>
@@ -23155,6 +23347,11 @@ LIMITATIONS - Every Alpha Legion Vehicle must begin the battle in Reserve unless
 <modifier type="add" field="category" value="2870-2a95-cac6-2507">
 <conditions>
 <condition field="selections" scope="self" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="98be-0456-7602-3389" type="atLeast" />
+</conditions>
+</modifier>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
 </conditions>
 </modifier>
 </modifiers>
@@ -23545,6 +23742,11 @@ LIMITATIONS - Every Alpha Legion Vehicle must begin the battle in Reserve unless
 <modifier type="add" field="category" value="0538-e2e9-8195-37a5">
 <conditions>
 <condition field="selections" scope="self" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b8c4-03d2-9666-bdbc" type="atLeast" />
+</conditions>
+</modifier>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
 </conditions>
 </modifier>
 </modifiers>
@@ -24169,6 +24371,13 @@ LIMITATIONS - Every Alpha Legion Vehicle must begin the battle in Reserve unless
 </costs>
 </selectionEntry>
 <selectionEntry id="9f7c-b139-2226-692e" name="Lernaean Terminator Squad" hidden="false" collective="false" import="true" type="unit">
+<modifiers>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
+</modifiers>
 <constraints>
 <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="82c9-6fdb-543c-d87f" type="max" />
 </constraints>
@@ -24577,6 +24786,13 @@ LIMITATIONS - Every Alpha Legion Vehicle must begin the battle in Reserve unless
 </costs>
 </selectionEntry>
 <selectionEntry id="fe3d-7480-4c57-2562" name="Effrit Disruption Cadre" hidden="false" collective="false" import="true" type="unit">
+<modifiers>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
+</modifiers>
 <infoLinks>
 <infoLink id="2fd8-0c9a-434f-95b3" name="Legiones Astartes (Alpha Legion)" hidden="false" targetId="0fa1-daef-6305-665a" type="rule" />
 <infoLink id="bfc8-eed5-c1cc-ad46" name="Infiltrate" hidden="false" targetId="ad57-6634-e426-3e1c" type="rule" />
@@ -25301,6 +25517,13 @@ LIMITATIONS - Every Alpha Legion Vehicle must begin the battle in Reserve unless
 </costs>
 </selectionEntry>
 <selectionEntry id="d8f8-c6e5-50fa-497b" name="Armillus Dynat" hidden="false" collective="false" import="true" type="unit">
+<modifiers>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
+</modifiers>
 <constraints>
 <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="75c1-4d44-4ff5-2446" type="max" />
 </constraints>
@@ -25407,6 +25630,13 @@ LIMITATIONS - Every Alpha Legion Vehicle must begin the battle in Reserve unless
 </costs>
 </selectionEntry>
 <selectionEntry id="e0ae-3765-f891-0b9f" name="Exodus" hidden="false" collective="false" import="true" type="unit">
+<modifiers>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
+</modifiers>
 <constraints>
 <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="0d63-3c30-9575-9db5" type="max" />
 </constraints>
@@ -25527,6 +25757,11 @@ LIMITATIONS - Every Alpha Legion Vehicle must begin the battle in Reserve unless
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2390-3489-e470-7f7f" type="atLeast" />
 </conditions>
 </modifier>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
 </modifiers>
 <constraints>
 <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="49a5-61c1-5c00-ebc0" type="max" />
@@ -25613,6 +25848,13 @@ LIMITATIONS - Every Alpha Legion Vehicle must begin the battle in Reserve unless
 </costs>
 </selectionEntry>
 <selectionEntry id="8405-d1c3-5fe5-7170" name="Ingo Pech" hidden="false" collective="false" import="true" type="unit">
+<modifiers>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
+</modifiers>
 <constraints>
 <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="f8c6-92c9-2a95-abfe" type="max" />
 </constraints>
@@ -25706,6 +25948,13 @@ LIMITATIONS - Every Alpha Legion Vehicle must begin the battle in Reserve unless
 </costs>
 </selectionEntry>
 <selectionEntry id="8dbf-6f6a-4c36-132a" name="Mathias Herzog" hidden="false" collective="false" import="true" type="unit">
+<modifiers>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
+</modifiers>
 <constraints>
 <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="05c2-9323-5d8b-bd1d" type="max" />
 </constraints>
@@ -25817,6 +26066,11 @@ LIMITATIONS - Every Alpha Legion Vehicle must begin the battle in Reserve unless
 <modifier type="add" field="category" value="e89b-053d-1bdc-4e2e">
 <conditions>
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c0b2-49b1-48fd-3fc2" type="atLeast" />
+</conditions>
+</modifier>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
 </conditions>
 </modifier>
 </modifiers>
@@ -25980,6 +26234,11 @@ LIMITATIONS - Every Alpha Legion Vehicle must begin the battle in Reserve unless
 </conditions>
 </conditionGroup>
 </conditionGroups>
+</modifier>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
 </modifier>
 </modifiers>
 <infoLinks>
@@ -27003,6 +27262,11 @@ LIMITATIONS - Every Alpha Legion Vehicle must begin the battle in Reserve unless
 </conditionGroup>
 </conditionGroups>
 </modifier>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
 </modifiers>
 <infoLinks>
 <infoLink id="897e-46c3-fe1f-94b6" name="Legiones Astartes (Alpha Legion)" hidden="false" targetId="0fa1-daef-6305-665a" type="rule" />
@@ -27378,6 +27642,11 @@ LIMITATIONS - Every Alpha Legion Vehicle must begin the battle in Reserve unless
 </conditions>
 </conditionGroup>
 </conditionGroups>
+</modifier>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
 </modifier>
 </modifiers>
 <infoLinks>
@@ -27947,6 +28216,11 @@ LIMITATIONS - Every Alpha Legion Vehicle must begin the battle in Reserve unless
 </conditions>
 </conditionGroup>
 </conditionGroups>
+</modifier>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
 </modifier>
 </modifiers>
 <infoLinks>
@@ -28523,6 +28797,11 @@ LIMITATIONS - Every Alpha Legion Vehicle must begin the battle in Reserve unless
 </conditionGroup>
 </conditionGroups>
 </modifier>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
 </modifiers>
 <infoLinks>
 <infoLink id="11de-ca5e-84e2-ff8b" name="Legiones Astartes (Alpha Legion)" hidden="false" targetId="0fa1-daef-6305-665a" type="rule" />
@@ -28923,6 +29202,11 @@ LIMITATIONS - Every Alpha Legion Vehicle must begin the battle in Reserve unless
 </conditions>
 </conditionGroup>
 </conditionGroups>
+</modifier>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
 </modifier>
 </modifiers>
 <infoLinks>
@@ -29649,6 +29933,11 @@ LIMITATIONS - Every Alpha Legion Vehicle must begin the battle in Reserve unless
 </conditionGroup>
 </conditionGroups>
 </modifier>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
 </modifiers>
 <infoLinks>
 <infoLink id="04e9-58ab-31fc-f769" name="Legiones Astartes (Alpha Legion)" hidden="false" targetId="0fa1-daef-6305-665a" type="rule" />
@@ -29935,6 +30224,11 @@ LIMITATIONS - Every Alpha Legion Vehicle must begin the battle in Reserve unless
 </conditions>
 </conditionGroup>
 </conditionGroups>
+</modifier>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
 </modifier>
 </modifiers>
 <infoLinks>
@@ -30272,6 +30566,11 @@ LIMITATIONS - Every Alpha Legion Vehicle must begin the battle in Reserve unless
 </conditions>
 </conditionGroup>
 </conditionGroups>
+</modifier>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
 </modifier>
 </modifiers>
 <infoLinks>
@@ -30901,6 +31200,11 @@ LIMITATIONS - Every Alpha Legion Vehicle must begin the battle in Reserve unless
 </conditionGroup>
 </conditionGroups>
 </modifier>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
 </modifiers>
 <constraints>
 <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="f150-fa88-ce98-ce3a" type="max" />
@@ -31482,6 +31786,11 @@ LIMITATIONS - Every Alpha Legion Vehicle must begin the battle in Reserve unless
 </conditions>
 </conditionGroup>
 </conditionGroups>
+</modifier>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
 </modifier>
 </modifiers>
 <infoLinks>
@@ -32436,6 +32745,11 @@ LIMITATIONS - Every Alpha Legion Vehicle must begin the battle in Reserve unless
 </conditions>
 </conditionGroup>
 </conditionGroups>
+</modifier>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
 </modifier>
 </modifiers>
 <infoLinks>
@@ -33394,6 +33708,11 @@ LIMITATIONS - Every Alpha Legion Vehicle must begin the battle in Reserve unless
 </conditionGroup>
 </conditionGroups>
 </modifier>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
 </modifiers>
 <infoLinks>
 <infoLink id="b4d8-4dc5-ccce-eca5" name="Legiones Astartes (Alpha Legion)" hidden="false" targetId="0fa1-daef-6305-665a" type="rule" />
@@ -33849,6 +34168,11 @@ LIMITATIONS - Every Alpha Legion Vehicle must begin the battle in Reserve unless
 </conditions>
 </conditionGroup>
 </conditionGroups>
+</modifier>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
 </modifier>
 </modifiers>
 <infoLinks>
@@ -35009,6 +35333,11 @@ LIMITATIONS - Every Alpha Legion Vehicle must begin the battle in Reserve unless
 </conditions>
 </conditionGroup>
 </conditionGroups>
+</modifier>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
 </modifier>
 </modifiers>
 <infoLinks>
@@ -36190,6 +36519,11 @@ LIMITATIONS - Every Alpha Legion Vehicle must begin the battle in Reserve unless
 </conditionGroup>
 </conditionGroups>
 </modifier>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
 </modifiers>
 <infoLinks>
 <infoLink id="acaa-2229-f789-5a5f" name="Legiones Astartes (Alpha Legion)" hidden="false" targetId="0fa1-daef-6305-665a" type="rule" />
@@ -36632,6 +36966,11 @@ LIMITATIONS - Every Alpha Legion Vehicle must begin the battle in Reserve unless
 </conditionGroup>
 </conditionGroups>
 </modifier>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
 </modifiers>
 <infoLinks>
 <infoLink id="e0fd-34ff-9cc6-6c04" name="Legiones Astartes (Alpha Legion)" hidden="false" targetId="0fa1-daef-6305-665a" type="rule" />
@@ -37055,6 +37394,11 @@ LIMITATIONS - Every Alpha Legion Vehicle must begin the battle in Reserve unless
 </conditionGroup>
 </conditionGroups>
 </modifier>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
 </modifiers>
 <infoLinks>
 <infoLink id="6e90-8321-8a45-276a" name="Legiones Astartes (Alpha Legion)" hidden="false" targetId="0fa1-daef-6305-665a" type="rule" />
@@ -37453,6 +37797,11 @@ LIMITATIONS - Every Alpha Legion Vehicle must begin the battle in Reserve unless
 </conditions>
 </conditionGroup>
 </conditionGroups>
+</modifier>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
 </modifier>
 </modifiers>
 <infoLinks>
@@ -37936,6 +38285,11 @@ LIMITATIONS - Every Alpha Legion Vehicle must begin the battle in Reserve unless
 </conditions>
 </conditionGroup>
 </conditionGroups>
+</modifier>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
 </modifier>
 </modifiers>
 <constraints>
@@ -38738,6 +39092,11 @@ LIMITATIONS - Every Alpha Legion Vehicle must begin the battle in Reserve unless
 </conditionGroup>
 </conditionGroups>
 </modifier>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
 </modifiers>
 <infoLinks>
 <infoLink id="cc75-d3f8-76e5-1425" name="Legiones Astartes (Alpha Legion)" hidden="false" targetId="0fa1-daef-6305-665a" type="rule" />
@@ -39270,6 +39629,11 @@ LIMITATIONS - Every Alpha Legion Vehicle must begin the battle in Reserve unless
 </conditions>
 </conditionGroup>
 </conditionGroups>
+</modifier>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
 </modifier>
 </modifiers>
 <infoLinks>
@@ -40171,6 +40535,11 @@ LIMITATIONS - Every Alpha Legion Vehicle must begin the battle in Reserve unless
 </conditionGroup>
 </conditionGroups>
 </modifier>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
 </modifiers>
 <infoLinks>
 <infoLink id="e198-abf2-5be3-cf51" name="Legiones Astartes (Alpha Legion)" hidden="false" targetId="0fa1-daef-6305-665a" type="rule" />
@@ -40723,6 +41092,11 @@ LIMITATIONS - Every Alpha Legion Vehicle must begin the battle in Reserve unless
 </conditionGroup>
 </conditionGroups>
 </modifier>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
 </modifiers>
 <infoLinks>
 <infoLink id="f3bd-bc02-cd2a-d84a" name="Legiones Astartes (Alpha Legion)" hidden="false" targetId="0fa1-daef-6305-665a" type="rule" />
@@ -41188,6 +41562,11 @@ LIMITATIONS - Every Alpha Legion Vehicle must begin the battle in Reserve unless
 </conditions>
 </conditionGroup>
 </conditionGroups>
+</modifier>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
 </modifier>
 </modifiers>
 <constraints>
@@ -41731,6 +42110,11 @@ LIMITATIONS - Every Alpha Legion Vehicle must begin the battle in Reserve unless
 </conditions>
 </conditionGroup>
 </conditionGroups>
+</modifier>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
 </modifier>
 </modifiers>
 <constraints>
@@ -42291,6 +42675,11 @@ LIMITATIONS - Every Alpha Legion Vehicle must begin the battle in Reserve unless
 </conditionGroup>
 </conditionGroups>
 </modifier>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
 </modifiers>
 <infoLinks>
 <infoLink id="ee28-3b37-1410-bf73" name="Legiones Astartes (Alpha Legion)" hidden="false" targetId="0fa1-daef-6305-665a" type="rule" />
@@ -42826,6 +43215,11 @@ LIMITATIONS - Every Alpha Legion Vehicle must begin the battle in Reserve unless
 </conditions>
 </conditionGroup>
 </conditionGroups>
+</modifier>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
 </modifier>
 </modifiers>
 <infoLinks>
@@ -43408,6 +43802,11 @@ LIMITATIONS - Every Alpha Legion Vehicle must begin the battle in Reserve unless
 </conditions>
 </conditionGroup>
 </conditionGroups>
+</modifier>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
 </modifier>
 </modifiers>
 <infoLinks>
@@ -44247,6 +44646,11 @@ LIMITATIONS - Every Alpha Legion Vehicle must begin the battle in Reserve unless
 </conditionGroup>
 </conditionGroups>
 </modifier>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
 </modifiers>
 <constraints>
 <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="0f49-e010-466a-5907" type="max" />
@@ -45057,6 +45461,11 @@ LIMITATIONS - Every Alpha Legion Vehicle must begin the battle in Reserve unless
 </conditions>
 </conditionGroup>
 </conditionGroups>
+</modifier>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
 </modifier>
 </modifiers>
 <infoLinks>
@@ -46137,6 +46546,11 @@ LIMITATIONS - Every Alpha Legion Vehicle must begin the battle in Reserve unless
 </conditionGroup>
 </conditionGroups>
 </modifier>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
 </modifiers>
 <constraints>
 <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="9832-5e84-d4c2-9607" type="max" />
@@ -46932,6 +47346,11 @@ LIMITATIONS - Every Alpha Legion Vehicle must begin the battle in Reserve unless
 </conditionGroup>
 </conditionGroups>
 </modifier>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
 </modifiers>
 <infoLinks>
 <infoLink id="65e1-3ec4-5a04-4312" name="Legiones Astartes (Alpha Legion)" hidden="false" targetId="0fa1-daef-6305-665a" type="rule" />
@@ -47280,6 +47699,11 @@ LIMITATIONS - Every Alpha Legion Vehicle must begin the battle in Reserve unless
 </conditions>
 </conditionGroup>
 </conditionGroups>
+</modifier>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
 </modifier>
 </modifiers>
 <infoLinks>
@@ -47858,6 +48282,11 @@ LIMITATIONS - Every Alpha Legion Vehicle must begin the battle in Reserve unless
 </conditionGroup>
 </conditionGroups>
 </modifier>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
 </modifiers>
 <constraints>
 <constraint field="selections" scope="force" value="2" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="954b-5ddc-c7a5-f41d" type="max" />
@@ -48361,6 +48790,11 @@ LIMITATIONS - Every Alpha Legion Vehicle must begin the battle in Reserve unless
 </conditions>
 </conditionGroup>
 </conditionGroups>
+</modifier>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
 </modifier>
 </modifiers>
 <constraints>
@@ -48910,6 +49344,11 @@ LIMITATIONS - Every Alpha Legion Vehicle must begin the battle in Reserve unless
 </conditions>
 </conditionGroup>
 </conditionGroups>
+</modifier>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
 </modifier>
 </modifiers>
 <infoLinks>
@@ -49631,6 +50070,11 @@ LIMITATIONS - Every Alpha Legion Vehicle must begin the battle in Reserve unless
 </conditions>
 </conditionGroup>
 </conditionGroups>
+</modifier>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
 </modifier>
 </modifiers>
 <infoLinks>
@@ -50378,6 +50822,11 @@ LIMITATIONS - Every Alpha Legion Vehicle must begin the battle in Reserve unless
 </conditionGroup>
 </conditionGroups>
 </modifier>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
 </modifiers>
 <infoLinks>
 <infoLink id="df44-8399-3cb6-f9a2" name="Legiones Astartes (Alpha Legion)" hidden="false" targetId="0fa1-daef-6305-665a" type="rule" />
@@ -51115,6 +51564,11 @@ LIMITATIONS - Every Alpha Legion Vehicle must begin the battle in Reserve unless
 </conditionGroup>
 </conditionGroups>
 </modifier>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
 </modifiers>
 <infoLinks>
 <infoLink id="4498-c856-494c-f440" name="Legiones Astartes (Alpha Legion)" hidden="false" targetId="0fa1-daef-6305-665a" type="rule" />
@@ -51638,6 +52092,11 @@ LIMITATIONS - Every Alpha Legion Vehicle must begin the battle in Reserve unless
 </conditions>
 </conditionGroup>
 </conditionGroups>
+</modifier>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
 </modifier>
 </modifiers>
 <infoLinks>
@@ -52505,6 +52964,11 @@ LIMITATIONS - Every Alpha Legion Vehicle must begin the battle in Reserve unless
 </conditionGroup>
 </conditionGroups>
 </modifier>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
 </modifiers>
 <constraints>
 <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="ee17-4f08-783c-362d" type="max" />
@@ -53181,6 +53645,11 @@ LIMITATIONS - Every Alpha Legion Vehicle must begin the battle in Reserve unless
 </conditions>
 </conditionGroup>
 </conditionGroups>
+</modifier>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
 </modifier>
 </modifiers>
 <constraints>

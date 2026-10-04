@@ -57,7 +57,7 @@
 <conditions>
 <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3604-ccf4-4a04-bc94" type="instanceOf" />
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
-<condition field="pts0-0000-0000-0001" scope="force" value="25" percentValue="true" shared="true" includeChildSelections="true" includeChildForces="false" childId="any" type="greaterThan" />
+<condition field="pts0-0000-0000-0001" scope="roster" value="25" percentValue="true" shared="true" includeChildSelections="true" includeChildForces="false" childId="3224-4c76-76b7-ae18" type="greaterThan" />
 </conditions>
 </modifier>
 <modifier type="add" field="error" value="A Primarch may only be selected as part of the army's Primary Detachment, never an Allied Detachment.">
@@ -126,6 +126,13 @@
 </costs>
 </selectionEntry>
 <selectionEntry id="91d7-f007-37f6-04d8" name="Seneschal" hidden="false" collective="false" import="true" type="unit">
+<modifiers>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
+</modifiers>
 <constraints>
 <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="72b0-1a04-a85b-8012" type="max" />
 </constraints>
@@ -1516,6 +1523,13 @@
 </costs>
 </selectionEntry>
 <selectionEntry id="6692-d644-c6cf-1f5e" name="Lord Scion" hidden="false" collective="false" import="true" type="unit">
+<modifiers>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
+</modifiers>
 <constraints>
 <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="c9b3-c39b-9cdc-b6d4" type="max" />
 </constraints>
@@ -2904,6 +2918,13 @@
 </costs>
 </selectionEntry>
 <selectionEntry id="39a7-63f8-1c56-3066" name="Scion Martial" hidden="false" collective="false" import="true" type="unit">
+<modifiers>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
+</modifiers>
 <infoLinks>
 <infoLink id="cddc-f734-8e13-f9ec" name="Martial Knight" hidden="false" targetId="a0c7-3054-ee14-ecb8" type="rule" />
 <infoLink id="4f67-08dd-d501-699d" name="Household Banner" hidden="false" targetId="8680-5220-b08a-44f7" type="rule" />
@@ -4152,6 +4173,11 @@
 <repeat field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="99a8-8ed7-7f1e-6932" repeats="1" roundUp="false" />
 </repeats>
 </modifier>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
 </modifiers>
 <constraints>
 <constraint field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="49aa-60bf-083e-8735" type="max" />
@@ -5359,6 +5385,13 @@
 </costs>
 </selectionEntry>
 <selectionEntry id="d891-2a3d-79fa-e22a" name="Scion Dolorous" hidden="false" collective="false" import="true" type="unit">
+<modifiers>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
+</modifiers>
 <infoLinks>
 <infoLink id="3f42-a61c-e6eb-55e8" name="Dolorous Charge" hidden="false" targetId="041c-1d02-61f0-4f03" type="rule" />
 <infoLink id="3452-fabf-f7f4-a064" name="Worthy Foe" hidden="false" targetId="495f-6ef7-267e-a41f" type="rule" />
@@ -6744,6 +6777,13 @@
 </costs>
 </selectionEntry>
 <selectionEntry id="afcc-e11d-e369-a3f0" name="Scion Uhlan" hidden="false" collective="false" import="true" type="unit">
+<modifiers>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
+</modifiers>
 <infoLinks>
 <infoLink id="b41d-d71b-4868-fc32" name="Impetuous Advance" hidden="false" targetId="8271-6491-eeff-6ad6" type="rule" />
 <infoLink id="5ec4-984a-6897-032f" name="Scouts" hidden="false" targetId="6bb0-de35-696c-e22a" type="rule" />
@@ -7947,6 +7987,13 @@
 </costs>
 </selectionEntry>
 <selectionEntry id="aa90-0a01-a969-93aa" name="Preceptor" hidden="false" collective="false" import="true" type="unit">
+<modifiers>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
+</modifiers>
 <infoLinks>
 <infoLink id="652b-b127-e799-ca37" name="Oracle of Battle" hidden="false" targetId="df6b-f68b-c016-3c8d" type="rule" />
 <infoLink id="894f-44e2-4720-8eac" name="Advanced Auspex Network" hidden="false" targetId="3da5-be01-efcc-d94e" type="rule" />
@@ -9333,6 +9380,13 @@
 </costs>
 </selectionEntry>
 <selectionEntry id="c8a7-bfcd-42e4-9429" name="Aucteller" hidden="false" collective="false" import="true" type="unit">
+<modifiers>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
+</modifiers>
 <constraints>
 <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="838e-4841-49ad-ec7e" type="max" />
 </constraints>
@@ -10721,6 +10775,13 @@
 </costs>
 </selectionEntry>
 <selectionEntry id="b7ad-f846-e06a-27e3" name="Scion Arbalester" hidden="false" collective="false" import="true" type="unit">
+<modifiers>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
+</modifiers>
 <infoLinks>
 <infoLink id="3129-8591-bdeb-0057" name="Weapon Calibration" hidden="false" targetId="2915-05b9-f408-4ad9" type="rule" />
 <infoLink id="0fb5-0a21-29c1-f910" name="Tank Hunters" hidden="false" targetId="c85a-ec51-652e-1ac0" type="rule" />
@@ -12106,6 +12167,13 @@
 </costs>
 </selectionEntry>
 <selectionEntry id="99a8-8ed7-7f1e-6932" name="Scion Implacable" hidden="false" collective="false" import="true" type="unit">
+<modifiers>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
+</modifiers>
 <infoLinks>
 <infoLink id="ea11-89e9-462d-021c" name="Wall Breaker" hidden="false" targetId="4014-4e32-e399-b57f" type="rule" />
 <infoLink id="0203-f474-9f1d-a658" name="Infantry Crusher" hidden="false" targetId="af91-7d62-889b-e470" type="rule" />

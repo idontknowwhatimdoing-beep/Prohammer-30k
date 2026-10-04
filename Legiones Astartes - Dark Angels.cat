@@ -138,7 +138,7 @@
 <conditions>
 <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3604-ccf4-4a04-bc94" type="instanceOf" />
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
-<condition field="pts0-0000-0000-0001" scope="force" value="25" percentValue="true" shared="true" includeChildSelections="true" includeChildForces="false" childId="any" type="greaterThan" />
+<condition field="pts0-0000-0000-0001" scope="roster" value="25" percentValue="true" shared="true" includeChildSelections="true" includeChildForces="false" childId="3224-4c76-76b7-ae18" type="greaterThan" />
 </conditions>
 </modifier>
 <modifier type="add" field="error" value="A Primarch may only be selected as part of the army's Primary Detachment, never an Allied Detachment.">
@@ -270,6 +270,11 @@
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a147-8c26-5913-71bb" type="atLeast" />
 <condition field="selections" scope="2390-3489-e470-7f7f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4713-ada9-5a56-e593" type="atLeast" />
 <condition field="selections" scope="2390-3489-e470-7f7f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f8a3-9568-efec-447e" type="lessThan" />
+</conditions>
+</modifier>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
 </conditions>
 </modifier>
 </modifiers>
@@ -2279,6 +2284,11 @@
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a147-8c26-5913-71bb" type="atLeast" />
 <condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4713-ada9-5a56-e593" type="atLeast" />
 <condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="44aa-07f8-4bc0-4206" type="lessThan" />
+</conditions>
+</modifier>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
 </conditions>
 </modifier>
 </modifiers>
@@ -6375,6 +6385,11 @@
 <modifier type="add" field="error" value="A unit may only have one Dedicated Transport.">
 <conditions>
 <condition field="selections" scope="9b73-36d5-ba55-fd55" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c06-cce8-6863-d996" type="greaterThan" />
+</conditions>
+</modifier>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
 </conditions>
 </modifier>
 </modifiers>
@@ -11733,6 +11748,11 @@
 </conditionGroup>
 </conditionGroups>
 </modifier>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
 </modifiers>
 <infoLinks>
 <infoLink id="af65-887a-db9a-6a49" name="Legiones Astartes" hidden="false" targetId="0ed8-99c2-6b0e-f182" type="rule" />
@@ -16317,6 +16337,11 @@
 <condition field="selections" scope="c114-92be-ee01-c705" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c06-cce8-6863-d996" type="greaterThan" />
 </conditions>
 </modifier>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
 </modifiers>
 <infoLinks>
 <infoLink id="eed9-21b3-5412-c82e" name="Legiones Astartes" hidden="false" targetId="0ed8-99c2-6b0e-f182" type="rule" />
@@ -17225,6 +17250,11 @@
 <modifier type="add" field="error" value="A unit may only have one Dedicated Transport.">
 <conditions>
 <condition field="selections" scope="dc5f-e6e9-ddec-ab25" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c06-cce8-6863-d996" type="greaterThan" />
+</conditions>
+</modifier>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
 </conditions>
 </modifier>
 </modifiers>
@@ -18532,6 +18562,11 @@ LIMITATIONS - The Warlord must belong to the Firewing. The compulsory Troops mus
 <condition field="pts0-0000-0000-0001" scope="roster" value="1000" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="any" type="lessThan" />
 </conditions>
 </modifier>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
 </modifiers>
 <constraints>
 <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a032-4373-7bf9-c1c0" type="max" />
@@ -18752,6 +18787,11 @@ LIMITATIONS - The Warlord must belong to the Firewing. The compulsory Troops mus
 <modifier type="add" field="error" value="A unit may only have one Dedicated Transport.">
 <conditions>
 <condition field="selections" scope="5234-c493-83a2-9202" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c06-cce8-6863-d996" type="greaterThan" />
+</conditions>
+</modifier>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
 </conditions>
 </modifier>
 </modifiers>
@@ -20153,6 +20193,11 @@ LIMITATIONS - The Warlord must belong to the Firewing. The compulsory Troops mus
 <condition field="selections" scope="63d4-b2d6-4d21-18dc" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c06-cce8-6863-d996" type="greaterThan" />
 </conditions>
 </modifier>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
 </modifiers>
 <infoLinks>
 <infoLink id="6470-e66d-dfb3-c243" name="Legiones Astartes" hidden="false" targetId="0ed8-99c2-6b0e-f182" type="rule" />
@@ -21296,6 +21341,11 @@ LIMITATIONS - The Warlord must belong to the Firewing. The compulsory Troops mus
 <condition field="selections" scope="dc24-cdef-2339-2629" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c06-cce8-6863-d996" type="greaterThan" />
 </conditions>
 </modifier>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
 </modifiers>
 <infoLinks>
 <infoLink id="a238-4d10-861f-5c2e" name="Legiones Astartes" hidden="false" targetId="0ed8-99c2-6b0e-f182" type="rule" />
@@ -22219,6 +22269,11 @@ LIMITATIONS - The Warlord must belong to the Firewing. The compulsory Troops mus
 <modifier type="add" field="error" value="A unit may only have one Dedicated Transport.">
 <conditions>
 <condition field="selections" scope="a634-eaa0-f122-089d" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c06-cce8-6863-d996" type="greaterThan" />
+</conditions>
+</modifier>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
 </conditions>
 </modifier>
 </modifiers>
@@ -23886,6 +23941,11 @@ LIMITATIONS - The Warlord must belong to the Firewing. The compulsory Troops mus
 </conditionGroup>
 </conditionGroups>
 </modifier>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
 </modifiers>
 <profiles>
 <profile id="d99b-794f-ad40-c96a" name="Legion Dreadnought" hidden="false" typeId="678c-90d8-478c-5dc2" typeName="Walker">
@@ -24569,6 +24629,11 @@ LIMITATIONS - The Warlord must belong to the Firewing. The compulsory Troops mus
 </conditionGroup>
 </conditionGroups>
 </modifier>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
 </modifiers>
 <profiles>
 <profile id="a741-923b-d2ad-69ea" name="Legion Contemptor Dreadnought" hidden="false" typeId="678c-90d8-478c-5dc2" typeName="Walker">
@@ -25134,6 +25199,13 @@ LIMITATIONS - The Warlord must belong to the Firewing. The compulsory Troops mus
 </costs>
 </selectionEntry>
 <selectionEntry id="feeb-7d37-bbdc-aebc" name="Legion Rapier Weapons Battery" hidden="false" collective="false" import="true" type="unit">
+<modifiers>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
+</modifiers>
 <infoLinks>
 <infoLink id="a7b1-ff6e-0ce1-48d7" name="Rapier Battery" hidden="false" targetId="2e91-032a-74e4-5900" type="rule" />
 <infoLink id="613b-61ea-81e8-7968" name="Shell Shock" hidden="false" targetId="3a95-f5b8-2ff0-9a59" type="rule" />
@@ -25567,6 +25639,11 @@ LIMITATIONS - The Warlord must belong to the Firewing. The compulsory Troops mus
 <modifier type="add" field="error" value="A unit may only have one Dedicated Transport.">
 <conditions>
 <condition field="selections" scope="b2a1-bc50-ae60-bf88" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c06-cce8-6863-d996" type="greaterThan" />
+</conditions>
+</modifier>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
 </conditions>
 </modifier>
 </modifiers>
@@ -26666,6 +26743,11 @@ LIMITATIONS - The Warlord must belong to the Firewing. The compulsory Troops mus
 </conditionGroup>
 </conditionGroups>
 </modifier>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
 </modifiers>
 <infoLinks>
 <infoLink id="ce2b-0fd2-7777-7ba6" name="Legiones Astartes" hidden="false" targetId="0ed8-99c2-6b0e-f182" type="rule" />
@@ -27364,6 +27446,11 @@ LIMITATIONS - The Warlord must belong to the Firewing. The compulsory Troops mus
 </conditionGroup>
 </conditionGroups>
 </modifier>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
 </modifiers>
 <infoLinks>
 <infoLink id="2a85-514c-5a7b-33c6" name="Legiones Astartes" hidden="false" targetId="0ed8-99c2-6b0e-f182" type="rule" />
@@ -27965,6 +28052,13 @@ LIMITATIONS - The Warlord must belong to the Firewing. The compulsory Troops mus
 </costs>
 </selectionEntry>
 <selectionEntry id="a9f2-5e7a-219e-8fa5" name="Legion Attack Bike Squadron" hidden="false" collective="false" import="true" type="unit">
+<modifiers>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
+</modifiers>
 <infoLinks>
 <infoLink id="5ce4-6766-8417-060f" name="Legiones Astartes" hidden="false" targetId="0ed8-99c2-6b0e-f182" type="rule" />
 </infoLinks>
@@ -28414,6 +28508,13 @@ LIMITATIONS - The Warlord must belong to the Firewing. The compulsory Troops mus
 </costs>
 </selectionEntry>
 <selectionEntry id="a963-97a2-0fad-5d49" name="Legion Land Speeder Squadron" hidden="false" collective="false" import="true" type="unit">
+<modifiers>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
+</modifiers>
 <infoLinks>
 <infoLink id="f000-84d9-3d94-3412" name="Deep Strike" hidden="false" targetId="4ea4-ba7e-f203-0c20" type="rule" />
 <infoLink id="1288-7298-c19e-d140" name="Armoured Crew" hidden="false" targetId="0359-9bad-9708-41de" type="rule" />
@@ -28914,6 +29015,13 @@ LIMITATIONS - The Warlord must belong to the Firewing. The compulsory Troops mus
 </costs>
 </selectionEntry>
 <selectionEntry id="9b27-2c22-e59f-6571" name="Legion Javelin Attack Speeder Squadron" hidden="false" collective="false" import="true" type="unit">
+<modifiers>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
+</modifiers>
 <infoLinks>
 <infoLink id="7bbe-7d64-c624-20e1" name="Deep Strike" hidden="false" targetId="4ea4-ba7e-f203-0c20" type="rule" />
 <infoLink id="3705-10e9-78be-b49a" name="Outflank" hidden="false" targetId="614c-b3d0-05dd-61ef" type="rule" />
@@ -29300,6 +29408,11 @@ LIMITATIONS - The Warlord must belong to the Firewing. The compulsory Troops mus
 <modifier type="add" field="error" value="A unit may only have one Dedicated Transport.">
 <conditions>
 <condition field="selections" scope="b2c2-59c9-f233-25d2" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c06-cce8-6863-d996" type="greaterThan" />
+</conditions>
+</modifier>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
 </conditions>
 </modifier>
 </modifiers>
@@ -30318,6 +30431,11 @@ LIMITATIONS - The Warlord must belong to the Firewing. The compulsory Troops mus
 </conditionGroup>
 </conditionGroups>
 </modifier>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
 </modifiers>
 <categoryLinks>
 <categoryLink id="74bd-e0b3-a7a9-bc86" name="Heavy Support" hidden="false" targetId="a78f-9734-db0c-b938" primary="true" />
@@ -31210,6 +31328,13 @@ LIMITATIONS - The Warlord must belong to the Firewing. The compulsory Troops mus
 </costs>
 </selectionEntry>
 <selectionEntry id="f3a6-209a-702e-ca9f" name="Legion Vindicator Siege Tank Squadron" hidden="false" collective="false" import="true" type="unit">
+<modifiers>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
+</modifiers>
 <categoryLinks>
 <categoryLink id="dc2e-0906-8764-39dd" name="Heavy Support" hidden="false" targetId="a78f-9734-db0c-b938" primary="true" />
 </categoryLinks>
@@ -31962,6 +32087,11 @@ LIMITATIONS - The Warlord must belong to the Firewing. The compulsory Troops mus
 </conditions>
 </conditionGroup>
 </conditionGroups>
+</modifier>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
 </modifier>
 </modifiers>
 <categoryLinks>
@@ -33553,6 +33683,11 @@ LIMITATIONS - The Warlord must belong to the Firewing. The compulsory Troops mus
 </conditions>
 </conditionGroup>
 </conditionGroups>
+</modifier>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
 </modifier>
 </modifiers>
 <constraints>
@@ -35530,6 +35665,13 @@ LIMITATIONS - The Warlord must belong to the Firewing. The compulsory Troops mus
 </costs>
 </selectionEntry>
 <selectionEntry id="2d69-0c3d-8639-1edd" name="Legion Whirlwind Scorpius" hidden="false" collective="false" import="true" type="unit">
+<modifiers>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
+</modifiers>
 <profiles>
 <profile id="83c3-0fc7-fa23-1283" name="Whirlwind Scorpius" hidden="false" typeId="c1e2-c3f6-f1e3-c783" typeName="Vehicle">
 <characteristics>
@@ -35846,6 +35988,13 @@ LIMITATIONS - The Warlord must belong to the Firewing. The compulsory Troops mus
 </costs>
 </selectionEntry>
 <selectionEntry id="7621-6444-8430-0644" name="Legion Spartan Assault Tank" hidden="false" collective="false" import="true" type="unit">
+<modifiers>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
+</modifiers>
 <profiles>
 <profile id="6196-c120-bfac-cf65" name="Legion Spartan Assault Tank" hidden="false" typeId="c1e2-c3f6-f1e3-c783" typeName="Vehicle">
 <characteristics>
@@ -36232,6 +36381,13 @@ LIMITATIONS - The Warlord must belong to the Firewing. The compulsory Troops mus
 </costs>
 </selectionEntry>
 <selectionEntry id="15de-d365-e376-f10f" name="Legion Sicaran Battle Tank" hidden="false" collective="false" import="true" type="unit">
+<modifiers>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
+</modifiers>
 <profiles>
 <profile id="7455-7e39-60c0-0ea3" name="Legion Sicaran" hidden="false" typeId="c1e2-c3f6-f1e3-c783" typeName="Vehicle">
 <characteristics>
@@ -36583,6 +36739,13 @@ LIMITATIONS - The Warlord must belong to the Firewing. The compulsory Troops mus
 </costs>
 </selectionEntry>
 <selectionEntry id="b322-2df0-e4ad-b2e8" name="Deredeo Pattern Dreadnought" hidden="false" collective="false" import="true" type="unit">
+<modifiers>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
+</modifiers>
 <profiles>
 <profile id="0ed2-dda3-1b97-c705" name="Deredeo Dreadnought" hidden="false" typeId="678c-90d8-478c-5dc2" typeName="Walker">
 <characteristics>
@@ -36843,6 +37006,13 @@ LIMITATIONS - The Warlord must belong to the Firewing. The compulsory Troops mus
 </costs>
 </selectionEntry>
 <selectionEntry id="badc-5092-78d3-6ea3" name="Sicaran Venator Tank Destroyer" hidden="false" collective="false" import="true" type="unit">
+<modifiers>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
+</modifiers>
 <profiles>
 <profile id="d2d3-464b-d7da-640f" name="Sicaran Venator" hidden="false" typeId="c1e2-c3f6-f1e3-c783" typeName="Vehicle">
 <characteristics>
@@ -37187,6 +37357,13 @@ LIMITATIONS - The Warlord must belong to the Firewing. The compulsory Troops mus
 </costs>
 </selectionEntry>
 <selectionEntry id="67c3-71b4-0dbe-eff5" name="Achilles-Alpha Pattern Land Raider" hidden="false" collective="false" import="true" type="unit">
+<modifiers>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
+</modifiers>
 <profiles>
 <profile id="1730-11e2-314f-f68e" name="Achilles-Alpha" hidden="false" typeId="c1e2-c3f6-f1e3-c783" typeName="Vehicle">
 <characteristics>
@@ -37369,6 +37546,13 @@ LIMITATIONS - The Warlord must belong to the Firewing. The compulsory Troops mus
 </costs>
 </selectionEntry>
 <selectionEntry id="57fc-48f3-8f1d-3f82" name="Leviathan Siege Dreadnought" hidden="false" collective="false" import="true" type="unit">
+<modifiers>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
+</modifiers>
 <profiles>
 <profile id="1997-41c5-3062-7f2e" name="Leviathan Siege Dreadnought" hidden="false" typeId="678c-90d8-478c-5dc2" typeName="Walker">
 <modifiers>
@@ -37673,6 +37857,13 @@ LIMITATIONS - The Warlord must belong to the Firewing. The compulsory Troops mus
 </costs>
 </selectionEntry>
 <selectionEntry id="da6f-05b5-a3cc-5271" name="Deathwing Companion Detachment" hidden="false" collective="false" import="true" type="unit">
+<modifiers>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
+</modifiers>
 <infoLinks>
 <infoLink id="7de0-bae2-f564-b375" name="Legiones Astartes (Dark Angels)" hidden="false" targetId="f0fb-e701-8b7a-22b4" type="rule" />
 <infoLink id="a4c8-98a5-40cb-209a" name="Deathwing" hidden="false" targetId="9905-7cb8-b1d7-7352" type="rule" />
@@ -38275,6 +38466,13 @@ LIMITATIONS - The Warlord must belong to the Firewing. The compulsory Troops mus
 </costs>
 </selectionEntry>
 <selectionEntry id="52f1-74db-b365-9f12" name="Deathwing Terminator Companions" hidden="false" collective="false" import="true" type="unit">
+<modifiers>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
+</modifiers>
 <infoLinks>
 <infoLink id="e0b5-6ebe-076e-f8ea" name="Legiones Astartes (Dark Angels)" hidden="false" targetId="f0fb-e701-8b7a-22b4" type="rule" />
 <infoLink id="6dc6-87d9-0525-1c2a" name="Deathwing" hidden="false" targetId="9905-7cb8-b1d7-7352" type="rule" />
@@ -38930,6 +39128,13 @@ LIMITATIONS - The Warlord must belong to the Firewing. The compulsory Troops mus
 </costs>
 </selectionEntry>
 <selectionEntry id="fdb7-989a-8804-2419" name="Inner Circle Knights Cenobium" hidden="false" collective="false" import="true" type="unit">
+<modifiers>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
+</modifiers>
 <infoLinks>
 <infoLink id="311d-3247-0575-04a5" name="Legiones Astartes (Dark Angels)" hidden="false" targetId="f0fb-e701-8b7a-22b4" type="rule" />
 <infoLink id="b1a9-b249-7bb2-c9d4" name="Stubborn" hidden="false" targetId="4221-0014-a08b-6fb4" type="rule" />
@@ -39345,6 +39550,11 @@ LIMITATIONS - The Warlord must belong to the Firewing. The compulsory Troops mus
 <modifier type="add" field="category" value="071f-8316-97af-8fd6">
 <conditions>
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="95d2-ab22-e129-0ef0" type="atLeast" />
+</conditions>
+</modifier>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
 </conditions>
 </modifier>
 </modifiers>
@@ -39863,6 +40073,13 @@ LIMITATIONS - The Warlord must belong to the Firewing. The compulsory Troops mus
 </costs>
 </selectionEntry>
 <selectionEntry id="c66e-0eba-8f71-c56f" name="Firewing Enigmatus Cabal" hidden="false" collective="false" import="true" type="unit">
+<modifiers>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
+</modifiers>
 <infoLinks>
 <infoLink id="bba4-bd45-37e5-2db2" name="Legiones Astartes (Dark Angels)" hidden="false" targetId="f0fb-e701-8b7a-22b4" type="rule" />
 <infoLink id="7919-bba9-0573-b7b3" name="Firewing" hidden="false" targetId="9c5c-4f6c-799c-6f66" type="rule" />
@@ -40102,6 +40319,11 @@ LIMITATIONS - The Warlord must belong to the Firewing. The compulsory Troops mus
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a147-8c26-5913-71bb" type="atLeast" />
 <condition field="selections" scope="5bf2-a6b5-9ecc-e383" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4713-ada9-5a56-e593" type="atLeast" />
 <condition field="selections" scope="5bf2-a6b5-9ecc-e383" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8aa9-ac6a-fe99-02f3" type="lessThan" />
+</conditions>
+</modifier>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
 </conditions>
 </modifier>
 </modifiers>
@@ -40353,6 +40575,11 @@ LIMITATIONS - The Warlord must belong to the Firewing. The compulsory Troops mus
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a147-8c26-5913-71bb" type="atLeast" />
 <condition field="selections" scope="cdc4-dac0-f61b-8f0c" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4713-ada9-5a56-e593" type="atLeast" />
 <condition field="selections" scope="cdc4-dac0-f61b-8f0c" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a07e-0258-424f-a88f" type="lessThan" />
+</conditions>
+</modifier>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
 </conditions>
 </modifier>
 </modifiers>
@@ -40613,6 +40840,11 @@ LIMITATIONS - The Warlord must belong to the Firewing. The compulsory Troops mus
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a147-8c26-5913-71bb" type="atLeast" />
 <condition field="selections" scope="f767-8a42-bd10-15e4" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4713-ada9-5a56-e593" type="atLeast" />
 <condition field="selections" scope="f767-8a42-bd10-15e4" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1bb9-3b9a-d517-5533" type="lessThan" />
+</conditions>
+</modifier>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
 </conditions>
 </modifier>
 </modifiers>
@@ -40883,6 +41115,11 @@ LIMITATIONS - The Warlord must belong to the Firewing. The compulsory Troops mus
 <condition field="selections" scope="78ae-d5f5-5963-7d7d" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1947-1074-2034-655f" type="lessThan" />
 </conditions>
 </modifier>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
 </modifiers>
 <constraints>
 <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a4cd-36a2-f6cb-6fac" type="max" />
@@ -41148,6 +41385,11 @@ LIMITATIONS - The Warlord must belong to the Firewing. The compulsory Troops mus
 <conditions>
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a147-8c26-5913-71bb" type="atLeast" />
 <condition field="selections" scope="e71d-c2d5-23f2-d32a" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4713-ada9-5a56-e593" type="atLeast" />
+</conditions>
+</modifier>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
 </conditions>
 </modifier>
 </modifiers>

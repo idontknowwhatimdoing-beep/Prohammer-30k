@@ -104,7 +104,7 @@
 <conditions>
 <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3604-ccf4-4a04-bc94" type="instanceOf" />
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
-<condition field="pts0-0000-0000-0001" scope="force" value="25" percentValue="true" shared="true" includeChildSelections="true" includeChildForces="false" childId="any" type="greaterThan" />
+<condition field="pts0-0000-0000-0001" scope="roster" value="25" percentValue="true" shared="true" includeChildSelections="true" includeChildForces="false" childId="3224-4c76-76b7-ae18" type="greaterThan" />
 </conditions>
 </modifier>
 <modifier type="add" field="error" value="A Primarch may only be selected as part of the army's Primary Detachment, never an Allied Detachment.">
@@ -564,6 +564,11 @@
 </conditionGroup>
 </conditionGroups>
 </modifier>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
 </modifiers>
 <profiles>
 <profile id="8711-0d83-99e0-a12e" name="Legate Commander" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
@@ -911,6 +916,11 @@
 </conditions>
 </conditionGroup>
 </conditionGroups>
+</modifier>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
 </modifier>
 </modifiers>
 <infoLinks>
@@ -1351,6 +1361,11 @@
 </conditionGroup>
 </conditionGroups>
 </modifier>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
 </modifiers>
 <infoLinks>
 <infoLink id="bcf7-173b-9537-5af4" name="Support Officer" hidden="false" targetId="ede8-9c45-fce5-8cd7" type="rule" />
@@ -1520,6 +1535,11 @@
 <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d028-9e72-79f1-4f5c" type="atLeast" />
 </conditions>
 </modifier>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
 </modifiers>
 <constraints>
 <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1dd2-cae8-7335-0bb2" type="max" />
@@ -1614,6 +1634,13 @@
 </costs>
 </selectionEntry>
 <selectionEntry id="765d-977d-8afb-35f4" name="Auxilia Medicae Detachment" hidden="false" collective="false" import="true" type="unit">
+<modifiers>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
+</modifiers>
 <infoLinks>
 <infoLink id="c9fb-5935-d89d-34e7" name="Disciplined Fire" hidden="false" targetId="1502-70be-b878-b60c" type="rule" />
 <infoLink id="6b62-1dc4-bfb4-7506" name="Close Formation Fighting" hidden="false" targetId="41fb-8bde-c0f8-f1d2" type="rule" />
@@ -1711,6 +1738,11 @@
 <conditions>
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7cab-755f-abea-7a42" type="atLeast" />
 <condition field="selections" scope="force" value="2" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fa7f-d23c-e0cf-0a7c" type="atLeast" />
+</conditions>
+</modifier>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
 </conditions>
 </modifier>
 </modifiers>
@@ -1961,6 +1993,13 @@
 </costs>
 </selectionEntry>
 <selectionEntry id="6675-98a5-e85d-b050" name="Auxilia Ogryn Charonite Squad" hidden="false" collective="false" import="true" type="unit">
+<modifiers>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
+</modifiers>
 <infoLinks>
 <infoLink id="c4a2-0067-5c78-d3be" name="Hammer of Wrath" hidden="false" targetId="9444-2cf7-4763-1e55" type="rule" />
 <infoLink id="c040-38d4-af9f-6ef1" name="Stubborn" hidden="false" targetId="4221-0014-a08b-6fb4" type="rule" />
@@ -2019,6 +2058,13 @@
 </costs>
 </selectionEntry>
 <selectionEntry id="af56-7d8a-0a7b-fbd0" name="Enginseer Auxilia" hidden="false" collective="false" import="true" type="unit">
+<modifiers>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
+</modifiers>
 <categoryLinks>
 <categoryLink id="eab8-0c1c-fcee-6222" name="Elites" hidden="false" targetId="6b19-97ac-7c40-0bdf" primary="true" />
 </categoryLinks>
@@ -2321,6 +2367,11 @@
 </conditions>
 </conditionGroup>
 </conditionGroups>
+</modifier>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
 </modifier>
 </modifiers>
 <infoLinks>
@@ -3027,6 +3078,11 @@
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d028-9e72-79f1-4f5c" type="lessThan" />
 </conditions>
 </modifier>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
 </modifiers>
 <infoLinks>
 <infoLink id="1ab4-580d-7e35-b730" name="Disciplined Fire" hidden="false" targetId="1502-70be-b878-b60c" type="rule" />
@@ -3371,6 +3427,13 @@
 </costs>
 </selectionEntry>
 <selectionEntry id="e386-39e7-618a-430e" name="Surgeon-Primus Aevos Jovan" hidden="false" collective="false" import="true" type="unit">
+<modifiers>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
+</modifiers>
 <constraints>
 <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a126-da64-da8a-eee1" type="max" />
 </constraints>
@@ -3464,6 +3527,11 @@
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="07e8-873b-3cf9-71cf" type="atLeast" />
 </conditions>
 </modifier>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
 </modifiers>
 <infoLinks>
 <infoLink id="82a5-401f-b56b-1ae0" name="Auxilia Infantry Tercio" hidden="false" targetId="a6e1-c8f3-7e2f-5051" type="rule" />
@@ -3538,6 +3606,11 @@
 <modifier type="add" field="error" value="Reconnaissance Cohort: the Detachment may not include Tarantula Sentry Gun Batteries.">
 <conditions>
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b11d-4988-6719-0fb5" type="atLeast" />
+</conditions>
+</modifier>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
 </conditions>
 </modifier>
 </modifiers>
@@ -4017,6 +4090,11 @@
 <modifier type="add" field="category" value="071f-8316-97af-8fd6">
 <conditions>
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="07e8-873b-3cf9-71cf" type="atLeast" />
+</conditions>
+</modifier>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
 </conditions>
 </modifier>
 </modifiers>
@@ -5858,6 +5936,13 @@
 </costs>
 </selectionEntry>
 <selectionEntry id="50ec-6544-7789-16c4" name="Armoured Sentinel Squadron" hidden="false" collective="false" import="true" type="unit">
+<modifiers>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
+</modifiers>
 <infoLinks>
 <infoLink id="af5f-511b-f817-b47b" name="Scouts" hidden="false" targetId="6bb0-de35-696c-e22a" type="rule" />
 </infoLinks>
@@ -6617,6 +6702,11 @@
 <condition field="selections" scope="force" value="2" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cb1a-6fdb-b36e-a36f" type="atLeast" />
 </conditions>
 </modifier>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
 </modifiers>
 <infoLinks>
 <infoLink id="fc9b-0ea1-ce60-99cb" name="Disciplined Fire" hidden="false" targetId="1502-70be-b878-b60c" type="rule" />
@@ -6907,6 +6997,11 @@
 <conditions>
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7d47-aa43-dfe2-4ae5" type="atLeast" />
 <condition field="selections" scope="force" value="2" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2773-c133-a5db-a018" type="atLeast" />
+</conditions>
+</modifier>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
 </conditions>
 </modifier>
 </modifiers>
@@ -7238,6 +7333,13 @@
 </costs>
 </selectionEntry>
 <selectionEntry id="3963-d014-bfcb-9df2" name="Epostremis Thunder Section" hidden="false" collective="false" import="true" type="unit">
+<modifiers>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
+</modifiers>
 <infoLinks>
 <infoLink id="7ae7-becb-76b9-0d4b" name="Disciplined Fire" hidden="false" targetId="1502-70be-b878-b60c" type="rule" />
 <infoLink id="a4d8-e093-9ef2-3012" name="Close Formation Fighting" hidden="false" targetId="41fb-8bde-c0f8-f1d2" type="rule" />
@@ -7535,6 +7637,11 @@
 <modifier type="remove" field="category" value="a78f-9734-db0c-b938">
 <conditions>
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="07e8-873b-3cf9-71cf" type="atLeast" />
+</conditions>
+</modifier>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
 </conditions>
 </modifier>
 </modifiers>
@@ -8898,6 +9005,11 @@
 <modifier type="add" field="error" value="Veletaris Assault Cohort: the Detachment may not include Auxilia Artillery Tank Batteries.">
 <conditions>
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7cab-755f-abea-7a42" type="atLeast" />
+</conditions>
+</modifier>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
 </conditions>
 </modifier>
 </modifiers>
@@ -10481,6 +10593,13 @@
 </costs>
 </selectionEntry>
 <selectionEntry id="6868-1175-896f-bed2" name="Auxilia Malcador Heavy Tank" hidden="false" collective="false" import="true" type="unit">
+<modifiers>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
+</modifiers>
 <profiles>
 <profile id="4162-dfd1-bb81-119f" name="Malcador Heavy Tank" hidden="false" typeId="c1e2-c3f6-f1e3-c783" typeName="Vehicle">
 <modifiers>
@@ -10710,6 +10829,13 @@
 </costs>
 </selectionEntry>
 <selectionEntry id="9764-37c3-0b20-4af2" name="Auxilia Malcador Infernus" hidden="false" collective="false" import="true" type="unit">
+<modifiers>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
+</modifiers>
 <profiles>
 <profile id="343b-3fd5-6557-4b50" name="Malcador Infernus" hidden="false" typeId="c1e2-c3f6-f1e3-c783" typeName="Vehicle">
 <characteristics>
@@ -10891,6 +11017,13 @@
 </costs>
 </selectionEntry>
 <selectionEntry id="6af1-cb90-f8ea-3415" name="Auxilia Valdor Tank Hunter" hidden="false" collective="false" import="true" type="unit">
+<modifiers>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
+</modifiers>
 <profiles>
 <profile id="8db3-ac5a-21fa-1df7" name="Valdor Tank Hunter" hidden="false" typeId="c1e2-c3f6-f1e3-c783" typeName="Vehicle">
 <characteristics>
@@ -11016,6 +11149,13 @@
 </costs>
 </selectionEntry>
 <selectionEntry id="bb5e-e7c1-8978-9a59" name="0-1 Cyclops Remote Demolitions Unit" hidden="false" collective="false" import="true" type="unit">
+<modifiers>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
+</modifiers>
 <constraints>
 <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="4ca7-d16b-93fd-7cb5" type="max" />
 </constraints>

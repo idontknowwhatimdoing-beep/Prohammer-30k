@@ -120,6 +120,7 @@
 <categoryEntry id="59d2-df4e-9331-c623" name="Detachment: Allied" hidden="false" />
 <categoryEntry id="052b-1879-f558-ec1e" name="Legio Custodes unit" hidden="false" />
 <categoryEntry id="640e-bd77-4dc7-426b" name="Companions of the Ten Thousand" hidden="false" />
+<categoryEntry id="3224-4c76-76b7-ae18" name="Allied Detachment unit" hidden="false" />
 <categoryEntry id="e8b8-a1ed-f923-f5f0" name="Army: Dark Angels" hidden="false" />
 <categoryEntry id="2496-8d2f-d197-38e3" name="Army: Emperor's Children" hidden="false" />
 <categoryEntry id="39c6-3c01-fa18-06c9" name="Army: White Scars" hidden="false" />

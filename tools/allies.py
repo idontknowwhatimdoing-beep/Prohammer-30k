@@ -32,6 +32,7 @@ CAT_PRIMARY = gs.cat("Detachment: Primary")
 CAT_ALLIED = gs.cat("Detachment: Allied")
 CAT_CUSTODES = gs.cat("Legio Custodes unit")
 CAT_COMPANIONS = gs.cat("Companions of the Ten Thousand")
+CAT_ALLIED_UNIT = gs.cat("Allied Detachment unit")
 
 LEGIONS = {  # matrix abbreviation -> Legion
     "DA": "Dark Angels", "EC": "Emperor's Children", "WS": "White Scars", "SW": "Space Wolves",
@@ -68,7 +69,8 @@ def army_cat(catalogue):
 def army_categories():
     """[(name, id)] for the game system."""
     out = [("Detachment: Primary", CAT_PRIMARY), ("Detachment: Allied", CAT_ALLIED),
-           ("Legio Custodes unit", CAT_CUSTODES), ("Companions of the Ten Thousand", CAT_COMPANIONS)]
+           ("Legio Custodes unit", CAT_CUSTODES), ("Companions of the Ten Thousand", CAT_COMPANIONS),
+           ("Allied Detachment unit", CAT_ALLIED_UNIT)]
     out += [("Army: " + short_name(c), army_cat(c)) for c in CATALOGUES]
     return out
 
@@ -124,8 +126,9 @@ def in_force(fid):
 
 
 def pct_cond(pct=25):
-    """This force's points are more than pct % of the army's points."""
-    c = cond("any", "force", "greaterThan", pct, field=gs.PTS if hasattr(gs, "PTS") else PTS, deep=True)
+    """The points of the Allied Detachments' units are more than pct % of the army's points. (New Recruit takes a
+    percentage of the scope's total: units of Allied Detachments carry CAT_ALLIED_UNIT, counted across the roster.)"""
+    c = cond(CAT_ALLIED_UNIT, "roster", "greaterThan", pct, field=PTS, deep=True)
     c.set("percentValue", "true")
     return c
 
@@ -214,6 +217,11 @@ def apply(root, special_allied=()):
                         f"Sworn Enemies (Allies Matrix): {SHORT[me]} and {who} may not be part of the same army.",
                         conds=[roster_has(army_cat(cat_name), 2 if b == me else 1)]))
     mods += army_specific(root, name, alleg)
+    # every unit of a non-Primary Detachment carries CAT_ALLIED_UNIT (for the 25% limit)
+    root_ids = {l.get("targetId") for l in root.find("entryLinks")}
+    for u in shared_units(root):
+        if u.get("id") in root_ids:
+            add_mods(u, [modifier("add", "category", CAT_ALLIED_UNIT, conds=[not_primary])])
     add_mods(alleg, mods)
     add_to(alleg, "rules", [matrix_rule(name)])
 

@@ -86,7 +86,7 @@
 <conditions>
 <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3604-ccf4-4a04-bc94" type="instanceOf" />
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
-<condition field="pts0-0000-0000-0001" scope="force" value="25" percentValue="true" shared="true" includeChildSelections="true" includeChildForces="false" childId="any" type="greaterThan" />
+<condition field="pts0-0000-0000-0001" scope="roster" value="25" percentValue="true" shared="true" includeChildSelections="true" includeChildForces="false" childId="3224-4c76-76b7-ae18" type="greaterThan" />
 </conditions>
 </modifier>
 <modifier type="add" field="error" value="A Primarch may only be selected as part of the army's Primary Detachment, never an Allied Detachment.">
@@ -607,6 +607,11 @@
 </conditions>
 </conditionGroup>
 </conditionGroups>
+</modifier>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
 </modifier>
 </modifiers>
 <constraints>
@@ -1533,6 +1538,11 @@
 </conditionGroup>
 </conditionGroups>
 </modifier>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
 </modifiers>
 <constraints>
 <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="869b-eaf5-d625-ad4f" type="max" />
@@ -2035,6 +2045,11 @@
 </conditions>
 </conditionGroup>
 </conditionGroups>
+</modifier>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
 </modifier>
 </modifiers>
 <constraints>
@@ -2545,6 +2560,11 @@
 </conditionGroup>
 </conditionGroups>
 </modifier>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
 </modifiers>
 <constraints>
 <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="3cc0-77c4-d095-4f50" type="max" />
@@ -3053,6 +3073,11 @@
 </conditions>
 </conditionGroup>
 </conditionGroups>
+</modifier>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
 </modifier>
 </modifiers>
 <constraints>
@@ -3707,6 +3732,11 @@
 </conditionGroup>
 </conditionGroups>
 </modifier>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
 </modifiers>
 <constraints>
 <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="7191-ea0a-d7fb-38a1" type="max" />
@@ -4347,6 +4377,13 @@
 </costs>
 </selectionEntry>
 <selectionEntry id="ee0d-f632-b2c7-11c3" name="Platoon Command Cadre" hidden="false" collective="false" import="true" type="unit">
+<modifiers>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
+</modifiers>
 <infoLinks>
 <infoLink id="e710-b5c5-00f9-c371" name="Provenance" hidden="false" targetId="b4b1-8c7e-039b-d41d" type="rule" />
 <infoLink id="f92c-8220-0f1b-2162" name="Commanding Officer" hidden="false" targetId="81af-bbb7-56a3-a8b9" type="rule" />
@@ -5505,6 +5542,13 @@
 </costs>
 </selectionEntry>
 <selectionEntry id="21e2-2652-6c9a-5893" name="0-1 Discipline Master Cadre" hidden="false" collective="false" import="true" type="unit">
+<modifiers>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
+</modifiers>
 <constraints>
 <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="abb1-8e99-4f0c-8bcb" type="max" />
 </constraints>
@@ -6447,6 +6491,11 @@
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4a90-e842-c02e-4f56" type="lessThan" />
 </conditions>
 </modifier>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
 </modifiers>
 <constraints>
 <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="c3e2-c1ba-07ea-d29a" type="max" />
@@ -6846,6 +6895,11 @@
 <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="267b-12c2-839b-a93a" type="atLeast" />
 </conditions>
 </modifier>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
 </modifiers>
 <constraints>
 <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="909b-4b4a-9276-178d" type="max" />
@@ -6982,6 +7036,13 @@
 </costs>
 </selectionEntry>
 <selectionEntry id="dcc6-c265-beff-3569" name="Imperialis Auxilia Medicae Detachment" hidden="false" collective="false" import="true" type="unit">
+<modifiers>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
+</modifiers>
 <infoLinks>
 <infoLink id="3b31-d071-fb33-f726" name="Provenance" hidden="false" targetId="b4b1-8c7e-039b-d41d" type="rule" />
 <infoLink id="bbad-259a-ce31-cf04" name="Attached Deployment" hidden="false" targetId="34e5-f7c0-83e5-f128" type="rule" />
@@ -7199,6 +7260,11 @@
 <modifier type="remove" field="category" value="071f-8316-97af-8fd6">
 <conditions>
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="88a1-2f3e-1c80-8417" type="atLeast" />
+</conditions>
+</modifier>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
 </conditions>
 </modifier>
 </modifiers>
@@ -7672,6 +7738,13 @@
 </costs>
 </selectionEntry>
 <selectionEntry id="77e0-721b-22c3-82b7" name="0-2 Enginseer Auxilia (one Elites choice)" hidden="false" collective="false" import="true" type="unit">
+<modifiers>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
+</modifiers>
 <constraints>
 <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="4b0b-a6aa-0a27-d435" type="max" />
 </constraints>
@@ -8416,6 +8489,11 @@
 <condition field="selections" scope="b242-f392-211c-3559" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="aeef-1d61-e4f7-8169" type="lessThan" />
 </conditions>
 </modifier>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
 </modifiers>
 <profiles>
 <profile id="1df1-3831-faed-5210" name="Imperial Battle Armour" hidden="false" typeId="678c-90d8-478c-5dc2" typeName="Walker">
@@ -8591,6 +8669,11 @@
 </conditionGroups>
 </conditionGroup>
 </conditionGroups>
+</modifier>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
 </modifier>
 </modifiers>
 <infoLinks>
@@ -9821,6 +9904,11 @@
 </conditionGroup>
 </conditionGroups>
 </modifier>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
 </modifiers>
 <infoLinks>
 <infoLink id="3639-3e5a-8954-4c6b" name="Provenance" hidden="false" targetId="b4b1-8c7e-039b-d41d" type="rule" />
@@ -10962,6 +11050,11 @@
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="88a1-2f3e-1c80-8417" type="atLeast" />
 </conditions>
 </modifier>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
 </modifiers>
 <infoLinks>
 <infoLink id="3b1b-9cae-1029-d7e9" name="Provenance" hidden="false" targetId="b4b1-8c7e-039b-d41d" type="rule" />
@@ -11793,6 +11886,11 @@
 <modifier type="remove" field="category" value="071f-8316-97af-8fd6">
 <conditions>
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="88a1-2f3e-1c80-8417" type="atLeast" />
+</conditions>
+</modifier>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
 </conditions>
 </modifier>
 </modifiers>
@@ -16985,6 +17083,11 @@
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cde6-8619-04de-8ab8" type="atLeast" />
 </conditions>
 </modifier>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
 </modifiers>
 <infoLinks>
 <infoLink id="32b3-dba0-1c62-6138" name="Provenance" hidden="false" targetId="b4b1-8c7e-039b-d41d" type="rule" />
@@ -17620,6 +17723,11 @@
 <modifier type="add" field="error" value="Grenadier Squads may not be included with the Cult Horde Provenance.">
 <conditions>
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4a90-e842-c02e-4f56" type="atLeast" />
+</conditions>
+</modifier>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
 </conditions>
 </modifier>
 </modifiers>
@@ -18510,6 +18618,11 @@
 <condition field="selections" scope="2c4f-3fa5-d628-14e2" value="10" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5d54-b717-02be-5809" type="atLeast" />
 </conditions>
 </modifier>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
 </modifiers>
 <infoLinks>
 <infoLink id="9b58-8859-4932-f3d2" name="Provenance" hidden="false" targetId="b4b1-8c7e-039b-d41d" type="rule" />
@@ -18978,6 +19091,11 @@
 <modifier type="remove" field="category" value="071f-8316-97af-8fd6">
 <conditions>
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="88a1-2f3e-1c80-8417" type="atLeast" />
+</conditions>
+</modifier>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
 </conditions>
 </modifier>
 </modifiers>
@@ -19537,6 +19655,11 @@
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="88a1-2f3e-1c80-8417" type="atLeast" />
 </conditions>
 </modifier>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
 </modifiers>
 <infoLinks>
 <infoLink id="4dbe-7510-b4c0-aedd" name="Provenance" hidden="false" targetId="b4b1-8c7e-039b-d41d" type="rule" />
@@ -20040,6 +20163,11 @@
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4a90-e842-c02e-4f56" type="atLeast" />
 </conditions>
 </modifier>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
 </modifiers>
 <infoLinks>
 <infoLink id="2e68-326e-3641-b72f" name="Provenance" hidden="false" targetId="b4b1-8c7e-039b-d41d" type="rule" />
@@ -20528,6 +20656,13 @@
 </costs>
 </selectionEntry>
 <selectionEntry id="c857-3e95-f1ac-2347" name="Imperialis Militia Sentinel Squadron" hidden="false" collective="false" import="true" type="unit">
+<modifiers>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
+</modifiers>
 <infoLinks>
 <infoLink id="e8eb-ef9a-5d85-f445" name="Scouts" hidden="false" targetId="6bb0-de35-696c-e22a" type="rule" />
 <infoLink id="5748-be92-9547-6810" name="Vehicle Squadron" hidden="false" targetId="6940-4c00-52ec-dd58" type="rule" />
@@ -21013,6 +21148,13 @@
 </costs>
 </selectionEntry>
 <selectionEntry id="f2ea-3d23-2340-0479" name="Imperial Land Speeder Squadron" hidden="false" collective="false" import="true" type="unit">
+<modifiers>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
+</modifiers>
 <infoLinks>
 <infoLink id="9789-9718-b7bd-ebea" name="Vehicle Squadron" hidden="false" targetId="6940-4c00-52ec-dd58" type="rule" />
 </infoLinks>
@@ -21347,6 +21489,11 @@
 <modifier type="add" field="error" value="Cavalry Squadrons may not be included with the Clanholds of the Deep Worlds Provenance.">
 <conditions>
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5fd2-7d4b-5e25-ca7f" type="atLeast" />
+</conditions>
+</modifier>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
 </conditions>
 </modifier>
 </modifiers>
@@ -22162,6 +22309,13 @@
 </costs>
 </selectionEntry>
 <selectionEntry id="75f4-7a66-78d1-629e" name="Cyclops Demolition Vehicle" hidden="false" collective="false" import="true" type="unit">
+<modifiers>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
+</modifiers>
 <infoLinks>
 <infoLink id="089f-38fe-6d57-2bf4" name="Remote Control" hidden="false" targetId="0fdd-1036-d812-6ab8" type="rule" />
 <infoLink id="2fea-d955-eca0-1310" name="Demolition Vehicle" hidden="false" targetId="1794-d46f-232d-a215" type="rule" />
@@ -22265,6 +22419,13 @@
 </costs>
 </selectionEntry>
 <selectionEntry id="c706-23a1-9876-a9c4" name="Salamander Scout Vehicle" hidden="false" collective="false" import="true" type="unit">
+<modifiers>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
+</modifiers>
 <profiles>
 <profile id="2f7e-6449-f201-5891" name="Salamander Scout Vehicle" hidden="false" typeId="c1e2-c3f6-f1e3-c783" typeName="Vehicle">
 <characteristics>
@@ -22367,6 +22528,11 @@
 <modifier type="remove" field="category" value="071f-8316-97af-8fd6">
 <conditions>
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="88a1-2f3e-1c80-8417" type="atLeast" />
+</conditions>
+</modifier>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
 </conditions>
 </modifier>
 </modifiers>
@@ -22874,6 +23040,11 @@
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6460-2a66-ee84-488a" type="lessThan" />
 </conditions>
 </modifier>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
 </modifiers>
 <infoLinks>
 <infoLink id="2108-fc33-4d8f-cabe" name="Fearless" hidden="false" targetId="7460-d0b4-32f7-f367" type="rule" />
@@ -22935,6 +23106,11 @@
 </conditions>
 </conditionGroup>
 </conditionGroups>
+</modifier>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
 </modifier>
 </modifiers>
 <infoLinks>
@@ -27001,6 +27177,11 @@
 <condition field="selections" scope="ff25-0a14-e8b5-994d" value="3" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7188-eb5a-1b24-cc16" type="atLeast" />
 </conditions>
 </modifier>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
 </modifiers>
 <infoLinks>
 <infoLink id="5764-5a2f-b41c-82d3" name="Provenance" hidden="false" targetId="b4b1-8c7e-039b-d41d" type="rule" />
@@ -27258,6 +27439,13 @@
 </costs>
 </selectionEntry>
 <selectionEntry id="ea5a-d017-9cfc-e81d" name="Imperialis Militia Land Raider" hidden="false" collective="false" import="true" type="unit">
+<modifiers>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
+</modifiers>
 <profiles>
 <profile id="c6ba-a83f-a477-bd69" name="Land Raider" hidden="false" typeId="c1e2-c3f6-f1e3-c783" typeName="Vehicle">
 <characteristics>
@@ -27403,6 +27591,11 @@
 </conditions>
 </conditionGroup>
 </conditionGroups>
+</modifier>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
 </modifier>
 </modifiers>
 <infoLinks>
@@ -28986,6 +29179,13 @@
 </costs>
 </selectionEntry>
 <selectionEntry id="c1d5-8340-4365-d6c2" name="Auxilia Heavy Ordnance Battery" hidden="false" collective="false" import="true" type="unit">
+<modifiers>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
+</modifiers>
 <infoLinks>
 <infoLink id="29ab-363b-a494-9623" name="Immobile Artillery" hidden="false" targetId="2352-e471-3eab-c944" type="rule" />
 </infoLinks>
@@ -29158,6 +29358,13 @@
 </costs>
 </selectionEntry>
 <selectionEntry id="6ca6-0dcb-e56d-c557" name="0-1 Auxilia Malcador Heavy Tank" hidden="false" collective="false" import="true" type="unit">
+<modifiers>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
+</modifiers>
 <constraints>
 <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="3d22-6b9e-0b28-5f46" type="max" />
 </constraints>
@@ -29491,6 +29698,13 @@
 </costs>
 </selectionEntry>
 <selectionEntry id="1a4b-7686-6221-0848" name="Auxilia Gorgon Heavy Transporter" hidden="false" collective="false" import="true" type="unit">
+<modifiers>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
+</modifiers>
 <profiles>
 <profile id="f83a-6697-47c9-68e5" name="Auxilia Gorgon" hidden="false" typeId="3784-9225-99aa-24c2" typeName="Super-heavy Vehicle">
 <characteristics>

@@ -202,7 +202,7 @@
 <conditions>
 <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3604-ccf4-4a04-bc94" type="instanceOf" />
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
-<condition field="pts0-0000-0000-0001" scope="force" value="25" percentValue="true" shared="true" includeChildSelections="true" includeChildForces="false" childId="any" type="greaterThan" />
+<condition field="pts0-0000-0000-0001" scope="roster" value="25" percentValue="true" shared="true" includeChildSelections="true" includeChildForces="false" childId="3224-4c76-76b7-ae18" type="greaterThan" />
 </conditions>
 </modifier>
 <modifier type="add" field="error" value="A Primarch may only be selected as part of the army's Primary Detachment, never an Allied Detachment.">
@@ -411,6 +411,11 @@
 </conditions>
 </conditionGroup>
 </conditionGroups>
+</modifier>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
 </modifier>
 </modifiers>
 <constraints>
@@ -1403,6 +1408,13 @@
 </costs>
 </selectionEntry>
 <selectionEntry id="7740-3d7d-054e-1d0a" name="Ruinstorm Greater Daemon" hidden="false" collective="false" import="true" type="unit">
+<modifiers>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
+</modifiers>
 <infoLinks>
 <infoLink id="f6f3-a1ae-9c4b-127b" name="Daemon" hidden="false" targetId="2e04-a925-ec32-e078" type="rule" />
 <infoLink id="1255-bd88-b8a2-d788" name="Daemonic Instability" hidden="false" targetId="9608-b110-354e-4e56" type="rule" />
@@ -2530,6 +2542,13 @@
 </costs>
 </selectionEntry>
 <selectionEntry id="02a1-615c-66f8-1fa7" name="Ruinstorm Daemon Chosen" hidden="false" collective="false" import="true" type="unit">
+<modifiers>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
+</modifiers>
 <infoLinks>
 <infoLink id="290d-cf5f-775e-bcd3" name="Daemon" hidden="false" targetId="2e04-a925-ec32-e078" type="rule" />
 <infoLink id="8f47-cd74-e4a2-7278" name="Daemonic Instability" hidden="false" targetId="9608-b110-354e-4e56" type="rule" />
@@ -3501,6 +3520,13 @@
 </costs>
 </selectionEntry>
 <selectionEntry id="74cd-d1a0-81e1-9598" name="Ruinstorm Daemon Brutes" hidden="false" collective="false" import="true" type="unit">
+<modifiers>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
+</modifiers>
 <infoLinks>
 <infoLink id="1025-2208-be2a-a81d" name="Daemon" hidden="false" targetId="2e04-a925-ec32-e078" type="rule" />
 <infoLink id="62ad-08f7-7f78-d608" name="Daemonic Instability" hidden="false" targetId="9608-b110-354e-4e56" type="rule" />
@@ -4336,6 +4362,13 @@
 </costs>
 </selectionEntry>
 <selectionEntry id="bdb9-7b07-fc66-994d" name="Ruinstorm Lesser Daemons" hidden="false" collective="false" import="true" type="unit">
+<modifiers>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
+</modifiers>
 <infoLinks>
 <infoLink id="6030-e09e-43c9-b78d" name="Daemon" hidden="false" targetId="2e04-a925-ec32-e078" type="rule" />
 <infoLink id="6e8f-4907-cf2c-353a" name="Daemonic Instability" hidden="false" targetId="9608-b110-354e-4e56" type="rule" />
@@ -5310,6 +5343,13 @@
 </costs>
 </selectionEntry>
 <selectionEntry id="cd00-c543-f41a-8583" name="Ruinstorm Daemon Beasts" hidden="false" collective="false" import="true" type="unit">
+<modifiers>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
+</modifiers>
 <infoLinks>
 <infoLink id="85d1-eeca-8d0c-9cc9" name="Daemon" hidden="false" targetId="2e04-a925-ec32-e078" type="rule" />
 <infoLink id="c4f5-2c87-da7c-187d" name="Daemonic Instability" hidden="false" targetId="9608-b110-354e-4e56" type="rule" />
@@ -6200,6 +6240,13 @@
 </costs>
 </selectionEntry>
 <selectionEntry id="d551-9631-869b-f0e7" name="Ruinstorm Daemon Swarms" hidden="false" collective="false" import="true" type="unit">
+<modifiers>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
+</modifiers>
 <infoLinks>
 <infoLink id="f063-3e7a-6a8e-2e35" name="Daemon" hidden="false" targetId="2e04-a925-ec32-e078" type="rule" />
 <infoLink id="f8dd-f20e-b7d9-15b2" name="Daemonic Instability" hidden="false" targetId="9608-b110-354e-4e56" type="rule" />
@@ -6684,6 +6731,13 @@
 </costs>
 </selectionEntry>
 <selectionEntry id="9e52-cd71-6e58-bbeb" name="Ruinstorm Possessed" hidden="false" collective="false" import="true" type="unit">
+<modifiers>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
+</modifiers>
 <infoLinks>
 <infoLink id="423e-05a8-0b4d-8546" name="Slaves to Darkness" hidden="false" targetId="dd1d-8a07-4cd8-0ce7" type="rule" />
 <infoLink id="eb26-1c0f-7cec-1413" name="Support Unit" hidden="false" targetId="42c4-e829-0600-c0ac" type="rule" />
@@ -7048,6 +7102,13 @@
 </costs>
 </selectionEntry>
 <selectionEntry id="c5c4-19ab-1ae9-9d37" name="Ruinstorm Daemon Cavalry" hidden="false" collective="false" import="true" type="unit">
+<modifiers>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
+</modifiers>
 <infoLinks>
 <infoLink id="8810-5ce6-6f55-90be" name="Daemon" hidden="false" targetId="2e04-a925-ec32-e078" type="rule" />
 <infoLink id="0ad5-74ea-9e06-b01f" name="Daemonic Instability" hidden="false" targetId="9608-b110-354e-4e56" type="rule" />
@@ -7881,6 +7942,13 @@
 </costs>
 </selectionEntry>
 <selectionEntry id="09a1-b46c-72ae-a7c6" name="Ruinstorm Daemon Shrike" hidden="false" collective="false" import="true" type="unit">
+<modifiers>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
+</modifiers>
 <infoLinks>
 <infoLink id="39a1-7957-7dd1-4235" name="Daemon" hidden="false" targetId="2e04-a925-ec32-e078" type="rule" />
 <infoLink id="01c2-25d0-d244-8fb5" name="Daemonic Instability" hidden="false" targetId="9608-b110-354e-4e56" type="rule" />
@@ -8277,6 +8345,13 @@
 </costs>
 </selectionEntry>
 <selectionEntry id="42bd-78f8-974b-a521" name="Greater Ruinstorm Daemon Beasts" hidden="false" collective="false" import="true" type="unit">
+<modifiers>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
+</modifiers>
 <infoLinks>
 <infoLink id="cb63-bdc0-5834-cb12" name="Daemon" hidden="false" targetId="2e04-a925-ec32-e078" type="rule" />
 <infoLink id="3123-32cc-3c29-5ce7" name="Daemonic Instability" hidden="false" targetId="9608-b110-354e-4e56" type="rule" />
@@ -9278,6 +9353,13 @@
 </costs>
 </selectionEntry>
 <selectionEntry id="5c08-db0b-5988-3a4e" name="Ruinstorm Daemon Behemoth" hidden="false" collective="false" import="true" type="unit">
+<modifiers>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
+</modifiers>
 <infoLinks>
 <infoLink id="afad-4fc0-ed2b-3962" name="Daemon" hidden="false" targetId="2e04-a925-ec32-e078" type="rule" />
 <infoLink id="5736-bf6b-84a9-6591" name="Daemonic Instability" hidden="false" targetId="9608-b110-354e-4e56" type="rule" />
@@ -9960,6 +10042,11 @@
 </conditions>
 </conditionGroup>
 </conditionGroups>
+</modifier>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
 </modifier>
 </modifiers>
 <infoLinks>
@@ -11114,6 +11201,11 @@
 </conditionGroup>
 </conditionGroups>
 </modifier>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
 </modifiers>
 <constraints>
 <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="ad5a-a1ac-92ef-f8e7" type="max" />
@@ -11199,6 +11291,11 @@
 </conditions>
 </conditionGroup>
 </conditionGroups>
+</modifier>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
 </modifier>
 </modifiers>
 <constraints>
@@ -11318,6 +11415,11 @@
 </conditions>
 </conditionGroup>
 </conditionGroups>
+</modifier>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
 </modifier>
 </modifiers>
 <constraints>
@@ -11496,6 +11598,11 @@
 </conditionGroup>
 </conditionGroups>
 </modifier>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
+</modifier>
 </modifiers>
 <constraints>
 <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="958b-b963-5351-4402" type="max" />
@@ -11633,6 +11740,11 @@
 </conditions>
 </conditionGroup>
 </conditionGroups>
+</modifier>
+<modifier type="add" field="category" value="3224-4c76-76b7-ae18">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
 </modifier>
 </modifiers>
 <constraints>
