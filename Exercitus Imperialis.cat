@@ -425,6 +425,7 @@
 <modifier type="add" field="error" value="Cult Horde may only be selected by a Traitor army.">
 <conditions>
 <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="af50-de01-cc93-f43e" type="atLeast" />
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4a90-e842-c02e-4f56" type="atLeast" />
 </conditions>
 </modifier>
 </modifiers>
@@ -520,6 +521,7 @@
 <modifier type="add" field="error" value="Undying Horde may only be selected by a Traitor army.">
 <conditions>
 <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="af50-de01-cc93-f43e" type="atLeast" />
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cde6-8619-04de-8ab8" type="atLeast" />
 </conditions>
 </modifier>
 </modifiers>

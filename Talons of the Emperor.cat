@@ -159,7 +159,11 @@
 </selectionEntry>
 <selectionEntry id="267b-12c2-839b-a93a" name="Traitor" hidden="false" collective="false" import="true" type="upgrade" sortIndex="3">
 <modifiers>
-<modifier type="add" field="warning" value="A Talons of the Emperor Detachment is always Loyalist unless a scenario or campaign rule expressly states otherwise." />
+<modifier type="add" field="warning" value="A Talons of the Emperor Detachment is always Loyalist unless a scenario or campaign rule expressly states otherwise.">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="267b-12c2-839b-a93a" type="atLeast" />
+</conditions>
+</modifier>
 </modifiers>
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f732-afe9-63d6-9312" type="max" />

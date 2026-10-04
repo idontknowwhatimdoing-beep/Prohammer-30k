@@ -745,7 +745,8 @@ def army_config():
     loyal = entry(L.LOYALIST, "Loyalist", constraints=[constraint(uid(L.LOYALIST, "max"), "max", 1, auto=True)])
     traitor = entry(L.TRAITOR, "Traitor", constraints=[constraint(uid(L.TRAITOR, "max"), "max", 1, auto=True)],
                     mods=[modifier("add", "warning", "A Talons of the Emperor Detachment is always Loyalist unless a "
-                                                     "scenario or campaign rule expressly states otherwise.")])
+                                                     "scenario or campaign rule expressly states otherwise.",
+                                   conds=[cond(L.TRAITOR, "force", "atLeast", 1)])])
     g = group(gid, "Allegiance", entries=[loyal, traitor], default=L.LOYALIST,
               constraints=[constraint(uid(gid, "min"), "min", 1, auto=True),
                            constraint(uid(gid, "max"), "max", 1, auto=True)])

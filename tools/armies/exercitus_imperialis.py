@@ -2276,7 +2276,7 @@ def provenances_config():
         mods = []
         if n in ("Cult Horde", "Undying Horde"):
             mods.append(modifier("add", "error", f"{n} may only be selected by a Traitor army.",
-                                 conds=[cond(L.LOYALIST, "roster", "atLeast", 1)]))
+                                 conds=[cond(L.LOYALIST, "roster", "atLeast", 1), cond(oid, "force", "atLeast", 1)]))
         ents.append(entry(oid, n, cost=c, mods=mods, constraints=[constraint(uid(oid, "max"), "max", 1, auto=True)],
                           infolinks=rules_links([f"Provenance: {n}"], key=oid)))
     comp = uid(eid, "Companions of the Ten Thousand")
