@@ -72,9 +72,9 @@
 </conditions>
 </modifier>
 <modifier type="add" field="category" value="59d2-df4e-9331-c623">
-<conditionGroups>
-<condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3604-ccf4-4a04-bc94" type="instanceOf" />
-</conditionGroups>
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
+</conditions>
 </modifier>
 <modifier type="add" field="error" value="An army has exactly one Primary Detachment.">
 <conditions>
@@ -86,9 +86,6 @@
 <conditions>
 <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
 </conditions>
-<conditionGroups>
-<condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3604-ccf4-4a04-bc94" type="instanceOf" />
-</conditionGroups>
 </modifier>
 <modifier type="add" field="error" value="Loyalist and Traitor Detachments may not be part of the same army (an alliance never overrides allegiance requirements).">
 <conditions>
@@ -106,10 +103,8 @@
 <modifier type="add" field="error" value="A Primarch may only be selected as part of the army's Primary Detachment, never an Allied Detachment.">
 <conditions>
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ef4e-f5b8-029c-6e3f" type="atLeast" />
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
 </conditions>
-<conditionGroups>
-<condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3604-ccf4-4a04-bc94" type="instanceOf" />
-</conditionGroups>
 </modifier>
 <modifier type="add" field="error" value="The Emperor's Talons: an army whose Primary Detachment contains Legio Custodes units may not include an Allied Detachment (except an Exercitus Imperialis Allied Contingent with Companions of the Ten Thousand).">
 <conditions>

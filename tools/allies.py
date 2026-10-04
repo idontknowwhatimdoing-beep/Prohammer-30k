@@ -147,18 +147,19 @@ def apply(root, special_allied=()):
     if alleg is None:
         raise SystemExit(f"{name}: no Allegiance entry to carry the army markers")
     mark = army_cat(name)
-    allied_forces = [ALLIED_FORCE] + list(special_allied)
-    in_allied = any_of(*[in_force(f) for f in allied_forces]) if len(allied_forces) > 1 else in_force(ALLIED_FORCE)
+    # New Recruit: an "instanceOf" force condition on the game system's Allied Detachment is also true inside a
+    # Primary Detachment (live test), so "allied" = any force whose Allegiance did not get the Primary marker.
+    not_primary = cond(CAT_PRIMARY, "force", "lessThan", 1)
     add_to(alleg, "categoryLinks", [category_link(mark, "Army: " + short_name(name), key=uid("allies", name))])
     mods = [
         modifier("add", "category", CAT_PRIMARY, conds=[in_force(PRIMARY_FORCE)]),
-        modifier("add", "category", CAT_ALLIED, groups=[in_allied]),
+        modifier("add", "category", CAT_ALLIED, conds=[not_primary]),
         # one Primary Detachment; an Allied Detachment needs one
         modifier("add", "error", "An army has exactly one Primary Detachment.",
                  conds=[in_force(PRIMARY_FORCE), roster_has(CAT_PRIMARY, 2)]),
         modifier("add", "error", "An Allied Detachment needs a Primary Detachment in the same army (add a 'Primary "
                                  "Detachment' force first).",
-                 conds=[cond(CAT_PRIMARY, "roster", "lessThan", 1)], groups=[in_allied]),
+                 conds=[cond(CAT_PRIMARY, "roster", "lessThan", 1)]),
         # Loyalist and Traitor do not mix
         modifier("add", "error", "Loyalist and Traitor Detachments may not be part of the same army (an alliance never "
                                  "overrides allegiance requirements).",
@@ -171,7 +172,7 @@ def apply(root, special_allied=()):
         # Primarchs: Primary Detachment only (Forces of the Legions, Fielding a Primarch)
         modifier("add", "error", "A Primarch may only be selected as part of the army's Primary Detachment, never an "
                                  "Allied Detachment.",
-                 conds=[cond(gs.CAT_PRIMARCH, "force", "atLeast", 1)], groups=[in_allied]),
+                 conds=[cond(gs.CAT_PRIMARCH, "force", "atLeast", 1), not_primary]),
     ]
     # Sworn Enemies
     rel = relations()
