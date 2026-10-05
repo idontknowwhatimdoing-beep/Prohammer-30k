@@ -711,6 +711,11 @@ def retinue_group(char_key, char_id, praetor):
                                               "Castellax or Vorax Battle-Automata Maniple (choose it as his Retinue).",
                               conds=[praevian] + [cond(t, char_id, "lessThan", 1)
                                                   for t in L.PRAEVIAN_MANIPLES.values()]))
+        for e in ents:
+            gmods.append(modifier("add", "error", f"Master of Cybernetica: a Legion Praevian takes a Battle-Automata "
+                                                  f"Maniple instead of a {e.get('name')} - remove the {e.get('name')} "
+                                                  "and choose a Castellax or Vorax Maniple.",
+                                  conds=[praevian, cond(e.get("id"), char_id, "atLeast", 1)]))
     return group(gid, "Retinue (no Force Organisation slot)", links=links,
                  constraints=[constraint(uid(gid, "max"), "max", 1, auto=True)], mods=gmods)
 

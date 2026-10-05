@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="p30k-0000-0001-0001" name="Legiones Astartes - Dark Angels" revision="61" battleScribeVersion="2.03" authorName="idontknowwhatimdoing-beep" authorUrl="https://github.com/idontknowwhatimdoing-beep/Prohammer-30k" library="false" gameSystemId="p30k-0000-0000-0001" gameSystemRevision="61" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="p30k-0000-0001-0001" name="Legiones Astartes - Dark Angels" revision="62" battleScribeVersion="2.03" authorName="idontknowwhatimdoing-beep" authorUrl="https://github.com/idontknowwhatimdoing-beep/Prohammer-30k" library="false" gameSystemId="p30k-0000-0000-0001" gameSystemRevision="62" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
 <catalogueLinks>
 <catalogueLink id="bc42-e288-c5f6-5f37" name="Mechanicum" targetId="68d2-fb71-996c-4786" type="catalogue" importRootEntries="false" />
 </catalogueLinks>
@@ -5938,6 +5938,18 @@
 <condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d165-b2dd-1212-6864" type="lessThan" />
 </conditions>
 </modifier>
+<modifier type="add" field="error" value="Master of Cybernetica: a Legion Praevian takes a Battle-Automata Maniple instead of a Legion Command Squad - remove the Legion Command Squad and choose a Castellax or Vorax Maniple.">
+<conditions>
+<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="aa3f-f2b2-f321-d88e" type="atLeast" />
+<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5fb6-a52b-4f8b-575d" type="atLeast" />
+</conditions>
+</modifier>
+<modifier type="add" field="error" value="Master of Cybernetica: a Legion Praevian takes a Battle-Automata Maniple instead of a Legion Terminator Command Squad - remove the Legion Terminator Command Squad and choose a Castellax or Vorax Maniple.">
+<conditions>
+<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="aa3f-f2b2-f321-d88e" type="atLeast" />
+<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="eddc-ad51-0f19-97f5" type="atLeast" />
+</conditions>
+</modifier>
 </modifiers>
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5804-d971-9679-0060" type="max" />
@@ -10871,6 +10883,18 @@
 <condition field="selections" scope="04ee-7786-bdf9-d15d" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0ba1-44c7-f398-0fda" type="atLeast" />
 <condition field="selections" scope="04ee-7786-bdf9-d15d" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e136-f0e1-72ab-778f" type="lessThan" />
 <condition field="selections" scope="04ee-7786-bdf9-d15d" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d165-b2dd-1212-6864" type="lessThan" />
+</conditions>
+</modifier>
+<modifier type="add" field="error" value="Master of Cybernetica: a Legion Praevian takes a Battle-Automata Maniple instead of a Legion Command Squad - remove the Legion Command Squad and choose a Castellax or Vorax Maniple.">
+<conditions>
+<condition field="selections" scope="04ee-7786-bdf9-d15d" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0ba1-44c7-f398-0fda" type="atLeast" />
+<condition field="selections" scope="04ee-7786-bdf9-d15d" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5fb6-a52b-4f8b-575d" type="atLeast" />
+</conditions>
+</modifier>
+<modifier type="add" field="error" value="Master of Cybernetica: a Legion Praevian takes a Battle-Automata Maniple instead of a Legion Terminator Command Squad - remove the Legion Terminator Command Squad and choose a Castellax or Vorax Maniple.">
+<conditions>
+<condition field="selections" scope="04ee-7786-bdf9-d15d" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0ba1-44c7-f398-0fda" type="atLeast" />
+<condition field="selections" scope="04ee-7786-bdf9-d15d" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="eddc-ad51-0f19-97f5" type="atLeast" />
 </conditions>
 </modifier>
 </modifiers>
@@ -16180,6 +16204,18 @@
 <condition field="selections" scope="3595-203d-9eb2-7d71" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3344-b8ef-684e-2d2c" type="atLeast" />
 <condition field="selections" scope="3595-203d-9eb2-7d71" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e136-f0e1-72ab-778f" type="lessThan" />
 <condition field="selections" scope="3595-203d-9eb2-7d71" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d165-b2dd-1212-6864" type="lessThan" />
+</conditions>
+</modifier>
+<modifier type="add" field="error" value="Master of Cybernetica: a Legion Praevian takes a Battle-Automata Maniple instead of a Legion Command Squad - remove the Legion Command Squad and choose a Castellax or Vorax Maniple.">
+<conditions>
+<condition field="selections" scope="3595-203d-9eb2-7d71" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3344-b8ef-684e-2d2c" type="atLeast" />
+<condition field="selections" scope="3595-203d-9eb2-7d71" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5fb6-a52b-4f8b-575d" type="atLeast" />
+</conditions>
+</modifier>
+<modifier type="add" field="error" value="Master of Cybernetica: a Legion Praevian takes a Battle-Automata Maniple instead of a Legion Terminator Command Squad - remove the Legion Terminator Command Squad and choose a Castellax or Vorax Maniple.">
+<conditions>
+<condition field="selections" scope="3595-203d-9eb2-7d71" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3344-b8ef-684e-2d2c" type="atLeast" />
+<condition field="selections" scope="3595-203d-9eb2-7d71" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="eddc-ad51-0f19-97f5" type="atLeast" />
 </conditions>
 </modifier>
 </modifiers>
