@@ -1651,8 +1651,9 @@ def automata_unit(n, slot_cat, slot_name, mname, cost, mx, prof, kit, rules_, gr
                   paragon_ok=True, number=True, compulsory=True, extra_entries=(), extra_mods=()):
     """Maniple of 1-mx Battle-Automata / robots. groups_fn(model_key) gives per-model options (then numbered)."""
     u = U(n)
-    m = model(u, mname, 1, mx, cost, prof(u), kit=kit, groups=groups_fn(uid(u, "m")) if groups_fn else [])
-    models = numbered(m, mx, 1) if (number and groups_fn) else [m]
+    m = model(u, mname, 1, mx, cost, prof(u), kit=kit)
+    models = [m]
+    stacked = stacked_options(u, m, mname, groups_fn(uid(u, "m"))) if groups_fn else []
     ents = [per_model(u, f"{it} (entire maniple)", c, u, [it]) for it, c in whole]
     mods = list(extra_mods)
     pid = None
@@ -1662,7 +1663,56 @@ def automata_unit(n, slot_cat, slot_name, mname, cost, mx, prof, kit, rules_, gr
         pid = oid(u, "Paragon of Metal")
     e2, g2, m2 = order_extras(u, n, True, paragon_id=pid)
     return unit(n, 0, slot_cat, slot_name, models=models, rules_=rules_, entries=ents + list(extra_entries) + e2,
-                groups=g2, mods=mods + m2, compulsory=compulsory)
+                groups=stacked + g2, mods=mods + m2, compulsory=compulsory)
+
+
+def stacked_options(u, m, mname, per_model_groups):
+    """Author (5 Oct 2026): one stackable model line with squad-level weapon swaps, like the Legion squads.
+    Turns the per-model 'Replace X' choices into 'Replace X (any <model>)' blocks (one swap per model, two when a
+    model carries two of X) and per-model extras into 'any <model> may take' blocks."""
+    mid = m.get("id")
+    slots, order, takes = {}, [], []
+    for g in per_model_groups:
+        d = g.get("defaultSelectionEntryId")
+        de = next((x for x in g.iter() if x.get("id") == d), None) if d else None
+        skip = {id(x) for x in de.iter()} if de is not None else set()
+        items = []
+        for c in g.iter():
+            t = c.tag.split("}")[-1]
+            if t not in ("entryLink", "selectionEntry") or id(c) in skip:
+                continue
+            if t == "selectionEntry" and c is not g:
+                inner = c.find("entryLinks")
+                if inner is None or len(inner) != 1:
+                    continue
+            cs = c.find("costs")
+            pts = int(float(cs[0].get("value"))) if cs is not None and len(cs) else 0
+            name = c.get("name")
+            if name and all(name != x for x, _ in items):
+                items.append((name, pts))
+        if d:
+            dname = de.get("name")
+            key = (dname, tuple(items))
+            if key not in slots:
+                slots[key] = 0
+                order.append(key)
+            slots[key] += 1
+        else:
+            takes.extend(items)
+    out = []
+    for dname, items in order:
+        per = slots[(dname, items)]
+        if per > 1:  # the model carries `per` of this weapon
+            for lk in m.iter():
+                if lk.tag.split("}")[-1] == "entryLink" and lk.get("name") == dname:
+                    for c in lk.iter():
+                        if c.tag.split("}")[-1] == "constraint":
+                            c.set("value", str(per))
+        title = f"Replace {dname} (any {mname}" + (f", up to {per} each)" if per > 1 else ")")
+        out.append(model_swaps(u, title, u, [mid] * per, list(items)))
+    if takes:
+        out.append(model_takes(u, f"Any {mname} may take", u, [mid], takes))
+    return out
 
 
 def mc(stats, ut="Monstrous Creature"):
