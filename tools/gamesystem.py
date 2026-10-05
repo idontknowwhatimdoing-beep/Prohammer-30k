@@ -13,7 +13,7 @@ from bsx import (PTS, PTS_NAME, uid, el, wrap, rule, constraint, category_link,
 HERE = os.path.dirname(__file__)
 GST_ID = "p30k-0000-0000-0001"
 GST_NAME = "Prohammer 30k"
-REVISION = 1
+from revision import REVISION  # noqa: E402
 
 # ---------------------------------------------------------------- profiles
 UNIT = uid("pt", "Unit")

@@ -17,7 +17,7 @@ from legiones_wargear import (NOT_WITH_TDA, WEAPON_PROFILES, WEAPONS, WEAPON_RUL
 
 CAT_ID = "p30k-0000-0000-0101"
 CAT_NAME = "Legiones Astartes"
-REVISION = 1
+from revision import REVISION  # noqa: E402
 # set by build(): the one Legion this catalogue is for
 CURRENT_LEGION = None
 
