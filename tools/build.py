@@ -98,6 +98,13 @@ def build_one(kind, name):
     special = [f.get("id") for f in (fe if fe is not None else [])
                if f.get("name") != "Officio Assassinorum Execution Force"]
     allies.apply(root, special)
+    if kind == "legion" or root.get("name") == "The Lost and the Damned":
+        import weapon_swaps
+        weapon_swaps.apply(root)
+        if os.environ.get("P30K_SWAP_REPORT"):
+            with open(os.environ["P30K_SWAP_REPORT"], "a") as fh:
+                for row in weapon_swaps.DONE:
+                    fh.write(" | ".join(row) + "\n")
     path = os.path.join(ROOT, out)
     bsx.write(root, path)
     gst = ET.parse(os.path.join(ROOT, "Prohammer 30k.gst")).getroot()

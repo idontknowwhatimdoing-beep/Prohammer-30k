@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="p30k-0000-0001-0012" name="Legiones Astartes - Death Guard" revision="60" battleScribeVersion="2.03" authorName="idontknowwhatimdoing-beep" authorUrl="https://github.com/idontknowwhatimdoing-beep/Prohammer-30k" library="false" gameSystemId="p30k-0000-0000-0001" gameSystemRevision="60" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="p30k-0000-0001-0012" name="Legiones Astartes - Death Guard" revision="61" battleScribeVersion="2.03" authorName="idontknowwhatimdoing-beep" authorUrl="https://github.com/idontknowwhatimdoing-beep/Prohammer-30k" library="false" gameSystemId="p30k-0000-0000-0001" gameSystemRevision="61" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
 <catalogueLinks>
 <catalogueLink id="bd6f-9813-3080-ade3" name="Mechanicum" targetId="68d2-fb71-996c-4786" type="catalogue" importRootEntries="false" />
 </catalogueLinks>
@@ -1368,6 +1368,14 @@
 <cost name="pts" typeId="pts0-0000-0000-0001" value="14" />
 </costs>
 </entryLink>
+<entryLink id="b444-a7b2-9d69-121d" name="Manreaper" hidden="false" collective="false" import="true" targetId="dfb7-dcb2-a57d-0f0c" type="selectionEntry">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a437-b9b9-d50a-0c4c" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
+</costs>
+</entryLink>
 </entryLinks>
 </selectionEntryGroup>
 <selectionEntryGroup id="13dc-9da7-73e4-bb0e" name="Additional Wargear" hidden="false" collective="false" import="true">
@@ -1666,14 +1674,6 @@
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
-</costs>
-</entryLink>
-<entryLink id="b444-a7b2-9d69-121d" name="Manreaper" hidden="false" collective="false" import="true" targetId="dfb7-dcb2-a57d-0f0c" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a437-b9b9-d50a-0c4c" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
 </costs>
 </entryLink>
 </entryLinks>
@@ -4821,6 +4821,14 @@
 <cost name="pts" typeId="pts0-0000-0000-0001" value="14" />
 </costs>
 </entryLink>
+<entryLink id="6963-c57b-8824-bae4" name="Manreaper" hidden="false" collective="false" import="true" targetId="dfb7-dcb2-a57d-0f0c" type="selectionEntry">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bb16-cb71-ceda-7c34" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
+</costs>
+</entryLink>
 </entryLinks>
 </selectionEntryGroup>
 <selectionEntryGroup id="143a-d12c-f97a-70c8" name="Additional Wargear" hidden="false" collective="false" import="true">
@@ -5300,14 +5308,6 @@
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
-</costs>
-</entryLink>
-<entryLink id="6963-c57b-8824-bae4" name="Manreaper" hidden="false" collective="false" import="true" targetId="dfb7-dcb2-a57d-0f0c" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bb16-cb71-ceda-7c34" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
 </costs>
 </entryLink>
 </entryLinks>
@@ -6141,6 +6141,14 @@
 <cost name="pts" typeId="pts0-0000-0000-0001" value="14" />
 </costs>
 </entryLink>
+<entryLink id="f9c3-4681-3ae5-8d7f" name="Manreaper" hidden="false" collective="false" import="true" targetId="dfb7-dcb2-a57d-0f0c" type="selectionEntry">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ada5-b6f0-afb0-2d42" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
+</costs>
+</entryLink>
 </entryLinks>
 </selectionEntryGroup>
 <selectionEntryGroup id="828f-b712-f34f-3930" name="Additional Wargear" hidden="false" collective="false" import="true">
@@ -6270,16 +6278,7 @@
 </entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
-<entryLinks>
-<entryLink id="f9c3-4681-3ae5-8d7f" name="Manreaper" hidden="false" collective="false" import="true" targetId="dfb7-dcb2-a57d-0f0c" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ada5-b6f0-afb0-2d42" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
-</costs>
-</entryLink>
-</entryLinks>
+<entryLinks />
 </selectionEntryGroup>
 </selectionEntryGroups>
 <entryLinks>
@@ -6949,6 +6948,14 @@
 <cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
 </costs>
 </entryLink>
+<entryLink id="865a-46ee-9877-482f" name="Manreaper" hidden="false" collective="false" import="true" targetId="dfb7-dcb2-a57d-0f0c" type="selectionEntry">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="82a8-af0e-f841-d1fb" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
+</costs>
+</entryLink>
 </entryLinks>
 </selectionEntryGroup>
 <selectionEntryGroup id="71ab-c542-8b18-7d33" name="Sergeant Wargear" hidden="false" collective="false" import="true">
@@ -7067,16 +7074,7 @@
 </entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
-<entryLinks>
-<entryLink id="865a-46ee-9877-482f" name="Manreaper" hidden="false" collective="false" import="true" targetId="dfb7-dcb2-a57d-0f0c" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="82a8-af0e-f841-d1fb" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
-</costs>
-</entryLink>
-</entryLinks>
+<entryLinks />
 </selectionEntryGroup>
 </selectionEntryGroups>
 <entryLinks>
@@ -7517,6 +7515,14 @@
 <cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
 </costs>
 </entryLink>
+<entryLink id="d778-9126-b508-7d10" name="Manreaper" hidden="false" collective="false" import="true" targetId="dfb7-dcb2-a57d-0f0c" type="selectionEntry">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2935-2016-8c6c-7dc3" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
+</costs>
+</entryLink>
 </entryLinks>
 </selectionEntryGroup>
 <selectionEntryGroup id="5199-dfab-5cfa-cfbb" name="Sergeant Wargear" hidden="false" collective="false" import="true">
@@ -7605,16 +7611,7 @@
 </entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
-<entryLinks>
-<entryLink id="d778-9126-b508-7d10" name="Manreaper" hidden="false" collective="false" import="true" targetId="dfb7-dcb2-a57d-0f0c" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2935-2016-8c6c-7dc3" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
-</costs>
-</entryLink>
-</entryLinks>
+<entryLinks />
 </selectionEntryGroup>
 </selectionEntryGroups>
 <entryLinks>
@@ -8235,6 +8232,14 @@
 <cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
 </costs>
 </entryLink>
+<entryLink id="7b52-b6be-31b0-8d6f" name="Manreaper" hidden="false" collective="false" import="true" targetId="dfb7-dcb2-a57d-0f0c" type="selectionEntry">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="de6d-61f8-9676-d795" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
+</costs>
+</entryLink>
 </entryLinks>
 </selectionEntryGroup>
 <selectionEntryGroup id="7f79-4804-2233-10c4" name="Sergeant Wargear" hidden="false" collective="false" import="true">
@@ -8373,16 +8378,7 @@
 </entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
-<entryLinks>
-<entryLink id="7b52-b6be-31b0-8d6f" name="Manreaper" hidden="false" collective="false" import="true" targetId="dfb7-dcb2-a57d-0f0c" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="de6d-61f8-9676-d795" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
-</costs>
-</entryLink>
-</entryLinks>
+<entryLinks />
 </selectionEntryGroup>
 </selectionEntryGroups>
 <entryLinks>
@@ -9333,6 +9329,14 @@ LIMITATIONS - Only a Traitor Death Guard Detachment. The Detachment must include
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
 </entryLink>
+<entryLink id="cec1-baaa-d01c-8044" name="Manreaper" hidden="false" collective="false" import="true" targetId="dfb7-dcb2-a57d-0f0c" type="selectionEntry">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7bf9-65a0-17b8-6e00" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
+</costs>
+</entryLink>
 </entryLinks>
 </selectionEntryGroup>
 <selectionEntryGroup id="f695-ec20-24b7-a51d" name="Replace Bolter" hidden="false" collective="false" import="true" defaultSelectionEntryId="0189-64eb-77d7-a9bd">
@@ -9517,16 +9521,7 @@ LIMITATIONS - Only a Traitor Death Guard Detachment. The Detachment must include
 </entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
-<entryLinks>
-<entryLink id="cec1-baaa-d01c-8044" name="Manreaper" hidden="false" collective="false" import="true" targetId="dfb7-dcb2-a57d-0f0c" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7bf9-65a0-17b8-6e00" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
-</costs>
-</entryLink>
-</entryLinks>
+<entryLinks />
 </selectionEntryGroup>
 </selectionEntryGroups>
 <entryLinks>
@@ -10449,6 +10444,22 @@ LIMITATIONS - Only a Traitor Death Guard Detachment. The Detachment must include
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
 </entryLink>
+<entryLink id="8348-4d27-3e9e-aa90" name="Force Weapon" hidden="false" collective="false" import="true" targetId="9ff9-8820-4811-5aee" type="selectionEntry">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="44f2-d0dc-fd2e-a23c" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="40" />
+</costs>
+</entryLink>
+<entryLink id="8a8d-5a52-b278-8392" name="Manreaper" hidden="false" collective="false" import="true" targetId="dfb7-dcb2-a57d-0f0c" type="selectionEntry">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3465-ad5e-1e1d-ca4b" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
+</costs>
+</entryLink>
 </entryLinks>
 </selectionEntryGroup>
 <selectionEntryGroup id="92dc-71bc-0abb-8a9c" name="Sergeant Wargear" hidden="false" collective="false" import="true">
@@ -10467,145 +10478,8 @@ LIMITATIONS - Only a Traitor Death Guard Detachment. The Detachment must include
 <constraints>
 <constraint field="pts0-0000-0000-0001" scope="self" value="50" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="bbb0-cdb4-2991-1fb0" type="max" />
 </constraints>
-<selectionEntries>
-<selectionEntry id="7572-1f9e-0011-4e4c" name="Power Weapon" hidden="false" collective="false" import="true" type="upgrade">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="21a1-0d32-66b7-2fba" type="max" />
-</constraints>
+<selectionEntries />
 <entryLinks>
-<entryLink id="63d4-408c-3e7d-3b76" name="Power Weapon" hidden="false" collective="false" import="true" targetId="fb4f-b267-7556-185d" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cb5a-78d8-8bfc-fb2d" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b66d-a2a1-2423-cd89" type="max" />
-</constraints>
-</entryLink>
-</entryLinks>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
-</costs>
-</selectionEntry>
-<selectionEntry id="f520-f463-81ba-c467" name="Combi-Bolter" hidden="false" collective="false" import="true" type="upgrade">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="814e-7a9e-48a0-9317" type="max" />
-</constraints>
-<entryLinks>
-<entryLink id="d97e-4ee8-5adc-062f" name="Combi-Bolter" hidden="false" collective="false" import="true" targetId="5d48-9963-61d3-1a72" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="05b6-7221-2367-9796" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="656d-e307-0d17-af57" type="max" />
-</constraints>
-</entryLink>
-</entryLinks>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
-</costs>
-</selectionEntry>
-</selectionEntries>
-<entryLinks>
-<entryLink id="7fc3-38fb-82c5-32b3" name="Chainfist" hidden="false" collective="false" import="true" targetId="a078-deea-084f-38e2" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9209-195b-cf13-fca0" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
-</costs>
-</entryLink>
-<entryLink id="8348-4d27-3e9e-aa90" name="Force Weapon" hidden="false" collective="false" import="true" targetId="9ff9-8820-4811-5aee" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="44f2-d0dc-fd2e-a23c" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="40" />
-</costs>
-</entryLink>
-<entryLink id="dd0b-9258-5495-9804" name="Lightning Claw" hidden="false" collective="false" import="true" targetId="0826-0946-b6a1-f42b" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5e3f-cf28-9eea-6d6b" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
-</costs>
-</entryLink>
-<entryLink id="65e8-27a0-fd7e-44ea" name="Pair of Lightning Claws" hidden="false" collective="false" import="true" targetId="af2b-d487-5b80-ae9b" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f901-951a-c440-be4a" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
-</costs>
-</entryLink>
-<entryLink id="4332-f41e-4eb2-3bc8" name="Power Fist" hidden="false" collective="false" import="true" targetId="0b4d-922b-4629-b7ca" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9dd8-74bf-b5f4-b346" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
-</costs>
-</entryLink>
-<entryLink id="5776-bb59-724d-8d7e" name="Thunder Hammer" hidden="false" collective="false" import="true" targetId="5dfe-22a3-22b6-fb7c" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e6e0-3754-73fd-afef" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
-</costs>
-</entryLink>
-<entryLink id="7658-98ae-93e4-9ae2" name="Combi-Flamer" hidden="false" collective="false" import="true" targetId="8a4e-3dc8-c0e4-b9cf" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bd20-aa37-7750-47b7" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
-</costs>
-</entryLink>
-<entryLink id="43ef-ebfb-9338-329a" name="Combi-Grenade Launcher" hidden="false" collective="false" import="true" targetId="53ca-71d4-e838-5ab2" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8a63-eca8-de42-458c" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
-</costs>
-</entryLink>
-<entryLink id="a2d1-4e3c-a612-8fce" name="Combi-Meltagun" hidden="false" collective="false" import="true" targetId="b147-b586-15e9-f12b" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="53f6-8d73-7cc1-be86" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
-</costs>
-</entryLink>
-<entryLink id="c2a0-9bcc-68b4-7621" name="Combi-Plasma Gun" hidden="false" collective="false" import="true" targetId="e700-2c4d-9283-a7b7" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f87d-b930-55ea-353a" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
-</costs>
-</entryLink>
-<entryLink id="4757-f958-1918-f7ad" name="Combi-Volkite Charger" hidden="false" collective="false" import="true" targetId="2125-78bc-6ae3-2391" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1b8e-3a36-9e39-ef15" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
-</costs>
-</entryLink>
-<entryLink id="5fce-aefa-ce56-c374" name="Foeblaster Boltgun" hidden="false" collective="false" import="true" targetId="9b55-194b-ad9f-fffc" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7bed-ed2f-5caf-7f5b" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
-</costs>
-</entryLink>
-<entryLink id="4dca-42b1-4f71-5480" name="Storm Bolter" hidden="false" collective="false" import="true" targetId="4c92-8660-bb6b-730f" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="15a3-ce59-f915-9909" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
-</costs>
-</entryLink>
 <entryLink id="276f-0cab-577c-04c0" name="Bionics" hidden="false" collective="false" import="true" targetId="fe26-aa9a-01b0-3173" type="selectionEntry">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="799c-d5be-affb-bfd8" type="max" />
@@ -10628,22 +10502,6 @@ LIMITATIONS - Only a Traitor Death Guard Detachment. The Detachment must include
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
-</costs>
-</entryLink>
-<entryLink id="8a8d-5a52-b278-8392" name="Manreaper" hidden="false" collective="false" import="true" targetId="dfb7-dcb2-a57d-0f0c" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3465-ad5e-1e1d-ca4b" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
-</costs>
-</entryLink>
-<entryLink id="cff8-848d-f1b3-39ad" name="Combi-Alchem Flamer" hidden="false" collective="false" import="true" targetId="55fc-4943-3ef4-1ab9" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="150e-c78d-16ce-9e5b" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="14" />
 </costs>
 </entryLink>
 </entryLinks>
@@ -11209,6 +11067,14 @@ LIMITATIONS - Only a Traitor Death Guard Detachment. The Detachment must include
 <cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
 </costs>
 </entryLink>
+<entryLink id="0bde-63f8-e706-30c2" name="Manreaper" hidden="false" collective="false" import="true" targetId="dfb7-dcb2-a57d-0f0c" type="selectionEntry">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6f0a-3dee-3051-19d7" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
+</costs>
+</entryLink>
 </entryLinks>
 </selectionEntryGroup>
 <selectionEntryGroup id="3a95-5fd8-ced2-5848" name="Sergeant Wargear" hidden="false" collective="false" import="true">
@@ -11355,16 +11221,7 @@ LIMITATIONS - Only a Traitor Death Guard Detachment. The Detachment must include
 </entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
-<entryLinks>
-<entryLink id="0bde-63f8-e706-30c2" name="Manreaper" hidden="false" collective="false" import="true" targetId="dfb7-dcb2-a57d-0f0c" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6f0a-3dee-3051-19d7" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
-</costs>
-</entryLink>
-</entryLinks>
+<entryLinks />
 </selectionEntryGroup>
 </selectionEntryGroups>
 <entryLinks>
@@ -14428,10 +14285,6 @@ LIMITATIONS - Only a Traitor Death Guard Detachment. The Detachment must include
 <cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
 </costs>
 </entryLink>
-</entryLinks>
-</selectionEntryGroup>
-<selectionEntryGroup id="1857-7a36-d5eb-e30e" name="Sergeant Wargear" hidden="false" collective="false" import="true">
-<entryLinks>
 <entryLink id="0a06-c4f5-8dd5-3f1d" name="Power Weapon" hidden="false" collective="false" import="true" targetId="fb4f-b267-7556-185d" type="selectionEntry">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="17f0-8178-df97-0cd7" type="max" />
@@ -14456,6 +14309,18 @@ LIMITATIONS - Only a Traitor Death Guard Detachment. The Detachment must include
 <cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
 </costs>
 </entryLink>
+<entryLink id="7c96-73a7-92cb-15a2" name="Manreaper" hidden="false" collective="false" import="true" targetId="dfb7-dcb2-a57d-0f0c" type="selectionEntry">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ba31-afbc-af7e-605a" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
+</costs>
+</entryLink>
+</entryLinks>
+</selectionEntryGroup>
+<selectionEntryGroup id="1857-7a36-d5eb-e30e" name="Sergeant Wargear" hidden="false" collective="false" import="true">
+<entryLinks>
 <entryLink id="2daa-3bf9-966f-da28" name="Melta Bombs" hidden="false" collective="false" import="true" targetId="9ab5-665c-640f-1cd0" type="selectionEntry">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f7aa-6d2d-4f2d-f841" type="max" />
@@ -14590,16 +14455,7 @@ LIMITATIONS - Only a Traitor Death Guard Detachment. The Detachment must include
 </entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
-<entryLinks>
-<entryLink id="7c96-73a7-92cb-15a2" name="Manreaper" hidden="false" collective="false" import="true" targetId="dfb7-dcb2-a57d-0f0c" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ba31-afbc-af7e-605a" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
-</costs>
-</entryLink>
-</entryLinks>
+<entryLinks />
 </selectionEntryGroup>
 </selectionEntryGroups>
 <entryLinks>
@@ -15240,6 +15096,14 @@ LIMITATIONS - Only a Traitor Death Guard Detachment. The Detachment must include
 <cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
 </costs>
 </entryLink>
+<entryLink id="20c2-bd5b-0602-249d" name="Manreaper" hidden="false" collective="false" import="true" targetId="dfb7-dcb2-a57d-0f0c" type="selectionEntry">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4adc-633a-597f-a028" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
+</costs>
+</entryLink>
 </entryLinks>
 </selectionEntryGroup>
 <selectionEntryGroup id="8ccc-ae54-2140-826a" name="Sergeant Wargear" hidden="false" collective="false" import="true">
@@ -15378,16 +15242,7 @@ LIMITATIONS - Only a Traitor Death Guard Detachment. The Detachment must include
 </entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
-<entryLinks>
-<entryLink id="20c2-bd5b-0602-249d" name="Manreaper" hidden="false" collective="false" import="true" targetId="dfb7-dcb2-a57d-0f0c" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4adc-633a-597f-a028" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
-</costs>
-</entryLink>
-</entryLinks>
+<entryLinks />
 </selectionEntryGroup>
 </selectionEntryGroups>
 <entryLinks>
@@ -15844,6 +15699,14 @@ LIMITATIONS - Only a Traitor Death Guard Detachment. The Detachment must include
 <cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
 </costs>
 </entryLink>
+<entryLink id="a107-ef8e-f939-e9ca" name="Manreaper" hidden="false" collective="false" import="true" targetId="dfb7-dcb2-a57d-0f0c" type="selectionEntry">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3172-70e8-7508-75e0" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
+</costs>
+</entryLink>
 </entryLinks>
 </selectionEntryGroup>
 <selectionEntryGroup id="a5ab-985a-ad3d-30a8" name="Sergeant Wargear" hidden="false" collective="false" import="true">
@@ -15982,16 +15845,7 @@ LIMITATIONS - Only a Traitor Death Guard Detachment. The Detachment must include
 </entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
-<entryLinks>
-<entryLink id="a107-ef8e-f939-e9ca" name="Manreaper" hidden="false" collective="false" import="true" targetId="dfb7-dcb2-a57d-0f0c" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3172-70e8-7508-75e0" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
-</costs>
-</entryLink>
-</entryLinks>
+<entryLinks />
 </selectionEntryGroup>
 </selectionEntryGroups>
 <entryLinks>
@@ -17226,6 +17080,14 @@ LIMITATIONS - Only a Traitor Death Guard Detachment. The Detachment must include
 <cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
 </costs>
 </entryLink>
+<entryLink id="d71f-c02d-df1e-f9b3" name="Manreaper" hidden="false" collective="false" import="true" targetId="dfb7-dcb2-a57d-0f0c" type="selectionEntry">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="024c-46bc-d749-ca1c" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
+</costs>
+</entryLink>
 </entryLinks>
 </selectionEntryGroup>
 <selectionEntryGroup id="1fa0-0d71-efda-bfe5" name="Sergeant Wargear" hidden="false" collective="false" import="true">
@@ -17395,16 +17257,7 @@ LIMITATIONS - Only a Traitor Death Guard Detachment. The Detachment must include
 </entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
-<entryLinks>
-<entryLink id="d71f-c02d-df1e-f9b3" name="Manreaper" hidden="false" collective="false" import="true" targetId="dfb7-dcb2-a57d-0f0c" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="024c-46bc-d749-ca1c" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
-</costs>
-</entryLink>
-</entryLinks>
+<entryLinks />
 </selectionEntryGroup>
 </selectionEntryGroups>
 <entryLinks>
@@ -24650,6 +24503,14 @@ LIMITATIONS - Only a Traitor Death Guard Detachment. The Detachment must include
 <cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
 </costs>
 </entryLink>
+<entryLink id="2fa1-ec5e-c48c-43fd" name="Manreaper" hidden="false" collective="false" import="true" targetId="dfb7-dcb2-a57d-0f0c" type="selectionEntry">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="29e6-204e-9164-bdd3" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
+</costs>
+</entryLink>
 </entryLinks>
 </selectionEntryGroup>
 <selectionEntryGroup id="1522-2af4-5e2b-addc" name="Poison-master Wargear" hidden="false" collective="false" import="true">
@@ -24945,16 +24806,7 @@ LIMITATIONS - Only a Traitor Death Guard Detachment. The Detachment must include
 </entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
-<entryLinks>
-<entryLink id="2fa1-ec5e-c48c-43fd" name="Manreaper" hidden="false" collective="false" import="true" targetId="dfb7-dcb2-a57d-0f0c" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="29e6-204e-9164-bdd3" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
-</costs>
-</entryLink>
-</entryLinks>
+<entryLinks />
 </selectionEntryGroup>
 </selectionEntryGroups>
 <entryLinks>
@@ -26886,6 +26738,14 @@ LIMITATIONS - Only a Traitor Death Guard Detachment. The Detachment must include
 <cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
 </costs>
 </entryLink>
+<entryLink id="b196-d7ae-9790-42de" name="Manreaper" hidden="false" collective="false" import="true" targetId="dfb7-dcb2-a57d-0f0c" type="selectionEntry">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bd0a-0bd9-1e8c-0624" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
+</costs>
+</entryLink>
 </entryLinks>
 </selectionEntryGroup>
 <selectionEntryGroup id="fbe9-88f8-75ab-bfdf" name="Replace Bolt Pistol" hidden="false" collective="false" import="true" defaultSelectionEntryId="d040-b66c-4536-4f59">
@@ -26983,16 +26843,7 @@ LIMITATIONS - Only a Traitor Death Guard Detachment. The Detachment must include
 </entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
-<entryLinks>
-<entryLink id="b196-d7ae-9790-42de" name="Manreaper" hidden="false" collective="false" import="true" targetId="dfb7-dcb2-a57d-0f0c" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bd0a-0bd9-1e8c-0624" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
-</costs>
-</entryLink>
-</entryLinks>
+<entryLinks />
 </selectionEntryGroup>
 </selectionEntryGroups>
 <entryLinks>
@@ -27790,6 +27641,14 @@ LIMITATIONS - Only a Traitor Death Guard Detachment. The Detachment must include
 <cost name="pts" typeId="pts0-0000-0000-0001" value="14" />
 </costs>
 </entryLink>
+<entryLink id="ae7e-2406-acd4-9aa6" name="Manreaper" hidden="false" collective="false" import="true" targetId="dfb7-dcb2-a57d-0f0c" type="selectionEntry">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ef89-10e4-ec37-018c" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
+</costs>
+</entryLink>
 </entryLinks>
 </selectionEntryGroup>
 <selectionEntryGroup id="c0c9-c4e0-9bae-8aeb" name="Additional Wargear" hidden="false" collective="false" import="true">
@@ -27891,16 +27750,7 @@ LIMITATIONS - Only a Traitor Death Guard Detachment. The Detachment must include
 </entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
-<entryLinks>
-<entryLink id="ae7e-2406-acd4-9aa6" name="Manreaper" hidden="false" collective="false" import="true" targetId="dfb7-dcb2-a57d-0f0c" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ef89-10e4-ec37-018c" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
-</costs>
-</entryLink>
-</entryLinks>
+<entryLinks />
 </selectionEntryGroup>
 </selectionEntryGroups>
 <entryLinks>
@@ -28313,6 +28163,14 @@ LIMITATIONS - Only a Traitor Death Guard Detachment. The Detachment must include
 <cost name="pts" typeId="pts0-0000-0000-0001" value="14" />
 </costs>
 </entryLink>
+<entryLink id="61fd-34c1-cf5a-202e" name="Manreaper" hidden="false" collective="false" import="true" targetId="dfb7-dcb2-a57d-0f0c" type="selectionEntry">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5e3c-4fbb-eab9-8d9b" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
+</costs>
+</entryLink>
 </entryLinks>
 </selectionEntryGroup>
 <selectionEntryGroup id="17d7-46dd-0a1a-7457" name="Additional Wargear" hidden="false" collective="false" import="true">
@@ -28442,16 +28300,7 @@ LIMITATIONS - Only a Traitor Death Guard Detachment. The Detachment must include
 </entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
-<entryLinks>
-<entryLink id="61fd-34c1-cf5a-202e" name="Manreaper" hidden="false" collective="false" import="true" targetId="dfb7-dcb2-a57d-0f0c" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5e3c-4fbb-eab9-8d9b" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
-</costs>
-</entryLink>
-</entryLinks>
+<entryLinks />
 </selectionEntryGroup>
 </selectionEntryGroups>
 <entryLinks>
@@ -28897,6 +28746,14 @@ LIMITATIONS - Only a Traitor Death Guard Detachment. The Detachment must include
 <cost name="pts" typeId="pts0-0000-0000-0001" value="14" />
 </costs>
 </entryLink>
+<entryLink id="15af-7ba1-48df-b227" name="Manreaper" hidden="false" collective="false" import="true" targetId="dfb7-dcb2-a57d-0f0c" type="selectionEntry">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8e4c-ee43-22ee-b76f" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
+</costs>
+</entryLink>
 </entryLinks>
 </selectionEntryGroup>
 <selectionEntryGroup id="5155-7b56-ac7f-f7c2" name="Additional Wargear" hidden="false" collective="false" import="true">
@@ -29026,16 +28883,7 @@ LIMITATIONS - Only a Traitor Death Guard Detachment. The Detachment must include
 </entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
-<entryLinks>
-<entryLink id="15af-7ba1-48df-b227" name="Manreaper" hidden="false" collective="false" import="true" targetId="dfb7-dcb2-a57d-0f0c" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8e4c-ee43-22ee-b76f" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
-</costs>
-</entryLink>
-</entryLinks>
+<entryLinks />
 </selectionEntryGroup>
 </selectionEntryGroups>
 <entryLinks>
@@ -29839,55 +29687,6 @@ LIMITATIONS - Only a Traitor Death Guard Detachment. The Detachment must include
 <cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
 </costs>
 </entryLink>
-</entryLinks>
-</selectionEntryGroup>
-<selectionEntryGroup id="6d1c-5e9e-dab0-92a9" name="Space Marine Armoury (max 50 pts)" hidden="false" collective="false" import="true">
-<constraints>
-<constraint field="pts0-0000-0000-0001" scope="self" value="50" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="4e0b-e00e-c6c9-8a49" type="max" />
-</constraints>
-<selectionEntries>
-<selectionEntry id="99d3-f262-ba07-d4df" name="Power Weapon" hidden="false" collective="false" import="true" type="upgrade">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="459e-199d-ce31-e1ee" type="max" />
-</constraints>
-<entryLinks>
-<entryLink id="d0bd-b7e5-6811-b134" name="Power Weapon" hidden="false" collective="false" import="true" targetId="fb4f-b267-7556-185d" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e496-5d36-21ba-2376" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="13ce-3dc5-efca-2fa0" type="max" />
-</constraints>
-</entryLink>
-</entryLinks>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
-</costs>
-</selectionEntry>
-<selectionEntry id="f80c-7199-2e3f-4bf2" name="Combi-Bolter" hidden="false" collective="false" import="true" type="upgrade">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c13c-76c2-bdb7-1415" type="max" />
-</constraints>
-<entryLinks>
-<entryLink id="5e03-2212-78f3-efe6" name="Combi-Bolter" hidden="false" collective="false" import="true" targetId="5d48-9963-61d3-1a72" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="49b9-0403-a80e-b151" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="79ff-9ccd-620a-f972" type="max" />
-</constraints>
-</entryLink>
-</entryLinks>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
-</costs>
-</selectionEntry>
-</selectionEntries>
-<entryLinks>
-<entryLink id="8172-7736-5e6a-ec85" name="Chainfist" hidden="false" collective="false" import="true" targetId="a078-deea-084f-38e2" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a90f-67d1-746b-06cf" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
-</costs>
-</entryLink>
 <entryLink id="a901-050b-ed7d-2883" name="Force Weapon" hidden="false" collective="false" import="true" targetId="9ff9-8820-4811-5aee" type="selectionEntry">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b89f-9741-0fc4-c6d0" type="max" />
@@ -29896,84 +29695,28 @@ LIMITATIONS - Only a Traitor Death Guard Detachment. The Detachment must include
 <cost name="pts" typeId="pts0-0000-0000-0001" value="40" />
 </costs>
 </entryLink>
-<entryLink id="3b96-dbfb-2324-198f" name="Lightning Claw" hidden="false" collective="false" import="true" targetId="0826-0946-b6a1-f42b" type="selectionEntry">
+<entryLink id="85a5-e99c-0996-aee3" name="Manreaper" hidden="false" collective="false" import="true" targetId="dfb7-dcb2-a57d-0f0c" type="selectionEntry">
 <constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c4d5-e1a6-f82e-837c" type="max" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2afa-c104-401a-5ab7" type="max" />
 </constraints>
 <costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
+<cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
 </costs>
 </entryLink>
-<entryLink id="af0f-9cef-f6b4-9906" name="Pair of Lightning Claws" hidden="false" collective="false" import="true" targetId="af2b-d487-5b80-ae9b" type="selectionEntry">
+</entryLinks>
+</selectionEntryGroup>
+<selectionEntryGroup id="6d1c-5e9e-dab0-92a9" name="Space Marine Armoury (max 50 pts)" hidden="false" collective="false" import="true">
 <constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7269-f30a-3467-3952" type="max" />
+<constraint field="pts0-0000-0000-0001" scope="self" value="50" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="4e0b-e00e-c6c9-8a49" type="max" />
 </constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
-</costs>
-</entryLink>
-<entryLink id="5f5d-5dd0-c2af-aa43" name="Power Fist" hidden="false" collective="false" import="true" targetId="0b4d-922b-4629-b7ca" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="04ad-781c-aa9d-6764" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
-</costs>
-</entryLink>
-<entryLink id="45ed-312b-fdef-b26b" name="Thunder Hammer" hidden="false" collective="false" import="true" targetId="5dfe-22a3-22b6-fb7c" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e010-4606-012f-5b3e" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
-</costs>
-</entryLink>
-<entryLink id="6cef-f326-ece7-e138" name="Combi-Flamer" hidden="false" collective="false" import="true" targetId="8a4e-3dc8-c0e4-b9cf" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="69f6-3fd8-4d82-b012" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
-</costs>
-</entryLink>
+<selectionEntries />
+<entryLinks>
 <entryLink id="ce96-1302-f7d0-f1dd" name="Combi-Grenade Launcher" hidden="false" collective="false" import="true" targetId="53ca-71d4-e838-5ab2" type="selectionEntry">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7613-f083-e292-2a18" type="max" />
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
-</costs>
-</entryLink>
-<entryLink id="5901-199d-2a5b-b62a" name="Combi-Meltagun" hidden="false" collective="false" import="true" targetId="b147-b586-15e9-f12b" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2c28-98a2-1014-698a" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
-</costs>
-</entryLink>
-<entryLink id="ead1-a9e8-00de-c75f" name="Combi-Plasma Gun" hidden="false" collective="false" import="true" targetId="e700-2c4d-9283-a7b7" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6fda-1507-28d3-51b8" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
-</costs>
-</entryLink>
-<entryLink id="e755-874c-da72-61fb" name="Combi-Volkite Charger" hidden="false" collective="false" import="true" targetId="2125-78bc-6ae3-2391" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="325e-e46a-71ea-f7f7" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
-</costs>
-</entryLink>
-<entryLink id="d4db-869f-ebaa-d411" name="Foeblaster Boltgun" hidden="false" collective="false" import="true" targetId="9b55-194b-ad9f-fffc" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c9fa-a350-6896-ee10" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
 </costs>
 </entryLink>
 <entryLink id="bacc-0f32-b987-2e18" name="Storm Bolter" hidden="false" collective="false" import="true" targetId="4c92-8660-bb6b-730f" type="selectionEntry">
@@ -30006,22 +29749,6 @@ LIMITATIONS - Only a Traitor Death Guard Detachment. The Detachment must include
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
-</costs>
-</entryLink>
-<entryLink id="85a5-e99c-0996-aee3" name="Manreaper" hidden="false" collective="false" import="true" targetId="dfb7-dcb2-a57d-0f0c" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2afa-c104-401a-5ab7" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
-</costs>
-</entryLink>
-<entryLink id="7346-eae0-a822-4730" name="Combi-Alchem Flamer" hidden="false" collective="false" import="true" targetId="55fc-4943-3ef4-1ab9" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a77a-a079-26b8-2d7e" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="14" />
 </costs>
 </entryLink>
 </entryLinks>
@@ -30197,6 +29924,22 @@ LIMITATIONS - Only a Traitor Death Guard Detachment. The Detachment must include
 <cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
 </costs>
 </entryLink>
+<entryLink id="dda0-39ae-7cc6-99c6" name="Force Weapon" hidden="false" collective="false" import="true" targetId="9ff9-8820-4811-5aee" type="selectionEntry">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4657-7bb7-319c-aef5" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="40" />
+</costs>
+</entryLink>
+<entryLink id="41c1-bce4-e60c-f62e" name="Manreaper" hidden="false" collective="false" import="true" targetId="dfb7-dcb2-a57d-0f0c" type="selectionEntry">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8acd-b49f-8bda-3d07" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
+</costs>
+</entryLink>
 </entryLinks>
 </selectionEntryGroup>
 <selectionEntryGroup id="baa0-aa8d-682b-979e" name="Apothecary Wargear" hidden="false" collective="false" import="true">
@@ -30215,135 +29958,14 @@ LIMITATIONS - Only a Traitor Death Guard Detachment. The Detachment must include
 <constraints>
 <constraint field="pts0-0000-0000-0001" scope="self" value="50" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="9857-b409-ee6d-6640" type="max" />
 </constraints>
-<selectionEntries>
-<selectionEntry id="e80e-32f9-da15-7683" name="Power Weapon" hidden="false" collective="false" import="true" type="upgrade">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="972a-fc3a-dc4f-cc2e" type="max" />
-</constraints>
+<selectionEntries />
 <entryLinks>
-<entryLink id="9128-c8dd-9afa-be31" name="Power Weapon" hidden="false" collective="false" import="true" targetId="fb4f-b267-7556-185d" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b5c0-32f5-2ab6-d75e" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4a4f-2647-00a4-8501" type="max" />
-</constraints>
-</entryLink>
-</entryLinks>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
-</costs>
-</selectionEntry>
-<selectionEntry id="de9c-e3e1-48f1-95bf" name="Combi-Bolter" hidden="false" collective="false" import="true" type="upgrade">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8f31-47d7-c4c4-bb87" type="max" />
-</constraints>
-<entryLinks>
-<entryLink id="e341-b580-7461-5784" name="Combi-Bolter" hidden="false" collective="false" import="true" targetId="5d48-9963-61d3-1a72" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6f57-c1ec-f9be-c44a" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d79b-b62a-e212-67fc" type="max" />
-</constraints>
-</entryLink>
-</entryLinks>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
-</costs>
-</selectionEntry>
-</selectionEntries>
-<entryLinks>
-<entryLink id="9473-3719-bea4-a746" name="Chainfist" hidden="false" collective="false" import="true" targetId="a078-deea-084f-38e2" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2d0c-cfc7-acee-15c6" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
-</costs>
-</entryLink>
-<entryLink id="dda0-39ae-7cc6-99c6" name="Force Weapon" hidden="false" collective="false" import="true" targetId="9ff9-8820-4811-5aee" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4657-7bb7-319c-aef5" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="40" />
-</costs>
-</entryLink>
-<entryLink id="814f-9286-456d-d11e" name="Lightning Claw" hidden="false" collective="false" import="true" targetId="0826-0946-b6a1-f42b" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="18be-fb1d-b4b4-020e" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
-</costs>
-</entryLink>
-<entryLink id="3992-091d-9c50-8972" name="Pair of Lightning Claws" hidden="false" collective="false" import="true" targetId="af2b-d487-5b80-ae9b" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="79aa-7650-d674-c0b6" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
-</costs>
-</entryLink>
-<entryLink id="e7c9-e531-3dc8-1a73" name="Power Fist" hidden="false" collective="false" import="true" targetId="0b4d-922b-4629-b7ca" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="623f-5a6d-f625-eff1" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
-</costs>
-</entryLink>
-<entryLink id="7e77-4395-2d5b-09fc" name="Thunder Hammer" hidden="false" collective="false" import="true" targetId="5dfe-22a3-22b6-fb7c" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3347-6e0b-03fe-cd93" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
-</costs>
-</entryLink>
-<entryLink id="226d-635d-0d88-7d96" name="Combi-Flamer" hidden="false" collective="false" import="true" targetId="8a4e-3dc8-c0e4-b9cf" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0f59-1b09-9cac-f4f9" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
-</costs>
-</entryLink>
 <entryLink id="c413-9fcd-17da-cc39" name="Combi-Grenade Launcher" hidden="false" collective="false" import="true" targetId="53ca-71d4-e838-5ab2" type="selectionEntry">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0447-fa11-d4c4-2939" type="max" />
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
-</costs>
-</entryLink>
-<entryLink id="666a-11e4-d6f3-f690" name="Combi-Meltagun" hidden="false" collective="false" import="true" targetId="b147-b586-15e9-f12b" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="60b1-9952-f3af-f24d" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
-</costs>
-</entryLink>
-<entryLink id="8d7b-18a3-2559-d2c7" name="Combi-Plasma Gun" hidden="false" collective="false" import="true" targetId="e700-2c4d-9283-a7b7" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8c6a-e7bf-f44a-a6f3" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
-</costs>
-</entryLink>
-<entryLink id="1a65-86c6-9567-e52d" name="Combi-Volkite Charger" hidden="false" collective="false" import="true" targetId="2125-78bc-6ae3-2391" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="606f-54f1-957b-0fad" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
-</costs>
-</entryLink>
-<entryLink id="1fe8-8070-b3b7-1704" name="Foeblaster Boltgun" hidden="false" collective="false" import="true" targetId="9b55-194b-ad9f-fffc" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4a12-76b7-3f7b-1543" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
 </costs>
 </entryLink>
 <entryLink id="31c2-689b-33d4-0eda" name="Storm Bolter" hidden="false" collective="false" import="true" targetId="4c92-8660-bb6b-730f" type="selectionEntry">
@@ -30376,22 +29998,6 @@ LIMITATIONS - Only a Traitor Death Guard Detachment. The Detachment must include
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
-</costs>
-</entryLink>
-<entryLink id="41c1-bce4-e60c-f62e" name="Manreaper" hidden="false" collective="false" import="true" targetId="dfb7-dcb2-a57d-0f0c" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8acd-b49f-8bda-3d07" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
-</costs>
-</entryLink>
-<entryLink id="1d24-499b-cd6d-1e54" name="Combi-Alchem Flamer" hidden="false" collective="false" import="true" targetId="55fc-4943-3ef4-1ab9" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b374-fc0b-6576-caa9" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="14" />
 </costs>
 </entryLink>
 </entryLinks>
@@ -30575,6 +30181,22 @@ LIMITATIONS - Only a Traitor Death Guard Detachment. The Detachment must include
 <cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
 </costs>
 </entryLink>
+<entryLink id="9f94-3181-74c7-1d7f" name="Force Weapon" hidden="false" collective="false" import="true" targetId="9ff9-8820-4811-5aee" type="selectionEntry">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0591-f9b3-c2e4-f674" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="40" />
+</costs>
+</entryLink>
+<entryLink id="3dae-679e-7d7d-a623" name="Manreaper" hidden="false" collective="false" import="true" targetId="dfb7-dcb2-a57d-0f0c" type="selectionEntry">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7dee-e65e-c6ae-05bf" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
+</costs>
+</entryLink>
 </entryLinks>
 </selectionEntryGroup>
 <selectionEntryGroup id="e32d-10f7-2de7-131e" name="Standard" hidden="false" collective="false" import="true">
@@ -30632,135 +30254,14 @@ LIMITATIONS - Only a Traitor Death Guard Detachment. The Detachment must include
 <constraints>
 <constraint field="pts0-0000-0000-0001" scope="self" value="50" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="22d0-fea1-0fc9-211b" type="max" />
 </constraints>
-<selectionEntries>
-<selectionEntry id="f872-3c79-639a-0c45" name="Power Weapon" hidden="false" collective="false" import="true" type="upgrade">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bfa0-15be-28d7-64e0" type="max" />
-</constraints>
+<selectionEntries />
 <entryLinks>
-<entryLink id="9403-d288-df11-2f35" name="Power Weapon" hidden="false" collective="false" import="true" targetId="fb4f-b267-7556-185d" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="acea-1d02-bd1f-a12d" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9be2-5f0e-26c3-9265" type="max" />
-</constraints>
-</entryLink>
-</entryLinks>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
-</costs>
-</selectionEntry>
-<selectionEntry id="dac5-4670-c29b-9c1b" name="Combi-Bolter" hidden="false" collective="false" import="true" type="upgrade">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="511e-6283-e680-8f27" type="max" />
-</constraints>
-<entryLinks>
-<entryLink id="8618-f2e1-ec75-efc2" name="Combi-Bolter" hidden="false" collective="false" import="true" targetId="5d48-9963-61d3-1a72" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="47e3-4b99-29a4-850d" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c757-5f98-e7b6-531c" type="max" />
-</constraints>
-</entryLink>
-</entryLinks>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
-</costs>
-</selectionEntry>
-</selectionEntries>
-<entryLinks>
-<entryLink id="f8cf-bc6c-e685-4c88" name="Chainfist" hidden="false" collective="false" import="true" targetId="a078-deea-084f-38e2" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2fc7-f269-e533-aa57" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
-</costs>
-</entryLink>
-<entryLink id="9f94-3181-74c7-1d7f" name="Force Weapon" hidden="false" collective="false" import="true" targetId="9ff9-8820-4811-5aee" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0591-f9b3-c2e4-f674" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="40" />
-</costs>
-</entryLink>
-<entryLink id="ec28-3151-57e8-b00b" name="Lightning Claw" hidden="false" collective="false" import="true" targetId="0826-0946-b6a1-f42b" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d6a3-097a-68f6-2848" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
-</costs>
-</entryLink>
-<entryLink id="17fe-b82c-3aea-bf5b" name="Pair of Lightning Claws" hidden="false" collective="false" import="true" targetId="af2b-d487-5b80-ae9b" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="388c-a00f-0b83-b558" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
-</costs>
-</entryLink>
-<entryLink id="c58d-e8fa-e20a-9db4" name="Power Fist" hidden="false" collective="false" import="true" targetId="0b4d-922b-4629-b7ca" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="18c6-b56b-9501-ed71" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
-</costs>
-</entryLink>
-<entryLink id="dc9b-f5ff-187a-3372" name="Thunder Hammer" hidden="false" collective="false" import="true" targetId="5dfe-22a3-22b6-fb7c" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="df74-ec98-01b9-84c7" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
-</costs>
-</entryLink>
-<entryLink id="4628-f9ec-b41a-37d0" name="Combi-Flamer" hidden="false" collective="false" import="true" targetId="8a4e-3dc8-c0e4-b9cf" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d1dd-bc24-4bbe-262e" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
-</costs>
-</entryLink>
 <entryLink id="d5ae-1d3c-c744-b1d5" name="Combi-Grenade Launcher" hidden="false" collective="false" import="true" targetId="53ca-71d4-e838-5ab2" type="selectionEntry">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8345-2952-db4a-9722" type="max" />
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
-</costs>
-</entryLink>
-<entryLink id="ade9-12c1-8c88-3f94" name="Combi-Meltagun" hidden="false" collective="false" import="true" targetId="b147-b586-15e9-f12b" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ca47-3bf2-5d83-2592" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
-</costs>
-</entryLink>
-<entryLink id="dc45-2213-1484-1812" name="Combi-Plasma Gun" hidden="false" collective="false" import="true" targetId="e700-2c4d-9283-a7b7" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="09fe-732b-aebf-24ee" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
-</costs>
-</entryLink>
-<entryLink id="5bcd-0b49-b1d7-37e1" name="Combi-Volkite Charger" hidden="false" collective="false" import="true" targetId="2125-78bc-6ae3-2391" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eba7-1369-edf8-694e" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
-</costs>
-</entryLink>
-<entryLink id="1ba2-53f5-3561-4446" name="Foeblaster Boltgun" hidden="false" collective="false" import="true" targetId="9b55-194b-ad9f-fffc" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7de9-5b61-b1ac-2535" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
 </costs>
 </entryLink>
 <entryLink id="b74e-2259-b2f8-e971" name="Storm Bolter" hidden="false" collective="false" import="true" targetId="4c92-8660-bb6b-730f" type="selectionEntry">
@@ -30793,22 +30294,6 @@ LIMITATIONS - Only a Traitor Death Guard Detachment. The Detachment must include
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
-</costs>
-</entryLink>
-<entryLink id="3dae-679e-7d7d-a623" name="Manreaper" hidden="false" collective="false" import="true" targetId="dfb7-dcb2-a57d-0f0c" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7dee-e65e-c6ae-05bf" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
-</costs>
-</entryLink>
-<entryLink id="63d1-9649-64b8-3f4f" name="Combi-Alchem Flamer" hidden="false" collective="false" import="true" targetId="55fc-4943-3ef4-1ab9" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f51e-2aa9-d164-f17a" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="14" />
 </costs>
 </entryLink>
 </entryLinks>
@@ -31478,6 +30963,14 @@ LIMITATIONS - Only a Traitor Death Guard Detachment. The Detachment must include
 <cost name="pts" typeId="pts0-0000-0000-0001" value="14" />
 </costs>
 </entryLink>
+<entryLink id="95be-5fc2-5b1f-562b" name="Manreaper" hidden="false" collective="false" import="true" targetId="dfb7-dcb2-a57d-0f0c" type="selectionEntry">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cd17-f801-a192-637f" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
+</costs>
+</entryLink>
 </entryLinks>
 </selectionEntryGroup>
 <selectionEntryGroup id="ea44-c506-13af-aab6" name="Additional Wargear" hidden="false" collective="false" import="true">
@@ -31579,16 +31072,7 @@ LIMITATIONS - Only a Traitor Death Guard Detachment. The Detachment must include
 </entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
-<entryLinks>
-<entryLink id="95be-5fc2-5b1f-562b" name="Manreaper" hidden="false" collective="false" import="true" targetId="dfb7-dcb2-a57d-0f0c" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cd17-f801-a192-637f" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
-</costs>
-</entryLink>
-</entryLinks>
+<entryLinks />
 </selectionEntryGroup>
 </selectionEntryGroups>
 <entryLinks>
@@ -32001,6 +31485,14 @@ LIMITATIONS - Only a Traitor Death Guard Detachment. The Detachment must include
 <cost name="pts" typeId="pts0-0000-0000-0001" value="14" />
 </costs>
 </entryLink>
+<entryLink id="fe11-bfa5-f1fc-e22d" name="Manreaper" hidden="false" collective="false" import="true" targetId="dfb7-dcb2-a57d-0f0c" type="selectionEntry">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0246-3fb7-130c-92ca" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
+</costs>
+</entryLink>
 </entryLinks>
 </selectionEntryGroup>
 <selectionEntryGroup id="f8ba-7385-bfa3-08ce" name="Additional Wargear" hidden="false" collective="false" import="true">
@@ -32130,16 +31622,7 @@ LIMITATIONS - Only a Traitor Death Guard Detachment. The Detachment must include
 </entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
-<entryLinks>
-<entryLink id="fe11-bfa5-f1fc-e22d" name="Manreaper" hidden="false" collective="false" import="true" targetId="dfb7-dcb2-a57d-0f0c" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0246-3fb7-130c-92ca" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
-</costs>
-</entryLink>
-</entryLinks>
+<entryLinks />
 </selectionEntryGroup>
 </selectionEntryGroups>
 <entryLinks>
@@ -32585,6 +32068,14 @@ LIMITATIONS - Only a Traitor Death Guard Detachment. The Detachment must include
 <cost name="pts" typeId="pts0-0000-0000-0001" value="14" />
 </costs>
 </entryLink>
+<entryLink id="2f9d-c1d4-c4b1-e26a" name="Manreaper" hidden="false" collective="false" import="true" targetId="dfb7-dcb2-a57d-0f0c" type="selectionEntry">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="61fa-e847-c0ec-900c" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
+</costs>
+</entryLink>
 </entryLinks>
 </selectionEntryGroup>
 <selectionEntryGroup id="0f06-44bc-4945-62d2" name="Additional Wargear" hidden="false" collective="false" import="true">
@@ -32714,16 +32205,7 @@ LIMITATIONS - Only a Traitor Death Guard Detachment. The Detachment must include
 </entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
-<entryLinks>
-<entryLink id="2f9d-c1d4-c4b1-e26a" name="Manreaper" hidden="false" collective="false" import="true" targetId="dfb7-dcb2-a57d-0f0c" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="61fa-e847-c0ec-900c" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
-</costs>
-</entryLink>
-</entryLinks>
+<entryLinks />
 </selectionEntryGroup>
 </selectionEntryGroups>
 <entryLinks>
@@ -33527,55 +33009,6 @@ LIMITATIONS - Only a Traitor Death Guard Detachment. The Detachment must include
 <cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
 </costs>
 </entryLink>
-</entryLinks>
-</selectionEntryGroup>
-<selectionEntryGroup id="1fca-505e-9670-2ecf" name="Space Marine Armoury (max 50 pts)" hidden="false" collective="false" import="true">
-<constraints>
-<constraint field="pts0-0000-0000-0001" scope="self" value="50" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="239d-379b-8124-7c30" type="max" />
-</constraints>
-<selectionEntries>
-<selectionEntry id="463d-5901-3ae0-aae4" name="Power Weapon" hidden="false" collective="false" import="true" type="upgrade">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3c10-1f3c-0412-c74a" type="max" />
-</constraints>
-<entryLinks>
-<entryLink id="04f1-5d8d-1826-a310" name="Power Weapon" hidden="false" collective="false" import="true" targetId="fb4f-b267-7556-185d" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d06d-f9a4-5837-6635" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ced8-000e-2c78-d2ac" type="max" />
-</constraints>
-</entryLink>
-</entryLinks>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
-</costs>
-</selectionEntry>
-<selectionEntry id="01fd-274d-70f5-f1d5" name="Combi-Bolter" hidden="false" collective="false" import="true" type="upgrade">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dbc8-68fe-a8df-9b11" type="max" />
-</constraints>
-<entryLinks>
-<entryLink id="88ac-f427-fad6-62d2" name="Combi-Bolter" hidden="false" collective="false" import="true" targetId="5d48-9963-61d3-1a72" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="169b-789b-d348-7fd2" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bee1-f9c0-6a65-7ecb" type="max" />
-</constraints>
-</entryLink>
-</entryLinks>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
-</costs>
-</selectionEntry>
-</selectionEntries>
-<entryLinks>
-<entryLink id="b4e7-93d4-70ba-e7b5" name="Chainfist" hidden="false" collective="false" import="true" targetId="a078-deea-084f-38e2" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7ddc-1e89-f696-b5d6" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
-</costs>
-</entryLink>
 <entryLink id="82b1-d999-f978-770a" name="Force Weapon" hidden="false" collective="false" import="true" targetId="9ff9-8820-4811-5aee" type="selectionEntry">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6ebf-52e7-36e8-1b55" type="max" />
@@ -33584,84 +33017,28 @@ LIMITATIONS - Only a Traitor Death Guard Detachment. The Detachment must include
 <cost name="pts" typeId="pts0-0000-0000-0001" value="40" />
 </costs>
 </entryLink>
-<entryLink id="eef6-840d-5aff-475f" name="Lightning Claw" hidden="false" collective="false" import="true" targetId="0826-0946-b6a1-f42b" type="selectionEntry">
+<entryLink id="76fd-917d-a3d6-67b2" name="Manreaper" hidden="false" collective="false" import="true" targetId="dfb7-dcb2-a57d-0f0c" type="selectionEntry">
 <constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="04fb-1aab-c301-b118" type="max" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0e4e-008f-1c7a-19ff" type="max" />
 </constraints>
 <costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
+<cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
 </costs>
 </entryLink>
-<entryLink id="1d6b-3f2f-7b20-b6e5" name="Pair of Lightning Claws" hidden="false" collective="false" import="true" targetId="af2b-d487-5b80-ae9b" type="selectionEntry">
+</entryLinks>
+</selectionEntryGroup>
+<selectionEntryGroup id="1fca-505e-9670-2ecf" name="Space Marine Armoury (max 50 pts)" hidden="false" collective="false" import="true">
 <constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="48f5-8204-cd36-67d4" type="max" />
+<constraint field="pts0-0000-0000-0001" scope="self" value="50" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="239d-379b-8124-7c30" type="max" />
 </constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
-</costs>
-</entryLink>
-<entryLink id="a420-d88d-c5b8-9ebb" name="Power Fist" hidden="false" collective="false" import="true" targetId="0b4d-922b-4629-b7ca" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b18f-e7ec-5f76-bde0" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
-</costs>
-</entryLink>
-<entryLink id="6366-6eae-d5ac-a963" name="Thunder Hammer" hidden="false" collective="false" import="true" targetId="5dfe-22a3-22b6-fb7c" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="be58-cf5e-efd4-5590" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
-</costs>
-</entryLink>
-<entryLink id="7600-2b06-74dd-e062" name="Combi-Flamer" hidden="false" collective="false" import="true" targetId="8a4e-3dc8-c0e4-b9cf" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="90d0-470e-e1bf-ff75" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
-</costs>
-</entryLink>
+<selectionEntries />
+<entryLinks>
 <entryLink id="ff45-baec-d4b4-9464" name="Combi-Grenade Launcher" hidden="false" collective="false" import="true" targetId="53ca-71d4-e838-5ab2" type="selectionEntry">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1f84-5592-7cf3-dba1" type="max" />
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
-</costs>
-</entryLink>
-<entryLink id="0bfb-0ff2-0798-e458" name="Combi-Meltagun" hidden="false" collective="false" import="true" targetId="b147-b586-15e9-f12b" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="280d-7ab1-a563-6eb5" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
-</costs>
-</entryLink>
-<entryLink id="794a-a4b5-3b7d-3186" name="Combi-Plasma Gun" hidden="false" collective="false" import="true" targetId="e700-2c4d-9283-a7b7" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="807f-93bf-6501-c3c9" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
-</costs>
-</entryLink>
-<entryLink id="899c-6207-756d-005b" name="Combi-Volkite Charger" hidden="false" collective="false" import="true" targetId="2125-78bc-6ae3-2391" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f250-91ed-4805-3cbe" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
-</costs>
-</entryLink>
-<entryLink id="9c73-e124-8298-8a3a" name="Foeblaster Boltgun" hidden="false" collective="false" import="true" targetId="9b55-194b-ad9f-fffc" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1f51-22de-7fd4-681a" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
 </costs>
 </entryLink>
 <entryLink id="3c5d-6889-09df-5230" name="Storm Bolter" hidden="false" collective="false" import="true" targetId="4c92-8660-bb6b-730f" type="selectionEntry">
@@ -33694,22 +33071,6 @@ LIMITATIONS - Only a Traitor Death Guard Detachment. The Detachment must include
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
-</costs>
-</entryLink>
-<entryLink id="76fd-917d-a3d6-67b2" name="Manreaper" hidden="false" collective="false" import="true" targetId="dfb7-dcb2-a57d-0f0c" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0e4e-008f-1c7a-19ff" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
-</costs>
-</entryLink>
-<entryLink id="3d6d-eb43-671c-e38c" name="Combi-Alchem Flamer" hidden="false" collective="false" import="true" targetId="55fc-4943-3ef4-1ab9" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8f32-0bfb-227f-551d" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="14" />
 </costs>
 </entryLink>
 </entryLinks>
@@ -33885,6 +33246,22 @@ LIMITATIONS - Only a Traitor Death Guard Detachment. The Detachment must include
 <cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
 </costs>
 </entryLink>
+<entryLink id="e411-e196-d581-a54d" name="Force Weapon" hidden="false" collective="false" import="true" targetId="9ff9-8820-4811-5aee" type="selectionEntry">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fcd5-1167-4ecf-7a51" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="40" />
+</costs>
+</entryLink>
+<entryLink id="9962-1249-c5b4-61cb" name="Manreaper" hidden="false" collective="false" import="true" targetId="dfb7-dcb2-a57d-0f0c" type="selectionEntry">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c691-622f-4f88-349c" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
+</costs>
+</entryLink>
 </entryLinks>
 </selectionEntryGroup>
 <selectionEntryGroup id="a3e0-4526-6f57-e9b8" name="Apothecary Wargear" hidden="false" collective="false" import="true">
@@ -33903,135 +33280,14 @@ LIMITATIONS - Only a Traitor Death Guard Detachment. The Detachment must include
 <constraints>
 <constraint field="pts0-0000-0000-0001" scope="self" value="50" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="0d14-50e6-f0ad-4304" type="max" />
 </constraints>
-<selectionEntries>
-<selectionEntry id="d5cb-1220-c722-0df9" name="Power Weapon" hidden="false" collective="false" import="true" type="upgrade">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="06fb-58b1-e086-b3a8" type="max" />
-</constraints>
+<selectionEntries />
 <entryLinks>
-<entryLink id="4269-8443-89f9-7687" name="Power Weapon" hidden="false" collective="false" import="true" targetId="fb4f-b267-7556-185d" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="53d0-1c63-0d09-2010" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2fda-0aa9-7815-5783" type="max" />
-</constraints>
-</entryLink>
-</entryLinks>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
-</costs>
-</selectionEntry>
-<selectionEntry id="cacb-1314-dda4-42e5" name="Combi-Bolter" hidden="false" collective="false" import="true" type="upgrade">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4290-c9fc-205b-0c0a" type="max" />
-</constraints>
-<entryLinks>
-<entryLink id="3430-0aba-9690-ba11" name="Combi-Bolter" hidden="false" collective="false" import="true" targetId="5d48-9963-61d3-1a72" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="00cc-b503-e44a-52fa" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c794-5acf-613f-3a94" type="max" />
-</constraints>
-</entryLink>
-</entryLinks>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
-</costs>
-</selectionEntry>
-</selectionEntries>
-<entryLinks>
-<entryLink id="2035-4c2d-67b1-9e2a" name="Chainfist" hidden="false" collective="false" import="true" targetId="a078-deea-084f-38e2" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="971c-506f-d3a7-9907" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
-</costs>
-</entryLink>
-<entryLink id="e411-e196-d581-a54d" name="Force Weapon" hidden="false" collective="false" import="true" targetId="9ff9-8820-4811-5aee" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fcd5-1167-4ecf-7a51" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="40" />
-</costs>
-</entryLink>
-<entryLink id="f126-e9d6-572d-5664" name="Lightning Claw" hidden="false" collective="false" import="true" targetId="0826-0946-b6a1-f42b" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="28e1-2e03-22c6-bf04" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
-</costs>
-</entryLink>
-<entryLink id="b081-cfea-9938-ca81" name="Pair of Lightning Claws" hidden="false" collective="false" import="true" targetId="af2b-d487-5b80-ae9b" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8bed-d01d-4ed1-ef00" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
-</costs>
-</entryLink>
-<entryLink id="816e-4429-bd86-a049" name="Power Fist" hidden="false" collective="false" import="true" targetId="0b4d-922b-4629-b7ca" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="20c1-cdce-61de-fe0b" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
-</costs>
-</entryLink>
-<entryLink id="2cca-dc89-341a-e85d" name="Thunder Hammer" hidden="false" collective="false" import="true" targetId="5dfe-22a3-22b6-fb7c" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5a9f-65e0-94db-3364" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
-</costs>
-</entryLink>
-<entryLink id="5dae-70e6-12df-5eb2" name="Combi-Flamer" hidden="false" collective="false" import="true" targetId="8a4e-3dc8-c0e4-b9cf" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="57a7-ee3d-7595-93d2" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
-</costs>
-</entryLink>
 <entryLink id="952b-7405-29b1-2321" name="Combi-Grenade Launcher" hidden="false" collective="false" import="true" targetId="53ca-71d4-e838-5ab2" type="selectionEntry">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a7e4-7444-945d-a038" type="max" />
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
-</costs>
-</entryLink>
-<entryLink id="7e3d-2f49-c2c8-905a" name="Combi-Meltagun" hidden="false" collective="false" import="true" targetId="b147-b586-15e9-f12b" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="069b-59db-9abf-9ce5" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
-</costs>
-</entryLink>
-<entryLink id="1bfa-5908-d871-66cd" name="Combi-Plasma Gun" hidden="false" collective="false" import="true" targetId="e700-2c4d-9283-a7b7" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6c4e-de28-b343-58ea" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
-</costs>
-</entryLink>
-<entryLink id="d608-698d-5806-0e39" name="Combi-Volkite Charger" hidden="false" collective="false" import="true" targetId="2125-78bc-6ae3-2391" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8f52-ad38-7018-24d5" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
-</costs>
-</entryLink>
-<entryLink id="36dc-70c0-f08f-17e7" name="Foeblaster Boltgun" hidden="false" collective="false" import="true" targetId="9b55-194b-ad9f-fffc" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="21cb-2d6e-1d57-5895" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
 </costs>
 </entryLink>
 <entryLink id="c839-8c22-861f-6fc6" name="Storm Bolter" hidden="false" collective="false" import="true" targetId="4c92-8660-bb6b-730f" type="selectionEntry">
@@ -34064,22 +33320,6 @@ LIMITATIONS - Only a Traitor Death Guard Detachment. The Detachment must include
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
-</costs>
-</entryLink>
-<entryLink id="9962-1249-c5b4-61cb" name="Manreaper" hidden="false" collective="false" import="true" targetId="dfb7-dcb2-a57d-0f0c" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c691-622f-4f88-349c" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
-</costs>
-</entryLink>
-<entryLink id="c2cc-7eb8-7fac-dbf3" name="Combi-Alchem Flamer" hidden="false" collective="false" import="true" targetId="55fc-4943-3ef4-1ab9" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3968-25d2-d3a5-f7fe" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="14" />
 </costs>
 </entryLink>
 </entryLinks>
@@ -34263,6 +33503,22 @@ LIMITATIONS - Only a Traitor Death Guard Detachment. The Detachment must include
 <cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
 </costs>
 </entryLink>
+<entryLink id="b129-f19f-ec06-f62c" name="Force Weapon" hidden="false" collective="false" import="true" targetId="9ff9-8820-4811-5aee" type="selectionEntry">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ab77-f834-4217-b1af" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="40" />
+</costs>
+</entryLink>
+<entryLink id="7323-fa03-a521-bd29" name="Manreaper" hidden="false" collective="false" import="true" targetId="dfb7-dcb2-a57d-0f0c" type="selectionEntry">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="74d8-af0a-7c9d-6c19" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
+</costs>
+</entryLink>
 </entryLinks>
 </selectionEntryGroup>
 <selectionEntryGroup id="dbfa-d936-4d3b-d6a4" name="Standard" hidden="false" collective="false" import="true">
@@ -34320,135 +33576,14 @@ LIMITATIONS - Only a Traitor Death Guard Detachment. The Detachment must include
 <constraints>
 <constraint field="pts0-0000-0000-0001" scope="self" value="50" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="ba4d-b131-7d77-360d" type="max" />
 </constraints>
-<selectionEntries>
-<selectionEntry id="2a27-4949-25d8-4c40" name="Power Weapon" hidden="false" collective="false" import="true" type="upgrade">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8a99-3405-80e6-3878" type="max" />
-</constraints>
+<selectionEntries />
 <entryLinks>
-<entryLink id="4760-761d-073a-6757" name="Power Weapon" hidden="false" collective="false" import="true" targetId="fb4f-b267-7556-185d" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d2f9-984a-e153-2b7c" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="67d5-44ee-a73b-f286" type="max" />
-</constraints>
-</entryLink>
-</entryLinks>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
-</costs>
-</selectionEntry>
-<selectionEntry id="9652-dc51-6348-606b" name="Combi-Bolter" hidden="false" collective="false" import="true" type="upgrade">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="63ba-f004-59bd-978c" type="max" />
-</constraints>
-<entryLinks>
-<entryLink id="f50b-9f39-054d-afe7" name="Combi-Bolter" hidden="false" collective="false" import="true" targetId="5d48-9963-61d3-1a72" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9047-a10d-45f5-01e4" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="83cb-f77d-d869-6759" type="max" />
-</constraints>
-</entryLink>
-</entryLinks>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
-</costs>
-</selectionEntry>
-</selectionEntries>
-<entryLinks>
-<entryLink id="d54e-7884-0356-d335" name="Chainfist" hidden="false" collective="false" import="true" targetId="a078-deea-084f-38e2" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="02de-490b-e81c-088e" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
-</costs>
-</entryLink>
-<entryLink id="b129-f19f-ec06-f62c" name="Force Weapon" hidden="false" collective="false" import="true" targetId="9ff9-8820-4811-5aee" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ab77-f834-4217-b1af" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="40" />
-</costs>
-</entryLink>
-<entryLink id="eba1-17c7-81e5-1a5d" name="Lightning Claw" hidden="false" collective="false" import="true" targetId="0826-0946-b6a1-f42b" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5d25-7ea9-d12c-7b67" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
-</costs>
-</entryLink>
-<entryLink id="ac1d-1f69-9de7-f0f8" name="Pair of Lightning Claws" hidden="false" collective="false" import="true" targetId="af2b-d487-5b80-ae9b" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e54c-cf6c-1410-1553" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
-</costs>
-</entryLink>
-<entryLink id="3f2a-a1ae-1345-40bd" name="Power Fist" hidden="false" collective="false" import="true" targetId="0b4d-922b-4629-b7ca" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0129-b85d-1486-251c" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
-</costs>
-</entryLink>
-<entryLink id="708b-2db6-010b-0653" name="Thunder Hammer" hidden="false" collective="false" import="true" targetId="5dfe-22a3-22b6-fb7c" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="00f3-679b-e1a3-0a49" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
-</costs>
-</entryLink>
-<entryLink id="9875-352a-4650-901c" name="Combi-Flamer" hidden="false" collective="false" import="true" targetId="8a4e-3dc8-c0e4-b9cf" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="35f9-57c8-e99f-7d89" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
-</costs>
-</entryLink>
 <entryLink id="3e3c-a9e2-0bd2-a1dd" name="Combi-Grenade Launcher" hidden="false" collective="false" import="true" targetId="53ca-71d4-e838-5ab2" type="selectionEntry">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0c2a-c1f5-1008-75d5" type="max" />
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
-</costs>
-</entryLink>
-<entryLink id="0ab8-0fec-a9f8-4146" name="Combi-Meltagun" hidden="false" collective="false" import="true" targetId="b147-b586-15e9-f12b" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0e97-1e3f-1818-a712" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
-</costs>
-</entryLink>
-<entryLink id="a8de-dee7-48d9-c8ca" name="Combi-Plasma Gun" hidden="false" collective="false" import="true" targetId="e700-2c4d-9283-a7b7" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3e78-c3aa-a9d4-59bf" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
-</costs>
-</entryLink>
-<entryLink id="99f5-f39c-f236-a2c8" name="Combi-Volkite Charger" hidden="false" collective="false" import="true" targetId="2125-78bc-6ae3-2391" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="61dc-8b65-4551-e733" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
-</costs>
-</entryLink>
-<entryLink id="63ee-2153-b6c2-8349" name="Foeblaster Boltgun" hidden="false" collective="false" import="true" targetId="9b55-194b-ad9f-fffc" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bd6b-57e4-f902-8230" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
 </costs>
 </entryLink>
 <entryLink id="90e2-27e6-b004-ed1c" name="Storm Bolter" hidden="false" collective="false" import="true" targetId="4c92-8660-bb6b-730f" type="selectionEntry">
@@ -34481,22 +33616,6 @@ LIMITATIONS - Only a Traitor Death Guard Detachment. The Detachment must include
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
-</costs>
-</entryLink>
-<entryLink id="7323-fa03-a521-bd29" name="Manreaper" hidden="false" collective="false" import="true" targetId="dfb7-dcb2-a57d-0f0c" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="74d8-af0a-7c9d-6c19" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
-</costs>
-</entryLink>
-<entryLink id="b4e0-ffc3-c8dd-e981" name="Combi-Alchem Flamer" hidden="false" collective="false" import="true" targetId="55fc-4943-3ef4-1ab9" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6bcf-0ea2-3709-6012" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="14" />
 </costs>
 </entryLink>
 </entryLinks>
@@ -36120,55 +35239,6 @@ LIMITATIONS - Only a Traitor Death Guard Detachment. The Detachment must include
 <cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
 </costs>
 </entryLink>
-</entryLinks>
-</selectionEntryGroup>
-<selectionEntryGroup id="ac87-f857-a606-048f" name="Space Marine Armoury (max 50 pts)" hidden="false" collective="false" import="true">
-<constraints>
-<constraint field="pts0-0000-0000-0001" scope="self" value="50" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="d38d-d6d9-981f-61b5" type="max" />
-</constraints>
-<selectionEntries>
-<selectionEntry id="17b5-c0ad-b407-8f09" name="Power Weapon" hidden="false" collective="false" import="true" type="upgrade">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="48fc-7126-5651-9e9e" type="max" />
-</constraints>
-<entryLinks>
-<entryLink id="fa2e-b393-6578-b12e" name="Power Weapon" hidden="false" collective="false" import="true" targetId="fb4f-b267-7556-185d" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="29cf-2fa3-5a13-afc0" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7d50-8365-e250-bc1c" type="max" />
-</constraints>
-</entryLink>
-</entryLinks>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
-</costs>
-</selectionEntry>
-<selectionEntry id="9b66-1ca0-6d05-38bb" name="Combi-Bolter" hidden="false" collective="false" import="true" type="upgrade">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4942-25f6-aa80-30dd" type="max" />
-</constraints>
-<entryLinks>
-<entryLink id="9542-627f-4655-e0df" name="Combi-Bolter" hidden="false" collective="false" import="true" targetId="5d48-9963-61d3-1a72" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6d4c-3ee6-a1d6-0b41" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2817-8b2c-5823-939b" type="max" />
-</constraints>
-</entryLink>
-</entryLinks>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
-</costs>
-</selectionEntry>
-</selectionEntries>
-<entryLinks>
-<entryLink id="f242-95a9-19f8-094a" name="Chainfist" hidden="false" collective="false" import="true" targetId="a078-deea-084f-38e2" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="de06-91cb-c14e-a6e5" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
-</costs>
-</entryLink>
 <entryLink id="5a7e-d971-14c8-98b2" name="Force Weapon" hidden="false" collective="false" import="true" targetId="9ff9-8820-4811-5aee" type="selectionEntry">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d315-ad89-e9d8-815f" type="max" />
@@ -36177,84 +35247,28 @@ LIMITATIONS - Only a Traitor Death Guard Detachment. The Detachment must include
 <cost name="pts" typeId="pts0-0000-0000-0001" value="40" />
 </costs>
 </entryLink>
-<entryLink id="c8a9-166d-d1a4-5c3b" name="Lightning Claw" hidden="false" collective="false" import="true" targetId="0826-0946-b6a1-f42b" type="selectionEntry">
+<entryLink id="329f-9da6-607d-a4fd" name="Manreaper" hidden="false" collective="false" import="true" targetId="dfb7-dcb2-a57d-0f0c" type="selectionEntry">
 <constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8e85-9ef2-592b-4603" type="max" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b151-b1cb-4b1a-cef5" type="max" />
 </constraints>
 <costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
+<cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
 </costs>
 </entryLink>
-<entryLink id="5cb7-0e33-883a-c1e7" name="Pair of Lightning Claws" hidden="false" collective="false" import="true" targetId="af2b-d487-5b80-ae9b" type="selectionEntry">
+</entryLinks>
+</selectionEntryGroup>
+<selectionEntryGroup id="ac87-f857-a606-048f" name="Space Marine Armoury (max 50 pts)" hidden="false" collective="false" import="true">
 <constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2a70-f6e7-0b00-1218" type="max" />
+<constraint field="pts0-0000-0000-0001" scope="self" value="50" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="d38d-d6d9-981f-61b5" type="max" />
 </constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
-</costs>
-</entryLink>
-<entryLink id="f24f-f0c8-070c-4a09" name="Power Fist" hidden="false" collective="false" import="true" targetId="0b4d-922b-4629-b7ca" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="356f-58f5-76bc-d033" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
-</costs>
-</entryLink>
-<entryLink id="5089-4247-e489-d466" name="Thunder Hammer" hidden="false" collective="false" import="true" targetId="5dfe-22a3-22b6-fb7c" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c293-c85d-e11d-d12b" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
-</costs>
-</entryLink>
-<entryLink id="c65b-a331-6e69-656a" name="Combi-Flamer" hidden="false" collective="false" import="true" targetId="8a4e-3dc8-c0e4-b9cf" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e951-a598-b675-3572" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
-</costs>
-</entryLink>
+<selectionEntries />
+<entryLinks>
 <entryLink id="d4f0-d701-6118-47d8" name="Combi-Grenade Launcher" hidden="false" collective="false" import="true" targetId="53ca-71d4-e838-5ab2" type="selectionEntry">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9b5f-6338-a4a4-58dd" type="max" />
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
-</costs>
-</entryLink>
-<entryLink id="4c40-d70d-14bb-42cc" name="Combi-Meltagun" hidden="false" collective="false" import="true" targetId="b147-b586-15e9-f12b" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7e15-a052-bbb3-9c00" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
-</costs>
-</entryLink>
-<entryLink id="d270-e821-a299-1d0b" name="Combi-Plasma Gun" hidden="false" collective="false" import="true" targetId="e700-2c4d-9283-a7b7" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8c8e-e686-93de-c428" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
-</costs>
-</entryLink>
-<entryLink id="9492-fbe4-16a8-b772" name="Combi-Volkite Charger" hidden="false" collective="false" import="true" targetId="2125-78bc-6ae3-2391" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0d34-cc7a-6f11-31c1" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
-</costs>
-</entryLink>
-<entryLink id="b7ba-cfd4-283f-b2a5" name="Foeblaster Boltgun" hidden="false" collective="false" import="true" targetId="9b55-194b-ad9f-fffc" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e8ef-109b-6e1e-5b14" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
 </costs>
 </entryLink>
 <entryLink id="827b-0f84-692d-f89a" name="Storm Bolter" hidden="false" collective="false" import="true" targetId="4c92-8660-bb6b-730f" type="selectionEntry">
@@ -36287,22 +35301,6 @@ LIMITATIONS - Only a Traitor Death Guard Detachment. The Detachment must include
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
-</costs>
-</entryLink>
-<entryLink id="329f-9da6-607d-a4fd" name="Manreaper" hidden="false" collective="false" import="true" targetId="dfb7-dcb2-a57d-0f0c" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b151-b1cb-4b1a-cef5" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
-</costs>
-</entryLink>
-<entryLink id="3303-c00a-f5fd-9ed5" name="Combi-Alchem Flamer" hidden="false" collective="false" import="true" targetId="55fc-4943-3ef4-1ab9" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4054-3511-6b92-879e" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="14" />
 </costs>
 </entryLink>
 </entryLinks>
@@ -36478,6 +35476,22 @@ LIMITATIONS - Only a Traitor Death Guard Detachment. The Detachment must include
 <cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
 </costs>
 </entryLink>
+<entryLink id="b200-6c56-36ac-6874" name="Force Weapon" hidden="false" collective="false" import="true" targetId="9ff9-8820-4811-5aee" type="selectionEntry">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d959-611e-6f66-3dca" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="40" />
+</costs>
+</entryLink>
+<entryLink id="6927-4ab2-26e7-f190" name="Manreaper" hidden="false" collective="false" import="true" targetId="dfb7-dcb2-a57d-0f0c" type="selectionEntry">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5719-d9fe-a31e-0ad6" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
+</costs>
+</entryLink>
 </entryLinks>
 </selectionEntryGroup>
 <selectionEntryGroup id="16db-8318-4f18-325d" name="Apothecary Wargear" hidden="false" collective="false" import="true">
@@ -36496,135 +35510,14 @@ LIMITATIONS - Only a Traitor Death Guard Detachment. The Detachment must include
 <constraints>
 <constraint field="pts0-0000-0000-0001" scope="self" value="50" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2ab7-98f9-1fdc-95e1" type="max" />
 </constraints>
-<selectionEntries>
-<selectionEntry id="015d-be74-0b7b-9c4a" name="Power Weapon" hidden="false" collective="false" import="true" type="upgrade">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="259a-8815-73f1-e1ab" type="max" />
-</constraints>
+<selectionEntries />
 <entryLinks>
-<entryLink id="891a-00de-4675-4eaa" name="Power Weapon" hidden="false" collective="false" import="true" targetId="fb4f-b267-7556-185d" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fb24-4230-1285-81f3" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fb08-b8c3-aff8-a8c1" type="max" />
-</constraints>
-</entryLink>
-</entryLinks>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
-</costs>
-</selectionEntry>
-<selectionEntry id="3844-2c6c-bdad-c94e" name="Combi-Bolter" hidden="false" collective="false" import="true" type="upgrade">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ed65-1cb4-cf2c-bf0d" type="max" />
-</constraints>
-<entryLinks>
-<entryLink id="5039-40bb-f64a-6278" name="Combi-Bolter" hidden="false" collective="false" import="true" targetId="5d48-9963-61d3-1a72" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="43d9-5fb1-2beb-1f93" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b678-22d7-5621-f21e" type="max" />
-</constraints>
-</entryLink>
-</entryLinks>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
-</costs>
-</selectionEntry>
-</selectionEntries>
-<entryLinks>
-<entryLink id="515e-9611-27ca-22c3" name="Chainfist" hidden="false" collective="false" import="true" targetId="a078-deea-084f-38e2" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a79c-ada9-cd5c-e767" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
-</costs>
-</entryLink>
-<entryLink id="b200-6c56-36ac-6874" name="Force Weapon" hidden="false" collective="false" import="true" targetId="9ff9-8820-4811-5aee" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d959-611e-6f66-3dca" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="40" />
-</costs>
-</entryLink>
-<entryLink id="36a0-af11-eab7-48b3" name="Lightning Claw" hidden="false" collective="false" import="true" targetId="0826-0946-b6a1-f42b" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="955d-231b-3332-6744" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
-</costs>
-</entryLink>
-<entryLink id="088c-2394-2ddc-aff1" name="Pair of Lightning Claws" hidden="false" collective="false" import="true" targetId="af2b-d487-5b80-ae9b" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fdf4-86ab-179c-6717" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
-</costs>
-</entryLink>
-<entryLink id="a3c2-c712-f8fa-21dd" name="Power Fist" hidden="false" collective="false" import="true" targetId="0b4d-922b-4629-b7ca" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b722-1695-4347-9e74" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
-</costs>
-</entryLink>
-<entryLink id="d0af-2f21-3d65-a182" name="Thunder Hammer" hidden="false" collective="false" import="true" targetId="5dfe-22a3-22b6-fb7c" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ed0e-1acd-79dd-513e" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
-</costs>
-</entryLink>
-<entryLink id="d1b0-bce7-d3ca-bae0" name="Combi-Flamer" hidden="false" collective="false" import="true" targetId="8a4e-3dc8-c0e4-b9cf" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ae71-11ed-a55c-aa56" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
-</costs>
-</entryLink>
 <entryLink id="bbec-a85b-97f9-60c3" name="Combi-Grenade Launcher" hidden="false" collective="false" import="true" targetId="53ca-71d4-e838-5ab2" type="selectionEntry">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6c1f-97b2-fa20-d796" type="max" />
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
-</costs>
-</entryLink>
-<entryLink id="0193-97aa-a914-4f54" name="Combi-Meltagun" hidden="false" collective="false" import="true" targetId="b147-b586-15e9-f12b" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cf51-2cc1-a1ac-849d" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
-</costs>
-</entryLink>
-<entryLink id="3cdc-dcd0-5abd-02ec" name="Combi-Plasma Gun" hidden="false" collective="false" import="true" targetId="e700-2c4d-9283-a7b7" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="51a6-ba1a-5bec-24bd" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
-</costs>
-</entryLink>
-<entryLink id="2b96-9c8a-8999-577d" name="Combi-Volkite Charger" hidden="false" collective="false" import="true" targetId="2125-78bc-6ae3-2391" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e4ae-ed1c-2035-f744" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
-</costs>
-</entryLink>
-<entryLink id="e3b6-d066-7323-ac57" name="Foeblaster Boltgun" hidden="false" collective="false" import="true" targetId="9b55-194b-ad9f-fffc" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="711a-85f4-3754-3174" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
 </costs>
 </entryLink>
 <entryLink id="fe34-d34e-4879-88a9" name="Storm Bolter" hidden="false" collective="false" import="true" targetId="4c92-8660-bb6b-730f" type="selectionEntry">
@@ -36657,22 +35550,6 @@ LIMITATIONS - Only a Traitor Death Guard Detachment. The Detachment must include
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
-</costs>
-</entryLink>
-<entryLink id="6927-4ab2-26e7-f190" name="Manreaper" hidden="false" collective="false" import="true" targetId="dfb7-dcb2-a57d-0f0c" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5719-d9fe-a31e-0ad6" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
-</costs>
-</entryLink>
-<entryLink id="9705-7ddc-96af-37a7" name="Combi-Alchem Flamer" hidden="false" collective="false" import="true" targetId="55fc-4943-3ef4-1ab9" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8aa6-688c-49ae-162a" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="14" />
 </costs>
 </entryLink>
 </entryLinks>
@@ -36856,6 +35733,22 @@ LIMITATIONS - Only a Traitor Death Guard Detachment. The Detachment must include
 <cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
 </costs>
 </entryLink>
+<entryLink id="090c-cc58-406a-9bf7" name="Force Weapon" hidden="false" collective="false" import="true" targetId="9ff9-8820-4811-5aee" type="selectionEntry">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3f84-1b65-4259-df1d" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="40" />
+</costs>
+</entryLink>
+<entryLink id="be76-1de6-2eda-3a35" name="Manreaper" hidden="false" collective="false" import="true" targetId="dfb7-dcb2-a57d-0f0c" type="selectionEntry">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3654-b08a-69d2-2cfe" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
+</costs>
+</entryLink>
 </entryLinks>
 </selectionEntryGroup>
 <selectionEntryGroup id="5cb3-f47a-b4cd-c9ca" name="Standard" hidden="false" collective="false" import="true">
@@ -36913,135 +35806,14 @@ LIMITATIONS - Only a Traitor Death Guard Detachment. The Detachment must include
 <constraints>
 <constraint field="pts0-0000-0000-0001" scope="self" value="50" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="08c6-09a3-db98-b7a8" type="max" />
 </constraints>
-<selectionEntries>
-<selectionEntry id="63bc-d375-bc6a-5559" name="Power Weapon" hidden="false" collective="false" import="true" type="upgrade">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3d05-9c54-dab7-9ace" type="max" />
-</constraints>
+<selectionEntries />
 <entryLinks>
-<entryLink id="8f17-f822-6c72-b344" name="Power Weapon" hidden="false" collective="false" import="true" targetId="fb4f-b267-7556-185d" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="22fa-ea51-9ce8-1c81" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0149-fce0-a16b-af08" type="max" />
-</constraints>
-</entryLink>
-</entryLinks>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
-</costs>
-</selectionEntry>
-<selectionEntry id="90cb-b2e6-45b8-3410" name="Combi-Bolter" hidden="false" collective="false" import="true" type="upgrade">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="10d3-dfdf-6a53-440b" type="max" />
-</constraints>
-<entryLinks>
-<entryLink id="bf15-12d0-276c-386f" name="Combi-Bolter" hidden="false" collective="false" import="true" targetId="5d48-9963-61d3-1a72" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6d0f-8905-0543-12b3" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b546-bb99-a815-8b3e" type="max" />
-</constraints>
-</entryLink>
-</entryLinks>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
-</costs>
-</selectionEntry>
-</selectionEntries>
-<entryLinks>
-<entryLink id="be0f-9a6e-d805-0b76" name="Chainfist" hidden="false" collective="false" import="true" targetId="a078-deea-084f-38e2" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="62fb-e36b-e1e6-52b7" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
-</costs>
-</entryLink>
-<entryLink id="090c-cc58-406a-9bf7" name="Force Weapon" hidden="false" collective="false" import="true" targetId="9ff9-8820-4811-5aee" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3f84-1b65-4259-df1d" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="40" />
-</costs>
-</entryLink>
-<entryLink id="fef3-de12-8ce4-a9e8" name="Lightning Claw" hidden="false" collective="false" import="true" targetId="0826-0946-b6a1-f42b" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e8c2-0343-02bd-85b7" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
-</costs>
-</entryLink>
-<entryLink id="3e0e-668a-bdca-3736" name="Pair of Lightning Claws" hidden="false" collective="false" import="true" targetId="af2b-d487-5b80-ae9b" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c2ca-8435-1f25-333b" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
-</costs>
-</entryLink>
-<entryLink id="d195-cc19-12cd-d76b" name="Power Fist" hidden="false" collective="false" import="true" targetId="0b4d-922b-4629-b7ca" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2120-bb5b-187b-08fd" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
-</costs>
-</entryLink>
-<entryLink id="a1e9-3caf-7515-fe65" name="Thunder Hammer" hidden="false" collective="false" import="true" targetId="5dfe-22a3-22b6-fb7c" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9279-4602-bae6-ab11" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
-</costs>
-</entryLink>
-<entryLink id="f867-334d-2884-f524" name="Combi-Flamer" hidden="false" collective="false" import="true" targetId="8a4e-3dc8-c0e4-b9cf" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dd7d-191a-59d6-1733" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
-</costs>
-</entryLink>
 <entryLink id="2deb-5254-4918-e6ec" name="Combi-Grenade Launcher" hidden="false" collective="false" import="true" targetId="53ca-71d4-e838-5ab2" type="selectionEntry">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f5e4-8590-c49a-48e7" type="max" />
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
-</costs>
-</entryLink>
-<entryLink id="bc16-8455-28c8-525d" name="Combi-Meltagun" hidden="false" collective="false" import="true" targetId="b147-b586-15e9-f12b" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5b38-c31d-f027-8803" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
-</costs>
-</entryLink>
-<entryLink id="6fcf-4621-b055-f60c" name="Combi-Plasma Gun" hidden="false" collective="false" import="true" targetId="e700-2c4d-9283-a7b7" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="64c3-57d9-4cb0-b111" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
-</costs>
-</entryLink>
-<entryLink id="ea47-c2f2-2d33-1d86" name="Combi-Volkite Charger" hidden="false" collective="false" import="true" targetId="2125-78bc-6ae3-2391" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="99cb-fdf1-8740-2595" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
-</costs>
-</entryLink>
-<entryLink id="2269-a88e-1989-0a85" name="Foeblaster Boltgun" hidden="false" collective="false" import="true" targetId="9b55-194b-ad9f-fffc" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6f88-b796-4672-8f4e" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
 </costs>
 </entryLink>
 <entryLink id="c516-2cea-1908-9d2a" name="Storm Bolter" hidden="false" collective="false" import="true" targetId="4c92-8660-bb6b-730f" type="selectionEntry">
@@ -37074,22 +35846,6 @@ LIMITATIONS - Only a Traitor Death Guard Detachment. The Detachment must include
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
-</costs>
-</entryLink>
-<entryLink id="be76-1de6-2eda-3a35" name="Manreaper" hidden="false" collective="false" import="true" targetId="dfb7-dcb2-a57d-0f0c" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3654-b08a-69d2-2cfe" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
-</costs>
-</entryLink>
-<entryLink id="49e8-06e7-b20c-6e00" name="Combi-Alchem Flamer" hidden="false" collective="false" import="true" targetId="55fc-4943-3ef4-1ab9" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fede-0601-499c-7670" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="14" />
 </costs>
 </entryLink>
 </entryLinks>
@@ -37545,6 +36301,14 @@ LIMITATIONS - Only a Traitor Death Guard Detachment. The Detachment must include
 <cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
 </costs>
 </entryLink>
+<entryLink id="96e9-7f1b-1cbe-05aa" name="Manreaper" hidden="false" collective="false" import="true" targetId="dfb7-dcb2-a57d-0f0c" type="selectionEntry">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="47ae-1f53-07b9-46c1" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
+</costs>
+</entryLink>
 </entryLinks>
 </selectionEntryGroup>
 <selectionEntryGroup id="03e2-6a12-aab8-72dd" name="Poison-master Wargear" hidden="false" collective="false" import="true">
@@ -37840,16 +36604,7 @@ LIMITATIONS - Only a Traitor Death Guard Detachment. The Detachment must include
 </entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
-<entryLinks>
-<entryLink id="96e9-7f1b-1cbe-05aa" name="Manreaper" hidden="false" collective="false" import="true" targetId="dfb7-dcb2-a57d-0f0c" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="47ae-1f53-07b9-46c1" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
-</costs>
-</entryLink>
-</entryLinks>
+<entryLinks />
 </selectionEntryGroup>
 </selectionEntryGroups>
 <entryLinks>
@@ -38499,6 +37254,14 @@ LIMITATIONS - Only a Traitor Death Guard Detachment. The Detachment must include
 <cost name="pts" typeId="pts0-0000-0000-0001" value="14" />
 </costs>
 </entryLink>
+<entryLink id="db4a-9e40-693e-5221" name="Manreaper" hidden="false" collective="false" import="true" targetId="dfb7-dcb2-a57d-0f0c" type="selectionEntry">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5ccf-190f-b08a-cb3a" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
+</costs>
+</entryLink>
 </entryLinks>
 </selectionEntryGroup>
 <selectionEntryGroup id="e6af-948c-542b-725c" name="Additional Wargear" hidden="false" collective="false" import="true">
@@ -38600,16 +37363,7 @@ LIMITATIONS - Only a Traitor Death Guard Detachment. The Detachment must include
 </entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
-<entryLinks>
-<entryLink id="db4a-9e40-693e-5221" name="Manreaper" hidden="false" collective="false" import="true" targetId="dfb7-dcb2-a57d-0f0c" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5ccf-190f-b08a-cb3a" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
-</costs>
-</entryLink>
-</entryLinks>
+<entryLinks />
 </selectionEntryGroup>
 </selectionEntryGroups>
 <entryLinks>
@@ -39022,6 +37776,14 @@ LIMITATIONS - Only a Traitor Death Guard Detachment. The Detachment must include
 <cost name="pts" typeId="pts0-0000-0000-0001" value="14" />
 </costs>
 </entryLink>
+<entryLink id="067b-6f46-0194-aeb2" name="Manreaper" hidden="false" collective="false" import="true" targetId="dfb7-dcb2-a57d-0f0c" type="selectionEntry">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="00ff-7dae-992a-4b6b" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
+</costs>
+</entryLink>
 </entryLinks>
 </selectionEntryGroup>
 <selectionEntryGroup id="03e0-0081-fad1-3b73" name="Additional Wargear" hidden="false" collective="false" import="true">
@@ -39151,16 +37913,7 @@ LIMITATIONS - Only a Traitor Death Guard Detachment. The Detachment must include
 </entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
-<entryLinks>
-<entryLink id="067b-6f46-0194-aeb2" name="Manreaper" hidden="false" collective="false" import="true" targetId="dfb7-dcb2-a57d-0f0c" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="00ff-7dae-992a-4b6b" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
-</costs>
-</entryLink>
-</entryLinks>
+<entryLinks />
 </selectionEntryGroup>
 </selectionEntryGroups>
 <entryLinks>
@@ -39606,6 +38359,14 @@ LIMITATIONS - Only a Traitor Death Guard Detachment. The Detachment must include
 <cost name="pts" typeId="pts0-0000-0000-0001" value="14" />
 </costs>
 </entryLink>
+<entryLink id="4122-1d53-4869-7150" name="Manreaper" hidden="false" collective="false" import="true" targetId="dfb7-dcb2-a57d-0f0c" type="selectionEntry">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2acc-694d-94b4-8e93" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
+</costs>
+</entryLink>
 </entryLinks>
 </selectionEntryGroup>
 <selectionEntryGroup id="0519-26b1-c1d6-6405" name="Additional Wargear" hidden="false" collective="false" import="true">
@@ -39735,16 +38496,7 @@ LIMITATIONS - Only a Traitor Death Guard Detachment. The Detachment must include
 </entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
-<entryLinks>
-<entryLink id="4122-1d53-4869-7150" name="Manreaper" hidden="false" collective="false" import="true" targetId="dfb7-dcb2-a57d-0f0c" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2acc-694d-94b4-8e93" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
-</costs>
-</entryLink>
-</entryLinks>
+<entryLinks />
 </selectionEntryGroup>
 </selectionEntryGroups>
 <entryLinks>
@@ -40618,6 +39370,14 @@ LIMITATIONS - Only a Traitor Death Guard Detachment. The Detachment must include
 <cost name="pts" typeId="pts0-0000-0000-0001" value="14" />
 </costs>
 </entryLink>
+<entryLink id="ab0a-be6d-95a7-a991" name="Manreaper" hidden="false" collective="false" import="true" targetId="dfb7-dcb2-a57d-0f0c" type="selectionEntry">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4176-bb97-2df6-9fb9" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
+</costs>
+</entryLink>
 </entryLinks>
 </selectionEntryGroup>
 <selectionEntryGroup id="5b1e-b7d2-62a8-f9ab" name="Additional Wargear" hidden="false" collective="false" import="true">
@@ -40719,16 +39479,7 @@ LIMITATIONS - Only a Traitor Death Guard Detachment. The Detachment must include
 </entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
-<entryLinks>
-<entryLink id="ab0a-be6d-95a7-a991" name="Manreaper" hidden="false" collective="false" import="true" targetId="dfb7-dcb2-a57d-0f0c" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4176-bb97-2df6-9fb9" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
-</costs>
-</entryLink>
-</entryLinks>
+<entryLinks />
 </selectionEntryGroup>
 </selectionEntryGroups>
 <entryLinks>
@@ -41141,6 +39892,14 @@ LIMITATIONS - Only a Traitor Death Guard Detachment. The Detachment must include
 <cost name="pts" typeId="pts0-0000-0000-0001" value="14" />
 </costs>
 </entryLink>
+<entryLink id="b4af-44a6-f699-84a0" name="Manreaper" hidden="false" collective="false" import="true" targetId="dfb7-dcb2-a57d-0f0c" type="selectionEntry">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="70e1-5758-4533-79b8" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
+</costs>
+</entryLink>
 </entryLinks>
 </selectionEntryGroup>
 <selectionEntryGroup id="9bdd-9399-d5e2-f7ba" name="Additional Wargear" hidden="false" collective="false" import="true">
@@ -41270,16 +40029,7 @@ LIMITATIONS - Only a Traitor Death Guard Detachment. The Detachment must include
 </entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
-<entryLinks>
-<entryLink id="b4af-44a6-f699-84a0" name="Manreaper" hidden="false" collective="false" import="true" targetId="dfb7-dcb2-a57d-0f0c" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="70e1-5758-4533-79b8" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
-</costs>
-</entryLink>
-</entryLinks>
+<entryLinks />
 </selectionEntryGroup>
 </selectionEntryGroups>
 <entryLinks>
@@ -41725,6 +40475,14 @@ LIMITATIONS - Only a Traitor Death Guard Detachment. The Detachment must include
 <cost name="pts" typeId="pts0-0000-0000-0001" value="14" />
 </costs>
 </entryLink>
+<entryLink id="52e7-8aa1-c69e-2d9d" name="Manreaper" hidden="false" collective="false" import="true" targetId="dfb7-dcb2-a57d-0f0c" type="selectionEntry">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6578-54d4-2ac2-f82d" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
+</costs>
+</entryLink>
 </entryLinks>
 </selectionEntryGroup>
 <selectionEntryGroup id="ca85-a7a4-4830-66e8" name="Additional Wargear" hidden="false" collective="false" import="true">
@@ -41854,16 +40612,7 @@ LIMITATIONS - Only a Traitor Death Guard Detachment. The Detachment must include
 </entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
-<entryLinks>
-<entryLink id="52e7-8aa1-c69e-2d9d" name="Manreaper" hidden="false" collective="false" import="true" targetId="dfb7-dcb2-a57d-0f0c" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6578-54d4-2ac2-f82d" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
-</costs>
-</entryLink>
-</entryLinks>
+<entryLinks />
 </selectionEntryGroup>
 </selectionEntryGroups>
 <entryLinks>
@@ -42737,6 +41486,14 @@ LIMITATIONS - Only a Traitor Death Guard Detachment. The Detachment must include
 <cost name="pts" typeId="pts0-0000-0000-0001" value="14" />
 </costs>
 </entryLink>
+<entryLink id="d0c5-e860-891f-93cc" name="Manreaper" hidden="false" collective="false" import="true" targetId="dfb7-dcb2-a57d-0f0c" type="selectionEntry">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="77aa-b588-9bf1-1714" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
+</costs>
+</entryLink>
 </entryLinks>
 </selectionEntryGroup>
 <selectionEntryGroup id="c5c3-0609-a643-d31d" name="Additional Wargear" hidden="false" collective="false" import="true">
@@ -42838,16 +41595,7 @@ LIMITATIONS - Only a Traitor Death Guard Detachment. The Detachment must include
 </entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
-<entryLinks>
-<entryLink id="d0c5-e860-891f-93cc" name="Manreaper" hidden="false" collective="false" import="true" targetId="dfb7-dcb2-a57d-0f0c" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="77aa-b588-9bf1-1714" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
-</costs>
-</entryLink>
-</entryLinks>
+<entryLinks />
 </selectionEntryGroup>
 </selectionEntryGroups>
 <entryLinks>
@@ -43260,6 +42008,14 @@ LIMITATIONS - Only a Traitor Death Guard Detachment. The Detachment must include
 <cost name="pts" typeId="pts0-0000-0000-0001" value="14" />
 </costs>
 </entryLink>
+<entryLink id="78b1-5d33-a8fc-72b2" name="Manreaper" hidden="false" collective="false" import="true" targetId="dfb7-dcb2-a57d-0f0c" type="selectionEntry">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c162-2934-c10d-aea0" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
+</costs>
+</entryLink>
 </entryLinks>
 </selectionEntryGroup>
 <selectionEntryGroup id="92be-687b-0c78-8688" name="Additional Wargear" hidden="false" collective="false" import="true">
@@ -43389,16 +42145,7 @@ LIMITATIONS - Only a Traitor Death Guard Detachment. The Detachment must include
 </entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
-<entryLinks>
-<entryLink id="78b1-5d33-a8fc-72b2" name="Manreaper" hidden="false" collective="false" import="true" targetId="dfb7-dcb2-a57d-0f0c" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c162-2934-c10d-aea0" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
-</costs>
-</entryLink>
-</entryLinks>
+<entryLinks />
 </selectionEntryGroup>
 </selectionEntryGroups>
 <entryLinks>
@@ -43844,6 +42591,14 @@ LIMITATIONS - Only a Traitor Death Guard Detachment. The Detachment must include
 <cost name="pts" typeId="pts0-0000-0000-0001" value="14" />
 </costs>
 </entryLink>
+<entryLink id="5274-6453-36be-8f57" name="Manreaper" hidden="false" collective="false" import="true" targetId="dfb7-dcb2-a57d-0f0c" type="selectionEntry">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3fc8-0e58-2a0e-2bf4" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
+</costs>
+</entryLink>
 </entryLinks>
 </selectionEntryGroup>
 <selectionEntryGroup id="91f7-e148-f26b-61b5" name="Additional Wargear" hidden="false" collective="false" import="true">
@@ -43973,16 +42728,7 @@ LIMITATIONS - Only a Traitor Death Guard Detachment. The Detachment must include
 </entryLinks>
 </selectionEntryGroup>
 </selectionEntryGroups>
-<entryLinks>
-<entryLink id="5274-6453-36be-8f57" name="Manreaper" hidden="false" collective="false" import="true" targetId="dfb7-dcb2-a57d-0f0c" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3fc8-0e58-2a0e-2bf4" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
-</costs>
-</entryLink>
-</entryLinks>
+<entryLinks />
 </selectionEntryGroup>
 </selectionEntryGroups>
 <entryLinks>

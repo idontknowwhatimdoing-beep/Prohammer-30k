@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="p30k-0000-0001-0005" name="Legiones Astartes - Space Wolves" revision="60" battleScribeVersion="2.03" authorName="idontknowwhatimdoing-beep" authorUrl="https://github.com/idontknowwhatimdoing-beep/Prohammer-30k" library="false" gameSystemId="p30k-0000-0000-0001" gameSystemRevision="60" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="p30k-0000-0001-0005" name="Legiones Astartes - Space Wolves" revision="61" battleScribeVersion="2.03" authorName="idontknowwhatimdoing-beep" authorUrl="https://github.com/idontknowwhatimdoing-beep/Prohammer-30k" library="false" gameSystemId="p30k-0000-0000-0001" gameSystemRevision="61" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
 <catalogueLinks>
 <catalogueLink id="eb5f-441e-4cbf-2d7f" name="Mechanicum" targetId="68d2-fb71-996c-4786" type="catalogue" importRootEntries="false" />
 </catalogueLinks>
@@ -11684,6 +11684,14 @@ LIMITATIONS - No Prey Left Unhunted: Grey Slayer Squads must fulfil compulsory T
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
 </costs>
 </entryLink>
+<entryLink id="8348-4d27-3e9e-aa90" name="Force Weapon" hidden="false" collective="false" import="true" targetId="9ff9-8820-4811-5aee" type="selectionEntry">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="44f2-d0dc-fd2e-a23c" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="40" />
+</costs>
+</entryLink>
 </entryLinks>
 </selectionEntryGroup>
 <selectionEntryGroup id="92dc-71bc-0abb-8a9c" name="Sergeant Wargear" hidden="false" collective="false" import="true">
@@ -11702,145 +11710,8 @@ LIMITATIONS - No Prey Left Unhunted: Grey Slayer Squads must fulfil compulsory T
 <constraints>
 <constraint field="pts0-0000-0000-0001" scope="self" value="50" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="bbb0-cdb4-2991-1fb0" type="max" />
 </constraints>
-<selectionEntries>
-<selectionEntry id="7572-1f9e-0011-4e4c" name="Power Weapon" hidden="false" collective="false" import="true" type="upgrade">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="21a1-0d32-66b7-2fba" type="max" />
-</constraints>
+<selectionEntries />
 <entryLinks>
-<entryLink id="63d4-408c-3e7d-3b76" name="Power Weapon" hidden="false" collective="false" import="true" targetId="fb4f-b267-7556-185d" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cb5a-78d8-8bfc-fb2d" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b66d-a2a1-2423-cd89" type="max" />
-</constraints>
-</entryLink>
-</entryLinks>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
-</costs>
-</selectionEntry>
-<selectionEntry id="f520-f463-81ba-c467" name="Combi-Bolter" hidden="false" collective="false" import="true" type="upgrade">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="814e-7a9e-48a0-9317" type="max" />
-</constraints>
-<entryLinks>
-<entryLink id="d97e-4ee8-5adc-062f" name="Combi-Bolter" hidden="false" collective="false" import="true" targetId="5d48-9963-61d3-1a72" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="05b6-7221-2367-9796" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="656d-e307-0d17-af57" type="max" />
-</constraints>
-</entryLink>
-</entryLinks>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
-</costs>
-</selectionEntry>
-</selectionEntries>
-<entryLinks>
-<entryLink id="7fc3-38fb-82c5-32b3" name="Chainfist" hidden="false" collective="false" import="true" targetId="a078-deea-084f-38e2" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9209-195b-cf13-fca0" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
-</costs>
-</entryLink>
-<entryLink id="8348-4d27-3e9e-aa90" name="Force Weapon" hidden="false" collective="false" import="true" targetId="9ff9-8820-4811-5aee" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="44f2-d0dc-fd2e-a23c" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="40" />
-</costs>
-</entryLink>
-<entryLink id="dd0b-9258-5495-9804" name="Lightning Claw" hidden="false" collective="false" import="true" targetId="0826-0946-b6a1-f42b" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5e3f-cf28-9eea-6d6b" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
-</costs>
-</entryLink>
-<entryLink id="65e8-27a0-fd7e-44ea" name="Pair of Lightning Claws" hidden="false" collective="false" import="true" targetId="af2b-d487-5b80-ae9b" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f901-951a-c440-be4a" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
-</costs>
-</entryLink>
-<entryLink id="4332-f41e-4eb2-3bc8" name="Power Fist" hidden="false" collective="false" import="true" targetId="0b4d-922b-4629-b7ca" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9dd8-74bf-b5f4-b346" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
-</costs>
-</entryLink>
-<entryLink id="5776-bb59-724d-8d7e" name="Thunder Hammer" hidden="false" collective="false" import="true" targetId="5dfe-22a3-22b6-fb7c" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e6e0-3754-73fd-afef" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
-</costs>
-</entryLink>
-<entryLink id="7658-98ae-93e4-9ae2" name="Combi-Flamer" hidden="false" collective="false" import="true" targetId="8a4e-3dc8-c0e4-b9cf" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bd20-aa37-7750-47b7" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
-</costs>
-</entryLink>
-<entryLink id="43ef-ebfb-9338-329a" name="Combi-Grenade Launcher" hidden="false" collective="false" import="true" targetId="53ca-71d4-e838-5ab2" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8a63-eca8-de42-458c" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
-</costs>
-</entryLink>
-<entryLink id="a2d1-4e3c-a612-8fce" name="Combi-Meltagun" hidden="false" collective="false" import="true" targetId="b147-b586-15e9-f12b" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="53f6-8d73-7cc1-be86" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
-</costs>
-</entryLink>
-<entryLink id="c2a0-9bcc-68b4-7621" name="Combi-Plasma Gun" hidden="false" collective="false" import="true" targetId="e700-2c4d-9283-a7b7" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f87d-b930-55ea-353a" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
-</costs>
-</entryLink>
-<entryLink id="4757-f958-1918-f7ad" name="Combi-Volkite Charger" hidden="false" collective="false" import="true" targetId="2125-78bc-6ae3-2391" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1b8e-3a36-9e39-ef15" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
-</costs>
-</entryLink>
-<entryLink id="5fce-aefa-ce56-c374" name="Foeblaster Boltgun" hidden="false" collective="false" import="true" targetId="9b55-194b-ad9f-fffc" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7bed-ed2f-5caf-7f5b" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
-</costs>
-</entryLink>
-<entryLink id="4dca-42b1-4f71-5480" name="Storm Bolter" hidden="false" collective="false" import="true" targetId="4c92-8660-bb6b-730f" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="15a3-ce59-f915-9909" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
-</costs>
-</entryLink>
 <entryLink id="276f-0cab-577c-04c0" name="Bionics" hidden="false" collective="false" import="true" targetId="fe26-aa9a-01b0-3173" type="selectionEntry">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="799c-d5be-affb-bfd8" type="max" />
@@ -11887,14 +11758,6 @@ LIMITATIONS - No Prey Left Unhunted: Grey Slayer Squads must fulfil compulsory T
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
-</costs>
-</entryLink>
-<entryLink id="d01b-e9b4-76ba-cd1e" name="Frost Weapon" hidden="false" collective="false" import="true" targetId="5b77-b02b-6ecd-453b" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="20d9-54ff-34a2-3930" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
 </costs>
 </entryLink>
 </entryLinks>
@@ -15547,10 +15410,6 @@ LIMITATIONS - No Prey Left Unhunted: Grey Slayer Squads must fulfil compulsory T
 <cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
 </costs>
 </entryLink>
-</entryLinks>
-</selectionEntryGroup>
-<selectionEntryGroup id="1857-7a36-d5eb-e30e" name="Sergeant Wargear" hidden="false" collective="false" import="true">
-<entryLinks>
 <entryLink id="0a06-c4f5-8dd5-3f1d" name="Power Weapon" hidden="false" collective="false" import="true" targetId="fb4f-b267-7556-185d" type="selectionEntry">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="17f0-8178-df97-0cd7" type="max" />
@@ -15575,20 +15434,24 @@ LIMITATIONS - No Prey Left Unhunted: Grey Slayer Squads must fulfil compulsory T
 <cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
 </costs>
 </entryLink>
-<entryLink id="2daa-3bf9-966f-da28" name="Melta Bombs" hidden="false" collective="false" import="true" targetId="9ab5-665c-640f-1cd0" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f7aa-6d2d-4f2d-f841" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
-</costs>
-</entryLink>
 <entryLink id="bfa3-b172-aab5-6442" name="Frost Weapon" hidden="false" collective="false" import="true" targetId="5b77-b02b-6ecd-453b" type="selectionEntry">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0b4c-cd66-7a7c-2d07" type="max" />
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
+</costs>
+</entryLink>
+</entryLinks>
+</selectionEntryGroup>
+<selectionEntryGroup id="1857-7a36-d5eb-e30e" name="Sergeant Wargear" hidden="false" collective="false" import="true">
+<entryLinks>
+<entryLink id="2daa-3bf9-966f-da28" name="Melta Bombs" hidden="false" collective="false" import="true" targetId="9ab5-665c-640f-1cd0" type="selectionEntry">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f7aa-6d2d-4f2d-f841" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
 </costs>
 </entryLink>
 </entryLinks>
@@ -28655,51 +28518,6 @@ LIMITATIONS - No Prey Left Unhunted: Grey Slayer Squads must fulfil compulsory T
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
 </entryLink>
-</entryLinks>
-</selectionEntryGroup>
-<selectionEntryGroup id="a3c8-d99b-0479-ef7d" name="Thegn Wargear" hidden="false" collective="false" import="true">
-<entryLinks>
-<entryLink id="81c9-5b22-3684-bcbe" name="Grenade Harness" hidden="false" collective="false" import="true" targetId="60c2-a43c-35a2-90a4" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ecc2-f911-283f-ac01" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
-</costs>
-</entryLink>
-</entryLinks>
-</selectionEntryGroup>
-<selectionEntryGroup id="19a5-272f-cdd2-d00c" name="Space Marine Armoury (max 50 pts)" hidden="false" collective="false" import="true">
-<constraints>
-<constraint field="pts0-0000-0000-0001" scope="self" value="50" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="dfd1-bdbe-7427-7641" type="max" />
-</constraints>
-<selectionEntries>
-<selectionEntry id="61d0-efa9-129c-654a" name="Combi-Bolter" hidden="false" collective="false" import="true" type="upgrade">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6348-1e2e-119a-6c56" type="max" />
-</constraints>
-<entryLinks>
-<entryLink id="043d-a2b3-c7c7-ff41" name="Combi-Bolter" hidden="false" collective="false" import="true" targetId="5d48-9963-61d3-1a72" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e209-eea2-bff1-0891" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b1ec-0429-5b79-8a74" type="max" />
-</constraints>
-</entryLink>
-</entryLinks>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
-</costs>
-</selectionEntry>
-</selectionEntries>
-<entryLinks>
-<entryLink id="76b0-7d44-83ff-2917" name="Chainfist" hidden="false" collective="false" import="true" targetId="a078-deea-084f-38e2" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b3a9-1ad4-fdf4-0e36" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
-</costs>
-</entryLink>
 <entryLink id="c65e-b793-8c8f-8111" name="Force Weapon" hidden="false" collective="false" import="true" targetId="9ff9-8820-4811-5aee" type="selectionEntry">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8928-0998-1faf-cfe5" type="max" />
@@ -28724,14 +28542,6 @@ LIMITATIONS - No Prey Left Unhunted: Grey Slayer Squads must fulfil compulsory T
 <cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
 </costs>
 </entryLink>
-<entryLink id="e978-117b-fc70-9631" name="Power Fist" hidden="false" collective="false" import="true" targetId="0b4d-922b-4629-b7ca" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="276c-d91a-d5c6-0486" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
-</costs>
-</entryLink>
 <entryLink id="4927-5221-c4e4-d169" name="Power Weapon" hidden="false" collective="false" import="true" targetId="fb4f-b267-7556-185d" type="selectionEntry">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ab38-31af-a31f-612a" type="max" />
@@ -28740,60 +28550,40 @@ LIMITATIONS - No Prey Left Unhunted: Grey Slayer Squads must fulfil compulsory T
 <cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
 </costs>
 </entryLink>
-<entryLink id="33a0-9de6-5f7a-f861" name="Thunder Hammer" hidden="false" collective="false" import="true" targetId="5dfe-22a3-22b6-fb7c" type="selectionEntry">
+<entryLink id="cade-f42c-171d-8b23" name="Frost Weapon" hidden="false" collective="false" import="true" targetId="5b77-b02b-6ecd-453b" type="selectionEntry">
 <constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="780d-8d0c-f453-f582" type="max" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e81e-7971-2e55-7c16" type="max" />
 </constraints>
 <costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
+<cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
 </costs>
 </entryLink>
-<entryLink id="72cd-edaf-a0fc-8538" name="Combi-Flamer" hidden="false" collective="false" import="true" targetId="8a4e-3dc8-c0e4-b9cf" type="selectionEntry">
+</entryLinks>
+</selectionEntryGroup>
+<selectionEntryGroup id="a3c8-d99b-0479-ef7d" name="Thegn Wargear" hidden="false" collective="false" import="true">
+<entryLinks>
+<entryLink id="81c9-5b22-3684-bcbe" name="Grenade Harness" hidden="false" collective="false" import="true" targetId="60c2-a43c-35a2-90a4" type="selectionEntry">
 <constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8acb-dac9-dabd-e6b9" type="max" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ecc2-f911-283f-ac01" type="max" />
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
 </entryLink>
+</entryLinks>
+</selectionEntryGroup>
+<selectionEntryGroup id="19a5-272f-cdd2-d00c" name="Space Marine Armoury (max 50 pts)" hidden="false" collective="false" import="true">
+<constraints>
+<constraint field="pts0-0000-0000-0001" scope="self" value="50" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="dfd1-bdbe-7427-7641" type="max" />
+</constraints>
+<selectionEntries />
+<entryLinks>
 <entryLink id="001a-5dcc-6e80-68ed" name="Combi-Grenade Launcher" hidden="false" collective="false" import="true" targetId="53ca-71d4-e838-5ab2" type="selectionEntry">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a719-2f50-7647-356b" type="max" />
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
-</costs>
-</entryLink>
-<entryLink id="4964-cbb2-31de-fc8f" name="Combi-Meltagun" hidden="false" collective="false" import="true" targetId="b147-b586-15e9-f12b" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b642-9c7a-183c-673c" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
-</costs>
-</entryLink>
-<entryLink id="ca87-1c9f-c444-8bec" name="Combi-Plasma Gun" hidden="false" collective="false" import="true" targetId="e700-2c4d-9283-a7b7" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4678-2829-07ef-2e7f" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
-</costs>
-</entryLink>
-<entryLink id="c8cc-48ac-89d3-271e" name="Combi-Volkite Charger" hidden="false" collective="false" import="true" targetId="2125-78bc-6ae3-2391" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bfdf-885c-2f15-4b29" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
-</costs>
-</entryLink>
-<entryLink id="efef-c98c-a715-28a2" name="Foeblaster Boltgun" hidden="false" collective="false" import="true" targetId="9b55-194b-ad9f-fffc" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1bac-55d6-53f9-297d" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
 </costs>
 </entryLink>
 <entryLink id="1502-0763-4c23-74b1" name="Storm Bolter" hidden="false" collective="false" import="true" targetId="4c92-8660-bb6b-730f" type="selectionEntry">
@@ -28850,14 +28640,6 @@ LIMITATIONS - No Prey Left Unhunted: Grey Slayer Squads must fulfil compulsory T
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
-</costs>
-</entryLink>
-<entryLink id="cade-f42c-171d-8b23" name="Frost Weapon" hidden="false" collective="false" import="true" targetId="5b77-b02b-6ecd-453b" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e81e-7971-2e55-7c16" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
 </costs>
 </entryLink>
 </entryLinks>
@@ -33144,55 +32926,6 @@ LIMITATIONS - No Prey Left Unhunted: Grey Slayer Squads must fulfil compulsory T
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
 </costs>
 </entryLink>
-</entryLinks>
-</selectionEntryGroup>
-<selectionEntryGroup id="6d1c-5e9e-dab0-92a9" name="Space Marine Armoury (max 50 pts)" hidden="false" collective="false" import="true">
-<constraints>
-<constraint field="pts0-0000-0000-0001" scope="self" value="50" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="4e0b-e00e-c6c9-8a49" type="max" />
-</constraints>
-<selectionEntries>
-<selectionEntry id="99d3-f262-ba07-d4df" name="Power Weapon" hidden="false" collective="false" import="true" type="upgrade">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="459e-199d-ce31-e1ee" type="max" />
-</constraints>
-<entryLinks>
-<entryLink id="d0bd-b7e5-6811-b134" name="Power Weapon" hidden="false" collective="false" import="true" targetId="fb4f-b267-7556-185d" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e496-5d36-21ba-2376" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="13ce-3dc5-efca-2fa0" type="max" />
-</constraints>
-</entryLink>
-</entryLinks>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
-</costs>
-</selectionEntry>
-<selectionEntry id="f80c-7199-2e3f-4bf2" name="Combi-Bolter" hidden="false" collective="false" import="true" type="upgrade">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c13c-76c2-bdb7-1415" type="max" />
-</constraints>
-<entryLinks>
-<entryLink id="5e03-2212-78f3-efe6" name="Combi-Bolter" hidden="false" collective="false" import="true" targetId="5d48-9963-61d3-1a72" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="49b9-0403-a80e-b151" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="79ff-9ccd-620a-f972" type="max" />
-</constraints>
-</entryLink>
-</entryLinks>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
-</costs>
-</selectionEntry>
-</selectionEntries>
-<entryLinks>
-<entryLink id="8172-7736-5e6a-ec85" name="Chainfist" hidden="false" collective="false" import="true" targetId="a078-deea-084f-38e2" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a90f-67d1-746b-06cf" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
-</costs>
-</entryLink>
 <entryLink id="a901-050b-ed7d-2883" name="Force Weapon" hidden="false" collective="false" import="true" targetId="9ff9-8820-4811-5aee" type="selectionEntry">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b89f-9741-0fc4-c6d0" type="max" />
@@ -33201,84 +32934,20 @@ LIMITATIONS - No Prey Left Unhunted: Grey Slayer Squads must fulfil compulsory T
 <cost name="pts" typeId="pts0-0000-0000-0001" value="40" />
 </costs>
 </entryLink>
-<entryLink id="3b96-dbfb-2324-198f" name="Lightning Claw" hidden="false" collective="false" import="true" targetId="0826-0946-b6a1-f42b" type="selectionEntry">
+</entryLinks>
+</selectionEntryGroup>
+<selectionEntryGroup id="6d1c-5e9e-dab0-92a9" name="Space Marine Armoury (max 50 pts)" hidden="false" collective="false" import="true">
 <constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c4d5-e1a6-f82e-837c" type="max" />
+<constraint field="pts0-0000-0000-0001" scope="self" value="50" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="4e0b-e00e-c6c9-8a49" type="max" />
 </constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
-</costs>
-</entryLink>
-<entryLink id="af0f-9cef-f6b4-9906" name="Pair of Lightning Claws" hidden="false" collective="false" import="true" targetId="af2b-d487-5b80-ae9b" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7269-f30a-3467-3952" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
-</costs>
-</entryLink>
-<entryLink id="5f5d-5dd0-c2af-aa43" name="Power Fist" hidden="false" collective="false" import="true" targetId="0b4d-922b-4629-b7ca" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="04ad-781c-aa9d-6764" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
-</costs>
-</entryLink>
-<entryLink id="45ed-312b-fdef-b26b" name="Thunder Hammer" hidden="false" collective="false" import="true" targetId="5dfe-22a3-22b6-fb7c" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e010-4606-012f-5b3e" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
-</costs>
-</entryLink>
-<entryLink id="6cef-f326-ece7-e138" name="Combi-Flamer" hidden="false" collective="false" import="true" targetId="8a4e-3dc8-c0e4-b9cf" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="69f6-3fd8-4d82-b012" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
-</costs>
-</entryLink>
+<selectionEntries />
+<entryLinks>
 <entryLink id="ce96-1302-f7d0-f1dd" name="Combi-Grenade Launcher" hidden="false" collective="false" import="true" targetId="53ca-71d4-e838-5ab2" type="selectionEntry">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7613-f083-e292-2a18" type="max" />
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
-</costs>
-</entryLink>
-<entryLink id="5901-199d-2a5b-b62a" name="Combi-Meltagun" hidden="false" collective="false" import="true" targetId="b147-b586-15e9-f12b" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2c28-98a2-1014-698a" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
-</costs>
-</entryLink>
-<entryLink id="ead1-a9e8-00de-c75f" name="Combi-Plasma Gun" hidden="false" collective="false" import="true" targetId="e700-2c4d-9283-a7b7" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6fda-1507-28d3-51b8" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
-</costs>
-</entryLink>
-<entryLink id="e755-874c-da72-61fb" name="Combi-Volkite Charger" hidden="false" collective="false" import="true" targetId="2125-78bc-6ae3-2391" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="325e-e46a-71ea-f7f7" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
-</costs>
-</entryLink>
-<entryLink id="d4db-869f-ebaa-d411" name="Foeblaster Boltgun" hidden="false" collective="false" import="true" targetId="9b55-194b-ad9f-fffc" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c9fa-a350-6896-ee10" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
 </costs>
 </entryLink>
 <entryLink id="bacc-0f32-b987-2e18" name="Storm Bolter" hidden="false" collective="false" import="true" targetId="4c92-8660-bb6b-730f" type="selectionEntry">
@@ -33335,14 +33004,6 @@ LIMITATIONS - No Prey Left Unhunted: Grey Slayer Squads must fulfil compulsory T
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
-</costs>
-</entryLink>
-<entryLink id="a341-0e18-4679-6151" name="Frost Weapon" hidden="false" collective="false" import="true" targetId="5b77-b02b-6ecd-453b" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7cc3-f8c5-4a66-50aa" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
 </costs>
 </entryLink>
 </entryLinks>
@@ -33503,6 +33164,14 @@ LIMITATIONS - No Prey Left Unhunted: Grey Slayer Squads must fulfil compulsory T
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
 </costs>
 </entryLink>
+<entryLink id="dda0-39ae-7cc6-99c6" name="Force Weapon" hidden="false" collective="false" import="true" targetId="9ff9-8820-4811-5aee" type="selectionEntry">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4657-7bb7-319c-aef5" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="40" />
+</costs>
+</entryLink>
 </entryLinks>
 </selectionEntryGroup>
 <selectionEntryGroup id="baa0-aa8d-682b-979e" name="Apothecary Wargear" hidden="false" collective="false" import="true">
@@ -33521,135 +33190,14 @@ LIMITATIONS - No Prey Left Unhunted: Grey Slayer Squads must fulfil compulsory T
 <constraints>
 <constraint field="pts0-0000-0000-0001" scope="self" value="50" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="9857-b409-ee6d-6640" type="max" />
 </constraints>
-<selectionEntries>
-<selectionEntry id="e80e-32f9-da15-7683" name="Power Weapon" hidden="false" collective="false" import="true" type="upgrade">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="972a-fc3a-dc4f-cc2e" type="max" />
-</constraints>
+<selectionEntries />
 <entryLinks>
-<entryLink id="9128-c8dd-9afa-be31" name="Power Weapon" hidden="false" collective="false" import="true" targetId="fb4f-b267-7556-185d" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b5c0-32f5-2ab6-d75e" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4a4f-2647-00a4-8501" type="max" />
-</constraints>
-</entryLink>
-</entryLinks>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
-</costs>
-</selectionEntry>
-<selectionEntry id="de9c-e3e1-48f1-95bf" name="Combi-Bolter" hidden="false" collective="false" import="true" type="upgrade">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8f31-47d7-c4c4-bb87" type="max" />
-</constraints>
-<entryLinks>
-<entryLink id="e341-b580-7461-5784" name="Combi-Bolter" hidden="false" collective="false" import="true" targetId="5d48-9963-61d3-1a72" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6f57-c1ec-f9be-c44a" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d79b-b62a-e212-67fc" type="max" />
-</constraints>
-</entryLink>
-</entryLinks>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
-</costs>
-</selectionEntry>
-</selectionEntries>
-<entryLinks>
-<entryLink id="9473-3719-bea4-a746" name="Chainfist" hidden="false" collective="false" import="true" targetId="a078-deea-084f-38e2" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2d0c-cfc7-acee-15c6" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
-</costs>
-</entryLink>
-<entryLink id="dda0-39ae-7cc6-99c6" name="Force Weapon" hidden="false" collective="false" import="true" targetId="9ff9-8820-4811-5aee" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4657-7bb7-319c-aef5" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="40" />
-</costs>
-</entryLink>
-<entryLink id="814f-9286-456d-d11e" name="Lightning Claw" hidden="false" collective="false" import="true" targetId="0826-0946-b6a1-f42b" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="18be-fb1d-b4b4-020e" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
-</costs>
-</entryLink>
-<entryLink id="3992-091d-9c50-8972" name="Pair of Lightning Claws" hidden="false" collective="false" import="true" targetId="af2b-d487-5b80-ae9b" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="79aa-7650-d674-c0b6" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
-</costs>
-</entryLink>
-<entryLink id="e7c9-e531-3dc8-1a73" name="Power Fist" hidden="false" collective="false" import="true" targetId="0b4d-922b-4629-b7ca" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="623f-5a6d-f625-eff1" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
-</costs>
-</entryLink>
-<entryLink id="7e77-4395-2d5b-09fc" name="Thunder Hammer" hidden="false" collective="false" import="true" targetId="5dfe-22a3-22b6-fb7c" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3347-6e0b-03fe-cd93" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
-</costs>
-</entryLink>
-<entryLink id="226d-635d-0d88-7d96" name="Combi-Flamer" hidden="false" collective="false" import="true" targetId="8a4e-3dc8-c0e4-b9cf" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0f59-1b09-9cac-f4f9" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
-</costs>
-</entryLink>
 <entryLink id="c413-9fcd-17da-cc39" name="Combi-Grenade Launcher" hidden="false" collective="false" import="true" targetId="53ca-71d4-e838-5ab2" type="selectionEntry">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0447-fa11-d4c4-2939" type="max" />
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
-</costs>
-</entryLink>
-<entryLink id="666a-11e4-d6f3-f690" name="Combi-Meltagun" hidden="false" collective="false" import="true" targetId="b147-b586-15e9-f12b" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="60b1-9952-f3af-f24d" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
-</costs>
-</entryLink>
-<entryLink id="8d7b-18a3-2559-d2c7" name="Combi-Plasma Gun" hidden="false" collective="false" import="true" targetId="e700-2c4d-9283-a7b7" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8c6a-e7bf-f44a-a6f3" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
-</costs>
-</entryLink>
-<entryLink id="1a65-86c6-9567-e52d" name="Combi-Volkite Charger" hidden="false" collective="false" import="true" targetId="2125-78bc-6ae3-2391" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="606f-54f1-957b-0fad" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
-</costs>
-</entryLink>
-<entryLink id="1fe8-8070-b3b7-1704" name="Foeblaster Boltgun" hidden="false" collective="false" import="true" targetId="9b55-194b-ad9f-fffc" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4a12-76b7-3f7b-1543" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
 </costs>
 </entryLink>
 <entryLink id="31c2-689b-33d4-0eda" name="Storm Bolter" hidden="false" collective="false" import="true" targetId="4c92-8660-bb6b-730f" type="selectionEntry">
@@ -33706,14 +33254,6 @@ LIMITATIONS - No Prey Left Unhunted: Grey Slayer Squads must fulfil compulsory T
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
-</costs>
-</entryLink>
-<entryLink id="4e99-0823-f068-b7d8" name="Frost Weapon" hidden="false" collective="false" import="true" targetId="5b77-b02b-6ecd-453b" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="26a3-9d04-bed5-fbc3" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
 </costs>
 </entryLink>
 </entryLinks>
@@ -33882,6 +33422,14 @@ LIMITATIONS - No Prey Left Unhunted: Grey Slayer Squads must fulfil compulsory T
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
 </costs>
 </entryLink>
+<entryLink id="9f94-3181-74c7-1d7f" name="Force Weapon" hidden="false" collective="false" import="true" targetId="9ff9-8820-4811-5aee" type="selectionEntry">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0591-f9b3-c2e4-f674" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="40" />
+</costs>
+</entryLink>
 </entryLinks>
 </selectionEntryGroup>
 <selectionEntryGroup id="e32d-10f7-2de7-131e" name="Standard" hidden="false" collective="false" import="true">
@@ -33939,135 +33487,14 @@ LIMITATIONS - No Prey Left Unhunted: Grey Slayer Squads must fulfil compulsory T
 <constraints>
 <constraint field="pts0-0000-0000-0001" scope="self" value="50" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="22d0-fea1-0fc9-211b" type="max" />
 </constraints>
-<selectionEntries>
-<selectionEntry id="f872-3c79-639a-0c45" name="Power Weapon" hidden="false" collective="false" import="true" type="upgrade">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bfa0-15be-28d7-64e0" type="max" />
-</constraints>
+<selectionEntries />
 <entryLinks>
-<entryLink id="9403-d288-df11-2f35" name="Power Weapon" hidden="false" collective="false" import="true" targetId="fb4f-b267-7556-185d" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="acea-1d02-bd1f-a12d" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9be2-5f0e-26c3-9265" type="max" />
-</constraints>
-</entryLink>
-</entryLinks>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
-</costs>
-</selectionEntry>
-<selectionEntry id="dac5-4670-c29b-9c1b" name="Combi-Bolter" hidden="false" collective="false" import="true" type="upgrade">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="511e-6283-e680-8f27" type="max" />
-</constraints>
-<entryLinks>
-<entryLink id="8618-f2e1-ec75-efc2" name="Combi-Bolter" hidden="false" collective="false" import="true" targetId="5d48-9963-61d3-1a72" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="47e3-4b99-29a4-850d" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c757-5f98-e7b6-531c" type="max" />
-</constraints>
-</entryLink>
-</entryLinks>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
-</costs>
-</selectionEntry>
-</selectionEntries>
-<entryLinks>
-<entryLink id="f8cf-bc6c-e685-4c88" name="Chainfist" hidden="false" collective="false" import="true" targetId="a078-deea-084f-38e2" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2fc7-f269-e533-aa57" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
-</costs>
-</entryLink>
-<entryLink id="9f94-3181-74c7-1d7f" name="Force Weapon" hidden="false" collective="false" import="true" targetId="9ff9-8820-4811-5aee" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0591-f9b3-c2e4-f674" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="40" />
-</costs>
-</entryLink>
-<entryLink id="ec28-3151-57e8-b00b" name="Lightning Claw" hidden="false" collective="false" import="true" targetId="0826-0946-b6a1-f42b" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d6a3-097a-68f6-2848" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
-</costs>
-</entryLink>
-<entryLink id="17fe-b82c-3aea-bf5b" name="Pair of Lightning Claws" hidden="false" collective="false" import="true" targetId="af2b-d487-5b80-ae9b" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="388c-a00f-0b83-b558" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
-</costs>
-</entryLink>
-<entryLink id="c58d-e8fa-e20a-9db4" name="Power Fist" hidden="false" collective="false" import="true" targetId="0b4d-922b-4629-b7ca" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="18c6-b56b-9501-ed71" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
-</costs>
-</entryLink>
-<entryLink id="dc9b-f5ff-187a-3372" name="Thunder Hammer" hidden="false" collective="false" import="true" targetId="5dfe-22a3-22b6-fb7c" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="df74-ec98-01b9-84c7" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
-</costs>
-</entryLink>
-<entryLink id="4628-f9ec-b41a-37d0" name="Combi-Flamer" hidden="false" collective="false" import="true" targetId="8a4e-3dc8-c0e4-b9cf" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d1dd-bc24-4bbe-262e" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
-</costs>
-</entryLink>
 <entryLink id="d5ae-1d3c-c744-b1d5" name="Combi-Grenade Launcher" hidden="false" collective="false" import="true" targetId="53ca-71d4-e838-5ab2" type="selectionEntry">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8345-2952-db4a-9722" type="max" />
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
-</costs>
-</entryLink>
-<entryLink id="ade9-12c1-8c88-3f94" name="Combi-Meltagun" hidden="false" collective="false" import="true" targetId="b147-b586-15e9-f12b" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ca47-3bf2-5d83-2592" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
-</costs>
-</entryLink>
-<entryLink id="dc45-2213-1484-1812" name="Combi-Plasma Gun" hidden="false" collective="false" import="true" targetId="e700-2c4d-9283-a7b7" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="09fe-732b-aebf-24ee" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
-</costs>
-</entryLink>
-<entryLink id="5bcd-0b49-b1d7-37e1" name="Combi-Volkite Charger" hidden="false" collective="false" import="true" targetId="2125-78bc-6ae3-2391" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eba7-1369-edf8-694e" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
-</costs>
-</entryLink>
-<entryLink id="1ba2-53f5-3561-4446" name="Foeblaster Boltgun" hidden="false" collective="false" import="true" targetId="9b55-194b-ad9f-fffc" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7de9-5b61-b1ac-2535" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
 </costs>
 </entryLink>
 <entryLink id="b74e-2259-b2f8-e971" name="Storm Bolter" hidden="false" collective="false" import="true" targetId="4c92-8660-bb6b-730f" type="selectionEntry">
@@ -34124,14 +33551,6 @@ LIMITATIONS - No Prey Left Unhunted: Grey Slayer Squads must fulfil compulsory T
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
-</costs>
-</entryLink>
-<entryLink id="65f0-dd25-5583-c0b8" name="Frost Weapon" hidden="false" collective="false" import="true" targetId="5b77-b02b-6ecd-453b" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="61b6-bc3e-41ce-24b8" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
 </costs>
 </entryLink>
 </entryLinks>
@@ -36744,55 +36163,6 @@ LIMITATIONS - No Prey Left Unhunted: Grey Slayer Squads must fulfil compulsory T
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
 </costs>
 </entryLink>
-</entryLinks>
-</selectionEntryGroup>
-<selectionEntryGroup id="1fca-505e-9670-2ecf" name="Space Marine Armoury (max 50 pts)" hidden="false" collective="false" import="true">
-<constraints>
-<constraint field="pts0-0000-0000-0001" scope="self" value="50" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="239d-379b-8124-7c30" type="max" />
-</constraints>
-<selectionEntries>
-<selectionEntry id="463d-5901-3ae0-aae4" name="Power Weapon" hidden="false" collective="false" import="true" type="upgrade">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3c10-1f3c-0412-c74a" type="max" />
-</constraints>
-<entryLinks>
-<entryLink id="04f1-5d8d-1826-a310" name="Power Weapon" hidden="false" collective="false" import="true" targetId="fb4f-b267-7556-185d" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d06d-f9a4-5837-6635" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ced8-000e-2c78-d2ac" type="max" />
-</constraints>
-</entryLink>
-</entryLinks>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
-</costs>
-</selectionEntry>
-<selectionEntry id="01fd-274d-70f5-f1d5" name="Combi-Bolter" hidden="false" collective="false" import="true" type="upgrade">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dbc8-68fe-a8df-9b11" type="max" />
-</constraints>
-<entryLinks>
-<entryLink id="88ac-f427-fad6-62d2" name="Combi-Bolter" hidden="false" collective="false" import="true" targetId="5d48-9963-61d3-1a72" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="169b-789b-d348-7fd2" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bee1-f9c0-6a65-7ecb" type="max" />
-</constraints>
-</entryLink>
-</entryLinks>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
-</costs>
-</selectionEntry>
-</selectionEntries>
-<entryLinks>
-<entryLink id="b4e7-93d4-70ba-e7b5" name="Chainfist" hidden="false" collective="false" import="true" targetId="a078-deea-084f-38e2" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7ddc-1e89-f696-b5d6" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
-</costs>
-</entryLink>
 <entryLink id="82b1-d999-f978-770a" name="Force Weapon" hidden="false" collective="false" import="true" targetId="9ff9-8820-4811-5aee" type="selectionEntry">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6ebf-52e7-36e8-1b55" type="max" />
@@ -36801,84 +36171,20 @@ LIMITATIONS - No Prey Left Unhunted: Grey Slayer Squads must fulfil compulsory T
 <cost name="pts" typeId="pts0-0000-0000-0001" value="40" />
 </costs>
 </entryLink>
-<entryLink id="eef6-840d-5aff-475f" name="Lightning Claw" hidden="false" collective="false" import="true" targetId="0826-0946-b6a1-f42b" type="selectionEntry">
+</entryLinks>
+</selectionEntryGroup>
+<selectionEntryGroup id="1fca-505e-9670-2ecf" name="Space Marine Armoury (max 50 pts)" hidden="false" collective="false" import="true">
 <constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="04fb-1aab-c301-b118" type="max" />
+<constraint field="pts0-0000-0000-0001" scope="self" value="50" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="239d-379b-8124-7c30" type="max" />
 </constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
-</costs>
-</entryLink>
-<entryLink id="1d6b-3f2f-7b20-b6e5" name="Pair of Lightning Claws" hidden="false" collective="false" import="true" targetId="af2b-d487-5b80-ae9b" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="48f5-8204-cd36-67d4" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
-</costs>
-</entryLink>
-<entryLink id="a420-d88d-c5b8-9ebb" name="Power Fist" hidden="false" collective="false" import="true" targetId="0b4d-922b-4629-b7ca" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b18f-e7ec-5f76-bde0" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
-</costs>
-</entryLink>
-<entryLink id="6366-6eae-d5ac-a963" name="Thunder Hammer" hidden="false" collective="false" import="true" targetId="5dfe-22a3-22b6-fb7c" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="be58-cf5e-efd4-5590" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
-</costs>
-</entryLink>
-<entryLink id="7600-2b06-74dd-e062" name="Combi-Flamer" hidden="false" collective="false" import="true" targetId="8a4e-3dc8-c0e4-b9cf" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="90d0-470e-e1bf-ff75" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
-</costs>
-</entryLink>
+<selectionEntries />
+<entryLinks>
 <entryLink id="ff45-baec-d4b4-9464" name="Combi-Grenade Launcher" hidden="false" collective="false" import="true" targetId="53ca-71d4-e838-5ab2" type="selectionEntry">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1f84-5592-7cf3-dba1" type="max" />
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
-</costs>
-</entryLink>
-<entryLink id="0bfb-0ff2-0798-e458" name="Combi-Meltagun" hidden="false" collective="false" import="true" targetId="b147-b586-15e9-f12b" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="280d-7ab1-a563-6eb5" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
-</costs>
-</entryLink>
-<entryLink id="794a-a4b5-3b7d-3186" name="Combi-Plasma Gun" hidden="false" collective="false" import="true" targetId="e700-2c4d-9283-a7b7" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="807f-93bf-6501-c3c9" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
-</costs>
-</entryLink>
-<entryLink id="899c-6207-756d-005b" name="Combi-Volkite Charger" hidden="false" collective="false" import="true" targetId="2125-78bc-6ae3-2391" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f250-91ed-4805-3cbe" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
-</costs>
-</entryLink>
-<entryLink id="9c73-e124-8298-8a3a" name="Foeblaster Boltgun" hidden="false" collective="false" import="true" targetId="9b55-194b-ad9f-fffc" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1f51-22de-7fd4-681a" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
 </costs>
 </entryLink>
 <entryLink id="3c5d-6889-09df-5230" name="Storm Bolter" hidden="false" collective="false" import="true" targetId="4c92-8660-bb6b-730f" type="selectionEntry">
@@ -36935,14 +36241,6 @@ LIMITATIONS - No Prey Left Unhunted: Grey Slayer Squads must fulfil compulsory T
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
-</costs>
-</entryLink>
-<entryLink id="45d0-96c4-eb9d-419c" name="Frost Weapon" hidden="false" collective="false" import="true" targetId="5b77-b02b-6ecd-453b" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="80f2-9780-a1ec-7f3a" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
 </costs>
 </entryLink>
 </entryLinks>
@@ -37103,6 +36401,14 @@ LIMITATIONS - No Prey Left Unhunted: Grey Slayer Squads must fulfil compulsory T
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
 </costs>
 </entryLink>
+<entryLink id="e411-e196-d581-a54d" name="Force Weapon" hidden="false" collective="false" import="true" targetId="9ff9-8820-4811-5aee" type="selectionEntry">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fcd5-1167-4ecf-7a51" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="40" />
+</costs>
+</entryLink>
 </entryLinks>
 </selectionEntryGroup>
 <selectionEntryGroup id="a3e0-4526-6f57-e9b8" name="Apothecary Wargear" hidden="false" collective="false" import="true">
@@ -37121,135 +36427,14 @@ LIMITATIONS - No Prey Left Unhunted: Grey Slayer Squads must fulfil compulsory T
 <constraints>
 <constraint field="pts0-0000-0000-0001" scope="self" value="50" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="0d14-50e6-f0ad-4304" type="max" />
 </constraints>
-<selectionEntries>
-<selectionEntry id="d5cb-1220-c722-0df9" name="Power Weapon" hidden="false" collective="false" import="true" type="upgrade">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="06fb-58b1-e086-b3a8" type="max" />
-</constraints>
+<selectionEntries />
 <entryLinks>
-<entryLink id="4269-8443-89f9-7687" name="Power Weapon" hidden="false" collective="false" import="true" targetId="fb4f-b267-7556-185d" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="53d0-1c63-0d09-2010" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2fda-0aa9-7815-5783" type="max" />
-</constraints>
-</entryLink>
-</entryLinks>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
-</costs>
-</selectionEntry>
-<selectionEntry id="cacb-1314-dda4-42e5" name="Combi-Bolter" hidden="false" collective="false" import="true" type="upgrade">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4290-c9fc-205b-0c0a" type="max" />
-</constraints>
-<entryLinks>
-<entryLink id="3430-0aba-9690-ba11" name="Combi-Bolter" hidden="false" collective="false" import="true" targetId="5d48-9963-61d3-1a72" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="00cc-b503-e44a-52fa" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c794-5acf-613f-3a94" type="max" />
-</constraints>
-</entryLink>
-</entryLinks>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
-</costs>
-</selectionEntry>
-</selectionEntries>
-<entryLinks>
-<entryLink id="2035-4c2d-67b1-9e2a" name="Chainfist" hidden="false" collective="false" import="true" targetId="a078-deea-084f-38e2" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="971c-506f-d3a7-9907" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
-</costs>
-</entryLink>
-<entryLink id="e411-e196-d581-a54d" name="Force Weapon" hidden="false" collective="false" import="true" targetId="9ff9-8820-4811-5aee" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fcd5-1167-4ecf-7a51" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="40" />
-</costs>
-</entryLink>
-<entryLink id="f126-e9d6-572d-5664" name="Lightning Claw" hidden="false" collective="false" import="true" targetId="0826-0946-b6a1-f42b" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="28e1-2e03-22c6-bf04" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
-</costs>
-</entryLink>
-<entryLink id="b081-cfea-9938-ca81" name="Pair of Lightning Claws" hidden="false" collective="false" import="true" targetId="af2b-d487-5b80-ae9b" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8bed-d01d-4ed1-ef00" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
-</costs>
-</entryLink>
-<entryLink id="816e-4429-bd86-a049" name="Power Fist" hidden="false" collective="false" import="true" targetId="0b4d-922b-4629-b7ca" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="20c1-cdce-61de-fe0b" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
-</costs>
-</entryLink>
-<entryLink id="2cca-dc89-341a-e85d" name="Thunder Hammer" hidden="false" collective="false" import="true" targetId="5dfe-22a3-22b6-fb7c" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5a9f-65e0-94db-3364" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
-</costs>
-</entryLink>
-<entryLink id="5dae-70e6-12df-5eb2" name="Combi-Flamer" hidden="false" collective="false" import="true" targetId="8a4e-3dc8-c0e4-b9cf" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="57a7-ee3d-7595-93d2" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
-</costs>
-</entryLink>
 <entryLink id="952b-7405-29b1-2321" name="Combi-Grenade Launcher" hidden="false" collective="false" import="true" targetId="53ca-71d4-e838-5ab2" type="selectionEntry">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a7e4-7444-945d-a038" type="max" />
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
-</costs>
-</entryLink>
-<entryLink id="7e3d-2f49-c2c8-905a" name="Combi-Meltagun" hidden="false" collective="false" import="true" targetId="b147-b586-15e9-f12b" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="069b-59db-9abf-9ce5" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
-</costs>
-</entryLink>
-<entryLink id="1bfa-5908-d871-66cd" name="Combi-Plasma Gun" hidden="false" collective="false" import="true" targetId="e700-2c4d-9283-a7b7" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6c4e-de28-b343-58ea" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
-</costs>
-</entryLink>
-<entryLink id="d608-698d-5806-0e39" name="Combi-Volkite Charger" hidden="false" collective="false" import="true" targetId="2125-78bc-6ae3-2391" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8f52-ad38-7018-24d5" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
-</costs>
-</entryLink>
-<entryLink id="36dc-70c0-f08f-17e7" name="Foeblaster Boltgun" hidden="false" collective="false" import="true" targetId="9b55-194b-ad9f-fffc" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="21cb-2d6e-1d57-5895" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
 </costs>
 </entryLink>
 <entryLink id="c839-8c22-861f-6fc6" name="Storm Bolter" hidden="false" collective="false" import="true" targetId="4c92-8660-bb6b-730f" type="selectionEntry">
@@ -37306,14 +36491,6 @@ LIMITATIONS - No Prey Left Unhunted: Grey Slayer Squads must fulfil compulsory T
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
-</costs>
-</entryLink>
-<entryLink id="f3aa-d897-aa29-0404" name="Frost Weapon" hidden="false" collective="false" import="true" targetId="5b77-b02b-6ecd-453b" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b8bb-cf63-db35-4e1c" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
 </costs>
 </entryLink>
 </entryLinks>
@@ -37482,6 +36659,14 @@ LIMITATIONS - No Prey Left Unhunted: Grey Slayer Squads must fulfil compulsory T
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
 </costs>
 </entryLink>
+<entryLink id="b129-f19f-ec06-f62c" name="Force Weapon" hidden="false" collective="false" import="true" targetId="9ff9-8820-4811-5aee" type="selectionEntry">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ab77-f834-4217-b1af" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="40" />
+</costs>
+</entryLink>
 </entryLinks>
 </selectionEntryGroup>
 <selectionEntryGroup id="dbfa-d936-4d3b-d6a4" name="Standard" hidden="false" collective="false" import="true">
@@ -37539,135 +36724,14 @@ LIMITATIONS - No Prey Left Unhunted: Grey Slayer Squads must fulfil compulsory T
 <constraints>
 <constraint field="pts0-0000-0000-0001" scope="self" value="50" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="ba4d-b131-7d77-360d" type="max" />
 </constraints>
-<selectionEntries>
-<selectionEntry id="2a27-4949-25d8-4c40" name="Power Weapon" hidden="false" collective="false" import="true" type="upgrade">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8a99-3405-80e6-3878" type="max" />
-</constraints>
+<selectionEntries />
 <entryLinks>
-<entryLink id="4760-761d-073a-6757" name="Power Weapon" hidden="false" collective="false" import="true" targetId="fb4f-b267-7556-185d" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d2f9-984a-e153-2b7c" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="67d5-44ee-a73b-f286" type="max" />
-</constraints>
-</entryLink>
-</entryLinks>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
-</costs>
-</selectionEntry>
-<selectionEntry id="9652-dc51-6348-606b" name="Combi-Bolter" hidden="false" collective="false" import="true" type="upgrade">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="63ba-f004-59bd-978c" type="max" />
-</constraints>
-<entryLinks>
-<entryLink id="f50b-9f39-054d-afe7" name="Combi-Bolter" hidden="false" collective="false" import="true" targetId="5d48-9963-61d3-1a72" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9047-a10d-45f5-01e4" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="83cb-f77d-d869-6759" type="max" />
-</constraints>
-</entryLink>
-</entryLinks>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
-</costs>
-</selectionEntry>
-</selectionEntries>
-<entryLinks>
-<entryLink id="d54e-7884-0356-d335" name="Chainfist" hidden="false" collective="false" import="true" targetId="a078-deea-084f-38e2" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="02de-490b-e81c-088e" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
-</costs>
-</entryLink>
-<entryLink id="b129-f19f-ec06-f62c" name="Force Weapon" hidden="false" collective="false" import="true" targetId="9ff9-8820-4811-5aee" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ab77-f834-4217-b1af" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="40" />
-</costs>
-</entryLink>
-<entryLink id="eba1-17c7-81e5-1a5d" name="Lightning Claw" hidden="false" collective="false" import="true" targetId="0826-0946-b6a1-f42b" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5d25-7ea9-d12c-7b67" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
-</costs>
-</entryLink>
-<entryLink id="ac1d-1f69-9de7-f0f8" name="Pair of Lightning Claws" hidden="false" collective="false" import="true" targetId="af2b-d487-5b80-ae9b" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e54c-cf6c-1410-1553" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
-</costs>
-</entryLink>
-<entryLink id="3f2a-a1ae-1345-40bd" name="Power Fist" hidden="false" collective="false" import="true" targetId="0b4d-922b-4629-b7ca" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0129-b85d-1486-251c" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
-</costs>
-</entryLink>
-<entryLink id="708b-2db6-010b-0653" name="Thunder Hammer" hidden="false" collective="false" import="true" targetId="5dfe-22a3-22b6-fb7c" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="00f3-679b-e1a3-0a49" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
-</costs>
-</entryLink>
-<entryLink id="9875-352a-4650-901c" name="Combi-Flamer" hidden="false" collective="false" import="true" targetId="8a4e-3dc8-c0e4-b9cf" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="35f9-57c8-e99f-7d89" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
-</costs>
-</entryLink>
 <entryLink id="3e3c-a9e2-0bd2-a1dd" name="Combi-Grenade Launcher" hidden="false" collective="false" import="true" targetId="53ca-71d4-e838-5ab2" type="selectionEntry">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0c2a-c1f5-1008-75d5" type="max" />
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
-</costs>
-</entryLink>
-<entryLink id="0ab8-0fec-a9f8-4146" name="Combi-Meltagun" hidden="false" collective="false" import="true" targetId="b147-b586-15e9-f12b" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0e97-1e3f-1818-a712" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
-</costs>
-</entryLink>
-<entryLink id="a8de-dee7-48d9-c8ca" name="Combi-Plasma Gun" hidden="false" collective="false" import="true" targetId="e700-2c4d-9283-a7b7" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3e78-c3aa-a9d4-59bf" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
-</costs>
-</entryLink>
-<entryLink id="99f5-f39c-f236-a2c8" name="Combi-Volkite Charger" hidden="false" collective="false" import="true" targetId="2125-78bc-6ae3-2391" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="61dc-8b65-4551-e733" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
-</costs>
-</entryLink>
-<entryLink id="63ee-2153-b6c2-8349" name="Foeblaster Boltgun" hidden="false" collective="false" import="true" targetId="9b55-194b-ad9f-fffc" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bd6b-57e4-f902-8230" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
 </costs>
 </entryLink>
 <entryLink id="90e2-27e6-b004-ed1c" name="Storm Bolter" hidden="false" collective="false" import="true" targetId="4c92-8660-bb6b-730f" type="selectionEntry">
@@ -37724,14 +36788,6 @@ LIMITATIONS - No Prey Left Unhunted: Grey Slayer Squads must fulfil compulsory T
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
-</costs>
-</entryLink>
-<entryLink id="a729-4959-aeb8-d0cf" name="Frost Weapon" hidden="false" collective="false" import="true" targetId="5b77-b02b-6ecd-453b" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2d2b-09dc-fd48-87e4" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
 </costs>
 </entryLink>
 </entryLinks>
@@ -38945,51 +38001,6 @@ LIMITATIONS - No Prey Left Unhunted: Grey Slayer Squads must fulfil compulsory T
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
 </entryLink>
-</entryLinks>
-</selectionEntryGroup>
-<selectionEntryGroup id="801c-6cc8-169d-33e8" name="Thegn Wargear" hidden="false" collective="false" import="true">
-<entryLinks>
-<entryLink id="b083-44f3-cda2-a9c7" name="Grenade Harness" hidden="false" collective="false" import="true" targetId="60c2-a43c-35a2-90a4" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="36a6-08c7-1718-f261" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
-</costs>
-</entryLink>
-</entryLinks>
-</selectionEntryGroup>
-<selectionEntryGroup id="0415-6fcb-48b9-2b9e" name="Space Marine Armoury (max 50 pts)" hidden="false" collective="false" import="true">
-<constraints>
-<constraint field="pts0-0000-0000-0001" scope="self" value="50" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8c6e-d0bf-4f33-160c" type="max" />
-</constraints>
-<selectionEntries>
-<selectionEntry id="540c-0202-f5e8-0bb2" name="Combi-Bolter" hidden="false" collective="false" import="true" type="upgrade">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f278-50bb-7547-0433" type="max" />
-</constraints>
-<entryLinks>
-<entryLink id="6688-f208-51c0-577a" name="Combi-Bolter" hidden="false" collective="false" import="true" targetId="5d48-9963-61d3-1a72" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7f9e-73af-3064-7ece" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="97d1-c50e-19f4-7e41" type="max" />
-</constraints>
-</entryLink>
-</entryLinks>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
-</costs>
-</selectionEntry>
-</selectionEntries>
-<entryLinks>
-<entryLink id="b16f-5f4f-2cbc-6b8b" name="Chainfist" hidden="false" collective="false" import="true" targetId="a078-deea-084f-38e2" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="93be-320a-347b-1e36" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
-</costs>
-</entryLink>
 <entryLink id="c097-7aca-b465-d8e1" name="Force Weapon" hidden="false" collective="false" import="true" targetId="9ff9-8820-4811-5aee" type="selectionEntry">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5c4c-0377-dc3b-a775" type="max" />
@@ -39014,14 +38025,6 @@ LIMITATIONS - No Prey Left Unhunted: Grey Slayer Squads must fulfil compulsory T
 <cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
 </costs>
 </entryLink>
-<entryLink id="61bd-1e6f-e206-1897" name="Power Fist" hidden="false" collective="false" import="true" targetId="0b4d-922b-4629-b7ca" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d41d-6153-26b3-3718" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
-</costs>
-</entryLink>
 <entryLink id="851b-f671-cc92-5387" name="Power Weapon" hidden="false" collective="false" import="true" targetId="fb4f-b267-7556-185d" type="selectionEntry">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="499e-cb87-7fad-8292" type="max" />
@@ -39030,60 +38033,40 @@ LIMITATIONS - No Prey Left Unhunted: Grey Slayer Squads must fulfil compulsory T
 <cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
 </costs>
 </entryLink>
-<entryLink id="a26c-c759-574a-e6b2" name="Thunder Hammer" hidden="false" collective="false" import="true" targetId="5dfe-22a3-22b6-fb7c" type="selectionEntry">
+<entryLink id="db23-4415-02d5-14cb" name="Frost Weapon" hidden="false" collective="false" import="true" targetId="5b77-b02b-6ecd-453b" type="selectionEntry">
 <constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1fec-3b51-a4dd-8dd0" type="max" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b937-0f75-e0a1-57de" type="max" />
 </constraints>
 <costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
+<cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
 </costs>
 </entryLink>
-<entryLink id="d50e-32ce-c8b7-a3dc" name="Combi-Flamer" hidden="false" collective="false" import="true" targetId="8a4e-3dc8-c0e4-b9cf" type="selectionEntry">
+</entryLinks>
+</selectionEntryGroup>
+<selectionEntryGroup id="801c-6cc8-169d-33e8" name="Thegn Wargear" hidden="false" collective="false" import="true">
+<entryLinks>
+<entryLink id="b083-44f3-cda2-a9c7" name="Grenade Harness" hidden="false" collective="false" import="true" targetId="60c2-a43c-35a2-90a4" type="selectionEntry">
 <constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="40a7-3d0e-e255-7f63" type="max" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="36a6-08c7-1718-f261" type="max" />
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
 </entryLink>
+</entryLinks>
+</selectionEntryGroup>
+<selectionEntryGroup id="0415-6fcb-48b9-2b9e" name="Space Marine Armoury (max 50 pts)" hidden="false" collective="false" import="true">
+<constraints>
+<constraint field="pts0-0000-0000-0001" scope="self" value="50" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8c6e-d0bf-4f33-160c" type="max" />
+</constraints>
+<selectionEntries />
+<entryLinks>
 <entryLink id="2d2d-ec91-76cf-af78" name="Combi-Grenade Launcher" hidden="false" collective="false" import="true" targetId="53ca-71d4-e838-5ab2" type="selectionEntry">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="84c3-a25f-e6e7-77be" type="max" />
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
-</costs>
-</entryLink>
-<entryLink id="6554-0930-6712-70e8" name="Combi-Meltagun" hidden="false" collective="false" import="true" targetId="b147-b586-15e9-f12b" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d204-002f-9363-2c63" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
-</costs>
-</entryLink>
-<entryLink id="ddc6-d43f-c8c4-302b" name="Combi-Plasma Gun" hidden="false" collective="false" import="true" targetId="e700-2c4d-9283-a7b7" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6d6c-6396-8baa-3860" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
-</costs>
-</entryLink>
-<entryLink id="3176-455d-99c7-175f" name="Combi-Volkite Charger" hidden="false" collective="false" import="true" targetId="2125-78bc-6ae3-2391" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7f6e-0888-09a9-900f" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
-</costs>
-</entryLink>
-<entryLink id="f6fe-a5cd-49a6-b38e" name="Foeblaster Boltgun" hidden="false" collective="false" import="true" targetId="9b55-194b-ad9f-fffc" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d9a5-61d9-67a8-98ba" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
 </costs>
 </entryLink>
 <entryLink id="c7cc-b367-4a40-103b" name="Storm Bolter" hidden="false" collective="false" import="true" targetId="4c92-8660-bb6b-730f" type="selectionEntry">
@@ -39140,14 +38123,6 @@ LIMITATIONS - No Prey Left Unhunted: Grey Slayer Squads must fulfil compulsory T
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
-</costs>
-</entryLink>
-<entryLink id="db23-4415-02d5-14cb" name="Frost Weapon" hidden="false" collective="false" import="true" targetId="5b77-b02b-6ecd-453b" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b937-0f75-e0a1-57de" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
 </costs>
 </entryLink>
 </entryLinks>
@@ -39699,55 +38674,6 @@ LIMITATIONS - No Prey Left Unhunted: Grey Slayer Squads must fulfil compulsory T
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
 </costs>
 </entryLink>
-</entryLinks>
-</selectionEntryGroup>
-<selectionEntryGroup id="87af-b37b-cf0e-c711" name="Space Marine Armoury (max 50 pts)" hidden="false" collective="false" import="true">
-<constraints>
-<constraint field="pts0-0000-0000-0001" scope="self" value="50" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="22c7-ba67-6f32-16bd" type="max" />
-</constraints>
-<selectionEntries>
-<selectionEntry id="ea77-bc95-0701-adb9" name="Power Weapon" hidden="false" collective="false" import="true" type="upgrade">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b5a5-4bab-c4fd-2e52" type="max" />
-</constraints>
-<entryLinks>
-<entryLink id="14f7-94fb-bc44-d3a2" name="Power Weapon" hidden="false" collective="false" import="true" targetId="fb4f-b267-7556-185d" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6fa7-8e98-27d7-eb9c" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8efe-c533-5495-14bc" type="max" />
-</constraints>
-</entryLink>
-</entryLinks>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
-</costs>
-</selectionEntry>
-<selectionEntry id="fbd5-cffa-4bf4-fc8a" name="Combi-Bolter" hidden="false" collective="false" import="true" type="upgrade">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6c19-09ef-4bac-a4ee" type="max" />
-</constraints>
-<entryLinks>
-<entryLink id="5b05-efb5-1bc4-24bd" name="Combi-Bolter" hidden="false" collective="false" import="true" targetId="5d48-9963-61d3-1a72" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="036d-8147-6219-ef72" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3904-a10d-9864-a5d6" type="max" />
-</constraints>
-</entryLink>
-</entryLinks>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
-</costs>
-</selectionEntry>
-</selectionEntries>
-<entryLinks>
-<entryLink id="04ba-af45-976d-f321" name="Chainfist" hidden="false" collective="false" import="true" targetId="a078-deea-084f-38e2" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6e1f-5932-698b-6c2e" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
-</costs>
-</entryLink>
 <entryLink id="3b0a-db37-7d0a-4320" name="Force Weapon" hidden="false" collective="false" import="true" targetId="9ff9-8820-4811-5aee" type="selectionEntry">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="85f0-f933-ecc5-457b" type="max" />
@@ -39756,84 +38682,20 @@ LIMITATIONS - No Prey Left Unhunted: Grey Slayer Squads must fulfil compulsory T
 <cost name="pts" typeId="pts0-0000-0000-0001" value="40" />
 </costs>
 </entryLink>
-<entryLink id="fd3b-065d-d182-e83c" name="Lightning Claw" hidden="false" collective="false" import="true" targetId="0826-0946-b6a1-f42b" type="selectionEntry">
+</entryLinks>
+</selectionEntryGroup>
+<selectionEntryGroup id="87af-b37b-cf0e-c711" name="Space Marine Armoury (max 50 pts)" hidden="false" collective="false" import="true">
 <constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f531-2e69-3be2-263d" type="max" />
+<constraint field="pts0-0000-0000-0001" scope="self" value="50" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="22c7-ba67-6f32-16bd" type="max" />
 </constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
-</costs>
-</entryLink>
-<entryLink id="508d-9cbb-9ce3-fbcd" name="Pair of Lightning Claws" hidden="false" collective="false" import="true" targetId="af2b-d487-5b80-ae9b" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1cd8-4ba9-ebdf-9f1f" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
-</costs>
-</entryLink>
-<entryLink id="e1af-fac0-96fe-107e" name="Power Fist" hidden="false" collective="false" import="true" targetId="0b4d-922b-4629-b7ca" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3f9e-03f0-77d2-7b98" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
-</costs>
-</entryLink>
-<entryLink id="0c48-752b-48ca-27ba" name="Thunder Hammer" hidden="false" collective="false" import="true" targetId="5dfe-22a3-22b6-fb7c" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b259-1ad5-43b5-b70b" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
-</costs>
-</entryLink>
-<entryLink id="537f-f385-ea36-dd2c" name="Combi-Flamer" hidden="false" collective="false" import="true" targetId="8a4e-3dc8-c0e4-b9cf" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f416-6f58-fa91-1ce5" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
-</costs>
-</entryLink>
+<selectionEntries />
+<entryLinks>
 <entryLink id="ecb6-7883-2b14-d816" name="Combi-Grenade Launcher" hidden="false" collective="false" import="true" targetId="53ca-71d4-e838-5ab2" type="selectionEntry">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="df3d-5e22-a92b-820b" type="max" />
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
-</costs>
-</entryLink>
-<entryLink id="737f-c493-d0e7-c4f1" name="Combi-Meltagun" hidden="false" collective="false" import="true" targetId="b147-b586-15e9-f12b" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0478-cf27-829a-2816" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
-</costs>
-</entryLink>
-<entryLink id="73ea-ae6c-1b25-78ed" name="Combi-Plasma Gun" hidden="false" collective="false" import="true" targetId="e700-2c4d-9283-a7b7" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1a79-c38d-4875-75d6" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
-</costs>
-</entryLink>
-<entryLink id="4c1a-3476-9d5a-bb3b" name="Combi-Volkite Charger" hidden="false" collective="false" import="true" targetId="2125-78bc-6ae3-2391" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="485e-5b5e-6946-08f5" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
-</costs>
-</entryLink>
-<entryLink id="bfec-3b40-ff31-259d" name="Foeblaster Boltgun" hidden="false" collective="false" import="true" targetId="9b55-194b-ad9f-fffc" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3f2d-5270-7ae3-517b" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
 </costs>
 </entryLink>
 <entryLink id="c696-2bb6-cca3-66ee" name="Storm Bolter" hidden="false" collective="false" import="true" targetId="4c92-8660-bb6b-730f" type="selectionEntry">
@@ -39890,14 +38752,6 @@ LIMITATIONS - No Prey Left Unhunted: Grey Slayer Squads must fulfil compulsory T
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
-</costs>
-</entryLink>
-<entryLink id="b80c-74ed-405b-ce21" name="Frost Weapon" hidden="false" collective="false" import="true" targetId="5b77-b02b-6ecd-453b" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d8fe-91d6-6903-af27" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
 </costs>
 </entryLink>
 </entryLinks>
@@ -40058,6 +38912,14 @@ LIMITATIONS - No Prey Left Unhunted: Grey Slayer Squads must fulfil compulsory T
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
 </costs>
 </entryLink>
+<entryLink id="9d66-7d2a-091c-a49a" name="Force Weapon" hidden="false" collective="false" import="true" targetId="9ff9-8820-4811-5aee" type="selectionEntry">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1664-7db0-0a1e-65fd" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="40" />
+</costs>
+</entryLink>
 </entryLinks>
 </selectionEntryGroup>
 <selectionEntryGroup id="df43-9a95-a13e-a9b6" name="Apothecary Wargear" hidden="false" collective="false" import="true">
@@ -40076,135 +38938,14 @@ LIMITATIONS - No Prey Left Unhunted: Grey Slayer Squads must fulfil compulsory T
 <constraints>
 <constraint field="pts0-0000-0000-0001" scope="self" value="50" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="3f78-27ec-76c8-7410" type="max" />
 </constraints>
-<selectionEntries>
-<selectionEntry id="a533-7b97-141d-0ae5" name="Power Weapon" hidden="false" collective="false" import="true" type="upgrade">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ffe6-2817-36b6-8c4a" type="max" />
-</constraints>
+<selectionEntries />
 <entryLinks>
-<entryLink id="a36f-30d5-d169-bd76" name="Power Weapon" hidden="false" collective="false" import="true" targetId="fb4f-b267-7556-185d" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2b2e-a3f3-f749-5a36" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bd3f-8ba1-5af0-c80d" type="max" />
-</constraints>
-</entryLink>
-</entryLinks>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
-</costs>
-</selectionEntry>
-<selectionEntry id="4c03-650b-1bba-6a2f" name="Combi-Bolter" hidden="false" collective="false" import="true" type="upgrade">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cde5-fa1c-789d-665f" type="max" />
-</constraints>
-<entryLinks>
-<entryLink id="8845-100b-4edc-e80b" name="Combi-Bolter" hidden="false" collective="false" import="true" targetId="5d48-9963-61d3-1a72" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="35f3-cbc8-ebd3-786d" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="125d-f331-e0e2-9e60" type="max" />
-</constraints>
-</entryLink>
-</entryLinks>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
-</costs>
-</selectionEntry>
-</selectionEntries>
-<entryLinks>
-<entryLink id="bc17-3012-b948-d4cf" name="Chainfist" hidden="false" collective="false" import="true" targetId="a078-deea-084f-38e2" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="336a-dae1-62de-9c17" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
-</costs>
-</entryLink>
-<entryLink id="9d66-7d2a-091c-a49a" name="Force Weapon" hidden="false" collective="false" import="true" targetId="9ff9-8820-4811-5aee" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1664-7db0-0a1e-65fd" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="40" />
-</costs>
-</entryLink>
-<entryLink id="d050-0cbf-8cc0-329b" name="Lightning Claw" hidden="false" collective="false" import="true" targetId="0826-0946-b6a1-f42b" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3ce3-c69d-937c-8b7d" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
-</costs>
-</entryLink>
-<entryLink id="d021-5306-aa7a-5a5f" name="Pair of Lightning Claws" hidden="false" collective="false" import="true" targetId="af2b-d487-5b80-ae9b" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="29f2-e470-60b7-8cb2" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
-</costs>
-</entryLink>
-<entryLink id="f611-6de3-e6a3-6235" name="Power Fist" hidden="false" collective="false" import="true" targetId="0b4d-922b-4629-b7ca" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cbfe-ee40-a92b-5fa7" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
-</costs>
-</entryLink>
-<entryLink id="606d-0332-2e44-a268" name="Thunder Hammer" hidden="false" collective="false" import="true" targetId="5dfe-22a3-22b6-fb7c" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c595-55f6-7bfa-a910" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
-</costs>
-</entryLink>
-<entryLink id="7eee-919e-2961-2e3a" name="Combi-Flamer" hidden="false" collective="false" import="true" targetId="8a4e-3dc8-c0e4-b9cf" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ed60-728b-28b7-5334" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
-</costs>
-</entryLink>
 <entryLink id="0a83-4405-d5a2-42ac" name="Combi-Grenade Launcher" hidden="false" collective="false" import="true" targetId="53ca-71d4-e838-5ab2" type="selectionEntry">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dadc-57e5-800c-4b47" type="max" />
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
-</costs>
-</entryLink>
-<entryLink id="4fcf-3321-129d-5dd9" name="Combi-Meltagun" hidden="false" collective="false" import="true" targetId="b147-b586-15e9-f12b" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bd8f-9676-6a74-6778" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
-</costs>
-</entryLink>
-<entryLink id="e2ed-2696-2cf5-d2e2" name="Combi-Plasma Gun" hidden="false" collective="false" import="true" targetId="e700-2c4d-9283-a7b7" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aee0-07db-56f0-0214" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
-</costs>
-</entryLink>
-<entryLink id="2bc3-d0d7-2d92-8e36" name="Combi-Volkite Charger" hidden="false" collective="false" import="true" targetId="2125-78bc-6ae3-2391" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2ca0-63fa-6f44-7767" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
-</costs>
-</entryLink>
-<entryLink id="568f-451a-8938-6371" name="Foeblaster Boltgun" hidden="false" collective="false" import="true" targetId="9b55-194b-ad9f-fffc" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a719-a1e6-6372-86f4" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
 </costs>
 </entryLink>
 <entryLink id="4a3a-c4b7-5441-c5b1" name="Storm Bolter" hidden="false" collective="false" import="true" targetId="4c92-8660-bb6b-730f" type="selectionEntry">
@@ -40261,14 +39002,6 @@ LIMITATIONS - No Prey Left Unhunted: Grey Slayer Squads must fulfil compulsory T
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
-</costs>
-</entryLink>
-<entryLink id="33d3-2db3-0c52-d3b8" name="Frost Weapon" hidden="false" collective="false" import="true" targetId="5b77-b02b-6ecd-453b" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="043b-80b4-62fd-d458" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
 </costs>
 </entryLink>
 </entryLinks>
@@ -40437,6 +39170,14 @@ LIMITATIONS - No Prey Left Unhunted: Grey Slayer Squads must fulfil compulsory T
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
 </costs>
 </entryLink>
+<entryLink id="2a02-3961-2627-6048" name="Force Weapon" hidden="false" collective="false" import="true" targetId="9ff9-8820-4811-5aee" type="selectionEntry">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4368-f56a-3e38-54c4" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="40" />
+</costs>
+</entryLink>
 </entryLinks>
 </selectionEntryGroup>
 <selectionEntryGroup id="b5f4-a1cd-e76f-50fe" name="Standard" hidden="false" collective="false" import="true">
@@ -40494,135 +39235,14 @@ LIMITATIONS - No Prey Left Unhunted: Grey Slayer Squads must fulfil compulsory T
 <constraints>
 <constraint field="pts0-0000-0000-0001" scope="self" value="50" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="4fef-4501-abd3-4027" type="max" />
 </constraints>
-<selectionEntries>
-<selectionEntry id="7a2e-20c7-6c5b-a318" name="Power Weapon" hidden="false" collective="false" import="true" type="upgrade">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f65d-1081-ddc4-371e" type="max" />
-</constraints>
+<selectionEntries />
 <entryLinks>
-<entryLink id="35de-f62d-829d-a6fe" name="Power Weapon" hidden="false" collective="false" import="true" targetId="fb4f-b267-7556-185d" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="56ad-9950-4426-b8e5" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="606a-9dab-0b2f-2b11" type="max" />
-</constraints>
-</entryLink>
-</entryLinks>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
-</costs>
-</selectionEntry>
-<selectionEntry id="36fe-ddb9-44aa-e2e5" name="Combi-Bolter" hidden="false" collective="false" import="true" type="upgrade">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="79d8-7558-6352-5efd" type="max" />
-</constraints>
-<entryLinks>
-<entryLink id="e66d-6f58-19b5-8469" name="Combi-Bolter" hidden="false" collective="false" import="true" targetId="5d48-9963-61d3-1a72" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7bfd-73ea-969f-9b0e" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e141-b29d-f432-381b" type="max" />
-</constraints>
-</entryLink>
-</entryLinks>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
-</costs>
-</selectionEntry>
-</selectionEntries>
-<entryLinks>
-<entryLink id="5be2-e955-fb08-bfee" name="Chainfist" hidden="false" collective="false" import="true" targetId="a078-deea-084f-38e2" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a702-19f3-be12-5d5f" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
-</costs>
-</entryLink>
-<entryLink id="2a02-3961-2627-6048" name="Force Weapon" hidden="false" collective="false" import="true" targetId="9ff9-8820-4811-5aee" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4368-f56a-3e38-54c4" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="40" />
-</costs>
-</entryLink>
-<entryLink id="75a3-6901-f67e-9c29" name="Lightning Claw" hidden="false" collective="false" import="true" targetId="0826-0946-b6a1-f42b" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4cca-b44b-094f-3b3e" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
-</costs>
-</entryLink>
-<entryLink id="f0ae-16d1-ce4c-b5f9" name="Pair of Lightning Claws" hidden="false" collective="false" import="true" targetId="af2b-d487-5b80-ae9b" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="01ed-f92d-858c-a022" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
-</costs>
-</entryLink>
-<entryLink id="7067-40ef-c182-1a34" name="Power Fist" hidden="false" collective="false" import="true" targetId="0b4d-922b-4629-b7ca" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="70d8-78cf-b229-a7ff" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
-</costs>
-</entryLink>
-<entryLink id="fded-7384-e848-be32" name="Thunder Hammer" hidden="false" collective="false" import="true" targetId="5dfe-22a3-22b6-fb7c" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="42e2-663e-1116-2d42" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
-</costs>
-</entryLink>
-<entryLink id="28e7-18eb-f903-1f25" name="Combi-Flamer" hidden="false" collective="false" import="true" targetId="8a4e-3dc8-c0e4-b9cf" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dd61-98ec-3d6d-1f94" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
-</costs>
-</entryLink>
 <entryLink id="81e6-c254-06c0-af0f" name="Combi-Grenade Launcher" hidden="false" collective="false" import="true" targetId="53ca-71d4-e838-5ab2" type="selectionEntry">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="315c-1c14-7a6a-c767" type="max" />
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
-</costs>
-</entryLink>
-<entryLink id="64d2-8990-24ac-537f" name="Combi-Meltagun" hidden="false" collective="false" import="true" targetId="b147-b586-15e9-f12b" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0f6d-37c0-513b-9ad5" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
-</costs>
-</entryLink>
-<entryLink id="de4d-7f80-6f82-1a8b" name="Combi-Plasma Gun" hidden="false" collective="false" import="true" targetId="e700-2c4d-9283-a7b7" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5903-c845-cfb4-77e5" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
-</costs>
-</entryLink>
-<entryLink id="9404-2cd6-7394-5ce0" name="Combi-Volkite Charger" hidden="false" collective="false" import="true" targetId="2125-78bc-6ae3-2391" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6d22-3608-f51e-2471" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
-</costs>
-</entryLink>
-<entryLink id="2d13-ac37-4c03-b56a" name="Foeblaster Boltgun" hidden="false" collective="false" import="true" targetId="9b55-194b-ad9f-fffc" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="918c-7a3b-ebad-1dee" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
 </costs>
 </entryLink>
 <entryLink id="57d2-07fc-e0e3-c2af" name="Storm Bolter" hidden="false" collective="false" import="true" targetId="4c92-8660-bb6b-730f" type="selectionEntry">
@@ -40679,14 +39299,6 @@ LIMITATIONS - No Prey Left Unhunted: Grey Slayer Squads must fulfil compulsory T
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
-</costs>
-</entryLink>
-<entryLink id="e3b5-520a-a2e5-b494" name="Frost Weapon" hidden="false" collective="false" import="true" targetId="5b77-b02b-6ecd-453b" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a1b7-18d3-56df-4a8f" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
 </costs>
 </entryLink>
 </entryLinks>
@@ -41135,51 +39747,6 @@ LIMITATIONS - No Prey Left Unhunted: Grey Slayer Squads must fulfil compulsory T
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
 </entryLink>
-</entryLinks>
-</selectionEntryGroup>
-<selectionEntryGroup id="7fcc-d2ab-2de4-dd42" name="Thegn Wargear" hidden="false" collective="false" import="true">
-<entryLinks>
-<entryLink id="f355-9a07-0054-2b7e" name="Grenade Harness" hidden="false" collective="false" import="true" targetId="60c2-a43c-35a2-90a4" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="86d1-f084-899c-a688" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
-</costs>
-</entryLink>
-</entryLinks>
-</selectionEntryGroup>
-<selectionEntryGroup id="75c7-34ae-2470-1483" name="Space Marine Armoury (max 50 pts)" hidden="false" collective="false" import="true">
-<constraints>
-<constraint field="pts0-0000-0000-0001" scope="self" value="50" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="80c0-efd9-250a-ee9d" type="max" />
-</constraints>
-<selectionEntries>
-<selectionEntry id="51d3-6df8-6222-62ca" name="Combi-Bolter" hidden="false" collective="false" import="true" type="upgrade">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0d9f-bcf1-f1f3-8db7" type="max" />
-</constraints>
-<entryLinks>
-<entryLink id="ea6f-a062-96a4-bf1f" name="Combi-Bolter" hidden="false" collective="false" import="true" targetId="5d48-9963-61d3-1a72" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5550-6d86-ec12-c5f2" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="df3c-99e7-dd93-7ca8" type="max" />
-</constraints>
-</entryLink>
-</entryLinks>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
-</costs>
-</selectionEntry>
-</selectionEntries>
-<entryLinks>
-<entryLink id="59b4-e611-03d8-dc1e" name="Chainfist" hidden="false" collective="false" import="true" targetId="a078-deea-084f-38e2" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ed49-6a1a-d5c7-66d7" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
-</costs>
-</entryLink>
 <entryLink id="cd8c-5207-4953-ba73" name="Force Weapon" hidden="false" collective="false" import="true" targetId="9ff9-8820-4811-5aee" type="selectionEntry">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cf5e-2d92-04b5-8051" type="max" />
@@ -41204,14 +39771,6 @@ LIMITATIONS - No Prey Left Unhunted: Grey Slayer Squads must fulfil compulsory T
 <cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
 </costs>
 </entryLink>
-<entryLink id="054f-5261-56ed-0e20" name="Power Fist" hidden="false" collective="false" import="true" targetId="0b4d-922b-4629-b7ca" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2f6d-4af1-2dff-d198" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
-</costs>
-</entryLink>
 <entryLink id="2700-ed8e-d4d7-b1f6" name="Power Weapon" hidden="false" collective="false" import="true" targetId="fb4f-b267-7556-185d" type="selectionEntry">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e590-5586-3921-7506" type="max" />
@@ -41220,60 +39779,40 @@ LIMITATIONS - No Prey Left Unhunted: Grey Slayer Squads must fulfil compulsory T
 <cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
 </costs>
 </entryLink>
-<entryLink id="9232-5814-315e-f74d" name="Thunder Hammer" hidden="false" collective="false" import="true" targetId="5dfe-22a3-22b6-fb7c" type="selectionEntry">
+<entryLink id="6cdb-4367-8772-23a1" name="Frost Weapon" hidden="false" collective="false" import="true" targetId="5b77-b02b-6ecd-453b" type="selectionEntry">
 <constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="64e6-cd17-708a-213f" type="max" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2b91-07e2-e151-fb53" type="max" />
 </constraints>
 <costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
+<cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
 </costs>
 </entryLink>
-<entryLink id="b453-92bc-d273-3bca" name="Combi-Flamer" hidden="false" collective="false" import="true" targetId="8a4e-3dc8-c0e4-b9cf" type="selectionEntry">
+</entryLinks>
+</selectionEntryGroup>
+<selectionEntryGroup id="7fcc-d2ab-2de4-dd42" name="Thegn Wargear" hidden="false" collective="false" import="true">
+<entryLinks>
+<entryLink id="f355-9a07-0054-2b7e" name="Grenade Harness" hidden="false" collective="false" import="true" targetId="60c2-a43c-35a2-90a4" type="selectionEntry">
 <constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0bc0-5ccb-d61d-777c" type="max" />
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="86d1-f084-899c-a688" type="max" />
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
 </costs>
 </entryLink>
+</entryLinks>
+</selectionEntryGroup>
+<selectionEntryGroup id="75c7-34ae-2470-1483" name="Space Marine Armoury (max 50 pts)" hidden="false" collective="false" import="true">
+<constraints>
+<constraint field="pts0-0000-0000-0001" scope="self" value="50" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="80c0-efd9-250a-ee9d" type="max" />
+</constraints>
+<selectionEntries />
+<entryLinks>
 <entryLink id="4122-a923-89e6-d45b" name="Combi-Grenade Launcher" hidden="false" collective="false" import="true" targetId="53ca-71d4-e838-5ab2" type="selectionEntry">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5530-f618-5363-e8d7" type="max" />
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
-</costs>
-</entryLink>
-<entryLink id="df70-845c-98f6-d0e8" name="Combi-Meltagun" hidden="false" collective="false" import="true" targetId="b147-b586-15e9-f12b" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cb78-0579-8b66-2144" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
-</costs>
-</entryLink>
-<entryLink id="22d7-2dda-1257-ac82" name="Combi-Plasma Gun" hidden="false" collective="false" import="true" targetId="e700-2c4d-9283-a7b7" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ea1f-6184-6208-d5d0" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
-</costs>
-</entryLink>
-<entryLink id="108e-2789-f501-6acb" name="Combi-Volkite Charger" hidden="false" collective="false" import="true" targetId="2125-78bc-6ae3-2391" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0052-2a5d-51d4-3cc4" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
-</costs>
-</entryLink>
-<entryLink id="fd3e-6dbb-2fbf-7289" name="Foeblaster Boltgun" hidden="false" collective="false" import="true" targetId="9b55-194b-ad9f-fffc" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3e29-d62f-cd48-b611" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
 </costs>
 </entryLink>
 <entryLink id="9a7b-c377-0e6d-bd88" name="Storm Bolter" hidden="false" collective="false" import="true" targetId="4c92-8660-bb6b-730f" type="selectionEntry">
@@ -41330,14 +39869,6 @@ LIMITATIONS - No Prey Left Unhunted: Grey Slayer Squads must fulfil compulsory T
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
-</costs>
-</entryLink>
-<entryLink id="6cdb-4367-8772-23a1" name="Frost Weapon" hidden="false" collective="false" import="true" targetId="5b77-b02b-6ecd-453b" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2b91-07e2-e151-fb53" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
 </costs>
 </entryLink>
 </entryLinks>
@@ -44583,55 +43114,6 @@ LIMITATIONS - No Prey Left Unhunted: Grey Slayer Squads must fulfil compulsory T
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
 </costs>
 </entryLink>
-</entryLinks>
-</selectionEntryGroup>
-<selectionEntryGroup id="37c1-71ae-7f83-b824" name="Space Marine Armoury (max 50 pts)" hidden="false" collective="false" import="true">
-<constraints>
-<constraint field="pts0-0000-0000-0001" scope="self" value="50" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2d27-9bcd-4d5a-952b" type="max" />
-</constraints>
-<selectionEntries>
-<selectionEntry id="2828-88e3-1502-6b7a" name="Power Weapon" hidden="false" collective="false" import="true" type="upgrade">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3fe3-96b2-cacd-edb6" type="max" />
-</constraints>
-<entryLinks>
-<entryLink id="72be-7db0-f1d5-127d" name="Power Weapon" hidden="false" collective="false" import="true" targetId="fb4f-b267-7556-185d" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6565-c180-f069-b518" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6518-f813-f32c-4997" type="max" />
-</constraints>
-</entryLink>
-</entryLinks>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
-</costs>
-</selectionEntry>
-<selectionEntry id="23dd-8739-7075-8da0" name="Combi-Bolter" hidden="false" collective="false" import="true" type="upgrade">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6ae4-e9f8-7b0a-9af1" type="max" />
-</constraints>
-<entryLinks>
-<entryLink id="485e-64a0-08f2-beab" name="Combi-Bolter" hidden="false" collective="false" import="true" targetId="5d48-9963-61d3-1a72" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3caa-c618-4917-0e44" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cfe8-c297-6157-1c41" type="max" />
-</constraints>
-</entryLink>
-</entryLinks>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
-</costs>
-</selectionEntry>
-</selectionEntries>
-<entryLinks>
-<entryLink id="6c31-6911-ae91-6dfb" name="Chainfist" hidden="false" collective="false" import="true" targetId="a078-deea-084f-38e2" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="76b0-43d8-c8ac-73cf" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
-</costs>
-</entryLink>
 <entryLink id="cc4e-b309-e162-8b45" name="Force Weapon" hidden="false" collective="false" import="true" targetId="9ff9-8820-4811-5aee" type="selectionEntry">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ecbf-1632-77c3-af22" type="max" />
@@ -44640,84 +43122,20 @@ LIMITATIONS - No Prey Left Unhunted: Grey Slayer Squads must fulfil compulsory T
 <cost name="pts" typeId="pts0-0000-0000-0001" value="40" />
 </costs>
 </entryLink>
-<entryLink id="f953-7428-53e4-e36f" name="Lightning Claw" hidden="false" collective="false" import="true" targetId="0826-0946-b6a1-f42b" type="selectionEntry">
+</entryLinks>
+</selectionEntryGroup>
+<selectionEntryGroup id="37c1-71ae-7f83-b824" name="Space Marine Armoury (max 50 pts)" hidden="false" collective="false" import="true">
 <constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9d6c-c006-a3fa-78e8" type="max" />
+<constraint field="pts0-0000-0000-0001" scope="self" value="50" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2d27-9bcd-4d5a-952b" type="max" />
 </constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
-</costs>
-</entryLink>
-<entryLink id="d68f-04fe-535e-2928" name="Pair of Lightning Claws" hidden="false" collective="false" import="true" targetId="af2b-d487-5b80-ae9b" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0f6c-0f73-b4cf-c402" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
-</costs>
-</entryLink>
-<entryLink id="6ccb-79d4-5220-8171" name="Power Fist" hidden="false" collective="false" import="true" targetId="0b4d-922b-4629-b7ca" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e5ce-de8d-bbf6-2080" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
-</costs>
-</entryLink>
-<entryLink id="bd97-0d6c-9c8b-b067" name="Thunder Hammer" hidden="false" collective="false" import="true" targetId="5dfe-22a3-22b6-fb7c" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8c49-0783-cf90-3094" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
-</costs>
-</entryLink>
-<entryLink id="fff9-67e9-8690-2bc2" name="Combi-Flamer" hidden="false" collective="false" import="true" targetId="8a4e-3dc8-c0e4-b9cf" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="789f-3b54-6211-bea9" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
-</costs>
-</entryLink>
+<selectionEntries />
+<entryLinks>
 <entryLink id="94ea-765d-a7e9-0a1c" name="Combi-Grenade Launcher" hidden="false" collective="false" import="true" targetId="53ca-71d4-e838-5ab2" type="selectionEntry">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4298-8869-2afb-a58b" type="max" />
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
-</costs>
-</entryLink>
-<entryLink id="76b7-5260-a548-c541" name="Combi-Meltagun" hidden="false" collective="false" import="true" targetId="b147-b586-15e9-f12b" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bef6-93c6-5e37-6d9d" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
-</costs>
-</entryLink>
-<entryLink id="71cc-9bf4-2835-9f08" name="Combi-Plasma Gun" hidden="false" collective="false" import="true" targetId="e700-2c4d-9283-a7b7" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d77e-c69d-bfde-3627" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
-</costs>
-</entryLink>
-<entryLink id="2295-6078-9fae-88da" name="Combi-Volkite Charger" hidden="false" collective="false" import="true" targetId="2125-78bc-6ae3-2391" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="168b-e392-d391-0b0c" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
-</costs>
-</entryLink>
-<entryLink id="5e79-fc1b-3660-8bde" name="Foeblaster Boltgun" hidden="false" collective="false" import="true" targetId="9b55-194b-ad9f-fffc" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5ec2-31d2-cc2d-c610" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
 </costs>
 </entryLink>
 <entryLink id="f18f-1ca2-e00a-de57" name="Storm Bolter" hidden="false" collective="false" import="true" targetId="4c92-8660-bb6b-730f" type="selectionEntry">
@@ -44774,14 +43192,6 @@ LIMITATIONS - No Prey Left Unhunted: Grey Slayer Squads must fulfil compulsory T
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
-</costs>
-</entryLink>
-<entryLink id="f17a-9438-6753-5833" name="Frost Weapon" hidden="false" collective="false" import="true" targetId="5b77-b02b-6ecd-453b" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e941-a5dc-fa40-7af6" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
 </costs>
 </entryLink>
 </entryLinks>
@@ -44942,6 +43352,14 @@ LIMITATIONS - No Prey Left Unhunted: Grey Slayer Squads must fulfil compulsory T
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
 </costs>
 </entryLink>
+<entryLink id="9e8e-e94e-cf89-a512" name="Force Weapon" hidden="false" collective="false" import="true" targetId="9ff9-8820-4811-5aee" type="selectionEntry">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="192f-45ca-dfb6-dac4" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="40" />
+</costs>
+</entryLink>
 </entryLinks>
 </selectionEntryGroup>
 <selectionEntryGroup id="0df1-534c-000d-d05a" name="Apothecary Wargear" hidden="false" collective="false" import="true">
@@ -44960,135 +43378,14 @@ LIMITATIONS - No Prey Left Unhunted: Grey Slayer Squads must fulfil compulsory T
 <constraints>
 <constraint field="pts0-0000-0000-0001" scope="self" value="50" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="5b31-f98f-3f79-11c9" type="max" />
 </constraints>
-<selectionEntries>
-<selectionEntry id="2b2a-13e5-b30c-3d8d" name="Power Weapon" hidden="false" collective="false" import="true" type="upgrade">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9ee9-964f-ba95-8e59" type="max" />
-</constraints>
+<selectionEntries />
 <entryLinks>
-<entryLink id="2d9b-c979-141f-0d72" name="Power Weapon" hidden="false" collective="false" import="true" targetId="fb4f-b267-7556-185d" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="80d5-ed39-1c6a-1814" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2b4d-b520-9c4a-6315" type="max" />
-</constraints>
-</entryLink>
-</entryLinks>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
-</costs>
-</selectionEntry>
-<selectionEntry id="5865-c5f7-72d2-b7dd" name="Combi-Bolter" hidden="false" collective="false" import="true" type="upgrade">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c7ba-3a12-0ff5-3428" type="max" />
-</constraints>
-<entryLinks>
-<entryLink id="e54d-e0c8-a89b-71b3" name="Combi-Bolter" hidden="false" collective="false" import="true" targetId="5d48-9963-61d3-1a72" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4752-839b-3c56-fbcf" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f984-9f88-402a-1be4" type="max" />
-</constraints>
-</entryLink>
-</entryLinks>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
-</costs>
-</selectionEntry>
-</selectionEntries>
-<entryLinks>
-<entryLink id="4f40-b280-e7b0-9dc0" name="Chainfist" hidden="false" collective="false" import="true" targetId="a078-deea-084f-38e2" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3fe0-e7b0-f651-4e70" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
-</costs>
-</entryLink>
-<entryLink id="9e8e-e94e-cf89-a512" name="Force Weapon" hidden="false" collective="false" import="true" targetId="9ff9-8820-4811-5aee" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="192f-45ca-dfb6-dac4" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="40" />
-</costs>
-</entryLink>
-<entryLink id="7ac0-7685-d175-33dd" name="Lightning Claw" hidden="false" collective="false" import="true" targetId="0826-0946-b6a1-f42b" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e596-f6b4-6c6b-b8af" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
-</costs>
-</entryLink>
-<entryLink id="5584-f949-ae5b-42b3" name="Pair of Lightning Claws" hidden="false" collective="false" import="true" targetId="af2b-d487-5b80-ae9b" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c9d9-731a-9c18-944b" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
-</costs>
-</entryLink>
-<entryLink id="a231-c0bd-866b-0a4b" name="Power Fist" hidden="false" collective="false" import="true" targetId="0b4d-922b-4629-b7ca" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1420-223d-79a8-e108" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
-</costs>
-</entryLink>
-<entryLink id="a8ae-57b3-352c-ce5e" name="Thunder Hammer" hidden="false" collective="false" import="true" targetId="5dfe-22a3-22b6-fb7c" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="af66-9f7b-3905-f23d" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
-</costs>
-</entryLink>
-<entryLink id="79fc-fce5-aa2d-a62e" name="Combi-Flamer" hidden="false" collective="false" import="true" targetId="8a4e-3dc8-c0e4-b9cf" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b1b1-2cb1-bced-959e" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
-</costs>
-</entryLink>
 <entryLink id="161f-bf5b-57eb-baf9" name="Combi-Grenade Launcher" hidden="false" collective="false" import="true" targetId="53ca-71d4-e838-5ab2" type="selectionEntry">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="61bd-47be-9c11-64ac" type="max" />
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
-</costs>
-</entryLink>
-<entryLink id="2d64-ff11-9c2e-2443" name="Combi-Meltagun" hidden="false" collective="false" import="true" targetId="b147-b586-15e9-f12b" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c6a7-e403-3cb6-9802" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
-</costs>
-</entryLink>
-<entryLink id="5471-7df0-b06f-9b0c" name="Combi-Plasma Gun" hidden="false" collective="false" import="true" targetId="e700-2c4d-9283-a7b7" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e240-803b-b1a6-c82e" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
-</costs>
-</entryLink>
-<entryLink id="5a8a-7eda-3eb4-52d3" name="Combi-Volkite Charger" hidden="false" collective="false" import="true" targetId="2125-78bc-6ae3-2391" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f9c3-2d39-11f5-eef8" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
-</costs>
-</entryLink>
-<entryLink id="f4a9-782b-a653-3bcb" name="Foeblaster Boltgun" hidden="false" collective="false" import="true" targetId="9b55-194b-ad9f-fffc" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="027a-03ae-48a8-6834" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
 </costs>
 </entryLink>
 <entryLink id="9808-df11-4d33-567c" name="Storm Bolter" hidden="false" collective="false" import="true" targetId="4c92-8660-bb6b-730f" type="selectionEntry">
@@ -45145,14 +43442,6 @@ LIMITATIONS - No Prey Left Unhunted: Grey Slayer Squads must fulfil compulsory T
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
-</costs>
-</entryLink>
-<entryLink id="36f1-db4f-463f-70a2" name="Frost Weapon" hidden="false" collective="false" import="true" targetId="5b77-b02b-6ecd-453b" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2a18-23f2-e3f8-a2e8" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
 </costs>
 </entryLink>
 </entryLinks>
@@ -45321,6 +43610,14 @@ LIMITATIONS - No Prey Left Unhunted: Grey Slayer Squads must fulfil compulsory T
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
 </costs>
 </entryLink>
+<entryLink id="b17b-0716-f9d1-1d42" name="Force Weapon" hidden="false" collective="false" import="true" targetId="9ff9-8820-4811-5aee" type="selectionEntry">
+<constraints>
+<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bb06-b739-7aaa-cd9e" type="max" />
+</constraints>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="40" />
+</costs>
+</entryLink>
 </entryLinks>
 </selectionEntryGroup>
 <selectionEntryGroup id="10a8-59e3-05cb-4df2" name="Standard" hidden="false" collective="false" import="true">
@@ -45378,135 +43675,14 @@ LIMITATIONS - No Prey Left Unhunted: Grey Slayer Squads must fulfil compulsory T
 <constraints>
 <constraint field="pts0-0000-0000-0001" scope="self" value="50" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="b4d0-82e2-2d1f-2e27" type="max" />
 </constraints>
-<selectionEntries>
-<selectionEntry id="e66e-03aa-e809-8475" name="Power Weapon" hidden="false" collective="false" import="true" type="upgrade">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="664a-8c5d-75de-a70f" type="max" />
-</constraints>
+<selectionEntries />
 <entryLinks>
-<entryLink id="543f-10ff-dc13-978d" name="Power Weapon" hidden="false" collective="false" import="true" targetId="fb4f-b267-7556-185d" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ed6f-1f6c-e1dc-84f2" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c838-ea70-0c49-9d18" type="max" />
-</constraints>
-</entryLink>
-</entryLinks>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
-</costs>
-</selectionEntry>
-<selectionEntry id="625e-cd5c-026b-07c0" name="Combi-Bolter" hidden="false" collective="false" import="true" type="upgrade">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0c2f-6cbf-2d1a-c4f9" type="max" />
-</constraints>
-<entryLinks>
-<entryLink id="c9fb-6f98-1049-54b5" name="Combi-Bolter" hidden="false" collective="false" import="true" targetId="5d48-9963-61d3-1a72" type="selectionEntry">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f3c6-6059-b6bf-04fd" type="min" />
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d76e-1852-a4ec-2276" type="max" />
-</constraints>
-</entryLink>
-</entryLinks>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
-</costs>
-</selectionEntry>
-</selectionEntries>
-<entryLinks>
-<entryLink id="2c16-da7a-21d4-91bb" name="Chainfist" hidden="false" collective="false" import="true" targetId="a078-deea-084f-38e2" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="76ae-ad8c-aea1-2a34" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
-</costs>
-</entryLink>
-<entryLink id="b17b-0716-f9d1-1d42" name="Force Weapon" hidden="false" collective="false" import="true" targetId="9ff9-8820-4811-5aee" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bb06-b739-7aaa-cd9e" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="40" />
-</costs>
-</entryLink>
-<entryLink id="3549-d397-f417-2387" name="Lightning Claw" hidden="false" collective="false" import="true" targetId="0826-0946-b6a1-f42b" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7e3c-8097-d97f-8fe3" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
-</costs>
-</entryLink>
-<entryLink id="e064-a358-d656-d034" name="Pair of Lightning Claws" hidden="false" collective="false" import="true" targetId="af2b-d487-5b80-ae9b" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3010-0bb4-cf69-0915" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
-</costs>
-</entryLink>
-<entryLink id="be97-7f86-a883-3e4b" name="Power Fist" hidden="false" collective="false" import="true" targetId="0b4d-922b-4629-b7ca" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0f79-d6c7-be42-94c6" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="25" />
-</costs>
-</entryLink>
-<entryLink id="9059-830c-c05a-9166" name="Thunder Hammer" hidden="false" collective="false" import="true" targetId="5dfe-22a3-22b6-fb7c" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6e4d-9891-d628-a020" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="30" />
-</costs>
-</entryLink>
-<entryLink id="2cfd-ac1e-9df4-8cec" name="Combi-Flamer" hidden="false" collective="false" import="true" targetId="8a4e-3dc8-c0e4-b9cf" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="75f1-2d98-ba0e-39ac" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
-</costs>
-</entryLink>
 <entryLink id="7e9b-46c5-2ff6-7ec4" name="Combi-Grenade Launcher" hidden="false" collective="false" import="true" targetId="53ca-71d4-e838-5ab2" type="selectionEntry">
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e7ac-d9ab-ee50-2b1b" type="max" />
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
-</costs>
-</entryLink>
-<entryLink id="effc-e209-4928-f3d4" name="Combi-Meltagun" hidden="false" collective="false" import="true" targetId="b147-b586-15e9-f12b" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="99c9-8897-6b43-e59d" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
-</costs>
-</entryLink>
-<entryLink id="f71f-a81b-36a0-a22c" name="Combi-Plasma Gun" hidden="false" collective="false" import="true" targetId="e700-2c4d-9283-a7b7" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="255f-d19e-256a-747a" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="15" />
-</costs>
-</entryLink>
-<entryLink id="fc58-ec3a-fd7e-1871" name="Combi-Volkite Charger" hidden="false" collective="false" import="true" targetId="2125-78bc-6ae3-2391" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aa6f-4d38-a0ff-22d7" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="10" />
-</costs>
-</entryLink>
-<entryLink id="5e2d-2e8b-1880-2bd6" name="Foeblaster Boltgun" hidden="false" collective="false" import="true" targetId="9b55-194b-ad9f-fffc" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0b9e-31bf-6725-1088" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
 </costs>
 </entryLink>
 <entryLink id="a3ee-69c6-c3eb-0d82" name="Storm Bolter" hidden="false" collective="false" import="true" targetId="4c92-8660-bb6b-730f" type="selectionEntry">
@@ -45563,14 +43739,6 @@ LIMITATIONS - No Prey Left Unhunted: Grey Slayer Squads must fulfil compulsory T
 </constraints>
 <costs>
 <cost name="pts" typeId="pts0-0000-0000-0001" value="5" />
-</costs>
-</entryLink>
-<entryLink id="2745-ba0c-7bd2-4aff" name="Frost Weapon" hidden="false" collective="false" import="true" targetId="5b77-b02b-6ecd-453b" type="selectionEntry">
-<constraints>
-<constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2b66-2bc9-b3a5-8ab3" type="max" />
-</constraints>
-<costs>
-<cost name="pts" typeId="pts0-0000-0000-0001" value="20" />
 </costs>
 </entryLink>
 </entryLinks>
