@@ -603,11 +603,52 @@ def consul_group(unit_id):
         ce("Vigilator", 35, ["Scout", "Stealth", "Sabotage", "Special Issue Ammunition (Vigilator)"],
            kit=["Bolter", "Cameleoline"], options=[scout_armour]),
         ce("Praevian", 35, ["Legion Support Officer", "Master of Cybernetica", "Legion Inductees"],
-           kit=["Cortex Controller", "Cortex Designator"]),
+           kit=["Cortex Controller", "Cortex Designator"], groups_=praevian_groups(unit_id)),
     ]
     gid = uid("grp", "consul")
     return group(gid, "Legion Consul (max one)", entries=entries,
                  constraints=[constraint(uid(gid, "max"), "max", 1)])
+
+
+# Mechanicum catalogue (Master of Cybernetica: the Praevian's Battle-Automata Maniple is bought from it)
+MECH = "Mechanicum"
+MECH_CATALOGUE = uid(MECH, "catalogue")
+PRAEVIAN_MANIPLES = {"Castellax Class Battle-Automata Maniple": uid(MECH, "unit", "Castellax Class Battle-Automata Maniple"),
+                     "Vorax Class Battle-Automata Maniple": uid(MECH, "unit", "Vorax Class Battle-Automata Maniple")}
+PARAGON = uid(PRAEVIAN_MANIPLES["Castellax Class Battle-Automata Maniple"], "opt", "Paragon of Metal")
+
+
+def mechanicum_link(root):
+    """catalogueLink to the Mechanicum catalogue (Praevian maniples)."""
+    root.insert(0, wrap("catalogueLinks", [el("catalogueLink", {
+        "id": uid("catlink", root.get("id"), MECH), "name": MECH, "targetId": MECH_CATALOGUE, "type": "catalogue",
+        "importRootEntries": "false"})]))
+
+
+def praevian_groups(unit_id):
+    """Master of Cybernetica: exactly one Castellax or Vorax Battle-Automata Maniple (Mechanicum Army List, no extra Force
+    Organisation slot, no Paragon of Metal); Legion Inductees: one rule for the Maniple."""
+    pid = consul_id("Praevian")
+    gid = uid("grp", pid, "maniple")
+    links = []
+    for n, tid in PRAEVIAN_MANIPLES.items():
+        lid = uid("link", gid, n)
+        links.append(link(lid, tid, f"{n} (Master of Cybernetica)", mods=[
+            modifier("remove", "category", gs.cat("Troops")), modifier("remove", "category", gs.cat("Fast Attack")),
+            modifier("remove", "category", gs.cat("Elites")), modifier("remove", "category", gs.CAT_LINE),
+            modifier("add", "error", "Master of Cybernetica: the Praevian's Maniple may not purchase the Paragon of "
+                                     "Metal upgrade.", conds=[cond(PARAGON, "self", "atLeast", 1)])]))
+    maniple = group(gid, "Battle-Automata Maniple (Master of Cybernetica, no Force Organisation slot)", links=links,
+                    constraints=[constraint(uid(gid, "min"), "min", 1), constraint(uid(gid, "max"), "max", 1)])
+    leg = (CURRENT_LEGION or "Legiones Astartes").split(" - ", 1)[-1]
+    iid = uid("grp", pid, "inductees")
+    opts = [(f"Legiones Astartes ({leg})", ["Legiones Astartes"]), ("Furious Charge", ["Furious Charge"]),
+            ("Tank Hunters", ["Tank Hunters"]), ("Scout", ["Scout"])]
+    inductees = group(iid, "Legion Inductees (one, for the Maniple)", entries=[
+        entry(uid(iid, n), n, infolinks=rules_links(r, key=uid(iid, n)),
+              constraints=[constraint(uid(iid, n, "max"), "max", 1)]) for n, r in opts],
+        constraints=[constraint(uid(iid, "min"), "min", 1), constraint(uid(iid, "max"), "max", 1)])
+    return [maniple, inductees]
 
 
 def tda_pistol_error(unit_id):
@@ -1031,6 +1072,7 @@ def build(legion=None, module=None):
         legiones2.transport_capacity(u)
         legiones2.auto_model_limits(u)
         legiones2.hide_when_zero(u)
+    mechanicum_link(root)
     root.append(wrap("entryLinks", [
         link(uid("root", u.get("id")), u.get("id"), u.get("name")) for u in units]))
     root.append(wrap("sharedSelectionEntries", units + transports + shared_items()))

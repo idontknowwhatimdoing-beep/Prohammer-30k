@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="p30k-0000-0001-0005" name="Legiones Astartes - Space Wolves" revision="58" battleScribeVersion="2.03" authorName="idontknowwhatimdoing-beep" authorUrl="https://github.com/idontknowwhatimdoing-beep/Prohammer-30k" library="false" gameSystemId="p30k-0000-0000-0001" gameSystemRevision="58" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="p30k-0000-0001-0005" name="Legiones Astartes - Space Wolves" revision="59" battleScribeVersion="2.03" authorName="idontknowwhatimdoing-beep" authorUrl="https://github.com/idontknowwhatimdoing-beep/Prohammer-30k" library="false" gameSystemId="p30k-0000-0000-0001" gameSystemRevision="59" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogueLinks>
+<catalogueLink id="eb5f-441e-4cbf-2d7f" name="Mechanicum" targetId="68d2-fb71-996c-4786" type="catalogue" importRootEntries="false" />
+</catalogueLinks>
 <publications>
 <publication id="2785-6355-56dc-20bf" name="Legiones Astartes Army List" shortName="Legiones Astartes" />
 <publication id="3143-f2ec-31c6-f505" name="Forces of the Legions" shortName="Forces of the Legions" />
@@ -3361,6 +3364,94 @@
 <infoLink id="97a7-9da5-2599-d9a7" name="Master of Cybernetica" hidden="false" targetId="09c5-0216-beb0-ff87" type="rule" />
 <infoLink id="1a78-d25e-3105-3630" name="Legion Inductees" hidden="false" targetId="7c7b-6b52-47f8-b704" type="rule" />
 </infoLinks>
+<selectionEntryGroups>
+<selectionEntryGroup id="3730-8949-87b7-49dc" name="Battle-Automata Maniple (Master of Cybernetica, no Force Organisation slot)" hidden="false" collective="false" import="true">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="713e-a1c2-fd73-8123" type="min" />
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aefe-97f9-62e3-a187" type="max" />
+</constraints>
+<entryLinks>
+<entryLink id="c0d1-9f10-6cad-6a34" name="Castellax Class Battle-Automata Maniple (Master of Cybernetica)" hidden="false" collective="false" import="true" targetId="e136-f0e1-72ab-778f" type="selectionEntry">
+<modifiers>
+<modifier type="remove" field="category" value="adf0-dc10-89d4-f51e" />
+<modifier type="remove" field="category" value="5e5f-f512-de8c-9505" />
+<modifier type="remove" field="category" value="6b19-97ac-7c40-0bdf" />
+<modifier type="remove" field="category" value="071f-8316-97af-8fd6" />
+<modifier type="add" field="error" value="Master of Cybernetica: the Praevian's Maniple may not purchase the Paragon of Metal upgrade.">
+<conditions>
+<condition field="selections" scope="self" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d9f7-0ba7-35e7-1cf5" type="atLeast" />
+</conditions>
+</modifier>
+</modifiers>
+</entryLink>
+<entryLink id="5000-13d3-80e8-86d0" name="Vorax Class Battle-Automata Maniple (Master of Cybernetica)" hidden="false" collective="false" import="true" targetId="d165-b2dd-1212-6864" type="selectionEntry">
+<modifiers>
+<modifier type="remove" field="category" value="adf0-dc10-89d4-f51e" />
+<modifier type="remove" field="category" value="5e5f-f512-de8c-9505" />
+<modifier type="remove" field="category" value="6b19-97ac-7c40-0bdf" />
+<modifier type="remove" field="category" value="071f-8316-97af-8fd6" />
+<modifier type="add" field="error" value="Master of Cybernetica: the Praevian's Maniple may not purchase the Paragon of Metal upgrade.">
+<conditions>
+<condition field="selections" scope="self" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d9f7-0ba7-35e7-1cf5" type="atLeast" />
+</conditions>
+</modifier>
+</modifiers>
+</entryLink>
+</entryLinks>
+</selectionEntryGroup>
+<selectionEntryGroup id="e2ba-5f6c-9421-2534" name="Legion Inductees (one, for the Maniple)" hidden="false" collective="false" import="true">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e63a-12fe-e6f9-ce13" type="min" />
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="64c9-eab3-c879-d5d0" type="max" />
+</constraints>
+<selectionEntries>
+<selectionEntry id="654f-ebf6-15c7-ab69" name="Legiones Astartes (Space Wolves)" hidden="false" collective="false" import="true" type="upgrade">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1b21-f56d-2280-6b14" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="8e94-0802-5868-11a3" name="Legiones Astartes" hidden="false" targetId="0ed8-99c2-6b0e-f182" type="rule" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+<selectionEntry id="5541-575a-f52c-459a" name="Furious Charge" hidden="false" collective="false" import="true" type="upgrade">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="89be-ee6c-d409-3b70" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="c6f9-bc62-bc02-3e1f" name="Furious Charge" hidden="false" targetId="c65a-1ca0-29fb-dfd7" type="rule" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+<selectionEntry id="7af1-a053-0db2-9056" name="Tank Hunters" hidden="false" collective="false" import="true" type="upgrade">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4eae-9272-f632-92aa" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="2ac1-3632-27ac-f566" name="Tank Hunters" hidden="false" targetId="c85a-ec51-652e-1ac0" type="rule" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+<selectionEntry id="6201-182b-a291-84ad" name="Scout" hidden="false" collective="false" import="true" type="upgrade">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1288-5c34-bbb1-417f" type="max" />
+</constraints>
+<infoLinks>
+<infoLink id="3d69-bec7-cc69-9e3c" name="Scouts" hidden="false" targetId="6bb0-de35-696c-e22a" type="rule" />
+</infoLinks>
+<costs>
+<cost name="pts" typeId="pts0-0000-0000-0001" value="0" />
+</costs>
+</selectionEntry>
+</selectionEntries>
+</selectionEntryGroup>
+</selectionEntryGroups>
 <entryLinks>
 <entryLink id="ffd0-08df-a456-a78f" name="Cortex Controller" hidden="false" collective="false" import="true" targetId="ff67-9d42-dc7e-30f4" type="selectionEntry">
 <constraints>

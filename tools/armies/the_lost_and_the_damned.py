@@ -1259,6 +1259,7 @@ def build():
     units = [alleg, oath, attr] + bs_units + legion_roots + sig_units
     shared = trans + more_shared + reaver_retinues
     root = catalogue(ARMY, units, shared, force_entries=[sig_force()])
+    L.mechanicum_link(root)  # Praevian Consul maniples
     root.insert(1, wrap("categoryEntries", [
         el("categoryEntry", {"id": CAT_SIG_HQ, "name": "Agents of the Sigillite HQ", "hidden": "false"}),
         el("categoryEntry", {"id": CAT_KE, "name": "Knight-Errant", "hidden": "false"}),
