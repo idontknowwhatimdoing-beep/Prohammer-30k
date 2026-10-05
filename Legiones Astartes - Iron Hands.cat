@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="p30k-0000-0001-0009" name="Legiones Astartes - Iron Hands" revision="59" battleScribeVersion="2.03" authorName="idontknowwhatimdoing-beep" authorUrl="https://github.com/idontknowwhatimdoing-beep/Prohammer-30k" library="false" gameSystemId="p30k-0000-0000-0001" gameSystemRevision="59" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="p30k-0000-0001-0009" name="Legiones Astartes - Iron Hands" revision="60" battleScribeVersion="2.03" authorName="idontknowwhatimdoing-beep" authorUrl="https://github.com/idontknowwhatimdoing-beep/Prohammer-30k" library="false" gameSystemId="p30k-0000-0000-0001" gameSystemRevision="60" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
 <catalogueLinks>
 <catalogueLink id="3f9b-ce7a-65e5-547e" name="Mechanicum" targetId="68d2-fb71-996c-4786" type="catalogue" importRootEntries="false" />
 </catalogueLinks>
@@ -3233,40 +3233,6 @@
 <infoLink id="1a78-d25e-3105-3630" name="Legion Inductees" hidden="false" targetId="7c7b-6b52-47f8-b704" type="rule" />
 </infoLinks>
 <selectionEntryGroups>
-<selectionEntryGroup id="3730-8949-87b7-49dc" name="Battle-Automata Maniple (Master of Cybernetica, no Force Organisation slot)" hidden="false" collective="false" import="true">
-<constraints>
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="713e-a1c2-fd73-8123" type="min" />
-<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aefe-97f9-62e3-a187" type="max" />
-</constraints>
-<entryLinks>
-<entryLink id="c0d1-9f10-6cad-6a34" name="Castellax Class Battle-Automata Maniple (Master of Cybernetica)" hidden="false" collective="false" import="true" targetId="e136-f0e1-72ab-778f" type="selectionEntry">
-<modifiers>
-<modifier type="remove" field="category" value="adf0-dc10-89d4-f51e" />
-<modifier type="remove" field="category" value="5e5f-f512-de8c-9505" />
-<modifier type="remove" field="category" value="6b19-97ac-7c40-0bdf" />
-<modifier type="remove" field="category" value="071f-8316-97af-8fd6" />
-<modifier type="add" field="error" value="Master of Cybernetica: the Praevian's Maniple may not purchase the Paragon of Metal upgrade.">
-<conditions>
-<condition field="selections" scope="self" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d9f7-0ba7-35e7-1cf5" type="atLeast" />
-</conditions>
-</modifier>
-</modifiers>
-</entryLink>
-<entryLink id="5000-13d3-80e8-86d0" name="Vorax Class Battle-Automata Maniple (Master of Cybernetica)" hidden="false" collective="false" import="true" targetId="d165-b2dd-1212-6864" type="selectionEntry">
-<modifiers>
-<modifier type="remove" field="category" value="adf0-dc10-89d4-f51e" />
-<modifier type="remove" field="category" value="5e5f-f512-de8c-9505" />
-<modifier type="remove" field="category" value="6b19-97ac-7c40-0bdf" />
-<modifier type="remove" field="category" value="071f-8316-97af-8fd6" />
-<modifier type="add" field="error" value="Master of Cybernetica: the Praevian's Maniple may not purchase the Paragon of Metal upgrade.">
-<conditions>
-<condition field="selections" scope="self" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d9f7-0ba7-35e7-1cf5" type="atLeast" />
-</conditions>
-</modifier>
-</modifiers>
-</entryLink>
-</entryLinks>
-</selectionEntryGroup>
 <selectionEntryGroup id="e2ba-5f6c-9421-2534" name="Legion Inductees (one, for the Maniple)" hidden="false" collective="false" import="true">
 <constraints>
 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e63a-12fe-e6f9-ce13" type="min" />
@@ -5610,12 +5576,27 @@
 <condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8f8a-6255-05f3-580a" type="atLeast" />
 </conditions>
 </modifier>
+<modifier type="add" field="error" value="Master of Cybernetica: a Legion Praevian must be accompanied by a Castellax or Vorax Battle-Automata Maniple (choose it as his Retinue).">
+<conditions>
+<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="aa3f-f2b2-f321-d88e" type="atLeast" />
+<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e136-f0e1-72ab-778f" type="lessThan" />
+<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d165-b2dd-1212-6864" type="lessThan" />
+</conditions>
+</modifier>
 </modifiers>
 <constraints>
 <constraint automatic="true" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5804-d971-9679-0060" type="max" />
 </constraints>
 <entryLinks>
-<entryLink id="ba96-b338-72f4-3c1c" name="Legion Command Squad" hidden="false" collective="false" import="true" targetId="5fb6-a52b-4f8b-575d" type="selectionEntry" />
+<entryLink id="ba96-b338-72f4-3c1c" name="Legion Command Squad" hidden="false" collective="false" import="true" targetId="5fb6-a52b-4f8b-575d" type="selectionEntry">
+<modifiers>
+<modifier type="set" field="hidden" value="true">
+<conditions>
+<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="aa3f-f2b2-f321-d88e" type="atLeast" />
+</conditions>
+</modifier>
+</modifiers>
+</entryLink>
 <entryLink id="96ad-000a-f3a5-981a" name="Legion Terminator Command Squad" hidden="false" collective="false" import="true" targetId="eddc-ad51-0f19-97f5" type="selectionEntry">
 <modifiers>
 <modifier type="set" field="hidden" value="true">
@@ -5628,6 +5609,47 @@
 </conditions>
 </conditionGroup>
 </conditionGroups>
+</modifier>
+<modifier type="set" field="hidden" value="true">
+<conditions>
+<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="aa3f-f2b2-f321-d88e" type="atLeast" />
+</conditions>
+</modifier>
+</modifiers>
+</entryLink>
+<entryLink id="73e4-a4c9-8781-520e" name="Castellax Class Battle-Automata Maniple (Praevian - Master of Cybernetica)" hidden="false" collective="false" import="true" targetId="e136-f0e1-72ab-778f" type="selectionEntry">
+<modifiers>
+<modifier type="set" field="hidden" value="true">
+<conditions>
+<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="aa3f-f2b2-f321-d88e" type="lessThan" />
+</conditions>
+</modifier>
+<modifier type="remove" field="category" value="adf0-dc10-89d4-f51e" />
+<modifier type="remove" field="category" value="5e5f-f512-de8c-9505" />
+<modifier type="remove" field="category" value="6b19-97ac-7c40-0bdf" />
+<modifier type="remove" field="category" value="071f-8316-97af-8fd6" />
+<modifier type="add" field="error" value="Master of Cybernetica: the Praevian's Maniple may not purchase the Paragon of Metal upgrade.">
+<conditions>
+<condition field="selections" scope="self" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d9f7-0ba7-35e7-1cf5" type="atLeast" />
+</conditions>
+</modifier>
+</modifiers>
+</entryLink>
+<entryLink id="9ee1-5f92-24d9-bc04" name="Vorax Class Battle-Automata Maniple (Praevian - Master of Cybernetica)" hidden="false" collective="false" import="true" targetId="d165-b2dd-1212-6864" type="selectionEntry">
+<modifiers>
+<modifier type="set" field="hidden" value="true">
+<conditions>
+<condition field="selections" scope="3d0e-1d24-7ef2-4298" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="aa3f-f2b2-f321-d88e" type="lessThan" />
+</conditions>
+</modifier>
+<modifier type="remove" field="category" value="adf0-dc10-89d4-f51e" />
+<modifier type="remove" field="category" value="5e5f-f512-de8c-9505" />
+<modifier type="remove" field="category" value="6b19-97ac-7c40-0bdf" />
+<modifier type="remove" field="category" value="071f-8316-97af-8fd6" />
+<modifier type="add" field="error" value="Master of Cybernetica: the Praevian's Maniple may not purchase the Paragon of Metal upgrade.">
+<conditions>
+<condition field="selections" scope="self" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d9f7-0ba7-35e7-1cf5" type="atLeast" />
+</conditions>
 </modifier>
 </modifiers>
 </entryLink>

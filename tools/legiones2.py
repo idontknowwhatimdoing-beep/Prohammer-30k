@@ -686,15 +686,33 @@ def retinue_group(char_key, char_id, praetor):
     # their default wargear the same way it does for any other unit
     RETINUE_SHARED.extend(ents)
     links = []
+    praevian = cond(L.consul_id("Praevian"), char_id, "atLeast", 1)
+    not_praevian = cond(L.consul_id("Praevian"), char_id, "lessThan", 1)
     for e in ents:
         lid = uid("link", gid, e.get("id"))
         mods = []
         if e is tcs:
             mods = [modifier("set", "hidden", "true", groups=[no_tda(char_id, deep=False)])]
+        if not praetor:
+            mods.append(modifier("set", "hidden", "true", conds=[praevian]))
         links.append(link(lid, e.get("id"), e.get("name"), mods=mods))
+    gmods = [modifier("set", "hidden", "true", conds=[cond(L.consul_id("Moritat"), char_id, "atLeast", 1)])]
+    if not praetor:
+        # Master of Cybernetica: a Praevian's retinue is his Battle-Automata Maniple (Mechanicum Army List)
+        for n, tid in L.PRAEVIAN_MANIPLES.items():
+            lid = uid("link", gid, "praevian", n)
+            links.append(link(lid, tid, f"{n} (Praevian - Master of Cybernetica)", mods=[
+                modifier("set", "hidden", "true", conds=[not_praevian]),
+                modifier("remove", "category", TROOPS), modifier("remove", "category", FA),
+                modifier("remove", "category", ELITES), modifier("remove", "category", gs.CAT_LINE),
+                modifier("add", "error", "Master of Cybernetica: the Praevian's Maniple may not purchase the Paragon of "
+                                         "Metal upgrade.", conds=[cond(L.PARAGON, "self", "atLeast", 1)])]))
+        gmods.append(modifier("add", "error", "Master of Cybernetica: a Legion Praevian must be accompanied by a "
+                                              "Castellax or Vorax Battle-Automata Maniple (choose it as his Retinue).",
+                              conds=[praevian] + [cond(t, char_id, "lessThan", 1)
+                                                  for t in L.PRAEVIAN_MANIPLES.values()]))
     return group(gid, "Retinue (no Force Organisation slot)", links=links,
-                 constraints=[constraint(uid(gid, "max"), "max", 1, auto=True)],
-                 mods=[modifier("set", "hidden", "true", conds=[cond(L.consul_id("Moritat"), char_id, "atLeast", 1)])])
+                 constraints=[constraint(uid(gid, "max"), "max", 1, auto=True)], mods=gmods)
 
 
 # ------------------------------------------------------------------ Elites

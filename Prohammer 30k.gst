@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="p30k-0000-0000-0001" name="Prohammer 30k" revision="59" battleScribeVersion="2.03" authorName="idontknowwhatimdoing-beep" authorUrl="https://github.com/idontknowwhatimdoing-beep/Prohammer-30k" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="p30k-0000-0000-0001" name="Prohammer 30k" revision="60" battleScribeVersion="2.03" authorName="idontknowwhatimdoing-beep" authorUrl="https://github.com/idontknowwhatimdoing-beep/Prohammer-30k" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
 <publications>
 <publication id="7230-e520-1253-391f" name="ProHammer Classic Core Rules v2.4" shortName="ProHammer Classic" />
 <publication id="bba3-8831-681b-0190" name="github" publisherUrl="https://github.com/idontknowwhatimdoing-beep/Prohammer-30k" />

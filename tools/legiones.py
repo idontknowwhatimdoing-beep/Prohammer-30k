@@ -629,17 +629,6 @@ def praevian_groups(unit_id):
     """Master of Cybernetica: exactly one Castellax or Vorax Battle-Automata Maniple (Mechanicum Army List, no extra Force
     Organisation slot, no Paragon of Metal); Legion Inductees: one rule for the Maniple."""
     pid = consul_id("Praevian")
-    gid = uid("grp", pid, "maniple")
-    links = []
-    for n, tid in PRAEVIAN_MANIPLES.items():
-        lid = uid("link", gid, n)
-        links.append(link(lid, tid, f"{n} (Master of Cybernetica)", mods=[
-            modifier("remove", "category", gs.cat("Troops")), modifier("remove", "category", gs.cat("Fast Attack")),
-            modifier("remove", "category", gs.cat("Elites")), modifier("remove", "category", gs.CAT_LINE),
-            modifier("add", "error", "Master of Cybernetica: the Praevian's Maniple may not purchase the Paragon of "
-                                     "Metal upgrade.", conds=[cond(PARAGON, "self", "atLeast", 1)])]))
-    maniple = group(gid, "Battle-Automata Maniple (Master of Cybernetica, no Force Organisation slot)", links=links,
-                    constraints=[constraint(uid(gid, "min"), "min", 1), constraint(uid(gid, "max"), "max", 1)])
     leg = (CURRENT_LEGION or "Legiones Astartes").split(" - ", 1)[-1]
     iid = uid("grp", pid, "inductees")
     opts = [(f"Legiones Astartes ({leg})", ["Legiones Astartes"]), ("Furious Charge", ["Furious Charge"]),
@@ -648,7 +637,7 @@ def praevian_groups(unit_id):
         entry(uid(iid, n), n, infolinks=rules_links(r, key=uid(iid, n)),
               constraints=[constraint(uid(iid, n, "max"), "max", 1)]) for n, r in opts],
         constraints=[constraint(uid(iid, "min"), "min", 1), constraint(uid(iid, "max"), "max", 1)])
-    return [maniple, inductees]
+    return [inductees]
 
 
 def tda_pistol_error(unit_id):
