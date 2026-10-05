@@ -75,6 +75,30 @@ def troop_role_mods(name):
     return mods
 
 
+def pride_of_the_legion(units):
+    """Pride of the Legion (author): Legion-specific Terminator units may be selected as Troops (and fill the compulsory
+    Troops) just like Legion Terminator Squads; their own 0-1 limits stay."""
+    tda = {W(n) for n in L.TDA}
+    for u in units:
+        name = u.get("name") or ""
+        if u.get("type") != "unit" or name in TROOP_RITES or "Rewards of Treachery" in name:
+            continue
+        prim = [c.get("targetId") for c in u.iter("categoryLink") if c.get("primary") == "true"][:1]
+        if not prim or prim[0] not in (ELITES, HS):
+            continue
+        links = {x.get("targetId") for x in u.iter("entryLink")}
+        if not (links & tda or "Terminator" in name):
+            continue
+        r = [rite("Pride of the Legion")]
+        add_mods(u, [modifier("set-primary", "category", TROOPS, conds=r),
+                     modifier("remove", "category", prim[0], conds=r),
+                     modifier("add", "category", gs.CAT_LINE, conds=r)])
+        PRIDE_UNITS.append(name)
+
+
+PRIDE_UNITS = []
+
+
 def add_mods(e, mods):
     """Insert modifiers into an existing entry element."""
     m = e.find("modifiers")

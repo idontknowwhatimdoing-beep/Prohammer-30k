@@ -1025,6 +1025,7 @@ def build(legion=None, module=None):
         module.extend(ctx)
         ctx.finish()
         units, transports = ctx.units, ctx.shared
+    legiones2.pride_of_the_legion(units)
     for u in units + transports:
         legiones2.unclash(u)
         legiones2.transport_capacity(u)

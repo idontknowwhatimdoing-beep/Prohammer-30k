@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="p30k-0000-0001-0002" name="Legiones Astartes - Emperor's Children" revision="57" battleScribeVersion="2.03" authorName="idontknowwhatimdoing-beep" authorUrl="https://github.com/idontknowwhatimdoing-beep/Prohammer-30k" library="false" gameSystemId="p30k-0000-0000-0001" gameSystemRevision="57" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="p30k-0000-0001-0002" name="Legiones Astartes - Emperor's Children" revision="58" battleScribeVersion="2.03" authorName="idontknowwhatimdoing-beep" authorUrl="https://github.com/idontknowwhatimdoing-beep/Prohammer-30k" library="false" gameSystemId="p30k-0000-0000-0001" gameSystemRevision="58" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
 <publications>
 <publication id="2785-6355-56dc-20bf" name="Legiones Astartes Army List" shortName="Legiones Astartes" />
 <publication id="3143-f2ec-31c6-f505" name="Forces of the Legions" shortName="Forces of the Legions" />
@@ -24705,6 +24705,21 @@ LIMITATIONS - Only a Traitor Emperor's Children Detachment. The army must includ
 </selectionEntry>
 <selectionEntry id="7d74-bf63-7e02-b3f9" name="Phoenix Terminator Squad" hidden="false" collective="false" import="true" type="unit">
 <modifiers>
+<modifier type="set-primary" field="category" value="adf0-dc10-89d4-f51e">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="16af-3c6d-4886-1450" type="atLeast" />
+</conditions>
+</modifier>
+<modifier type="remove" field="category" value="6b19-97ac-7c40-0bdf">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="16af-3c6d-4886-1450" type="atLeast" />
+</conditions>
+</modifier>
+<modifier type="add" field="category" value="071f-8316-97af-8fd6">
+<conditions>
+<condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="16af-3c6d-4886-1450" type="atLeast" />
+</conditions>
+</modifier>
 <modifier type="add" field="category" value="3224-4c76-76b7-ae18">
 <conditions>
 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ac0-5a10-6fb8-54d9" type="lessThan" />
